@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T17:04:18.906Z",
+  "updatedAt": "2026-10-08T17:24:41.781Z",
   "medias": {
     "france-2": {
       "slug": "france-2",
@@ -205,6 +205,56 @@
     "public-senat": {
       "checkedAt": "2026-10-08T17:11:38.561Z",
       "items": []
+    },
+    "cnews": {
+      "checkedAt": "2026-10-08T17:24:41.780Z",
+      "items": [
+        {
+          "date": "2026-06-12",
+          "kind": "mise-en-demeure",
+          "topic": "pluralisme",
+          "summary": "L'Arcom, saisie par RSF en janvier 2026, met en demeure la société d'exploitation d'un service d'information (CNews) de se conformer à l'exigence d'expression pluraliste des courants de pensée et d'opinion, après examen des programmes de mars 2025.",
+          "quote": "Ces éléments étant constitutifs d'un déséquilibre manifeste et durable dans l'expression des courants de pensée et d'opinion, ils caractérisent un manquement de CNews à ses obligations en matière de pluralisme pendant le mois de mars 2025.",
+          "url": "https://www.arcom.fr/presse/pluralisme-des-courants-de-pensee-et-dopinion-mise-en-demeure-de-cnews",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-07-24",
+          "kind": "mise-en-garde",
+          "topic": "pluralisme",
+          "summary": "Réexamen ordonné par le Conseil d'État (programmes de mai 2021). Décision connue par le point 5 de la décision Arcom du 12 juin 2026 ; texte de la décision du 24 juillet 2024 non lu.",
+          "quote": "l'Autorité a mis en garde l'éditeur et lui a demandé de faire preuve de la plus grande vigilance, à l'avenir, quant au respect de l'exigence de pluralisme des courants de pensée et d'opinion.",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-12-juin-2026-mettant-en-demeure-la-societe-dexploitation-dun-service-dinformation",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-02-13",
+          "kind": "decision-conseil-etat",
+          "topic": "pluralisme",
+          "summary": "Sur requête de RSF contre le refus de l'Arcom du 5 avril 2022 de mettre CNews en demeure, le Conseil d'État juge que l'Arcom a fait une inexacte application de la loi en matière de pluralisme.",
+          "quote": "En s'en tenant ainsi à la seule prise en compte du temps d'antenne accordé aux personnalités politiques pour l'appréciation des obligations du service en matière de pluralisme de l'information, l'Arcom a fait une inexacte application des dispositions de la loi du 30 septembre 1986.",
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-02-13/463162",
+          "publisher": "Conseil d'État"
+        },
+        {
+          "date": "2022-02-09",
+          "kind": "mise-en-garde",
+          "topic": "honnetete-information",
+          "summary": "Mise en garde relative à une émission du 27 octobre 2021 portant sur un sondage, selon le Conseil d'État (point 13), qui l'attribue au CSA. Texte de la délibération non lu.",
+          "quote": "le CSA, par des délibérations des 28 juillet 2021 et 9 février 2022, a mis en garde la chaîne contre la répétition de tels manquements.",
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-02-13/463162",
+          "publisher": "Conseil d'État"
+        },
+        {
+          "date": "2021-07-28",
+          "kind": "mise-en-garde",
+          "topic": "honnetete-information",
+          "summary": "Mise en garde du CSA relative à la présentation d'une tribune de militaires dans l'émission du 26 avril 2021, selon le Conseil d'État (point 13). Texte de la délibération non lu.",
+          "quote": "le CSA, par des délibérations des 28 juillet 2021 et 9 février 2022, a mis en garde la chaîne contre la répétition de tels manquements.",
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-02-13/463162",
+          "publisher": "Conseil d'État"
+        }
+      ]
     }
   }
 }
