@@ -29,6 +29,7 @@ export const SECTIONS: NavSection[] = [
     title: 'La campagne',
     items: [
       { href: '/candidats', label: 'Candidats', desc: 'Qui se présente, d’où il vient, ce qu’il propose.' },
+      { href: '/partis', label: 'Partis', desc: 'Histoire, dirigeants, élus et idées de chaque parti.' },
       { href: '/radar', label: 'Radar', desc: 'Le fil de la campagne, sourcé.' },
       { href: '/radar/2026-10-08-comment-voter', label: 'Comment voter', desc: 'Inscription, pièce d’identité, procuration : le mode d’emploi.' },
     ],
