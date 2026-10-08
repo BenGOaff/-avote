@@ -3149,5 +3149,93 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "0b9bf10b9b9e697d"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "sec-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "6312d4a170950c34"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "98774764d0056400"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "sec-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "8ab79dda407b5907"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "lib-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "b88c6fdee78c43ab"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "b612355224bd28db"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "618875ec93c241ab"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "b6ddc0de64cd0034"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "d2f3c006a547e186"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "da5c0eb74f23af42"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "cli-03",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "6c855727af64ba60"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "209a74bb28e14fbd"
   }
 ]

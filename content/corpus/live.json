@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081758",
+  "version": "live-202610081810",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T17:58:09.138Z",
+  "publishedAt": "2026-10-08T18:10:26.755Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -1920,11 +1920,15 @@
         "codedAt": "2026-10-08T15:11:16.416Z"
       },
       "sec-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "8ab79dda407b5907"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Programme présidentiel 2022 : les aménagements de peine (bracelet, semi-liberté…) sont justement ce qui remplace aujourd'hui les courtes peines de prison. Il veut les supprimer et instaurer des peines planchers. En mai 2026 sur Europe 1-CNe"
       },
       "sec-03": {
         "missing": true,
@@ -1934,18 +1938,26 @@
         "codedAt": "2026-10-08T15:11:16.416Z"
       },
       "sec-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "6312d4a170950c34"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Ses mots, au discours de rentrée de Reconquête à Port-Marly. Il veut plus qu'une baisse des arrivées : un solde migratoire négatif, d'où +2. Même ligne le 23 juin 2026 sur Europe 1-CNews : « je suis non seulement pour l’immigration zéro, ma"
       },
       "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "98774764d0056400"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Programme présidentiel 2022 : interdiction de toute régularisation, sans exception pour les métiers en tension. Aucune source 2027 trouvée sur ce point."
       },
       "sec-06": {
         "missing": true,
@@ -1955,11 +1967,15 @@
         "codedAt": "2026-10-08T15:11:16.416Z"
       },
       "lib-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "b88c6fdee78c43ab"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Ses mots au Grand Jury RTL, après le vote par les députés du droit à l'aide à mourir. Rejet catégorique. Il a renouvelé son opposition sur X lors de l'adoption définitive, en juillet 2026."
       },
       "lib-02": {
         "missing": true,
@@ -2008,11 +2024,18 @@
         "codedAt": "2026-10-08T15:11:16.416Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "209a74bb28e14fbd"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Programme 2022 : il veut alléger l'impôt sur la fortune immobilière (exonérer la résidence principale, déduire 50 % des investissements dans les PME). Aucune mesure ne taxe davantage les grands patrimoines, d'où le set [-2, -1]."
       },
       "eco-03": {
         "missing": true,
@@ -2096,11 +2119,15 @@
         "codedAt": "2026-10-08T15:11:16.416Z"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "da5c0eb74f23af42"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Programme 2022, partie ruralité. Le texte déplore la fermeture des bureaux de poste et prévoit des services hospitaliers de proximité (maternités comprises) et l'arrêt des fermetures d'écoles rurales et de brigades de gendarmerie. Il ne dit"
       },
       "cli-01": {
         "value": 2,
@@ -2121,11 +2148,18 @@
         "codedAt": "2026-10-08T15:11:16.416Z"
       },
       "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "6c855727af64ba60"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Programme 2022 : il accepte de réduire les pesticides, mais grâce à l'innovation et « de façon réaliste et non dogmatique ». Rien ne dit qu'il accepterait une hausse des coûts, d'où le set [0, 1]."
       },
       "cli-04": {
         "missing": true,
@@ -2149,11 +2183,15 @@
         "codedAt": "2026-10-08T15:11:16.416Z"
       },
       "eur-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "b612355224bd28db"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:20.074Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Programme présidentiel 2022, partie « Je mettrai fin à la fuite en avant fédéraliste ». Refus de tout nouveau transfert : -2."
       },
       "eur-02": {
         "value": 2,
@@ -2167,18 +2205,26 @@
         "note": "Texte du programme 2022, cité entre guillemets par Public Sénat, à réaliser par une révision de l'article 55 de la Constitution. Formulation catégorique, d'où +2. Le programme officiel lui-même n'a pas pu être consulté."
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "618875ec93c241ab"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Programme présidentiel 2022 : hausse chaque année, avec un objectif chiffré. Aucune source 2027 trouvée."
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "b6ddc0de64cd0034"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Programme présidentiel 2022 : veto sur toute négociation de libre-échange. La partie agriculture prévoit aussi un moratoire sur ces négociations."
       },
       "eur-05": {
         "missing": true,
@@ -2188,11 +2234,15 @@
         "codedAt": "2026-10-08T15:11:16.416Z"
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "d2f3c006a547e186"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:11:16.416Z"
+        "codedAt": "2026-10-08T18:10:26.755Z",
+        "note": "Chiffrage du programme présidentiel 2022 : l'aide au développement serait divisée par deux et le reste soumis à une condition migratoire."
       },
       "dem-01": {
         "missing": true,
@@ -10134,6 +10184,94 @@
       "url": "https://www.20minutes.fr/politique/4251221-20261005-presidentielle-2027-lfi-ukraine-retraites-lycees-faut-retenir-dernier-debat-primaire-gauche",
       "date": "2026-10-05",
       "passage": "« Je régularise ceux qui travaillent », a ainsi annoncé Ségolène Royal."
+    },
+    {
+      "id": "6312d4a170950c34",
+      "title": "Présidentielle 2027 : Éric Zemmour appelle à un «vote du sursaut» lors de son discours de rentrée",
+      "publisher": "Europe 1",
+      "url": "https://www.europe1.fr/politique/presidentielle-2027-eric-zemmour-appelle-a-un-vote-du-sursaut-lors-de-son-discours-de-rentree-1075178",
+      "date": "2026-09-13",
+      "passage": "Il ne suffit plus, en 2026, de fermer les frontières et d'arrêter les flux. Il faut aller plus loin. Il faut inverser le mouvement. Il ne suffit pas de prôner l'immigration zéro, mais d'enclencher l'immigration négative."
+    },
+    {
+      "id": "98774764d0056400",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Interdire définitivement la régularisation de tout étranger entré illégalement sur le territoire français"
+    },
+    {
+      "id": "8ab79dda407b5907",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Appliquer réellement les condamnations en mettant fin aux aménagements de peine"
+    },
+    {
+      "id": "b88c6fdee78c43ab",
+      "title": "Aide à mourir : «C'est une espèce de rétablissement de la peine de mort qui ne dit pas son nom», juge Eric Zemmour",
+      "publisher": "CNews",
+      "url": "https://www.cnews.fr/france/2025-05-18/aide-mourir-cest-une-espece-de-retablissement-de-la-peine-de-mort-qui-ne-dit-pas",
+      "date": "2025-05-18",
+      "passage": "Si on en est à administrer la mort, par un médecin, c'est une espèce de rétablissement de la peine de mort qui ne dit pas son nom pour des innocents"
+    },
+    {
+      "id": "b612355224bd28db",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Bloquer tout nouveau transfert de compétence réclamé par la Commission européenne et faire appliquer rigoureusement le principe de subsidiarité"
+    },
+    {
+      "id": "618875ec93c241ab",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Augmenter annuellement le budget de la défense jusqu’à 70 milliards d’euros en 2030 afin de moderniser nos forces nucléaires et conventionnelles"
+    },
+    {
+      "id": "b6ddc0de64cd0034",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Opposer le veto de la France à toute négociation actuelle et future de traité de libre-échange pour défendre nos entreprises et nos agriculteurs"
+    },
+    {
+      "id": "d2f3c006a547e186",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Réduction de moitié de l’aide publique au développement, l’autre moitié devant nous permettre de faire pression sur les pays d’origine pour les obliger à reprendre leurs ressortissants"
+    },
+    {
+      "id": "da5c0eb74f23af42",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Je m’engage à faire revenir des services publics, à créer de l’emploi, à favoriser la mobilité et à assurer la sécurité dans ces territoires."
+    },
+    {
+      "id": "6c855727af64ba60",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Financer la recherche et l’innovation en robotique agricole ce qui doit permettre de réduire de façon réaliste et non dogmatique l’utilisation des produits phytosanitaires"
+    },
+    {
+      "id": "209a74bb28e14fbd",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "favoriser l’enracinement en exonérant la résidence principale du calcul de l’Impôt sur la Fortune Immobilière"
     }
   ],
   "refreshedAt": {
@@ -10142,7 +10280,7 @@
     "bruno-retailleau": "2026-10-08T14:55:16.338Z",
     "david-lisnard": "2026-10-08T15:00:13.139Z",
     "marine-le-pen": "2026-10-08T15:06:17.605Z",
-    "eric-zemmour": "2026-10-08T15:11:16.416Z",
+    "eric-zemmour": "2026-10-08T18:10:26.755Z",
     "nicolas-dupont-aignan": "2026-10-08T15:16:54.685Z",
     "florian-philippot": "2026-10-08T15:22:20.891Z",
     "jean-luc-melenchon": "2026-10-08T15:27:14.482Z",
