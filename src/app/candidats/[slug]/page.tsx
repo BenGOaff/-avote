@@ -6,6 +6,7 @@ import { itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
 import { BASIS_LABEL, positionLabel } from '@/lib/answers'
 import { formatDate } from '@/components/Editorial'
 import { absolute } from '@/lib/site'
+import fiches from '@content/acteurs/fiches.json'
 
 export const dynamicParams = false
 
@@ -33,6 +34,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
   const positions = liveCorpus.positions[slug] ?? {}
   const sources = new Map((liveCorpus.sources ?? []).map((s) => [s.id, s]))
   const known = Object.values(positions).filter((p) => !('missing' in p)).length
+  const fiche = (fiches as Record<string, { analysis: string; remark: string }>)[slug]
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
@@ -62,6 +64,23 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
           <Link href="/methodologie#codage">Comment c’est codé</Link> · <Link href="/corrections#signaler">Signaler une erreur</Link>
         </p>
       </div>
+
+      {fiche && (
+        <section className="card card--featured measure" aria-labelledby="en-bref" style={{ margin: 'var(--s5) 0' }}>
+          <h2 id="en-bref" style={{ fontSize: 'var(--h3)' }}>
+            En bref
+          </h2>
+          <p style={{ margin: 0 }}>{fiche.analysis}</p>
+          {fiche.remark && (
+            <p className="feed__remark humor" style={{ margin: 'var(--s3) 0 0' }}>
+              {fiche.remark}
+            </p>
+          )}
+          <p className="small muted" style={{ margin: 'var(--s3) 0 0' }}>
+            Synthèse écrite par IA à partir des seules positions citées ci-dessous. La remarque en italique est un commentaire.
+          </p>
+        </section>
+      )}
 
       {Object.keys(positions).length > 0 && itemsByTheme(questionnaire).map(({ theme, items }) => (
         <section key={theme.id} className="section" aria-labelledby={`t-${theme.id}`}>
