@@ -1,0 +1,20 @@
+{
+  "_note": "Flux vérifiés le 2026-10-08 (HTTP 200, RSS valide). Couverture voulue pluraliste et symétrique (cahier §9.1). Ajouter un flux = vérifier son URL, ses conditions d'utilisation, et l'équilibre de l'ensemble. Seuls le titre, le chapô et le lien sont utilisés ; aucun article n'est recopié.",
+  "feeds": [
+    { "id": "franceinfo-politique", "name": "franceinfo", "url": "https://www.franceinfo.fr/politique.rss", "kind": "media-public" },
+    { "id": "franceinfo-presidentielle", "name": "franceinfo (présidentielle)", "url": "https://www.franceinfo.fr/elections/presidentielle.rss", "kind": "media-public" },
+    { "id": "publicsenat", "name": "Public Sénat", "url": "https://www.publicsenat.fr/feed", "kind": "media-public" },
+    { "id": "lcp", "name": "LCP", "url": "https://lcp.fr/rss.xml", "kind": "media-public" },
+    { "id": "lemonde-politique", "name": "Le Monde", "url": "https://www.lemonde.fr/politique/rss_full.xml", "kind": "media" },
+    { "id": "lefigaro-politique", "name": "Le Figaro", "url": "https://www.lefigaro.fr/rss/figaro_politique.xml", "kind": "media" },
+    { "id": "liberation-politique", "name": "Libération", "url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/politique/?outputType=xml", "kind": "media" },
+    { "id": "humanite-politique", "name": "L'Humanité", "url": "https://www.humanite.fr/sections/politique/feed", "kind": "media" },
+    { "id": "20minutes-politique", "name": "20 Minutes", "url": "https://www.20minutes.fr/feeds/rss-politique.xml", "kind": "media" },
+    { "id": "blast", "name": "Blast", "url": "https://api.blast-info.fr/rss_articles.xml", "kind": "media" },
+    { "id": "mediapart", "name": "Mediapart", "url": "https://www.mediapart.fr/articles/feed", "kind": "media" },
+    { "id": "conseil-constitutionnel", "name": "Conseil constitutionnel", "url": "https://www.conseil-constitutionnel.fr/flux/rss.xml", "kind": "institution" },
+    { "id": "assemblee-documents", "name": "Assemblée nationale", "url": "https://www2.assemblee-nationale.fr/feeds/detail/documents-parlementaires", "kind": "institution" },
+    { "id": "senat-presse", "name": "Sénat", "url": "https://www.senat.fr/rss/presse.rss", "kind": "institution", "encoding": "iso-8859-1" },
+    { "id": "elysee", "name": "Élysée", "url": "https://www.elysee.fr/feed", "kind": "institution" }
+  ]
+}

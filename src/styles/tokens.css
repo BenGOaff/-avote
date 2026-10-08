@@ -1,0 +1,103 @@
+/*
+ * Jetons de conception — charte Ça vote ? §3, §4, §8, §9.
+ * Toute couleur, taille ou espacement utilisé dans l'interface vient d'ici.
+ * Ajouter un jeton = documenter son usage dans docs/DESIGN.md.
+ */
+:root {
+  color-scheme: light;
+  --paper: #f5f0e6;
+  --ink: #191919;
+  --highlight: #ffe34d;
+  --correction: #c83232;
+  --reference: #2447b8;
+  --muted: #625e57;
+  --surface: #fffdfa;
+  --line: #d7d0c4;
+  --on-highlight: #191919;
+  --on-ink: #f5f0e6;
+
+  /* Typographie (familles injectées par next/font dans layout.tsx) */
+  --font-display: var(--ff-display), 'Arial Black', Arial, sans-serif;
+  --font-ui: var(--ff-ui), Arial, sans-serif;
+  --font-serif: var(--ff-serif), Georgia, serif;
+  --font-hand: var(--ff-hand), var(--ff-ui), Arial, sans-serif;
+
+  --text-ui: 1.0625rem; /* 17 px */
+  --text-article: 1.1875rem; /* 19 px */
+  --text-small: 0.9rem; /* ~14,4 px */
+  --text-button: 1.0625rem;
+  --text-hand: 1.375rem; /* 22 px minimum */
+  --lh-ui: 1.5;
+  --lh-article: 1.65;
+  --lh-title: 1.1;
+  --h1: clamp(2.25rem, 5vw, 4.5rem);
+  --h2: clamp(1.75rem, 3vw, 2.75rem);
+  --h3: 1.45rem;
+
+  /* Espacements : 4, 8, 12, 16, 24, 32, 48, 64, 96 */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+  --s9: 96px;
+
+  --gutter: 20px;
+  --container: 1200px;
+  --measure: 68ch;
+  --measure-test: 760px;
+
+  --radius: 6px;
+  --border: 2px;
+  --hairline: 1px;
+  --shadow-signature: 3px 3px 0 var(--ink);
+  --tap: 48px;
+
+  --duration: 150ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+
+  --tabbar-h: 64px;
+  --topbar-h: 56px;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+/* Thème sombre automatique (sauf choix explicite du clair) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --paper: #191919;
+    --ink: #f5f0e6;
+    --surface: #242424;
+    --reference: #a8bcff;
+    --correction: #ff9b91;
+    --muted: #bdb7ad;
+    --line: #59554f;
+    --on-ink: #191919;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #191919;
+  --ink: #f5f0e6;
+  --surface: #242424;
+  --reference: #a8bcff;
+  --correction: #ff9b91;
+  --muted: #bdb7ad;
+  --line: #59554f;
+  --on-ink: #191919;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration: 0ms;
+  }
+}
