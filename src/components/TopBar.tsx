@@ -2,20 +2,11 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
-import { UI_COPY } from '@/lib/copy'
+import { TOP_NAV } from '@/lib/nav'
 import { getPref, setPref, type ThemePref } from '@/lib/local-store'
 import { IconSettings } from './Icons'
 
-const NAV = [
-  { href: '/test', label: UI_COPY.nav.test },
-  { href: '/radar', label: UI_COPY.nav.radar },
-  { href: '/candidats', label: UI_COPY.nav.actors },
-  { href: '/urne', label: UI_COPY.nav.urne },
-  { href: '/quiz', label: UI_COPY.nav.quiz },
-  { href: '/studio', label: UI_COPY.nav.studio },
-  { href: '/methodologie', label: UI_COPY.nav.method },
-  { href: '/mon-profil', label: UI_COPY.nav.profile },
-]
+const NAV = TOP_NAV
 
 export function isCurrent(pathname: string, href: string) {
   return href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href + '/')

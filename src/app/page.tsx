@@ -72,26 +72,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section container">
-        <div className="grid grid--3">
+      <section className="section container" aria-labelledby="explorer">
+        <h2 id="explorer">Explorer</h2>
+        <div className="grid grid--2">
           <div className="card card--flat">
-            <h3>Les candidatures</h3>
+            <h3>Les candidats</h3>
             <p className="muted">
-              {actors.length > 0
-                ? `${actors.length} candidatures annoncées, chacune avec sa source.`
-                : 'La liste des candidatures annoncées arrive.'}
+              {actors.length > 0 ? `${actors.length} candidatures annoncées : d’où ils viennent, ce qu’ils proposent, avec les sources.` : 'La liste des candidatures annoncées arrive.'}
             </p>
-            <Link href="/candidats">Voir la liste</Link>
+            <Link href="/candidats">Voir les candidats</Link>
           </div>
           <div className="card card--flat">
-            <h3>{questionnaire.items.length} questions, 7 thèmes</h3>
-            <p className="muted">Chaque question vient avec une explication courte. « Je ne sais pas » est une vraie réponse, pas un zéro.</p>
-            <Link href="/methodologie#questions">Lire les questions</Link>
+            <h3>L’urne</h3>
+            <p className="muted">Tu sais déjà pour qui tu votes ? Glisse ton bulletin, anonyme, et regarde le dépouillement.</p>
+            <Link href="/urne">Aller voter</Link>
           </div>
           <div className="card card--flat">
-            <h3>Le studio</h3>
-            <p className="muted">Fonds d’écran, photo de profil, visuels carrés ou stories. Fabriqués sur ton téléphone, sans envoi.</p>
-            <Link href="/studio">Créer un visuel</Link>
+            <h3>Qui possède ton info</h3>
+            <p className="muted">Les propriétaires des médias, leurs engagements, et les chaînes rappelées à l’ordre par l’Arcom.</p>
+            <Link href="/medias">Voir qui possède quoi</Link>
+          </div>
+          <div className="card card--flat">
+            <h3>Comment voter</h3>
+            <p className="muted">Inscription avant le 6e vendredi, pièce d’identité, procuration : le mode d’emploi du 18 avril 2027.</p>
+            <Link href="/radar/2026-10-08-comment-voter">Lire le mode d’emploi</Link>
           </div>
         </div>
       </section>

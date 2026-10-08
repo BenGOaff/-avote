@@ -758,6 +758,45 @@ th.num {
 .footer a {
   color: var(--ink);
 }
+.footer__grid {
+  display: grid;
+  gap: var(--s5);
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+.footer__grid > div:first-child {
+  grid-column: 1 / -1;
+  max-width: var(--measure);
+}
+.footer__title {
+  margin: 0 0 var(--s2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Page « Plus » */
+.plus-section + .plus-section {
+  margin-top: var(--s5);
+}
+.plus-list {
+  list-style: none;
+  display: grid;
+  gap: var(--s2);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  padding: 0;
+  margin: var(--s2) 0 0;
+}
+.plus-link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+  height: 100%;
+  padding: var(--s4);
+  color: var(--ink);
+  text-decoration: none;
+}
 
 /* Bouton install / bannières */
 .banner {

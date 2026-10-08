@@ -19,6 +19,7 @@
 - Couleurs, typos et espacements uniquement via `src/styles/tokens.css`. Pas de couleur ad hoc, pas de nouvelle police, pas d’emoji décoratif, pas de mascotte.
 - Composants partagés dans `src/styles/globals.css` et `src/components`. Page de référence : `/design`.
 - Mobile d’abord, cibles tactiles de 48 px, focus visible, `prefers-reduced-motion`, mode sombre et mode sobre.
+- Plan du site unique : `src/lib/nav.ts` (rubriques Ton vote, La campagne, Les médias, Jouer et partager, Le site). Toute nouvelle page s’y range dans sa rubrique ; menus, barre mobile, page « Plus » et pied de page en découlent. Relier chaque nouveauté aux pages voisines plutôt que l’empiler.
 
 ## Écriture
 - Textes d’interface dans `src/lib/copy.ts` : une action ou une information, jamais un slogan.

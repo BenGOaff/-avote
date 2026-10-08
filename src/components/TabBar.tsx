@@ -2,14 +2,14 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { UI_COPY } from '@/lib/copy'
-import { IconHome, IconMore, IconRadar, IconStudio, IconTest } from './Icons'
+import { IconBallot, IconHome, IconMore, IconPeople, IconTest } from './Icons'
 import { isCurrent } from './TopBar'
 
 const TABS = [
   { href: '/', label: UI_COPY.nav.home, Icon: IconHome },
   { href: '/test', label: UI_COPY.nav.test, Icon: IconTest },
-  { href: '/radar', label: UI_COPY.nav.radar, Icon: IconRadar },
-  { href: '/studio', label: UI_COPY.nav.studio, Icon: IconStudio },
+  { href: '/candidats', label: UI_COPY.nav.actors, Icon: IconPeople },
+  { href: '/urne', label: UI_COPY.nav.urne, Icon: IconBallot },
   { href: '/plus', label: UI_COPY.nav.more, Icon: IconMore },
 ]
 

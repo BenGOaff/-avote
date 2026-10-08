@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { AI_NOTICE } from '@/lib/copy'
+import { SECTIONS } from '@/lib/nav'
 import { tiquizHref } from './Support'
 import { ConsentLink } from './ConsentBanner'
 
 export function Footer() {
   return (
     <footer className="footer">
-      <div className="container grid grid--3">
+      <div className="container footer__grid">
         <div>
           <p>
             <strong>Ça vote ?</strong> — çavote.fr
@@ -21,22 +22,28 @@ export function Footer() {
             .
           </p>
         </div>
-        <ul>
-          <li><Link href="/methodologie">Méthode et calculs</Link></li>
-          <li><Link href="/sources">Sources</Link></li>
-          <li><Link href="/corrections">Corrections</Link></li>
-          <li><Link href="/independance">Indépendance et financement</Link></li>
-          <li><Link href="/medias">Qui possède ton info</Link></li>
-          <li><Link href="/medias/libres">Les médias libres</Link></li>
-        </ul>
-        <ul>
-          <li><Link href="/newsletter">Newsletter</Link></li>
-          <li><Link href="/boutique">Boutique</Link></li>
-          <li><Link href="/confidentialite">Confidentialité</Link></li>
-          <li><Link href="/mentions-legales">Mentions légales</Link></li>
-          <li><a href="/feed.xml">Flux RSS</a></li>
-          <li><ConsentLink /></li>
-        </ul>
+        {SECTIONS.map((s) => (
+          <div key={s.id}>
+            <p className="footer__title">{s.title}</p>
+            <ul>
+              {s.items.map((i) => (
+                <li key={i.href}>
+                  <Link href={i.href}>{i.label}</Link>
+                </li>
+              ))}
+              {s.id === 'site' && (
+                <>
+                  <li>
+                    <a href="/feed.xml">Flux RSS</a>
+                  </li>
+                  <li>
+                    <ConsentLink />
+                  </li>
+                </>
+              )}
+            </ul>
+          </div>
+        ))}
       </div>
     </footer>
   )
