@@ -1,11 +1,8 @@
 {
-  "_note": "À compléter par la propriétaire avant la mise en ligne. Les champs null s'affichent « à compléter ». Ne pas inventer de rédaction ni de directeur de publication (cahier §18).",
-  "publisherName": null,
-  "publisherLegalForm": null,
-  "publisherAddress": null,
-  "publisherSiret": null,
-  "publicationDirector": null,
-  "contactEmail": "bonjour@xn--avote-xra.fr",
+  "_note": "Édition non professionnelle et anonyme (LCEN art. 6, III, 2) : l'identité de l'éditrice est communiquée à l'hébergeur, pas publiée. Le nom du responsable de traitement n'apparaît que sur /donnees (non indexée), liée depuis les formulaires qui collectent un email. À revoir à l'ouverture de la boutique (activité commerciale = identification obligatoire).",
+  "siteName": "çavote.fr",
+  "contactEmail": "citoyen@xn--avote-xra.fr",
+  "controllerName": "Bénédicte Lagardette",
   "host": {
     "name": "Hostinger International Ltd",
     "address": "61 Lordou Vironos Street, 6023 Larnaca, Chypre",

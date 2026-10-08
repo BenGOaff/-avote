@@ -28,7 +28,7 @@ export default function QuizPage() {
         <p className="muted">Le quiz arrive bientôt.</p>
       )}
       <p className="small" style={{ marginTop: 'var(--s4)' }}>
-        Pour comparer tes idées aux programmes, c’est l’autre test : <Link href="/test">le test complet</Link>, calculé sur ton appareil.
+        Données collectées par le quiz : <Link href="/donnees">qui les garde et pourquoi</Link>. Pour comparer tes idées aux programmes, c’est l’autre test : <Link href="/test">le test complet</Link>, calculé sur ton appareil.
       </p>
     </div>
   )

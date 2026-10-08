@@ -61,7 +61,7 @@ export function NewsletterForm() {
         <input type="checkbox" name="consent" required />
         <span className="small">
           J’accepte de recevoir la lettre de Ça vote ?. Désinscription en un clic dans chaque envoi. Seuls l’email et le prénom sont conservés, chez notre
-          prestataire d’envoi. <Link href="/confidentialite">Détails</Link>
+          prestataire d’envoi. <Link href="/donnees">Qui les garde</Link>
         </span>
       </label>
       {state === 'error' && (
