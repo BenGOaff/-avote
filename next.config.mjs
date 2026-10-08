@@ -1,5 +1,5 @@
-import type { NextConfig } from 'next'
-
+// Configuration en JavaScript (pas TypeScript) : l'hébergeur ne peut pas compiler un next.config.ts
+// avec le compilateur de secours (SWC WebAssembly) imposé par son système.
 const isDev = process.env.NODE_ENV !== 'production'
 
 // Aucune origine tierce : polices, scripts, images et données sont servis par le site.
@@ -49,7 +49,8 @@ const personalHeaders = [
   { key: 'Cache-Control', value: 'private, no-store' },
 ]
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   output: 'standalone',

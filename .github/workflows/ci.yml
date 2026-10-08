@@ -26,6 +26,6 @@ jobs:
       - name: Contenus (schéma, sources, typographie)
         run: npx tsx scripts/validate-content.ts
       - name: Build
-        run: npx next build
+        run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: '1'
