@@ -24,6 +24,8 @@ jobs:
       - name: Tests du moteur et de la veille
         run: npx vitest run
       - name: Contenus (schéma, sources, typographie)
+        env:
+          ANONYMITY_BLOCKLIST: ${{ secrets.ANONYMITY_BLOCKLIST }}
         run: npx tsx scripts/validate-content.ts
       - name: Build
         run: npm run build

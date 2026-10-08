@@ -114,7 +114,6 @@ a:hover {
 }
 .narrow {
   max-width: var(--measure-test);
-  margin: 0 auto;
 }
 main {
   padding-bottom: var(--s7);
@@ -879,9 +878,45 @@ details.disclosure > div {
   pointer-events: none;
 }
 
-.wide-test {
-  max-width: 960px;
-  margin-inline: auto;
+/* Écrans du test : même largeur et même alignement que les autres sections */
+.test-intro {
+  display: grid;
+  gap: var(--s6) var(--s7);
+}
+@media (min-width: 900px) {
+  .test-intro {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  .test-intro .steps {
+    margin-top: var(--s3);
+    grid-template-columns: 1fr;
+  }
+}
+.test-intro__more {
+  display: grid;
+  gap: var(--s4);
+  margin-top: var(--s6);
+}
+@media (min-width: 900px) {
+  .test-intro__more {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+.qcard__grid {
+  display: grid;
+  gap: var(--s5);
+}
+@media (min-width: 900px) {
+  .qcard__grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: var(--s7);
+    align-items: center;
+  }
+  .qcard__grid .scale {
+    margin-top: 0;
+  }
 }
 .reserve {
   position: sticky;

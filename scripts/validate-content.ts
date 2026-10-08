@@ -3,6 +3,7 @@
  * Échoue si un fichier est invalide : la PR ne doit pas être fusionnée.
  */
 import { readdirSync, readFileSync, existsSync } from 'node:fs'
+import { execSync } from 'node:child_process'
 import path from 'node:path'
 import { parse } from 'yaml'
 import { ArticleSchema, BriefSchema } from '../src/lib/content-schema'
@@ -79,6 +80,26 @@ if (pending) warnings.push(`${pending} candidature(s) en attente de vérificatio
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
 for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)
+
+// Anonymat : la liste des mots interdits (identité de la personne qui édite) vit dans un secret GitHub,
+// jamais dans le dépôt. Sans le secret (poste local), le contrôle est sauté.
+const blocklist = (process.env.ANONYMITY_BLOCKLIST ?? '')
+  .split(',')
+  .map((w) => w.trim().toLowerCase().normalize('NFD').replace(/\p{M}/gu, ''))
+  .filter((w) => w.length >= 4)
+if (blocklist.length) {
+  const tracked = execSync('git ls-files -z', { encoding: 'utf8' }).split('\0').filter((f) => f && !/\.(png|jpe?g|ico|webp|woff2?|ttf|otf|pdf|docx)$/i.test(f))
+  for (const f of tracked) {
+    let text: string
+    try {
+      text = readFileSync(path.join(ROOT, f), 'utf8').toLowerCase().normalize('NFD').replace(/\p{M}/gu, '')
+    } catch {
+      continue
+    }
+    // Le fichier fautif est signalé, jamais le mot trouvé (les journaux de CI sont publics)
+    if (blocklist.some((w) => text.includes(w))) errors.push(`anonymat : ${f} contient un élément d’identité interdit`)
+  }
+}
 
 for (const w of warnings) console.warn(`⚠ ${w}`)
 if (errors.length) {

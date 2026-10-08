@@ -13,9 +13,7 @@ export default function TestPage() {
   return (
     <div className="container" style={{ paddingTop: 'var(--s5)' }}>
       <TestFlow />
-      <div className="narrow">
-        <SupportLine placement="test" />
-      </div>
+      <SupportLine placement="test" />
     </div>
   )
 }
