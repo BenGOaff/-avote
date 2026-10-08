@@ -10,7 +10,7 @@
 
 Vérifié le 8 octobre 2026 : parcours complet du test au navigateur, **aucune requête vers un domaine extérieur**, aucune erreur JavaScript.
 
-## En-têtes HTTP (`next.config.ts`)
+## En-têtes HTTP (`next.config.mjs`)
 
 CSP sans origine tierce, HSTS, `X-Frame-Options: DENY`, `nosniff`, `Permissions-Policy` restrictive. Sur `/test`, `/resultats`, `/mon-profil`, `/studio` : `Referrer-Policy: no-referrer`, `noindex`, `Cache-Control: private, no-store`.
 
