@@ -57,7 +57,7 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          POSITIONS_MODEL: ${{ vars.POSITIONS_MODEL }}
+          FICHES_MODEL: ${{ vars.FICHES_MODEL }}
           FICHES_BUDGET_USD: ${{ vars.FICHES_BUDGET_USD }}
         run: npx tsx scripts/fiches.ts
       - name: Valider
