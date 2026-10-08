@@ -7,6 +7,7 @@ import { itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
 import { BASIS_LABEL, positionLabel } from '@/lib/answers'
 import { formatDate } from '@/components/Editorial'
 import { PositionScale } from '@/components/Viz'
+import { PartyTrail } from '@/components/PartyTrail'
 import { absolute } from '@/lib/site'
 import fiches from '@content/acteurs/fiches.json'
 
@@ -57,6 +58,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
           <NuanceSourceLink />
         </span>
       </p>
+      <PartyTrail slug={a.slug} />
       <div className="measure">
         <p className="lede">
           {a.party ? `${a.party}. ` : ''}
