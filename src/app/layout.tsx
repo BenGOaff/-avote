@@ -6,6 +6,7 @@ import { SITE_URL } from '@/lib/site'
 import { TopBar } from '@/components/TopBar'
 import { TabBar } from '@/components/TabBar'
 import { Footer } from '@/components/Footer'
+import { ConsentBanner } from '@/components/ConsentBanner'
 import { ServiceWorker } from '@/components/ServiceWorker'
 import { Logo } from '@/components/Logo'
 
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <TabBar />
         <ServiceWorker />
+        <ConsentBanner />
       </body>
     </html>
   )

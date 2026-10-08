@@ -63,7 +63,7 @@ export function ProfileView() {
               </dd>
               <dt>Priorités</dt>
               <dd>{state.priorities ? 'Réparties' : 'Égales'}</dd>
-              <dt>Exigences</dt>
+              <dt>Lignes rouges</dt>
               <dd>{state.essentials.length}</dd>
               <dt>Conservation</dt>
               <dd>{state.persist === 'local' ? 'Sur cet appareil' : 'Jusqu’à la fermeture de l’onglet'}</dd>
@@ -121,7 +121,7 @@ export function ProfileView() {
           </section>
           <section className="card card--flat stack">
             <h2 style={{ fontSize: 'var(--h3)' }}>Tout effacer</h2>
-            <p className="small">Réponses, priorités, exigences, préférences d’affichage et fichiers mis en cache par le site. C’est immédiat et définitif.</p>
+            <p className="small">Réponses, jetons, lignes rouges, préférences d’affichage et fichiers mis en cache par le site. C’est immédiat et définitif.</p>
             <button
               className="btn btn--small"
               style={{ background: 'var(--correction)', borderColor: 'var(--correction)', color: '#fff' }}

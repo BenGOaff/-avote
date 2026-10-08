@@ -4,7 +4,7 @@
 
 1. Les réponses au test ne quittent jamais le navigateur : pas d’API `/score`, `/profile` ou équivalent, pas de table de profils.
 2. Aucune réponse politique n’est envoyée à un LLM.
-3. Aucune ressource tierce sur le site (polices, scripts, images) : la CSP l’interdit.
+3. Aucune ressource tierce sur le site (polices, scripts, images) : la CSP l’interdit. Exception : Google Analytics (googletagmanager.com, google-analytics.com), chargé seulement après consentement, coupé pendant le test et sur /test, /resultats, /mon-profil, /studio. Aucun événement personnalisé n’est envoyé.
 4. Les URL ne contiennent jamais de réponse, de score ou d’identifiant de profil.
 5. La newsletter ne reçoit aucune information du test.
 

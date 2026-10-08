@@ -248,7 +248,7 @@ export function rankActors(
     const We = essentials.reduce((acc, id) => acc + (weights.get(id) ?? 0), 0)
     const Wec = essentials.filter((id) => common.includes(id)).reduce((acc, id) => acc + (weights.get(id) ?? 0), 0)
     if (We > 0 && Wec / We < cfg.minEssentialCoverage)
-      reasons.push(`Tes sujets essentiels sont documentés à ${Math.round((Wec / We) * 100)} % chez tous les acteurs ; il en faut ${Math.round(cfg.minEssentialCoverage * 100)} %.`)
+      reasons.push(`Tes lignes rouges sont documentées à ${Math.round((Wec / We) * 100)} % chez tous les acteurs ; il en faut ${Math.round(cfg.minEssentialCoverage * 100)} %.`)
   }
 
   const ranked = reasons.length === 0

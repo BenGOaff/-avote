@@ -126,7 +126,7 @@ export default function MethodPage() {
           <li>tu as répondu à au moins {R.minAnswered} questions sur {questionnaire.items.length}, et à la moitié des questions dans au moins {R.minThemesHalfAnswered} thèmes ;</li>
           <li>les questions où tous les candidats affichés ont une position connue représentent au moins {R.minCommonWeightShare * 100} % du poids de tes réponses ;</li>
           <li>ces questions couvrent au moins {R.minCommonThemes} thèmes ;</li>
-          <li>si tu as marqué des exigences, au moins {R.minEssentialCoverage * 100} % d’entre elles sont documentées chez tous.</li>
+          <li>si tu as posé des lignes rouges, au moins {R.minEssentialCoverage * 100} % d’entre elles sont documentées chez tous.</li>
         </ul>
         <p>
           Sinon, les candidats sont listés par ordre alphabétique, avec la mention « Données insuffisamment comparables pour classer ». Un écart de moins de{' '}
@@ -134,8 +134,14 @@ export default function MethodPage() {
           le résultat l’indique.
         </p>
         <p>
-          <strong>Exigences.</strong> Les questions que tu marques comme essentielles apparaissent à part : « désaccord documenté » si l’écart atteint{' '}
-          {ENGINE_CONFIG.redLineDistance * 4} crans, « position inconnue » sinon. Elles ne retirent aucun point et n’éliminent aucun candidat.
+          <strong>Lignes rouges.</strong> Les questions sur lesquelles tu poses une ligne rouge apparaissent à part pour chaque candidat : « désaccord documenté » si
+          l’écart atteint {ENGINE_CONFIG.redLineDistance * 4} crans, « position inconnue » ou « position ambiguë » sinon. Elles ne retirent aucun point et
+          n’éliminent aucun candidat.
+        </p>
+        <p>
+          <strong>Lecture visuelle.</strong> Pour chaque candidat, une case par question répondue : proche (0 ou 1 cran d’écart), écart moyen (2 crans), opposé
+          (3 ou 4 crans), position ambiguë ou inconnue. Les curseurs du profil sont lus en mots : 0 à 20 « nettement », 20 à 40 « plutôt », 40 à 60 « entre les
+          deux », puis l’inverse jusqu’à 100. Ces lectures ne changent aucun calcul.
         </p>
 
         <h2 id="profil">Le résumé de tes réponses</h2>

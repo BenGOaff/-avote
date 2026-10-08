@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
 import { LEGAL, displayEmail } from '@/lib/legal'
+import { ConsentLink } from '@/components/ConsentBanner'
 
 export const metadata: Metadata = {
   title: 'Confidentialité : ce qu’on collecte et ce qu’on ne collecte pas',
@@ -12,11 +13,11 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="container">
-      <PageHeader kicker="Confidentialité" title="Ce qu’on sait de toi" lede="Pour le test : rien. Pour la newsletter : ton email et ton prénom, si tu les donnes. Le meilleur moyen de ne pas perdre tes opinions politiques, c’est de ne jamais les avoir." />
+      <PageHeader kicker="Confidentialité" title="Ce qu’on sait de toi" lede="Pour le test : rien. Pour la newsletter : ton email et ton prénom, si tu les donnes. Pour la fréquentation : des visites anonymes, si tu l’acceptes. Le meilleur moyen de ne pas perdre tes opinions politiques, c’est de ne jamais les avoir." />
       <div className="measure stack">
         <h2 style={{ fontSize: 'var(--h3)' }}>Le test</h2>
         <p>
-          Tes réponses, tes priorités, tes exigences et tes résultats sont calculés et gardés dans ton navigateur. Ils ne sont envoyés ni à notre serveur, ni à un
+          Tes réponses, tes jetons, tes lignes rouges et tes résultats sont calculés et gardés dans ton navigateur. Ils ne sont envoyés ni à notre serveur, ni à un
           prestataire, ni à une intelligence artificielle. Il n’y a pas de compte. Les opinions politiques sont des données sensibles au sens du RGPD : la
           meilleure protection reste de ne pas les recevoir.
         </p>
@@ -38,11 +39,28 @@ export default function PrivacyPage() {
         </p>
         <p>La newsletter n’a aucun lien avec le test. Elle ne sait pas si tu l’as fait, ni ce que tu as répondu, et elle n’est jamais segmentée selon des opinions.</p>
 
+        <h2 id="audience" style={{ fontSize: 'var(--h3)' }}>
+          Mesure d’audience, seulement si tu l’acceptes
+        </h2>
+        <p>
+          Si tu cliques sur « Accepter » dans le bandeau, Google Analytics mesure la fréquentation du site : pages vues, durée de visite, type d’appareil,
+          pays. Avant ton choix, rien n’est chargé. Si tu refuses, rien n’est chargé non plus et le site marche pareil.
+        </p>
+        <ul>
+          <li>Même accepté, il est coupé pendant les questions du test, sur tes résultats, ton profil et le studio. Il ne reçoit jamais tes réponses, ton score ni tes jetons.</li>
+          <li>Pas de signaux publicitaires, pas de personnalisation des annonces. Google Analytics n’enregistre pas l’adresse IP.</li>
+          <li>Cookies déposés : _ga et _ga_*, 13 mois au plus. Données détaillées conservées 2 mois chez Google Ireland Ltd et Google LLC (États-Unis, transfert encadré par le Data Privacy Framework).</li>
+          <li>Base légale : ton consentement. Ton choix est gardé 6 mois sur cet appareil, puis redemandé.</li>
+        </ul>
+        <p>
+          <ConsentLink /> Le retrait efface les cookies de mesure et coupe tout envoi.
+        </p>
+
         <h2 style={{ fontSize: 'var(--h3)' }}>Ce qu’il n’y a pas</h2>
         <ul>
           <li>Pas de cookie publicitaire, pas de pixel de réseau social, pas d’enregistrement de session.</li>
-          <li>Pas de police, de script ou d’image chargés depuis un autre site.</li>
-          <li>Pas de mesure d’audience sur le test, le profil et les résultats.</li>
+          <li>Pas de police ni d’image chargées depuis un autre site. Le seul script extérieur est celui de la mesure d’audience, et seulement si tu l’acceptes.</li>
+          <li>Pas de mesure d’audience pendant le test, sur les résultats, le profil et le studio.</li>
         </ul>
 
         <h2 style={{ fontSize: 'var(--h3)' }}>Journaux techniques</h2>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { AI_NOTICE } from '@/lib/copy'
 import { tiquizHref } from './Support'
+import { ConsentLink } from './ConsentBanner'
 
 export function Footer() {
   return (
@@ -33,6 +34,7 @@ export function Footer() {
           <li><Link href="/confidentialite">Confidentialité</Link></li>
           <li><Link href="/mentions-legales">Mentions légales</Link></li>
           <li><a href="/feed.xml">Flux RSS</a></li>
+          <li><ConsentLink /></li>
         </ul>
       </div>
     </footer>

@@ -53,3 +53,17 @@ export function mirrorRemark(themeId: string, itemIds: string[], answers: Answer
 
   return {}
 }
+
+/**
+ * Remarque facultative de la carte d'électeur. Elle commente les données (écarts, positions manquantes),
+ * jamais un candidat ni le lecteur. Masquée en mode sobre.
+ */
+export function resultQuip({ dims, ranking }: { dims: { index: number | null }[]; ranking: { ranked: boolean; entries: { closeToPrevious: boolean; score: { coverage: number } }[] } | null }): string | null {
+  if (ranking?.ranked && ranking.entries[1]?.closeToPrevious) return 'Photo-finish en tête. Les deux premiers se tiennent à moins de 2 points.'
+  const entries = ranking?.entries ?? []
+  if (entries.length > 0 && entries.reduce((a, e) => a + e.score.coverage, 0) / entries.length < 0.5)
+    return 'Toi, tu as répondu. Les candidats, pas encore à tout.'
+  const known = dims.filter((d) => d.index !== null)
+  if (known.length >= 5 && known.every((d) => Math.abs((d.index as number) - 50) <= 10)) return 'Beaucoup de « entre les deux ». Les programmes vont devoir être précis.'
+  return null
+}
