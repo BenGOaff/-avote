@@ -7,6 +7,9 @@ import { ArticleCard, BriefItem } from '@/components/Editorial'
 import { VeilleState } from '@/components/VeilleState'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { ExampleResult } from '@/components/ExampleResult'
+import { TestFlow } from './test/TestFlow'
+
+const TIQUIZ_URL = process.env.NEXT_PUBLIC_TIQUIZ_URL
 
 export const revalidate = 1800
 
@@ -16,21 +19,25 @@ export default function HomePage() {
   const actors = getAnnouncedActors()
   return (
     <>
-      <section className="hero container">
-        <p className="kicker">Présidentielle 2027</p>
-        <h1>{UI_COPY.home.title}</h1>
-        <p className="lede">{UI_COPY.home.lede}</p>
-        <div className="hero__cta">
-          <Link className="btn btn--highlight" href="/test">
-            {UI_COPY.home.cta}
-          </Link>
-          <Link className="btn btn--secondary" href="/radar">
-            {UI_COPY.home.ctaSecondary}
-          </Link>
-        </div>
-        <p className="hint" style={{ marginTop: 'var(--s3)' }}>
-          {UI_COPY.home.duration}
-        </p>
+      {/* L'accueil s'ouvre directement sur le quiz : Tiquiz s'il est configuré, sinon le test complet */}
+      <section className="container" style={{ paddingTop: 'var(--s5)' }} aria-label="Le quiz">
+        {TIQUIZ_URL ? (
+          <>
+            <p className="kicker">Présidentielle 2027</p>
+            <h1 style={{ fontSize: 'clamp(1.9rem, 4.5vw, 3rem)' }}>{UI_COPY.home.title}</h1>
+            <iframe
+              src={TIQUIZ_URL}
+              title="Le quiz Ça vote ?"
+              referrerPolicy="no-referrer"
+              style={{ width: '100%', minHeight: '85vh', border: 'var(--border) solid var(--ink)', borderRadius: 'var(--radius)', background: 'var(--surface)' }}
+            />
+            <p className="small" style={{ marginTop: 'var(--s3)' }}>
+              Pour voir quels candidats sont proches de tes réponses, sources à l’appui : <Link href="/test">le test complet</Link>.
+            </p>
+          </>
+        ) : (
+          <TestFlow />
+        )}
       </section>
 
       <section className="section container">

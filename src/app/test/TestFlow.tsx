@@ -335,30 +335,45 @@ function Intro({
   onStart: (persist: 'session' | 'local', restart: boolean) => void
 }) {
   const [persist, setPersist] = useState<'session' | 'local'>(state?.persist ?? 'session')
+  const startButtons =
+    answeredCount > 0 ? (
+      <>
+        <button className="btn btn--highlight" onClick={() => onStart(persist, false)}>
+          Reprendre ({answeredCount}/{set.items.length})
+        </button>
+        <button className="btn btn--secondary" onClick={() => onStart(persist, true)}>
+          Recommencer
+        </button>
+        <Link className="btn btn--ghost" href="/resultats">
+          Mes résultats
+        </Link>
+      </>
+    ) : (
+      <button className="btn btn--highlight" onClick={() => onStart(persist, true)}>
+        {UI_COPY.test.start}
+      </button>
+    )
   return (
     <div className="narrow">
-      <p className="kicker">Le test</p>
+      <p className="kicker">Présidentielle 2027</p>
       <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none' }}>
         Qu’est-ce qui compte pour toi ?
       </h1>
-      <ul className="stack" style={{ paddingLeft: '1.2em' }}>
-        <li>
-          {set.items.length} affirmations en 7 chapitres. Pour chacune : d’accord, pas d’accord, entre les deux, ou « je ne sais pas ».
-        </li>
-        <li>Tu peux passer une question et revenir en arrière à tout moment.</li>
-        <li>Ensuite, tu places 10 jetons sur les thèmes qui comptent le plus pour toi. C’est facultatif.</li>
-        <li>
-          Le résultat compare tes réponses aux positions documentées des candidats. Ce n’est pas une consigne de vote, et il dit toujours ce qui manque.
-        </li>
-      </ul>
+      <p className="lede">
+        {set.items.length} affirmations, une dizaine de minutes. Ensuite, on regarde qui propose quoi, sources à l’appui. Tes réponses restent sur ton
+        téléphone.
+      </p>
+      <div className="row" style={{ marginTop: 'var(--s4)' }}>
+        {startButtons}
+      </div>
 
-      <fieldset className="card" style={{ marginTop: 'var(--s5)' }}>
+      <fieldset className="card card--flat" style={{ marginTop: 'var(--s6)' }}>
         <legend className="visually-hidden">{UI_COPY.storage.title}</legend>
         <p style={{ fontWeight: 700, marginBottom: 'var(--s2)' }}>{UI_COPY.storage.title}</p>
-        <p>{UI_COPY.storage.body}</p>
+        <p className="small">{UI_COPY.storage.body}</p>
         <div role="radiogroup" className="answers">
           {(['session', 'local'] as const).map((k) => (
-            <button key={k} role="radio" aria-checked={persist === k} className="answer" onClick={() => setPersist(k)} style={{ alignItems: 'flex-start' }}>
+            <button key={k} role="radio" aria-checked={persist === k} className="answer answer--secondary" onClick={() => setPersist(k)} style={{ alignItems: 'flex-start' }}>
               <span className="answer__check" style={{ marginTop: 2 }}>
                 <IconCheck />
               </span>
@@ -372,28 +387,19 @@ function Intro({
         </div>
       </fieldset>
 
-      <div className="row" style={{ marginTop: 'var(--s5)' }}>
-        {answeredCount > 0 ? (
-          <>
-            <button className="btn btn--highlight" onClick={() => onStart(persist, false)}>
-              Reprendre ({answeredCount}/{set.items.length})
-            </button>
-            <button className="btn btn--secondary" onClick={() => onStart(persist, true)}>
-              Recommencer à zéro
-            </button>
-            <Link className="btn btn--ghost" href="/resultats">
-              Voir mes résultats
-            </Link>
-          </>
-        ) : (
-          <button className="btn btn--highlight" onClick={() => onStart(persist, true)}>
-            {UI_COPY.test.start}
-          </button>
-        )}
-      </div>
-      <p className="hint" style={{ marginTop: 'var(--s4)' }}>
-        Version des questions : {set.version} ({set.status}). <Link href="/methodologie#questions">Toutes les questions et leur codage</Link>
-      </p>
+      <details className="disclosure" style={{ marginTop: 'var(--s4)' }}>
+        <summary>Comment ça marche</summary>
+        <div>
+          <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
+            <li>Pour chaque affirmation : d’accord, pas d’accord, entre les deux, ou « je ne sais pas ». Tu peux passer et revenir en arrière.</li>
+            <li>Ensuite, tu places 10 jetons sur les thèmes qui comptent le plus pour toi. C’est facultatif.</li>
+            <li>Le résultat compare tes réponses aux positions documentées des candidats. Il dit toujours ce qui manque. Ce n’est pas une consigne de vote.</li>
+          </ul>
+          <p className="hint" style={{ margin: 'var(--s3) 0 0' }}>
+            Questions v{set.version}. <Link href="/methodologie#questions">Toutes les questions et le calcul</Link>
+          </p>
+        </div>
+      </details>
     </div>
   )
 }
