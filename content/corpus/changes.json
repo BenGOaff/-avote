@@ -3821,5 +3821,101 @@
     "from": "inconnue",
     "to": "-2",
     "source": "c24103cd51c3f506"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "sec-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "f30f3be7c52c6864"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "55ed36bc27f3205e"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "tra-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "b8e996866b90d25e"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "0033abab8e32d20a"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "cli-04",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "b8747938a11591f8"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "1286d1779664e3bc"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "32e546316aee2c8c"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "6724bd56d2bfd53c"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eur-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "79a3256fbd0ced0f"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "da111cc230316319"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "0772d3db97a972bf"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "1971afcb8b17fd66"
   }
 ]

@@ -2,7 +2,7 @@
   "version": "live-202610081823",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:23:36.781Z",
+  "publishedAt": "2026-10-08T18:23:49.207Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -2862,11 +2862,18 @@
         "note": "Programme du parti dont Philippot est le président, pas un engagement personnel retrouvé. Le titre de la mesure est catégorique (+2), mais le texte ajoute une condition (« si les Français le désirent ») et dépend du Frexit (+1). Aucun âge c"
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "b8e996866b90d25e"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:44.354Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Investissement « massif » dans l’hôpital, mais le programme ne dit rien des économies ou recettes qui le financeraient : +1 ou +2."
       },
       "tra-03": {
         "missing": true,
@@ -2897,25 +2904,40 @@
         "note": "Opposition explicite à la baisse des indemnités chômage. Le même livret qualifie les réformes du chômage de « réformes sociales non désirées par les Français ». Le « pourront » laisse une nuance (-1) face à une opposition par ailleurs nette"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "0772d3db97a972bf"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:44.354Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti. Maintien des services publics de proximité affirmé, sans mention explicite de leur coût : +1."
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "32e546316aee2c8c"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti présidé par Philippot. Hausse d’impôt pour « les plus riches », sans préciser qu’il s’agit de l’impôt sur le revenu : +1 ou +2."
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "6724bd56d2bfd53c"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti présidé par Philippot : rétablissement de l’impôt sur la fortune."
       },
       "eco-03": {
         "set": [
@@ -3013,11 +3035,15 @@
         "codedAt": "2026-10-08T15:22:20.891Z"
       },
       "sec-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "f30f3be7c52c6864"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Programme présidentiel 2022 de Philippot, rubrique libertés : interdiction catégorique."
       },
       "sec-04": {
         "value": 2,
@@ -3045,11 +3071,18 @@
         "codedAt": "2026-10-08T15:22:20.891Z"
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "0033abab8e32d20a"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Le projet 2026-2027 du parti reprend « un plan d’investissement massif dans le nucléaire de nouvelle génération ». Le mot « réacteur » n’apparaît pas : +1 ou +2."
       },
       "cli-02": {
         "missing": true,
@@ -3066,11 +3099,15 @@
         "codedAt": "2026-10-08T15:22:20.891Z"
       },
       "cli-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "b8747938a11591f8"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Rubrique pouvoir d’achat du programme 2022 : baisse, et non hausse, des taxes sur les carburants et le gaz."
       },
       "cli-05": {
         "missing": true,
@@ -3080,18 +3117,26 @@
         "codedAt": "2026-10-08T15:22:20.891Z"
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "1971afcb8b17fd66"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Projet du parti présidé par Philippot. Vise les normes de la PAC (jachère obligatoire) ; le même projet veut aussi faire du bio « la norme » : +1."
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "55ed36bc27f3205e"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "La charte actuelle des Patriotes dit aussi : « Le mode de scrutin proportionnel sera généralisé »."
       },
       "dem-02": {
         "value": 2,
@@ -3151,18 +3196,26 @@
         "note": "Projet du parti présidé par Philippot, pas un programme personnel 2027. Le parti veut sortir de l'UE (le Frexit est présenté comme la « clé de voute » du projet), ce qui est catégoriquement opposé à l'idée de confier plus de décisions à l'U"
       },
       "eur-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "79a3256fbd0ced0f"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:50.342Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti présidé par Philippot. Le parti veut par ailleurs sortir de l’UE (Frexit)."
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "1286d1779664e3bc"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Programme 2022. La charte actuelle des Patriotes demande aussi de « consacrer immédiatement 3 % de notre PIB au budget de la Défense et tendre vers les 4 % »."
       },
       "eur-04": {
         "value": 2,
@@ -3183,11 +3236,15 @@
         "codedAt": "2026-10-08T16:58:50.342Z"
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "da111cc230316319"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti. Objectif de 0,7 % du PIB, présenté comme un horizon (« tendre ») et lié à la réduction des flux migratoires : +1."
       }
     },
     "jean-luc-melenchon": {
@@ -11174,6 +11231,90 @@
       "publisher": "Comité de campagne Anasse Kazib 2027",
       "url": "https://anasse2027.fr/programme",
       "passage": "Pas un euro pour la guerre, démantèlement de la machine de guerre française, 2ème exportateur d'armes mondial."
+    },
+    {
+      "id": "f30f3be7c52c6864",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Interdiction en population générale de tout usage de système de reconnaissance faciale."
+    },
+    {
+      "id": "55ed36bc27f3205e",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Proportionnelle intégrale à toutes les élections. Mise en place d’un vrai référendum d’initiative citoyenne."
+    },
+    {
+      "id": "b8e996866b90d25e",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Fin de la tarification à l’activité. Plan d’investissement massif à l’hôpital et dans la recherche publique."
+    },
+    {
+      "id": "0033abab8e32d20a",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Réinvestissement massif dans le nucléaire de nouvelle génération. Sortie du marché européen de l’électricité pour retrouver la main sur les prix."
+    },
+    {
+      "id": "b8747938a11591f8",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Baisse immédiate de la fiscalité sur l’énergie (carburants, gaz, électricité)."
+    },
+    {
+      "id": "1286d1779664e3bc",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Doublement du budget de la défense en 5 ans pour faire face aux nouvelles"
+    },
+    {
+      "id": "32e546316aee2c8c",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "tout citoyen doit contribuer aux charges communes par une fiscalité équitable en fonction de ses revenus et de son patrimoine. En conséquence, ils allégeront l’impôt des classes moyennes et l’augmenteront pour les plus riches"
+    },
+    {
+      "id": "6724bd56d2bfd53c",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "ils allégeront l’impôt des classes moyennes et l’augmenteront pour les plus riches, notamment par le rétablissement de l’ISF."
+    },
+    {
+      "id": "79a3256fbd0ced0f",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "Aucune disposition juridique et aucune juridiction ne doivent être supérieures à la Constitution de la République et à la loi votée selon les dispositions de celle-ci."
+    },
+    {
+      "id": "da111cc230316319",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "engagent la France dans une politique de coopération et de développement extrêmement concrète. Elle doit tendre à y employer 0,7 % de son PIB."
+    },
+    {
+      "id": "0772d3db97a972bf",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "L’aménagement du territoire se traduit notamment par le maintien et le développement des services publics dans la ruralité, les petites villes et les banlieues."
+    },
+    {
+      "id": "1971afcb8b17fd66",
+      "title": "Grandes orientations pour un projet patriote – édition 2026-2027",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+      "passage": "Supprimer la PAC, ses normes absurdes (tel que le taux de jachère obligatoire) et ses contraintes administratives."
     }
   ],
   "refreshedAt": {
@@ -11184,7 +11325,7 @@
     "marine-le-pen": "2026-10-08T18:14:43.430Z",
     "eric-zemmour": "2026-10-08T18:10:26.755Z",
     "nicolas-dupont-aignan": "2026-10-08T15:16:54.685Z",
-    "florian-philippot": "2026-10-08T15:22:20.891Z",
+    "florian-philippot": "2026-10-08T18:23:49.207Z",
     "jean-luc-melenchon": "2026-10-08T18:15:13.925Z",
     "fabien-roussel": "2026-10-08T17:54:08.652Z",
     "marine-tondelier": "2026-10-08T15:37:56.399Z",
