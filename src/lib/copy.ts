@@ -69,8 +69,10 @@ export const UI_COPY = {
   results: {
     title: 'Voilà ce qui ressort de tes réponses.',
     scoreLabel: 'Proximité sur les sujets documentés',
-    notComparable: 'Données insuffisamment comparables pour classer.',
-    alphabetical: 'Liste par ordre alphabétique, pas par préférence.',
+    notComparable: 'Pas de podium pour l’instant.',
+    notComparableWhy: 'Pour départager honnêtement les candidats, il faut connaître leur position sur les mêmes questions. Ce n’est pas encore le cas : on n’invente pas un classement.',
+    notComparableDetail: 'Le détail',
+    alphabetical: 'En attendant, voici ta proximité avec chacun, sur ce qu’on sait de lui. Ordre alphabétique, pas de préférence.',
     close: 'Écart de moins de 2 points : l’ordre n’est pas déterminant.',
     sensitive: 'Ordre sensible aux hypothèses : en faisant varier un peu le poids des thèmes, le classement change.',
     unknown: 'On n’a pas trouvé de position explicite sur ce point.',

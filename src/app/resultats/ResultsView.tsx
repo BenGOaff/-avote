@@ -130,12 +130,18 @@ export function ResultsView() {
             {!ranking.ranked ? (
               <div className="alert">
                 <p className="alert__title">{R.notComparable}</p>
-                <ul className="small" style={{ margin: 'var(--s2) 0', paddingLeft: '1.2em' }}>
-                  {ranking.reasons.map((r) => (
-                    <li key={r}>{r}</li>
-                  ))}
-                </ul>
-                <p className="small" style={{ margin: 0 }}>
+                <p className="small" style={{ margin: 'var(--s2) 0' }}>
+                  {R.notComparableWhy}
+                </p>
+                <details className="sources">
+                  <summary>{R.notComparableDetail}</summary>
+                  <ul className="small" style={{ margin: 'var(--s2) 0', paddingLeft: '1.2em' }}>
+                    {ranking.reasons.map((r) => (
+                      <li key={r}>{r}</li>
+                    ))}
+                  </ul>
+                </details>
+                <p className="small" style={{ margin: 'var(--s2) 0 0' }}>
                   {R.alphabetical}
                 </p>
               </div>
