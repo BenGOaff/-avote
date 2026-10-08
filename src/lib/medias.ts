@@ -22,11 +22,43 @@ export interface MediaOwnership {
   checkedAt: string
 }
 
+export interface ArcomAlert {
+  date: string
+  kind: string
+  topic: string
+  summary: string
+  quote: string
+  url: string
+  publisher: string
+}
+
 export interface MediaEntry {
   slug: string
   name: string
   type: MediaType
   ownership: MediaOwnership | null
+  /** null : pas encore vérifié ; liste vide : vérifié, aucune décision relevée */
+  alerts: ArcomAlert[] | null
+  alertsCheckedAt: string | null
+}
+
+export const ALERT_KIND_LABEL: Record<string, string> = {
+  'mise-en-demeure': 'Mise en demeure',
+  'mise-en-garde': 'Mise en garde',
+  sanction: 'Sanction',
+  avertissement: 'Avertissement',
+  'non-renouvellement': 'Non-renouvellement',
+  'decision-conseil-etat': 'Conseil d’État',
+  autre: 'Décision',
+}
+
+export const ALERT_TOPIC_LABEL: Record<string, string> = {
+  pluralisme: 'Pluralisme',
+  'temps-de-parole': 'Temps de parole',
+  'honnetete-information': 'Honnêteté de l’information',
+  'independance-information': 'Indépendance de l’information',
+  'campagne-electorale': 'Campagne électorale',
+  'autre-politique': 'Information politique',
 }
 
 export const MEDIA_TYPE_LABEL: Record<MediaType, string> = { tv: 'Télévision', radio: 'Radio', presse: 'Presse', web: 'En ligne' }
@@ -45,9 +77,15 @@ export const CONTROLLER_KIND_LABEL: Record<string, string> = {
 }
 
 const owned = (store as { medias: Record<string, MediaOwnership> }).medias
+const alertes = ((store as { alertes?: Record<string, { checkedAt: string; items: ArcomAlert[] }> }).alertes ?? {}) as Record<string, { checkedAt: string; items: ArcomAlert[] }>
 
 export function getMedias(): MediaEntry[] {
-  return (liste.medias as { slug: string; name: string; type: MediaType }[]).map((m) => ({ ...m, ownership: owned[m.slug] ?? null }))
+  return (liste.medias as { slug: string; name: string; type: MediaType }[]).map((m) => ({
+    ...m,
+    ownership: owned[m.slug] ?? null,
+    alerts: alertes[m.slug]?.items ?? null,
+    alertsCheckedAt: alertes[m.slug]?.checkedAt ?? null,
+  }))
 }
 
 export const mediasUpdatedAt = (store as { updatedAt: string | null }).updatedAt

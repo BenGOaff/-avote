@@ -17,6 +17,7 @@ import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
 import { canonicalUrl, quoteIsInSource } from './veille-lib'
 import { collectEvidence, fetchText } from './web-lib'
+import { CostMeter, budgetFromEnv } from './cost'
 
 const ROOT = process.cwd()
 const args = process.argv.slice(2)
@@ -26,6 +27,11 @@ const LIMIT = Number(arg('limit') ?? 10)
 const MODEL = process.env.MEDIAS_MODEL || process.env.POSITIONS_MODEL || 'claude-opus-5-5'
 const EFFORT = (process.env.MEDIAS_EFFORT || 'high') as 'low' | 'medium' | 'high'
 const PARALLEL = Number(process.env.MEDIAS_PARALLEL || 3)
+const meter = new CostMeter('Médias', budgetFromEnv('MEDIAS_BUDGET_USD', 3))
+const ALERTS = args.includes('--alertes')
+// Une fiche établie est revérifiée après 120 jours ; les alertes Arcom après 90 jours
+const MAX_AGE = 120 * 86_400_000
+const ALERTS_MAX_AGE = 90 * 86_400_000
 const LIST = path.join(ROOT, 'content/medias/liste.json')
 const OUT = path.join(ROOT, 'content/medias/proprietaires.json')
 
@@ -47,7 +53,19 @@ interface MediaOwnership {
   checkedAt: string
   model: string
 }
-const store: { updatedAt: string | null; medias: Record<string, MediaOwnership> } = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : { updatedAt: null, medias: {} }
+interface Alert {
+  date: string
+  kind: string
+  topic: string
+  summary: string
+  quote: string
+  url: string
+  publisher: string
+}
+const store: { updatedAt: string | null; medias: Record<string, MediaOwnership>; alertes?: Record<string, { checkedAt: string; items: Alert[] }> } = existsSync(OUT)
+  ? JSON.parse(readFileSync(OUT, 'utf8'))
+  : { updatedAt: null, medias: {} }
+store.alertes ??= {}
 
 const client = new Anthropic()
 
@@ -101,12 +119,13 @@ Qui le possède aujourd'hui, et qui le contrôle en dernier ressort ?${known.len
         system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
         output_config: { effort: EFFORT },
         tools: [
-          { type: 'web_search_20260209', name: 'web_search', max_uses: 5, user_location: { type: 'approximate', country: 'FR' } },
-          { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 6, max_content_tokens: 20000 },
+          { type: 'web_search_20260209', name: 'web_search', max_uses: 3, user_location: { type: 'approximate', country: 'FR' } },
+          { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 4, max_content_tokens: 10000 },
         ],
         messages,
       })
       .finalMessage()
+    meter.add(res.model, res.usage)
     collectEvidence(res.content, evidence)
     text += res.content.map((b) => (b.type === 'text' ? b.text : '')).join('')
     if (res.stop_reason === 'refusal') throw new Error('refus du modèle')
@@ -132,6 +151,7 @@ async function toStructured(text: string): Promise<FoundOut | null> {
     output_config: { effort: 'low', format: betaZodOutputFormat(Found) },
     messages: [{ role: 'user', content: `Convertis ce compte rendu en JSON conforme au schéma, sans rien ajouter ni changer :\n\n${text.slice(-20000)}` }],
   })
+  meter.add(res.model, res.usage)
   return res.parsed_output ?? null
 }
 
@@ -146,6 +166,108 @@ function quoteNamesOwner(quote: string, f: FoundOut): boolean {
       .filter((w) => w.length >= 4 && !['groupe', 'famille', 'societe', 'france', 'media', 'medias'].includes(w))
       .some((w) => q.includes(w)),
   )
+}
+
+/** Coupe à la dernière phrase complète sous la limite (jamais au milieu d'un mot). */
+function clip(t: string, max: number): string {
+  if (t.length <= max) return t
+  const cut = t.slice(0, max)
+  const end = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('.\u00a0'))
+  return end > 40 ? cut.slice(0, end + 1) : cut.slice(0, cut.lastIndexOf(' ')) + '…'
+}
+
+// ---------------------------------------------------------------------------
+// Alertes Arcom (télévision et radio) : décisions liées à l'information politique
+// ---------------------------------------------------------------------------
+
+const ALERT_DOMAINS = ['arcom.fr', 'conseil-etat.fr', 'legifrance.gouv.fr']
+
+const AlertsOut = z.object({
+  alerts: z.array(
+    z.object({
+      date: z.string().describe('Date de la décision AAAA-MM-JJ'),
+      kind: z.enum(['mise-en-demeure', 'mise-en-garde', 'sanction', 'avertissement', 'non-renouvellement', 'decision-conseil-etat', 'autre']),
+      topic: z.enum(['pluralisme', 'temps-de-parole', 'honnetete-information', 'independance-information', 'campagne-electorale', 'autre-politique']),
+      summary: z.string().describe('Une phrase factuelle : qui a décidé quoi, pour quel motif, dans les termes de la décision. Aucun adjectif.'),
+      quote: z.string().describe('Passage copié mot pour mot de la décision ou du communiqué (50 à 300 caractères)'),
+      url: z.string(),
+      publisher: z.string(),
+    }),
+  ),
+})
+
+async function researchAlerts(m: { name: string }, evidence: Map<string, string>): Promise<z.infer<typeof AlertsOut> | null> {
+  const messages: Anthropic.Beta.BetaMessageParam[] = [
+    {
+      role: 'user',
+      content: `Chaîne ou radio : ${m.name} (France).
+
+Liste les décisions de l'Arcom (ou du CSA avant 2022) et du Conseil d'État visant ce média depuis 2017 qui portent sur l'information politique : pluralisme, temps de parole des personnalités politiques, honnêteté ou indépendance de l'information, traitement d'une campagne électorale. Mises en demeure, mises en garde, sanctions, non-renouvellement d'autorisation. Ignore tout ce qui ne touche pas à la politique (publicité, protection des mineurs, jeux, etc.).
+
+Ne cite que des décisions lues sur arcom.fr, conseil-etat.fr ou legifrance.gouv.fr. Recopie le motif dans les termes de la décision, sans commentaire. Si tu n'en trouves aucune, renvoie une liste vide : c'est une réponse valable.
+
+Termine par un bloc \`\`\`json {"alerts": [...]} avec date, kind, topic, summary, quote, url, publisher.`,
+    },
+  ]
+  let text = ''
+  for (let turn = 0; turn < 4; turn++) {
+    const res = await client.beta.messages
+      .stream({
+        model: MODEL,
+        max_tokens: 16000,
+        betas: ['server-side-fallback-2026-07-01'],
+        fallbacks: 'default',
+        system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
+        output_config: { effort: EFFORT },
+        tools: [
+          { type: 'web_search_20260209', name: 'web_search', max_uses: 3, allowed_domains: ALERT_DOMAINS },
+          { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 4, max_content_tokens: 10000, allowed_domains: ALERT_DOMAINS },
+        ],
+        messages,
+      })
+      .finalMessage()
+    meter.add(res.model, res.usage)
+    collectEvidence(res.content, evidence)
+    text += res.content.map((b) => (b.type === 'text' ? b.text : '')).join('')
+    if (res.stop_reason === 'refusal') throw new Error('refus du modèle')
+    if (res.stop_reason !== 'pause_turn') break
+    messages.push({ role: 'assistant', content: res.content })
+  }
+  const block = [...text.matchAll(/```json\s*([\s\S]*?)```/g)].pop()?.[1]
+  if (!block) return null
+  try {
+    const parsed = AlertsOut.safeParse(JSON.parse(block))
+    return parsed.success ? parsed.data : null
+  } catch {
+    return null
+  }
+}
+
+async function establishAlerts(m: { slug: string; name: string }) {
+  const evidence = new Map<string, string>()
+  let out: z.infer<typeof AlertsOut> | null = null
+  try {
+    out = await researchAlerts(m, evidence)
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e)
+    if (FATAL.test(msg)) fatal = msg
+    return console.warn(`${m.name} (Arcom) : ${msg}`)
+  }
+  if (!out) return console.warn(`${m.name} (Arcom) : réponse illisible, rien n'est publié`)
+  const items: Alert[] = []
+  for (const a of out.alerts) {
+    const url = canonicalUrl(a.url)
+    if (!url || !ALERT_DOMAINS.some((d) => new URL(url).hostname.endsWith(d))) continue
+    const page = evidence.get(url) ?? (await fetchText(url))
+    if (!page || !quoteIsInSource(a.quote, page)) {
+      console.warn(`${m.name} (Arcom) : citation introuvable, décision du ${a.date} écartée`)
+      continue
+    }
+    items.push({ date: a.date, kind: a.kind, topic: a.topic, summary: clip(a.summary.trim(), 280), quote: a.quote.slice(0, 320), url, publisher: a.publisher.slice(0, 80) || new URL(url).hostname })
+  }
+  items.sort((a, b) => b.date.localeCompare(a.date))
+  store.alertes![m.slug] = { checkedAt: new Date().toISOString(), items }
+  console.log(`${m.name} (Arcom) : ${items.length} décision(s)`)
 }
 
 const FATAL = /credit balance|authentication_error|invalid x-api-key|permission_error/i
@@ -174,7 +296,7 @@ async function establish(m: { slug: string; name: string; type: string }) {
     controller: f.controller.slice(0, 160),
     controllerKind: f.controllerKind,
     otherMedia: f.otherMedia.slice(0, 12).map((x) => x.slice(0, 80)),
-    note: f.note.slice(0, 300),
+    note: clip(f.note, 300),
     quote: f.quote.slice(0, 320),
     url,
     sourceTitle: f.sourceTitle.slice(0, 200) || url,
@@ -187,19 +309,27 @@ async function establish(m: { slug: string; name: string; type: string }) {
 }
 
 async function main() {
-  let targets = ONLY ? list.medias.filter((m) => m.slug === ONLY) : list.medias
-  if (!ONLY) targets = [...targets].sort((a, b) => (store.medias[a.slug]?.checkedAt ?? '').localeCompare(store.medias[b.slug]?.checkedAt ?? '')).slice(0, LIMIT)
+  const stale = (iso: string | undefined, maxAge: number) => !iso || Date.now() - Date.parse(iso) > maxAge
+  // L'Arcom régule la télévision et la radio, pas la presse écrite ni les sites
+  const pool = ALERTS ? list.medias.filter((m) => m.type === 'tv' || m.type === 'radio') : list.medias
+  let targets = ONLY ? pool.filter((m) => m.slug === ONLY) : pool
+  if (!ONLY)
+    targets = targets
+      .filter((m) => (ALERTS ? stale(store.alertes![m.slug]?.checkedAt, ALERTS_MAX_AGE) : stale(store.medias[m.slug]?.checkedAt, MAX_AGE)))
+      .sort((a, b) => ((ALERTS ? store.alertes![a.slug]?.checkedAt : store.medias[a.slug]?.checkedAt) ?? '').localeCompare((ALERTS ? store.alertes![b.slug]?.checkedAt : store.medias[b.slug]?.checkedAt) ?? ''))
+      .slice(0, LIMIT)
   // Une fiche retirée de la liste disparaît de la page
   for (const slug of Object.keys(store.medias)) if (!list.medias.some((m) => m.slug === slug)) delete store.medias[slug]
   const queue = [...targets]
   await Promise.all(
     Array.from({ length: Math.min(PARALLEL, queue.length) }, async () => {
-      for (let m = queue.shift(); m && !fatal; m = queue.shift()) await establish(m)
+      for (let m = queue.shift(); m && !fatal && !meter.exhausted; m = queue.shift()) await (ALERTS ? establishAlerts(m) : establish(m))
     }),
   )
   store.updatedAt = new Date().toISOString()
   writeFileSync(OUT, JSON.stringify(store, null, 2) + '\n')
   console.log(`${Object.keys(store.medias).length} fiches établies sur ${list.medias.length}.`)
+  meter.report()
   if (fatal) throw new Error(`API Claude indisponible : ${fatal}`)
 }
 

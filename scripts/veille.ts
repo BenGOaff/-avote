@@ -17,6 +17,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 import path from 'node:path'
 import Anthropic from '@anthropic-ai/sdk'
+import { CostMeter, budgetFromEnv } from './cost'
 import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
 import {
@@ -38,6 +39,9 @@ const WITH_ARTICLE = args.has('--article')
 const MAX = Number([...args].find((a) => a.startsWith('--max='))?.split('=')[1] ?? 6)
 const MODEL = process.env.VEILLE_MODEL || 'claude-opus-5-5'
 const EFFORT = (process.env.VEILLE_EFFORT || 'medium') as 'low' | 'medium' | 'high'
+// Tri des extraits : tâche simple, un modèle moins cher peut suffire (VEILLE_SELECT_MODEL)
+const SELECT_MODEL = process.env.VEILLE_SELECT_MODEL || MODEL
+const meter = new CostMeter('Veille', budgetFromEnv('VEILLE_BUDGET_USD', 0.5))
 const WINDOW_HOURS = 36
 const SEEN_FILE = process.env.SEEN_FILE || path.join(ROOT, 'content/veille/seen.json')
 const STATUS_FILE = path.join(ROOT, 'content/veille/status.json')
@@ -119,7 +123,7 @@ const Selection = z.object({
 async function select(items: RawItem[]): Promise<z.infer<typeof Selection>> {
   const list = items.map((i) => `[${i.id}] (${i.feedName}${i.date ? `, ${i.date}` : ''}) ${i.title} — ${i.summary.slice(0, 300)}`).join('\n')
   const res = await client.beta.messages.parse({
-    model: MODEL,
+    model: SELECT_MODEL,
     max_tokens: 8000,
     betas: ['server-side-fallback-2026-07-01'],
     fallbacks: 'default',
@@ -140,6 +144,7 @@ La viralité supposée n'est pas un critère. Applique les mêmes critères quel
       },
     ],
   })
+  meter.add(res.model, res.usage)
   if (res.stop_reason === 'refusal' || !res.parsed_output) return { stories: [], candidacies: [] }
   const known = new Set(items.map((i) => i.id))
   return {
@@ -235,6 +240,7 @@ async function writeBrief(story: { itemIds: string[]; primaryId: string }, byId:
     output_config: { effort: EFFORT, format: betaZodOutputFormat(BriefOut) },
     messages: [{ role: 'user', content: `Écris une brève pour le fil d'actu à partir de ces extraits.\n\n${extraits}` }],
   })
+  meter.add(res.model, res.usage)
   const out = res.parsed_output
   if (res.stop_reason === 'refusal' || !out) return log('refus ou sortie vide', primary.title)
   if (!out.sufficient) return log('extraits insuffisants', primary.title)
@@ -313,6 +319,7 @@ ${extraits}`,
     ],
   })
   const res = await stream.finalMessage()
+  meter.add(res.model, res.usage)
   const textBlock = res.content.find((b) => b.type === 'text')
   if (res.stop_reason === 'refusal' || !textBlock || textBlock.type !== 'text') return log('article : refus ou vide', items[0]!.title)
   const parsed = ArticleOut.safeParse(JSON.parse(textBlock.text))
@@ -397,6 +404,7 @@ async function main() {
     const stories = selection.stories
     if (!DRY) candidacyChanges.push(...applyCandidacies(selection.candidacies, byId, now))
     for (const s of stories.slice(0, MAX)) {
+      if (meter.exhausted) break
       try {
         const d = await writeBrief(s, byId, now)
         if (d) drafts.push(d)
@@ -404,7 +412,7 @@ async function main() {
         log(`erreur API ${e instanceof Anthropic.APIError ? e.status : ''}`, byId.get(s.primaryId)?.title ?? '')
       }
     }
-    if (WITH_ARTICLE) {
+    if (WITH_ARTICLE && !meter.exhausted) {
       const top = stories.find((s) => new Set(s.itemIds.map((id) => byId.get(id)?.feedId)).size >= 2)
       if (top) {
         try {
@@ -454,6 +462,7 @@ async function main() {
   ].join('\n')
   writeFileSync(path.join(ROOT, '.veille-summary.md'), summary)
   console.log(summary)
+  meter.report()
 }
 
 main().catch((e) => {

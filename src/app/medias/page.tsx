@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { PageHeader } from '@/components/PageHeader'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { formatDate } from '@/components/Editorial'
-import { CONTROLLER_KIND_LABEL, MEDIA_TYPE_LABEL, byController, getMedias, mediasUpdatedAt, type MediaType } from '@/lib/medias'
+import { ALERT_KIND_LABEL, ALERT_TOPIC_LABEL, CONTROLLER_KIND_LABEL, MEDIA_TYPE_LABEL, byController, getMedias, mediasUpdatedAt, type ArcomAlert, type MediaType } from '@/lib/medias'
 
 export const metadata: Metadata = {
   title: 'Qui possède ton info : les propriétaires des médias français',
@@ -50,6 +50,7 @@ export default function MediasPage() {
                     {g.medias.map((m) => (
                       <li key={m.slug}>
                         <a href={`#${m.slug}`}>{m.name}</a> <span className="hint">{MEDIA_TYPE_LABEL[m.type]}</span>
+                        {m.alerts && m.alerts.length > 0 && <span className="stamp stamp--alert">Arcom × {m.alerts.length}</span>}
                       </li>
                     ))}
                   </ul>
@@ -94,6 +95,7 @@ export default function MediasPage() {
                           <blockquote className="small" style={{ margin: 'var(--s3) 0', paddingLeft: 'var(--s3)', borderLeft: 'var(--border) solid var(--line)' }}>
                             « {o.quote} »
                           </blockquote>
+                          {(m.type === 'tv' || m.type === 'radio') && <Alerts alerts={m.alerts} checkedAt={m.alertsCheckedAt} />}
                           <p className="hint" style={{ margin: 0 }}>
                             Source :{' '}
                             <a href={o.url} rel="noopener noreferrer nofollow" target="_blank">
@@ -122,6 +124,11 @@ export default function MediasPage() {
           Comment les fiches sont établies
         </h2>
         <ul>
+          <li>
+            Pour la télévision et la radio, les décisions de l’Arcom (et du CSA avant 2022) et du Conseil d’État qui touchent à l’information politique : pluralisme,
+            temps de parole, honnêteté et indépendance de l’information, campagnes électorales. Seules les décisions lues sur arcom.fr, conseil-etat.fr ou
+            legifrance.gouv.fr sont retenues, avec un extrait vérifié. La presse écrite et les sites ne dépendent pas de l’Arcom.
+          </li>
           <li>Une IA cherche qui possède le média aujourd’hui, de préférence dans une source officielle (site du groupe, rapport annuel, Arcom), sinon dans un article de presse daté.</li>
           <li>La fiche cite un passage mot pour mot. Un script relit la page et vérifie que le passage y figure et qu’il nomme le propriétaire. Sinon, rien n’est publié.</li>
           <li>Le capital et le contrôle ne sont pas la même chose : la fiche distingue l’actionnaire direct et celui qui décide en dernier ressort.</li>
@@ -131,6 +138,33 @@ export default function MediasPage() {
         <h2 style={{ fontSize: 'var(--h3)' }}>Être prévenu des changements</h2>
         <NewsletterForm />
       </section>
+    </div>
+  )
+}
+
+function Alerts({ alerts, checkedAt }: { alerts: ArcomAlert[] | null; checkedAt: string | null }) {
+  if (alerts === null) return null
+  if (alerts.length === 0)
+    return (
+      <p className="small muted" style={{ margin: 'var(--s3) 0' }}>
+        Arcom : aucune décision liée à l’information politique relevée (vérifié le {formatDate(checkedAt ?? '')}).
+      </p>
+    )
+  return (
+    <div className="alerts">
+      <p className="alerts__title">Épinglé par l’Arcom</p>
+      <ul>
+        {alerts.map((a) => (
+          <li key={a.url + a.date}>
+            <span className="stamp stamp--alert">{ALERT_KIND_LABEL[a.kind] ?? a.kind}</span> <strong>{formatDate(a.date)}</strong> · {ALERT_TOPIC_LABEL[a.topic] ?? a.topic}
+            <br />
+            {a.summary}{' '}
+            <a href={a.url} rel="noopener noreferrer nofollow" target="_blank" className="small">
+              {a.publisher}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

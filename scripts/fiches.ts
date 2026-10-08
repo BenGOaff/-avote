@@ -12,19 +12,21 @@ import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
 import { numbersAreSourced, styleViolations } from './veille-lib'
 import type { Corpus, CorpusSource, Position } from '../src/lib/engine/types'
+import { CostMeter, budgetFromEnv } from './cost'
 
 const ROOT = process.cwd()
 const ONLY = process.argv.find((a) => a.startsWith('--actor='))?.split('=')[1]
 const MODEL = process.env.POSITIONS_MODEL || process.env.VEILLE_MODEL || 'claude-opus-5-5'
 const OUT = path.join(ROOT, 'content/acteurs/fiches.json')
 const MIN_KNOWN = 5
+const meter = new CostMeter('Fiches', budgetFromEnv('FICHES_BUDGET_USD', 1))
 
 const VOICE = readFileSync(path.join(ROOT, 'content/voix/profil-vocal.md'), 'utf8')
 const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.1.0.json'), 'utf8')) as {
   themes: { id: string; label: string }[]
   items: { id: string; theme: string; text: string }[]
 }
-const live = JSON.parse(readFileSync(path.join(ROOT, 'content/corpus/live.json'), 'utf8')) as Corpus & { sources: CorpusSource[] }
+const live = JSON.parse(readFileSync(path.join(ROOT, 'content/corpus/live.json'), 'utf8')) as Corpus & { sources: CorpusSource[]; refreshedAt?: Record<string, string> }
 const fiches: Record<string, { analysis: string; remark: string; basedOn: string; generatedAt: string; model: string }> = existsSync(OUT)
   ? JSON.parse(readFileSync(OUT, 'utf8'))
   : {}
@@ -45,6 +47,10 @@ async function main() {
     const pos = live.positions[actor.slug] ?? {}
     const known = Object.entries(pos).filter(([, p]) => !('missing' in p))
     if (known.length < MIN_KNOWN) continue
+    // Synthèse inchangée tant que les positions n'ont pas bougé
+    const prev = fiches[actor.slug]
+    if (!ONLY && prev && prev.generatedAt >= (live.refreshedAt?.[actor.slug] ?? '')) continue
+    if (meter.exhausted) break
     const unknownThemes = questionnaire.themes
       .map((t) => ({ t, n: questionnaire.items.filter((i) => i.theme === t.id && (!pos[i.id] || 'missing' in pos[i.id]!)).length }))
       .filter((x) => x.n >= 3)
@@ -73,6 +79,7 @@ async function main() {
         },
       ],
     })
+    meter.add(res.model, res.usage)
     const out = res.parsed_output
     if (res.stop_reason === 'refusal' || !out) continue
     const all = `${out.analysis} ${out.remark}`
@@ -84,6 +91,7 @@ async function main() {
     console.log(`${actor.name} : synthèse écrite`)
   }
   writeFileSync(OUT, JSON.stringify(fiches, null, 2) + '\n')
+  meter.report()
 }
 
 main().catch((e) => {
