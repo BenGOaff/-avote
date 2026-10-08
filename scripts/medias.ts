@@ -169,7 +169,7 @@ const AlertsOut = z.object({
       date: z.string().describe('Date de la décision AAAA-MM-JJ'),
       kind: z.enum(['mise-en-demeure', 'mise-en-garde', 'sanction', 'avertissement', 'non-renouvellement', 'decision-conseil-etat', 'autre']),
       topic: z.enum(['pluralisme', 'temps-de-parole', 'honnetete-information', 'independance-information', 'campagne-electorale', 'autre-politique']),
-      summary: z.string().describe('Une phrase factuelle : qui a décidé quoi, pour quel motif, dans les termes de la décision. Aucun adjectif.'),
+      summary: z.string().describe('Une phrase factuelle : qui a décidé quoi, pour quel motif, dans les termes de la décision. Aucun adjectif. Uniquement la décision : aucune remarque sur ta recherche (« non lu », « selon le point… »).'),
       quote: z.string().describe('Passage copié mot pour mot de la décision ou du communiqué (50 à 300 caractères)'),
       url: z.string(),
       publisher: z.string(),
