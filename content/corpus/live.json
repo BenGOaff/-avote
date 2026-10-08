@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081811",
+  "version": "live-202610081812",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:11:37.885Z",
+  "publishedAt": "2026-10-08T18:12:55.891Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -182,18 +182,29 @@
         "codedAt": "2026-10-08T14:44:37.471Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "c344f0c31516c81d"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Rejette la taxe Zucman et le retour de l’ISF. Son programme 2027 prévoit un « moratoire normatif et fiscal : pas de nouvelle norme et de nouvel impôt sur le quinquennat ». Au meeting du 5 juillet 2026, il demande aux plus aisés de « contrib"
       },
       "eco-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "67b06993c9b28f53"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Le texte vise le déficit, pas la dette elle-même. Il prévoit aussi des dépenses nouvelles (armées, Fonds vert doublé). Au meeting du 5 juillet 2026, il dit qu’il faudra « agir assez fortement sur la dépense ailleurs » pour les financer : d’"
       },
       "eco-04": {
         "missing": true,
@@ -228,11 +239,18 @@
         "note": "Déclaration du candidat depuis 2024 : vidéo sur sa chaîne YouTube, citée entre guillemets par LCP. Il propose de relever l'âge légal (pas de l'abaisser), d'abord en reprenant la réforme de 2023, puis en passant à 65 ans en moins de dix ans."
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "ambigu",
+        "sources": [
+          "7859d0443cf73f3a"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Le programme vise l’ensemble des dépenses de santé, pas l’hôpital public en particulier. Il ne dit pas si des moyens peuvent être redéployés vers l’hôpital, d’où deux niveaux possibles."
       },
       "tra-03": {
         "missing": true,
@@ -242,11 +260,18 @@
         "codedAt": "2026-10-08T16:56:45.563Z"
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "13c65ec9c183ddf3"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Il parle de l’encadrement des loyers. Il se dit « plutôt contre », mais reprend aussi la formule de l’économiste Assar Lindbeck, qui compare cet encadrement à un bombardement : « Cela résume plutôt bien mon positionnement ». Comme maire, il"
       },
       "tra-05": {
         "value": 2,
@@ -274,18 +299,26 @@
         "codedAt": "2026-10-08T14:44:37.471Z"
       },
       "sec-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "fb453b3a12e5c1b0"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Il veut l’inverse de l’affirmation : plus de courtes peines de prison, pas leur remplacement. Au meeting du 5 juillet 2026, il a précisé : « condamner très tôt, à des peines de prison très courtes, systématiques »."
       },
       "sec-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "3768d9d6f5ba7e8a"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Le programme admet la reconnaissance faciale, mais de façon ciblée, contre le narcotrafic et dans un régime d’exception limité dans le temps et l’espace. Ce n’est pas une autorisation générale dans l’espace public."
       },
       "sec-04": {
         "set": [
@@ -383,11 +416,18 @@
         "note": "Déclaration publique du candidat (2025), entre guillemets dans l'article. Il trouve normal d'aider quelqu'un à mourir mais refuse de l'inscrire dans la loi, alors que l'affirmation porte sur un accès légal. Réticence nuancée (-1), à la limi"
       },
       "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "cdc2f52b3e2335c6"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Il soutient la loi Marcangeli de 2023, qui limite l’accès des mineurs aux réseaux sociaux (accord parental sous 15 ans). Ce n’est pas une interdiction pure, d’où deux niveaux possibles."
       },
       "lib-03": {
         "missing": true,
@@ -446,11 +486,18 @@
         "note": "Même page : « la France doit se réarmer et donner à ses armées la masse qui leur manque ». S'y ajoutent les réservistes portés de 45 000 à 250 000, un plan munitions et plus de drones. Une hausse des moyens est clairement voulue, mais le te"
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "4c695bd9d7ce3180"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Il défend le commerce (« le commerce est une chance pour la France »), mais veut aussi « remettre des frontières, des protections ». Il ne parle pas directement du nombre d’accords de libre-échange de l’UE, d’où deux niveaux possibles. Lett"
       },
       "eur-05": {
         "missing": true,
@@ -509,11 +556,15 @@
         "codedAt": "2026-10-08T14:44:37.471Z"
       },
       "dem-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "11ce14725812d007"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-08T18:12:55.891Z",
+        "note": "Il veut plus de libertés pour les collectivités. Son programme donne aux maires un pouvoir de sanction pénale. Il ne parle pas de ressources propres, d’où « plutôt favorable »."
       },
       "dem-06": {
         "missing": true,
@@ -10466,10 +10517,79 @@
       "url": "https://doc.parti.re/2026/Discours_Europe.pdf",
       "date": "2026-09-17",
       "passage": "Pour toutes ces politiques que j’ai égrainées, nous pouvons nous donner les moyens de nos décisions : des ressources communes, un Trésor unique capable d’émettre une dette commune pour financer nos investissements d’avenir."
+    },
+    {
+      "id": "c344f0c31516c81d",
+      "title": "Ma proposition aux entrepreneurs, pour une politique économique de prospérité",
+      "publisher": "Horizons (texte signé d’Édouard Philippe, publié d’abord sur LinkedIn)",
+      "url": "https://horizonsleparti.fr/ma-proposition-aux-entrepreneurs/",
+      "date": "2025-11-06",
+      "passage": "préparer l’avenir en aidant la jeunesse à réussir plutôt qu’en s’abandonnant et en se déchirant dans des débats d’arrière-garde : la suspension d’une réforme des retraites que chacun sait nécessaire, l’absurde taxe Zucman, le retour de l’ISF"
+    },
+    {
+      "id": "67b06993c9b28f53",
+      "title": "Pour une France plus prospère — Avec Édouard 2027",
+      "publisher": "Avec Édouard 2027 (site de campagne d’Édouard Philippe)",
+      "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+      "date": "2026-07-05",
+      "passage": "Inscrire dans la Constitution une règle d’or de maîtrise des déficits, et ramener le déficit de plus de 5 % à 2 % du PIB en fin de quinquennat"
+    },
+    {
+      "id": "7859d0443cf73f3a",
+      "title": "Pour une France plus prospère — Avec Édouard 2027",
+      "publisher": "Avec Édouard 2027 (site de campagne d’Édouard Philippe)",
+      "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+      "date": "2026-07-05",
+      "passage": "Stabiliser les dépenses de santé en dépensant mieux, en misant sur la prévention et les transformations technologiques plutôt que sur la seule hausse des moyens."
+    },
+    {
+      "id": "13c65ec9c183ddf3",
+      "title": "« Renforcer le droit du propriétaire pour fluidifier le marché » (Édouard Philippe, Congrès Fnaim 2025)",
+      "publisher": "Immomatin",
+      "url": "https://www.immomatin.com/franchise/reseaux-franchise/renforcer-le-droit-du-proprietaire-pour-fluidifier-le-marche-edouard-philippe-congres-fnaim-2025.html",
+      "date": "2025-12-10",
+      "passage": "Sur le fond, je suis plutôt contre. Je peux comprendre la logique de ceux qui ont imaginé le dispositif : dans certaines zones, avec une pression très forte, dans l’impossibilité de construire davantage, on peut en imaginer les effets."
+    },
+    {
+      "id": "fb453b3a12e5c1b0",
+      "title": "Pour une France plus sûre — Avec Édouard 2027",
+      "publisher": "Avec Édouard 2027 (site de campagne d’Édouard Philippe)",
+      "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
+      "passage": "Mettre en place des courtes peines en s'inspirant des pays du Nord qui condamnent dès la première infraction à une peine courte et dissuasive plutôt que d'enfermer trop tard et trop longtemps."
+    },
+    {
+      "id": "3768d9d6f5ba7e8a",
+      "title": "Pour une France plus sûre — Avec Édouard 2027",
+      "publisher": "Avec Édouard 2027 (site de campagne d’Édouard Philippe)",
+      "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
+      "passage": "Créer un « état d’urgence narco » avec des moyens juridiques d’exception limités dans le temps et dans l’espace, allant jusqu’à l’utilisation ciblée de la reconnaissance faciale."
+    },
+    {
+      "id": "4c695bd9d7ce3180",
+      "title": "« Le prix de nos mensonges » : ma réponse à François Ruffin",
+      "publisher": "Horizons (lettre signée d’Édouard Philippe)",
+      "url": "https://horizonsleparti.fr/reponse-ruffin/",
+      "passage": "Ce n’est pas le libre-échange qui a tué notre industrie (demandez aux Allemands et aux Italiens pour voir), c’est la croyance que nous pouvions distribuer une richesse que nous ne produisions pas."
+    },
+    {
+      "id": "11ce14725812d007",
+      "title": "Grand meeting d’Édouard Philippe à l’Adidas Arena (transcription du discours)",
+      "publisher": "Avec Édouard 2027 (site de campagne d’Édouard Philippe)",
+      "url": "https://www.edouardphilippe.fr/actualites/grand-meeting-edouard-philippe-adidas-arena",
+      "date": "2026-07-05",
+      "passage": "Il faudra plus de liberté pour les collectivités territoriales, plus de liberté pour les partenaires sociaux, pour construire avec eux le monde du travail de demain"
+    },
+    {
+      "id": "cdc2f52b3e2335c6",
+      "title": "Discours d’Édouard Philippe lors du Congrès de Bordeaux",
+      "publisher": "Horizons",
+      "url": "https://horizonsleparti.fr/discours-dedouard-philippe-lors-du-congres-de-bordeaux/",
+      "date": "2025-01-26",
+      "passage": "En France, nous avons voté en 2023 à l’initiative du groupe Horizons et de Laurent Marcangeli une bonne loi qui visait à limiter l’accès aux réseaux sociaux pour les mineurs."
     }
   ],
   "refreshedAt": {
-    "edouard-philippe": "2026-10-08T14:44:37.471Z",
+    "edouard-philippe": "2026-10-08T18:12:55.891Z",
     "gabriel-attal": "2026-10-08T18:11:37.885Z",
     "bruno-retailleau": "2026-10-08T18:10:53.270Z",
     "david-lisnard": "2026-10-08T15:00:13.139Z",
