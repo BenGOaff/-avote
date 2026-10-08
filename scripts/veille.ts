@@ -103,9 +103,20 @@ const Selection = z.object({
       }),
     )
     .describe('Informations retenues, de la plus importante à la moins importante'),
+  candidacies: z
+    .array(
+      z.object({
+        name: z.string().describe('Prénom et nom de la personne'),
+        party: z.string().describe('Formation politique indiquée dans l’extrait, ou chaîne vide'),
+        kind: z.enum(['declare', 'demarche', 'retrait']).describe('declare : annonce sa candidature ; demarche : annonce une démarche (« je serai candidat ») ; retrait : renonce'),
+        itemId: z.string().describe("Identifiant de l'extrait qui l'établit"),
+        quote: z.string().describe("Passage copié mot pour mot de l'extrait qui l'établit"),
+      }),
+    )
+    .describe('Annonces ou retraits de candidature à la présidentielle 2027 explicitement rapportés par les extraits. Liste vide sinon. Une simple rumeur ou hypothèse ne compte pas.'),
 })
 
-async function select(items: RawItem[]): Promise<z.infer<typeof Selection>['stories']> {
+async function select(items: RawItem[]): Promise<z.infer<typeof Selection>> {
   const list = items.map((i) => `[${i.id}] (${i.feedName}${i.date ? `, ${i.date}` : ''}) ${i.title} — ${i.summary.slice(0, 300)}`).join('\n')
   const res = await client.beta.messages.parse({
     model: MODEL,
@@ -129,9 +140,62 @@ La viralité supposée n'est pas un critère. Applique les mêmes critères quel
       },
     ],
   })
-  if (res.stop_reason === 'refusal' || !res.parsed_output) return []
+  if (res.stop_reason === 'refusal' || !res.parsed_output) return { stories: [], candidacies: [] }
   const known = new Set(items.map((i) => i.id))
-  return res.parsed_output.stories.filter((s) => known.has(s.primaryId)).map((s) => ({ ...s, itemIds: s.itemIds.filter((id) => known.has(id)) }))
+  return {
+    stories: res.parsed_output.stories.filter((s) => known.has(s.primaryId)).map((s) => ({ ...s, itemIds: s.itemIds.filter((id) => known.has(id)) })),
+    candidacies: res.parsed_output.candidacies.filter((c) => known.has(c.itemId)),
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Candidatures : ajout et retrait automatiques, avec source et citation vérifiée
+// ---------------------------------------------------------------------------
+
+const CAND_FILE = path.join(ROOT, 'content/acteurs/candidatures.json')
+type Cand = { slug: string; name: string; party?: string; status: string; since: string; source: { title: string; publisher: string; url: string }; verified: boolean; retiredAt?: string; retiredSource?: { title: string; publisher: string; url: string }; addedBy?: string }
+
+function applyCandidacies(found: z.infer<typeof Selection>['candidacies'], byId: Map<string, RawItem>, now: Date): string[] {
+  const file = JSON.parse(readFileSync(CAND_FILE, 'utf8')) as { actors: Cand[]; collectedAt: string }
+  const changes: string[] = []
+  const norm = (s: string) => slugify(s, 80)
+  for (const c of found) {
+    const item = byId.get(c.itemId)
+    if (!item || !quoteIsInSource(c.quote, `${item.title}. ${item.summary}`)) {
+      log('candidature : citation introuvable', c.name)
+      continue
+    }
+    if (!item.title.toLowerCase().includes(c.name.split(' ').slice(-1)[0]!.toLowerCase()) && !item.summary.toLowerCase().includes(c.name.split(' ').slice(-1)[0]!.toLowerCase())) {
+      log('candidature : nom absent de la source', c.name)
+      continue
+    }
+    const slug = norm(c.name)
+    const existing = file.actors.find((a) => a.slug === slug)
+    const source = { title: item.title, publisher: item.feedName, url: item.link }
+    if (c.kind === 'retrait') {
+      if (existing && existing.status !== 'retire') {
+        existing.status = 'retire'
+        existing.retiredAt = (item.date ?? now.toISOString()).slice(0, 10)
+        existing.retiredSource = source
+        changes.push(`Retrait : ${existing.name}`)
+      }
+      continue
+    }
+    if (!existing) {
+      file.actors.push({ slug, name: c.name.trim(), ...(c.party.trim() ? { party: c.party.trim() } : {}), status: c.kind, since: (item.date ?? now.toISOString()).slice(0, 10), source, verified: true, addedBy: `veille ${MODEL}` })
+      changes.push(`Nouvelle ${c.kind === 'declare' ? 'candidature' : 'démarche'} : ${c.name}`)
+    } else if (existing.status === 'demarche' && c.kind === 'declare') {
+      existing.status = 'declare'
+      existing.source = source
+      existing.since = (item.date ?? now.toISOString()).slice(0, 10)
+      changes.push(`Candidature confirmée : ${existing.name}`)
+    }
+  }
+  if (changes.length) {
+    file.collectedAt = now.toISOString().slice(0, 10)
+    writeFileSync(CAND_FILE, JSON.stringify(file, null, 2) + '\n')
+  }
+  return changes
 }
 
 // ---------------------------------------------------------------------------
@@ -292,6 +356,7 @@ ${a.body.trim()}
 // ---------------------------------------------------------------------------
 
 const rejected: string[] = []
+const candidacyChanges: string[] = []
 function log(reason: string, title: string): null {
   rejected.push(`${reason} — ${title.slice(0, 90)}`)
   return null
@@ -328,7 +393,9 @@ async function main() {
   const drafts: Draft[] = []
   if (byId.size > 0 && !DRY) {
     const candidates = [...byId.values()].sort((a, b) => (b.date ?? '').localeCompare(a.date ?? '')).slice(0, 120)
-    const stories = await select(candidates)
+    const selection = await select(candidates)
+    const stories = selection.stories
+    if (!DRY) candidacyChanges.push(...applyCandidacies(selection.candidacies, byId, now))
     for (const s of stories.slice(0, MAX)) {
       try {
         const d = await writeBrief(s, byId, now)
@@ -374,7 +441,8 @@ async function main() {
   const summary = [
     `## Veille du ${now.toLocaleString('fr-FR', { timeZone: 'Europe/Paris' })}`,
     '',
-    `${drafts.length} brouillon(s) proposés. Relis chaque texte et ouvre sa source avant de fusionner. Supprime un fichier pour l'écarter.`,
+    `${drafts.length} texte(s) publiés automatiquement après contrôles.`,
+    candidacyChanges.length ? `\nCandidatures : ${candidacyChanges.join(' ; ')}` : '',
     '',
     ...drafts.map((d) => `- \`${d.file}\``),
     '',
