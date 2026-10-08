@@ -4381,5 +4381,61 @@
     "from": "inconnue",
     "to": "[0,1]",
     "source": "1a105fcaa75ca246"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "c0b1e0df1c286051"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "49bcd14a5c05d3b6"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "359c9634d78775d2"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "eur-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "32f89826a79b55c1"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "32a19e9cf0ec81c4"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "dem-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "673ad22a256ae708"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "3a23fc47effd6076"
   }
 ]

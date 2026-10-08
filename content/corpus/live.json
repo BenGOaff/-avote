@@ -2,7 +2,7 @@
   "version": "live-202610081828",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:28:26.457Z",
+  "publishedAt": "2026-10-08T18:28:41.116Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -4689,11 +4689,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "359c9634d78775d2"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Texte signé par le candidat. Il défend la régularisation des étrangers déjà présents qui travaillent, mais refuse de nouvelles filières d'immigration de travail. Le manifeste de Debout! va dans le même sens : « Tous les travailleurs et trav"
       },
       "sec-06": {
         "missing": true,
@@ -4703,18 +4707,29 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "49bcd14a5c05d3b6"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Texte du parti, pas un engagement chiffré du candidat. Le manifeste rappelle que Roosevelt « fait alors voter » cet impôt sur le revenu, puis le prend en modèle (« Il faut le faire »). Aucun barème n'est proposé pour la France, d'où 1 ou 2."
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "c0b1e0df1c286051"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Texte signé par le candidat, présenté comme l'une de ses trois priorités. Même sens dans son texte du 11 octobre 2025, où il défend la taxe Zucman de 2 % et « les impôts sur les plus hauts patrimoines »."
       },
       "eco-03": {
         "missing": true,
@@ -4802,11 +4817,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "eur-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "32f89826a79b55c1"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Texte du parti. Le cahier agricole du programme 2027 va dans le même sens : il veut défendre des prix minimums « quitte à imposer un rapport de force avec la Commission européenne, qui pourrait juger ces dispositions non conformes aux trait"
       },
       "eur-03": {
         "missing": true,
@@ -4816,11 +4835,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "32a19e9cf0ec81c4"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Édito signé François Ruffin, centré sur l'agriculture. Le même cahier propose de « sortir des traités de libre-échange mortifères, signés avec des pays qui ne respectent pas nos exigences sociales et environnementales »."
       },
       "eur-05": {
         "missing": true,
@@ -4968,11 +4991,18 @@
         "note": "Source : programme 2027. Position ambivalente. Il critique le recul sur les normes, la loi Duplomb et l'affaiblissement de la démocratie de l'eau par la loi d'urgence agricole. Mais il critique aussi l'accumulation de normes : « de la régul"
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "3a23fc47effd6076"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Lettre ouverte à Édouard Philippe. Il approuve, en une phrase, son jugement d'une proportionnelle « inutile », sans développer. Le programme 2027 n'en parle pas. Opposition claire mais brève, d'où -2 ou -1."
       },
       "dem-02": {
         "value": 2,
@@ -4993,11 +5023,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "dem-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "673ad22a256ae708"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Le programme en fait une condition d'éligibilité automatique (« nous introduirons une nouvelle condition d’éligibilité »), qui couvre les manquements au devoir de probité, « fraude fiscale et électorale incluses ». Aucune exception n'est pr"
       },
       "dem-05": {
         "missing": true,
@@ -12067,6 +12101,60 @@
       "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
       "date": "2026-07-01",
       "passage": "Reconnaître le vote blanc en attribuant le taux équivalent à des citoyen·nes tirés au sort sur les listes électorales pour les élections territoriales."
+    },
+    {
+      "id": "c0b1e0df1c286051",
+      "title": "Et maintenant ? Gouverner",
+      "publisher": "francoisruffin.fr (site officiel de François Ruffin)",
+      "url": "https://francoisruffin.fr/et-maintenant-gouverner/",
+      "date": "2024-12-04",
+      "passage": "Que, a minima, le capital ne soit pas moins taxé que le travail. Des impôts, donc, sur les hyper-riches, sur les méga-patrimoines, sur les firmes géantes."
+    },
+    {
+      "id": "49bcd14a5c05d3b6",
+      "title": "Manifeste fondateur de Debout!",
+      "publisher": "Debout! (mouvement présidé par François Ruffin)",
+      "url": "https://debout.fr/notre-manifeste/",
+      "passage": "l’impôt sur le revenu avec une tranche à 94% pour abaisser le plafond en haut. Et augmente les salaires pour relever le plancher. Abaisser le plafond de ceux qui se gavent en haut, relever le plancher de ceux qui se rationnent en bas: voilà une définition du partage. Il faut le faire."
+    },
+    {
+      "id": "359c9634d78775d2",
+      "title": "Pourquoi le Medef veut 3,9 millions de travailleurs immigrés",
+      "publisher": "francoisruffin.fr (site officiel de François Ruffin)",
+      "url": "https://francoisruffin.fr/pourquoi-le-medef-veut-39-millions-de-travailleurs-immigres/",
+      "date": "2026-04-29",
+      "passage": "« Tous les habitants doivent pouvoir travailler, gagner leur vie par le travail. » Une régularisation pour des raisons à la fois humanitaires, mais aussi de production, et enfin, parce qu’on fait nation par le « faire ensemble »."
+    },
+    {
+      "id": "32f89826a79b55c1",
+      "title": "Manifeste fondateur de Debout!",
+      "publisher": "Debout! (mouvement présidé par François Ruffin)",
+      "url": "https://debout.fr/notre-manifeste/",
+      "passage": "Mais «attendre que l’Europe change» n’est pas un horizon acceptable pour notre peuple. Nous désobéirons aux traités européens lorsqu’ils entrent en contradiction avec nos engagements."
+    },
+    {
+      "id": "32a19e9cf0ec81c4",
+      "title": "Pour une exception agriculturelle française (cahier de campagne)",
+      "publisher": "Nous Président ! – site de campagne de François Ruffin (Debout !)",
+      "url": "https://nouspresident.fr/pour-une-exception-agriculturelle-francaise/",
+      "date": "2026-10-07",
+      "passage": "Des protections à nos frontières, des quotas d’importation, des barrières douanières. C’est-à-dire, une rupture nette avec le libre-échange qui a cours, des accords de l’ Uruguay round (1994) aux traités récents avec le Canada, la Nouvelle-Zélande, le Mercosur, etc."
+    },
+    {
+      "id": "673ad22a256ae708",
+      "title": "Pour une séparation de l’argent et de l’État (cahier de campagne)",
+      "publisher": "Nous Président ! – site de campagne de François Ruffin (Debout !)",
+      "url": "https://nouspresident.fr/separation-argent-etat/",
+      "date": "2026-07-02",
+      "passage": "Les candidats à un mandat électif seront obligés de présenter un bulletin n°2 du casier judiciaire vierge de toute condamnation pour atteintes les plus graves à l’ordre social (infractions criminelles et délits d’ordre sexuel) ainsi que pour manquement au devoir de probité"
+    },
+    {
+      "id": "3a23fc47effd6076",
+      "title": "Édouard Philippe, le prix de vos mensonges",
+      "publisher": "francoisruffin.fr (site officiel de François Ruffin)",
+      "url": "https://francoisruffin.fr/edouard-philippe-le-prix-de-vos-mensonges/",
+      "date": "2025-06-11",
+      "passage": "Bon, allez, je fais un effort. Je veux terminer sur du positif. Je suis d’accord avec vous sur la proportionnelle inutile."
     }
   ],
   "refreshedAt": {
@@ -12081,7 +12169,7 @@
     "jean-luc-melenchon": "2026-10-08T18:15:13.925Z",
     "fabien-roussel": "2026-10-08T17:54:08.652Z",
     "marine-tondelier": "2026-10-08T18:28:26.457Z",
-    "francois-ruffin": "2026-10-08T15:43:20.824Z",
+    "francois-ruffin": "2026-10-08T18:28:41.116Z",
     "delphine-batho": "2026-10-08T17:54:08.652Z",
     "karim-bouamrane": "2026-10-08T18:24:43.530Z",
     "nathalie-arthaud": "2026-10-08T17:44:58.610Z",
