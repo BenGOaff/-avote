@@ -3237,5 +3237,69 @@
     "from": "inconnue",
     "to": "[-1,-2]",
     "source": "209a74bb28e14fbd"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "6d7f84eadb85e24b"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "tra-04",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "6f4472933a27479e"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "2396cffa14bf8554"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-03",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "7d80f3c9a27b0998"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "7f119175cedc11e8"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d8115609a048e304"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "7923096c502f20b6"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "d29a4037b07f5809"
   }
 ]

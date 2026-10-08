@@ -2,7 +2,7 @@
   "version": "live-202610081810",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:10:26.755Z",
+  "publishedAt": "2026-10-08T18:10:53.270Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -879,18 +879,26 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "sec-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "7d80f3c9a27b0998"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-08T18:10:53.270Z",
+        "note": "Interdit la reconnaissance faciale en temps réel dans l'espace public à des fins de surveillance de masse, mais autorise la vision par ordinateur encadrée pour la sécurité intérieure."
       },
       "sec-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "d8115609a048e304"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-08T18:10:53.270Z",
+        "note": "Discours aux préfets du 8 octobre 2024, alors ministre de l’Intérieur ; l’article précise qu’il vise l’immigration légale comme illégale. Son programme 2027 prévoit des quotas migratoires fixés par la loi."
       },
       "sec-05": {
         "missing": true,
@@ -900,11 +908,15 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "6d7f84eadb85e24b"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-08T18:10:53.270Z",
+        "note": "Principe à inscrire dans la Constitution par référendum."
       },
       "lib-01": {
         "value": -2,
@@ -985,18 +997,26 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "6f4472933a27479e"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-08T18:10:53.270Z",
+        "note": "Loyer librement fixé entre bailleur et locataire à la signature du bail."
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "2396cffa14bf8554"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-08T18:10:53.270Z",
+        "note": "Applique aussi les règles de juin 2024 et une dégressivité accélérée au-dessus de 3 000 euros nets."
       },
       "tra-06": {
         "missing": true,
@@ -1063,11 +1083,18 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "7f119175cedc11e8"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-08T18:10:53.270Z",
+        "note": "Facilite le référendum d'initiative partagée (2,5 millions de signatures), sans dire que l'initiative d'un cinquième des parlementaires disparaît : ce n'est pas un référendum déclenché par les seuls citoyens."
       },
       "dem-03": {
         "missing": true,
@@ -1173,18 +1200,29 @@
         "note": "Source : programme 2027 (site officiel de campagne, page mise à jour le 22 septembre 2026). Favorable avec condition, d'où +1 et non +2 : seulement deux cas (règle contraire à la Constitution ou hors des compétences de l'UE). La même page p"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "7923096c502f20b6"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-08T18:10:53.270Z",
+        "note": "Explication de vote du sénateur Retailleau ; dans la même intervention, il parle de « l’augmentation du budget de la défense que nous proposons »."
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "d29a4037b07f5809"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-08T18:10:53.270Z",
+        "note": "Favorable au libre-échange en général, mais opposé à l’accord avec le Mercosur ; son programme demande des clauses de réciprocité dans tous les accords commerciaux."
       },
       "eur-05": {
         "missing": true,
@@ -10272,12 +10310,75 @@
       "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
       "date": "2022-03-25",
       "passage": "favoriser l’enracinement en exonérant la résidence principale du calcul de l’Impôt sur la Fortune Immobilière"
+    },
+    {
+      "id": "6d7f84eadb85e24b",
+      "title": "Conditionner les prestations sociales à cinq ans de séjour et de travail (Mesure n°10)",
+      "publisher": "Avec Retailleau – site officiel de campagne de Bruno Retailleau",
+      "url": "https://www.avecretailleau.fr/projet/mesure/conditionner-les-prestations-sociales-a-cinq-ans-de-sejour",
+      "date": "2026-09-22",
+      "passage": "Conditionner l'accès des étrangers aux prestations sociales à cinq ans de séjour régulier et de travail en France , et subordonner l'aide sociale à la régularité du séjour"
+    },
+    {
+      "id": "6f4472933a27479e",
+      "title": "Supprimer l'encadrement des loyers (Mesure n°68)",
+      "publisher": "Avec Retailleau – site officiel de campagne de Bruno Retailleau",
+      "url": "https://www.avecretailleau.fr/projet/mesure/supprimer-l-encadrement-des-loyers",
+      "date": "2026-09-12",
+      "passage": "Supprimer les dispositifs d'encadrement des loyers issus de la loi ELAN , abroger les mécanismes de plafonnement prévus par la loi de 1989"
+    },
+    {
+      "id": "2396cffa14bf8554",
+      "title": "Réduire les durées et plafonner les allocations chômage (Mesure n°29)",
+      "publisher": "Avec Retailleau – site officiel de campagne de Bruno Retailleau",
+      "url": "https://www.avecretailleau.fr/projet/mesure/reduire-les-durees-et-plafonner-les-allocations-chomage",
+      "date": "2026-09-11",
+      "passage": "le refus d'une troisième offre raisonnable met fin à l'indemnisation. Limiter à six mois et plafonner l'indemnisation des ruptures conventionnelles."
+    },
+    {
+      "id": "7d80f3c9a27b0998",
+      "title": "Répondre à la guerre informationnelle (thème L'IA)",
+      "publisher": "Avec Retailleau – site officiel de campagne de Bruno Retailleau",
+      "url": "https://www.avecretailleau.fr/projet/mesure/repondre-a-la-guerre-informationnelle",
+      "passage": "Autoriser dans un cadre légal et contrôlé l'usage de la vision par ordinateur pour la sécurité intérieure, avec interdiction expresse de la reconnaissance faciale en temps réel dans l'espace public à des fins de surveillance de masse"
+    },
+    {
+      "id": "7f119175cedc11e8",
+      "title": "Abaisser le seuil du référendum d'initiative partagée (Mesure n°12)",
+      "publisher": "Avec Retailleau – site officiel de campagne de Bruno Retailleau",
+      "url": "https://www.avecretailleau.fr/projet/mesure/abaisser-le-seuil-du-referendum-d-initiative-partagee",
+      "date": "2026-09-22",
+      "passage": "Abaisser le seuil populaire du référendum d'initiative partagée d'un dixième à un vingtième du corps électoral, soit environ 2,5 millions de citoyens , et l'ouvrir lui aussi à tout sujet"
+    },
+    {
+      "id": "d8115609a048e304",
+      "title": "Immigration : l’abrogation de la circulaire Valls voulue par Bruno Retailleau va-t-elle avoir un effet sur le nombre de régularisations ?",
+      "publisher": "Public Sénat",
+      "url": "https://www.publicsenat.fr/actualites/politique/immigration-labrogation-de-la-circulaire-valls-voulue-par-bruno-retailleau-va-t-elle-avoir-un-effet-sur-le-nombre-de-regularisations",
+      "date": "2024-10-10",
+      "passage": "s’impliquer personnellement dans ce combat pour réduire l’immigration"
+    },
+    {
+      "id": "7923096c502f20b6",
+      "title": "Compte rendu intégral de la séance du 2 juin 2026 (loi de programmation militaire)",
+      "publisher": "Sénat",
+      "url": "https://www.senat.fr/seances/s202606/s20260602/s20260602021.html",
+      "date": "2026-06-02",
+      "passage": "nous devons respecter le chiffre cible selon lequel il nous faut consacrer 3,5 % de la richesse produite à la défense"
+    },
+    {
+      "id": "d29a4037b07f5809",
+      "title": "Mercosur : le patron des Républicains Bruno Retailleau appelle Emmanuel Macron à sortir de son «ambiguïté» sur le traité",
+      "publisher": "Europe 1",
+      "url": "https://www.europe1.fr/node/875297",
+      "date": "2025-12-16",
+      "passage": "Depuis longtemps, on a fait le choix et on n’a pas varié. On est favorable au libre-échange, mais le traité Mercosur est injuste et dépassé"
     }
   ],
   "refreshedAt": {
     "edouard-philippe": "2026-10-08T14:44:37.471Z",
     "gabriel-attal": "2026-10-08T14:49:46.768Z",
-    "bruno-retailleau": "2026-10-08T14:55:16.338Z",
+    "bruno-retailleau": "2026-10-08T18:10:53.270Z",
     "david-lisnard": "2026-10-08T15:00:13.139Z",
     "marine-le-pen": "2026-10-08T15:06:17.605Z",
     "eric-zemmour": "2026-10-08T18:10:26.755Z",
