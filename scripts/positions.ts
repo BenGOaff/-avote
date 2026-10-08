@@ -19,10 +19,11 @@ import path from 'node:path'
 import Anthropic from '@anthropic-ai/sdk'
 import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
-import { canonicalUrl, hashId, quoteIsInSource } from './veille-lib'
+import { canonicalUrl, quoteIsInSource } from './veille-lib'
 import { collectEvidence, fetchText } from './web-lib'
 import { CostMeter, budgetFromEnv } from './cost'
-import type { Corpus, CorpusSource, Ordinal, Position, PositionBasis } from '../src/lib/engine/types'
+import { mergePosition, posLabel, verifiedPosition, type Change } from './positions-lib'
+import type { Corpus, CorpusSource, Ordinal, Position } from '../src/lib/engine/types'
 
 const ROOT = process.cwd()
 const args = process.argv.slice(2)
@@ -61,7 +62,7 @@ const candidatures = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/ca
 const live = JSON.parse(readFileSync(LIVE, 'utf8')) as Corpus & { sources: CorpusSource[]; refreshedAt?: Record<string, string>; note?: string }
 live.sources ??= []
 live.refreshedAt ??= {}
-const changes: { date: string; actor: string; item: string; from: string; to: string; source?: string }[] = existsSync(CHANGES) ? JSON.parse(readFileSync(CHANGES, 'utf8')) : []
+const changes: Change[] = existsSync(CHANGES) ? JSON.parse(readFileSync(CHANGES, 'utf8')) : []
 
 const client = new Anthropic()
 
@@ -230,8 +231,6 @@ async function recheck() {
   console.log(`Contrôle de pertinence : ${dropped} positions retirées.`)
 }
 
-const posLabel = (p: Position | undefined) => (!p || 'missing' in p ? 'inconnue' : 'set' in p ? `[${p.set.join(',')}]` : String(p.value))
-
 // Erreurs qui touchent tout le passage (crédit, clé) : on arrête au lieu d'enchaîner les échecs
 const FATAL = /credit balance|authentication_error|invalid x-api-key|permission_error/i
 let fatal: string | null = null
@@ -300,21 +299,11 @@ async function codeActor(actor: { slug: string; name: string; party?: string; st
           rejected++
           next = { missing: true, status: 'inconnu', note: 'Une position a été repérée mais sa citation n’a pas pu être vérifiée dans la source.', codedBy: 'ia', codedAt: now }
         } else {
-          const srcId = hashId(url + p.quote)
-          if (!live.sources.some((s) => s.id === srcId))
-            live.sources.push({ id: srcId, title: p.sourceTitle.slice(0, 200) || url, publisher: p.publisher.slice(0, 100) || new URL(url).hostname, url, ...(p.date ? { date: p.date } : {}), passage: p.quote.slice(0, 320) })
-          const set = [...new Set(p.set)].sort() as Ordinal[]
-          const status = p.basis === 'parti' ? 'parti-uniquement' : p.basis === 'declaration' ? 'declaration-provisoire' : set.length > 1 ? 'ambigu' : 'explicite'
-          const meta = { basis: p.basis as PositionBasis, codedBy: 'ia' as const, codedAt: now, ...(p.note ? { note: p.note.slice(0, 240) } : {}) }
-          next = p.value !== null && set.length <= 1 ? { value: p.value as Ordinal, status, sources: [srcId], ...meta } : { set: set.length ? set : [p.value as Ordinal], status, sources: [srcId], ...meta }
+          next = verifiedPosition(live.sources, p, url, now)
           kept++
         }
       }
-      const prev = current[item.id]
-      // Une recherche infructueuse n'efface pas une position déjà vérifiée
-      if ('missing' in next && prev && !('missing' in prev)) continue
-      if (posLabel(prev) !== posLabel(next)) changes.push({ date: now, actor: actor.slug, item: item.id, from: posLabel(prev), to: posLabel(next), ...('sources' in next ? { source: next.sources[0] } : {}) })
-      current[item.id] = next
+      mergePosition(current, changes, actor.slug, item.id, next, now)
     }
     console.log(`  ${theme.label} : ok`)
   }
