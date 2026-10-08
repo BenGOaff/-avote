@@ -16,7 +16,8 @@ import { CostMeter, budgetFromEnv } from './cost'
 
 const ROOT = process.cwd()
 const ONLY = process.argv.find((a) => a.startsWith('--actor='))?.split('=')[1]
-const MODEL = process.env.POSITIONS_MODEL || process.env.VEILLE_MODEL || 'claude-opus-5-5'
+// Choix de la rédaction (coûts) : synthèse sur le modèle intermédiaire
+const MODEL = process.env.FICHES_MODEL || 'claude-sonnet-5-5'
 const OUT = path.join(ROOT, 'content/acteurs/fiches.json')
 const MIN_KNOWN = 5
 const meter = new CostMeter('Fiches', budgetFromEnv('FICHES_BUDGET_USD', 1))

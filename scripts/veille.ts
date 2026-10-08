@@ -37,10 +37,13 @@ const args = new Set(process.argv.slice(2))
 const DRY = args.has('--dry-run')
 const WITH_ARTICLE = args.has('--article')
 const MAX = Number([...args].find((a) => a.startsWith('--max='))?.split('=')[1] ?? 6)
-const MODEL = process.env.VEILLE_MODEL || 'claude-opus-5-5'
+// Choix de la rédaction (coûts) : rédaction sur le modèle intermédiaire, tri sur le petit modèle
+const MODEL = process.env.VEILLE_MODEL || 'claude-sonnet-5-5'
 const EFFORT = (process.env.VEILLE_EFFORT || 'medium') as 'low' | 'medium' | 'high'
 // Tri des extraits : tâche simple, un modèle moins cher peut suffire (VEILLE_SELECT_MODEL)
-const SELECT_MODEL = process.env.VEILLE_SELECT_MODEL || MODEL
+const SELECT_MODEL = process.env.VEILLE_SELECT_MODEL || 'claude-haiku-5-5'
+// Le repli serveur en cas de refus n'existe pas sur le petit modèle
+const fallbackFor = (model: string) => (model.startsWith('claude-haiku') ? {} : { betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default' as const })
 const meter = new CostMeter('Veille', budgetFromEnv('VEILLE_BUDGET_USD', 0.5))
 const WINDOW_HOURS = 36
 const SEEN_FILE = process.env.SEEN_FILE || path.join(ROOT, 'content/veille/seen.json')
@@ -125,8 +128,7 @@ async function select(items: RawItem[]): Promise<z.infer<typeof Selection>> {
   const res = await client.beta.messages.parse({
     model: SELECT_MODEL,
     max_tokens: 8000,
-    betas: ['server-side-fallback-2026-07-01'],
-    fallbacks: 'default',
+    ...fallbackFor(SELECT_MODEL),
     system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
     output_config: { effort: EFFORT, format: betaZodOutputFormat(Selection) },
     messages: [
