@@ -1,1 +1,39 @@
-{ "updatedAt": null, "medias": {} }
+{
+  "updatedAt": "2026-10-08T16:18:22.925Z",
+  "medias": {
+    "france-2": {
+      "slug": "france-2",
+      "owners": [
+        {
+          "name": "France Télévisions SA",
+          "kind": "entreprise",
+          "share": "100 %"
+        },
+        {
+          "name": "État français",
+          "kind": "etat",
+          "share": "100 % du capital de France Télévisions"
+        }
+      ],
+      "group": "France Télévisions",
+      "controller": "État français",
+      "controllerKind": "etat",
+      "otherMedia": [
+        "franceinfo",
+        "france.tv",
+        "pôle Outre-mer de France Télévisions",
+        "France TV Studio",
+        "France TV Distribution",
+        "France TV Publicité"
+      ],
+      "note": "France 2 est une chaîne de la société France Télévisions SA (société anonyme publique, « société nationale de programmes »), éditrice selon ses mentions légales ; ce n'est pas une filiale distincte. Selon le site du groupe (page publiée le 11 mars 2025, consultée en octobre 2026), l'État détient tou",
+      "quote": "France Télévisions, dont la totalité du capital est détenue par l'Etat, est financé par des financements publics votés par le Parlement dans le cadre des lois de finances.",
+      "url": "https://www.francetelevisions.fr/groupe/qui-sommes-nous/notre-organisation/gouvernance-financements/gouvernance-et-financement-41203",
+      "sourceTitle": "Gouvernance et financement",
+      "publisher": "France Télévisions (site officiel du groupe)",
+      "date": "2025-03-11",
+      "checkedAt": "2026-10-08T16:18:18.083Z",
+      "model": "claude-opus-5-5"
+    }
+  }
+}
