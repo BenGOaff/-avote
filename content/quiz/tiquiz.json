@@ -1,0 +1,12 @@
+{
+  "_note": "Quiz créés avec Tiquiz et affichés sur /quiz. Pour en ajouter un : une ligne ici, avec l'adresse du quiz (sous-domaine quiz.xn--avote-xra.fr).",
+  "quizzes": [
+    {
+      "slug": "quel-indecis-es-tu",
+      "title": "Quel indécis es-tu ?",
+      "lede": "La version courte, en quelques questions.",
+      "url": "https://quiz.xn--avote-xra.fr/pourquivoter",
+      "duration": "2 minutes"
+    }
+  ]
+}
