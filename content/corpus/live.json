@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081823",
+  "version": "live-202610081824",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:23:49.207Z",
+  "publishedAt": "2026-10-08T18:24:10.913Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -6572,11 +6572,18 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "760baac1601f658d"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "Garantie d'accès aux services publics partout, mais rien sur le maintien des services coûteux mentionné dans l'affirmation, d'où set [1, 2]. Page non datée, consultée le 08/10/2026."
       },
       "eco-01": {
         "missing": true,
@@ -6687,11 +6694,18 @@
         "note": "Vote d'Olivier Becht : Pour, sur l'ensemble du texte en lecture définitive. NosParlementaires indique aussi « Pour » sur la loi fin de vie. Le texte crée un droit à l'aide à mourir pour une affection grave et incurable, sous conditions : il"
       },
       "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "3da529f791d2804b"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T17:00:28.109Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "Position de vote « Pour » sur le texte final (CMP), comme indiqué sur sa page de positions de vote. Ce texte (Sénat, ppl25-903) interdit l'accès aux réseaux sociaux aux moins de 15 ans. Un vote n'est pas un engagement de campagne, d'où set "
       },
       "lib-03": {
         "missing": true,
@@ -6729,11 +6743,18 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "28f2f718edd26c87"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "Engagement net en faveur du RIC, mais le texte le décrit comme une saisine directe de l'Assemblée nationale, sans préciser qu'une pétition déclenche un référendum : d'où set [1, 2]. Page non datée, consultée le 08/10/2026."
       },
       "dem-03": {
         "missing": true,
@@ -6750,18 +6771,29 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "dem-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "fec0a2ea41380fb2"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "La page détaillée ajoute un « Pacte des territoires » garantissant « une vraie autonomie » et des moyens renforcés. Page non datée, consultée le 08/10/2026."
       },
       "dem-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "343813e417b2c791"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "« Reconnaissance du vote blanc » sans préciser qu'il serait compté dans les suffrages exprimés, d'où set [1, 2]. Page non datée, consultée le 08/10/2026."
       },
       "cli-01": {
         "missing": true,
@@ -11315,6 +11347,42 @@
       "publisher": "Les Patriotes",
       "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
       "passage": "Supprimer la PAC, ses normes absurdes (tel que le taux de jachère obligatoire) et ses contraintes administratives."
+    },
+    {
+      "id": "28f2f718edd26c87",
+      "title": "Le pacte démocratique et territorial – Olivier BECHT Président 2027 (Le Projet France)",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/projet-france/les-5-refondations/refondation-democratique-territoriale/",
+      "passage": "Nous instaurerons également un véritable référendum d’initiative citoyenne, qui permettra à chacun de saisir directement l’Assemblée nationale, et donnera aux Français les moyens de peser sur les décisions qui engagent leur avenir"
+    },
+    {
+      "id": "343813e417b2c791",
+      "title": "Le pacte démocratique et territorial – Olivier BECHT Président 2027 (Le Projet France)",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/projet-france/les-5-refondations/refondation-democratique-territoriale/",
+      "passage": "Cette refondation démocratique passera tout d’abord par la reconnaissance du vote blanc, afin que l’abstention ne soit plus le seul mode d’expression de ceux qui ne se reconnaissent dans aucun candidat"
+    },
+    {
+      "id": "fec0a2ea41380fb2",
+      "title": "Le Projet France – Olivier BECHT Président 2027",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/projet-france/",
+      "passage": "Nous redonnerons le pouvoir aux Français par le Referendum d’initiative citoyenne et aux collectivités locales par une autonomie de réglementer et financer leurs compétences."
+    },
+    {
+      "id": "760baac1601f658d",
+      "title": "Le Projet France – Olivier BECHT Président 2027",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/projet-france/",
+      "passage": "Nous garantirons aussi à tous les Français l’accès aux services publics avec un temps de trajet raisonnable et cela où qu’ils habitent sur le territoire. Aucun endroit ne sera oublié, aucun habitant ne sera abandonné."
+    },
+    {
+      "id": "3da529f791d2804b",
+      "title": "Positions de vote - M. Olivier Becht - Haut-Rhin (5e circonscription)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA642935/positions-de-vote",
+      "date": "2026-07-21",
+      "passage": "Scrutin public n°8431 sur l'ensemble de la proposition de loi visant à protéger les mineurs des risques auxquels les expose l'utilisation des réseaux sociaux (texte de la commission mixte paritaire)."
     }
   ],
   "refreshedAt": {
@@ -11335,7 +11403,7 @@
     "nathalie-arthaud": "2026-10-08T17:44:58.610Z",
     "anasse-kazib": "2026-10-08T18:23:36.781Z",
     "selma-labib": "2026-10-08T16:07:45.245Z",
-    "olivier-becht": "2026-10-08T16:12:12.614Z",
+    "olivier-becht": "2026-10-08T18:24:10.913Z",
     "raphael-glucksmann": "2026-10-08T17:44:58.610Z",
     "bernard-cazeneuve": "2026-10-08T17:44:58.610Z",
     "xavier-bertrand": "2026-10-08T17:44:58.610Z",
