@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T16:18:22.925Z",
+  "updatedAt": "2026-10-08T17:04:18.906Z",
   "medias": {
     "france-2": {
       "slug": "france-2",
@@ -33,6 +33,160 @@
       "publisher": "France Télévisions (site officiel du groupe)",
       "date": "2025-03-11",
       "checkedAt": "2026-10-08T16:18:18.083Z",
+      "model": "claude-opus-5-5"
+    },
+    "tf1": {
+      "slug": "tf1",
+      "owners": [
+        {
+          "name": "Bouygues SA",
+          "kind": "entreprise",
+          "share": "46,10 %"
+        },
+        {
+          "name": "Flottant (actionnaires en bourse)",
+          "kind": "autre",
+          "share": "43,50 %"
+        },
+        {
+          "name": "Salariés",
+          "kind": "salaries",
+          "share": "10,40 %"
+        }
+      ],
+      "group": "Groupe TF1 (Télévision Française 1 SA), filiale de Bouygues",
+      "controller": "Bouygues",
+      "controllerKind": "cotee",
+      "otherMedia": [],
+      "note": "La chaîne TF1 est détenue par Télévision Française 1 SA (Groupe TF1), société cotée dont Bouygues SA est l'actionnaire de contrôle. Le pourcentage diffère selon la source : 46,10 % (BFM Bourse, page consultée en 2026) contre 43 % à 43,7 % (Wikipédia, encadré avec des données de 2018).",
+      "quote": "Actionnaires de Tf1 : Bouygues SA, Flottant, Salariés…",
+      "url": "https://www.tradingsat.com/tf1-FR0000054900/actionnariat.html",
+      "sourceTitle": "Actionnaires de la société Tf1 - BFM Bourse",
+      "publisher": "BFM Bourse (tradingsat.com)",
+      "date": "2026-10-08",
+      "checkedAt": "2026-10-08T16:58:11.276Z",
+      "model": "claude-opus-5-5"
+    },
+    "arte": {
+      "slug": "arte",
+      "owners": [
+        {
+          "name": "ARTE France",
+          "kind": "entreprise",
+          "share": "membre à parité (50 %) d'ARTE GEIE"
+        },
+        {
+          "name": "ARTE Deutschland",
+          "kind": "autre",
+          "share": "membre à parité (50 %) d'ARTE GEIE"
+        },
+        {
+          "name": "France Télévisions",
+          "kind": "entreprise",
+          "share": "45 % d'ARTE France"
+        },
+        {
+          "name": "État français",
+          "kind": "etat",
+          "share": "25 % d'ARTE France"
+        },
+        {
+          "name": "Radio France",
+          "kind": "entreprise",
+          "share": "15 % d'ARTE France"
+        },
+        {
+          "name": "INA",
+          "kind": "etat",
+          "share": "15 % d'ARTE France"
+        }
+      ],
+      "group": "ARTE (ARTE GEIE, Strasbourg ; membres : ARTE France et ARTE Deutschland)",
+      "controller": "Contrôle partagé à parité : secteur public français (via ARTE France) et secteur public allemand (via ARTE Deutschland)",
+      "controllerKind": "etat",
+      "otherMedia": [
+        "ARTE Radio",
+        "ARTE France Cinéma",
+        "ARTE France Développement (dont ARTE Games, créée en juillet 2025)",
+        "TV5 Monde (participation minoritaire)"
+      ],
+      "note": "Arte est exploitée par ARTE GEIE, dont les deux membres nationaux, ARTE France et ARTE Deutschland, financent le budget à parts égales (70,834 M€ chacun en 2024) et ont chacun 6 des 12 sièges de l'Assemblée générale.",
+      "quote": "ARTE France’s shareholding is divided between France Télévisions with 45 per cent, the French state with 25 per cent, Radio France with 15 per cent and INA with 15 per cent.",
+      "url": "https://statemediamonitor.com/2025/08/arte-france/",
+      "sourceTitle": "ARTE France – State Media Monitor",
+      "publisher": "Media and Journalism Research Center (MJRC) – State Media Monitor",
+      "date": "2026-09-16",
+      "checkedAt": "2026-10-08T16:59:23.205Z",
+      "model": "claude-opus-5-5"
+    },
+    "lcp": {
+      "slug": "lcp",
+      "owners": [
+        {
+          "name": "Assemblée nationale",
+          "kind": "autre",
+          "share": "100 %"
+        }
+      ],
+      "group": "",
+      "controller": "Assemblée nationale",
+      "controllerKind": "autre",
+      "otherMedia": [],
+      "note": "Institution publique (assemblée parlementaire, pouvoir législatif). Aucun groupe de médias : la société partage le canal « La Chaîne Parlementaire » (canal 13 de la TNT) avec Public Sénat, une société distincte détenue par le Sénat.",
+      "quote": "Elles sont constituées sous la forme de sociétés commerciales de droit privé dont le capital est intégralement détenu par l’assemblée à laquelle chacune d’elles se rattache.",
+      "url": "https://www.assemblee-nationale.fr/dyn/synthese/organisation-assemblee-nationale/la-chaine-parlementaire-lcp-assemblee-nationale-et-public-senat",
+      "sourceTitle": "Fiche de synthèse n°35 : La Chaîne Parlementaire (LCP-Assemblée nationale et Public Sénat)",
+      "publisher": "Assemblée nationale",
+      "date": "",
+      "checkedAt": "2026-10-08T17:01:29.410Z",
+      "model": "claude-opus-5-5"
+    },
+    "europe-1": {
+      "slug": "europe-1",
+      "owners": [
+        {
+          "name": "Lagardère Radio SCA (société de tête du pôle radio : Europe 1, Europe 2, RFM)",
+          "kind": "entreprise",
+          "share": "société de tête du pôle radio qui inclut"
+        },
+        {
+          "name": "Lagardère SA (via trois filiales à 100 %, associées commanditaires de Lagardère Radio SCA)",
+          "kind": "entreprise",
+          "share": "100 % (indirect)"
+        },
+        {
+          "name": "Louis Hachette Group SA",
+          "kind": "entreprise",
+          "share": "66,29 % de Lagardère SA (31/12/2025)"
+        },
+        {
+          "name": "Groupe Bolloré (Bolloré SE et Compagnie de l'Odet SE)",
+          "kind": "famille",
+          "share": "31,03 % du capital et 31,05 % des droits"
+        },
+        {
+          "name": "Arnaud Lagardère (via Lagardère Capital)",
+          "kind": "personne",
+          "share": "8,69 % de Louis Hachette Group ; associé"
+        }
+      ],
+      "group": "Groupe Lagardère (Louis Hachette Group)",
+      "controller": "Famille Bolloré",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Europe 2",
+        "RFM",
+        "Le Journal du Dimanche",
+        "ELLE (licences)",
+        "Prisma Media (magazines, dont Ici Paris et France Dimanche)"
+      ],
+      "note": "Chaîne de propriété : Europe 1 → Lagardère Radio SCA → Lagardère SA (100 % indirect) → Louis Hachette Group (66,29 % de Lagardère SA) → Groupe Bolloré (31,03 % du capital de Louis Hachette Group, présenté comme son 'actionnaire de référence').",
+      "quote": "Lagardère Radio SAS, société de tête du pôle radios, a été transformée en société en commandite par actions dont les associés commanditaires sont trois sociétés intégralement détenues par le groupe Lagardère",
+      "url": "https://www.louishachettegroup.com/wp-content/uploads/2026/03/260326_LHG_RAPPORT_ANNUEL.pdf",
+      "sourceTitle": "Rapport annuel 2025 – Louis Hachette Group",
+      "publisher": "Louis Hachette Group",
+      "date": "2026-03-26",
+      "checkedAt": "2026-10-08T17:04:18.905Z",
       "model": "claude-opus-5-5"
     }
   },
