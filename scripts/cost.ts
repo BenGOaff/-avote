@@ -106,6 +106,26 @@ export class CostMeter {
     return this.usd >= this.budgetUsd
   }
 
+  private tasks = 0
+  private running = 0
+  /**
+   * Lance une tâche en parallèle des autres, seulement si le budget couvre aussi, au coût moyen d'une tâche,
+   * celles déjà en cours : sans cette réserve, les tâches lancées juste avant le plafond le font dépasser.
+   * Renvoie false (sans rien lancer) quand le budget ne suffit plus.
+   */
+  async run(task: () => Promise<unknown>): Promise<boolean> {
+    const avg = this.tasks ? this.usd / this.tasks : 0
+    if (this.exhausted || this.usd + avg * (this.running + 1) > this.budgetUsd) return false
+    this.running++
+    try {
+      await task()
+    } finally {
+      this.running--
+      this.tasks++
+    }
+    return true
+  }
+
   report() {
     const monthTotal = this.monthBefore + this.usd
     const line = `${this.label} : ${this.usd.toFixed(2)} $ dépensés (budget du passage ${this.budgetUsd.toFixed(2)} $), ${this.calls} appels, ${this.searches} recherches web. Mois en cours : ${monthTotal.toFixed(2)} $ sur ${this.monthly.toFixed(2)} $.`

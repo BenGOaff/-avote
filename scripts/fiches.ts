@@ -61,31 +61,49 @@ async function main() {
       const src = 'sources' in p ? sources.get(p.sources[0] ?? '') : undefined
       return `- « ${item?.text} » : ${label(p)}${'basis' in p && p.basis ? ` (${p.basis})` : ''}. Citation : « ${src?.passage ?? ''} »`
     })
-    const sourceText = known.map(([, p]) => ('sources' in p ? sources.get(p.sources[0] ?? '')?.passage ?? '' : '')).join(' ')
-    const res = await client.beta.messages.parse({
-      model: MODEL,
-      max_tokens: 4000,
-      system: [
-        {
-          type: 'text',
-          text: `${VOICE}\n\n## Tâche\nTu écris la synthèse de la fiche d'un candidat à la présidentielle 2027, à partir des seules positions codées fournies. La même consigne s'applique à tous les candidats. N'ajoute aucun fait, aucune date, aucun chiffre, aucune qualification politique (« gauche », « droite », « extrême ») qui ne figure pas dans les citations. Pas de jugement sur la personne.`,
-          cache_control: { type: 'ephemeral' },
-        },
-      ],
-      output_config: { effort: 'high', format: betaZodOutputFormat(Out) },
-      messages: [
-        {
-          role: 'user',
-          content: `Candidat : ${actor.name}${actor.party ? ` (${actor.party})` : ''}\n\nPositions documentées :\n${lines.join('\n')}\n\nThèmes où il manque au moins 3 positions : ${unknownThemes.join(', ') || 'aucun'}.`,
-        },
-      ],
-    })
-    meter.add(res.model, res.usage)
-    const out = res.parsed_output
-    if (res.stop_reason === 'refusal' || !out) continue
-    const all = `${out.analysis} ${out.remark}`
-    if (styleViolations(all).length || numbersAreSourced(all, sourceText).length || out.analysis.length > 900 || out.remark.length > 220) {
-      console.warn(`${actor.name} : synthèse rejetée par les contrôles`)
+    // Chiffres admis : ceux des citations et des énoncés des questions auxquelles les positions répondent
+    const sourceText = known
+      .map(([id, p]) => `${questionnaire.items.find((i) => i.id === id)?.text ?? ''} ${'sources' in p ? (sources.get(p.sources[0] ?? '')?.passage ?? '') : ''}`)
+      .join(' ')
+    const ask = `Candidat : ${actor.name}${actor.party ? ` (${actor.party})` : ''}\n\nPositions documentées :\n${lines.join('\n')}\n\nThèmes où il manque au moins 3 positions : ${unknownThemes.join(', ') || 'aucun'}.`
+    let out: z.infer<typeof Out> | null = null
+    let problems: string[] = []
+    // Un second essai, avec la liste précise des problèmes, coûte bien moins qu'une fiche laissée vide
+    for (let attempt = 0; attempt < 2 && !meter.exhausted; attempt++) {
+      const messages: Anthropic.Beta.BetaMessageParam[] = [{ role: 'user', content: ask }]
+      if (out && problems.length)
+        messages.push(
+          { role: 'assistant', content: JSON.stringify(out) },
+          { role: 'user', content: `Refusé par les contrôles : ${problems.join(' ; ')}. Réécris en corrigeant uniquement ces points.` },
+        )
+      const res = await client.beta.messages.parse({
+        model: MODEL,
+        max_tokens: 4000,
+        system: [
+          {
+            type: 'text',
+            text: `${VOICE}\n\n## Tâche\nTu écris la synthèse de la fiche d'un candidat à la présidentielle 2027, à partir des seules positions codées fournies. La même consigne s'applique à tous les candidats. N'ajoute aucun fait, aucune date, aucun chiffre, aucune qualification politique (« gauche », « droite », « extrême ») qui ne figure pas dans les citations. Ne compte pas les positions ni les thèmes en chiffres. Synthèse de 900 caractères au plus, remarque de 220 au plus. Pas de jugement sur la personne.`,
+            cache_control: { type: 'ephemeral' },
+          },
+        ],
+        output_config: { effort: 'high', format: betaZodOutputFormat(Out) },
+        messages,
+      })
+      meter.add(res.model, res.usage)
+      out = res.parsed_output ?? null
+      if (res.stop_reason === 'refusal' || !out) break
+      const all = `${out.analysis} ${out.remark}`
+      problems = [
+        ...styleViolations(all).map((r) => `tournure interdite (${r})`),
+        ...numbersAreSourced(all, sourceText).map((n) => `chiffre absent des citations : ${n}`),
+        ...(out.analysis.length > 900 ? [`synthèse trop longue (${out.analysis.length} caractères, 900 au plus)`] : []),
+        ...(out.remark.length > 220 ? [`remarque trop longue (${out.remark.length} caractères, 220 au plus)`] : []),
+      ]
+      if (!problems.length) break
+    }
+    if (!out) continue
+    if (problems.length) {
+      console.warn(`${actor.name} : synthèse rejetée par les contrôles (${problems.join(' ; ')})`)
       continue
     }
     fiches[actor.slug] = { analysis: out.analysis.trim(), remark: out.remark.trim(), basedOn: live.version, generatedAt: new Date().toISOString(), model: MODEL }

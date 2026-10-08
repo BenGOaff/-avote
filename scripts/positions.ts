@@ -260,16 +260,19 @@ async function codeActor(actor: { slug: string; name: string; party?: string; st
   const done: { theme: (typeof themes)[number]; items: Item[]; evidence: Map<string, string>; coded: CodedOut | null }[] = []
   await Promise.all(
     Array.from({ length: Math.min(PARALLEL, queue.length) }, async () => {
-      for (let theme = queue.shift(); theme && !meter.exhausted; theme = queue.shift()) {
+      for (let theme = queue.shift(); theme; theme = queue.shift()) {
         const items = questionnaire.items.filter((i) => i.theme === theme.id)
         const evidence = new Map<string, string>()
-        try {
-          done.push({ theme, items, evidence, coded: await toStructured(await research(actor, theme.label, items, evidence)) })
-        } catch (e) {
-          const msg = e instanceof Error ? e.message : String(e)
-          if (FATAL.test(msg)) fatal = msg
-          console.warn(`  ${theme.label} : ${msg}`)
-        }
+        const started = await meter.run(async () => {
+          try {
+            done.push({ theme, items, evidence, coded: await toStructured(await research(actor, theme.label, items, evidence)) })
+          } catch (e) {
+            const msg = e instanceof Error ? e.message : String(e)
+            if (FATAL.test(msg)) fatal = msg
+            console.warn(`  ${theme.label} : ${msg}`)
+          }
+        })
+        if (!started) break
       }
     }),
   )

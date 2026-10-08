@@ -26,6 +26,8 @@ const ONLY = arg('media')
 const LIMIT = Number(arg('limit') ?? 10)
 const MODEL = process.env.MEDIAS_MODEL || process.env.POSITIONS_MODEL || 'claude-opus-5-5'
 const EFFORT = (process.env.MEDIAS_EFFORT || 'medium') as 'low' | 'medium' | 'high'
+// Mise au format d'un compte rendu déjà rédigé : tâche mécanique, un modèle moins cher suffit
+const CONVERT_MODEL = process.env.MEDIAS_CONVERT_MODEL || 'claude-sonnet-5-5'
 const PARALLEL = Number(process.env.MEDIAS_PARALLEL || 3)
 const meter = new CostMeter('Médias', budgetFromEnv('MEDIAS_BUDGET_USD', 3))
 const ALERTS = args.includes('--alertes')
@@ -119,7 +121,7 @@ Qui le possède aujourd'hui, et qui le contrôle en dernier ressort ?${known.len
         system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
         output_config: { effort: EFFORT },
         tools: [
-          { type: 'web_search_20260209', name: 'web_search', max_uses: 3, user_location: { type: 'approximate', country: 'FR' } },
+          { type: 'web_search_20260209', name: 'web_search', max_uses: 5, user_location: { type: 'approximate', country: 'FR' } },
           { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 4, max_content_tokens: 10000 },
         ],
         messages,
@@ -146,7 +148,7 @@ async function toStructured(text: string): Promise<FoundOut | null> {
     }
   }
   const res = await client.beta.messages.parse({
-    model: MODEL,
+    model: CONVERT_MODEL,
     max_tokens: 6000,
     output_config: { effort: 'low', format: betaZodOutputFormat(Found) },
     messages: [{ role: 'user', content: `Convertis ce compte rendu en JSON conforme au schéma, sans rien ajouter ni changer :\n\n${text.slice(-20000)}` }],
@@ -183,6 +185,7 @@ function clip(t: string, max: number): string {
 const ALERT_DOMAINS = ['arcom.fr', 'conseil-etat.fr', 'legifrance.gouv.fr']
 
 const AlertsOut = z.object({
+  searched: z.boolean().describe("true seulement si la recherche a pu être menée jusqu'au bout sur les sites officiels ; false si elle a été interrompue (limite d'outils, pages illisibles)"),
   alerts: z.array(
     z.object({
       date: z.string().describe('Date de la décision AAAA-MM-JJ'),
@@ -206,7 +209,7 @@ Liste les décisions de l'Arcom (ou du CSA avant 2022) et du Conseil d'État vis
 
 Ne cite que des décisions lues sur arcom.fr, conseil-etat.fr ou legifrance.gouv.fr. Recopie le motif dans les termes de la décision, sans commentaire. Si tu n'en trouves aucune, renvoie une liste vide : c'est une réponse valable.
 
-Termine par un bloc \`\`\`json {"alerts": [...]} avec date, kind, topic, summary, quote, url, publisher.`,
+Termine par un bloc \`\`\`json {"searched": true|false, "alerts": [...]} avec date, kind, topic, summary, quote, url, publisher. searched vaut false si tu n'as pas pu mener la recherche jusqu'au bout.`,
     },
   ]
   let text = ''
@@ -220,7 +223,7 @@ Termine par un bloc \`\`\`json {"alerts": [...]} avec date, kind, topic, summary
         system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
         output_config: { effort: EFFORT },
         tools: [
-          { type: 'web_search_20260209', name: 'web_search', max_uses: 3, allowed_domains: ALERT_DOMAINS },
+          { type: 'web_search_20260209', name: 'web_search', max_uses: 4, allowed_domains: ALERT_DOMAINS },
           { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 4, max_content_tokens: 10000, allowed_domains: ALERT_DOMAINS },
         ],
         messages,
@@ -234,13 +237,25 @@ Termine par un bloc \`\`\`json {"alerts": [...]} avec date, kind, topic, summary
     messages.push({ role: 'assistant', content: res.content })
   }
   const block = [...text.matchAll(/```json\s*([\s\S]*?)```/g)].pop()?.[1]
-  if (!block) return null
-  try {
-    const parsed = AlertsOut.safeParse(JSON.parse(block))
-    return parsed.success ? parsed.data : null
-  } catch {
-    return null
+  if (block) {
+    try {
+      const parsed = AlertsOut.safeParse(JSON.parse(block))
+      if (parsed.success) return parsed.data
+    } catch {
+      /* conversion structurée ci-dessous */
+    }
   }
+  if (!text.trim()) return null
+  // Compte rendu sans bloc JSON (souvent quand la limite d'outils est atteinte) : mis au format plutôt que perdu.
+  // Les citations restent vérifiées dans la page source ensuite.
+  const res = await client.beta.messages.parse({
+    model: CONVERT_MODEL,
+    max_tokens: 6000,
+    output_config: { effort: 'low', format: betaZodOutputFormat(AlertsOut) },
+    messages: [{ role: 'user', content: `Convertis ce compte rendu en JSON conforme au schéma, sans rien ajouter ni changer. searched vaut false si le compte rendu dit que la recherche n'a pas pu aboutir.\n\n${text.slice(-20000)}` }],
+  })
+  meter.add(res.model, res.usage)
+  return res.parsed_output ?? null
 }
 
 async function establishAlerts(m: { slug: string; name: string }) {
@@ -265,6 +280,11 @@ async function establishAlerts(m: { slug: string; name: string }) {
     }
     items.push({ date: a.date, kind: a.kind, topic: a.topic, summary: clip(a.summary.trim(), 280), quote: a.quote.slice(0, 320), url, publisher: a.publisher.slice(0, 80) || new URL(url).hostname })
   }
+  // Recherche interrompue et rien de vérifié : le média n'est pas marqué comme contrôlé, il sera repris au prochain passage
+  if (!out.searched && items.length === 0) return console.warn(`${m.name} (Arcom) : recherche interrompue, à reprendre`)
+  const prev = store.alertes![m.slug]?.items ?? []
+  // Une décision déjà vérifiée n'est jamais effacée par un passage qui ne la retrouve pas
+  for (const p of prev) if (!items.some((i) => i.url === p.url && i.date === p.date)) items.push(p)
   items.sort((a, b) => b.date.localeCompare(a.date))
   store.alertes![m.slug] = { checkedAt: new Date().toISOString(), items }
   console.log(`${m.name} (Arcom) : ${items.length} décision(s)`)
@@ -323,7 +343,7 @@ async function main() {
   const queue = [...targets]
   await Promise.all(
     Array.from({ length: Math.min(PARALLEL, queue.length) }, async () => {
-      for (let m = queue.shift(); m && !fatal && !meter.exhausted; m = queue.shift()) await (ALERTS ? establishAlerts(m) : establish(m))
+      for (let m = queue.shift(); m && !fatal; m = queue.shift()) if (!(await meter.run(() => (ALERTS ? establishAlerts(m) : establish(m))))) break
     }),
   )
   store.updatedAt = new Date().toISOString()
