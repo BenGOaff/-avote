@@ -38,9 +38,29 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Plafond mensuel commun à tous les robots : registres des dépenses du mois (scripts/cost.ts)
+      - id: mois
+        run: echo "m=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/veille
+          key: budget-veille-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-veille-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/positions
+          key: budget-positions-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-positions-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/medias
+          key: budget-medias-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-medias-${{ steps.mois.outputs.m }}-
       - name: Coder les positions
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUDGET_LEDGER_DIR: .budget/positions
+          MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD }}
           POSITIONS_MODEL: ${{ vars.POSITIONS_MODEL }}
           POSITIONS_EFFORT: ${{ vars.POSITIONS_EFFORT }}
           POSITIONS_JUDGE_MODEL: ${{ vars.POSITIONS_JUDGE_MODEL }}
@@ -57,6 +77,8 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUDGET_LEDGER_DIR: .budget/positions
+          MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD }}
           FICHES_MODEL: ${{ vars.FICHES_MODEL }}
           FICHES_BUDGET_USD: ${{ vars.FICHES_BUDGET_USD }}
         run: npx tsx scripts/fiches.ts
@@ -86,3 +108,9 @@ jobs:
             --title "Positions $STAMP" \
             --body "Positions codées par IA, citations vérifiées dans les sources. Détail des changements : content/corpus/changes.json." \
             || echo "Pull Request non créée (réglage Actions) : la branche positions/$STAMP est poussée."
+      - name: Inscrire la dépense du passage
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .budget/positions
+          key: budget-positions-${{ steps.mois.outputs.m }}-${{ github.run_id }}-${{ github.run_attempt }}

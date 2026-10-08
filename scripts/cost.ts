@@ -3,8 +3,31 @@
  * Chaque réponse est comptée (jetons, cache, recherches web) ; au-delà du budget du passage,
  * le script s'arrête proprement au lieu de continuer à dépenser. Le total est écrit dans le
  * résumé du job GitHub Actions.
+ *
+ * Plafond mensuel (tous les robots confondus) : chaque passage inscrit sa dépense dans un petit registre
+ * (.budget/<robot>/<tâche>-<AAAA-MM>.json, conservé d'un passage à l'autre par le cache de GitHub Actions).
+ * Avant de dépenser, on additionne le mois en cours : au-delà de MONTHLY_BUDGET_USD, plus aucun appel.
  */
-import { appendFileSync } from 'node:fs'
+import { appendFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import path from 'node:path'
+
+const BUDGET_ROOT = '.budget'
+const month = () => new Date().toISOString().slice(0, 7)
+
+/** Total dépensé ce mois-ci par tous les robots (registres restaurés du cache). */
+export function spentThisMonth(): number {
+  if (!existsSync(BUDGET_ROOT)) return 0
+  let total = 0
+  for (const dir of readdirSync(BUDGET_ROOT, { withFileTypes: true }).filter((d) => d.isDirectory()))
+    for (const f of readdirSync(path.join(BUDGET_ROOT, dir.name)).filter((f) => f.endsWith(`-${month()}.json`))) {
+      try {
+        total += Number(JSON.parse(readFileSync(path.join(BUDGET_ROOT, dir.name, f), 'utf8')).spent) || 0
+      } catch {
+        /* registre illisible : ignoré */
+      }
+    }
+  return total
+}
 
 // Prix en dollars par million de jetons (tarifs publics, octobre 2026). Recherche web : 10 $ / 1 000.
 const PRICES: Record<string, { input: number; output: number; cacheWrite: number; cacheRead: number }> = {
@@ -30,10 +53,33 @@ export class CostMeter {
   private usd = 0
   private calls = 0
   private searches = 0
+  private readonly budgetUsd: number
+  private readonly monthBefore: number
+  private readonly monthly: number
   constructor(
     private readonly label: string,
-    private readonly budgetUsd: number,
-  ) {}
+    runBudgetUsd: number,
+  ) {
+    this.monthly = budgetFromEnv('MONTHLY_BUDGET_USD', 30)
+    this.monthBefore = spentThisMonth()
+    // Le passage ne peut pas dépenser plus que ce qu'il reste dans le mois
+    this.budgetUsd = Math.max(0, Math.min(runBudgetUsd, this.monthly - this.monthBefore))
+    if (this.budgetUsd === 0) console.warn(`${label} : plafond mensuel atteint (${this.monthBefore.toFixed(2)} $ sur ${this.monthly.toFixed(2)} $), aucun appel ce mois-ci.`)
+    // Même en cas d'erreur ou d'arrêt brutal, la dépense est inscrite au registre
+    process.once('exit', () => this.flush())
+  }
+
+  private flushed = false
+  private flush() {
+    if (this.flushed) return
+    this.flushed = true
+    const dir = process.env.BUDGET_LEDGER_DIR
+    if (!dir || this.usd === 0) return
+    mkdirSync(dir, { recursive: true })
+    const file = path.join(dir, `${this.label.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '')}-${month()}.json`)
+    const prev = existsSync(file) ? Number(JSON.parse(readFileSync(file, 'utf8')).spent) || 0 : 0
+    writeFileSync(file, JSON.stringify({ spent: prev + this.usd, updatedAt: new Date().toISOString() }) + '\n')
+  }
 
   /** Compte une réponse ; le modèle servi peut différer du modèle demandé (repli). */
   add(model: string, u: UsageLike | null | undefined) {
@@ -61,9 +107,12 @@ export class CostMeter {
   }
 
   report() {
-    const line = `${this.label} : ${this.usd.toFixed(2)} $ dépensés (budget ${this.budgetUsd.toFixed(2)} $), ${this.calls} appels, ${this.searches} recherches web.`
+    const monthTotal = this.monthBefore + this.usd
+    const line = `${this.label} : ${this.usd.toFixed(2)} $ dépensés (budget du passage ${this.budgetUsd.toFixed(2)} $), ${this.calls} appels, ${this.searches} recherches web. Mois en cours : ${monthTotal.toFixed(2)} $ sur ${this.monthly.toFixed(2)} $.`
     console.log(line)
     if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, `- ${line}\n`)
+    // Inscription au registre du robot (seulement en CI, où le registre est conservé d'un passage à l'autre)
+    this.flush()
   }
 }
 

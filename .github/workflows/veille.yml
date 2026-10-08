@@ -37,10 +37,30 @@ jobs:
           cache: npm
 
       - run: npm ci
+      # Plafond mensuel commun à tous les robots : registres des dépenses du mois (scripts/cost.ts)
+      - id: mois
+        run: echo "m=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/veille
+          key: budget-veille-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-veille-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/positions
+          key: budget-positions-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-positions-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/medias
+          key: budget-medias-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-medias-${{ steps.mois.outputs.m }}-
 
       - name: Collecter et rédiger
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUDGET_LEDGER_DIR: .budget/veille
+          MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD }}
           VEILLE_MODEL: ${{ vars.VEILLE_MODEL }}
           VEILLE_EFFORT: ${{ vars.VEILLE_EFFORT }}
           VEILLE_SELECT_MODEL: ${{ vars.VEILLE_SELECT_MODEL }}
@@ -97,3 +117,9 @@ jobs:
               --title "Veille $STAMP : brouillons à relire" \
               --body-file .veille-summary.md
           fi
+      - name: Inscrire la dépense du passage
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .budget/veille
+          key: budget-veille-${{ steps.mois.outputs.m }}-${{ github.run_id }}-${{ github.run_attempt }}
