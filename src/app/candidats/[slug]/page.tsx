@@ -6,6 +6,7 @@ import { getActor, getAnnouncedActors, STATUS_LABEL } from '@/lib/actors'
 import { itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
 import { BASIS_LABEL, positionLabel } from '@/lib/answers'
 import { formatDate } from '@/components/Editorial'
+import { PositionScale } from '@/components/Viz'
 import { absolute } from '@/lib/site'
 import fiches from '@content/acteurs/fiches.json'
 
@@ -65,9 +66,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
           </a>
         </p>
         <p className="muted">
-          {known > 0
-            ? `${known} positions documentées sur ${questionnaire.items.length}. Chaque position est codée automatiquement à partir d’une source publique ; la citation a été vérifiée dans la page d’origine.`
-            : 'Positions en cours de collecte.'}{' '}
+          {known > 0 ? `${known} positions connues sur ${questionnaire.items.length}.` : 'Positions en cours de collecte.'}{' '}
           <Link href="/methodologie#codage">Comment c’est codé</Link> · <Link href="/corrections#signaler">Signaler une erreur</Link>
         </p>
       </div>
@@ -84,49 +83,56 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
             </p>
           )}
           <p className="small muted" style={{ margin: 'var(--s3) 0 0' }}>
-            Synthèse écrite par IA à partir des seules positions citées ci-dessous. La remarque en italique est un commentaire.
+            <Link href="/methodologie#ia">Résumé rédigé par IA</Link>
           </p>
         </section>
       )}
 
-      {Object.keys(positions).length > 0 && itemsByTheme(questionnaire).map(({ theme, items }) => (
-        <section key={theme.id} className="section" aria-labelledby={`t-${theme.id}`}>
-          <h2 id={`t-${theme.id}`} style={{ fontSize: 'var(--h3)' }}>
-            {theme.label}
-          </h2>
-          <div className="stack">
-            {items.map((it) => {
-              const p = positions[it.id]
-              const src = p && 'sources' in p ? sources.get(p.sources[0] ?? '') : undefined
-              return (
-                <div key={it.id} className="card card--flat">
-                  <p style={{ margin: 0 }}>
-                    <strong>{it.text}</strong>
-                  </p>
-                  <p style={{ margin: 'var(--s2) 0 0' }}>
-                    Position : <strong>{p ? positionLabel(p) : 'Pas encore recherchée'}</strong>
-                    {p && 'basis' in p && p.basis && <span className="badge" style={{ marginLeft: 8 }}>{BASIS_LABEL[p.basis]}</span>}
-                  </p>
-                  {src?.passage && (
-                    <blockquote className="small" style={{ margin: 'var(--s2) 0', paddingLeft: 'var(--s3)', borderLeft: '3px solid var(--ink)' }}>
-                      « {src.passage} »
-                    </blockquote>
-                  )}
-                  {src?.url && (
-                    <p className="small muted" style={{ margin: 0 }}>
-                      <a href={src.url} rel="noopener noreferrer nofollow" target="_blank">
-                        {src.publisher} — {src.title}
-                      </a>
-                      {src.date && `, ${src.date}`}
-                    </p>
-                  )}
-                  {p && 'note' in p && p.note && <p className="small muted" style={{ margin: 'var(--s1) 0 0' }}>{p.note}</p>}
-                </div>
-              )
-            })}
-          </div>
-        </section>
-      ))}
+      {known > 0 &&
+        itemsByTheme(questionnaire).map(({ theme, items }) => {
+          const withPos = items.filter((it) => positions[it.id] && !('missing' in positions[it.id]!))
+          const without = items.filter((it) => !withPos.includes(it))
+          return (
+            <section key={theme.id} className="section" aria-labelledby={`t-${theme.id}`}>
+              <h2 id={`t-${theme.id}`} style={{ fontSize: 'var(--h3)' }}>
+                {theme.label} <span className="hint">{withPos.length}/{items.length}</span>
+              </h2>
+              <div className="grid grid--2">
+                {withPos.map((it) => {
+                  const p = positions[it.id]!
+                  const src = 'sources' in p ? sources.get(p.sources[0] ?? '') : undefined
+                  return (
+                    <div key={it.id} className="card card--flat pos-card">
+                      <p className="pos-card__q">{it.text}</p>
+                      <p className="pos-card__a">
+                        <PositionScale position={p} /> <strong>{positionLabel(p)}</strong>
+                      </p>
+                      {'basis' in p && p.basis && <span className="badge badge--muted">{BASIS_LABEL[p.basis]}</span>}
+                      {src && (
+                        <details className="sources">
+                          <summary>Source</summary>
+                          {src.passage && <blockquote className="small">« {src.passage} »</blockquote>}
+                          <p className="hint" style={{ margin: 0 }}>
+                            <a href={src.url ?? undefined} rel="noopener noreferrer nofollow" target="_blank">
+                              {src.publisher} — {src.title}
+                            </a>
+                            {src.date && `, ${src.date}`}
+                          </p>
+                          {'note' in p && p.note && <p className="hint" style={{ margin: 'var(--s1) 0 0' }}>{p.note}</p>}
+                        </details>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+              {without.length > 0 && (
+                <p className="small muted" style={{ marginTop: 'var(--s3)' }}>
+                  Pas de position connue : {without.map((it) => it.text.replace(/\.$/, '')).join(' · ')}.
+                </p>
+              )}
+            </section>
+          )
+        })}
       <p>
         <Link className="btn btn--highlight" href="/test">
           Comparer avec mes réponses

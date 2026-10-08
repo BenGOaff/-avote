@@ -116,6 +116,14 @@ for (const [slug, a] of Object.entries(owned.alertes ?? {})) {
     if (!it.quote || it.quote.length < 12 || !/^\d{4}-\d{2}-\d{2}$/.test(it.date)) errors.push(`alertes : ${slug} sans extrait ou date`)
   }
 }
+for (const [slug, o] of Object.entries((owned as { orientations?: Record<string, { url: string; quote: string; label: string }> }).orientations ?? {})) {
+  if (!mediaList.medias.some((x) => x.slug === slug)) errors.push(`orientations : ${slug} absent de la liste`)
+  if (!/^https:\/\/([a-z0-9-]+\.)*eurotopics\.net\//.test(o.url) || !o.quote || !o.label) errors.push(`orientations : ${slug} sans source eurotopics ou sans extrait`)
+}
+for (const [ctl, e] of Object.entries((owned as { engagements?: Record<string, { items: { url: string; quote: string; text: string }[] }> }).engagements ?? {})) {
+  if (!Object.values(owned.medias).some((m) => m.controller === ctl)) errors.push(`engagements : « ${ctl} » ne contrôle aucun média de la liste`)
+  for (const it of e.items) if (!it.url?.startsWith('https://') || !it.quote || !it.text) errors.push(`engagements : « ${ctl} » sans source https ou sans extrait`)
+}
 for (const [slug, m] of Object.entries(owned.medias)) {
   if (!mediaList.medias.some((x) => x.slug === slug)) errors.push(`médias : ${slug} absent de la liste`)
   if (!m.url?.startsWith('https://')) errors.push(`médias : ${slug} sans source https`)

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T17:04:18.906Z",
+  "updatedAt": "2026-10-08T18:00:04.330Z",
   "medias": {
     "france-2": {
       "slug": "france-2",
@@ -26,14 +26,14 @@
         "France TV Distribution",
         "France TV Publicité"
       ],
-      "note": "France 2 est une chaîne de la société France Télévisions SA (société anonyme publique, « société nationale de programmes »), éditrice selon ses mentions légales ; ce n'est pas une filiale distincte.",
+      "note": "France Télévisions appartient à 100 % à l’État.",
       "quote": "France Télévisions, dont la totalité du capital est détenue par l'Etat, est financé par des financements publics votés par le Parlement dans le cadre des lois de finances.",
       "url": "https://www.francetelevisions.fr/groupe/qui-sommes-nous/notre-organisation/gouvernance-financements/gouvernance-et-financement-41203",
       "sourceTitle": "Gouvernance et financement",
       "publisher": "France Télévisions (site officiel du groupe)",
       "date": "2025-03-11",
-      "checkedAt": "2026-10-08T16:18:18.083Z",
-      "model": "claude-opus-5-5"
+      "checkedAt": "2026-10-08T17:56:15.669Z",
+      "model": "recherche vérifiée hors API"
     },
     "tf1": {
       "slug": "tf1",
@@ -41,31 +41,26 @@
         {
           "name": "Bouygues SA",
           "kind": "entreprise",
-          "share": "46,10 %"
-        },
-        {
-          "name": "Flottant (actionnaires en bourse)",
-          "kind": "autre",
-          "share": "43,50 %"
-        },
-        {
-          "name": "Salariés",
-          "kind": "salaries",
-          "share": "10,40 %"
+          "share": "contrôle exclusif"
         }
       ],
-      "group": "Groupe TF1 (Télévision Française 1 SA), filiale de Bouygues",
+      "group": "Groupe TF1",
       "controller": "Bouygues",
       "controllerKind": "cotee",
-      "otherMedia": [],
-      "note": "La chaîne TF1 est détenue par Télévision Française 1 SA (Groupe TF1), société cotée dont Bouygues SA est l'actionnaire de contrôle. Le pourcentage diffère selon la source : 46,10 % (BFM Bourse, page consultée en 2026) contre 43 % à 43,7 % (Wikipédia, encadré avec des données de 2018).",
-      "quote": "Actionnaires de Tf1 : Bouygues SA, Flottant, Salariés…",
-      "url": "https://www.tradingsat.com/tf1-FR0000054900/actionnariat.html",
-      "sourceTitle": "Actionnaires de la société Tf1 - BFM Bourse",
-      "publisher": "BFM Bourse (tradingsat.com)",
-      "date": "2026-10-08",
-      "checkedAt": "2026-10-08T16:58:11.276Z",
-      "model": "claude-opus-5-5"
+      "otherMedia": [
+        "TMC",
+        "TFX",
+        "TF1 Séries Films",
+        "LCI"
+      ],
+      "note": "Le groupe TF1 est coté en Bourse ; Bouygues en a le contrôle exclusif.",
+      "quote": "est aujourd’hui contrôlé exclusivement par Bouygues, qui en détient 43,7 % du capital et des droits de vote1. Le groupe TF1 est présent dans l’édition de services audiovisuels. Il édite à la date du présent avis cinq chaînes sur la TNT gratuite : TF1, TMC, TFX, TF1 Séries Films et LCI.",
+      "url": "https://www.arcom.fr/sites/default/files/2023-05/Arcom_Avis_TF1_M6.pdf",
+      "sourceTitle": "Avis de l’Arcom à l’Autorité de la concurrence sur le projet de prise de contrôle du groupe Métropole Télévision par le groupe Bouygues",
+      "publisher": "Arcom",
+      "date": "",
+      "checkedAt": "2026-10-08T17:56:15.669Z",
+      "model": "recherche vérifiée hors API"
     },
     "arte": {
       "slug": "arte",
@@ -73,36 +68,16 @@
         {
           "name": "ARTE France",
           "kind": "entreprise",
-          "share": "membre à parité (50 %) d'ARTE GEIE"
+          "share": "50 %"
         },
         {
           "name": "ARTE Deutschland",
           "kind": "autre",
-          "share": "membre à parité (50 %) d'ARTE GEIE"
-        },
-        {
-          "name": "France Télévisions",
-          "kind": "entreprise",
-          "share": "45 % d'ARTE France"
-        },
-        {
-          "name": "État français",
-          "kind": "etat",
-          "share": "25 % d'ARTE France"
-        },
-        {
-          "name": "Radio France",
-          "kind": "entreprise",
-          "share": "15 % d'ARTE France"
-        },
-        {
-          "name": "INA",
-          "kind": "etat",
-          "share": "15 % d'ARTE France"
+          "share": "50 %"
         }
       ],
-      "group": "ARTE (ARTE GEIE, Strasbourg ; membres : ARTE France et ARTE Deutschland)",
-      "controller": "Secteur public français et allemand, à parité",
+      "group": "ARTE GEIE",
+      "controller": "États français et allemand (service public)",
       "controllerKind": "etat",
       "otherMedia": [
         "ARTE Radio",
@@ -110,14 +85,14 @@
         "ARTE France Développement (dont ARTE Games, créée en juillet 2025)",
         "TV5 Monde (participation minoritaire)"
       ],
-      "note": "Arte est exploitée par ARTE GEIE, dont les deux membres nationaux, ARTE France et ARTE Deutschland, financent le budget à parts égales (70,834 M€ chacun en 2024) et ont chacun 6 des 12 sièges de l'Assemblée générale.",
+      "note": "Chaîne franco-allemande : chaque pays finance la moitié du budget et occupe la moitié des sièges.",
       "quote": "ARTE France’s shareholding is divided between France Télévisions with 45 per cent, the French state with 25 per cent, Radio France with 15 per cent and INA with 15 per cent.",
       "url": "https://statemediamonitor.com/2025/08/arte-france/",
       "sourceTitle": "ARTE France – State Media Monitor",
       "publisher": "Media and Journalism Research Center (MJRC) – State Media Monitor",
       "date": "2026-09-16",
-      "checkedAt": "2026-10-08T16:59:23.205Z",
-      "model": "claude-opus-5-5"
+      "checkedAt": "2026-10-08T17:56:17.022Z",
+      "model": "recherche vérifiée hors API"
     },
     "lcp": {
       "slug": "lcp",
@@ -130,44 +105,39 @@
       ],
       "group": "",
       "controller": "Assemblée nationale",
-      "controllerKind": "autre",
+      "controllerKind": "etat",
       "otherMedia": [],
-      "note": "Institution publique (assemblée parlementaire, pouvoir législatif). Aucun groupe de médias : la société partage le canal « La Chaîne Parlementaire » (canal 13 de la TNT) avec Public Sénat, une société distincte détenue par le Sénat.",
+      "note": "La chaîne de l’Assemblée nationale. Public Sénat, sur le même canal, est celle du Sénat.",
       "quote": "Elles sont constituées sous la forme de sociétés commerciales de droit privé dont le capital est intégralement détenu par l’assemblée à laquelle chacune d’elles se rattache.",
       "url": "https://www.assemblee-nationale.fr/dyn/synthese/organisation-assemblee-nationale/la-chaine-parlementaire-lcp-assemblee-nationale-et-public-senat",
       "sourceTitle": "Fiche de synthèse n°35 : La Chaîne Parlementaire (LCP-Assemblée nationale et Public Sénat)",
       "publisher": "Assemblée nationale",
       "date": "",
-      "checkedAt": "2026-10-08T17:01:29.410Z",
-      "model": "claude-opus-5-5"
+      "checkedAt": "2026-10-08T17:56:19.467Z",
+      "model": "recherche vérifiée hors API"
     },
     "europe-1": {
       "slug": "europe-1",
       "owners": [
         {
-          "name": "Lagardère Radio SCA",
-          "kind": "entreprise",
-          "share": "société éditrice"
-        },
-        {
           "name": "Lagardère SA",
           "kind": "entreprise",
-          "share": "100 % (indirect)"
+          "share": "100 %"
         },
         {
-          "name": "Louis Hachette Group SA",
+          "name": "Louis Hachette Group",
           "kind": "entreprise",
-          "share": "66,29 % de Lagardère SA"
+          "share": "66 % de Lagardère"
         },
         {
           "name": "Groupe Bolloré",
           "kind": "entreprise",
-          "share": "31,03 % de Louis Hachette Group"
+          "share": "31 % de Louis Hachette Group"
         }
       ],
-      "group": "Groupe Lagardère (Louis Hachette Group)",
-      "controller": "Louis Hachette Group (groupe Bolloré, actionnaire de référence à 31 %)",
-      "controllerKind": "cotee",
+      "group": "Lagardère (Louis Hachette Group)",
+      "controller": "Groupe Bolloré",
+      "controllerKind": "famille",
       "otherMedia": [
         "Europe 2",
         "RFM",
@@ -175,14 +145,1198 @@
         "ELLE (licences)",
         "Prisma Media (magazines, dont Ici Paris et France Dimanche)"
       ],
-      "note": "Chaîne de propriété : Europe 1 → Lagardère Radio SCA → Lagardère SA (100 % indirect) → Louis Hachette Group (66,29 % de Lagardère SA) → Groupe Bolloré (31,03 % du capital de Louis Hachette Group, présenté comme son 'actionnaire de référence').",
+      "note": "Arrivé avec le rachat de Lagardère : le groupe Bolloré est l’actionnaire de référence de Louis Hachette Group (31 %).",
       "quote": "Lagardère Radio SAS, société de tête du pôle radios, a été transformée en société en commandite par actions dont les associés commanditaires sont trois sociétés intégralement détenues par le groupe Lagardère",
       "url": "https://www.louishachettegroup.com/wp-content/uploads/2026/03/260326_LHG_RAPPORT_ANNUEL.pdf",
       "sourceTitle": "Rapport annuel 2025 – Louis Hachette Group",
       "publisher": "Louis Hachette Group",
       "date": "2026-03-26",
-      "checkedAt": "2026-10-08T17:04:18.905Z",
-      "model": "claude-opus-5-5"
+      "checkedAt": "2026-10-08T17:56:26.132Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "france-3": {
+      "slug": "france-3",
+      "owners": [
+        {
+          "name": "France Télévisions SA",
+          "kind": "entreprise",
+          "share": "100 %"
+        },
+        {
+          "name": "État français",
+          "kind": "etat",
+          "share": "100 % du capital de France Télévisions"
+        }
+      ],
+      "group": "France Télévisions",
+      "controller": "État français",
+      "controllerKind": "etat",
+      "otherMedia": [
+        "France 2",
+        "France 4",
+        "France 5",
+        "franceinfo"
+      ],
+      "note": "France Télévisions appartient à 100 % à l’État.",
+      "quote": "France Télévisions, dont la totalité du capital est détenue par l'Etat, est financé par des financements publics votés par le Parlement dans le cadre des lois de finances.",
+      "url": "https://www.francetelevisions.fr/groupe/qui-sommes-nous/notre-organisation/gouvernance-financements/gouvernance-et-financement-41203",
+      "sourceTitle": "Gouvernance et financement",
+      "publisher": "France Télévisions",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:15.980Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "franceinfo": {
+      "slug": "franceinfo",
+      "owners": [
+        {
+          "name": "France Télévisions SA",
+          "kind": "entreprise",
+          "share": "100 %"
+        },
+        {
+          "name": "État français",
+          "kind": "etat",
+          "share": "100 % du capital de France Télévisions"
+        }
+      ],
+      "group": "France Télévisions",
+      "controller": "État français",
+      "controllerKind": "etat",
+      "otherMedia": [
+        "France 2",
+        "France 3",
+        "France 4",
+        "France 5"
+      ],
+      "note": "France Télévisions appartient à 100 % à l’État.",
+      "quote": "France Télévisions, dont la totalité du capital est détenue par l'Etat, est financé par des financements publics votés par le Parlement dans le cadre des lois de finances.",
+      "url": "https://www.francetelevisions.fr/groupe/qui-sommes-nous/notre-organisation/gouvernance-financements/gouvernance-et-financement-41203",
+      "sourceTitle": "Gouvernance et financement",
+      "publisher": "France Télévisions",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:15.980Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "bfmtv": {
+      "slug": "bfmtv",
+      "owners": [
+        {
+          "name": "RMC BFM (ex-Altice Media)",
+          "kind": "entreprise",
+          "share": "100 %"
+        },
+        {
+          "name": "CMA CGM",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Merit France (holding familiale du groupe CMA CGM)",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "CMA Media",
+      "controller": "Famille Saadé (CMA CGM)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "RMC",
+        "RMC Découverte",
+        "RMC Story",
+        "RMC Life",
+        "La Provence",
+        "La Tribune",
+        "La Tribune Dimanche",
+        "Brut"
+      ],
+      "note": "Rachetée en 2024 par l’armateur CMA CGM et la holding de la famille Saadé, avec RMC.",
+      "quote": "La famille Saadé , entre autres propriétaire de l'armateur marseillais CMA CGM et de plusieurs médias dont BFMTV, La Provence et Brut, est entrée au capital du géant de la grande distribution Carrefour à hauteur d'environ 4%",
+      "url": "https://www.franceinfo.fr/economie/la-famille-saade-proprietaire-de-l-armateur-cma-cgm-et-de-plusieurs-medias-devient-le-2e-actionnaire-de-carrefour_7612109.html",
+      "sourceTitle": "La famille Saadé, propriétaire de l'armateur CMA CGM, devient le deuxième actionnaire de Carrefour",
+      "publisher": "franceinfo",
+      "date": "2025-11-12",
+      "checkedAt": "2026-10-08T17:55:31.737Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "m6": {
+      "slug": "m6",
+      "owners": [
+        {
+          "name": "RTL Group",
+          "kind": "entreprise",
+          "share": "48,3 %"
+        },
+        {
+          "name": "Bertelsmann",
+          "kind": "entreprise",
+          "share": "75 % de RTL Group"
+        }
+      ],
+      "group": "Groupe M6",
+      "controller": "Bertelsmann (RTL Group)",
+      "controllerKind": "autre",
+      "otherMedia": [
+        "W9",
+        "6ter",
+        "Gulli",
+        "Paris Première",
+        "RTL"
+      ],
+      "note": "Le groupe allemand Bertelsmann a relancé en 2026 la vente de M6, RTL compris.",
+      "quote": "Bertelsmann is the majority shareholder of RTL Group, holding 75 percent of its shares. Television Every day, millions of people in Europe choose RTL Group channels - from RTL, Vox and NTV in Germany to M6 in France",
+      "url": "https://www.bertelsmann.com/en/divisions/rtl-group/",
+      "sourceTitle": "RTL Group",
+      "publisher": "Bertelsmann",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:33.148Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "cnews": {
+      "slug": "cnews",
+      "owners": [
+        {
+          "name": "Groupe Canal+",
+          "kind": "entreprise",
+          "share": "100 %"
+        },
+        {
+          "name": "Groupe Bolloré",
+          "kind": "entreprise",
+          "share": "30,8 % de Canal+"
+        }
+      ],
+      "group": "Groupe Canal+",
+      "controller": "Groupe Bolloré",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "CStar",
+        "Canal+"
+      ],
+      "note": "Chaîne du groupe Canal+, dont le groupe Bolloré détient 30,8 % du capital.",
+      "quote": "du groupe M6 (M6, W9, 6ter, Gulli), du groupe Canal Plus (CNews, CStar), du groupe CMA CGM (BFM TV, RMC Découverte et RMC Story)",
+      "url": "https://www.arcom.fr/sites/default/files/2026-09/Arcom-Etude-impact-TNT-six-services-9-septembre-2026.pdf",
+      "sourceTitle": "Étude d’impact préalable au lancement d’un appel aux candidatures en vue de l’autorisation de services de télévision numérique terrestre en métropole",
+      "publisher": "Arcom",
+      "date": "2026-09-09",
+      "checkedAt": "2026-10-08T17:55:35.805Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "tmc": {
+      "slug": "tmc",
+      "owners": [
+        {
+          "name": "Groupe TF1",
+          "kind": "entreprise",
+          "share": "100 %"
+        }
+      ],
+      "group": "Groupe TF1",
+      "controller": "Bouygues",
+      "controllerKind": "cotee",
+      "otherMedia": [
+        "TF1",
+        "TFX",
+        "TF1 Séries Films",
+        "LCI"
+      ],
+      "note": "Chaîne du groupe TF1, contrôlé par Bouygues.",
+      "quote": "est aujourd’hui contrôlé exclusivement par Bouygues, qui en détient 43,7 % du capital et des droits de vote1. Le groupe TF1 est présent dans l’édition de services audiovisuels. Il édite à la date du présent avis cinq chaînes sur la TNT gratuite : TF1, TMC, TFX, TF1 Séries Films et LCI.",
+      "url": "https://www.arcom.fr/sites/default/files/2023-05/Arcom_Avis_TF1_M6.pdf",
+      "sourceTitle": "Avis de l’Arcom à l’Autorité de la concurrence sur le projet de prise de contrôle du groupe Métropole Télévision par le groupe Bouygues",
+      "publisher": "Arcom",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:49.219Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "lci": {
+      "slug": "lci",
+      "owners": [
+        {
+          "name": "Groupe TF1",
+          "kind": "entreprise",
+          "share": "100 %"
+        }
+      ],
+      "group": "Groupe TF1",
+      "controller": "Bouygues",
+      "controllerKind": "cotee",
+      "otherMedia": [
+        "TF1",
+        "TMC",
+        "TFX",
+        "TF1 Séries Films"
+      ],
+      "note": "Chaîne d’info du groupe TF1, contrôlé par Bouygues.",
+      "quote": "est aujourd’hui contrôlé exclusivement par Bouygues, qui en détient 43,7 % du capital et des droits de vote1. Le groupe TF1 est présent dans l’édition de services audiovisuels. Il édite à la date du présent avis cinq chaînes sur la TNT gratuite : TF1, TMC, TFX, TF1 Séries Films et LCI.",
+      "url": "https://www.arcom.fr/sites/default/files/2023-05/Arcom_Avis_TF1_M6.pdf",
+      "sourceTitle": "Avis de l’Arcom à l’Autorité de la concurrence sur le projet de prise de contrôle du groupe Métropole Télévision par le groupe Bouygues",
+      "publisher": "Arcom",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:49.246Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "france-inter": {
+      "slug": "france-inter",
+      "owners": [
+        {
+          "name": "Radio France",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "État français",
+          "kind": "etat",
+          "share": "100 %"
+        }
+      ],
+      "group": "Radio France",
+      "controller": "État français",
+      "controllerKind": "etat",
+      "otherMedia": [
+        "franceinfo",
+        "ICI",
+        "France Culture",
+        "France Musique",
+        "Fip",
+        "Mouv'"
+      ],
+      "note": "Radio France appartient à 100 % à l’État.",
+      "quote": "Radio France est une société nationale de radiodiffusion, constituée sous la forme d’une société anonyme à capitaux publics, avec un actionnaire unique, l’Etat.",
+      "url": "https://www.radiofrance.com/gouvernance",
+      "sourceTitle": "Gouvernance",
+      "publisher": "Radio France",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:50.047Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "france-culture": {
+      "slug": "france-culture",
+      "owners": [
+        {
+          "name": "Radio France",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "État français",
+          "kind": "etat",
+          "share": "100 %"
+        }
+      ],
+      "group": "Radio France",
+      "controller": "État français",
+      "controllerKind": "etat",
+      "otherMedia": [
+        "France Inter",
+        "franceinfo",
+        "ICI",
+        "France Musique",
+        "Fip",
+        "Mouv'"
+      ],
+      "note": "Radio France appartient à 100 % à l’État.",
+      "quote": "Radio France est une société nationale de radiodiffusion, constituée sous la forme d’une société anonyme à capitaux publics, avec un actionnaire unique, l’Etat.",
+      "url": "https://www.radiofrance.com/gouvernance",
+      "sourceTitle": "Gouvernance",
+      "publisher": "Radio France",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:50.047Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "rtl": {
+      "slug": "rtl",
+      "owners": [
+        {
+          "name": "Groupe M6",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "RTL Group",
+          "kind": "entreprise",
+          "share": "environ 48 % de Groupe M6"
+        }
+      ],
+      "group": "Groupe M6",
+      "controller": "Bertelsmann (RTL Group)",
+      "controllerKind": "autre",
+      "otherMedia": [
+        "M6",
+        "RFM TV"
+      ],
+      "note": "Le groupe allemand Bertelsmann a relancé en 2026 la vente de M6, RTL compris.",
+      "quote": "Toujours selon Challenges, Bertelsmann, accompagné par JP Morgan, souhaite avancer concrètement sur une cession de M6, qui comprend notamment les activités M6, RTL ou encore RFM TV.",
+      "url": "https://fr.themedialeader.com/la-vente-du-groupe-m6-serait-relancee/",
+      "sourceTitle": "La vente du groupe M6 serait relancée",
+      "publisher": "The Media Leader FR",
+      "date": "2026-04-13",
+      "checkedAt": "2026-10-08T17:55:50.422Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "rmc": {
+      "slug": "rmc",
+      "owners": [
+        {
+          "name": "CMA Media (ex-Altice Media)",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "CMA CGM",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Merit France",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "CMA Media",
+      "controller": "Famille Saadé (CMA CGM)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "BFMTV",
+        "BFM Business",
+        "RMC Découverte",
+        "RMC Story"
+      ],
+      "note": "Rachetée en 2024 par l’armateur CMA CGM et la holding de la famille Saadé, avec BFMTV.",
+      "quote": "the CMA CGM Group and Merit France (the family holding company of the CMA CGM Group) have today completed the acquisition of 100% of Altice Media's share capital. Altice Media is the third-largest private media group in France and the leading French news channel, with flagship brands BFM and RMC.",
+      "url": "https://www.cmacgm-group.com/en/news-media/cma-cgm-completes-acquisition-altice-media",
+      "sourceTitle": "CMA CGM Completes Acquisition of Altice Media",
+      "publisher": "CMA CGM Group",
+      "date": "2024-07-02",
+      "checkedAt": "2026-10-08T17:55:50.816Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "sud-radio": {
+      "slug": "sud-radio",
+      "owners": [
+        {
+          "name": "Fiducial Médias",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Groupe Fiducial",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Fiducial",
+      "controller": "Famille Latouche (Fiducial)",
+      "controllerKind": "famille",
+      "otherMedia": [],
+      "note": "Rachetée en 2013 par Fiducial, groupe de services aux entreprises fondé par Christian Latouche.",
+      "quote": "En 2013, Sud Radio connaît un nouveau bouleversement : son rachat par Fiducial. Fiducial, par le biais de sa filiale Fiducial Médias, s'engage alors à préserver l'identité de Sud Radio, notamment en maintenant son siège à Toulouse et en conservant son nom.",
+      "url": "https://www.sudradio.fr/qui-sommes-nous",
+      "sourceTitle": "Qui sommes-nous ?",
+      "publisher": "Sud Radio",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:51.401Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-monde": {
+      "slug": "le-monde",
+      "owners": [
+        {
+          "name": "Fonds pour l'indépendance de la presse",
+          "kind": "fondation",
+          "share": "53 % (AFP, déc. 2024)"
+        },
+        {
+          "name": "Pôle d'indépendance",
+          "kind": "salaries",
+          "share": "25 % (AFP, déc. 2024)"
+        }
+      ],
+      "group": "Groupe Le Monde",
+      "controller": "Fonds pour l’indépendance de la presse (créé par Xavier Niel)",
+      "controllerKind": "fondation",
+      "otherMedia": [
+        "Télérama",
+        "Courrier international",
+        "Le Nouvel Obs",
+        "La Vie"
+      ],
+      "note": "Xavier Niel a cédé ses parts en 2024 à un fonds de dotation qu’il avait créé. Journalistes, salariés et lecteurs en détiennent 25 %.",
+      "quote": "L’actionnaire majoritaire du groupe Le Monde et doté du statut d’organisme d’intérêt général à but non lucratif, le Fonds pour l’indépendance de la presse lance deux appels à projets pour soutenir financièrement le journalisme d’investigation et l’éducation aux médias.",
+      "url": "https://www.cbnews.fr/node/97793",
+      "sourceTitle": "Le Fonds pour l’indépendance de la presse lance deux appels à projets",
+      "publisher": "CB News",
+      "date": "2026-01-06",
+      "checkedAt": "2026-10-08T17:55:52.183Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-figaro": {
+      "slug": "le-figaro",
+      "owners": [
+        {
+          "name": "Groupe Figaro",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Groupe Dassault (Groupe Industriel Marcel Dassault)",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Groupe Figaro (Groupe Dassault)",
+      "controller": "Famille Dassault",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Le Figaro Magazine",
+        "Madame Figaro",
+        "TV Magazine",
+        "Le Figaro TV",
+        "Gala"
+      ],
+      "note": "Propriété de la famille Dassault depuis 2004.",
+      "quote": "celui qui fête ses quinze ans à la tête du Figaro et loue l’engagement du groupe Dassault, propriétaire désormais depuis plus longtemps que Robert Hersant.",
+      "url": "https://www.strategies.fr/actualites/medias/LQ6170744C/le-figaro-designe-editeur-de-lannee-2026.html",
+      "sourceTitle": "Le Figaro désigné éditeur de l’année 2026",
+      "publisher": "Stratégies",
+      "date": "2026-05-20",
+      "checkedAt": "2026-10-08T17:55:53.688Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "liberation": {
+      "slug": "liberation",
+      "owners": [
+        {
+          "name": "Presse indépendante SAS",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Fonds de dotation pour une presse indépendante",
+          "kind": "fondation",
+          "share": "majoritaire dans Presse indépendante"
+        }
+      ],
+      "group": "Presse indépendante",
+      "controller": "Fonds de dotation pour une presse indépendante",
+      "controllerKind": "fondation",
+      "otherMedia": [],
+      "note": "Patrick Drahi l’a cédé en 2020 à un fonds de dotation. Daniel Kretinsky lui a prêté 59 millions d’euros depuis 2022, selon L’Informé.",
+      "quote": "De 2014 à 2020, Libé appartenait au groupe Altice, de Patrick Drahi, qui l’a ensuite transféré à un fonds destiné à garantir son indépendance, le « Fonds de dotation pour une presse indépendante »(FDPI).",
+      "url": "https://fr.themedialeader.com/une-femme-elue-a-la-tete-de-la-redaction-de-liberation/",
+      "sourceTitle": "Une femme élue à la tête de la rédaction de Libération",
+      "publisher": "The Media Leader FR (avec AFP)",
+      "date": "2026-05-11",
+      "checkedAt": "2026-10-08T17:55:53.744Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "les-echos": {
+      "slug": "les-echos",
+      "owners": [
+        {
+          "name": "Groupe Les Echos-Le Parisien",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "LVMH",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Les Echos-Le Parisien (LVMH)",
+      "controller": "Famille Arnault (LVMH)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Le Parisien",
+        "Connaissance des Arts",
+        "Historia",
+        "Investir",
+        "Radio Classique"
+      ],
+      "note": "LVMH est contrôlé par la famille Arnault (64 % des droits de vote).",
+      "quote": "Les Echos fait partie du groupe Les Echos - Le Parisien Connaissance des Arts , Historia, Investir , Le Parisien , Radio Classique appartiennent également à ce groupe",
+      "url": "https://www.lvmh.com/fr/nos-maisons/autres-activites/les-echos",
+      "sourceTitle": "Les Echos - LVMH",
+      "publisher": "LVMH",
+      "date": "",
+      "checkedAt": "2026-10-08T17:55:55.194Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-parisien": {
+      "slug": "le-parisien",
+      "owners": [
+        {
+          "name": "Groupe Les Echos-Le Parisien",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "LVMH",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Les Echos-Le Parisien (LVMH)",
+      "controller": "Famille Arnault (LVMH)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Les Echos"
+      ],
+      "note": "LVMH l’a renfloué de 150 millions d’euros en 2025.",
+      "quote": "LVMH a validé ce vendredi le renflouement du journal Le Parisien/Aujourd’hui en France, dont il est propriétaire, à hauteur de 150 millions d’euros, a indiqué la direction du groupe de presse.",
+      "url": "https://fr.themedialeader.com/lvmh-renfloue-le-parisien-aujourdhui-en-france-a-hauteur-de-150-millions-deuros/",
+      "sourceTitle": "LVMH renfloue Le Parisien/Aujourd’hui en France à hauteur de 150 millions d’euros",
+      "publisher": "The Media Leader (avec AFP)",
+      "date": "2025-11-24",
+      "checkedAt": "2026-10-08T17:55:55.249Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "la-croix": {
+      "slug": "la-croix",
+      "owners": [
+        {
+          "name": "Bayard",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Congrégation des Augustins de l'Assomption",
+          "kind": "autre",
+          "share": ""
+        }
+      ],
+      "group": "Bayard",
+      "controller": "Augustins de l’Assomption (congrégation catholique)",
+      "controllerKind": "autre",
+      "otherMedia": [
+        "Le Pèlerin",
+        "Notre Temps",
+        "Pomme d'Api",
+        "Astrapi",
+        "Okapi",
+        "J'aime lire",
+        "Toboggan",
+        "Wapiti",
+        "1jour1actu"
+      ],
+      "note": "Éditée par Bayard, qui appartient à une congrégation catholique.",
+      "quote": "Bayard est détenu par la congrégation religieuse catholique des Augustins de l'Assomption. En plus de La Croix, il compte l'hebdomadaire Le Pèlerin, le mensuel Notre Temps et des titres de presse jeunesse",
+      "url": "https://www.ozap.com/actu/plan-social-chez-bayard-la-croix-jusqua-59-postes-supprimes-soit-5-des-effectifs-du-groupe-en-france/654606",
+      "sourceTitle": "Plan social chez Bayard (\"La Croix\") : Jusqu'à 59 postes supprimés, \"soit 5% des effectifs du groupe en France\"",
+      "publisher": "Puremédias",
+      "date": "2026-04-10",
+      "checkedAt": "2026-10-08T17:55:55.488Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "l-opinion": {
+      "slug": "l-opinion",
+      "owners": [
+        {
+          "name": "Bey Médias",
+          "kind": "entreprise",
+          "share": "société éditrice"
+        },
+        {
+          "name": "LVMH (via sa filiale Ufipar)",
+          "kind": "entreprise",
+          "share": "100 %"
+        }
+      ],
+      "group": "Bey Médias (LVMH)",
+      "controller": "Famille Arnault (LVMH)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "L'Agefi"
+      ],
+      "note": "LVMH en a pris 100 % en 2025 ; son fondateur, Nicolas Beytout, reste président.",
+      "quote": "Le groupe LVMH a racheté Bey Médias, éditeur des titres économiques L’Opinion et L’Agefi, en rachetant les parts des actionnaires restants via sa filiale Ufipar. Il détenait déjà 25% du capital.",
+      "url": "https://fr.themedialeader.com/?p=110867",
+      "sourceTitle": "LVMH devient l’unique propriétaire de L’Opinion et L’Agefi",
+      "publisher": "The Media Leader",
+      "date": "2025-07-04",
+      "checkedAt": "2026-10-08T17:55:56.033Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-jdd": {
+      "slug": "le-jdd",
+      "owners": [
+        {
+          "name": "Lagardère SA",
+          "kind": "entreprise",
+          "share": "100 %"
+        },
+        {
+          "name": "Louis Hachette Group",
+          "kind": "entreprise",
+          "share": "66 % de Lagardère"
+        },
+        {
+          "name": "Groupe Bolloré",
+          "kind": "entreprise",
+          "share": "31 % de Louis Hachette Group"
+        }
+      ],
+      "group": "Lagardère (Louis Hachette Group)",
+      "controller": "Groupe Bolloré",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Le JDNews",
+        "Le JDMag",
+        "Europe 1",
+        "Prisma Media"
+      ],
+      "note": "Arrivé avec le rachat de Lagardère : le groupe Bolloré est l’actionnaire de référence de Louis Hachette Group (31 %).",
+      "quote": "Lagardère News regroupe Le Journal du Dimanche (un journal hebdomadaire français d’actualité et d’investigation) accompagné de sa déclinaison Le JDNews, un magazine hebdomadaire d’information, et de son supplément féminin Le JDMag.",
+      "url": "https://www.louishachettegroup.com/wp-content/uploads/2026/05/260326_LHG_RAPPORT_ANNUEL.pdf",
+      "sourceTitle": "Louis Hachette Group – Rapport annuel 2025",
+      "publisher": "Louis Hachette Group",
+      "date": "2026-03-26",
+      "checkedAt": "2026-10-08T17:56:01.115Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "l-express": {
+      "slug": "l-express",
+      "owners": [
+        {
+          "name": "Alain Weill",
+          "kind": "personne",
+          "share": "majoritaire"
+        }
+      ],
+      "group": "Groupe L’Express",
+      "controller": "Alain Weill",
+      "controllerKind": "personne",
+      "otherMedia": [],
+      "note": "Racheté par Alain Weill en deux temps, en 2019 puis en 2023.",
+      "quote": "Alain Weill, propriétaire du titre depuis 2019, ouvre le capital du groupe à des investisseurs européens afin de lever environ 15 millions d’euros dans le but de financer deux projets à l’international.",
+      "url": "https://fr.themedialeader.com/lexpress-cherche-des-partenaires-europeens-pour-financer-son-expansion/",
+      "sourceTitle": "L’Express cherche des partenaires européens pour financer son expansion",
+      "publisher": "The Media Leader",
+      "date": "2025-05-13",
+      "checkedAt": "2026-10-08T17:56:01.298Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-point": {
+      "slug": "le-point",
+      "owners": [
+        {
+          "name": "Artémis",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Artémis",
+      "controller": "Famille Pinault",
+      "controllerKind": "famille",
+      "otherMedia": [],
+      "note": "Via Artémis, la holding de la famille Pinault.",
+      "quote": "Bertrand Gié quitte ainsi Le Figaro, propriété de la famille Dassault, pour rejoindre Le Point, détenu par la famille Pinault via son holding Artemis.",
+      "url": "https://fr.themedialeader.com/bertrand-gie-quitte-le-figaro-pour-prendre-la-tete-du-point/",
+      "sourceTitle": "Bertrand Gié quitte Le Figaro pour prendre la tête du Point",
+      "publisher": "The Media Leader",
+      "date": "2026-07-21",
+      "checkedAt": "2026-10-08T17:56:01.354Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-nouvel-obs": {
+      "slug": "le-nouvel-obs",
+      "owners": [
+        {
+          "name": "Le Monde Libre (holding)",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Groupe Le Monde",
+      "controller": "Fonds pour l’indépendance de la presse (créé par Xavier Niel)",
+      "controllerKind": "fondation",
+      "otherMedia": [
+        "Le Monde",
+        "Télérama",
+        "Courrier international",
+        "La Vie"
+      ],
+      "note": "Fait partie du groupe Le Monde, contrôlé depuis 2024 par le fonds créé par Xavier Niel.",
+      "quote": "Le FIP a été créé en 2021 par l'ancien actionnaire majoritaire du Monde, le milliardaire Xavier Niel, dans l'idée de préserver l'indépendance du capital du groupe éponyme, qui comprend le quotidien du soir ainsi que Télérama, Courrier international, Le Nouvel Obs ou encore La Vie.",
+      "url": "https://www.cbnews.fr/node/89464",
+      "sourceTitle": "80 ans du Monde : son fonds actionnaire va financer l'investigation",
+      "publisher": "CB News (AFP)",
+      "date": "2024-12-18",
+      "checkedAt": "2026-10-08T17:56:02.140Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "marianne": {
+      "slug": "marianne",
+      "owners": [
+        {
+          "name": "CMI France",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "CMI France",
+      "controller": "Daniel Kretinsky",
+      "controllerKind": "personne",
+      "otherMedia": [
+        "Elle",
+        "Franc-Tireur",
+        "T18"
+      ],
+      "note": "CMI France, le groupe de Daniel Kretinsky, a renoncé à le vendre en 2024.",
+      "quote": "Le groupe CMI France (Elle, Marianne, Franc-Tireur, la nouvelle chaîne T18...), contrôlé par le milliardaire tchèque Daniel Kretinsky, souhaite supprimer jusqu'à 87 postes dans le cadre d'un plan social, a indiqué mercredi sa direction à l'AFP.",
+      "url": "https://www.ozap.com/actu/cmi-france-elle-marianne-le-groupe-medias-du-milliardaire-tcheque-daniel-kretinsky-annonce-un-plan-social-87-postes-menaces/652845",
+      "sourceTitle": "CMI France (\"Elle\", \"Marianne\") : Le groupe médias du milliardaire tchèque Daniel Kretinsky annonce un plan social, 87 postes menacés",
+      "publisher": "Puremédias (AFP)",
+      "date": "2025-12-11",
+      "checkedAt": "2026-10-08T17:56:02.299Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "paris-match": {
+      "slug": "paris-match",
+      "owners": [
+        {
+          "name": "LVMH",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "LVMH",
+      "controller": "Famille Arnault (LVMH)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Le Parisien",
+        "Les Echos"
+      ],
+      "note": "Vendu par Lagardère à LVMH en 2024.",
+      "quote": "le magazine Paris Match changera officiellement de propriétaire ce mardi en rejoignant le géant du luxe LVMH dirigé par Bernard Arnault. Le 1er octobre marquera en effet le dénouement de la vente de l'hebdomadaire",
+      "url": "https://www.cbnews.fr/medias/paris-match-lagardere-news-lvmh",
+      "sourceTitle": "Paris-Match : de Lagardère News à LVMH",
+      "publisher": "CB News (AFP)",
+      "date": "2024-09-29",
+      "checkedAt": "2026-10-08T17:56:02.609Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "valeurs-actuelles": {
+      "slug": "valeurs-actuelles",
+      "owners": [
+        {
+          "name": "Benjamin La Combe",
+          "kind": "personne",
+          "share": ""
+        },
+        {
+          "name": "Alexis Caude",
+          "kind": "personne",
+          "share": ""
+        },
+        {
+          "name": "Pierre-Edouard Stérin",
+          "kind": "personne",
+          "share": ""
+        }
+      ],
+      "group": "Valmonde",
+      "controller": "Pierre-Édouard Stérin, Benjamin La Combe et Alexis Caude",
+      "controllerKind": "personne",
+      "otherMedia": [],
+      "note": "Vendu fin 2025 par les héritiers d’Iskandar Safa à trois investisseurs.",
+      "quote": "Le groupe Pidevmedias a vendu Valmonde, la société éditrice de Valeurs actuelles, à un trio d'investisseurs composé de Benjamin La Combe, Alexis Caude et Pierre-Edouard Stérin",
+      "url": "https://www.cbnews.fr/node/97209",
+      "sourceTitle": "La vente de Valeurs actuelles à un trio d'investisseurs, dont Pierre-Edouard Stérin, finalisée",
+      "publisher": "CB News (AFP)",
+      "date": "2025-12-02",
+      "checkedAt": "2026-10-08T17:56:03.011Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-canard-enchaine": {
+      "slug": "le-canard-enchaine",
+      "owners": [
+        {
+          "name": "Salariés du Canard enchaîné",
+          "kind": "salaries",
+          "share": "100 %"
+        }
+      ],
+      "group": "Éditions Maréchal",
+      "controller": "Ses salariés",
+      "controllerKind": "salaries",
+      "otherMedia": [],
+      "note": "Le journal appartient à ses salariés et ne verse pas de dividendes.",
+      "quote": "L’intégralité de l’actionnariat est détenue par les salariés du Canard – mais il n’y a pas de dividendes.",
+      "url": "https://www.politis.fr/articles/2021/12/le-canard-enchaine-un-contre-pouvoir-cest-une-solidite-financiere-43923",
+      "sourceTitle": "Le Canard enchaîné : « Un contre-pouvoir, c’est une solidité financière »",
+      "publisher": "Politis",
+      "date": "2021-12-15",
+      "checkedAt": "2026-10-08T17:56:05.440Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "challenges": {
+      "slug": "challenges",
+      "owners": [
+        {
+          "name": "LVMH",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Croque Futur (LVMH)",
+      "controller": "Famille Arnault (LVMH)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Les Echos",
+        "Le Parisien",
+        "L'Agefi",
+        "Investir-Le Journal des Finances"
+      ],
+      "note": "LVMH en a pris le contrôle fin 2025 en rachetant les parts de Claude Perdriel.",
+      "quote": "LVMH, qui a finalisé le rachat de \"Challenges\" fin 2025 auprès de l'homme d'affaires Claude Perdriel, est déjà propriétaire du quotidien économique Les Echos et du quotidien généraliste Le Parisien (groupe Les Echos-Le Parisien)",
+      "url": "https://www.cbnews.fr/node/100429",
+      "sourceTitle": "Les journalistes de Challenges appelés à la grève contre leur propriétaire LVMH",
+      "publisher": "CB News (AFP)",
+      "date": "2026-04-21",
+      "checkedAt": "2026-10-08T17:56:05.865Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "ouest-france": {
+      "slug": "ouest-france",
+      "owners": [
+        {
+          "name": "Association pour le soutien des principes de la démocratie humaniste (ASPDH)",
+          "kind": "association",
+          "share": ""
+        }
+      ],
+      "group": "Groupe SIPA Ouest-France",
+      "controller": "Une association (ASPDH)",
+      "controllerKind": "association",
+      "otherMedia": [],
+      "note": "Propriété d’une association loi 1901 depuis 1990.",
+      "quote": "Un prix de l'Association pour le Soutien des Principes de la Démocratie Humaniste, propriétaire de Ouest-France, en partenariat avec le CESE, la Fondation de France et l'AMF",
+      "url": "https://www.lecese.fr/print/pdf/node/20228",
+      "sourceTitle": "3ème édition du Prix de la démocratie : c'est parti !",
+      "publisher": "Conseil économique, social et environnemental (CESE)",
+      "date": "2025-11-05",
+      "checkedAt": "2026-10-08T17:56:06.928Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "sud-ouest": {
+      "slug": "sud-ouest",
+      "owners": [
+        {
+          "name": "Groupe Sud Ouest (GSO)",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Groupe Sud Ouest",
+      "controller": "Famille Lemoîne",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Charente Libre",
+        "La République des Pyrénées"
+      ],
+      "note": "La famille Lemoîne détient environ 80 % du groupe. Vente au groupe belge Rossel en négociation exclusive depuis septembre 2026.",
+      "quote": "La maison mère du quotidien régional Sud Ouest, propriété de la famille du fondateur Jacques Lemoîne, est entrée en \"négociations exclusives\" pour un rachat par le belge Rossel, déjà propriétaire en France de La Voix du Nord, ont annoncé jeudi les deux groupes.",
+      "url": "https://www.cbnews.fr/node/102866",
+      "sourceTitle": "Le groupe Sud Ouest négocie son rachat par le groupe Rossel",
+      "publisher": "CB News (AFP)",
+      "date": "2026-09-03",
+      "checkedAt": "2026-10-08T17:56:07.337Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "la-depeche": {
+      "slug": "la-depeche",
+      "owners": [
+        {
+          "name": "Famille Baylet",
+          "kind": "famille",
+          "share": "98 %"
+        }
+      ],
+      "group": "Groupe La Dépêche du Midi",
+      "controller": "Famille Baylet",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Midi Olympique"
+      ],
+      "note": "La famille Baylet en détient 98 %.",
+      "quote": "Détenu à 98% par la famille Baylet, La Dépêche du Midi emploie 1 250 personnes, dont 450 journalistes, pour un chiffre d’affaires de 200 millions d’euros",
+      "url": "https://fr.themedialeader.com/?p=219409",
+      "sourceTitle": "Sud Ouest : écarté de la vente, La Dépêche du Midi se dit prêt à une contre-offre",
+      "publisher": "The Media Leader FR",
+      "date": "2026-09-24",
+      "checkedAt": "2026-10-08T17:56:08.228Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-progres": {
+      "slug": "le-progres",
+      "owners": [
+        {
+          "name": "Groupe EBRA",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Crédit Mutuel Alliance Fédérale",
+          "kind": "entreprise",
+          "share": "100 % de EBRA (actionnaire unique)"
+        }
+      ],
+      "group": "EBRA",
+      "controller": "Crédit Mutuel Alliance Fédérale",
+      "controllerKind": "autre",
+      "otherMedia": [
+        "Dernières Nouvelles d’Alsace",
+        "L’Alsace",
+        "Le Républicain lorrain",
+        "L’Est Républicain",
+        "Le Dauphiné libéré",
+        "Vosges Matin",
+        "Le Bien Public",
+        "Le Journal de Saône-et-Loire"
+      ],
+      "note": "L’un des neuf quotidiens régionaux d’EBRA, qui appartient à 100 % au Crédit Mutuel.",
+      "quote": "EBRA (Est Bourgogne Rhône Alpes) est le premier groupe de presse quotidienne régionale français, créé en 2006 et filiale de Crédit Mutuel Alliance Fédérale. Il regroupe neuf quotidiens régionaux",
+      "url": "https://www.creditmutuel.fr/fr/alliancefederale/banque-mutualiste/nos-metiers-et-filiales.html",
+      "sourceTitle": "Nos métiers et filiales",
+      "publisher": "Crédit Mutuel Alliance Fédérale",
+      "date": "",
+      "checkedAt": "2026-10-08T17:56:09.830Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "la-voix-du-nord": {
+      "slug": "la-voix-du-nord",
+      "owners": [
+        {
+          "name": "Rossel France",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Rossel",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Rossel",
+      "controller": "Famille Hurbain (Rossel)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Le Soir",
+        "Le Courrier picard",
+        "L'Union",
+        "Paris-Normandie",
+        "20 Minutes"
+      ],
+      "note": "Propriété du groupe belge Rossel, qui négocie aussi le rachat de Sud Ouest.",
+      "quote": "Fondé en Belgique en 1887 et toujours détenu par la famille Hurbain, Rossel est notamment propriétaire du quotidien Le Soir . Sa filiale Rossel France rassemble déjà plus de 40 marques, parmi lesquelles La Voix du Nord , Le Courrier picard , L'Union ou Paris-Normandie .",
+      "url": "https://actualitte.com/article/133665/presse/presse-audiovisuel-livres-rossel-veut-mettre-la-main-sur-le-groupe-sud-ouest",
+      "sourceTitle": "Presse, audiovisuel, livres : Rossel veut mettre la main sur le Groupe Sud Ouest",
+      "publisher": "ActuaLitté",
+      "date": "2026-09-03",
+      "checkedAt": "2026-10-08T17:56:10.681Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-telegramme": {
+      "slug": "le-telegramme",
+      "owners": [
+        {
+          "name": "Groupe Télégramme (Advenn)",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "Famille Coudurier",
+          "kind": "famille",
+          "share": ""
+        }
+      ],
+      "group": "Advenn (ex-Groupe Télégramme)",
+      "controller": "Famille Coudurier",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Bretagne Magazine",
+        "Le Mensuel de Rennes",
+        "Tébéo"
+      ],
+      "note": "Le groupe s’appelle Advenn depuis septembre 2026. Il est présidé par Édouard Coudurier.",
+      "quote": "Le groupe Télégramme a été fondé en 1944 par Marcel Coudurier à la Libération de Brest. Ce groupe familial indépendant est toujours détenu par la famille Coudurier ( 4 ème génération). Edouard Coudurier le préside aujourd’hui.",
+      "url": "https://hr-infos.fr/le-groupe-telegramme-se-diversifie-aussi-dans-lhotellerie-en-rachetant-le-grand-be-a-saint-malo/",
+      "sourceTitle": "Le groupe Télégramme se diversifie aussi dans l'hôtellerie en rachetant Le Grand Bé à Saint-Malo",
+      "publisher": "HR-Infos",
+      "date": "2026-07-10",
+      "checkedAt": "2026-10-08T17:56:11.523Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "mediapart": {
+      "slug": "mediapart",
+      "owners": [
+        {
+          "name": "Société pour la Protection de l’Indépendance de Mediapart (SPIM)",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Mediapart",
+      "controller": "Fonds pour une presse libre",
+      "controllerKind": "fondation",
+      "otherMedia": [],
+      "note": "Détenu par un fonds à but non lucratif dont les statuts interdisent d’intervenir sur la ligne éditoriale.",
+      "quote": "le FPL garantit la protection de l’indépendance du journal en ligne Mediapart , de façon à la rendre irréversible, par la sanctuarisation de son capital au sein de la Société pour la Protection de l’Indépendance de Mediapart (SPIM) qu’il contrôle.",
+      "url": "https://www.fondspresselibre.org/qui-sommes-nous/",
+      "sourceTitle": "Qui sommes-nous ?",
+      "publisher": "Fonds pour une presse libre",
+      "date": "",
+      "checkedAt": "2026-10-08T17:56:13.560Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "20-minutes": {
+      "slug": "20-minutes",
+      "owners": [
+        {
+          "name": "Rossel",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Rossel",
+      "controller": "Famille Hurbain (Rossel)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Le Soir",
+        "La Voix du Nord",
+        "Le Courrier picard",
+        "L'Union",
+        "Paris-Normandie"
+      ],
+      "note": "Rossel en a pris 100 % en 2026 en rachetant la part d’Ouest-France.",
+      "quote": "Sa filiale Rossel France rassemble déjà plus de 40 marques, parmi lesquelles La Voix du Nord , Le Courrier picard , L'Union ou Paris-Normandie . Le groupe a également pris le contrôle de 20 Minutes en 2026.",
+      "url": "https://actualitte.com/article/133665/presse/presse-audiovisuel-livres-rossel-veut-mettre-la-main-sur-le-groupe-sud-ouest",
+      "sourceTitle": "Presse, audiovisuel, livres : Rossel veut mettre la main sur le Groupe Sud Ouest",
+      "publisher": "ActuaLitté",
+      "date": "2026-09-03",
+      "checkedAt": "2026-10-08T17:56:13.561Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "huffpost": {
+      "slug": "huffpost",
+      "owners": [
+        {
+          "name": "Société éditrice du Monde",
+          "kind": "entreprise",
+          "share": "majoritaire"
+        }
+      ],
+      "group": "Groupe Le Monde",
+      "controller": "Fonds pour l’indépendance de la presse (créé par Xavier Niel)",
+      "controllerKind": "fondation",
+      "otherMedia": [
+        "Le Monde"
+      ],
+      "note": "Le groupe Le Monde en est l’actionnaire majoritaire depuis fin 2021.",
+      "quote": "le groupe Le Monde qui détenait jusqu’à présent 34% du capital du Huff Post France, en est désormais l’actionnaire majoritaire. En effet, la Société éditrice du Monde a racheté les 51% que le groupe d’information américain Buzzfeed détenait depuis 2020 dans le pure player français.",
+      "url": "https://www.cbnews.fr/node/66158",
+      "sourceTitle": "Le Monde propriétaire du Huff Post France",
+      "publisher": "CB News",
+      "date": "2022-01-04",
+      "checkedAt": "2026-10-08T17:56:14.640Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "brut": {
+      "slug": "brut",
+      "owners": [
+        {
+          "name": "CMA Media",
+          "kind": "entreprise",
+          "share": ""
+        },
+        {
+          "name": "CMA CGM",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "CMA Media",
+      "controller": "Famille Saadé (CMA CGM)",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "BFMTV",
+        "RMC",
+        "La Tribune",
+        "La Tribune Dimanche",
+        "La Provence",
+        "Corse Matin"
+      ],
+      "note": "Racheté en 2025 par CMA Media, le pôle médias de l’armateur CMA CGM.",
+      "quote": "Le média vidéo en ligne Brut appartient désormais au groupe CMA CGM du milliardaire Rodolphe Saadé, après la finalisation de son acquisition annoncée vendredi, qui s'ajoute à celle d'autres médias dont la chaîne BFMTV et la radio RMC.",
+      "url": "https://www.cbnews.fr/node/95172",
+      "sourceTitle": "Le groupe CMA CGM finalise le rachat de Brut",
+      "publisher": "CB News (AFP)",
+      "date": "2025-09-12",
+      "checkedAt": "2026-10-08T17:56:14.926Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "l-humanite": {
+      "slug": "l-humanite",
+      "owners": [
+        {
+          "name": "Société des lectrices et lecteurs",
+          "kind": "lecteurs",
+          "share": ""
+        },
+        {
+          "name": "Société des Amis de l’Humanité",
+          "kind": "association",
+          "share": ""
+        },
+        {
+          "name": "Société du Personnel",
+          "kind": "salaries",
+          "share": ""
+        },
+        {
+          "name": "Société Humanité Investissement Pluralisme",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Société nouvelle du journal L’Humanité",
+      "controller": "Ses lecteurs, ses salariés et ses amis",
+      "controllerKind": "lecteurs",
+      "otherMedia": [
+        "L’Humanité magazine"
+      ],
+      "note": "Longtemps organe du PCF, le journal dit n’appartenir aujourd’hui à aucun parti ; l’observatoire eurotopics le présente encore comme propriété majoritaire du PCF.",
+      "quote": "la Société des lectrices et lecteurs, la Société des Amis de l’Humanité, la Société du Personnel et la Société Humanité Investissement Pluralisme entrent dans le capital de l’Humanité.",
+      "url": "https://www.humanite.fr/a-propos",
+      "sourceTitle": "À propos de l’Humanité",
+      "publisher": "L’Humanité",
+      "date": "",
+      "checkedAt": "2026-10-08T17:56:15.638Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "public-senat": {
+      "slug": "public-senat",
+      "owners": [
+        {
+          "name": "Sénat",
+          "kind": "autre",
+          "share": "100 %"
+        }
+      ],
+      "group": "",
+      "controller": "Sénat",
+      "controllerKind": "etat",
+      "otherMedia": [],
+      "note": "La chaîne du Sénat. LCP, sur le même canal, est celle de l’Assemblée nationale.",
+      "quote": "Le Bureau, représentant le Sénat, actionnaire unique de la société anonyme « La Chaîne parlementaire – Public Sénat », a pris connaissance, en présence de M. Jean-Emmanuel Casalta, président-directeur général, du rapport de gestion du conseil d’administration",
+      "url": "https://www.senat.fr/fileadmin/cru-1779899989/Organisation_interne/Bureau/Comptes_rendus/2026/02_CR_Bureau_280526.pdf",
+      "sourceTitle": "Compte rendu de la réunion du Bureau du Sénat du 28 mai 2026",
+      "publisher": "Sénat",
+      "date": "2026-05-28",
+      "checkedAt": "2026-10-08T17:57:34.505Z",
+      "model": "recherche vérifiée hors API"
     }
   },
   "alertes": {
@@ -205,6 +1359,601 @@
     "public-senat": {
       "checkedAt": "2026-10-08T17:11:38.561Z",
       "items": []
+    },
+    "cnews": {
+      "checkedAt": "2026-10-08T17:56:29.564Z",
+      "items": [
+        {
+          "date": "2026-06-17",
+          "kind": "mise-en-demeure",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en demeure l'éditeur de CNews pour manque de mesure et d'honnêteté dans les commentaires et présentations de la campagne municipale à Paris, après la diffusion le 20 mars 2026 d'un reportage consacré à une candidate et d'une émission en plateau.",
+          "quote": "La société d’exploitation d’un service d’information est, en ce qui concerne le service de télévision « CNews », mise en demeure de se conformer à l’avenir aux dispositions du 4° du I.1. de l’article 2 de la délibération du 4 janvier 2011",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-17-juin-2026-mettant-en-demeure-la-societe-dexploitation-dun-service-dinformation",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2026-06-12",
+          "kind": "mise-en-demeure",
+          "topic": "pluralisme",
+          "summary": "L'Arcom a mis en demeure l'éditeur de CNews de se conformer à l'exigence d'expression pluraliste des courants de pensée et d'opinion, à la suite d'une saisine de Reporters sans frontières portant sur les programmes de mars 2025.",
+          "quote": "La société d'exploitation d'un service d'information est mise en demeure de se conformer, à l'avenir, en ce qui concerne le service de télévision « CNews », à l'exigence d'expression pluraliste des courants de pensée et d'opinion",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-12-juin-2026-mettant-en-demeure-la-societe-dexploitation-dun-service-dinformation",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-07-24",
+          "kind": "mise-en-garde",
+          "topic": "pluralisme",
+          "summary": "Après réexamen de la saisine de Reporters sans frontières ordonné par le Conseil d'État, l'Arcom a mis en garde l'éditeur de CNews sur le pluralisme des courants de pensée et d'opinion, estimant que plusieurs sujets avaient été traités de manière univoque en mai 2021.",
+          "quote": "En conséquence, l’Autorité a mis en garde l’éditeur de la chaîne CNews et lui a demandé de faire preuve de la plus grande vigilance, à l’avenir, quant au respect de l’exigence de pluralisme des courants de pensée et d’opinion",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/reexamen-de-la-saisine-de-lassociation-reporters-sans-frontieres-rsf",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-02-13",
+          "kind": "decision-conseil-etat",
+          "topic": "pluralisme",
+          "summary": "Le Conseil d'État a annulé le refus de l'Arcom du 5 avril 2022 de mettre en demeure l'éditeur de CNews en matière de pluralisme et d'indépendance de l'information, et lui a enjoint de réexaminer la demande de Reporters sans frontières.",
+          "quote": "Article 1er : La décision du 5 avril 2022 de l'Arcom est annulée en tant qu'elle rejette la demande de l'association Reporters sans frontières que l'éditeur du service CNEWS soit mis en demeure de se conformer à ses obligations en matière de pluralisme et d'indépendance de l'information.",
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-02-13/463162",
+          "publisher": "Conseil d’État"
+        },
+        {
+          "date": "2023-01-13",
+          "kind": "decision-conseil-etat",
+          "topic": "temps-de-parole",
+          "summary": "Le Conseil d'État a rejeté la requête de l'éditeur de CNews contre la mise en demeure du CSA du 3 décembre 2021 relative au pluralisme politique.",
+          "quote": "Article 1er : La requête de la société d'exploitation d'un service d'information est rejetée.",
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2023-01-13/462663",
+          "publisher": "Conseil d’État"
+        },
+        {
+          "date": "2021-12-03",
+          "kind": "mise-en-demeure",
+          "topic": "temps-de-parole",
+          "summary": "Le CSA a mis en demeure CNews de respecter sa délibération du 22 novembre 2017 sur le pluralisme politique, après avoir constaté que les temps de parole diffusés du 1er octobre au 15 novembre 2021 n'y étaient pas conformes.",
+          "quote": "En conséquence, le CSA a mis en demeure la chaîne de se conformer, d’ici au 31 décembre 2021 et à l’avenir, aux dispositions de l’article 1er de la délibération du 22 novembre 2017",
+          "url": "https://www.arcom.fr/sites/default/files/2023-01/Bilan%202021%20du%20groupe%20Canal%20Plus%20-%20volet%202%20%282%29.pdf",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2021-06-03",
+          "kind": "mise-en-demeure",
+          "topic": "campagne-electorale",
+          "summary": "Le CSA a mis en demeure CNews d'assurer un accès équitable à l'antenne des listes candidates aux élections régionales en Île-de-France, après avoir relevé des déséquilibres pour la période du 10 au 28 mai 2021.",
+          "quote": "En conséquence, le CSA a mis en demeure CNews de se conformer au point I.1. de l’article 2 de la délibération du 4 janvier 2011",
+          "url": "https://www.arcom.fr/sites/default/files/2023-01/Bilan%202021%20du%20groupe%20Canal%20Plus%20-%20volet%202%20%282%29.pdf",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "bfmtv": {
+      "checkedAt": "2026-10-08T17:56:31.917Z",
+      "items": [
+        {
+          "date": "2024-04-03",
+          "kind": "mise-en-demeure",
+          "topic": "honnetete-information",
+          "summary": "L'Arcom a mis en demeure BFM TV de respecter l'exigence d'honnêteté et de rigueur de l'information, après une présentation factuellement inexacte, le 26 novembre 2023 dans « 120 minutes », de propos tenus par un ancien Premier ministre.",
+          "quote": "Elle a relevé que les propos tenus par le présentateur et son invité, ainsi que le bandeau les accompagnant, traduisaient une présentation factuellement inexacte des propos réellement tenus par l’ancien Premier ministre.",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/emission-120-minutes-diffusee-le-26-novembre-2023-bfm-tv-mise-en-demeure",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2022-03-10",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en garde BFM TV contre le renouvellement de manquements au principe d'équité des temps de parole pendant la campagne présidentielle, après avoir relevé une surexposition d'Éric Zemmour du 1er janvier au 7 mars 2022.",
+          "quote": "Sur BFM TV, une forte et persistante surexposition en temps de parole et d’antenne d’Eric Zemmour. Si l’Arcom a observé les efforts fournis, elle constate que ceux-ci n’ont pas permis de résorber les déséquilibres avant la fin de la période.",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/respect-du-principe-dequite-des-temps-de-parole-et-dantenne-pour-la-periode-du-1er-janvier-au-7-mars-2022-interventions",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2020-04-08",
+          "kind": "mise-en-garde",
+          "topic": "honnetete-information",
+          "summary": "Le CSA a mis en garde BFM TV pour manquement à l'obligation de rigueur dans la présentation de l'information, après la diffusion d'une infographie reprenant de façon erronée un sondage sur la mobilisation contre la réforme des retraites.",
+          "quote": "Le Conseil a prononcé une mise en garde à l’encontre du service BFM TV le 8 avril 2020 à la suite de la diffusion, dans l’édition du « Week-end direct », d’une infographie illustrant un sondage réalisé par l’IFOP pour le « Journal du Dimanche »",
+          "url": "https://www.arcom.fr/sites/default/files/2022-10/Obligations%20des%20services%20de%20m%C3%A9dias%20audiovisuels%20%C3%A9dit%C3%A9s%20par%20le%20p%C3%B4le%20TV%20du%20groupe%20NextRadioTV%20-%20Rapport%20annuel%202020_0.pdf",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "lci": {
+      "checkedAt": "2026-10-08T17:56:32.253Z",
+      "items": [
+        {
+          "date": "2022-04-27",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en garde LCI pour avoir diffusé, pendant la période de réserve du second tour de l'élection présidentielle, des éléments relatifs aux résultats du scrutin outre-mer avant la clôture des bureaux de vote.",
+          "quote": "En conséquence, l’Autorité a mis en garde la chaîne et lui a demandé de veiller à respecter, lors des prochaines élections, les dispositions applicables la veille et le jour du scrutin.",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/election-presidentielle-2022-sequence-diffusee-pendant-la-periode-de-reserve-lci-mise-en-garde",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2022-01-19",
+          "kind": "mise-en-garde",
+          "topic": "temps-de-parole",
+          "summary": "L'Arcom a mis en garde LCI après l'examen des temps de parole du quatrième trimestre 2021, en raison de la diffusion nocturne d'une part significative des temps de parole du pouvoir exécutif.",
+          "quote": "LCI en raison d’une proportion significative des temps de parole du pouvoir exécutif diffusée la nuit",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/temps-de-parole-hors-elections-du-4e-trimestre-2021-interventions-et-mises-en-garde",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "franceinfo": {
+      "checkedAt": "2026-10-08T17:56:54.293Z",
+      "items": [
+        {
+          "date": "2026-06-10",
+          "kind": "mise-en-demeure",
+          "topic": "temps-de-parole",
+          "summary": "L'Arcom a mis en demeure Radio France de respecter les règles du pluralisme politique sur France Inter et France Info, les temps de parole du Rassemblement national y ayant été très majoritairement diffusés la nuit du 1er janvier au 31 mars 2026.",
+          "quote": "La société nationale de programme Radio France est mise en demeure de se conformer, à l'avenir, en ce qui concerne les services de radio « France Inter » et « France Info », aux dispositions de l'article 1er de la délibération du 22 novembre 2017",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-10-juin-2026-mettant-en-demeure-la-societe-nationale-de-programme-radio-france",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2026-04-08",
+          "kind": "mise-en-demeure",
+          "topic": "honnetete-information",
+          "summary": "L'Arcom a mis en demeure France Télévisions de respecter, sur Franceinfo, les obligations d'honnêteté et de rigueur de l'information, à la suite d'affirmations formulées dans l'émission « Questions politiques » des 9 et 16 novembre 2025.",
+          "quote": "La société nationale de programme France Télévisions est mise en demeure de se conformer, à l’avenir, en ce qui concerne le service de télévision « Franceinfo », aux dispositions précitées de l’article 35 du décret n° 2009-796 du 23 juin 2009",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-8-avril-2026-mettant-en-demeure-la-societe-nationale-de-programme-france-televisions",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2026-03-18",
+          "kind": "mise-en-garde",
+          "topic": "honnetete-information",
+          "summary": "L'Arcom a mis en garde l'éditeur de Franceinfo pour manquement aux exigences d'honnêteté et de rigueur, après la diffusion dans « Tout est politique » de graphiques aux proportions inexactes illustrant des sondages sur l'élection présidentielle de 2027.",
+          "quote": "Elle a constaté que des proportions graphiques inexactes avaient été diffusées en illustration des résultats du sondage en cause, caractérisant une méconnaissance des exigences d’honnêteté et de rigueur qui incombent à la chaîne dans le traitement de l’information.",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/emission-tout-est-politique-diffusee-les-10-et-11-novembre-2025-franceinfo-mise-en-garde",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-06-25",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en garde Radio France au sujet de France Info pour des déséquilibres de temps de parole dans le traitement des élections législatives de 2024, sur la période du 11 au 23 juin.",
+          "quote": "S’agissant de France Info, l’Arcom a constaté, au niveau du traitement de l’actualité électorale nationale, la sous-représentation des Ecologistes ainsi que la surexposition des Républicains.",
+          "url": "https://www.arcom.fr/sites/default/files/2024-12/Arcom%20-%20Rapport%20campagnes%20electorales%202024%20et%20annexes.pdf",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "europe-1": {
+      "checkedAt": "2026-10-08T17:56:54.776Z",
+      "items": [
+        {
+          "date": "2024-06-27",
+          "kind": "mise-en-demeure",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en demeure Europe 1 d'exposer avec mesure et honnêteté les comptes rendus, commentaires et présentations des élections, à la suite de l'émission « On marche sur la tête » diffusée entre le 17 et le 25 juin 2024.",
+          "quote": "l’Arcom a décidé de mettre en demeure la société Europe 1 Télécompagnie, en ce qui concerne le service Europe 1, de se conformer, à l’avenir, aux dispositions du 4° du I.1. de l’article 2 de la délibération du 4 janvier 2011",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/emission-marche-sur-la-tete-diffusee-entre-le-17-et-25-juin-2024-europe-1-mise-en-demeure",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-06-25",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a de nouveau mis en garde Europe 1 pour des déséquilibres de temps de parole dans le traitement des élections législatives de 2024, sur la période du 11 au 23 juin.",
+          "quote": "L’Arcom a mis en garde à nouveau l’éditeur contre le renouvellement de tels manquements aux règles fixées par la recommandation du 10 juin 2024",
+          "url": "https://www.arcom.fr/sites/default/files/2024-12/Arcom%20-%20Rapport%20campagnes%20electorales%202024%20et%20annexes.pdf",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-06-18",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en garde Europe 1 pour une surreprésentation des Républicains et la sous-exposition de quatre formations dans le traitement des élections législatives de 2024, sur la période du 11 au 16 juin.",
+          "quote": "Elle a mis en garde l’éditeur contre le renouvellement de tels manquements aux règles fixées par les dispositions de sa recommandation du 10 juin 2024 relative aux élections législatives des 30 juin et 7 juillet 2024",
+          "url": "https://www.arcom.fr/sites/default/files/2024-12/Arcom%20-%20Rapport%20campagnes%20electorales%202024%20et%20annexes.pdf",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-06-05",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en garde Europe 1 contre le renouvellement de manquements aux règles d'équité des temps de parole dans le traitement des élections européennes, pour la période du 15 avril au 2 juin 2024.",
+          "quote": "mis en garde les éditeurs des services Europe 1 et TV5 Monde contre le renouvellement de manquements aux règles fixées par la recommandation n° 2024-01 du 6 mars 2024",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/traitement-de-lactualite-relative-aux-elections-europeennes-interventions-et-mises-en-garde",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2022-04-15",
+          "kind": "mise-en-demeure",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en demeure l'éditeur d'Europe 1 de respecter l'égalité des temps de parole et d'antenne des candidats à l'élection présidentielle, après des inégalités relevées du 28 mars au 8 avril 2022.",
+          "quote": "La Société Lagardère Active Broadcast est mise en demeure, d’une part, de se conformer aux dispositions de la recommandation du 6 octobre 2021 en respectant le principe de l’égalité des temps de parole et des temps d’antenne des candidats",
+          "url": "https://www.arcom.fr/ressources/espace-juridique/decisions/decision-du-15-avril-2022-mettant-en-demeure-la-societe-lagardere-active-broadcast",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2022-04-05",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a adressé à l'éditeur d'Europe 1 une mise en garde ferme pour des manquements dans la répartition des temps de parole et d'antenne des candidats à l'élection présidentielle du 8 mars à la veille de la campagne officielle.",
+          "quote": "Par un courrier du 5 avril 2022, l’éditeur s’est vu notifier une mise en garde ferme relative aux manquements observés dans la répartition des temps de parole et des temps d’antenne des candidats",
+          "url": "https://www.arcom.fr/ressources/espace-juridique/decisions/decision-du-15-avril-2022-mettant-en-demeure-la-societe-lagardere-active-broadcast",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2022-03-14",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en garde l'éditeur d'Europe 1 pour des manquements dans les temps de parole et d'antenne des candidats à l'élection présidentielle du 1er janvier au 7 mars 2022.",
+          "quote": "Par un courrier du 14 mars 2022, l’Autorité de régulation de la communication audiovisuelle et numérique a mis l’éditeur en garde contre le renouvellement des manquements qu’elle avait constatés",
+          "url": "https://www.arcom.fr/ressources/espace-juridique/decisions/decision-du-15-avril-2022-mettant-en-demeure-la-societe-lagardere-active-broadcast",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "sud-radio": {
+      "checkedAt": "2026-10-08T17:56:54.776Z",
+      "items": [
+        {
+          "date": "2022-01-19",
+          "kind": "mise-en-garde",
+          "topic": "temps-de-parole",
+          "summary": "L'Arcom a mis en garde Sud Radio après l'examen des temps de parole du quatrième trimestre 2021, en raison d'une sous-représentation du bloc de l'exécutif et d'Europe Écologie – Les Verts.",
+          "quote": "Sud Radio en raison d’une très forte et persistante sous-représentation du bloc de l’exécutif, ainsi qu’une sous-représentation persistante d’Europe Ecologie – Les Verts",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/temps-de-parole-hors-elections-du-4e-trimestre-2021-interventions-et-mises-en-garde",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "rmc": {
+      "checkedAt": "2026-10-08T17:56:54.776Z",
+      "items": []
+    },
+    "tf1": {
+      "checkedAt": "2026-10-08T17:56:54.776Z",
+      "items": []
+    },
+    "france-3": {
+      "checkedAt": "2026-10-08T17:56:54.911Z",
+      "items": [
+        {
+          "date": "2024-06-18",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en garde les responsables de France 3 pour des déséquilibres de temps de parole dans le traitement des élections législatives de 2024, sur la période du 11 au 16 juin.",
+          "quote": "Elle a mis en garde les responsables des chaînes France 2, France 3 et C8 contre le renouvellement de tels manquements.",
+          "url": "https://www.arcom.fr/sites/default/files/2024-12/Arcom%20-%20Rapport%20campagnes%20electorales%202024%20et%20annexes.pdf",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2024-05-30",
+          "kind": "mise-en-demeure",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en demeure France Télévisions de respecter, sur France 2 et France 3, les dates et l'ordre de passage des émissions de la campagne officielle des élections européennes de 2024.",
+          "quote": "La société France Télévisions est mise en demeure de se conformer aux dispositions de l’article 47 de la décision du 25 avril 2024 et de la décision n° 2024-424 du 23 mai 2024 en respectant, sur les services France 2 et France 3, les dates et l’ordre de passage",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-30-mai-2024-mettant-en-demeure-la-societe-france-televisions",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "arte": {
+      "checkedAt": "2026-10-08T17:56:54.911Z",
+      "items": []
+    },
+    "france-inter": {
+      "checkedAt": "2026-10-08T17:57:03.255Z",
+      "items": [
+        {
+          "date": "2026-06-10",
+          "kind": "mise-en-demeure",
+          "topic": "temps-de-parole",
+          "summary": "L'Arcom a mis en demeure Radio France de respecter les règles du pluralisme politique sur France Inter et France Info, les temps de parole du Rassemblement national y ayant été très majoritairement diffusés la nuit du 1er janvier au 31 mars 2026.",
+          "quote": "La société nationale de programme Radio France est mise en demeure de se conformer, à l'avenir, en ce qui concerne les services de radio « France Inter » et « France Info », aux dispositions de l'article 1er de la délibération du 22 novembre 2017",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-10-juin-2026-mettant-en-demeure-la-societe-nationale-de-programme-radio-france",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2026-04-08",
+          "kind": "mise-en-demeure",
+          "topic": "honnetete-information",
+          "summary": "L'Arcom a mis en demeure Radio France de respecter, sur France Inter, les obligations d'honnêteté et de rigueur de l'information, à la suite d'affirmations formulées dans l'émission « Questions politiques » des 9 et 16 novembre 2025.",
+          "quote": "La société nationale de programme Radio France est mise en demeure de se conformer, à l’avenir, en ce qui concerne le service de radio « France Inter », aux dispositions précitées de l’article 4 du décret du 13 novembre 1987",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-8-avril-2026-mettant-en-demeure-la-societe-nationale-de-programme-radio-france",
+          "publisher": "Arcom"
+        },
+        {
+          "date": "2023-09-13",
+          "kind": "mise-en-garde",
+          "topic": "temps-de-parole",
+          "summary": "L'Arcom a mis en garde France Inter après l'examen des temps de parole du deuxième trimestre 2023, en raison de sous-représentations persistantes de plusieurs formations politiques.",
+          "quote": "Au cours de sa séance du 13 septembre 2023, pour ce qui est de France Inter, si l’Arcom a relevé le nombre important de formations politiques ayant eu accès à l’antenne, elle a constaté de nombreux déséquilibres.",
+          "url": "https://www.arcom.fr/sites/default/files/2025-01/Arcom-Rapport-sur-execution-du-cahier-des-missions-et-charges-de-Radio-France-Annee-2023.pdf",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "france-culture": {
+      "checkedAt": "2026-10-08T17:57:03.256Z",
+      "items": [
+        {
+          "date": "2022-01-19",
+          "kind": "mise-en-garde",
+          "topic": "temps-de-parole",
+          "summary": "L'Arcom a mis en garde France Culture après l'examen des temps de parole du quatrième trimestre 2021, en raison de sous-représentations du bloc de l'exécutif, de La France insoumise et du Rassemblement national et d'une surreprésentation du Parti socialiste.",
+          "quote": "France Culture en raison de la sous-représentation du bloc de l’exécutif et de la France Insoumise, de la forte sous-représentation persistante du Rassemblement national et de la surreprésentation du Parti socialiste",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/temps-de-parole-hors-elections-du-4e-trimestre-2021-interventions-et-mises-en-garde",
+          "publisher": "Arcom"
+        }
+      ]
+    },
+    "rtl": {
+      "checkedAt": "2026-10-08T17:57:03.256Z",
+      "items": [
+        {
+          "date": "2022-03-10",
+          "kind": "mise-en-garde",
+          "topic": "campagne-electorale",
+          "summary": "L'Arcom a mis en garde RTL contre le renouvellement de manquements au principe d'équité des temps de parole pendant la campagne présidentielle, après avoir relevé une surreprésentation d'Éric Zemmour et de Yannick Jadot du 1er janvier au 7 mars 2022.",
+          "quote": "Sur RTL, la persistance, en temps de parole comme en temps d’antenne, de la forte surreprésentation d’Eric Zemmour, ainsi que de la surreprésentation en temps de parole de Yannick Jadot.",
+          "url": "https://www.arcom.fr/se-documenter/espace-juridique/decisions/respect-du-principe-dequite-des-temps-de-parole-et-dantenne-pour-la-periode-du-1er-janvier-au-7-mars-2022-interventions",
+          "publisher": "Arcom"
+        }
+      ]
+    }
+  },
+  "orientations": {
+    "la-croix": {
+      "label": "catholique",
+      "quote": "Label Orientation politique catholique Diffusion",
+      "url": "https://www.eurotopics.net/fr/148661/la-croix",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:03.724Z"
+    },
+    "le-canard-enchaine": {
+      "label": "critique envers le gouvernement",
+      "quote": "Label Orientation politique critique envers le gouvernement Diffusion",
+      "url": "https://www.eurotopics.net/fr/148676/le-canard-enchaine",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:03.853Z"
+    },
+    "le-figaro": {
+      "label": "libéral-conservateur",
+      "quote": "Label Orientation politique libéral-conservateur Diffusion",
+      "url": "https://www.eurotopics.net/fr/148679/le-figaro",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:03.982Z"
+    },
+    "le-jdd": {
+      "label": "droite",
+      "quote": "Label Orientation politique droite Diffusion",
+      "url": "https://www.eurotopics.net/fr/148682/le-journal-du-dimanche",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:04.110Z"
+    },
+    "le-monde": {
+      "label": "centre-gauche",
+      "quote": "Label Orientation politique centre-gauche Diffusion",
+      "url": "https://www.eurotopics.net/fr/148683/le-monde",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:04.238Z"
+    },
+    "le-point": {
+      "label": "libéral-conservateur",
+      "quote": "Label Orientation politique libéral-conservateur Diffusion",
+      "url": "https://www.eurotopics.net/fr/148685/le-point",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:04.366Z"
+    },
+    "les-echos": {
+      "label": "libéral",
+      "quote": "Label Orientation politique libéral Diffusion",
+      "url": "https://www.eurotopics.net/fr/148688/les-echos",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:04.493Z"
+    },
+    "l-express": {
+      "label": "libéral",
+      "quote": "Label Orientation politique libéral Diffusion",
+      "url": "https://www.eurotopics.net/fr/148693/l-express",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:04.621Z"
+    },
+    "l-humanite": {
+      "label": "extrême gauche",
+      "quote": "Label Orientation politique extr&ecirc;me gauche Diffusion",
+      "url": "https://www.eurotopics.net/fr/148695/l-humanite",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:04.753Z"
+    },
+    "liberation": {
+      "label": "centre-gauche",
+      "quote": "Label Orientation politique centre-gauche Diffusion",
+      "url": "https://www.eurotopics.net/fr/148696/liberation",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:04.882Z"
+    },
+    "le-nouvel-obs": {
+      "label": "gauche",
+      "quote": "Label Orientation politique gauche Diffusion",
+      "url": "https://www.eurotopics.net/fr/148700/le-nouvel-obs",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:05.010Z"
+    },
+    "l-opinion": {
+      "label": "libéral",
+      "quote": "Label Orientation politique libéral Diffusion",
+      "url": "https://www.eurotopics.net/fr/148701/l-opinion",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:05.139Z"
+    },
+    "marianne": {
+      "label": "gauche",
+      "quote": "Label Orientation politique gauche Diffusion",
+      "url": "https://www.eurotopics.net/fr/148716/marianne",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:05.267Z"
+    },
+    "mediapart": {
+      "label": "gauche",
+      "quote": "Label Orientation politique gauche Périodicité",
+      "url": "https://www.eurotopics.net/fr/148717/mediapart",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:05.394Z"
+    },
+    "ouest-france": {
+      "label": "libéral",
+      "quote": "Label Orientation politique libéral Diffusion",
+      "url": "https://www.eurotopics.net/fr/148746/ouest-france",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:05.523Z"
+    },
+    "huffpost": {
+      "label": "centre-gauche",
+      "quote": "Label Orientation politique centre-gauche Périodicité",
+      "url": "https://www.eurotopics.net/fr/193080/le-huffpost",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:05.651Z"
+    },
+    "france-inter": {
+      "label": "centre-gauche",
+      "quote": "Label Orientation politique centre-gauche Périodicité",
+      "url": "https://www.eurotopics.net/fr/199836/france-inter",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:05.780Z"
+    },
+    "valeurs-actuelles": {
+      "label": "droite",
+      "quote": "Label Orientation politique droite Diffusion",
+      "url": "https://www.eurotopics.net/fr/228634/valeurs-actuelles",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-08T17:57:05.908Z"
+    }
+  },
+  "engagements": {
+    "Famille Baylet": {
+      "items": [
+        {
+          "text": "Jean-Michel Baylet : ancien sénateur, député et ministre (2016-2017), cofondateur du Mouvement des radicaux de gauche.",
+          "quote": "L'ancien sénateur et président du conseil général du Tarn-et-Garonne Jean-Michel Baylet, plusieurs fois député et ministre, s'est taillé une stature nationale en cofondant en 1973 le Mouvement des radicaux de gauche (MRG), devenu PRG en 1998.",
+          "url": "https://www.banquedesterritoires.fr/remaniement-un-nouveau-tandem-pour-les-collectivites",
+          "publisher": "Banque des Territoires (Localtis)",
+          "date": "2016-02-12"
+        },
+        {
+          "text": "Jean-Michel Baylet a soutenu Emmanuel Macron en 2017, contre le choix de son parti (Benoît Hamon).",
+          "quote": "Le ministre PRG de l'Aménagement du territoire Jean-Michel Baylet annonce mercredi dans Le Parisien son soutien à Emmanuel Macron, bien que le Parti radical de gauche, dont il a été le président, ait décidé de soutenir le candidat PS Benoît Hamon.",
+          "url": "https://www.publicsenat.fr/actualites/politique/le-ministre-prg-baylet-rejoint-a-son-tour-macron-58953",
+          "publisher": "Public Sénat (AFP)",
+          "date": "2017-04-19"
+        }
+      ],
+      "checkedAt": "2026-10-08T17:59:56.916Z"
+    },
+    "Famille Dassault": {
+      "items": [
+        {
+          "text": "Serge Dassault a été sénateur et maire de Corbeil-Essonnes, élection annulée en 2009 par le Conseil d’État pour « dons d’argent ».",
+          "quote": "En 2009, le Conseil d’État avait annulé sa réélection à la mairie de Corbeil-Essonnes (Essonne) l'année précédente en raison de \"dons d'argent\" et avait déclaré M. Dassault, qui avait ravi cette ville aux communistes en 1995, inéligible pendant un an.",
+          "url": "https://www.publicsenat.fr/actualites/politique/dassault-condamne-a-5-ans-d-ineligibilite-et-2-millions-d-euros-d-amende-54125",
+          "publisher": "Public Sénat (AFP)",
+          "date": "2017-02-02"
+        },
+        {
+          "text": "Olivier Dassault (mort en 2021) a été député de l’Oise (RPR, UMP puis LR).",
+          "quote": "Fils aîné de Serge Dassault et petit-fils de Marcel Dassault, le fondateur du constructeur aéronautique, Olivier Dassault a effectué son premier mandat de député entre 1988 et 1993. Membre du RPR, puis de l'UMP et enfin du parti Les Républicains, il avait été réélu à l'Assemblée nationale sans interruption depuis 2002.",
+          "url": "https://lcp.fr/actualites/deces-d-olivier-dassault-dans-un-accident-d-helicoptere-57443",
+          "publisher": "LCP",
+          "date": "2021-03-07"
+        }
+      ],
+      "checkedAt": "2026-10-08T17:59:58.064Z"
+    },
+    "Famille Arnault (LVMH)": {
+      "items": [
+        {
+          "text": "Bernard Arnault a soutenu Emmanuel Macron avant le second tour de 2017.",
+          "quote": "Le PDG et principal actionnaire de LVMH, Bernard Arnault, adoube l'ex-ministre de l'Economie Emmanuel Macron, grand favori de l'élection présidentielle",
+          "url": "https://www.europe1.fr/politique/bernard-arnault-pdg-de-lvmh-adoube-emmanuel-macron-3311927",
+          "publisher": "Europe 1 (avec Reuters)",
+          "date": "2017-04-26"
+        }
+      ],
+      "checkedAt": "2026-10-08T17:59:58.400Z"
+    },
+    "Groupe Bolloré": {
+      "items": [
+        {
+          "text": "JDD, 2023 : 40 jours de grève de la rédaction contre la nomination de Geoffroy Lejeune, pendant le rachat par le groupe Bolloré. Arnaud Lagardère a nié tout rôle de Vincent Bolloré.",
+          "quote": "Même si Arnaud Lagardère, le patron du groupe, s'en défend, nombre d'observateurs voient dans cette nomination la main de Vincent Bolloré",
+          "url": "https://www.cbnews.fr/node/78181",
+          "publisher": "CB News (AFP)",
+          "date": "2023-08-01"
+        },
+        {
+          "text": "Vincent Bolloré a dit aux députés, en 2026, avoir fondé avec des amis l’Institut de l’Espérance, pour « ramener du bon sens et de la prospérité ».",
+          "quote": "Et puis j’ai monté avec des amis un institut, qui s’appelle l’institut de l’Espérance. Mais à côté de tout cela, je préside encore la Compagnie de l’Odet, qui contrôle encore le groupe familial en termes de voix. M. le président Jérémie Patrier-Leitus. Vous l’avez dit, monsieur Bolloré",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/ceaudio/l17ceaudio2526048_compte-rendu.pdf",
+          "publisher": "Assemblée nationale (compte rendu officiel)",
+          "date": "2026-03-24"
+        }
+      ],
+      "checkedAt": "2026-10-08T18:00:00.691Z"
+    },
+    "Famille Saadé (CMA CGM)": {
+      "items": [
+        {
+          "text": "La Provence, 2024 : son directeur de la rédaction, mis à pied après une une sur Emmanuel Macron, a été réintégré après une grève. La presse attribue la décision à Rodolphe Saadé.",
+          "quote": "Vendredi, les journalistes de la rédaction avaient entamé une grève illimitée suite à sa mise à pied . Un renvoi décidé par Rodolphe Saadé, propriétaire du journal local marseillais .",
+          "url": "https://www.ozap.com/actu/-la-provence-rodolphe-saade-retropedale-le-directeur-de-la-redaction-reintegre-apres-la-une-jugee-ambigue-sur-emmanuel-macron/643084",
+          "publisher": "Puremédias",
+          "date": "2024-03-25"
+        }
+      ],
+      "checkedAt": "2026-10-08T18:00:01.006Z"
+    },
+    "Daniel Kretinsky": {
+      "items": [
+        {
+          "text": "Marianne, 2022 : la société des rédacteurs a dénoncé une intervention de Daniel Kretinsky sur une une de l’entre-deux-tours ; la direction a démenti.",
+          "quote": "J'ai cependant décidé d'entendre l'ensemble des sensibilités composant l'équipe rédactionnelle, tout en étant attentive aux souhaits du groupe CMI [appartenant à Daniel Kretinsky] de ne laisser planer aucune ambiguïté quant à la position de notre hebdomadaire",
+          "url": "https://www.cbnews.fr/node/68692",
+          "publisher": "CB News (AFP)",
+          "date": "2022-04-20"
+        }
+      ],
+      "checkedAt": "2026-10-08T18:00:01.401Z"
+    },
+    "Famille Pinault": {
+      "items": [
+        {
+          "text": "François Pinault a dit avoir voté pour François Hollande en 2012.",
+          "quote": "Le Monde rappelle que M. Pinault avait confié en 2012 avoir voté pour François Hollande",
+          "url": "https://www.publicsenat.fr/actualites/politique/francois-pinault-macron-ne-comprend-pas-les-petites-gens-87445",
+          "publisher": "Public Sénat (AFP)",
+          "date": "2018-06-22"
+        }
+      ],
+      "checkedAt": "2026-10-08T18:00:01.953Z"
+    },
+    "Pierre-Édouard Stérin, Benjamin La Combe et Alexis Caude": {
+      "items": [
+        {
+          "text": "Pierre-Édouard Stérin finance Périclès, projet « métapolitique » qu’il a présenté au Sénat en 2026 pour « diffuser en France des idées libérales conservatrices ».",
+          "quote": "Qualifiée de projet \"métapolitique\" par M. Stérin, la structure a pour but de \"diffuser en France des idées libérales conservatrices\". Afin d'aboutir, \"nous l'espérons\", à des votes permettant \"d'avoir en France une politique de droite libérale conservatrice\"",
+          "url": "https://www.lagazettefrance.fr/article/pierre-edouard-sterin-defend-ses-ambitions-metapolitiques-devant-les-senateurs",
+          "publisher": "AFP (via La Gazette France)",
+          "date": "2026-06-04"
+        },
+        {
+          "text": "Via Périclès, il finance l’institut Politicae, qui forme des candidats aux municipales ; il dit ne soutenir aucune « écurie politique ».",
+          "quote": "ou encore sur l’institut Politicae, une structure destinée à former des candidats au mandat de maire et dont Périclès assure le financement, Pierre-Édouard Stérin se défend de soutenir une quelconque écurie politique.",
+          "url": "https://www.publicsenat.fr/actualites/parlementaire/audition-de-pierre-edouard-sterin-nous-navons-pas-obtenu-de-reponses-sur-la-transparence-de-ses-financements-constate-la-rapporteure-du-senat",
+          "publisher": "Public Sénat",
+          "date": "2026-06-04"
+        }
+      ],
+      "checkedAt": "2026-10-08T18:00:04.330Z"
     }
   }
 }

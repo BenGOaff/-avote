@@ -1,5 +1,5 @@
 /**
- * « Qui possède ton info » : fiches établies par scripts/medias.ts, chacune avec une citation vérifiée dans sa source.
+ * « Qui possède ton info » : fiches établies par scripts/medias.ts ou scripts/medias-import.ts, chacune avec une citation vérifiée dans sa source.
  */
 import liste from '@content/medias/liste.json'
 import store from '@content/medias/proprietaires.json'
@@ -32,11 +32,28 @@ export interface ArcomAlert {
   publisher: string
 }
 
+export interface Orientation {
+  label: string
+  quote: string
+  url: string
+  publisher: string
+}
+
+export interface Engagement {
+  text: string
+  quote: string
+  url: string
+  publisher: string
+  date: string
+}
+
 export interface MediaEntry {
   slug: string
   name: string
   type: MediaType
   ownership: MediaOwnership | null
+  /** Orientation politique du média selon eurotopics, toujours attribuée */
+  orientation: Orientation | null
   /** null : pas encore vérifié ; liste vide : vérifié, aucune décision relevée */
   alerts: ArcomAlert[] | null
   alertsCheckedAt: string | null
@@ -76,13 +93,35 @@ export const CONTROLLER_KIND_LABEL: Record<string, string> = {
   inconnu: 'Inconnu',
 }
 
+/** Grandes familles de propriétaires, pour la répartition « qui a le dernier mot ». */
+export const OWNER_FAMILIES: { id: string; label: string; kinds: string[] }[] = [
+  { id: 'public', label: 'L’État ou le Parlement', kinds: ['etat'] },
+  { id: 'prive', label: 'Une personne ou une famille', kinds: ['personne', 'famille'] },
+  { id: 'cotee', label: 'Un groupe coté en Bourse', kinds: ['cotee'] },
+  { id: 'nonlucratif', label: 'Une fondation, une association ou un fonds', kinds: ['fondation', 'association'] },
+  { id: 'interne', label: 'Ses salariés ou ses lecteurs', kinds: ['salaries', 'lecteurs'] },
+  { id: 'autre', label: 'Autre', kinds: ['autre', 'inconnu'] },
+]
+
+export function familySplit(medias: MediaEntry[]): { id: string; label: string; medias: MediaEntry[] }[] {
+  const done = medias.filter((m) => m.ownership)
+  return OWNER_FAMILIES.map((f) => ({ id: f.id, label: f.label, medias: done.filter((m) => f.kinds.includes(m.ownership!.controllerKind)) })).filter((f) => f.medias.length > 0)
+}
+
 const owned = (store as { medias: Record<string, MediaOwnership> }).medias
+const orientations = ((store as { orientations?: Record<string, Orientation> }).orientations ?? {}) as Record<string, Orientation>
+const engagements = ((store as { engagements?: Record<string, { items: Engagement[] }> }).engagements ?? {}) as Record<string, { items: Engagement[] }>
+
+/** Engagements politiques publics et documentés de qui contrôle (libellé exact du contrôle final). */
+export const engagementsOf = (controller: string): Engagement[] => engagements[controller]?.items ?? []
+
 const alertes = ((store as { alertes?: Record<string, { checkedAt: string; items: ArcomAlert[] }> }).alertes ?? {}) as Record<string, { checkedAt: string; items: ArcomAlert[] }>
 
 export function getMedias(): MediaEntry[] {
   return (liste.medias as { slug: string; name: string; type: MediaType }[]).map((m) => ({
     ...m,
     ownership: owned[m.slug] ?? null,
+    orientation: orientations[m.slug] ?? null,
     alerts: alertes[m.slug]?.items ?? null,
     alertsCheckedAt: alertes[m.slug]?.checkedAt ?? null,
   }))

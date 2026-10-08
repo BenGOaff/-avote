@@ -117,6 +117,20 @@ export function DuoScale({ user, position, name }: { user: Ordinal; position: Po
   )
 }
 
+/** Position seule sur l'échelle en 5 crans (fiche candidat). */
+export function PositionScale({ position }: { position: Position }) {
+  const cand: Ordinal[] = 'missing' in position ? [] : 'set' in position ? (position.set as Ordinal[]) : [position.value]
+  return (
+    <span className="duo pos-scale" aria-hidden="true">
+      <span className="pos-scale__end">contre</span>
+      {([-2, -1, 0, 1, 2] as Ordinal[]).map((v) => (
+        <span key={v} className={`duo__dot${cand.includes(v) ? ' duo__dot--them' : ''}`} />
+      ))}
+      <span className="pos-scale__end">pour</span>
+    </span>
+  )
+}
+
 // ---------------------------------------------------------------------------
 // Bande d'accord : une case par question répondue
 // ---------------------------------------------------------------------------

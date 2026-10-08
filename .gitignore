@@ -10,3 +10,4 @@ next-env.d.ts
 coverage/
 .veille-summary.md
 .budget/
+AGENTS.md

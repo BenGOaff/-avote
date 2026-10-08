@@ -70,8 +70,22 @@ const Input = z.object({
       }),
     )
     .default([]),
+  // Orientation du média selon eurotopics (observatoire de la presse européenne), toujours attribuée
+  orientations: z
+    .array(z.object({ slug: z.string(), label: z.string().min(3).max(40), quote: z.string().min(20), url: z.string(), publisher: z.string() }))
+    .default([]),
+  // Engagements politiques publics et documentés de qui contrôle (clé : libellé exact du contrôle final)
+  engagements: z
+    .array(
+      z.object({
+        controller: z.string().min(2),
+        items: z.array(z.object({ text: z.string().min(15).max(240), quote: z.string().min(30), url: z.string(), publisher: z.string(), date: z.string().default('') })),
+      }),
+    )
+    .default([]),
 })
 
+const norm = (t: string) => t.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replace(/&[a-z]+;/g, (e) => ({ '&ecirc;': 'e', '&eacute;': 'e', '&egrave;': 'e', '&agrave;': 'a', '&ccedil;': 'c' })[e] ?? e)
 const name = (slug: string) => list.medias.find((m) => m.slug === slug)?.name
 
 async function main() {
@@ -160,6 +174,46 @@ async function main() {
     for (const p of prev) if (!items.some((i) => i.url === p.url && i.date === p.date)) items.push(p)
     items.sort((x, y) => y.date.localeCompare(x.date))
     store.alertes[a.slug] = { checkedAt: new Date().toISOString(), items }
+  }
+
+  store.orientations ??= {}
+  for (const o of input.orientations) {
+    const label = `${name(o.slug) ?? o.slug} (orientation)`
+    const url = canonicalUrl(o.url)
+    if (!name(o.slug) || !url || !new URL(url).hostname.endsWith('eurotopics.net')) {
+      fail(label, 'média inconnu ou source autre qu’eurotopics')
+      continue
+    }
+    const text = await page(url)
+    if (!text || !quoteIsInSource(o.quote, text) || !norm(o.quote).includes(norm(o.label))) {
+      fail(label, `étiquette introuvable dans ${url}`)
+      continue
+    }
+    ok++
+    console.log(`✓ ${label} : ${o.label}`)
+    store.orientations[o.slug] = { label: o.label, quote: o.quote.slice(0, 220), url, publisher: o.publisher.slice(0, 60) || 'eurotopics', checkedAt: new Date().toISOString() }
+  }
+
+  store.engagements ??= {}
+  const controllers = new Set(Object.values(store.medias as Record<string, { controller: string }>).map((m) => m.controller))
+  for (const e of input.engagements) {
+    if (!controllers.has(e.controller)) {
+      fail(e.controller, 'aucune fiche n’a ce libellé de contrôle final')
+      continue
+    }
+    const items = []
+    for (const it of e.items) {
+      const url = canonicalUrl(it.url)
+      const text = url ? await page(url) : null
+      if (!url || !text || !quoteIsInSource(it.quote, text)) {
+        fail(`${e.controller} (engagement)`, `citation introuvable dans ${it.url}`)
+        continue
+      }
+      ok++
+      console.log(`✓ ${e.controller} : ${it.text}`)
+      items.push({ text: it.text.trim(), quote: it.quote.slice(0, 320), url, publisher: it.publisher.slice(0, 80) || new URL(url).hostname, date: it.date })
+    }
+    if (items.length) store.engagements[e.controller] = { items, checkedAt: new Date().toISOString() }
   }
 
   console.log(`${ok} élément(s) vérifié(s), ${ko} écarté(s).`)
