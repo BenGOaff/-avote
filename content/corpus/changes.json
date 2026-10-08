@@ -4029,5 +4029,45 @@
     "from": "inconnue",
     "to": "[-1,-2]",
     "source": "815a2e255a80bfae"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "a2282e56c12d8cc2"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "29bd815d9cb61d23"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "1",
+    "source": "e04d45cf65b0c5e2"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "eco-06",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "a1c6fa84c7a15ca8"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "tra-01",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "a1c6fa84c7a15ca8"
   }
 ]
