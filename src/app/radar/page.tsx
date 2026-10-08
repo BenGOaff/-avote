@@ -48,7 +48,7 @@ export default function RadarPage() {
           <h2 id="articles" style={{ fontSize: 'var(--h3)' }}>
             Articles
           </h2>
-          {articles.length === 0 && <p className="muted">Les premiers articles sont en relecture.</p>}
+          {articles.length === 0 && <p className="muted">Les premiers articles arrivent.</p>}
           {articles.map((a, i) => (
             <ArticleCard key={a.slug} a={a} featured={i === 0} />
           ))}

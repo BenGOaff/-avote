@@ -16,6 +16,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 concurrency:
   group: veille
@@ -67,17 +68,21 @@ jobs:
 
           if [ -n "$NEW" ] && [ "$AUTOMERGE" = "true" ]; then
             # Option assumée par la rédaction : brèves publiées directement, articles toujours relus
+            BREVES=$(git ls-files --others --exclude-standard content/fil | tr '\n' ' ')
             git add content/fil
             git commit -m "veille : brèves ($STAMP)" || true
           fi
           git push origin HEAD:${{ github.ref_name }}
+          # Un push fait par le robot ne déclenche pas les autres workflows : on lance le repost explicitement
+          if [ -n "$BREVES" ]; then gh workflow run social.yml -f files="$BREVES" || true; fi
 
           # 2. Les brouillons restants partent dans une Pull Request à relire
           REMAINING=$(git ls-files --others --exclude-standard content/fil content/radar)
-          if [ -n "$REMAINING" ]; then
+          CAND=$(git status --porcelain content/acteurs)
+          if [ -n "$REMAINING" ] || [ -n "$CAND" ]; then
             BRANCH="veille/$STAMP"
             git switch -c "$BRANCH"
-            git add content/fil content/radar
+            git add content/fil content/radar content/acteurs
             git commit -m "veille : brouillons à relire ($STAMP)"
             git push origin "$BRANCH"
             gh pr create --base "${{ github.ref_name }}" --head "$BRANCH" \

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { AI_NOTICE } from '@/lib/copy'
 
 export function Footer() {
   return (
@@ -9,6 +10,7 @@ export function Footer() {
             <strong>Ça vote ?</strong> — çavote.fr
           </p>
           <p className="muted">Ton test se calcule sur ton appareil. Aucune réponse n’est envoyée à nos serveurs.</p>
+          <p className="muted">{AI_NOTICE}</p>
         </div>
         <ul>
           <li><Link href="/methodologie">Méthode et calculs</Link></li>

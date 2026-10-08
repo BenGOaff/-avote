@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
 import { itemsByTheme, questionnaire } from '@/lib/data'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
+import { AI_NOTICE } from '@/lib/copy'
 
 export const metadata: Metadata = {
   title: 'Méthode : les questions, le codage et le calcul',
@@ -52,6 +53,8 @@ export default function MethodPage() {
             <li><a href="#ia">Ce que fait l’IA, ce qu’elle ne fait pas</a></li>
           </ol>
         </nav>
+
+        <p className="alert alert--info">{AI_NOTICE}</p>
 
         <h2 id="principe">Le principe</h2>
         <p>
@@ -157,14 +160,19 @@ export default function MethodPage() {
           central et élargit les bornes.
         </p>
         <p>
-          Toute position qui entre dans le calcul est relue par deux personnes différentes, qui ont accès à la source complète. Un désaccord entre elles est
-          arbitré et consigné. <Link href="/sources">Les sources</Link> · <Link href="/corrections">Les corrections</Link>
+          Les positions sont codées automatiquement par une IA, avec les mêmes consignes pour tous les candidats. Ordre de préférence des sources :
+          programme 2027, déclarations publiques depuis 2024, programme présidentiel 2022, programme du parti. Chaque position est accompagnée d’une citation
+          mot pour mot ; un programme retélécharge la page et vérifie que la citation y figure, sinon la position est marquée inconnue. La source et la
+          citation sont affichées sur la fiche de chaque candidat. Le codage automatique peut se tromper sur l’intensité d’une position : si tu vois une
+          erreur, signale-la, elle sera corrigée et la correction publiée. <Link href="/sources">Les sources</Link> ·{' '}
+          <Link href="/corrections">Les corrections</Link>
         </p>
 
         <h2 id="ia">Ce que fait l’IA, ce qu’elle ne fait pas</h2>
         <p>
-          Des outils d’IA aident à repérer les nouvelles déclarations et à rédiger les premières versions des brèves, à partir des seules pièces collectées. Chaque
-          texte est relu par une personne avant publication. Une IA ne code jamais seule une position et ne reçoit jamais tes réponses au test.
+          Une IA repère les nouvelles déclarations et candidatures, rédige les brèves à partir des seules pièces collectées, et code les positions des
+          candidats. Des contrôles automatiques rejettent toute citation absente de la source, tout chiffre qui n’y figure pas et les tournures interdites.
+          L’IA ne reçoit jamais tes réponses au test : ton résultat est calculé sur ton appareil.
         </p>
       </div>
     </div>

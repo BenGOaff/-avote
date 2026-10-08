@@ -10,6 +10,10 @@ export const SITE = {
     'Un test pour voir quels candidats à la présidentielle 2027 sont proches de tes réponses, avec les sources et les limites. Et un fil d’actu politique qui ne se prend pas au sérieux, sauf sur les faits.',
 }
 
+/** Mention éditoriale publique, voulue par la rédaction */
+export const AI_NOTICE =
+  'Ça vote ? est alimenté par l’IA, avec le moins d’intervention humaine possible, pour limiter le risque d’influence humaine. Les mêmes règles s’appliquent à tous les candidats, et chaque information renvoie à sa source publique : programmes, déclarations, documents officiels, presse.'
+
 export const UI_COPY = {
   nav: {
     home: 'Accueil',

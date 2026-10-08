@@ -85,6 +85,22 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         )}
       </div>
 
+      {a.image && (
+        <figure className="measure" style={{ margin: '0 0 var(--s5)', position: 'relative' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={a.image.src} alt={a.image.alt} style={{ width: '100%', height: 'auto', border: 'var(--border) solid var(--ink)', borderRadius: 'var(--radius)' }} />
+          {a.image.caricature && (
+            <span className="badge badge--satire" style={{ position: 'absolute', top: 12, left: 12 }}>
+              Caricature
+            </span>
+          )}
+          <figcaption className="small muted" style={{ marginTop: 'var(--s2)' }}>
+            {a.image.caricature ? 'Caricature, image générée. ' : ''}
+            {a.image.credit ?? ''}
+          </figcaption>
+        </figure>
+      )}
+
       <div className="prose" dangerouslySetInnerHTML={{ __html: a.html }} />
 
       <div className="measure stack" style={{ marginTop: 'var(--s6)' }}>

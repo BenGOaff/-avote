@@ -1,0 +1,63 @@
+# Codage des positions des candidats par IA (scripts/positions.ts).
+# Chaque nuit : les candidats jamais codés d'abord, puis les plus anciennement mis à jour.
+name: Positions
+
+on:
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+    inputs:
+      actor:
+        description: 'Identifiant du candidat (ex. marine-le-pen). Vide = automatique'
+        required: false
+      limit:
+        description: 'Nombre de candidats à traiter'
+        default: '2'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: positions
+  cancel-in-progress: false
+
+jobs:
+  positions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Coder les positions
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          POSITIONS_MODEL: ${{ vars.POSITIONS_MODEL }}
+          POSITIONS_EFFORT: ${{ vars.POSITIONS_EFFORT }}
+        run: |
+          if [ -n "${{ github.event.inputs.actor }}" ]; then
+            npx tsx scripts/positions.ts --actor=${{ github.event.inputs.actor }}
+          else
+            npx tsx scripts/positions.ts --limit=${{ github.event.inputs.limit || vars.POSITIONS_PER_DAY || 2 }}
+          fi
+      - name: Valider
+        run: npx tsx scripts/validate-content.ts && npx vitest run
+      - name: Proposer la mise à jour
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "positions-ca-vote[bot]"
+          git config user.email "positions@users.noreply.github.com"
+          if [ -z "$(git status --porcelain content/corpus)" ]; then exit 0; fi
+          STAMP=$(date -u +%Y%m%d-%H%M)
+          git switch -c "positions/$STAMP"
+          git add content/corpus
+          git commit -m "positions : mise à jour du référentiel ($STAMP)"
+          git push origin "positions/$STAMP"
+          gh pr create --base "${{ github.ref_name }}" --head "positions/$STAMP" \
+            --title "Positions $STAMP" \
+            --body "Positions codées par IA, citations vérifiées dans les sources. Détail des changements : content/corpus/changes.json."

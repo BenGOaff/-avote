@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAnnouncedActors, STATUS_LABEL, candidaturesCollectedAt, pendingVerificationCount } from '@/lib/actors'
+import { getAnnouncedActors, STATUS_LABEL, candidaturesCollectedAt } from '@/lib/actors'
 import { liveCorpus } from '@/lib/data'
 import { formatDate } from '@/components/Editorial'
 
@@ -23,18 +23,15 @@ export default function CandidatsPage() {
           constitutionnel.
         </p>
         <p className="muted">
-          Chaque ligne renvoie à la source de l’annonce. Les positions de chaque personne n’entrent dans le test qu’une fois tirées d’un programme ou d’une
-          déclaration, puis relues par deux personnes.
+          Chaque ligne renvoie à la source de l’annonce. Les positions de chaque personne sont codées automatiquement à partir de leurs programmes et
+          déclarations ; chaque citation est vérifiée dans sa source.
         </p>
       </div>
 
       {actors.length === 0 ? (
         <div className="alert alert--info" style={{ marginTop: 'var(--s5)' }}>
-          <p className="alert__title">Liste en cours de vérification.</p>
-          <p>
-            {pendingVerificationCount} annonces relevées le {formatDate(candidaturesCollectedAt)} sont en relecture. Elles seront publiées une par une, avec leur
-            source.
-          </p>
+          <p className="alert__title">Aucune candidature relevée pour l’instant.</p>
+          <p>Dernière mise à jour : {formatDate(candidaturesCollectedAt)}.</p>
         </div>
       ) : (
         <div className="table-wrap" style={{ marginTop: 'var(--s5)' }}>
@@ -53,7 +50,7 @@ export default function CandidatsPage() {
             <tbody>
               {actors.map((a) => (
                 <tr key={a.slug}>
-                  <th scope="row">{a.name}</th>
+                  <th scope="row"><Link href={`/candidats/${a.slug}`}>{a.name}</Link></th>
                   <td>{a.party ?? <span className="muted">Non précisée</span>}</td>
                   <td>{STATUS_LABEL[a.status]}</td>
                   <td className="num">{formatDate(a.since)}</td>
@@ -62,7 +59,7 @@ export default function CandidatsPage() {
                       {a.source.publisher}
                     </a>
                   </td>
-                  <td>{documented.has(a.slug) ? 'Dossier publié' : <span className="muted">Dossier en préparation</span>}</td>
+                  <td>{documented.has(a.slug) ? <Link href={`/candidats/${a.slug}`}>Voir les positions</Link> : <span className="muted">En cours de collecte</span>}</td>
                 </tr>
               ))}
             </tbody>

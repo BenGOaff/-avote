@@ -66,11 +66,32 @@ export type DocStatus =
   | 'retire'
   | 'remplace'
 
+/** Origine d'une position codée */
+export type PositionBasis = 'programme-2027' | 'declaration' | 'programme-2022' | 'parti' | 'vote'
+
+/** Métadonnées de codage (affichées, jamais utilisées dans le calcul) */
+export interface PositionMeta {
+  note?: string
+  basis?: PositionBasis
+  /** « ia » : codé automatiquement, citation vérifiée dans la source ; « humain » : relu */
+  codedBy?: 'ia' | 'humain'
+  codedAt?: string
+}
+
 /** Position codée d'un acteur sur un item. */
 export type Position =
-  | { value: Ordinal; status: DocStatus; sources: string[]; note?: string }
-  | { set: Ordinal[]; status: DocStatus; sources: string[]; note?: string }
-  | { missing: true; status: DocStatus; note?: string }
+  | ({ value: Ordinal; status: DocStatus; sources: string[] } & PositionMeta)
+  | ({ set: Ordinal[]; status: DocStatus; sources: string[] } & PositionMeta)
+  | ({ missing: true; status: DocStatus } & PositionMeta)
+
+export interface CorpusSource {
+  id: string
+  title: string
+  publisher: string
+  url: string | null
+  date?: string
+  passage?: string
+}
 
 export interface Actor {
   slug: ActorSlug
@@ -88,6 +109,7 @@ export interface Corpus {
   publishedAt: string
   actors: Actor[]
   positions: Record<ActorSlug, Record<ItemId, Position>>
+  sources?: CorpusSource[]
 }
 
 export type Answers = Record<ItemId, Answer>

@@ -4,18 +4,18 @@ import { PageHeader } from '@/components/PageHeader'
 
 export const metadata: Metadata = {
   title: 'Quel indécis es-tu ?',
-  description: 'Un quiz rapide sur ta façon de suivre la campagne. Aucune question sur tes opinions politiques.',
+  description: 'Le quiz rapide de Ça vote ? pour la présidentielle 2027.',
   alternates: { canonical: '/quiz' },
 }
 
 const TIQUIZ_URL = process.env.NEXT_PUBLIC_TIQUIZ_URL
 
-// Quiz Tiquiz : uniquement des questions sur les habitudes d'information (docs/TIQUIZ.md).
-// Il ne doit contenir aucune question d'opinion politique : il collecte un email.
+// Quiz Tiquiz. Condition fixée par la rédaction : Tiquiz ne conserve ni les réponses ni le résultat
+// liés à l'email ; seul un tag « quiz passé » est envoyé à Systeme.io.
 export default function QuizPage() {
   return (
     <div className="container">
-      <PageHeader kicker="Quiz express" title="Quel indécis es-tu ?" lede="Huit questions sur ta façon de suivre la campagne. Aucune sur tes opinions." />
+      <PageHeader kicker="Quiz express" title="Quel indécis es-tu ?" lede="La version courte, en quelques questions. Tes réponses ne sont pas gardées : seul ton email l’est, si tu choisis de le donner." />
       {TIQUIZ_URL ? (
         <iframe
           src={TIQUIZ_URL}

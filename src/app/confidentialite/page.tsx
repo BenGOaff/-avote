@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="container">
-      <PageHeader kicker="Confidentialité" title="Ce qu’on sait de toi" lede="Pour le test : rien. Pour la newsletter : ton email et ton prénom, si tu les donnes." />
+      <PageHeader kicker="Confidentialité" title="Ce qu’on sait de toi" lede="Pour le test : rien. Pour la newsletter : ton email et ton prénom, si tu les donnes. Le meilleur moyen de ne pas perdre tes opinions politiques, c’est de ne jamais les avoir." />
       <div className="measure stack">
         <h2 style={{ fontSize: 'var(--h3)' }}>Le test</h2>
         <p>

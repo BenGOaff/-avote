@@ -8,7 +8,7 @@ import { rankActors, redLineStatus, type RankingEntry, type WeightMode } from '@
 import type { Corpus } from '@/lib/engine/types'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { loadState, saveState, type LocalVoterState } from '@/lib/local-store'
-import { answerLabel, effectiveAnswers, positionLabel } from '@/lib/answers'
+import { BASIS_LABEL, answerLabel, effectiveAnswers, positionLabel } from '@/lib/answers'
 import { ScoreBar, fmt, fmtPct } from '@/components/ScoreBar'
 
 const nf1 = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 })
@@ -157,11 +157,11 @@ export function ResultsView() {
 
         {liveCorpus.actors.length === 0 && (
           <div className="alert alert--info">
-            <p className="alert__title">Aucun dossier de candidat n’est encore validé.</p>
+            <p className="alert__title">Les positions des candidats sont en cours de collecte.</p>
             <p>
-              Chaque position doit être tirée d’un programme ou d’une déclaration, puis relue par deux personnes avant d’entrer dans le calcul. En attendant, le
-              calcul ci-dessous utilise des <strong>candidats fictifs</strong> pour te montrer comment il fonctionne. Quand les dossiers seront prêts, ton profil
-              (s’il est gardé sur cet appareil) sera recalculé ici.
+              Chaque position est tirée d’un programme ou d’une déclaration, avec une citation vérifiée dans la source. En attendant, le calcul ci-dessous
+              utilise des <strong>candidats fictifs</strong> pour te montrer comment il fonctionne. Dès que les dossiers seront prêts, ton profil (s’il est
+              gardé sur cet appareil) sera recalculé ici.
             </p>
           </div>
         )}
@@ -213,7 +213,7 @@ export function ResultsView() {
 
             <ol style={{ listStyle: 'none', padding: 0, margin: 'var(--s4) 0 0', display: 'grid', gap: 'var(--s4)' }}>
               {ranking.entries.map((e) => (
-                <ActorResult key={e.slug} e={e} ranked={ranking.ranked} demo={corpus.mode === 'demo'} essentials={state.essentials} answers={answers} onHide={() => setHidden([...(state.hiddenActors ?? []), e.slug])} />
+                <ActorResult key={e.slug} e={e} corpus={corpus} ranked={ranking.ranked} demo={corpus.mode === 'demo'} essentials={state.essentials} answers={answers} onHide={() => setHidden([...(state.hiddenActors ?? []), e.slug])} />
               ))}
             </ol>
             {hidden.size > 0 && (
@@ -253,6 +253,7 @@ export function ResultsView() {
 
 function ActorResult({
   e,
+  corpus,
   ranked,
   demo,
   essentials,
@@ -260,6 +261,7 @@ function ActorResult({
   onHide,
 }: {
   e: RankingEntry
+  corpus: Corpus
   ranked: boolean
   demo: boolean
   essentials: string[]
@@ -276,12 +278,13 @@ function ActorResult({
     })
     .filter((x): x is { id: string; status: ReturnType<typeof redLineStatus> } => !!x && x.status !== 'accord')
   const textOf = (id: string) => set.items.find((i) => i.id === id)?.concept ?? id
+  const sourceOf = new Map((corpus.sources ?? []).map((x) => [x.id, x]))
 
   return (
     <li className="card">
       {ranked && e.closeToPrevious && <p className="small muted" style={{ marginTop: 0 }}>{UI_COPY.results.close}</p>}
       <div className="row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
-        <h3 style={{ margin: 0 }}>{e.name}</h3>
+        <h3 style={{ margin: 0 }}>{demo ? e.name : <Link href={`/candidats/${e.slug}`}>{e.name}</Link>}</h3>
         {demo && <span className="badge badge--demo">Fictif</span>}
       </div>
       <p style={{ margin: 'var(--s3) 0 var(--s2)' }}>
@@ -332,6 +335,15 @@ function ActorResult({
                     <td>{answerLabel(answers[c.itemId])}</td>
                     <td>
                       {positionLabel(c.position)}
+                      {c.position && 'basis' in c.position && c.position.basis && <span className="hint"><br />{BASIS_LABEL[c.position.basis]}</span>}
+                      {c.position && 'sources' in c.position && sourceOf.get(c.position.sources[0] ?? '')?.url && (
+                        <>
+                          {' · '}
+                          <a className="small" href={sourceOf.get(c.position.sources[0] ?? '')!.url!} rel="noopener noreferrer nofollow" target="_blank">
+                            source
+                          </a>
+                        </>
+                      )}
                       {c.position && 'note' in c.position && c.position.note && <span className="hint"><br />{c.position.note}</span>}
                     </td>
                     <td className="num">{nf1.format(c.weight * 100)}</td>

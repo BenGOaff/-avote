@@ -37,3 +37,11 @@ export function effectiveAnswers(state: LocalVoterState | null, set: QuestionSet
   }
   return out
 }
+
+export const BASIS_LABEL: Record<string, string> = {
+  'programme-2027': 'Programme 2027',
+  declaration: 'Déclaration',
+  'programme-2022': 'Programme 2022',
+  parti: 'Programme du parti',
+  vote: 'Vote',
+}

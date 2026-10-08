@@ -3,6 +3,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { getCorrections } from '@/lib/content'
 import { formatDate } from '@/components/Editorial'
 import { LEGAL, displayEmail } from '@/lib/legal'
+import changes from '@content/corpus/changes.json'
+import { getAnnouncedActors } from '@/lib/actors'
+import { questionnaire } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Corrections',
@@ -35,6 +38,43 @@ export default function CorrectionsPage() {
             ))}
           </ol>
         )}
+        <section aria-labelledby="journal">
+          <h2 id="journal" style={{ fontSize: 'var(--h3)' }}>
+            Journal des positions
+          </h2>
+          <p className="small muted">Chaque changement de position codée, du plus récent au plus ancien. Valeurs de −2 (tout à fait opposé) à +2 (tout à fait favorable).</p>
+          {(changes as { date: string; actor: string; item: string; from: string; to: string }[]).length === 0 ? (
+            <p className="muted">Aucun changement enregistré pour l’instant.</p>
+          ) : (
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Candidat</th>
+                    <th scope="col">Question</th>
+                    <th scope="col">Avant</th>
+                    <th scope="col">Après</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[...(changes as { date: string; actor: string; item: string; from: string; to: string }[])]
+                    .reverse()
+                    .slice(0, 60)
+                    .map((c) => (
+                      <tr key={c.date + c.actor + c.item}>
+                        <td className="num">{formatDate(c.date)}</td>
+                        <td>{getAnnouncedActors().find((a) => a.slug === c.actor)?.name ?? c.actor}</td>
+                        <td>{questionnaire.items.find((i) => i.id === c.item)?.concept ?? c.item}</td>
+                        <td>{c.from}</td>
+                        <td>{c.to}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </section>
         <section id="signaler" className="card">
           <h2 style={{ fontSize: 'var(--h3)' }}>Signaler une erreur</h2>
           <p>
