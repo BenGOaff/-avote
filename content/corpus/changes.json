@@ -3301,5 +3301,61 @@
     "from": "inconnue",
     "to": "[-1,0]",
     "source": "d29a4037b07f5809"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "034d4d0faa0bf483"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "4039d0435d1ea65b"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "ba84976af0c75ea5"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "8e3bbde14e44ec99"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "5d823b90b05fbe69"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "610dffb454d6e20e"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "eur-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "866e4aed56549e3e"
   }
 ]

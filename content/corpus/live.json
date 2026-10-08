@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081810",
+  "version": "live-202610081811",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:10:53.270Z",
+  "publishedAt": "2026-10-08T18:11:37.885Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -546,11 +546,18 @@
         "codedAt": "2026-10-08T14:49:46.768Z"
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "4039d0435d1ea65b"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:49:46.768Z"
+        "codedAt": "2026-10-08T18:11:37.885Z",
+        "note": "Veut moins de 20 élèves par classe en primaire, mais en profitant de la baisse démographique (1,7 million d'élèves de moins en 10 ans) plutôt qu'en recrutant davantage d'enseignants : il refuse de supprimer les moyens, sans promettre de rec"
       },
       "tra-04": {
         "missing": true,
@@ -560,11 +567,18 @@
         "codedAt": "2026-10-08T14:49:46.768Z"
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "ba84976af0c75ea5"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:49:46.768Z"
+        "codedAt": "2026-10-08T18:11:37.885Z",
+        "note": "Reprise de la réforme de l'assurance chômage engagée lorsqu'il était Premier ministre en 2024 (interrompue par la dissolution), présentée comme incitant à la reprise d'emploi ; le texte ne détaille pas les paramètres durcis."
       },
       "tra-06": {
         "missing": true,
@@ -627,11 +641,18 @@
         "codedAt": "2026-10-08T16:57:03.870Z"
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La seule source trouvée résume le candidat sans le citer.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "034d4d0faa0bf483"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:56:57.498Z"
+        "codedAt": "2026-10-08T18:11:37.885Z",
+        "note": "Texte du site de campagne résumant son entretien au Parisien. Engagement général de ne hausser aucun impôt pendant le quinquennat, sans mention spécifique de l'impôt sur le revenu des plus aisés. Même engagement en juin 2024, comme Premier "
       },
       "eco-02": {
         "missing": true,
@@ -719,11 +740,15 @@
         "codedAt": "2026-10-08T14:49:46.768Z"
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "8e3bbde14e44ec99"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:49:46.768Z"
+        "codedAt": "2026-10-08T18:11:37.885Z",
+        "note": "Plan « Messmer II » présenté en conférence de presse : 14 EPR et objectif d'un réacteur par an."
       },
       "cli-02": {
         "missing": true,
@@ -782,25 +807,40 @@
         "codedAt": "2026-10-08T14:49:46.768Z"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "5d823b90b05fbe69"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:06.471Z"
+        "codedAt": "2026-10-08T18:11:37.885Z",
+        "note": "La même page ajoute : « Il faut poursuivre et amplifier ce réarmement. »"
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": -1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "610dffb454d6e20e"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:06.471Z"
+        "codedAt": "2026-10-08T18:11:37.885Z",
+        "note": "Favorable à de nouveaux accords avec les alliés (Japon, Inde, Corée, Australie…), mais opposé au traité avec le Mercosur et favorable à des clauses miroir et à une « arme de dissuasion commerciale » face à la Chine et aux États-Unis."
       },
       "eur-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "866e4aed56549e3e"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:49:46.768Z"
+        "codedAt": "2026-10-08T18:11:37.885Z",
+        "note": "Dette commune proposée dans le cadre des « États-Unis d'Europe », un noyau dur de pays volontaires, plutôt qu'au niveau de l'UE à 27 ; il propose aussi un endettement commun européen pour une « politique IA commune »."
       },
       "eur-06": {
         "missing": true,
@@ -10373,11 +10413,64 @@
       "url": "https://www.europe1.fr/node/875297",
       "date": "2025-12-16",
       "passage": "Depuis longtemps, on a fait le choix et on n’a pas varié. On est favorable au libre-échange, mais le traité Mercosur est injuste et dépassé"
+    },
+    {
+      "id": "034d4d0faa0bf483",
+      "title": "Dans Le Parisien : Gabriel Attal vise le zéro déficit en 2037",
+      "publisher": "attalpresident.fr (site de campagne officiel)",
+      "url": "https://attalpresident.fr/actualites/dans-le-parisien-gabriel-attal-vise-le-zero-deficit-en-2037",
+      "date": "2026-07-03",
+      "passage": "Excluant toute hausse d'impôt durant son quinquennat, il promet de revenir sur plusieurs taxes décidées depuis la dissolution et de poursuivre la baisse des impôts de production."
+    },
+    {
+      "id": "4039d0435d1ea65b",
+      "title": "Chantier capital 01 – École",
+      "publisher": "attalpresident.fr (site de campagne officiel)",
+      "url": "https://attalpresident.fr/programme/education",
+      "passage": "Je n’y vois pas une source d’économies mais au contraire une opportunité pour avoir moins d’élèves par classe notamment en primaire où nous devons viser moins de 20 élèves par classe comme dans les meilleurs systèmes éducatifs européens."
+    },
+    {
+      "id": "ba84976af0c75ea5",
+      "title": "Chantier capital 02 – Travail & salaires",
+      "publisher": "attalpresident.fr (site de campagne officiel)",
+      "url": "https://attalpresident.fr/programme/travail-salaires",
+      "passage": "C’est pourquoi je porte une réforme de l’assurance chômage qui incite au travail et qui créerait 100 000 emplois supplémentaires ."
+    },
+    {
+      "id": "8e3bbde14e44ec99",
+      "title": "Gabriel Attal présente un plan de désendettement et un « Messmer II » pour sortir des dépendances françaises",
+      "publisher": "attalpresident.fr (site de campagne officiel)",
+      "url": "https://attalpresident.fr/actualites/gabriel-attal-presente-un-plan-de-desendettement-et-un-messmer-ii-pour-sortir-des-dependances-francaises",
+      "date": "2026-09-23",
+      "passage": "Sur le nucléaire, Gabriel Attal veut sécuriser la construction des 14 EPR et retrouver une capacité de construction en série , avec l’objectif d’atteindre un réacteurs par an."
+    },
+    {
+      "id": "5d823b90b05fbe69",
+      "title": "Chantier capital 03 – Frontières",
+      "publisher": "attalpresident.fr (site de campagne officiel)",
+      "url": "https://attalpresident.fr/programme/frontieres",
+      "passage": "Dans un monde où la guerre refait surface, où les empires avancent, où les cyberattaques se multiplient, nous devons continuer à augmenter les moyens de notre défense et surtout, surtout, la préparer aux guerres de demain."
+    },
+    {
+      "id": "610dffb454d6e20e",
+      "title": "Bâtir les États-Unis d’Europe – Discours de Gabriel Attal à Reims",
+      "publisher": "Renaissance (texte du discours)",
+      "url": "https://doc.parti.re/2026/Discours_Europe.pdf",
+      "date": "2026-09-17",
+      "passage": "L’Union européenne aurait évidemment vocation à conserver cette compétence pour conclure de nouveaux accords de libre-échange avec nos alliés et partenaires, comme le CETA avec le Canada."
+    },
+    {
+      "id": "866e4aed56549e3e",
+      "title": "Bâtir les États-Unis d’Europe – Discours de Gabriel Attal à Reims",
+      "publisher": "Renaissance (texte du discours)",
+      "url": "https://doc.parti.re/2026/Discours_Europe.pdf",
+      "date": "2026-09-17",
+      "passage": "Pour toutes ces politiques que j’ai égrainées, nous pouvons nous donner les moyens de nos décisions : des ressources communes, un Trésor unique capable d’émettre une dette commune pour financer nos investissements d’avenir."
     }
   ],
   "refreshedAt": {
     "edouard-philippe": "2026-10-08T14:44:37.471Z",
-    "gabriel-attal": "2026-10-08T14:49:46.768Z",
+    "gabriel-attal": "2026-10-08T18:11:37.885Z",
     "bruno-retailleau": "2026-10-08T18:10:53.270Z",
     "david-lisnard": "2026-10-08T15:00:13.139Z",
     "marine-le-pen": "2026-10-08T15:06:17.605Z",
