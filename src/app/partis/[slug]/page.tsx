@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAnnouncedActors } from '@/lib/actors'
 import { BLOCS } from '@/lib/nuances'
-import { THEME_LABEL, blocOfParty, candidatesOf, getParti, getPartis } from '@/lib/partis'
+import { THEME_LABEL, blocOfParty, candidatesOf, getParti, getPartis, isClassified } from '@/lib/partis'
 
 export const dynamicParams = false
 export function generateStaticParams() {
@@ -21,7 +21,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 }
 
-const n = (x: number | null) => (x === null ? '—' : String(x))
+
+const MONTHS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+const monthYear = (d: string) => (d.length >= 7 ? `${MONTHS[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}` : d)
 
 export default async function PartiPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -29,35 +31,34 @@ export default async function PartiPage({ params }: { params: Promise<{ slug: st
   if (!p) notFound()
   const bloc = blocOfParty(p)
   const cands = candidatesOf(p, getAnnouncedActors())
+  // Seuls les chiffres sourcés s'affichent : une donnée absente reste absente
+  const plural = (x: number, w: string) => `${w}${x > 1 ? 's' : ''}`
+  const figures = [
+    p.founded?.date ? { num: p.founded.date.slice(0, 4), label: 'année de création' } : null,
+    p.elus.deputes !== null ? { num: String(p.elus.deputes), label: plural(p.elus.deputes, 'député') } : null,
+    p.elus.senateurs !== null ? { num: String(p.elus.senateurs), label: plural(p.elus.senateurs, 'sénateur') } : null,
+    p.elus.eurodeputes !== null ? { num: String(p.elus.eurodeputes), label: plural(p.elus.eurodeputes, 'eurodéputé') } : null,
+  ].filter((x): x is { num: string; label: string } => x !== null)
   const sources = [p.founded, p.leadersSource, p.elus.url ? (p.elus as Required<typeof p.elus>) : null, p.values, ...p.dates, ...p.measures].filter(Boolean) as { quote: string; url: string; publisher: string }[]
   return (
     <div className="container" style={{ paddingTop: 'var(--s6)' }}>
       <p className="kicker">
-        <Link href="/partis">Partis</Link> · {BLOCS.find((b) => b.id === bloc)?.label}
+        <Link href="/partis">Partis</Link> · {isClassified(p) ? BLOCS.find((b) => b.id === bloc)?.label : 'Non classé'}
       </p>
       <h1 className={`parti__title bloc-${bloc}`}>
         {p.sigle && <span className="parti-card__sigle">{p.sigle}</span>} {p.name}
       </h1>
       {p.values && <p className="lede measure">{p.values.text}</p>}
 
-      <div className="figures" role="list">
-        <p className="figure" role="listitem">
-          <span className="figure__num">{p.founded?.date?.slice(0, 4) ?? '—'}</span>
-          <span className="figure__label">année de création</span>
-        </p>
-        <p className="figure" role="listitem">
-          <span className="figure__num">{n(p.elus.deputes)}</span>
-          <span className="figure__label">député{(p.elus.deputes ?? 0) > 1 ? 's' : ''}</span>
-        </p>
-        <p className="figure" role="listitem">
-          <span className="figure__num">{n(p.elus.senateurs)}</span>
-          <span className="figure__label">sénateur{(p.elus.senateurs ?? 0) > 1 ? 's' : ''}</span>
-        </p>
-        <p className="figure" role="listitem">
-          <span className="figure__num">{n(p.elus.eurodeputes)}</span>
-          <span className="figure__label">eurodéputé{(p.elus.eurodeputes ?? 0) > 1 ? 's' : ''}</span>
-        </p>
+      <div className="figures figures--compact" role="list">
+        {figures.map((f) => (
+          <p key={f.label} className="figure" role="listitem">
+            <span className="figure__num">{f.num}</span>
+            <span className="figure__label">{f.label}</span>
+          </p>
+        ))}
       </div>
+      {figures.length > 1 && p.elus.asOf && <p className="small muted" style={{ marginTop: 'calc(-1 * var(--s3))' }}>Nombre d’élus en {monthYear(p.elus.asOf)}.</p>}
 
       <div className="grid grid--2">
         <section aria-labelledby="qui">

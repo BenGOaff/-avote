@@ -138,6 +138,22 @@ for (const [slug, periods] of Object.entries(parcours.parcours)) {
   for (const p of periods) if (!p.party || !p.url?.startsWith('https://') || !p.quote || /wikipedia\.org/.test(p.url)) errors.push(`parcours : ${slug} période sans source valable`)
 }
 
+// Fiches partis : chaque champ rempli porte une source https (jamais Wikipédia) et un extrait
+type Src = { quote?: string; url?: string } | null
+const partis = JSON.parse(readFileSync(path.join(ROOT, 'content/partis/partis.json'), 'utf8')) as {
+  partis: { slug: string; name: string; nuance: string; founded: Src; leadersSource: Src; values: Src; dates: Src[]; measures: Src[]; elus: Src }[]
+}
+const nuanceCodes = new Set(Object.keys((JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/nuances.json'), 'utf8')) as { nuances: Record<string, unknown> }).nuances))
+const badSrc = (x: Src) => !!x && (!x.url?.startsWith('https://') || !x.quote || /wikipedia\.org/.test(x.url))
+const partiSlugs = new Set<string>()
+for (const p of partis.partis) {
+  if (partiSlugs.has(p.slug)) errors.push(`partis : ${p.slug} en double`)
+  partiSlugs.add(p.slug)
+  if (!p.name || (p.nuance !== '' && !nuanceCodes.has(p.nuance))) errors.push(`partis : ${p.slug} sans nom ou nuance inconnue (${p.nuance})`)
+  const all = [p.founded, p.leadersSource, p.values, ...p.dates, ...p.measures, p.elus?.url ? p.elus : null]
+  if (all.some(badSrc)) errors.push(`partis : ${p.slug} contient un champ sans source valable`)
+}
+
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
 for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)

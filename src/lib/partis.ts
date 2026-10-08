@@ -15,6 +15,8 @@ export interface Party {
   slug: string
   name: string
   sigle: string
+  /** Autres sigles en usage pour le même parti (EELV pour Les Écologistes, par exemple). */
+  aliases?: string[]
   nuance: string
   founded: ({ date: string; text: string } & Sourced) | null
   leaders: { name: string; role: string; since: string }[]
@@ -32,11 +34,25 @@ export const BLOC_ORDER: BlocId[] = ['EXG', 'GAU', 'DIV', 'CENT', 'DTE', 'EXD']
 export const getPartis = (): Party[] => list
 export const getParti = (slug: string) => list.find((p) => p.slug === slug)
 export const blocOfParty = (p: Party): BlocId => NUANCES[p.nuance]?.bloc ?? 'DIV'
-export const partyBySigle = (sigle: string) => (sigle ? list.find((p) => p.sigle === sigle) : undefined)
+/** Nuance vide : parti absent de la grille officielle et non déductible, laissé non classé comme ses candidats. */
+export const isClassified = (p: Party) => !!NUANCES[p.nuance]
+
+const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replace(/[^a-z0-9]+/g, ' ').trim()
+
+/** Une période de parcours relève-t-elle de ce parti ? Même sigle, même nom, ou nom actuel entre parenthèses (« Europe Écologie Les Verts (Les Écologistes) »). */
+export function isPartyOf(p: Party, period: { sigle: string; party: string }): boolean {
+  if (p.sigle && period.sigle && (p.sigle === period.sigle || p.aliases?.includes(period.sigle))) return true
+  const b = norm(p.name)
+  const inParens = /\(([^)]+)\)\s*$/.exec(period.party)?.[1]
+  return norm(period.party) === b || (!!inParens && norm(inParens) === b)
+}
+
+/** Fiche du parti d'une période, s'il y en a une. */
+export const partyOfPeriod = (period: { sigle: string; party: string }) => list.find((p) => isPartyOf(p, period))
 
 /** Candidats dont la période en cours (sans date de fin) correspond à ce parti. */
 export function candidatesOf(p: Party, actors: { slug: string; name: string }[]): { slug: string; name: string }[] {
-  return actors.filter((a) => getParcours(a.slug).some((x) => x.to === '' && (x.sigle ? x.sigle === p.sigle : x.party === p.name)))
+  return actors.filter((a) => getParcours(a.slug).some((x) => x.to === '' && isPartyOf(p, x)))
 }
 
 export const THEME_LABEL: Record<string, string> = {

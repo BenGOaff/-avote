@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import { blocOfSigle, getParcours, periodLabel } from '@/lib/parcours'
+import { partyOfPeriod } from '@/lib/partis'
 
 /**
  * Frise des partis traversés : une pastille par période, le détail au survol ou au toucher (focus clavier compris).
@@ -6,6 +8,8 @@ import { blocOfSigle, getParcours, periodLabel } from '@/lib/parcours'
 export function PartyTrail({ slug }: { slug: string }) {
   const periods = getParcours(slug)
   if (periods.length === 0) return null
+  const now = periods.find((p) => p.to === '')
+  const fiche = now ? partyOfPeriod(now) : undefined
   return (
     <div className="trail">
       <ol className="trail__list" aria-label="Partis traversés">
@@ -23,6 +27,11 @@ export function PartyTrail({ slug }: { slug: string }) {
           </li>
         ))}
       </ol>
+      {fiche && (
+        <p className="small trail__current">
+          <Link href={`/partis/${fiche.slug}`}>La fiche {fiche.sigle || fiche.name}</Link> : histoire, dirigeants, élus et idées.
+        </p>
+      )}
       <details className="sources">
         <summary>Sources du parcours</summary>
         <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
