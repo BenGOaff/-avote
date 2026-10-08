@@ -1,13 +1,13 @@
 import { NextResponse, type NextRequest } from 'next/server'
-import { clientIp } from '@/lib/client-ip'
+import { clientIp, sameOrigin } from '@/lib/client-ip'
+import { SITE_URL } from '@/lib/site'
 import { addContact, openToken, rateLimited } from '@/lib/newsletter'
 
 export const dynamic = 'force-dynamic'
 
 // Confirmation par POST (bouton) : les scanners de liens des messageries ne valident pas à la place de la personne.
 export async function POST(req: NextRequest) {
-  const origin = req.headers.get('origin')
-  if (origin && new URL(origin).host !== req.nextUrl.host) return NextResponse.json({ ok: false }, { status: 403 })
+  if (!sameOrigin(req, SITE_URL.host, false)) return NextResponse.json({ ok: false }, { status: 403 })
   const ip = clientIp(req) || 'unknown'
   if (rateLimited(`confirm:${ip}`, 10)) return NextResponse.redirect(new URL('/newsletter?etat=limite', req.url), 303)
 
