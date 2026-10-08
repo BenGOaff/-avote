@@ -25,7 +25,7 @@ const arg = (k: string) => args.find((a) => a.startsWith(`--${k}=`))?.split('=')
 const ONLY = arg('media')
 const LIMIT = Number(arg('limit') ?? 10)
 const MODEL = process.env.MEDIAS_MODEL || process.env.POSITIONS_MODEL || 'claude-opus-5-5'
-const EFFORT = (process.env.MEDIAS_EFFORT || 'high') as 'low' | 'medium' | 'high'
+const EFFORT = (process.env.MEDIAS_EFFORT || 'medium') as 'low' | 'medium' | 'high'
 const PARALLEL = Number(process.env.MEDIAS_PARALLEL || 3)
 const meter = new CostMeter('Médias', budgetFromEnv('MEDIAS_BUDGET_USD', 3))
 const ALERTS = args.includes('--alertes')
