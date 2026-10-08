@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       <div className="measure stack">
         <h2 style={{ fontSize: 'var(--h3)' }}>Le test</h2>
         <p>
-          Tes réponses, tes priorités, tes exigences et tes résultats sont calculés et gardés dans ton navigateur. Ils ne sont envoyés ni à notre serveur, ni à un
+          Tes réponses, tes jetons, tes lignes rouges et tes résultats sont calculés et gardés dans ton navigateur. Ils ne sont envoyés ni à notre serveur, ni à un
           prestataire, ni à une intelligence artificielle. Il n’y a pas de compte. Les opinions politiques sont des données sensibles au sens du RGPD : la
           meilleure protection reste de ne pas les recevoir.
         </p>

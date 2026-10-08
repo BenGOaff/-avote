@@ -4,17 +4,22 @@ import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
 import { itemsByTheme, questionnaire as set } from '@/lib/data'
-import { ORDINALS, type Answer, type Ordinal, type Priorities } from '@/lib/engine/types'
+import { ORDINALS, type Answer, type Answers, type Ordinal, type Priorities } from '@/lib/engine/types'
 import { emptyState, loadState, saveState, type LocalVoterState } from '@/lib/local-store'
 import { answerLabel, effectiveAnswers } from '@/lib/answers'
 import { mirrorRemark } from '@/lib/humor'
 import { IconArrowLeft, IconCheck } from '@/components/Icons'
+import { ThemeIcon } from '@/components/ThemeIcon'
+import { Coin } from '@/components/Viz'
+import { TokenBoard } from './TokenBoard'
 
-type Step = { kind: 'intro' } | { kind: 'question'; index: number } | { kind: 'mirror'; themeIndex: number } | { kind: 'priorities' } | { kind: 'essentials' }
+type Step = { kind: 'intro' } | { kind: 'question'; index: number } | { kind: 'mirror'; themeIndex: number } | { kind: 'priorities' }
 
 const groups = itemsByTheme(set)
 const flat = groups.flatMap((g) => g.items)
 const TOKENS = 10
+// Taille du rond selon la force de la réponse : plus on est tranché, plus le rond est grand
+const DOT = { [-2]: 40, [-1]: 30, 0: 22, 1: 30, 2: 40 } as Record<Ordinal, number>
 
 export function TestFlow() {
   const router = useRouter()
@@ -43,8 +48,20 @@ export function TestFlow() {
     })
   }, [])
 
+  const toggleRedLine = useCallback(
+    (id: string) =>
+      update((s) => {
+        const e = new Set(s.essentials)
+        if (e.has(id)) e.delete(id)
+        else e.add(id)
+        return { ...s, essentials: [...e] }
+      }),
+    [update],
+  )
+
   const answers = useMemo(() => effectiveAnswers(state, set), [state])
   const answeredCount = Object.keys(answers).length
+  const redLines = new Set(state?.essentials ?? [])
 
   if (!loaded) return <p aria-live="polite">Chargement…</p>
 
@@ -71,6 +88,7 @@ export function TestFlow() {
     const group = groups[themeIndex]!
     const posInTheme = group.items.findIndex((i) => i.id === item.id)
     const current = answers[item.id]
+    const isRed = redLines.has(item.id)
 
     const go = (a: Answer, advance: boolean) => {
       update((s) => ({
@@ -79,7 +97,7 @@ export function TestFlow() {
         answeredVersions: { ...s.answeredVersions, [item.id]: item.version },
         cursor: step.index,
       }))
-      if (advance) setTimeout(() => next(), 180)
+      if (advance) setTimeout(() => next(), 220)
     }
     const next = () => {
       const isLastOfTheme = posInTheme === group.items.length - 1
@@ -91,10 +109,11 @@ export function TestFlow() {
       else if (posInTheme === 0) setStep({ kind: 'mirror', themeIndex: themeIndex - 1 })
       else setStep({ kind: 'question', index: step.index - 1 })
     }
+    const selected = current?.kind === 'value' ? current.value : null
 
     return (
       <div className="narrow">
-        <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s2)' }}>
+        <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s3)' }}>
           <button className="btn btn--ghost btn--small" onClick={prev}>
             <IconArrowLeft width={18} height={18} /> {UI_COPY.test.back}
           </button>
@@ -102,48 +121,71 @@ export function TestFlow() {
             Question {step.index + 1} sur {flat.length}
           </span>
         </div>
-        <div className="progress" aria-hidden="true">
-          <div className="progress__bar" style={{ width: `${((step.index + 1) / flat.length) * 100}%` }} />
-        </div>
-        <p className="kicker" style={{ marginTop: 'var(--s5)' }}>
-          {group.theme.label} · {posInTheme + 1}/{group.items.length}
-        </p>
-        <h1 ref={headingRef} tabIndex={-1} style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2.25rem)', fontFamily: 'var(--font-ui)', fontWeight: 700, letterSpacing: 0, outline: 'none' }}>
-          {item.text}
-        </h1>
-        <p className="muted">{item.explanation}</p>
+        <Chapters current={themeIndex} />
 
-        <div role="radiogroup" aria-label="Ta réponse" className="answers" style={{ marginTop: 'var(--s5)' }}>
-          {[...ORDINALS].reverse().map((v) => {
-            const selected = current?.kind === 'value' && current.value === v
-            return (
-              <button key={v} role="radio" aria-checked={selected} className="answer" onClick={() => go({ kind: 'value', value: v as Ordinal }, true)}>
-                <span className="answer__check">
-                  <IconCheck />
-                </span>
-                {UI_COPY.test.scale[v + 2]}
+        <article className="qcard" key={item.id}>
+          <p className="qcard__theme">
+            <ThemeIcon theme={group.theme.id} width={22} height={22} />
+            {group.theme.label}
+            <span className="muted"> · {posInTheme + 1}/{group.items.length}</span>
+          </p>
+          <h1 ref={headingRef} tabIndex={-1} className="qcard__text">
+            {item.text}
+          </h1>
+          <p className="muted qcard__help">{item.explanation}</p>
+
+          <div className="scale">
+            <div role="radiogroup" aria-label="Ta réponse" className="scale__dots">
+              {[...ORDINALS].map((v) => (
+                <button
+                  key={v}
+                  role="radio"
+                  aria-checked={selected === v}
+                  aria-label={UI_COPY.test.scale[v + 2]}
+                  className={`scale__dot scale__dot--${v < 0 ? 'against' : v > 0 ? 'for' : 'mid'}`}
+                  onClick={() => go({ kind: 'value', value: v as Ordinal }, true)}
+                >
+                  <span style={{ width: DOT[v], height: DOT[v] }}>{selected === v && <IconCheck />}</span>
+                </button>
+              ))}
+            </div>
+            <div className="scale__ends" aria-hidden="true">
+              <span>{UI_COPY.test.scaleAgainst}</span>
+              <span>{UI_COPY.test.scaleFor}</span>
+            </div>
+            <p className="scale__picked" aria-live="polite">
+              {selected !== null ? UI_COPY.test.scale[selected + 2] : ' '}
+            </p>
+          </div>
+
+          <div className="chips">
+            {(
+              [
+                ['dontknow', UI_COPY.test.dontKnow],
+                ['depends', UI_COPY.test.depends],
+                ['skip', UI_COPY.test.skip],
+              ] as const
+            ).map(([kind, label]) => (
+              <button
+                key={kind}
+                className="chip"
+                aria-pressed={current?.kind === kind}
+                onClick={() => go(kind === 'depends' ? { kind, note: current?.kind === 'depends' ? current.note : undefined } : { kind }, kind !== 'depends')}
+              >
+                {label}
               </button>
-            )
-          })}
-        </div>
-        <div className="answers" style={{ marginTop: 'var(--s4)', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))' }}>
-          {(
-            [
-              ['dontknow', UI_COPY.test.dontKnow],
-              ['depends', UI_COPY.test.depends],
-              ['skip', UI_COPY.test.skip],
-            ] as const
-          ).map(([kind, label]) => (
-            <button
-              key={kind}
-              className="answer answer--secondary"
-              aria-pressed={current?.kind === kind}
-              onClick={() => go(kind === 'depends' ? { kind, note: current?.kind === 'depends' ? current.note : undefined } : { kind }, kind !== 'depends')}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+            ))}
+          </div>
+
+          <button className={`redline${isRed ? ' redline--on' : ''}`} aria-pressed={isRed} onClick={() => toggleRedLine(item.id)} title={UI_COPY.test.redLineHint}>
+            <span className="redline__box" aria-hidden="true">
+              {isRed && <IconCheck />}
+            </span>
+            {isRed ? UI_COPY.test.redLineOn : UI_COPY.test.redLine}
+            <span className="visually-hidden"> : {UI_COPY.test.redLineHint}</span>
+          </button>
+        </article>
+
         {current?.kind === 'depends' && (
           <div className="field" style={{ marginTop: 'var(--s4)' }}>
             <label htmlFor="depends-note">{UI_COPY.test.dependsHint}</label>
@@ -160,7 +202,7 @@ export function TestFlow() {
           </div>
         )}
         {current && current.kind !== 'depends' && (
-          <button className="btn btn--secondary" style={{ marginTop: 'var(--s5)' }} onClick={next}>
+          <button className="btn btn--secondary" style={{ marginTop: 'var(--s4)' }} onClick={next}>
             {UI_COPY.test.next}
           </button>
         )}
@@ -175,24 +217,46 @@ export function TestFlow() {
     const isLast = step.themeIndex === groups.length - 1
     return (
       <div className="narrow">
-        <p className="kicker">
-          {UI_COPY.test.chapterDone} · {step.themeIndex + 1}/{groups.length}
-        </p>
-        <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none', fontSize: 'var(--h2)' }}>
-          {group.theme.label}
-        </h1>
-        <div className="card">
-          <p style={{ fontWeight: 700 }}>Ce que tu as répondu</p>
-          <ul style={{ paddingLeft: '1.2em', margin: 0 }}>
-            {group.items.map((i) => (
-              <li key={i.id} style={{ marginBottom: 'var(--s2)' }}>
-                {i.concept} : <strong>{answerLabel(answers[i.id])}</strong>
-              </li>
-            ))}
+        <Chapters current={step.themeIndex} done />
+        <div className="mirror">
+          <span className="mirror__icon" aria-hidden="true">
+            <ThemeIcon theme={group.theme.id} width={40} height={40} />
+          </span>
+          <p className="kicker" style={{ margin: 0 }}>
+            {UI_COPY.test.chapterDone} · {step.themeIndex + 1}/{groups.length}
+          </p>
+          <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none', fontSize: 'var(--h2)', margin: 'var(--s2) 0 var(--s4)' }}>
+            {group.theme.label}
+          </h1>
+          <ul className="recap">
+            {group.items.map((i) => {
+              const a = answers[i.id]
+              const isRed = redLines.has(i.id)
+              return (
+                <li key={i.id} className="recap__row">
+                  <span className="recap__concept">{i.concept}</span>
+                  <MiniScale answer={a} />
+                  <button
+                    className={`redline redline--small${isRed ? ' redline--on' : ''}`}
+                    aria-pressed={isRed}
+                    onClick={() => toggleRedLine(i.id)}
+                    aria-label={`${UI_COPY.test.redLine} : ${i.concept}`}
+                  >
+                    <span className="redline__box" aria-hidden="true">
+                      {isRed && <IconCheck />}
+                    </span>
+                    <span aria-hidden="true">{UI_COPY.test.redLine}</span>
+                  </button>
+                </li>
+              )
+            })}
           </ul>
-          {remark.fact && <p style={{ marginTop: 'var(--s4)', marginBottom: 0 }}>{remark.fact}</p>}
+          <p className="hint" style={{ margin: 'var(--s3) 0 0' }}>
+            {UI_COPY.test.redLineHint}
+          </p>
+          {remark.fact && <p style={{ margin: 'var(--s4) 0 0' }}>{remark.fact}</p>}
           {remark.humor && (
-            <p className="annotation humor" style={{ marginTop: 'var(--s3)', marginBottom: 0 }}>
+            <p className="annotation humor" style={{ margin: 'var(--s3) 0 0' }}>
               {remark.humor}
             </p>
           )}
@@ -209,117 +273,70 @@ export function TestFlow() {
     )
   }
 
-  if (step.kind === 'priorities') {
-    const p: Priorities = state?.priorities ?? {}
-    const used = Object.values(p).reduce((a, b) => a + b, 0)
-    const left = TOKENS - used
-    const set1 = (id: string, delta: number) =>
-      update((s) => {
-        const cur = { ...(s.priorities ?? {}) }
-        const total = Object.values(cur).reduce((a, b) => a + b, 0)
-        const v = (cur[id] ?? 0) + delta
-        if (v < 0 || (delta > 0 && total >= TOKENS)) return s
-        cur[id] = v
-        return { ...s, priorities: cur }
-      })
-    return (
-      <div className="narrow">
-        <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none', fontSize: 'var(--h2)' }}>
-          {UI_COPY.test.prioritiesTitle}
-        </h1>
-        <p>{UI_COPY.test.prioritiesLede}</p>
-        <p aria-live="polite">
-          <strong>
-            {left} jeton{left > 1 ? 's' : ''} à placer
-          </strong>
-        </p>
-        <div className="tokens">
-          {set.themes.map((t) => (
-            <div key={t.id} className="token-row">
-              <span>
-                <strong>{t.label}</strong>
-                <br />
-                <span className="hint">{t.description}</span>
-              </span>
-              <div className="stepper">
-                <button className="icon-btn" style={{ border: 'var(--border) solid var(--ink)' }} aria-label={`Retirer un jeton à ${t.label}`} onClick={() => set1(t.id, -1)} disabled={!p[t.id]}>
-                  −
-                </button>
-                <output aria-label={`${p[t.id] ?? 0} jetons pour ${t.label}`}>{p[t.id] ?? 0}</output>
-                <button className="icon-btn" style={{ border: 'var(--border) solid var(--ink)' }} aria-label={`Ajouter un jeton à ${t.label}`} onClick={() => set1(t.id, 1)} disabled={left <= 0}>
-                  +
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="row" style={{ marginTop: 'var(--s5)' }}>
-          <button className="btn" disabled={left !== 0} aria-disabled={left !== 0} onClick={() => setStep({ kind: 'essentials' })}>
-            {UI_COPY.test.continue}
-          </button>
-          <button
-            className="btn btn--secondary"
-            onClick={() => {
-              update((s) => ({ ...s, priorities: null }))
-              setStep({ kind: 'essentials' })
-            }}
-          >
-            Garder une répartition égale
-          </button>
-        </div>
-      </div>
-    )
-  }
-
-  // Exigences essentielles
-  const essentials = new Set(state?.essentials ?? [])
-  const toggle = (id: string) =>
+  // Priorités : 10 jetons
+  const p: Priorities = state?.priorities ?? {}
+  const left = TOKENS - Object.values(p).reduce((a, b) => a + b, 0)
+  const change = (id: string, delta: number) =>
     update((s) => {
-      const e = new Set(s.essentials)
-      if (e.has(id)) e.delete(id)
-      else e.add(id)
-      return { ...s, essentials: [...e] }
+      const cur = { ...(s.priorities ?? {}) }
+      const total = Object.values(cur).reduce((a, b) => a + b, 0)
+      const v = (cur[id] ?? 0) + delta
+      if (v < 0 || (delta > 0 && total >= TOKENS)) return s
+      cur[id] = v
+      return { ...s, priorities: cur }
     })
   return (
-    <div className="narrow">
+    <div className="wide-test">
       <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none', fontSize: 'var(--h2)' }}>
-        {UI_COPY.test.essentialsTitle}
+        {UI_COPY.test.prioritiesTitle}
       </h1>
-      <p>{UI_COPY.test.essentialsLede}</p>
-      <div className="stack">
-        {groups.map((g) => {
-          const answered = g.items.filter((i) => answers[i.id]?.kind === 'value')
-          if (answered.length === 0) return null
-          return (
-            <details key={g.theme.id} className="disclosure">
-              <summary>
-                {g.theme.label} ({answered.filter((i) => essentials.has(i.id)).length})
-              </summary>
-              <div>
-                {answered.map((i) => (
-                  <label key={i.id} className="checkbox">
-                    <input type="checkbox" checked={essentials.has(i.id)} onChange={() => toggle(i.id)} />
-                    <span>
-                      {i.text}
-                      <br />
-                      <span className="hint">Ta réponse : {answerLabel(answers[i.id])}</span>
-                    </span>
-                  </label>
-                ))}
-              </div>
-            </details>
-          )
-        })}
-      </div>
+      <p>{UI_COPY.test.prioritiesLede}</p>
+      <TokenBoard themes={set.themes} priorities={p} total={TOKENS} onChange={change} />
       <div className="row" style={{ marginTop: 'var(--s5)' }}>
-        <button className="btn btn--highlight" onClick={() => router.push('/resultats')}>
+        <button className="btn btn--highlight" disabled={left !== 0} aria-disabled={left !== 0} onClick={() => router.push('/resultats')}>
           {UI_COPY.test.seeResults}
         </button>
-        <button className="btn btn--ghost" onClick={() => setStep({ kind: 'priorities' })}>
-          Revenir aux priorités
+        <button
+          className="btn btn--secondary"
+          onClick={() => {
+            update((s) => ({ ...s, priorities: null }))
+            router.push('/resultats')
+          }}
+        >
+          {UI_COPY.test.tokensEqual}
         </button>
+        {left < TOKENS && (
+          <button className="btn btn--ghost" onClick={() => update((s) => ({ ...s, priorities: {} }))}>
+            {UI_COPY.test.tokensReset}
+          </button>
+        )}
       </div>
     </div>
+  )
+}
+
+/** Les sept chapitres, avec celui en cours. */
+function Chapters({ current, done = false }: { current: number; done?: boolean }) {
+  return (
+    <ol className="chapters" aria-label={`Chapitre ${current + 1} sur ${groups.length}`}>
+      {groups.map((g, i) => (
+        <li key={g.theme.id} className={`chapters__item${i < current || (done && i === current) ? ' chapters__item--done' : ''}${i === current ? ' chapters__item--current' : ''}`} title={g.theme.label}>
+          <ThemeIcon theme={g.theme.id} width={18} height={18} />
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+/** Ta réponse sur l'échelle, en petit. */
+function MiniScale({ answer }: { answer: Answers[string] | undefined }) {
+  if (!answer || answer.kind !== 'value') return <span className="recap__none">{answerLabel(answer)}</span>
+  return (
+    <span className="duo" role="img" aria-label={answerLabel(answer)}>
+      {ORDINALS.map((v) => (
+        <span key={v} className={`duo__dot${v === answer.value ? ' duo__dot--you' : ''}`} />
+      ))}
+    </span>
   )
 }
 
@@ -367,6 +384,47 @@ function Intro({
         {startButtons}
       </div>
 
+      <ol className="steps" aria-label="Les trois étapes">
+        <li>
+          <span className="steps__visual" aria-hidden="true">
+            {[40, 30, 22, 30, 40].map((d, i) => (
+              <span key={i} className="steps__dot" style={{ width: d * 0.6, height: d * 0.6 }} />
+            ))}
+          </span>
+          <strong>{set.items.length} affirmations</strong>
+          <span className="small muted">Pour, contre, entre les deux, ou « je ne sais pas ».</span>
+        </li>
+        <li>
+          <span className="steps__visual" aria-hidden="true">
+            <Coin size={26} />
+            <Coin size={26} />
+            <Coin size={26} />
+          </span>
+          <strong>10 jetons</strong>
+          <span className="small muted">Sur les thèmes qui comptent le plus pour toi.</span>
+        </li>
+        <li>
+          <span className="steps__visual" aria-hidden="true">
+            <span className="steps__card">
+              <span />
+              <span />
+              <span />
+            </span>
+          </span>
+          <strong>Ta carte d’électeur</strong>
+          <span className="small muted">Ton profil et les candidats proches, sources à l’appui.</span>
+        </li>
+      </ol>
+
+      <ul className="theme-row" aria-label="Les sept thèmes">
+        {set.themes.map((t) => (
+          <li key={t.id}>
+            <ThemeIcon theme={t.id} width={22} height={22} />
+            <span>{t.label}</span>
+          </li>
+        ))}
+      </ul>
+
       <fieldset className="card card--flat" style={{ marginTop: 'var(--s6)' }}>
         <legend className="visually-hidden">{UI_COPY.storage.title}</legend>
         <p style={{ fontWeight: 700, marginBottom: 'var(--s2)' }}>{UI_COPY.storage.title}</p>
@@ -391,8 +449,9 @@ function Intro({
         <summary>Comment ça marche</summary>
         <div>
           <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
-            <li>Pour chaque affirmation : d’accord, pas d’accord, entre les deux, ou « je ne sais pas ». Tu peux passer et revenir en arrière.</li>
-            <li>Ensuite, tu places 10 jetons sur les thèmes qui comptent le plus pour toi. C’est facultatif.</li>
+            <li>Pour chaque affirmation : pour, contre, entre les deux, ou « je ne sais pas ». Tu peux passer et revenir en arrière.</li>
+            <li>Si un point est non négociable pour toi, pose une « ligne rouge » : un désaccord sur ce point sera signalé à part, sans changer les scores.</li>
+            <li>Ensuite, tu poses 10 jetons sur les thèmes qui comptent le plus pour toi. C’est facultatif.</li>
             <li>Le résultat compare tes réponses aux positions documentées des candidats. Il dit toujours ce qui manque. Ce n’est pas une consigne de vote.</li>
           </ul>
           <p className="hint" style={{ margin: 'var(--s3) 0 0' }}>

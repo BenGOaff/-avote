@@ -3,16 +3,20 @@ import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
 import { demoCorpus, liveCorpus, questionnaire as set, assertCompatible } from '@/lib/data'
-import { computeDimensions } from '@/lib/engine/dimensions'
-import { rankActors, redLineStatus, type RankingEntry, type WeightMode } from '@/lib/engine/scoring'
-import type { Corpus } from '@/lib/engine/types'
+import { computeDimensions, type DimensionResult } from '@/lib/engine/dimensions'
+import { rankActors, redLineStatus, type RankingEntry, type RankingResult, type WeightMode } from '@/lib/engine/scoring'
+import type { Answers, Corpus, Priorities } from '@/lib/engine/types'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { loadState, saveState, type LocalVoterState } from '@/lib/local-store'
 import { BASIS_LABEL, answerLabel, effectiveAnswers, positionLabel } from '@/lib/answers'
-import { ScoreBar, fmt, fmtPct } from '@/components/ScoreBar'
+import { resultQuip } from '@/lib/humor'
+import { fmt, fmtPct } from '@/components/ScoreBar'
 import { NewsletterForm } from '@/components/NewsletterForm'
+import { ThemeIcon } from '@/components/ThemeIcon'
+import { AgreementLegend, AgreementStrip, Coin, DimensionMeter, DuoScale, Gauge, agreementOf, leanOf } from '@/components/Viz'
 
 const nf1 = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 })
+const R = UI_COPY.results
 
 export function ResultsView() {
   const [state, setState] = useState<LocalVoterState | null>(null)
@@ -66,15 +70,15 @@ export function ResultsView() {
     setState(next)
     void saveState(next)
   }
+  const demo = corpus.mode === 'demo'
 
   return (
-    <div className="stack" style={{ maxWidth: 900 }}>
+    <div className="stack" style={{ maxWidth: 960 }}>
       <header>
         <p className="kicker">Tes résultats</p>
-        <h1 style={{ fontSize: 'var(--h2)' }}>{UI_COPY.results.title}</h1>
+        <h1 style={{ fontSize: 'var(--h2)' }}>{R.title}</h1>
         <p className="muted">
-          Tu as répondu à {answered} questions sur {set.items.length} ({fmtPct(answered / set.items.length)} de complétude). Calcul fait sur ton appareil, avec les
-          questions v{set.version}.
+          {answered} réponses sur {set.items.length} ({fmtPct(answered / set.items.length)}). Calcul fait sur ton appareil, questions v{set.version}.
         </p>
       </header>
 
@@ -85,76 +89,11 @@ export function ResultsView() {
         </div>
       )}
 
-      {/* 1. Profil descriptif */}
-      <section className="section" aria-labelledby="profil">
-        <h2 id="profil">Ce que disent tes réponses</h2>
-        <p className="muted">
-          Chaque ligne résume tes réponses à quelques questions. C’est une position sur une échelle définie, pas une étiquette politique ni un diagnostic.
-        </p>
-        <div className="stack">
-          {dims.map((d) => (
-            <div key={d.id} className="card card--flat">
-              <div className="row" style={{ justifyContent: 'space-between' }}>
-                <strong>{d.label}</strong>
-                <span className="small muted">
-                  {d.answered}/{d.total} réponses
-                </span>
-              </div>
-              {d.index === null ? (
-                <p className="small muted" style={{ margin: 'var(--s2) 0 0' }}>
-                  Pas assez de réponses pour résumer ce point.
-                </p>
-              ) : (
-                <>
-                  <div
-                    role="img"
-                    aria-label={`${d.label} : ${fmt(d.index)} sur 100, entre « ${d.low} » (0) et « ${d.high} » (100)`}
-                    style={{ position: 'relative', height: 14, margin: 'var(--s3) 0 var(--s1)', borderTop: '2px solid var(--line)', top: 7 }}
-                  >
-                    <span
-                      style={{ position: 'absolute', left: `calc(${d.index}% - 9px)`, top: -10, width: 18, height: 18, borderRadius: '50%', background: 'var(--highlight)', border: '2px solid var(--ink)' }}
-                    />
-                  </div>
-                  <div className="row small muted" style={{ justifyContent: 'space-between', marginTop: 'var(--s3)' }}>
-                    <span>{d.low}</span>
-                    <span>{d.high}</span>
-                  </div>
-                </>
-              )}
-              <details style={{ marginTop: 'var(--s2)' }}>
-                <summary className="small">Définition</summary>
-                <p className="small" style={{ margin: 'var(--s2) 0 0' }}>
-                  {d.definition}
-                </p>
-              </details>
-            </div>
-          ))}
-        </div>
-      </section>
+      <VoterCard dims={dims} priorities={state.priorities} redLineCount={state.essentials.filter((id) => answers[id]?.kind === 'value').length} ranking={ranking} demo={demo} />
 
-      {/* 2. Priorités */}
-      <section className="section" aria-labelledby="priorites">
-        <h2 id="priorites">Tes priorités</h2>
-        {state.priorities ? (
-          <ul>
-            {set.themes
-              .filter((t) => (state.priorities?.[t.id] ?? 0) > 0)
-              .sort((a, b) => (state.priorities?.[b.id] ?? 0) - (state.priorities?.[a.id] ?? 0))
-              .map((t) => (
-                <li key={t.id}>
-                  {t.label} : {state.priorities?.[t.id]} jeton{(state.priorities?.[t.id] ?? 0) > 1 ? 's' : ''}
-                </li>
-              ))}
-          </ul>
-        ) : (
-          <p className="muted">Tu as gardé une répartition égale entre les sept thèmes.</p>
-        )}
-        <Link href="/test">Modifier mes réponses ou mes priorités</Link>
-      </section>
-
-      {/* 3. Proximités */}
+      {/* Candidats */}
       <section className="section" aria-labelledby="proximites">
-        <h2 id="proximites">Proximité avec les candidats</h2>
+        <h2 id="proximites">Et les candidats ?</h2>
 
         {liveCorpus.actors.length === 0 && (
           <div className="alert alert--info">
@@ -173,18 +112,12 @@ export function ResultsView() {
           </label>
         )}
 
-        <div className="row" role="radiogroup" aria-label="Pondération" style={{ margin: 'var(--s4) 0' }}>
-          <button className={`btn btn--small ${mode === 'global' ? '' : 'btn--secondary'}`} role="radio" aria-checked={mode === 'global'} onClick={() => setMode('global')}>
+        <div className="segmented" role="radiogroup" aria-label="Pondération">
+          <button role="radio" aria-checked={mode === 'global'} onClick={() => setMode('global')}>
             Thèmes à égalité
           </button>
-          <button
-            className={`btn btn--small ${mode === 'priorities' ? '' : 'btn--secondary'}`}
-            role="radio"
-            aria-checked={mode === 'priorities'}
-            onClick={() => setMode('priorities')}
-            disabled={!state.priorities}
-          >
-            Selon mes priorités
+          <button role="radio" aria-checked={mode === 'priorities'} onClick={() => setMode('priorities')} disabled={!state.priorities}>
+            Selon mes jetons
           </button>
         </div>
 
@@ -194,27 +127,40 @@ export function ResultsView() {
           <>
             {!ranking.ranked ? (
               <div className="alert">
-                <p className="alert__title">{UI_COPY.results.notComparable}</p>
+                <p className="alert__title">{R.notComparable}</p>
                 <ul className="small" style={{ margin: 'var(--s2) 0', paddingLeft: '1.2em' }}>
                   {ranking.reasons.map((r) => (
                     <li key={r}>{r}</li>
                   ))}
                 </ul>
                 <p className="small" style={{ margin: 0 }}>
-                  {UI_COPY.results.alphabetical}
+                  {R.alphabetical}
                 </p>
               </div>
             ) : (
-              <p className="small muted">
-                Classement sur les {ranking.commonItems.length} questions où tous les candidats affichés ont une position connue ({fmtPct(ranking.commonShare)} du poids de
-                tes réponses, {ranking.commonThemes} thèmes sur 7).
-              </p>
+              <Podium entries={ranking.entries} demo={demo} commonCount={ranking.commonItems.length} />
             )}
-            {ranking.sensitive && <div className="alert alert--info small">{UI_COPY.results.sensitive}</div>}
+            {ranking.sensitive && <div className="alert alert--info small">{R.sensitive}</div>}
 
-            <ol style={{ listStyle: 'none', padding: 0, margin: 'var(--s4) 0 0', display: 'grid', gap: 'var(--s4)' }}>
-              {ranking.entries.map((e) => (
-                <ActorResult key={e.slug} e={e} corpus={corpus} ranked={ranking.ranked} demo={corpus.mode === 'demo'} essentials={state.essentials} answers={answers} onHide={() => setHidden([...(state.hiddenActors ?? []), e.slug])} />
+            <div className="legend-box">
+              <AgreementLegend />
+              <p className="small muted" style={{ margin: 'var(--s2) 0 0' }}>
+                {R.gaugeLegend}
+              </p>
+            </div>
+
+            <ol className="cands">
+              {ranking.entries.map((e, i) => (
+                <ActorResult
+                  key={e.slug}
+                  e={e}
+                  rank={ranking.ranked ? i + 1 : null}
+                  corpus={corpus}
+                  demo={demo}
+                  essentials={state.essentials}
+                  answers={answers}
+                  onHide={() => setHidden([...(state.hiddenActors ?? []), e.slug])}
+                />
               ))}
             </ol>
             {hidden.size > 0 && (
@@ -235,7 +181,19 @@ export function ResultsView() {
         </p>
       </section>
 
-      {/* 4. Être prévenu */}
+      {/* Profil détaillé */}
+      <section className="section" aria-labelledby="profil">
+        <h2 id="profil">Ton profil, curseur par curseur</h2>
+        <p className="muted">Chaque curseur résume tes réponses à quelques questions. C’est une position sur une échelle définie, pas une étiquette politique ni un diagnostic.</p>
+        <div className="dims">
+          {dims.map((d) => (
+            <DimensionCard key={d.id} d={d} />
+          ))}
+        </div>
+        <p className="hint">{R.leanNote}</p>
+        <Link href="/test">Modifier mes réponses, mes lignes rouges ou mes jetons</Link>
+      </section>
+
       <section className="section" aria-labelledby="prevenu">
         <h2 id="prevenu">Être prévenu quand ça bouge</h2>
         <p>
@@ -245,10 +203,9 @@ export function ResultsView() {
         <NewsletterForm />
       </section>
 
-      {/* 5. Bilan */}
       <section className="section" aria-labelledby="bilan">
         <h2 id="bilan">Garder une trace</h2>
-        <p>Un bilan texte avec tes priorités, tes exigences, les désaccords et ce qu’il reste à vérifier. Il est fabriqué sur ton appareil.</p>
+        <p>Un bilan texte avec tes priorités, tes lignes rouges, les désaccords et ce qu’il reste à vérifier. Il est fabriqué sur ton appareil.</p>
         <div className="row">
           <button className="btn btn--secondary" onClick={() => downloadBilan(state, ranking?.entries ?? [], corpus)}>
             Télécharger mon bilan
@@ -262,21 +219,196 @@ export function ResultsView() {
   )
 }
 
+// ---------------------------------------------------------------------------
+// Carte d'électeur : l'essentiel d'un coup d'œil
+// ---------------------------------------------------------------------------
+
+function VoterCard({ dims, priorities, redLineCount, ranking, demo }: { dims: DimensionResult[]; priorities: Priorities | null; redLineCount: number; ranking: RankingResult | null; demo: boolean }) {
+  const traits = dims
+    .filter((d): d is DimensionResult & { index: number } => d.index !== null && Math.abs(d.index - 50) > 10)
+    .sort((a, b) => Math.abs(b.index - 50) - Math.abs(a.index - 50))
+    .slice(0, 3)
+  const top = ranking?.ranked ? ranking.entries[0] : undefined
+  // Ex æquo avec le premier : écarts consécutifs sous le seuil et moins de 2 points avec lui
+  const tied: RankingEntry[] = []
+  if (top)
+    for (const e of ranking!.entries.slice(1)) {
+      if (e.closeToPrevious && (top.commonScore ?? 0) - (e.commonScore ?? 0) < ENGINE_CONFIG.ranking.closeGap) tied.push(e)
+      else break
+    }
+  const quip = resultQuip({ dims, ranking })
+  const themes = set.themes.filter((t) => (priorities?.[t.id] ?? 0) > 0).sort((a, b) => (priorities?.[b.id] ?? 0) - (priorities?.[a.id] ?? 0))
+
+  return (
+    <section className="vcard" aria-labelledby="vcard-title">
+      <div className="vcard__head">
+        <h2 id="vcard-title" className="vcard__title">
+          {R.cardTitle}
+        </h2>
+        <span className="stamp">Présidentielle 2027</span>
+      </div>
+
+      <div className="vcard__block">
+        <p className="vcard__label">{R.cardTraits}</p>
+        {traits.length > 0 ? (
+          <ul className="traits">
+            {traits.map((d) => {
+              const l = leanOf(d.index, d.low, d.high)
+              return (
+                <li key={d.id} className="trait">
+                  {l.strength && <span className="trait__strength">{l.strength}</span>}
+                  <span className="trait__side">{l.side}</span>
+                  <span className="trait__dim">{d.label}</span>
+                </li>
+              )
+            })}
+          </ul>
+        ) : (
+          <p style={{ margin: 0 }}>Aucun curseur ne s’écarte nettement du milieu : tes réponses sont nuancées partout.</p>
+        )}
+      </div>
+
+      <div className="vcard__grid">
+        <div className="vcard__block">
+          <p className="vcard__label">Tes jetons</p>
+          {themes.length > 0 ? (
+            <ul className="token-bars">
+              {themes.map((t) => (
+                <li key={t.id}>
+                  <ThemeIcon theme={t.id} width={20} height={20} />
+                  <span className="token-bars__label">{t.label}</span>
+                  <span className="token-bars__coins" role="img" aria-label={`${priorities![t.id]} jeton${priorities![t.id]! > 1 ? 's' : ''}`}>
+                    {Array.from({ length: priorities![t.id]! }, (_, i) => (
+                      <Coin key={i} size={18} />
+                    ))}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p style={{ margin: 0 }}>Les sept thèmes à égalité.</p>
+          )}
+        </div>
+        <div className="vcard__block">
+          <p className="vcard__label">{R.redLines}</p>
+          <p className="vcard__big">{redLineCount}</p>
+          <p className="small muted" style={{ margin: 0 }}>
+            {redLineCount === 0 ? 'Aucune posée. Tu peux en ajouter depuis le test.' : 'Signalées candidat par candidat ci-dessous.'}
+          </p>
+        </div>
+        <div className="vcard__block">
+          <p className="vcard__label">{R.cardMatch}</p>
+          {top ? (
+            <>
+              <p className="vcard__match">
+                {[top, ...tied].map((e) => e.name).join(' · ')}
+                {demo && <span className="badge badge--demo" style={{ marginLeft: 'var(--s2)' }}>Fictif</span>}
+              </p>
+              <p className="small muted" style={{ margin: 0 }}>
+                {tied.length > 0 ? `${R.tie} : moins de 2 points d’écart.` : `${fmt(top.commonScore ?? 0)} sur 100 sur les questions communes.`}
+              </p>
+            </>
+          ) : (
+            <p className="small" style={{ margin: 0 }}>
+              {R.cardNoMatch}
+            </p>
+          )}
+        </div>
+      </div>
+      {quip && <p className="annotation humor vcard__quip">{quip}</p>}
+    </section>
+  )
+}
+
+// ---------------------------------------------------------------------------
+// Podium (seulement quand un classement est publiable)
+// ---------------------------------------------------------------------------
+
+function Podium({ entries, demo, commonCount }: { entries: RankingEntry[]; demo: boolean; commonCount: number }) {
+  const top = entries.slice(0, 3)
+  if (top.length < 2) return null
+  const order = top.length === 3 ? [top[1]!, top[0]!, top[2]!] : [top[1]!, top[0]!]
+  return (
+    <figure className="podium-wrap">
+      <div className="podium" role="list">
+        {order.map((e) => {
+          const rank = entries.indexOf(e) + 1
+          const score = e.commonScore ?? 0
+          return (
+            <div key={e.slug} role="listitem" className={`podium__col podium__col--${rank}`} aria-label={`${rank}e : ${e.name}, ${fmt(score)} sur 100`}>
+              <span className="podium__name">{e.name}</span>
+              <span className="podium__score">{fmt(score)}</span>
+              <span className="podium__bar" style={{ height: `${30 + score * 1.3}px` }}>
+                <span className="podium__rank">{rank}</span>
+              </span>
+              {e.closeToPrevious && <span className="stamp podium__tie">{R.tie}</span>}
+            </div>
+          )
+        })}
+      </div>
+      <figcaption className="small muted">
+        Sur les {commonCount} questions où tous les candidats affichés ont une position connue.{demo && ' Candidats fictifs.'}
+      </figcaption>
+    </figure>
+  )
+}
+
+// ---------------------------------------------------------------------------
+// Curseur de profil
+// ---------------------------------------------------------------------------
+
+function DimensionCard({ d }: { d: DimensionResult }) {
+  const l = d.index === null ? null : leanOf(d.index, d.low, d.high)
+  return (
+    <div className="dim">
+      <div className="row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <strong>{d.label}</strong>
+        <span className="small muted">
+          {d.answered}/{d.total} réponses
+        </span>
+      </div>
+      {d.index === null || !l ? (
+        <p className="small muted" style={{ margin: 'var(--s2) 0 0' }}>
+          Pas assez de réponses pour résumer ce point.
+        </p>
+      ) : (
+        <>
+          <p className="dim__verdict">
+            {l.strength && <span className="dim__strength">{l.strength} </span>}
+            {l.side}
+          </p>
+          <DimensionMeter index={d.index} low={d.low} high={d.high} label={d.label} />
+        </>
+      )}
+      <details style={{ marginTop: 'var(--s2)' }}>
+        <summary className="small">Définition</summary>
+        <p className="small" style={{ margin: 'var(--s2) 0 0' }}>
+          {d.definition}
+        </p>
+      </details>
+    </div>
+  )
+}
+
+// ---------------------------------------------------------------------------
+// Carte candidat
+// ---------------------------------------------------------------------------
+
 function ActorResult({
   e,
+  rank,
   corpus,
-  ranked,
   demo,
   essentials,
   answers,
   onHide,
 }: {
   e: RankingEntry
+  rank: number | null
   corpus: Corpus
-  ranked: boolean
   demo: boolean
   essentials: string[]
-  answers: ReturnType<typeof effectiveAnswers>
+  answers: Answers
   onHide: () => void
 }) {
   const s = e.score
@@ -287,45 +419,61 @@ function ActorResult({
       const c = s.contributions.find((x) => x.itemId === id)
       return { id, status: redLineStatus(a.value, c?.position) }
     })
-    .filter((x): x is { id: string; status: ReturnType<typeof redLineStatus> } => !!x && x.status !== 'accord')
+    .filter((x): x is { id: string; status: ReturnType<typeof redLineStatus> } => !!x)
   const textOf = (id: string) => set.items.find((i) => i.id === id)?.concept ?? id
   const sourceOf = new Map((corpus.sources ?? []).map((x) => [x.id, x]))
+  const known = s.contributions.filter((c) => c.s !== null)
+  const close = known
+    .filter((c) => agreementOf(c) === 'proche')
+    .sort((a, b) => b.s! - a.s! || b.weight - a.weight)
+    .slice(0, 3)
+  const far = known
+    .filter((c) => agreementOf(c) === 'oppose')
+    .sort((a, b) => a.s! - b.s! || b.weight - a.weight)
+    .slice(0, 3)
 
   return (
-    <li className="card">
-      {ranked && e.closeToPrevious && <p className="small muted" style={{ marginTop: 0 }}>{UI_COPY.results.close}</p>}
-      <div className="row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
-        <h3 style={{ margin: 0 }}>{demo ? e.name : <Link href={`/candidats/${e.slug}`}>{e.name}</Link>}</h3>
+    <li className="cand">
+      <div className="cand__head">
+        {rank !== null && <span className="cand__rank">{rank}</span>}
+        <h3 className="cand__name">{demo ? e.name : <Link href={`/candidats/${e.slug}`}>{e.name}</Link>}</h3>
         {demo && <span className="badge badge--demo">Fictif</span>}
+        {rank !== null && e.closeToPrevious && <span className="stamp">{R.tie}</span>}
       </div>
-      <p style={{ margin: 'var(--s3) 0 var(--s2)' }}>
-        {UI_COPY.results.scoreLabel} :{' '}
-        <strong style={{ fontSize: '1.4rem' }}>{s.observed === null ? 'non calculable' : `${fmt(s.observed)} sur 100`}</strong>
-        {ranked && e.commonScore !== null && <span className="small muted"> · socle commun : {fmt(e.commonScore)}</span>}
-      </p>
-      <ScoreBar value={s.observed} low={s.low} high={s.high} label={e.name} />
-      <p className="small" style={{ margin: 'var(--s2) 0 0' }}>
-        Positions connues sur {fmtPct(s.coverage)} de tes réponses.
-        {s.unknownCount > 0 && ` ${s.unknownCount} position${s.unknownCount > 1 ? 's' : ''} inconnue${s.unknownCount > 1 ? 's' : ''}.`}
-        {s.ambiguousCount > 0 && ` ${s.ambiguousCount} ambiguë${s.ambiguousCount > 1 ? 's' : ''}.`} Selon ce qui manque, le résultat se situerait entre {fmt(s.low)} et {fmt(s.high)}.
-      </p>
+
+      <div className="cand__body">
+        <Gauge value={s.observed} low={s.low} high={s.high} label={e.name} size={104} />
+        <p className="small cand__cover">
+          Positions connues sur <strong>{fmtPct(s.coverage)}</strong> de tes réponses. Selon ce qui manque, entre {fmt(s.low)} et {fmt(s.high)}.
+          {rank !== null && e.commonScore !== null && <span className="muted"> Socle commun : {fmt(e.commonScore)}.</span>}
+        </p>
+        <div className="cand__facts">
+          <AgreementStrip contributions={s.contributions} themes={set.themes} name={e.name} />
+          {close.length > 0 && (
+            <p className="cand__line">
+              <span className="cand__tag cand__tag--close">{R.closeOn}</span> {close.map((c) => textOf(c.itemId)).join(' · ')}
+            </p>
+          )}
+          {far.length > 0 && (
+            <p className="cand__line">
+              <span className="cand__tag cand__tag--far">{R.farOn}</span> {far.map((c) => textOf(c.itemId)).join(' · ')}
+            </p>
+          )}
+        </div>
+      </div>
 
       {redLines.length > 0 && (
-        <div className="alert alert--correction" style={{ marginTop: 'var(--s3)' }}>
-          <p className="alert__title">Sur tes exigences</p>
-          <ul className="small" style={{ margin: 0, paddingLeft: '1.2em' }}>
-            {redLines.map((r) => (
-              <li key={r.id}>
-                {textOf(r.id)} :{' '}
-                {r.status === 'desaccord' ? 'désaccord documenté' : r.status === 'inconnu' ? 'position inconnue' : 'position ambiguë, désaccord possible'}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="redlines">
+          {redLines.map((r) => (
+            <li key={r.id} className={`redlines__item redlines__item--${r.status}`}>
+              <span className="stamp">{R.redLineStatus[r.status]}</span> {textOf(r.id)}
+            </li>
+          ))}
+        </ul>
       )}
 
       <details className="disclosure" style={{ marginTop: 'var(--s4)' }}>
-        <summary>{UI_COPY.results.why}</summary>
+        <summary>{R.why}</summary>
         <div>
           <div className="table-wrap">
             <table>
@@ -333,20 +481,38 @@ function ActorResult({
               <thead>
                 <tr>
                   <th scope="col">Question</th>
-                  <th scope="col">Ta réponse</th>
+                  <th scope="col">
+                    Toi <span className="duo__dot duo__dot--you duo__dot--legend" aria-hidden="true" /> / {demo ? 'candidat' : e.name.split(' ').slice(-1)[0]}{' '}
+                    <span className="duo__dot duo__dot--them duo__dot--legend" aria-hidden="true" />
+                  </th>
                   <th scope="col">Position attribuée</th>
-                  <th scope="col" className="num">Poids</th>
-                  <th scope="col" className="num">Proximité</th>
+                  <th scope="col" className="num">
+                    Poids
+                  </th>
+                  <th scope="col" className="num">
+                    Proximité
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {s.contributions.map((c) => (
                   <tr key={c.itemId}>
                     <td>{textOf(c.itemId)}</td>
-                    <td>{answerLabel(answers[c.itemId])}</td>
+                    <td>
+                      <DuoScale user={c.user} position={c.position} name={e.name} />
+                      <span className="hint">
+                        <br />
+                        {answerLabel(answers[c.itemId])}
+                      </span>
+                    </td>
                     <td>
                       {positionLabel(c.position)}
-                      {c.position && 'basis' in c.position && c.position.basis && <span className="hint"><br />{BASIS_LABEL[c.position.basis]}</span>}
+                      {c.position && 'basis' in c.position && c.position.basis && (
+                        <span className="hint">
+                          <br />
+                          {BASIS_LABEL[c.position.basis]}
+                        </span>
+                      )}
                       {c.position && 'sources' in c.position && sourceOf.get(c.position.sources[0] ?? '')?.url && (
                         <>
                           {' · '}
@@ -355,7 +521,12 @@ function ActorResult({
                           </a>
                         </>
                       )}
-                      {c.position && 'note' in c.position && c.position.note && <span className="hint"><br />{c.position.note}</span>}
+                      {c.position && 'note' in c.position && c.position.note && (
+                        <span className="hint">
+                          <br />
+                          {c.position.note}
+                        </span>
+                      )}
                     </td>
                     <td className="num">{nf1.format(c.weight * 100)}</td>
                     <td className="num">{c.s === null ? (c.kind === 'ambiguous' ? `${nf1.format(c.sMin)}–${nf1.format(c.sMax)}` : '—') : nf1.format(c.s)}</td>
@@ -366,7 +537,7 @@ function ActorResult({
           </div>
           <p className="small muted">
             Proximité d’une question = 1 − écart / 4 (l’échelle va de −2 à +2). Poids = part du thème divisée par le nombre de questions du thème, en points
-            sur 100. Une position inconnue ou ambiguë n’entre pas dans le chiffre central ; elle élargit les bornes. Seuil de désaccord sur une exigence :{' '}
+            sur 100. Une position inconnue ou ambiguë n’entre pas dans le chiffre central ; elle élargit les bornes. Seuil de désaccord sur une ligne rouge :{' '}
             {ENGINE_CONFIG.redLineDistance * 4} crans.
           </p>
         </div>
@@ -385,11 +556,11 @@ function downloadBilan(state: LocalVoterState, entries: RankingEntry[], corpus: 
   if (corpus.mode === 'demo') lines.push('ATTENTION : les candidats de ce bilan sont fictifs (démonstration).', '')
   lines.push('CE QUE JE VEUX')
   for (const d of computeDimensions(set, answers)) lines.push(`- ${d.label} : ${d.index === null ? 'pas assez de réponses' : `${Math.round(d.index)}/100 (0 = ${d.low}, 100 = ${d.high})`}`)
-  lines.push('', 'MES PRIORITÉS')
+  lines.push('', 'MES JETONS')
   if (state.priorities) for (const t of set.themes) lines.push(`- ${t.label} : ${state.priorities[t.id] ?? 0} jeton(s)`)
   else lines.push('- Répartition égale')
-  lines.push('', 'MES EXIGENCES')
-  if (state.essentials.length === 0) lines.push('- Aucune marquée')
+  lines.push('', 'MES LIGNES ROUGES')
+  if (state.essentials.length === 0) lines.push('- Aucune posée')
   for (const id of state.essentials) {
     const it = set.items.find((i) => i.id === id)
     if (it) lines.push(`- ${it.text} (ma réponse : ${answerLabel(answers[id])})`)
