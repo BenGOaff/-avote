@@ -13,6 +13,8 @@ import { resultQuip } from '@/lib/humor'
 import { fmt, fmtPct } from '@/components/ScoreBar'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { ThemeIcon } from '@/components/ThemeIcon'
+import { NuanceTag } from '@/components/Nuance'
+import { nuanceOf } from '@/lib/nuances'
 import { AgreementLegend, AgreementStrip, Coin, DimensionMeter, DuoScale, Gauge, agreementOf, leanOf } from '@/components/Viz'
 
 const nf1 = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 })
@@ -336,7 +338,9 @@ function Podium({ entries, demo, commonCount }: { entries: RankingEntry[]; demo:
           const score = e.commonScore ?? 0
           return (
             <div key={e.slug} role="listitem" className={`podium__col podium__col--${rank}`} aria-label={`${rank}e : ${e.name}, ${fmt(score)} sur 100`}>
-              <span className="podium__name">{e.name}</span>
+              <span className="podium__name">
+                {nuanceOf(e.slug) && <span className={`nuance__dot bloc-${nuanceOf(e.slug)!.bloc}`} aria-hidden="true" />} {e.name}
+              </span>
               <span className="podium__score">{fmt(score)}</span>
               <span className="podium__bar" style={{ height: `${30 + score * 1.3}px` }}>
                 <span className="podium__rank">{rank}</span>
@@ -437,7 +441,7 @@ function ActorResult({
       <div className="cand__head">
         {rank !== null && <span className="cand__rank">{rank}</span>}
         <h3 className="cand__name">{demo ? e.name : <Link href={`/candidats/${e.slug}`}>{e.name}</Link>}</h3>
-        {demo && <span className="badge badge--demo">Fictif</span>}
+        {demo ? <span className="badge badge--demo">Fictif</span> : <NuanceTag slug={e.slug} />}
         {rank !== null && e.closeToPrevious && <span className="stamp">{R.tie}</span>}
       </div>
 

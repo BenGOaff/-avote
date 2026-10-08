@@ -77,6 +77,23 @@ for (const a of cand.actors) if (!a.source?.url?.startsWith('https://')) errors.
 const pending = cand.actors.filter((a) => !a.verified).length
 if (pending) warnings.push(`${pending} candidature(s) en attente de vérification (non publiées)`)
 
+// Nuances politiques : codes connus, candidats annoncés sans nuance signalés
+const nuances = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/nuances.json'), 'utf8')) as {
+  source: { url: string }
+  nuances: Record<string, { bloc: string }>
+  blocs: { id: string }[]
+  actors: Record<string, { nuance: string; basis: string }>
+}
+if (!nuances.source.url.startsWith('https://')) errors.push('nuances.json : source sans https')
+for (const [code, n] of Object.entries(nuances.nuances)) if (!nuances.blocs.some((b) => b.id === n.bloc)) errors.push(`nuances.json : bloc inconnu pour ${code}`)
+for (const [slug, a] of Object.entries(nuances.actors)) {
+  if (!nuances.nuances[a.nuance]) errors.push(`nuances.json : nuance inconnue ${a.nuance} (${slug})`)
+  if (a.basis !== 'grille' && a.basis !== 'deduite') errors.push(`nuances.json : base invalide pour ${slug}`)
+  if (!cand.actors.some((x) => x.slug === slug)) errors.push(`nuances.json : candidat inconnu ${slug}`)
+}
+const sansNuance = cand.actors.filter((a) => a.verified && !nuances.actors[a.slug] && (a as { party?: string }).party).length
+if (sansNuance) warnings.push(`${sansNuance} candidat(s) avec un parti mais sans nuance`)
+
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
 for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)
