@@ -1,0 +1,96 @@
+{
+  "lastRun": "2026-10-08T22:01:02.388Z",
+  "lastSuccess": "2026-10-08T22:01:02.388Z",
+  "feeds": [
+    {
+      "id": "20minutes-politique",
+      "name": "20 Minutes",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "assemblee-documents",
+      "name": "Assemblée nationale",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "blast",
+      "name": "Blast",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "conseil-constitutionnel",
+      "name": "Conseil constitutionnel",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "elysee",
+      "name": "Élysée",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "franceinfo-politique",
+      "name": "franceinfo",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "franceinfo-presidentielle",
+      "name": "franceinfo (présidentielle)",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "humanite-politique",
+      "name": "L'Humanité",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "lcp",
+      "name": "LCP",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "lefigaro-politique",
+      "name": "Le Figaro",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "lemonde-politique",
+      "name": "Le Monde",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "liberation-politique",
+      "name": "Libération",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "mediapart",
+      "name": "Mediapart",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "publicsenat",
+      "name": "Public Sénat",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    },
+    {
+      "id": "senat-presse",
+      "name": "Sénat",
+      "ok": true,
+      "lastSuccess": "2026-10-08T22:01:02.388Z"
+    }
+  ]
+}
