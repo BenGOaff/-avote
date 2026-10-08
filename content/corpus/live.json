@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081812",
+  "version": "live-202610081814",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:12:55.891Z",
+  "publishedAt": "2026-10-08T18:14:43.430Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -1720,11 +1720,15 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "1f404b86211c384f"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022 (mesure 5). Baisse ciblée sur les hausses de salaire ; le livret de 2024 précise que les cotisations seront rétablies au bout de 3 à 5 ans, d’où 1 et non 2."
       },
       "eco-06": {
         "missing": true,
@@ -1776,25 +1780,40 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "lib-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "8c5408bf2ab38c12"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Texte publié sur son site de campagne 2022. L’interdiction vise les signes et tenues des « idéologies islamistes », pas tous les signes religieux, d’où 1 ou 2."
       },
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "90b8f97a1339ee1c"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022 : loi de programmation pour la sécurité et la justice, 7 000 postes de policiers et gendarmes en plus."
       },
       "sec-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "dbce16556d99c65e"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022, chapitre « Revenir à la raison en recourant à de courtes peines d’emprisonnement » ; il prévoit aussi de limiter les aménagements de peine."
       },
       "sec-03": {
         "missing": true,
@@ -1815,11 +1834,15 @@
         "note": "Base : programme 2022 mis à jour (livret 2024). Le livret se présente comme la version 2022 mise à jour du programme présidentiel de Marine Le Pen. Formulation catégorique (« drastiquement »), d'où +2. Confirmé par la profession de foi 2022"
       },
       "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Une position a été repérée mais sa citation n’a pas pu être vérifiée dans la source.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "b93061943bc89ce1"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022 : exceptions limitées à des décisions individuelles en Conseil des ministres. Le livret de 2024 ajoute « aucune régularisation de complaisance ne sera plus décidée » pour les travailleurs clandestins."
       },
       "sec-06": {
         "set": [
@@ -1917,11 +1940,18 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "6f858dafcebebfda"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022. Même page : « plus d’interdiction de substances actives sans solution équivalente et économiquement soutenable », ce qui rejette une réduction qui augmente les coûts."
       },
       "cli-04": {
         "value": -2,
@@ -1956,25 +1986,43 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "eur-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d66e305671ce68b5"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022, projet de loi référendaire, titre III « La primauté de la Constitution et du droit national »."
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "b02c1be392674548"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022 (mesure 20), fixé quand le budget était d’environ 41 milliards ; rien ne dit si elle veut continuer la hausse au-delà de 2027, d’où 1 ou 2."
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "11b809ded4e6b5a4"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Elle critique la multiplication des accords. Son programme 2022 prévoit de « revoir les accords de libre-échange qui ne respectent pas les intérêts de la France » et d’exclure l’agriculture de ces traités, sans refus général."
       },
       "eur-05": {
         "missing": true,
@@ -1991,18 +2039,29 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "a78e1c49ff4effb9"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022 (mesure 11). Le texte ne précise pas le mode de scrutin (proportionnelle intégrale ou avec prime majoritaire), d’où 1 ou 2."
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "a78e1c49ff4effb9"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-08T18:14:43.430Z",
+        "note": "Programme présidentiel 2022 (mesure 11). Le seuil de signatures n’est pas précisé dans ce document."
       },
       "dem-03": {
         "set": [
@@ -10586,6 +10645,77 @@
       "url": "https://horizonsleparti.fr/discours-dedouard-philippe-lors-du-congres-de-bordeaux/",
       "date": "2025-01-26",
       "passage": "En France, nous avons voté en 2023 à l’initiative du groupe Horizons et de Laurent Marcangeli une bonne loi qui visait à limiter l’accès aux réseaux sociaux pour les mineurs."
+    },
+    {
+      "id": "90b8f97a1339ee1c",
+      "title": "Projet de Marine Le Pen : la sécurité",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/projet-la-securite.pdf",
+      "passage": "et de la justice de 1,5 milliard d’euros par an pour créer 7000 postes de policiers et gendarmes"
+    },
+    {
+      "id": "dbce16556d99c65e",
+      "title": "Projet de Marine Le Pen : la sécurité",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/projet-la-securite.pdf",
+      "passage": "il est démontré que les très courtes peines de prison, une ou deux semaines, un, deux ou trois mois, permettent d’enrayer les parcours délinquants"
+    },
+    {
+      "id": "b93061943bc89ce1",
+      "title": "Projet de Marine Le Pen : le contrôle de l’immigration",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/projet-controle-de-limmigration.pdf",
+      "passage": "La régularisation d’un étranger en situation illégale sera en principe interdite, à l’exception de décisions individuelles"
+    },
+    {
+      "id": "8c5408bf2ab38c12",
+      "title": "Proposition de loi visant à combattre les idéologies islamistes",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/proposition-de-loi-ideologies-islamistes.pdf",
+      "passage": "Sont interdits, dans l’espace public, les signes ou tenues constituant par eux-mêmes une affirmation sans équivoque et ostentatoire des idéologies visées à l’article 1er."
+    },
+    {
+      "id": "6f858dafcebebfda",
+      "title": "Projet de Marine Le Pen : l’agriculture",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/projet-l-agriculture.pdf",
+      "passage": "Pas d’interdiction de produits phytosanitaires existant sans alternatives efficaces"
+    },
+    {
+      "id": "1f404b86211c384f",
+      "title": "22 mesures pour 2022",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+      "passage": "Permettre aux entreprises une hausse des salaires de 10 % (jusqu’à 3 smic) en exonérant cette augmentation de cotisations patronales."
+    },
+    {
+      "id": "d66e305671ce68b5",
+      "title": "Projet de Marine Le Pen : le contrôle de l’immigration",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/projet-controle-de-limmigration.pdf",
+      "passage": "Et les juges seront en droit d’écarter le droit européen lorsqu’il est manifestement contraire à la Constitution."
+    },
+    {
+      "id": "b02c1be392674548",
+      "title": "22 mesures pour 2022",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+      "passage": "Porter le budget de la défense à 55 milliards d’euros à l’horizon 2027."
+    },
+    {
+      "id": "11b809ded4e6b5a4",
+      "title": "Message de Marine Le Pen sur X",
+      "publisher": "X (compte officiel @MLP_officiel)",
+      "url": "https://x.com/MLP_officiel/status/1868353466009088300",
+      "date": "2024-12-15",
+      "passage": "C’est avec l’assentiment de la Commission européenne et des dirigeants français que les accords de libre-échange se sont multipliés. Canada, Mexique, Nouvelle-Zélande, Chili, et aujourd’hui, le dernier-né d’entre eux, sans doute le plus honteux : le Mercosur."
+    },
+    {
+      "id": "a78e1c49ff4effb9",
+      "title": "22 mesures pour 2022",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+      "passage": "Instaurer le Referendum d’Initiative Citoyenne et mettre en place la proportionnelle."
     }
   ],
   "refreshedAt": {
@@ -10593,7 +10723,7 @@
     "gabriel-attal": "2026-10-08T18:11:37.885Z",
     "bruno-retailleau": "2026-10-08T18:10:53.270Z",
     "david-lisnard": "2026-10-08T15:00:13.139Z",
-    "marine-le-pen": "2026-10-08T15:06:17.605Z",
+    "marine-le-pen": "2026-10-08T18:14:43.430Z",
     "eric-zemmour": "2026-10-08T18:10:26.755Z",
     "nicolas-dupont-aignan": "2026-10-08T15:16:54.685Z",
     "florian-philippot": "2026-10-08T15:22:20.891Z",

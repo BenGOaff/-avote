@@ -3429,5 +3429,93 @@
     "from": "inconnue",
     "to": "[0,1]",
     "source": "cdc2f52b3e2335c6"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "90b8f97a1339ee1c"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "sec-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "dbce16556d99c65e"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "b93061943bc89ce1"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "lib-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "8c5408bf2ab38c12"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "cli-03",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "6f858dafcebebfda"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "eco-05",
+    "from": "inconnue",
+    "to": "1",
+    "source": "1f404b86211c384f"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "eur-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d66e305671ce68b5"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "b02c1be392674548"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "11b809ded4e6b5a4"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "a78e1c49ff4effb9"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "a78e1c49ff4effb9"
   }
 ]
