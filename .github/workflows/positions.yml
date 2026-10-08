@@ -44,6 +44,12 @@ jobs:
           else
             npx tsx scripts/positions.ts --limit=${{ github.event.inputs.limit || vars.POSITIONS_PER_DAY || 2 }}
           fi
+      - name: Synthèses des fiches
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          POSITIONS_MODEL: ${{ vars.POSITIONS_MODEL }}
+        run: npx tsx scripts/fiches.ts
       - name: Valider
         if: always()
         run: npx tsx scripts/validate-content.ts && npx vitest run
@@ -54,10 +60,10 @@ jobs:
         run: |
           git config user.name "positions-ca-vote[bot]"
           git config user.email "positions@users.noreply.github.com"
-          if [ -z "$(git status --porcelain content/corpus)" ]; then exit 0; fi
+          if [ -z "$(git status --porcelain content/corpus content/acteurs/fiches.json)" ]; then exit 0; fi
           STAMP=$(date -u +%Y%m%d-%H%M)
           git switch -c "positions/$STAMP"
-          git add content/corpus
+          git add content/corpus content/acteurs/fiches.json
           git commit -m "positions : mise à jour du référentiel ($STAMP)"
           git push origin "positions/$STAMP"
           gh pr create --base "${{ github.ref_name }}" --head "positions/$STAMP" \
