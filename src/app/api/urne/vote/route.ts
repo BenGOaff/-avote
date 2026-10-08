@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from 'next/server'
 import { z } from 'zod'
-import { clientIp } from '@/lib/client-ip'
+import { clientIp, sameOrigin } from '@/lib/client-ip'
+import { SITE_URL } from '@/lib/site'
 import { rateLimited } from '@/lib/newsletter'
 import { cast, checkWork, claim, fingerprint, invalidateTotals, isChoice, urneReady } from '@/lib/urne'
 
@@ -10,8 +11,7 @@ const Body = z.object({ choice: z.string().regex(/^[a-z0-9-]{2,60}$/), challenge
 
 export async function POST(req: NextRequest) {
   if (!urneReady()) return NextResponse.json({ ok: false, reason: 'ferme' }, { status: 503 })
-  const origin = req.headers.get('origin')
-  if (!origin || new URL(origin).host !== req.nextUrl.host) return NextResponse.json({ ok: false }, { status: 403 })
+  if (!sameOrigin(req, SITE_URL.host)) return NextResponse.json({ ok: false }, { status: 403 })
   if (Number(req.headers.get('content-length') ?? 0) > 1000) return NextResponse.json({ ok: false }, { status: 413 })
 
   const ip = clientIp(req)

@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server'
-import { clientIp } from '@/lib/client-ip'
+import { clientIp, sameOrigin } from '@/lib/client-ip'
+import { SITE_URL } from '@/lib/site'
 import { z } from 'zod'
 import { rateLimited, sealToken, sendConfirmation } from '@/lib/newsletter'
 import { absolute } from '@/lib/site'
@@ -19,8 +20,7 @@ const Body = z
 const GENERIC = { ok: true, message: 'Si l’adresse est valide, un email de confirmation arrive. Pense à vérifier les indésirables.' }
 
 export async function POST(req: NextRequest) {
-  const origin = req.headers.get('origin')
-  if (origin && new URL(origin).host !== req.nextUrl.host) return NextResponse.json({ ok: false }, { status: 403 })
+  if (!sameOrigin(req, SITE_URL.host, false)) return NextResponse.json({ ok: false }, { status: 403 })
   const len = Number(req.headers.get('content-length') ?? 0)
   if (len > 2000) return NextResponse.json({ ok: false }, { status: 413 })
 
