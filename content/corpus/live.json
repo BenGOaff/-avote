@@ -2,7 +2,7 @@
   "version": "live-202610081824",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:24:10.913Z",
+  "publishedAt": "2026-10-08T18:24:30.517Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -2498,11 +2498,15 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "2a69fceb79038192"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Décision 20. Nouvel impôt limité aux fortunes de plus de 10 M€, avec exonération des capitaux investis en France : favorable avec conditions."
       },
       "eco-03": {
         "missing": true,
@@ -2572,11 +2576,15 @@
         "note": "Phrase entre guillemets attribuée au candidat (Europe 1, mai 2021), reprise par CNews. Déclaration ANTÉRIEURE à 2024, hors des niveaux de source préférés : à remplacer si une source plus récente est trouvée. C'est un argument contre la léga"
       },
       "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "13defbc65441aa9e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Projet du parti. Bonus d'abord, malus progressif ensuite : favorable avec nuance."
       },
       "lib-05": {
         "missing": true,
@@ -2632,11 +2640,15 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "56ddb0529a016b7f"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:26.322Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Projet du parti. La même page veut aussi protéger les lignes ferroviaires « non rentables » par la péréquation."
       },
       "sec-01": {
         "value": 2,
@@ -2686,11 +2698,15 @@
         "note": "Intitulé de la mesure 6. Les métiers en tension ne sont pas cités, mais la suppression générale de la régularisation les inclut. La mesure 12 prévoit en outre d'être « intraitables » envers ceux qui emploient des étrangers sans permis de tr"
       },
       "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "ca28198b49c80834"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:29.904Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Décision 81. Le projet actuel de DLF va plus loin (supprimer les aides sociales non contributives pour les étrangers)."
       },
       "cli-01": {
         "missing": true,
@@ -2714,11 +2730,18 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "cli-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "815a2e255a80bfae"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Projet du parti : baisser la fiscalité des carburants, à l'opposé d'une hausse. Ne dit rien de la compensation aux ménages modestes."
       },
       "cli-05": {
         "missing": true,
@@ -2728,11 +2751,18 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "a92721bfd8f2282d"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Projet du parti, limité à l'agriculture : fin du Pacte vert et des jachères obligatoires. Rien de précis pour les autres entreprises."
       },
       "dem-01": {
         "value": -2,
@@ -2746,11 +2776,15 @@
         "note": "Source : déclaration publique du candidat depuis 2024 (Grande interview Europe 1-CNews). La citation reprend ses propres mots, entre guillemets dans l'article. Rejet catégorique, sans condition : -2. Il ajoute aussi « il n'y aura plus aucun"
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "a8a259b720909b74"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Décision 3 du programme 2022. Le projet actuel de DLF reprend le RIC (seuil d'un million d'inscrits)."
       },
       "dem-03": {
         "missing": true,
@@ -2760,11 +2794,15 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "dem-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d86d301a2c6f20b9"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Le programme exige un casier judiciaire vierge pour tout candidat (décision 7 : « Casier judiciaire vierge pour tout élu »), ce qui rend inéligible après toute condamnation, corruption comprise."
       },
       "dem-05": {
         "missing": true,
@@ -2774,11 +2812,15 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "dem-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "7dac7acff2885b40"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Décision 4 du programme 2022, reprise dans le projet actuel de DLF."
       },
       "eur-01": {
         "value": -2,
@@ -11383,6 +11425,74 @@
       "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA642935/positions-de-vote",
       "date": "2026-07-21",
       "passage": "Scrutin public n°8431 sur l'ensemble de la proposition de loi visant à protéger les mineurs des risques auxquels les expose l'utilisation des réseaux sociaux (texte de la commission mixte paritaire)."
+    },
+    {
+      "id": "a8a259b720909b74",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "Instauration du référendum d’initiative populaire ou citoyenne (RIC) à partir de 500 000 signatures."
+    },
+    {
+      "id": "7dac7acff2885b40",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "Prise en compte du vote blanc dans les résultats des élections ; s’il est majoritaire, le scrutin est reporté."
+    },
+    {
+      "id": "d86d301a2c6f20b9",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "reconnaître le vote blanc, exiger un casier judiciaire vierge pour tout candidat à une élection, supprimer les privilèges accordés aux anciens présidents"
+    },
+    {
+      "id": "2a69fceb79038192",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "Zéro droit de succession sur la résidence principale financé par un impôt sur les très grandes fortunes supérieures à 10 millions d’euros (exonération si les capitaux sont placés dans des entreprises investissant majoritairement sur le sol français)."
+    },
+    {
+      "id": "ca28198b49c80834",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "Délai de carence de 5 ans pour les étrangers pour recevoir des aides sociales et remplacement de toutes les cartes vitales par des cartes vitales biométriques"
+    },
+    {
+      "id": "56ddb0529a016b7f",
+      "title": "Équilibre du territoire - Debout La France",
+      "publisher": "Debout la France",
+      "url": "https://www.debout-la-france.fr/projet/equilibre-territoire-monde-rural/",
+      "passage": "Arrêt immédiat des fermetures de maternités et réouverture de lits d’hôpitaux dans les départements qui ont été sacrifiés."
+    },
+    {
+      "id": "13defbc65441aa9e",
+      "title": "Économie, Travail - Debout La France",
+      "publisher": "Debout la France",
+      "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+      "passage": "Parvenir à l’égalité Femmes/Hommes au travail en cinq ans : Alléger les charges pour les entreprises respectant l’égalité salariale, puis instaurer progressivement un malus contre les mauvaises pratiques."
+    },
+    {
+      "id": "a92721bfd8f2282d",
+      "title": "Agriculture - Debout La France",
+      "publisher": "Debout la France",
+      "url": "https://www.debout-la-france.fr/projet/agriculture/",
+      "passage": "Revenir à une politique agricole nationale, échappant aux délires bureaucratiques de la Commission de Bruxelles et simplifiant les procédures (fin du pacte vert européen, des quotas de jachères, etc…)"
+    },
+    {
+      "id": "815a2e255a80bfae",
+      "title": "Automobilistes et Motards - Debout La France",
+      "publisher": "Debout la France",
+      "url": "https://www.debout-la-france.fr/projet/transport-automobilistes/",
+      "passage": "Supprimer la TVA sur la TICPE (suppression de la taxe sur la taxe) afin de faire baisser le prix du carburant et de rendre ainsi du pouvoir d’achat aux Français."
     }
   ],
   "refreshedAt": {
@@ -11392,7 +11502,7 @@
     "david-lisnard": "2026-10-08T15:00:13.139Z",
     "marine-le-pen": "2026-10-08T18:14:43.430Z",
     "eric-zemmour": "2026-10-08T18:10:26.755Z",
-    "nicolas-dupont-aignan": "2026-10-08T15:16:54.685Z",
+    "nicolas-dupont-aignan": "2026-10-08T18:24:30.517Z",
     "florian-philippot": "2026-10-08T18:23:49.207Z",
     "jean-luc-melenchon": "2026-10-08T18:15:13.925Z",
     "fabien-roussel": "2026-10-08T17:54:08.652Z",

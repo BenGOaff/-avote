@@ -3957,5 +3957,77 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "3da529f791d2804b"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "a8a259b720909b74"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "dem-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "7dac7acff2885b40"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "dem-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d86d301a2c6f20b9"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "1",
+    "source": "2a69fceb79038192"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "ca28198b49c80834"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "56ddb0529a016b7f"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "lib-04",
+    "from": "inconnue",
+    "to": "1",
+    "source": "13defbc65441aa9e"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "a92721bfd8f2282d"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "cli-04",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "815a2e255a80bfae"
   }
 ]
