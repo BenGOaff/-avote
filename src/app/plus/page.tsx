@@ -8,6 +8,7 @@ const LINKS = [
   ['/mon-profil', 'Mon profil', 'Ce qui est gardé sur ton appareil, export, effacement.'],
   ['/resultats', 'Mes résultats', 'Le détail du calcul, candidat par candidat.'],
   ['/candidats', 'Candidats', 'Qui a annoncé sa candidature, avec la source.'],
+  ['/quiz', 'Quiz', 'Les règles de l’élection, ton profil de spectateur, qui a dit quoi.'],
   ['/medias', 'Qui possède ton info', 'Propriétaires, financements et contrôle des médias.'],
   ['/methodologie', 'Méthode', 'Questions, codage, formules et limites.'],
   ['/sources', 'Sources', 'D’où viennent les positions et les faits.'],

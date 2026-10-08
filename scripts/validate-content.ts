@@ -94,6 +94,15 @@ for (const [slug, a] of Object.entries(nuances.actors)) {
 const sansNuance = cand.actors.filter((a) => a.verified && !nuances.actors[a.slug] && (a as { party?: string }).party).length
 if (sansNuance) warnings.push(`${sansNuance} candidat(s) avec un parti mais sans nuance`)
 
+// Quiz Tiquiz : adresses https sur le sous-domaine des quiz, identifiants uniques
+const tiquiz = JSON.parse(readFileSync(path.join(ROOT, 'content/quiz/tiquiz.json'), 'utf8')) as { quizzes: { slug: string; title: string; url: string }[] }
+const quizSlugs = new Set<string>()
+for (const q of tiquiz.quizzes) {
+  if (!/^[a-z0-9-]+$/.test(q.slug) || quizSlugs.has(q.slug)) errors.push(`quiz : identifiant invalide ou en double (${q.slug})`)
+  quizSlugs.add(q.slug)
+  if (!q.url.startsWith('https://') || !q.title) errors.push(`quiz ${q.slug} : adresse https et titre obligatoires`)
+}
+
 // Qui possède ton info
 const mediaList = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/liste.json'), 'utf8')) as { medias: { slug: string }[] }
 const owned = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/proprietaires.json'), 'utf8')) as {

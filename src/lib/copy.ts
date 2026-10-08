@@ -20,6 +20,7 @@ export const UI_COPY = {
     test: 'Le test',
     radar: 'Radar',
     actors: 'Candidats',
+    quiz: 'Quiz',
     studio: 'Studio',
     more: 'Plus',
     profile: 'Mon profil',
@@ -87,6 +88,10 @@ export const UI_COPY = {
     redLineStatus: { desaccord: 'désaccord documenté', inconnu: 'position inconnue', ambigu: 'position ambiguë, désaccord possible', accord: 'pas de désaccord' },
     tie: 'Ex æquo',
     gaugeLegend: 'Noir : proximité sur les positions connues. Jaune : la fourchette possible tant que des positions manquent.',
+  },
+  quiz: {
+    play: 'Faire le quiz',
+    data: 'Tes réponses ne sont pas gardées : seul ton email l’est, si tu choisis de le donner.',
   },
   consent: {
     title: 'Un cookie ? Seulement pour compter.',

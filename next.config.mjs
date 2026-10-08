@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs'
 // Configuration en JavaScript (pas TypeScript) : l'hébergeur ne peut pas compiler un next.config.ts
 // avec le compilateur de secours (SWC WebAssembly) imposé par son système.
 const isDev = process.env.NODE_ENV !== 'production'
@@ -7,12 +8,15 @@ const isDev = process.env.NODE_ENV !== 'production'
 // 'unsafe-inline' sur les scripts : nécessaire au rendu statique de Next sans nonce
 // (voir docs/SECURITE.md). Tout le reste est verrouillé.
 // Seule exception : l'iframe du quiz Tiquiz, si son URL est configurée (page /quiz).
-const tiquizOrigin = (() => {
+// Origines des quiz Tiquiz listés dans content/quiz/tiquiz.json (plus l'adresse par défaut)
+const tiquizOrigins = (() => {
+  const urls = [process.env.NEXT_PUBLIC_TIQUIZ_URL || 'https://quiz.xn--avote-xra.fr/pourquivoter']
   try {
-    return new URL(process.env.NEXT_PUBLIC_TIQUIZ_URL || 'https://quiz.xn--avote-xra.fr/pourquivoter').origin
+    urls.push(...JSON.parse(readFileSync(new URL('./content/quiz/tiquiz.json', import.meta.url), 'utf8')).quizzes.map((q) => q.url))
   } catch {
-    return null
+    /* liste absente : adresse par défaut seulement */
   }
+  return [...new Set(urls.map((u) => { try { return new URL(u).origin } catch { return null } }).filter(Boolean))]
 })()
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID ?? 'G-8BPS8RSJ3B'
@@ -30,7 +34,7 @@ const csp = [
   "media-src 'self' blob:",
   "worker-src 'self'",
   "manifest-src 'self'",
-  tiquizOrigin ? `frame-src ${tiquizOrigin}` : "frame-src 'none'",
+  tiquizOrigins.length ? `frame-src ${tiquizOrigins.join(' ')}` : "frame-src 'none'",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
