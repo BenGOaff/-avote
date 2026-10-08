@@ -25,7 +25,7 @@ concurrency:
 jobs:
   positions:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -45,8 +45,10 @@ jobs:
             npx tsx scripts/positions.ts --limit=${{ github.event.inputs.limit || vars.POSITIONS_PER_DAY || 2 }}
           fi
       - name: Valider
+        if: always()
         run: npx tsx scripts/validate-content.ts && npx vitest run
       - name: Proposer la mise à jour
+        if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -60,4 +62,5 @@ jobs:
           git push origin "positions/$STAMP"
           gh pr create --base "${{ github.ref_name }}" --head "positions/$STAMP" \
             --title "Positions $STAMP" \
-            --body "Positions codées par IA, citations vérifiées dans les sources. Détail des changements : content/corpus/changes.json."
+            --body "Positions codées par IA, citations vérifiées dans les sources. Détail des changements : content/corpus/changes.json." \
+            || echo "Pull Request non créée (réglage Actions) : la branche positions/$STAMP est poussée."
