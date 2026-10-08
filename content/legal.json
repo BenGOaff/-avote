@@ -1,0 +1,15 @@
+{
+  "_note": "À compléter par la propriétaire avant la mise en ligne. Les champs null s'affichent « à compléter ». Ne pas inventer de rédaction ni de directeur de publication (cahier §18).",
+  "publisherName": null,
+  "publisherLegalForm": null,
+  "publisherAddress": null,
+  "publisherSiret": null,
+  "publicationDirector": null,
+  "contactEmail": "bonjour@xn--avote-xra.fr",
+  "host": {
+    "name": "Hostinger International Ltd",
+    "address": "61 Lordou Vironos Street, 6023 Larnaca, Chypre",
+    "url": "https://www.hostinger.fr"
+  },
+  "emailProvider": { "name": "Resend (Plus Five Five, Inc.)", "url": "https://resend.com/legal/privacy-policy" }
+}

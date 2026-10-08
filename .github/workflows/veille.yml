@@ -1,0 +1,86 @@
+# Veille automatisée : collecte, brouillons rédigés par Claude, Pull Request à relire.
+# Rien n'est publié sans fusion de la PR (sauf brèves si VEILLE_AUTOMERGE = true, voir docs/VEILLE.md).
+name: Veille
+
+on:
+  schedule:
+    # Heures UTC : ≈ 7 h, 10 h, 13 h, 16 h, 19 h, 22 h à Paris (heure d'été)
+    - cron: '7 5,8,11,14,17,20 * * *'
+  workflow_dispatch:
+    inputs:
+      article:
+        description: 'Proposer aussi un article court'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Collecter et rédiger
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          VEILLE_MODEL: ${{ vars.VEILLE_MODEL }}
+          VEILLE_EFFORT: ${{ vars.VEILLE_EFFORT }}
+        run: |
+          ARGS="--max=${{ vars.VEILLE_MAX || 6 }}"
+          # Un article court par jour, sur la passe de 16 h (ou à la demande)
+          if [ "${{ github.event.inputs.article }}" = "true" ] || [ "$(date -u +%H)" = "14" ]; then ARGS="$ARGS --article"; fi
+          npx tsx scripts/veille.ts $ARGS
+
+      - name: Valider les contenus
+        run: npx tsx scripts/validate-content.ts
+
+      - name: Publier l'état de la veille et proposer les brouillons
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTOMERGE: ${{ vars.VEILLE_AUTOMERGE }}
+        run: |
+          git config user.name "veille-ca-vote[bot]"
+          git config user.email "veille@users.noreply.github.com"
+          STAMP=$(date -u +%Y%m%d-%H%M)
+          NEW=$(git ls-files --others --exclude-standard content/fil content/radar)
+
+          # 1. L'état des flux et la mémoire des éléments vus vont directement sur la branche principale
+          git add content/veille/status.json content/veille/seen.json
+          git commit -m "veille : état des flux ($STAMP)" || true
+
+          if [ -n "$NEW" ] && [ "$AUTOMERGE" = "true" ]; then
+            # Option assumée par la rédaction : brèves publiées directement, articles toujours relus
+            git add content/fil
+            git commit -m "veille : brèves ($STAMP)" || true
+          fi
+          git push origin HEAD:${{ github.ref_name }}
+
+          # 2. Les brouillons restants partent dans une Pull Request à relire
+          REMAINING=$(git ls-files --others --exclude-standard content/fil content/radar)
+          if [ -n "$REMAINING" ]; then
+            BRANCH="veille/$STAMP"
+            git switch -c "$BRANCH"
+            git add content/fil content/radar
+            git commit -m "veille : brouillons à relire ($STAMP)"
+            git push origin "$BRANCH"
+            gh pr create --base "${{ github.ref_name }}" --head "$BRANCH" \
+              --title "Veille $STAMP : brouillons à relire" \
+              --body-file .veille-summary.md
+          fi

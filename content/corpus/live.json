@@ -1,0 +1,10 @@
+{
+  "version": "live-0.0.0",
+  "mode": "live",
+  "questionSet": "0.1.0",
+  "publishedAt": "2026-10-08T00:00:00Z",
+  "note": "Aucune position réelle n'est encore publiée. Chaque position doit être codée à partir d'une source primaire et validée par deux relecteurs humains distincts (cahier §8). Voir docs/CORPUS.md.",
+  "actors": [],
+  "positions": {},
+  "sources": []
+}

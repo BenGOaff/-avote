@@ -1,0 +1,19 @@
+/**
+ * Données publiques versionnées : questionnaire et corpus.
+ * Le client ne mélange jamais une version de questions et une version de positions (cahier §12).
+ */
+import questionnaireJson from '@content/questionnaire/v0.1.0.json'
+import demoJson from '@content/corpus/demo.json'
+import liveJson from '@content/corpus/live.json'
+import type { Corpus, QuestionSet } from './engine/types'
+
+export const questionnaire = questionnaireJson as unknown as QuestionSet
+export const demoCorpus = demoJson as unknown as Corpus
+export const liveCorpus = liveJson as unknown as Corpus
+
+export function assertCompatible(set: QuestionSet, corpus: Corpus): boolean {
+  return corpus.questionSet === set.version
+}
+
+export const itemsByTheme = (set: QuestionSet) =>
+  set.themes.map((t) => ({ theme: t, items: set.items.filter((i) => i.theme === t.id && !i.inactive) }))

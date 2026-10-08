@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Types
+        run: npx tsc --noEmit
+      - name: Tests du moteur et de la veille
+        run: npx vitest run
+      - name: Contenus (schéma, sources, typographie)
+        run: npx tsx scripts/validate-content.ts
+      - name: Build
+        run: npx next build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'

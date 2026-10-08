@@ -1,0 +1,1506 @@
+{
+  "version": "demo-0.1.0",
+  "mode": "demo",
+  "questionSet": "0.1.0",
+  "publishedAt": "2026-10-08T00:00:00Z",
+  "actors": [
+    {
+      "slug": "demo-ardoise",
+      "name": "Camille Ardoise (fictive)",
+      "summary": "Profil fictif : État très présent, forte redistribution, transition rapide.",
+      "status": "fictif"
+    },
+    {
+      "slug": "demo-boussole",
+      "name": "Dominique Boussole (fictif)",
+      "summary": "Profil fictif : économie de marché, intégration européenne forte, libertés individuelles.",
+      "status": "fictif"
+    },
+    {
+      "slug": "demo-clocher",
+      "name": "Lou Clocher (fictif)",
+      "summary": "Profil fictif : contrôle sécuritaire élevé, immigration réduite, décisions nationales.",
+      "status": "fictif"
+    },
+    {
+      "slug": "demo-dentelle",
+      "name": "Sacha Dentelle (fictive)",
+      "summary": "Profil fictif : rigueur budgétaire, sécurité, Europe et nucléaire.",
+      "status": "fictif"
+    },
+    {
+      "slug": "demo-etincelle",
+      "name": "Noa Étincelle (fictif)",
+      "summary": "Profil fictif : transformation des institutions, décentralisation, positions peu documentées.",
+      "status": "fictif"
+    }
+  ],
+  "positions": {
+    "demo-ardoise": {
+      "eco-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-03": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-06": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-06": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-01": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-02": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-03": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-04": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-06": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-01": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-02": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "demo-programme"
+        ],
+        "note": "Formulation compatible avec plusieurs niveaux (donnée fictive)."
+      },
+      "lib-03": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-06": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-01": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-05": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-06": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-01": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-02": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-03": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "eur-06": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-06": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      }
+    },
+    "demo-boussole": {
+      "eco-01": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-02": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-03": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-04": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-06": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-01": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-02": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-03": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-04": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-06": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-01": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-02": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-03": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-04": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-06": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-02": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-04": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-05": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-06": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-02": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-03": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-06": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-02": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-04": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-05": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-01": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-02": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-03": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-06": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      }
+    },
+    "demo-clocher": {
+      "eco-01": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-02": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-03": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-05": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-06": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-01": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-02": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-03": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-05": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-02": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-06": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "lib-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-03": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-06": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-02": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "cli-04": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-05": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-01": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-06": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-01": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-02": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-03": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-05": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      }
+    },
+    "demo-dentelle": {
+      "eco-01": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-02": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-04": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-05": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-06": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-01": {
+        "set": [
+          -2,
+          -1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "demo-programme"
+        ],
+        "note": "Formulation compatible avec plusieurs niveaux (donnée fictive)."
+      },
+      "tra-02": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-03": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-04": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-05": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-06": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-02": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-03": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-05": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-01": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-02": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-03": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-04": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-06": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-02": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-03": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-04": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-05": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-01": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-02": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-04": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-06": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-01": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "dem-03": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-05": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-06": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      }
+    },
+    "demo-etincelle": {
+      "eco-01": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "eco-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "eco-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eco-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "eco-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-01": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "tra-03": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-05": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "tra-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-01": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-02": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "sec-04": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "ambigu",
+        "sources": [
+          "demo-programme"
+        ],
+        "note": "Formulation compatible avec plusieurs niveaux (donnée fictive)."
+      },
+      "sec-05": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "sec-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "lib-01": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-02": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "lib-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "lib-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "cli-01": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-02": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-03": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "cli-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "cli-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "eur-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "eur-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "eur-03": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "eur-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée (donnée fictive)."
+      },
+      "eur-06": {
+        "value": 0,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-05": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      },
+      "dem-06": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "demo-programme"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "demo-programme",
+      "title": "Programme fictif de démonstration",
+      "publisher": "Ça vote ? (données de test)",
+      "url": null
+    }
+  ]
+}
