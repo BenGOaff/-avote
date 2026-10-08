@@ -1180,7 +1180,7 @@
       ],
       "group": "Mediapart",
       "controller": "Fonds pour une presse libre",
-      "controllerKind": "fondation",
+      "controllerKind": "nonlucratif",
       "otherMedia": [],
       "note": "Détenu par un fonds à but non lucratif dont les statuts interdisent d’intervenir sur la ligne éditoriale.",
       "quote": "le FPL garantit la protection de l’indépendance du journal en ligne Mediapart , de façon à la rendre irréversible, par la sanctuarisation de son capital au sein de la Société pour la Protection de l’Indépendance de Mediapart (SPIM) qu’il contrôle.",

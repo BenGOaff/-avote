@@ -27,6 +27,7 @@ export function Footer() {
           <li><Link href="/corrections">Corrections</Link></li>
           <li><Link href="/independance">Indépendance et financement</Link></li>
           <li><Link href="/medias">Qui possède ton info</Link></li>
+          <li><Link href="/medias/libres">Les médias libres</Link></li>
         </ul>
         <ul>
           <li><Link href="/newsletter">Newsletter</Link></li>

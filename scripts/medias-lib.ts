@@ -26,7 +26,7 @@ export function clip(t: string, max: number): string {
 }
 
 export const ALERT_DOMAINS = ['arcom.fr', 'conseil-etat.fr', 'legifrance.gouv.fr']
-export const OWNER_KINDS = ['entreprise', 'personne', 'famille', 'etat', 'association', 'fondation', 'salaries', 'lecteurs', 'fonds', 'autre'] as const
-export const CONTROLLER_KINDS = ['personne', 'famille', 'etat', 'association', 'fondation', 'salaries', 'lecteurs', 'cotee', 'autre', 'inconnu'] as const
+export const OWNER_KINDS = ['entreprise', 'personne', 'famille', 'etat', 'association', 'fondation', 'nonlucratif', 'salaries', 'lecteurs', 'journalistes', 'fonds', 'autre'] as const
+export const CONTROLLER_KINDS = ['personne', 'famille', 'etat', 'association', 'fondation', 'nonlucratif', 'salaries', 'lecteurs', 'journalistes', 'cotee', 'autre', 'inconnu'] as const
 export const ALERT_KINDS = ['mise-en-demeure', 'mise-en-garde', 'sanction', 'avertissement', 'non-renouvellement', 'decision-conseil-etat', 'autre'] as const
 export const ALERT_TOPICS = ['pluralisme', 'temps-de-parole', 'honnetete-information', 'independance-information', 'campagne-electorale', 'autre-politique'] as const

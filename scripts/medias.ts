@@ -17,7 +17,7 @@ import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
 import { canonicalUrl, quoteIsInSource } from './veille-lib'
 import { collectEvidence, fetchText } from './web-lib'
-import { ALERT_DOMAINS, clip, quoteNamesOwner } from './medias-lib'
+import { ALERT_DOMAINS, CONTROLLER_KINDS, OWNER_KINDS, clip, quoteNamesOwner } from './medias-lib'
 import { CostMeter, budgetFromEnv } from './cost'
 
 const ROOT = process.cwd()
@@ -85,10 +85,10 @@ Règles strictes :
 - Si tu ne trouves pas de source fiable, laisse controller vide et explique pourquoi dans note.`
 
 const Found = z.object({
-  owners: z.array(z.object({ name: z.string(), kind: z.enum(['entreprise', 'personne', 'famille', 'etat', 'association', 'fondation', 'salaries', 'lecteurs', 'fonds', 'autre']), share: z.string().describe('Part du capital si connue (« 100 % », « majoritaire »), sinon chaîne vide') })),
+  owners: z.array(z.object({ name: z.string(), kind: z.enum(OWNER_KINDS), share: z.string().describe('Part du capital si connue (« 100 % », « majoritaire »), sinon chaîne vide') })),
   group: z.string().describe('Groupe de médias auquel il appartient, ou chaîne vide'),
   controller: z.string().describe('Qui contrôle en dernier ressort (personne, famille, État, association…), ou chaîne vide si inconnu'),
-  controllerKind: z.enum(['personne', 'famille', 'etat', 'association', 'fondation', 'salaries', 'lecteurs', 'cotee', 'autre', 'inconnu']),
+  controllerKind: z.enum(CONTROLLER_KINDS),
   otherMedia: z.array(z.string()).describe('Autres médias importants détenus par le même contrôle, si la source le dit'),
   note: z.string().describe('Précision utile (rachat récent, structure particulière, doute), ou chaîne vide'),
   quote: z.string(),
