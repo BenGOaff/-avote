@@ -10,6 +10,14 @@ export const SourceSchema = z.object({
 })
 export type SourceRef = z.infer<typeof SourceSchema>
 
+/** Image d'illustration : fichier servi par le site (public/images/…). Une caricature est toujours signalée comme telle. */
+export const ImageSchema = z.object({
+  src: z.string().regex(/^\/images\/[\w\-/]+\.(webp|png|jpe?g|avif)$/i, 'image locale attendue, ex. /images/radar/nom.webp'),
+  alt: z.string().min(5).max(300),
+  caricature: z.boolean().default(false),
+  credit: z.string().max(120).optional(),
+})
+
 export const CorrectionSchema = z.object({ date: z.string(), text: z.string() })
 
 export const ArticleSchema = z.object({
@@ -28,6 +36,7 @@ export const ArticleSchema = z.object({
   corrections: z.array(CorrectionSchema).default([]),
   generatedBy: z.string().optional(),
   reviewedBy: z.string().optional(),
+  image: ImageSchema.optional(),
 })
 export type ArticleMeta = z.infer<typeof ArticleSchema>
 

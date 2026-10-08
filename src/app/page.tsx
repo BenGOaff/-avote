@@ -38,7 +38,7 @@ export default function HomePage() {
           <div>
             <h2>Ce que tu obtiens</h2>
             <p>
-              D’abord un résumé de ce que tu as répondu, thème par thème. Ensuite, pour chaque candidat dont les positions ont été vérifiées, une
+              D’abord un résumé de ce que tu as répondu, thème par thème. Ensuite, pour chaque candidat dont les positions sont documentées, une
               proximité sur 100, ce qu’il manque pour la calculer et les passages des programmes qui la justifient.
             </p>
             <p>
@@ -87,7 +87,7 @@ export default function HomePage() {
             <p className="muted">
               {actors.length > 0
                 ? `${actors.length} candidatures annoncées, chacune avec sa source.`
-                : 'La liste des candidatures annoncées est en cours de vérification.'}
+                : 'La liste des candidatures annoncées arrive.'}
             </p>
             <Link href="/candidats">Voir la liste</Link>
           </div>

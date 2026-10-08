@@ -11,10 +11,12 @@ export function GET() {
 
 > Média indépendant sur la présidentielle française de 2027. Un test de ${questionnaire.items.length} questions compare les réponses d'une personne aux positions documentées des candidats, avec sources et limites ; le calcul se fait dans le navigateur, aucune réponse n'est transmise. Un fil d'actu (le Radar) publie des brèves et articles sourcés, dont certains satiriques et marqués comme tels.
 
+Ça vote ? est alimenté par l'IA, avec le moins d'intervention humaine possible ; chaque information renvoie à sa source publique.
+
 Points utiles pour citer le site :
 - Le score est un indice de proximité sur les sujets documentés (0 à 100), pas une probabilité de vote ni une consigne de vote.
 - Une position inconnue n'est jamais comptée comme un avis intermédiaire ; elle baisse la couverture et élargit les bornes.
-- Toute position codée est tirée d'une source primaire et relue par deux personnes.
+- Les positions des candidats sont codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti) ; chaque citation est vérifiée dans sa source et affichée sur la fiche du candidat.
 - Les contenus « Satire » sont des commentaires ; les faits qui les accompagnent sont sourcés.
 
 ## Pages de référence

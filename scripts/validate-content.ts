@@ -56,13 +56,16 @@ for (const name of ['demo', 'live']) {
     questionSet: string
     actors: { slug: string }[]
     positions: Record<string, Record<string, { sources?: string[]; missing?: boolean }>>
+    sources?: { id: string; url: string | null }[]
   }
+  const sourceIds = new Set((c.sources ?? []).map((s) => s.id))
   if (c.questionSet !== q.version) errors.push(`corpus ${name} : version de questions ${c.questionSet} ≠ ${q.version}`)
   for (const [actor, pos] of Object.entries(c.positions)) {
     if (!c.actors.some((a) => a.slug === actor)) errors.push(`corpus ${name} : acteur inconnu ${actor}`)
     for (const [item, p] of Object.entries(pos)) {
       if (!ids.has(item)) errors.push(`corpus ${name} : question inconnue ${item}`)
       if (!p.missing && (!p.sources || p.sources.length === 0)) errors.push(`corpus ${name} : ${actor}/${item} sans source`)
+      for (const s of p.sources ?? []) if (!sourceIds.has(s)) errors.push(`corpus ${name} : ${actor}/${item} source inconnue ${s}`)
     }
   }
 }

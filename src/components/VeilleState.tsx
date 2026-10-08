@@ -28,7 +28,7 @@ export function VeilleState({ status, briefCount }: { status: VeilleStatus; brie
       <p className="small">
         {status.feeds.length - failing.length} flux sur {status.feeds.length} répondent.
         {failing.length > 0 && <> En échec : {failing.map((f) => f.name).join(', ')}.</>}
-        {briefCount === 0 && ' Les pièces détectées sont en cours de vérification avant publication.'}
+        {briefCount === 0 && ' Les premières brèves arrivent au prochain passage.'}
       </p>
     </div>
   )

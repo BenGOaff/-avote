@@ -1,0 +1,56 @@
+# Repost automatique des nouveaux articles et brèves sur X, Facebook et LinkedIn,
+# une fois la page en ligne. Chaque réseau est ignoré si ses secrets ne sont pas configurés.
+name: Réseaux sociaux
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/fil/**'
+      - 'content/radar/**'
+  workflow_dispatch:
+    inputs:
+      files:
+        description: 'Fichiers à publier (séparés par des espaces)'
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: social
+  cancel-in-progress: false
+
+jobs:
+  social:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Publier
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://xn--avote-xra.fr' }}
+          SOCIAL_MAX: ${{ vars.SOCIAL_MAX || 3 }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+          LINKEDIN_AUTHOR_URN: ${{ secrets.LINKEDIN_AUTHOR_URN }}
+        run: |
+          if [ -n "${{ github.event.inputs.files }}" ]; then
+            FILES="${{ github.event.inputs.files }}"
+          else
+            FILES=$(git diff --name-only --diff-filter=A ${{ github.event.before }} ${{ github.sha }} -- content/fil content/radar | grep '\.md$' || true)
+          fi
+          [ -z "$FILES" ] && echo "Aucun nouveau contenu." && exit 0
+          npx tsx scripts/social.ts $FILES
