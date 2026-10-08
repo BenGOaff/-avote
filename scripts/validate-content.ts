@@ -130,6 +130,14 @@ for (const [slug, m] of Object.entries(owned.medias)) {
   if (!m.quote || m.quote.length < 12 || !m.controller) errors.push(`médias : ${slug} sans citation ou sans contrôle`)
 }
 
+// Parcours partisan des candidats
+const parcours = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/parcours.json'), 'utf8')) as { parcours: Record<string, { party: string; url: string; quote: string }[]> }
+const candSlugs = new Set((JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/candidatures.json'), 'utf8')) as { actors: { slug: string }[] }).actors.map((a) => a.slug))
+for (const [slug, periods] of Object.entries(parcours.parcours)) {
+  if (!candSlugs.has(slug)) errors.push(`parcours : ${slug} absent des candidatures`)
+  for (const p of periods) if (!p.party || !p.url?.startsWith('https://') || !p.quote || /wikipedia\.org/.test(p.url)) errors.push(`parcours : ${slug} période sans source valable`)
+}
+
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
 for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)

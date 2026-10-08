@@ -1,0 +1,724 @@
+{
+  "_note": "Partis traversés par chaque candidat, avec les années. Chaque période cite sa source (citation vérifiée mot pour mot par scripts/quotes-check.ts). « ? » : année inconnue ; « to » vide : toujours membre.",
+  "checkedAt": "2026-10-08",
+  "parcours": {
+    "edouard-philippe": [
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "1989",
+        "to": "1991",
+        "role": "membre",
+        "quote": "Two years later, in 1991, “disgusted with how the Rocard government was ousted”, he took his leave from the Socialist Party",
+        "url": "https://www.sciencespo.fr/en/news/when-i-arrived-at-sciences-po-i-was-left-wing/",
+        "publisher": "Sciences Po"
+      },
+      {
+        "party": "Union pour un mouvement populaire",
+        "sigle": "UMP",
+        "from": "2002",
+        "to": "2015",
+        "role": "membre",
+        "quote": "En 2002, il participe à la fondation de l'UMP aux côtés d'Alain Juppé, dont il devient le directeur général des services jusqu'en 2004.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-dedouard-philippe",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Les Républicains",
+        "sigle": "LR",
+        "from": "2015",
+        "to": "2017",
+        "role": "membre",
+        "quote": "Subtilité langagière, s'agissant du Premier ministre Edouard Philippe, le bureau politique avait mardi dernier \"pris acte\" de son \"départ\".",
+        "url": "https://www.publicsenat.fr/actualites/politique/exclusion-de-lr-les-cinq-pro-macron-fixes-mardi-soir-79366",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "Horizons",
+        "sigle": "HOR",
+        "from": "2021",
+        "to": "",
+        "role": "fondateur, président",
+        "quote": "Depuis 2021 : Fondateur et président du parti politique Horizons.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-dedouard-philippe",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "gabriel-attal": [
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "2006",
+        "to": "2016",
+        "role": "membre",
+        "quote": "En 2006, il adhère au Parti socialiste.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gabriel-attal",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "En Marche !",
+        "sigle": "EM",
+        "from": "2016",
+        "to": "2017",
+        "role": "membre",
+        "quote": "Dès 2016, il rejoint En Marche, le parti d'Emmanuel Macron.",
+        "url": "https://www.europe1.fr/politique/remaniement-ambitieux-populaire-gabriel-attal-grand-favori-pour-devenir-le-prochain-premier-ministre-4224034",
+        "publisher": "Europe 1"
+      },
+      {
+        "party": "La République en marche",
+        "sigle": "LREM",
+        "from": "2017",
+        "to": "2022",
+        "role": "porte-parole",
+        "quote": "Il avait succédé à ce dernier au porte-parolat du mouvement \"La République En Marche\", poste qu'il a annoncé quitter mardi lors de sa prise de fonction.",
+        "url": "https://www.publicsenat.fr/actualites/non-classe/gabriel-attal-jeune-loup-de-la-macronie-et-benjamin-du-gouvernement-134463",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "Renaissance",
+        "sigle": "RE",
+        "from": "2022",
+        "to": "",
+        "role": "secrétaire général (depuis 2024)",
+        "quote": "Depuis 2024 : secrétaire général du parti Renaissance",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gabriel-attal",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "bruno-retailleau": [
+      {
+        "party": "Mouvement pour la France",
+        "sigle": "MPF",
+        "from": "",
+        "to": "2010",
+        "role": "membre",
+        "quote": "Dans une déclaration qui fera date, Bruno Retailleau annonce le 23 avril qu’il quitte le Mouvement pour la France (MPF)",
+        "url": "https://fresques.ina.fr/olonne/fiche-media/Olonne00636/polemique-entre-de-villiers-et-retailleau.html",
+        "publisher": "INA"
+      },
+      {
+        "party": "Union pour un mouvement populaire",
+        "sigle": "UMP",
+        "from": "2012",
+        "to": "2015",
+        "role": "membre",
+        "quote": "Bruno Retailleau s'empare dix ans plus tard de la tête du groupe UMP au Sénat, un parti auquel il n'a adhéré qu'en février 2012.",
+        "url": "https://france3-regions.franceinfo.fr/pays-de-la-loire/bruno-retailleau-un-discret-aux-ambitions-nationales-884201.html",
+        "publisher": "France 3 Régions"
+      },
+      {
+        "party": "Les Républicains",
+        "sigle": "LR",
+        "from": "2015",
+        "to": "2025",
+        "role": "membre",
+        "quote": "Encarté à l'UMP puis aux Républicains depuis 2012, le Vendéen de 62 ans a fait ses premiers pas en politique dans l'ombre de Philippe de Villiers.",
+        "url": "https://www.franceinfo.fr/politique/les-republicains/primaire-de-la-droite/presidence-des-republicains-bruno-retailleau-le-souverainiste-qui-veut-rompre-avec-la-droite-du-passe_5510565.html",
+        "publisher": "franceinfo"
+      },
+      {
+        "party": "Les Républicains",
+        "sigle": "LR",
+        "from": "2025",
+        "to": "",
+        "role": "président",
+        "quote": "Les adhérents des Républicains l'ont élu président du parti avec 74,31% des voix, lors d'un vote interne, dimanche 18 mai.",
+        "url": "https://www.franceinfo.fr/politique/bruno-retailleau/bruno-retailleau-est-elu-president-du-parti-les-republicains-avec-74-31-des-voix_7247163.html",
+        "publisher": "franceinfo"
+      }
+    ],
+    "david-lisnard": [
+      {
+        "party": "Union pour un mouvement populaire",
+        "sigle": "UMP",
+        "from": "",
+        "to": "2015",
+        "role": "membre",
+        "quote": "Il intègre ensuite les instances nationales de l’UMP et s’implique localement dans les Alpes-Maritimes.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-david-lisnard",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Nouvelle Énergie",
+        "sigle": "NE",
+        "from": "2013",
+        "to": "",
+        "role": "fondateur, président",
+        "quote": "David Lisnard décide, le 9 juin 2021, de déployer son parti (créé en 2013) à l’échelle nationale",
+        "url": "https://www.unenouvelleenergie.fr/david-lisnard/",
+        "publisher": "Nouvelle Énergie (site du candidat)"
+      },
+      {
+        "party": "Les Républicains",
+        "sigle": "LR",
+        "from": "2015",
+        "to": "2026",
+        "role": "membre",
+        "quote": "Le président de l'Association des maires de France, David Lisnard, a annoncé formellement sur le plateau du \"20 heures\" de France 2, mardi 31 mars, qu'il quittait LR",
+        "url": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html",
+        "publisher": "franceinfo"
+      }
+    ],
+    "marine-le-pen": [
+      {
+        "party": "Front national",
+        "sigle": "FN",
+        "from": "1986",
+        "to": "2003",
+        "role": "membre",
+        "quote": "Partis politiques : adhérente au Front national depuis 1986.",
+        "url": "https://www.europe1.fr/politique/Le-CV-de-Marine-Le-Pen-916578",
+        "publisher": "Europe 1"
+      },
+      {
+        "party": "Front national",
+        "sigle": "FN",
+        "from": "2003",
+        "to": "2011",
+        "role": "vice-présidente",
+        "quote": "Jean-Marie le Pen a mis sur orbite lundi sa fille, Marine, en la nommant vice-présidente du Front national",
+        "url": "https://www.lalibre.be/international/2003/04/21/marine-le-pen-promue-et-contestee-JDLYCT5P6ZHKHM4BRAP4SI42LE/",
+        "publisher": "La Libre Belgique"
+      },
+      {
+        "party": "Front national",
+        "sigle": "FN",
+        "from": "2011",
+        "to": "2018",
+        "role": "présidente",
+        "quote": "a été réélue dimanche sans suspense présidente du Front national, qui a réorganisé ses instances. La finaliste de la présidentielle, âgée de 49 ans, entame un troisième mandat à la tête du parti qu'elle dirige depuis qu'elle a succédé à son père en 2011",
+        "url": "https://www.publicsenat.fr/actualites/politique/marine-le-pen-reelue-sans-surprise-presidente-du-front-national-83541",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "Rassemblement national",
+        "sigle": "RN",
+        "from": "2018",
+        "to": "2021",
+        "role": "présidente",
+        "quote": "2011–2021 : Présidente du Front national, rebaptisé Rassemblement national (RN) en juin 2018.",
+        "url": "https://www.sudradio.fr/la-biographie-de-marine-le-pen",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Rassemblement national",
+        "sigle": "RN",
+        "from": "2021",
+        "to": "",
+        "role": "membre",
+        "quote": "Depuis 2022 : Présidente du groupe Rassemblement national à l'Assemblée nationale.",
+        "url": "https://www.sudradio.fr/la-biographie-de-marine-le-pen",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "eric-zemmour": [
+      {
+        "party": "Reconquête",
+        "sigle": "REC",
+        "from": "2021",
+        "to": "",
+        "role": "fondateur, président",
+        "quote": "Éric Zemmour a rassemblé, dimanche 5 décembre, plusieurs milliers de personnes en Seine-Saint-Denis où il a lancé son parti baptisé Reconquête.",
+        "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2022-premier-meeting-d-eric-zemmour-pour-lancer-sa-reconquete_4871171.html",
+        "publisher": "franceinfo"
+      }
+    ],
+    "nicolas-dupont-aignan": [
+      {
+        "party": "Rassemblement pour la République",
+        "sigle": "RPR",
+        "from": "",
+        "to": "1999",
+        "role": "membre",
+        "quote": "Partis politiques : membre du RPR jusqu’en 1999.",
+        "url": "https://www.europe1.fr/politique/Le-CV-de-Nicolas-Dupont-Aignan-916530",
+        "publisher": "Europe 1"
+      },
+      {
+        "party": "Rassemblement pour la France",
+        "sigle": "RPF",
+        "from": "1999",
+        "to": "2000",
+        "role": "secrétaire général",
+        "quote": "Secrétaire général et porte-parole du Rassemblement pour la France (RPF), parti souverainiste issu de la liste conduite par Charles Pasqua aux élections européennes de 1999. Démissionne du RPF en 2000",
+        "url": "https://www.europe1.fr/politique/Le-CV-de-Nicolas-Dupont-Aignan-916530",
+        "publisher": "Europe 1"
+      },
+      {
+        "party": "Union pour un mouvement populaire",
+        "sigle": "UMP",
+        "from": "2002",
+        "to": "2007",
+        "role": "membre",
+        "quote": "participe en 2002 à la création de l’UMP. Démissionne de l’UMP en janvier 2007 et transforme Debout la République en parti politique en mars 2007.",
+        "url": "https://www.europe1.fr/politique/Le-CV-de-Nicolas-Dupont-Aignan-916530",
+        "publisher": "Europe 1"
+      },
+      {
+        "party": "Debout la République",
+        "sigle": "DLR",
+        "from": "2007",
+        "to": "2014",
+        "role": "président",
+        "quote": "Le président de Debout la République (DLR) a promis dimanche qu'il serait candidat à la présidentielle de 2012",
+        "url": "https://www.franceinfo.fr/politique/le-president-de-debout-la-republique-dlr-a-promis-dimanche-qu-il-serait-candidat-a-la-presidentielle-de-2012_230877.html",
+        "publisher": "franceinfo"
+      },
+      {
+        "party": "Debout la France",
+        "sigle": "DLF",
+        "from": "2014",
+        "to": "",
+        "role": "président",
+        "quote": "Seul candidat, Nicolas Dupont-Aignan a été réélu samedi à la présidence du parti souverainiste Debout la France",
+        "url": "https://www.publicsenat.fr/actualites/non-classe/nicolas-dupont-aignan-reelu-a-la-tete-de-debout-la-france-146978",
+        "publisher": "Public Sénat"
+      }
+    ],
+    "florian-philippot": [
+      {
+        "party": "Front national",
+        "sigle": "FN",
+        "from": "2011",
+        "to": "2012",
+        "role": "membre",
+        "quote": "- 2011: adhère au Front national.",
+        "url": "https://www.publicsenat.fr/actualites/non-classe/les-grandes-dates-de-florian-philippot-77632",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "Front national",
+        "sigle": "FN",
+        "from": "2012",
+        "to": "2017",
+        "role": "vice-président",
+        "quote": "2012-2017 : Vice-président du Front national, chargé de la stratégie et de la communication.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-florian-philippot",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Les Patriotes",
+        "sigle": "LP",
+        "from": "2017",
+        "to": "",
+        "role": "fondateur, président",
+        "quote": "Depuis 2017 : Fondateur et président du parti politique Les Patriotes.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-florian-philippot",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "xavier-bertrand": [
+      {
+        "party": "Rassemblement pour la République",
+        "sigle": "RPR",
+        "from": "1982",
+        "to": "2002",
+        "role": "membre",
+        "quote": "Dès 1982, il s'engage auprès des Jeunes du RPR.",
+        "url": "https://france3-regions.franceinfo.fr/hauts-de-france/aisne/saint-quentin/xavier-bertrand-lance-son-propre-parti-politique-retour-sur-le-parcours-d-un-homme-presse-2622048.html",
+        "publisher": "France 3 Régions"
+      },
+      {
+        "party": "Union pour un mouvement populaire",
+        "sigle": "UMP",
+        "from": "2002",
+        "to": "2015",
+        "role": "membre, secrétaire général (2008-2010)",
+        "quote": "Xavier Bertrand occupe entre décembre 2008 et novembre 2010 les fonctions de secrétaire général de l'UMP.",
+        "url": "https://france3-regions.franceinfo.fr/hauts-de-france/aisne/saint-quentin/xavier-bertrand-lance-son-propre-parti-politique-retour-sur-le-parcours-d-un-homme-presse-2622048.html",
+        "publisher": "France 3 Régions"
+      },
+      {
+        "party": "Les Républicains",
+        "sigle": "LR",
+        "from": "2015",
+        "to": "2017",
+        "role": "membre",
+        "quote": "Il a quitté Les Républicains en 2017, à la suite de l'élection de Laurent Wauquiez à la tête du parti.",
+        "url": "https://france3-regions.franceinfo.fr/hauts-de-france/nord-0/lille/je-le-serai-xavier-bertrand-annonce-sa-candidature-a-l-election-presidentielle-et-s-exprime-sur-d-eventuelles-primaires-3407339.html",
+        "publisher": "France 3 Régions"
+      },
+      {
+        "party": "Les Républicains",
+        "sigle": "LR",
+        "from": "2021",
+        "to": "",
+        "role": "membre",
+        "quote": "En 2021, pour l'élection présidentielle de 2022, il revient sur son intention de ne pas participer à un processus de désignation interne et reprend sa carte aux Républicains.",
+        "url": "https://france3-regions.franceinfo.fr/hauts-de-france/nord-0/lille/je-le-serai-xavier-bertrand-annonce-sa-candidature-a-l-election-presidentielle-et-s-exprime-sur-d-eventuelles-primaires-3407339.html",
+        "publisher": "France 3 Régions"
+      },
+      {
+        "party": "Nous France",
+        "sigle": "",
+        "from": "2022",
+        "to": "",
+        "role": "fondateur",
+        "quote": "Le 1er octobre, Xavier Bertrand, président du Conseil régional des Hauts-de-France, lancera à Saint-Quentin dans l'Aisne son micro-parti, baptisé \"Nous France\".",
+        "url": "https://france3-regions.franceinfo.fr/hauts-de-france/aisne/saint-quentin/xavier-bertrand-lance-son-propre-parti-politique-retour-sur-le-parcours-d-un-homme-presse-2622048.html",
+        "publisher": "France 3 Régions"
+      }
+    ],
+    "olivier-becht": [
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "1997",
+        "to": "2005",
+        "role": "membre",
+        "quote": "Ce magistrat administratif a d'abord été militant PS de 1997 à 2005, avant de devenir \"centriste indépendant\".",
+        "url": "https://www.contexte.com/resources/key-people/olivier-becht/",
+        "publisher": "Contexte"
+      },
+      {
+        "party": "Agir, la droite constructive",
+        "sigle": "AGIR",
+        "from": "2017",
+        "to": "?",
+        "role": "cofondateur, porte-parole",
+        "quote": "Cofondateur du parti Agir, il n'a pas rejoint le parti Horizons, créé par Édouard Philippe, après la fusion avortée des deux formations, en décembre 2021.",
+        "url": "https://www.contexte.com/resources/key-people/olivier-becht/",
+        "publisher": "Contexte"
+      },
+      {
+        "party": "Renaissance",
+        "sigle": "RE",
+        "from": "2022",
+        "to": "?",
+        "role": "membre",
+        "quote": "J’ai été président du groupe Agir ensemble à l’Assemblée , donc intégré à Renaissance, mais je n’y suis plus, je n’ai pas de camp politique.",
+        "url": "https://www.parismatch.com/actu/politique/exclusif-je-suis-candidat-a-la-presidentielle-un-ancien-ministre-delisabeth-borne-sort-du-bois-276281",
+        "publisher": "Paris Match"
+      }
+    ],
+    "segolene-royal": [
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "1978",
+        "to": "?",
+        "role": "membre",
+        "quote": "Adhérente du Parti socialiste dès 1978 , elle est repérée par Jacques Attali et intègre l'Élysée en 1982",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-segolene-royal",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "",
+        "to": "",
+        "role": "membre",
+        "quote": "L’ancienne ministre de l’Environnement et ancienne finaliste à l’élection présidentielle de 2007, qui avait repris sa carte au PS il y a quelques mois, a donc échoué à s’imposer",
+        "url": "https://www.publicsenat.fr/actualites/non-classe/senatoriales-le-ps-refuse-d-investir-segolene-royal-lui-preferant-yan-chantrel",
+        "publisher": "Public Sénat"
+      }
+    ],
+    "bernard-cazeneuve": [
+      {
+        "party": "Mouvement des radicaux de gauche",
+        "sigle": "MRG",
+        "from": "",
+        "to": "1987",
+        "role": "membre du bureau national",
+        "quote": "siège au bureau national du Mouvement des radicaux de gauche (MRG) de 1985 à 1987, avant d'adhérer au Parti socialiste en 1987.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-bernard-cazeneuve",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "1987",
+        "to": "2022",
+        "role": "membre",
+        "quote": "Bernard Cazeneuve l'a officialisé chez nos confrères de La Manche Libre ce mercredi 4 mai 2022. Il quitte le Parti Socialiste.",
+        "url": "https://france3-regions.franceinfo.fr/normandie/manche/cherbourg-cotentin/bernard-cazeneuve-quitte-le-ps-et-ce-n-est-pas-rien-voici-pourquoi-2536196.html",
+        "publisher": "France 3 Régions"
+      },
+      {
+        "party": "La Convention",
+        "sigle": "",
+        "from": "2023",
+        "to": "",
+        "role": "fondateur",
+        "quote": "l'ancien Premier ministre socialiste Bernard Cazeneuve, qui a quitté le PS en 2022 et lancé La Convention en février 2023.",
+        "url": "https://www.europe1.fr/politique/gauche-francois-rebsamen-et-bernard-cazeneuve-sallient-pour-2027-758293",
+        "publisher": "Europe 1"
+      }
+    ],
+    "jean-luc-melenchon": [
+      {
+        "party": "Organisation communiste internationaliste",
+        "sigle": "OCI",
+        "from": "",
+        "to": "1976",
+        "role": "membre",
+        "quote": "Durant ses études, il s’engage activement à l’Union nationale des étudiants de France (UNEF) et milite dans des organisations d’extrême gauche, notamment l’Organisation communiste internationaliste (OCI).",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-luc-melenchon",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "1976",
+        "to": "2008",
+        "role": "membre",
+        "quote": "Il rejoint le Parti socialiste en 1976 après avoir quitté les organisations trotskistes, et s’impose progressivement comme une figure de l’aile gauche du parti.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-luc-melenchon",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Parti de gauche",
+        "sigle": "PG",
+        "from": "2009",
+        "to": "2014",
+        "role": "coprésident",
+        "quote": "2009-2014 : Coprésident du bureau national du Parti de gauche",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-luc-melenchon",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "La France insoumise",
+        "sigle": "LFI",
+        "from": "2016",
+        "to": "",
+        "role": "fondateur",
+        "quote": "La dynamique de Jean-Luc Mélenchon dans cette campagne présidentielle s’appuie sur un mouvement nouveau, la France insoumise, créé en février 2016.",
+        "url": "https://www.europe1.fr/politique/cinq-questions-sur-la-france-insoumise-de-jean-luc-melenchon-3293945",
+        "publisher": "Europe 1"
+      }
+    ],
+    "fabien-roussel": [
+      {
+        "party": "Parti communiste français",
+        "sigle": "PCF",
+        "from": "1986",
+        "to": "",
+        "role": "membre",
+        "quote": "participer aux manifestations contre le projet de loi Devaquet. Il adhère au PCF en 1986",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-fabien-roussel",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Parti communiste français",
+        "sigle": "PCF",
+        "from": "2018",
+        "to": "",
+        "role": "secrétaire national",
+        "quote": "Le député du Nord Fabien Roussel a été désigné mardi soir par la commission des candidatures du PCF pour succéder à Pierre Laurent à la tête du parti",
+        "url": "https://www.publicsenat.fr/actualites/politique/le-depute-fabien-roussel-va-succeder-a-pierre-laurent-a-la-tete-du-pcf-135676",
+        "publisher": "Public Sénat"
+      }
+    ],
+    "marine-tondelier": [
+      {
+        "party": "Europe Écologie Les Verts (Les Écologistes)",
+        "sigle": "EELV",
+        "from": "2009",
+        "to": "",
+        "role": "membre",
+        "quote": "Son parcours militant s'amorce en 2009 lorsqu'elle adhère à Europe Écologie Les Verts (EELV) lors d'une élection municipale partielle à Hénin-Beaumont.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-marine-tondelier",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Europe Écologie Les Verts (Les Écologistes)",
+        "sigle": "EELV",
+        "from": "2022",
+        "to": "",
+        "role": "secrétaire nationale",
+        "quote": "Depuis décembre 2022 : Secrétaire nationale d'EELV, devenu Les Écologistes",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-marine-tondelier",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "francois-ruffin": [
+      {
+        "party": "Picardie debout !",
+        "sigle": "",
+        "from": "2017",
+        "to": "2025",
+        "role": "fondateur",
+        "quote": "son nouveau mouvement, Debout, déclinaison nationale de son micro-parti Picardie debout. Lancé en 2017, le petit parti du député de la Somme",
+        "url": "https://www.franceinfo.fr/politique/le-depute-francois-ruffin-lance-son-nouveau-mouvement-debout-avec-2027-dans-le-viseur_7343925.html",
+        "publisher": "franceinfo"
+      },
+      {
+        "party": "Debout !",
+        "sigle": "",
+        "from": "2025",
+        "to": "",
+        "role": "fondateur",
+        "quote": "François Ruffin a lancé, samedi 28 juin à Paris, son nouveau mouvement, Debout, déclinaison nationale de son micro-parti Picardie debout.",
+        "url": "https://www.franceinfo.fr/politique/le-depute-francois-ruffin-lance-son-nouveau-mouvement-debout-avec-2027-dans-le-viseur_7343925.html",
+        "publisher": "franceinfo"
+      }
+    ],
+    "delphine-batho": [
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "",
+        "to": "2018",
+        "role": "membre",
+        "quote": "L'ancienne ministre de l’Écologie Delphine Batho quitte le Parti socialiste pour prendre la tête de Génération écologie",
+        "url": "https://www.publicsenat.fr/actualites/politique/delphine-batho-quitte-le-ps-pour-prendre-la-tete-de-generation-ecologie-85531",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "Génération écologie",
+        "sigle": "GE",
+        "from": "2018",
+        "to": "",
+        "role": "présidente",
+        "quote": "L'ancienne ministre de l’Écologie Delphine Batho quitte le Parti socialiste pour prendre la tête de Génération écologie",
+        "url": "https://www.publicsenat.fr/actualites/politique/delphine-batho-quitte-le-ps-pour-prendre-la-tete-de-generation-ecologie-85531",
+        "publisher": "Public Sénat"
+      }
+    ],
+    "karim-bouamrane": [
+      {
+        "party": "Parti communiste français",
+        "sigle": "PCF",
+        "from": "1995",
+        "to": "2014",
+        "role": "membre",
+        "quote": "En 1995, à l'âge de 22 ans, il adhère au Parti communiste français (PCF) et devient conseiller municipal de Saint-Ouen-sur-Seine.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-karim-bouamrane",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "2014",
+        "to": "",
+        "role": "membre",
+        "quote": "2014 : Adhère au Parti socialiste (PS) et mène la liste socialiste aux élections municipales de Saint-Ouen.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-karim-bouamrane",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "La France humaine et forte",
+        "sigle": "",
+        "from": "",
+        "to": "",
+        "role": "fondateur",
+        "quote": "l’édile avait créé sa propre orbite politique, La France humaine et forte, quelques mois après.",
+        "url": "https://www.lefigaro.fr/politique/presidentielle-2027-je-suis-candidat-annonce-karim-bouamrane-ps-20260609",
+        "publisher": "Le Figaro"
+      }
+    ],
+    "nathalie-arthaud": [
+      {
+        "party": "Lutte ouvrière",
+        "sigle": "LO",
+        "from": "1988",
+        "to": "",
+        "role": "membre",
+        "quote": "Après un passage d'un an à la Jeunesse communiste, elle adhère en 1988 à Lutte ouvrière (LO) à l'âge de 18 ans.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-nathalie-arthaud",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Lutte ouvrière",
+        "sigle": "LO",
+        "from": "2008",
+        "to": "",
+        "role": "porte-parole",
+        "quote": "En décembre 2008, à l'issue du congrès de LO, elle est désignée porte-parole nationale du parti.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-nathalie-arthaud",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "anasse-kazib": [
+      {
+        "party": "Nouveau Parti anticapitaliste",
+        "sigle": "NPA",
+        "from": "",
+        "to": "2021",
+        "role": "membre",
+        "quote": "Révolution permanente a quitté le NPA au printemps dernier, officiellement pour cause de divergences autour de l’élection présidentielle",
+        "url": "https://www.politis.fr/articles/2021/11/anasse-kazib-petit-candidat-grandes-ambitions-43743/",
+        "publisher": "Politis"
+      },
+      {
+        "party": "Révolution permanente",
+        "sigle": "RP",
+        "from": "2022",
+        "to": "",
+        "role": "membre",
+        "quote": "Organisation trotskiste, Révolution permanente est née en 2022 d'une scission avec le Nouveau Parti anticapitaliste (NPA)",
+        "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html",
+        "publisher": "franceinfo"
+      }
+    ],
+    "selma-labib": [
+      {
+        "party": "NPA-Révolutionnaires",
+        "sigle": "NPA-R",
+        "from": "",
+        "to": "",
+        "role": "porte-parole",
+        "quote": "a annoncé ce mercredi 17 juin présenter la candidature de sa porte-parole Selma Labib à l'élection présidentielle de 2027.",
+        "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+        "publisher": "BFMTV"
+      }
+    ],
+    "raphael-glucksmann": [
+      {
+        "party": "Place publique",
+        "sigle": "PP",
+        "from": "2018",
+        "to": "",
+        "role": "cofondateur",
+        "quote": "L'essayiste Raphaël Glucksmann, l'économiste Thomas Porcher, la militante écologiste Claire Nouvian et d'autres personnalités de la société civile lancent mercredi un nouveau parti, baptisé Place publique",
+        "url": "https://www.publicsenat.fr/actualites/politique/glucksmann-et-d-autres-lancent-mercredi-un-nouveau-parti-place-publique-135114",
+        "publisher": "Public Sénat"
+      }
+    ],
+    "olivier-faure": [
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "",
+        "to": "",
+        "role": "membre",
+        "quote": "M. Faure a dit son \"émotion\" et sa \"fierté totale\" de devenir premier secrétaire d'un parti où il est entré à 17 ans",
+        "url": "https://www.publicsenat.fr/actualites/politique/olivier-faure-bientot-premier-secretaire-du-parti-socialiste-83761",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "2018",
+        "to": "",
+        "role": "premier secrétaire",
+        "quote": "Le président du groupe Nouvelle Gauche à l'Assemblée Olivier Faure, 49 ans, sera investi premier secrétaire du PS lors du Congrès d’Aubervilliers le 7 avril",
+        "url": "https://www.publicsenat.fr/actualites/politique/olivier-faure-bientot-premier-secretaire-du-parti-socialiste-83761",
+        "publisher": "Public Sénat"
+      }
+    ],
+    "emmanuel-maurel": [
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "",
+        "to": "2018",
+        "role": "membre",
+        "quote": "Le député européen Emmanuel Maurel a annoncé vendredi dans une interview au Monde sa décision de quitter le PS, en emmenant avec lui une partie substantielle de l'aile gauche du parti",
+        "url": "https://www.publicsenat.fr/actualites/politique/le-depute-europeen-emmanuel-maurel-quitte-le-ps-134298",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "Gauche républicaine et socialiste",
+        "sigle": "GRS",
+        "from": "2019",
+        "to": "",
+        "role": "fondateur",
+        "quote": "Le Mouvement républicain et citoyen (MRC) et les socialistes ayant quitté le PS dans le sillage d'Emmanuel Maurel ont fondé ce week-end à Valence un nouveau parti baptisé Gauche républicaine et socialiste",
+        "url": "https://www.publicsenat.fr/actualites/politique/des-transfuges-du-ps-et-du-mrc-fusionnent-pour-fonder-un-nouveau-parti-137491",
+        "publisher": "Public Sénat"
+      }
+    ]
+  }
+}
