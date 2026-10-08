@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/quiz' },
 }
 
-const TIQUIZ_URL = process.env.NEXT_PUBLIC_TIQUIZ_URL
+import { TIQUIZ_URL } from '@/lib/site'
 
 // Quiz Tiquiz. Condition fixée par la rédaction : Tiquiz ne conserve ni les réponses ni le résultat
 // liés à l'email ; seul un tag « quiz passé » est envoyé à Systeme.io.
