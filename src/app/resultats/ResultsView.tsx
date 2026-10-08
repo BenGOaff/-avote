@@ -10,6 +10,7 @@ import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { loadState, saveState, type LocalVoterState } from '@/lib/local-store'
 import { BASIS_LABEL, answerLabel, effectiveAnswers, positionLabel } from '@/lib/answers'
 import { ScoreBar, fmt, fmtPct } from '@/components/ScoreBar'
+import { NewsletterForm } from '@/components/NewsletterForm'
 
 const nf1 = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 })
 
@@ -234,7 +235,17 @@ export function ResultsView() {
         </p>
       </section>
 
-      {/* 4. Bilan */}
+      {/* 4. Être prévenu */}
+      <section className="section" aria-labelledby="prevenu">
+        <h2 id="prevenu">Être prévenu quand ça bouge</h2>
+        <p>
+          Nouveaux candidats, programmes publiés, positions qui changent : reçois la lettre et reviens recalculer. Ton email n’est jamais relié à tes
+          réponses, qui restent sur ce téléphone.
+        </p>
+        <NewsletterForm />
+      </section>
+
+      {/* 5. Bilan */}
       <section className="section" aria-labelledby="bilan">
         <h2 id="bilan">Garder une trace</h2>
         <p>Un bilan texte avec tes priorités, tes exigences, les désaccords et ce qu’il reste à vérifier. Il est fabriqué sur ton appareil.</p>
