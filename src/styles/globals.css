@@ -2265,3 +2265,223 @@ details.disclosure > div {
   gap: var(--s2) var(--s4);
   margin: 0 0 var(--s5);
 }
+
+/* ---------- L'urne ---------- */
+.ballots {
+  list-style: none;
+  display: grid;
+  gap: var(--s3);
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  padding: 0;
+  margin: var(--s4) 0 0;
+}
+.ballot {
+  width: 100%;
+  min-height: var(--tap);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--s1) var(--s2);
+  padding: var(--s3) var(--s4);
+  text-align: left;
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: var(--border) solid var(--ink);
+  border-radius: 2px;
+  box-shadow: var(--shadow-signature);
+  cursor: pointer;
+  transition: transform var(--duration) var(--ease);
+}
+.ballot:hover,
+.ballot:focus-visible {
+  transform: translate(-2px, -2px);
+}
+.ballot__name {
+  font-family: var(--font-display);
+  grid-column: 2;
+}
+.ballot__party {
+  grid-column: 2;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.ballot--blank {
+  border-style: dashed;
+}
+.ballot .nuance__dot {
+  grid-row: 1 / span 2;
+}
+.urne__confirm {
+  max-width: 560px;
+  margin: var(--s5) 0;
+}
+
+.booth {
+  margin: var(--s5) 0;
+}
+.booth__scene {
+  position: relative;
+  height: 220px;
+  max-width: 420px;
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+.booth__curtain {
+  position: absolute;
+  inset: 0 50% 0 0;
+  background: repeating-linear-gradient(90deg, var(--line) 0 10px, var(--surface) 10px 20px);
+  border-right: var(--border) solid var(--ink);
+  animation: booth-curtain 0.8s var(--ease) forwards;
+}
+.booth__paper {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  translate: -50% 0;
+  padding: var(--s2) var(--s3);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  background: var(--paper);
+  border: var(--hairline) solid var(--ink);
+  white-space: nowrap;
+  animation: booth-paper 2.2s var(--ease) forwards;
+}
+.booth__envelope {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  width: 120px;
+  height: 64px;
+  translate: -50% 0;
+  background: var(--highlight);
+  border: var(--border) solid var(--ink);
+  opacity: 0;
+  animation: booth-envelope 2.2s var(--ease) forwards;
+}
+.booth__box {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 170px;
+  height: 70px;
+  translate: -50% 0;
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  border: var(--border) solid var(--ink);
+  border-bottom: 0;
+}
+.booth__box::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  width: 80px;
+  height: 6px;
+  translate: -50% 0;
+  background: var(--ink);
+}
+.booth__steps {
+  display: flex;
+  gap: var(--s4);
+  padding: 0;
+  margin: var(--s3) 0 0;
+  list-style: none;
+  font-size: var(--text-small);
+}
+@keyframes booth-curtain {
+  to {
+    translate: -100% 0;
+  }
+}
+@keyframes booth-paper {
+  0%,
+  25% {
+    top: 30px;
+    opacity: 1;
+  }
+  55% {
+    top: 95px;
+    opacity: 1;
+  }
+  60%,
+  100% {
+    top: 95px;
+    opacity: 0;
+  }
+}
+@keyframes booth-envelope {
+  0%,
+  45% {
+    opacity: 0;
+    top: 90px;
+  }
+  55% {
+    opacity: 1;
+    top: 90px;
+  }
+  95% {
+    opacity: 1;
+    top: 160px;
+  }
+  100% {
+    opacity: 0;
+    top: 170px;
+  }
+}
+.urne__done {
+  margin: var(--s5) 0;
+}
+.urne__stamp {
+  display: inline-block;
+  padding: var(--s3) var(--s5);
+  font-family: var(--font-display);
+  font-size: var(--h2);
+  color: var(--correction);
+  border: 4px solid var(--correction);
+  border-radius: var(--radius);
+  rotate: -6deg;
+  animation: urne-stamp 0.35s var(--ease) both;
+}
+@keyframes urne-stamp {
+  from {
+    scale: 1.6;
+    opacity: 0;
+  }
+}
+.urne__total {
+  margin: 0 0 var(--s3);
+}
+.tally {
+  list-style: none;
+  display: grid;
+  gap: var(--s2);
+  padding: 0;
+  margin: 0 0 var(--s4);
+}
+.tally__row {
+  display: grid;
+  grid-template-columns: minmax(120px, 30%) 1fr auto;
+  align-items: center;
+  gap: var(--s3);
+  font-size: var(--text-small);
+}
+.tally__bar {
+  height: 14px;
+  min-width: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+}
+.tally__row:first-child .tally__bar {
+  background: var(--highlight);
+  border: var(--hairline) solid var(--ink);
+}
+@media (prefers-reduced-motion: reduce) {
+  .booth__curtain,
+  .booth__paper,
+  .booth__envelope,
+  .urne__stamp {
+    animation: none;
+  }
+}

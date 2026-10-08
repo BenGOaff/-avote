@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server'
 import { z } from 'zod'
+import { clientIp } from '@/lib/client-ip'
 import { rateLimited } from '@/lib/newsletter'
 import { cast, checkWork, claim, fingerprint, invalidateTotals, isChoice, urneReady } from '@/lib/urne'
 
@@ -13,7 +14,7 @@ export async function POST(req: NextRequest) {
   if (!origin || new URL(origin).host !== req.nextUrl.host) return NextResponse.json({ ok: false }, { status: 403 })
   if (Number(req.headers.get('content-length') ?? 0) > 1000) return NextResponse.json({ ok: false }, { status: 413 })
 
-  const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || req.headers.get('x-real-ip') || ''
+  const ip = clientIp(req)
   if (!ip) return NextResponse.json({ ok: false, reason: 'invalide' }, { status: 400 })
   if (rateLimited(`urne:${ip}`, 5, 10 * 60 * 1000)) return NextResponse.json({ ok: false, reason: 'trop' }, { status: 429 })
 

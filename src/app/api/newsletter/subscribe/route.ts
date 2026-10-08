@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server'
+import { clientIp } from '@/lib/client-ip'
 import { z } from 'zod'
 import { rateLimited, sealToken, sendConfirmation } from '@/lib/newsletter'
 import { absolute } from '@/lib/site'
@@ -23,7 +24,7 @@ export async function POST(req: NextRequest) {
   const len = Number(req.headers.get('content-length') ?? 0)
   if (len > 2000) return NextResponse.json({ ok: false }, { status: 413 })
 
-  const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown'
+  const ip = clientIp(req) || 'unknown'
   if (rateLimited(`sub:${ip}`)) return NextResponse.json({ ok: false, message: 'Trop de tentatives. Réessaie dans quelques minutes.' }, { status: 429 })
 
   let parsed
