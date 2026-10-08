@@ -12,9 +12,9 @@ import { createCipheriv, createDecipheriv, hkdfSync, randomBytes } from 'node:cr
 const TOKEN_TTL_MS = 48 * 3600 * 1000
 
 function key(): Buffer {
-  const secret = process.env.NEWSLETTER_SECRET
-  if (!secret || Buffer.from(secret, 'base64').length < 32) throw new Error('NEWSLETTER_SECRET absent ou trop court (32 octets en base64).')
-  return Buffer.from(hkdfSync('sha256', Buffer.from(secret, 'base64'), Buffer.alloc(0), 'ca-vote/newsletter/v1', 32))
+  const secret = process.env.NEWSLETTER_SECRET?.trim()
+  if (!secret || secret.length < 32) throw new Error('NEWSLETTER_SECRET absent ou trop court (32 caractères minimum).')
+  return Buffer.from(hkdfSync('sha256', Buffer.from(secret, 'utf8'), Buffer.alloc(0), 'ca-vote/newsletter/v1', 32))
 }
 
 export interface Pending {

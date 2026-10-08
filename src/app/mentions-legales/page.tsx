@@ -1,26 +1,22 @@
 import type { Metadata } from 'next'
 import { PageHeader } from '@/components/PageHeader'
-import { LEGAL, displayEmail, orTodo } from '@/lib/legal'
+import { LEGAL, displayEmail } from '@/lib/legal'
 
 export const metadata: Metadata = { title: 'Mentions légales', alternates: { canonical: '/mentions-legales' } }
 
 export default function LegalPage() {
   return (
     <div className="container">
-      <PageHeader kicker="Mentions légales" title="Qui publie, qui héberge, qui répond" lede="La page la moins drôle du site. C’est son rôle : ici, tout est vrai et vérifiable." />
+      <PageHeader kicker="Mentions légales" title="Qui publie, qui héberge, qui répond" lede="Version courte : un site, une adresse mail, un hébergeur." />
       <div className="measure stack">
         <h2 style={{ fontSize: 'var(--h3)' }}>Qui publie</h2>
+        <p>
+          {LEGAL.siteName} est édité à titre non professionnel. Comme la loi le permet (article 6, III, 2 de la loi du 21 juin 2004 pour la confiance dans
+          l’économie numérique), son éditrice a choisi de ne pas publier son identité : elle l’a communiquée à l’hébergeur ci-dessous.
+        </p>
         <dl className="dl">
-          <dt>Nom</dt>
-          <dd>{orTodo(LEGAL.publisherName)}</dd>
-          <dt>Forme</dt>
-          <dd>{orTodo(LEGAL.publisherLegalForm)}</dd>
-          <dt>Adresse</dt>
-          <dd>{orTodo(LEGAL.publisherAddress)}</dd>
-          <dt>SIRET</dt>
-          <dd>{orTodo(LEGAL.publisherSiret)}</dd>
-          <dt>Direction de la publication</dt>
-          <dd>{orTodo(LEGAL.publicationDirector)}</dd>
+          <dt>Site</dt>
+          <dd>{LEGAL.siteName}</dd>
           <dt>Contact</dt>
           <dd>
             <a href={`mailto:${LEGAL.contactEmail}`}>{displayEmail(LEGAL.contactEmail)}</a>
@@ -41,9 +37,7 @@ export default function LegalPage() {
           erreur établie est corrigée sur la page <a href="/corrections">Corrections</a>.
         </p>
         <h2 style={{ fontSize: 'var(--h3)' }}>Polices et logiciels</h2>
-        <p>
-          Polices Archivo Black, Public Sans, Source Serif 4 et Caveat, sous licence SIL Open Font License 1.1, hébergées par le site.
-        </p>
+        <p>Polices Archivo Black, Public Sans, Source Serif 4 et Caveat, sous licence SIL Open Font License 1.1, hébergées par le site.</p>
       </div>
     </div>
   )

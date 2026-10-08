@@ -32,7 +32,7 @@ export default function PrivacyPage() {
 
         <h2 style={{ fontSize: 'var(--h3)' }}>La newsletter</h2>
         <p>
-          Nous conservons ton email et, si tu le donnes, ton prénom. Finalité : t’envoyer la lettre. Base légale : ton consentement, retirable à tout moment par le
+          Nous conservons ton email et, si tu le donnes, ton prénom (<Link href="/donnees">responsable et contact</Link>). Finalité : t’envoyer la lettre. Base légale : ton consentement, retirable à tout moment par le
           lien présent dans chaque envoi. Ton inscription n’est enregistrée qu’après le clic de confirmation. Le site lui-même ne stocke rien : la liste est tenue
           par notre prestataire d’envoi, {LEGAL.emailProvider.name}.
         </p>

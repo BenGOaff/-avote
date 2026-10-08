@@ -78,8 +78,7 @@ if (pending) warnings.push(`${pending} candidature(s) en attente de vérificatio
 
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
-const missingLegal = ['publisherName', 'publisherAddress', 'publicationDirector'].filter((k) => !legal[k])
-if (missingLegal.length) warnings.push(`mentions légales à compléter : ${missingLegal.join(', ')}`)
+for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)
 
 for (const w of warnings) console.warn(`⚠ ${w}`)
 if (errors.length) {
