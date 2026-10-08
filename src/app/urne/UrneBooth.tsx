@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
 import { BLANK, leadingZeroBits } from '@/lib/urne-shared'
+import { BoothScene } from './BoothScene'
 
 const t = UI_COPY.urne
 const VOTED_KEY = 'ca-vote:urne'
@@ -29,6 +30,8 @@ export function UrneBooth({ choices }: { choices: Choice[] }) {
   const [message, setMessage] = useState('')
   const [totals, setTotals] = useState<Totals>(null)
   const [copied, setCopied] = useState(false)
+  // Compteur de la scène : figé au moment du vote, jamais affiché pendant la période de réserve
+  const [sceneCount, setSceneCount] = useState<number | null>(null)
   const work = useRef<Promise<{ challenge: string; nonce: string } | null> | null>(null)
   const stop = useRef({ stop: false })
 
@@ -79,9 +82,10 @@ export function UrneBooth({ choices }: { choices: Choice[] }) {
 
   async function vote() {
     if (!picked) return
+    setSceneCount(totals && !totals.frozen ? totals.total : null)
     setPhase('booth')
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    const [proof] = await Promise.all([work.current ?? Promise.resolve(null), new Promise((r) => setTimeout(r, reduce ? 0 : 2400))])
+    const [proof] = await Promise.all([work.current ?? Promise.resolve(null), new Promise((r) => setTimeout(r, reduce ? 0 : 3300))])
     if (!proof) {
       setMessage(t.down)
       setPhase('error')
@@ -167,28 +171,26 @@ export function UrneBooth({ choices }: { choices: Choice[] }) {
         </div>
       )}
 
-      {phase === 'booth' && picked && (
-        <div className="booth" aria-live="polite">
-          <div className="booth__scene" aria-hidden="true">
-            <span className="booth__curtain" />
-            <span className="booth__paper">{picked.name}</span>
-            <span className="booth__envelope" />
-            <span className="booth__box" />
-          </div>
-          <ol className="booth__steps">
-            {t.steps.map((s) => (
-              <li key={s}>{s}</li>
-            ))}
-          </ol>
+      {(phase === 'booth' || phase === 'done') && (
+        <div className="booth">
+          <BoothScene
+            name={picked ? (picked.slug === BLANK ? '' : picked.name) : ''}
+            count={picked ? sceneCount : totals && !totals.frozen ? totals.total : null}
+            still={phase === 'done' && !picked}
+          />
+          {phase === 'booth' && (
+            <p className="visually-hidden" aria-live="polite">
+              {t.dropping}
+            </p>
+          )}
+          {phase === 'done' && (
+            <p className="stamp urne__stamp" aria-live="polite">
+              {t.voted}
+            </p>
+          )}
         </div>
       )}
-
-      {phase === 'done' && (
-        <div className="urne__done" aria-live="polite">
-          <p className="stamp urne__stamp">{t.voted}</p>
-          {message && <p className="small muted">{message}</p>}
-        </div>
-      )}
+      {phase === 'done' && message && <p className="small muted">{message}</p>}
 
       {phase === 'error' && (
         <div className="alert alert--correction" role="alert">
