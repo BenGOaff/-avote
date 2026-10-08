@@ -8,7 +8,7 @@ const isDev = process.env.NODE_ENV !== 'production'
 // Seule exception : l'iframe du quiz Tiquiz, si son URL est configurée (page /quiz).
 const tiquizOrigin = (() => {
   try {
-    return process.env.NEXT_PUBLIC_TIQUIZ_URL ? new URL(process.env.NEXT_PUBLIC_TIQUIZ_URL).origin : null
+    return new URL(process.env.NEXT_PUBLIC_TIQUIZ_URL || 'https://quiz.xn--avote-xra.fr/pourquivoter').origin
   } catch {
     return null
   }

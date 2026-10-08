@@ -9,7 +9,7 @@ import { NewsletterForm } from '@/components/NewsletterForm'
 import { ExampleResult } from '@/components/ExampleResult'
 import { TestFlow } from './test/TestFlow'
 
-const TIQUIZ_URL = process.env.NEXT_PUBLIC_TIQUIZ_URL
+import { TIQUIZ_URL } from '@/lib/site'
 
 export const revalidate = 1800
 
