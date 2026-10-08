@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081700",
+  "version": "live-202610081758",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T17:00:29.405Z",
+  "publishedAt": "2026-10-08T17:58:09.138Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -136,6 +136,39 @@
       "name": "Raphaël Glucksmann",
       "status": "declare",
       "party": "Place publique (primaire PS-PP-GRS)",
+      "summary": ""
+    },
+    {
+      "slug": "bernard-cazeneuve",
+      "name": "Bernard Cazeneuve",
+      "status": "demarche",
+      "summary": ""
+    },
+    {
+      "slug": "xavier-bertrand",
+      "name": "Xavier Bertrand",
+      "status": "demarche",
+      "summary": ""
+    },
+    {
+      "slug": "olivier-faure",
+      "name": "Olivier Faure",
+      "status": "declare",
+      "party": "Parti socialiste (primaire PS-PP-GRS)",
+      "summary": ""
+    },
+    {
+      "slug": "emmanuel-maurel",
+      "name": "Emmanuel Maurel",
+      "status": "declare",
+      "party": "Gauche républicaine et socialiste (primaire PS-PP-GRS)",
+      "summary": ""
+    },
+    {
+      "slug": "segolene-royal",
+      "name": "Ségolène Royal",
+      "status": "declare",
+      "party": "Primaire PS-PP-GRS",
       "summary": ""
     }
   ],
@@ -3270,18 +3303,26 @@
         "codedAt": "2026-10-08T15:33:51.406Z"
       },
       "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "e06dd5de57fef87f"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 76 du programme 2022 sur l’égalité salariale femmes-hommes : sanction nettement plus lourde que le dispositif actuel."
       },
       "lib-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "88bceddc01420232"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 88 du programme 2022."
       },
       "lib-06": {
         "missing": true,
@@ -3291,18 +3332,26 @@
         "codedAt": "2026-10-08T15:33:51.406Z"
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "99301edc8378e55d"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 126 du programme 2022 : barème porté à 15 tranches. La coupure « progres- sif » est celle du PDF."
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d67121f5c64706a4"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 127 du programme 2022 ; le texte ajoute « Son montant sera triplé ». La profession de foi dit aussi « Rétablissement et triplement de l’impôt sur la fortune »."
       },
       "eco-03": {
         "missing": true,
@@ -3319,18 +3368,29 @@
         "codedAt": "2026-10-08T15:33:51.406Z"
       },
       "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "4ae8f99b6a9bda77"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Le programme 2022 veut supprimer les exonérations de cotisations (qui portent surtout sur la part employeur), soit l’inverse d’une baisse. Il ne parle pas explicitement des « cotisations employeurs », d’où deux niveaux."
       },
       "eco-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "87f4463a6db44d2a"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Profession de foi officielle 2022. Le programme complet précise « Le smic horaire sera augmenté pour atteindre rapidement 1 500 euros net par mois », bien au-delà de la revalorisation automatique de l’époque."
       },
       "sec-01": {
         "value": 2,
@@ -3344,11 +3404,18 @@
         "note": "Propos entre guillemets du candidat, prononcés lors d'un meeting du PCF à Marseille. Position catégorique (« indispensable »), chiffrée à 2,5 milliards d'euros. Le chiffre de 60 000 inclut des enquêteurs et des douaniers, pas seulement des "
       },
       "sec-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "52d8f2caaefc355c"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Programme 2022 : les alternatives à l’incarcération « seront développées ». Le texte ne vise pas spécifiquement les courtes peines, d’où deux niveaux."
       },
       "sec-03": {
         "missing": true,
@@ -3383,11 +3450,15 @@
         "codedAt": "2026-10-08T15:33:51.406Z"
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "3e912e0708d058a6"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 55 du programme 2022 (mix 100 % public et décarboné). Coupure « nu- cléaire » telle que dans le PDF."
       },
       "cli-02": {
         "missing": true,
@@ -3404,18 +3475,26 @@
         "codedAt": "2026-10-08T15:33:51.406Z"
       },
       "cli-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "6526eeaea37143c4"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Profession de foi officielle 2022 : baisse, et non hausse, des taxes sur les carburants. Le programme (proposition 58) prévoit aussi d’abaisser les taxes sur l’électricité et le gaz."
       },
       "cli-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "20e7feb1375ce0a8"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 50 du programme 2022 : gratuité financée par « une extension et une augmentation du versement transport payé par les grandes entreprises » (un prélèvement obligatoire)."
       },
       "cli-06": {
         "missing": true,
@@ -3425,11 +3504,15 @@
         "codedAt": "2026-10-08T15:33:51.406Z"
       },
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "5e59b2c3606b11e0"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 8 du programme 2022 (« Une loi rétablira la retraite à 60 ans, à taux plein »). Engagement antérieur à la réforme de 2023."
       },
       "tra-02": {
         "value": 2,
@@ -3443,18 +3526,26 @@
         "note": "Programme présidentiel 2022 du candidat. Engagement catégorique, complété sur la même page par « 100 000 emplois seront ouverts pour nos hôpitaux », la fin de la T2A et l'arrêt des privatisations. La page affirme aussi que « des moyens cons"
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "99e12889936b55f1"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:04.041Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 21 du programme 2022. La proposition 29 prévoit en parallèle « 90 000 postes d’enseignant·e·s (premier et second degré) »."
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "b328ab596925efe5"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 99 du programme 2022, qui prévoit aussi des sanctions plus lourdes contre les bailleurs ne respectant pas l’encadrement des loyers."
       },
       "tra-05": {
         "missing": true,
@@ -3464,32 +3555,51 @@
         "codedAt": "2026-10-08T15:33:51.406Z"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "4c0fb23b480d7a4b"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:04.041Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 23 du programme 2022. Le programme prévoit aussi que « Les maternités de proximité seront rouvertes ». Il ne se prononce pas explicitement sur le critère du coût, d’où deux niveaux."
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "e25a25f9147cfb2c"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 133 du programme 2022."
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "45ad740d5b5aa91c"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Programme 2022 : référendum déclenché par un million de citoyens ; un droit de pétition à 500 000 signatures permettrait aussi d’inscrire une proposition de loi à l’ordre du jour."
       },
       "dem-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "087e60960a39082a"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Programme 2022, volet institutions."
       },
       "dem-04": {
         "missing": true,
@@ -3548,11 +3658,18 @@
         "note": "Source : déclaration publique du candidat depuis 2024 (discours). La phrase vise directement le doublement du budget des armées (32 Md€ en 2017, 64 Md€ en 2027) et la rallonge de 6,4 Md€. L'opposition est nette (« choix mortifères »). Mais "
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "67b3b527a9b32795"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:08.177Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 64 du programme 2022, dans le volet agricole ; coupures de mots telles que dans le PDF. Elle vise surtout l’agriculture, d’où deux niveaux."
       },
       "eur-05": {
         "missing": true,
@@ -3562,11 +3679,15 @@
         "codedAt": "2026-10-08T15:33:51.406Z"
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "f40bc01d752e29bf"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:33:51.406Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Proposition 169 du programme 2022. Coupure « por- tée » telle que dans le PDF."
       }
     },
     "marine-tondelier": {
@@ -4276,11 +4397,18 @@
         "codedAt": "2026-10-08T15:49:50.025Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "7df59263faeb53d6"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Vote Pour sur l’ensemble de la proposition de loi « taxe Zucman » (scrutin n° 881, 20 février 2025)."
       },
       "eco-03": {
         "missing": true,
@@ -4311,11 +4439,18 @@
         "codedAt": "2026-10-08T15:49:50.025Z"
       },
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "4f40ecd496fb3514"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Vote Pour une résolution (non contraignante) demandant l’abrogation de la réforme de 2023, qui a relevé l’âge légal de 62 à 64 ans."
       },
       "tra-02": {
         "missing": true,
@@ -4353,11 +4488,18 @@
         "codedAt": "2026-10-08T15:49:50.025Z"
       },
       "lib-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "59ef8cc233d30a07"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Vote Pour à toutes les lectures (première lecture 27 mai 2025, lecture définitive 15 juillet 2026)."
       },
       "lib-02": {
         "set": [
@@ -4402,25 +4544,37 @@
         "codedAt": "2026-10-08T15:49:50.025Z"
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "82f03d86f1c7bd44"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Texte signé « Delphine Batho, coordinatrice nationale » ; critique du choix d’un nouveau programme EPR, sans engagement chiffré."
       },
       "cli-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "1e655cb664417815"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Position du parti ; l’article rappelle aussi la proposition de loi de Delphine Batho et François Ruffin (2020) sur le plafonnement du trafic aérien."
       },
       "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "9f0f1c0916f217e2"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Position du parti."
       },
       "cli-04": {
         "missing": true,
@@ -4458,18 +4612,29 @@
         "codedAt": "2026-10-08T15:49:50.025Z"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "3a3220749246fe5b"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Texte signé « Delphine Batho, coordinatrice nationale »."
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "5437a0b6ccbf4adb"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Texte signé « Delphine BATHO, coordinatrice nationale de Génération Écologie », qui appelle à ne pas ratifier l’accord UE-Mercosur ; la phrase vise la croissance du commerce international en général."
       },
       "eur-05": {
         "missing": true,
@@ -4556,11 +4721,15 @@
         "codedAt": "2026-10-08T15:49:50.025Z"
       },
       "dem-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "903919b3bcab99a2"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Plus de pouvoir aux territoires ; les ressources propres ne sont pas évoquées."
       },
       "dem-06": {
         "missing": true,
@@ -4875,46 +5044,75 @@
     },
     "nathalie-arthaud": {
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c612d552f06018ed"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "La retraite à 60 ans est citée comme objectif, sans engagement détaillé."
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "ec88eb2270bb549c"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Financement par la confiscation des profits des groupes pétroliers et d’armement."
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "ec88eb2270bb549c"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Moyens pour les écoles aux classes surchargées ; le recrutement d’enseignants n’est pas nommé."
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "9d6c50443aa89936"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Favorable au contrôle des loyers, mais par des comités locaux plutôt que par les institutions."
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "f3684af92bc6f000"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "888b89c96e082437"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Porte sur les établissements de santé de proximité."
       },
       "eco-01": {
         "missing": true,
@@ -4924,11 +5122,18 @@
         "codedAt": "2026-10-08T15:58:35.518Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "6eafd9fbcfd78c57"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Vise la taxation du capital et des riches en général, pas un impôt sur le patrimoine précisément."
       },
       "eco-03": {
         "missing": true,
@@ -4945,18 +5150,25 @@
         "codedAt": "2026-10-08T15:58:35.518Z"
       },
       "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "358ba093f02d71c1"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Dénonce les exonérations de cotisations patronales existantes."
       },
       "eco-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "e26aa4aeded65be5"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "sec-01": {
         "missing": true,
@@ -4980,18 +5192,25 @@
         "codedAt": "2026-10-08T15:58:35.518Z"
       },
       "sec-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "ed3c6b872bcff8bd"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "ed3c6b872bcff8bd"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Régularisation de tous les sans-papiers, au-delà des seuls métiers en tension."
       },
       "sec-06": {
         "missing": true,
@@ -5029,11 +5248,15 @@
         "codedAt": "2026-10-08T15:58:35.518Z"
       },
       "cli-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "c382ba5eb552fee8"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Gratuité financée, selon elle, par les profits du grand patronat."
       },
       "cli-06": {
         "missing": true,
@@ -5043,11 +5266,15 @@
         "codedAt": "2026-10-08T15:58:35.518Z"
       },
       "lib-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "7a02729c142b84bf"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Avec le maximum de garde-fous."
       },
       "lib-02": {
         "missing": true,
@@ -5078,11 +5305,14 @@
         "codedAt": "2026-10-08T15:58:35.518Z"
       },
       "lib-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "25fe94d62cfc6a60"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "eur-01": {
         "missing": true,
@@ -5099,11 +5329,14 @@
         "codedAt": "2026-10-08T15:58:35.518Z"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "92a1b852fd93781a"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "eur-04": {
         "missing": true,
@@ -6191,11 +6424,18 @@
         "codedAt": "2026-10-08T16:15:43.358Z"
       },
       "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "1551294956edebe3"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:15:43.358Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Vise les travailleurs sans papiers en général, pas seulement les métiers en tension."
       },
       "sec-06": {
         "missing": true,
@@ -6212,11 +6452,15 @@
         "codedAt": "2026-10-08T16:15:43.358Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "42d0a15eef9331ec"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:15:43.358Z"
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Sur RTL, à propos de la taxe Zucman : modalités, assiette et montant discutables, principe non négociable."
       },
       "eco-03": {
         "missing": true,
@@ -6240,11 +6484,14 @@
         "codedAt": "2026-10-08T16:15:43.358Z"
       },
       "eco-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "68359763c6bbfa4a"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:15:43.358Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "lib-01": {
         "missing": true,
@@ -6254,11 +6501,14 @@
         "codedAt": "2026-10-08T16:15:43.358Z"
       },
       "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "71ca1a74c90ec072"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:15:43.358Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "lib-03": {
         "missing": true,
@@ -6268,18 +6518,24 @@
         "codedAt": "2026-10-08T16:15:43.358Z"
       },
       "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "9c779bc92393add5"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:15:43.358Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "lib-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "665ee68118cc549e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:15:43.358Z"
+        "codedAt": "2026-10-08T17:44:58.610Z"
       },
       "lib-06": {
         "missing": true,
@@ -6287,6 +6543,1089 @@
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
         "codedAt": "2026-10-08T16:15:43.358Z"
+      },
+      "tra-01": {
+        "status": "ambigu",
+        "sources": [
+          "ecf2d2c6fc63b087"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "set": [
+          1,
+          2
+        ]
+      },
+      "tra-03": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "63f8f7ccfb5f9f76"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Baisse du nombre d’élèves par classe limitée au primaire (TF1, août 2026)."
+      },
+      "tra-02": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "be10c9cf52b6ebd8"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Engagement général sur les moyens de l’hôpital, sans chiffrage ni arbitrage budgétaire précisé."
+      },
+      "cli-06": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "c0bc6ad286f9f2a2"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Réaction à la loi d’urgence agricole ; porte sur les normes agricoles."
+      },
+      "cli-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "86366e872729b4b9"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z"
+      },
+      "cli-02": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "2c3e972b8ee3a4b0"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z"
+      },
+      "cli-03": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "a3849ba2ec9ac627"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Le coût pour les producteurs n’est pas abordé."
+      },
+      "eur-05": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "4c1aaeb7972a5dd8"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Porte sur la défense."
+      },
+      "eur-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "67466204d79994bc"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Le même texte prévoit aussi de clarifier la répartition des compétences entre échelons."
+      },
+      "dem-03": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "088e389011d3ff53"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z"
+      },
+      "dem-01": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "91ef87ec4d9e3f6e"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z"
+      },
+      "dem-02": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "8834b29923516e02"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Modalités (seuil, portée) non précisées."
+      },
+      "dem-05": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "3c923a001643d415"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Porte sur les ressources (pouvoir d’imposition) ; une loi de décentralisation et de clarification des compétences est aussi prévue."
+      },
+      "tra-05": {
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "b3f5e6f9f9e77655"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z"
+      },
+      "tra-04": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "c5a30111b1ca4207"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z"
+      },
+      "eur-06": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "1118048c23c28464"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Objectif atteint « progressivement »."
+      }
+    },
+    "bernard-cazeneuve": {
+      "eco-02": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "0c6d2d332ac717b6"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Ajoute qu’« une fiscalité juste n’est pas punitive » ; aucun instrument précis (ISF ou autre) n’est nommé."
+      },
+      "tra-01": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "ambigu",
+        "sources": [
+          "1d6e8df28e1acc24"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Refuse un nouveau recul de l’âge légal et privilégie la durée de cotisation ; ne propose pas d’abaisser l’âge légal."
+      },
+      "cli-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "59b2d5c09c6c9b04"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Parle du « renouvellement du parc » planifié, sans chiffrer de nouveaux réacteurs."
+      },
+      "eur-03": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "b561475222d22d06"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Réarmement « à proportion de la menace », sans montant."
+      },
+      "dem-01": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "308a6d0d1b0f05f7"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Une dose de proportionnelle seulement, pas un scrutin entièrement proportionnel."
+      },
+      "dem-03": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "a0f3f69d957001a7"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Demande une « discipline sur le 49.3 », sans proposer sa suppression ni une limitation constitutionnelle précise."
+      },
+      "dem-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "e4959b4315ebde9c"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Porte sur les pouvoirs de décision des territoires ; les ressources propres ne sont pas évoquées."
+      }
+    },
+    "xavier-bertrand": {
+      "tra-01": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "ce177ddf0c81f1e7"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Veut repousser l’âge légal, mais permettre de partir avant avec une décote."
+      },
+      "eco-02": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "bbf9edcad33d9180"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Rejette la taxe Zucman sur les très grands patrimoines (« connerie fiscale ») ; l’article indique qu’il préfère relever la flat tax."
+      },
+      "dem-05": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "cfa6ea0a38fadf90"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "« République des territoires » : plus de compétences locales ; les ressources propres ne sont pas détaillées."
+      },
+      "eur-04": {
+        "value": 0,
+        "status": "declaration-provisoire",
+        "sources": [
+          "b9bd61fdfcb05e3f"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Opposé à l’accord UE-Mercosur en l’état, pas aux accords de libre-échange par principe."
+      },
+      "sec-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "2138abdf1f0849e2"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Discours de campagne pour 2022 : quotas votés par le Parlement, titres « travail » réduits d’un tiers, immigration familiale divisée par trois."
+      },
+      "sec-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "8c6a27296d73ebaa"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Discours de campagne pour 2022."
+      },
+      "sec-06": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "96b4b157d43f7b95"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Discours de campagne pour 2022 ; porte sur les aides au logement."
+      },
+      "sec-02": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "dcfe09c565510f24"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Discours de campagne pour 2022 ; veut aussi mettre fin aux aménagements de peine quasi automatiques."
+      },
+      "eco-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "17ae640a73225976"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Baisse limitée aux heures travaillées au-delà de 35 h."
+      },
+      "cli-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "a22b55d4e1c94052"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:44:58.610Z",
+        "note": "Engagement de campagne pour 2022, sur France Inter."
+      }
+    },
+    "olivier-faure": {
+      "cli-01": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "b4ccbcb81fa5736e"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "« Le nucléaire autant que nécessaire, les énergies renouvelables autant que possible » ; nombre de réacteurs non précisé."
+      },
+      "cli-02": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "35227a42655016c5"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "cli-03": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "16efa06efe357959"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Avec un accompagnement financier des agriculteurs."
+      },
+      "cli-04": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "7fe5a01ca07aebf9"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "La compensation passe par une baisse d’impôts plutôt que par un versement."
+      },
+      "cli-05": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "7a8607415750ecde"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Gratuités partielles ciblées (week-end, jeunes, demandeurs d’emploi), pas de gratuité générale."
+      },
+      "cli-06": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "4c42ee1f50eab0d4"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Formulé à propos des produits phytosanitaires."
+      },
+      "dem-01": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "b02f3542cff3117f"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "dem-02": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "0737e080b5a5f9c4"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "dem-03": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "d6bbd6d876c66961"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Maintenu pour les lois de finances et de financement de la sécurité sociale."
+      },
+      "dem-04": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "10f1ff19085424c1"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "dem-05": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "b2f6aaba1da27086"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Compétences élargies « là où cela rend l’action publique plus performante »."
+      },
+      "dem-06": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "1a000d35dd41be48"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Ne dit pas explicitement que les blancs entrent dans les suffrages exprimés."
+      },
+      "eco-01": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "9abbacae624b740c"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Objectif soumis à des « États généraux de la justice fiscale » ; aucun taux marginal chiffré pour les plus hauts revenus."
+      },
+      "eco-02": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "f67baa0222853b89"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Taxe Zucman : impôt plancher de 2 % sur les patrimoines de plus de 100 millions d’euros, aussi inscrite au projet du PS."
+      },
+      "eco-05": {
+        "value": -1,
+        "status": "parti-uniquement",
+        "sources": [
+          "734a14e756b2402f"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Hausse ciblée des cotisations patronales (fin d’allègements entre 2 et 3,5 SMIC), pas une hausse générale."
+      },
+      "eco-06": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "86a3223139c444d1"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "eur-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "b828c3bd973a97cd"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "eur-04": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "b4824b25c8947f5b"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Refus conditionnel ; refus explicite de l’accord UE-Mercosur."
+      },
+      "eur-05": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "3fcc09c0cd47be14"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Dette commune « ad hoc » pour des projets industriels ; le projet demande aussi un nouvel emprunt européen commun de 500 milliards d’euros."
+      },
+      "eur-06": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "4eb8354f57c25043"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "lib-01": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "544f785a56de614f"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "lib-03": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "07e7e751cb048378"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Passe d’abord par une convention citoyenne."
+      },
+      "lib-04": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "48b7db8b3aea3d55"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Sanction par la perte des aides publiques ; le projet propose aussi d’inverser la charge de la preuve."
+      },
+      "lib-05": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "6c56c95356759ce1"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "sec-02": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "8f9ab6958006c8a5"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Ne vise pas explicitement les seules courtes peines."
+      },
+      "sec-05": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "0728628cf96989df"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Va au-delà des seuls métiers en tension."
+      },
+      "tra-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "ef9ff4f7af3f58b1"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "tra-02": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "7d66e7381e40faa0"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Le projet ne dit pas quelles économies ou recettes financeraient ces moyens."
+      },
+      "tra-04": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "63c039f5eb701b6e"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "tra-05": {
+        "value": -1,
+        "status": "parti-uniquement",
+        "sources": [
+          "ce63c13fa4581737"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Porte sur les sanctions et radiations, pas sur la durée d’indemnisation."
+      },
+      "tra-06": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "0223d553f96dfe7e"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Le projet admet des fermetures en zone rurale « avec concertation préalable et solution alternative »."
+      }
+    },
+    "emmanuel-maurel": {
+      "eco-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "067c6af0832bb109"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "eco-03": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "3663de64bd3655b5"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Il s’agit du grand emprunt finançant un plan d’investissement de 300 milliards d’euros ; le programme ajoute : « Le problème n’est pas que la France dépense trop, mais qu’elle ne produit plus assez. »"
+      },
+      "eco-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "29258a58f415d3a1"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Le texte de congrès de la GRS (juin 2026) envisage toutefois de modifier les allègements de cotisations patronales en avantageant les secteurs industriels."
+      },
+      "eco-06": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "e04f5c2dd10b4ef4"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "tra-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c035bb68ae95d743"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Retour à 62 ans (et non 60 ans) : abaissement par rapport à la réforme de 2023."
+      },
+      "tra-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "3cb324a1202fa75e"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Le programme propose aussi de supprimer la T2A et de reprendre une partie de la dette hospitalière."
+      },
+      "tra-03": {
+        "value": 0,
+        "status": "parti-uniquement",
+        "sources": [
+          "c58958f97e6ab4d9"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Texte proposé par Emmanuel Maurel et Marie-Noëlle Lienemann. Le programme 2027 compte sur la baisse démographique pour réduire les classes surchargées et prévoit des enseignants supplémentaires en éducation prioritaire."
+      },
+      "tra-04": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "6713a78d48a170be"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "tra-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "cfa98f3895120ed9"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "sec-02": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "80809eff6cccb375"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Juste avant : « Cela ne signifie pas que toute sanction doive être une peine de prison. »"
+      },
+      "sec-04": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "8e17f69c1fcbf64b"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Il qualifie cette position d’« équilibrée et républicaine » ; le programme dit que la France doit « maîtriser démocratiquement sa politique migratoire »."
+      },
+      "sec-05": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "43d3f985337e49db"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "La mesure vise les travailleurs sans papiers en général, pas seulement les métiers en tension."
+      },
+      "lib-04": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "858cd4da6a6f24ae"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "La sanction proposée prend la forme d’un conditionnement des aides publiques."
+      },
+      "lib-06": {
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "b02053dfd3630a40"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Texte proposé par Emmanuel Maurel et Marie-Noëlle Lienemann. En entretien (Libre Journal, 6 octobre 2026), il veut conserver les lois de 2004 et 2010 et juge l’interdiction du voile dans la rue proposée par le RN « des stigmatisations insup"
+      },
+      "cli-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "4e118fd477c27e12"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Le texte de congrès de la GRS mentionne explicitement « des nouveaux réacteurs »."
+      },
+      "eur-01": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "d30b899855ca75b9"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "eur-02": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "112033165625b2dc"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Paragraphe « Désobéissance ciblée » ; s’y ajoute la fin de l’application de la directive sur le travail détaché. Le programme 2027 prévoit de sortir du marché européen de l’électricité."
+      },
+      "eur-03": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "95cb3f0c5f09ca01"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z"
+      },
+      "eur-04": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "0800ec34faf4e417"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Il cite son vote contre l’accord UE–Nouvelle-Zélande et critique les accords avec le Chili, le Mexique et le Mercosur."
+      },
+      "dem-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "07bfab4f6465e96b"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "« En tout ou partie » : proportionnelle intégrale ou mixte. Le programme 2027 ne reprend pas ce point."
+      },
+      "dem-02": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "da53e90f53c3b9b0"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Le texte de congrès de la GRS se dit « fervents partisans du Référendum d’Initiative Citoyenne (RIC) »."
+      },
+      "dem-05": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "cfd741e45f7253af"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:54:08.652Z",
+        "note": "Pas de nouveaux pouvoirs, mais le même texte promet de garantir « l’autonomie fiscale des collectivités territoriales » avec des ressources stables et dynamiques : plus de ressources, pas plus de pouvoirs."
+      }
+    },
+    "segolene-royal": {
+      "eco-02": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "8105fc6dd518cbcb"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:58:09.138Z",
+        "note": "Débat BFMTV de la primaire. Le 31 août 2026 (France 2), elle parlait de l'« Impôt de solidarité sur la fortune financière » supprimé sous Macron."
+      },
+      "cli-03": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "a64ee843c49a2ade"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:58:09.138Z",
+        "note": "Réponse sur le retour de pesticides interdits (néonicotinoïdes), qu'elle qualifie de « faute grave ». Elle demande aussi des exigences comparables pour les produits importés."
+      },
+      "cli-04": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "68f3a2d54e6ce533"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:58:09.138Z",
+        "note": "Propos tenus à propos des Gilets jaunes. La compensation pour les ménages modestes n'est pas abordée. En septembre 2026, elle demande aussi une baisse de la TVA et des taxes sur les carburants."
+      },
+      "lib-06": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "a2ea7e6622aa592f"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:58:09.138Z",
+        "note": "Réponse sur BFMTV (7 septembre 2026) à la proposition du RN d'interdire le voile dans l'espace public. Elle rappelle que la burqa y est déjà interdite. En décembre 2025, elle préférait la pédagogie à une interdiction pour les mineures."
+      },
+      "sec-05": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "0b9bf10b9b9e697d"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-08T17:58:09.138Z",
+        "note": "Débat BFMTV du 4 octobre 2026. Ne précise pas les critères. En septembre 2024, elle jugeait « idéologique » et « impossible » la régularisation de tous les sans-papiers."
       }
     }
   },
@@ -7769,6 +9108,1032 @@
       "publisher": "Becht 2027 (site de campagne officiel)",
       "url": "https://becht2027.fr/",
       "passage": "Moins de pesticides, plus de médecins !\n\n  * de maladies\n  * de prise en charge\n  * une vie plus longue en meilleure santé"
+    },
+    {
+      "id": "0c6d2d332ac717b6",
+      "title": "Tenir la promesse de la France – Bernard Cazeneuve (Lettre aux Français)",
+      "publisher": "Revue Politique et Parlementaire",
+      "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+      "date": "2026-07-24",
+      "passage": "Une fiscalité qui atteint réellement les très grandes fortunes, les plus hauts revenus du capital, les rentes financières qui s’accumulent sans contribuer au financement de l’innovation et à l’investissement productif relève de l’équité et non de la démagogie."
+    },
+    {
+      "id": "1d6e8df28e1acc24",
+      "title": "Tenir la promesse de la France – Bernard Cazeneuve (Lettre aux Français)",
+      "publisher": "Revue Politique et Parlementaire",
+      "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+      "date": "2026-07-24",
+      "passage": "Plutôt que de reculer encore l’âge légal au prix d’un débat sans issue, il faut reprendre, sur des bases nouvelles et négociées, la trajectoire d’allongement engagée en 2014."
+    },
+    {
+      "id": "59b2d5c09c6c9b04",
+      "title": "Tenir la promesse de la France – Bernard Cazeneuve (Lettre aux Français)",
+      "publisher": "Revue Politique et Parlementaire",
+      "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+      "date": "2026-07-24",
+      "passage": "Elle suppose d’assumer l’atout que représente pour la Nation la filière électronucléaire. Il serait irresponsable de s’en passer. Le renouvellement du parc impliquera une planification"
+    },
+    {
+      "id": "b561475222d22d06",
+      "title": "Tenir la promesse de la France – Bernard Cazeneuve (Lettre aux Français)",
+      "publisher": "Revue Politique et Parlementaire",
+      "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+      "date": "2026-07-24",
+      "passage": "Cela suppose de réarmer, à proportion de la menace. De consolider notre industrie de défense et de planifier nos coopérations européennes, en privilégiant les productions nationales et continentales. Et de donner enfin à nos forces les moyens qui leur manquent."
+    },
+    {
+      "id": "308a6d0d1b0f05f7",
+      "title": "Tenir la promesse de la France – Bernard Cazeneuve (Lettre aux Français)",
+      "publisher": "Revue Politique et Parlementaire",
+      "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+      "date": "2026-07-24",
+      "passage": "Il y faut aussi un Parlement qui représente la diversité du pays et qui pratique, en son sein, la culture du compromis. Introduire une dose de proportionnelle dans le mode de scrutin législatif y contribuerait utilement."
+    },
+    {
+      "id": "a0f3f69d957001a7",
+      "title": "Tenir la promesse de la France – Bernard Cazeneuve (Lettre aux Français)",
+      "publisher": "Revue Politique et Parlementaire",
+      "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+      "date": "2026-07-24",
+      "passage": "Les majorités successives ont gouverné par ordonnances et par procédures accélérées, en usant et parfois en abusant de l’article 49.3 de la Constitution. Ces mécanismes ont été employés au-delà de toute raison."
+    },
+    {
+      "id": "e4959b4315ebde9c",
+      "title": "Tenir la promesse de la France – Bernard Cazeneuve (Lettre aux Français)",
+      "publisher": "Revue Politique et Parlementaire",
+      "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+      "date": "2026-07-24",
+      "passage": "Refonder la territorialité de la République, clarifier qui fait quoi, faire confiance aux territoires pour une part significative des décisions qui les concernent exige une refonte majeure."
+    },
+    {
+      "id": "e26aa4aeded65be5",
+      "title": "Meeting du 26 septembre 2026 : discours de Nathalie Arthaud",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html",
+      "date": "2026-09-26",
+      "passage": "Nous défendrons le SMIC à 2 200 € nets. Pas pour faire plus radical que les autres candidats de gauche, mais parce qu’à moins de 2 200 €, est-ce qu’on est à l’abri du besoin"
+    },
+    {
+      "id": "6eafd9fbcfd78c57",
+      "title": "Réponse de Nathalie Arthaud à une question sur la suppression de la TVA",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/medias/presentation/fichiers/2022/03/Supprimer-la-TVA.pdf",
+      "date": "2022-03-07",
+      "passage": "Il faudrait supprimer la TVA et faire reposer la fiscalité exclusivement sur la classe riche qui en a les moyens, sur les profits du capital, sous toutes ses formes."
+    },
+    {
+      "id": "358ba093f02d71c1",
+      "title": "Saignée pour les classes populaires, jackpot pour les marchands d'armes (éditorial signé Nathalie Arthaud)",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/saignee-classes-populaires-jackpot-marchands-darmes-185617.html",
+      "date": "2025-07-07",
+      "passage": "excluant de supprimer les 70 à 80 milliards d’exonérations de cotisations sociales concédées chaque année aux patrons, l’état s’en prend aux malades"
+    },
+    {
+      "id": "c612d552f06018ed",
+      "title": "Nathalie Arthaud : \"La lutte de classe est notre boussole\" (meeting de campagne 2022)",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/journal/article/2022-04-06-nathalie-arthaud-la-lutte-de-classe-est-notre-boussole_251898.html",
+      "date": "2022-04-06",
+      "passage": "Ils doivent viser l’instauration de leur propre pouvoir. Pas seulement pour assurer la retraite à 60 ans ou un meilleur salaire, mais pour changer toute la société !"
+    },
+    {
+      "id": "ec88eb2270bb549c",
+      "title": "Meeting du 26 septembre 2026 : discours de Nathalie Arthaud",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html",
+      "date": "2026-09-26",
+      "passage": "il faut réquisitionner leurs profits, les leur confisquer et les consacrer aux besoins de la population : aux hôpitaux qui manquent de soignants, aux écoles où les classes sont surchargées"
+    },
+    {
+      "id": "9d6c50443aa89936",
+      "title": "Présidentielle 2022 #1 : Demandez le programme logement de Nathalie Arthaud",
+      "publisher": "MySweetImmo",
+      "url": "https://www.mysweetimmo.com/2021/11/17/presidentielle-2022-1-demandez-le-programme-logement-de-nathalie-arthaud-lutte-ouvriere/",
+      "date": "2021-11-17",
+      "passage": "L’encadrement des loyers n’est que très peu appliqué, dans quelques grandes villes. Je pense que c’est la population elle-même, par le biais de comités locaux, qui doit pouvoir contrôler les loyers, sans passer par des institutions incontrôlées."
+    },
+    {
+      "id": "f3684af92bc6f000",
+      "title": "Le gouvernement veut nous faire les poches au profit des capitalistes (éditorial signé Nathalie Arthaud)",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/gouvernement-veut-faire-poches-profit-capitalistes-165459.html",
+      "date": "2024-04-01",
+      "passage": "Alors que la durée et le montant des allocations ont déjà été réduits par les mesures précédentes, il se dit favorable à une baisse de la durée maximum d’indemnisation, en osant dire qu’il faut inciter au travail."
+    },
+    {
+      "id": "888b89c96e082437",
+      "title": "Réponse de Nathalie Arthaud à l'Association de citoyens contre les déserts médicaux",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/medias/presentation/fichiers/2022/03/Deserts-medicaux.pdf",
+      "date": "2022-02-15",
+      "passage": "Il faut donc des mesures d’urgence. Parmi elles, il faut imposer la réouverture des établissements de santé de proximité qui ont été fermés : maternités, cliniques, centres de santé…"
+    },
+    {
+      "id": "ed3c6b872bcff8bd",
+      "title": "Nathalie Arthaud, Présidentielle 2027 (brochure)",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+      "date": "2026-06-26",
+      "passage": "Régularisation de tous les sans-papiers, liberté de circulation et d’installation pour chaque être humain de cette planète ! Union de tous les travailleurs !"
+    },
+    {
+      "id": "7a02729c142b84bf",
+      "title": "Lettre de Nathalie Arthaud à l'ADMD",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/medias/presentation/fichiers/2022/03/Mourir-dans-la-dignite.pdf",
+      "date": "2021-12-11",
+      "passage": "Je suis pour que la loi permette le suicide assisté c'est-à-dire l’euthanasie pour les personnes en phase avancée ou terminale, à condition qu'elle comporte le maximum de garde-fous pour un choix aussi grave"
+    },
+    {
+      "id": "25fe94d62cfc6a60",
+      "title": "Meeting du 26 septembre 2026 : discours de Nathalie Arthaud",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html",
+      "date": "2026-09-26",
+      "passage": "Préférence nationale, interdiction du voile dans l’espace public, intensification de la chasse aux sans-papiers… Le Pen peut trouver 1 000 façons de leur pourrir la vie, toutes aussi révoltantes les unes que les autres."
+    },
+    {
+      "id": "c382ba5eb552fee8",
+      "title": "Réponse de Nathalie Arthaud au questionnaire TDIE sur les transports",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/medias/presentation/fichiers/2022/03/TDIE-transports-NathalieArthaud2022.pdf",
+      "date": "2022-03-10",
+      "passage": "les travailleurs ont les moyens d'imposer une toute autre organisation de l'économie et des transports : instaurer la gratuité des transports en commun"
+    },
+    {
+      "id": "92a1b852fd93781a",
+      "title": "Saignée pour les classes populaires, jackpot pour les marchands d'armes (éditorial signé Nathalie Arthaud)",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/saignee-classes-populaires-jackpot-marchands-darmes-185617.html",
+      "date": "2025-07-07",
+      "passage": "Refusons de nous sacrifier pour alimenter les profits de Dassault, Thales et autres marchands d’armes ! Le gouvernement justifie cette hausse massive du budget militaire par la nécessité de se défendre et de faire la guerre si nous sommes attaqués."
+    },
+    {
+      "id": "ce177ddf0c81f1e7",
+      "title": "Présidentielle 2027 : Xavier Bertrand, un non candidat en campagne",
+      "publisher": "Nous France (reprise de L’Opinion)",
+      "url": "https://www.nousfrance.fr/2026/08/presidentielle-2027-xavier-bertrand-un-non-candidat-en-campagne-lopinion/",
+      "date": "2026-08-19",
+      "passage": "Si on vit plus longtemps, il faut accepter de travailler plus longtemps, de repousser l’âge légal"
+    },
+    {
+      "id": "bbf9edcad33d9180",
+      "title": "« Que l’État arrête de nous faire les poches ! » : à Saint-Quentin, Xavier Bertrand s’échauffe pour la présidentielle",
+      "publisher": "Nous France (reprise du Point)",
+      "url": "https://www.nousfrance.fr/2025/10/que-letat-arrete-de-nous-faire-les-poches-a-saint-quentin-xavier-bertrand-sechauffe-pour-la-presidentielle-le-point/",
+      "date": "2025-10-26",
+      "passage": "je le dis à monsieur Zucman : “créez votre entreprise et ensuite venez nous dire ce que vous en pensez de votre taxe”"
+    },
+    {
+      "id": "cfa6ea0a38fadf90",
+      "title": "Rencontres économiques d’Aix : « Il faut une République des territoires et un mandat unique » pour Xavier Bertrand",
+      "publisher": "Nous France (reprise de La Provence)",
+      "url": "https://www.nousfrance.fr/2026/07/rencontres-economiques-daix-il-faut-une-republique-des-territoires-et-un-mandat-unique-pour-xavier-bertrand-la-provence/",
+      "date": "2026-07-05",
+      "passage": "L’État central doit se concentrer – et exceller – sur ses missions régaliennes : la justice, la sécurité, le contrôle de l’immigration, la défense et la diplomatie. Pour tout le reste, la gestion de la vie quotidienne doit être locale."
+    },
+    {
+      "id": "b9bd61fdfcb05e3f",
+      "title": "Xavier Bertrand : « On ne dirige pas un pays par la peur »",
+      "publisher": "Nous France (reprise du Parisien)",
+      "url": "https://www.nousfrance.fr/2026/01/xavier-bertrand-on-ne-dirige-pas-un-pays-par-la-peur-le-parisien/",
+      "date": "2026-01-10",
+      "passage": "Je ne m’oppose pas, par principe, aux accords internationaux s’ils sont source de prospérité. Mais pas s’ils menacent des pans de notre économie ou s’ils sont incompatibles avec nos impératifs de qualité et de sécurité alimentaire."
+    },
+    {
+      "id": "2138abdf1f0849e2",
+      "title": "Immigration : reprenons le contrôle",
+      "publisher": "Nous France",
+      "url": "https://www.nousfrance.fr/2021/11/immigration-reprenons-le-controle/",
+      "date": "2021-11-04",
+      "passage": "L’immigration familiale, l’immigration des étudiants et l’immigration du travail ne peuvent pas être traitées de manière identique : je propose de faire porter l’essentiel de l’effort de réduction de l’immigration légale sur l’immigration familiale."
+    },
+    {
+      "id": "8c6a27296d73ebaa",
+      "title": "Immigration : reprenons le contrôle",
+      "publisher": "Nous France",
+      "url": "https://www.nousfrance.fr/2021/11/immigration-reprenons-le-controle/",
+      "date": "2021-11-04",
+      "passage": "C’est pourquoi j’abrogerai la circulaire de régularisation de novembre 2012. Et la loi posera une règle simple : plus aucun étranger entré illégalement en France ne pourra être régularisé."
+    },
+    {
+      "id": "96b4b157d43f7b95",
+      "title": "Immigration : reprenons le contrôle",
+      "publisher": "Nous France",
+      "url": "https://www.nousfrance.fr/2021/11/immigration-reprenons-le-controle/",
+      "date": "2021-11-04",
+      "passage": "Je suis prêt à aller plus loin, mais il faut dire la vérité sur ce qui existe déjà. Je propose que, désormais, les aides au logement ne soient accordées qu’à ceux qui sont durablement installés de façon légale sur notre sol."
+    },
+    {
+      "id": "dcfe09c565510f24",
+      "title": "La sécurité à nouveau – Discours de Saint-Quentin",
+      "publisher": "Nous France",
+      "url": "https://www.nousfrance.fr/2021/09/la-securite-a-nouveau-discours-de-saint-quentin/",
+      "date": "2021-09-20",
+      "passage": "Rétablissons les courtes peines de prison, même inférieures à un mois, car une peine courte peut être une bonne mesure pour permettre une prise de conscience qui empêchera le basculement dans une forme de délinquance plus grave, ou dans la récidive."
+    },
+    {
+      "id": "17ae640a73225976",
+      "title": "Pour une société du travail",
+      "publisher": "Nous France",
+      "url": "https://www.nousfrance.fr/2021/10/pour-une-societe-du-travail/",
+      "date": "2021-10-02",
+      "passage": "Les heures travaillées au-delà de 35h seront clairement sans impôt et sans charge sociale comme l’étaient les heures supplémentaires en 2007. Toutes les entreprises bénéficieront d’un allégement de cotisations sociales."
+    },
+    {
+      "id": "a22b55d4e1c94052",
+      "title": "2022: Xavier Bertrand défend le nucléaire, \"énergie d'avenir\"",
+      "publisher": "L’Info Durable (AFP)",
+      "url": "https://www.linfodurable.fr/2022-xavier-bertrand-defend-le-nucleaire-energie-davenir-25206",
+      "date": "2021-04-18",
+      "passage": "Si je suis élu président de la République, c'est dès l'été 2022 que je prendrai la décision de lancer de nouveaux réacteurs, je ne tergiverserai pas, je prendrai cette décision très clairement"
+    },
+    {
+      "id": "42d0a15eef9331ec",
+      "title": "Taxe Zucman: c'est \"non\" pour Larcher, \"la base de tout accord\" pour Glucksmann",
+      "publisher": "Brut (AFP)",
+      "url": "https://www.brut.media/fr/articles/taxe-zucman-cest-non-pour-larcher-la-base-de-tout-accord-pour-glucksmann",
+      "date": "2025-11-17",
+      "passage": "Ce dont on ne peut pas discuter et ce qui est la condition de possibilité de tout accord, c'est le fait qu'à la fin un dispositif permette de taxer (...) ceux qui ont multiplié par deux leur fortune sur les huit dernières années"
+    },
+    {
+      "id": "ecf2d2c6fc63b087",
+      "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu’il faut retenir du dernier débat de la primaire socialiste",
+      "publisher": "LCP",
+      "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+      "date": "2026-10-05",
+      "passage": "Nous abrogerons la réforme injuste de 2023. (...) On ne pourra pas faire 60 ans, ce sera 62 ans"
+    },
+    {
+      "id": "63f8f7ccfb5f9f76",
+      "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+      "publisher": "Public Sénat",
+      "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+      "date": "2026-08-24",
+      "passage": "Je propose un plan sur 5 ans : d’abord la hausse de la rémunération des enseignants, ensuite une baisse du nombre d’élèves par classe en primaire et la rénovation du bâti scolaire."
+    },
+    {
+      "id": "be10c9cf52b6ebd8",
+      "title": "Raphaël Glucksmann - Sa lettre aux Français",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/posts/2fgDdljEIy36rgxBjRyiQZ/raphael-glucksmann-sa-lettre-aux-francais",
+      "date": "2026-08-25",
+      "passage": "Nous redonnerons à l’école, à l’hôpital, aux services publics les moyens de tenir leur promesse."
+    },
+    {
+      "id": "c0bc6ad286f9f2a2",
+      "title": "Réaction de Raphaël Glucksmann suite à l'adoption de la loi d'urgence agricole",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/posts/68jyTyNjDww1F2yvJ1c4St/reaction-de-raphael-glucksmann-suite-a-l-adoption-de-la-loi-d-urgence-agricole",
+      "date": "2026-07-21",
+      "passage": "Plutôt que de s’attaquer au partage injuste de la PAC et de la valeur, à la concurrence déloyale, la droite et l’extrême-droite s’en prennent comme toujours aux normes environnementales. Elles préfèrent offrir des pesticides qu’un revenu décent à nos agriculteurs."
+    },
+    {
+      "id": "86366e872729b4b9",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Conforter le rôle du nucléaire, énergie pilotable et décarbonée, en assurant la sûreté des centrales existantes et la construction à temps de nouvelles unités."
+    },
+    {
+      "id": "2c3e972b8ee3a4b0",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Mettre fin aux privilèges actuels des transports polluants : suppression des exonérations de TVA et de taxe sur le kérosène, étendre l’interdiction des vols intérieurs avec alternative ferroviaire viable"
+    },
+    {
+      "id": "a3849ba2ec9ac627",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Réduire massivement les intrants chimiques et soutenir les alternatives durables pour rendre nos fermes plus autonomes, retrouver notre souveraineté."
+    },
+    {
+      "id": "71ca1a74c90ec072",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "la classification des contenus. Interdire les réseaux sociaux pour les moins de 15 ans"
+    },
+    {
+      "id": "4c1aaeb7972a5dd8",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Oeuvrer à la mise en place rapide d’un fonds européen de défense de 500 milliards d’euros via un emprunt commun."
+    },
+    {
+      "id": "67466204d79994bc",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "nous assumerons un bond en avant de la construction politique européenne. Loin d’un idéal abstrait, notre ambition fédérale pour l’Europe est donc guidée par le souci de l’efficacité et du réalisme."
+    },
+    {
+      "id": "68359763c6bbfa4a",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Augmenter le SMIC à 1600 euros net dans les deux ans qui suivent notre accession au pouvoir."
+    },
+    {
+      "id": "088e389011d3ff53",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Investir le premier ministre par un vote de confiance de l’Assemblée nationale (sur proposition préalable du Président de la République) et instaurer la motion de censure “constructive” (censurer un gouvernement exigera de proposer un successeur), ce qui permettra de mettre fin au 49.3."
+    },
+    {
+      "id": "91ef87ec4d9e3f6e",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Instaurer immédiatement la proportionnelle, de préférence par circonscriptions régionales avec un fléchage départemental des candidats."
+    },
+    {
+      "id": "8834b29923516e02",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Instaurer un droit d’initiative citoyenne, permettant de déclencher des séquences démocratiques avec des référendums à l’échelle locale et nationale, généraliser des conventions citoyennes."
+    },
+    {
+      "id": "3c923a001643d415",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Renforcer la démocratie locale en instaurant une loi pluriannuelle des finances locales, en renforçant le pouvoir d’imposition des collectivités et en élisant les conseils communautaires des intercommunalités au suffrage universel direct par scrutin de liste paritaire."
+    },
+    {
+      "id": "b3f5e6f9f9e77655",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Abroger la réforme Macron de l’assurance chômage, injuste et inefficace."
+    },
+    {
+      "id": "c5a30111b1ca4207",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Encadrer les loyers dans les zones en grande tension pour garantir l’accès au logement aux ménages modestes."
+    },
+    {
+      "id": "665ee68118cc549e",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "un traitement non discriminatoire. Généraliser les récépissés de contrôle d’identité."
+    },
+    {
+      "id": "9c779bc92393add5",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Renforcer l’égalité salariale entre hommes et femmes en rendant les écarts de rémunération transparents et en renforçant les sanctions contre les employeurs discriminants et en revalorisant les métiers féminisés."
+    },
+    {
+      "id": "1551294956edebe3",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Faciliter les démarches de régularisation des travailleurs sans papiers, programmer des cours de français universels suffisants pour atteindre le niveau A2"
+    },
+    {
+      "id": "1118048c23c28464",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Renforcer la loi de développement solidaire en intégrant une programmation budgétaire annuelle pour atteindre progressivement 0,7 % du RNB dédié à l’aide publique au développement."
+    },
+    {
+      "id": "b4ccbcb81fa5736e",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "Ce mix devra s’appuyer sur le parc nucléaire historique, qui sera partiellement renouvelé, ainsi que sur le développement des énergies renouvelables."
+    },
+    {
+      "id": "35227a42655016c5",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "Encadrer plus strictement les vols intérieurs en les interdisant si une alternative en train est disponible en moins de 4h"
+    },
+    {
+      "id": "16efa06efe357959",
+      "title": "Le Projet socialiste – Vivre avec la nature",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-avec-la-nature/",
+      "passage": "Réduire l’usage des engrais et des pesticides de synthèse et interdire les produits les plus toxiques dont le glyphosate ."
+    },
+    {
+      "id": "7fe5a01ca07aebf9",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Construire une fiscalité écologique et du carbone, compensée par une baisse des impôts touchant les classes populaires."
+    },
+    {
+      "id": "7a8607415750ecde",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "Faire baisser le prix du train, en encadrant la variation des prix du TGV en temps réel (yield management), en renforçant les tarifs sociaux ou les gratuités partielles dans les transports du quotidien"
+    },
+    {
+      "id": "4c42ee1f50eab0d4",
+      "title": "Le Projet socialiste – Vivre avec la nature",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-avec-la-nature/",
+      "passage": "veiller à empêcher toutes tentatives de réintroduction des produits interdits comme les néonicotinoïdes, en s’appuyant sur le principe de non-abaissement des réglementations déjà existantes."
+    },
+    {
+      "id": "b02f3542cff3117f",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Instaurer un mode de scrutin proportionnel pour les élections législatives, inspiré du modèle allemand, qui combine l’élection de députés dans des circonscriptions locales et une répartition des sièges selon les voix obtenues nationalement par chaque parti."
+    },
+    {
+      "id": "0737e080b5a5f9c4",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Instaurer une démocratie continue et participative en facilitant l’usage du référendum grâce à l’abaissement du seuil pour le référendum d’initiative partagée (RIP) avec 1 million de signatures et la création d’un référendum d’initiative citoyenne (RIC)."
+    },
+    {
+      "id": "d6bbd6d876c66961",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "supprimer le vote bloqué (art. 44 al. 3) et supprimer la possibilité de recourir au 49 al. 3 en dehors de l’examen des lois de finances et de financement de la sécurité sociale."
+    },
+    {
+      "id": "10f1ff19085424c1",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Interdire la nomination d’un Premier ministre et de ministres sous le coup d’une peine d’inéligibilité. Déclarer inéligible tout élu condamné pour corruption ou manquement à la probité."
+    },
+    {
+      "id": "b2f6aaba1da27086",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Développer l’autonomie fiscale des collectivités pour garantir leur pouvoir d’agir, en leur attribuant des ressources dynamiques et cohérentes avec leur action locale"
+    },
+    {
+      "id": "1a000d35dd41be48",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Renforcer la prise en compte du vote blanc en considérant une élection comme invalide si le nombre de votes blancs dépasse 50 % des suffrages exprimés."
+    },
+    {
+      "id": "9abbacae624b740c",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Refonder l’imposition du revenu pour renforcer son universalité et sa progressivité : Préparer à la fusion de l’impôt sur le revenu, la CSG et la CRDS dans un nouvel impôt sur le revenu, qui bénéficierait d’un plus grand nombre de tranches pour une meilleure progressivité."
+    },
+    {
+      "id": "f67baa0222853b89",
+      "title": "Budget 2026 : Olivier Faure demande des alternatives à Sébastien Lecornu si la taxe Zucman n’est pas votée",
+      "publisher": "Europe 1",
+      "url": "https://www.europe1.fr/node/869567",
+      "date": "2025-10-31",
+      "passage": "Je vais défendre ce texte, mais je ne sais pas si ce sera voté parce qu'il y a une majorité, visiblement, contre la taxe Zucman"
+    },
+    {
+      "id": "734a14e756b2402f",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Supprimer les exonérations sociales qui n’ont pas d’effet sur l’emploi, entre 2 et 3,5 SMIC, pour une économie de 11 milliards d’euros par an."
+    },
+    {
+      "id": "86a3223139c444d1",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "Réhausser le SMIC à 1 690 € net et ouvrir une conférence sociale pour augmenter les salaires au-dessus du SMIC."
+    },
+    {
+      "id": "b828c3bd973a97cd",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "l’Union européenne doit franchir une étape décisive dans son intégration en se dotant de moyens budgétaires accrus, en abandonnant les politiques d’austérité et en réformant ses institutions pour dépasser la règle de l’unanimité."
+    },
+    {
+      "id": "b4824b25c8947f5b",
+      "title": "Le Projet socialiste – Vivre avec la nature",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-avec-la-nature/",
+      "passage": "Défendre le juste échange en refusant tout nouvel accord de libre-échange qui ne respecte pas la réciprocité effective des normes sociales, sanitaires, environnementales et de conditions de production."
+    },
+    {
+      "id": "3fcc09c0cd47be14",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "Amplifier les projets « d’intérêt européen commun » dans une multitude de secteurs. Plaider pour la levée de dette commune, de manière ad hoc , pour financer ces projets."
+    },
+    {
+      "id": "4eb8354f57c25043",
+      "title": "Le Projet socialiste – Pacifier le monde",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/pacifier-le-monde/",
+      "passage": "Augmenter le niveau de l’APD pour atteindre 0,7 % du RNB et privilégier les dons aux pays les plus pauvres"
+    },
+    {
+      "id": "544f785a56de614f",
+      "title": "Le Projet socialiste – Être en sécurité(s)",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/etre-en-securites/",
+      "passage": "Adopter d’urgence la proposition de loi instaurant un droit à la fin de vie libre puis accompagner les professionnels de santé face à la nouvelle donne"
+    },
+    {
+      "id": "07e7e751cb048378",
+      "title": "Le Projet socialiste – Être en sécurité(s)",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/etre-en-securites/",
+      "passage": "Lancer une convention citoyenne sur l’usage des drogues et la légalisation du cannabis . La légalisation devra aller de pair avec un contrôle étatique strict sur la production et la commercialisation de cannabis"
+    },
+    {
+      "id": "48b7db8b3aea3d55",
+      "title": "Le Projet socialiste – S’épanouir à égalité",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/sepanouir-a-egalite/",
+      "passage": "Conditionner les aides publiques aux entreprises au respect de l’égalité salariale et à la prévention des violences sexistes et sexuelles."
+    },
+    {
+      "id": "6c56c95356759ce1",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Lutter contre les contrôles au faciès avec la mise en place de récépissés de contrôle d’identité."
+    },
+    {
+      "id": "8f9ab6958006c8a5",
+      "title": "Le Projet socialiste – Être en sécurité(s)",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/etre-en-securites/",
+      "passage": "Favoriser la réinsertion des personnes incarcérées. Réviser le droit des peines pour promouvoir les peines alternatives en milieu ouvert."
+    },
+    {
+      "id": "0728628cf96989df",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Régulariser et intégrer par le travail, lutter contre l’exploitation des travailleurs sans papiers. Permettre l’obtention d’un titre de séjour à toute personne étrangère disposant d’un contrat de travail depuis au moins 6 mois."
+    },
+    {
+      "id": "ef9ff4f7af3f58b1",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "L’âge légal de départ, ramené à 62 ans, ne disparaîtra pas pour autant : il continuera de jouer un rôle de protection minimale pour les salariés."
+    },
+    {
+      "id": "7d66e7381e40faa0",
+      "title": "Le Projet socialiste – Être en sécurité(s)",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/etre-en-securites/",
+      "passage": "Créer autant de lits que nécessaire pour les besoins d’hospitalisation en aval des urgences , en gériatrie, pédiatrie et maternité, et en psychiatrie."
+    },
+    {
+      "id": "63c039f5eb701b6e",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "Garantir à chacun l’accès au logement digne et abordable en encadrant les loyers, en stoppant la diminution des aides au logement"
+    },
+    {
+      "id": "ce63c13fa4581737",
+      "title": "Le Projet socialiste – Vivre libres",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "passage": "Garantir le versement automatique de l’allocation chômage et encadrer strictement les radiations et sanctions imposées aux demandeurs d’emploi , en interdisant toute radiation pour refus d’un emploi considéré comme précaire."
+    },
+    {
+      "id": "0223d553f96dfe7e",
+      "title": "Le Projet socialiste – Refaire société",
+      "publisher": "Parti socialiste",
+      "url": "https://projet-socialiste.fr/projet/refaire-societe/",
+      "passage": "Redéployer écoles, hôpitaux, postes et forces de sécurité dans les territoires fragiles, avec la garantie d’un nombre minimal de services physiques par bassin de population et d’une distance maximale entre l’usager et le service."
+    },
+    {
+      "id": "99301edc8378e55d",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "L’impôt sur le revenu sera rendu plus progres- sif, en portant le nombre de tranches à 15"
+    },
+    {
+      "id": "d67121f5c64706a4",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "L’impôt sur la fortune sera rétabli, son taux et sa progressivité seront accentués"
+    },
+    {
+      "id": "4ae8f99b6a9bda77",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "mettre fin aux exonérations de cotisations sociales et autres niches fiscales qui minent les recettes publiques et tirent vers le bas les salaires et l’emploi"
+    },
+    {
+      "id": "87f4463a6db44d2a",
+      "title": "Fabien Roussel – La France des Jours heureux (profession de foi, présidentielle 2022)",
+      "publisher": "Commission nationale de contrôle de la campagne électorale (CNCCEP)",
+      "url": "https://www.cnccep.fr/pdfs/Candidat-11-Fabien-Roussel-Declaration-accessible.pdf",
+      "date": "2022-04-10",
+      "passage": "Augmentation générale des salaires et des pensions : smic à 1 923 euros brut (1 500 euros net), aucune retraite inférieure à 1 200 euros net."
+    },
+    {
+      "id": "5e59b2c3606b11e0",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "Le départ à 60 ans avec une pension à taux plein sera garanti pour une carrière complète, allant de 18 à 60 ans"
+    },
+    {
+      "id": "99e12889936b55f1",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "Les effectifs des classes seront réduits, ils ne devront jamais dépasser les 15 élèves en toute petite section de maternelle, les 20 élèves en maternelle et en primaire, les 25 dans le secondaire."
+    },
+    {
+      "id": "b328ab596925efe5",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "Les loyers seront encadrés et la quittance ne devra pas dépasser 20 % des revenus du foyer."
+    },
+    {
+      "id": "4c0fb23b480d7a4b",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "L’aménagement du territoire permettra que l’usager trouve, près de chez lui, un bouquet de services publics de proximité"
+    },
+    {
+      "id": "52d8f2caaefc355c",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "afin que l’exécution des peines favorise les réinsertions. Les alternatives à l’incarcération, plutôt que la construc- tion de nouvelles prisons"
+    },
+    {
+      "id": "e06dd5de57fef87f",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "Les entreprises disposeront d’un an pour la mettre en œuvre, faute de quoi un administrateur judiciaire le fera à la place de l’employeur."
+    },
+    {
+      "id": "88bceddc01420232",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "Les contrôles au faciès seront combattus, grâce à la mise en place du récépissé justifiant qu’une personne a déjà été contrôlée."
+    },
+    {
+      "id": "3e912e0708d058a6",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "énergie renouvelable pilotable) et dans l’électricité nu- cléaire avec la construction de six EPR supplémentaires au minimum."
+    },
+    {
+      "id": "6526eeaea37143c4",
+      "title": "Fabien Roussel – La France des Jours heureux (profession de foi, présidentielle 2022)",
+      "publisher": "Commission nationale de contrôle de la campagne électorale (CNCCEP)",
+      "url": "https://www.cnccep.fr/pdfs/Candidat-11-Fabien-Roussel-Declaration-accessible.pdf",
+      "date": "2022-04-10",
+      "passage": "Baisse de 30 % des factures d’énergie et baisse des taxes sur les carburants."
+    },
+    {
+      "id": "20e7feb1375ce0a8",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "Les transports collectifs urbains seront élevés au rang de priorité de l’action publique Leur gratuité sera instaurée"
+    },
+    {
+      "id": "67b3b527a9b32795",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "La nouvelle majorité remettra en cause les ac- cords de libre-échange et agira pour sortir l’agri- culture des négociations"
+    },
+    {
+      "id": "f40bc01d752e29bf",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "L’aide publique au développement, fondée sur les besoins des pays récipiendaires, sera por- tée à 0,7 % de la richesse nationale"
+    },
+    {
+      "id": "e25a25f9147cfb2c",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "la proportionnelle intégrale permettra la juste représentation des courants politiques, en fonction de leur influence électorale."
+    },
+    {
+      "id": "45ad740d5b5aa91c",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "son déclenchement reviendra à un million de citoyen·ne·s, réparti·e·s sur l’ensemble du territoire, qui pourront obtenir une consultation du peuple"
+    },
+    {
+      "id": "087e60960a39082a",
+      "title": "La France des Jours heureux – programme présidentiel 2022 de Fabien Roussel (PDF)",
+      "publisher": "Campagne Fabien Roussel 2022 / PCF",
+      "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+      "passage": "L’article 49-3 de la Constitution, qui permet à l’exécutif de s’affranchir des délibérations des Assemblées, sera abrogé"
+    },
+    {
+      "id": "3a3220749246fe5b",
+      "title": "Oui à la défense contre les menaces du nouveau Yalta des prédateurs",
+      "publisher": "Génération Écologie",
+      "url": "https://www.generationecologie.fr/2025/12/10/oui-la-defense-contre-les-menaces-du-nouveau-yalta-des-predateurs/",
+      "date": "2025-12-10",
+      "passage": "Approuvez-vous le principe d’une augmentation du budget de la défense pour soutenir une montée en puissance plus rapide de nos forces armées dès 2026 ? », nous répondrons oui, sans la moindre hésitation"
+    },
+    {
+      "id": "5437a0b6ccbf4adb",
+      "title": "Accord avec le Mercosur : non, c’est non !",
+      "publisher": "Génération Écologie",
+      "url": "https://www.generationecologie.fr/2025/09/04/accord-avec-le-mercosur-non-cest-non/",
+      "date": "2025-09-04",
+      "passage": "La croissance du commerce international, avec toujours plus d’exportations et toujours plus d’importations, est incompatible avec la lutte contre le changement climatique et le respect des limites planétaires. Cette voie est suicidaire."
+    },
+    {
+      "id": "82f03d86f1c7bd44",
+      "title": "10 % !",
+      "publisher": "Génération Écologie",
+      "url": "https://www.generationecologie.fr/2024/02/01/10-2/",
+      "date": "2024-02-01",
+      "passage": "le risque financier hasardeux que représente le choix d’un nouveau programme nucléaire EPR"
+    },
+    {
+      "id": "903919b3bcab99a2",
+      "title": "Présidentielle : « Les Français aspirent à des idées et à des forces nouvelles », estime Delphine Batho, candidate",
+      "publisher": "ICI Poitou",
+      "url": "https://www.ici.fr/emissions/l-invite-de-ici-poitou/delphine-batho-candidate-en-2027-les-francaises-aspirent-a-des-idees-nouvelles-et-a-des-forces-nouvelles-6628651",
+      "date": "2026-09-14",
+      "passage": "que j'appelle une 'république terrestre', c'est-à-dire une république terre-à-terre, qui redonne du pouvoir au local, aux territoires"
+    },
+    {
+      "id": "59ef8cc233d30a07",
+      "title": "Delphine Batho - Députée des Deux-Sèvres",
+      "publisher": "Datan",
+      "url": "https://datan.fr/deputes/deux-sevres-79/depute_delphine-batho",
+      "date": "2026-07-15",
+      "passage": "Delphine Batho a voté en faveur de la proposition de loi créant un droit à l'aide à mourir"
+    },
+    {
+      "id": "7df59263faeb53d6",
+      "title": "Delphine Batho - Votes",
+      "publisher": "Datan",
+      "url": "https://datan.fr/deputes/deux-sevres-79/depute_delphine-batho/votes",
+      "date": "2025-02-20",
+      "passage": "L'ensemble de la proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra riches (première lecture). POUR"
+    },
+    {
+      "id": "4f40ecd496fb3514",
+      "title": "Delphine Batho - Votes",
+      "publisher": "Datan",
+      "url": "https://datan.fr/deputes/deux-sevres-79/depute_delphine-batho/votes",
+      "date": "2025-06-05",
+      "passage": "La proposition de résolution visant à abroger la loi n° 2023-270 du 14 avril 2023 de financement rectificative de la sécurité sociale pour 2023 dite réforme des retraites. POUR"
+    },
+    {
+      "id": "1e655cb664417815",
+      "title": "13 mars : journée européenne pour la décroissance du trafic aérien",
+      "publisher": "Génération Écologie",
+      "url": "https://www.generationecologie.fr/2024/03/12/13-mars-journee-europeenne-pour-la-decroissance-du-trafic-aerien/",
+      "date": "2024-03-12",
+      "passage": "Dès 2019, Génération Écologie avait défendu un programme clair :  – suppression des liaisons aériennes pour lesquelles il existe une alternative en transport en commun en moins de 5 heures."
+    },
+    {
+      "id": "9f0f1c0916f217e2",
+      "title": "Journée mondiale de l’eau : René Dumont avait raison",
+      "publisher": "Génération Écologie",
+      "url": "https://www.generationecologie.fr/2026/03/20/journee-mondiale-de-leau-rene-dumont-avait-raison/",
+      "date": "2026-03-20",
+      "passage": "Zéro pesticides, à commencer par les aires de captage d’eau potable qui doivent être obligatoirement cultivés en agriculture biologique"
+    },
+    {
+      "id": "067c6af0832bb109",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Je propose de rétablir l’ISF, d’augmenter le prélèvement forfaitaire unique (PFU, ou « flat tax ») à 40% et de créer une taxe sur les patrimoines supérieurs à 100 millions d’euros."
+    },
+    {
+      "id": "3663de64bd3655b5",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Ce sera de la bonne dette , consacrée aux investissements d’avenir, qui rapportera plus qu’elle ne coûtera."
+    },
+    {
+      "id": "29258a58f415d3a1",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Je ne propose pas de « rapprocher le net du brut », parce que le salaire net, c’est pour le mois, et le salaire brut, c’est pour la vie ! Toute baisse des cotisations sociales vide les caisses de la Sécurité sociale."
+    },
+    {
+      "id": "e04f5c2dd10b4ef4",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Pour revaloriser le travail, il faut augmenter les salaires . A cette fin, je propose : • le SMIC porté à 1700 euros net dès la prochaine législature"
+    },
+    {
+      "id": "c035bb68ae95d743",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Après avoir obtenu la suspension de la réforme des retraites, elle doit à présent consolider le droit à la retraite à 62 ans, avec un rétablissement des critères de pénibilité."
+    },
+    {
+      "id": "3cb324a1202fa75e",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Je propose de fixer à 4% minimum l’augmentation annuelle des dotations de la Sécurité sociale à l’hôpital ."
+    },
+    {
+      "id": "c58958f97e6ab4d9",
+      "title": "La gauche au rendez-vous du sursaut français – texte d’orientation adopté par le congrès d’Aubervilliers (PDF)",
+      "publisher": "Gauche républicaine et socialiste",
+      "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+      "date": "2026-06-06",
+      "passage": "Face à la baisse démographique (moins 1,7 million d’élèves d’ici 2035), il faudra trouver le juste équilibre entre le nombre d’élèves par classe et la nécessaire revalorisation (y compris salariale) du statut des enseignants"
+    },
+    {
+      "id": "6713a78d48a170be",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Je propose de généraliser l’encadrement des loyers et des prix du foncier"
+    },
+    {
+      "id": "cfa98f3895120ed9",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "la seule mesure que préconisent la droite et le patronat, c’est de réduire à nouveau les droits des chômeurs ! Je refuse ce discours de répression et de culpabilisation des chômeurs ."
+    },
+    {
+      "id": "80809eff6cccb375",
+      "title": "Emmanuel Maurel : « Nous avons été à la hauteur » (entretien)",
+      "publisher": "Libre Journal",
+      "url": "https://librejournal.fr/article/emmanuel-maurel-nous-avons-ete-a-la-hauteur/",
+      "date": "2026-10-06",
+      "passage": "Il faut mieux organiser le système carcéral ; cela passera peut-être par de nouvelles prisons. Mais il existe aussi des peines alternatives : encore faut-il qu’elles soient réellement appliquées."
+    },
+    {
+      "id": "8e17f69c1fcbf64b",
+      "title": "Emmanuel Maurel : « Nous avons été à la hauteur » (entretien)",
+      "publisher": "Libre Journal",
+      "url": "https://librejournal.fr/article/emmanuel-maurel-nous-avons-ete-a-la-hauteur/",
+      "date": "2026-10-06",
+      "passage": "Je défends aussi l’accueil des étudiants étrangers, le droit d’asile, qui appartient à nos principes depuis la Révolution, et une immigration de travail. Mais il ne faut pas céder à un patronat qui souhaite parfois davantage d’immigration"
+    },
+    {
+      "id": "43d3f985337e49db",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Enfin, l’intégration reposant pour une large part sur le travail, il est logique que la France régularise les travailleurs sans-papiers ."
+    },
+    {
+      "id": "858cd4da6a6f24ae",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "pour l’égalité salariale femmes/hommes : transparence, conditionnement des aides publiques, revalorisation des métiers les plus féminisés"
+    },
+    {
+      "id": "b02053dfd3630a40",
+      "title": "La gauche au rendez-vous du sursaut français – texte d’orientation adopté par le congrès d’Aubervilliers (PDF)",
+      "publisher": "Gauche républicaine et socialiste",
+      "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+      "date": "2026-06-06",
+      "passage": "Nous considérons que l’interdiction du port de signes religieux ostensibles par les élèves de l'École publique est une mesure laïque mais nous n’accepterons jamais une telle interdiction dans l’espace public, notamment dans la rue."
+    },
+    {
+      "id": "4e118fd477c27e12",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Elle exigera de l’électricité décarbonée en abondance, via de nouvelles capacités nucléaires, hydroélectriques et renouvelables."
+    },
+    {
+      "id": "d30b899855ca75b9",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Cela devrait nous vacciner contre toute tentation d’un « saut fédéral » et contre toute extension du vote à la majorité qualiﬁée sur les questions diplomatiques et militaires."
+    },
+    {
+      "id": "112033165625b2dc",
+      "title": "La gauche au rendez-vous du sursaut français – texte d’orientation adopté par le congrès d’Aubervilliers (PDF)",
+      "publisher": "Gauche républicaine et socialiste",
+      "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+      "date": "2026-06-06",
+      "passage": "Dans ces conditions, la France n’a pas d’autre choix que de s'écarter des règles européennes sur le marché de l’énergie, la commande et les marchés publics, ainsi que les aides d’État."
+    },
+    {
+      "id": "95cb3f0c5f09ca01",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Pour assurer l’indépendance militaire de la France et garantir un budget de la défense à 3% du PIB, je propose une enveloppe de 100 milliards d’euros"
+    },
+    {
+      "id": "0800ec34faf4e417",
+      "title": "Emmanuel Maurel dans l’Humanité : « On condamne l’agriculture française et européenne à mourir »",
+      "publisher": "Gauche républicaine et socialiste (reprise d’un entretien à l’Humanité)",
+      "url": "https://g-r-s.fr/emmanuel-maurel-dans-lhumanite-on-condamne-lagriculture-francaise-et-europeenne-a-mourir/",
+      "date": "2024-02-01",
+      "passage": "S’il y avait plus de députés du groupe La Gauche (ex-GUE) au Parlement européen, il serait plus difficile de faire passer ce type d’accord."
+    },
+    {
+      "id": "07bfab4f6465e96b",
+      "title": "La gauche au rendez-vous du sursaut français – texte d’orientation adopté par le congrès d’Aubervilliers (PDF)",
+      "publisher": "Gauche républicaine et socialiste",
+      "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+      "date": "2026-06-06",
+      "passage": "Nous devons réinitialiser nos institutions pour redonner la parole aux citoyens et établir une 6ème République, où l’Assemblée élue en tout ou partie au scrutin proportionnel, désigne le Premier ministre."
+    },
+    {
+      "id": "da53e90f53c3b9b0",
+      "title": "Programme – Emmanuel Maurel · 2027 (primaire de la gauche)",
+      "publisher": "Campagne Emmanuel Maurel 2027",
+      "url": "https://emmanuel-maurel.fr/programme/",
+      "passage": "Je plaide pour un recours accru à la démocratie directe, en instaurant une journée annuelle référendaire, au cours de laquelle plusieurs questions, dont une partie d’initiative citoyenne, seront posées aux Français."
+    },
+    {
+      "id": "cfd741e45f7253af",
+      "title": "La gauche au rendez-vous du sursaut français – texte d’orientation adopté par le congrès d’Aubervilliers (PDF)",
+      "publisher": "Gauche républicaine et socialiste",
+      "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+      "date": "2026-06-06",
+      "passage": "La GRS estime que la décentralisation n’a pas besoin « d’acte III » ou d’un nouvel approfondissement, mais d’une rationalisation."
+    },
+    {
+      "id": "8105fc6dd518cbcb",
+      "title": "Présidentielle 2027 : les cinq candidats de la primaire socialiste se sont affrontés à l'occasion d'un dernier débat télévisé avant le scrutin",
+      "publisher": "franceinfo",
+      "url": "https://www.franceinfo.fr/politique/direct-presidentielle-les-candidats-a-la-primaire-ps-place-publique-se-preparent-a-leur-dernier-debat-avant-le-scrutin-qui-les-departagera_8222140.html",
+      "date": "2026-10-04",
+      "passage": "La première chose que je ferais, c'est le rétablissement de l'ISF, un minimum de justice fiscale"
+    },
+    {
+      "id": "a64ee843c49a2ade",
+      "title": "Ségolène Royal : \"Pour 2027, je consulte, je réfléchis. Si je peux être utile, pourquoi pas ?\"",
+      "publisher": "Sud Radio",
+      "url": "https://www.sudradio.fr/linvite-politique/segolene-royal-pour-2027-je-consulte-je-reflechis-si-je-peux-etre-utile-pourquoi-pas",
+      "date": "2026-07-03",
+      "passage": "Nous connaissons également les conséquences des pesticides sur la santé et nous ne pouvons pas ignorer les cancers, notamment chez les enfants, dans certains territoires fortement exposés. La santé publique doit rester prioritaire."
+    },
+    {
+      "id": "68f3a2d54e6ce533",
+      "title": "Budget 2026 : \"Pour réduire le déficit, il faut lutter contre les gaspillages, il ne faut pas baisser les dépenses essentielles\", estime Ségolène Royal",
+      "publisher": "franceinfo (France 2, Les 4 Vérités)",
+      "url": "https://www.franceinfo.fr/politique/segolene-royal/budget-2026-pour-reduire-le-deficit-il-faut-lutter-contre-les-gaspillages-il-ne-faut-pas-baisser-les-depenses-essentielles-estime-segolene-royal_7582286.html",
+      "date": "2025-10-29",
+      "passage": "si j'avais de responsabilités, en 24 heures, la taxe carbone était retirée, c'est insupportable de voir un peuple souffrir."
+    },
+    {
+      "id": "a2ea7e6622aa592f",
+      "title": "France : Ségolène Royal dénonce la “chasse au foulard”",
+      "publisher": "TSA Algérie",
+      "url": "https://www.tsa-algerie.com/?p=300767",
+      "date": "2026-09-08",
+      "passage": "C’est un sujet dégradant. Est-ce que ça produit de la valeur économique de faire la chasse au foulard, franchement ? En plus, c’est inapplicable"
+    },
+    {
+      "id": "0b9bf10b9b9e697d",
+      "title": "Présidentielle 2027 : LFI, Ukraine, retraites, lycées… Ce qu’il faut retenir du dernier débat de la primaire à gauche",
+      "publisher": "20 Minutes",
+      "url": "https://www.20minutes.fr/politique/4251221-20261005-presidentielle-2027-lfi-ukraine-retraites-lycees-faut-retenir-dernier-debat-primaire-gauche",
+      "date": "2026-10-05",
+      "passage": "« Je régularise ceux qui travaillent », a ainsi annoncé Ségolène Royal."
     }
   ],
   "refreshedAt": {
@@ -7781,15 +10146,20 @@
     "nicolas-dupont-aignan": "2026-10-08T15:16:54.685Z",
     "florian-philippot": "2026-10-08T15:22:20.891Z",
     "jean-luc-melenchon": "2026-10-08T15:27:14.482Z",
-    "fabien-roussel": "2026-10-08T15:33:51.406Z",
+    "fabien-roussel": "2026-10-08T17:54:08.652Z",
     "marine-tondelier": "2026-10-08T15:37:56.399Z",
     "francois-ruffin": "2026-10-08T15:43:20.824Z",
-    "delphine-batho": "2026-10-08T15:49:50.025Z",
+    "delphine-batho": "2026-10-08T17:54:08.652Z",
     "karim-bouamrane": "2026-10-08T15:54:15.033Z",
-    "nathalie-arthaud": "2026-10-08T15:58:35.518Z",
+    "nathalie-arthaud": "2026-10-08T17:44:58.610Z",
     "anasse-kazib": "2026-10-08T16:02:13.835Z",
     "selma-labib": "2026-10-08T16:07:45.245Z",
     "olivier-becht": "2026-10-08T16:12:12.614Z",
-    "raphael-glucksmann": "2026-10-08T16:15:43.358Z"
+    "raphael-glucksmann": "2026-10-08T17:44:58.610Z",
+    "bernard-cazeneuve": "2026-10-08T17:44:58.610Z",
+    "xavier-bertrand": "2026-10-08T17:44:58.610Z",
+    "olivier-faure": "2026-10-08T17:54:08.652Z",
+    "emmanuel-maurel": "2026-10-08T17:54:08.652Z",
+    "segolene-royal": "2026-10-08T17:58:09.138Z"
   }
 }
