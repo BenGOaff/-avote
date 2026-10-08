@@ -52,6 +52,8 @@ jobs:
         run: npx tsx scripts/fiches.ts
       - name: Valider
         if: always()
+        env:
+          ANONYMITY_BLOCKLIST: ${{ secrets.ANONYMITY_BLOCKLIST }}
         run: npx tsx scripts/validate-content.ts && npx vitest run
       - name: Proposer la mise à jour
         if: always()

@@ -73,7 +73,7 @@ export function ResultsView() {
   const demo = corpus.mode === 'demo'
 
   return (
-    <div className="stack" style={{ maxWidth: 960 }}>
+    <div className="stack">
       <header>
         <p className="kicker">Tes résultats</p>
         <h1 style={{ fontSize: 'var(--h2)' }}>{R.title}</h1>

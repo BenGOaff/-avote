@@ -120,7 +120,7 @@ export function TestFlow() {
     const selected = current?.kind === 'value' ? current.value : null
 
     return (
-      <div className="narrow">
+      <div>
         <div className="row" style={{ justifyContent: 'space-between', marginBottom: 'var(--s3)' }}>
           <button className="btn btn--ghost btn--small" onClick={prev}>
             <IconArrowLeft width={18} height={18} /> {UI_COPY.test.back}
@@ -137,11 +137,15 @@ export function TestFlow() {
             {group.theme.label}
             <span className="muted"> · {posInTheme + 1}/{group.items.length}</span>
           </p>
-          <h1 ref={headingRef} tabIndex={-1} className="qcard__text">
-            {item.text}
-          </h1>
-          <p className="muted qcard__help">{item.explanation}</p>
+          <div className="qcard__grid">
+            <div>
+              <h1 ref={headingRef} tabIndex={-1} className="qcard__text">
+                {item.text}
+              </h1>
+              <p className="muted qcard__help">{item.explanation}</p>
+            </div>
 
+            <div>
           <div className="scale">
             <div role="radiogroup" aria-label="Ta réponse" className="scale__dots">
               {[...ORDINALS].map((v) => (
@@ -192,6 +196,8 @@ export function TestFlow() {
             {isRed ? UI_COPY.test.redLineOn : UI_COPY.test.redLine}
             <span className="visually-hidden"> : {UI_COPY.test.redLineHint}</span>
           </button>
+            </div>
+          </div>
         </article>
 
         {current?.kind === 'depends' && (
@@ -224,7 +230,7 @@ export function TestFlow() {
     const firstOfNext = flat.findIndex((i) => i.theme === groups[step.themeIndex + 1]?.theme.id)
     const isLast = step.themeIndex === groups.length - 1
     return (
-      <div className="narrow">
+      <div>
         <Chapters current={step.themeIndex} done />
         <div className="mirror">
           <span className="mirror__icon" aria-hidden="true">
@@ -294,7 +300,7 @@ export function TestFlow() {
       return { ...s, priorities: cur }
     })
   return (
-    <div className="wide-test">
+    <div>
       <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none', fontSize: 'var(--h2)' }}>
         {UI_COPY.test.prioritiesTitle}
       </h1>
@@ -379,7 +385,9 @@ function Intro({
       </button>
     )
   return (
-    <div className="narrow">
+    <div>
+      <div className="test-intro">
+        <div>
       <p className="kicker">Présidentielle 2027</p>
       <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none' }}>
         Qu’est-ce qui compte pour toi ?
@@ -391,6 +399,16 @@ function Intro({
       <div className="row" style={{ marginTop: 'var(--s4)' }}>
         {startButtons}
       </div>
+
+      <ul className="theme-row" aria-label="Les sept thèmes">
+        {set.themes.map((t) => (
+          <li key={t.id}>
+            <ThemeIcon theme={t.id} width={22} height={22} />
+            <span>{t.label}</span>
+          </li>
+        ))}
+      </ul>
+        </div>
 
       <ol className="steps" aria-label="Les trois étapes">
         <li>
@@ -423,17 +441,10 @@ function Intro({
           <span className="small muted">Ton profil et les candidats proches, sources à l’appui.</span>
         </li>
       </ol>
+      </div>
 
-      <ul className="theme-row" aria-label="Les sept thèmes">
-        {set.themes.map((t) => (
-          <li key={t.id}>
-            <ThemeIcon theme={t.id} width={22} height={22} />
-            <span>{t.label}</span>
-          </li>
-        ))}
-      </ul>
-
-      <fieldset className="card card--flat" style={{ marginTop: 'var(--s6)' }}>
+      <div className="test-intro__more">
+      <fieldset className="card card--flat" style={{ margin: 0 }}>
         <legend className="visually-hidden">{UI_COPY.storage.title}</legend>
         <p style={{ fontWeight: 700, marginBottom: 'var(--s2)' }}>{UI_COPY.storage.title}</p>
         <p className="small">{UI_COPY.storage.body}</p>
@@ -453,7 +464,7 @@ function Intro({
         </div>
       </fieldset>
 
-      <details className="disclosure" style={{ marginTop: 'var(--s4)' }}>
+      <details className="disclosure" style={{ margin: 0 }}>
         <summary>Comment ça marche</summary>
         <div>
           <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
@@ -467,6 +478,7 @@ function Intro({
           </p>
         </div>
       </details>
+      </div>
     </div>
   )
 }

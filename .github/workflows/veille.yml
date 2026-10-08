@@ -50,6 +50,8 @@ jobs:
           npx tsx scripts/veille.ts $ARGS
 
       - name: Valider les contenus
+        env:
+          ANONYMITY_BLOCKLIST: ${{ secrets.ANONYMITY_BLOCKLIST }}
         run: npx tsx scripts/validate-content.ts
 
       - name: Publier l'état de la veille et proposer les brouillons
