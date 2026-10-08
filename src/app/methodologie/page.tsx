@@ -4,6 +4,8 @@ import { PageHeader } from '@/components/PageHeader'
 import { itemsByTheme, questionnaire } from '@/lib/data'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { AI_NOTICE } from '@/lib/copy'
+import { BLOCS, NUANCE_SOURCE, NUANCE_VALIDATION } from '@/lib/nuances'
+import { BlocDot } from '@/components/Nuance'
 
 export const metadata: Metadata = {
   title: 'Méthode : les questions, le codage et le calcul',
@@ -156,6 +158,33 @@ export default function MethodPage() {
           Avant la liste officielle du Conseil constitutionnel, on distingue les personnes qui ont annoncé leur candidature, celles qui ont annoncé une démarche,
           et celles qui sont seulement évoquées. Ces dernières n’entrent pas dans la comparaison. Une personne peu documentée reste visible avec un dossier
           incomplet. <Link href="/candidats">La liste et ses sources</Link>
+        </p>
+
+        <h2 id="couleurs">Les couleurs des familles politiques</h2>
+        <p>
+          Ça vote ? ne place personne lui-même sur l’échiquier. Chaque candidat reçoit la nuance de son parti dans la grille officielle du ministère de
+          l’Intérieur, et la couleur de son bloc dans la même grille :{' '}
+          <a href={NUANCE_SOURCE.url} rel="noopener noreferrer nofollow" target="_blank">
+            instruction du 2 février 2026
+          </a>
+          , annexes 1 et 3. Le Conseil d’État a rejeté les recours contre ce classement le 27 février 2026 (
+          <a href={NUANCE_VALIDATION.url} rel="noopener noreferrer nofollow" target="_blank">
+            communiqué
+          </a>
+          ).
+        </p>
+        <ul className="legend" style={{ margin: 'var(--s3) 0' }}>
+          {BLOCS.map((b) => (
+            <li key={b.id} className={`bloc-${b.id}`}>
+              <BlocDot bloc={b.id} /> {b.label}
+            </li>
+          ))}
+        </ul>
+        <p>
+          Les couleurs sont celles qu’on voit d’habitude sur les cartes électorales. Elles sont toujours accompagnées du nom du bloc. Le rouge vif reste
+          réservé aux désaccords et aux corrections : la gauche est donc en rose, l’extrême gauche en bordeaux. Quand un parti n’est pas nommé dans la grille,
+          on applique sa règle (la nuance « de sensibilité ») et la fiche l’indique : « nuance déduite ». Une personne sans parti indiqué reste non classée.
+          La nuance dit d’où vient un candidat ; elle ne dit rien de ses positions, que seul le test compare.
         </p>
 
         <h2 id="codage">Comment une position est codée</h2>

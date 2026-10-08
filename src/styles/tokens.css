@@ -16,6 +16,15 @@
   --on-highlight: #191919;
   --on-ink: #f5f0e6;
 
+  /* Blocs politiques (grille officielle des nuances, ministère de l'Intérieur) : couleurs conventionnelles,
+     toujours accompagnées du nom du bloc, jamais seules. Le rouge reste réservé aux désaccords et corrections. */
+  --bloc-exg: #8e1b2e;
+  --bloc-gau: #e35d8f;
+  --bloc-cent: #f08a24;
+  --bloc-dte: #2f6fd1;
+  --bloc-exd: #1e2a55;
+  --bloc-div: #8a857c;
+
   /* Typographie (familles injectées par next/font dans layout.tsx) */
   --font-display: var(--ff-display), 'Arial Black', Arial, sans-serif;
   --font-ui: var(--ff-ui), Arial, sans-serif;
@@ -81,6 +90,8 @@
     --muted: #bdb7ad;
     --line: #59554f;
     --on-ink: #191919;
+    --bloc-exg: #c0405a;
+    --bloc-exd: #5568b8;
   }
 }
 
@@ -94,6 +105,8 @@
   --muted: #bdb7ad;
   --line: #59554f;
   --on-ink: #191919;
+  --bloc-exg: #c0405a;
+  --bloc-exd: #5568b8;
 }
 
 @media (prefers-reduced-motion: reduce) {

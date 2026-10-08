@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { NuanceTag, NuanceSourceLink } from '@/components/Nuance'
 import { notFound } from 'next/navigation'
 import { getActor, getAnnouncedActors, STATUS_LABEL } from '@/lib/actors'
 import { itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
@@ -49,6 +50,12 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
         <Link href="/candidats">Candidats</Link> · {STATUS_LABEL[a.status]}
       </p>
       <h1>{a.name}</h1>
+      <p className="row" style={{ gap: 'var(--s3)', margin: '0 0 var(--s3)' }}>
+        <NuanceTag slug={a.slug} detail />
+        <span className="small">
+          <NuanceSourceLink />
+        </span>
+      </p>
       <div className="measure">
         <p className="lede">
           {a.party ? `${a.party}. ` : ''}

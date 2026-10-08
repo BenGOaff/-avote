@@ -1941,3 +1941,92 @@ details.disclosure > div {
   text-underline-offset: 3px;
   cursor: pointer;
 }
+
+/* ---------- Familles politiques (grille officielle) ---------- */
+.bloc-EXG { --bloc: var(--bloc-exg); }
+.bloc-GAU { --bloc: var(--bloc-gau); }
+.bloc-CENT { --bloc: var(--bloc-cent); }
+.bloc-DTE { --bloc: var(--bloc-dte); }
+.bloc-EXD { --bloc: var(--bloc-exd); }
+.bloc-DIV { --bloc: var(--bloc-div); }
+.nuance {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-small);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.nuance__dot {
+  display: inline-block;
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border: var(--hairline) solid var(--ink);
+  border-radius: 50%;
+  background: var(--bloc, transparent);
+}
+.nuance__code {
+  font-weight: 400;
+  color: var(--muted);
+}
+.echiquier {
+  display: grid;
+  gap: var(--s3);
+  margin-top: var(--s5);
+}
+@media (min-width: 900px) {
+  .echiquier {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--s2);
+  }
+}
+.echiquier__col {
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+.echiquier__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s2);
+  padding: var(--s2) var(--s3);
+  border-top: 8px solid var(--bloc);
+  border-bottom: var(--hairline) solid var(--line);
+  font-weight: 700;
+}
+.echiquier__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1) var(--s3);
+  padding: var(--s3);
+  margin: 0;
+  font-size: var(--text-small);
+}
+@media (min-width: 900px) {
+  .echiquier__list {
+    display: grid;
+  }
+}
+.echiquier__axis {
+  display: none;
+}
+@media (min-width: 900px) {
+  .echiquier__axis {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--s2);
+    font-size: var(--text-small);
+    color: var(--muted);
+  }
+}
+.echiquier__extra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2) var(--s5);
+  margin-top: var(--s3);
+  font-size: var(--text-small);
+}
