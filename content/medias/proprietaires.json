@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T18:00:04.330Z",
+  "updatedAt": "2026-10-08T18:18:49.390Z",
   "medias": {
     "france-2": {
       "slug": "france-2",
@@ -1180,7 +1180,7 @@
       ],
       "group": "Mediapart",
       "controller": "Fonds pour une presse libre",
-      "controllerKind": "fondation",
+      "controllerKind": "nonlucratif",
       "otherMedia": [],
       "note": "Détenu par un fonds à but non lucratif dont les statuts interdisent d’intervenir sur la ligne éditoriale.",
       "quote": "le FPL garantit la protection de l’indépendance du journal en ligne Mediapart , de façon à la rendre irréversible, par la sanctuarisation de son capital au sein de la Société pour la Protection de l’Indépendance de Mediapart (SPIM) qu’il contrôle.",
@@ -1336,6 +1336,490 @@
       "publisher": "Sénat",
       "date": "2026-05-28",
       "checkedAt": "2026-10-08T17:57:34.505Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "politis": {
+      "slug": "politis",
+      "owners": [
+        {
+          "name": "Lecteurs et lectrices sociétaires de la SCIC Politis",
+          "kind": "lecteurs",
+          "share": ""
+        },
+        {
+          "name": "Salariés sociétaires de la SCIC Politis",
+          "kind": "salaries",
+          "share": ""
+        },
+        {
+          "name": "Les Ami·es de Politis (association de lecteurs)",
+          "kind": "association",
+          "share": "premier sociétaire en capital"
+        }
+      ],
+      "group": "SCIC Politis",
+      "controller": "Ses lecteurs et ses salariés (SCIC)",
+      "controllerKind": "lecteurs",
+      "otherMedia": [],
+      "note": "Coopérative (SCIC) depuis septembre 2024, où chaque sociétaire a une voix ; l’association de lecteurs Les Ami·es de Politis reste le premier sociétaire en capital.",
+      "quote": "Politis n’est pas la propriété de milliardaires en mal d’influence. Ni d’un anonyme fonds d’investissement. Politis est devenu une SCIC (Société Coopérative d’Intérêt Collectif) en septembre 2024.",
+      "url": "https://www.politis.fr/a-propos-de-politis/",
+      "sourceTitle": "Indépendant et engagé (à propos de Politis)",
+      "publisher": "Politis",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:17.442Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "frontieres": {
+      "slug": "frontieres",
+      "owners": [
+        {
+          "name": "Erik Tegnér",
+          "kind": "personne",
+          "share": "premier actionnaire"
+        },
+        {
+          "name": "Lagardère News",
+          "kind": "entreprise",
+          "share": "25 %"
+        }
+      ],
+      "group": "Artefakt",
+      "controller": "Erik Tegnér",
+      "controllerKind": "personne",
+      "otherMedia": [],
+      "note": "Erik Tegnér, fondateur du titre, en garde le contrôle ; Lagardère News, éditeur du JDD (groupe Bolloré), en a pris 25 % en septembre 2026.",
+      "quote": "a déclaré Erik Tegnér. Il reste premier actionnaire de la société éditrice de Frontières, Artefakt, et conserve le contrôle du média.",
+      "url": "https://fr.themedialeader.com/?p=218301",
+      "sourceTitle": "Lagardère News prend 25% du capital de Frontières",
+      "publisher": "The Media Leader FR (avec AFP)",
+      "date": "2026-09-07",
+      "checkedAt": "2026-10-08T18:18:17.908Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "les-jours": {
+      "slug": "les-jours",
+      "owners": [
+        {
+          "name": "Ses neuf cofondateurs, journalistes",
+          "kind": "journalistes",
+          "share": "près de 70 %"
+        }
+      ],
+      "group": "",
+      "controller": "Ses cofondateurs",
+      "controllerKind": "journalistes",
+      "otherMedia": [],
+      "note": "Financé par ses abonnements, sans publicité.",
+      "quote": "Le média sur abonnement payant, dont le capital est contrôlé à près de 70% par ses cofondateurs et qui revendique un modèle indépendant de toute publicité, est \"à l'équilibre depuis 2020\"",
+      "url": "https://www.cbnews.fr/node/101108",
+      "sourceTitle": "Le média Les Jours fête ses dix ans avec un grand livre anniversaire",
+      "publisher": "CB News (AFP)",
+      "date": "2026-05-25",
+      "checkedAt": "2026-10-08T18:18:18.988Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "boulevard-voltaire": {
+      "slug": "boulevard-voltaire",
+      "owners": [
+        {
+          "name": "Association Boulevard Voltaire",
+          "kind": "association",
+          "share": ""
+        }
+      ],
+      "group": "",
+      "controller": "Association Boulevard Voltaire",
+      "controllerKind": "association",
+      "otherMedia": [],
+      "note": "Plus de 90 % de ses ressources viennent des dons de ses lecteurs, selon le site.",
+      "quote": "Constitué en association, Boulevard Voltaire est totalement indépendant de ses fondateurs qui ont quitté l’équipe et de toute entreprise ou actionnaire privé. Plus de 90% des ressources de BV proviennent des dons de ses lecteurs.",
+      "url": "https://www.bvoltaire.fr/qui-sommes-nous/",
+      "sourceTitle": "Qui sommes-nous ?",
+      "publisher": "Boulevard Voltaire",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:19.288Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "disclose": {
+      "slug": "disclose",
+      "owners": [
+        {
+          "name": "Association Disclose",
+          "kind": "association",
+          "share": ""
+        }
+      ],
+      "group": "",
+      "controller": "Association Disclose",
+      "controllerKind": "association",
+      "otherMedia": [],
+      "note": "Financé par les dons de ses lecteurs (52 % des recettes en 2023) et par des fondations philanthropiques (48 %), sans publicité.",
+      "quote": "En optant pour une association loi 1901, Mathias Destal et Geoffrey Livolsi, les cofondateurs de Disclose, ont fait le choix d’une organisation à but non lucratif, sans actionnaires",
+      "url": "https://disclose.ngo/fr/page/faq",
+      "sourceTitle": "Foire aux questions",
+      "publisher": "Disclose",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:20.204Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-media": {
+      "slug": "le-media",
+      "owners": [
+        {
+          "name": "Socios (abonnés sociétaires) de la SCIC Le Média",
+          "kind": "lecteurs",
+          "share": ""
+        },
+        {
+          "name": "Salariés sociétaires de la SCIC Le Média",
+          "kind": "salaries",
+          "share": ""
+        }
+      ],
+      "group": "SCIC Le Média",
+      "controller": "Ses lecteurs et ses salariés (SCIC)",
+      "controllerKind": "lecteurs",
+      "otherMedia": [],
+      "note": "Coopérative (SCIC) depuis 2021, financée principalement par les abonnements ; les abonnés peuvent devenir sociétaires.",
+      "quote": "La SCIC Le Média est l’expérience d’un modèle unique dans la presse associant, à égalité dans la prise de décision les producteurs d’informations et les lecteurs qui contribuent.",
+      "url": "https://www.lemediatv.fr/soutien",
+      "sourceTitle": "Le Média, une information au service du bien commun",
+      "publisher": "Le Média",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:21.072Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "streetpress": {
+      "slug": "streetpress",
+      "owners": [
+        {
+          "name": "Johan Weisz et Mathieu Molard",
+          "kind": "journalistes",
+          "share": "78,62 %"
+        },
+        {
+          "name": "Fonds de dotation Héliée",
+          "kind": "autre",
+          "share": "8,99 %"
+        },
+        {
+          "name": "Patrick Weil",
+          "kind": "personne",
+          "share": "7,36 %"
+        },
+        {
+          "name": "Trois entrepreneurs, dont Maxime Kurkdjian et Wale Gbadamosi-Oyekanmi",
+          "kind": "personne",
+          "share": "5,04 %"
+        }
+      ],
+      "group": "",
+      "controller": "Johan Weisz et Mathieu Molard",
+      "controllerKind": "journalistes",
+      "otherMedia": [],
+      "note": "Ses deux journalistes, le fondateur et le corédacteur en chef, détiennent 78,6 % du capital ; le média dit vivre de ses lecteurs.",
+      "quote": "StreetPress appartient d’abord à deux journalistes : Johan Weisz, le journaliste qui a fondé StreetPress il y a près de quinze ans, et Mathieu Molard, co-rédacteur en chef du média, pour un total de 78,62% des actions de notre société de presse",
+      "url": "https://soutenir.streetpress.com/",
+      "sourceTitle": "Soutenir StreetPress : à qui appartient StreetPress ?",
+      "publisher": "StreetPress",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:23.506Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "basta": {
+      "slug": "basta",
+      "owners": [
+        {
+          "name": "Association Alter-médias",
+          "kind": "association",
+          "share": ""
+        }
+      ],
+      "group": "",
+      "controller": "Association Alter-médias",
+      "controllerKind": "association",
+      "otherMedia": [
+        "Observatoire des multinationales"
+      ],
+      "note": "Sans publicité ni abonnement, financé à 85 % par les dons de ses lecteurs.",
+      "quote": "Basta! est un média indépendant dont l’ambition est de croiser les questions sociales et écologiques. Il est piloté par une association à but non lucratif (Alter-médias) et animé par une équipe de 14 salarié · es.",
+      "url": "https://basta.media/qui-sommes-nous",
+      "sourceTitle": "Qui sommes-nous ?",
+      "publisher": "Basta!",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:24.077Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "blast": {
+      "slug": "blast",
+      "owners": [
+        {
+          "name": "Collège des fondateurs (dont Denis Robert)",
+          "kind": "personne",
+          "share": "40 % des voix"
+        },
+        {
+          "name": "Collège des salariés",
+          "kind": "salaries",
+          "share": "25 % des voix"
+        },
+        {
+          "name": "Collège des sociétaires citoyens",
+          "kind": "lecteurs",
+          "share": "15 % des voix"
+        },
+        {
+          "name": "Collège des mécènes",
+          "kind": "autre",
+          "share": "10 % des voix"
+        },
+        {
+          "name": "Collège des partenaires",
+          "kind": "autre",
+          "share": "10 % des voix"
+        }
+      ],
+      "group": "",
+      "controller": "Ses sociétaires (SCIC)",
+      "controllerKind": "nonlucratif",
+      "otherMedia": [],
+      "note": "Coopérative : une personne, une voix. Fondateurs, salariés, citoyens, mécènes et partenaires votent par collège ; aucun n’a la majorité.",
+      "quote": "Blast, le souffle de l’info est une SCIC – une Société Coopérative d’Intérêt Collectif. Ce statut nous permet de rassembler au sein de son sociétariat tous les acteurs engagés dans notre projet. C’est cette diversité qui fait notre force. Les sociétaires de Blast sont répartis en 3 catégories",
+      "url": "https://www.blast-info.fr/devenir-societaire",
+      "sourceTitle": "Je deviens sociétaire",
+      "publisher": "Blast",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:39.044Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "causeur": {
+      "slug": "causeur",
+      "owners": [
+        {
+          "name": "Société Cantio",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "",
+      "controller": "Société Cantio",
+      "controllerKind": "inconnu",
+      "otherMedia": [],
+      "note": "Cantio, qui possède le titre, est présidée par Gil Mihaely selon le registre des entreprises ; ses actionnaires ne sont pas publiés.",
+      "quote": "Causeur.fr est édité par la SAS Causeur.fr au capital de 153 850 €, 32 rue du Faubourg Poissonnière, 75010 Paris. Causeur.fr appartient à la société Cantio.",
+      "url": "https://www.causeur.fr/mentions-legales",
+      "sourceTitle": "Mentions légales",
+      "publisher": "Causeur",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:39.133Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "reporterre": {
+      "slug": "reporterre",
+      "owners": [
+        {
+          "name": "La Pile (Association pour une presse indépendante, libre et écologique)",
+          "kind": "association",
+          "share": ""
+        }
+      ],
+      "group": "",
+      "controller": "Association La Pile",
+      "controllerKind": "association",
+      "otherMedia": [],
+      "note": "Édité par une association loi 1901, sans actionnaire ni publicité, et financé presque entièrement par les dons de ses lecteurs.",
+      "quote": "L’ampleur du trafic l’amène à créer avec « une militante Greenpeace, le responsable d’un magasin bio, un journaliste » (entretien, 2016), l’Association pour la presse indépendante libre et écologique (La Pile) et à lancer Reporterre",
+      "url": "https://shs.cairn.info/revue-politiques-de-communication-2021-1-page-13?lang=fr",
+      "sourceTitle": "Construire l’indépendance en label de qualité",
+      "publisher": "Politiques de communication (Cairn.info)",
+      "date": "2021",
+      "checkedAt": "2026-10-08T18:18:40.064Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "l-incorrect": {
+      "slug": "l-incorrect",
+      "owners": [
+        {
+          "name": "Holding Saint Lazare",
+          "kind": "entreprise",
+          "share": "actionnaire principal"
+        }
+      ],
+      "group": "",
+      "controller": "Holding Saint Lazare",
+      "controllerKind": "inconnu",
+      "otherMedia": [],
+      "note": "La société éditrice est présidée par Laurent Meeschaert selon le registre des entreprises ; les détenteurs de la Holding Saint Lazare ne sont pas publiés.",
+      "quote": "Actionnaire principal Holding Saint Lazare, 28, rue saint Lazare 75009 Paris.",
+      "url": "https://lincorrect.org/wp-content/uploads/2024/09/sommaire.pdf",
+      "sourceTitle": "L’Incorrect n° 78, sommaire et ours",
+      "publisher": "L’Incorrect",
+      "date": "2024-09-01",
+      "checkedAt": "2026-10-08T18:18:41.107Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "alternatives-economiques": {
+      "slug": "alternatives-economiques",
+      "owners": [
+        {
+          "name": "Salariés",
+          "kind": "salaries",
+          "share": "63,54 %"
+        },
+        {
+          "name": "Société civile des lecteurs",
+          "kind": "lecteurs",
+          "share": "20,63 %"
+        },
+        {
+          "name": "Anciens salariés",
+          "kind": "salaries",
+          "share": "13,71 %"
+        },
+        {
+          "name": "Association des lecteurs",
+          "kind": "association",
+          "share": "2,00 %"
+        },
+        {
+          "name": "Associés individuels extérieurs",
+          "kind": "personne",
+          "share": "1,36 %"
+        }
+      ],
+      "group": "",
+      "controller": "Ses salariés (SCOP)",
+      "controllerKind": "salaries",
+      "otherMedia": [],
+      "note": "Coopérative (Scop) dont les salariés détiennent la majorité du capital, le reste appartenant surtout à ses lecteurs et à d’anciens salariés ; pas de publicité sur le site.",
+      "quote": "nous sommes organisés en coopérative (Scop), dont les salariés détiennent la majorité du capital, et qui fonctionne de façon démocratique. Le reste du capital est détenu par nos lecteurs et d’anciens salariés.",
+      "url": "https://www.alternatives-economiques.fr/qui-sommes-nous",
+      "sourceTitle": "Qui sommes-nous ?",
+      "publisher": "Alternatives économiques",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:43.043Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "front-populaire": {
+      "slug": "front-populaire",
+      "owners": [
+        {
+          "name": "Lagardère Media News",
+          "kind": "entreprise",
+          "share": "90 % des Éditions du Plénïtre"
+        },
+        {
+          "name": "Michel Onfray",
+          "kind": "personne",
+          "share": "10 % des Éditions du Plénïtre"
+        },
+        {
+          "name": "Louis Hachette Group",
+          "kind": "entreprise",
+          "share": "contrôle Lagardère Media News"
+        },
+        {
+          "name": "Groupe Bolloré",
+          "kind": "entreprise",
+          "share": "principal actionnaire de Louis Hachette "
+        }
+      ],
+      "group": "Lagardère (Louis Hachette Group)",
+      "controller": "Groupe Bolloré",
+      "controllerKind": "famille",
+      "otherMedia": [
+        "Le Journal du Dimanche",
+        "Le JDNews",
+        "Europe 1"
+      ],
+      "note": "Racheté en août 2026 par Lagardère Media News ; Michel Onfray, fondateur, garde 10 % du capital et reste directeur de la publication.",
+      "quote": "Lagardère Media News, contrôlé par Louis Hachette Group, dont le groupe Bolloré est le principal actionnaire, a pris 90% du capital des Editions du Plénïtre, qui éditent Front populaire et dont Michel Onfray garde 10%.",
+      "url": "https://www.cbnews.fr/node/102713",
+      "sourceTitle": "La revue Front Populaire de Michel Onfray rejoint les médias Bolloré",
+      "publisher": "CB News (AFP)",
+      "date": "2026-08-26",
+      "checkedAt": "2026-10-08T18:18:44.132Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "arret-sur-images": {
+      "slug": "arret-sur-images",
+      "owners": [
+        {
+          "name": "Ses huit salariés coactionnaires, dont le fondateur Daniel Schneidermann",
+          "kind": "salaries",
+          "share": "parts égales"
+        }
+      ],
+      "group": "",
+      "controller": "Ses salariés",
+      "controllerKind": "salaries",
+      "otherMedia": [],
+      "note": "Financé très majoritairement par ses abonnements, complétés par des dons, sans publicité.",
+      "quote": "Qui sont les coactionnaires d' Arrêt sur images ? Le fondateur Daniel Schneidermann, le rédacteur en chef et directeur de la publication Robin Andraca, la rédactrice en chef adjointe Elodie Safaris, les journalistes Clara Barge, Loris Guémart et Pauline Bock",
+      "url": "https://www.arretsurimages.net/qui-sommes-nous",
+      "sourceTitle": "Qui sommes-nous ?",
+      "publisher": "Arrêt sur images",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:46.643Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "contrepoints": {
+      "slug": "contrepoints",
+      "owners": [
+        {
+          "name": "Institut de Recherches Économiques et Fiscales (IREF)",
+          "kind": "association",
+          "share": ""
+        }
+      ],
+      "group": "",
+      "controller": "Association IREF",
+      "controllerKind": "association",
+      "otherMedia": [],
+      "note": "Créé en 2009 par l’association Libéraux.org, le journal est aujourd’hui édité par l’IREF, association financée par des dons privés.",
+      "quote": "Contrepoints, le journal d’actuailité libéral, est édité par l’Institut de Recherches Economiques et Fiscales, IREF, qui est une association française régie par la loi du 1er juillet 1901",
+      "url": "https://www.contrepoints.org/mentions-legales",
+      "sourceTitle": "Mentions légales",
+      "publisher": "Contrepoints",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:48.392Z",
+      "model": "recherche vérifiée hors API"
+    },
+    "le-monde-diplomatique": {
+      "slug": "le-monde-diplomatique",
+      "owners": [
+        {
+          "name": "Le Monde SA (groupe Le Monde)",
+          "kind": "entreprise",
+          "share": "51 %"
+        },
+        {
+          "name": "Les Amis du Monde diplomatique",
+          "kind": "association",
+          "share": "49 % avec l’association Gunter Holzmann"
+        },
+        {
+          "name": "Association Gunter Holzmann (personnel du journal)",
+          "kind": "salaries",
+          "share": "49 % avec Les Amis du Monde diplomatique"
+        }
+      ],
+      "group": "Groupe Le Monde",
+      "controller": "Fonds pour l’indépendance de la presse (créé par Xavier Niel)",
+      "controllerKind": "fondation",
+      "otherMedia": [
+        "Le Monde",
+        "Télérama",
+        "Courrier international"
+      ],
+      "note": "Ses lecteurs (Les Amis du Monde diplomatique) et son personnel (association Gunter Holzmann) détiennent ensemble 49 % du capital et participent à l’élection du directeur.",
+      "quote": "en se constituant en société autonome, filiale du Monde SA (51 %). Les 49 % restants sont aux mains de l’association Les Amis du Monde diplomatique et de l’association Gunter Holzmann, qui regroupe l’ensemble du personnel",
+      "url": "https://www.monde-diplomatique.fr/diplo/apropos/",
+      "sourceTitle": "À propos du Monde diplomatique",
+      "publisher": "Le Monde diplomatique",
+      "date": "",
+      "checkedAt": "2026-10-08T18:18:49.390Z",
       "model": "recherche vérifiée hors API"
     }
   },

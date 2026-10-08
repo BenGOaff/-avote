@@ -45,6 +45,23 @@
     { "slug": "mediapart", "name": "Mediapart", "type": "web" },
     { "slug": "20-minutes", "name": "20 Minutes", "type": "web" },
     { "slug": "huffpost", "name": "HuffPost (édition française)", "type": "web" },
-    { "slug": "brut", "name": "Brut", "type": "web" }
+    { "slug": "brut", "name": "Brut", "type": "web" },
+    { "slug": "blast", "name": "Blast", "type": "web" },
+    { "slug": "reporterre", "name": "Reporterre", "type": "web" },
+    { "slug": "alternatives-economiques", "name": "Alternatives économiques", "type": "presse" },
+    { "slug": "politis", "name": "Politis", "type": "presse" },
+    { "slug": "arret-sur-images", "name": "Arrêt sur images", "type": "web" },
+    { "slug": "les-jours", "name": "Les Jours", "type": "web" },
+    { "slug": "disclose", "name": "Disclose", "type": "web" },
+    { "slug": "le-media", "name": "Le Média", "type": "web" },
+    { "slug": "streetpress", "name": "StreetPress", "type": "web" },
+    { "slug": "basta", "name": "Basta!", "type": "web" },
+    { "slug": "le-monde-diplomatique", "name": "Le Monde diplomatique", "type": "presse" },
+    { "slug": "causeur", "name": "Causeur", "type": "presse" },
+    { "slug": "l-incorrect", "name": "L’Incorrect", "type": "presse" },
+    { "slug": "front-populaire", "name": "Front populaire", "type": "presse" },
+    { "slug": "frontieres", "name": "Frontières", "type": "presse" },
+    { "slug": "boulevard-voltaire", "name": "Boulevard Voltaire", "type": "web" },
+    { "slug": "contrepoints", "name": "Contrepoints", "type": "web" }
   ]
 }

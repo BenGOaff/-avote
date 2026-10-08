@@ -3149,5 +3149,581 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "0b9bf10b9b9e697d"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "sec-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "6312d4a170950c34"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "98774764d0056400"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "sec-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "8ab79dda407b5907"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "lib-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "b88c6fdee78c43ab"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "b612355224bd28db"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "618875ec93c241ab"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "b6ddc0de64cd0034"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "d2f3c006a547e186"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "da5c0eb74f23af42"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "cli-03",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "6c855727af64ba60"
+  },
+  {
+    "date": "2026-10-08T18:10:26.755Z",
+    "actor": "eric-zemmour",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "209a74bb28e14fbd"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "6d7f84eadb85e24b"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "tra-04",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "6f4472933a27479e"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "2396cffa14bf8554"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-03",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "7d80f3c9a27b0998"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "7f119175cedc11e8"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d8115609a048e304"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "7923096c502f20b6"
+  },
+  {
+    "date": "2026-10-08T18:10:53.270Z",
+    "actor": "bruno-retailleau",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "d29a4037b07f5809"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "034d4d0faa0bf483"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "4039d0435d1ea65b"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "ba84976af0c75ea5"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "8e3bbde14e44ec99"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "5d823b90b05fbe69"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "610dffb454d6e20e"
+  },
+  {
+    "date": "2026-10-08T18:11:37.885Z",
+    "actor": "gabriel-attal",
+    "item": "eur-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "866e4aed56549e3e"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "c344f0c31516c81d"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "eco-03",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "67b06993c9b28f53"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "tra-02",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "7859d0443cf73f3a"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "tra-04",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "13c65ec9c183ddf3"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "sec-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "fb453b3a12e5c1b0"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "sec-03",
+    "from": "inconnue",
+    "to": "1",
+    "source": "3768d9d6f5ba7e8a"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "4c695bd9d7ce3180"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "dem-05",
+    "from": "inconnue",
+    "to": "1",
+    "source": "11ce14725812d007"
+  },
+  {
+    "date": "2026-10-08T18:12:55.891Z",
+    "actor": "edouard-philippe",
+    "item": "lib-02",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "cdc2f52b3e2335c6"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "90b8f97a1339ee1c"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "sec-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "dbce16556d99c65e"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "b93061943bc89ce1"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "lib-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "8c5408bf2ab38c12"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "cli-03",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "6f858dafcebebfda"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "eco-05",
+    "from": "inconnue",
+    "to": "1",
+    "source": "1f404b86211c384f"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "eur-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d66e305671ce68b5"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "b02c1be392674548"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "11b809ded4e6b5a4"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "a78e1c49ff4effb9"
+  },
+  {
+    "date": "2026-10-08T18:14:43.430Z",
+    "actor": "marine-le-pen",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "a78e1c49ff4effb9"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "ad10e01d627a13bf"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "50b41664e39d741f"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "1895bfa299a18dc9"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "f9aec2cc81cbb509"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "23a1bb75229da114"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4bb568bcc4349866"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "e9a8f7b74b7fa77f"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4ef27eb92407fdc9"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "fe7b9e8a9242d436"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "35a5d07ef0e58901"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "sec-02",
+    "from": "inconnue",
+    "to": "1",
+    "source": "fb3583d0931f145e"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "sec-04",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "1d96755194e9d1a6"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "lib-02",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "631d293bbf68a62a"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "lib-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d37a0c656f1666a5"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "lib-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "92b1c0c7183855d1"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "lib-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4bf15af438ad86e0"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "eb780ee31bde5361"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "cli-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "bfb089ed2ce3cc81"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "cli-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "1edca7052bc6897e"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "cli-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "b39536070e0037c7"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "589562ff11c5943b"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "8eb0cc607e0f3222"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "9c662e2a635b37f2"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "b93929d1f6bd53db"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "45a646f6f7c980ee"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "dem-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4f890a00d245d812"
   }
 ]

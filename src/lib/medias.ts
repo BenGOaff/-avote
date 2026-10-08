@@ -86,6 +86,8 @@ export const CONTROLLER_KIND_LABEL: Record<string, string> = {
   etat: 'État',
   association: 'Association',
   fondation: 'Fondation',
+  nonlucratif: 'À but non lucratif',
+  journalistes: 'Journalistes',
   salaries: 'Salariés',
   lecteurs: 'Lecteurs',
   cotee: 'Société cotée',
@@ -98,10 +100,25 @@ export const OWNER_FAMILIES: { id: string; label: string; kinds: string[] }[] = 
   { id: 'public', label: 'L’État ou le Parlement', kinds: ['etat'] },
   { id: 'prive', label: 'Une personne ou une famille', kinds: ['personne', 'famille'] },
   { id: 'cotee', label: 'Un groupe coté en Bourse', kinds: ['cotee'] },
-  { id: 'nonlucratif', label: 'Une fondation, une association ou un fonds', kinds: ['fondation', 'association'] },
-  { id: 'interne', label: 'Ses salariés ou ses lecteurs', kinds: ['salaries', 'lecteurs'] },
+  { id: 'nonlucratif', label: 'Une fondation, une association ou un fonds', kinds: ['fondation', 'association', 'nonlucratif'] },
+  { id: 'interne', label: 'Ses salariés, ses lecteurs ou ses journalistes', kinds: ['salaries', 'lecteurs', 'journalistes'] },
   { id: 'autre', label: 'Autre', kinds: ['autre', 'inconnu'] },
 ]
+
+/**
+ * Médias libres : ni milliardaire, ni grand groupe, ni État n'a le dernier mot. Le média appartient à ses
+ * journalistes, ses salariés, ses lecteurs, à une association ou à une structure à but non lucratif créée par eux.
+ * Un fonds créé ou financé par un milliardaire ou un groupe est classé « fondation » et n'en fait pas partie.
+ */
+export const FREE_KINDS = ['journalistes', 'salaries', 'lecteurs', 'association', 'nonlucratif']
+export const FREE_KIND_LABEL: Record<string, string> = {
+  journalistes: 'À ses journalistes',
+  salaries: 'À ses salariés',
+  lecteurs: 'À ses lecteurs',
+  association: 'À une association',
+  nonlucratif: 'À une structure sans but lucratif',
+}
+export const freeMedias = (medias: MediaEntry[]) => medias.filter((m) => m.ownership && FREE_KINDS.includes(m.ownership.controllerKind))
 
 export function familySplit(medias: MediaEntry[]): { id: string; label: string; medias: MediaEntry[] }[] {
   const done = medias.filter((m) => m.ownership)
