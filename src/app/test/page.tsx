@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { TestFlow } from './TestFlow'
+import { SupportLine } from '@/components/Support'
 
 export const metadata: Metadata = {
   title: 'Le test',
@@ -12,6 +13,9 @@ export default function TestPage() {
   return (
     <div className="container" style={{ paddingTop: 'var(--s5)' }}>
       <TestFlow />
+      <div className="narrow">
+        <SupportLine placement="test" />
+      </div>
     </div>
   )
 }

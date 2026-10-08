@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { AI_NOTICE } from '@/lib/copy'
+import { tiquizHref } from './Support'
 
 export function Footer() {
   return (
@@ -11,6 +12,13 @@ export function Footer() {
           </p>
           <p className="muted">Ton test se calcule sur ton appareil. Aucune réponse n’est envoyée à nos serveurs.</p>
           <p className="muted">{AI_NOTICE}</p>
+          <p className="muted">
+            Soutenu par{' '}
+            <a href={tiquizHref('pied-de-page')} rel="sponsored noopener" target="_blank">
+              Tiquiz
+            </a>
+            .
+          </p>
         </div>
         <ul>
           <li><Link href="/methodologie">Méthode et calculs</Link></li>
