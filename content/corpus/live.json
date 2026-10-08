@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081815",
+  "version": "live-202610081823",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:15:13.925Z",
+  "publishedAt": "2026-10-08T18:23:36.781Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -5759,11 +5759,15 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "lib-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "2a46c4e923ae0a6d"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Va au-delà du cannabis. Programme 2022."
       },
       "lib-04": {
         "missing": true,
@@ -5791,18 +5795,26 @@
         "note": "Consulté le 2026-10-08. Le candidat demande d'abroger la loi de 2004 sur les signes religieux à l'école, donc de restreindre moins, pas davantage. Formulation catégorique : -2. Même texte dans le 4 pages de campagne (https://anasse2027.fr/p"
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "24a75cbfdb360684"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:53.025Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Programme 2022 défendu par le candidat, renvoyé depuis la page programme 2027. Demande catégorique d’une forte hausse de la progressivité."
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "63a6b0f52bf43c2d"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:53.025Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Programme 2022 défendu par le candidat, renvoyé depuis la page programme 2027."
       },
       "eco-03": {
         "set": [
@@ -5819,11 +5831,15 @@
         "note": "Kazib s'oppose aux économies budgétaires, et son programme 2027 demande des « investissements massifs dans les services publics ». Mais il ne parle pas explicitement de faire passer la dette avant les dépenses. Le texte de lancement de Révo"
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d34f2032057034ba"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:53.025Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Gel des prix : va au-delà d’un plafonnement. Programme 2022."
       },
       "eco-05": {
         "missing": true,
@@ -5844,11 +5860,18 @@
         "note": "Engagement catégorique : un SMIC à 2 000 € net va bien au-delà de la revalorisation automatique. La même mesure figure dans le dépliant de campagne 2027."
       },
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "a79692fa6057dfc4"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:57.665Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Critique la hausse des effectifs annoncée ; le même chapitre estime que la sécurité doit être assurée « par la population elle-même ». Programme 2022."
       },
       "sec-02": {
         "missing": true,
@@ -5858,11 +5881,15 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "sec-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "8e31a500ba98781b"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Programme 2022."
       },
       "sec-04": {
         "value": -2,
@@ -5887,11 +5914,18 @@
         "note": "Il veut régulariser tous les sans-papiers sans condition, ce qui inclut et dépasse les travailleurs des métiers en tension. Il ne défend pas la logique des « métiers en tension » en tant que telle. Page non datée, consultée le 2026-10-08."
       },
       "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "54fe2611bf1ef3e4"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Titre de chapitre : pleins droits sociaux pour les immigrés, sans condition ; ne mentionne pas explicitement la durée de résidence. Programme 2022."
       },
       "tra-01": {
         "value": 2,
@@ -5930,18 +5964,29 @@
         "note": "Formulation catégorique, sans restriction aux zones tendues : la mesure va au-delà de l'affirmation (plafonnement et gel). Page consultée le 07/10/2026."
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "c91f3a64593fdd06"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Opposition catégorique. Programme 2022."
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "19f2cfd498b7f8cc"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Dénonce la fermeture de maternités et d’hôpitaux pour raisons budgétaires ; pas de mesure chiffrée. Programme 2022."
       },
       "eur-01": {
         "missing": true,
@@ -5958,11 +6003,15 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "c24103cd51c3f506"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T17:00:06.081Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Axe 5 des premières mesures 2027 ; même texte dans le dépliant de campagne. Page non datée, consultée le 2026-10-08."
       },
       "eur-04": {
         "missing": true,
@@ -5986,11 +6035,18 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "efc65659f21d36cf"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Le programme vise une sortie du nucléaire, incompatible avec de nouveaux réacteurs, sans parler explicitement de construction. Programme 2022."
       },
       "cli-02": {
         "missing": true,
@@ -6007,11 +6063,18 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "cli-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "db9bbf79fbad2350"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Rejette les taxes carbone comme attaque contre les travailleurs ; ne discute pas d’une compensation aux ménages modestes. Programme 2022."
       },
       "cli-05": {
         "value": 2,
@@ -11027,6 +11090,90 @@
       "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
       "date": "2024-06",
       "passage": "Abolir la monarchie présidentielle dans la pratique des institutions : • Instaurer la proportionnelle • Revitaliser le parlement • Abroger le 49.3"
+    },
+    {
+      "id": "24a75cbfdb360684",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "nous exigeons la suppression immédiate de la TVA, l’impôt indirect le plus injuste, une forte augmentation de la progressivité de l’impôt, jusqu’à 100% sur les revenus du capital au-dessus de 260.000 euros"
+    },
+    {
+      "id": "63a6b0f52bf43c2d",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Rétablissement de l’impôt sur les grandes fortunes. Récupération de l’argent public offert aux entreprises qui licencient."
+    },
+    {
+      "id": "d34f2032057034ba",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "exiger de l’État un gel des prix pour tous les produits de première nécessité, y compris des loyers"
+    },
+    {
+      "id": "c91f3a64593fdd06",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Nous nous opposons radicalement à toute réduction des prestations allouées aux chômeurs, censé les « inciter » à accepter n’importe quel emploi."
+    },
+    {
+      "id": "19f2cfd498b7f8cc",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "des millions de familles vivent dans de véritables déserts médicaux ou loin des centres de soins, du fait de la fermeture de centres hospitaliers ou de maternités au nom des restrictions budgétaires"
+    },
+    {
+      "id": "a79692fa6057dfc4",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Les annonces de Macron de doubler le nombre de policiers dans les dix prochaines années et de durcir la réponse pénale montrent bien que le renforcement du système répressif sont consubstantiels à l’avancée du néolibéralisme."
+    },
+    {
+      "id": "8e31a500ba98781b",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "nous exigeons le retrait total des lois « sécurité globale » et de responsabilité pénale qui cèdent à des revendications historiques des « syndicats » de police : reconnaissance faciale, drones"
+    },
+    {
+      "id": "54fe2611bf1ef3e4",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Pleins droits de citoyenneté et droits sociaux pour les immigrés et les réfugiés"
+    },
+    {
+      "id": "2a46c4e923ae0a6d",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "il faut légaliser, sous contrôle de l’État et avec un suivi médical, lorsque cela l’exige, l’ensemble des substances stupéfiantes et addictives, à commencer par le cannabis"
+    },
+    {
+      "id": "efc65659f21d36cf",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Une transition pour sortir du nucléaire ne saurait se faire sans s’attaquer aux patrons du secteur et seuls les travailleuses et travailleurs de l’énergie sont à même de le faire."
+    },
+    {
+      "id": "db9bbf79fbad2350",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Le « capitalisme vert », prétexte pour ne rien faire ou pour faire des cadeaux aux patrons et s’en prendre aux travailleurs à coups de taxes carbones et de licenciements verts, est une contradiction dans les termes."
+    },
+    {
+      "id": "c24103cd51c3f506",
+      "title": "Programme — Anasse Kazib 2027 (premières mesures, axe 5 « Contre la militarisation et l'impérialisme »)",
+      "publisher": "Comité de campagne Anasse Kazib 2027",
+      "url": "https://anasse2027.fr/programme",
+      "passage": "Pas un euro pour la guerre, démantèlement de la machine de guerre française, 2ème exportateur d'armes mondial."
     }
   ],
   "refreshedAt": {
@@ -11045,7 +11192,7 @@
     "delphine-batho": "2026-10-08T17:54:08.652Z",
     "karim-bouamrane": "2026-10-08T15:54:15.033Z",
     "nathalie-arthaud": "2026-10-08T17:44:58.610Z",
-    "anasse-kazib": "2026-10-08T16:02:13.835Z",
+    "anasse-kazib": "2026-10-08T18:23:36.781Z",
     "selma-labib": "2026-10-08T16:07:45.245Z",
     "olivier-becht": "2026-10-08T16:12:12.614Z",
     "raphael-glucksmann": "2026-10-08T17:44:58.610Z",

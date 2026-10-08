@@ -3725,5 +3725,101 @@
     "from": "inconnue",
     "to": "2",
     "source": "4f890a00d245d812"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "24a75cbfdb360684"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "63a6b0f52bf43c2d"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d34f2032057034ba"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "c91f3a64593fdd06"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "19f2cfd498b7f8cc"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "a79692fa6057dfc4"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "sec-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "8e31a500ba98781b"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "54fe2611bf1ef3e4"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "lib-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "2a46c4e923ae0a6d"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "efc65659f21d36cf"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "cli-04",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "db9bbf79fbad2350"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "c24103cd51c3f506"
   }
 ]
