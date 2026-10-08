@@ -21,7 +21,7 @@ export interface Party {
   founded: ({ date: string; text: string } & Sourced) | null
   leaders: { name: string; role: string; since: string }[]
   leadersSource: Sourced | null
-  elus: { deputes: number | null; senateurs: number | null; eurodeputes: number | null; asOf: string } & Partial<Sourced>
+  elus: { deputes: number | null; senateurs: number | null; eurodeputes: number | null; asOf: string; note?: string; sources?: (Sourced & { field: string; asOf: string })[] } & Partial<Sourced>
   values: ({ text: string } & Sourced) | null
   dates: ({ date: string; text: string } & Sourced)[]
   measures: ({ theme: string; text: string } & Sourced)[]

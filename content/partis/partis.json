@@ -3,6 +3,1410 @@
   "checkedAt": "2026-10-08",
   "partis": [
     {
+      "slug": "rn",
+      "name": "Rassemblement national",
+      "sigle": "RN",
+      "nuance": "RN",
+      "founded": {
+        "date": "1972-10-05",
+        "text": "Créé en 1972 à l'initiative du mouvement Ordre nouveau sous le nom de Front national pour l'unité française, présidé par Jean-Marie Le Pen de 1972 à 2011.",
+        "quote": "Fondé en 1972 à l'initiative du mouvement Ordre nouveau sous la dénomination officielle Front national pour l'unité française (FNUF).",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb11993012f",
+        "publisher": "Bibliothèque nationale de France"
+      },
+      "leaders": [
+        {
+          "name": "Jordan Bardella",
+          "role": "président",
+          "since": "2022"
+        },
+        {
+          "name": "Louis Aliot",
+          "role": "premier vice-président",
+          "since": ""
+        },
+        {
+          "name": "Marine Le Pen",
+          "role": "présidente du groupe RN à l'Assemblée nationale",
+          "since": ""
+        },
+        {
+          "name": "Kévin Pfeffer",
+          "role": "trésorier",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Jordan Bardella Président du Rassemblement National Député européen Kévin Pfeffer Trésorier Député Louis Aliot Premier vice-président",
+        "url": "https://rassemblementnational.fr/instances/bureau-executif",
+        "publisher": "Rassemblement national"
+      },
+      "elus": {
+        "deputes": 118,
+        "senateurs": 12,
+        "eurodeputes": 30,
+        "asOf": "2026-10",
+        "quote": "Groupe Membres Membres apparentés Total Rassemblement National 118 3 121",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "senateurs",
+            "asOf": "2026-10",
+            "quote": "création d’un nouveau groupe à la chambre haute composé de 12 élus du RN et 3 élus de l’Union des droites pour la République",
+            "url": "https://www.publicsenat.fr/actualites/politique/le-nouveau-groupe-rn-udr-sappelle-union-nationale-pour-les-territoires-annonce-joshua-hochart",
+            "publisher": "Public Sénat"
+          },
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "30 PfE Patriots for Europe 30 RN : Rassemblement national",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres du groupe Rassemblement National (hors apparentés). Sénateurs : élus RN du groupe Union nationale pour les territoires (RN-UDR), selon Public Sénat. Eurodéputés : répartition à la session constitutive de juillet 2024."
+      },
+      "values": {
+        "text": "Le parti dit défendre « la souveraineté, l'indépendance et l'identité de la nation » et protéger « le caractère indivisible, laïc, démocratique et social de la République ».",
+        "quote": "le Rassemblement National défend la souveraineté, l’indépendance et l’identité de la nation . Il protège le caractère indivisible, laïc, démocratique et social de la République",
+        "url": "https://rassemblementnational.fr/statuts-du-rassemblement-national",
+        "publisher": "Rassemblement national (statuts)"
+      },
+      "dates": [
+        {
+          "date": "1972-10-05",
+          "text": "Création du Front national, présidé par Jean-Marie Le Pen jusqu'en 2011.",
+          "quote": "Du 05 octobre 1972 au 15 janvier 2011, a eu pour président : Le Pen, Jean-Marie (1928-2025)",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb11993012f",
+          "publisher": "Bibliothèque nationale de France"
+        },
+        {
+          "date": "2018-06-02",
+          "text": "Le Front national prend le nom de Rassemblement national.",
+          "quote": "02 juin 2018 : changement de nom en Rassemblement national",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb11993012f",
+          "publisher": "Bibliothèque nationale de France"
+        },
+        {
+          "date": "2024-06-09",
+          "text": "Élections européennes : la liste du RN arrive en tête avec 31,37 % des voix.",
+          "quote": "Pourcentage de votes % de votes RN - Rassemblement national 31,37 %",
+          "url": "https://results.elections.europa.eu/fr/resultats-nationaux/france/2024-2029/",
+          "publisher": "Parlement européen"
+        },
+        {
+          "date": "2024-06-19",
+          "text": "Affaire des kits de campagne des législatives de 2012 : la Cour de cassation rend définitive la condamnation du parti à 250 000 euros d'amende pour recel d'abus de biens sociaux.",
+          "quote": "Dans un arrêt rendu le 19 juin 2024 (pourvoi n° 23-82.194), la Cour de cassation confirme l'arrêt de la cour d'appel de Paris du 15 mars 2023 qui avait condamné le Rassemblement National à une amende de 250.000 €",
+          "url": "https://www.lemondedudroit.fr/public/282-droit-public-general/93446-affaire-des-kits-de-campagne-condamnation-definitive-du-rn.html",
+          "publisher": "Le Monde du droit"
+        },
+        {
+          "date": "2026-07-07",
+          "text": "Affaire des assistants parlementaires européens : la cour d'appel de Paris condamne le RN, personne morale, à 2 millions d'euros d'amende dont 1 million avec sursis, et à la confiscation de 1 million d'euros.",
+          "quote": "Le Rassemblement national en tant que personne morale a été condamné par la cour d’appel à une amende de 2 millions d’euros, dont un avec sursis, et à une confiscation de 1 million d’euros.",
+          "url": "https://fr.euronews.com/2026/07/07/marine-le-pen-condamnee-a-45-mois-dineligibilite-dont-30-mois-assortis-de-sursis",
+          "publisher": "Euronews"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "économie",
+          "text": "Baisser la TVA sur l'ensemble des produits énergétiques.",
+          "quote": "Baisse de la TVA sur l’ensemble des produits énergétiques PLFR 2024 Session extraordinaire 2024",
+          "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+          "publisher": "Rassemblement national (programme des législatives 2024)"
+        },
+        {
+          "theme": "travail",
+          "text": "Exonérer pendant trois à cinq ans de la hausse des cotisations patronales les entreprises qui augmentent de 10 % les salaires jusqu'à trois fois le SMIC.",
+          "quote": "permettre aux entreprises d’augmenter les salaires de 10 % jusqu’à trois fois le SMIC, en les exonérant de l’augmentation des cotisations patronales pendant trois à cinq ans",
+          "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+          "publisher": "Rassemblement national (programme des législatives 2024)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Instaurer des peines planchers pour les récidivistes, les atteintes aux personnes chargées d'une mission de service public et le trafic de drogue.",
+          "quote": "Mise en place des peines planchers pour les récidivistes, les atteintes aux personnes dépositaires d’une mission de services publics et le trafic de drogue",
+          "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+          "publisher": "Rassemblement national (programme des législatives 2024)"
+        },
+        {
+          "theme": "europe",
+          "text": "Négocier avec les partenaires européens pour réserver la libre circulation de l'espace Schengen aux seuls ressortissants européens.",
+          "quote": "Ouvrir des négociations avec nos partenaires européens pour réserver la libre-circulation Schengen aux seuls ressortissants européens",
+          "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+          "publisher": "Rassemblement national (programme des législatives 2024)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Inscrire dans la Constitution un référendum d'initiative citoyenne (RIC) législatif.",
+          "quote": "Instaurer dans la Constitution un RIC législatif Réserver au peuple seul, par référendum, le pouvoir de modifier la Constitution",
+          "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+          "publisher": "Rassemblement national (programme des législatives 2024)"
+        }
+      ]
+    },
+    {
+      "slug": "lr",
+      "name": "Les Républicains",
+      "sigle": "LR",
+      "nuance": "LR",
+      "founded": {
+        "date": "2002-04-23",
+        "text": "Fondé le 23 avril 2002 par les partisans de Jacques Chirac sous le nom d'Union pour la majorité présidentielle, devenu Union pour un mouvement populaire (UMP) en novembre 2002, puis Les Républicains en mai 2015.",
+        "quote": "Naissance : 2002-04-23 Groupement électoral, puis parlementaire, fondé sous le nom d'Union pour la majorité présidentielle. - Erigé en parti politique et rebaptisé Union pour un Mouvement Populaire (congrès fondateur le 17 nov. 2002).",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb14451776v",
+        "publisher": "Bibliothèque nationale de France"
+      },
+      "leaders": [
+        {
+          "name": "Bruno Retailleau",
+          "role": "président",
+          "since": "2025"
+        },
+        {
+          "name": "François-Xavier Bellamy",
+          "role": "premier vice-président",
+          "since": ""
+        },
+        {
+          "name": "Othman Nasrou",
+          "role": "secrétaire général",
+          "since": ""
+        },
+        {
+          "name": "Agnès Evren",
+          "role": "porte-parole",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Président Bruno Retailleau Président des Républicains Sénateur de Vendée Ancien Ministre de l'intérieur Premier vice-président François-Xavier Bellamy",
+        "url": "https://republicains.fr/qui-sommes-nous/",
+        "publisher": "Les Républicains"
+      },
+      "elus": {
+        "deputes": 40,
+        "senateurs": 88,
+        "eurodeputes": 6,
+        "asOf": "2026-10",
+        "quote": "Socialistes et apparentés 60 8 68 Droite Républicaine 40 7 47",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "senateurs",
+            "asOf": "2026-10",
+            "quote": "Groupe Les Républicains Membres : 88 Apparentés : 21 Rattachés : 15 Total : 124",
+            "url": "https://www.senat.fr/senateurs/grp.html",
+            "publisher": "Sénat"
+          },
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "6 PPE Groupe du Parti populaire européen (Démocrates-Chrétiens) 6 LR : Les Républicains",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres (hors apparentés) du groupe de l'Assemblée nationale que le parti constitue ou dirige ; ce n'est pas un décompte des adhérents du parti. Groupe : Droite Républicaine. Sénateurs : membres (hors apparentés et rattachés) du groupe du Sénat que le parti constitue ou dirige. Groupe : Les Républicains. Eurodéputés : juillet 2024."
+      },
+      "values": {
+        "text": "Le parti se présente comme « la droite qui défend la France des honnêtes gens, celle qui travaille, respecte les règles et aspire à une société de justice et de stabilité ».",
+        "quote": "Nous sommes la droite qui défend la France des honnêtes gens, celle qui travaille, respecte les règles et aspire à une société de justice et de stabilité.",
+        "url": "https://republicains.fr/qui-sommes-nous/",
+        "publisher": "Les Républicains"
+      },
+      "dates": [
+        {
+          "date": "2002-04-23",
+          "text": "Après le premier tour de la présidentielle, les partisans de Jacques Chirac lancent l'UMP, d'abord Union pour une majorité présidentielle.",
+          "quote": "Le 23 avril 2002, après le \"coup de tonnerre\" du premier tour de la présidentielle qui aboutit au duel Jean-Marie Le Pen/Jacques Chirac, les chiraquiens lancent \"un grand parti de droite et de centre-droit\"",
+          "url": "https://www.publicsenat.fr/actualites/politique/de-l-ump-a-lr-une-histoire-mouvementee-un-parti-divise-141653",
+          "publisher": "Public Sénat"
+        },
+        {
+          "date": "2007-05",
+          "text": "Nicolas Sarkozy, président de l'UMP depuis novembre 2004, est élu président de la République.",
+          "quote": "En novembre, Nicolas Sarkozy s'empare du parti et le dirige jusqu'à son entrée à l'Elysée en mai 2007.",
+          "url": "https://www.publicsenat.fr/actualites/politique/de-l-ump-a-lr-une-histoire-mouvementee-un-parti-divise-141653",
+          "publisher": "Public Sénat"
+        },
+        {
+          "date": "2015-05-29",
+          "text": "L'UMP prend le nom de Les Républicains.",
+          "quote": "Fin novembre 2014, M. Sarkozy est réélu président du parti, rebaptisé \"Les Républicains\" le 29 mai 2015.",
+          "url": "https://www.publicsenat.fr/actualites/politique/de-l-ump-a-lr-une-histoire-mouvementee-un-parti-divise-141653",
+          "publisher": "Public Sénat"
+        },
+        {
+          "date": "2024-09-05",
+          "text": "Michel Barnier, membre de LR, est nommé Premier ministre.",
+          "quote": "la nomination d'un Premier ministre s'est finalement portée sur une personnalité de droite , membre du parti \"Les Républicains\", à savoir Michel Barnier.",
+          "url": "https://lcp.fr/actualites/nouveau-gouvernement-michel-barnier-nomme-premier-ministre-309194",
+          "publisher": "LCP"
+        },
+        {
+          "date": "2025-11-26",
+          "text": "Affaire Bygmalion (campagne présidentielle de 2012) : la Cour de cassation rend définitives les condamnations du candidat Nicolas Sarkozy, de son directeur de campagne et de deux directeurs de l'UMP.",
+          "quote": "le candidat, le directeur de sa campagne et les deux directeurs du parti politique qui soutenait le candidat sont donc définitivement condamnés",
+          "url": "https://www.brut.media/fr/articles/sarkozy-definitivement-condamne-dans-laffaire-bygmalion",
+          "publisher": "Brut (AFP)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Exonérer de cotisations sociales, salariales et patronales, les heures travaillées au-delà de 1 623 heures par an (seuil « zéro cotisation »).",
+          "quote": "Fixé à 1 623 heures par an, soit l’équivalent de deux jours de travail supplémentaires rémunérés, ce seuil pose une règle simple et lisible. Au-delà, les heures travaillées sont exonérées de cotisations sociales, salariales comme patronales.",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "publisher": "Les Républicains (propositions, janvier 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Supprimer dès le lendemain de l'élection les 50 règles qui paralysent le plus les entreprises.",
+          "quote": "Supprimer, dès le lendemain de l’élection, les 50 règles qui paralysent le plus nos entreprises",
+          "url": "https://republicains.fr/nos-propositions/",
+          "publisher": "Les Républicains"
+        },
+        {
+          "theme": "climat",
+          "text": "Arrêter de subventionner de nouvelles capacités éoliennes et photovoltaïques et prolonger le parc nucléaire sur une trajectoire de 80 ans.",
+          "quote": "Inscrire le parc nucléaire dans une trajectoire « 80 ans » Maîtriser les coûts et les délais des nouveaux EPR2 Augmenter la capacité de production et de stockage hydroélectrique Stopper le subventionnement de nouvelles capacités éoliennes et photovoltaïques",
+          "url": "https://republicains.fr/nos-propositions/",
+          "publisher": "Les Républicains"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Appliquer une « tolérance zéro » contre le squat et les impayés de loyer.",
+          "quote": "Assumer une tolérance zéro contre le squat et les impayés Adapter la loi SRU à la réalité du terrain",
+          "url": "https://republicains.fr/nos-propositions/",
+          "publisher": "Les Républicains"
+        },
+        {
+          "theme": "europe",
+          "text": "Refonder la politique agricole commune (PAC) comme outil de souveraineté et de sécurisation du revenu agricole.",
+          "quote": "Refonder la PAC comme outil de souveraineté et de sécurisation du revenu agricole.",
+          "url": "https://republicains.fr/nos-propositions/",
+          "publisher": "Les Républicains"
+        }
+      ]
+    },
+    {
+      "slug": "renaissance",
+      "name": "Renaissance",
+      "sigle": "",
+      "nuance": "REN",
+      "founded": {
+        "date": "2016-04-06",
+        "text": "Fondé le 6 avril 2016 par Emmanuel Macron sous le nom d'En marche !, devenu La République en marche, puis Renaissance lors de son congrès fondateur du 17 septembre 2022.",
+        "quote": "Naissance : 2016-04-06 Parti politique français fondé par Emmanuel Macron (2016).",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb171452497",
+        "publisher": "Bibliothèque nationale de France"
+      },
+      "leaders": [
+        {
+          "name": "Gabriel Attal",
+          "role": "secrétaire général",
+          "since": "2024"
+        },
+        {
+          "name": "Emmanuel Macron",
+          "role": "président d'honneur",
+          "since": ""
+        },
+        {
+          "name": "Brigitte Klinkert",
+          "role": "trésorière",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Notre Bureau exécutif Gabriel ‍ Attal Secrétaire général Renaissance, c’est bien plus qu’un parti politique.",
+        "url": "https://parti-renaissance.fr/le-parti",
+        "publisher": "Renaissance"
+      },
+      "elus": {
+        "deputes": 74,
+        "senateurs": 13,
+        "eurodeputes": 5,
+        "asOf": "2026-10",
+        "quote": "Rassemblement National 118 3 121 Ensemble pour la République 74 16 90",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "senateurs",
+            "asOf": "2026-10",
+            "quote": "Groupe Rassemblement des démocrates, progressistes et indépendants Membres : 13 Apparentés : 3 Total : 16",
+            "url": "https://www.senat.fr/senateurs/grp.html",
+            "publisher": "Sénat"
+          },
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "13 Renew Europe Groupe Renew Europe 5 Renaissance : Renaissance 4 MoDem : MoDem 2 Horizons : Horizons",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres (hors apparentés) du groupe de l'Assemblée nationale que le parti constitue ou dirige ; ce n'est pas un décompte des adhérents du parti. Groupe : Ensemble pour la République. Sénateurs : membres (hors apparentés et rattachés) du groupe du Sénat que le parti constitue ou dirige. Groupe : RDPI, qui compte aussi des élus d'autres formations. Eurodéputés : juillet 2024."
+      },
+      "values": {
+        "text": "Le parti dit porter « le travail comme moteur de progrès, une écologie réaliste et ambitieuse, la fermeté républicaine, et l'égalité des chances ».",
+        "quote": "C’est porter des valeurs claires : le travail comme moteur de progrès, une écologie réaliste et ambitieuse, la fermeté républicaine, et l’égalité des chances.",
+        "url": "https://parti-renaissance.fr/le-parti",
+        "publisher": "Renaissance"
+      },
+      "dates": [
+        {
+          "date": "2016-04-06",
+          "text": "Emmanuel Macron fonde En marche !.",
+          "quote": "Naissance : 2016-04-06 Parti politique français fondé par Emmanuel Macron (2016).",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb171452497",
+          "publisher": "Bibliothèque nationale de France"
+        },
+        {
+          "date": "2017-06-18",
+          "text": "Législatives : La République en marche obtient seule la majorité absolue avec 308 sièges sur 577.",
+          "quote": "Avec 308 sièges sur 577, LRM remporte la majorité absolue – toutefois moins large que prévu.",
+          "url": "https://www.universalis.fr/evenement/11-29-juin-2017-victoire-de-la-republique-en-marche-aux-elections-legislatives/",
+          "publisher": "Encyclopædia Universalis"
+        },
+        {
+          "date": "2022-09-17",
+          "text": "Congrès fondateur de Renaissance, qui succède à La République en marche.",
+          "quote": "Emmanuel Macron Lors du Congrès fondateur de Renaissance, le 17 septembre 2022",
+          "url": "https://parti-renaissance.fr/le-parti",
+          "publisher": "Renaissance"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Promouvoir la semaine de quatre jours pour les salariés qui ne peuvent pas télétravailler et créer un droit opposable à la garde d'enfant.",
+          "quote": "Je pense à la semaine en 4 jours pour celles et ceux qui ne peuvent pas télétravailler ou à la mise en œuvre d’un droit opposable à la garde d’enfant",
+          "url": "https://doc.parti.re/Conventions-thematiques_Nouvelle-donne.pdf",
+          "publisher": "Renaissance (conventions thématiques, juillet 2025)"
+        },
+        {
+          "theme": "économie",
+          "text": "Refuser toute hausse d'impôt sur les entreprises et baisser encore les impôts de production.",
+          "quote": "toute hausse d’impôt sur les entreprises et baisserons encore les impôts de production",
+          "url": "https://doc.parti.re/Conventions-thematiques_Nouvelle-donne.pdf",
+          "publisher": "Renaissance (conventions thématiques, juillet 2025)"
+        },
+        {
+          "theme": "économie",
+          "text": "Créer des zones d'innovation, notamment verte, aux règles assouplies (« mini-Singapour »).",
+          "quote": "nous bâtirons des mini-Singapour, zones d’innovation notamment verte, où les règles seront beaucoup plus souples pour que les choses aillent beaucoup plus vite",
+          "url": "https://doc.parti.re/Conventions-thematiques_Nouvelle-donne.pdf",
+          "publisher": "Renaissance (conventions thématiques, juillet 2025)"
+        },
+        {
+          "theme": "climat",
+          "text": "Voter une loi de programmation de la planification écologique qui tienne compte de la « dette climatique ».",
+          "quote": "en tenant compte, enfin, de la réalité de la dette climatique et avec une loi de programmation pour préparer l’avenir de notre planification écologique",
+          "url": "https://doc.parti.re/Conventions-thematiques_Nouvelle-donne.pdf",
+          "publisher": "Renaissance (conventions thématiques, juillet 2025)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Donner aux directeurs de police municipale le statut d'officier de police judiciaire.",
+          "quote": "Nous proposons que les directeurs de police municipale, sous l’autorité des procureurs et des maires, aient désormais le statut d’officier de police judiciaire, selon des compétences définies par la loi.",
+          "url": "https://doc.parti.re/conventions/Restitution-Regalien-Une-Republique-ferme-une-France-apaisee.pdf",
+          "publisher": "Renaissance (convention régalienne, mai 2025)"
+        }
+      ]
+    },
+    {
+      "slug": "horizons",
+      "name": "Horizons",
+      "sigle": "",
+      "nuance": "HOR",
+      "founded": {
+        "date": "2021-10-09",
+        "text": "Lancé le 9 octobre 2021 au Havre par l'ancien Premier ministre Édouard Philippe, qui déclare alors soutenir la réélection d'Emmanuel Macron.",
+        "quote": "L’ancien Premier ministre et maire du Havre Édouard Philippe lance son parti, baptisé Horizons. Il déclare soutenir la réélection d’Emmanuel Macron en 2022.",
+        "url": "https://www.universalis.fr/evenement/9-octobre-2021-lancement-du-parti-de-l-ancien-premier-ministre-edouard-philippe/",
+        "publisher": "Encyclopædia Universalis"
+      },
+      "leaders": [
+        {
+          "name": "Édouard Philippe",
+          "role": "président",
+          "since": "2021"
+        },
+        {
+          "name": "Christophe Béchu",
+          "role": "secrétaire général",
+          "since": ""
+        },
+        {
+          "name": "Christelle Morançais",
+          "role": "vice-présidente",
+          "since": ""
+        },
+        {
+          "name": "Arnaud Robinet",
+          "role": "vice-président",
+          "since": ""
+        },
+        {
+          "name": "Arnaud Péricard",
+          "role": "porte-parole",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Iéna Président Édouard Philippe Maire du Havre Président du Havre Seine Métropole Ancien Premier ministre",
+        "url": "https://horizonsleparti.fr/organisation/",
+        "publisher": "Horizons"
+      },
+      "elus": {
+        "deputes": 29,
+        "senateurs": 15,
+        "eurodeputes": 2,
+        "asOf": "2026-10",
+        "quote": "Les Démocrates 35 2 37 Horizons & Indépendants 29 6 35",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "senateurs",
+            "asOf": "2026-10",
+            "quote": "Groupe Les Indépendants - République et Territoires Membres : 15 Président : M. Claude MALHURET",
+            "url": "https://www.senat.fr/senateurs/grp.html",
+            "publisher": "Sénat"
+          },
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "13 Renew Europe Groupe Renew Europe 5 Renaissance : Renaissance 4 MoDem : MoDem 2 Horizons : Horizons",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres (hors apparentés) du groupe de l'Assemblée nationale que le parti constitue ou dirige ; ce n'est pas un décompte des adhérents du parti. Groupe : Horizons & Indépendants. Sénateurs : membres (hors apparentés et rattachés) du groupe du Sénat que le parti constitue ou dirige. Groupe : Les Indépendants - République et Territoires, qui compte aussi des élus d'autres formations. Eurodéputés : juillet 2024."
+      },
+      "values": {
+        "text": "Le parti dit défendre « la liberté comme valeur cardinale de la République », dont la liberté d'entreprendre et d'échanger, « garante de l'innovation et du progrès ».",
+        "quote": "La liberté comme valeur cardinale de la République. La liberté d’entreprendre et d’échanger, garante de l’innovation et du progrès.",
+        "url": "https://horizonsleparti.fr/le-manifeste/",
+        "publisher": "Horizons (manifeste)"
+      },
+      "dates": [
+        {
+          "date": "2021-10-09",
+          "text": "Édouard Philippe lance Horizons au Havre.",
+          "quote": "Depuis sa ville du Havre, l'ex-Premier ministre a annoncé le nom de son parti, baptisé \"Horizons, parce qu'il faut voir loin\".",
+          "url": "https://www.europe1.fr/politique/lancien-premier-ministre-edouard-philippe-lance-son-parti-horizons-4070672",
+          "publisher": "Europe 1 (avec AFP)"
+        },
+        {
+          "date": "2022-05-20",
+          "text": "Christophe Béchu, membre d'Horizons, entre au gouvernement d'Élisabeth Borne comme ministre délégué chargé des Collectivités territoriales.",
+          "quote": "membre du nouveau parti Horizons d’édouard Philippe",
+          "url": "https://www.maire-info.com/gouvernement-borne-quels-interlocuteurs-pour-les-collectivites-locales--article-26455",
+          "publisher": "Maire info"
+        },
+        {
+          "date": "2022-07-04",
+          "text": "Gouvernement Borne II : Agnès Firmin Le Bodo (Horizons) est nommée ministre déléguée à l'Organisation territoriale et aux Professions de santé.",
+          "quote": "la députée de centre droit Agnès Firmin-Le Bodo (Horizons), proche d'Edouard Philippe et pharmacienne de profession a été nommée ministre déléguée à l'Organisation territoriale et aux Professions de santé",
+          "url": "https://www.banquedesterritoires.fr/gouvernement-borne-2-les-nouveaux-interlocuteurs-des-collectivites",
+          "publisher": "Banque des Territoires"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "économie",
+          "text": "Supprimer la moitié des impôts de production et la moitié des aides publiques aux entreprises jugées improductives.",
+          "quote": "Ma proposition est simple : supprimer la moitié de ces impôts contre la production, mais aussi la moitié des aides publiques improductives.",
+          "url": "https://horizonsleparti.fr/ma-proposition-aux-entrepreneurs/",
+          "publisher": "Horizons (Édouard Philippe, novembre 2025)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Créer un « état d'urgence narco » : des moyens juridiques d'exception limités dans le temps et l'espace, y compris la reconnaissance faciale.",
+          "quote": "L’« état d’urgence narco » : des moyens juridiques d’exception (perquisitions administratives, assignations à résidence…) limités dans le temps et dans l’espace, y compris le recours à la reconnaissance faciale.",
+          "url": "https://horizonsleparti.fr/le-plan-dedouard-philippe-contre-le-narcotrafic/",
+          "publisher": "Horizons (mai 2026)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Donner aux maires un pouvoir de sanction pénale.",
+          "quote": "Je veux aussi donner aux maires un pouvoir de sanction pénale.",
+          "url": "https://horizonsleparti.fr/discours-dedouard-philippe-lors-de-son-grand-meeting-a-ladidas-arena-5-juillet-2026/",
+          "publisher": "Horizons (discours d'Édouard Philippe, 5 juillet 2026)"
+        },
+        {
+          "theme": "climat",
+          "text": "Financer une « écologie à impact » : énergie décarbonée (nucléaire et renouvelables), réduction des îlots de chaleur en ville, rénovation des logements, hôpitaux et écoles.",
+          "quote": "l’écologie à impact : l’énergie décarbonée avec le nucléaire et les énergies renouvelables ; la transformation de nos villes pour réduire les îlots de chaleur ; la rénovation des logements, des hôpitaux, des écoles",
+          "url": "https://horizonsleparti.fr/discours-dedouard-philippe-lors-de-son-grand-meeting-a-ladidas-arena-5-juillet-2026/",
+          "publisher": "Horizons (discours d'Édouard Philippe, 5 juillet 2026)"
+        },
+        {
+          "theme": "europe",
+          "text": "Défendre à Bruxelles une « révolution » des instruments de protection commerciale pour imposer aux entreprises chinoises les conditions qu'elles imposent aux entreprises européennes.",
+          "quote": "La France devra défendre à Bruxelles une révolution de nos instruments de protection : assumons d’imposer aux entreprises chinoises ce qu’elles nous imposent",
+          "url": "https://horizonsleparti.fr/ma-proposition-aux-entrepreneurs/",
+          "publisher": "Horizons (Édouard Philippe, novembre 2025)"
+        }
+      ]
+    },
+    {
+      "slug": "modem",
+      "name": "Mouvement démocrate",
+      "sigle": "MoDem",
+      "nuance": "MDM",
+      "founded": {
+        "date": "2007-05-10",
+        "text": "Créé en 2007 par François Bayrou, alors président de l'UDF, après l'élection présidentielle de 2007.",
+        "quote": "Naissance : 2007-05-10 Le Mouvement démocrate (MoDem) est un parti politique français du centre créé par François Bayrou (alors président de l'UDF) à la suite de l'élection présidentielle de 2007.",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb161187007",
+        "publisher": "Bibliothèque nationale de France"
+      },
+      "leaders": [
+        {
+          "name": "François Bayrou",
+          "role": "président",
+          "since": "2007"
+        },
+        {
+          "name": "Marc Fesneau",
+          "role": "premier vice-président",
+          "since": ""
+        },
+        {
+          "name": "Maud Gatel",
+          "role": "secrétaire générale",
+          "since": ""
+        },
+        {
+          "name": "Patrick Mignola",
+          "role": "coordonnateur des porte-parole",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "François Bayrou Président du Mouvement Démocrate, président du Parti Démocrate européen Marc Fesneau Président du groupe Les Démocrates à l'Assemblée nationale, premier vice-président du Mouvement Démocrate",
+        "url": "https://www.mouvementdemocrate.fr/notre-equipe-et-nos-elus",
+        "publisher": "Mouvement démocrate"
+      },
+      "elus": {
+        "deputes": 35,
+        "senateurs": null,
+        "eurodeputes": 4,
+        "asOf": "2026-10",
+        "quote": "Écologiste et Social 38 0 38 Les Démocrates 35 2 37",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "13 Renew Europe Groupe Renew Europe 5 Renaissance : Renaissance 4 MoDem : MoDem 2 Horizons : Horizons",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres (hors apparentés) du groupe de l'Assemblée nationale que le parti constitue ou dirige ; ce n'est pas un décompte des adhérents du parti. Groupe : Les Démocrates. Sénateurs : pas de groupe propre (les sénateurs MoDem siègent au groupe Union centriste avec d'autres formations), nombre non établi. Eurodéputés : juillet 2024."
+      },
+      "values": {
+        "text": "Le parti se définit comme « humanistes, européens, écologistes, solidaires, libres » et comme « le centre indépendant ».",
+        "quote": "Humanistes, européens, écologistes, solidaires, libres. Nous sommes le centre. Le centre indépendant.",
+        "url": "https://www.mouvementdemocrate.fr/qui-sommes-nous-7915",
+        "publisher": "Mouvement démocrate"
+      },
+      "dates": [
+        {
+          "date": "2007-05-10",
+          "text": "François Bayrou crée le Mouvement démocrate après l'élection présidentielle, où il a obtenu près de 19 % des voix au premier tour.",
+          "quote": "La campagne présidentielle de 2007 – année de la création du MoDem - voit François Bayrou atteindre près de 19% des voix au premier tour.",
+          "url": "https://www.mouvementdemocrate.fr/qui-sommes-nous-7915",
+          "publisher": "Mouvement démocrate"
+        },
+        {
+          "date": "2017-06-18",
+          "text": "Législatives : allié de La République en marche, le MoDem obtient 42 députés.",
+          "quote": "Avec 308 sièges sur 577, LRM remporte la majorité absolue – toutefois moins large que prévu. Son allié du MoDem, en progrès, a 42 élus.",
+          "url": "https://www.universalis.fr/evenement/11-29-juin-2017-victoire-de-la-republique-en-marche-aux-elections-legislatives/",
+          "publisher": "Encyclopædia Universalis"
+        },
+        {
+          "date": "2024-12-13",
+          "text": "François Bayrou, président du MoDem, est nommé Premier ministre.",
+          "quote": "François Bayrou a été nommé Premier ministre par Emmanuel Macron , rapporte l'AFP ce vendredi 13 décembre. Le président du MoDem succède à Michel Barnier",
+          "url": "https://www.parismatch.be/actualites/politique/2024/12/13/francois-bayrou-nomme-premier-ministre-par-emmanuel-macron-XJRGWN6JUFBCRJC6P5Q55XD5YU/",
+          "publisher": "Paris Match Belgique (AFP)"
+        },
+        {
+          "date": "2026-09-09",
+          "text": "Affaire des assistants parlementaires européens (2005-2017) : le MoDem et l'UDF, en tant que personnes morales, sont rejugés en appel avec François Bayrou, relaxé en première instance le 5 février 2024 ; décision attendue le 17 décembre 2026 (procédure en cours).",
+          "quote": "Au total, treize personnes seront rejugées, dont les partis Union pour la démocratie française (UDF) et le MoDem en tant que personnes morales. Les personnes condamnées en première instance ont fait appel, tandis que le parquet a contesté les trois relaxes prononcées, dont celle de François Bayrou.",
+          "url": "https://www.leclubdesjuristes.com/en-bref/affaire-des-assistants-parlementaires-du-modem-francois-bayrou-juge-en-appel-a-paris-a-partir-du-9-septembre-14899/",
+          "publisher": "Le Club des juristes"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Élire les députés à la proportionnelle et reconnaître le vote blanc.",
+          "quote": "Élire les députés à la proportionnelle pour que chaque voix compte Reconnaitre le vote blanc",
+          "url": "https://www.mouvementdemocrate.fr/democratie-7927",
+          "publisher": "Mouvement démocrate"
+        },
+        {
+          "theme": "europe",
+          "text": "Promouvoir un salaire minimum dans tous les pays de l'Union européenne contre le dumping social.",
+          "quote": "Promouvoir un salaire minimum partout en Europe contre le dumping social",
+          "url": "https://www.mouvementdemocrate.fr/union-europeenne-7923",
+          "publisher": "Mouvement démocrate"
+        },
+        {
+          "theme": "économie",
+          "text": "Ne pas augmenter les impôts des classes moyennes.",
+          "quote": "Ce que nous défendons : Pas de hausse d'impôt pour les classes moyennes",
+          "url": "https://www.mouvementdemocrate.fr/solidarites-7924",
+          "publisher": "Mouvement démocrate"
+        },
+        {
+          "theme": "travail",
+          "text": "Étendre à tous les secteurs l'épargne salariale, l'intéressement et la participation, et poursuivre la revalorisation des salaires.",
+          "quote": "Poursuivre les efforts en matière de revalorisation salariale et de mise en place de dispositifs d'épargne salariale, d'intéressement et de participation dans tous les secteurs",
+          "url": "https://www.mouvementdemocrate.fr/solidarites-7924",
+          "publisher": "Mouvement démocrate"
+        },
+        {
+          "theme": "climat",
+          "text": "Sortir progressivement des énergies fossiles en associant nucléaire et énergies renouvelables.",
+          "quote": "Sortir progressivement des énergies fossiles en couplant nucléaire et énergies renouvelables",
+          "url": "https://www.mouvementdemocrate.fr/transition-ecologique-7925",
+          "publisher": "Mouvement démocrate"
+        }
+      ]
+    },
+    {
+      "slug": "ps",
+      "name": "Parti socialiste",
+      "sigle": "PS",
+      "nuance": "SOC",
+      "founded": {
+        "date": "1969",
+        "text": "Fondé en 1969 par la réorganisation de la SFIO avec d'autres groupements socialistes ; le congrès d'Épinay de 1971 élargit le parti et en confie la direction à François Mitterrand.",
+        "quote": "Naissance : 1969 Issu de la réorganisation de l'ancien Parti socialiste SFIO, en accord avec les autres groupements socialistes (Convention des institutions républicaines etc.).",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb11866845j",
+        "publisher": "Bibliothèque nationale de France"
+      },
+      "leaders": [
+        {
+          "name": "Olivier Faure",
+          "role": "premier secrétaire",
+          "since": "2018"
+        },
+        {
+          "name": "Patrick Kanner",
+          "role": "président du groupe au Sénat",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Olivier Faure a mené une carrière de conseiller politique et de député avant de devenir premier secrétaire du Parti socialiste en 2018",
+        "url": "https://parti-socialiste.fr/nos-valeurs/",
+        "publisher": "Parti socialiste"
+      },
+      "elus": {
+        "deputes": 60,
+        "senateurs": 60,
+        "eurodeputes": 10,
+        "asOf": "2026-10",
+        "quote": "La France insoumise - Nouveau Front Populaire 68 2 70 Socialistes et apparentés 60 8 68",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "senateurs",
+            "asOf": "2026-10",
+            "quote": "Groupe Socialiste, Écologiste et Républicain Membres : 60 Apparentés : 2 Total : 62 Président : M. Patrick KANNER",
+            "url": "https://www.senat.fr/senateurs/grp.html",
+            "publisher": "Sénat"
+          },
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "13 S&D Groupe de l'Alliance Progressiste des Socialistes et Démocrates au Parlement européen 10 PS : Parti socialiste 3 Place publique : Place publique",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres (hors apparentés) du groupe de l'Assemblée nationale que le parti constitue ou dirige ; ce n'est pas un décompte des adhérents du parti. Groupe : Socialistes et apparentés. Sénateurs : membres (hors apparentés et rattachés) du groupe du Sénat que le parti constitue ou dirige. Groupe : Socialiste, Écologiste et Républicain. Eurodéputés : juillet 2024."
+      },
+      "values": {
+        "text": "Le parti dit incarner depuis 1905 « le combat historique pour la justice sociale et le progrès humain », avec pour boussole de « transformer l'idéal républicain en conquêtes sociales concrètes ».",
+        "quote": "Depuis 1905, nous incarnons le combat historique pour la justice sociale et le progrès humain, guidé par une boussole : transformer l'idéal républicain en conquêtes sociales concrètes",
+        "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+        "publisher": "Parti socialiste"
+      },
+      "dates": [
+        {
+          "date": "1971-06-13",
+          "text": "Congrès d'Épinay : le Parti socialiste naît de la fusion de plusieurs courants socialistes et de gauche non communiste ; François Mitterrand devient premier secrétaire.",
+          "quote": "le Parti socia­liste naît de la fusion de dif­fé­rents cou­rants socia­listes et de gauche non-com­mu­niste",
+          "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+          "publisher": "Parti socialiste"
+        },
+        {
+          "date": "1981-05-10",
+          "text": "François Mitterrand est élu président de la République : la gauche accède au pouvoir pour la première fois sous la Ve République.",
+          "quote": "Le 10 mai 1981, la gauche accède au pou­voir pour la pre­mière fois sous la Ve République.",
+          "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+          "publisher": "Parti socialiste"
+        },
+        {
+          "date": "1997-06-01",
+          "text": "La « gauche plurielle » remporte les législatives ; Lionel Jospin devient Premier ministre de cohabitation.",
+          "quote": "Premier ministre de coha­bi­ta­tion, Lionel Jospin mène des réformes ambi­tieuses : semaine de 35 heures, créa­tion de la CMU, emplois jeunes, etc.",
+          "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+          "publisher": "Parti socialiste"
+        },
+        {
+          "date": "1997-12-16",
+          "text": "Affaire Urba (financement illégal du PS) : Henri Emmanuelli, trésorier du parti de 1988 à 1993, est condamné à dix-huit mois de prison avec sursis et deux ans de privation de ses droits civiques pour complicité de trafic d'influence.",
+          "quote": "il est condamné, le 16 décembre 1997, à dix-huit mois de prison avec sursis et à deux ans de privation de ses droits civiques pour complicité de trafic d'influence dans le cadre de l’affaire Urba, un système occulte qui alimentait les fonds de campagne du Parti socialiste depuis 1973.",
+          "url": "https://www.publicsenat.fr/actualites/politique/l-ancien-president-de-l-assemblee-nationale-henri-emmanuelli-est-mort-57583",
+          "publisher": "Public Sénat"
+        },
+        {
+          "date": "2012-05-06",
+          "text": "François Hollande est élu président de la République.",
+          "quote": "6 mai 2012 Élection de François Hollande à la présidence de la République François Hollande devient le second pré­sident de gauche.",
+          "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+          "publisher": "Parti socialiste"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Porter le SMIC à 1 690 euros net et ouvrir une conférence sociale sur les salaires au-dessus du SMIC.",
+          "quote": "Réhausser le SMIC à 1 690 € net et ouvrir une conférence sociale pour augmenter les salaires au-dessus du SMIC.",
+          "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+          "publisher": "Parti socialiste (projet adopté en juin 2025)"
+        },
+        {
+          "theme": "économie",
+          "text": "Baisser l'impôt sur les sociétés pour les bénéfices mis en réserve.",
+          "quote": "Baisser l’Impôt sur les sociétés applicable sur les bénéfices mis en réserve.",
+          "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+          "publisher": "Parti socialiste (projet adopté en juin 2025)"
+        },
+        {
+          "theme": "europe",
+          "text": "Instaurer un SMIC plancher dans chaque pays de l'Union européenne contre le dumping social.",
+          "quote": "Lutter contre le dumping social en instaurant un SMIC plancher par pays, puis faire converger vers le haut les droits sociaux des États membres afin de tendre vers leur harmonisation",
+          "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+          "publisher": "Parti socialiste (projet adopté en juin 2025)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Faire de la police nationale une police de contact, de proximité, de dissuasion et de dialogue.",
+          "quote": "Réformer la doctrine d’emploi de la police nationale , ses missions, ses priorités et ses modes d’action pour en faire une police de contact, agissant en proximité pour favoriser la coopération, la dissuasion et le dialogue.",
+          "url": "https://projet-socialiste.fr/projet/etre-en-securites/",
+          "publisher": "Parti socialiste (projet adopté en juin 2025)"
+        },
+        {
+          "theme": "climat",
+          "text": "Rénover massivement les logements existants pour faire disparaître les passoires thermiques d'ici 2050.",
+          "quote": "Rénover massivement le parc de logements existants , pour viser à la disparition des passoires thermiques en 2050.",
+          "url": "https://projet-socialiste.fr/projet/vivre-avec-la-nature/",
+          "publisher": "Parti socialiste (projet adopté en juin 2025)"
+        }
+      ]
+    },
+    {
+      "slug": "lfi",
+      "name": "La France insoumise",
+      "sigle": "LFI",
+      "nuance": "FI",
+      "founded": {
+        "date": "2016",
+        "text": "Mouvement créé en février 2016 autour de Jean-Luc Mélenchon pour porter sa candidature à l'élection présidentielle de 2017.",
+        "quote": "La dynamique de Jean-Luc Mélenchon dans cette campagne présidentielle s’appuie sur un mouvement nouveau, la France insoumise, créé en février 2016.",
+        "url": "https://www.europe1.fr/politique/cinq-questions-sur-la-france-insoumise-de-jean-luc-melenchon-3293945",
+        "publisher": "Europe 1"
+      },
+      "leaders": [
+        {
+          "name": "Manuel Bompard",
+          "role": "coordinateur",
+          "since": ""
+        },
+        {
+          "name": "Jean-Luc Mélenchon",
+          "role": "co-responsable de l'espace « Programme », candidat à l'élection présidentielle de 2027",
+          "since": ""
+        },
+        {
+          "name": "Mathilde Panot",
+          "role": "espace « Intergroupe parlementaire »",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Composition : Coordinateur de la France insoumise : Manuel Bompard Espace « Vie du mouvement » : Sarah Legrain et Bastien Lachaud Espace « Programme » et Institut La Boétie : Clémence Guetté et Jean-Luc Mélenchon",
+        "url": "https://lafranceinsoumise.fr/lfi-comment-ca-marche/",
+        "publisher": "La France insoumise"
+      },
+      "elus": {
+        "deputes": 68,
+        "senateurs": null,
+        "eurodeputes": 9,
+        "asOf": "2026-10",
+        "quote": "Ensemble pour la République 74 16 90 La France insoumise - Nouveau Front Populaire 68 2 70",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "9 The Left Le groupe de la gauche au Parlement européen - GUE/NGL 9 LFI : La France Insoumise",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres (hors apparentés) du groupe de l'Assemblée nationale que le parti constitue ou dirige ; ce n'est pas un décompte des adhérents du parti. Groupe : La France insoumise - Nouveau Front Populaire. Sénateurs : pas de groupe, nombre non établi. Eurodéputés : juillet 2024."
+      },
+      "values": {
+        "text": "Le mouvement se dit « humaniste » et dit promouvoir « l'émancipation globale de la personne humaine, la souveraineté populaire, la justice sociale, la laïcité, l'écologie ».",
+        "quote": "La France insoumise est un mouvement humaniste. Il promeut l’émancipation globale de la personne humaine, la souveraineté populaire, la justice sociale, la laïcité, l’écologie, l’harmonie entre les êtres humains et leur écosystème.",
+        "url": "https://lafranceinsoumise.fr/principes/",
+        "publisher": "La France insoumise (principes)"
+      },
+      "dates": [
+        {
+          "date": "2016",
+          "text": "Création de La France insoumise autour de Jean-Luc Mélenchon.",
+          "quote": "La dynamique de Jean-Luc Mélenchon dans cette campagne présidentielle s’appuie sur un mouvement nouveau, la France insoumise, créé en février 2016.",
+          "url": "https://www.europe1.fr/politique/cinq-questions-sur-la-france-insoumise-de-jean-luc-melenchon-3293945",
+          "publisher": "Europe 1"
+        },
+        {
+          "date": "2017-06-18",
+          "text": "Législatives : LFI entre à l'Assemblée nationale avec 17 députés.",
+          "quote": "LFI fait son entrée au Parlement avec 17 élus – dont Jean-Luc Mélenchon –",
+          "url": "https://www.universalis.fr/evenement/11-29-juin-2017-victoire-de-la-republique-en-marche-aux-elections-legislatives/",
+          "publisher": "Encyclopædia Universalis"
+        },
+        {
+          "date": "2022-04-10",
+          "text": "Présidentielle : Jean-Luc Mélenchon obtient 21,95 % des voix au premier tour, troisième derrière Emmanuel Macron et Marine Le Pen.",
+          "quote": "Emmanuel Macron a remporté 27,84% des voix Marine Le Pen, 23,15% Jean-Luc Mélenchon, 21,95%",
+          "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+          "publisher": "Gouvernement (info.gouv.fr)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Porter le SMIC à 1 600 euros net et augmenter de 10 % le point d'indice des fonctionnaires.",
+          "quote": "Augmenter les salaires par le passage du SMIC à 1600€ net, par la hausse de 10% du point d’indice des fonctionnaires",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "publisher": "La France insoumise (programme du Nouveau Front populaire, 2024)"
+        },
+        {
+          "theme": "économie",
+          "text": "Rétablir un impôt de solidarité sur la fortune (ISF) renforcé, avec un volet climatique.",
+          "quote": "Rétablir un impôt de solidarité sur la fortune (ISF) renforcé avec un volet climatique",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "publisher": "La France insoumise (programme du Nouveau Front populaire, 2024)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Instaurer le référendum d'initiative citoyenne (RIC) et abaisser le seuil de signatures du référendum d'initiative partagée.",
+          "quote": "Instaurer le référendum d’initiative citoyenne (RIC) et renforcer le référendum d’initiative partagée en abaissant notamment le seuil de signatures citoyennes pour son déclenchement",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "publisher": "La France insoumise (programme du Nouveau Front populaire, 2024)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Déployer une police de proximité, interdire les LBD et les grenades mutilantes, et démanteler les BRAV-M.",
+          "quote": "Déployer de premières équipes de police de proximité, interdire les LBD et les grenades mutilantes, et démanteler les BRAV-M",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "publisher": "La France insoumise (programme du Nouveau Front populaire, 2024)"
+        },
+        {
+          "theme": "europe",
+          "text": "Refuser les contraintes budgétaires du pacte budgétaire européen.",
+          "quote": "Mettre à l’ordre du jour des changements en Europe • Refuser les contraintes austéritaires du pacte budgétaire",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "publisher": "La France insoumise (programme du Nouveau Front populaire, 2024)"
+        }
+      ]
+    },
+    {
+      "slug": "les-ecologistes",
+      "name": "Les Écologistes",
+      "sigle": "",
+      "nuance": "VEC",
+      "founded": {
+        "date": "2010-11-13",
+        "text": "Né fin 2010, sous le nom d'Europe Écologie-Les Verts, de la fusion des Verts et d'Europe Écologie ; renommé Les Écologistes en octobre 2023.",
+        "quote": "Naissance : 2010-11-13 Mort : 2023-10-13 Europe écologie-Les Verts (EELV) est né à la fin de l'année 2010 de la fusion entre Les Verts et Europe écologie",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb165160204",
+        "publisher": "Bibliothèque nationale de France"
+      },
+      "leaders": [
+        {
+          "name": "Marine Tondelier",
+          "role": "secrétaire nationale",
+          "since": ""
+        },
+        {
+          "name": "Aïssa Ghalmi",
+          "role": "secrétaire national adjoint",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Marine Tondelier, Secrétaire nationale des Écologistes Aïssa Ghalmi, Secrétaire national adjoint des Écologistes",
+        "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+        "publisher": "Les Écologistes (programme, juillet 2026)"
+      },
+      "elus": {
+        "deputes": 38,
+        "senateurs": 13,
+        "eurodeputes": 5,
+        "asOf": "2026-10",
+        "quote": "Droite Républicaine 40 7 47 Écologiste et Social 38 0 38",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "senateurs",
+            "asOf": "2026-10",
+            "quote": "Groupe Écologiste - Solidarité et Territoires Membres : 13 Apparentés : 2 Total : 15 Présidente : Mme Mélanie VOGEL",
+            "url": "https://www.senat.fr/senateurs/grp.html",
+            "publisher": "Sénat"
+          },
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "5 Verts/ALE Groupe des Verts/Alliance libre européenne 5 LE - EELV : Les Écologistes - Europe Ecologie Les Verts",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres (hors apparentés) du groupe de l'Assemblée nationale que le parti constitue ou dirige ; ce n'est pas un décompte des adhérents du parti. Groupe : Écologiste et Social, qui compte aussi des élus d'autres formations. Sénateurs : membres (hors apparentés et rattachés) du groupe du Sénat que le parti constitue ou dirige. Groupe : Écologiste - Solidarité et Territoires. Eurodéputés : juillet 2024."
+      },
+      "values": {
+        "text": "Le mouvement dit vouloir rassembler pour « œuvrer pour la préservation du commun, du vivant et de tout ce qui nous lie ».",
+        "quote": "Toutes et tous, à notre manière, nous souhaitons nous rassembler et œuvrer pour la préservation du commun, du vivant et de tout ce qui nous lie.",
+        "url": "https://lesecologistes.fr/pages/5TRvjIUe0F36vhcVDHdboB/notre-mouvement",
+        "publisher": "Les Écologistes"
+      },
+      "dates": [
+        {
+          "date": "2010-11-13",
+          "text": "Fusion des Verts et d'Europe Écologie : naissance d'Europe Écologie-Les Verts (EELV).",
+          "quote": "Europe écologie-Les Verts (EELV) est né à la fin de l'année 2010 de la fusion entre Les Verts et Europe écologie",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb165160204",
+          "publisher": "Bibliothèque nationale de France"
+        },
+        {
+          "date": "2012-05-16",
+          "text": "Après la victoire de François Hollande, Cécile Duflot et Pascal Canfin (EELV) entrent au gouvernement Ayrault.",
+          "quote": "font entrer, après la victoire de ce dernier le 6 mai, C. Duflot et son collègue Pascal Canfin, dans le gouvernement Ayrault . Elle hérite d’un ministère à plein titre, celui de l’Égalité des Territoires et du Logement.",
+          "url": "https://www.larousse.fr/encyclopedie/personnage/wd/187116",
+          "publisher": "Encyclopédie Larousse"
+        },
+        {
+          "date": "2023-10-14",
+          "text": "EELV prend le nom de Les Écologistes.",
+          "quote": "Les Écologistes - Europe écologie les Verts forme internationale Pays : France Langue(s) : français Responsabilité(s) exercée(s) sur les documents : Auteur Naissance : 2023-10-14",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb18134576n",
+          "publisher": "Bibliothèque nationale de France"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Porter le salaire minimum à 2 000 euros brut par mois dès 2027.",
+          "quote": "Passer le salaire minimum à 2000€ brut par mois dès 2027.",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "publisher": "Les Écologistes (programme, juillet 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Rétablir l'impôt sur la fortune (ISF) avec une composante climatique.",
+          "quote": "Rétablir l’Impôt sur la Fortune (ISF) en lui ajoutant une composante climatique pour orienter le patrimoine vers des actifs verts.",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "publisher": "Les Écologistes (programme, juillet 2026)"
+        },
+        {
+          "theme": "climat",
+          "text": "Interdire les vols intra-européens lorsqu'une alternative en train de moins de 4 h 30 existe.",
+          "quote": "Interdire les vols intra-européens lorsqu’une alternative de moins de 4h30 en train existe.",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "publisher": "Les Écologistes (programme, juillet 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Instaurer un référendum d'initiative citoyenne (RIC) propositionnel ou abrogatif, soumis à un contrôle de constitutionnalité préalable.",
+          "quote": "Renforcer la démocratie directe par la mise en œuvre du Référendum d’Initiative Citoyenne (RIC) propositionnel ou abrogatif – sous condition d’un contrôle de constitutionnalité préalable.",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "publisher": "Les Écologistes (programme, juillet 2026)"
+        },
+        {
+          "theme": "europe",
+          "text": "Adopter des clauses de sauvegarde européennes face à la redirection des exportations chinoises vers l'Union, sur le modèle des mesures pour l'acier.",
+          "quote": "Adopter des clauses de sauvegarde pour accélérer le développement d’une industrie décarbonée face à la redirection des flux commerciaux chinois vers l’Union européenne (sur le modèle des mesures pour l’acier).",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "publisher": "Les Écologistes (programme, juillet 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "pcf",
+      "name": "Parti communiste français",
+      "sigle": "PCF",
+      "nuance": "COM",
+      "founded": {
+        "date": "1920-12-30",
+        "text": "Né au congrès de Tours du 30 décembre 1920, quand la majorité de la SFIO vote l'adhésion à la IIIe Internationale ; il prend le nom de PCF en 1943.",
+        "quote": "Lors de son Congrès de Tours, le 30 décembre 1920, la Section française de l'Internationale ouvrière (SFIO) se divise sur la question : faut-il adhérer à la IIIe Internationale ?",
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb118667814",
+        "publisher": "Bibliothèque nationale de France"
+      },
+      "leaders": [
+        {
+          "name": "Fabien Roussel",
+          "role": "secrétaire national, candidat à l'élection présidentielle de 2027",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Déjà candidat en 2022, le secrétaire national du PCF défend une candidature autonome",
+        "url": "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389",
+        "publisher": "LCP"
+      },
+      "elus": {
+        "deputes": 17,
+        "senateurs": 18,
+        "eurodeputes": 0,
+        "asOf": "2026-10",
+        "quote": "Libertés, Indépendants, Outre-mer et Territoires 23 0 23 Gauche Démocrate et Républicaine 17 0 17",
+        "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+        "publisher": "Assemblée nationale",
+        "sources": [
+          {
+            "field": "senateurs",
+            "asOf": "2026-10",
+            "quote": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky Membres : 18 Présidente : Mme Cécile CUKIERMAN",
+            "url": "https://www.senat.fr/senateurs/grp.html",
+            "publisher": "Sénat"
+          },
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-06",
+            "quote": "Gauche Unie : Coalition Gauche Unie (Parti communiste français, Gauche républicaine et socialiste) 2,36",
+            "url": "https://results.elections.europa.eu/fr/resultats-nationaux/france/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Députés : membres (hors apparentés) du groupe de l'Assemblée nationale que le parti constitue ou dirige ; ce n'est pas un décompte des adhérents du parti. Groupe : Gauche Démocrate et Républicaine, qui compte aussi des élus ultramarins d'autres formations. Sénateurs : membres (hors apparentés et rattachés) du groupe du Sénat que le parti constitue ou dirige. Groupe : CRCE-Kanaky, qui compte aussi des élus d'autres formations. Eurodéputés : aucun, la liste Gauche unie (PCF-GRS) ayant obtenu 2,36 % en 2024, sous le seuil de 5 %."
+      },
+      "values": {
+        "text": "Le parti se fixe pour objectif de « conquérir le pouvoir pour reconstruire la France et la République, pour sortir du capitalisme et s'engager vers une société démocratique », avec pour visée le communisme.",
+        "quote": "conquérir le pouvoir pour reconstruire la France et la République, pour sortir du capitalisme et s’engager vers une société démocratique",
+        "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf",
+        "publisher": "Parti communiste français (base commune du 40e congrès, juillet 2026)"
+      },
+      "dates": [
+        {
+          "date": "1920-12-30",
+          "text": "Congrès de Tours : la majorité de la SFIO adhère à la IIIe Internationale et fonde la Section française de l'Internationale communiste.",
+          "quote": "Lors de son Congrès de Tours, le 30 décembre 1920, la Section française de l'Internationale ouvrière (SFIO) se divise sur la question : faut-il adhérer à la IIIe Internationale ?",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb118667814",
+          "publisher": "Bibliothèque nationale de France"
+        },
+        {
+          "date": "1939-09-26",
+          "text": "Après le pacte germano-soviétique, le gouvernement dissout le Parti communiste, qui poursuit une activité clandestine puis participe au CNR et au gouvernement du général de Gaulle.",
+          "quote": "Après le pacte germano-soviétique le 30 août 1939, le PC est dissous par le gouvernement (26/09/1939) mais aura une activité clandestine dans un \"Front national\" puis participera au CNR et au gouvernement dirigé par Charles de Gaulle.",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb118667814",
+          "publisher": "Bibliothèque nationale de France"
+        },
+        {
+          "date": "1981",
+          "text": "Le PCF participe au gouvernement Mauroy de 1981 à 1983, après l'élection de François Mitterrand.",
+          "quote": "Il participe de 1981 à 1983 au gouvernement Maurroy après l'élection présidentielle de François Mitterrand en mai 1981.",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb118667814",
+          "publisher": "Bibliothèque nationale de France"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Financer, par le développement de la cotisation sociale, la retraite à 60 ans à taux plein.",
+          "quote": "nos propositions de financement pour développer la cotisation sociale et financer une bonne retraite à 60 ans à taux plein",
+          "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf",
+          "publisher": "Parti communiste français (base commune du 40e congrès, juillet 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Étendre le pôle public bancaire et placer sous maîtrise publique le crédit et l'investissement pour financer la réindustrialisation.",
+          "quote": "La maîtrise publique et démocratique du crédit, de l’investissement et de la création monétaire, l’extension du pôle public bancaire permettront de garantir l’accès à l’argent pour financer le renouveau industriel.",
+          "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf",
+          "publisher": "Parti communiste français (base commune du 40e congrès, juillet 2026)"
+        },
+        {
+          "theme": "climat",
+          "text": "Lancer un grand plan de construction et de rénovation thermique des logements et créer un service public national du logement.",
+          "quote": "en relançant massivement la construction et la rénovation thermique des logements et de créer un véritable service public national du logement",
+          "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf",
+          "publisher": "Parti communiste français (base commune du 40e congrès, juillet 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Instaurer une « proportionnelle réelle » aux élections.",
+          "quote": "L’instauration d’une proportionnelle réelle, assurant à tous les courants une représentation correspondant à leur influence électorale, est indispensable pour que chaque voix compte et que le pluralisme soit respecté.",
+          "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf",
+          "publisher": "Parti communiste français (base commune du 40e congrès, juillet 2026)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Sortir immédiatement de l'OTAN, première étape vers sa dissolution et vers un espace de sécurité collective européen.",
+          "quote": "Par la sortie immédiate de l’OTAN, première étape vers sa dissolution et la construction d’un espace de sécurité collective européen, de l’Atlantique à l’Oural, dans l’esprit d’Helsinki.",
+          "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf",
+          "publisher": "Parti communiste français (base commune du 40e congrès, juillet 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "reconquete",
+      "name": "Reconquête",
+      "sigle": "",
+      "nuance": "REC",
+      "founded": {
+        "date": "2021-12-05",
+        "text": "Parti d'Éric Zemmour, dont le nom est lancé lors de son premier meeting de campagne présidentielle à Villepinte, le 5 décembre 2021.",
+        "quote": "Le mot, qui sert de nom au parti d’Éric Zemmour, était lancé dès les premières minutes de son discours, dimanche à Villepinte (Seine-Saint-Denis), lors du premier meeting officiel du candidat d’extrême droite.",
+        "url": "https://www.politis.fr/articles/2021/12/a-villepinte-zemmour-en-guerre-43875/",
+        "publisher": "Politis"
+      },
+      "leaders": [
+        {
+          "name": "Éric Zemmour",
+          "role": "président",
+          "since": ""
+        },
+        {
+          "name": "Sarah Knafo",
+          "role": "secrétaire générale",
+          "since": ""
+        },
+        {
+          "name": "Gilbert Payet",
+          "role": "trésorier",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Comité opérationnel Éric Zemmour Président Sarah Knafo Secrétaire générale Gilbert Payet Trésorier",
+        "url": "https://www.parti-reconquete.fr/equipe",
+        "publisher": "Reconquête"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": 1,
+        "asOf": "2024-07",
+        "quote": "1 ESN Europe of Sovereign Nations 1 Reconquête! : Reconquête!",
+        "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+        "publisher": "Parlement européen",
+        "note": "Députés et sénateurs : nombre non établi par une source vérifiable (pas de groupe). Eurodéputés : répartition à la session constitutive de juillet 2024."
+      },
+      "values": {
+        "text": "Le parti se donne pour objectifs « de défendre l'intérêt national et de promouvoir la grandeur de la France » et dit vouloir défendre « notre identité, nos familles et nos terroirs ».",
+        "quote": "Il se donne pour objectifs de défendre l'intérêt national et de promouvoir la grandeur de la France. Refusant le déclin, il veut assurer la défense de notre identité, de nos familles et de nos terroirs",
+        "url": "https://www.parti-reconquete.fr/mouvement",
+        "publisher": "Reconquête"
+      },
+      "dates": [
+        {
+          "date": "2021-12-05",
+          "text": "Premier meeting de campagne d'Éric Zemmour à Villepinte, où il lance le nom de son parti, Reconquête.",
+          "quote": "Le mot, qui sert de nom au parti d’Éric Zemmour, était lancé dès les premières minutes de son discours, dimanche à Villepinte (Seine-Saint-Denis), lors du premier meeting officiel du candidat d’extrême droite.",
+          "url": "https://www.politis.fr/articles/2021/12/a-villepinte-zemmour-en-guerre-43875/",
+          "publisher": "Politis"
+        },
+        {
+          "date": "2022-04-10",
+          "text": "Présidentielle : Éric Zemmour obtient 7,07 % des voix au premier tour.",
+          "quote": "Jean-Luc Mélenchon, 21,95% Eric Zemmour, 7,07% Valérie Pécresse, 4,78%",
+          "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+          "publisher": "Gouvernement (info.gouv.fr)"
+        },
+        {
+          "date": "2024-06-09",
+          "text": "Élections européennes : la liste La France fière (Reconquête et CNIP) obtient 5,47 % des voix.",
+          "quote": "La France fière : Coalition La France fière (Reconquête!, Centre national des indépendants et paysans) 5,47",
+          "url": "https://results.elections.europa.eu/fr/resultats-nationaux/france/2024-2029/",
+          "publisher": "Parlement européen"
+        },
+        {
+          "date": "2025-04-15",
+          "text": "Le Conseil d'État rejette la requête de Reconquête contre l'amende de 20 000 euros infligée par la CNIL le 25 janvier 2024 pour des manquements au RGPD dans sa prospection électorale.",
+          "quote": "Article 1er : La requête de l'association Reconquête est rejetée.",
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-04-15/492943",
+          "publisher": "Conseil d'État"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "sécurité",
+          "text": "Expulser les étrangers, même en situation régulière, après un an de chômage.",
+          "quote": "un étranger, même en situation régulière, devrait être expulsé après un an de chômage",
+          "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
+          "publisher": "Public Sénat (septembre 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Organiser un référendum, dès les élections législatives, sur les mesures prioritaires en matière d'immigration, de sécurité et de justice.",
+          "quote": "Dès les prochaines élections législatives, j’organiserai un référendum pour faire valider par les Français, les mesures prioritaires que je prendrai en matière d’immigration, de sécurité et de justice",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "publisher": "Public Sénat (programme présidentiel d'Éric Zemmour, mars 2022)"
+        },
+        {
+          "theme": "europe",
+          "text": "Réviser l'article 55 de la Constitution pour faire primer les nouvelles lois nationales sur les textes internationaux et européens.",
+          "quote": "en instaurant la « supériorité des nouvelles lois nationales sur tous les textes internationaux et européens » par la révision de l’article 55 de la Constitution",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "publisher": "Public Sénat (programme présidentiel d'Éric Zemmour, mars 2022)"
+        },
+        {
+          "theme": "économie",
+          "text": "Baisser de 30 milliards d'euros les impôts de production des entreprises.",
+          "quote": "« La reconquête de la prospérité » passera par une baisse des impôts de production sur les entreprises, à hauteur de 30 milliards d’euros.",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "publisher": "Public Sénat (programme présidentiel d'Éric Zemmour, mars 2022)"
+        },
+        {
+          "theme": "travail",
+          "text": "Exonérer d'impôt et de cotisations sociales les heures supplémentaires.",
+          "quote": "Éric Zemmour veut également renouer avec le : « travailler plus pour gagner plus » en exonérant d’impôt et de charges sociales les heures supplémentaires.",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "publisher": "Public Sénat (programme présidentiel d'Éric Zemmour, mars 2022)"
+        }
+      ]
+    },
+    {
+      "slug": "place-publique",
+      "name": "Place publique",
+      "sigle": "PP",
+      "nuance": "PLP",
+      "founded": {
+        "date": "2018-11-06",
+        "text": "Lancé le 6 novembre 2018 par Raphaël Glucksmann et une vingtaine de personnalités de la société civile.",
+        "quote": "Raphaël Glucksmann et une vingtaine de personnalités de la société civile ont lancé mardi un nouveau parti, Place publique, qui veut donner corps à l'espace politique situé entre Emmanuel Macron et Jean-Luc Mélenchon",
+        "url": "https://www.publicsenat.fr/article/politique/place-publique-un-nouveau-parti-dans-un-paysage-deja-tres-emiette-a-gauche-135149",
+        "publisher": "Public Sénat"
+      },
+      "leaders": [
+        {
+          "name": "Raphaël Glucksmann",
+          "role": "co-président",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Raphaël Glucksmann - Sa lettre aux Français Raphaël Glucksmann Co-Président",
+        "url": "https://place-publique.eu/",
+        "publisher": "Place publique"
+      },
+      "elus": {
+        "deputes": 2,
+        "senateurs": 2,
+        "eurodeputes": 3,
+        "asOf": "2026-10",
+        "quote": "Parlement européen : Glucksmann Raphaël Lalucq Aurore Pellerin-Carlin Thomas — Sénat : Jomier Bernard - circonscription de Paris (75) Blanc Grégory - circonscription du Maine-et-Loire (49) — Assemblée nationale : Rousseau Aurélien - 7e circonscription des Yvelines (78) Houlié Sacha",
+        "url": "https://place-publique.eu/pages/3jXB7eODOrjUl2x99Q7azY/nos-elus",
+        "publisher": "Place publique",
+        "sources": [
+          {
+            "field": "eurodeputes",
+            "asOf": "2024-07",
+            "quote": "13 S&D Groupe de l'Alliance Progressiste des Socialistes et Démocrates au Parlement européen 10 PS : Parti socialiste 3 Place publique : Place publique",
+            "url": "https://results.elections.europa.eu/fr/repartition-partis-nationaux-groupe-politique/2024-2029/",
+            "publisher": "Parlement européen"
+          }
+        ],
+        "note": "Décompte publié par le parti sur sa page « Nos élus » (consultée en octobre 2026, page non datée). Les députés et sénateurs de Place publique siègent dans les groupes socialistes."
+      },
+      "values": {
+        "text": "Selon ses statuts, Place publique est « un parti politique de gauche, écologiste, féministe, démocrate et pro-européen », qui porte des valeurs « de justice sociale, d'humanisme, et d'antiracisme ».",
+        "quote": "Place publique est un parti politique de gauche, écologiste, féministe, démocrate et pro-européen, et un organisme d’éducation citoyenne portant des valeurs démocratiques, de justice sociale, d’humanisme, et d’antiracisme.",
+        "url": "https://place-publique.eu/document/vNO9VptOgU1Br5x4ZrPqX/statuts-place-publique.pdf",
+        "publisher": "Place publique (statuts, révision du 23 avril 2025)"
+      },
+      "dates": [
+        {
+          "date": "2018-11-06",
+          "text": "Lancement de Place publique par Raphaël Glucksmann et une vingtaine de personnalités de la société civile.",
+          "quote": "Raphaël Glucksmann et une vingtaine de personnalités de la société civile ont lancé mardi un nouveau parti, Place publique",
+          "url": "https://www.publicsenat.fr/article/politique/place-publique-un-nouveau-parti-dans-un-paysage-deja-tres-emiette-a-gauche-135149",
+          "publisher": "Public Sénat"
+        },
+        {
+          "date": "2024-06-09",
+          "text": "Élections européennes : la liste commune avec le Parti socialiste, « Réveiller l'Europe », obtient 13,83 % des voix.",
+          "quote": "Réveiller l'Europe : Coalition Réveiller l'Europe (Parti socialiste, Place publique) 13,83",
+          "url": "https://results.elections.europa.eu/fr/resultats-nationaux/france/2024-2029/",
+          "publisher": "Parlement européen"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Porter le SMIC à 1 600 euros net dans les deux ans suivant l'arrivée au pouvoir.",
+          "quote": "Augmenter le SMIC à 1600 euros net dans les deux ans qui suivent notre accession au pouvoir.",
+          "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+          "publisher": "Place publique (projet « Acte I »)"
+        },
+        {
+          "theme": "économie",
+          "text": "Imposer davantage les très hauts patrimoines et les grands groupes pour contrer leur optimisation fiscale.",
+          "quote": "Effort fiscal nouveau, ciblé sur les très hauts patrimoines et les grands groupes, pour contrer leur optimisation fiscale, afin qu’ils contribuent équitablement à la solidarité nationale.",
+          "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+          "publisher": "Place publique (projet « Acte I »)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Instaurer immédiatement la proportionnelle, de préférence par circonscriptions régionales.",
+          "quote": "Instaurer immédiatement la proportionnelle, de préférence par circonscriptions régionales avec un fléchage départemental des candidats.",
+          "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+          "publisher": "Place publique (projet « Acte I »)"
+        },
+        {
+          "theme": "europe",
+          "text": "Créer rapidement un fonds européen de défense de 500 milliards d'euros financé par un emprunt commun.",
+          "quote": "Oeuvrer à la mise en place rapide d’un fonds européen de défense de 500 milliards d’euros via un emprunt commun.",
+          "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+          "publisher": "Place publique (projet « Acte I »)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Rétablir une police de proximité centrée sur la prévention, la médiation et la résolution des conflits.",
+          "quote": "Faire renaître une police de proximité moderne, ancrée localement, centrée sur la prévention, la médiation et la résolution de conflits.",
+          "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+          "publisher": "Place publique (projet « Acte I »)"
+        }
+      ]
+    },
+    {
       "slug": "lutte-ouvriere",
       "name": "Lutte ouvrière",
       "sigle": "LO",

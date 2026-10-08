@@ -24,6 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const MONTHS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
 const monthYear = (d: string) => (d.length >= 7 ? `${MONTHS[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}` : d)
+/** 1972, mai 2007 ou 5 octobre 1972, selon la précision de la source. */
+const dateFr = (d: string) => (d.length >= 10 ? `${Number(d.slice(8, 10)) === 1 ? '1er' : Number(d.slice(8, 10))} ${monthYear(d)}` : monthYear(d))
 
 export default async function PartiPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -39,7 +41,7 @@ export default async function PartiPage({ params }: { params: Promise<{ slug: st
     p.elus.senateurs !== null ? { num: String(p.elus.senateurs), label: plural(p.elus.senateurs, 'sénateur') } : null,
     p.elus.eurodeputes !== null ? { num: String(p.elus.eurodeputes), label: plural(p.elus.eurodeputes, 'eurodéputé') } : null,
   ].filter((x): x is { num: string; label: string } => x !== null)
-  const sources = [p.founded, p.leadersSource, p.elus.url ? (p.elus as Required<typeof p.elus>) : null, p.values, ...p.dates, ...p.measures].filter(Boolean) as { quote: string; url: string; publisher: string }[]
+  const sources = [p.founded, p.leadersSource, p.elus.url ? (p.elus as Required<typeof p.elus>) : null, ...(p.elus.sources ?? []), p.values, ...p.dates, ...p.measures].filter(Boolean) as { quote: string; url: string; publisher: string }[]
   return (
     <div className="container" style={{ paddingTop: 'var(--s6)' }}>
       <p className="kicker">
@@ -58,7 +60,7 @@ export default async function PartiPage({ params }: { params: Promise<{ slug: st
           </p>
         ))}
       </div>
-      {figures.length > 1 && p.elus.asOf && <p className="small muted" style={{ marginTop: 'calc(-1 * var(--s3))' }}>Nombre d’élus en {monthYear(p.elus.asOf)}.</p>}
+      {figures.length > 1 && p.elus.asOf && <p className="small muted" style={{ marginTop: 'calc(-1 * var(--s3))' }}>Nombre d’élus en {monthYear(p.elus.asOf)}{p.elus.note ? ', détail dans les sources' : ''}.</p>}
 
       <div className="grid grid--2">
         <section aria-labelledby="qui">
@@ -111,7 +113,7 @@ export default async function PartiPage({ params }: { params: Promise<{ slug: st
           <ol className={`timeline bloc-${bloc}`}>
             {p.dates.map((d) => (
               <li key={d.date + d.text}>
-                <span className="timeline__date">{d.date}</span>
+                <time className="timeline__date" dateTime={d.date}>{dateFr(d.date)}</time>
                 <span>{d.text}</span>
               </li>
             ))}
@@ -121,6 +123,7 @@ export default async function PartiPage({ params }: { params: Promise<{ slug: st
 
       <details className="sources section">
         <summary>Sources</summary>
+        {p.elus.note && <p className="small">{p.elus.note}</p>}
         <ul className="small" style={{ paddingLeft: '1.2em' }}>
           {sources.map((s, i) => (
             <li key={i}>
