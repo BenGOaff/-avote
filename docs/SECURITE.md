@@ -7,6 +7,7 @@
 3. Aucune ressource tierce sur le site (polices, scripts, images) : la CSP l’interdit. Exception : Google Analytics (googletagmanager.com, google-analytics.com), chargé seulement après consentement, coupé pendant le test et sur /test, /resultats, /mon-profil, /studio. Aucun événement personnalisé n’est envoyé.
 4. Les URL ne contiennent jamais de réponse, de score ou d’identifiant de profil.
 5. La newsletter ne reçoit aucune information du test.
+6. L’urne (`/urne`) ne reçoit que le choix de bulletin, jamais une réponse du test. Deux registres jamais reliés (Supabase UE, schéma `urne`, RLS sans politique) : compteurs (nombres seuls) et empreintes HMAC de l’IP (anti-doublon). Deux appels distincts, protégés par un jeton serveur ; aucun ne porte à la fois une empreinte et un choix. Anti-robots : preuve de travail signée, sans service tiers. Rien n’est journalisé. Résultats gelés la veille et le jour de chaque tour. Empreintes à effacer après le second tour.
 
 Vérifié le 8 octobre 2026 : parcours complet du test au navigateur, **aucune requête vers un domaine extérieur**, aucune erreur JavaScript.
 
@@ -30,4 +31,4 @@ Les flux RSS sont traités comme des données non fiables : pas d’outil donné
 
 ## Secrets
 
-Jamais dans le dépôt. `ANTHROPIC_API_KEY` en secret GitHub Actions ; `RESEND_API_KEY` et `NEWSLETTER_SECRET` dans hPanel.
+Jamais dans le dépôt. `ANTHROPIC_API_KEY` en secret GitHub Actions ; `RESEND_API_KEY`, `NEWSLETTER_SECRET`, `URNE_SUPABASE_URL`, `URNE_SUPABASE_KEY`, `URNE_TOKEN` et `URNE_SECRET` dans hPanel.

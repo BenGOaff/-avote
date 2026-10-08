@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server'
+import { clientIp } from '@/lib/client-ip'
 import { addContact, openToken, rateLimited } from '@/lib/newsletter'
 
 export const dynamic = 'force-dynamic'
@@ -7,7 +8,7 @@ export const dynamic = 'force-dynamic'
 export async function POST(req: NextRequest) {
   const origin = req.headers.get('origin')
   if (origin && new URL(origin).host !== req.nextUrl.host) return NextResponse.json({ ok: false }, { status: 403 })
-  const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown'
+  const ip = clientIp(req) || 'unknown'
   if (rateLimited(`confirm:${ip}`, 10)) return NextResponse.redirect(new URL('/newsletter?etat=limite', req.url), 303)
 
   const form = await req.formData()

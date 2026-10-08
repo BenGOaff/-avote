@@ -39,6 +39,20 @@ export default function PrivacyPage() {
         </p>
         <p>La newsletter n’a aucun lien avec le test. Elle ne sait pas si tu l’as fait, ni ce que tu as répondu, et elle n’est jamais segmentée selon des opinions.</p>
 
+        <h2 id="urne" style={{ fontSize: 'var(--h3)' }}>
+          L’urne : un bulletin anonyme, si tu le choisis
+        </h2>
+        <p>
+          L’urne est une consultation en ligne, ouverte à tous et non représentative. Voter est facultatif et n’a aucun lien avec le test. Ton bulletin
+          ajoute 1 au compteur du choix que tu as fait : ce compteur ne contient que des nombres, sans date ni identifiant.
+        </p>
+        <p>
+          Pour qu’une même connexion ne vote qu’une fois, on enregistre une empreinte de ton adresse IP, calculée avec une clé secrète : on ne peut
+          pas en retrouver l’adresse, et elle est rangée à part, sans ton choix. Les deux enregistrements passent par deux opérations distinctes ;
+          ni nous, ni l’hébergeur de la base ne pouvons savoir qui a voté quoi. Les empreintes sont effacées après le second tour. Base de données :
+          Supabase, hébergée dans l’Union européenne (Paris). Base légale : ton consentement, exprimé par le clic sur « À l’urne ».
+        </p>
+
         <h2 id="audience" style={{ fontSize: 'var(--h3)' }}>
           Mesure d’audience, seulement si tu l’acceptes
         </h2>

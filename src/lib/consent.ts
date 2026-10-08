@@ -11,7 +11,7 @@ import { GA_ID } from './site'
 const KEY = 'ca-vote:consent'
 const VALIDITY_MS = 182 * 24 * 3600 * 1000
 /** Pages où la mesure est toujours coupée */
-export const PRIVATE_PATHS = ['/test', '/resultats', '/mon-profil', '/studio']
+export const PRIVATE_PATHS = ['/test', '/resultats', '/mon-profil', '/studio', '/urne']
 export const CONSENT_OPEN_EVENT = 'cavote:consent-open'
 
 export type ConsentChoice = 'granted' | 'denied'
