@@ -22,6 +22,14 @@ export default function IndependencePage() {
           Le site sera financé par la vente d’objets et de visuels (<Link href="/boutique">boutique</Link>, pas encore ouverte). Pas de publicité ciblée, pas de
           vente de données, pas de commission liée à un candidat.
         </p>
+        <p>
+          Le site est soutenu par{' '}
+          <a href="https://tiquiz.fr/?utm_source=cavote&utm_medium=referral&utm_campaign=soutien&utm_content=independance" rel="sponsored noopener" target="_blank">
+            Tiquiz
+          </a>
+          , un logiciel de création de quiz. Ce soutien n’a aucun effet sur les questions, les positions codées, les sources, les scores ni l’ordre des
+          candidats. Le test du site est développé par Ça vote ?, pas avec Tiquiz.
+        </p>
         <h2 style={{ fontSize: 'var(--h3)' }}>Ce qui ne peut pas acheter une place</h2>
         <ul>
           <li>Aucun achat, partenariat ou don ne modifie un score, un ordre ou une position codée.</li>

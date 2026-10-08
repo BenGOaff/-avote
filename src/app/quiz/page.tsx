@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 }
 
 import { TIQUIZ_URL } from '@/lib/site'
+import { SupportLine } from '@/components/Support'
 
 // Quiz Tiquiz. Condition fixée par la rédaction : Tiquiz ne conserve ni les réponses ni le résultat
 // liés à l'email ; seul un tag « quiz passé » est envoyé à Systeme.io.
@@ -27,6 +28,7 @@ export default function QuizPage() {
       ) : (
         <p className="muted">Le quiz arrive bientôt.</p>
       )}
+      <SupportLine placement="quiz" made />
       <p className="small" style={{ marginTop: 'var(--s4)' }}>
         Données collectées par le quiz : <Link href="/donnees">qui les garde et pourquoi</Link>. Pour comparer tes idées aux programmes, c’est l’autre test : <Link href="/test">le test complet</Link>, calculé sur ton appareil.
       </p>

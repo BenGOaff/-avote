@@ -8,6 +8,7 @@ import { VeilleState } from '@/components/VeilleState'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { ExampleResult } from '@/components/ExampleResult'
 import { TestFlow } from './test/TestFlow'
+import { SupportLine } from '@/components/Support'
 
 
 export const revalidate = 1800
@@ -21,6 +22,9 @@ export default function HomePage() {
       {/* L'accueil s'ouvre directement sur le test complet */}
       <section className="container" style={{ paddingTop: 'var(--s5)' }} aria-label="Le test">
         <TestFlow />
+        <div className="narrow">
+          <SupportLine placement="accueil-test" />
+        </div>
       </section>
 
       <section className="section container">
