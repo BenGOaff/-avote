@@ -1,0 +1,1152 @@
+{
+  "_note": "Fiches partis : même grille pour tous ; chaque citation vérifiée mot pour mot (scripts/quotes-check.ts).",
+  "checkedAt": "2026-10-08",
+  "partis": [
+    {
+      "slug": "lutte-ouvriere",
+      "name": "Lutte ouvrière",
+      "sigle": "LO",
+      "nuance": "EXG",
+      "founded": {
+        "date": "1968",
+        "text": "Lutte ouvrière apparaît en juin 1968, après la dissolution par le pouvoir de l'organisation trotskiste Voix ouvrière et de son journal à l'issue de mai 1968.",
+        "quote": "dissous, ainsi que son organe, Voix ouvrière, par décision du pouvoir à l'issue des événements de mai 1968 , Lutte ouvrière, comme le journal qui porte le même nom, apparaît en juin 1968",
+        "url": "https://www.larousse.fr/encyclopedie/divers/LO/103133",
+        "publisher": "Larousse (Encyclopédie)"
+      },
+      "leaders": [
+        {
+          "name": "Nathalie Arthaud",
+          "role": "porte-parole",
+          "since": "2008"
+        }
+      ],
+      "leadersSource": {
+        "quote": "Nathalie Arthaud a annoncé sa candidature à la présidentielle 2027, sa quatrième depuis 2012, le lundi 8 décembre. Âgée de 55 ans, la porte-parole de Lutte ouvrière",
+        "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-qui-est-vraiment-nathalie-arthaud-la-porte-parole-de-lutte-ouvriere-7900575536",
+        "publisher": "RTL (9 décembre 2025)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Lutte ouvrière se présente comme « une organisation communiste ». Elle veut arracher aux capitalistes « la gestion des usines, des banques, des mines, des terres, de l'énergie et des transports » pour qu'ils appartiennent à la collectivité et soient gérés par elle.",
+        "quote": "d'arracher des mains des capitalistes la gestion des usines, des banques, des mines, des terres, de l'énergie et des transports. Et de faire en sorte qu'ils appartiennent à la collectivité et soient gérés par elle.",
+        "url": "https://www.lutte-ouvriere.org/portail/qui-sommes-nous/qui-sommes-nous-presentation",
+        "publisher": "Lutte ouvrière (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "1968",
+          "text": "Création de Lutte ouvrière, après la dissolution de Voix ouvrière.",
+          "quote": "Lutte ouvrière, comme le journal qui porte le même nom, apparaît en juin 1968 et se structure sous la forme d'une association de militants",
+          "url": "https://www.larousse.fr/encyclopedie/divers/LO/103133",
+          "publisher": "Larousse (Encyclopédie)"
+        },
+        {
+          "date": "1974",
+          "text": "Première candidature d'Arlette Laguiller à l'élection présidentielle : 2,33 %.",
+          "quote": "En 1974, il est le premier mouvement politique à investir une candidate à la présidentielle, Arlette Laguiller , qui recueille 2,33 % des voix",
+          "url": "https://www.larousse.fr/encyclopedie/divers/LO/103133",
+          "publisher": "Larousse (Encyclopédie)"
+        },
+        {
+          "date": "1999",
+          "text": "Élections européennes : la liste commune avec la LCR obtient 3 élus LO et 2 élus LCR.",
+          "quote": "Parfois associées à la Ligue communiste révolutionnaire (LCR) , comme aux européennes de 1979 et de 1999 (3 élus LO et 2 LCR)",
+          "url": "https://www.larousse.fr/encyclopedie/divers/LO/103133",
+          "publisher": "Larousse (Encyclopédie)"
+        },
+        {
+          "date": "2002",
+          "text": "Meilleur résultat national : Arlette Laguiller obtient 5,72 % au premier tour de l'élection présidentielle.",
+          "quote": "1995 (5,30 %) et 2002 (5,72 %), refusant alors de prendre position pour Jacques Chirac face à Jean-Marie Le Pen",
+          "url": "https://www.larousse.fr/encyclopedie/divers/LO/103133",
+          "publisher": "Larousse (Encyclopédie)"
+        },
+        {
+          "date": "2008",
+          "text": "Nathalie Arthaud devient porte-parole du parti.",
+          "quote": "En décembre 2008, alors qu'elle a annoncé à plusieurs reprises qu'elle ne serait candidate à l'élection présidentielle de 2012, A. Laguiller adoube Nathalie Arthaud comme porte-parole du parti",
+          "url": "https://www.larousse.fr/encyclopedie/divers/LO/103133",
+          "publisher": "Larousse (Encyclopédie)"
+        },
+        {
+          "date": "2025-12-08",
+          "text": "Nathalie Arthaud annonce sa candidature à l'élection présidentielle de 2027.",
+          "quote": "Nathalie Arthaud a annoncé sa candidature à la présidentielle 2027, sa quatrième depuis 2012, le lundi 8 décembre.",
+          "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-qui-est-vraiment-nathalie-arthaud-la-porte-parole-de-lutte-ouvriere-7900575536",
+          "publisher": "RTL (9 décembre 2025)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "économie",
+          "text": "Augmenter massivement les salaires, allocations et pensions, et les indexer sur la hausse des prix.",
+          "quote": "Nous devons imposer une augmentation massive des salaires, des allocations et des pensions et leur indexation sur la hausse des prix",
+          "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+          "publisher": "Lutte ouvrière (site officiel), brochure Présidentielle 2027 (mai 2026)"
+        },
+        {
+          "theme": "travail",
+          "text": "Répartir le travail entre tous pour que personne ne soit au chômage.",
+          "quote": "Alors, pour que personne ne soit condamné au chômage, il faut recenser les besoins et imposer que le travail soit réparti entre tous.",
+          "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+          "publisher": "Lutte ouvrière (site officiel), brochure Présidentielle 2027 (mai 2026)"
+        },
+        {
+          "theme": "travail",
+          "text": "Baisser le temps et la charge de travail sans perte de salaire.",
+          "quote": "Il faut baisser le temps et la charge de travail sans perte de salaire pour permettre à tous de vivre.",
+          "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+          "publisher": "Lutte ouvrière (site officiel), brochure Présidentielle 2027 (mai 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Lever le secret commercial et le secret des affaires pour rendre publics les comptes des grandes entreprises.",
+          "quote": "Levée du secret commercial et du secret des affaires pour rendre publics les comptes de ces grandes entreprises, y compris ceux qui sont cachés",
+          "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+          "publisher": "Lutte ouvrière (site officiel), brochure Présidentielle 2027 (mai 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Exproprier sans indemnité ni rachat les actionnaires des grands groupes, en commençant par l'industrie pétrolière.",
+          "quote": "Expropriation sans indemnité ni rachat de leurs actionnaires en commençant par ceux de l'industrie pétrolière",
+          "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+          "publisher": "Lutte ouvrière (site officiel), brochure Présidentielle 2027 (mai 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "npa-revolutionnaires",
+      "name": "Nouveau parti anticapitaliste – Révolutionnaires",
+      "sigle": "NPA-R",
+      "nuance": "EXG",
+      "founded": {
+        "date": "2022",
+        "text": "Issu de la scission du Nouveau Parti anticapitaliste (NPA) en 2022, lors du congrès de décembre où les délégués de la plateforme C ont décidé de continuer le NPA.",
+        "quote": "Le NPA-R est né après la scission du NPA en 2022 en deux partis.",
+        "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+        "publisher": "BFMTV (17 juin 2026)"
+      },
+      "leaders": [
+        {
+          "name": "Selma Labib",
+          "role": "porte-parole",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "le NPA-Révolutionnaires annonce présenter la candidature de sa porte-parole Selma Labib",
+        "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+        "publisher": "BFMTV (17 juin 2026)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Le NPA-Révolutionnaires dit lutter « pour une société débarrassée de l'exploitation et des oppressions, fondée sur la propriété collective des moyens de production ».",
+        "quote": "Le Nouveau parti anticapitaliste – Révolutionnaires lutte pour une société débarrassée de l'exploitation et des oppressions, fondée sur la propriété collective des moyens de production.",
+        "url": "https://npa-revolutionnaires.org/a-propos",
+        "publisher": "NPA-Révolutionnaires (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2009-02-05",
+          "text": "La Ligue communiste révolutionnaire se dissout pour fonder le Nouveau Parti anticapitaliste, dont le NPA-R est issu.",
+          "quote": "Celle-ci s'autodissout le 5 février 2009 pour se fondre dans le Nouveau Parti anticapitaliste (NPA)",
+          "url": "https://www.larousse.fr/encyclopedie/personnage/Olivier_Besancenot/184000",
+          "publisher": "Larousse (Encyclopédie)"
+        },
+        {
+          "date": "2022-12-11",
+          "text": "Congrès de scission du NPA à Saint-Denis ; les délégués de la plateforme C (45,29 %) continuent le parti, qui devient le NPA-Révolutionnaires.",
+          "quote": "La plateforme A a recueilli 91 votes, soit 6,21 %, la plateforme B 711 voix, soit 48,50 %, et la plateforme C 664 voix, soit 45,29 %",
+          "url": "https://npa-revolutionnaires.org/a-propos",
+          "publisher": "NPA-Révolutionnaires (site officiel)"
+        },
+        {
+          "date": "2024",
+          "text": "Élections européennes : la liste conduite par Selma Labib obtient 0,15 %.",
+          "quote": "Elle était la tête de liste du NPA-R aux européennes de 2024, où le parti avait réuni 0,15% des voix.",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+          "publisher": "BFMTV (17 juin 2026)"
+        },
+        {
+          "date": "2026-06-17",
+          "text": "Le parti annonce la candidature de Selma Labib à l'élection présidentielle de 2027.",
+          "quote": "a annoncé ce mercredi 17 juin présenter la candidature de sa porte-parole Selma Labib à l'élection présidentielle de 2027",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+          "publisher": "BFMTV (17 juin 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "économie",
+          "text": "Augmenter les salaires et pensions de 400 euros par mois, avec aucun revenu sous 2 000 euros net.",
+          "quote": "Il faut augmenter les salaires et les pensions de 400 euros par mois pour tous et toutes. Il ne faut pas un seul revenu sous les 2000 euros net.",
+          "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+          "publisher": "NPA-Révolutionnaires, discours de Selma Labib (septembre 2026)"
+        },
+        {
+          "theme": "travail",
+          "text": "Interdire les licenciements.",
+          "quote": "pour imposer l'interdiction des licenciements, c'est maintenant que ça se joue aussi",
+          "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+          "publisher": "NPA-Révolutionnaires, discours de Selma Labib (septembre 2026)"
+        },
+        {
+          "theme": "travail",
+          "text": "Partager le travail entre tous, sans perte de salaire, pour en finir avec le chômage.",
+          "quote": "le partage du travail entre tous, sans perte de salaire, pour en finir avec le chômage est une revendication fondamentale",
+          "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+          "publisher": "NPA-Révolutionnaires, discours de Selma Labib (septembre 2026)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Refuser tout engagement humain ou financier dans les guerres qu'il qualifie d'impérialistes.",
+          "quote": "À bas le militarisme, pas un homme, pas une femme, pas un euro pour les guerres impérialistes",
+          "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+          "publisher": "NPA-Révolutionnaires, discours de Selma Labib (septembre 2026)"
+        },
+        {
+          "theme": "libertés",
+          "text": "Liberté de circulation et d'installation, et régularisation de tous les sans-papiers.",
+          "quote": "liberté de circulation et d'installation, régularisation de tous les sans-papiers",
+          "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+          "publisher": "NPA-Révolutionnaires, discours de Selma Labib (septembre 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "revolution-permanente",
+      "name": "Révolution permanente",
+      "sigle": "RP",
+      "nuance": "EXG",
+      "founded": {
+        "date": "2022",
+        "text": "Organisation fondée officiellement en décembre 2022 par des militants qui animaient depuis 2015 le quotidien en ligne du même nom, après plus d'une décennie au sein du Nouveau Parti anticapitaliste.",
+        "quote": "Révolution Permanente est une organisation politique révolutionnaire fondée officiellement en décembre 2022 . Depuis 2015, ses militants animent le quotidien en ligne du même nom.",
+        "url": "https://www.revolutionpermanente.fr/Qui-sommes-nous-1211",
+        "publisher": "Révolution permanente (site officiel)"
+      },
+      "leaders": [
+        {
+          "name": "Anasse Kazib",
+          "role": "porte-parole",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Anasse Kazib, porte-parole de Révolution permanente, s'exprime lors d'un rassemblement devant le tribunal de Paris",
+        "url": "https://www.lecourrierdelatlas.com/cinq-choses-a-savoir-sur-candidat-cheminot-anasse-kazib/",
+        "publisher": "Le Courrier de l’Atlas (23 juin 2026)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Révolution permanente dit vouloir « redonner une vitalité aux idées marxistes et révolutionnaires » et contribuer à reconstruire une gauche révolutionnaire.",
+        "quote": "Révolution Permanente s'inscrit dans le projet plus large de redonner une vitalité aux idées marxistes et révolutionnaires",
+        "url": "https://www.revolutionpermanente.fr/Qui-sommes-nous-1211",
+        "publisher": "Révolution permanente (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2015",
+          "text": "Lancement du quotidien en ligne Révolution permanente par des militants alors membres du NPA.",
+          "quote": "Depuis 2015, ses militants animent le quotidien en ligne du même nom.",
+          "url": "https://www.revolutionpermanente.fr/Qui-sommes-nous-1211",
+          "publisher": "Révolution permanente (site officiel)"
+        },
+        {
+          "date": "2022",
+          "text": "Création de l'organisation, issue d'une scission avec le NPA.",
+          "quote": "Organisation trotskiste, Révolution permanente est née en 2022 d'une scission avec le Nouveau Parti anticapitaliste (NPA)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html",
+          "publisher": "franceinfo (1er juin 2026)"
+        },
+        {
+          "date": "2026-06-01",
+          "text": "Anasse Kazib annonce sa candidature à l'élection présidentielle de 2027.",
+          "quote": "Le cheminot Anasse Kazib a annoncé, lundi 1er juin, son intention d'être candidat pour le parti d'extrême gauche Révolution permanente à l'élection présidentielle.",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html",
+          "publisher": "franceinfo (1er juin 2026)"
+        },
+        {
+          "date": "2026-06-25",
+          "text": "Procédure en cours : Anasse Kazib, porte-parole, est poursuivi pour « apologie du terrorisme » pour des propos tenus le 7 octobre 2023 ; aucune décision définitive.",
+          "quote": "il doit être jugé le 25 juin pour \"apologie du terrorisme\" pour avoir notamment soutenu la \"résistance palestinienne\" le 7 octobre 2023",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html",
+          "publisher": "franceinfo (1er juin 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "économie",
+          "text": "SMIC à 2 000 euros net, hausse des salaires de 500 euros et indexation sur l'inflation.",
+          "quote": "SMIC à 2000 € net, revalorisation de toutes les allocations, augmentation des salaires de 500 €, indexation sur l'inflation.",
+          "url": "https://anasse2027.fr/programme",
+          "publisher": "Campagne Anasse Kazib 2027 (Révolution permanente)"
+        },
+        {
+          "theme": "travail",
+          "text": "Interdire les licenciements et répartir le travail sur une semaine de 28 heures sans baisse de salaire.",
+          "quote": "Interdiction des licenciements. Répartition du travail pour une semaine de 28h sans baisse de salaire.",
+          "url": "https://anasse2027.fr/programme",
+          "publisher": "Campagne Anasse Kazib 2027 (Révolution permanente)"
+        },
+        {
+          "theme": "économie",
+          "text": "Exproprier les secteurs stratégiques (énergie, transports, banques, santé) et les placer sous contrôle des travailleurs.",
+          "quote": "Expropriation des secteurs stratégiques (énergie, transports, banques, santé, …) et placement sous contrôle des travailleur·ses.",
+          "url": "https://anasse2027.fr/programme",
+          "publisher": "Campagne Anasse Kazib 2027 (Révolution permanente)"
+        },
+        {
+          "theme": "libertés",
+          "text": "Régulariser tous les sans-papiers et instaurer la liberté de circulation et d'installation.",
+          "quote": "Régularisation de tous les sans-papiers, liberté de circulation et d'installation.",
+          "url": "https://anasse2027.fr/programme",
+          "publisher": "Campagne Anasse Kazib 2027 (Révolution permanente)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Mettre fin à la Ve République, au Sénat et à la fonction présidentielle.",
+          "quote": "Fin de la Ve République, du Sénat et de la figure présidentielle.",
+          "url": "https://anasse2027.fr/programme",
+          "publisher": "Campagne Anasse Kazib 2027 (Révolution permanente)"
+        }
+      ]
+    },
+    {
+      "slug": "debout-la-france",
+      "name": "Debout la France",
+      "sigle": "DLF",
+      "nuance": "DSV",
+      "founded": {
+        "date": "2008",
+        "text": "Nicolas Dupont-Aignan transforme en 2008 son club de réflexion Debout la République, créé au sein de la droite gaulliste, en parti politique lors d'un congrès fondateur à la Mutualité.",
+        "quote": "Toujours en 2008, lors d'un congrès fondateur à la Mutualité, il transforme son club de réflexion, Debout la République, en un parti politique à part entière.",
+        "url": "https://www.debout-la-france.fr/nicolas-dupont-aignan/",
+        "publisher": "Debout la France (site officiel)"
+      },
+      "leaders": [
+        {
+          "name": "Nicolas Dupont-Aignan",
+          "role": "président",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Nicolas Dupont-Aignan, président de Debout la France, a officiellement annoncé, sa candidature à l'élection présidentielle de 2027",
+        "url": "https://www.debout-la-france.fr/nicolas-dupont-aignan/",
+        "publisher": "Debout la France (site officiel)"
+      },
+      "elus": {
+        "deputes": 1,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10",
+        "quote": "Rattachement au titre du financement de la vie politique Debout la France",
+        "url": "https://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA795540",
+        "publisher": "Assemblée nationale (fiche de Daniel Grenon)"
+      },
+      "values": {
+        "text": "Selon ses statuts, Debout la France promeut « une certaine idée de la France », « indépendante, républicaine et sociale ». Le parti se bat pour « une Europe des projets qui respecte les Nations ».",
+        "quote": "Debout la France promeut une « certaine idée de la France » , indépendante, républicaine et sociale. Debout la France se bat pour une Europe des projets qui respecte les Nations et s'appuie sur les peuples.",
+        "url": "https://www.debout-la-france.fr/statuts-debout-la-france/",
+        "publisher": "Debout la France (statuts)"
+      },
+      "dates": [
+        {
+          "date": "2008",
+          "text": "Le club Debout la République devient un parti politique.",
+          "quote": "lors d'un congrès fondateur à la Mutualité, il transforme son club de réflexion, Debout la République, en un parti politique à part entière",
+          "url": "https://www.debout-la-france.fr/nicolas-dupont-aignan/",
+          "publisher": "Debout la France (site officiel)"
+        },
+        {
+          "date": "2014",
+          "text": "Le parti prend le nom de Debout la France.",
+          "quote": "Devenu Debout la France en 2014, le mouvement participe depuis sa création aux principales échéances électorales",
+          "url": "https://www.debout-la-france.fr/nicolas-dupont-aignan/",
+          "publisher": "Debout la France (site officiel)"
+        },
+        {
+          "date": "2017",
+          "text": "Meilleur résultat national : 4,70 % au premier tour de l'élection présidentielle.",
+          "quote": "En 2017, Nicolas Dupont-Aignan recueille 4,70 % des suffrages au premier tour de l'élection présidentielle, soit près de 1,7 million de voix.",
+          "url": "https://www.debout-la-france.fr/nicolas-dupont-aignan/",
+          "publisher": "Debout la France (site officiel)"
+        },
+        {
+          "date": "2025-03-08",
+          "text": "Nicolas Dupont-Aignan annonce sa candidature à l'élection présidentielle de 2027.",
+          "quote": "Le 8 mars 2025, à l'occasion d'un meeting devant près d'un millier de sympathisants, Nicolas Dupont-Aignan, président de Debout la France, a officiellement annoncé, sa candidature",
+          "url": "https://www.debout-la-france.fr/nicolas-dupont-aignan/",
+          "publisher": "Debout la France (site officiel)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "sécurité",
+          "text": "Recruter 10 000 policiers et gendarmes supplémentaires nets en cinq ans.",
+          "quote": "Renforcer les effectifs et augmenter nettement le taux de présence sur la voie publique des forces de l'ordre afin de reconquérir le terrain à travers une loi d'orientation et de programmation inédite : 10 000 policiers et gendarmes supplémentaires nets en 5 ans.",
+          "url": "https://www.debout-la-france.fr/projet/securite/",
+          "publisher": "Debout la France (projet)"
+        },
+        {
+          "theme": "travail",
+          "text": "Augmenter de 8 % les salaires jusqu'à 3 SMIC en réduisant les charges salariales.",
+          "quote": "Augmenter les salaires de 8% (équivalent d'un 13ème mois) pour tous les salariés jusqu'à 3 SMIC sans peser sur le coût du travail pour les entreprises.",
+          "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+          "publisher": "Debout la France (projet)"
+        },
+        {
+          "theme": "économie",
+          "text": "Réserver 75 % de la commande publique à des produits fabriqués en France.",
+          "quote": "Réserver 75% de la commande publique à des produits fabriqués en France",
+          "url": "https://www.debout-la-france.fr/projet/produire-en-france/",
+          "publisher": "Debout la France (projet)"
+        },
+        {
+          "theme": "europe",
+          "text": "Remplacer l'Union européenne par une communauté de nations libres et de projets à la carte.",
+          "quote": "REMPLACER L'UNION EUROPÉENNE PAR UNE COMMUNAUTÉ DES NATIONS LIBRES ET DES PROJETS A LA CARTE",
+          "url": "https://www.debout-la-france.fr/projet/affaires-europeennes/",
+          "publisher": "Debout la France (projet)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Instaurer le référendum d'initiative citoyenne (RIC), y compris en matière constitutionnelle.",
+          "quote": "Instaurer le référendum d'initiative citoyenne constituant (RIC) pour rendre les citoyens acteurs de l'élaboration des lois et maîtres de leur Constitution.",
+          "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
+          "publisher": "Debout la France (projet)"
+        }
+      ]
+    },
+    {
+      "slug": "les-patriotes",
+      "name": "Les Patriotes",
+      "sigle": "",
+      "nuance": "EXD",
+      "founded": {
+        "date": "2017",
+        "text": "Florian Philippot, ancien vice-président du Front national qu'il vient de quitter, transforme en septembre 2017 son association Les Patriotes en formation politique.",
+        "quote": "Florian Philippot, ancien vice-président du FN, qui a quitté le parti sur fond de désaccord avec Marine Le Pen au sujet de son association Les Patriotes, a annoncé vendredi que celle-ci devenait \"une formation politique\"",
+        "url": "https://www.publicsenat.fr/actualites/politique/philippot-transforme-son-association-les-patriotes-en-parti-77892",
+        "publisher": "Public Sénat (29 septembre 2017)"
+      },
+      "leaders": [
+        {
+          "name": "Florian Philippot",
+          "role": "président",
+          "since": "2017"
+        }
+      ],
+      "leadersSource": {
+        "quote": "Le president du parti Les Patriotes Florian Philippot en tete du cortege de la manifestation pour la paix en Ukraine",
+        "url": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027",
+        "publisher": "Sud Radio (9 mai 2026)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Les Patriotes proposent, « en dépassant le clivage entre droite et gauche », de se rassembler « pour l'indépendance nationale, le progrès social, la solidarité et la promotion du modèle culturel français ».",
+        "quote": "Les Patriotes proposent à tous les Français, en dépassant le clivage entre droite et gauche, de se rassembler pour l'indépendance nationale, le progrès social, la solidarité et la promotion du modèle culturel français",
+        "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+        "publisher": "Les Patriotes (charte)"
+      },
+      "dates": [
+        {
+          "date": "2017",
+          "text": "L'association Les Patriotes devient une formation politique, après le départ de Florian Philippot du Front national.",
+          "quote": "a annoncé vendredi que celle-ci devenait \"une formation politique\"",
+          "url": "https://www.publicsenat.fr/actualites/politique/philippot-transforme-son-association-les-patriotes-en-parti-77892",
+          "publisher": "Public Sénat (29 septembre 2017)"
+        },
+        {
+          "date": "2018-02-18",
+          "text": "Adoption des statuts du parti.",
+          "quote": "Conformément à l'article 10 de nos statuts en date du 18 février 2018",
+          "url": "https://les-patriotes.fr/l-equipe-nationale/",
+          "publisher": "Les Patriotes (site officiel)"
+        },
+        {
+          "date": "2026-05-09",
+          "text": "Florian Philippot annonce sa candidature à l'élection présidentielle de 2027, sous condition.",
+          "quote": "Florian Philippot, a annoncé samedi être candidat à la présidentielle de 2027 tout en précisant qu'il se retirerait de la course si Philippe de Villiers venait à se présenter",
+          "url": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027",
+          "publisher": "Sud Radio (9 mai 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "europe",
+          "text": "Quitter l'Union européenne, l'euro, Schengen, la CEDH, l'OTAN et l'OMS.",
+          "quote": "La France doit retrouver sa souveraineté nationale en quittant toutes les instances supranationales : UE, Euro, Schengen, CEDH, OTAN, OMS.",
+          "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+          "publisher": "Les Patriotes, Projet patriote 2026-2027"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Créer le référendum d'initiative citoyenne sur tout sujet et l'inscrire dans la Constitution.",
+          "quote": "Créer le référendum d'initiative citoyenne (RIC) sur tout sujet et l'inscrire dans la Constitution.",
+          "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+          "publisher": "Les Patriotes, Projet patriote 2026-2027"
+        },
+        {
+          "theme": "climat",
+          "text": "Rétablir le monopole public d'EDF et arrêter les éoliennes terrestres et en mer.",
+          "quote": "Rétablir le monopole public national d'EDF. En finir avec les éoliennes sur terre et en mer.",
+          "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+          "publisher": "Les Patriotes, Projet patriote 2026-2027"
+        },
+        {
+          "theme": "travail",
+          "text": "Après une sortie de l'UE, pouvoir baisser l'âge de départ à la retraite « si les Français le désirent ».",
+          "quote": "la France pourra souverainement déterminer les conditions d'accession à la retraite et baisser l'âge de départ si les Français le désirent",
+          "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+          "publisher": "Les Patriotes, Projet patriote 2026-2027"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Réduire l'immigration à des flux « extrêmement limités » et multiplier les reconduites à la frontière.",
+          "quote": "L'objectif est de mettre un terme à la politique d'immigration massive en revenant à des flux extrêmement limités et en reconduisant aux frontières ceux qui n'ont rien à faire en France.",
+          "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+          "publisher": "Les Patriotes, Projet patriote 2026-2027"
+        }
+      ]
+    },
+    {
+      "slug": "generation-ecologie",
+      "name": "Génération écologie",
+      "sigle": "GE",
+      "nuance": "ECO",
+      "founded": {
+        "date": "1990",
+        "text": "Fondée en 1990 par des écologistes historiques, dont Brice Lalonde, alors ministre de l'Écologie, et des scientifiques comme Haroun Tazieff.",
+        "quote": "les écologistes historiques trouvent une solution dans la création de Génération Écologie, qui rassemble alors, par delà les clivages droite/gauche, des « Amis de la Terre » avec Brice Lalonde",
+        "url": "https://www.generationecologie.fr/notre-histoire/",
+        "publisher": "Génération écologie (site officiel)"
+      },
+      "leaders": [
+        {
+          "name": "Delphine Batho",
+          "role": "coordinatrice nationale",
+          "since": "2018"
+        }
+      ],
+      "leadersSource": {
+        "quote": "Delphine Batho est coordinatrice nationale de Génération Écologie depuis 2018.",
+        "url": "https://www.generationecologie.fr/a-propos/notre-organisation/lequipe/",
+        "publisher": "Génération écologie (site officiel)"
+      },
+      "elus": {
+        "deputes": 1,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10",
+        "quote": "Elle est députée des Deux-Sèvres depuis 2007, réélue suite à la dissolution de 2024.",
+        "url": "https://www.generationecologie.fr/a-propos/notre-organisation/lequipe/",
+        "publisher": "Génération écologie (site officiel)"
+      },
+      "values": {
+        "text": "Génération écologie se présente comme le parti de la décroissance, une rupture qui « vise à améliorer le bien-être humain en sortant de la société de surconsommation ».",
+        "quote": "Nous proposons une rupture sereine, sans laquelle l'écologie n'est qu'un supplément d'âme inoffensif. Cette rupture porte un nom : la décroissance ! Elle vise à améliorer le bien-être humain en sortant de la société de surconsommation.",
+        "url": "https://www.generationecologie.fr/a-propos/generation-ecologie/qui-sommes-nous/",
+        "publisher": "Génération écologie (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "1990",
+          "text": "Création du parti.",
+          "quote": "Notre mouvement a été fondé en 1990.",
+          "url": "https://www.generationecologie.fr/notre-histoire/",
+          "publisher": "Génération écologie (site officiel)"
+        },
+        {
+          "date": "1992",
+          "text": "Élections régionales : période de meilleurs résultats électoraux, selon le parti.",
+          "quote": "C'est une période faste pour l'écologie avec des scores électoraux importants, notamment aux régionales de 1992",
+          "url": "https://www.generationecologie.fr/notre-histoire/",
+          "publisher": "Génération écologie (site officiel)"
+        },
+        {
+          "date": "1994",
+          "text": "Scission au congrès de Laval : Noël Mamère et une partie des membres quittent le parti.",
+          "quote": "Au congrès de Laval, en 1994, une partie de Génération Écologie, Noël Mamère en tête, se retire pour créer un parti plus proche de la gauche",
+          "url": "https://www.generationecologie.fr/notre-histoire/",
+          "publisher": "Génération écologie (site officiel)"
+        },
+        {
+          "date": "2018",
+          "text": "Delphine Batho est élue à la tête du parti.",
+          "quote": "l'élection de Delphine Batho à la présidence de Génération Écologie en septembre 2018",
+          "url": "https://www.generationecologie.fr/notre-histoire/",
+          "publisher": "Génération écologie (site officiel)"
+        },
+        {
+          "date": "2021",
+          "text": "La décroissance entre dans la déclaration de principes du parti.",
+          "quote": "En 2021, le parti a inscrit la décroissance dans sa déclaration de principes adoptée lors de la convention nationale de Lyon",
+          "url": "https://www.generationecologie.fr/notre-histoire/",
+          "publisher": "Génération écologie (site officiel)"
+        },
+        {
+          "date": "2025-11-26",
+          "text": "Le parti présente la candidature de Delphine Batho à l'élection présidentielle de 2027.",
+          "quote": "Delphine Batho annonce que Génération Écologie a choisi de présenter sa candidature à l'élection présidentielle.",
+          "url": "https://www.generationecologie.fr/2025/11/26/je-suis-candidate-a-lelection-presidentielle-pour-reconstruire-une-ecologie-capable-de-gouverner/",
+          "publisher": "Génération écologie (site officiel)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "climat",
+          "text": "Adopter une loi de programmation pour la résilience nationale face au changement climatique.",
+          "quote": "Proposition n°1 : Une loi de programmation pour la résilience nationale",
+          "url": "https://www.generationecologie.fr/app/uploads/2025/06/POUR-UN-ETAT-RESILIENCE-cahier-dacteur-de-Generation-Ecologie.pdf",
+          "publisher": "Génération écologie, cahier d’acteur « Pour un État-résilience » (décembre 2024)"
+        },
+        {
+          "theme": "économie",
+          "text": "Créer une sécurité sociale climatique pour les victimes du changement climatique.",
+          "quote": "Proposition n°2 : Une sécurité sociale climatique",
+          "url": "https://www.generationecologie.fr/app/uploads/2025/06/POUR-UN-ETAT-RESILIENCE-cahier-dacteur-de-Generation-Ecologie.pdf",
+          "publisher": "Génération écologie, cahier d’acteur « Pour un État-résilience » (décembre 2024)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Créer un ministère de la Résilience, de la protection civile et des situations d'urgence.",
+          "quote": "Génération Écologie porte de longue date la proposition de création d'un ministère de la Résilience, de la protection civile et des situations d'urgence.",
+          "url": "https://www.generationecologie.fr/app/uploads/2025/06/POUR-UN-ETAT-RESILIENCE-cahier-dacteur-de-Generation-Ecologie.pdf",
+          "publisher": "Génération écologie, cahier d’acteur « Pour un État-résilience » (décembre 2024)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Abolir le présidentialisme.",
+          "quote": "Nous voulons abolir le présidentialisme qui infantilise les citoyennes et citoyens.",
+          "url": "https://www.generationecologie.fr/a-propos/generation-ecologie/qui-sommes-nous/",
+          "publisher": "Génération écologie (site officiel)"
+        },
+        {
+          "theme": "europe",
+          "text": "Refuser la ratification de l'accord commercial entre l'Union européenne et le Mercosur.",
+          "quote": "Génération Écologie appelle le Parlement européen et la France à ne pas ratifier cet accord.",
+          "url": "https://www.generationecologie.fr/2025/09/04/accord-avec-le-mercosur-non-cest-non/",
+          "publisher": "Génération écologie (4 septembre 2025)"
+        }
+      ]
+    },
+    {
+      "slug": "grs",
+      "name": "Gauche républicaine et socialiste",
+      "sigle": "GRS",
+      "nuance": "DVG",
+      "founded": {
+        "date": "2019-02-03",
+        "text": "Créée à Valence le 3 février 2019 ; Emmanuel Maurel, qui avait quitté le Parti socialiste en octobre 2018 pour fonder l'APRÈS, en est cofondateur.",
+        "quote": "En octobre 2018, il quitte le Parti Socialiste afin de fonder l'APRES. En février 2019, il cofonde la Gauche Républicaine et Socialiste.",
+        "url": "https://g-r-s.fr/gauche-republicaine-socialiste-page-daccueil/le-collectif-danimation-national/",
+        "publisher": "Gauche républicaine et socialiste (site officiel)"
+      },
+      "leaders": [
+        {
+          "name": "Emmanuel Maurel",
+          "role": "animateur national",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Emmanuel Maurel, député du Val-d'Oise et animateur national de la Gauche Républicaine et Socialiste",
+        "url": "https://g-r-s.fr/primaire-emmanuel-maurel-repond-aux-questions-dhugo-au-perchoir/",
+        "publisher": "Gauche républicaine et socialiste (1er octobre 2026)"
+      },
+      "elus": {
+        "deputes": 1,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10",
+        "quote": "Emmanuel Maurel, député du Val-d'Oise et animateur national de la Gauche Républicaine et Socialiste",
+        "url": "https://g-r-s.fr/primaire-emmanuel-maurel-repond-aux-questions-dhugo-au-perchoir/",
+        "publisher": "Gauche républicaine et socialiste (1er octobre 2026)"
+      },
+      "values": {
+        "text": "La GRS place au-dessus de tout « le combat pour la souveraineté populaire, pour la République sociale et pour le vivant ». Pour elle, « la République, l'écologie et le socialisme sont une seule et même chose : la défense du bien commun ».",
+        "quote": "Pour nous, le combat pour la souveraineté populaire, pour la République sociale et pour le vivant emportent tout. Pour nous, femmes et hommes de gauche, la République, l'écologie et le socialisme sont une seule et même chose : la défense du bien commun.",
+        "url": "https://g-r-s.fr/les-textes-fondateurs/",
+        "publisher": "Gauche républicaine et socialiste (déclaration de principes)"
+      },
+      "dates": [
+        {
+          "date": "2018",
+          "text": "Emmanuel Maurel quitte le Parti socialiste et fonde l'APRÈS, qui précède la GRS.",
+          "quote": "En octobre 2018, il quitte le Parti Socialiste afin de fonder l'APRES.",
+          "url": "https://g-r-s.fr/gauche-republicaine-socialiste-page-daccueil/le-collectif-danimation-national/",
+          "publisher": "Gauche républicaine et socialiste (site officiel)"
+        },
+        {
+          "date": "2019-02-03",
+          "text": "Création du parti à Valence.",
+          "quote": "La Gauche républicaine et socialiste a été créée à Valence le 3 février 2019.",
+          "url": "https://g-r-s.fr/les-textes-fondateurs/",
+          "publisher": "Gauche républicaine et socialiste (site officiel)"
+        },
+        {
+          "date": "2026-06-06",
+          "text": "Congrès d'Aubervilliers, qui adopte le texte d'orientation « La gauche au rendez-vous du sursaut français ».",
+          "quote": "Le congrès de la Gauche Républicaine et Socialiste s'est déroulé les samedi 6 et dimanche 7 juin 2026 à Aubervilliers",
+          "url": "https://g-r-s.fr/congres-daubervilliers-6-et-7-juin-2026/",
+          "publisher": "Gauche républicaine et socialiste (site officiel)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Porter le SMIC à 1 700 euros net en 2027 et réindexer les salaires et le point d'indice sur l'inflation.",
+          "quote": "le SMIC (la GRS propose un SMIC net à 1 700 euros à l'horizon 2027), la réindexation des salaires et de l'indice de la fonction publique sur l'inflation",
+          "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+          "publisher": "GRS, texte d’orientation du congrès d’Aubervilliers (juin 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Taxer à 2 % par an les patrimoines de plus de 100 millions d'euros (taxe « Zucman »).",
+          "quote": "un complément d'impôt sur le revenu permettant d'atteindre une taxation effective équivalant à 2% du patrimoine pour tous ceux qui possèdent plus de 100 millions d'euros",
+          "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+          "publisher": "GRS, texte d’orientation du congrès d’Aubervilliers (juin 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Passer à une VIe République où l'Assemblée, élue en tout ou partie à la proportionnelle, désigne le Premier ministre.",
+          "quote": "établir une 6ème République, où l'Assemblée élue en tout ou partie au scrutin proportionnel, désigne le Premier ministre",
+          "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+          "publisher": "GRS, texte d’orientation du congrès d’Aubervilliers (juin 2026)"
+        },
+        {
+          "theme": "europe",
+          "text": "Soumettre tout nouveau traité européen à l'approbation préalable des Français.",
+          "quote": "nous voulons que tout nouveau traité européen soit soumis à l'approbation préalable des Français",
+          "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+          "publisher": "GRS, texte d’orientation du congrès d’Aubervilliers (juin 2026)"
+        },
+        {
+          "theme": "climat",
+          "text": "Faire de l'État le seul pilote stratégique de l'électricité, avec une vision à 50 ans pour le parc nucléaire.",
+          "quote": "Nous proposons que l'État redevienne le seul pilote stratégique, garantissant une vision à 50 ans pour notre parc nucléaire et nos capacités de production",
+          "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+          "publisher": "GRS, texte d’orientation du congrès d’Aubervilliers (juin 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "nouvelle-energie",
+      "name": "Nouvelle Énergie",
+      "sigle": "",
+      "nuance": "DVD",
+      "founded": {
+        "date": "",
+        "text": "Parti fondé par David Lisnard, maire de Cannes ; les sources consultées divergent sur l'année de création.",
+        "quote": "Le parti fondé par David Lisnard, maire de Cannes, a organisé sa première rentrée départementale dans le Gard.",
+        "url": "https://www.objectifgard.com/actualites/gard-premiere-rentree-politique-pour-le-parti-nouvelle-energie-135586.php",
+        "publisher": "Objectif Gard (octobre 2024)"
+      },
+      "leaders": [
+        {
+          "name": "David Lisnard",
+          "role": "président",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "David Lisnard est président de Nouvelle Énergie, maire de Cannes depuis 2014 et président de l'Association des maires de France depuis 2021.",
+        "url": "https://www.unenouvelleenergie.fr/decouvrir-notre-parti/",
+        "publisher": "Nouvelle Énergie (site officiel)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Nouvelle Énergie défend « une doctrine ordo-libérale, fondée sur la liberté et la responsabilité individuelles ». L'État y garde une place forte, « mais réduite à ses prérogatives premières ».",
+        "quote": "nous défendons une doctrine ordo-libérale, fondée sur la liberté et la responsabilité individuelles, dans laquelle l'État conserve une place forte, mais réduite à ses prérogatives premières : l'instruction, la sécurité, la justice, la diplomatie, la santé.",
+        "url": "https://www.unenouvelleenergie.fr/notre-programme/",
+        "publisher": "Nouvelle Énergie (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2023-10-03",
+          "text": "Inauguration du siège national du mouvement.",
+          "quote": "David Lisnard trace son sillon vers une candidature pour la présidentielle de 2027 en inaugurant, ce mardi, le siège de son mouvement « Nouvelle Energie ».",
+          "url": "https://www.publicsenat.fr/actualites/politique/david-lisnard-un-nouveau-souffle-pour-la-droite-qui-seduit-certains-senateurs-lr",
+          "publisher": "Public Sénat (3 octobre 2023)"
+        },
+        {
+          "date": "2026-03-26",
+          "text": "David Lisnard quitte Les Républicains et veut étendre son mouvement Nouvelle Énergie.",
+          "quote": "David Lisnard claque la porte de LR.",
+          "url": "https://www.unenouvelleenergie.fr/ce-quon-veut-cest-une-vraie-rupture-liberale-pourquoi-david-lisnard-se-libere-de-lr",
+          "publisher": "Le Point, repris par Nouvelle Énergie (26 mars 2026)"
+        },
+        {
+          "date": "2026-09-27",
+          "text": "Élections sénatoriales : plusieurs candidats investis ou soutenus par le parti sont élus.",
+          "quote": "À l'issue des élections sénatoriales du 27 septembre 2026, plusieurs candidats investis ou soutenus par Nouvelle Énergie ont été élus ou réélus.",
+          "url": "https://www.unenouvelleenergie.fr/nouvelle-energie-renforce-sa-presence-au-senat/",
+          "publisher": "Nouvelle Énergie (28 septembre 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "économie",
+          "text": "Économiser 200 milliards d'euros : 120 milliards rendus en salaire net, 40 milliards de baisse des impôts de production, 40 milliards pour la dette.",
+          "quote": "120 milliards d'euros rendus aux actifs en salaire net, 40 milliards en baisse des impôts de production, à commencer par la suppression de la C3S, et 40 milliards affectés à la dette.",
+          "url": "https://www.unenouvelleenergie.fr/questions/que-ferait-david-lisnard-des-200-milliards-d-economies/",
+          "publisher": "Nouvelle Énergie (site officiel, octobre 2026)"
+        },
+        {
+          "theme": "travail",
+          "text": "Ajouter un étage de retraite par capitalisation, obligatoire et collectif, au-dessus d'un socle par répartition d'environ 1 200 euros.",
+          "quote": "David Lisnard propose d'ajouter un étage de retraite par capitalisation, obligatoire et collectif, au-dessus d'un socle par répartition maintenu autour de 1 200 euros de pension mensuelle.",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-la-retraite-par-capitalisation/",
+          "publisher": "Nouvelle Énergie (site officiel, octobre 2026)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Construire 20 000 places de prison.",
+          "quote": "David Lisnard s'engage à construire vingt mille places de prison.",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-de-construire-des-places-de-prison/",
+          "publisher": "Nouvelle Énergie (site officiel, octobre 2026)"
+        },
+        {
+          "theme": "climat",
+          "text": "Prolonger les réacteurs à soixante ans, construire six EPR et déployer des mini-réacteurs.",
+          "quote": "prolonger les réacteurs existants jusqu'à soixante ans, construire une première série de six EPR, déployer des mini-réacteurs pour renouveler le parc",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires/",
+          "publisher": "Nouvelle Énergie (site officiel, octobre 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Remplacer les départements et les régions par des provinces.",
+          "quote": "David Lisnard propose de créer des provinces à la place des départements et des régions.",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-remplacer-les-departements-et-les-regions/",
+          "publisher": "Nouvelle Énergie (site officiel, octobre 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "debout",
+      "name": "Debout !",
+      "sigle": "",
+      "nuance": "DVG",
+      "founded": {
+        "date": "",
+        "text": "Issu de « Picardie debout ! », l'étiquette sous laquelle François Ruffin s'est présenté aux législatives de 2017 dans la Somme ; la date de création du mouvement national n'est pas établie par les sources consultées.",
+        "quote": "François Ruffin, journaliste et candidat \"Picardie debout !\" aux législatives dans la première circonscription de la Somme",
+        "url": "https://www.publicsenat.fr/actualites/politique/legislatives-francois-ruffin-attire-2000-personnes-a-amiens-60591",
+        "publisher": "Public Sénat (14 mai 2017)"
+      },
+      "leaders": [
+        {
+          "name": "François Ruffin",
+          "role": "président",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Debout! est une plateforme nationale présidée par François Ruffin avec inscription libre facilitant l'engagement politique",
+        "url": "https://debout.fr/notre-mouvement/",
+        "publisher": "Debout ! (site officiel)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Le manifeste de Debout ! se donne pour mission de « redonner du pouvoir au peuple, le souverain ».",
+        "quote": "Après des décennies d'une «démocratie» sans le peuple, et même contre le peuple, telle est notre mission: redonner du pouvoir au peuple, le souverain.",
+        "url": "https://debout.fr/notre-manifeste/",
+        "publisher": "Debout ! (manifeste fondateur)"
+      },
+      "dates": [
+        {
+          "date": "2017",
+          "text": "François Ruffin est candidat « Picardie debout ! » aux législatives dans la Somme.",
+          "quote": "François Ruffin, journaliste et candidat \"Picardie debout !\" aux législatives dans la première circonscription de la Somme",
+          "url": "https://www.publicsenat.fr/actualites/politique/legislatives-francois-ruffin-attire-2000-personnes-a-amiens-60591",
+          "publisher": "Public Sénat (14 mai 2017)"
+        },
+        {
+          "date": "2025-06-22",
+          "text": "Picardie Debout, L'Après et Générations annoncent des universités d'été communes en vue d'un rapprochement.",
+          "quote": "Le mouvement Picardie Debout de François Ruffin, L'Après cofondé par plusieurs députés \"purgés\" de LFI",
+          "url": "https://www.europe1.fr/politique/picardie-debout-lapres-et-generations-reunis-fin-aout-pour-entamer-un-rapprochement-760568",
+          "publisher": "Europe 1 (22 juin 2025)"
+        },
+        {
+          "date": "2026-05-12",
+          "text": "François Ruffin annonce qu'il sera candidat à l'élection présidentielle de 2027 en l'absence de primaire.",
+          "quote": "Maintenant, s'il n'y a pas de primaire, moi j'y vais !",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-n-y-a-pas-de-primaire-moi-j-y-vais-annonce-francois-ruffin",
+          "publisher": "LCP (12 mai 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "travail",
+          "text": "Créer un statut des travailleurs essentiels (salaires, carrières, horaires, retraite avancée).",
+          "quote": "Nous construirons un « statut des travailleurs essentiels » pour les femmes de ménage, AVS, caristes, agriculteurs et tous les autres qui ont tenu le pays debout pendant le Covid : avec salaires, carrières, horaires et une retraite avancée.",
+          "url": "https://nouspresident.fr/cahiers-de-campagne/",
+          "publisher": "Nous Président ! (campagne de François Ruffin, 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Indexer les salaires sur l'inflation.",
+          "quote": "Proposition 1 : indexer les salaires sur l'inflation",
+          "url": "https://nouspresident.fr/statut-travailleurs-essentiels/",
+          "publisher": "Nous Président ! (campagne de François Ruffin, 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Supprimer l'inviolabilité pénale et civile du président de la République et le privilège de juridiction des ministres.",
+          "quote": "Nous mettrons fin à l'inviolabilité pénale et civile complète du Président de la République et au privilège de juridiction des ministres.",
+          "url": "https://nouspresident.fr/separation-argent-etat/",
+          "publisher": "Nous Président ! (campagne de François Ruffin, 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Encadrer les loyers, alléger les intérêts d'emprunt des accédants et mieux imposer les plus-values immobilières.",
+          "quote": "Encadrer pour que le logement soit abordable : encadrer les loyers excessifs, réduire les charges des intérêts pour les accédants et mieux imposer les plus-values immobilières.",
+          "url": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/",
+          "publisher": "Nous Président ! (campagne de François Ruffin, 2026)"
+        },
+        {
+          "theme": "climat",
+          "text": "Développer trains de nuit et liaisons directes pour réduire de moitié le trafic aérien.",
+          "quote": "Nous développerons aussi les trains de nuit et les liaisons directes vers les grandes villes européennes, afin d'offrir de réelles alternatives à l'avion et de réduire de moitié le trafic aérien",
+          "url": "https://nouspresident.fr/travaillisme-ecologique/",
+          "publisher": "Nous Président ! (campagne de François Ruffin, 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "la-convention",
+      "name": "La Convention",
+      "sigle": "",
+      "nuance": "",
+      "founded": {
+        "date": "2023",
+        "text": "Mouvement lancé en 2023 par Bernard Cazeneuve, ancien Premier ministre, qui avait quitté le Parti socialiste en 2022.",
+        "quote": "l'ancien Premier ministre socialiste Bernard Cazeneuve, qui a quitté le PS en 2022 et lancé La Convention en février 2023",
+        "url": "https://www.europe1.fr/politique/gauche-francois-rebsamen-et-bernard-cazeneuve-sallient-pour-2027-758293",
+        "publisher": "Europe 1 (11 juin 2025)"
+      },
+      "leaders": [
+        {
+          "name": "Bernard Cazeneuve",
+          "role": "fondateur, à la tête du mouvement",
+          "since": "2023"
+        }
+      ],
+      "leadersSource": {
+        "quote": "A la tête de son mouvement « La Convention » créé en 2023, Bernard Cazeneuve laisse filtrer depuis plusieurs mois déjà ses ambitions présidentielles.",
+        "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-la-candidature-de-bernard-cazeneuve-traduit-la-difficulte-de-notre-personnel-politique-a-se-renouveler-selon-bruno-cautres",
+        "publisher": "Public Sénat (17 juillet 2026)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Le mouvement se réclame d'une « gauche social-démocrate, républicaine, humaniste et écologique », selon le manifeste lancé par Bernard Cazeneuve en 2022.",
+        "quote": "Le 3 septembre 2022, Bernard Cazeneuve avait lancé son « Manifeste pour une gauche social-démocrate, républicaine, humaniste et écologique »",
+        "url": "https://www.lejdd.fr/politique/bernard-cazeneuve-quel-espace-politique-peut-il-esperer-pour-son-nouveau-mouvement-la-convention-136618",
+        "publisher": "Le JDD (9 juin 2023)"
+      },
+      "dates": [
+        {
+          "date": "2023",
+          "text": "Création du mouvement.",
+          "quote": "qui a quitté le PS en 2022 et lancé La Convention en février 2023",
+          "url": "https://www.europe1.fr/politique/gauche-francois-rebsamen-et-bernard-cazeneuve-sallient-pour-2027-758293",
+          "publisher": "Europe 1 (11 juin 2025)"
+        },
+        {
+          "date": "2023-06-10",
+          "text": "Meeting de lancement du mouvement à Créteil.",
+          "quote": "L'ex-Premier ministre socialiste, en meeting samedi à Créteil pour lancer son mouvement « La Convention », se projette de plus en plus vers 2027.",
+          "url": "https://www.lejdd.fr/politique/en-meeting-bernard-cazeneuve-affiche-ses-ambitions-136668",
+          "publisher": "Le JDD (11 juin 2023)"
+        },
+        {
+          "date": "2025-06-11",
+          "text": "La Fédération progressiste de François Rebsamen annonce rejoindre La Convention.",
+          "quote": "François Rebsamen a indiqué mercredi que son parti, la Fédération progressiste, allait rejoindre le mouvement de Bernard Cazeneuve, La Convention",
+          "url": "https://www.europe1.fr/politique/gauche-francois-rebsamen-et-bernard-cazeneuve-sallient-pour-2027-758293",
+          "publisher": "Europe 1 (11 juin 2025)"
+        },
+        {
+          "date": "2026-07-16",
+          "text": "Bernard Cazeneuve publie sa « Lettre aux Français », programme en vue de l'élection présidentielle de 2027.",
+          "quote": "L'ancien Premier ministre a fait un pas de plus hier, en publiant sur son site un programme fleuve sobrement intitulé « Lettre aux F",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-la-candidature-de-bernard-cazeneuve-traduit-la-difficulte-de-notre-personnel-politique-a-se-renouveler-selon-bruno-cautres",
+          "publisher": "Public Sénat (17 juillet 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Rétablir le septennat, encadrer le 49.3 et introduire une dose de proportionnelle aux législatives.",
+          "quote": "rétablissement du septennat ; Premier ministre engageant systématiquement sa responsabilité devant le Parlement lorsque les circonstances l'exigent, d'abord à son entrée en fonction ; discipline sur le 49.3, les ordonnances et les procédures accélérées ; dose de proportionnelle aux législatives",
+          "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+          "publisher": "Revue politique et parlementaire, « Lettre aux Français » de Bernard Cazeneuve (juillet 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Une fiscalité qui atteigne réellement les très grandes fortunes, les plus hauts revenus du capital et les rentes.",
+          "quote": "fiscalité atteignant réellement les très grandes fortunes, les plus hauts revenus du capital et les rentes",
+          "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+          "publisher": "Revue politique et parlementaire, « Lettre aux Français » de Bernard Cazeneuve (juillet 2026)"
+        },
+        {
+          "theme": "climat",
+          "text": "Assumer la filière nucléaire et planifier le renouvellement du parc.",
+          "quote": "énergie : filière électronucléaire assumée, renouvellement du parc planifié",
+          "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+          "publisher": "Revue politique et parlementaire, « Lettre aux Français » de Bernard Cazeneuve (juillet 2026)"
+        },
+        {
+          "theme": "travail",
+          "text": "Protéger les transitions professionnelles « à la manière scandinave » et refaire du CDI la norme pour les jeunes.",
+          "quote": "24. Travailler : protection des transitions professionnelles, à la manière scandinave, et formation tout au long de la vie ; apprentissage généralisé dès le premier cycle universitaire ; encadrement du recours abusif aux stages ; CDI redevenu la norme pour les jeunes",
+          "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+          "publisher": "Revue politique et parlementaire, « Lettre aux Français » de Bernard Cazeneuve (juillet 2026)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Réarmer « à proportion de la menace » et consolider l'industrie de défense.",
+          "quote": "25. Notre sécurité extérieure : réarmement à proportion de la menace, moyens rendus aux forces ; industrie de défense consolidée",
+          "url": "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
+          "publisher": "Revue politique et parlementaire, « Lettre aux Français » de Bernard Cazeneuve (juillet 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "nous-france",
+      "name": "Nous France",
+      "sigle": "",
+      "nuance": "",
+      "founded": {
+        "date": "2022",
+        "text": "Mouvement lancé en octobre 2022 à Saint-Quentin (Aisne) par Xavier Bertrand, président de la région Hauts-de-France.",
+        "quote": "Xavier Bertrand, 58 ans, a lancé en octobre 2022 à Saint-Quentin (Aisne) son mouvement Nous France, \"un mouvement moderne, jeune et rassembleur\"",
+        "url": "https://www.europe1.fr/node/8036",
+        "publisher": "Europe 1 (3 février 2024)"
+      },
+      "leaders": [
+        {
+          "name": "Xavier Bertrand",
+          "role": "président",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "le président de « Nous France » se laisse jusqu'à la fin de l'année pour « tester ses idées »",
+        "url": "https://www.nousfrance.fr/2026/08/je-nai-pas-le-profil-dune-prise-de-guerre-je-trace-ma-route-le-pari-de-xavier-bertrand-pour-simposer-comme-candidat-de-la-droite-et-du-centre-le-figaro/",
+        "publisher": "Le Figaro, repris par Nous France (août 2026)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Nous France revendique « son attachement charnel à une identité française » et exige « que chacun se soumette sans concessions à l'autorité de l'Etat et à nos lois ».",
+        "quote": "« Nous, France ! » revendique son attachement charnel à une identité française et des valeurs qui nous cimentent depuis des siècles « Nous, France ! » est l'exigence que chacun se soumette sans concessions à l'autorité de l'Etat et à nos lois.",
+        "url": "https://www.nousfrance.fr/vision/",
+        "publisher": "Nous France (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2022",
+          "text": "Lancement du mouvement à Saint-Quentin.",
+          "quote": "a lancé en octobre 2022 à Saint-Quentin (Aisne) son mouvement Nous France",
+          "url": "https://www.europe1.fr/node/8036",
+          "publisher": "Europe 1 (3 février 2024)"
+        },
+        {
+          "date": "2025-10-25",
+          "text": "Rassemblement du mouvement à Saint-Quentin, où Xavier Bertrand dit se préparer pour 2027.",
+          "quote": "samedi 25 octobre, c'est dans son fief, cette ville qui l'a vu grandir et qu'il a dirigée pendant plusieurs années, que Xavier Bertrand a convié les sympathisants de son mouvement Nous France",
+          "url": "https://www.nousfrance.fr/2025/10/que-letat-arrete-de-nous-faire-les-poches-a-saint-quentin-xavier-bertrand-sechauffe-pour-la-presidentielle-le-point/",
+          "publisher": "Le Point, repris par Nous France (octobre 2025)"
+        },
+        {
+          "date": "2026-08-27",
+          "text": "Xavier Bertrand déclare qu'il sera candidat à l'élection présidentielle de 2027.",
+          "quote": "Le président des Hauts-de-France Xavier Bertrand (Les Républicains, LR), a déclaré, jeudi 27 août, qu'il serait candidat à la présidentielle",
+          "url": "https://www.nousfrance.fr/2026/08/xavier-bertrand-fait-un-pas-de-plus-vers-une-candidature-a-la-presidentielle-le-monde/",
+          "publisher": "Le Monde, repris par Nous France (août 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Proposer par référendum un septennat présidentiel unique.",
+          "quote": "Par voie référendaire, il veut proposer aux Français le septennat unique.",
+          "url": "https://www.nousfrance.fr/2026/08/je-nai-pas-le-profil-dune-prise-de-guerre-je-trace-ma-route-le-pari-de-xavier-bertrand-pour-simposer-comme-candidat-de-la-droite-et-du-centre-le-figaro/",
+          "publisher": "Le Figaro, repris par Nous France (août 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Instaurer une « République des territoires » : l'État se limite au régalien, le reste est géré localement.",
+          "quote": "L'État central doit se concentrer – et exceller – sur ses missions régaliennes : la justice, la sécurité, le contrôle de l'immigration, la défense et la diplomatie. Pour tout le reste, la gestion de la vie quotidienne doit être locale.",
+          "url": "https://www.nousfrance.fr/2026/07/rencontres-economiques-daix-il-faut-une-republique-des-territoires-et-un-mandat-unique-pour-xavier-bertrand-la-provence/",
+          "publisher": "La Provence, repris par Nous France (juillet 2026)"
+        },
+        {
+          "theme": "travail",
+          "text": "Développer la retraite par capitalisation.",
+          "quote": "La défense de la retraite par capitalisation et l'organisation une «République des territoires» comme réponse au dirigisme de la capitale.",
+          "url": "https://www.nousfrance.fr/2026/08/je-nai-pas-le-profil-dune-prise-de-guerre-je-trace-ma-route-le-pari-de-xavier-bertrand-pour-simposer-comme-candidat-de-la-droite-et-du-centre-le-figaro/",
+          "publisher": "Le Figaro, repris par Nous France (août 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Relever la « flat tax » sur les revenus du capital, plutôt qu'instaurer la taxe Zucman qu'il rejette.",
+          "quote": "a martelé l'ancien ministre du Travail, ajoutant préférer un relèvement de la « flat tax »",
+          "url": "https://www.nousfrance.fr/2025/10/que-letat-arrete-de-nous-faire-les-poches-a-saint-quentin-xavier-bertrand-sechauffe-pour-la-presidentielle-le-point/",
+          "publisher": "Le Point, repris par Nous France (octobre 2025)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Piste évoquée : soumettre à référendum les peines planchers et des quotas migratoires.",
+          "quote": "Et pourquoi pas un référendum pour redonner la parole aux Français ? interroge même l'élu, égrenant le sujet des peines planchers, des quotas migratoires",
+          "url": "https://www.nousfrance.fr/2025/10/que-letat-arrete-de-nous-faire-les-poches-a-saint-quentin-xavier-bertrand-sechauffe-pour-la-presidentielle-le-point/",
+          "publisher": "Le Point, repris par Nous France (octobre 2025)"
+        }
+      ]
+    }
+  ]
+}
