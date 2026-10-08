@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081827",
+  "version": "live-202610081828",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:27:40.603Z",
+  "publishedAt": "2026-10-08T18:28:26.457Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -4180,11 +4180,15 @@
     },
     "marine-tondelier": {
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "48010341f0e28c23"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "eco-02": {
         "set": [
@@ -4208,88 +4212,145 @@
         "codedAt": "2026-10-08T15:37:56.399Z"
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "2fc90f32425e8b1a"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. « Encadrer » plutôt que plafonner ; le même chapitre propose d’« envisager le blocage des prix sur certains"
       },
       "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "parti-uniquement",
+        "sources": [
+          "8ca0c8991511c73c"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Suppression d’une partie des exonérations patronales et conditionnement des autres : sens inverse d’une bai"
       },
       "eco-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "b66a05f483069c51"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "9499d4b05ac6ebf0"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "93049d1ba616db0e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Plus de recrutements et hausse des salaires ; le financement n’est pas rattaché explicitement à d’autres éc"
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "6eccd8062cb7d46e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "09e20494018a2709"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "2811d02a4b30b779"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Abrogation des durcissements récents de l’assurance chômage."
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "0d1768762cd53c62"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Engagement de proximité des services publics ; la question du coût n’est pas abordée."
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "c9b235dfce4d7965"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "cli-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "c9771c8d4e048dc5"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Mesure plus large que les seuls vols intérieurs (seuil de 4h30 en train)."
       },
       "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "952778ec0d9c5f17"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "cli-04": {
         "missing": true,
@@ -4299,25 +4360,40 @@
         "codedAt": "2026-10-08T15:37:56.399Z"
       },
       "cli-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "95128007b4bfef30"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Tarif unique et gratuité ciblée, pas de gratuité générale."
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "449049968f276a17"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "40fa8389cada6364"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-02": {
         "missing": true,
@@ -4327,25 +4403,37 @@
         "codedAt": "2026-10-08T15:37:56.399Z"
       },
       "lib-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "bd75a9d046e72a3d"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "6f60933cf9d0b2d7"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "e9400da3e49368c3"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-06": {
         "missing": true,
@@ -4383,25 +4471,43 @@
         "codedAt": "2026-10-08T15:37:56.399Z"
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "7d6b84b1e6f57ea4"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Les futurs traités restent possibles avec des clauses miroirs."
       },
       "eur-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "c8889769040449d3"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Emprunt commun pour l’énergie, le rail, le numérique et la recherche ; la défense n’est pas citée."
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "ba28601e76930e5d"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "sec-01": {
         "value": 1,
@@ -4433,11 +4539,18 @@
         "note": "Formulation catégorique (« Interdire »), d'où -2. Position de la coalition signée par Les Écologistes, pas une déclaration personnelle de la candidate."
       },
       "sec-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "25b8f8f1d3751a7f"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:22.848Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "sec-05": {
         "value": 2,
@@ -4451,11 +4564,18 @@
         "note": "« régulariser les travailleurs », sans condition : c'est plus large que les seuls métiers en tension et englobe l'affirmation. Formulation catégorique, d'où +2. Position de la coalition, pas une déclaration personnelle de la candidate."
       },
       "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "a9e9dc4b0b0dd624"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Suppression des délais de carence (durée de résidence exigée), formulée pour l’accès aux soins (AME, PUMA)."
       },
       "dem-01": {
         "set": [
@@ -4472,11 +4592,18 @@
         "note": "Position du parti, pas déclaration personnelle de la candidate. Le principe de la proportionnelle est soutenu, mais le mode n'est pas précisé. Selon l'AFP du 3 juin 2025 (marine-oceans.com), M. Tondelier a rappelé que son parti était « très"
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "3ca5adf85199baae"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "dem-03": {
         "set": [
@@ -4493,11 +4620,15 @@
         "note": "Tribune collective dont Marine Tondelier est la première signataire. Elle rejette clairement le recours au 49.3 et appelle à une VIe République, mais ne demande pas explicitement de supprimer ou limiter l'article. Confiance faible. L'articl"
       },
       "dem-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "69cf26daea3ac6ad"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "dem-05": {
         "set": [
@@ -4514,11 +4645,18 @@
         "note": "Tribune dont M. Tondelier est la première signataire : elle regrette une décentralisation inachevée. Le texte d'orientation du parti (avril 2025, position du parti uniquement) va plus loin : « Notre projet repose sur une souveraineté écolog"
       },
       "dem-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "1a105fcaa75ca246"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Reconnaissance du vote blanc limitée aux élections territoriales, sous forme de sièges tirés au sort."
       }
     },
     "francois-ruffin": {
@@ -11713,6 +11851,222 @@
       "url": "https://npa-revolutionnaires.org/articles/la-mise-en-concurrence-de-lots-de-bus-ratp-nest-pas-la-concurrence-entre-les-travailleurs",
       "date": "2024-11-03",
       "passage": "À l’heure où l’urgence écologique devrait amener au développement des transports en commun et à leur gratuité, la logique capitaliste conduit à l’inverse."
+    },
+    {
+      "id": "48010341f0e28c23",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Diminuer l’impôt sur le revenu pour les plus tranches les plus basses. Créer une nouvelle tranche à 60 % au-delà de 250 000€ annuels."
+    },
+    {
+      "id": "2fc90f32425e8b1a",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Encadrer les prix d’un panier de biens essentiels empêchant une logique spéculative en matière de logement, d’énergie, d’eau potable, de transport, d’alimentation de qualité et de biens culturels."
+    },
+    {
+      "id": "8ca0c8991511c73c",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Rationaliser les exonérations de cotisations sociales. Nominaliser et désindexer leur montant. Supprimer les exonérations de cotisations inutiles car supérieures à 1,6 smic ou concernant les heures supplémentaires."
+    },
+    {
+      "id": "b66a05f483069c51",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Passer le salaire minimum à 2000€ brut par mois dès 2027."
+    },
+    {
+      "id": "9499d4b05ac6ebf0",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Abroger l’âge légal de départ à la retraite à 64 ans (réforme Borne) pour revenir immédiatement à un âge minimum à 62 ans et viser une retraite à 60 ans"
+    },
+    {
+      "id": "93049d1ba616db0e",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Améliorer les conditions de travail à l’hôpital public. Augmenter le nombre de recrutement de personnel médical et paramédical."
+    },
+    {
+      "id": "6eccd8062cb7d46e",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Faire de l’école primaire une priorité absolue en réduisant la taille des classes à 19 élèves en 2032 et à 12 élèves dans les établissements en réseau d’éducation prioritaire (REP et REP+). Augmenter le nombre d’enseignant·es"
+    },
+    {
+      "id": "09e20494018a2709",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Assurer le droit au logement par la généralisation, l’amélioration et la pérennisation de l’encadrement des loyers."
+    },
+    {
+      "id": "2811d02a4b30b779",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Refonder l’assurance chômage pour donner les moyens de trouver un emploi ou de se réorienter. Abroger les réformes régressives adoptées lors des deux derniers quinquennats"
+    },
+    {
+      "id": "0d1768762cd53c62",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Doter chaque territoire d’un accueil physique des services publics à 15 minutes partout en France."
+    },
+    {
+      "id": "25b8f8f1d3751a7f",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Au regard des enjeux démographiques, nous devons refaire de la France un pays attractif pour les migrant·es en améliorant les conditions d’accueil et d’intégration sociale et professionnelle."
+    },
+    {
+      "id": "a9e9dc4b0b0dd624",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Garantir les droits fondamentaux des personnes exilées : scolarisation de tous les enfants, accès à l’AME et PUMA, suppression des délais de carence"
+    },
+    {
+      "id": "40fa8389cada6364",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Permettre l’accès universel aux soins palliatifs et légaliser l’aide active à mourir en conservant l’équilibre des textes votés en 1re lecture."
+    },
+    {
+      "id": "bd75a9d046e72a3d",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Légaliser et encadrer la production, la vente et la consommation de cannabis. Assurer la disponibilité, le contrôle qualité et la traçabilité du produit"
+    },
+    {
+      "id": "6f60933cf9d0b2d7",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Adopter une loi pour l’émancipation économique des femmes intégrant des sanctions financières dissuasives en cas de manquement à l’égalité de salaire."
+    },
+    {
+      "id": "e9400da3e49368c3",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Mettre fin au contrôle au faciès en interdisant les contrôles d’identité aléatoires pour les limiter aux situations de fragrance, d’enquête judiciaire ou d’ordre public. Instaurer un récépissé attestant des motifs du contrôle."
+    },
+    {
+      "id": "c9b235dfce4d7965",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Planifier la sortie du nucléaire. Mettre fin aux nouveaux programmes EPR-2 et SMR extrêmement dispendieux."
+    },
+    {
+      "id": "c9771c8d4e048dc5",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Interdire les vols intra-européens lorsqu’une alternative de moins de 4h30 en train existe."
+    },
+    {
+      "id": "952778ec0d9c5f17",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Planifier une sortie progressive des pesticides de synthèse et des engrais azotés à l’horizon 2050. Diffuser les pratiques agroécologiques et renforcer les programmes de recherche agroécologique. Interdire immédiatement les pesticides cancérigènes, mutagènes, toxiques (CMR)"
+    },
+    {
+      "id": "95128007b4bfef30",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Atteindre 25 % de part modale dans les transports collectifs d’ici 2030 par un ticket climat mensuel avec un tarif unique permettant de garantir des tarifs accessibles et des mesures de gratuité ciblées aux jeunes et aux ménages précaires"
+    },
+    {
+      "id": "449049968f276a17",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "En imposant des normes environnementales contraignantes, en protégeant les biens communs et en encadrant l’activité économique, nous pouvons orienter l’activité économique vers la satisfaction des besoins essentiels"
+    },
+    {
+      "id": "7d6b84b1e6f57ea4",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Ne pas ratifier les accords européens en attente qui affectent le climat et la biodiversité notamment les traités avec le Canada (CETA) le Vietnam, Singapour, le Chili, le Mexique, le Mercosur, l’Indonésie et le Japon."
+    },
+    {
+      "id": "c8889769040449d3",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Créer un emprunt commun pour des investissements de long terme (Grands Travaux Européens Écologiques comme l’intégration ferroviaire, énergétique et numérique"
+    },
+    {
+      "id": "ba28601e76930e5d",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Retrouver une trajectoire correspondant à nos engagements internationaux (0,7 % du PNB) et améliorer la coordination européenne."
+    },
+    {
+      "id": "3ca5adf85199baae",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Renforcer la démocratie directe par la mise en œuvre du Référendum d’Initiative Citoyenne (RIC) propositionnel ou abrogatif – sous condition d’un contrôle de constitutionnalité préalable."
+    },
+    {
+      "id": "69cf26daea3ac6ad",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Instaurer l’inéligibilité à vie et démission de leurs fonctions pour les élus condamnés pour détournement de fonds publics ou corruption."
+    },
+    {
+      "id": "1a105fcaa75ca246",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Reconnaître le vote blanc en attribuant le taux équivalent à des citoyen·nes tirés au sort sur les listes électorales pour les élections territoriales."
     }
   ],
   "refreshedAt": {
@@ -11726,7 +12080,7 @@
     "florian-philippot": "2026-10-08T18:23:49.207Z",
     "jean-luc-melenchon": "2026-10-08T18:15:13.925Z",
     "fabien-roussel": "2026-10-08T17:54:08.652Z",
-    "marine-tondelier": "2026-10-08T15:37:56.399Z",
+    "marine-tondelier": "2026-10-08T18:28:26.457Z",
     "francois-ruffin": "2026-10-08T15:43:20.824Z",
     "delphine-batho": "2026-10-08T17:54:08.652Z",
     "karim-bouamrane": "2026-10-08T18:24:43.530Z",
