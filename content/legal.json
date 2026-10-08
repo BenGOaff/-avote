@@ -1,12 +1,15 @@
 {
-  "_note": "Édition non professionnelle et anonyme (LCEN art. 6, III, 2) : l'identité de l'éditrice est communiquée à l'hébergeur, pas publiée. Le nom du responsable de traitement n'apparaît que sur /donnees (non indexée), liée depuis les formulaires qui collectent un email. À revoir à l'ouverture de la boutique (activité commerciale = identification obligatoire).",
+  "_note": "Édition non professionnelle et anonyme (LCEN art. 6, III, 2) : l'identité de la personne qui édite le site est communiquée à l'hébergeur, jamais publiée sur le site ni dans ce dépôt. À revoir à l'ouverture de la boutique (activité commerciale = identification obligatoire).",
   "siteName": "çavote.fr",
   "contactEmail": "citoyen@xn--avote-xra.fr",
-  "controllerName": "Bénédicte Lagardette",
+  "controllerName": "La personne qui édite çavote.fr (identité communiquée à l’hébergeur)",
   "host": {
     "name": "Hostinger International Ltd",
     "address": "61 Lordou Vironos Street, 6023 Larnaca, Chypre",
     "url": "https://www.hostinger.fr"
   },
-  "emailProvider": { "name": "Resend (Plus Five Five, Inc.)", "url": "https://resend.com/legal/privacy-policy" }
+  "emailProvider": {
+    "name": "Resend (Plus Five Five, Inc.)",
+    "url": "https://resend.com/legal/privacy-policy"
+  }
 }

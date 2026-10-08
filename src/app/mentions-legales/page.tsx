@@ -12,7 +12,7 @@ export default function LegalPage() {
         <h2 style={{ fontSize: 'var(--h3)' }}>Qui publie</h2>
         <p>
           {LEGAL.siteName} est édité à titre non professionnel. Comme la loi le permet (article 6, III, 2 de la loi du 21 juin 2004 pour la confiance dans
-          l’économie numérique), son éditrice a choisi de ne pas publier son identité : elle l’a communiquée à l’hébergeur ci-dessous.
+          l’économie numérique), l’identité de la personne qui l’édite n’est pas publiée : elle est communiquée à l’hébergeur ci-dessous, qui peut la transmettre à la justice.
         </p>
         <dl className="dl">
           <dt>Site</dt>

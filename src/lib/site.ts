@@ -4,3 +4,5 @@ export const SITE_URL = new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://ça
 export const TIQUIZ_URL = process.env.NEXT_PUBLIC_TIQUIZ_URL || 'https://quiz.xn--avote-xra.fr/pourquivoter'
 
 export const absolute = (p: string) => new URL(p, SITE_URL).toString()
+/** Mesure d'audience Google Analytics : chargée uniquement après consentement (voir lib/consent.ts). Vide = désactivée. */
+export const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? 'G-8BPS8RSJ3B'

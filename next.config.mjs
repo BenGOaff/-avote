@@ -3,6 +3,7 @@
 const isDev = process.env.NODE_ENV !== 'production'
 
 // Aucune origine tierce : polices, scripts, images et données sont servis par le site.
+// Exception : Google Analytics, chargé seulement après consentement (src/lib/consent.ts), si NEXT_PUBLIC_GA_ID n'est pas vide.
 // 'unsafe-inline' sur les scripts : nécessaire au rendu statique de Next sans nonce
 // (voir docs/SECURITE.md). Tout le reste est verrouillé.
 // Seule exception : l'iframe du quiz Tiquiz, si son URL est configurée (page /quiz).
@@ -14,13 +15,18 @@ const tiquizOrigin = (() => {
   }
 })()
 
+const gaId = process.env.NEXT_PUBLIC_GA_ID ?? 'G-8BPS8RSJ3B'
+const ga = gaId
+  ? { script: ' https://www.googletagmanager.com', connect: ' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com', img: ' https://*.google-analytics.com https://*.googletagmanager.com https://www.google.com' }
+  : { script: '', connect: '', img: '' }
+
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}`,
+  `script-src 'self' 'unsafe-inline'${ga.script}${isDev ? " 'unsafe-eval'" : ''}`,
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' blob: data:",
+  `img-src 'self' blob: data:${ga.img}`,
   "font-src 'self'",
-  "connect-src 'self'",
+  `connect-src 'self'${ga.connect}`,
   "media-src 'self' blob:",
   "worker-src 'self'",
   "manifest-src 'self'",

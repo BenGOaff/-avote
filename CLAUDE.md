@@ -5,7 +5,8 @@
 ## Confidentialité (non négociable)
 - Les réponses au test restent dans le navigateur. Ne jamais créer d’API, de table ou de log qui reçoit des réponses, scores, priorités ou exigences.
 - Ne jamais envoyer de réponse de votant à un LLM ou à un service tiers.
-- Aucune ressource tierce (police, script, image, analytics) : tout est servi par le site.
+- Aucune ressource tierce (police, script, image) : tout est servi par le site. Seule exception, voulue par la rédaction : Google Analytics, chargé uniquement après consentement (`src/lib/consent.ts`), coupé pendant le test et sur les pages personnelles. Ne jamais lui envoyer d’événement lié aux réponses.
+- Anonymat : aucun nom, genre, lieu ou indice sur l’identité de la personne qui édite le site, ni sur le site ni dans le dépôt.
 
 ## Méthode
 - Ne pas modifier scores, corpus ou méthode pour améliorer la présentation. Une donnée absente reste absente.

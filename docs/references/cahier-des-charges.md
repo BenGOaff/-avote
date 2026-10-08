@@ -598,7 +598,7 @@ La newsletter doit être générique ou suivre des thèmes choisis séparément,
 
 Pas de pixels publicitaires, rejeu de session, enregistrement d’écran ou collecte d’événements détaillés sur test, profil et résultats. Les outils de support ne doivent pas aspirer les réponses dans une capture ou un rapport d’erreur.
 
-L’anonymat éditorial de la fondatrice doit être respecté : aucun visage, biographie, prénom ou lien à ses autres activités dans le parcours de marque. Les mentions légales et responsabilités de publication doivent cependant être conformes à la structure réelle. Ne pas créer une fausse rédaction, un faux directeur de publication ou une identité de façade.
+L’anonymat éditorial de la personne fondatrice doit être respecté : aucun visage, biographie, prénom ou lien à ses autres activités dans le parcours de marque. Les mentions légales et responsabilités de publication doivent cependant être conformes à la structure réelle. Ne pas créer une fausse rédaction, un faux directeur de publication ou une identité de façade.
 
 Prévoir vérification juridique de l’édition, de la satire, des contenus litigieux, des droits de réponse, des tendances publiées et des règles applicables aux périodes électorales. Le système doit permettre suspension d’une catégorie de publication selon une règle documentée, sans suspendre arbitrairement les sources et la méthode.
 

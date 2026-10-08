@@ -8,6 +8,7 @@ import { ORDINALS, type Answer, type Answers, type Ordinal, type Priorities } fr
 import { emptyState, loadState, saveState, type LocalVoterState } from '@/lib/local-store'
 import { answerLabel, effectiveAnswers } from '@/lib/answers'
 import { mirrorRemark } from '@/lib/humor'
+import { setAudiencePaused } from '@/lib/consent'
 import { IconArrowLeft, IconCheck } from '@/components/Icons'
 import { ThemeIcon } from '@/components/ThemeIcon'
 import { Coin } from '@/components/Viz'
@@ -34,6 +35,13 @@ export function TestFlow() {
       setLoaded(true)
     })
   }, [])
+
+  // Pendant les questions (y compris sur l'accueil), la mesure d'audience est coupée
+  const inTest = step.kind !== 'intro'
+  useEffect(() => {
+    setAudiencePaused(inTest)
+    return () => setAudiencePaused(false)
+  }, [inTest])
 
   // Le focus suit le changement d'écran (lecteurs d'écran, clavier)
   useEffect(() => {

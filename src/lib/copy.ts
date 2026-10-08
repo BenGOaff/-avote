@@ -88,6 +88,16 @@ export const UI_COPY = {
     tie: 'Ex æquo',
     gaugeLegend: 'Noir : proximité sur les positions connues. Jaune : la fourchette possible tant que des positions manquent.',
   },
+  consent: {
+    title: 'Un cookie ? Seulement pour compter.',
+    body: 'Si tu acceptes, Google Analytics mesure la fréquentation du site : pages vues, durée de visite, type d’appareil, pays. Il est coupé pendant le test, sur tes résultats, ton profil et le studio : il ne voit jamais tes réponses. Si tu refuses, tout marche pareil.',
+    details: 'Choix gardé 6 mois sur cet appareil, modifiable en bas de chaque page. Les données sont traitées par Google, aux États-Unis, dans le cadre du Data Privacy Framework.',
+    humor: 'On ne vend rien. On veut juste savoir si quelqu’un nous lit.',
+    accept: 'Accepter',
+    refuse: 'Refuser',
+    more: 'Détails',
+    manage: 'Cookies : changer d’avis',
+  },
   erase: 'Effacer toutes mes données',
   share: 'Préparer une image à partager',
 } as const
