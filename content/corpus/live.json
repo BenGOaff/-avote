@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081826",
+  "version": "live-202610081827",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:26:13.300Z",
+  "publishedAt": "2026-10-08T18:27:40.603Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -6392,11 +6392,18 @@
         "codedAt": "2026-10-08T17:00:10.351Z"
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "d647c5e16f44e35e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-08T18:27:40.603Z",
+        "note": "Matériel de campagne de la liste qu’elle conduisait aux européennes 2024. « Bloquer les prix » figure parmi « les fausses bonnes idées » : accepté pour l’électricité, jugé illusoire pour les produits de supermarché. Le texte conclut : « Nou"
       },
       "eco-05": {
         "value": -2,
@@ -6499,11 +6506,18 @@
         "codedAt": "2026-10-08T16:07:45.245Z"
       },
       "cli-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "ee80a49c6ed49f06"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-08T18:27:40.603Z",
+        "note": "Article cosigné par Selma Labib et Marina Kuné. Il défend la gratuité des transports en commun, mais ne dit pas comment la financer."
       },
       "cli-06": {
         "missing": true,
@@ -6534,11 +6548,18 @@
         "codedAt": "2026-10-08T17:00:12.691Z"
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "ea66f170eeec8f26"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-08T18:27:40.603Z",
+        "note": "Matériel de campagne de la liste qu’elle conduisait aux européennes 2024. Le blocage des loyers est accepté du bout des lèvres (« pourquoi pas »), dans un encadré intitulé « Les fausses bonnes idées » : le parti lui préfère la lutte pour le"
       },
       "tra-05": {
         "value": -2,
@@ -11668,6 +11689,30 @@
       "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
       "date": "2026-04-21",
       "passage": "Si vous voulez plus de policiers, des soignants mieux payés à l’hôpital, des profs bien payés, de bon niveau, etc., il faut qu’il y ait moins de bureaucrates."
+    },
+    {
+      "id": "ea66f170eeec8f26",
+      "title": "Salaires, chômage : face à la guerre que nous mènent gouvernement et capitalistes, nous devrons nous battre pour un plan d’urgence pour les travailleurs (4 pages, européennes 2024)",
+      "publisher": "NPA-Révolutionnaires (liste conduite par Selma Labib et Gaël Quirante)",
+      "url": "https://npa-revolutionnaires.org/wp-content/uploads/2024/04/240414_4p_europeennes_salaires.pdf",
+      "date": "2024-04-14",
+      "passage": "Pour les loyers et l’électricité, pourquoi pas, mais cela pose le problème de qui contrôle les grands groupes qui sont autant d’États dans l’État."
+    },
+    {
+      "id": "d647c5e16f44e35e",
+      "title": "Salaires, chômage : face à la guerre que nous mènent gouvernement et capitalistes, nous devrons nous battre pour un plan d’urgence pour les travailleurs (4 pages, européennes 2024)",
+      "publisher": "NPA-Révolutionnaires (liste conduite par Selma Labib et Gaël Quirante)",
+      "url": "https://npa-revolutionnaires.org/wp-content/uploads/2024/04/240414_4p_europeennes_salaires.pdf",
+      "date": "2024-04-14",
+      "passage": "Pour les loyers et l’électricité, pourquoi pas, mais cela pose le problème de qui contrôle les grands groupes qui sont autant d’États dans l’État. Et, pour ce qu’on achète en supermarché, comment vérifier que, pour le même prix, on n’en a pas moins avec un nouvel emballage ?"
+    },
+    {
+      "id": "ee80a49c6ed49f06",
+      "title": "La mise en concurrence de lots de bus RATP n’est pas la concurrence entre les travailleurs",
+      "publisher": "NPA-Révolutionnaires (journal Révolutionnaires)",
+      "url": "https://npa-revolutionnaires.org/articles/la-mise-en-concurrence-de-lots-de-bus-ratp-nest-pas-la-concurrence-entre-les-travailleurs",
+      "date": "2024-11-03",
+      "passage": "À l’heure où l’urgence écologique devrait amener au développement des transports en commun et à leur gratuité, la logique capitaliste conduit à l’inverse."
     }
   ],
   "refreshedAt": {
@@ -11687,7 +11732,7 @@
     "karim-bouamrane": "2026-10-08T18:24:43.530Z",
     "nathalie-arthaud": "2026-10-08T17:44:58.610Z",
     "anasse-kazib": "2026-10-08T18:23:36.781Z",
-    "selma-labib": "2026-10-08T16:07:45.245Z",
+    "selma-labib": "2026-10-08T18:27:40.603Z",
     "olivier-becht": "2026-10-08T18:24:10.913Z",
     "raphael-glucksmann": "2026-10-08T17:44:58.610Z",
     "bernard-cazeneuve": "2026-10-08T17:44:58.610Z",

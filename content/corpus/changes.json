@@ -4141,5 +4141,29 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "a55372e0e5fd9eb0"
+  },
+  {
+    "date": "2026-10-08T18:27:40.603Z",
+    "actor": "selma-labib",
+    "item": "tra-04",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "ea66f170eeec8f26"
+  },
+  {
+    "date": "2026-10-08T18:27:40.603Z",
+    "actor": "selma-labib",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "d647c5e16f44e35e"
+  },
+  {
+    "date": "2026-10-08T18:27:40.603Z",
+    "actor": "selma-labib",
+    "item": "cli-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "ee80a49c6ed49f06"
   }
 ]
