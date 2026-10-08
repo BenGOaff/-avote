@@ -3517,5 +3517,213 @@
     "from": "inconnue",
     "to": "2",
     "source": "a78e1c49ff4effb9"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "ad10e01d627a13bf"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "50b41664e39d741f"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "1895bfa299a18dc9"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "f9aec2cc81cbb509"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eco-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "23a1bb75229da114"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4bb568bcc4349866"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "e9a8f7b74b7fa77f"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4ef27eb92407fdc9"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "fe7b9e8a9242d436"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "35a5d07ef0e58901"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "sec-02",
+    "from": "inconnue",
+    "to": "1",
+    "source": "fb3583d0931f145e"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "sec-04",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "1d96755194e9d1a6"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "lib-02",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "631d293bbf68a62a"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "lib-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d37a0c656f1666a5"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "lib-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "92b1c0c7183855d1"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "lib-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4bf15af438ad86e0"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "eb780ee31bde5361"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "cli-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "bfb089ed2ce3cc81"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "cli-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "1edca7052bc6897e"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "cli-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "b39536070e0037c7"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "589562ff11c5943b"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "8eb0cc607e0f3222"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "9c662e2a635b37f2"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "b93929d1f6bd53db"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "45a646f6f7c980ee"
+  },
+  {
+    "date": "2026-10-08T18:15:13.925Z",
+    "actor": "jean-luc-melenchon",
+    "item": "dem-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4f890a00d245d812"
   }
 ]

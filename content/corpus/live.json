@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081814",
+  "version": "live-202610081815",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:14:43.430Z",
+  "publishedAt": "2026-10-08T18:15:13.925Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -3192,32 +3192,48 @@
     },
     "jean-luc-melenchon": {
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "ad10e01d627a13bf"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Mesure listée parmi celles « déjà présentes dans le programme actuel » (L'Avenir en commun). Résumé du programme par l'équipe de campagne."
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "50b41664e39d741f"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Mesure listée parmi celles « déjà présentes dans le programme actuel ». Le programme 2022 prévoyait aussi de « Rétablir et renforcer l’ISF »."
       },
       "eco-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "1895bfa299a18dc9"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Tribune du candidat publiée sur Mediapart et reprise sur son blog. Il refuse de faire passer la réduction de la dette avant l'investissement public."
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "f9aec2cc81cbb509"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le contrat de législature du NFP (2024) prévoit aussi de bloquer ces prix par décret."
       },
       "eco-05": {
         "missing": true,
@@ -3227,11 +3243,15 @@
         "codedAt": "2026-10-08T15:27:14.482Z"
       },
       "eco-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "23a1bb75229da114"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Discours du candidat. Un SMIC à 1 700 euros va bien au-delà de la revalorisation automatique."
       },
       "sec-01": {
         "missing": true,
@@ -3241,11 +3261,15 @@
         "codedAt": "2026-10-08T16:58:56.815Z"
       },
       "sec-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "fb3583d0931f145e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Document du mouvement (2020). Il vise les peines alternatives en général, sans parler des seules courtes peines : plutôt favorable."
       },
       "sec-03": {
         "value": -2,
@@ -3259,11 +3283,15 @@
         "note": "Le site de campagne dit que le programme actuel prévoit d'« interdire la reconnaissance faciale ». Formulation catégorique, donc -2. Les éléments de la liste à puces sont joints par « - ». Résumé du programme rédigé par l'équipe de campagne"
       },
       "sec-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "1d96755194e9d1a6"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Réponse du candidat à la question « Faut-il limiter le nombre d’immigrés légaux qui arrivent en France comme le souhaite Bruno Retailleau ? ». Entretien reproduit sur son blog."
       },
       "sec-05": {
         "value": 2,
@@ -3295,32 +3323,47 @@
         "note": "Source : déclaration publique du candidat depuis 2024 (message sur X), lu dans un article du JDD (X n'était pas accessible directement). Seuls ses propres mots sont cités. Il soutient la loi votée le 27/05/2025 qui crée un droit à l'aide à "
       },
       "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "parti-uniquement",
+        "sources": [
+          "631d293bbf68a62a"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Commentaire de l'espace programme de LFI sur la mesure de Place Publique « Interdire les réseaux sociaux pour les moins de 15 ans ». Le même texte défend la « majorité numérique », d'où plutôt opposé."
       },
       "lib-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d37a0c656f1666a5"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le programme 2022 disait aussi « Légaliser le cannabis et organiser le contrôle de la production et de la vente par l’État »."
       },
       "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "92b1c0c7183855d1"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z"
       },
       "lib-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "4bf15af438ad86e0"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Mesure listée parmi celles « déjà présentes dans le programme actuel »."
       },
       "lib-06": {
         "missing": true,
@@ -3341,60 +3384,92 @@
         "note": "Programme 2027 du candidat (L'Avenir en commun, présenté sur melenchon2027.fr comme les mesures que Mélenchon appliquera dès mai 2027). La citation vient du résumé officiel de la page (métadonnées og:description et twitter:description), pas"
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "4bb568bcc4349866"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le programme finance ses dépenses par de nouvelles recettes fiscales. La condition « même si cela impose d'autres économies ou de nouvelles recettes » n'est pas citée telle quelle."
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "e9a8f7b74b7fa77f"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Comparatif rédigé par l'espace programme de LFI, qui décrit le contenu de L'Avenir en commun (édition 2025)."
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "4ef27eb92407fdc9"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Mesure listée parmi celles « déjà présentes dans le programme actuel ». Elle va au-delà des seules zones tendues."
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "fe7b9e8a9242d436"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le programme veut abroger le durcissement de l'assurance chômage et étendre l'indemnisation. Le programme 2022 disait déjà « Supprimer la réforme de l’assurance chômage de Macron »."
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "35a5d07ef0e58901"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le comparatif de 2025 rappelle que L'Avenir en commun propose « une distance maximale de 15 à 30 minutes » pour l'accès aux services publics."
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "eb780ee31bde5361"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le comparatif de 2025 confirme : « L’Avenir en commun prône la sortie du nucléaire à horizon 2050 »."
       },
       "cli-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "bfb089ed2ce3cc81"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Mesure listée parmi celles « déjà présentes dans le programme actuel ». Elle va plus loin que la règle actuelle (2 h 30)."
       },
       "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "1edca7052bc6897e"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Mesure listée parmi celles « déjà présentes dans le programme actuel ». Le programme prévoit aussi des prix planchers pour les agriculteurs."
       },
       "cli-04": {
         "missing": true,
@@ -3404,11 +3479,15 @@
         "codedAt": "2026-10-08T15:27:14.482Z"
       },
       "cli-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "b39536070e0037c7"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le même texte prévoit « un financement public massif »."
       },
       "cli-06": {
         "missing": true,
@@ -3418,32 +3497,48 @@
         "codedAt": "2026-10-08T15:27:14.482Z"
       },
       "eur-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "589562ff11c5943b"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le même texte dit : « La défense et les affaires européennes sont des compétences nationales et ne peuvent être déléguées à une entité supranationale. »"
       },
       "eur-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "8eb0cc607e0f3222"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Mesure listée parmi celles « déjà présentes dans le programme actuel ». Discours de Saint-Denis (7 juin 2026) : « Nous décréterons un moratoire sur toutes les directives contraires au mandat que nous aura donné notre peuple. »"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "9c662e2a635b37f2"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Le texte qualifie aussi les 90 milliards par an visés pour la défense de « budget annuel en surmultiplié ». Pas de refus chiffré d'une hausse : plutôt opposé."
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "b93929d1f6bd53db"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Mesure listée parmi celles « déjà présentes dans le programme actuel »."
       },
       "eur-05": {
         "missing": true,
@@ -3453,11 +3548,15 @@
         "codedAt": "2026-10-08T15:27:14.482Z"
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "45a646f6f7c980ee"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Contrat de législature du NFP (2024), coalition dont LFI fait partie. Atteindre 0,7 % suppose une hausse de l'aide."
       },
       "dem-01": {
         "value": 2,
@@ -3482,11 +3581,15 @@
         "note": "Le RIC proposé (législatif, abrogatif, constituant et révocatoire) va au-delà de l'affirmation. Le saut de ligne du PDF après « loi, » est remplacé par une espace."
       },
       "dem-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "4f890a00d245d812"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:27:14.482Z"
+        "codedAt": "2026-10-08T18:15:13.925Z",
+        "note": "Contrat de législature du NFP (2024). Le comparatif LFI de 2025 reproche à Place Publique l'absence de « réelle suppression du 49-3 »."
       },
       "dem-04": {
         "value": 2,
@@ -10716,6 +10819,214 @@
       "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
       "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
       "passage": "Instaurer le Referendum d’Initiative Citoyenne et mettre en place la proportionnelle."
+    },
+    {
+      "id": "ad10e01d627a13bf",
+      "title": "Synthèse des contributions",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise)",
+      "url": "https://melenchon2027.fr/synthese-des-contributions/",
+      "date": "2026-07-17",
+      "passage": "Accroître la progressivité de l’impôt sur le revenu et de la contribution sociale généralisée (CSG) avec davantage de tranches"
+    },
+    {
+      "id": "50b41664e39d741f",
+      "title": "Synthèse des contributions",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise)",
+      "url": "https://melenchon2027.fr/synthese-des-contributions/",
+      "date": "2026-07-17",
+      "passage": "Instaurer une taxe Zucman ou un impôt plancher sur le patrimoine des milliardaires"
+    },
+    {
+      "id": "1895bfa299a18dc9",
+      "title": "La dette sans tabou",
+      "publisher": "melenchon.fr (blog de Jean-Luc Mélenchon)",
+      "url": "https://melenchon.fr/2026/09/05/la-dette-sans-tabou/",
+      "date": "2026-09-04",
+      "passage": "La congélation ou l’annulation de la dette publique détenue par la banque centrale est une solution rationnelle et pragmatique pour donner des marges de manœuvre aux budgets nationaux à l’heure où l’exigence d’investissements écologiques s’impose."
+    },
+    {
+      "id": "f9aec2cc81cbb509",
+      "title": "L'Avenir en commun – La version abrégée (programme pour l'Union populaire)",
+      "publisher": "melenchon.fr (campagne Jean-Luc Mélenchon 2022)",
+      "url": "https://melenchon.fr/wp-content/uploads/2022/04/programme-avenir-en-commun-abrege.pdf",
+      "date": "2022-04",
+      "passage": "Bloquer les prix des produits de première nécessité, notamment du carburant et de l’énergie"
+    },
+    {
+      "id": "23a1bb75229da114",
+      "title": "Meeting de Jean-Luc Mélenchon à Saint-Denis",
+      "publisher": "melenchon.fr (blog de Jean-Luc Mélenchon)",
+      "url": "https://melenchon.fr/2026/06/07/meeting-de-jean-luc-melenchon-a-saint-denis/",
+      "date": "2026-06-07",
+      "passage": "Nous, nous réparerons les dégâts ! Le Smic passera à 1 700 euros. Et nous créerons une Sécurité sociale intégrale, gérée par ses cotisants."
+    },
+    {
+      "id": "4bb568bcc4349866",
+      "title": "L'Avenir en commun – La version abrégée (programme pour l'Union populaire)",
+      "publisher": "melenchon.fr (campagne Jean-Luc Mélenchon 2022)",
+      "url": "https://melenchon.fr/wp-content/uploads/2022/04/programme-avenir-en-commun-abrege.pdf",
+      "date": "2022-04",
+      "passage": "Recruter des soignants, revaloriser leurs revenus et réouvrir des lits dans les hôpitaux"
+    },
+    {
+      "id": "e9a8f7b74b7fa77f",
+      "title": "Comparateur Place Publique 2025 – Sauver l'école de la République",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise), espace programme",
+      "url": "https://melenchon2027.fr/programme/2022-2025/comparateur-place-publique-2025/comparateur-place-publique-2025-renouer-avec-la-promesse-demancipation-sauver-lecole-de-la-republique-2/",
+      "date": "2025-06-30",
+      "passage": "Sur la réduction du nombre d’élèves par classe, L’Avenir en commun a un objectif clair et chiffré : atteindre 19 élèves par classe à la fin du mandat lié à un plan de recrutement massif d’enseignants (60 000)"
+    },
+    {
+      "id": "4ef27eb92407fdc9",
+      "title": "Synthèse des contributions",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise)",
+      "url": "https://melenchon2027.fr/synthese-des-contributions/",
+      "date": "2026-07-17",
+      "passage": "Étendre et pérenniser l’encadrement des loyers sur tout le territoire"
+    },
+    {
+      "id": "fe7b9e8a9242d436",
+      "title": "Comparateur Place Publique 2025 – Garantir nos droits à la santé",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise), espace programme",
+      "url": "https://melenchon2027.fr/programme/2022-2025/comparateur-place-publique-2025/comparateur-place-publique-2025-garantir-nos-droits-a-la-sante-2/",
+      "date": "2025-06-30",
+      "passage": "Sur l’abrogation de la réforme de l’assurance chômage, nous allons plus loin en proposant d’indemniser les chômeurs en fonction de leurs derniers salaires grâce à une assurance calculée à partir du premier jour de travail."
+    },
+    {
+      "id": "35a5d07ef0e58901",
+      "title": "L'Avenir en commun – La version abrégée (programme pour l'Union populaire)",
+      "publisher": "melenchon.fr (campagne Jean-Luc Mélenchon 2022)",
+      "url": "https://melenchon.fr/wp-content/uploads/2022/04/programme-avenir-en-commun-abrege.pdf",
+      "date": "2022-04",
+      "passage": "Réouvrir des services d’urgence, des maternités et des EHPAD publics à moins de trente minutes de chaque Français"
+    },
+    {
+      "id": "fb3583d0931f145e",
+      "title": "L'Avenir en commun – Version actualisée (avril 2020)",
+      "publisher": "La France insoumise",
+      "url": "https://lafranceinsoumise.fr/wp-content/uploads/2020/04/avenir-en-commun-maj-avril-2020.pdf",
+      "date": "2020-04",
+      "passage": "Mettre fin au tout carcéral par des peines alternatives à la prison et rénover les prisons pour garantir la dignité humaine"
+    },
+    {
+      "id": "1d96755194e9d1a6",
+      "title": "«Le gouvernement cherche l’alliance avec l’extrême droite» – Interview pour 20 minutes",
+      "publisher": "melenchon.fr (blog de Jean-Luc Mélenchon)",
+      "url": "https://melenchon.fr/2025/02/12/le-gouvernement-cherche-lalliance-avec-lextreme-droite-interview-pour-20-minutes/",
+      "date": "2025-02-12",
+      "passage": "Quelle est l’idée, bloquer l’immigration ? Quel est le rapport avec l’identité française ? Si on mélange tout, on va injecter de la xénophobie à l’intérieur même du peuple français."
+    },
+    {
+      "id": "631d293bbf68a62a",
+      "title": "Comparateur Place Publique 2025 – Embrasser et maîtriser la révolution technologique",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise), espace programme",
+      "url": "https://melenchon2027.fr/programme/2022-2025/comparateur-place-publique-2025/comparateur-place-publique-2025-embrasser-et-maitriser-la-revolution-technologique/",
+      "date": "2025-06-30",
+      "passage": "Place Publique se place dans une approche répressive et capitularde : interdiction des réseaux sociaux, bannissement de Tik Tok, plutôt que d’en réguler les contenus. Ces mesures ne sont pas efficaces et peuvent porter atteinte aux droits des usagers."
+    },
+    {
+      "id": "d37a0c656f1666a5",
+      "title": "Comparateur Place Publique 2025 – Vivre en sécurité dans le respect de la justice et du droit",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise), espace programme",
+      "url": "https://melenchon2027.fr/programme/2022-2025/comparateur-place-publique-2025/comparateur-place-publique-2025-vivre-en-securite-dans-le-respect-de-la-justice-et-du-droit/",
+      "date": "2025-06-30",
+      "passage": "Place Publique ne se prononce pas clairement sur la légalisation du cannabis, malgré l’appui majoritaire de la population — L’Avenir en commun défend une légalisation encadrée par un monopole d’État."
+    },
+    {
+      "id": "92b1c0c7183855d1",
+      "title": "L'Avenir en commun – La version abrégée (programme pour l'Union populaire)",
+      "publisher": "melenchon.fr (campagne Jean-Luc Mélenchon 2022)",
+      "url": "https://melenchon.fr/wp-content/uploads/2022/04/programme-avenir-en-commun-abrege.pdf",
+      "date": "2022-04",
+      "passage": "Augmenter les sanctions financières et pénales contre les entreprises qui ne respectent pas l’égalité salariale"
+    },
+    {
+      "id": "4bf15af438ad86e0",
+      "title": "Synthèse des contributions",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise)",
+      "url": "https://melenchon2027.fr/synthese-des-contributions/",
+      "date": "2026-07-17",
+      "passage": "Mettre en place le récépissé de contrôle d’identité par les forces de l’ordre pour lutter contre le contrôle au faciès"
+    },
+    {
+      "id": "eb780ee31bde5361",
+      "title": "L'Avenir en commun – La version abrégée (programme pour l'Union populaire)",
+      "publisher": "melenchon.fr (campagne Jean-Luc Mélenchon 2022)",
+      "url": "https://melenchon.fr/wp-content/uploads/2022/04/programme-avenir-en-commun-abrege.pdf",
+      "date": "2022-04",
+      "passage": "Planifier la sortie du nucléaire et abandonner les projets de nouvelles centrales"
+    },
+    {
+      "id": "bfb089ed2ce3cc81",
+      "title": "Synthèse des contributions",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise)",
+      "url": "https://melenchon2027.fr/synthese-des-contributions/",
+      "date": "2026-07-17",
+      "passage": "Supprimer les lignes aériennes quand l’alternative en train est inférieure à quatre heures"
+    },
+    {
+      "id": "1edca7052bc6897e",
+      "title": "Synthèse des contributions",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise)",
+      "url": "https://melenchon2027.fr/synthese-des-contributions/",
+      "date": "2026-07-17",
+      "passage": "Planifier la réduction des doses d’engrais et pesticides et les importations de produits qui en contiennent"
+    },
+    {
+      "id": "b39536070e0037c7",
+      "title": "Comparateur Place Publique 2025 – Réaliser la transformation écologique et sociale des territoires",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise), espace programme",
+      "url": "https://melenchon2027.fr/programme/2022-2025/comparateur-place-publique-2025/comparateur-place-publique-2025-realiser-la-transformation-ecologique-et-sociale-des-territoires/",
+      "date": "2025-06-30",
+      "passage": "L’Avenir en commun défend la gratuité progressive des transports publics, pas seulement de publics prioritaires."
+    },
+    {
+      "id": "589562ff11c5943b",
+      "title": "Comparateur Place Publique 2025 – Défendre la France et l'Europe",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise), espace programme",
+      "url": "https://melenchon2027.fr/programme/2022-2025/comparateur-place-publique-2025/comparateur-place-publique-2025-defendre-la-france-et-leurope/",
+      "date": "2025-06-30",
+      "passage": "Place Publique propose de transférer une partie de notre souveraineté au niveau européen. L’Avenir en commun porte comme objectif premier de proposer aux États et peuples européens la rupture concertée avec les traités européens actuels par la restauration de la souveraineté budgétaire"
+    },
+    {
+      "id": "8eb0cc607e0f3222",
+      "title": "Synthèse des contributions",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise)",
+      "url": "https://melenchon2027.fr/synthese-des-contributions/",
+      "date": "2026-07-17",
+      "passage": "Utiliser la possibilité d’“Opt Out” sur les dispositions des traités européens empêchant d’appliquer le programme de la France insoumise tant en matière sociale qu’environnementale"
+    },
+    {
+      "id": "9c662e2a635b37f2",
+      "title": "L’après Trump consiste à obéir à ses demandes ?",
+      "publisher": "melenchon.fr (blog de Jean-Luc Mélenchon)",
+      "url": "https://melenchon.fr/2025/03/07/lapres-trump-consiste-a-obeir-a-ses-demandes/",
+      "date": "2025-03-07",
+      "passage": "À mes yeux, les dépenses militaires ne sont pas la priorité de notre temps. Notre priorité devrait être d’augmenter considérablement nos capacités de résistance aux conséquences du changement climatique."
+    },
+    {
+      "id": "b93929d1f6bd53db",
+      "title": "Synthèse des contributions",
+      "publisher": "Campagne Mélenchon 2027 (La France insoumise)",
+      "url": "https://melenchon2027.fr/synthese-des-contributions/",
+      "date": "2026-07-17",
+      "passage": "Abroger les accords de libre-échange déjà en vigueur (Mercosur, Nouvelle-Zélande, Canada, Japon) et s’opposer à la signature de nouveaux accords (Kenya)"
+    },
+    {
+      "id": "45a646f6f7c980ee",
+      "title": "Nouveau Front Populaire – Contrat de législature (législatives 2024)",
+      "publisher": "Nouveau Front populaire, document hébergé sur melenchon2027.fr",
+      "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+      "date": "2024-06",
+      "passage": "Faire respecter l’engagement de la France d’attribuer 0,7% de son RNB à l’aide publique au développement"
+    },
+    {
+      "id": "4f890a00d245d812",
+      "title": "Nouveau Front Populaire – Contrat de législature (législatives 2024)",
+      "publisher": "Nouveau Front populaire, document hébergé sur melenchon2027.fr",
+      "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+      "date": "2024-06",
+      "passage": "Abolir la monarchie présidentielle dans la pratique des institutions : • Instaurer la proportionnelle • Revitaliser le parlement • Abroger le 49.3"
     }
   ],
   "refreshedAt": {
@@ -10727,7 +11038,7 @@
     "eric-zemmour": "2026-10-08T18:10:26.755Z",
     "nicolas-dupont-aignan": "2026-10-08T15:16:54.685Z",
     "florian-philippot": "2026-10-08T15:22:20.891Z",
-    "jean-luc-melenchon": "2026-10-08T15:27:14.482Z",
+    "jean-luc-melenchon": "2026-10-08T18:15:13.925Z",
     "fabien-roussel": "2026-10-08T17:54:08.652Z",
     "marine-tondelier": "2026-10-08T15:37:56.399Z",
     "francois-ruffin": "2026-10-08T15:43:20.824Z",
