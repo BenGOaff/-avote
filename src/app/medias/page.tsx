@@ -142,14 +142,9 @@ export default function MediasPage() {
   )
 }
 
-function Alerts({ alerts, checkedAt }: { alerts: ArcomAlert[] | null; checkedAt: string | null }) {
-  if (alerts === null) return null
-  if (alerts.length === 0)
-    return (
-      <p className="small muted" style={{ margin: 'var(--s3) 0' }}>
-        Arcom : aucune décision liée à l’information politique relevée (vérifié le {formatDate(checkedAt ?? '')}).
-      </p>
-    )
+function Alerts({ alerts }: { alerts: ArcomAlert[] | null; checkedAt: string | null }) {
+  // Une recherche sans résultat ne prouve pas l'absence de décision : on n'affiche que ce qui a été trouvé et vérifié
+  if (!alerts || alerts.length === 0) return null
   return (
     <div className="alerts">
       <p className="alerts__title">Épinglé par l’Arcom</p>
