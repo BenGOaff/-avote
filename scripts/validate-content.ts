@@ -94,6 +94,15 @@ for (const [slug, a] of Object.entries(nuances.actors)) {
 const sansNuance = cand.actors.filter((a) => a.verified && !nuances.actors[a.slug] && (a as { party?: string }).party).length
 if (sansNuance) warnings.push(`${sansNuance} candidat(s) avec un parti mais sans nuance`)
 
+// Qui possède ton info
+const mediaList = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/liste.json'), 'utf8')) as { medias: { slug: string }[] }
+const owned = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/proprietaires.json'), 'utf8')) as { medias: Record<string, { url: string; quote: string; controller: string }> }
+for (const [slug, m] of Object.entries(owned.medias)) {
+  if (!mediaList.medias.some((x) => x.slug === slug)) errors.push(`médias : ${slug} absent de la liste`)
+  if (!m.url?.startsWith('https://')) errors.push(`médias : ${slug} sans source https`)
+  if (!m.quote || m.quote.length < 12 || !m.controller) errors.push(`médias : ${slug} sans citation ou sans contrôle`)
+}
+
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
 for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)

@@ -1,0 +1,72 @@
+# « Qui possède ton info » : propriétaires des médias, établis par IA avec citation vérifiée (scripts/medias.ts).
+# Chaque mois : les fiches jamais établies d'abord, puis les plus anciennes.
+name: Médias
+
+on:
+  schedule:
+    - cron: '41 3 3 * *'
+  workflow_dispatch:
+    inputs:
+      media:
+        description: 'Identifiant du média (ex. le-monde). Vide = automatique'
+        required: false
+      limit:
+        description: 'Nombre de médias à traiter'
+        default: '15'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: medias
+  cancel-in-progress: false
+
+jobs:
+  medias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Établir les fiches
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MEDIAS_MODEL: ${{ vars.MEDIAS_MODEL }}
+          MEDIAS_EFFORT: ${{ vars.MEDIAS_EFFORT }}
+        run: |
+          if [ -n "${{ github.event.inputs.media }}" ]; then
+            npx tsx scripts/medias.ts --media=${{ github.event.inputs.media }}
+          else
+            npx tsx scripts/medias.ts --limit=${{ github.event.inputs.limit || 15 }}
+          fi
+      - name: Valider
+        if: always()
+        env:
+          ANONYMITY_BLOCKLIST: ${{ secrets.ANONYMITY_BLOCKLIST }}
+        run: npx tsx scripts/validate-content.ts
+      - name: Proposer la mise à jour
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "medias-ca-vote[bot]"
+          git config user.email "medias@users.noreply.github.com"
+          if [ -z "$(git status --porcelain content/medias)" ]; then exit 0; fi
+          STAMP=$(date -u +%Y%m%d-%H%M)
+          # La branche part de la dernière version de main (sinon elle porterait d'anciens workflows et serait refusée)
+          git stash push --include-untracked -- content/medias
+          git fetch origin "${{ github.ref_name }}"
+          git switch -c "medias/$STAMP" "origin/${{ github.ref_name }}"
+          git checkout stash@{0} -- content/medias
+          git add content/medias
+          git commit -m "médias : fiches de propriété ($STAMP)"
+          git push origin "medias/$STAMP"
+          gh pr create --base "${{ github.ref_name }}" --head "medias/$STAMP" \
+            --title "Médias $STAMP" \
+            --body "Fiches de propriété établies par IA, citation vérifiée dans chaque source." \
+            || echo "Pull Request non créée (réglage Actions) : la branche medias/$STAMP est poussée."
