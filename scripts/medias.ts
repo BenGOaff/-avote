@@ -17,6 +17,7 @@ import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
 import { canonicalUrl, quoteIsInSource } from './veille-lib'
 import { collectEvidence, fetchText } from './web-lib'
+import { ALERT_DOMAINS, clip, quoteNamesOwner } from './medias-lib'
 import { CostMeter, budgetFromEnv } from './cost'
 
 const ROOT = process.cwd()
@@ -157,32 +158,9 @@ async function toStructured(text: string): Promise<FoundOut | null> {
   return res.parsed_output ?? null
 }
 
-const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '')
-/** La citation doit nommer au moins un propriétaire ou le contrôle final (un mot significatif suffit). */
-function quoteNamesOwner(quote: string, f: FoundOut): boolean {
-  const q = norm(quote)
-  const names = [f.controller, f.group, ...f.owners.map((o) => o.name)].filter(Boolean)
-  return names.some((n) =>
-    norm(n)
-      .split(/[^\p{L}\p{N}]+/u)
-      .filter((w) => w.length >= 4 && !['groupe', 'famille', 'societe', 'france', 'media', 'medias'].includes(w))
-      .some((w) => q.includes(w)),
-  )
-}
-
-/** Coupe à la dernière phrase complète sous la limite (jamais au milieu d'un mot). */
-function clip(t: string, max: number): string {
-  if (t.length <= max) return t
-  const cut = t.slice(0, max)
-  const end = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('.\u00a0'))
-  return end > 40 ? cut.slice(0, end + 1) : cut.slice(0, cut.lastIndexOf(' ')) + '…'
-}
-
 // ---------------------------------------------------------------------------
 // Alertes Arcom (télévision et radio) : décisions liées à l'information politique
 // ---------------------------------------------------------------------------
-
-const ALERT_DOMAINS = ['arcom.fr', 'conseil-etat.fr', 'legifrance.gouv.fr']
 
 const AlertsOut = z.object({
   searched: z.boolean().describe("true seulement si la recherche a pu être menée jusqu'au bout sur les sites officiels ; false si elle a été interrompue (limite d'outils, pages illisibles)"),
@@ -191,7 +169,7 @@ const AlertsOut = z.object({
       date: z.string().describe('Date de la décision AAAA-MM-JJ'),
       kind: z.enum(['mise-en-demeure', 'mise-en-garde', 'sanction', 'avertissement', 'non-renouvellement', 'decision-conseil-etat', 'autre']),
       topic: z.enum(['pluralisme', 'temps-de-parole', 'honnetete-information', 'independance-information', 'campagne-electorale', 'autre-politique']),
-      summary: z.string().describe('Une phrase factuelle : qui a décidé quoi, pour quel motif, dans les termes de la décision. Aucun adjectif.'),
+      summary: z.string().describe('Une phrase factuelle : qui a décidé quoi, pour quel motif, dans les termes de la décision. Aucun adjectif. Uniquement la décision : aucune remarque sur ta recherche (« non lu », « selon le point… »).'),
       quote: z.string().describe('Passage copié mot pour mot de la décision ou du communiqué (50 à 300 caractères)'),
       url: z.string(),
       publisher: z.string(),

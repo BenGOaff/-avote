@@ -67,3 +67,6 @@ export function resultQuip({ dims, ranking }: { dims: { index: number | null }[]
   if (known.length >= 5 && known.every((d) => Math.abs((d.index as number) - 50) <= 10)) return 'Beaucoup de « entre les deux ». Les programmes vont devoir être précis.'
   return null
 }
+
+/** Sous le titre de la page médias. Masqué en mode sobre. */
+export const MEDIAS_QUIP = 'Spoiler : pas toi.'

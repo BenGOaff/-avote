@@ -209,6 +209,26 @@ export default function MethodPage() {
           candidats. Des contrôles automatiques rejettent toute citation absente de la source, tout chiffre qui n’y figure pas et les tournures interdites.
           L’IA ne reçoit jamais tes réponses au test : ton résultat est calculé sur ton appareil.
         </p>
+
+        <h2 id="medias">Qui possède ton info : comment une fiche est établie</h2>
+        <p>
+          Chaque fiche dit qui possède le média aujourd’hui et qui décide en dernier ressort : le capital et le contrôle ne sont pas la même chose. La source
+          préférée est officielle (site du groupe, rapport annuel, communiqué), sinon un article daté d’un média reconnu, jamais une encyclopédie collaborative.
+          Le passage cité doit nommer le propriétaire ; un programme retélécharge la page et vérifie qu’il y figure mot pour mot. Sinon, pas de fiche.
+        </p>
+        <p>
+          L’orientation politique d’un média n’est jamais la nôtre : c’est l’étiquette d’<a href="https://www.eurotopics.net/fr/" rel="noopener noreferrer nofollow" target="_blank">eurotopics</a>,
+          l’observatoire de la presse européenne de l’Agence fédérale allemande pour l’éducation civique, citée comme telle. Un média qu’eurotopics ne classe
+          pas reste sans étiquette. Les engagements d’un propriétaire se limitent aux faits publics et documentés : mandat, fonction dans un parti, projet ou
+          soutien politique qu’il a lui-même annoncé, décision officielle. Pas de qualificatif, pas de supposition sur son influence.
+        </p>
+        <p>
+          « Rappelés à l’ordre » ne retient que les décisions de l’Arcom (et du CSA avant 2022) et du Conseil d’État qui touchent à l’information politique :
+          pluralisme, temps de parole, honnêteté et indépendance de l’information, campagnes électorales. Seules les décisions lues sur arcom.fr,
+          conseil-etat.fr ou legifrance.gouv.fr comptent. La presse écrite et les sites ne dépendent pas de l’Arcom. Une chaîne sans décision affichée n’est
+          pas pour autant « blanchie » : on n’affiche que ce qu’on a trouvé et vérifié. Les fiches sont revues au moins chaque trimestre ; une erreur se
+          signale sur <Link href="/corrections">la page des corrections</Link>.
+        </p>
       </div>
     </div>
   )

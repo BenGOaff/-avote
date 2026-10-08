@@ -24,10 +24,6 @@ export default function CandidatsPage() {
           Une annonce n’est pas une candidature officielle. La liste officielle n’existe qu’après la validation des 500 parrainages par le Conseil
           constitutionnel.
         </p>
-        <p className="muted">
-          Chaque ligne renvoie à la source de l’annonce. Les positions de chaque personne sont codées automatiquement à partir de leurs programmes et
-          déclarations ; chaque citation est vérifiée dans sa source.
-        </p>
       </div>
 
       {actors.length > 0 && <Echiquier actors={actors} />}
