@@ -19,7 +19,8 @@ import path from 'node:path'
 import Anthropic from '@anthropic-ai/sdk'
 import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
-import { canonicalUrl, hashId, quoteIsInSource, stripHtml } from './veille-lib'
+import { canonicalUrl, hashId, quoteIsInSource } from './veille-lib'
+import { collectEvidence, fetchText } from './web-lib'
 import type { Corpus, CorpusSource, Ordinal, Position, PositionBasis } from '../src/lib/engine/types'
 
 const ROOT = process.cwd()
@@ -94,20 +95,6 @@ const Coded = z.object({
 })
 type CodedOut = z.infer<typeof Coded>
 
-/** Textes des pages lues par Claude pendant la recherche, indexés par URL. */
-function collectEvidence(content: Anthropic.Beta.BetaContentBlock[], into: Map<string, string>) {
-  for (const b of content) {
-    if (b.type !== 'web_fetch_tool_result') continue
-    const c = b.content
-    if (c.type !== 'web_fetch_result') continue
-    const src = c.content.source
-    if (src.type === 'text') {
-      const url = canonicalUrl(c.url)
-      if (url) into.set(url, (into.get(url) ?? '') + '\n' + src.data)
-    }
-  }
-}
-
 async function research(actor: { name: string; party?: string }, themeLabel: string, items: Item[], evidence: Map<string, string>): Promise<string> {
   const messages: Anthropic.Beta.BetaMessageParam[] = [
     {
@@ -164,24 +151,6 @@ async function toStructured(text: string): Promise<CodedOut | null> {
     messages: [{ role: 'user', content: `Convertis ce compte rendu en JSON conforme au schéma, sans rien ajouter ni changer :\n\n${text.slice(-30000)}` }],
   })
   return res.parsed_output ?? null
-}
-
-async function fetchText(url: string): Promise<string | null> {
-  try {
-    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; CaVotePositions/1.0; +https://xn--avote-xra.fr/methodologie)' }, signal: AbortSignal.timeout(25_000), redirect: 'follow' })
-    if (!res.ok) return null
-    const buf = Buffer.from(await res.arrayBuffer())
-    if (buf.length > 25_000_000) return null
-    if ((res.headers.get('content-type') ?? '').includes('pdf') || url.toLowerCase().endsWith('.pdf')) {
-      const { extractText, getDocumentProxy } = await import('unpdf')
-      const pdf = await getDocumentProxy(new Uint8Array(buf))
-      const { text } = await extractText(pdf, { mergePages: true })
-      return Array.isArray(text) ? text.join('\n') : text
-    }
-    return stripHtml(buf.toString('utf8'))
-  } catch {
-    return null
-  }
 }
 
 const posLabel = (p: Position | undefined) => (!p || 'missing' in p ? 'inconnue' : 'set' in p ? `[${p.set.join(',')}]` : String(p.value))
