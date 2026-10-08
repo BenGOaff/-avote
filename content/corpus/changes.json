@@ -4069,5 +4069,77 @@
     "from": "inconnue",
     "to": "[-1,0]",
     "source": "a1c6fa84c7a15ca8"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "tra-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "4477eca354a52958"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d9805c58093ee69a"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "99a8d6e2a08abff7"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "e2a105c7a0ec24f1"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "lib-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "e67a9ec8e31f5d0d"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "9d1a96c444c59ad6"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "f7e2b4f73b91f065"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "d0bdc59ddeed479c"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "a55372e0e5fd9eb0"
   }
 ]

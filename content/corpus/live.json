@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081824",
+  "version": "live-202610081826",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:24:43.530Z",
+  "publishedAt": "2026-10-08T18:26:13.300Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -1332,11 +1332,15 @@
     },
     "david-lisnard": {
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "4477eca354a52958"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Propos sur franceinfo le 9 octobre 2024, reproduits sur le site de son parti (page mise à jour le 3 octobre 2026). Il refuse de revenir sur la réforme de 2023 qui a reculé l'âge légal ; il la juge même insuffisante (« réformette ») et propo"
       },
       "tra-02": {
         "missing": true,
@@ -1360,11 +1364,18 @@
         "codedAt": "2026-10-08T15:00:13.139Z"
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "d0bdc59ddeed479c"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Il soutient la réforme de l'assurance chômage du gouvernement Attal (durcissement des règles d'indemnisation), suspendue en 2024. Soutien à une réforme précise plutôt qu'à un principe général, d'où deux niveaux."
       },
       "tra-06": {
         "missing": true,
@@ -1385,11 +1396,15 @@
         "note": "Entretien au Point, repris sur le site du parti le 16/01/2025. Il ajoute dans le même entretien que la loi Claeys-Leonetti ne franchit pas les 'frontières éthiques dangereuses, comme l’euthanasie ou le suicide assisté'. Il défend les soins "
       },
       "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "e67a9ec8e31f5d0d"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Tribune cosignée avec Constance Nebbula, en réaction à la proposition de loi d'interdiction aux moins de 15 ans. Il propose à la place un design protecteur imposé aux plateformes et l'éducation au numérique."
       },
       "lib-03": {
         "missing": true,
@@ -1420,18 +1435,29 @@
         "codedAt": "2026-10-08T16:57:32.848Z"
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "e2a105c7a0ec24f1"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Tribune signée David Lisnard. Il veut des « taux plus bas » et une baisse nette de 100 milliards des prélèvements ; l'impôt sur le revenu deviendrait moins progressif, pas plus. Il ne parle pas explicitement des plus hauts revenus, d'où deu"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "99a8d6e2a08abff7"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:26.046Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Tribune signée David Lisnard. Il rejette aussi l'ISF (« chaque euro prélevé s'accompagnait de pertes supérieures »). Dans une tribune d'avril 2026 (Atlantico, « Changer de logiciel fiscal »), il propose de supprimer l'IFI, remplacé par une "
       },
       "eco-03": {
         "missing": true,
@@ -1466,11 +1492,18 @@
         "codedAt": "2026-10-08T15:00:13.139Z"
       },
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La seule source trouvée résume le candidat sans le citer.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "a55372e0e5fd9eb0"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:29.945Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Propos aux Grandes Gueules (RMC), reproduits sur le site du parti. Il veut plus de policiers financés par la baisse de la bureaucratie ; pas d'objectif chiffré. Son programme prévoit aussi un « plan massif de remise à niveau de la police na"
       },
       "sec-02": {
         "set": [
@@ -1527,11 +1560,15 @@
         "note": "Cinq ans de résidence pour toutes les aides non contributives. Le RSA exige déjà cinq ans, mais ce serait un allongement pour les aides au logement et les allocations familiales, qui n'exigent pas de durée de séjour. La mesure est formulée "
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La seule source trouvée résume le candidat sans le citer.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d9805c58093ee69a"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:35.279Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Même page de programme que celle retenue pour dem-05 (classement programme à confirmer, page non datée). La page « Quel candidat veut construire de nouveaux réacteurs nucléaires ? » du même site parle d'une première série de six EPR et de m"
       },
       "cli-02": {
         "missing": true,
@@ -1605,11 +1642,15 @@
         "note": "Favorable sous condition (référendum, en cas de blocage, révision « partielle »), d'où +1. Confirmé par le discours de Bayeux du 17/06/2026 (voie danoise de dérogation sur l'asile et l'immigration). Lisnard y précise qu'on ne s'affranchit p"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "f7e2b4f73b91f065"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:40.531Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Entretien écrit (propos recueillis par Roland Lombardi). Objectif chiffré : 3,5 % du PIB."
       },
       "eur-04": {
         "set": [
@@ -1640,11 +1681,18 @@
         "codedAt": "2026-10-08T15:00:13.139Z"
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "9d1a96c444c59ad6"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Chronique signée David Lisnard. Il vise la « proportionnelle intégrale » et défend les institutions de la Ve République ; il ne se prononce pas sur une dose partielle de proportionnelle, d'où deux niveaux."
       },
       "dem-02": {
         "value": 2,
@@ -11549,13 +11597,84 @@
       "url": "https://www.lecourrierdelatlas.com/karim-bouamrane-rn-gauche-france-humaine-forte/",
       "date": "2026-06-09",
       "passage": "Doit-on défendre la retraite à 60 ans, le SMIC à 1 600 euros et d’autres mesures relevant d’un monde idéal ? Ce serait un mensonge que de dire qu’on va le mettre en œuvre en tenant compte de la réalité budgétaire."
+    },
+    {
+      "id": "4477eca354a52958",
+      "title": "Quel âge de départ à la retraite David Lisnard défend-il ?",
+      "publisher": "Nouvelle Énergie",
+      "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
+      "date": "2024-10-09",
+      "passage": "il faut pas revenir sur les réformes qui avaient été décidées sur la réforme des retraites et sur la réforme du chômage"
+    },
+    {
+      "id": "d9805c58093ee69a",
+      "title": "Notre programme – 3. Générer un renouveau civique",
+      "publisher": "Nouvelle Énergie",
+      "url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+      "passage": "réinvestir les sommes ainsi économisées dans des projets d’avenir, en particulier les nouvelles technologies nucléaires : recherche et développement des technologies laser pour le traitement des déchets, prolongation de la durée de vie des réacteurs jusqu’à 60 ans, construction d’EPR de nouvelle génération"
+    },
+    {
+      "id": "99a8d6e2a08abff7",
+      "title": "Taxe Zucman ou les habits neufs du vieux collectivisme",
+      "publisher": "Nouvelle Énergie (tribune parue dans Valeurs Actuelles)",
+      "url": "https://www.unenouvelleenergie.fr/taxe-zucman-ou-les-habits-neufs-du-vieux-collectivisme/",
+      "date": "2025-09-24",
+      "passage": "taxer les « ultrariches » par le mécanisme de la taxe dite Zucman est ainsi devenu le nouvel étendard de l’égalitarisme fiscal, ce poison collectiviste qui préfère punir la réussite plutôt que favoriser la prospérité"
+    },
+    {
+      "id": "e2a105c7a0ec24f1",
+      "title": "Changer de logiciel fiscal",
+      "publisher": "Nouvelle Énergie (tribune parue sur Atlantico)",
+      "url": "https://www.unenouvelleenergie.fr/changer-de-logiciel-fiscal/",
+      "date": "2026-04-16",
+      "passage": "L’IR combinerait une taxation proportionnelle allégée des revenus du capital (y compris immobilier) et une taxation modérément progressive des revenus du travail, afin d’en gommer les effets les plus désincitatifs."
+    },
+    {
+      "id": "e67a9ec8e31f5d0d",
+      "title": "Réseaux sociaux : « L’interdiction est le dernier refuge de l’impuissance publique »",
+      "publisher": "Nouvelle Énergie (tribune parue dans Les Échos)",
+      "url": "https://www.unenouvelleenergie.fr/reseaux-sociaux-linterdiction-est-le-dernier-refuge-de-limpuissance-publique/",
+      "date": "2026-02-11",
+      "passage": "Ce n’est pas l’accès qu’il faut interdire, mais les mécanismes prédateurs — scroll infini, notifications intrusives, publicité ciblée — qui doivent être proscrits pour les mineurs"
+    },
+    {
+      "id": "9d1a96c444c59ad6",
+      "title": "Légitimité légale, légitimité politique : la difficile équation présidentielle",
+      "publisher": "Nouvelle Énergie (chronique parue dans L'Opinion)",
+      "url": "https://www.unenouvelleenergie.fr/legitimite-legale-legitimite-politique-la-difficile-equation-presidentielle/",
+      "date": "2025-10-09",
+      "passage": "Ils veulent réformer le mode de scrutin, introduire la proportionnelle intégrale, affaiblir l’exécutif, renforcer le Parlement. Ils croient que le problème vient de l’architecture constitutionnelle et que modifier les règles du jeu suffira à restaurer la gouvernabilité. C’est une erreur."
+    },
+    {
+      "id": "f7e2b4f73b91f065",
+      "title": "Le Grand Entretien du Diplomate avec David Lisnard : « La souveraineté européenne n’existe pas ! »",
+      "publisher": "Le Diplomate",
+      "url": "https://lediplomate.media/david-lisnard-souverainete-europeenne/",
+      "date": "2025-03-22",
+      "passage": "Si la France veut peser dans les discussions à venir, elle doit d’abord se donner les moyens de sa puissance, en portant son budget de la défense à 3,5 % du PIB, en accélérant la production d’armements"
+    },
+    {
+      "id": "d0bdc59ddeed479c",
+      "title": "« Je m'oppose à tout impôt local sur le revenu »",
+      "publisher": "Nouvelle Énergie (entretien paru dans La Tribune)",
+      "url": "https://www.unenouvelleenergie.fr/je-moppose-a-tout-impot-local-sur-le-revenu/",
+      "date": "2024-11-18",
+      "passage": "Il aurait d’abord fallu appliquer immédiatement la réforme de l’assurance chômage du précédent gouvernement. C’est une erreur de l’avoir interrompue."
+    },
+    {
+      "id": "a55372e0e5fd9eb0",
+      "title": "Quel est le diagnostic de David Lisnard sur l’hôpital ?",
+      "publisher": "Nouvelle Énergie",
+      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
+      "date": "2026-04-21",
+      "passage": "Si vous voulez plus de policiers, des soignants mieux payés à l’hôpital, des profs bien payés, de bon niveau, etc., il faut qu’il y ait moins de bureaucrates."
     }
   ],
   "refreshedAt": {
     "edouard-philippe": "2026-10-08T18:12:55.891Z",
     "gabriel-attal": "2026-10-08T18:11:37.885Z",
     "bruno-retailleau": "2026-10-08T18:10:53.270Z",
-    "david-lisnard": "2026-10-08T15:00:13.139Z",
+    "david-lisnard": "2026-10-08T18:26:13.300Z",
     "marine-le-pen": "2026-10-08T18:14:43.430Z",
     "eric-zemmour": "2026-10-08T18:10:26.755Z",
     "nicolas-dupont-aignan": "2026-10-08T18:24:30.517Z",
