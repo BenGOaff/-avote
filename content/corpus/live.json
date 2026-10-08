@@ -1,8 +1,8 @@
 {
-  "version": "live-202610081815",
+  "version": "live-202610081828",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-08T18:15:13.925Z",
+  "publishedAt": "2026-10-08T18:28:41.116Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -1332,11 +1332,15 @@
     },
     "david-lisnard": {
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "4477eca354a52958"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Propos sur franceinfo le 9 octobre 2024, reproduits sur le site de son parti (page mise à jour le 3 octobre 2026). Il refuse de revenir sur la réforme de 2023 qui a reculé l'âge légal ; il la juge même insuffisante (« réformette ») et propo"
       },
       "tra-02": {
         "missing": true,
@@ -1360,11 +1364,18 @@
         "codedAt": "2026-10-08T15:00:13.139Z"
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "d0bdc59ddeed479c"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Il soutient la réforme de l'assurance chômage du gouvernement Attal (durcissement des règles d'indemnisation), suspendue en 2024. Soutien à une réforme précise plutôt qu'à un principe général, d'où deux niveaux."
       },
       "tra-06": {
         "missing": true,
@@ -1385,11 +1396,15 @@
         "note": "Entretien au Point, repris sur le site du parti le 16/01/2025. Il ajoute dans le même entretien que la loi Claeys-Leonetti ne franchit pas les 'frontières éthiques dangereuses, comme l’euthanasie ou le suicide assisté'. Il défend les soins "
       },
       "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "e67a9ec8e31f5d0d"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Tribune cosignée avec Constance Nebbula, en réaction à la proposition de loi d'interdiction aux moins de 15 ans. Il propose à la place un design protecteur imposé aux plateformes et l'éducation au numérique."
       },
       "lib-03": {
         "missing": true,
@@ -1420,18 +1435,29 @@
         "codedAt": "2026-10-08T16:57:32.848Z"
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "e2a105c7a0ec24f1"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Tribune signée David Lisnard. Il veut des « taux plus bas » et une baisse nette de 100 milliards des prélèvements ; l'impôt sur le revenu deviendrait moins progressif, pas plus. Il ne parle pas explicitement des plus hauts revenus, d'où deu"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "99a8d6e2a08abff7"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:26.046Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Tribune signée David Lisnard. Il rejette aussi l'ISF (« chaque euro prélevé s'accompagnait de pertes supérieures »). Dans une tribune d'avril 2026 (Atlantico, « Changer de logiciel fiscal »), il propose de supprimer l'IFI, remplacé par une "
       },
       "eco-03": {
         "missing": true,
@@ -1466,11 +1492,18 @@
         "codedAt": "2026-10-08T15:00:13.139Z"
       },
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La seule source trouvée résume le candidat sans le citer.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "a55372e0e5fd9eb0"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:29.945Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Propos aux Grandes Gueules (RMC), reproduits sur le site du parti. Il veut plus de policiers financés par la baisse de la bureaucratie ; pas d'objectif chiffré. Son programme prévoit aussi un « plan massif de remise à niveau de la police na"
       },
       "sec-02": {
         "set": [
@@ -1527,11 +1560,15 @@
         "note": "Cinq ans de résidence pour toutes les aides non contributives. Le RSA exige déjà cinq ans, mais ce serait un allongement pour les aides au logement et les allocations familiales, qui n'exigent pas de durée de séjour. La mesure est formulée "
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La seule source trouvée résume le candidat sans le citer.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d9805c58093ee69a"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:35.279Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Même page de programme que celle retenue pour dem-05 (classement programme à confirmer, page non datée). La page « Quel candidat veut construire de nouveaux réacteurs nucléaires ? » du même site parle d'une première série de six EPR et de m"
       },
       "cli-02": {
         "missing": true,
@@ -1605,11 +1642,15 @@
         "note": "Favorable sous condition (référendum, en cas de blocage, révision « partielle »), d'où +1. Confirmé par le discours de Bayeux du 17/06/2026 (voie danoise de dérogation sur l'asile et l'immigration). Lisnard y précise qu'on ne s'affranchit p"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "f7e2b4f73b91f065"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:40.531Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Entretien écrit (propos recueillis par Roland Lombardi). Objectif chiffré : 3,5 % du PIB."
       },
       "eur-04": {
         "set": [
@@ -1640,11 +1681,18 @@
         "codedAt": "2026-10-08T15:00:13.139Z"
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "9d1a96c444c59ad6"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:00:13.139Z"
+        "codedAt": "2026-10-08T18:26:13.300Z",
+        "note": "Chronique signée David Lisnard. Il vise la « proportionnelle intégrale » et défend les institutions de la Ve République ; il ne se prononce pas sur une dose partielle de proportionnelle, d'où deux niveaux."
       },
       "dem-02": {
         "value": 2,
@@ -2498,11 +2546,15 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "2a69fceb79038192"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Décision 20. Nouvel impôt limité aux fortunes de plus de 10 M€, avec exonération des capitaux investis en France : favorable avec conditions."
       },
       "eco-03": {
         "missing": true,
@@ -2572,11 +2624,15 @@
         "note": "Phrase entre guillemets attribuée au candidat (Europe 1, mai 2021), reprise par CNews. Déclaration ANTÉRIEURE à 2024, hors des niveaux de source préférés : à remplacer si une source plus récente est trouvée. C'est un argument contre la léga"
       },
       "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "13defbc65441aa9e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Projet du parti. Bonus d'abord, malus progressif ensuite : favorable avec nuance."
       },
       "lib-05": {
         "missing": true,
@@ -2632,11 +2688,15 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "56ddb0529a016b7f"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:26.322Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Projet du parti. La même page veut aussi protéger les lignes ferroviaires « non rentables » par la péréquation."
       },
       "sec-01": {
         "value": 2,
@@ -2686,11 +2746,15 @@
         "note": "Intitulé de la mesure 6. Les métiers en tension ne sont pas cités, mais la suppression générale de la régularisation les inclut. La mesure 12 prévoit en outre d'être « intraitables » envers ceux qui emploient des étrangers sans permis de tr"
       },
       "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "ca28198b49c80834"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:29.904Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Décision 81. Le projet actuel de DLF va plus loin (supprimer les aides sociales non contributives pour les étrangers)."
       },
       "cli-01": {
         "missing": true,
@@ -2714,11 +2778,18 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "cli-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "815a2e255a80bfae"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Projet du parti : baisser la fiscalité des carburants, à l'opposé d'une hausse. Ne dit rien de la compensation aux ménages modestes."
       },
       "cli-05": {
         "missing": true,
@@ -2728,11 +2799,18 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "a92721bfd8f2282d"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Projet du parti, limité à l'agriculture : fin du Pacte vert et des jachères obligatoires. Rien de précis pour les autres entreprises."
       },
       "dem-01": {
         "value": -2,
@@ -2746,11 +2824,15 @@
         "note": "Source : déclaration publique du candidat depuis 2024 (Grande interview Europe 1-CNews). La citation reprend ses propres mots, entre guillemets dans l'article. Rejet catégorique, sans condition : -2. Il ajoute aussi « il n'y aura plus aucun"
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "a8a259b720909b74"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Décision 3 du programme 2022. Le projet actuel de DLF reprend le RIC (seuil d'un million d'inscrits)."
       },
       "dem-03": {
         "missing": true,
@@ -2760,11 +2842,15 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "dem-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d86d301a2c6f20b9"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Le programme exige un casier judiciaire vierge pour tout candidat (décision 7 : « Casier judiciaire vierge pour tout élu »), ce qui rend inéligible après toute condamnation, corruption comprise."
       },
       "dem-05": {
         "missing": true,
@@ -2774,11 +2860,15 @@
         "codedAt": "2026-10-08T15:16:54.685Z"
       },
       "dem-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "7dac7acff2885b40"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:16:54.685Z"
+        "codedAt": "2026-10-08T18:24:30.517Z",
+        "note": "Décision 4 du programme 2022, reprise dans le projet actuel de DLF."
       },
       "eur-01": {
         "value": -2,
@@ -2862,11 +2952,18 @@
         "note": "Programme du parti dont Philippot est le président, pas un engagement personnel retrouvé. Le titre de la mesure est catégorique (+2), mais le texte ajoute une condition (« si les Français le désirent ») et dépend du Frexit (+1). Aucun âge c"
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "b8e996866b90d25e"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:44.354Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Investissement « massif » dans l’hôpital, mais le programme ne dit rien des économies ou recettes qui le financeraient : +1 ou +2."
       },
       "tra-03": {
         "missing": true,
@@ -2897,25 +2994,40 @@
         "note": "Opposition explicite à la baisse des indemnités chômage. Le même livret qualifie les réformes du chômage de « réformes sociales non désirées par les Français ». Le « pourront » laisse une nuance (-1) face à une opposition par ailleurs nette"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "0772d3db97a972bf"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:44.354Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti. Maintien des services publics de proximité affirmé, sans mention explicite de leur coût : +1."
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "32e546316aee2c8c"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti présidé par Philippot. Hausse d’impôt pour « les plus riches », sans préciser qu’il s’agit de l’impôt sur le revenu : +1 ou +2."
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "6724bd56d2bfd53c"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti présidé par Philippot : rétablissement de l’impôt sur la fortune."
       },
       "eco-03": {
         "set": [
@@ -3013,11 +3125,15 @@
         "codedAt": "2026-10-08T15:22:20.891Z"
       },
       "sec-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "f30f3be7c52c6864"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Programme présidentiel 2022 de Philippot, rubrique libertés : interdiction catégorique."
       },
       "sec-04": {
         "value": 2,
@@ -3045,11 +3161,18 @@
         "codedAt": "2026-10-08T15:22:20.891Z"
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "0033abab8e32d20a"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Le projet 2026-2027 du parti reprend « un plan d’investissement massif dans le nucléaire de nouvelle génération ». Le mot « réacteur » n’apparaît pas : +1 ou +2."
       },
       "cli-02": {
         "missing": true,
@@ -3066,11 +3189,15 @@
         "codedAt": "2026-10-08T15:22:20.891Z"
       },
       "cli-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "b8747938a11591f8"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Rubrique pouvoir d’achat du programme 2022 : baisse, et non hausse, des taxes sur les carburants et le gaz."
       },
       "cli-05": {
         "missing": true,
@@ -3080,18 +3207,26 @@
         "codedAt": "2026-10-08T15:22:20.891Z"
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "1971afcb8b17fd66"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Projet du parti présidé par Philippot. Vise les normes de la PAC (jachère obligatoire) ; le même projet veut aussi faire du bio « la norme » : +1."
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "55ed36bc27f3205e"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "La charte actuelle des Patriotes dit aussi : « Le mode de scrutin proportionnel sera généralisé »."
       },
       "dem-02": {
         "value": 2,
@@ -3151,18 +3286,26 @@
         "note": "Projet du parti présidé par Philippot, pas un programme personnel 2027. Le parti veut sortir de l'UE (le Frexit est présenté comme la « clé de voute » du projet), ce qui est catégoriquement opposé à l'idée de confier plus de décisions à l'U"
       },
       "eur-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "79a3256fbd0ced0f"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:58:50.342Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti présidé par Philippot. Le parti veut par ailleurs sortir de l’UE (Frexit)."
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "1286d1779664e3bc"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Programme 2022. La charte actuelle des Patriotes demande aussi de « consacrer immédiatement 3 % de notre PIB au budget de la Défense et tendre vers les 4 % »."
       },
       "eur-04": {
         "value": 2,
@@ -3183,11 +3326,15 @@
         "codedAt": "2026-10-08T16:58:50.342Z"
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "da111cc230316319"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:22:20.891Z"
+        "codedAt": "2026-10-08T18:23:49.207Z",
+        "note": "Charte du parti. Objectif de 0,7 % du PIB, présenté comme un horizon (« tendre ») et lié à la réduction des flux migratoires : +1."
       }
     },
     "jean-luc-melenchon": {
@@ -4033,11 +4180,15 @@
     },
     "marine-tondelier": {
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "48010341f0e28c23"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "eco-02": {
         "set": [
@@ -4061,88 +4212,145 @@
         "codedAt": "2026-10-08T15:37:56.399Z"
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "2fc90f32425e8b1a"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. « Encadrer » plutôt que plafonner ; le même chapitre propose d’« envisager le blocage des prix sur certains"
       },
       "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "parti-uniquement",
+        "sources": [
+          "8ca0c8991511c73c"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Suppression d’une partie des exonérations patronales et conditionnement des autres : sens inverse d’une bai"
       },
       "eco-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "b66a05f483069c51"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "9499d4b05ac6ebf0"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "93049d1ba616db0e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Plus de recrutements et hausse des salaires ; le financement n’est pas rattaché explicitement à d’autres éc"
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "6eccd8062cb7d46e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "09e20494018a2709"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "2811d02a4b30b779"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Abrogation des durcissements récents de l’assurance chômage."
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "0d1768762cd53c62"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Engagement de proximité des services publics ; la question du coût n’est pas abordée."
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "c9b235dfce4d7965"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "cli-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "c9771c8d4e048dc5"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Mesure plus large que les seuls vols intérieurs (seuil de 4h30 en train)."
       },
       "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "952778ec0d9c5f17"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "cli-04": {
         "missing": true,
@@ -4152,25 +4360,40 @@
         "codedAt": "2026-10-08T15:37:56.399Z"
       },
       "cli-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "95128007b4bfef30"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Tarif unique et gratuité ciblée, pas de gratuité générale."
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "449049968f276a17"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "40fa8389cada6364"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-02": {
         "missing": true,
@@ -4180,25 +4403,37 @@
         "codedAt": "2026-10-08T15:37:56.399Z"
       },
       "lib-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "bd75a9d046e72a3d"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "6f60933cf9d0b2d7"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "e9400da3e49368c3"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "lib-06": {
         "missing": true,
@@ -4236,25 +4471,43 @@
         "codedAt": "2026-10-08T15:37:56.399Z"
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "7d6b84b1e6f57ea4"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Les futurs traités restent possibles avec des clauses miroirs."
       },
       "eur-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "c8889769040449d3"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Emprunt commun pour l’énergie, le rail, le numérique et la recherche ; la défense n’est pas citée."
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "ba28601e76930e5d"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "sec-01": {
         "value": 1,
@@ -4286,11 +4539,18 @@
         "note": "Formulation catégorique (« Interdire »), d'où -2. Position de la coalition signée par Les Écologistes, pas une déclaration personnelle de la candidate."
       },
       "sec-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "25b8f8f1d3751a7f"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:22.848Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "sec-05": {
         "value": 2,
@@ -4304,11 +4564,18 @@
         "note": "« régulariser les travailleurs », sans condition : c'est plus large que les seuls métiers en tension et englobe l'affirmation. Formulation catégorique, d'où +2. Position de la coalition, pas une déclaration personnelle de la candidate."
       },
       "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "a9e9dc4b0b0dd624"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Suppression des délais de carence (durée de résidence exigée), formulée pour l’accès aux soins (AME, PUMA)."
       },
       "dem-01": {
         "set": [
@@ -4325,11 +4592,18 @@
         "note": "Position du parti, pas déclaration personnelle de la candidate. Le principe de la proportionnelle est soutenu, mais le mode n'est pas précisé. Selon l'AFP du 3 juin 2025 (marine-oceans.com), M. Tondelier a rappelé que son parti était « très"
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "3ca5adf85199baae"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "dem-03": {
         "set": [
@@ -4346,11 +4620,15 @@
         "note": "Tribune collective dont Marine Tondelier est la première signataire. Elle rejette clairement le recours au 49.3 et appelle à une VIe République, mais ne demande pas explicitement de supprimer ou limiter l'article. Confiance faible. L'articl"
       },
       "dem-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "69cf26daea3ac6ad"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle."
       },
       "dem-05": {
         "set": [
@@ -4367,11 +4645,18 @@
         "note": "Tribune dont M. Tondelier est la première signataire : elle regrette une décentralisation inachevée. Le texte d'orientation du parti (avril 2025, position du parti uniquement) va plus loin : « Notre projet repose sur une souveraineté écolog"
       },
       "dem-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "1a105fcaa75ca246"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:37:56.399Z"
+        "codedAt": "2026-10-08T18:28:26.457Z",
+        "note": "Programme du parti Les Écologistes (juillet 2026), dont Marine Tondelier est secrétaire nationale ; pas une déclaration personnelle. Reconnaissance du vote blanc limitée aux élections territoriales, sous forme de sièges tirés au sort."
       }
     },
     "francois-ruffin": {
@@ -4404,11 +4689,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "359c9634d78775d2"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Texte signé par le candidat. Il défend la régularisation des étrangers déjà présents qui travaillent, mais refuse de nouvelles filières d'immigration de travail. Le manifeste de Debout! va dans le même sens : « Tous les travailleurs et trav"
       },
       "sec-06": {
         "missing": true,
@@ -4418,18 +4707,29 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "49bcd14a5c05d3b6"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Texte du parti, pas un engagement chiffré du candidat. Le manifeste rappelle que Roosevelt « fait alors voter » cet impôt sur le revenu, puis le prend en modèle (« Il faut le faire »). Aucun barème n'est proposé pour la France, d'où 1 ou 2."
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "c0b1e0df1c286051"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Texte signé par le candidat, présenté comme l'une de ses trois priorités. Même sens dans son texte du 11 octobre 2025, où il défend la taxe Zucman de 2 % et « les impôts sur les plus hauts patrimoines »."
       },
       "eco-03": {
         "missing": true,
@@ -4517,11 +4817,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "eur-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "32f89826a79b55c1"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Texte du parti. Le cahier agricole du programme 2027 va dans le même sens : il veut défendre des prix minimums « quitte à imposer un rapport de force avec la Commission européenne, qui pourrait juger ces dispositions non conformes aux trait"
       },
       "eur-03": {
         "missing": true,
@@ -4531,11 +4835,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "32a19e9cf0ec81c4"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Édito signé François Ruffin, centré sur l'agriculture. Le même cahier propose de « sortir des traités de libre-échange mortifères, signés avec des pays qui ne respectent pas nos exigences sociales et environnementales »."
       },
       "eur-05": {
         "missing": true,
@@ -4683,11 +4991,18 @@
         "note": "Source : programme 2027. Position ambivalente. Il critique le recul sur les normes, la loi Duplomb et l'affaiblissement de la démocratie de l'eau par la loi d'urgence agricole. Mais il critique aussi l'accumulation de normes : « de la régul"
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "3a23fc47effd6076"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Lettre ouverte à Édouard Philippe. Il approuve, en une phrase, son jugement d'une proportionnelle « inutile », sans développer. Le programme 2027 n'en parle pas. Opposition claire mais brève, d'où -2 ou -1."
       },
       "dem-02": {
         "value": 2,
@@ -4708,11 +5023,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "dem-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "673ad22a256ae708"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-08T18:28:41.116Z",
+        "note": "Le programme en fait une condition d'éligibilité automatique (« nous introduirons une nouvelle condition d’éligibilité »), qui couvre les manquements au devoir de probité, « fraude fiscale et électorale incluses ». Aucune exception n'est pr"
       },
       "dem-05": {
         "missing": true,
@@ -5082,11 +5401,15 @@
     },
     "karim-bouamrane": {
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "e04d45cf65b0c5e2"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:54:15.033Z"
+        "codedAt": "2026-10-08T18:24:43.530Z",
+        "note": "Présente « plus de policiers » comme ce qu'un budget doté d'une vision devrait offrir ; pas d'objectif chiffré."
       },
       "sec-02": {
         "missing": true,
@@ -5131,11 +5454,18 @@
         "codedAt": "2026-10-08T15:54:15.033Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "29bd815d9cb61d23"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:54:15.033Z"
+        "codedAt": "2026-10-08T18:24:43.530Z",
+        "note": "Cite la taxe Zucman (impôt minimal sur les très grands patrimoines) comme recette qui aurait dû être retenue."
       },
       "eco-03": {
         "missing": true,
@@ -5159,18 +5489,29 @@
         "codedAt": "2026-10-08T15:54:15.033Z"
       },
       "eco-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "a1c6fa84c7a15ca8"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:54:15.033Z"
+        "codedAt": "2026-10-08T18:24:43.530Z",
+        "note": "Juge irréaliste un SMIC à 1 600 euros au regard de la réalité budgétaire ; entretien publié en ligne le 9 juin 2026, réalisé à l'automne 2024."
       },
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "a1c6fa84c7a15ca8"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:54:15.033Z"
+        "codedAt": "2026-10-08T18:24:43.530Z",
+        "note": "Rejette la retraite à 60 ans comme irréaliste, mais dit dans le même entretien ne pas avoir validé la réforme des retraites d'Emmanuel Macron."
       },
       "tra-02": {
         "missing": true,
@@ -5355,11 +5696,14 @@
         "codedAt": "2026-10-08T15:54:15.033Z"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "a2282e56c12d8cc2"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:54:15.033Z"
+        "codedAt": "2026-10-08T18:24:43.530Z"
       },
       "eur-04": {
         "missing": true,
@@ -5759,11 +6103,15 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "lib-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "2a46c4e923ae0a6d"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Va au-delà du cannabis. Programme 2022."
       },
       "lib-04": {
         "missing": true,
@@ -5791,18 +6139,26 @@
         "note": "Consulté le 2026-10-08. Le candidat demande d'abroger la loi de 2004 sur les signes religieux à l'école, donc de restreindre moins, pas davantage. Formulation catégorique : -2. Même texte dans le 4 pages de campagne (https://anasse2027.fr/p"
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "24a75cbfdb360684"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:53.025Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Programme 2022 défendu par le candidat, renvoyé depuis la page programme 2027. Demande catégorique d’une forte hausse de la progressivité."
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "63a6b0f52bf43c2d"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:53.025Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Programme 2022 défendu par le candidat, renvoyé depuis la page programme 2027."
       },
       "eco-03": {
         "set": [
@@ -5819,11 +6175,15 @@
         "note": "Kazib s'oppose aux économies budgétaires, et son programme 2027 demande des « investissements massifs dans les services publics ». Mais il ne parle pas explicitement de faire passer la dette avant les dépenses. Le texte de lancement de Révo"
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "d34f2032057034ba"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:53.025Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Gel des prix : va au-delà d’un plafonnement. Programme 2022."
       },
       "eco-05": {
         "missing": true,
@@ -5844,11 +6204,18 @@
         "note": "Engagement catégorique : un SMIC à 2 000 € net va bien au-delà de la revalorisation automatique. La même mesure figure dans le dépliant de campagne 2027."
       },
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "a79692fa6057dfc4"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:57.665Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Critique la hausse des effectifs annoncée ; le même chapitre estime que la sécurité doit être assurée « par la population elle-même ». Programme 2022."
       },
       "sec-02": {
         "missing": true,
@@ -5858,11 +6225,15 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "sec-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "8e31a500ba98781b"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Programme 2022."
       },
       "sec-04": {
         "value": -2,
@@ -5887,11 +6258,18 @@
         "note": "Il veut régulariser tous les sans-papiers sans condition, ce qui inclut et dépasse les travailleurs des métiers en tension. Il ne défend pas la logique des « métiers en tension » en tant que telle. Page non datée, consultée le 2026-10-08."
       },
       "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "54fe2611bf1ef3e4"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Titre de chapitre : pleins droits sociaux pour les immigrés, sans condition ; ne mentionne pas explicitement la durée de résidence. Programme 2022."
       },
       "tra-01": {
         "value": 2,
@@ -5930,18 +6308,29 @@
         "note": "Formulation catégorique, sans restriction aux zones tendues : la mesure va au-delà de l'affirmation (plafonnement et gel). Page consultée le 07/10/2026."
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "c91f3a64593fdd06"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Opposition catégorique. Programme 2022."
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "19f2cfd498b7f8cc"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Dénonce la fermeture de maternités et d’hôpitaux pour raisons budgétaires ; pas de mesure chiffrée. Programme 2022."
       },
       "eur-01": {
         "missing": true,
@@ -5958,11 +6347,15 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "c24103cd51c3f506"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T17:00:06.081Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Axe 5 des premières mesures 2027 ; même texte dans le dépliant de campagne. Page non datée, consultée le 2026-10-08."
       },
       "eur-04": {
         "missing": true,
@@ -5986,11 +6379,18 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "efc65659f21d36cf"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Le programme vise une sortie du nucléaire, incompatible avec de nouveaux réacteurs, sans parler explicitement de construction. Programme 2022."
       },
       "cli-02": {
         "missing": true,
@@ -6007,11 +6407,18 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "cli-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "db9bbf79fbad2350"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-08T18:23:36.781Z",
+        "note": "Rejette les taxes carbone comme attaque contre les travailleurs ; ne discute pas d’une compensation aux ménages modestes. Programme 2022."
       },
       "cli-05": {
         "value": 2,
@@ -6157,11 +6564,18 @@
         "codedAt": "2026-10-08T17:00:10.351Z"
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "d647c5e16f44e35e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-08T18:27:40.603Z",
+        "note": "Matériel de campagne de la liste qu’elle conduisait aux européennes 2024. « Bloquer les prix » figure parmi « les fausses bonnes idées » : accepté pour l’électricité, jugé illusoire pour les produits de supermarché. Le texte conclut : « Nou"
       },
       "eco-05": {
         "value": -2,
@@ -6264,11 +6678,18 @@
         "codedAt": "2026-10-08T16:07:45.245Z"
       },
       "cli-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "ee80a49c6ed49f06"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-08T18:27:40.603Z",
+        "note": "Article cosigné par Selma Labib et Marina Kuné. Il défend la gratuité des transports en commun, mais ne dit pas comment la financer."
       },
       "cli-06": {
         "missing": true,
@@ -6299,11 +6720,18 @@
         "codedAt": "2026-10-08T17:00:12.691Z"
       },
       "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "ea66f170eeec8f26"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-08T18:27:40.603Z",
+        "note": "Matériel de campagne de la liste qu’elle conduisait aux européennes 2024. Le blocage des loyers est accepté du bout des lèvres (« pourquoi pas »), dans un encadré intitulé « Les fausses bonnes idées » : le parti lui préfère la lutte pour le"
       },
       "tra-05": {
         "value": -2,
@@ -6452,11 +6880,18 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "760baac1601f658d"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "Garantie d'accès aux services publics partout, mais rien sur le maintien des services coûteux mentionné dans l'affirmation, d'où set [1, 2]. Page non datée, consultée le 08/10/2026."
       },
       "eco-01": {
         "missing": true,
@@ -6567,11 +7002,18 @@
         "note": "Vote d'Olivier Becht : Pour, sur l'ensemble du texte en lecture définitive. NosParlementaires indique aussi « Pour » sur la loi fin de vie. Le texte crée un droit à l'aide à mourir pour une affection grave et incurable, sous conditions : il"
       },
       "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "3da529f791d2804b"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T17:00:28.109Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "Position de vote « Pour » sur le texte final (CMP), comme indiqué sur sa page de positions de vote. Ce texte (Sénat, ppl25-903) interdit l'accès aux réseaux sociaux aux moins de 15 ans. Un vote n'est pas un engagement de campagne, d'où set "
       },
       "lib-03": {
         "missing": true,
@@ -6609,11 +7051,18 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "28f2f718edd26c87"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "Engagement net en faveur du RIC, mais le texte le décrit comme une saisine directe de l'Assemblée nationale, sans préciser qu'une pétition déclenche un référendum : d'où set [1, 2]. Page non datée, consultée le 08/10/2026."
       },
       "dem-03": {
         "missing": true,
@@ -6630,18 +7079,29 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "dem-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "fec0a2ea41380fb2"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "La page détaillée ajoute un « Pacte des territoires » garantissant « une vraie autonomie » et des moyens renforcés. Page non datée, consultée le 08/10/2026."
       },
       "dem-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "343813e417b2c791"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-08T18:24:10.913Z",
+        "note": "« Reconnaissance du vote blanc » sans préciser qu'il serait compté dans les suffrages exprimés, d'où set [1, 2]. Page non datée, consultée le 08/10/2026."
       },
       "cli-01": {
         "missing": true,
@@ -11027,27 +11487,695 @@
       "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
       "date": "2024-06",
       "passage": "Abolir la monarchie présidentielle dans la pratique des institutions : • Instaurer la proportionnelle • Revitaliser le parlement • Abroger le 49.3"
+    },
+    {
+      "id": "24a75cbfdb360684",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "nous exigeons la suppression immédiate de la TVA, l’impôt indirect le plus injuste, une forte augmentation de la progressivité de l’impôt, jusqu’à 100% sur les revenus du capital au-dessus de 260.000 euros"
+    },
+    {
+      "id": "63a6b0f52bf43c2d",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Rétablissement de l’impôt sur les grandes fortunes. Récupération de l’argent public offert aux entreprises qui licencient."
+    },
+    {
+      "id": "d34f2032057034ba",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "exiger de l’État un gel des prix pour tous les produits de première nécessité, y compris des loyers"
+    },
+    {
+      "id": "c91f3a64593fdd06",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Nous nous opposons radicalement à toute réduction des prestations allouées aux chômeurs, censé les « inciter » à accepter n’importe quel emploi."
+    },
+    {
+      "id": "19f2cfd498b7f8cc",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "des millions de familles vivent dans de véritables déserts médicaux ou loin des centres de soins, du fait de la fermeture de centres hospitaliers ou de maternités au nom des restrictions budgétaires"
+    },
+    {
+      "id": "a79692fa6057dfc4",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Les annonces de Macron de doubler le nombre de policiers dans les dix prochaines années et de durcir la réponse pénale montrent bien que le renforcement du système répressif sont consubstantiels à l’avancée du néolibéralisme."
+    },
+    {
+      "id": "8e31a500ba98781b",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "nous exigeons le retrait total des lois « sécurité globale » et de responsabilité pénale qui cèdent à des revendications historiques des « syndicats » de police : reconnaissance faciale, drones"
+    },
+    {
+      "id": "54fe2611bf1ef3e4",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Pleins droits de citoyenneté et droits sociaux pour les immigrés et les réfugiés"
+    },
+    {
+      "id": "2a46c4e923ae0a6d",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "il faut légaliser, sous contrôle de l’État et avec un suivi médical, lorsque cela l’exige, l’ensemble des substances stupéfiantes et addictives, à commencer par le cannabis"
+    },
+    {
+      "id": "efc65659f21d36cf",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Une transition pour sortir du nucléaire ne saurait se faire sans s’attaquer aux patrons du secteur et seuls les travailleuses et travailleurs de l’énergie sont à même de le faire."
+    },
+    {
+      "id": "db9bbf79fbad2350",
+      "title": "Anasse Kazib 2022 : un programme révolutionnaire",
+      "publisher": "Révolution Permanente (programme de pré-campagne 2022, republié par le comité de campagne Anasse Kaz",
+      "url": "https://anasse2027.fr/programme/programme-2022.pdf",
+      "passage": "Le « capitalisme vert », prétexte pour ne rien faire ou pour faire des cadeaux aux patrons et s’en prendre aux travailleurs à coups de taxes carbones et de licenciements verts, est une contradiction dans les termes."
+    },
+    {
+      "id": "c24103cd51c3f506",
+      "title": "Programme — Anasse Kazib 2027 (premières mesures, axe 5 « Contre la militarisation et l'impérialisme »)",
+      "publisher": "Comité de campagne Anasse Kazib 2027",
+      "url": "https://anasse2027.fr/programme",
+      "passage": "Pas un euro pour la guerre, démantèlement de la machine de guerre française, 2ème exportateur d'armes mondial."
+    },
+    {
+      "id": "f30f3be7c52c6864",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Interdiction en population générale de tout usage de système de reconnaissance faciale."
+    },
+    {
+      "id": "55ed36bc27f3205e",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Proportionnelle intégrale à toutes les élections. Mise en place d’un vrai référendum d’initiative citoyenne."
+    },
+    {
+      "id": "b8e996866b90d25e",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Fin de la tarification à l’activité. Plan d’investissement massif à l’hôpital et dans la recherche publique."
+    },
+    {
+      "id": "0033abab8e32d20a",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Réinvestissement massif dans le nucléaire de nouvelle génération. Sortie du marché européen de l’électricité pour retrouver la main sur les prix."
+    },
+    {
+      "id": "b8747938a11591f8",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Baisse immédiate de la fiscalité sur l’énergie (carburants, gaz, électricité)."
+    },
+    {
+      "id": "1286d1779664e3bc",
+      "title": "Florian Philippot – Mon projet présidentiel « Libérons la France » (2022)",
+      "publisher": "Florian Philippot / Les Patriotes (document de campagne 2022, copie hébergée par politique-animaux.f",
+      "url": "https://www.politique-animaux.fr/sites/www.politique-animaux.fr/fichiers/prises-de-positions/pieces-jointes/programme2022.pdf",
+      "passage": "Doublement du budget de la défense en 5 ans pour faire face aux nouvelles"
+    },
+    {
+      "id": "32e546316aee2c8c",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "tout citoyen doit contribuer aux charges communes par une fiscalité équitable en fonction de ses revenus et de son patrimoine. En conséquence, ils allégeront l’impôt des classes moyennes et l’augmenteront pour les plus riches"
+    },
+    {
+      "id": "6724bd56d2bfd53c",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "ils allégeront l’impôt des classes moyennes et l’augmenteront pour les plus riches, notamment par le rétablissement de l’ISF."
+    },
+    {
+      "id": "79a3256fbd0ced0f",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "Aucune disposition juridique et aucune juridiction ne doivent être supérieures à la Constitution de la République et à la loi votée selon les dispositions de celle-ci."
+    },
+    {
+      "id": "da111cc230316319",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "engagent la France dans une politique de coopération et de développement extrêmement concrète. Elle doit tendre à y employer 0,7 % de son PIB."
+    },
+    {
+      "id": "0772d3db97a972bf",
+      "title": "Charte des Patriotes",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+      "passage": "L’aménagement du territoire se traduit notamment par le maintien et le développement des services publics dans la ruralité, les petites villes et les banlieues."
+    },
+    {
+      "id": "1971afcb8b17fd66",
+      "title": "Grandes orientations pour un projet patriote – édition 2026-2027",
+      "publisher": "Les Patriotes",
+      "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+      "passage": "Supprimer la PAC, ses normes absurdes (tel que le taux de jachère obligatoire) et ses contraintes administratives."
+    },
+    {
+      "id": "28f2f718edd26c87",
+      "title": "Le pacte démocratique et territorial – Olivier BECHT Président 2027 (Le Projet France)",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/projet-france/les-5-refondations/refondation-democratique-territoriale/",
+      "passage": "Nous instaurerons également un véritable référendum d’initiative citoyenne, qui permettra à chacun de saisir directement l’Assemblée nationale, et donnera aux Français les moyens de peser sur les décisions qui engagent leur avenir"
+    },
+    {
+      "id": "343813e417b2c791",
+      "title": "Le pacte démocratique et territorial – Olivier BECHT Président 2027 (Le Projet France)",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/projet-france/les-5-refondations/refondation-democratique-territoriale/",
+      "passage": "Cette refondation démocratique passera tout d’abord par la reconnaissance du vote blanc, afin que l’abstention ne soit plus le seul mode d’expression de ceux qui ne se reconnaissent dans aucun candidat"
+    },
+    {
+      "id": "fec0a2ea41380fb2",
+      "title": "Le Projet France – Olivier BECHT Président 2027",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/projet-france/",
+      "passage": "Nous redonnerons le pouvoir aux Français par le Referendum d’initiative citoyenne et aux collectivités locales par une autonomie de réglementer et financer leurs compétences."
+    },
+    {
+      "id": "760baac1601f658d",
+      "title": "Le Projet France – Olivier BECHT Président 2027",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/projet-france/",
+      "passage": "Nous garantirons aussi à tous les Français l’accès aux services publics avec un temps de trajet raisonnable et cela où qu’ils habitent sur le territoire. Aucun endroit ne sera oublié, aucun habitant ne sera abandonné."
+    },
+    {
+      "id": "3da529f791d2804b",
+      "title": "Positions de vote - M. Olivier Becht - Haut-Rhin (5e circonscription)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/deputes/PA642935/positions-de-vote",
+      "date": "2026-07-21",
+      "passage": "Scrutin public n°8431 sur l'ensemble de la proposition de loi visant à protéger les mineurs des risques auxquels les expose l'utilisation des réseaux sociaux (texte de la commission mixte paritaire)."
+    },
+    {
+      "id": "a8a259b720909b74",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "Instauration du référendum d’initiative populaire ou citoyenne (RIC) à partir de 500 000 signatures."
+    },
+    {
+      "id": "7dac7acff2885b40",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "Prise en compte du vote blanc dans les résultats des élections ; s’il est majoritaire, le scrutin est reporté."
+    },
+    {
+      "id": "d86d301a2c6f20b9",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "reconnaître le vote blanc, exiger un casier judiciaire vierge pour tout candidat à une élection, supprimer les privilèges accordés aux anciens présidents"
+    },
+    {
+      "id": "2a69fceb79038192",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "Zéro droit de succession sur la résidence principale financé par un impôt sur les très grandes fortunes supérieures à 10 millions d’euros (exonération si les capitaux sont placés dans des entreprises investissant majoritairement sur le sol français)."
+    },
+    {
+      "id": "ca28198b49c80834",
+      "title": "100 décisions pour la France – Élection présidentielle 2022",
+      "publisher": "Nicolas Dupont-Aignan / Debout la France",
+      "url": "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+      "date": "2022-01",
+      "passage": "Délai de carence de 5 ans pour les étrangers pour recevoir des aides sociales et remplacement de toutes les cartes vitales par des cartes vitales biométriques"
+    },
+    {
+      "id": "56ddb0529a016b7f",
+      "title": "Équilibre du territoire - Debout La France",
+      "publisher": "Debout la France",
+      "url": "https://www.debout-la-france.fr/projet/equilibre-territoire-monde-rural/",
+      "passage": "Arrêt immédiat des fermetures de maternités et réouverture de lits d’hôpitaux dans les départements qui ont été sacrifiés."
+    },
+    {
+      "id": "13defbc65441aa9e",
+      "title": "Économie, Travail - Debout La France",
+      "publisher": "Debout la France",
+      "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+      "passage": "Parvenir à l’égalité Femmes/Hommes au travail en cinq ans : Alléger les charges pour les entreprises respectant l’égalité salariale, puis instaurer progressivement un malus contre les mauvaises pratiques."
+    },
+    {
+      "id": "a92721bfd8f2282d",
+      "title": "Agriculture - Debout La France",
+      "publisher": "Debout la France",
+      "url": "https://www.debout-la-france.fr/projet/agriculture/",
+      "passage": "Revenir à une politique agricole nationale, échappant aux délires bureaucratiques de la Commission de Bruxelles et simplifiant les procédures (fin du pacte vert européen, des quotas de jachères, etc…)"
+    },
+    {
+      "id": "815a2e255a80bfae",
+      "title": "Automobilistes et Motards - Debout La France",
+      "publisher": "Debout la France",
+      "url": "https://www.debout-la-france.fr/projet/transport-automobilistes/",
+      "passage": "Supprimer la TVA sur la TICPE (suppression de la taxe sur la taxe) afin de faire baisser le prix du carburant et de rendre ainsi du pouvoir d’achat aux Français."
+    },
+    {
+      "id": "a2282e56c12d8cc2",
+      "title": "Le manifeste de Karim Bouamrane",
+      "publisher": "La France Humaine et Forte (site de campagne)",
+      "url": "https://karimbouamrane2027.org/manifeste.html",
+      "passage": "Une France forte, c'est une France qui investit dans sa défense, pour éviter la guerre. La dissuasion ne dissuade que si elle est crédible et nos soldats méritent les moyens de leur mission. J'augmenterai l'effort de défense."
+    },
+    {
+      "id": "29bd815d9cb61d23",
+      "title": "Budget 2026 : \"C'est un budget d'une incurie politique incroyable, on n'a aucune vision\", charge Karim Bouamrane, maire PS de Saint-Ouen-sur-Seine",
+      "publisher": "franceinfo",
+      "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-jeudi-17-juillet-2025_7382146.html",
+      "date": "2025-07-17",
+      "passage": "On ne part pas de rien. Avec ne serait-ce que la taxe Zucman, on aurait pu avoir la moitié de l'épure budgétaire sur laquelle Monsieur Bayrou s'était focalisé."
+    },
+    {
+      "id": "e04d45cf65b0c5e2",
+      "title": "Budget 2026 : \"C'est un budget d'une incurie politique incroyable, on n'a aucune vision\", charge Karim Bouamrane, maire PS de Saint-Ouen-sur-Seine",
+      "publisher": "franceinfo",
+      "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-jeudi-17-juillet-2025_7382146.html",
+      "date": "2025-07-17",
+      "passage": "Si vous dites aux Français et aux Françaises, vous allez avoir un meilleur service public, une meilleure santé publique, plus de moyens en termes de sécurité, plus de policiers, plus d'éducateurs... Donc, une trajectoire politique et des moyens."
+    },
+    {
+      "id": "a1c6fa84c7a15ca8",
+      "title": "Karim Bouamrane : « Le rôle central du RN me désole et m’inquiète »",
+      "publisher": "Le Courrier de l'Atlas",
+      "url": "https://www.lecourrierdelatlas.com/karim-bouamrane-rn-gauche-france-humaine-forte/",
+      "date": "2026-06-09",
+      "passage": "Doit-on défendre la retraite à 60 ans, le SMIC à 1 600 euros et d’autres mesures relevant d’un monde idéal ? Ce serait un mensonge que de dire qu’on va le mettre en œuvre en tenant compte de la réalité budgétaire."
+    },
+    {
+      "id": "4477eca354a52958",
+      "title": "Quel âge de départ à la retraite David Lisnard défend-il ?",
+      "publisher": "Nouvelle Énergie",
+      "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
+      "date": "2024-10-09",
+      "passage": "il faut pas revenir sur les réformes qui avaient été décidées sur la réforme des retraites et sur la réforme du chômage"
+    },
+    {
+      "id": "d9805c58093ee69a",
+      "title": "Notre programme – 3. Générer un renouveau civique",
+      "publisher": "Nouvelle Énergie",
+      "url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+      "passage": "réinvestir les sommes ainsi économisées dans des projets d’avenir, en particulier les nouvelles technologies nucléaires : recherche et développement des technologies laser pour le traitement des déchets, prolongation de la durée de vie des réacteurs jusqu’à 60 ans, construction d’EPR de nouvelle génération"
+    },
+    {
+      "id": "99a8d6e2a08abff7",
+      "title": "Taxe Zucman ou les habits neufs du vieux collectivisme",
+      "publisher": "Nouvelle Énergie (tribune parue dans Valeurs Actuelles)",
+      "url": "https://www.unenouvelleenergie.fr/taxe-zucman-ou-les-habits-neufs-du-vieux-collectivisme/",
+      "date": "2025-09-24",
+      "passage": "taxer les « ultrariches » par le mécanisme de la taxe dite Zucman est ainsi devenu le nouvel étendard de l’égalitarisme fiscal, ce poison collectiviste qui préfère punir la réussite plutôt que favoriser la prospérité"
+    },
+    {
+      "id": "e2a105c7a0ec24f1",
+      "title": "Changer de logiciel fiscal",
+      "publisher": "Nouvelle Énergie (tribune parue sur Atlantico)",
+      "url": "https://www.unenouvelleenergie.fr/changer-de-logiciel-fiscal/",
+      "date": "2026-04-16",
+      "passage": "L’IR combinerait une taxation proportionnelle allégée des revenus du capital (y compris immobilier) et une taxation modérément progressive des revenus du travail, afin d’en gommer les effets les plus désincitatifs."
+    },
+    {
+      "id": "e67a9ec8e31f5d0d",
+      "title": "Réseaux sociaux : « L’interdiction est le dernier refuge de l’impuissance publique »",
+      "publisher": "Nouvelle Énergie (tribune parue dans Les Échos)",
+      "url": "https://www.unenouvelleenergie.fr/reseaux-sociaux-linterdiction-est-le-dernier-refuge-de-limpuissance-publique/",
+      "date": "2026-02-11",
+      "passage": "Ce n’est pas l’accès qu’il faut interdire, mais les mécanismes prédateurs — scroll infini, notifications intrusives, publicité ciblée — qui doivent être proscrits pour les mineurs"
+    },
+    {
+      "id": "9d1a96c444c59ad6",
+      "title": "Légitimité légale, légitimité politique : la difficile équation présidentielle",
+      "publisher": "Nouvelle Énergie (chronique parue dans L'Opinion)",
+      "url": "https://www.unenouvelleenergie.fr/legitimite-legale-legitimite-politique-la-difficile-equation-presidentielle/",
+      "date": "2025-10-09",
+      "passage": "Ils veulent réformer le mode de scrutin, introduire la proportionnelle intégrale, affaiblir l’exécutif, renforcer le Parlement. Ils croient que le problème vient de l’architecture constitutionnelle et que modifier les règles du jeu suffira à restaurer la gouvernabilité. C’est une erreur."
+    },
+    {
+      "id": "f7e2b4f73b91f065",
+      "title": "Le Grand Entretien du Diplomate avec David Lisnard : « La souveraineté européenne n’existe pas ! »",
+      "publisher": "Le Diplomate",
+      "url": "https://lediplomate.media/david-lisnard-souverainete-europeenne/",
+      "date": "2025-03-22",
+      "passage": "Si la France veut peser dans les discussions à venir, elle doit d’abord se donner les moyens de sa puissance, en portant son budget de la défense à 3,5 % du PIB, en accélérant la production d’armements"
+    },
+    {
+      "id": "d0bdc59ddeed479c",
+      "title": "« Je m'oppose à tout impôt local sur le revenu »",
+      "publisher": "Nouvelle Énergie (entretien paru dans La Tribune)",
+      "url": "https://www.unenouvelleenergie.fr/je-moppose-a-tout-impot-local-sur-le-revenu/",
+      "date": "2024-11-18",
+      "passage": "Il aurait d’abord fallu appliquer immédiatement la réforme de l’assurance chômage du précédent gouvernement. C’est une erreur de l’avoir interrompue."
+    },
+    {
+      "id": "a55372e0e5fd9eb0",
+      "title": "Quel est le diagnostic de David Lisnard sur l’hôpital ?",
+      "publisher": "Nouvelle Énergie",
+      "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
+      "date": "2026-04-21",
+      "passage": "Si vous voulez plus de policiers, des soignants mieux payés à l’hôpital, des profs bien payés, de bon niveau, etc., il faut qu’il y ait moins de bureaucrates."
+    },
+    {
+      "id": "ea66f170eeec8f26",
+      "title": "Salaires, chômage : face à la guerre que nous mènent gouvernement et capitalistes, nous devrons nous battre pour un plan d’urgence pour les travailleurs (4 pages, européennes 2024)",
+      "publisher": "NPA-Révolutionnaires (liste conduite par Selma Labib et Gaël Quirante)",
+      "url": "https://npa-revolutionnaires.org/wp-content/uploads/2024/04/240414_4p_europeennes_salaires.pdf",
+      "date": "2024-04-14",
+      "passage": "Pour les loyers et l’électricité, pourquoi pas, mais cela pose le problème de qui contrôle les grands groupes qui sont autant d’États dans l’État."
+    },
+    {
+      "id": "d647c5e16f44e35e",
+      "title": "Salaires, chômage : face à la guerre que nous mènent gouvernement et capitalistes, nous devrons nous battre pour un plan d’urgence pour les travailleurs (4 pages, européennes 2024)",
+      "publisher": "NPA-Révolutionnaires (liste conduite par Selma Labib et Gaël Quirante)",
+      "url": "https://npa-revolutionnaires.org/wp-content/uploads/2024/04/240414_4p_europeennes_salaires.pdf",
+      "date": "2024-04-14",
+      "passage": "Pour les loyers et l’électricité, pourquoi pas, mais cela pose le problème de qui contrôle les grands groupes qui sont autant d’États dans l’État. Et, pour ce qu’on achète en supermarché, comment vérifier que, pour le même prix, on n’en a pas moins avec un nouvel emballage ?"
+    },
+    {
+      "id": "ee80a49c6ed49f06",
+      "title": "La mise en concurrence de lots de bus RATP n’est pas la concurrence entre les travailleurs",
+      "publisher": "NPA-Révolutionnaires (journal Révolutionnaires)",
+      "url": "https://npa-revolutionnaires.org/articles/la-mise-en-concurrence-de-lots-de-bus-ratp-nest-pas-la-concurrence-entre-les-travailleurs",
+      "date": "2024-11-03",
+      "passage": "À l’heure où l’urgence écologique devrait amener au développement des transports en commun et à leur gratuité, la logique capitaliste conduit à l’inverse."
+    },
+    {
+      "id": "48010341f0e28c23",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Diminuer l’impôt sur le revenu pour les plus tranches les plus basses. Créer une nouvelle tranche à 60 % au-delà de 250 000€ annuels."
+    },
+    {
+      "id": "2fc90f32425e8b1a",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Encadrer les prix d’un panier de biens essentiels empêchant une logique spéculative en matière de logement, d’énergie, d’eau potable, de transport, d’alimentation de qualité et de biens culturels."
+    },
+    {
+      "id": "8ca0c8991511c73c",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Rationaliser les exonérations de cotisations sociales. Nominaliser et désindexer leur montant. Supprimer les exonérations de cotisations inutiles car supérieures à 1,6 smic ou concernant les heures supplémentaires."
+    },
+    {
+      "id": "b66a05f483069c51",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Passer le salaire minimum à 2000€ brut par mois dès 2027."
+    },
+    {
+      "id": "9499d4b05ac6ebf0",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Abroger l’âge légal de départ à la retraite à 64 ans (réforme Borne) pour revenir immédiatement à un âge minimum à 62 ans et viser une retraite à 60 ans"
+    },
+    {
+      "id": "93049d1ba616db0e",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Améliorer les conditions de travail à l’hôpital public. Augmenter le nombre de recrutement de personnel médical et paramédical."
+    },
+    {
+      "id": "6eccd8062cb7d46e",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Faire de l’école primaire une priorité absolue en réduisant la taille des classes à 19 élèves en 2032 et à 12 élèves dans les établissements en réseau d’éducation prioritaire (REP et REP+). Augmenter le nombre d’enseignant·es"
+    },
+    {
+      "id": "09e20494018a2709",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Assurer le droit au logement par la généralisation, l’amélioration et la pérennisation de l’encadrement des loyers."
+    },
+    {
+      "id": "2811d02a4b30b779",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Refonder l’assurance chômage pour donner les moyens de trouver un emploi ou de se réorienter. Abroger les réformes régressives adoptées lors des deux derniers quinquennats"
+    },
+    {
+      "id": "0d1768762cd53c62",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Doter chaque territoire d’un accueil physique des services publics à 15 minutes partout en France."
+    },
+    {
+      "id": "25b8f8f1d3751a7f",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Au regard des enjeux démographiques, nous devons refaire de la France un pays attractif pour les migrant·es en améliorant les conditions d’accueil et d’intégration sociale et professionnelle."
+    },
+    {
+      "id": "a9e9dc4b0b0dd624",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Garantir les droits fondamentaux des personnes exilées : scolarisation de tous les enfants, accès à l’AME et PUMA, suppression des délais de carence"
+    },
+    {
+      "id": "40fa8389cada6364",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Permettre l’accès universel aux soins palliatifs et légaliser l’aide active à mourir en conservant l’équilibre des textes votés en 1re lecture."
+    },
+    {
+      "id": "bd75a9d046e72a3d",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Légaliser et encadrer la production, la vente et la consommation de cannabis. Assurer la disponibilité, le contrôle qualité et la traçabilité du produit"
+    },
+    {
+      "id": "6f60933cf9d0b2d7",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Adopter une loi pour l’émancipation économique des femmes intégrant des sanctions financières dissuasives en cas de manquement à l’égalité de salaire."
+    },
+    {
+      "id": "e9400da3e49368c3",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Mettre fin au contrôle au faciès en interdisant les contrôles d’identité aléatoires pour les limiter aux situations de fragrance, d’enquête judiciaire ou d’ordre public. Instaurer un récépissé attestant des motifs du contrôle."
+    },
+    {
+      "id": "c9b235dfce4d7965",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Planifier la sortie du nucléaire. Mettre fin aux nouveaux programmes EPR-2 et SMR extrêmement dispendieux."
+    },
+    {
+      "id": "c9771c8d4e048dc5",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Interdire les vols intra-européens lorsqu’une alternative de moins de 4h30 en train existe."
+    },
+    {
+      "id": "952778ec0d9c5f17",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Planifier une sortie progressive des pesticides de synthèse et des engrais azotés à l’horizon 2050. Diffuser les pratiques agroécologiques et renforcer les programmes de recherche agroécologique. Interdire immédiatement les pesticides cancérigènes, mutagènes, toxiques (CMR)"
+    },
+    {
+      "id": "95128007b4bfef30",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Atteindre 25 % de part modale dans les transports collectifs d’ici 2030 par un ticket climat mensuel avec un tarif unique permettant de garantir des tarifs accessibles et des mesures de gratuité ciblées aux jeunes et aux ménages précaires"
+    },
+    {
+      "id": "449049968f276a17",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "En imposant des normes environnementales contraignantes, en protégeant les biens communs et en encadrant l’activité économique, nous pouvons orienter l’activité économique vers la satisfaction des besoins essentiels"
+    },
+    {
+      "id": "7d6b84b1e6f57ea4",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Ne pas ratifier les accords européens en attente qui affectent le climat et la biodiversité notamment les traités avec le Canada (CETA) le Vietnam, Singapour, le Chili, le Mexique, le Mercosur, l’Indonésie et le Japon."
+    },
+    {
+      "id": "c8889769040449d3",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Créer un emprunt commun pour des investissements de long terme (Grands Travaux Européens Écologiques comme l’intégration ferroviaire, énergétique et numérique"
+    },
+    {
+      "id": "ba28601e76930e5d",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Retrouver une trajectoire correspondant à nos engagements internationaux (0,7 % du PNB) et améliorer la coordination européenne."
+    },
+    {
+      "id": "3ca5adf85199baae",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Renforcer la démocratie directe par la mise en œuvre du Référendum d’Initiative Citoyenne (RIC) propositionnel ou abrogatif – sous condition d’un contrôle de constitutionnalité préalable."
+    },
+    {
+      "id": "69cf26daea3ac6ad",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Instaurer l’inéligibilité à vie et démission de leurs fonctions pour les élus condamnés pour détournement de fonds publics ou corruption."
+    },
+    {
+      "id": "1a105fcaa75ca246",
+      "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+      "publisher": "Les Écologistes",
+      "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+      "date": "2026-07-01",
+      "passage": "Reconnaître le vote blanc en attribuant le taux équivalent à des citoyen·nes tirés au sort sur les listes électorales pour les élections territoriales."
+    },
+    {
+      "id": "c0b1e0df1c286051",
+      "title": "Et maintenant ? Gouverner",
+      "publisher": "francoisruffin.fr (site officiel de François Ruffin)",
+      "url": "https://francoisruffin.fr/et-maintenant-gouverner/",
+      "date": "2024-12-04",
+      "passage": "Que, a minima, le capital ne soit pas moins taxé que le travail. Des impôts, donc, sur les hyper-riches, sur les méga-patrimoines, sur les firmes géantes."
+    },
+    {
+      "id": "49bcd14a5c05d3b6",
+      "title": "Manifeste fondateur de Debout!",
+      "publisher": "Debout! (mouvement présidé par François Ruffin)",
+      "url": "https://debout.fr/notre-manifeste/",
+      "passage": "l’impôt sur le revenu avec une tranche à 94% pour abaisser le plafond en haut. Et augmente les salaires pour relever le plancher. Abaisser le plafond de ceux qui se gavent en haut, relever le plancher de ceux qui se rationnent en bas: voilà une définition du partage. Il faut le faire."
+    },
+    {
+      "id": "359c9634d78775d2",
+      "title": "Pourquoi le Medef veut 3,9 millions de travailleurs immigrés",
+      "publisher": "francoisruffin.fr (site officiel de François Ruffin)",
+      "url": "https://francoisruffin.fr/pourquoi-le-medef-veut-39-millions-de-travailleurs-immigres/",
+      "date": "2026-04-29",
+      "passage": "« Tous les habitants doivent pouvoir travailler, gagner leur vie par le travail. » Une régularisation pour des raisons à la fois humanitaires, mais aussi de production, et enfin, parce qu’on fait nation par le « faire ensemble »."
+    },
+    {
+      "id": "32f89826a79b55c1",
+      "title": "Manifeste fondateur de Debout!",
+      "publisher": "Debout! (mouvement présidé par François Ruffin)",
+      "url": "https://debout.fr/notre-manifeste/",
+      "passage": "Mais «attendre que l’Europe change» n’est pas un horizon acceptable pour notre peuple. Nous désobéirons aux traités européens lorsqu’ils entrent en contradiction avec nos engagements."
+    },
+    {
+      "id": "32a19e9cf0ec81c4",
+      "title": "Pour une exception agriculturelle française (cahier de campagne)",
+      "publisher": "Nous Président ! – site de campagne de François Ruffin (Debout !)",
+      "url": "https://nouspresident.fr/pour-une-exception-agriculturelle-francaise/",
+      "date": "2026-10-07",
+      "passage": "Des protections à nos frontières, des quotas d’importation, des barrières douanières. C’est-à-dire, une rupture nette avec le libre-échange qui a cours, des accords de l’ Uruguay round (1994) aux traités récents avec le Canada, la Nouvelle-Zélande, le Mercosur, etc."
+    },
+    {
+      "id": "673ad22a256ae708",
+      "title": "Pour une séparation de l’argent et de l’État (cahier de campagne)",
+      "publisher": "Nous Président ! – site de campagne de François Ruffin (Debout !)",
+      "url": "https://nouspresident.fr/separation-argent-etat/",
+      "date": "2026-07-02",
+      "passage": "Les candidats à un mandat électif seront obligés de présenter un bulletin n°2 du casier judiciaire vierge de toute condamnation pour atteintes les plus graves à l’ordre social (infractions criminelles et délits d’ordre sexuel) ainsi que pour manquement au devoir de probité"
+    },
+    {
+      "id": "3a23fc47effd6076",
+      "title": "Édouard Philippe, le prix de vos mensonges",
+      "publisher": "francoisruffin.fr (site officiel de François Ruffin)",
+      "url": "https://francoisruffin.fr/edouard-philippe-le-prix-de-vos-mensonges/",
+      "date": "2025-06-11",
+      "passage": "Bon, allez, je fais un effort. Je veux terminer sur du positif. Je suis d’accord avec vous sur la proportionnelle inutile."
     }
   ],
   "refreshedAt": {
     "edouard-philippe": "2026-10-08T18:12:55.891Z",
     "gabriel-attal": "2026-10-08T18:11:37.885Z",
     "bruno-retailleau": "2026-10-08T18:10:53.270Z",
-    "david-lisnard": "2026-10-08T15:00:13.139Z",
+    "david-lisnard": "2026-10-08T18:26:13.300Z",
     "marine-le-pen": "2026-10-08T18:14:43.430Z",
     "eric-zemmour": "2026-10-08T18:10:26.755Z",
-    "nicolas-dupont-aignan": "2026-10-08T15:16:54.685Z",
-    "florian-philippot": "2026-10-08T15:22:20.891Z",
+    "nicolas-dupont-aignan": "2026-10-08T18:24:30.517Z",
+    "florian-philippot": "2026-10-08T18:23:49.207Z",
     "jean-luc-melenchon": "2026-10-08T18:15:13.925Z",
     "fabien-roussel": "2026-10-08T17:54:08.652Z",
-    "marine-tondelier": "2026-10-08T15:37:56.399Z",
-    "francois-ruffin": "2026-10-08T15:43:20.824Z",
+    "marine-tondelier": "2026-10-08T18:28:26.457Z",
+    "francois-ruffin": "2026-10-08T18:28:41.116Z",
     "delphine-batho": "2026-10-08T17:54:08.652Z",
-    "karim-bouamrane": "2026-10-08T15:54:15.033Z",
+    "karim-bouamrane": "2026-10-08T18:24:43.530Z",
     "nathalie-arthaud": "2026-10-08T17:44:58.610Z",
-    "anasse-kazib": "2026-10-08T16:02:13.835Z",
-    "selma-labib": "2026-10-08T16:07:45.245Z",
-    "olivier-becht": "2026-10-08T16:12:12.614Z",
+    "anasse-kazib": "2026-10-08T18:23:36.781Z",
+    "selma-labib": "2026-10-08T18:27:40.603Z",
+    "olivier-becht": "2026-10-08T18:24:10.913Z",
     "raphael-glucksmann": "2026-10-08T17:44:58.610Z",
     "bernard-cazeneuve": "2026-10-08T17:44:58.610Z",
     "xavier-bertrand": "2026-10-08T17:44:58.610Z",

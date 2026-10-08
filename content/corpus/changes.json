@@ -3725,5 +3725,717 @@
     "from": "inconnue",
     "to": "2",
     "source": "4f890a00d245d812"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "24a75cbfdb360684"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "63a6b0f52bf43c2d"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d34f2032057034ba"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "c91f3a64593fdd06"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "19f2cfd498b7f8cc"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "a79692fa6057dfc4"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "sec-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "8e31a500ba98781b"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "54fe2611bf1ef3e4"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "lib-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "2a46c4e923ae0a6d"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "efc65659f21d36cf"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "cli-04",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "db9bbf79fbad2350"
+  },
+  {
+    "date": "2026-10-08T18:23:36.781Z",
+    "actor": "anasse-kazib",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "c24103cd51c3f506"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "sec-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "f30f3be7c52c6864"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "55ed36bc27f3205e"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "tra-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "b8e996866b90d25e"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "0033abab8e32d20a"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "cli-04",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "b8747938a11591f8"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "1286d1779664e3bc"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "32e546316aee2c8c"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "6724bd56d2bfd53c"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eur-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "79a3256fbd0ced0f"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "da111cc230316319"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "0772d3db97a972bf"
+  },
+  {
+    "date": "2026-10-08T18:23:49.207Z",
+    "actor": "florian-philippot",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "1971afcb8b17fd66"
+  },
+  {
+    "date": "2026-10-08T18:24:10.913Z",
+    "actor": "olivier-becht",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "28f2f718edd26c87"
+  },
+  {
+    "date": "2026-10-08T18:24:10.913Z",
+    "actor": "olivier-becht",
+    "item": "dem-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "343813e417b2c791"
+  },
+  {
+    "date": "2026-10-08T18:24:10.913Z",
+    "actor": "olivier-becht",
+    "item": "dem-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "fec0a2ea41380fb2"
+  },
+  {
+    "date": "2026-10-08T18:24:10.913Z",
+    "actor": "olivier-becht",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "760baac1601f658d"
+  },
+  {
+    "date": "2026-10-08T18:24:10.913Z",
+    "actor": "olivier-becht",
+    "item": "lib-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "3da529f791d2804b"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "a8a259b720909b74"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "dem-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "7dac7acff2885b40"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "dem-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d86d301a2c6f20b9"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "1",
+    "source": "2a69fceb79038192"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "ca28198b49c80834"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "56ddb0529a016b7f"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "lib-04",
+    "from": "inconnue",
+    "to": "1",
+    "source": "13defbc65441aa9e"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "a92721bfd8f2282d"
+  },
+  {
+    "date": "2026-10-08T18:24:30.517Z",
+    "actor": "nicolas-dupont-aignan",
+    "item": "cli-04",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "815a2e255a80bfae"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "a2282e56c12d8cc2"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "29bd815d9cb61d23"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "1",
+    "source": "e04d45cf65b0c5e2"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "eco-06",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "a1c6fa84c7a15ca8"
+  },
+  {
+    "date": "2026-10-08T18:24:43.530Z",
+    "actor": "karim-bouamrane",
+    "item": "tra-01",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "a1c6fa84c7a15ca8"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "tra-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "4477eca354a52958"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d9805c58093ee69a"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "99a8d6e2a08abff7"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "e2a105c7a0ec24f1"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "lib-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "e67a9ec8e31f5d0d"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "9d1a96c444c59ad6"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "eur-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "f7e2b4f73b91f065"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "d0bdc59ddeed479c"
+  },
+  {
+    "date": "2026-10-08T18:26:13.300Z",
+    "actor": "david-lisnard",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "a55372e0e5fd9eb0"
+  },
+  {
+    "date": "2026-10-08T18:27:40.603Z",
+    "actor": "selma-labib",
+    "item": "tra-04",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "ea66f170eeec8f26"
+  },
+  {
+    "date": "2026-10-08T18:27:40.603Z",
+    "actor": "selma-labib",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "d647c5e16f44e35e"
+  },
+  {
+    "date": "2026-10-08T18:27:40.603Z",
+    "actor": "selma-labib",
+    "item": "cli-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "ee80a49c6ed49f06"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "48010341f0e28c23"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "2fc90f32425e8b1a"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "eco-05",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "8ca0c8991511c73c"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "eco-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "b66a05f483069c51"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "tra-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "9499d4b05ac6ebf0"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "tra-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "93049d1ba616db0e"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "6eccd8062cb7d46e"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "tra-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "09e20494018a2709"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "2811d02a4b30b779"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "0d1768762cd53c62"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "sec-04",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "25b8f8f1d3751a7f"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "a9e9dc4b0b0dd624"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "lib-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "40fa8389cada6364"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "lib-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "bd75a9d046e72a3d"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "lib-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "6f60933cf9d0b2d7"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "lib-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "e9400da3e49368c3"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "c9b235dfce4d7965"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "cli-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "c9771c8d4e048dc5"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "cli-03",
+    "from": "inconnue",
+    "to": "2",
+    "source": "952778ec0d9c5f17"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "cli-05",
+    "from": "inconnue",
+    "to": "1",
+    "source": "95128007b4bfef30"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "449049968f276a17"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "7d6b84b1e6f57ea4"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "eur-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "c8889769040449d3"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "ba28601e76930e5d"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "3ca5adf85199baae"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "dem-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "69cf26daea3ac6ad"
+  },
+  {
+    "date": "2026-10-08T18:28:26.457Z",
+    "actor": "marine-tondelier",
+    "item": "dem-06",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "1a105fcaa75ca246"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "c0b1e0df1c286051"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "49bcd14a5c05d3b6"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "2",
+    "source": "359c9634d78775d2"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "eur-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "32f89826a79b55c1"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "32a19e9cf0ec81c4"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "dem-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "673ad22a256ae708"
+  },
+  {
+    "date": "2026-10-08T18:28:41.116Z",
+    "actor": "francois-ruffin",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "3a23fc47effd6076"
   }
 ]
