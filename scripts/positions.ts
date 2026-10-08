@@ -186,10 +186,14 @@ async function fetchText(url: string): Promise<string | null> {
 
 const posLabel = (p: Position | undefined) => (!p || 'missing' in p ? 'inconnue' : 'set' in p ? `[${p.set.join(',')}]` : String(p.value))
 
+// Erreurs qui touchent tout le passage (crédit, clé) : on arrête au lieu d'enchaîner les échecs
+const FATAL = /credit balance|authentication_error|invalid x-api-key|permission_error/i
+let fatal: string | null = null
+
 async function codeActor(actor: { slug: string; name: string; party?: string; status: string }) {
   const now = new Date().toISOString()
-  live.positions[actor.slug] ??= {}
-  const current = live.positions[actor.slug]!
+  // Le dossier n'est créé qu'après au moins une recherche aboutie
+  const current = live.positions[actor.slug] ?? {}
   const themes = questionnaire.themes.filter((t) => !ONLY_THEME || t.id === ONLY_THEME)
   let kept = 0
   let rejected = 0
@@ -204,13 +208,16 @@ async function codeActor(actor: { slug: string; name: string; party?: string; st
         try {
           done.push({ theme, items, evidence, coded: await toStructured(await research(actor, theme.label, items, evidence)) })
         } catch (e) {
-          console.warn(`  ${theme.label} : ${e instanceof Error ? e.message : e}`)
+          const msg = e instanceof Error ? e.message : String(e)
+          if (FATAL.test(msg)) fatal = msg
+          console.warn(`  ${theme.label} : ${msg}`)
         }
       }
     }),
   )
   // Aucune recherche aboutie (erreur d'API) : on n'ajoute pas un dossier vide
-  if (done.length === 0) throw new Error('aucune recherche aboutie')
+  if (!done.some((d) => d.coded)) throw new Error('aucune recherche aboutie')
+  live.positions[actor.slug] = current
   for (const { theme, items, evidence, coded } of done) {
     if (!coded) continue
     for (const p of coded.positions) {
@@ -253,6 +260,9 @@ async function codeActor(actor: { slug: string; name: string; party?: string; st
 }
 
 function save() {
+  // Pas de dossier orphelin : seules les positions des candidats du référentiel sont gardées
+  const known = new Set(live.actors.map((a) => a.slug))
+  for (const slug of Object.keys(live.positions)) if (!known.has(slug)) delete live.positions[slug]
   const stamp = new Date().toISOString()
   live.version = `live-${stamp.slice(0, 16).replace(/[-:T]/g, '')}`
   live.publishedAt = stamp
@@ -337,10 +347,13 @@ async function main() {
     } catch (e) {
       console.warn(`${a.name} : interrompu (${e instanceof Error ? e.message : e})`)
     }
+    // Crédit épuisé ou clé refusée : inutile d'enchaîner les candidats suivants
+    if (fatal) break
   }
   if (targets.length > 0 && !args.includes('--no-harmonize')) await harmonize()
   save()
   console.log(`Référentiel ${live.version} écrit (${live.actors.length} candidats).`)
+  if (fatal) throw new Error(`API Claude indisponible : ${fatal}`)
 }
 
 main().catch((e) => {

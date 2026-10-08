@@ -72,7 +72,11 @@ jobs:
             git add content/fil
             git commit -m "veille : brèves ($STAMP)" || true
           fi
+          # main a pu bouger pendant la veille : on se recale avant de pousser
+          git stash push --include-untracked -- content/fil content/radar content/acteurs || true
+          git pull --rebase origin "${{ github.ref_name }}"
           git push origin HEAD:${{ github.ref_name }}
+          git stash pop || true
           # Un push fait par le robot ne déclenche pas les autres workflows : on lance le repost explicitement
           if [ -n "$BREVES" ]; then gh workflow run social.yml -f files="$BREVES" || true; fi
 

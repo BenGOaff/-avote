@@ -62,7 +62,11 @@ jobs:
           git config user.email "positions@users.noreply.github.com"
           if [ -z "$(git status --porcelain content/corpus content/acteurs/fiches.json)" ]; then exit 0; fi
           STAMP=$(date -u +%Y%m%d-%H%M)
-          git switch -c "positions/$STAMP"
+          # La branche part de la dernière version de main (sinon elle porterait d'anciens workflows et serait refusée)
+          git stash push --include-untracked -- content/corpus content/acteurs/fiches.json
+          git fetch origin "${{ github.ref_name }}"
+          git switch -c "positions/$STAMP" "origin/${{ github.ref_name }}"
+          git checkout stash@{0} -- content/corpus content/acteurs/fiches.json
           git add content/corpus content/acteurs/fiches.json
           git commit -m "positions : mise à jour du référentiel ($STAMP)"
           git push origin "positions/$STAMP"
