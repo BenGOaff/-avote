@@ -96,7 +96,17 @@ if (sansNuance) warnings.push(`${sansNuance} candidat(s) avec un parti mais sans
 
 // Qui possède ton info
 const mediaList = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/liste.json'), 'utf8')) as { medias: { slug: string }[] }
-const owned = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/proprietaires.json'), 'utf8')) as { medias: Record<string, { url: string; quote: string; controller: string }> }
+const owned = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/proprietaires.json'), 'utf8')) as {
+  medias: Record<string, { url: string; quote: string; controller: string }>
+  alertes?: Record<string, { items: { url: string; quote: string; date: string }[] }>
+}
+for (const [slug, a] of Object.entries(owned.alertes ?? {})) {
+  if (!mediaList.medias.some((x) => x.slug === slug)) errors.push(`alertes : ${slug} absent de la liste`)
+  for (const it of a.items) {
+    if (!/^https:\/\/([a-z0-9-]+\.)*(arcom\.fr|conseil-etat\.fr|legifrance\.gouv\.fr)\//.test(it.url)) errors.push(`alertes : ${slug} source hors domaines officiels`)
+    if (!it.quote || it.quote.length < 12 || !/^\d{4}-\d{2}-\d{2}$/.test(it.date)) errors.push(`alertes : ${slug} sans extrait ou date`)
+  }
+}
 for (const [slug, m] of Object.entries(owned.medias)) {
   if (!mediaList.medias.some((x) => x.slug === slug)) errors.push(`médias : ${slug} absent de la liste`)
   if (!m.url?.startsWith('https://')) errors.push(`médias : ${slug} sans source https`)

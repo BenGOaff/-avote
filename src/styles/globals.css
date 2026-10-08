@@ -2067,3 +2067,31 @@ details.disclosure > div {
   margin: 0;
   border-top: var(--hairline) dashed var(--line);
 }
+
+.stamp--alert {
+  color: var(--correction);
+  font-size: 0.7rem;
+  margin-left: var(--s1);
+}
+.alerts {
+  margin: var(--s3) 0;
+  padding: var(--s3);
+  border: var(--border) dashed var(--correction);
+  border-radius: var(--radius);
+  font-size: var(--text-small);
+}
+.alerts__title {
+  margin: 0 0 var(--s2);
+  font-weight: 700;
+  color: var(--correction);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
+.alerts ul {
+  list-style: none;
+  display: grid;
+  gap: var(--s3);
+  padding: 0;
+  margin: 0;
+}

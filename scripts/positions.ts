@@ -21,6 +21,7 @@ import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
 import { canonicalUrl, hashId, quoteIsInSource } from './veille-lib'
 import { collectEvidence, fetchText } from './web-lib'
+import { CostMeter, budgetFromEnv } from './cost'
 import type { Corpus, CorpusSource, Ordinal, Position, PositionBasis } from '../src/lib/engine/types'
 
 const ROOT = process.cwd()
@@ -31,7 +32,14 @@ const ONLY_THEME = arg('theme')
 const LIMIT = Number(arg('limit') ?? 2)
 const MODEL = process.env.POSITIONS_MODEL || process.env.VEILLE_MODEL || 'claude-opus-5-5'
 const EFFORT = (process.env.POSITIONS_EFFORT || 'high') as 'low' | 'medium' | 'high'
-const PARALLEL = Number(process.env.POSITIONS_PARALLEL || 4)
+const PARALLEL = Number(process.env.POSITIONS_PARALLEL || 3)
+const FORCE = args.includes('--force')
+const RECHECK = args.includes('--recheck')
+// Une position connue est revérifiée après 90 jours ; une position introuvable est recherchée de nouveau après 30 jours
+const KNOWN_MAX_AGE = 90 * 86_400_000
+const MISSING_MAX_AGE = 30 * 86_400_000
+const meter = new CostMeter('Positions', budgetFromEnv('POSITIONS_BUDGET_USD', 4))
+const JUDGE_MODEL = process.env.POSITIONS_JUDGE_MODEL || MODEL
 const LIVE = path.join(ROOT, 'content/corpus/live.json')
 const CHANGES = path.join(ROOT, 'content/corpus/changes.json')
 
@@ -119,12 +127,13 @@ Cherche ses positions explicites sur chacune de ces questions, lis les pages, pu
         system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
         output_config: { effort: EFFORT },
         tools: [
-          { type: 'web_search_20260209', name: 'web_search', max_uses: 6, user_location: { type: 'approximate', country: 'FR' } },
-          { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 8, max_content_tokens: 25000 },
+          { type: 'web_search_20260209', name: 'web_search', max_uses: 4, user_location: { type: 'approximate', country: 'FR' } },
+          { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 5, max_content_tokens: 12000 },
         ],
         messages,
       })
       .finalMessage()
+    meter.add(res.model, res.usage)
     collectEvidence(res.content, evidence)
     text += res.content.map((b) => (b.type === 'text' ? b.text : '')).join('')
     if (res.stop_reason === 'refusal') throw new Error('refus du modèle')
@@ -150,7 +159,75 @@ async function toStructured(text: string): Promise<CodedOut | null> {
     output_config: { effort: 'low', format: betaZodOutputFormat(Coded) },
     messages: [{ role: 'user', content: `Convertis ce compte rendu en JSON conforme au schéma, sans rien ajouter ni changer :\n\n${text.slice(-30000)}` }],
   })
+  meter.add(res.model, res.usage)
   return res.parsed_output ?? null
+}
+
+// ---------------------------------------------------------------------------
+// Contrôle de pertinence : la citation répond-elle vraiment à la question ?
+// ---------------------------------------------------------------------------
+
+const Judged = z.object({
+  verdicts: z.array(
+    z.object({
+      itemId: z.string(),
+      verdict: z.enum(['direct', 'hors-sujet', 'paraphrase']).describe('direct : la citation exprime une position sur cette mesure précise ; hors-sujet : elle parle d’autre chose ou d’une mesure voisine ; paraphrase : ce sont les mots d’un journaliste, pas du candidat, du programme ou du parti'),
+    }),
+  ),
+})
+
+async function judge(actor: { name: string }, items: Item[], coded: CodedOut): Promise<Map<string, 'direct' | 'hors-sujet' | 'paraphrase'>> {
+  const rows = coded.positions.filter((p) => (p.value !== null || p.set.length > 0) && p.basis !== 'aucune' && p.quote)
+  const out = new Map<string, 'direct' | 'hors-sujet' | 'paraphrase'>()
+  if (rows.length === 0) return out
+  try {
+    const res = await client.beta.messages.parse({
+      model: JUDGE_MODEL,
+      max_tokens: 3000,
+      output_config: { effort: 'low', format: betaZodOutputFormat(Judged) },
+      messages: [
+        {
+          role: 'user',
+          content: `Tu contrôles des positions de candidats codées automatiquement. Pour chaque ligne, dis si la citation exprime une position sur la mesure précise de l'affirmation (direct), si elle parle d'autre chose ou d'une mesure seulement voisine (hors-sujet), ou si ce sont les mots d'un tiers qui résume le candidat (paraphrase). Sois strict et identique pour tous les candidats.\n\nCandidat : ${actor.name}\n\n${rows
+            .map((p) => `- ${p.itemId} | Affirmation : « ${items.find((i) => i.id === p.itemId)?.text ?? ''} » | Citation : « ${p.quote} »`)
+            .join('\n')}`,
+        },
+      ],
+    })
+    meter.add(res.model, res.usage)
+    for (const v of res.parsed_output?.verdicts ?? []) out.set(v.itemId, v.verdict)
+  } catch (e) {
+    console.warn(`  contrôle de pertinence indisponible : ${e instanceof Error ? e.message : e}`)
+  }
+  return out
+}
+
+/** Repasse le contrôle de pertinence sur les positions déjà codées (sans nouvelle recherche web). */
+async function recheck() {
+  const sources = new Map(live.sources.map((s) => [s.id, s]))
+  let dropped = 0
+  for (const actor of live.actors) {
+    const pos = live.positions[actor.slug] ?? {}
+    for (const theme of questionnaire.themes) {
+      if (meter.exhausted) break
+      const items = questionnaire.items.filter((i) => i.theme === theme.id)
+      const coded: CodedOut = {
+        positions: items
+          .map((i) => ({ i, p: pos[i.id] }))
+          .filter((x): x is { i: Item; p: Exclude<Position, { missing: true }> } => !!x.p && !('missing' in x.p))
+          .map(({ i, p }) => ({ itemId: i.id, value: 'value' in p ? p.value : null, set: 'set' in p ? p.set : [], basis: (p.basis ?? 'declaration') as CodedOut['positions'][number]['basis'], quote: sources.get(p.sources[0] ?? '')?.passage ?? '', url: '', sourceTitle: '', publisher: '', date: '', note: '' })),
+      }
+      if (coded.positions.length === 0) continue
+      const verdicts = await judge(actor, items, coded)
+      for (const [itemId, v] of verdicts) {
+        if (v === 'direct' || !pos[itemId] || 'missing' in pos[itemId]!) continue
+        changes.push({ date: new Date().toISOString(), actor: actor.slug, item: itemId, from: posLabel(pos[itemId]), to: 'inconnue' })
+        pos[itemId] = { missing: true, status: 'inconnu', note: v === 'paraphrase' ? 'La seule source trouvée résume le candidat sans le citer.' : 'La citation trouvée ne porte pas directement sur cette question.', codedBy: 'ia', codedAt: new Date().toISOString() }
+        dropped++
+      }
+    }
+  }
+  console.log(`Contrôle de pertinence : ${dropped} positions retirées.`)
 }
 
 const posLabel = (p: Position | undefined) => (!p || 'missing' in p ? 'inconnue' : 'set' in p ? `[${p.set.join(',')}]` : String(p.value))
@@ -163,7 +240,19 @@ async function codeActor(actor: { slug: string; name: string; party?: string; st
   const now = new Date().toISOString()
   // Le dossier n'est créé qu'après au moins une recherche aboutie
   const current = live.positions[actor.slug] ?? {}
-  const themes = questionnaire.themes.filter((t) => !ONLY_THEME || t.id === ONLY_THEME)
+  const isFresh = (themeId: string) =>
+    questionnaire.items
+      .filter((i) => i.theme === themeId)
+      .every((i) => {
+        const p = live.positions[actor.slug]?.[i.id]
+        if (!p || !p.codedAt) return false
+        return Date.now() - Date.parse(p.codedAt) < ('missing' in p ? MISSING_MAX_AGE : KNOWN_MAX_AGE)
+      })
+  const themes = questionnaire.themes.filter((t) => (!ONLY_THEME || t.id === ONLY_THEME) && (FORCE || ONLY_THEME || !isFresh(t.id)))
+  if (themes.length === 0) {
+    live.refreshedAt![actor.slug] = now
+    return console.log(`${actor.name} : à jour, rien à rechercher`)
+  }
   let kept = 0
   let rejected = 0
   // Recherches des thèmes en parallèle (bornées), traitement des résultats dans l'ordre
@@ -171,7 +260,7 @@ async function codeActor(actor: { slug: string; name: string; party?: string; st
   const done: { theme: (typeof themes)[number]; items: Item[]; evidence: Map<string, string>; coded: CodedOut | null }[] = []
   await Promise.all(
     Array.from({ length: Math.min(PARALLEL, queue.length) }, async () => {
-      for (let theme = queue.shift(); theme; theme = queue.shift()) {
+      for (let theme = queue.shift(); theme && !meter.exhausted; theme = queue.shift()) {
         const items = questionnaire.items.filter((i) => i.theme === theme.id)
         const evidence = new Map<string, string>()
         try {
@@ -189,13 +278,18 @@ async function codeActor(actor: { slug: string; name: string; party?: string; st
   live.positions[actor.slug] = current
   for (const { theme, items, evidence, coded } of done) {
     if (!coded) continue
+    const verdicts = await judge(actor, items, coded)
     for (const p of coded.positions) {
       const item = items.find((i) => i.id === p.itemId)
       if (!item) continue
       const hasValue = p.value !== null || p.set.length > 0
+      const verdict = verdicts.get(item.id)
       let next: Position
       if (!hasValue || p.basis === 'aucune') {
         next = { missing: true, status: 'inconnu', note: 'Aucune position explicite trouvée.', codedBy: 'ia', codedAt: now }
+      } else if (verdict && verdict !== 'direct') {
+        rejected++
+        next = { missing: true, status: 'inconnu', note: verdict === 'paraphrase' ? 'La seule source trouvée résume le candidat sans le citer.' : 'La citation trouvée ne porte pas directement sur cette question.', codedBy: 'ia', codedAt: now }
       } else {
         const url = canonicalUrl(p.url)
         const page = url ? (evidence.get(url) ?? (await fetchText(url))) : null
@@ -262,10 +356,11 @@ const Harmony = z.object({
  * la position devient un ensemble des deux niveaux : elle sort du score central et élargit les bornes.
  * Aucune position n'est déplacée de deux crans ou plus par cette passe.
  */
-async function harmonize() {
+async function harmonize(touched: Set<string>) {
   const sources = new Map(live.sources.map((s) => [s.id, s]))
   let widened = 0
-  for (const item of questionnaire.items) {
+  for (const item of questionnaire.items.filter((i) => touched.has(i.id))) {
+    if (meter.exhausted) break
     const rows = Object.entries(live.positions)
       .map(([actor, pos]) => ({ actor, p: pos[item.id] }))
       .filter((r): r is { actor: string; p: Extract<Position, { value: Ordinal }> } => !!r.p && 'value' in r.p)
@@ -284,6 +379,7 @@ async function harmonize() {
           },
         ],
       })
+      meter.add(res.model, res.usage)
       for (const f of res.parsed_output?.flags ?? []) {
         const pos = live.positions[f.actor]?.[item.id]
         if (!pos || !('value' in pos) || Math.abs(f.suggested - pos.value) !== 1) continue
@@ -310,7 +406,18 @@ async function main() {
   const retired = new Set(candidatures.actors.filter((a) => a.status === 'retire').map((a) => a.slug))
   live.actors = live.actors.filter((a) => !retired.has(a.slug))
 
+  const firstChange = changes.length
+  if (RECHECK) {
+    await recheck()
+    save()
+    meter.report()
+    return
+  }
   for (const a of targets) {
+    if (meter.exhausted) {
+      console.warn(`Budget du passage atteint : ${a.name} et les suivants attendront le prochain passage.`)
+      break
+    }
     try {
       await codeActor(a)
     } catch (e) {
@@ -319,9 +426,11 @@ async function main() {
     // Crédit épuisé ou clé refusée : inutile d'enchaîner les candidats suivants
     if (fatal) break
   }
-  if (targets.length > 0 && !args.includes('--no-harmonize')) await harmonize()
+  const touched = new Set(changes.slice(firstChange).map((c) => c.item))
+  if (touched.size > 0 && !args.includes('--no-harmonize')) await harmonize(touched)
   save()
   console.log(`Référentiel ${live.version} écrit (${live.actors.length} candidats).`)
+  meter.report()
   if (fatal) throw new Error(`API Claude indisponible : ${fatal}`)
 }
 

@@ -1,10 +1,11 @@
 # « Qui possède ton info » : propriétaires des médias, établis par IA avec citation vérifiée (scripts/medias.ts).
-# Chaque mois : les fiches jamais établies d'abord, puis les plus anciennes.
+# Chaque trimestre : fiches absentes ou de plus de 120 jours, puis alertes Arcom (télé, radio) de plus de 90 jours.
+# Dépense plafonnée par passage.
 name: Médias
 
 on:
   schedule:
-    - cron: '41 3 3 * *'
+    - cron: '41 3 3 1,4,7,10 *'
   workflow_dispatch:
     inputs:
       media:
@@ -13,6 +14,10 @@ on:
       limit:
         description: 'Nombre de médias à traiter'
         default: '15'
+      alertes:
+        description: 'Alertes Arcom seulement (télé et radio)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -38,11 +43,16 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MEDIAS_MODEL: ${{ vars.MEDIAS_MODEL }}
           MEDIAS_EFFORT: ${{ vars.MEDIAS_EFFORT }}
+          MEDIAS_BUDGET_USD: ${{ vars.MEDIAS_BUDGET_USD }}
         run: |
+          MODE=""
+          if [ "${{ github.event.inputs.alertes }}" = "true" ]; then MODE="--alertes"; fi
           if [ -n "${{ github.event.inputs.media }}" ]; then
-            npx tsx scripts/medias.ts --media=${{ github.event.inputs.media }}
+            npx tsx scripts/medias.ts $MODE --media=${{ github.event.inputs.media }}
           else
-            npx tsx scripts/medias.ts --limit=${{ github.event.inputs.limit || 15 }}
+            npx tsx scripts/medias.ts $MODE --limit=${{ github.event.inputs.limit || 15 }}
+            # Passage programmé : les alertes Arcom suivent les fiches
+            if [ "${{ github.event_name }}" = "schedule" ]; then npx tsx scripts/medias.ts --alertes --limit=18; fi
           fi
       - name: Valider
         if: always()
