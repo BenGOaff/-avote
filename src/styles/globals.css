@@ -3129,3 +3129,120 @@ details.disclosure > div {
   font-family: var(--font-display);
   font-size: var(--h3);
 }
+
+/* ---------- Portraits et cartes candidats ---------- */
+.portrait {
+  flex: none;
+  margin: 0;
+}
+.portrait__frame {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--paper);
+  border: 3px solid var(--bloc);
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+.portrait__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portrait__mono {
+  font-family: var(--font-display);
+  color: var(--ink);
+}
+.portrait__notice {
+  margin-top: var(--s1);
+  font-size: 0.7rem;
+  line-height: 1.2;
+  color: var(--muted);
+  text-align: center;
+}
+.cand-grid {
+  list-style: none;
+  display: grid;
+  gap: var(--s4);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  padding: 0;
+  margin: var(--s5) 0 0;
+}
+.cand-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--s2) var(--s4);
+  align-items: start;
+  height: 100%;
+  padding: var(--s4);
+  background: var(--surface);
+  border: var(--border) solid var(--ink);
+  border-left: 8px solid var(--bloc);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-signature);
+}
+.cand-card__name {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: var(--lh-title);
+}
+.cand-card__name a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.cand-card__name a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+.cand-card {
+  position: relative;
+}
+.cand-card__party {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  margin: var(--s1) 0 0;
+  font-weight: 700;
+  font-size: var(--text-small);
+}
+.cand-card__party img {
+  height: 22px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+}
+.cand-card__meta {
+  margin: var(--s1) 0 0;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.cand-card__docs {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: var(--s1);
+  font-size: var(--text-small);
+}
+.cand-card__bar {
+  height: 8px;
+  background: var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.cand-card__bar span {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+}
+.cand-card__source {
+  position: relative;
+  z-index: 1;
+  grid-column: 1 / -1;
+  font-size: var(--text-small);
+}
+.cand-hero {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  margin: var(--s2) 0 var(--s4);
+}
