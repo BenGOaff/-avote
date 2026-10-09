@@ -1763,10 +1763,9 @@ details.disclosure > div {
   line-height: 1;
 }
 .podium__tie {
-  position: absolute;
-  top: -10px;
+  order: -1;
   background: var(--paper);
-  transform: rotate(-6deg);
+  transform: rotate(-4deg);
 }
 @keyframes podium-up {
   from {
@@ -3245,4 +3244,189 @@ details.disclosure > div {
   align-items: center;
   gap: var(--s4);
   margin: var(--s2) 0 var(--s4);
+}
+
+/* ---------- Résultats : verdict et classement compact ---------- */
+.verdict {
+  padding: var(--s5);
+  background: var(--surface);
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-signature);
+}
+.verdict__head {
+  margin: var(--s2) 0 var(--s3);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.4vw, 2.2rem);
+  line-height: var(--lh-title);
+}
+.verdict__facts {
+  display: grid;
+  gap: var(--s1);
+  margin: 0;
+  padding-left: 1.1em;
+}
+.verdict__warn {
+  color: var(--correction);
+  font-weight: 700;
+}
+.verdict .podium-wrap {
+  margin-top: var(--s4);
+}
+.verdict .podium__col .portrait {
+  margin-bottom: var(--s1);
+}
+.verdict__quip {
+  margin: var(--s3) 0 0;
+  text-align: right;
+}
+.rank__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s3);
+  margin: var(--s6) 0 var(--s2);
+}
+.rank__title {
+  margin: 0;
+  font-size: var(--h3);
+}
+.segmented--small button {
+  min-height: 40px;
+  font-size: var(--text-small);
+}
+.rank {
+  list-style: none;
+  display: grid;
+  gap: var(--s2);
+  padding: 0;
+  margin: 0;
+}
+.rank__row > details {
+  background: var(--surface);
+  border: var(--border) solid var(--ink);
+  border-left: 6px solid var(--bloc);
+  border-radius: var(--radius);
+}
+.rank__row > details[open] {
+  box-shadow: var(--shadow-signature);
+}
+.rank__sum {
+  display: grid;
+  grid-template-columns: 2ch auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    'n pic who score'
+    'n pic meter meter'
+    'n pic cover cover'
+    'n pic flags flags';
+  align-items: center;
+  gap: 2px var(--s3);
+  min-height: var(--tap);
+  padding: var(--s2) var(--s3);
+  cursor: pointer;
+  list-style: none;
+}
+.rank__sum::-webkit-details-marker {
+  display: none;
+}
+.rank__n {
+  grid-area: n;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  text-align: center;
+}
+.rank__sum .portrait {
+  grid-area: pic;
+}
+.rank__who {
+  grid-area: who;
+  display: grid;
+  min-width: 0;
+}
+.rank__who strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rank__party {
+  font-size: var(--text-small);
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rank__meter {
+  grid-area: meter;
+  height: 10px;
+  background: var(--line);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.rank__meter span {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+  border-radius: 5px;
+}
+.rank__row:first-child .rank__meter span {
+  background: var(--highlight);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+.rank__score {
+  grid-area: score;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  line-height: 1;
+  text-align: right;
+}
+.rank__cover {
+  grid-area: cover;
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.rank__tie {
+  font-weight: 700;
+  color: var(--ink);
+}
+.rank__flags {
+  grid-area: flags;
+  display: flex;
+  gap: var(--s2);
+}
+@media (min-width: 700px) {
+  .rank__flags {
+    justify-content: flex-end;
+  }
+}
+.rank__flags:empty {
+  display: none;
+}
+.rank__body {
+  padding: var(--s2) var(--s4) var(--s4);
+  border-top: var(--hairline) solid var(--line);
+}
+.rank__body .cand__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3);
+  margin: var(--s2) 0 var(--s3);
+}
+.rank__more {
+  margin-top: var(--s4);
+}
+.rank__more > summary {
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  .rank__sum {
+    grid-template-columns: 2ch auto minmax(150px, 1.2fr) minmax(120px, 2fr) 3ch minmax(150px, auto) minmax(0, auto);
+    grid-template-areas: 'n pic who meter score cover flags';
+  }
 }

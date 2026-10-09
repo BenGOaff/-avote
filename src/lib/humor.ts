@@ -70,3 +70,6 @@ export function resultQuip({ dims, ranking }: { dims: { index: number | null }[]
 
 /** Sous le titre de la page médias. Masqué en mode sobre. */
 export const MEDIAS_QUIP = 'Spoiler : pas toi.'
+
+/** Sous le podium des résultats. Masqué en mode sobre. */
+export const VERDICT_QUIP = 'Une boussole, pas un GPS. Le bulletin reste à toi.'

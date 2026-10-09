@@ -10,7 +10,8 @@ import type { Answers, Corpus, Priorities } from '@/lib/engine/types'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { loadState, saveState, type LocalVoterState } from '@/lib/local-store'
 import { BASIS_LABEL, answerLabel, effectiveAnswers, positionLabel } from '@/lib/answers'
-import { resultQuip } from '@/lib/humor'
+import { VERDICT_QUIP, resultQuip } from '@/lib/humor'
+import { Portrait } from '@/components/Portrait'
 import { fmt, fmtPct } from '@/components/ScoreBar'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { ThemeIcon } from '@/components/ThemeIcon'
@@ -21,7 +22,13 @@ import { AgreementLegend, AgreementStrip, Coin, DimensionMeter, DuoScale, Gauge,
 const nf1 = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 })
 const R = UI_COPY.results
 
-export function ResultsView() {
+/** Portrait et formation d'un candidat, préparés côté serveur (les fichiers d'images y sont repérés). */
+export interface ActorMedia {
+  portrait: string | null
+  party: string
+}
+
+export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia> }) {
   const [state, setState] = useState<LocalVoterState | null>(null)
   const [loaded, setLoaded] = useState(false)
   const [mode, setMode] = useState<WeightMode>('global')
@@ -92,93 +99,105 @@ export function ResultsView() {
         </div>
       )}
 
-      <VoterCard dims={dims} priorities={state.priorities} redLineCount={state.essentials.filter((id) => answers[id]?.kind === 'value').length} ranking={ranking} demo={demo} />
-
-      {/* Candidats */}
-      <section className="section" aria-labelledby="proximites">
-        <h2 id="proximites">Et les candidats ?</h2>
-
+      {/* Candidats : verdict, podium, classement compact dépliable */}
+      <section aria-labelledby="proximites">
+        <h2 id="proximites" className="visually-hidden">
+          Les candidats les plus proches de tes réponses
+        </h2>
+        {!compatible && <div className="alert alert--correction">Le référentiel des candidats ne correspond pas à cette version des questions. Le calcul est suspendu.</div>}
         {liveCorpus.actors.length === 0 && (
           <div className="alert alert--info">
             <p className="alert__title">Les positions des candidats sont en cours de collecte.</p>
-            <p>
-              Chaque position est tirée d’un programme ou d’une déclaration, avec une citation vérifiée dans la source. En attendant, le calcul ci-dessous
-              utilise des <strong>candidats fictifs</strong> pour te montrer comment il fonctionne. Dès que les dossiers seront prêts, ton profil (s’il est
-              gardé sur cet appareil) sera recalculé ici.
-            </p>
+            <p>En attendant, le calcul ci-dessous utilise des <strong>candidats fictifs</strong> pour te montrer comment il fonctionne.</p>
           </div>
         )}
-        {liveCorpus.actors.length > 0 && (
-          <label className="checkbox">
-            <input type="checkbox" checked={useDemo} onChange={(e) => setUseDemo(e.target.checked)} />
-            <span>Afficher l’exemple avec des candidats fictifs</span>
-          </label>
-        )}
 
-        <div className="segmented" role="radiogroup" aria-label="Pondération">
-          <button role="radio" aria-checked={mode === 'global'} onClick={() => setMode('global')}>
-            Thèmes à égalité
-          </button>
-          <button role="radio" aria-checked={mode === 'priorities'} onClick={() => setMode('priorities')} disabled={!state.priorities}>
-            Selon mes jetons
-          </button>
-        </div>
-
-        {!compatible && <div className="alert alert--correction">Le référentiel des candidats ne correspond pas à cette version des questions. Le calcul est suspendu.</div>}
+        {ranking &&
+          (ranking.ranked ? (
+            <Verdict ranking={ranking} media={media} essentials={state.essentials} answers={answers} demo={demo} />
+          ) : (
+            <div className="alert">
+              <p className="alert__title">{R.notComparable}</p>
+              <p className="small" style={{ margin: 'var(--s2) 0' }}>
+                {R.notComparableWhy}
+              </p>
+              <details className="sources">
+                <summary>{R.notComparableDetail}</summary>
+                <ul className="small" style={{ margin: 'var(--s2) 0', paddingLeft: '1.2em' }}>
+                  {ranking.reasons.map((r) => (
+                    <li key={r}>{r}</li>
+                  ))}
+                </ul>
+              </details>
+              <p className="small" style={{ margin: 'var(--s2) 0 0' }}>
+                {R.alphabetical}
+              </p>
+            </div>
+          ))}
 
         {ranking && (
           <>
-            {!ranking.ranked ? (
-              <div className="alert">
-                <p className="alert__title">{R.notComparable}</p>
-                <p className="small" style={{ margin: 'var(--s2) 0' }}>
-                  {R.notComparableWhy}
-                </p>
-                <details className="sources">
-                  <summary>{R.notComparableDetail}</summary>
-                  <ul className="small" style={{ margin: 'var(--s2) 0', paddingLeft: '1.2em' }}>
-                    {ranking.reasons.map((r) => (
-                      <li key={r}>{r}</li>
-                    ))}
-                  </ul>
-                </details>
-                <p className="small" style={{ margin: 'var(--s2) 0 0' }}>
-                  {R.alphabetical}
-                </p>
+            <div className="rank__head">
+              <h3 className="rank__title">{ranking.ranked ? R.listTitle : R.listTitleUnranked}</h3>
+              <div className="segmented segmented--small" role="radiogroup" aria-label="Pondération">
+                <button role="radio" aria-checked={mode === 'global'} onClick={() => setMode('global')}>
+                  Tous les thèmes pareil
+                </button>
+                <button role="radio" aria-checked={mode === 'priorities'} onClick={() => setMode('priorities')} disabled={!state.priorities}>
+                  Selon mes jetons
+                </button>
               </div>
-            ) : (
-              <Podium entries={ranking.entries.filter((e) => e.classable)} demo={demo} />
-            )}
-            {ranking.sensitive && <div className="alert alert--info small">{R.sensitive}</div>}
-
-            <div className="legend-box">
-              <AgreementLegend />
-              <p className="small muted" style={{ margin: 'var(--s2) 0 0' }}>
-                {R.gaugeLegend}
-              </p>
             </div>
-
-            <ol className="cands">
-              {ranking.entries.map((e, i) => (
-                <Fragment key={e.slug}>
-                  {ranking.ranked && i === ranking.rankedCount && (
-                    <li className="cands__sep">
-                      <p className="cands__sep-title">{R.notDocumentedTitle}</p>
-                      <p className="small muted">{R.notDocumentedWhy}</p>
-                    </li>
-                  )}
+            <p className="small muted" style={{ margin: '0 0 var(--s3)' }}>
+              {R.listHint}
+            </p>
+            <ol className="rank">
+              {(ranking.ranked ? ranking.entries.slice(0, ranking.rankedCount) : ranking.entries).map((e, i) => (
                 <ActorResult
+                  key={e.slug}
                   e={e}
-                  rank={ranking.ranked && e.classable ? i + 1 : null}
+                  rank={ranking.ranked ? i + 1 : null}
+                  media={media[e.slug]}
                   corpus={corpus}
                   demo={demo}
                   essentials={state.essentials}
                   answers={answers}
                   onHide={() => setHidden([...(state.hiddenActors ?? []), e.slug])}
                 />
-                </Fragment>
               ))}
             </ol>
+            {ranking.ranked && ranking.entries.length > ranking.rankedCount && (
+              <details className="rank__more">
+                <summary>
+                  {R.notDocumentedTitle} ({ranking.entries.length - ranking.rankedCount})
+                </summary>
+                <p className="small muted">{R.notDocumentedWhy}</p>
+                <ol className="rank">
+                  {ranking.entries.slice(ranking.rankedCount).map((e) => (
+                    <ActorResult
+                      key={e.slug}
+                      e={e}
+                      rank={null}
+                      media={media[e.slug]}
+                      corpus={corpus}
+                      demo={demo}
+                      essentials={state.essentials}
+                      answers={answers}
+                      onHide={() => setHidden([...(state.hiddenActors ?? []), e.slug])}
+                    />
+                  ))}
+                </ol>
+              </details>
+            )}
+            <details className="disclosure" style={{ marginTop: 'var(--s4)' }}>
+              <summary>Lire les couleurs et les jauges</summary>
+              <div>
+                <AgreementLegend />
+                <p className="small muted" style={{ margin: 'var(--s2) 0 0' }}>
+                  {R.gaugeLegend}
+                </p>
+              </div>
+            </details>
             {hidden.size > 0 && (
               <div className="alert" style={{ marginTop: 'var(--s4)' }}>
                 <p>
@@ -191,11 +210,19 @@ export function ResultsView() {
             )}
           </>
         )}
-        <p className="small" style={{ marginTop: 'var(--s5)' }}>
+        {liveCorpus.actors.length > 0 && (
+          <label className="checkbox" style={{ marginTop: 'var(--s4)' }}>
+            <input type="checkbox" checked={useDemo} onChange={(e) => setUseDemo(e.target.checked)} />
+            <span>Afficher l’exemple avec des candidats fictifs</span>
+          </label>
+        )}
+        <p className="small" style={{ marginTop: 'var(--s4)' }}>
           Ce chiffre mesure l’écart entre tes réponses et les positions documentées, question par question. Ce n’est ni une probabilité de vote, ni une note de
-          compétence ou d’honnêteté. <Link href="/methodologie#calcul">Le calcul en détail</Link>
+          compétence ou d’honnêteté. <Link href="/methodologie#calcul">Le calcul en détail</Link> · <Link href="/comparateur">Comparer les candidats sujet par sujet</Link>
         </p>
       </section>
+
+      <VoterCard dims={dims} priorities={state.priorities} redLineCount={state.essentials.filter((id) => answers[id]?.kind === 'value').length} ranking={ranking} demo={demo} />
 
       {/* Profil détaillé */}
       <section className="section" aria-labelledby="profil">
@@ -340,7 +367,7 @@ function VoterCard({ dims, priorities, redLineCount, ranking, demo }: { dims: Di
 // Podium (seulement quand un classement est publiable)
 // ---------------------------------------------------------------------------
 
-function Podium({ entries, demo }: { entries: RankingEntry[]; demo: boolean }) {
+function Podium({ entries, demo, media }: { entries: RankingEntry[]; demo: boolean; media: Record<string, ActorMedia> }) {
   const top = entries.slice(0, 3)
   if (top.length < 2) return null
   const order = top.length === 3 ? [top[1]!, top[0]!, top[2]!] : [top[1]!, top[0]!]
@@ -350,13 +377,13 @@ function Podium({ entries, demo }: { entries: RankingEntry[]; demo: boolean }) {
         {order.map((e) => {
           const rank = entries.indexOf(e) + 1
           const score = e.rankScore ?? 0
+          const bloc = nuanceOf(e.slug)?.bloc ?? 'DIV'
           return (
             <div key={e.slug} role="listitem" className={`podium__col podium__col--${rank}`} aria-label={`${rank}e : ${e.name}, ${fmt(score)} sur 100`}>
-              <span className="podium__name">
-                {nuanceOf(e.slug) && <span className={`nuance__dot bloc-${nuanceOf(e.slug)!.bloc}`} aria-hidden="true" />} {e.name}
-              </span>
+              <Portrait src={media[e.slug]?.portrait ?? null} name={e.name} bloc={bloc} size={rank === 1 ? 96 : 72} />
+              <span className="podium__name">{e.name}</span>
               <span className="podium__score">{fmt(score)}</span>
-              <span className="podium__bar" style={{ height: `${30 + score * 1.3}px` }}>
+              <span className="podium__bar" style={{ height: `${30 + score * 1.1}px` }}>
                 <span className="podium__rank">{rank}</span>
               </span>
               {e.closeToPrevious && <span className="stamp podium__tie">{R.tie}</span>}
@@ -367,8 +394,48 @@ function Podium({ entries, demo }: { entries: RankingEntry[]; demo: boolean }) {
       <figcaption className="small muted">
         {R.podiumCaption}
         {demo && ' Candidats fictifs.'}
+        {entries.some((e) => media[e.slug]?.portrait) && ' Portraits : illustrations générées par IA.'}
       </figcaption>
     </figure>
+  )
+}
+
+/** Le verdict : en trois lignes, ce qu'il faut retenir avant de déplier quoi que ce soit. */
+function Verdict({ ranking, media, essentials, answers, demo }: { ranking: RankingResult; media: Record<string, ActorMedia>; essentials: string[]; answers: Answers; demo: boolean }) {
+  const ranked = ranking.entries.slice(0, ranking.rankedCount)
+  const top = ranked[0]
+  const second = ranked[1]
+  if (!top || !second) return null
+  const tied = [top, ...ranked.slice(1).filter((e, i) => ranked[i + 1]?.closeToPrevious && (top.rankScore ?? 0) - (e.rankScore ?? 0) < ENGINE_CONFIG.ranking.closeGap)]
+  const gap = (top.rankScore ?? 0) - (second.rankScore ?? 0)
+  const crossed = essentials.filter((id) => {
+    const a = answers[id]
+    if (!a || a.kind !== 'value') return false
+    return redLineStatus(a.value, top.score.contributions.find((c) => c.itemId === id)?.position) === 'desaccord'
+  })
+  const conceptOf = (id: string) => set.items.find((i) => i.id === id)?.concept ?? id
+  const posed = essentials.filter((id) => answers[id]?.kind === 'value').length
+  return (
+    <div className="verdict">
+      <p className="kicker" style={{ margin: 0 }}>
+        Le verdict
+      </p>
+      <p className="verdict__head">{tied.length > 1 ? R.verdictTie(tied.map((e) => e.name).join(', ')) : R.verdictTop(top.name)}</p>
+      <ul className="verdict__facts">
+        <li>
+          {R.verdictGap(fmt(top.rankScore ?? 0), gap < 1 ? 'moins d’un point' : `${fmt(gap)} point${gap >= 2 ? 's' : ''}`, second.name)}{' '}
+          <span className="muted">({R.coverShort(fmtPct(top.score.documented))})</span>
+        </li>
+        <li>{ranking.sensitive ? R.verdictFragile : R.verdictSolid}</li>
+        {posed > 0 && (
+          <li className={crossed.length > 0 ? 'verdict__warn' : undefined}>
+            {crossed.length > 0 ? R.verdictRedLine(top.name, crossed.map(conceptOf).join(', ')) : R.verdictNoRedLine}
+          </li>
+        )}
+      </ul>
+      <Podium entries={ranked} demo={demo} media={media} />
+      <p className="annotation humor verdict__quip">{VERDICT_QUIP}</p>
+    </div>
   )
 }
 
@@ -421,9 +488,11 @@ function ActorResult({
   essentials,
   answers,
   onHide,
+  media,
 }: {
   e: RankingEntry
   rank: number | null
+  media?: ActorMedia
   corpus: Corpus
   demo: boolean
   essentials: string[]
@@ -451,13 +520,35 @@ function ActorResult({
     .sort((a, b) => a.s! - b.s! || b.weight - a.weight)
     .slice(0, 3)
 
+  const crossed = redLines.filter((r) => r.status === 'desaccord').length
+  const score = s.rankScore
+  const bloc = nuanceOf(e.slug)?.bloc ?? 'DIV'
   return (
-    <li className="cand">
+    <li className={`rank__row bloc-${bloc}`}>
+      <details>
+        <summary className="rank__sum">
+          <span className="rank__n">{rank ?? '·'}</span>
+          <Portrait src={media?.portrait ?? null} name={e.name} bloc={bloc} size={44} />
+          <span className="rank__who">
+            <strong>{e.name}</strong>
+            <span className="rank__party">{demo ? 'Fictif' : (media?.party ?? '')}</span>
+          </span>
+          <span className="rank__meter" aria-hidden="true">
+            <span style={{ width: `${score ?? 0}%` }} />
+          </span>
+          <span className="rank__score">{score === null ? '—' : fmt(score)}</span>
+          <span className="rank__cover">
+            {R.coverShort(fmtPct(s.documented))}
+            {rank !== null && e.closeToPrevious && <span className="rank__tie"> · {R.tie.toLowerCase()}</span>}
+          </span>
+          <span className="rank__flags">
+            {crossed > 0 && <span className="stamp stamp--alert">{R.redFlag}</span>}
+          </span>
+        </summary>
+        <div className="rank__body">
       <div className="cand__head">
-        {rank !== null && <span className="cand__rank">{rank}</span>}
-        <h3 className="cand__name">{demo ? e.name : <Link href={`/candidats/${e.slug}`}>{e.name}</Link>}</h3>
         {demo ? <span className="badge badge--demo">Fictif</span> : <NuanceTag slug={e.slug} />}
-        {rank !== null && e.closeToPrevious && <span className="stamp">{R.tie}</span>}
+        {!demo && <Link href={`/candidats/${e.slug}`}>{R.seeFiche}</Link>}
       </div>
 
       <div className="cand__body">
@@ -563,6 +654,8 @@ function ActorResult({
       <button className="btn btn--ghost btn--small" style={{ marginTop: 'var(--s2)' }} onClick={onHide}>
         Masquer ce candidat
       </button>
+        </div>
+      </details>
     </li>
   )
 }
