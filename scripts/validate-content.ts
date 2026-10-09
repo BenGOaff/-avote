@@ -36,8 +36,8 @@ for (const [dir, schema] of [
   }
 }
 
-// Questionnaire : identifiants uniques, 7 thèmes, items rattachés à un thème existant
-const q = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.1.0.json'), 'utf8')) as {
+// Questionnaire : identifiants uniques, items rattachés à un thème existant
+const q = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.2.0.json'), 'utf8')) as {
   version: string
   themes: { id: string }[]
   dimensions: { id: string }[]
@@ -49,6 +49,18 @@ for (const it of q.items) {
   ids.add(it.id)
   if (!q.themes.some((t) => t.id === it.theme)) errors.push(`${it.id} : thème inconnu ${it.theme}`)
   for (const d of Object.keys(it.dimensions ?? {})) if (!q.dimensions.some((x) => x.id === d)) errors.push(`${it.id} : dimension inconnue ${d}`)
+}
+
+// Faits sous les affirmations : sources officielles en https, passage copié, affirmation existante
+const faits = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/faits.json'), 'utf8')) as {
+  items: Record<string, { text: string; quote: string; url: string; publisher: string; date: string }[]>
+}
+for (const [id, list] of Object.entries(faits.items)) {
+  if (!ids.has(id)) errors.push(`faits : affirmation inconnue ${id}`)
+  for (const f of list) {
+    if (!f.url?.startsWith('https://') || /wikipedia\.org/i.test(f.url)) errors.push(`faits ${id} : source absente ou refusée`)
+    if (!f.text || !f.publisher || (f.quote ?? '').trim().length < 30) errors.push(`faits ${id} : texte, éditeur ou passage manquant`)
+  }
 }
 
 // Corpus : compatibilité de version, positions sur des questions existantes, sources présentes

@@ -29,6 +29,12 @@ export default function SourcesPage() {
     <div className="container">
       <PageHeader kicker="Preuves" title="Sources" lede="Chaque fait publié renvoie à une source. Les voici toutes, avec l’endroit où elles sont utilisées." />
       <div className="measure stack">
+        <p>
+          <a href="/donnees.json" download="cavote-donnees.json">
+            Télécharger toutes les données (JSON)
+          </a>{' '}
+          : questions, positions des candidats avec leur citation et leur source, faits officiels. Pour vérifier, recalculer ou réutiliser.
+        </p>
         <p className="small muted">
           Un programme établit ce qu’un candidat propose ; il ne prouve pas que la mesure est financée ou réalisable. Une statistique officielle renseigne un fait
           dans un périmètre ; elle n’est pas une position. Plusieurs articles qui reprennent la même dépêche comptent pour une seule source.{' '}

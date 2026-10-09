@@ -948,6 +948,7 @@ details.disclosure > div {
 }
 .qcard__grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--s5);
 }
 @media (min-width: 900px) {
@@ -3649,4 +3650,99 @@ details.disclosure > div {
 }
 .decisive__q {
   font-weight: 700;
+}
+
+/* Douze chapitres sur un écran de téléphone : pictos plus petits, écart réduit */
+@media (max-width: 480px) {
+  .chapters {
+    gap: 2px;
+  }
+  .chapters__item svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* « Les faits » sous une affirmation du test */
+.faits {
+  margin-top: var(--s3);
+  border-top: var(--hairline) solid var(--line);
+  font-size: var(--text-small);
+}
+.faits > summary {
+  cursor: pointer;
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  font-weight: 700;
+}
+.faits > summary::after {
+  content: '+';
+  font-weight: 700;
+}
+.faits[open] > summary::after {
+  content: '−';
+}
+.faits > summary::-webkit-details-marker {
+  display: none;
+}
+.faits ul {
+  margin: 0 0 var(--s2);
+  padding-left: 1.2em;
+}
+.faits li + li {
+  margin-top: var(--s2);
+}
+.faits {
+  overflow-wrap: anywhere;
+}
+.faits__src {
+  color: var(--muted);
+}
+
+/* Accords rares (résultats) */
+.rare__list {
+  list-style: none;
+  padding: 0;
+  margin: var(--s4) 0;
+  display: grid;
+  gap: var(--s3);
+}
+.rare__row {
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: var(--s3) var(--s4);
+  display: grid;
+  gap: var(--s2);
+}
+.rare__q {
+  margin: 0;
+  font-weight: 700;
+  display: flex;
+  gap: var(--s2);
+  align-items: flex-start;
+}
+.rare__q svg {
+  flex: none;
+  margin-top: 3px;
+}
+.rare__you {
+  margin: 0;
+}
+.rare__who {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--s2);
+}
+.rare__who li {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+}
+.rare__who .portrait {
+  flex: none;
 }

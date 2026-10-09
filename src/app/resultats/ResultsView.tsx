@@ -5,7 +5,7 @@ import { Fragment, useEffect, useMemo, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
 import { QUICK_ITEMS, demoCorpus, liveCorpus, questionnaire as set, assertCompatible } from '@/lib/data'
 import { computeDimensions, type DimensionResult } from '@/lib/engine/dimensions'
-import { rankActors, redLineStatus, type RankingEntry, type RankingResult, type WeightMode } from '@/lib/engine/scoring'
+import { rankActors, rareAgreements, redLineStatus, type RankingEntry, type RankingResult, type WeightMode } from '@/lib/engine/scoring'
 import type { Answers, Corpus, Priorities } from '@/lib/engine/types'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { loadState, saveState, type LocalVoterState } from '@/lib/local-store'
@@ -114,9 +114,9 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
 
         {state.quick && (
           <div className="alert alert--info">
-            <p style={{ margin: 0 }}>{R.quickBanner}</p>
+            <p style={{ margin: 0 }}>{R.quickBanner(QUICK_ITEMS.length, set.items.length - QUICK_ITEMS.length)}</p>
             <Link className="btn btn--small btn--secondary" style={{ marginTop: 'var(--s2)' }} href="/test">
-              {R.quickContinue}
+              {R.quickContinue(set.items.length - QUICK_ITEMS.length)}
             </Link>
           </div>
         )}
@@ -230,6 +230,8 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
         </p>
       </section>
 
+      {compatible && <RareBlock answers={answers} actors={actors} corpus={corpus} essentials={state.essentials} media={media} />}
+
       <VoterCard dims={dims} priorities={state.priorities} redLineCount={state.essentials.filter((id) => answers[id]?.kind === 'value').length} ranking={ranking} demo={demo} />
 
       {/* Profil détaillé */}
@@ -273,6 +275,85 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
 // ---------------------------------------------------------------------------
 // Carte d'électeur : l'essentiel d'un coup d'œil
 // ---------------------------------------------------------------------------
+
+const RARE_SHOWN = 5
+
+/** Accords rares et sujets sans réponse : ce qui distingue un candidat sur ce qui compte pour toi. Aucun effet sur les scores. */
+function RareBlock({ answers, actors, corpus, essentials, media }: { answers: Answers; actors: Corpus['actors']; corpus: Corpus; essentials: string[]; media: Record<string, ActorMedia> }) {
+  const { rare, silent } = useMemo(() => rareAgreements(set, answers, actors, corpus.positions, essentials), [answers, actors, corpus, essentials])
+  if (rare.length === 0 && silent.length === 0) return null
+  const item = (id: string) => set.items.find((i) => i.id === id)
+  const nameOf = (slug: string) => actors.find((a) => a.slug === slug)?.name ?? slug
+  return (
+    <section aria-labelledby="rares" className="rare">
+      <h2 id="rares">{R.rareTitle}</h2>
+      {rare.length > 0 && (
+        <>
+          <p className="muted">{R.rareLede}</p>
+          <ul className="rare__list">
+            {rare.slice(0, RARE_SHOWN).map((r) => {
+              const it = item(r.itemId)
+              if (!it) return null
+              return (
+                <li key={r.itemId} className="rare__row">
+                  <p className="rare__q">
+                    <ThemeIcon theme={it.theme} width={18} height={18} />
+                    {it.text}
+                  </p>
+                  <p className="rare__you small">
+                    {R.rareYou} : <strong>{answerLabel(answers[r.itemId])}</strong>
+                    {essentials.includes(r.itemId) && <span className="stamp" style={{ marginLeft: 'var(--s2)' }}>{R.redFlag}</span>}
+                  </p>
+                  <ul className="rare__who">
+                    {r.agree.map((slug) => (
+                      <li key={slug}>
+                        <Portrait src={media[slug]?.portrait ?? null} name={nameOf(slug)} bloc={nuanceOf(slug)?.bloc ?? 'DIV'} size={40} />
+                        <span>
+                          <Link href={`/candidats/${slug}`}>{nameOf(slug)}</Link>
+                          <span className="small muted"> · {positionLabel(corpus.positions[slug]?.[r.itemId])}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="small muted" style={{ margin: 0 }}>
+                    {R.rareAmong(r.documented)} · <Link href={`/comparateur?theme=${it.theme}&c=${r.agree.join(',')}`}>{R.rareCompare}</Link>
+                  </p>
+                </li>
+              )
+            })}
+          </ul>
+          {rare.length > RARE_SHOWN && (
+            <details className="disclosure">
+              <summary>{R.rareMore(rare.length - RARE_SHOWN)}</summary>
+              <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
+                {rare.slice(RARE_SHOWN).map((r) => (
+                  <li key={r.itemId} style={{ marginBottom: 'var(--s2)' }}>
+                    {item(r.itemId)?.text} <span className="muted">· {r.agree.map(nameOf).join(', ')}</span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </>
+      )}
+      {silent.length > 0 && (
+        <details className="disclosure">
+          <summary>{R.silentTitle(silent.length)}</summary>
+          <div>
+            <p className="small muted" style={{ marginTop: 0 }}>
+              {R.silentLede}
+            </p>
+            <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
+              {silent.map((id) => (
+                <li key={id}>{item(id)?.text}</li>
+              ))}
+            </ul>
+          </div>
+        </details>
+      )}
+    </section>
+  )
+}
 
 function VoterCard({ dims, priorities, redLineCount, ranking, demo }: { dims: DimensionResult[]; priorities: Priorities | null; redLineCount: number; ranking: RankingResult | null; demo: boolean }) {
   const traits = dims
@@ -337,7 +418,7 @@ function VoterCard({ dims, priorities, redLineCount, ranking, demo }: { dims: Di
               ))}
             </ul>
           ) : (
-            <p style={{ margin: 0 }}>Les sept thèmes à égalité.</p>
+            <p style={{ margin: 0 }}>Tous les thèmes à égalité.</p>
           )}
         </div>
         <div className="vcard__block">
@@ -600,7 +681,7 @@ function ActorResult({
       <div className="cand__body">
         <Gauge value={s.rankScore} low={s.low} high={s.high} label={e.name} size={104} />
         <p className="small cand__cover">
-          Position connue sur <strong>{fmtPct(s.documented)}</strong> de tes réponses. Selon ce qui manque, entre {fmt(s.low)} et {fmt(s.high)}.
+          Position connue sur <strong>{fmtPct(s.documented)}</strong> de tes réponses ({fmtPct(s.documentedDebated)} sur les sujets débattus). Selon ce qui manque, entre {fmt(s.low)} et {fmt(s.high)}.
         </p>
         <div className="cand__facts">
           <AgreementStrip contributions={s.contributions} themes={set.themes} name={e.name} />

@@ -2,7 +2,7 @@
  * Données publiques versionnées : questionnaire et corpus.
  * Le client ne mélange jamais une version de questions et une version de positions (cahier §12).
  */
-import questionnaireJson from '@content/questionnaire/v0.1.0.json'
+import questionnaireJson from '@content/questionnaire/v0.2.0.json'
 import demoJson from '@content/corpus/demo.json'
 import liveJson from '@content/corpus/live.json'
 import type { Corpus, QuestionSet } from './engine/types'

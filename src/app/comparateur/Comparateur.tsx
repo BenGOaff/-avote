@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { BASIS_LABEL, ordinalLabel } from '@/lib/answers'
 import type { Ordinal } from '@/lib/engine/types'
@@ -65,6 +65,15 @@ export function Comparateur({ data }: { data: CompareData }) {
   const byslug = useMemo(() => new Map(data.actors.map((a) => [a.slug, a])), [data.actors])
   const known = (slug: string) => Object.keys(data.pos[slug] ?? {}).length
 
+  // Lien direct depuis les résultats : ?theme=…&c=slug,slug
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search)
+    const t = q.get('theme')
+    if (t && data.themes.some((x) => x.id === t)) setTheme(t)
+    const c = (q.get('c') ?? '').split(',').filter((slug) => data.actors.some((a) => a.slug === slug))
+    if (c.length > 0) setPicked(c.slice(0, MAX))
+  }, [data.themes, data.actors])
+
   function toggle(slug: string) {
     setPicked((p) => (p.includes(slug) ? p.filter((s) => s !== slug) : p.length >= MAX ? p : [...p, slug]))
   }
@@ -89,7 +98,7 @@ export function Comparateur({ data }: { data: CompareData }) {
               >
                 <span className="nuance__dot" aria-hidden="true" />
                 {a.name}
-                <span className="cmp__count">{known(a.slug)}/42</span>
+                <span className="cmp__count">{known(a.slug)}/{data.items.length}</span>
               </button>
             )
           })}

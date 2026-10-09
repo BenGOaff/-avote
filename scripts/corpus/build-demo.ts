@@ -6,7 +6,7 @@
  * Usage : npx tsx scripts/corpus/build-demo.ts
  */
 import { writeFileSync } from 'node:fs'
-import questionnaire from '../../content/questionnaire/v0.1.0.json'
+import questionnaire from '../../content/questionnaire/v0.2.0.json'
 import type { Corpus, Ordinal, Position } from '../../src/lib/engine/types'
 
 type Prefs = Record<string, number>

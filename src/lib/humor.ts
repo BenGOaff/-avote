@@ -21,7 +21,7 @@ export interface MirrorRemark {
 export function mirrorRemark(themeId: string, itemIds: string[], answers: Answers): MirrorRemark {
   const values = itemIds.map((id) => v(answers, id)).filter((x): x is Ordinal => x !== null)
 
-  if (themeId === 'travail') {
+  if (themeId === 'sante') {
     const hosp = v(answers, 'tra-02')
     const dette = v(answers, 'eco-03')
     if (hosp !== null && dette !== null && hosp >= 1 && dette >= 1)

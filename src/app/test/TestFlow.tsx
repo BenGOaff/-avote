@@ -8,6 +8,7 @@ import { ORDINALS, type Answer, type Answers, type Ordinal, type Priorities } fr
 import { emptyState, loadState, saveState, type LocalVoterState } from '@/lib/local-store'
 import { answerLabel, effectiveAnswers } from '@/lib/answers'
 import { mirrorRemark } from '@/lib/humor'
+import { faitsOf } from '@/lib/faits'
 import { setAudiencePaused } from '@/lib/consent'
 import { IconArrowLeft, IconCheck } from '@/components/Icons'
 import { ThemeIcon } from '@/components/ThemeIcon'
@@ -17,7 +18,37 @@ import { TokenBoard } from './TokenBoard'
 type Step = { kind: 'intro' } | { kind: 'question'; index: number } | { kind: 'mirror'; themeIndex: number } | { kind: 'priorities' }
 
 const allGroups = itemsByTheme(set)
-const groupsFor = (quick: boolean) => (quick ? allGroups.map((g) => ({ ...g, items: g.items.filter((i) => QUICK_ITEMS.includes(i.id)) })) : allGroups)
+
+/** Générateur pseudo-aléatoire à graine (mulberry32) : même graine, même ordre, d'une visite à l'autre */
+function seeded(seed: number) {
+  let t = seed >>> 0
+  return () => {
+    t = (t + 0x6d2b79f5) >>> 0
+    let r = Math.imul(t ^ (t >>> 15), 1 | t)
+    r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296
+  }
+}
+// Ordre des affirmations tiré au hasard dans chaque thème : aucune ne profite toujours de la première place
+const shuffled = <T,>(items: T[], rnd: () => number) => {
+  const a = [...items]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1))
+    ;[a[i], a[j]] = [a[j]!, a[i]!]
+  }
+  return a
+}
+const groupsFor = (quick: boolean, seed?: number) => {
+  const base = quick ? allGroups.map((g) => ({ ...g, items: g.items.filter((i) => QUICK_ITEMS.includes(i.id)) })) : allGroups
+  if (seed === undefined) return base
+  const rnd = seeded(seed)
+  return base.map((g) => ({ ...g, items: shuffled(g.items, rnd) }))
+}
+const newSeed = () => {
+  const a = new Uint32Array(1)
+  crypto.getRandomValues(a)
+  return a[0]!
+}
 const groups = allGroups
 const TOKENS = 10
 // Taille du rond selon la force de la réponse : plus on est tranché, plus le rond est grand
@@ -69,7 +100,7 @@ export function TestFlow() {
   )
 
   const quick = !!state?.quick
-  const G = groupsFor(quick)
+  const G = groupsFor(quick, state?.orderSeed)
   const flat = G.flatMap((g) => g.items)
   const answers = useMemo(() => effectiveAnswers(state, set), [state])
   const answeredCount = Object.keys(answers).length
@@ -84,10 +115,10 @@ export function TestFlow() {
         answeredCount={answeredCount}
         headingRef={headingRef}
         onStart={(persist, restart, wantQuick = false) => {
-          const base = restart || !state ? { ...emptyState(set.version, persist), quick: wantQuick } : { ...state, persist, quick: false }
+          const base = restart || !state ? { ...emptyState(set.version, persist), quick: wantQuick, orderSeed: newSeed() } : { ...state, persist, quick: false }
           setState(base)
           void saveState(base)
-          const order = groupsFor(!!base.quick).flatMap((g) => g.items)
+          const order = groupsFor(!!base.quick, base.orderSeed).flatMap((g) => g.items)
           const firstUnanswered = restart ? 0 : order.findIndex((i) => !(i.id in effectiveAnswers(base, set)))
           setStep(firstUnanswered === -1 ? { kind: 'priorities' } : { kind: 'question', index: firstUnanswered })
         }}
@@ -129,6 +160,19 @@ export function TestFlow() {
       else if (posInTheme === 0) setStep({ kind: 'mirror', themeIndex: themeIndex - 1 })
       else setStep({ kind: 'question', index: step.index - 1 })
     }
+    // Passer le reste du thème : les affirmations sans réponse sont marquées « passées », direction le bilan du chapitre
+    const skipTheme = () => {
+      update((s) => {
+        const extra: Record<string, Answer> = {}
+        const versions: Record<string, string> = {}
+        for (const i of group.items) if (!(i.id in s.answers)) {
+          extra[i.id] = { kind: 'skip' }
+          versions[i.id] = i.version
+        }
+        return { ...s, answers: { ...s.answers, ...extra }, answeredVersions: { ...s.answeredVersions, ...versions } }
+      })
+      setStep({ kind: 'mirror', themeIndex })
+    }
     const selected = current?.kind === 'value' ? current.value : null
 
     return (
@@ -155,6 +199,7 @@ export function TestFlow() {
                 {item.text}
               </h1>
               <p className="muted qcard__help">{item.explanation}</p>
+              <Faits itemId={item.id} />
             </div>
 
             <div>
@@ -227,20 +272,27 @@ export function TestFlow() {
             </button>
           </div>
         )}
-        {current && current.kind !== 'depends' && (
-          <button className="btn btn--secondary" style={{ marginTop: 'var(--s4)' }} onClick={next}>
-            {UI_COPY.test.next}
-          </button>
-        )}
+        <div className="row" style={{ marginTop: 'var(--s4)' }}>
+          {current && current.kind !== 'depends' && (
+            <button className="btn btn--secondary" onClick={next}>
+              {UI_COPY.test.next}
+            </button>
+          )}
+          {!quick && posInTheme < group.items.length - 1 && (
+            <button className="btn btn--ghost btn--small" onClick={skipTheme}>
+              {UI_COPY.test.skipTheme}
+            </button>
+          )}
+        </div>
       </div>
     )
   }
 
   if (step.kind === 'mirror') {
-    const group = groups[step.themeIndex]!
+    const group = G[step.themeIndex]!
     const remark = mirrorRemark(group.theme.id, group.items.map((i) => i.id), answers)
-    const firstOfNext = flat.findIndex((i) => i.theme === groups[step.themeIndex + 1]?.theme.id)
-    const isLast = step.themeIndex === groups.length - 1
+    const firstOfNext = flat.findIndex((i) => i.theme === G[step.themeIndex + 1]?.theme.id)
+    const isLast = step.themeIndex === G.length - 1
     return (
       <div>
         <Chapters current={step.themeIndex} done />
@@ -341,7 +393,7 @@ export function TestFlow() {
   )
 }
 
-/** Les sept chapitres, avec celui en cours. */
+/** Les chapitres (un par thème), avec celui en cours. */
 function Chapters({ current, done = false }: { current: number; done?: boolean }) {
   return (
     <ol className="chapters" aria-label={`Chapitre ${current + 1} sur ${groups.length}`}>
@@ -351,6 +403,28 @@ function Chapters({ current, done = false }: { current: number; done?: boolean }
         </li>
       ))}
     </ol>
+  )
+}
+
+/** Chiffres et règles de droit officiels sous l'affirmation, repliés par défaut. */
+function Faits({ itemId }: { itemId: string }) {
+  const faits = faitsOf(itemId)
+  if (faits.length === 0) return null
+  return (
+    <details className="faits">
+      <summary>{UI_COPY.test.facts}</summary>
+      <ul>
+        {faits.map((f) => (
+          <li key={f.url + f.text}>
+            {f.text}{' '}
+            <a href={f.url} target="_blank" rel="noopener noreferrer" className="faits__src">
+              {f.publisher}
+              {f.date ? `, ${f.date.slice(0, 4)}` : ''}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </details>
   )
 }
 
@@ -378,6 +452,10 @@ function Intro({
   onStart: (persist: 'session' | 'local', restart: boolean, quick?: boolean) => void
 }) {
   const [persist, setPersist] = useState<'session' | 'local'>(state?.persist ?? 'session')
+  // Affirmations ajoutées dans cette version, encore sans réponse, chez quelqu'un qui avait déjà répondu à l'ancienne
+  const fresh = state && answeredCount > 0 && set.items.some((i) => i.version !== set.version && i.id in state.answers)
+    ? set.items.filter((i) => i.version === set.version && !(i.id in state.answers)).length
+    : 0
   const startButtons =
     answeredCount > 0 ? (
       <>
@@ -397,7 +475,7 @@ function Intro({
           {UI_COPY.test.start}
         </button>
         <button className="btn btn--secondary" onClick={() => onStart(persist, true, true)}>
-          {UI_COPY.test.quickStart}
+          {UI_COPY.test.quickStart(QUICK_ITEMS.length)}
         </button>
       </>
     )
@@ -410,11 +488,16 @@ function Intro({
         {UI_COPY.home.title}
       </h1>
       <p className="lede">{UI_COPY.home.lede(set.items.length)}</p>
+      {fresh > 0 && (
+        <p className="alert alert--info" role="status">
+          {UI_COPY.test.newItems(fresh)}
+        </p>
+      )}
       <div className="row" style={{ marginTop: 'var(--s4)' }}>
         {startButtons}
       </div>
 
-      <ul className="theme-row" aria-label="Les sept thèmes">
+      <ul className="theme-row" aria-label="Les thèmes">
         {set.themes.map((t) => (
           <li key={t.id}>
             <ThemeIcon theme={t.id} width={22} height={22} />

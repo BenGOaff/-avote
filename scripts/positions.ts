@@ -51,7 +51,7 @@ interface Item {
   explanation: string
   concept: string
 }
-const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.1.0.json'), 'utf8')) as {
+const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.2.0.json'), 'utf8')) as {
   version: string
   themes: { id: string; label: string }[]
   items: Item[]

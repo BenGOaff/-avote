@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { itemWeights, rankActors, redLineStatus, scoreActor, themeWeights } from './scoring'
+import { debatedItems, itemWeights, rankActors, rareAgreements, redLineStatus, sameSide, scoreActor, themeWeights } from './scoring'
 import { computeDimensions } from './dimensions'
 import type { Actor, Answers, Ordinal, Position, QuestionSet } from './types'
 
@@ -160,11 +160,12 @@ describe('classement (§10.6)', () => {
     expect(sc.observed).toBeNull()
   })
 
-  it('version rapide : classement indicatif dès 10 réponses réparties sur les thèmes', () => {
-    const quick: Answers = Object.fromEntries(set.themes.flatMap((t) => set.items.filter((i) => i.theme === t.id).slice(0, 2)).map((i) => [i.id, ans(1)]))
-    const positions = { a: allPositions(set, 1), b: allPositions(set, -1) }
-    expect(rankActors(set, quick, actors, positions, { mode: 'global' }).ranked).toBe(false)
-    expect(rankActors(set, quick, actors, positions, { mode: 'global', quick: Object.keys(quick) }).ranked).toBe(true)
+  it('version rapide : classement indicatif sur deux affirmations par thème (12 thèmes)', () => {
+    const s12 = makeSet(12, 6)
+    const quick: Answers = Object.fromEntries(s12.themes.flatMap((t) => s12.items.filter((i) => i.theme === t.id).slice(0, 2)).map((i) => [i.id, ans(1)]))
+    const positions = { a: allPositions(s12, 1), b: allPositions(s12, -1) }
+    expect(rankActors(s12, quick, actors, positions, { mode: 'global' }).ranked).toBe(false)
+    expect(rankActors(s12, quick, actors, positions, { mode: 'global', quick: Object.keys(quick) }).ranked).toBe(true)
   })
 
   it('pas de classement sous le seuil de réponses', () => {
@@ -198,5 +199,68 @@ describe('lignes rouges et dimensions', () => {
     const all = allAnswers(set, 2)
     expect(computeDimensions(set, all)[0]?.index).toBe(100)
     expect(computeDimensions(set, allAnswers(set, -2))[0]?.index).toBe(0)
+  })
+})
+
+describe('accords rares (lecture, sans effet sur les scores)', () => {
+  const set = makeSet(2, 2)
+  const actors: Actor[] = ['a', 'b', 'c'].map((slug) => ({ slug, name: slug, status: 'declare' as const, summary: '' }))
+  it('signale un sujet tranché où un seul candidat est de ton côté, et un sujet où personne ne se prononce', () => {
+    const answers: Answers = { 't0-0': ans(2), 't0-1': ans(-2), 't1-0': ans(1), 't1-1': ans(2) }
+    const positions = {
+      a: { 't0-0': val(1), 't0-1': val(2), 't1-0': val(1) },
+      b: { 't0-0': val(-1), 't0-1': val(1) },
+      c: { 't0-0': { set: [-1, 0] as Ordinal[], status: 'ambigu' as const, sources: ['s'] }, 't0-1': val(-1) },
+    }
+    const r = rareAgreements(set, answers, actors, positions)
+    expect(r.rare.map((x) => [x.itemId, x.agree])).toEqual([
+      ['t0-0', ['a']],
+      ['t0-1', ['c']],
+    ])
+    expect(r.rare[0]!.documented).toBe(3)
+    // t1-0 n'est pas tranché (1) : ignoré ; t1-1 : personne
+    expect(r.silent).toEqual(['t1-1'])
+  })
+  it('une position entre pour et contre ne compte pas comme un accord ; une ligne rouge non tranchée est retenue', () => {
+    const answers: Answers = { 't0-0': ans(1) }
+    const positions = { a: { 't0-0': { set: [0, 1] as Ordinal[], status: 'ambigu' as const, sources: ['s'] } }, b: { 't0-0': val(2) } }
+    expect(sameSide(1, positions.a['t0-0'])).toBe(false)
+    const r = rareAgreements(set, answers, actors, positions, ['t0-0'])
+    expect(r.rare).toEqual([{ itemId: 't0-0', user: 1, agree: ['b'], documented: 2 }])
+  })
+})
+
+describe('sujets débattus (0.3.0) : la couverture se mesure là où au moins un tiers des candidats s’est prononcé', () => {
+  const set = makeSet(4, 6)
+  const slugs = ['a', 'b', 'c', 'd', 'e', 'f']
+  const actors: Actor[] = slugs.map((slug) => ({ slug, name: slug, status: 'declare' as const, summary: '' }))
+  // Les 4 premières affirmations de chaque thème : tout le monde s'est prononcé. Les 2 dernières : seul « a ».
+  const common = set.items.filter((i) => Number(i.id.split('-')[1]) < 4).map((i) => i.id)
+  const rare = set.items.filter((i) => Number(i.id.split('-')[1]) >= 4).map((i) => i.id)
+  const positions: Record<string, Record<string, Position>> = Object.fromEntries(
+    slugs.map((s) => [s, Object.fromEntries([...common, ...(s === 'a' ? rare : [])].map((id) => [id, val(s === 'f' ? -2 : 1)]))]),
+  )
+  const answers = allAnswers(set, 1)
+
+  it('un sujet dont presque personne ne parle ne fait baisser la couverture de personne', () => {
+    expect([...debatedItems(set, positions)].sort()).toEqual([...common].sort())
+    const r = rankActors(set, answers, actors, positions, { mode: 'global' })
+    const b = r.entries.find((e) => e.slug === 'b')!
+    expect(b.score.documented).toBeCloseTo(4 / 6) // affichage : part de toutes tes réponses
+    expect(b.score.documentedDebated).toBeCloseTo(1) // seuil : part des sujets débattus
+    expect(b.classable).toBe(true)
+  })
+
+  it('il compte toujours dans la proximité de celui qui s’est prononcé', () => {
+    const r = rankActors(set, { ...answers, ...Object.fromEntries(rare.map((id) => [id, ans(-2)])) }, actors, positions, { mode: 'global' })
+    const a = r.entries.find((e) => e.slug === 'a')!
+    const b = r.entries.find((e) => e.slug === 'b')!
+    expect(a.rankScore!).toBeLessThan(b.rankScore!)
+  })
+
+  it('masquer un candidat ne change pas la liste des sujets débattus', () => {
+    const r1 = rankActors(set, answers, actors, positions, { mode: 'global' })
+    const r2 = rankActors(set, answers, actors.filter((x) => x.slug !== 'a'), positions, { mode: 'global' })
+    expect(r2.entries.find((e) => e.slug === 'b')!.score.documentedDebated).toBe(r1.entries.find((e) => e.slug === 'b')!.score.documentedDebated)
   })
 })

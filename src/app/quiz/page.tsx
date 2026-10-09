@@ -4,6 +4,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { SupportLine } from '@/components/Support'
 import { UI_COPY } from '@/lib/copy'
 import { TIQUIZ_QUIZZES } from '@/lib/tiquiz'
+import { questionnaire } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Quiz présidentielle 2027',
@@ -40,7 +41,7 @@ export default function QuizHub() {
             <Link href="/test">Qu’est-ce qui compte pour toi ?</Link>
           </h2>
           <p className="small" style={{ margin: 0 }}>
-            42 affirmations, puis les candidats proches de tes réponses, sources à l’appui.
+            {questionnaire.items.length} affirmations, puis les candidats proches de tes réponses, sources à l’appui.
           </p>
         </li>
       </ul>

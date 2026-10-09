@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
-import { itemsByTheme, questionnaire } from '@/lib/data'
+import { QUICK_ITEMS, itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
+import { debatedItems } from '@/lib/engine/scoring'
 import { AI_NOTICE } from '@/lib/copy'
 import { BLOCS, NUANCE_SOURCE, NUANCE_VALIDATION } from '@/lib/nuances'
 import { BlocDot } from '@/components/Nuance'
@@ -15,6 +16,18 @@ export const metadata: Metadata = {
 }
 
 const R = ENGINE_CONFIG.ranking
+const T = questionnaire.themes.length
+const debated = debatedItems(questionnaire, liveCorpus.positions)
+const perTheme = itemsByTheme(questionnaire).map((g) => g.items.length)
+const minPerTheme = Math.min(...perTheme)
+const maxPerTheme = Math.max(...perTheme)
+/** Part d'une question dans le résultat quand on répond à tout, sans jeton : 1/T réparti entre les questions de son thème */
+const shareOf = (id: string) => {
+  const it = questionnaire.items.find((i) => i.id === id)
+  const n = questionnaire.items.filter((i) => i.theme === it?.theme && !i.inactive).length
+  return it && n > 0 ? 1 / T / n : 0
+}
+const fmtShare = (x: number) => `${new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 }).format(x * 100)} %`
 
 export default function MethodPage() {
   const faq = {
@@ -66,9 +79,20 @@ export default function MethodPage() {
 
         <h2 id="questions">Les questions</h2>
         <p>
-          Version {questionnaire.version}, statut : <strong>{questionnaire.status}</strong>. Sept thèmes de six questions. Chaque question porte sur une seule
+          Version {questionnaire.version}, statut : <strong>{questionnaire.status}</strong>. {T} thèmes, de {minPerTheme} à {maxPerTheme} questions chacun. Chaque question porte sur une seule
           mesure, avec une explication. L’échelle va de « tout à fait opposé » (−2) à « tout à fait favorable » (+2). « Je ne sais pas », « je préfère passer » et
-          « cela dépend » sont des réponses manquantes : elles ne comptent pas comme un avis intermédiaire.
+          « cela dépend » sont des réponses manquantes : elles ne comptent pas comme un avis intermédiaire. Les thèmes se suivent toujours dans le même
+          ordre ; à l’intérieur de chaque thème, l’ordre des questions est tiré au hasard au début du test, pour qu’aucune ne bénéficie toujours de la
+          première place.
+        </p>
+        <p>
+          Version 0.2.0 (9 octobre 2026) : 54 affirmations ajoutées sur la vie de tous les jours (santé, école, logement, transports, animaux, droits des
+          personnes LGBT, immigration, énergie, médias) et cinq nouveaux thèmes. L’immigration a désormais son propre thème, distinct de la sécurité. Les 42
+          affirmations de la version 0.1.0 n’ont pas changé de texte : les réponses déjà données restent valables.
+        </p>
+        <p>
+          <strong>Les faits.</strong> Sous certaines affirmations, un encadré donne des chiffres et des règles de droit tirés de sources officielles (Insee,
+          ministères, Cour des comptes, textes de loi), avec le lien. Ils servent à répondre en connaissant la situation actuelle. Ils n’entrent pas dans le calcul.
         </p>
         {itemsByTheme(questionnaire).map(({ theme, items }) => (
           <details key={theme.id} className="disclosure">
@@ -101,9 +125,13 @@ export default function MethodPage() {
         <pre className="card card--flat" style={{ overflowX: 'auto' }}>s = 1 − |u − c| / 4</pre>
         <p>Même réponse : 1. Réponses opposées aux deux extrémités : 0. Un cran d’écart : 0,75.</p>
         <p>
-          <strong>Poids.</strong> Les sept thèmes pèsent autant : 1/7 chacun. Le poids d’un thème est réparti entre ses questions. Ajouter des questions à un
-          thème ne lui donne donc pas plus de poids. Si tu places tes 10 jetons, le poids d’un thème devient (1 + jetons) / 17 : un thème sans jeton garde un
-          poids minimal.
+          <strong>Poids.</strong> Les {T} thèmes pèsent autant : 1/{T} chacun. Le poids d’un thème est réparti entre ses questions. Ajouter des questions à un
+          thème ne lui donne donc pas plus de poids. Si tu places tes 10 jetons, le poids d’un thème devient (1 + jetons) / {T + 10} : un thème sans jeton garde
+          un poids minimal.
+        </p>
+        <p>
+          Exemple : si tu réponds à tout sans poser de jeton, la question sur les signes religieux pèse {fmtShare(shareOf('lib-06'))} de ton résultat,
+          celle sur l’âge de la retraite {fmtShare(shareOf('tra-01'))}. Un thème pèse plus s’il compte pour toi : c’est à ça que servent les jetons.
         </p>
         <p>
           <strong>Proximité observée.</strong> Moyenne pondérée des proximités, sur les questions où tu as répondu et où le candidat a une position connue.
@@ -124,24 +152,35 @@ export default function MethodPage() {
 
         <h2 id="classement">Quand on classe, quand on ne classe pas</h2>
         <p className="small muted">
-          Règle de calcul version {ENGINE_CONFIG.version}. Changement du 9 octobre 2026 : la version précédente ne classait que sur les questions où tous les
-          candidats avaient une position connue, ce qui empêchait tout classement avec 24 candidatures.
+          Règle de calcul version {ENGINE_CONFIG.version}. Historique : la version 0.1.0 ne classait que sur les questions où tous les candidats avaient une
+          position connue, ce qui empêchait tout classement avec 24 candidatures. La 0.2.0 (9 octobre 2026) classe chaque candidat assez documenté sur tes
+          réponses. La 0.3.0 (même jour, avec le passage à {questionnaire.items.length} questions) mesure cette couverture sur les sujets débattus,
+          expliqués ci-dessous.
         </p>
         <p>Il faut d’abord assez de réponses : au moins {R.minAnswered} questions sur {questionnaire.items.length}, et la moitié des questions dans au moins {R.minThemesHalfAnswered} thèmes.</p>
         <p>Ensuite, chaque candidat est classé seulement s’il est assez documenté sur tes réponses :</p>
         <ul>
-          <li>on connaît sa position sur au moins {R.minActorCoverage * 100} % du poids de tes réponses ;</li>
+          <li>
+            on connaît sa position sur au moins {R.minActorCoverage * 100} % du poids de tes réponses aux <strong>sujets débattus</strong> : les affirmations
+            sur lesquelles au moins un tiers des candidats s’est prononcé ({debated.size} sur {questionnaire.items.length} aujourd’hui) ;
+          </li>
           <li>ces positions couvrent au moins {R.minActorThemes} thèmes.</li>
         </ul>
+        <p>
+          Pourquoi les sujets débattus ? Un sujet sur lequel presque aucun candidat ne s’est prononcé (la chasse le dimanche, par exemple) ne distingue
+          personne. S’il comptait dans la couverture, il ferait baisser tout le monde de la même façon et écarterait du classement des candidats qui n’ont
+          simplement pas encore publié de programme complet. Ces sujets restent dans le calcul de la proximité de ceux qui se sont prononcés, et dans les
+          accords rares. La liste se met à jour à chaque nouvelle position documentée ; elle est calculée sur tous les candidats, jamais sur ta sélection.
+        </p>
         <p>
           Les candidats classés sont rangés selon leur proximité, calculée sur les questions où leur position est connue. Une position codée entre deux niveaux
           (« plutôt » ou « tout à fait » favorable, par exemple) compte pour le milieu de son intervalle. Les candidats moins documentés sont listés à part,
           avec leur proximité mais sans rang. S’il y a moins de deux candidats classables, aucun classement n’est affiché.
         </p>
         <p>
-          <strong>Version rapide.</strong> Quatorze affirmations, deux par thème : celles où les positions des candidats sont les mieux documentées et
-          les plus éloignées les unes des autres. Le classement apparaît dès {R.quickMinAnswered} réponses, avec les mêmes règles appliquées à ces
-          quatorze questions, et il est annoncé comme indicatif.
+          <strong>Version rapide.</strong> {QUICK_ITEMS.length} affirmations, deux par thème : celles où les positions des candidats sont les mieux
+          documentées et les plus éloignées les unes des autres. Le classement apparaît dès {R.quickMinAnswered} réponses, avec les mêmes règles appliquées à
+          ces questions, et il est annoncé comme indicatif.
         </p>
         <p>
           Limite assumée : deux candidats classés ne sont pas toujours comparés sur exactement les mêmes questions. C’est pourquoi la part de tes réponses
@@ -152,6 +191,12 @@ export default function MethodPage() {
           <strong>Lignes rouges.</strong> Les questions sur lesquelles tu poses une ligne rouge apparaissent à part pour chaque candidat : « désaccord documenté » si
           l’écart atteint {ENGINE_CONFIG.redLineDistance * 4} crans, « position inconnue » ou « position ambiguë » sinon. Elles ne retirent aucun point et
           n’éliminent aucun candidat.
+        </p>
+        <p id="accords-rares">
+          <strong>Accords rares.</strong> Sur les questions où ta réponse est tranchée (« tout à fait ») ou porte une ligne rouge, les résultats signalent celles
+          où un ou deux candidats seulement sont de ton côté parmi ceux qui se sont prononcés. « De ton côté » veut dire : pour si tu es pour, contre si tu es
+          contre, intermédiaire si tu es intermédiaire ; une position codée entre deux niveaux ne compte que si tous ses niveaux sont de ton côté. Les questions
+          tranchées sur lesquelles aucun candidat ne s’est prononcé sont listées à part. Ces signalements ne changent aucun score.
         </p>
         <p>
           <strong>Lecture visuelle.</strong> Pour chaque candidat, une case par question répondue : proche (0 ou 1 cran d’écart), écart moyen (2 crans), opposé
@@ -209,11 +254,13 @@ export default function MethodPage() {
         </p>
         <p>
           Les positions sont codées automatiquement par une IA, avec les mêmes consignes pour tous les candidats. Ordre de préférence des sources :
-          programme 2027, déclarations publiques depuis 2024, programme présidentiel 2022, programme du parti. Chaque position est accompagnée d’une citation
+          programme 2027, déclarations publiques depuis 2024, programme présidentiel 2022, programme du parti. Les réponses d’un candidat au questionnaire
+          d’une association comptent comme une déclaration, à condition que la page publie sa réponse mot pour mot ; la note ou le classement attribué par
+          l’association n’est jamais repris. Chaque position est accompagnée d’une citation
           mot pour mot ; un programme retélécharge la page et vérifie que la citation y figure, sinon la position est marquée inconnue. La source et la
           citation sont affichées sur la fiche de chaque candidat. Le codage automatique peut se tromper sur l’intensité d’une position : si tu vois une
           erreur, signale-la, elle sera corrigée et la correction publiée. <Link href="/sources">Les sources</Link> ·{' '}
-          <Link href="/corrections">Les corrections</Link>
+          <Link href="/corrections">Les corrections</Link> · <a href="/donnees.json">Toutes les données (JSON)</a>
         </p>
 
         <h2 id="casier">Casier et affaires : ce qui est retenu</h2>

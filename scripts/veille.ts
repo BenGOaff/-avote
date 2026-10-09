@@ -50,7 +50,7 @@ const SEEN_FILE = process.env.SEEN_FILE || path.join(ROOT, 'content/veille/seen.
 const STATUS_FILE = path.join(ROOT, 'content/veille/status.json')
 
 const VOICE = readFileSync(path.join(ROOT, 'content/voix/profil-vocal.md'), 'utf8')
-const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.1.0.json'), 'utf8')) as { themes: { id: string; label: string }[] }
+const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.2.0.json'), 'utf8')) as { themes: { id: string; label: string }[] }
 const THEME_IDS = questionnaire.themes.map((t) => t.id)
 const { feeds } = JSON.parse(readFileSync(path.join(ROOT, 'content/veille/sources.json'), 'utf8')) as { feeds: FeedDef[] }
 
