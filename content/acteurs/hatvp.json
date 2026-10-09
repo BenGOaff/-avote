@@ -1,0 +1,95 @@
+{
+  "_note": "Pages nominatives HATVP des candidats, depuis l’open data officiel (liste.csv). Lien seulement.",
+  "source": "https://www.hatvp.fr/livraison/opendata/liste.csv",
+  "fetchedAt": "2026-10-09",
+  "pages": {
+    "edouard-philippe": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=philippe-edouard",
+      "mandats": [
+        "commune",
+        "intercommunalité"
+      ]
+    },
+    "gabriel-attal": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=attal-gabriel",
+      "mandats": [
+        "Assemblée nationale"
+      ]
+    },
+    "bruno-retailleau": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=retailleau-bruno",
+      "mandats": [
+        "Sénat"
+      ]
+    },
+    "david-lisnard": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=lisnard-david",
+      "mandats": [
+        "commune",
+        "département",
+        "intercommunalité"
+      ]
+    },
+    "marine-le-pen": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=le-pen-marine",
+      "mandats": [
+        "Assemblée nationale"
+      ]
+    },
+    "nicolas-dupont-aignan": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=dupont-aignan-nicolas",
+      "mandats": [
+        "commune"
+      ]
+    },
+    "francois-ruffin": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=ruffin-francois",
+      "mandats": [
+        "Assemblée nationale"
+      ]
+    },
+    "delphine-batho": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=batho-delphine",
+      "mandats": [
+        "Assemblée nationale"
+      ]
+    },
+    "karim-bouamrane": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=bouamrane-karim-18983",
+      "mandats": [
+        "commune",
+        "département"
+      ]
+    },
+    "olivier-becht": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=becht-olivier",
+      "mandats": [
+        "Assemblée nationale"
+      ]
+    },
+    "raphael-glucksmann": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=glucksmann-raphael-16012",
+      "mandats": [
+        "Parlement européen"
+      ]
+    },
+    "olivier-faure": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=faure-olivier",
+      "mandats": [
+        "Assemblée nationale"
+      ]
+    },
+    "emmanuel-maurel": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=maurel-emmanuel",
+      "mandats": [
+        "Assemblée nationale"
+      ]
+    },
+    "xavier-bertrand": {
+      "url": "https://www.hatvp.fr/fiche-nominative/?declarant=bertrand-xavier",
+      "mandats": [
+        "région"
+      ]
+    }
+  }
+}

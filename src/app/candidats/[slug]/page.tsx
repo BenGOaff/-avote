@@ -14,6 +14,7 @@ import { Portrait } from '@/components/Portrait'
 import { portraitOf } from '@/lib/images'
 import { nuanceOf } from '@/lib/nuances'
 import { NET_DEFINITION, patrimoineOf } from '@/lib/patrimoine'
+import { hatvpOf } from '@/lib/hatvp'
 import { VOTE_LABEL, VOTES_FETCHED_AT, VOTES_SOURCE, isDeputy, scrutinLabel, scrutinUrl, votesOf } from '@/lib/votes-an'
 import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
@@ -174,6 +175,7 @@ function PatrimoineBlock({ slug }: { slug: string }) {
               Source : {p.publisher}
             </a>
           </p>
+          <HatvpLink slug={slug} />
           <details className="sources">
             <summary>Ce que ce chiffre veut dire</summary>
             <p className="small">
@@ -189,7 +191,23 @@ function PatrimoineBlock({ slug }: { slug: string }) {
           de la vie publique après la validation des candidatures.
         </p>
       )}
+      {!p && <HatvpLink slug={slug} />}
     </section>
+  )
+}
+
+/** Lien vers la page officielle de la HATVP : déclarations d'intérêts et d'activités publiées, mandats concernés. */
+function HatvpLink({ slug }: { slug: string }) {
+  const h = hatvpOf(slug)
+  if (!h) return null
+  return (
+    <p className="small">
+      Déclarations publiées par la Haute Autorité pour la transparence de la vie publique ({h.mandats.join(', ')}) :{' '}
+      <a href={h.url} rel="noopener noreferrer nofollow" target="_blank">
+        sa page officielle
+      </a>
+      .
+    </p>
   )
 }
 
