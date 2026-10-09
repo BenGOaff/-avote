@@ -123,7 +123,7 @@ describe('classement (§10.6)', () => {
     const r1 = rankActors(set, answers, actors, positions, { mode: 'global' })
     const swapped = actors.map((a) => ({ ...a, name: a.name === 'Alpha' ? 'Bravo' : 'Alpha' }))
     const r2 = rankActors(set, answers, swapped, positions, { mode: 'global' })
-    const score = (r: typeof r1, slug: string) => r.entries.find((e) => e.slug === slug)?.commonScore
+    const score = (r: typeof r1, slug: string) => r.entries.find((e) => e.slug === slug)?.rankScore
     expect(score(r1, 'a')).toBe(score(r2, 'a'))
     expect(score(r1, 'b')).toBe(score(r2, 'b'))
     expect(r1.ranked).toBe(true)
@@ -138,6 +138,26 @@ describe('classement (§10.6)', () => {
     expect(r.reasons.length).toBeGreaterThan(0)
     // liste alphabétique annoncée
     expect(r.entries.map((e) => e.name)).toEqual(['Alpha', 'Bravo'])
+  })
+
+  it('classement par candidat documenté : le peu documenté est listé à part, sans rang', () => {
+    const answers = allAnswers(set, 1)
+    const three: Actor[] = [...actors, { slug: 'c', name: 'Charlie', status: 'fictif', summary: '' }]
+    const sparse = Object.fromEntries(set.items.slice(0, 3).map((i) => [i.id, val(1)]))
+    const r = rankActors(set, answers, three, { a: allPositions(set, 0), b: allPositions(set, 1), c: sparse }, { mode: 'global' })
+    expect(r.ranked).toBe(true)
+    expect(r.rankedCount).toBe(2)
+    expect(r.entries.map((e) => e.slug)).toEqual(['b', 'a', 'c'])
+    expect(r.entries[2]?.classable).toBe(false)
+  })
+
+  it('position entre deux niveaux : compte pour le milieu de son intervalle dans le classement', () => {
+    const answers = allAnswers(set, 2)
+    const amb: Record<string, Position> = Object.fromEntries(set.items.map((i) => [i.id, { set: [1, 2] as Ordinal[], status: 'ambigu' as const, sources: ['s'] }]))
+    const sc = scoreActor(set, answers, amb, itemWeights(set, themeWeights(set, 'global')), 'x')
+    expect(sc.rankScore).toBeCloseTo(87.5)
+    expect(sc.documented).toBeCloseTo(1)
+    expect(sc.observed).toBeNull()
   })
 
   it('pas de classement sous le seuil de réponses', () => {

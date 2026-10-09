@@ -1,6 +1,7 @@
 'use client'
+
 import Link from 'next/link'
-import { useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useMemo, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
 import { demoCorpus, liveCorpus, questionnaire as set, assertCompatible } from '@/lib/data'
 import { computeDimensions, type DimensionResult } from '@/lib/engine/dimensions'
@@ -146,7 +147,7 @@ export function ResultsView() {
                 </p>
               </div>
             ) : (
-              <Podium entries={ranking.entries} demo={demo} commonCount={ranking.commonItems.length} />
+              <Podium entries={ranking.entries.filter((e) => e.classable)} demo={demo} />
             )}
             {ranking.sensitive && <div className="alert alert--info small">{R.sensitive}</div>}
 
@@ -159,22 +160,29 @@ export function ResultsView() {
 
             <ol className="cands">
               {ranking.entries.map((e, i) => (
+                <Fragment key={e.slug}>
+                  {ranking.ranked && i === ranking.rankedCount && (
+                    <li className="cands__sep">
+                      <p className="cands__sep-title">{R.notDocumentedTitle}</p>
+                      <p className="small muted">{R.notDocumentedWhy}</p>
+                    </li>
+                  )}
                 <ActorResult
-                  key={e.slug}
                   e={e}
-                  rank={ranking.ranked ? i + 1 : null}
+                  rank={ranking.ranked && e.classable ? i + 1 : null}
                   corpus={corpus}
                   demo={demo}
                   essentials={state.essentials}
                   answers={answers}
                   onHide={() => setHidden([...(state.hiddenActors ?? []), e.slug])}
                 />
+                </Fragment>
               ))}
             </ol>
             {hidden.size > 0 && (
               <div className="alert" style={{ marginTop: 'var(--s4)' }}>
                 <p>
-                  Tu as masqué {hidden.size} candidat{hidden.size > 1 ? 's' : ''}. Cette sélection est personnelle ; le socle commun de comparaison a été recalculé.
+                  Tu as masqué {hidden.size} candidat{hidden.size > 1 ? 's' : ''}. Cette sélection est personnelle ; le classement a été recalculé.
                 </p>
                 <button className="btn btn--small btn--secondary" onClick={() => setHidden([])}>
                   Réafficher la liste complète
@@ -241,7 +249,7 @@ function VoterCard({ dims, priorities, redLineCount, ranking, demo }: { dims: Di
   const tied: RankingEntry[] = []
   if (top)
     for (const e of ranking!.entries.slice(1)) {
-      if (e.closeToPrevious && (top.commonScore ?? 0) - (e.commonScore ?? 0) < ENGINE_CONFIG.ranking.closeGap) tied.push(e)
+      if (e.classable && e.closeToPrevious && (top.rankScore ?? 0) - (e.rankScore ?? 0) < ENGINE_CONFIG.ranking.closeGap) tied.push(e)
       else break
     }
   const quip = resultQuip({ dims, ranking })
@@ -313,7 +321,7 @@ function VoterCard({ dims, priorities, redLineCount, ranking, demo }: { dims: Di
                 {demo && <span className="badge badge--demo" style={{ marginLeft: 'var(--s2)' }}>Fictif</span>}
               </p>
               <p className="small muted" style={{ margin: 0 }}>
-                {tied.length > 0 ? `${R.tie} : moins de 2 points d’écart.` : `${fmt(top.commonScore ?? 0)} sur 100 sur les questions communes.`}
+                {tied.length > 0 ? `${R.tie} : moins de 2 points d’écart.` : `${fmt(top.rankScore ?? 0)} sur 100 sur tes réponses.`}
               </p>
             </>
           ) : (
@@ -332,7 +340,7 @@ function VoterCard({ dims, priorities, redLineCount, ranking, demo }: { dims: Di
 // Podium (seulement quand un classement est publiable)
 // ---------------------------------------------------------------------------
 
-function Podium({ entries, demo, commonCount }: { entries: RankingEntry[]; demo: boolean; commonCount: number }) {
+function Podium({ entries, demo }: { entries: RankingEntry[]; demo: boolean }) {
   const top = entries.slice(0, 3)
   if (top.length < 2) return null
   const order = top.length === 3 ? [top[1]!, top[0]!, top[2]!] : [top[1]!, top[0]!]
@@ -341,7 +349,7 @@ function Podium({ entries, demo, commonCount }: { entries: RankingEntry[]; demo:
       <div className="podium" role="list">
         {order.map((e) => {
           const rank = entries.indexOf(e) + 1
-          const score = e.commonScore ?? 0
+          const score = e.rankScore ?? 0
           return (
             <div key={e.slug} role="listitem" className={`podium__col podium__col--${rank}`} aria-label={`${rank}e : ${e.name}, ${fmt(score)} sur 100`}>
               <span className="podium__name">
@@ -357,7 +365,8 @@ function Podium({ entries, demo, commonCount }: { entries: RankingEntry[]; demo:
         })}
       </div>
       <figcaption className="small muted">
-        Sur les {commonCount} questions où tous les candidats affichés ont une position connue.{demo && ' Candidats fictifs.'}
+        {R.podiumCaption}
+        {demo && ' Candidats fictifs.'}
       </figcaption>
     </figure>
   )
@@ -452,10 +461,9 @@ function ActorResult({
       </div>
 
       <div className="cand__body">
-        <Gauge value={s.observed} low={s.low} high={s.high} label={e.name} size={104} />
+        <Gauge value={s.rankScore} low={s.low} high={s.high} label={e.name} size={104} />
         <p className="small cand__cover">
-          Positions connues sur <strong>{fmtPct(s.coverage)}</strong> de tes réponses. Selon ce qui manque, entre {fmt(s.low)} et {fmt(s.high)}.
-          {rank !== null && e.commonScore !== null && <span className="muted"> Socle commun : {fmt(e.commonScore)}.</span>}
+          Position connue sur <strong>{fmtPct(s.documented)}</strong> de tes réponses. Selon ce qui manque, entre {fmt(s.low)} et {fmt(s.high)}.
         </p>
         <div className="cand__facts">
           <AgreementStrip contributions={s.contributions} themes={set.themes} name={e.name} />

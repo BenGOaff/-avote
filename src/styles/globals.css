@@ -3119,3 +3119,13 @@ details.disclosure > div {
     scroll-snap-align: start;
   }
 }
+.cands__sep {
+  list-style: none;
+  padding: var(--s5) 0 var(--s2);
+  border-top: var(--border) dashed var(--line);
+}
+.cands__sep-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--h3);
+}
