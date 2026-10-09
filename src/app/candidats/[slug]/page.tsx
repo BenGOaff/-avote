@@ -13,6 +13,7 @@ import fiches from '@content/acteurs/fiches.json'
 import { Portrait } from '@/components/Portrait'
 import { portraitOf } from '@/lib/images'
 import { nuanceOf } from '@/lib/nuances'
+import { NET_DEFINITION, patrimoineOf } from '@/lib/patrimoine'
 
 export const dynamicParams = false
 
@@ -75,8 +76,10 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
         </p>
         <p className="muted">
           {known > 0 ? `${known} positions connues sur ${questionnaire.items.length}.` : 'Positions en cours de collecte.'}{' '}
-          <Link href="/methodologie#codage">Comment c’est codé</Link> · <Link href="/corrections#signaler">Signaler une erreur</Link>
+          <Link href="/methodologie#codage">Comment c’est codé</Link> ·{' '}
+          <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${a.slug}`)}`}>Signaler une erreur</Link>
         </p>
+        <PatrimoineBlock slug={a.slug} />
       </div>
 
       {fiche && (
@@ -147,5 +150,41 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
         </Link>
       </p>
     </div>
+  )
+}
+
+/** Patrimoine déclaré : le chiffre publié, sa date, son contexte, et ce qu'il n'est pas. */
+function PatrimoineBlock({ slug }: { slug: string }) {
+  const p = patrimoineOf(slug)
+  return (
+    <section className="patrimoine" aria-labelledby="patrimoine">
+      <h2 id="patrimoine" className="patrimoine__title">
+        Patrimoine déclaré
+      </h2>
+      {p ? (
+        <>
+          <p className="patrimoine__amount">{p.label}</p>
+          <p className="small">
+            {p.kind === 'net' ? 'Patrimoine net' : 'Patrimoine estimé'}, {p.context}.{' '}
+            <a href={p.url} rel="noopener noreferrer nofollow" target="_blank">
+              Source : {p.publisher}
+            </a>
+          </p>
+          <details className="sources">
+            <summary>Ce que ce chiffre veut dire</summary>
+            <p className="small">
+              Montant déclaré sur l’honneur par le candidat, tel que publié à l’époque. Ça vote ? ne l’a pas recalculé. {p.kind === 'net' ? `${NET_DEFINITION}.` : 'Le résumé publié ne précise pas les dettes.'}{' '}
+              Les déclarations des candidats de 2027 seront publiées par la Haute Autorité pour la transparence de la vie publique après la validation des
+              candidatures.
+            </p>
+          </details>
+        </>
+      ) : (
+        <p className="small muted">
+          Pas de déclaration publiée qu’on puisse reprendre. Celles des candidats de 2027 seront rendues publiques par la Haute Autorité pour la transparence
+          de la vie publique après la validation des candidatures.
+        </p>
+      )}
+    </section>
   )
 }
