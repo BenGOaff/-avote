@@ -1,8 +1,8 @@
 {
-  "version": "live-202610091347",
+  "version": "live-202610091425",
   "mode": "live",
   "questionSet": "0.2.0",
-  "publishedAt": "2026-10-09T13:47:01.862Z",
+  "publishedAt": "2026-10-09T14:25:28.451Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -299,11 +299,15 @@
         "codedAt": "2026-10-08T14:44:37.471Z"
       },
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "51c4840289641780"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Revendique la hausse des effectifs engagée quand il était Premier ministre ; pas d'objectif chiffré pour le prochain quinquennat."
       },
       "sec-02": {
         "value": -2,
@@ -683,6 +687,39 @@
         "codedBy": "ia",
         "codedAt": "2026-10-09T13:44:39.674Z",
         "note": "Propos tenus au congrès de la Fnaim le 8 décembre 2025 : suspension temporaire ou adaptation, pas abandon."
+      },
+      "lib-07": {
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "86a89fbaad2472af"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Propos tenus sur France 2 (L'Heure de vérité)."
+      },
+      "eur-07": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "352df34e9119a5ef"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Propos tenus sur France 2 (L'Heure de vérité)."
+      },
+      "eur-09": {
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "8fde0ff896831119"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Discours du candidat."
       }
     },
     "gabriel-attal": {
@@ -821,11 +858,18 @@
         "note": "Texte du site de campagne résumant son entretien au Parisien. Engagement général de ne hausser aucun impôt pendant le quinquennat, sans mention spécifique de l'impôt sur le revenu des plus aisés. Même engagement en juin 2024, comme Premier "
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La seule source trouvée résume le candidat sans le citer.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "8d0e63053883dbbf"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:56:57.498Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Vote contre la « taxe Zucman » (impôt plancher de 2 % sur les patrimoines de plus de 100 millions d’euros). Vote, pas engagement ; il refuse par ailleurs toute hausse d’impôts."
       },
       "eco-03": {
         "value": 1,
@@ -846,11 +890,18 @@
         "codedAt": "2026-10-08T14:49:46.768Z"
       },
       "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "155587cbd725f81a"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:49:46.768Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Présentation du programme d’Ensemble aux législatives 2024, comme Premier ministre. En 2026, il privilégie la baisse des cotisations salariales (« Droit au brut ») et refuse une TVA sociale patronale."
       },
       "eco-06": {
         "missing": true,
@@ -1252,6 +1303,64 @@
         "basis": "declaration",
         "codedBy": "ia",
         "codedAt": "2026-10-09T13:47:01.862Z"
+      },
+      "edu-01": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "51d73832dd00dd02"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Déclaration de politique générale comme Premier ministre : « le Gouvernement soutient l’expérimentation de l’uniforme à l’école », généralisation conditionnée au bilan de l’expérimentation."
+      },
+      "dem-07": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "d4113a1ede4c4a44"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Entretien au JDD, en réponse à la question « Comptez-vous toujours réduire le nombre de parlementaires et d’élus ? » : « Oui. »"
+      },
+      "san-01": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "eb599ed143179592"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Réponse, comme Premier ministre, à un député qui réclamait « la régulation de l’installation des médecins » : il oppose qu’il faut former davantage de médecins (« Le problème est donc le nombre de médecins ») et libérer du temps médical, sa"
+      },
+      "eur-10": {
+        "value": -1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "bf98fc6c2008ae14"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Réponse, comme Premier ministre, à un député qui lui demandait de « faire cesser toute exportation d'armes françaises en direction d'Israël » : il défend des exportations « très limitées » et ne prend pas cet engagement. Position de 2024, p"
+      },
+      "cli-07": {
+        "value": -1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "dd878a713f8ba00c"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Réponse de Gabriel Attal, au débat de TF1, à Jordan Bardella qui proposait « un moratoire sur la construction de nouveaux projets éoliens ». Son plan 2026 défend aussi « l’accélération des énergies renouvelables » à côté du nucléaire."
       }
     },
     "bruno-retailleau": {
@@ -1329,11 +1438,18 @@
         "note": "Déclaration publique depuis 2024 (entretien Europe 1 / CNews, alors ministre de l'Intérieur). Position catégorique, renforcée dans le même article par l'argument des garde-fous qui « sautent les uns après les autres »."
       },
       "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c19a4fc8b5f3e333"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Vote Pour (liste « Pour » du groupe Les Républicains) sur la loi interdisant l’accès aux réseaux sociaux aux moins de 15 ans, censurée ensuite par le Conseil constitutionnel."
       },
       "lib-03": {
         "value": -2,
@@ -1646,11 +1762,18 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c533e165bc808558"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Vote Pour l’amendement de la commission des finances qui réduisait de 200 millions d’euros les crédits de l’aide publique au développement (amendement rejeté)."
       },
       "log-01": {
         "value": -2,
@@ -1899,6 +2022,64 @@
         "codedBy": "ia",
         "codedAt": "2026-10-09T13:44:39.674Z",
         "note": "Lie toute hausse des franchises à une remise en cause de l’aide médicale d’État."
+      },
+      "eur-07": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "f964350b65761528"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Intervention de Bruno Retailleau, président du groupe LR ; dans le même discours : « Ce qui compte, c’est le soutien militaire immédiat, non les promesses de demain. »"
+      },
+      "sec-09": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "1251429f84396fb1"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Propos tenus sur TF1 alors qu’il venait d’être nommé ministre de l’Intérieur."
+      },
+      "lib-09": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "1774323d02028733"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Proposition de loi présentée par Jacqueline Eustache-Brinio et Bruno Retailleau (deuxième signataire). Il a ensuite voté pour l’ensemble du texte adopté au Sénat le 28 mai 2024 (scrutin n° 204), où l’interdiction des bloqueurs avait été ass"
+      },
+      "tra-09": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "6e586296ba77bfe1"
+        ],
+        "basis": "vote",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Vote Pour le rétablissement de l’article 44 du PLFSS 2026, qui gelait en 2026 les pensions de retraite (hors pensions inférieures à 1 400 euros) au lieu de les revaloriser sur l’inflation. Il défend aussi publiquement une « année blanche »."
+      },
+      "cli-08": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "86c387b7d0cdfe95"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Le mécanisme proposé est un contrat pour différence entre EDF et les fournisseurs, avec un prix de référence fixé par la CRE : prix fondé sur les coûts français sans sortie formelle du marché européen."
       }
     },
     "david-lisnard": {
@@ -3938,6 +4119,34 @@
         "codedBy": "ia",
         "codedAt": "2026-10-09T13:44:39.674Z",
         "note": "Privatisation partielle : il garde un audiovisuel public recentré sur la culture et l'international (France 5, France Culture, Arte, France 24…)."
+      },
+      "log-02": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "a816fcea4ab0e1aa"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Programme présidentiel 2022. Il veut aussi abroger la loi SRU, qui impose un quart de logements sociaux. Il ne propose pas de couper tout financement, seulement dans les villes qui en ont déjà plus d'un tiers, d'où le set [-2, -1]."
+      },
+      "cli-08": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "687f7e7e018d7c65"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Programme de Reconquête aux européennes de 2024. Il veut supprimer les règles de concurrence du marché européen de l'électricité, sans dire explicitement qu'il faut en sortir. Son programme 2022 remplaçait déjà l'ARENH par un tarif régulé d"
       }
     },
     "nicolas-dupont-aignan": {
@@ -7964,11 +8173,18 @@
     },
     "francois-ruffin": {
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "c08f0053deb8c57f"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Il réclame plus de moyens pour les enquêteurs de police (et douanes, impôts) contre le narcotrafic, sans chiffre d’effectifs général."
       },
       "sec-02": {
         "missing": true,
@@ -8049,11 +8265,15 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "ce179dcfca6c2d9d"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Intervention en séance sur la vie chère dans les outre-mer."
       },
       "eco-05": {
         "missing": true,
@@ -8127,11 +8347,15 @@
         "note": "Source : déclaration publique du candidat (blog officiel). Il refuse explicitement toute extension aux mères accompagnatrices, aux étudiants et aux licenciés sportifs, et défend la loi de 2004 telle qu'elle est. Opposition jugée catégorique"
       },
       "eur-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "78ddc7a80cafc0ba"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Texte signé par François Ruffin. Il défend une « Europe des coopérations » entre nations volontaires, « et non par le supranational »."
       },
       "eur-02": {
         "value": 2,
@@ -8170,11 +8394,18 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "fe2508d3c267c6e5"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Texte signé par François Ruffin. Pas de montant ni d’objectif chiffré."
       },
       "tra-01": {
         "value": 2,
@@ -8202,11 +8433,18 @@
         "note": "Texte du parti. « Le faire » renvoie à la taxation des plus hauts revenus et patrimoines : de nouvelles recettes pour, entre autres, l’hôpital."
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "75b439b683c0c7e4"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Il réclame des embauches massives d’enseignants et la fin des suppressions de postes, sans objectif chiffré d’élèves par classe."
       },
       "tra-04": {
         "value": 2,
@@ -8475,6 +8713,92 @@
         "codedBy": "ia",
         "codedAt": "2026-10-09T13:44:39.674Z",
         "note": "Le cahier « Pour une exception agriculturelle française » prévoit aussi d'interdire les importations à des prix inférieurs aux prix planchers fixés nationalement."
+      },
+      "cli-08": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "29395d1aa00daabb"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Sortie « progressive » du marché de l’électricité, prix fondés sur les coûts réels de production."
+      },
+      "eur-07": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "e90e9addcdb8bcac"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Intervention en séance. Il s’est abstenu sur la résolution, opposé à l’adhésion de l’Ukraine à l’UE."
+      },
+      "san-03": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "624b75a5af8f085c"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Intervention en séance sur le PLFSS 2026."
+      },
+      "san-02": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "624b75a5af8f085c"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Il s’oppose au doublement des franchises et veut un remboursement intégral, sans demander explicitement leur suppression."
+      },
+      "eco-08": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "68fd9d7b13110713"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Exonération de la transmission de la résidence jusqu’à 300 000 euros, avec une hausse de l’imposition des plus gros patrimoines (1 % et 0,1 %)."
+      },
+      "dem-10": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "3ce4ba121532bab4"
+        ],
+        "basis": "vote",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Vote pour l’article premier (anti-concentration des médias), adopté. En séance, il défend l’indépendance de la presse « à l’égard des puissances d’argent ». Un vote n’est pas un engagement de campagne."
+      },
+      "ani-01": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "1701b518c2c180f5"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Objectif de fin de l’élevage intensif ; son plan agricole 2027 précise que cette transition « ne s’imposera pas à coups de normes », mais sera rémunérée et accompagnée."
       }
     },
     "delphine-batho": {
@@ -11265,11 +11589,18 @@
     },
     "raphael-glucksmann": {
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "3e567fc3de73af9e"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:15:43.358Z"
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Hausse d’effectifs limitée aux enquêteurs spécialisés contre le narcotrafic ; pas d’objectif global pour la police et la gendarmerie."
       },
       "sec-02": {
         "missing": true,
@@ -11810,6 +12141,31 @@
         "codedBy": "ia",
         "codedAt": "2026-10-09T13:44:39.674Z",
         "note": "Programme européen 2024 : harmonisation « par le haut » des législations sur la PMA, ce qui exclut de supprimer l’accès ouvert en 2021."
+      },
+      "cli-05": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "39e831c7d9441e1f"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Tarif abordable, pas la gratuité ; d’abord réservé aux jeunes et aux publics précaires."
+      },
+      "ani-05": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "bfd74387a3933969"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T14:25:28.451Z",
+        "note": "Encadrement strict du commerce des animaux de compagnie, pas d’interdiction de l’élevage destiné à la vente."
       }
     },
     "bernard-cazeneuve": {
@@ -20933,28 +21289,295 @@
       "publisher": "becht2027.fr (site de campagne)",
       "url": "https://becht2027.fr/projet-france/les-5-refondations/refondation-securite/",
       "passage": "Afin de mettre durablement les criminels hors d’état de nuire, nous créerons davantage de places dans des prisons de haute sécurité, de manière à ce que les peines prononcées puissent réellement être exécutées."
+    },
+    {
+      "id": "f964350b65761528",
+      "title": "Compte rendu intégral de la séance du 13 mars 2024 (déclaration du Gouvernement sur l’accord de sécurité franco-ukrainien)",
+      "publisher": "Sénat",
+      "url": "https://www.senat.fr/seances/s202403/s20240313/s20240313_mono.html",
+      "date": "2024-03-13",
+      "passage": "Aussi, plutôt que des promesses lointaines et incertaines ou des déclarations guerrières, il faut donner dès aujourd’hui à l’Ukraine les moyens de se défendre."
+    },
+    {
+      "id": "1251429f84396fb1",
+      "title": "Intérieur-Justice : « Je veillerai à avoir de bonnes relations avec Didier Migaud », veut rassurer Bruno Retailleau",
+      "publisher": "Public Sénat",
+      "url": "https://www.publicsenat.fr/actualites/politique/interieur-justice-je-veillerai-a-avoir-de-bonnes-relations-avec-didier-migaud-veut-rassurer-bruno-retailleau",
+      "date": "2024-09-24",
+      "passage": "Il faut construire des prisons. Ce n’est pas mon domaine mais j’en parlerai très librement avec Didier Migaud"
+    },
+    {
+      "id": "1774323d02028733",
+      "title": "Proposition de loi n° 435 visant à encadrer les pratiques médicales mises en œuvre dans la prise en charge des mineurs en questionnement de genre",
+      "publisher": "Sénat",
+      "url": "https://www.senat.fr/leg/ppl23-435.pdf",
+      "date": "2024-03-19",
+      "passage": "l’article 1er interdit aux professionnels de santé, dans l’indication de la dysphorie de genre, de prescrire aux mineurs des bloqueurs de puberté, ainsi que des traitements hormonaux"
+    },
+    {
+      "id": "c19a4fc8b5f3e333",
+      "title": "Scrutin n° 337 - séance du 21 juillet 2026 sur l’ensemble de la proposition de loi visant à protéger les mineurs des risques auxquels les expose l’utilisation des réseaux sociaux",
+      "publisher": "Sénat",
+      "url": "https://www.senat.fr/scrutin-public/2025/scr2025-337.html",
+      "date": "2026-07-21",
+      "passage": "MM. Bruno Retailleau, Hervé Reynaud, Mme Marie-Pierre Richer, MM. Olivier Rietmann, Bruno Rojouan"
+    },
+    {
+      "id": "6e586296ba77bfe1",
+      "title": "Scrutin n° 57 - séance du 25 novembre 2025 sur les amendements tendant à rétablir l’article 44 du projet de loi de financement de la sécurité sociale pour 2026",
+      "publisher": "Sénat",
+      "url": "https://www.senat.fr/scrutin-public/2025/scr2025-57.html",
+      "date": "2025-11-25",
+      "passage": "MM. Bruno Retailleau, Hervé Reynaud, Mme Marie-Pierre Richer, MM. Olivier Rietmann, Bruno Rojouan"
+    },
+    {
+      "id": "c533e165bc808558",
+      "title": "Scrutin n° 110 - séance du 9 décembre 2025 sur l’amendement n° II-1 sur les crédits de la mission « Aide publique au développement » (PLF 2026)",
+      "publisher": "Sénat",
+      "url": "https://www.senat.fr/scrutin-public/2025/scr2025-110.html",
+      "date": "2025-12-09",
+      "passage": "Mme Frédérique Puissat, M. Jean-François Rapin, Mme évelyne Renaud-Garabedian, MM. Bruno Retailleau, Hervé Reynaud, Olivier Rietmann"
+    },
+    {
+      "id": "86c387b7d0cdfe95",
+      "title": "Stabiliser le prix de l’électricité (projet Retailleau 2027)",
+      "publisher": "Retailleau 2027",
+      "url": "https://www.avecretailleau.fr/projet/mesure/stabiliser-le-prix-de-l-electricite",
+      "date": "2026-09-22",
+      "passage": "Nous allons rendre aux Français l'avantage qu'ils ont financé. « Un prix indexé sur nos coûts de production , plus sur les marchés. »"
+    },
+    {
+      "id": "86a89fbaad2472af",
+      "title": "Immigration, allocations familiales, Parcoursup… Ce qu'il faut retenir de l'interview d'Edouard Philippe dans l'émission \"L'Heure de vérité\" sur France 2",
+      "publisher": "franceinfo",
+      "url": "https://www.franceinfo.fr/politique/edouard-philippe/immigration-retraites-allocations-familiales-parcoursup-ce-qu-il-faut-retenir-de-l-interview-d-edouard-philippe-dans-l-emission-l-heure-de-verite_8228416.html",
+      "date": "2026-10-08",
+      "passage": "Je suis contre la GPA, parce que je pense qu'elle mène à une forme de marchandisation à laquelle je suis opposé"
+    },
+    {
+      "id": "352df34e9119a5ef",
+      "title": "Immigration, allocations familiales, Parcoursup… Ce qu'il faut retenir de l'interview d'Edouard Philippe dans l'émission \"L'Heure de vérité\" sur France 2",
+      "publisher": "franceinfo",
+      "url": "https://www.franceinfo.fr/politique/edouard-philippe/immigration-retraites-allocations-familiales-parcoursup-ce-qu-il-faut-retenir-de-l-interview-d-edouard-philippe-dans-l-emission-l-heure-de-verite_8228416.html",
+      "date": "2026-10-08",
+      "passage": "Aider l'Ukraine dans sa défense pour sa souveraineté, contre l'agression russe, c'est aider les intérêts de la France, parce que ça nous permet d'éviter que la Russie fasse peser sur nous une pression"
+    },
+    {
+      "id": "8fde0ff896831119",
+      "title": "Discours d'Édouard Philippe lors du Conseil national à Reims (10 mai 2026)",
+      "publisher": "Horizons",
+      "url": "https://horizonsleparti.fr/discours-dedouard-philippe-lors-du-conseil-national-a-reims-10-mai-2026/",
+      "date": "2026-05-10",
+      "passage": "En juin 2015, Mme Le Pen était surnommée « Mme Frexit ». Mais ça, c’était avant que d’autres populistes, au Royaume-Uni, plongent leur pays, ses entreprises, ses agriculteurs, et ses classes moyennes dans le marasme du Brexit."
+    },
+    {
+      "id": "51c4840289641780",
+      "title": "Discours d'Édouard Philippe lors du Conseil national à Reims (10 mai 2026)",
+      "publisher": "Horizons",
+      "url": "https://horizonsleparti.fr/discours-dedouard-philippe-lors-du-conseil-national-a-reims-10-mai-2026/",
+      "date": "2026-05-10",
+      "passage": "Je suis fier d’avoir commencé à recruter 10 000 policiers et gendarmes, parce qu’il y avait urgence et il y avait nécessité."
+    },
+    {
+      "id": "a816fcea4ab0e1aa",
+      "title": "Mon programme pour que la France reste la France (présidentielle 2022)",
+      "publisher": "Reconquête (programme d'Éric Zemmour)",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
+      "date": "2022-03-25",
+      "passage": "Mettre fin au financement de logements sociaux dans les villes qui en comptent déjà plus d’un tiers"
+    },
+    {
+      "id": "687f7e7e018d7c65",
+      "title": "Notre projet pour l'Europe des nations et de la civilisation (européennes 2024)",
+      "publisher": "Reconquête",
+      "url": "https://assets.ericzemmour.fr/document/Programme%20Reconqu%C3%AAte%20Europ%C3%A9ennes%202024.pdf",
+      "passage": "Baisser les factures d’électricité des Français en réduisant les taxes sur l’énergie, en supprimant les règles de concurrence du marché européen de l’électricité qui obligent notamment EDF à vendre un quart de sa production d’électricité à des concurrents artificiels"
+    },
+    {
+      "id": "29395d1aa00daabb",
+      "title": "Plan « Travaillisme écologique » (Proposition 5 — Sortir progressivement du marché de l’électricité)",
+      "publisher": "Nous président ! (campagne de François Ruffin)",
+      "url": "https://nouspresident.fr/travaillisme-ecologique/",
+      "passage": "nous organiserons une sortie progressive du marché de l’électricité. 1 / Nous supprimerons la concurrence sur la vente d’électricité aux consommateurs : fini la spéculation et le démarchage téléphonique abusif, retour à un service public dont les prix de vente seront basés sur les coûts réels de production."
+    },
+    {
+      "id": "e90e9addcdb8bcac",
+      "title": "Compte rendu, première séance du mercredi 12 mars 2025 (résolution européenne sur le soutien à l’Ukraine)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-12-mars-2025",
+      "date": "2025-03-12",
+      "passage": "Je suis plus que jamais favorable au maintien de notre appui militaire à l’Ukraine. Des pourparlers débutent. Les négociations ne doivent pas tourner à la capitulation ; le front ne doit pas être percé ; Odessa ne doit pas tomber."
+    },
+    {
+      "id": "78ddc7a80cafc0ba",
+      "title": "Pour une déclaration d’indépendance : la doctrine Ruffin sur l’Europe",
+      "publisher": "Le Grand Continent",
+      "url": "https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope/",
+      "date": "2026-02-25",
+      "passage": "La France doit s’y opposer avec fermeté : la diplomatie et la défense relèvent des États et doivent le rester. La Commission dispose déjà d’assez de « compétences », et notamment ce levier clef : la politique commerciale."
+    },
+    {
+      "id": "fe2508d3c267c6e5",
+      "title": "Pour une déclaration d’indépendance : la doctrine Ruffin sur l’Europe",
+      "publisher": "Le Grand Continent",
+      "url": "https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope/",
+      "date": "2026-02-25",
+      "passage": "Que nous apportions un soutien, là où il en est besoin en matière médicale, pharmaceutique, contre la malaria, le choléra, les épidémies. Que nous compensions, en partie au moins, les coupes effectuées par Donald Trump dans les budgets d’aide au développement américains."
+    },
+    {
+      "id": "ce179dcfca6c2d9d",
+      "title": "Compte rendu, première séance du mardi 29 avril 2025 (vie chère dans les outre-mer)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mardi-29-avril-2025",
+      "date": "2025-04-29",
+      "passage": "La solution est beaucoup plus simple : que l’État mène des enquêtes sur la formation des prix de l’eau, des pâtes, du sucre, des couches et qu’il fixe les prix en accordant à chacun une marge raisonnable."
+    },
+    {
+      "id": "624b75a5af8f085c",
+      "title": "Compte rendu, deuxième séance du samedi 8 novembre 2025 (PLFSS 2026)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-samedi-08-novembre-2025",
+      "date": "2025-11-08",
+      "passage": "Nous souhaitons que la sécurité sociale remplisse pleinement son rôle en remboursant intégralement tous les soins. Nous nous opposerons donc au doublement des franchises médicales."
+    },
+    {
+      "id": "68fd9d7b13110713",
+      "title": "Compte rendu, première séance du lundi 3 novembre 2025 (PLF 2026)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-lundi-03-novembre-2025",
+      "date": "2025-11-03",
+      "passage": "Il faut d’emblée préciser qu’on ne parle pas des héritages des Français ordinaires. Personnellement, je serais même favorable à ce qu’à hauteur de 300 000 euros – de quoi acheter déjà une belle maison –, il soit possible de transmettre sa résidence sans avoir à payer 1 euro d’impôt."
+    },
+    {
+      "id": "3ce4ba121532bab4",
+      "title": "Analyse du scrutin n°5412 – article premier de la proposition de loi visant à empêcher la constitution de monopoles économiques dans le secteur des médias d’information (première lecture)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/5412",
+      "date": "2026-02-12",
+      "passage": "Écologiste et Social (38 membres) Pour : 36 M. Pouria Amirshahi Mme Christine Arrighi Mme Léa Balage El Mariky Mme Delphine Batho Mme Lisa Belluco M. Karim Ben Cheikh M. Benoît Biteau M. Arnaud Bonnet M. Nicolas Bonnet Mme Cyrielle Chatelain M. Alexis Corbière M. Hendrik Davi M. Emmanuel Duplessy M. Charles Fournier Mm"
+    },
+    {
+      "id": "1701b518c2c180f5",
+      "title": "Mépris de chasse",
+      "publisher": "francoisruffin.fr",
+      "url": "https://francoisruffin.fr/mepris-de-chasse/",
+      "date": "2025-09-12",
+      "passage": "Ce sont les élevages, ma priorité : mettre fin à l’intensif, que les poules, vaches, cochons ne soient plus du « minerai », que les bêtes voient l’herbe et le jour"
+    },
+    {
+      "id": "75b439b683c0c7e4",
+      "title": "Oudéa-Castéra : la France d’en haut déclare la « guerre scolaire »",
+      "publisher": "francoisruffin.fr",
+      "url": "https://francoisruffin.fr/oudea-castera-guerre-scolaire/",
+      "date": "2024-01-15",
+      "passage": "Se sont-ils battus pour le remplacement des profs ? Pour des embauches massives, autrement qu’en job dating ? Pour relever, vraiment, le budget de l’Education ? Pour que le doublement des classes en CP ne masque pas les suppressions de postes dans les collèges et lycées ? Non."
+    },
+    {
+      "id": "c08f0053deb8c57f",
+      "title": "Compte rendu, première séance du mardi 18 mars 2025 (proposition de loi sur le narcotrafic)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mardi-18-mars-2025",
+      "date": "2025-03-18",
+      "passage": "Il faut nous y aider en prévoyant des moyens : les budgets nécessaires pour les inspecteurs des douanes, pour les inspecteurs des impôts, pour les inspecteurs de police et les officiers de police judiciaire, afin qu’ils puissent mener de longues enquêtes, dans la durée."
+    },
+    {
+      "id": "51d73832dd00dd02",
+      "title": "Assemblée nationale, compte rendu de la deuxième séance du mardi 30 janvier 2024 (déclaration de politique générale du Premier ministre Gabriel Attal)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/session-ordinaire-de-2023-2024/deuxieme-seance-du-mardi-30-janvier-2024",
+      "date": "2024-01-30",
+      "passage": "si cette expérimentation est concluante, nous généraliserons l’uniforme en France à la rentrée 2026."
+    },
+    {
+      "id": "8d0e63053883dbbf",
+      "title": "Scrutin public n°881 sur l'ensemble de la proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra riches (première lecture)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/881",
+      "date": "2025-02-20",
+      "passage": "Ensemble pour la République (94 membres) Contre : 16 M. David Amiel M. Gabriel Attal"
+    },
+    {
+      "id": "d4113a1ede4c4a44",
+      "title": "EXCLUSIF. Gabriel Attal : «Je propose la plus grande réforme institutionnelle depuis 1958»",
+      "publisher": "Le JDD",
+      "url": "https://www.lejdd.fr/politique/exclusif-gabriel-attal-je-propose-la-plus-grande-reforme-institutionnelle-depuis-1958-180333",
+      "date": "2026-08-01",
+      "passage": "Je propose de ramener le nombre de députés à 350 et celui des sénateurs à 200. C’est d’abord une question d’efficacité : notre Parlement est trop pléthorique pour bien fonctionner."
+    },
+    {
+      "id": "155587cbd725f81a",
+      "title": "Législatives : Gabriel Attal présente le programme de la coalition présidentielle et appelle au \"vote utile dès le 1er tour pour contrer les extrêmes\"",
+      "publisher": "LCP",
+      "url": "https://lcp.fr/actualites/legislatives-gabriel-attal-presente-le-programme-de-la-coalition-presidentielle-et",
+      "date": "2024-06-20",
+      "passage": "baisser les charges au-dessus du SMIC pour que les entreprises revalorisent les salariés"
+    },
+    {
+      "id": "eb599ed143179592",
+      "title": "Question au Gouvernement n° 1791 : Lutte contre les déserts médicaux (réponse du Premier ministre)",
+      "publisher": "Assemblée nationale",
+      "url": "https://questions.assemblee-nationale.fr/dyn/16/questions/QANR5L16QG1791.pdf",
+      "date": "2024-04-11",
+      "passage": "En réalité, le problème n'est pas seulement le lieu d'installation."
+    },
+    {
+      "id": "bf98fc6c2008ae14",
+      "title": "Question au Gouvernement n° 1788 : Exportation d’armes vers Israël (réponse du Premier ministre)",
+      "publisher": "Assemblée nationale",
+      "url": "https://questions.assemblee-nationale.fr/dyn/16/questions/QANR5L16QG1788.pdf",
+      "date": "2024-04-11",
+      "passage": "Ensuite, comme l'a rappelé M. Lecornu, ces exportations consistent principalement en composants qui servent au système de défense israélien."
+    },
+    {
+      "id": "dd878a713f8ba00c",
+      "title": "Législatives 2024 : ce qu'il faut retenir du débat entre Jordan Bardella, Manuel Bompard et Gabriel Attal",
+      "publisher": "Europe 1",
+      "url": "https://www.europe1.fr/node/12883",
+      "date": "2024-06-25",
+      "passage": "Comment faites-vous pour répondre à la demande d'électricité, en attendant la mise en service de réacteurs nucléaires, sans les éoliennes ?"
+    },
+    {
+      "id": "39e831c7d9441e1f",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Faire le Ticket climat : un titre de transport unique, à tarif fixe, abordable et valable à l’échelle nationale pour les transports du quotidien, d’abord réservé aux jeunes et aux publics précaires."
+    },
+    {
+      "id": "bfd74387a3933969",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Lancer un plan de défense des animaux de compagnie en renforçant leur traçabilité, en encadrant strictement leur commerce"
+    },
+    {
+      "id": "3e567fc3de73af9e",
+      "title": "Acte I – Notre vision pour la France : les chantiers de Place publique",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/document/3Ari5O0s5O1L4iK1uyUhI0/pp-acte-un.pdf",
+      "passage": "Muscler les moyens d’enquête contre le narcotrafic (plus d’effectifs spécialisés, un service national de renseignement criminel, cyber-enquête, coordination renforcée douanes-parquets…)"
     }
   ],
   "refreshedAt": {
-    "edouard-philippe": "2026-10-09T13:44:39.674Z",
-    "gabriel-attal": "2026-10-09T13:47:01.862Z",
-    "bruno-retailleau": "2026-10-09T13:44:39.674Z",
+    "edouard-philippe": "2026-10-09T14:25:28.451Z",
+    "gabriel-attal": "2026-10-09T14:25:28.451Z",
+    "bruno-retailleau": "2026-10-09T14:25:28.451Z",
     "david-lisnard": "2026-10-09T13:44:39.674Z",
     "marine-le-pen": "2026-10-09T13:44:39.674Z",
-    "eric-zemmour": "2026-10-09T13:44:39.674Z",
+    "eric-zemmour": "2026-10-09T14:25:28.451Z",
     "nicolas-dupont-aignan": "2026-10-09T13:44:39.674Z",
     "florian-philippot": "2026-10-09T13:44:39.674Z",
     "jean-luc-melenchon": "2026-10-09T13:44:39.674Z",
     "fabien-roussel": "2026-10-09T13:44:39.674Z",
     "marine-tondelier": "2026-10-09T13:44:39.674Z",
-    "francois-ruffin": "2026-10-09T13:44:39.674Z",
+    "francois-ruffin": "2026-10-09T14:25:28.451Z",
     "delphine-batho": "2026-10-09T13:44:39.674Z",
     "karim-bouamrane": "2026-10-09T13:44:39.674Z",
     "nathalie-arthaud": "2026-10-09T13:44:39.674Z",
     "anasse-kazib": "2026-10-09T13:44:39.674Z",
     "selma-labib": "2026-10-09T13:44:39.674Z",
     "olivier-becht": "2026-10-09T13:47:01.862Z",
-    "raphael-glucksmann": "2026-10-09T13:44:39.674Z",
+    "raphael-glucksmann": "2026-10-09T14:25:28.451Z",
     "bernard-cazeneuve": "2026-10-09T13:44:39.674Z",
     "xavier-bertrand": "2026-10-09T13:44:39.674Z",
     "olivier-faure": "2026-10-09T13:44:39.674Z",

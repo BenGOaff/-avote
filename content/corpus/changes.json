@@ -8277,5 +8277,285 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "c2b140441a80579d"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "bruno-retailleau",
+    "item": "eur-07",
+    "from": "inconnue",
+    "to": "2",
+    "source": "f964350b65761528"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-09",
+    "from": "inconnue",
+    "to": "2",
+    "source": "1251429f84396fb1"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "bruno-retailleau",
+    "item": "lib-09",
+    "from": "inconnue",
+    "to": "2",
+    "source": "1774323d02028733"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "bruno-retailleau",
+    "item": "lib-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "c19a4fc8b5f3e333"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "bruno-retailleau",
+    "item": "tra-09",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "6e586296ba77bfe1"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "bruno-retailleau",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "c533e165bc808558"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "bruno-retailleau",
+    "item": "cli-08",
+    "from": "inconnue",
+    "to": "1",
+    "source": "86c387b7d0cdfe95"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "edouard-philippe",
+    "item": "lib-07",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "86a89fbaad2472af"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "edouard-philippe",
+    "item": "eur-07",
+    "from": "inconnue",
+    "to": "2",
+    "source": "352df34e9119a5ef"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "edouard-philippe",
+    "item": "eur-09",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "8fde0ff896831119"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "edouard-philippe",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "1",
+    "source": "51c4840289641780"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "eric-zemmour",
+    "item": "log-02",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "a816fcea4ab0e1aa"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "eric-zemmour",
+    "item": "cli-08",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "687f7e7e018d7c65"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "cli-08",
+    "from": "inconnue",
+    "to": "2",
+    "source": "29395d1aa00daabb"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "eur-07",
+    "from": "inconnue",
+    "to": "2",
+    "source": "e90e9addcdb8bcac"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "78ddc7a80cafc0ba"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "fe2508d3c267c6e5"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "2",
+    "source": "ce179dcfca6c2d9d"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "san-03",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "624b75a5af8f085c"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "san-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "624b75a5af8f085c"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "eco-08",
+    "from": "inconnue",
+    "to": "1",
+    "source": "68fd9d7b13110713"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "dem-10",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "3ce4ba121532bab4"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "ani-01",
+    "from": "inconnue",
+    "to": "1",
+    "source": "1701b518c2c180f5"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "75b439b683c0c7e4"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "francois-ruffin",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "c08f0053deb8c57f"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "gabriel-attal",
+    "item": "edu-01",
+    "from": "inconnue",
+    "to": "1",
+    "source": "51d73832dd00dd02"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "gabriel-attal",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "8d0e63053883dbbf"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "gabriel-attal",
+    "item": "dem-07",
+    "from": "inconnue",
+    "to": "2",
+    "source": "d4113a1ede4c4a44"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "gabriel-attal",
+    "item": "eco-05",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "155587cbd725f81a"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "gabriel-attal",
+    "item": "san-01",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "eb599ed143179592"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "gabriel-attal",
+    "item": "eur-10",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "bf98fc6c2008ae14"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "gabriel-attal",
+    "item": "cli-07",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "dd878a713f8ba00c"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "raphael-glucksmann",
+    "item": "cli-05",
+    "from": "inconnue",
+    "to": "1",
+    "source": "39e831c7d9441e1f"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "raphael-glucksmann",
+    "item": "ani-05",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "bfd74387a3933969"
+  },
+  {
+    "date": "2026-10-09T14:25:28.451Z",
+    "actor": "raphael-glucksmann",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "3e567fc3de73af9e"
   }
 ]
