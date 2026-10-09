@@ -160,11 +160,12 @@ describe('classement (§10.6)', () => {
     expect(sc.observed).toBeNull()
   })
 
-  it('version rapide : classement indicatif dès 10 réponses réparties sur les thèmes', () => {
-    const quick: Answers = Object.fromEntries(set.themes.flatMap((t) => set.items.filter((i) => i.theme === t.id).slice(0, 2)).map((i) => [i.id, ans(1)]))
-    const positions = { a: allPositions(set, 1), b: allPositions(set, -1) }
-    expect(rankActors(set, quick, actors, positions, { mode: 'global' }).ranked).toBe(false)
-    expect(rankActors(set, quick, actors, positions, { mode: 'global', quick: Object.keys(quick) }).ranked).toBe(true)
+  it('version rapide : classement indicatif sur deux affirmations par thème (12 thèmes)', () => {
+    const s12 = makeSet(12, 6)
+    const quick: Answers = Object.fromEntries(s12.themes.flatMap((t) => s12.items.filter((i) => i.theme === t.id).slice(0, 2)).map((i) => [i.id, ans(1)]))
+    const positions = { a: allPositions(s12, 1), b: allPositions(s12, -1) }
+    expect(rankActors(s12, quick, actors, positions, { mode: 'global' }).ranked).toBe(false)
+    expect(rankActors(s12, quick, actors, positions, { mode: 'global', quick: Object.keys(quick) }).ranked).toBe(true)
   })
 
   it('pas de classement sous le seuil de réponses', () => {
