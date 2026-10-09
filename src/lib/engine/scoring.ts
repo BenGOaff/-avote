@@ -66,6 +66,8 @@ export interface ActorScore {
   documented: number
   /** Score de classement : moyenne pondérée des proximités, une position entre deux niveaux comptant pour le milieu de son intervalle (null si rien de documenté) */
   rankScore: number | null
+  /** Comme `documented`, mais mesuré seulement sur les sujets débattus (voir `debatedItems`) ; sert au seuil de classement */
+  documentedDebated: number
   W: number
   Wc: number
   knownCount: number
@@ -103,6 +105,7 @@ export function scoreActor(
   positions: Record<ItemId, Position> | undefined,
   weights: Map<ItemId, number>,
   slug: string,
+  debated?: Set<ItemId>,
 ): ActorScore {
   const A = answeredValues(set, answers)
   const themeOf = new Map(set.items.map((i) => [i.id, i.theme]))
@@ -118,6 +121,8 @@ export function scoreActor(
   let knownCount = 0
   let ambiguousCount = 0
   let unknownCount = 0
+  let Wd = 0 // poids répondu sur les sujets débattus
+  let Wdc = 0 // dont position documentée
 
   for (const [itemId, u] of A) {
     const w = weights.get(itemId) ?? 0
@@ -147,18 +152,23 @@ export function scoreActor(
       sumUnknown += w
       unknownCount++
     }
+    if (!debated || debated.has(itemId)) {
+      Wd += w
+      if (kind !== 'unknown') Wdc += w
+    }
     contributions.push({ itemId, theme: themeOf.get(itemId) ?? '', user: u, position: p, weight: w, kind, s, sMin, sMax })
   }
 
   if (W === 0) {
-    return { slug, observed: null, coverage: 0, low: 0, high: 0, documented: 0, rankScore: null, W, Wc, knownCount, ambiguousCount, unknownCount, contributions }
+    return { slug, observed: null, coverage: 0, low: 0, high: 0, documented: 0, rankScore: null, documentedDebated: 0, W, Wc, knownCount, ambiguousCount, unknownCount, contributions }
   }
   const observed = Wc > 0 ? (100 * sumKnown) / Wc : null
   const rankScore = Wc + Wa > 0 ? (100 * (sumKnown + sumAmbMid)) / (Wc + Wa) : null
   // Bornes documentaires (§10.5) : inconnu → 0 (basse) ou 1 (haute) ; ambigu → min / max de l'ensemble.
   const low = (100 * (sumKnown + sumAmbMin)) / W
   const high = low + (100 * (sumUnknown + sumAmbSpan)) / W
-  return { slug, observed, coverage: Wc / W, low, high, documented: (Wc + Wa) / W, rankScore, W, Wc, knownCount, ambiguousCount, unknownCount, contributions }
+  const documentedDebated = Wd > 0 ? Wdc / Wd : 0
+  return { slug, observed, coverage: Wc / W, low, high, documented: (Wc + Wa) / W, rankScore, documentedDebated, W, Wc, knownCount, ambiguousCount, unknownCount, contributions }
 }
 
 // ---------------------------------------------------------------------------
@@ -190,6 +200,23 @@ export interface RankingResult {
 /** Thèmes où le candidat a au moins une position (exacte ou entre deux niveaux) sur tes réponses. */
 function documentedThemes(score: ActorScore): number {
   return new Set(score.contributions.filter((c) => c.kind !== 'unknown').map((c) => c.theme)).size
+}
+
+/**
+ * Sujets débattus (0.3.0) : affirmations sur lesquelles au moins `minItemActorsShare` des candidats du référentiel
+ * ont une position documentée (exacte ou entre deux niveaux). Calculé sur tout le référentiel, jamais sur la sélection
+ * du votant : masquer un candidat ne change pas la liste.
+ */
+export function debatedItems(set: QuestionSet, positions: Record<string, Record<ItemId, Position>>): Set<ItemId> {
+  const slugs = Object.keys(positions)
+  const need = Math.ceil(slugs.length * ENGINE_CONFIG.ranking.minItemActorsShare)
+  const out = new Set<ItemId>()
+  for (const it of set.items) {
+    if (it.inactive) continue
+    const n = slugs.filter((s) => positionKind(positions[s]?.[it.id]) !== 'unknown').length
+    if (n >= need && n > 0) out.add(it.id)
+  }
+  return out
 }
 
 export interface RankOptions {
@@ -224,15 +251,16 @@ export function rankActors(
     reasons.push(`Il faut avoir répondu à la moitié des questions dans au moins ${cfg.minThemesHalfAnswered} thèmes (${halfThemes} pour l'instant).`)
 
   // Seuils côté candidat : chacun n'est classé que s'il est assez documenté sur TES réponses
+  const debated = debatedItems(set, positions)
   const base = actors.map((a) => {
-    const score = scoreActor(set, answers, positions[a.slug], weights, a.slug)
-    const classable = score.rankScore !== null && score.documented >= cfg.minActorCoverage && documentedThemes(score) >= cfg.minActorThemes
+    const score = scoreActor(set, answers, positions[a.slug], weights, a.slug, debated)
+    const classable = score.rankScore !== null && score.documentedDebated >= cfg.minActorCoverage && documentedThemes(score) >= cfg.minActorThemes
     return { slug: a.slug, name: a.name, score, rankScore: score.rankScore, classable }
   })
   const classable = base.filter((e) => e.classable)
   if (reasons.length === 0 && classable.length < 2)
     reasons.push(
-      `Moins de deux candidats ont une position connue sur au moins ${Math.round(cfg.minActorCoverage * 100)} % de tes réponses, dans ${cfg.minActorThemes} thèmes. Réponds à plus de questions, ou reviens quand les programmes seront plus complets.`,
+      `Moins de deux candidats ont une position connue sur au moins ${Math.round(cfg.minActorCoverage * 100)} % de tes réponses aux sujets débattus, dans ${cfg.minActorThemes} thèmes. Réponds à plus de questions, ou reviens quand les programmes seront plus complets.`,
     )
 
   const ranked = reasons.length === 0
@@ -247,7 +275,7 @@ export function rankActors(
     // Les candidats pas assez documentés suivent, du plus au moins documenté, sans rang
     const rest = base
       .filter((e) => !e.classable)
-      .sort((x, y) => y.score.documented - x.score.documented || x.name.localeCompare(y.name, 'fr'))
+      .sort((x, y) => y.score.documentedDebated - x.score.documentedDebated || x.name.localeCompare(y.name, 'fr'))
       .map((e) => ({ ...e, closeToPrevious: false }))
     entries = [...top, ...rest]
   } else {

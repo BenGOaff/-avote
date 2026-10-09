@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
-import { QUICK_ITEMS, itemsByTheme, questionnaire } from '@/lib/data'
+import { QUICK_ITEMS, itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
+import { debatedItems } from '@/lib/engine/scoring'
 import { AI_NOTICE } from '@/lib/copy'
 import { BLOCS, NUANCE_SOURCE, NUANCE_VALIDATION } from '@/lib/nuances'
 import { BlocDot } from '@/components/Nuance'
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 
 const R = ENGINE_CONFIG.ranking
 const T = questionnaire.themes.length
+const debated = debatedItems(questionnaire, liveCorpus.positions)
 const perTheme = itemsByTheme(questionnaire).map((g) => g.items.length)
 const minPerTheme = Math.min(...perTheme)
 const maxPerTheme = Math.max(...perTheme)
@@ -79,7 +81,9 @@ export default function MethodPage() {
         <p>
           Version {questionnaire.version}, statut : <strong>{questionnaire.status}</strong>. {T} thèmes, de {minPerTheme} à {maxPerTheme} questions chacun. Chaque question porte sur une seule
           mesure, avec une explication. L’échelle va de « tout à fait opposé » (−2) à « tout à fait favorable » (+2). « Je ne sais pas », « je préfère passer » et
-          « cela dépend » sont des réponses manquantes : elles ne comptent pas comme un avis intermédiaire.
+          « cela dépend » sont des réponses manquantes : elles ne comptent pas comme un avis intermédiaire. Les thèmes se suivent toujours dans le même
+          ordre ; à l’intérieur de chaque thème, l’ordre des questions est tiré au hasard au début du test, pour qu’aucune ne bénéficie toujours de la
+          première place.
         </p>
         <p>
           Version 0.2.0 (9 octobre 2026) : 54 affirmations ajoutées sur la vie de tous les jours (santé, école, logement, transports, animaux, droits des
@@ -148,15 +152,26 @@ export default function MethodPage() {
 
         <h2 id="classement">Quand on classe, quand on ne classe pas</h2>
         <p className="small muted">
-          Règle de calcul version {ENGINE_CONFIG.version}. Changement du 9 octobre 2026 : la version précédente ne classait que sur les questions où tous les
-          candidats avaient une position connue, ce qui empêchait tout classement avec 24 candidatures.
+          Règle de calcul version {ENGINE_CONFIG.version}. Historique : la version 0.1.0 ne classait que sur les questions où tous les candidats avaient une
+          position connue, ce qui empêchait tout classement avec 24 candidatures. La 0.2.0 (9 octobre 2026) classe chaque candidat assez documenté sur tes
+          réponses. La 0.3.0 (même jour, avec le passage à {questionnaire.items.length} questions) mesure cette couverture sur les sujets débattus,
+          expliqués ci-dessous.
         </p>
         <p>Il faut d’abord assez de réponses : au moins {R.minAnswered} questions sur {questionnaire.items.length}, et la moitié des questions dans au moins {R.minThemesHalfAnswered} thèmes.</p>
         <p>Ensuite, chaque candidat est classé seulement s’il est assez documenté sur tes réponses :</p>
         <ul>
-          <li>on connaît sa position sur au moins {R.minActorCoverage * 100} % du poids de tes réponses ;</li>
+          <li>
+            on connaît sa position sur au moins {R.minActorCoverage * 100} % du poids de tes réponses aux <strong>sujets débattus</strong> : les affirmations
+            sur lesquelles au moins un tiers des candidats s’est prononcé ({debated.size} sur {questionnaire.items.length} aujourd’hui) ;
+          </li>
           <li>ces positions couvrent au moins {R.minActorThemes} thèmes.</li>
         </ul>
+        <p>
+          Pourquoi les sujets débattus ? Un sujet sur lequel presque aucun candidat ne s’est prononcé (la chasse le dimanche, par exemple) ne distingue
+          personne. S’il comptait dans la couverture, il ferait baisser tout le monde de la même façon et écarterait du classement des candidats qui n’ont
+          simplement pas encore publié de programme complet. Ces sujets restent dans le calcul de la proximité de ceux qui se sont prononcés, et dans les
+          accords rares. La liste se met à jour à chaque nouvelle position documentée ; elle est calculée sur tous les candidats, jamais sur ta sélection.
+        </p>
         <p>
           Les candidats classés sont rangés selon leur proximité, calculée sur les questions où leur position est connue. Une position codée entre deux niveaux
           (« plutôt » ou « tout à fait » favorable, par exemple) compte pour le milieu de son intervalle. Les candidats moins documentés sont listés à part,
@@ -245,7 +260,7 @@ export default function MethodPage() {
           mot pour mot ; un programme retélécharge la page et vérifie que la citation y figure, sinon la position est marquée inconnue. La source et la
           citation sont affichées sur la fiche de chaque candidat. Le codage automatique peut se tromper sur l’intensité d’une position : si tu vois une
           erreur, signale-la, elle sera corrigée et la correction publiée. <Link href="/sources">Les sources</Link> ·{' '}
-          <Link href="/corrections">Les corrections</Link>
+          <Link href="/corrections">Les corrections</Link> · <a href="/donnees.json">Toutes les données (JSON)</a>
         </p>
 
         <h2 id="casier">Casier et affaires : ce qui est retenu</h2>

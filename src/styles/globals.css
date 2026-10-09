@@ -948,6 +948,7 @@ details.disclosure > div {
 }
 .qcard__grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--s5);
 }
 @media (min-width: 900px) {
@@ -3693,9 +3694,11 @@ details.disclosure > div {
 .faits li + li {
   margin-top: var(--s2);
 }
+.faits {
+  overflow-wrap: anywhere;
+}
 .faits__src {
   color: var(--muted);
-  white-space: nowrap;
 }
 
 /* Accords rares (résultats) */

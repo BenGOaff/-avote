@@ -4,7 +4,7 @@
  * Toute modification = nouvelle version publiée dans /methodologie.
  */
 export const ENGINE_CONFIG = {
-  version: '0.2.0',
+  version: '0.3.0',
   status: 'provisoire' as const,
   priorityTokens: 10,
   ranking: {
@@ -16,6 +16,12 @@ export const ENGINE_CONFIG = {
     minActorCoverage: 0.5,
     /** … réparties sur au moins 4 thèmes */
     minActorThemes: 4,
+    /**
+     * Couverture mesurée sur les sujets débattus (0.3.0) : une affirmation entre dans la mesure de la couverture
+     * si au moins ce tiers des candidats du référentiel s'est prononcé dessus. Un sujet dont presque personne ne parle
+     * ne distingue personne ; il compte toujours dans la proximité de ceux qui se sont prononcés.
+     */
+    minItemActorsShare: 1 / 3,
     /** En dessous de cet écart (points sur 100), l'ordre n'est pas déterminant */
     closeGap: 2,
   },

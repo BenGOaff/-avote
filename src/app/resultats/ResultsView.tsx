@@ -276,6 +276,8 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
 // Carte d'électeur : l'essentiel d'un coup d'œil
 // ---------------------------------------------------------------------------
 
+const RARE_SHOWN = 5
+
 /** Accords rares et sujets sans réponse : ce qui distingue un candidat sur ce qui compte pour toi. Aucun effet sur les scores. */
 function RareBlock({ answers, actors, corpus, essentials, media }: { answers: Answers; actors: Corpus['actors']; corpus: Corpus; essentials: string[]; media: Record<string, ActorMedia> }) {
   const { rare, silent } = useMemo(() => rareAgreements(set, answers, actors, corpus.positions, essentials), [answers, actors, corpus, essentials])
@@ -289,7 +291,7 @@ function RareBlock({ answers, actors, corpus, essentials, media }: { answers: An
         <>
           <p className="muted">{R.rareLede}</p>
           <ul className="rare__list">
-            {rare.map((r) => {
+            {rare.slice(0, RARE_SHOWN).map((r) => {
               const it = item(r.itemId)
               if (!it) return null
               return (
@@ -300,7 +302,7 @@ function RareBlock({ answers, actors, corpus, essentials, media }: { answers: An
                   </p>
                   <p className="rare__you small">
                     {R.rareYou} : <strong>{answerLabel(answers[r.itemId])}</strong>
-                    {essentials.includes(r.itemId) && <span className="stamp"> {R.redFlag}</span>}
+                    {essentials.includes(r.itemId) && <span className="stamp" style={{ marginLeft: 'var(--s2)' }}>{R.redFlag}</span>}
                   </p>
                   <ul className="rare__who">
                     {r.agree.map((slug) => (
@@ -320,6 +322,18 @@ function RareBlock({ answers, actors, corpus, essentials, media }: { answers: An
               )
             })}
           </ul>
+          {rare.length > RARE_SHOWN && (
+            <details className="disclosure">
+              <summary>{R.rareMore(rare.length - RARE_SHOWN)}</summary>
+              <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
+                {rare.slice(RARE_SHOWN).map((r) => (
+                  <li key={r.itemId} style={{ marginBottom: 'var(--s2)' }}>
+                    {item(r.itemId)?.text} <span className="muted">· {r.agree.map(nameOf).join(', ')}</span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
         </>
       )}
       {silent.length > 0 && (
@@ -667,7 +681,7 @@ function ActorResult({
       <div className="cand__body">
         <Gauge value={s.rankScore} low={s.low} high={s.high} label={e.name} size={104} />
         <p className="small cand__cover">
-          Position connue sur <strong>{fmtPct(s.documented)}</strong> de tes réponses. Selon ce qui manque, entre {fmt(s.low)} et {fmt(s.high)}.
+          Position connue sur <strong>{fmtPct(s.documented)}</strong> de tes réponses ({fmtPct(s.documentedDebated)} sur les sujets débattus). Selon ce qui manque, entre {fmt(s.low)} et {fmt(s.high)}.
         </p>
         <div className="cand__facts">
           <AgreementStrip contributions={s.contributions} themes={set.themes} name={e.name} />

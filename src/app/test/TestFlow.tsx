@@ -18,7 +18,37 @@ import { TokenBoard } from './TokenBoard'
 type Step = { kind: 'intro' } | { kind: 'question'; index: number } | { kind: 'mirror'; themeIndex: number } | { kind: 'priorities' }
 
 const allGroups = itemsByTheme(set)
-const groupsFor = (quick: boolean) => (quick ? allGroups.map((g) => ({ ...g, items: g.items.filter((i) => QUICK_ITEMS.includes(i.id)) })) : allGroups)
+
+/** Générateur pseudo-aléatoire à graine (mulberry32) : même graine, même ordre, d'une visite à l'autre */
+function seeded(seed: number) {
+  let t = seed >>> 0
+  return () => {
+    t = (t + 0x6d2b79f5) >>> 0
+    let r = Math.imul(t ^ (t >>> 15), 1 | t)
+    r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296
+  }
+}
+// Ordre des affirmations tiré au hasard dans chaque thème : aucune ne profite toujours de la première place
+const shuffled = <T,>(items: T[], rnd: () => number) => {
+  const a = [...items]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1))
+    ;[a[i], a[j]] = [a[j]!, a[i]!]
+  }
+  return a
+}
+const groupsFor = (quick: boolean, seed?: number) => {
+  const base = quick ? allGroups.map((g) => ({ ...g, items: g.items.filter((i) => QUICK_ITEMS.includes(i.id)) })) : allGroups
+  if (seed === undefined) return base
+  const rnd = seeded(seed)
+  return base.map((g) => ({ ...g, items: shuffled(g.items, rnd) }))
+}
+const newSeed = () => {
+  const a = new Uint32Array(1)
+  crypto.getRandomValues(a)
+  return a[0]!
+}
 const groups = allGroups
 const TOKENS = 10
 // Taille du rond selon la force de la réponse : plus on est tranché, plus le rond est grand
@@ -70,7 +100,7 @@ export function TestFlow() {
   )
 
   const quick = !!state?.quick
-  const G = groupsFor(quick)
+  const G = groupsFor(quick, state?.orderSeed)
   const flat = G.flatMap((g) => g.items)
   const answers = useMemo(() => effectiveAnswers(state, set), [state])
   const answeredCount = Object.keys(answers).length
@@ -85,10 +115,10 @@ export function TestFlow() {
         answeredCount={answeredCount}
         headingRef={headingRef}
         onStart={(persist, restart, wantQuick = false) => {
-          const base = restart || !state ? { ...emptyState(set.version, persist), quick: wantQuick } : { ...state, persist, quick: false }
+          const base = restart || !state ? { ...emptyState(set.version, persist), quick: wantQuick, orderSeed: newSeed() } : { ...state, persist, quick: false }
           setState(base)
           void saveState(base)
-          const order = groupsFor(!!base.quick).flatMap((g) => g.items)
+          const order = groupsFor(!!base.quick, base.orderSeed).flatMap((g) => g.items)
           const firstUnanswered = restart ? 0 : order.findIndex((i) => !(i.id in effectiveAnswers(base, set)))
           setStep(firstUnanswered === -1 ? { kind: 'priorities' } : { kind: 'question', index: firstUnanswered })
         }}
@@ -259,10 +289,10 @@ export function TestFlow() {
   }
 
   if (step.kind === 'mirror') {
-    const group = groups[step.themeIndex]!
+    const group = G[step.themeIndex]!
     const remark = mirrorRemark(group.theme.id, group.items.map((i) => i.id), answers)
-    const firstOfNext = flat.findIndex((i) => i.theme === groups[step.themeIndex + 1]?.theme.id)
-    const isLast = step.themeIndex === groups.length - 1
+    const firstOfNext = flat.findIndex((i) => i.theme === G[step.themeIndex + 1]?.theme.id)
+    const isLast = step.themeIndex === G.length - 1
     return (
       <div>
         <Chapters current={step.themeIndex} done />
