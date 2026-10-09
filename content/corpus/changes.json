@@ -4781,5 +4781,189 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "61ad5bcfeaeb707c"
+  },
+  {
+    "date": "2026-10-09T09:00:46.359Z",
+    "actor": "marine-le-pen",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "18ce72362ceb2bd0"
+  },
+  {
+    "date": "2026-10-09T09:00:46.359Z",
+    "actor": "marine-le-pen",
+    "item": "tra-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "7dccc8145ebba9d3"
+  },
+  {
+    "date": "2026-10-09T09:00:46.359Z",
+    "actor": "marine-le-pen",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "698053522a159418"
+  },
+  {
+    "date": "2026-10-09T09:00:46.359Z",
+    "actor": "marine-le-pen",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "6cfc38c80badd6e5"
+  },
+  {
+    "date": "2026-10-09T09:00:46.359Z",
+    "actor": "marine-le-pen",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "54fdc0dffbd56a96"
+  },
+  {
+    "date": "2026-10-09T09:00:46.359Z",
+    "actor": "marine-le-pen",
+    "item": "dem-05",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "f042f39a446044a0"
+  },
+  {
+    "date": "2026-10-09T09:00:53.485Z",
+    "actor": "bruno-retailleau",
+    "item": "lib-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "50b9ea3a018ebe45"
+  },
+  {
+    "date": "2026-10-09T09:00:53.485Z",
+    "actor": "bruno-retailleau",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "086036bdcab736b1"
+  },
+  {
+    "date": "2026-10-09T09:00:53.485Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "bfd026bf04531b7e"
+  },
+  {
+    "date": "2026-10-09T09:00:53.485Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "e2ffdee5b0d2a2f1"
+  },
+  {
+    "date": "2026-10-09T09:00:53.485Z",
+    "actor": "bruno-retailleau",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "61a738261f2d5bfe"
+  },
+  {
+    "date": "2026-10-09T09:00:55.550Z",
+    "actor": "edouard-philippe",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "179fbc3ffebc1ed0"
+  },
+  {
+    "date": "2026-10-09T09:00:55.550Z",
+    "actor": "edouard-philippe",
+    "item": "lib-06",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "7a7487a980cd7379"
+  },
+  {
+    "date": "2026-10-09T09:00:55.550Z",
+    "actor": "edouard-philippe",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "4f065fb9f6527f46"
+  },
+  {
+    "date": "2026-10-09T09:00:58.632Z",
+    "actor": "gabriel-attal",
+    "item": "lib-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "486ffefabc505056"
+  },
+  {
+    "date": "2026-10-09T09:03:18.861Z",
+    "actor": "delphine-batho",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "e54c1bee7b223242"
+  },
+  {
+    "date": "2026-10-09T09:03:20.935Z",
+    "actor": "selma-labib",
+    "item": "tra-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "ec30de5d27714d95"
+  },
+  {
+    "date": "2026-10-09T09:03:23.161Z",
+    "actor": "nathalie-arthaud",
+    "item": "eco-03",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "dc22d2a4846027e7"
+  },
+  {
+    "date": "2026-10-09T09:03:23.161Z",
+    "actor": "nathalie-arthaud",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "88f5ba3a2aa78a3a"
+  },
+  {
+    "date": "2026-10-09T09:03:23.161Z",
+    "actor": "nathalie-arthaud",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "10a2021012819a6c"
+  },
+  {
+    "date": "2026-10-09T09:03:24.940Z",
+    "actor": "francois-ruffin",
+    "item": "sec-04",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "d9dd88f8ca4a45e4"
+  },
+  {
+    "date": "2026-10-09T09:03:24.940Z",
+    "actor": "francois-ruffin",
+    "item": "lib-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "8584096d9693981a"
+  },
+  {
+    "date": "2026-10-09T09:03:24.940Z",
+    "actor": "francois-ruffin",
+    "item": "tra-02",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "85a91460626dd6f7"
   }
 ]

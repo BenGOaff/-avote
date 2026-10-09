@@ -123,17 +123,25 @@ export default function MethodPage() {
         </p>
 
         <h2 id="classement">Quand on classe, quand on ne classe pas</h2>
-        <p>Un classement n’est affiché que si toutes ces conditions sont réunies :</p>
+        <p className="small muted">
+          Règle de calcul version {ENGINE_CONFIG.version}. Changement du 9 octobre 2026 : la version précédente ne classait que sur les questions où tous les
+          candidats avaient une position connue, ce qui empêchait tout classement avec 24 candidatures.
+        </p>
+        <p>Il faut d’abord assez de réponses : au moins {R.minAnswered} questions sur {questionnaire.items.length}, et la moitié des questions dans au moins {R.minThemesHalfAnswered} thèmes.</p>
+        <p>Ensuite, chaque candidat est classé seulement s’il est assez documenté sur tes réponses :</p>
         <ul>
-          <li>tu as répondu à au moins {R.minAnswered} questions sur {questionnaire.items.length}, et à la moitié des questions dans au moins {R.minThemesHalfAnswered} thèmes ;</li>
-          <li>les questions où tous les candidats affichés ont une position connue représentent au moins {R.minCommonWeightShare * 100} % du poids de tes réponses ;</li>
-          <li>ces questions couvrent au moins {R.minCommonThemes} thèmes ;</li>
-          <li>si tu as posé des lignes rouges, au moins {R.minEssentialCoverage * 100} % d’entre elles sont documentées chez tous.</li>
+          <li>on connaît sa position sur au moins {R.minActorCoverage * 100} % du poids de tes réponses ;</li>
+          <li>ces positions couvrent au moins {R.minActorThemes} thèmes.</li>
         </ul>
         <p>
-          Sinon, les candidats sont listés par ordre alphabétique, avec la mention « Données insuffisamment comparables pour classer ». Un écart de moins de{' '}
-          {R.closeGap} points est signalé comme non déterminant. On teste aussi l’effet d’une variation de ±50 % du poids de chaque thème : si l’ordre s’inverse,
-          le résultat l’indique.
+          Les candidats classés sont rangés selon leur proximité, calculée sur les questions où leur position est connue. Une position codée entre deux niveaux
+          (« plutôt » ou « tout à fait » favorable, par exemple) compte pour le milieu de son intervalle. Les candidats moins documentés sont listés à part,
+          avec leur proximité mais sans rang. S’il y a moins de deux candidats classables, aucun classement n’est affiché.
+        </p>
+        <p>
+          Limite assumée : deux candidats classés ne sont pas toujours comparés sur exactement les mêmes questions. C’est pourquoi la part de tes réponses
+          couverte est affichée à côté de chaque score, avec les bornes. Un écart de moins de {R.closeGap} points est signalé comme non déterminant. On teste
+          aussi l’effet d’une variation de ±50 % du poids de chaque thème : si l’ordre s’inverse, le résultat l’indique.
         </p>
         <p>
           <strong>Lignes rouges.</strong> Les questions sur lesquelles tu poses une ligne rouge apparaissent à part pour chaque candidat : « désaccord documenté » si

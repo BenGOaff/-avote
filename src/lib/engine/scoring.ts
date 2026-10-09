@@ -62,6 +62,10 @@ export interface ActorScore {
   coverage: number
   low: number
   high: number
+  /** Part du poids répondu où le candidat a une position, exacte ou entre deux niveaux (0..1) */
+  documented: number
+  /** Score de classement : moyenne pondérée des proximités, une position entre deux niveaux comptant pour le milieu de son intervalle (null si rien de documenté) */
+  rankScore: number | null
   W: number
   Wc: number
   knownCount: number
@@ -107,6 +111,8 @@ export function scoreActor(
   let sumKnown = 0 // Σ(Kc) w·s
   let sumAmbMin = 0
   let sumAmbSpan = 0
+  let sumAmbMid = 0
+  let Wa = 0
   let sumUnknown = 0
   const contributions: ItemContribution[] = []
   let knownCount = 0
@@ -134,6 +140,8 @@ export function scoreActor(
       sMax = Math.max(...ss)
       sumAmbMin += w * sMin
       sumAmbSpan += w * (sMax - sMin)
+      sumAmbMid += (w * (sMin + sMax)) / 2
+      Wa += w
       ambiguousCount++
     } else {
       sumUnknown += w
@@ -143,25 +151,29 @@ export function scoreActor(
   }
 
   if (W === 0) {
-    return { slug, observed: null, coverage: 0, low: 0, high: 0, W, Wc, knownCount, ambiguousCount, unknownCount, contributions }
+    return { slug, observed: null, coverage: 0, low: 0, high: 0, documented: 0, rankScore: null, W, Wc, knownCount, ambiguousCount, unknownCount, contributions }
   }
   const observed = Wc > 0 ? (100 * sumKnown) / Wc : null
+  const rankScore = Wc + Wa > 0 ? (100 * (sumKnown + sumAmbMid)) / (Wc + Wa) : null
   // Bornes documentaires (§10.5) : inconnu → 0 (basse) ou 1 (haute) ; ambigu → min / max de l'ensemble.
   const low = (100 * (sumKnown + sumAmbMin)) / W
   const high = low + (100 * (sumUnknown + sumAmbSpan)) / W
-  return { slug, observed, coverage: Wc / W, low, high, W, Wc, knownCount, ambiguousCount, unknownCount, contributions }
+  return { slug, observed, coverage: Wc / W, low, high, documented: (Wc + Wa) / W, rankScore, W, Wc, knownCount, ambiguousCount, unknownCount, contributions }
 }
 
 // ---------------------------------------------------------------------------
-// Socle commun et classement (§10.6)
+// Classement par candidat documenté (§10.6, version 0.2.0)
 // ---------------------------------------------------------------------------
 
 export interface RankingEntry {
   slug: string
   name: string
-  commonScore: number | null
+  /** Score de classement sur 100 (null si rien de documenté sur tes réponses) */
+  rankScore: number | null
+  /** Assez documenté sur tes réponses pour être classé */
+  classable: boolean
   score: ActorScore
-  /** Écart avec l'entrée précédente inférieur au seuil : ordre non déterminant */
+  /** Écart avec le classé précédent inférieur au seuil : ordre non déterminant */
   closeToPrevious: boolean
 }
 
@@ -169,41 +181,15 @@ export interface RankingResult {
   ranked: boolean
   reasons: string[]
   sensitive: boolean
-  commonItems: ItemId[]
-  commonShare: number
-  commonThemes: number
   answeredCount: number
+  /** Nombre de candidats classés (les suivants sont listés à part, pas assez documentés) */
+  rankedCount: number
   entries: RankingEntry[]
 }
 
-export function commonBase(set: QuestionSet, answers: Answers, actors: Actor[], positions: Record<string, Record<ItemId, Position>>): ItemId[] {
-  const A = answeredValues(set, answers)
-  const out: ItemId[] = []
-  for (const itemId of A.keys()) {
-    if (actors.every((a) => positionKind(positions[a.slug]?.[itemId]) === 'known')) out.push(itemId)
-  }
-  return out
-}
-
-function commonScore(
-  common: ItemId[],
-  answers: Map<ItemId, Ordinal>,
-  positions: Record<ItemId, Position> | undefined,
-  weights: Map<ItemId, number>,
-): number | null {
-  let num = 0
-  let den = 0
-  for (const id of common) {
-    const p = positions?.[id]
-    const u = answers.get(id)
-    if (!p || u === undefined) continue
-    const c = knownValue(p)
-    if (c === null) continue
-    const w = weights.get(id) ?? 0
-    num += w * proximity(u, c)
-    den += w
-  }
-  return den > 0 ? (100 * num) / den : null
+/** Thèmes où le candidat a au moins une position (exacte ou entre deux niveaux) sur tes réponses. */
+function documentedThemes(score: ActorScore): number {
+  return new Set(score.contributions.filter((c) => c.kind !== 'unknown').map((c) => c.theme)).size
 }
 
 export interface RankOptions {
@@ -222,14 +208,8 @@ export function rankActors(
   const cfg = ENGINE_CONFIG.ranking
   const weights = itemWeights(set, themeWeights(set, opts.mode, opts.priorities))
   const A = answeredValues(set, answers)
-  const common = commonBase(set, answers, actors, positions)
-  const W = [...A.keys()].reduce((acc, id) => acc + (weights.get(id) ?? 0), 0)
-  const Wcommon = common.reduce((acc, id) => acc + (weights.get(id) ?? 0), 0)
-  const commonShare = W > 0 ? Wcommon / W : 0
-  const themeOf = new Map(set.items.map((i) => [i.id, i.theme]))
-  const commonThemes = new Set(common.map((id) => themeOf.get(id))).size
 
-  // Seuils de publication d'un classement
+  // Seuils côté votant : assez de réponses pour qu'un classement veuille dire quelque chose
   const reasons: string[] = []
   if (A.size < cfg.minAnswered) reasons.push(`Il faut au moins ${cfg.minAnswered} réponses sur ${set.items.length} (tu en as ${A.size}).`)
   const halfThemes = set.themes.filter((t) => {
@@ -239,69 +219,72 @@ export function rankActors(
   }).length
   if (halfThemes < cfg.minThemesHalfAnswered)
     reasons.push(`Il faut avoir répondu à la moitié des questions dans au moins ${cfg.minThemesHalfAnswered} thèmes (${halfThemes} pour l'instant).`)
-  if (actors.length < 2) reasons.push('Il faut au moins deux acteurs à comparer.')
-  if (commonShare < cfg.minCommonWeightShare)
-    reasons.push(`Les positions connues de tous les acteurs couvrent ${Math.round(commonShare * 100)} % de tes réponses ; il en faut ${Math.round(cfg.minCommonWeightShare * 100)} %.`)
-  if (commonThemes < cfg.minCommonThemes) reasons.push(`Les positions communes couvrent ${commonThemes} thème(s) ; il en faut ${cfg.minCommonThemes}.`)
-  const essentials = (opts.essentials ?? []).filter((id) => A.has(id))
-  if (essentials.length > 0) {
-    const We = essentials.reduce((acc, id) => acc + (weights.get(id) ?? 0), 0)
-    const Wec = essentials.filter((id) => common.includes(id)).reduce((acc, id) => acc + (weights.get(id) ?? 0), 0)
-    if (We > 0 && Wec / We < cfg.minEssentialCoverage)
-      reasons.push(`Tes lignes rouges sont documentées à ${Math.round((Wec / We) * 100)} % chez tous les acteurs ; il en faut ${Math.round(cfg.minEssentialCoverage * 100)} %.`)
-  }
 
-  const ranked = reasons.length === 0
+  // Seuils côté candidat : chacun n'est classé que s'il est assez documenté sur TES réponses
   const base = actors.map((a) => {
     const score = scoreActor(set, answers, positions[a.slug], weights, a.slug)
-    return { slug: a.slug, name: a.name, score, commonScore: commonScore(common, A, positions[a.slug], weights) }
+    const classable = score.rankScore !== null && score.documented >= cfg.minActorCoverage && documentedThemes(score) >= cfg.minActorThemes
+    return { slug: a.slug, name: a.name, score, rankScore: score.rankScore, classable }
   })
+  const classable = base.filter((e) => e.classable)
+  if (reasons.length === 0 && classable.length < 2)
+    reasons.push(
+      `Moins de deux candidats ont une position connue sur au moins ${Math.round(cfg.minActorCoverage * 100)} % de tes réponses, dans ${cfg.minActorThemes} thèmes. Réponds à plus de questions, ou reviens quand les programmes seront plus complets.`,
+    )
 
+  const ranked = reasons.length === 0
   let entries: RankingEntry[]
   if (ranked) {
-    const sorted = [...base].sort((x, y) => (y.commonScore ?? -1) - (x.commonScore ?? -1))
-    entries = sorted.map((e, i) => {
+    const sorted = [...classable].sort((x, y) => (y.rankScore ?? -1) - (x.rankScore ?? -1) || x.slug.localeCompare(y.slug))
+    const top = sorted.map((e, i) => {
       const prev = sorted[i - 1]
-      const close = !!prev && prev.commonScore !== null && e.commonScore !== null && prev.commonScore - e.commonScore < cfg.closeGap
+      const close = !!prev && prev.rankScore !== null && e.rankScore !== null && prev.rankScore - e.rankScore < cfg.closeGap
       return { ...e, closeToPrevious: close }
     })
+    // Les candidats pas assez documentés suivent, du plus au moins documenté, sans rang
+    const rest = base
+      .filter((e) => !e.classable)
+      .sort((x, y) => y.score.documented - x.score.documented || x.name.localeCompare(y.name, 'fr'))
+      .map((e) => ({ ...e, closeToPrevious: false }))
+    entries = [...top, ...rest]
   } else {
     // Liste alphabétique explicite, annoncée comme telle dans l'interface
     entries = [...base].sort((x, y) => x.name.localeCompare(y.name, 'fr')).map((e) => ({ ...e, closeToPrevious: false }))
   }
 
-  const sensitive = ranked ? isOrderSensitive(set, answers, actors, positions, common, opts, entries) : false
-  return { ranked, reasons, sensitive, commonItems: common, commonShare, commonThemes, answeredCount: A.size, entries }
+  const sensitive = ranked ? isOrderSensitive(set, answers, actors.filter((a) => classable.some((c) => c.slug === a.slug)), positions, opts, entries) : false
+  return { ranked, reasons, sensitive, answeredCount: A.size, rankedCount: ranked ? classable.length : 0, entries }
 }
 
 /** Ordre strict (hors paires proches) entre acteurs. */
-function strictPairs(entries: { slug: string; commonScore: number | null }[], gap: number): Set<string> {
+function strictPairs(entries: { slug: string; rankScore: number | null }[], gap: number): Set<string> {
   const pairs = new Set<string>()
   for (const a of entries)
     for (const b of entries) {
-      if (a.slug === b.slug || a.commonScore === null || b.commonScore === null) continue
-      if (a.commonScore - b.commonScore >= gap) pairs.add(`${a.slug}>${b.slug}`)
+      if (a.slug === b.slug || a.rankScore === null || b.rankScore === null) continue
+      if (a.rankScore - b.rankScore >= gap) pairs.add(`${a.slug}>${b.slug}`)
     }
   return pairs
 }
 
 /**
  * Analyse de sensibilité (§10.6) : on fait varier modérément le poids de chaque thème.
- * Si un acteur nettement devant passe nettement derrière, l'ordre est « sensible aux hypothèses ».
+ * Si un candidat classé nettement devant passe nettement derrière, l'ordre est « sensible aux hypothèses ».
  * Ce n'est pas une probabilité de classement.
  */
 function isOrderSensitive(
   set: QuestionSet,
   answers: Answers,
-  actors: Actor[],
+  rankedActors: Actor[],
   positions: Record<string, Record<ItemId, Position>>,
-  common: ItemId[],
   opts: RankOptions,
   entries: RankingEntry[],
 ): boolean {
   const gap = ENGINE_CONFIG.ranking.closeGap
-  const reference = strictPairs(entries, gap)
-  const A = answeredValues(set, answers)
+  const reference = strictPairs(
+    entries.filter((e) => e.classable),
+    gap,
+  )
   const baseTheme = themeWeights(set, opts.mode, opts.priorities)
   for (const t of set.themes) {
     for (const f of ENGINE_CONFIG.sensitivityFactors) {
@@ -310,7 +293,7 @@ function isOrderSensitive(
       const total = [...tw.values()].reduce((a, b) => a + b, 0)
       for (const [k, v] of tw) tw.set(k, v / total)
       const w = itemWeights(set, tw)
-      const variant = actors.map((a) => ({ slug: a.slug, commonScore: commonScore(common, A, positions[a.slug], w) }))
+      const variant = rankedActors.map((a) => ({ slug: a.slug, rankScore: scoreActor(set, answers, positions[a.slug], w, a.slug).rankScore }))
       const pairs = strictPairs(variant, gap)
       for (const p of reference) {
         const [x, y] = p.split('>')

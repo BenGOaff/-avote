@@ -4,15 +4,16 @@
  * Toute modification = nouvelle version publiée dans /methodologie.
  */
 export const ENGINE_CONFIG = {
-  version: '0.1.0',
+  version: '0.2.0',
   status: 'provisoire' as const,
   priorityTokens: 10,
   ranking: {
     minAnswered: 28,
     minThemesHalfAnswered: 5,
-    minCommonWeightShare: 0.7,
-    minCommonThemes: 5,
-    minEssentialCoverage: 0.6,
+    /** Un candidat n'est classé que s'il a une position (exacte ou entre deux niveaux) sur au moins la moitié du poids de tes réponses… */
+    minActorCoverage: 0.5,
+    /** … réparties sur au moins 4 thèmes */
+    minActorThemes: 4,
     /** En dessous de cet écart (points sur 100), l'ordre n'est pas déterminant */
     closeGap: 2,
   },

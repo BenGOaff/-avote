@@ -1,8 +1,8 @@
 {
-  "version": "live-202610090859",
+  "version": "live-202610090903",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-09T08:59:36.147Z",
+  "publishedAt": "2026-10-09T09:03:24.940Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -253,11 +253,18 @@
         "note": "Le programme vise l’ensemble des dépenses de santé, pas l’hôpital public en particulier. Il ne dit pas si des moyens peuvent être redéployés vers l’hôpital, d’où deux niveaux possibles."
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "4f065fb9f6527f46"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:56:45.563Z"
+        "codedAt": "2026-10-09T09:00:55.550Z",
+        "note": "Propos tenus dans un entretien au Figaro, cités par LCP. Il veut réduire les effectifs des classes « là où c'est nécessaire » grâce à la baisse du nombre d'élèves, sans dépense supplémentaire, donc sans recrutement massif : -1 ou 0."
       },
       "tra-04": {
         "set": [
@@ -451,18 +458,32 @@
         "codedAt": "2026-10-08T14:44:37.471Z"
       },
       "lib-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Une position a été repérée mais sa citation n’a pas pu être vérifiée dans la source.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "7a7487a980cd7379"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-09T09:00:55.550Z",
+        "note": "Propos tenus dans La Grande interview Europe 1-CNews. Refus d’une interdiction générale dans le sport ; il ne se prononce pas sur d’autres restrictions, d’où -1 ou 0."
       },
       "eur-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "179fbc3ffebc1ed0"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-09T09:00:55.550Z",
+        "note": "Discours de lancement de campagne. Approfondissement de l’Union dans des domaines nommés (IA, énergie, défense, marchés financiers), sans dire quelles décisions seraient transférées, d’où 1 ou 2."
       },
       "eur-02": {
         "missing": true,
@@ -685,11 +706,15 @@
         "codedAt": "2026-10-08T14:49:46.768Z"
       },
       "lib-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "486ffefabc505056"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:03.870Z"
+        "codedAt": "2026-10-09T09:00:58.632Z",
+        "note": "Proposition de Renaissance, parti qu’il dirige ; il l’a défendue lui-même dans le même article (« je considère qu'on doit agir »). Interdiction limitée aux mineures de moins de 15 ans ; en 2026, il refuse une interdiction générale du voile "
       },
       "eco-01": {
         "set": [
@@ -963,11 +988,15 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "sec-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "e2ffdee5b0d2a2f1"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-09T09:00:53.485Z",
+        "note": "Message publié sur son compte X lors de son passage sur France Inter, reproduit par son parti. Il veut rétablir les courtes peines de prison, l’inverse de leur remplacement."
       },
       "sec-03": {
         "value": -1,
@@ -992,11 +1021,15 @@
         "note": "Discours aux préfets du 8 octobre 2024, alors ministre de l’Intérieur ; l’article précise qu’il vise l’immigration légale comme illégale. Son programme 2027 prévoit des quotas migratoires fixés par la loi."
       },
       "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "bfd026bf04531b7e"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-09T09:00:53.485Z",
+        "note": "Entretien au JDD republié par son parti. Même réponse : « l’idée de régulariser des clandestins qui ont fraudé nos lois est une capitulation »."
       },
       "sec-06": {
         "value": 2,
@@ -1053,11 +1086,15 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "lib-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "50b9ea3a018ebe45"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:17.420Z"
+        "codedAt": "2026-10-09T09:00:53.485Z",
+        "note": "Entretien au JDD republié par son parti. Il refuse l’interdiction générale dans l’espace public voulue par le RN et propose des interdictions ciblées (sport, sorties scolaires, université), d’où 1. Son projet prévoit aussi d’étendre par la "
       },
       "tra-01": {
         "set": [
@@ -1081,11 +1118,18 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "61a738261f2d5bfe"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-09T09:00:53.485Z",
+        "note": "Entretien republié par son parti. Il critique la création de postes d’enseignants au vu de la baisse du nombre d’élèves ; il ne parle pas explicitement de la taille des classes, d’où -2 ou -1."
       },
       "tra-04": {
         "value": -2,
@@ -1167,11 +1211,15 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "086036bdcab736b1"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z"
+        "codedAt": "2026-10-09T09:00:53.485Z",
+        "note": "Entretien au Parisien republié par son parti, en réponse à une question sur la proportionnelle défendue par François Bayrou. En juin 2025, il a qualifié son opposition de « point dur »."
       },
       "dem-02": {
         "set": [
@@ -1765,11 +1813,18 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "18ce72362ceb2bd0"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:56.473Z"
+        "codedAt": "2026-10-09T09:00:46.359Z",
+        "note": "Programme présidentiel 2022 (mesure 16), repris dans le livret de 2024. Remplacement de l’impôt sur la fortune immobilière par un impôt sur la fortune financière ; le livret précise que la résidence principale et les biens professionnels en"
       },
       "eco-03": {
         "missing": true,
@@ -1974,18 +2029,32 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "698053522a159418"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-09T09:00:46.359Z",
+        "note": "Programme du parti aux législatives 2024, mesure d’urgence par décret. La réforme visée réduisait la durée d’indemnisation. Rejet d’un durcissement précis, pas de doctrine générale, d’où -2 ou -1."
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "7dccc8145ebba9d3"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:57:58.448Z"
+        "codedAt": "2026-10-09T09:00:46.359Z",
+        "note": "Programme présidentiel 2022 (mesure 6). Porte sur les maternités et lits d’hôpital ; rien sur les bureaux de poste ou les gares, ni sur le coût, d’où 1 ou 2."
       },
       "cli-01": {
         "value": 2,
@@ -2038,18 +2107,29 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "6cfc38c80badd6e5"
+        ],
+        "basis": "programme-2022",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-09T09:00:46.359Z",
+        "note": "Livret de 2024 présenté comme la mise à jour du programme présidentiel (« pu- blics » : coupure de ligne du PDF). Les entreprises signaleront ensuite les normes à « supprimer, clarifier ou, le cas échéant, renforcer », d’où 1 et non 2."
       },
       "eur-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "54fdc0dffbd56a96"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-09T09:00:46.359Z",
+        "note": "Programme du parti aux législatives 2024. Le refus est formulé pour la défense et la diplomatie seulement, d’où -2 ou -1."
       },
       "eur-02": {
         "value": 2,
@@ -2151,11 +2231,18 @@
         "codedAt": "2026-10-08T15:06:17.605Z"
       },
       "dem-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "f042f39a446044a0"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:06:17.605Z"
+        "codedAt": "2026-10-09T09:00:46.359Z",
+        "note": "Propos de la candidate lors de la présentation de sa trajectoire budgétaire, avec une centralisation des recettes de TVA et une baisse des dépenses des collectivités (8,2 milliards en 2027). Les ressources des collectivités seraient fixées "
       },
       "dem-06": {
         "missing": true,
@@ -4827,11 +4914,18 @@
         "codedAt": "2026-10-08T15:43:20.824Z"
       },
       "sec-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "d9dd88f8ca4a45e4"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-09T09:03:24.940Z",
+        "note": "Texte signé par le candidat. Il refuse l’immigration de travail réclamée par le patronat, mais défend la régularisation des étrangers déjà présents et un droit d’asile inconditionnel : il ne fixe pas d’objectif global de baisse."
       },
       "sec-05": {
         "value": 2,
@@ -4909,11 +5003,18 @@
         "note": "Texte du programme sur le site de campagne officiel, dans le « Mot de la fin » signé Sophie Taillé-Polian, responsable du programme et porte-parole de Ruffin : c'est un texte de campagne, pas une citation directe de Ruffin. Un SMIC à 1 600 "
       },
       "lib-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "8584096d9693981a"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
+        "codedAt": "2026-10-09T09:03:24.940Z",
+        "note": "Vote Pour en lecture définitive (scrutin n° 8280, 15 juillet 2026), comme en première et en deuxième lecture."
       },
       "lib-02": {
         "missing": true,
@@ -5016,11 +5117,18 @@
         "note": "« Mot de la fin » du cahier, signé Sophie Taillé-Polian, responsable du programme et porte-parole de F. Ruffin. Retour à 60 ans présenté comme une mesure forte, sans réserve. Le cahier prévoit aussi des trimestres en plus pour les métiers p"
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "85a91460626dd6f7"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:59:34.181Z"
+        "codedAt": "2026-10-09T09:03:24.940Z",
+        "note": "Texte du parti. « Le faire » renvoie à la taxation des plus hauts revenus et patrimoines : de nouvelles recettes pour, entre autres, l’hôpital."
       },
       "tra-03": {
         "missing": true,
@@ -5396,11 +5504,18 @@
         "codedAt": "2026-10-08T15:49:50.025Z"
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "e54c1bee7b223242"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-09T09:03:18.861Z",
+        "note": "Vote Contre la loi Duplomb (scrutin n° 2957, 8 juillet 2025), qui allégeait des contraintes environnementales pesant sur les agriculteurs. Porte sur l’agriculture, pas sur les normes imposées aux entreprises en général."
       },
       "eur-01": {
         "missing": true,
@@ -5966,11 +6081,15 @@
         "note": "Vise la taxation du capital et des riches en général, pas un impôt sur le patrimoine précisément."
       },
       "eco-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "dc22d2a4846027e7"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-09T09:03:23.161Z",
+        "note": "Range la réduction de la dette par la baisse des dépenses sociales parmi les « mensonges patronaux ». Sa brochure de campagne 2027 dit de même : « Sous prétexte de réduire la dette de l’État, cette grande bourgeoisie veut tailler à la hache"
       },
       "eco-04": {
         "missing": true,
@@ -6043,11 +6162,15 @@
         "note": "Régularisation de tous les sans-papiers, au-delà des seuls métiers en tension."
       },
       "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "88f5ba3a2aa78a3a"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-09T09:03:23.161Z",
+        "note": "Dénonce le projet du gouvernement Lecornu de réserver les APL aux étrangers résidant en France depuis plusieurs années."
       },
       "cli-01": {
         "missing": true,
@@ -6089,11 +6212,18 @@
         "note": "Gratuité financée, selon elle, par les profits du grand patronat."
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "10a2021012819a6c"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:58:35.518Z"
+        "codedAt": "2026-10-09T09:03:23.161Z",
+        "note": "« Un permis de réchauffer la planète » est l’intertitre de ce passage, qui dénonce l’assouplissement des objectifs d’émissions imposés aux industriels par l’Union européenne. Ne parle pas des normes imposées aux agriculteurs."
       },
       "lib-01": {
         "value": 2,
@@ -6844,11 +6974,18 @@
         "codedAt": "2026-10-08T16:07:45.245Z"
       },
       "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "ec30de5d27714d95"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T17:00:12.691Z"
+        "codedAt": "2026-10-09T09:03:20.935Z",
+        "note": "Profession de foi commune des candidats du parti dont elle est porte-parole, aux législatives 2024. Ce n’est pas un engagement personnel de la candidate."
       },
       "tra-02": {
         "missing": true,
@@ -12816,26 +12953,199 @@
       "publisher": "becht2027.fr (livre-programme d'Olivier Becht)",
       "url": "https://becht2027.fr/chapitre/partie-2/",
       "passage": "Notre armée, elle aussi, a été mise à rude épreuve : en vingt-cinq ans, nous sommes passés de 300 000 à 200 000 soldats, de 1 200 à 220 chars, de 540 à 230 avions de chasse. Depuis 2022, l’effort de remontée en puissance a repris, et c’est nécessaire, mais le chemin reste long."
+    },
+    {
+      "id": "18ce72362ceb2bd0",
+      "title": "22 mesures pour 2022",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+      "passage": "Supprimer l’IFI qui taxe l’enracinement et créer un IFF, impôt sur la fortune financière, pour taxer la spéculation."
+    },
+    {
+      "id": "7dccc8145ebba9d3",
+      "title": "22 mesures pour 2022",
+      "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+      "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+      "passage": "Arrêter les fermetures des lits à l’hôpital public et des maternités."
+    },
+    {
+      "id": "698053522a159418",
+      "title": "Un projet, une méthode (programme du RN aux législatives 2024)",
+      "publisher": "Rassemblement national",
+      "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+      "date": "2024-06-24",
+      "passage": "Annulation de la réforme de l’assurance chômage de juillet 2024"
+    },
+    {
+      "id": "6cfc38c80badd6e5",
+      "title": "La France entreprend – Projet de Marine Le Pen",
+      "publisher": "Groupe RN à l’Assemblée nationale",
+      "url": "https://back.deputes-rn.fr/wp-content/uploads/2024/09/WEB-GRN-LIVRET-ENTREPRISE.pdf",
+      "date": "2024-09",
+      "passage": "la multiplication des normes – parfois contradictoires – contenues notamment dans les codes de l’environnement et des marchés pu- blics, doit être corrigée par une refonte d’ampleur"
+    },
+    {
+      "id": "54fdc0dffbd56a96",
+      "title": "Un projet, une méthode (programme du RN aux législatives 2024)",
+      "publisher": "Rassemblement national",
+      "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+      "date": "2024-06-24",
+      "passage": "Refuser tout transfert de compétences vers l’Union européenne dans les domaines de la défense et de la diplomatie"
+    },
+    {
+      "id": "f042f39a446044a0",
+      "title": "140 milliards d’euros d’économies d’ici 2032 : « l’effort radical » proposé par Marine Le Pen pour « redresser » les finances publiques",
+      "publisher": "Public Sénat",
+      "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+      "date": "2026-10-06",
+      "passage": "Chaque année, l’Etat transférera aux collectivités territoriales et à la Sécurité Sociale les ressources que le Parlement estime nécessaire à leur équilibre"
+    },
+    {
+      "id": "50b9ea3a018ebe45",
+      "title": "Les pressions ne marchent pas avec moi, rien ne m’arrêtera (entretien au JDD)",
+      "publisher": "Les Républicains",
+      "url": "https://republicains.fr/actualites/2026/09/12/les-pressions-ne-marchent-pas-avec-moi-rien-ne-marretera/",
+      "date": "2026-09-12",
+      "passage": "Je suis contre le voile, qui est un marqueur utilisé par les islamistes, mais je propose de l’interdire là où nous pouvons réellement le faire : dans les compétitions sportives, lors des sorties scolaires, à l’université publique."
+    },
+    {
+      "id": "086036bdcab736b1",
+      "title": "« La France pourrait être frappée demain » (entretien au Parisien)",
+      "publisher": "Les Républicains",
+      "url": "https://republicains.fr/actualites/2025/01/07/bruno-retailleau-la-france-pourrait-etre-frappee-demain/",
+      "date": "2025-01-07",
+      "passage": "Je n’ai pas changé d’avis : la proportionnelle, ce n’est pas l’esprit de la Ve République."
+    },
+    {
+      "id": "bfd026bf04531b7e",
+      "title": "Ma candidature ira jusqu’au bout (entretien au JDD)",
+      "publisher": "Les Républicains",
+      "url": "https://republicains.fr/actualites/2026/05/31/ma-candidature-ira-jusquau-bout/",
+      "date": "2026-05-31",
+      "passage": "On nous explique qu’il faudrait régulariser parce que certains secteurs manquent de main-d’œuvre. Mais on peut former des Français, comme on peut former des étrangers déjà présents légalement sur notre territoire."
+    },
+    {
+      "id": "e2ffdee5b0d2a2f1",
+      "title": "« Il faut assumer des peines courtes dès le premier délit grave »",
+      "publisher": "Les Républicains",
+      "url": "https://republicains.fr/actualites/2025/02/12/bruno-retailleau-il-faut-assumer-des-peines-courtes-des-le-premier-delit-grave/",
+      "date": "2025-02-12",
+      "passage": "Dès la première infraction grave, une sanction doit être appliquée. C’est pourquoi il est essentiel de rétablir des peines courtes."
+    },
+    {
+      "id": "61a738261f2d5bfe",
+      "title": "« En l’état, le projet de budget est invotable »",
+      "publisher": "Les Républicains",
+      "url": "https://republicains.fr/actualites/2025/10/22/bruno-retailleau-en-letat-le-projet-de-budget-est-invotable/",
+      "date": "2025-10-22",
+      "passage": "Ce budget va créer 8500 postes supplémentaires dans la fonction publique, dont 4500 à l’Éducation nationale alors qu’il y a eu 109 000 élèves en moins dans le primaire pour cette rentrée."
+    },
+    {
+      "id": "179fbc3ffebc1ed0",
+      "title": "Grand meeting d’Édouard Philippe à l’Adidas Arena (transcription du discours)",
+      "publisher": "Avec Édouard 2027 (site de campagne)",
+      "url": "https://www.edouardphilippe.fr/actualites/grand-meeting-edouard-philippe-adidas-arena",
+      "date": "2026-07-05",
+      "passage": "Une Europe que nous devons approfondir pour rester libres ! En matière d'IA et de technologies, en matière d'énergie, de défense ou de marchés financiers, nous devons oser construire une souveraineté européenne intégrale"
+    },
+    {
+      "id": "7a7487a980cd7379",
+      "title": "« Une interdiction générale et absolue du port du voile dans le sport serait contraire à ce qu'est la laïcité en France », estime Édouard Philippe",
+      "publisher": "Europe 1",
+      "url": "https://www.europe1.fr/politique/une-interdiction-du-port-du-voile-dans-le-sport-serait-contraire-a-ce-quest-la-laicite-en-france-estime-edouard-philippe-668465",
+      "date": "2025-03-18",
+      "passage": "Une interdiction générale et absolue du port du voile dans le sport serait contraire à ce qu'est la laïcité en France"
+    },
+    {
+      "id": "486ffefabc505056",
+      "title": "Rapport sur les Frères musulmans : comment Gabriel Attal se saisit-il du dossier de l'entrisme frériste",
+      "publisher": "Europe 1",
+      "url": "https://www.europe1.fr/politique/rapport-sur-les-freres-musulmans-comment-gabriel-attal-se-saisit-il-du-dossier-de-lentrisme-freriste-753332",
+      "date": "2025-05-21",
+      "passage": "pour les mineures de moins de 15 ans, d’interdire le port du voile dans l’espace public , notamment car cela porte gravement atteinte à l’égalité hommes-femmes et à la protection de l’enfance"
+    },
+    {
+      "id": "e54c1bee7b223242",
+      "title": "Delphine Batho - Votes",
+      "publisher": "Datan",
+      "url": "https://datan.fr/deputes/deux-sevres-79/depute_delphine-batho/votes",
+      "date": "2025-07-08",
+      "passage": "L'ensemble de la proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (texte de la commission mixte paritaire). CONTRE"
+    },
+    {
+      "id": "ec30de5d27714d95",
+      "title": "Législatives 2024 : profession de foi des candidats du NPA-Révolutionnaires",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/legislatives-2024-professions-de-foi-des-candidats-du-npa-revolutionnaires/",
+      "date": "2024-06-18",
+      "passage": "Retraite à 60 ans au plus tard, ou après 37 ans et demi de travail à taux plein."
+    },
+    {
+      "id": "dc22d2a4846027e7",
+      "title": "Face aux mensonges patronaux, affirmer les intérêts des travailleurs ! (éditorial signé Nathalie Arthaud)",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/face-mensonges-patronaux-affirmer-interets-travailleurs-196842.html",
+      "date": "2026-09-07",
+      "passage": "« Pour réduire la dette, il faut baisser les dépenses sociales », « Le régime des retraites est intenable », « Il faut travailler plus » sont autant d’affirmations présentées comme des vérités indiscutables."
+    },
+    {
+      "id": "88f5ba3a2aa78a3a",
+      "title": "Carburants, prix, budget : stop au racket ! (éditorial signé Nathalie Arthaud)",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/carburants-prix-budget-stop-racket-197249.html",
+      "date": "2026-09-21",
+      "passage": "geler les APL et les supprimer pour les étrangers qui n’auront pas plusieurs années de résidence en France. Les travailleurs étrangers auraient donc le droit de se casser le dos sur les chantiers"
+    },
+    {
+      "id": "10a2021012819a6c",
+      "title": "Une politique écologique conséquente, c’est renverser le capitalisme (éditorial signé Nathalie Arthaud)",
+      "publisher": "Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/politique-ecologique-consequente-cest-renverser-capitalisme-195906.html",
+      "date": "2026-07-20",
+      "passage": "Un permis de réchauffer la planète Des tractations sont aussi en cours au sein de l’Union européenne, cette fois sous pression des industriels qui demandent un assouplissement de leurs objectifs de réduction des émissions de gaz à effet de serre."
+    },
+    {
+      "id": "d9dd88f8ca4a45e4",
+      "title": "Pourquoi le Medef veut 3,9 millions de travailleurs immigrés",
+      "publisher": "François Ruffin (blog)",
+      "url": "https://francoisruffin.fr/pourquoi-le-medef-veut-39-millions-de-travailleurs-immigres/",
+      "date": "2026-04-29",
+      "passage": "Et bien sûr : le droit d’asile, qui est inconditionnel, supra-constitutionnel. En revanche, nous refusons une immigration de travailleurs, notamment pour les services."
+    },
+    {
+      "id": "8584096d9693981a",
+      "title": "François Ruffin - Votes",
+      "publisher": "Datan",
+      "url": "https://datan.fr/deputes/somme-80/depute_francois-ruffin/votes",
+      "date": "2026-07-15",
+      "passage": "L'ensemble de la proposition de loi relative au droit à l'aide à mourir (lecture définitive). POUR"
+    },
+    {
+      "id": "85a91460626dd6f7",
+      "title": "Notre manifeste",
+      "publisher": "Debout !",
+      "url": "https://debout.fr/notre-manifeste/",
+      "passage": "Il faut le faire. Pour des raisons économiques, évidemment. Pour retrouver des marges de manœuvre fiscales. Pour soutenir des services publics exsangues, l’hôpital pilier de l’État social, l’École pilier de la République, la Justice, la police, etc."
     }
   ],
   "refreshedAt": {
-    "edouard-philippe": "2026-10-08T18:12:55.891Z",
-    "gabriel-attal": "2026-10-08T18:11:37.885Z",
-    "bruno-retailleau": "2026-10-08T18:10:53.270Z",
+    "edouard-philippe": "2026-10-09T09:00:55.550Z",
+    "gabriel-attal": "2026-10-09T09:00:58.632Z",
+    "bruno-retailleau": "2026-10-09T09:00:53.485Z",
     "david-lisnard": "2026-10-09T08:59:29.515Z",
-    "marine-le-pen": "2026-10-08T18:14:43.430Z",
+    "marine-le-pen": "2026-10-09T09:00:46.359Z",
     "eric-zemmour": "2026-10-09T08:59:18.567Z",
     "nicolas-dupont-aignan": "2026-10-09T08:59:10.775Z",
     "florian-philippot": "2026-10-09T08:58:49.913Z",
     "jean-luc-melenchon": "2026-10-09T08:59:20.276Z",
     "fabien-roussel": "2026-10-09T08:59:03.304Z",
     "marine-tondelier": "2026-10-09T08:58:58.811Z",
-    "francois-ruffin": "2026-10-08T18:28:41.116Z",
-    "delphine-batho": "2026-10-08T17:54:08.652Z",
+    "francois-ruffin": "2026-10-09T09:03:24.940Z",
+    "delphine-batho": "2026-10-09T09:03:18.861Z",
     "karim-bouamrane": "2026-10-08T18:24:43.530Z",
-    "nathalie-arthaud": "2026-10-08T17:44:58.610Z",
+    "nathalie-arthaud": "2026-10-09T09:03:23.161Z",
     "anasse-kazib": "2026-10-08T18:23:36.781Z",
-    "selma-labib": "2026-10-08T18:27:40.603Z",
+    "selma-labib": "2026-10-09T09:03:20.935Z",
     "olivier-becht": "2026-10-09T08:59:36.147Z",
     "raphael-glucksmann": "2026-10-09T08:59:06.187Z",
     "bernard-cazeneuve": "2026-10-09T08:59:33.560Z",
