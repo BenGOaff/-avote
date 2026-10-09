@@ -154,6 +154,13 @@ for (const p of partis.partis) {
   if (all.some(badSrc)) errors.push(`partis : ${p.slug} contient un champ sans source valable`)
 }
 
+// Patrimoine déclaré : source https, extrait, candidat connu
+const patrimoine = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/patrimoine.json'), 'utf8')) as { entries: Record<string, { amount: number; quote: string; url: string; label: string }> }
+for (const [slug, e] of Object.entries(patrimoine.entries)) {
+  if (!candSlugs.has(slug)) errors.push(`patrimoine : ${slug} absent des candidatures`)
+  if (!e.url?.startsWith('https://') || !e.quote || /wikipedia\.org/.test(e.url) || !(e.amount > 0) || !e.label) errors.push(`patrimoine : ${slug} sans source valable ou sans montant`)
+}
+
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
 for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)

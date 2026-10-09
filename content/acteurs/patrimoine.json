@@ -1,0 +1,77 @@
+{
+  "_note": "Patrimoine déclaré par les candidats, uniquement d'après une publication officielle (HATVP, Journal officiel) ou un article qui en rapporte le contenu. Jamais les déclarations des parlementaires, consultables en préfecture et dont la publication est interdite. Montants tels que publiés, non vérifiés par Ça vote ?.",
+  "netDefinition": "Le patrimoine net est égal aux biens détenus moins les dettes (emprunts, etc.)",
+  "netDefinitionUrl": "https://www.franceinfo.fr/politique/emmanuel-macron/presidentielle-2022-consultez-les-declarations-de-patrimoine-et-d-interets-des-12-candidats_4998801.html",
+  "entries": {
+    "eric-zemmour": {
+      "date": "2022-03-08",
+      "amount": 4200000,
+      "label": "4,2 millions d’euros",
+      "kind": "net",
+      "context": "déclaré en mars 2022 comme candidat à la présidentielle, publié par la HATVP",
+      "quote": "Eric Zemmour : 4,2 millions d'euros",
+      "url": "https://www.franceinfo.fr/politique/emmanuel-macron/presidentielle-2022-consultez-les-declarations-de-patrimoine-et-d-interets-des-12-candidats_4998801.html",
+      "publisher": "franceinfo (avec AFP)"
+    },
+    "nicolas-dupont-aignan": {
+      "date": "2022-03-08",
+      "amount": 2000000,
+      "label": "2 millions d’euros",
+      "kind": "net",
+      "context": "déclaré en mars 2022 comme candidat à la présidentielle, publié par la HATVP",
+      "quote": "Nicolas Dupont-Aignan : 2 millions d'euros",
+      "url": "https://www.franceinfo.fr/politique/emmanuel-macron/presidentielle-2022-consultez-les-declarations-de-patrimoine-et-d-interets-des-12-candidats_4998801.html",
+      "publisher": "franceinfo (avec AFP)"
+    },
+    "jean-luc-melenchon": {
+      "date": "2022-03-08",
+      "amount": 1400000,
+      "label": "1,4 million d’euros",
+      "kind": "net",
+      "context": "déclaré en mars 2022 comme candidat à la présidentielle, publié par la HATVP",
+      "quote": "Jean-Luc Mélenchon : 1,4 million d'euros",
+      "url": "https://www.franceinfo.fr/politique/emmanuel-macron/presidentielle-2022-consultez-les-declarations-de-patrimoine-et-d-interets-des-12-candidats_4998801.html",
+      "publisher": "franceinfo (avec AFP)"
+    },
+    "marine-le-pen": {
+      "date": "2022-03-08",
+      "amount": 1200000,
+      "label": "1,2 million d’euros",
+      "kind": "net",
+      "context": "déclaré en mars 2022 comme candidat à la présidentielle, publié par la HATVP",
+      "quote": "Marine Le Pen : 1,2 million d'euros",
+      "url": "https://www.franceinfo.fr/politique/emmanuel-macron/presidentielle-2022-consultez-les-declarations-de-patrimoine-et-d-interets-des-12-candidats_4998801.html",
+      "publisher": "franceinfo (avec AFP)"
+    },
+    "fabien-roussel": {
+      "date": "2022-03-08",
+      "amount": 220000,
+      "label": "220 000 euros",
+      "kind": "net",
+      "context": "déclaré en mars 2022 comme candidat à la présidentielle, publié par la HATVP",
+      "quote": "Fabien Roussel : 220 000 euros",
+      "url": "https://www.franceinfo.fr/politique/emmanuel-macron/presidentielle-2022-consultez-les-declarations-de-patrimoine-et-d-interets-des-12-candidats_4998801.html",
+      "publisher": "franceinfo (avec AFP)"
+    },
+    "nathalie-arthaud": {
+      "date": "2022-03-08",
+      "amount": 219000,
+      "label": "219 000 euros",
+      "kind": "net",
+      "context": "déclaré en mars 2022 comme candidat à la présidentielle, publié par la HATVP",
+      "quote": "Nathalie Arthaud : 219 000 euros",
+      "url": "https://www.franceinfo.fr/politique/emmanuel-macron/presidentielle-2022-consultez-les-declarations-de-patrimoine-et-d-interets-des-12-candidats_4998801.html",
+      "publisher": "franceinfo (avec AFP)"
+    },
+    "edouard-philippe": {
+      "date": "2017-12-15",
+      "amount": 1700000,
+      "label": "un peu plus de 1,7 million d’euros",
+      "kind": "estime",
+      "context": "déclaré à l’entrée à Matignon (2017), publié par la HATVP le 15 décembre 2017",
+      "quote": "le Premier ministre possède tout de même un patrimoine estimé à un peu plus de 1,7 million d’euros",
+      "url": "https://www.franceinfo.fr/politique/gouvernement-d-edouard-philippe/le-patrimoine-des-ministres-publie-par-la-haute-autorite-pour-la-moralisation_2517807.html",
+      "publisher": "franceinfo (avec AFP)"
+    }
+  }
+}

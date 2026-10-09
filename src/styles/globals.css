@@ -3430,3 +3430,22 @@ details.disclosure > div {
     grid-template-areas: 'n pic who meter score cover flags';
   }
 }
+.patrimoine {
+  margin: var(--s4) 0;
+  padding: var(--s3) var(--s4);
+  border-left: 4px solid var(--highlight);
+  background: var(--surface);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.patrimoine__title {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.patrimoine__amount {
+  margin: var(--s1) 0;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
