@@ -34,5 +34,5 @@ Valeurs provisoires centralisées dans le code et la configuration. Aucune n’e
 - **Tendances** (statistiques anonymes) : désactivé tant que le mécanisme de confidentialité n’est pas validé.
 - **Observatoire des médias** : page de méthode en place, aucune fiche publiée.
 - **Ça change quoi pour moi** : nécessite des règles d’éligibilité sourcées par mesure.
-- **Caricatures** : pas de génération d’images de personnes réelles par IA. Proposition : dessins commandés à un·e illustrateur·rice, intégrés au studio comme gabarits.
+- **Portraits des candidats** (décision de la rédaction, octobre 2026) : illustrations générées par IA, caricature bienveillante dans le style du site, fournies par la rédaction. Conditions : même traitement pour tous (cadrage, expression neutre, aucun trait moqué sur le physique, l’origine ou la santé), mention « Illustration générée par IA » visible sur chaque portrait (AI Act, art. 50), fichiers servis par le site. Logos des partis : fichiers officiels fournis par la rédaction, usage informatif, servis par le site.
 - **Logo** : version vectorielle reconstruite (`public/brand`). Un passage par un·e graphiste pour l’ajustement optique final est recommandé.

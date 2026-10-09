@@ -4,8 +4,9 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
 import { BLANK, leadingZeroBits } from '@/lib/urne-shared'
 import { BoothScene } from './BoothScene'
+import { DonateCard } from '@/components/Donate'
 
-const t = UI_COPY.urne
+const t = { ...UI_COPY.urne, afterVote: UI_COPY.donate.afterVote }
 const VOTED_KEY = 'ca-vote:urne'
 
 type Choice = { slug: string; name: string; party?: string; bloc?: string }
@@ -191,6 +192,7 @@ export function UrneBooth({ choices }: { choices: Choice[] }) {
         </div>
       )}
       {phase === 'done' && message && <p className="small muted">{message}</p>}
+      {phase === 'done' && <DonateCard lead={t.afterVote} />}
 
       {phase === 'error' && (
         <div className="alert alert--correction" role="alert">

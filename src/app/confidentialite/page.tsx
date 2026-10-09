@@ -39,6 +39,15 @@ export default function PrivacyPage() {
         </p>
         <p>La newsletter n’a aucun lien avec le test. Elle ne sait pas si tu l’as fait, ni ce que tu as répondu, et elle n’est jamais segmentée selon des opinions.</p>
 
+        <h2 id="contact" style={{ fontSize: 'var(--h3)' }}>
+          Le formulaire de contact
+        </h2>
+        <p>
+          Ton message part par email à la rédaction, avec ton adresse si tu la donnes, pour qu’on puisse te répondre. Le site ne le conserve pas et ne le
+          journalise pas. Le message est gardé dans la boîte de réception le temps de le traiter, puis supprimé. Envoi : {LEGAL.emailProvider.name}. Base légale :
+          ta demande.
+        </p>
+
         <h2 id="urne" style={{ fontSize: 'var(--h3)' }}>
           L’urne : un bulletin anonyme, si tu le choisis
         </h2>

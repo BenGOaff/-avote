@@ -58,7 +58,7 @@ export function rateLimited(bucket: string, max = 5, windowMs = 10 * 60 * 1000):
 
 const RESEND = 'https://api.resend.com'
 
-async function resend(path: string, body: unknown, idempotencyKey?: string): Promise<Response> {
+export async function resend(path: string, body: unknown, idempotencyKey?: string): Promise<Response> {
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) throw new Error('RESEND_API_KEY absente')
   return fetch(`${RESEND}${path}`, {
@@ -73,7 +73,7 @@ async function resend(path: string, body: unknown, idempotencyKey?: string): Pro
   })
 }
 
-const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string)
+export const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string)
 
 export async function sendConfirmation(p: Omit<Pending, 'issuedAt'>, confirmUrl: string): Promise<boolean> {
   const hello = p.firstName ? `Bonjour ${escapeHtml(p.firstName)},` : 'Bonjour,'

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
 import { getCorrections } from '@/lib/content'
 import { formatDate } from '@/components/Editorial'
@@ -78,8 +79,8 @@ export default function CorrectionsPage() {
         <section id="signaler" className="card">
           <h2 style={{ fontSize: 'var(--h3)' }}>Signaler une erreur</h2>
           <p>
-            Écris à <a href={`mailto:${LEGAL.contactEmail}?subject=Signalement`}>{displayEmail(LEGAL.contactEmail)}</a> avec le lien de la page, ce qui te semble
-            faux, et si possible la source qui le montre.
+            <Link href="/contact?sujet=correction">Envoie une demande de correction</Link> avec le lien de la page, ce qui te semble faux, et si possible la
+            source qui le montre. Ou écris à <a href={`mailto:${LEGAL.contactEmail}?subject=Signalement`}>{displayEmail(LEGAL.contactEmail)}</a>.
           </p>
           <p className="small muted" style={{ margin: 0 }}>
             Ne colle pas tes réponses au test ni ton résultat dans le message : on n’en a pas besoin.
