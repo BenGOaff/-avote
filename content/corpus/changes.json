@@ -4965,5 +4965,37 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "85a91460626dd6f7"
+  },
+  {
+    "date": "2026-10-09T10:10:11.968Z",
+    "actor": "gabriel-attal",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "e108eb96c220cfe0"
+  },
+  {
+    "date": "2026-10-09T10:10:11.968Z",
+    "actor": "olivier-becht",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "e108eb96c220cfe0"
+  },
+  {
+    "date": "2026-10-09T10:10:11.968Z",
+    "actor": "emmanuel-maurel",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "bf8ca36a289254e6"
+  },
+  {
+    "date": "2026-10-09T10:10:11.968Z",
+    "actor": "emmanuel-maurel",
+    "item": "lib-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "7ce915e159f677ae"
   }
 ]

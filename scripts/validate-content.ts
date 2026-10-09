@@ -172,6 +172,13 @@ for (const [slug, list] of Object.entries(casier.entries)) {
   }
 }
 
+// Votes à l'Assemblée : candidats connus, un vote par scrutin
+const votesAn = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/votes-an.json'), 'utf8')) as { scrutins: { numero: number }[]; votes: Record<string, Record<string, string>> }
+for (const [slug, v] of Object.entries(votesAn.votes)) {
+  if (!candSlugs.has(slug)) errors.push(`votes AN : ${slug} absent des candidatures`)
+  if (votesAn.scrutins.some((s) => !v[String(s.numero)])) errors.push(`votes AN : ${slug} sans vote sur certains scrutins`)
+}
+
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
 for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)

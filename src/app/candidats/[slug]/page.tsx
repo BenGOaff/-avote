@@ -14,6 +14,7 @@ import { Portrait } from '@/components/Portrait'
 import { portraitOf } from '@/lib/images'
 import { nuanceOf } from '@/lib/nuances'
 import { NET_DEFINITION, patrimoineOf } from '@/lib/patrimoine'
+import { VOTE_LABEL, VOTES_FETCHED_AT, VOTES_SOURCE, isDeputy, scrutinLabel, scrutinUrl, votesOf } from '@/lib/votes-an'
 import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
 export const dynamicParams = false
@@ -82,6 +83,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
         </p>
         <PatrimoineBlock slug={a.slug} />
         <CasierBlock slug={a.slug} />
+        <VotesBlock slug={a.slug} />
       </div>
 
       {fiche && (
@@ -251,6 +253,60 @@ function CasierBlock({ slug }: { slug: string }) {
           </p>
         </>
       )}
+    </section>
+  )
+}
+
+/** Ses votes à l'Assemblée : les grands textes (scrutins solennels) et les motions de censure, d'après l'open data officiel. */
+function VotesBlock({ slug }: { slug: string }) {
+  if (!isDeputy(slug)) return null
+  const all = votesOf(slug)
+  const solennels = all.filter((x) => x.scrutin.type === 'solennel')
+  const censures = all.filter((x) => x.scrutin.type === 'censure')
+  const count = (k: string) => solennels.filter((x) => x.vote === k).length
+  const censureVoted = censures.filter((x) => x.vote === 'pour').length
+  return (
+    <section className="votes" aria-labelledby="votes-an">
+      <h2 id="votes-an" className="patrimoine__title">
+        Ses votes à l’Assemblée
+      </h2>
+      <p className="small">Sur les {solennels.length} votes solennels de la législature, ceux des grands textes :</p>
+      <ul className="votes__counts">
+        {(['pour', 'contre', 'abstention', 'absent'] as const).map((k) => (
+          <li key={k} className={`votes__count votes__count--${k}`}>
+            <strong>{count(k)}</strong> {VOTE_LABEL[k].toLowerCase()}
+          </li>
+        ))}
+      </ul>
+      <p className="small">
+        Motions de censure : en a voté <strong>{censureVoted}</strong> sur {censures.length}.
+      </p>
+      <details className="sources">
+        <summary>Voir chaque vote</summary>
+        <ol className="votes__list">
+          {[...all].reverse().map(({ scrutin, vote }) => (
+            <li key={scrutin.numero} className="votes__row">
+              <span className={`votes__chip votes__chip--${vote}`}>{scrutin.type === 'censure' && vote !== 'pour' ? '—' : VOTE_LABEL[vote]}</span>
+              <span className="votes__what">
+                <a href={scrutinUrl(scrutin.numero)} rel="noopener noreferrer nofollow" target="_blank">
+                  {scrutin.type === 'censure' ? 'Motion de censure' : scrutinLabel(scrutin)}
+                </a>
+                <span className="small muted">
+                  {' '}
+                  · {formatDate(scrutin.date)} · {scrutin.sort === 'adopté' ? 'adopté' : 'rejeté'} ({scrutin.pour} pour, {scrutin.contre} contre)
+                </span>
+              </span>
+            </li>
+          ))}
+        </ol>
+      </details>
+      <p className="small muted">
+        Source :{' '}
+        <a href={VOTES_SOURCE} rel="noopener noreferrer nofollow" target="_blank">
+          open data de l’Assemblée nationale
+        </a>
+        , relevé du {formatDate(VOTES_FETCHED_AT)}. « N’a pas voté » : ne figure ni parmi les pour, ni parmi les contre, ni parmi les abstentions.
+      </p>
     </section>
   )
 }

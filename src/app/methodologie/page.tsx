@@ -225,6 +225,14 @@ export default function MethodPage() {
           <li>Ne sont pas retenus : plaintes sans suite judiciaire, enquêtes de presse, ouvertures d’enquête sans mise en examen, affaires visant seulement un proche ou un parti, vie privée.</li>
         </ul>
 
+        <h2 id="votes">Les votes à l’Assemblée</h2>
+        <p>
+          Pour les candidats députés, les votes nominatifs viennent de l’open data officiel de l’Assemblée nationale : tous les scrutins solennels (les grands
+          textes) et toutes les motions de censure de la législature, recopiés tels quels par un programme (scripts/votes-an.ts). « N’a pas voté » veut dire
+          que le nom ne figure dans aucune liste du scrutin. Un vote ne devient une position du test que s’il porte exactement sur l’affirmation, avec la
+          mention « Vote ».
+        </p>
+
         <h2 id="ia">Ce que fait l’IA, ce qu’elle ne fait pas</h2>
         <p>
           Une IA repère les nouvelles déclarations et candidatures, rédige les brèves à partir des seules pièces collectées, et code les positions des
