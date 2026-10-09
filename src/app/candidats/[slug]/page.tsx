@@ -16,6 +16,7 @@ import { nuanceOf } from '@/lib/nuances'
 import { NET_DEFINITION, patrimoineOf } from '@/lib/patrimoine'
 import { hatvpOf } from '@/lib/hatvp'
 import { VOTE_LABEL, VOTES_FETCHED_AT, VOTES_SOURCE, isDeputy, scrutinLabel, scrutinUrl, votesOf } from '@/lib/votes-an'
+import { SENAT_FETCHED_AT, senatLabel, senatOf } from '@/lib/votes-senat'
 import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
 export const dynamicParams = false
@@ -85,6 +86,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
         <PatrimoineBlock slug={a.slug} />
         <CasierBlock slug={a.slug} />
         <VotesBlock slug={a.slug} />
+        <SenatBlock slug={a.slug} />
       </div>
 
       {fiche && (
@@ -324,6 +326,58 @@ function VotesBlock({ slug }: { slug: string }) {
           open data de l’Assemblée nationale
         </a>
         , relevé du {formatDate(VOTES_FETCHED_AT)}. « N’a pas voté » : ne figure ni parmi les pour, ni parmi les contre, ni parmi les abstentions.
+      </p>
+    </section>
+  )
+}
+
+/** Ses votes au Sénat sur l'ensemble des textes, depuis qu'il y siège, d'après les pages officielles des scrutins. */
+function SenatBlock({ slug }: { slug: string }) {
+  const s = senatOf(slug)
+  if (!s || s.scrutins.length === 0) return null
+  const count = (k: string) => s.scrutins.filter((x) => x.vote === k).length
+  return (
+    <section className="votes" aria-labelledby="votes-senat">
+      <h2 id="votes-senat" className="patrimoine__title">
+        Ses votes au Sénat
+      </h2>
+      <p className="small">
+        Sur les {s.scrutins.length} votes sur l’ensemble d’un texte depuis qu’il siège à nouveau (
+        <time dateTime={s.since}>{formatDate(s.since)}</time>) :
+      </p>
+      <ul className="votes__counts">
+        {(['pour', 'contre', 'abstention', 'non-votant'] as const).map((k) => (
+          <li key={k} className={`votes__count votes__count--${k}`}>
+            <strong>{count(k)}</strong> {k === 'non-votant' ? 'n’a pas pris part au vote' : VOTE_LABEL[k].toLowerCase()}
+          </li>
+        ))}
+      </ul>
+      <details className="sources">
+        <summary>Voir chaque vote</summary>
+        <ol className="votes__list">
+          {s.scrutins.map((x) => (
+            <li key={x.numero} className="votes__row">
+              <span className={`votes__chip votes__chip--${x.vote}`}>{x.vote === 'non-votant' ? 'N’a pas voté' : VOTE_LABEL[x.vote]}</span>
+              <span className="votes__what">
+                <a href={x.url} rel="noopener noreferrer nofollow" target="_blank">
+                  {senatLabel(x.titre)}
+                </a>
+                <span className="small muted">
+                  {' '}
+                  · {formatDate(x.date)}
+                  {x.sort ? ` · ${x.sort}` : ''}
+                  {x.pour !== null ? ` (${x.pour} pour, ${x.contre} contre)` : ''}
+                </span>
+              </span>
+            </li>
+          ))}
+        </ol>
+      </details>
+      <p className="small muted">
+        Source : pages officielles des scrutins publics du Sénat, relevé du {formatDate(SENAT_FETCHED_AT)}.{' '}
+        <a href={s.page} rel="noopener noreferrer nofollow" target="_blank">
+          Sa page de sénateur
+        </a>
       </p>
     </section>
   )

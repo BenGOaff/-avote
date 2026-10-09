@@ -1,0 +1,4 @@
+{
+  "_note": "Version rapide du test : 2 affirmations par thème, choisies parmi celles où les positions des candidats sont les mieux documentées et les plus différentes (écart type des positions connues × part des candidats documentés), calculé sur le référentiel du 9 octobre 2026. Le classement qui en sort est indicatif.",
+  "items": ["eco-02", "eco-05", "tra-01", "tra-05", "sec-05", "sec-04", "lib-01", "lib-06", "cli-01", "cli-06", "eur-03", "eur-01", "dem-01", "dem-03"]
+}

@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { Fragment, useEffect, useMemo, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
-import { demoCorpus, liveCorpus, questionnaire as set, assertCompatible } from '@/lib/data'
+import { QUICK_ITEMS, demoCorpus, liveCorpus, questionnaire as set, assertCompatible } from '@/lib/data'
 import { computeDimensions, type DimensionResult } from '@/lib/engine/dimensions'
 import { rankActors, redLineStatus, type RankingEntry, type RankingResult, type WeightMode } from '@/lib/engine/scoring'
 import type { Answers, Corpus, Priorities } from '@/lib/engine/types'
@@ -57,9 +57,9 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
   const actors = corpus.actors.filter((a) => !hidden.has(a.slug))
   const compatible = assertCompatible(set, corpus)
   const ranking = useMemo(
-    () => (compatible && actors.length > 0 ? rankActors(set, answers, actors, corpus.positions, { mode, priorities: state?.priorities ?? undefined, essentials: state?.essentials }) : null),
+    () => (compatible && actors.length > 0 ? rankActors(set, answers, actors, corpus.positions, { mode, priorities: state?.priorities ?? undefined, essentials: state?.essentials, quick: state?.quick ? QUICK_ITEMS : undefined }) : null),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [answers, mode, corpus, state?.hiddenActors?.join(','), state?.priorities, state?.essentials, compatible],
+    [answers, mode, corpus, state?.hiddenActors?.join(','), state?.priorities, state?.essentials, state?.quick, compatible],
   )
 
   if (!loaded) return <p aria-live="polite">Chargement…</p>
@@ -112,6 +112,14 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
           </div>
         )}
 
+        {state.quick && (
+          <div className="alert alert--info">
+            <p style={{ margin: 0 }}>{R.quickBanner}</p>
+            <Link className="btn btn--small btn--secondary" style={{ marginTop: 'var(--s2)' }} href="/test">
+              {R.quickContinue}
+            </Link>
+          </div>
+        )}
         {ranking &&
           (ranking.ranked ? (
             <Verdict ranking={ranking} media={media} essentials={state.essentials} answers={answers} demo={demo} />
@@ -400,6 +408,43 @@ function Podium({ entries, demo, media }: { entries: RankingEntry[]; demo: boole
   )
 }
 
+/** Ce qui départage les deux premiers : les sujets où l'un est nettement plus proche de toi que l'autre. */
+function Decisive({ top, second, answers }: { top: RankingEntry; second: RankingEntry; answers: Answers }) {
+  const prox = (e: RankingEntry, id: string) => {
+    const c = e.score.contributions.find((x) => x.itemId === id)
+    if (!c || c.kind === 'unknown') return null
+    return c.s ?? (c.sMin + c.sMax) / 2
+  }
+  const rows = set.items
+    .map((it) => ({ it, a: prox(top, it.id), b: prox(second, it.id) }))
+    .filter((r): r is { it: (typeof set.items)[number]; a: number; b: number } => r.a !== null && r.b !== null && Math.abs(r.a - r.b) >= 0.5)
+    .sort((x, y) => Math.abs(y.a - y.b) - Math.abs(x.a - x.b))
+    .slice(0, 3)
+  if (rows.length === 0) return null
+  const posOf = (e: RankingEntry, id: string) => positionLabel(e.score.contributions.find((x) => x.itemId === id)?.position)
+  return (
+    <div className="decisive">
+      <p className="decisive__title">
+        Ce qui départage {top.name} et {second.name}
+      </p>
+      <ul className="decisive__list">
+        {rows.map(({ it, a, b }) => (
+          <li key={it.id}>
+            <span className="decisive__q">{it.text}</span>
+            <span className="small">
+              Toi : <strong>{answerLabel(answers[it.id])}</strong> · {top.name} : {posOf(top, it.id)} · {second.name} : {posOf(second, it.id)}{' '}
+              <span className="muted">({a > b ? top.name : second.name} plus proche de toi)</span>
+            </span>
+          </li>
+        ))}
+      </ul>
+      <Link className="small" href="/comparateur">
+        Comparer sujet par sujet, avec les citations
+      </Link>
+    </div>
+  )
+}
+
 /** Le verdict : en trois lignes, ce qu'il faut retenir avant de déplier quoi que ce soit. */
 function Verdict({ ranking, media, essentials, answers, demo }: { ranking: RankingResult; media: Record<string, ActorMedia>; essentials: string[]; answers: Answers; demo: boolean }) {
   const ranked = ranking.entries.slice(0, ranking.rankedCount)
@@ -433,6 +478,7 @@ function Verdict({ ranking, media, essentials, answers, demo }: { ranking: Ranki
           </li>
         )}
       </ul>
+      <Decisive top={top} second={second} answers={answers} />
       <Podium entries={ranked} demo={demo} media={media} />
       <p className="annotation humor verdict__quip">{VERDICT_QUIP}</p>
     </div>

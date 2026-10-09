@@ -9,6 +9,8 @@ export const ENGINE_CONFIG = {
   priorityTokens: 10,
   ranking: {
     minAnswered: 28,
+    /** Version rapide (14 affirmations) : classement indicatif dès 10 réponses */
+    quickMinAnswered: 10,
     minThemesHalfAnswered: 5,
     /** Un candidat n'est classé que s'il a une position (exacte ou entre deux niveaux) sur au moins la moitié du poids de tes réponses… */
     minActorCoverage: 0.5,

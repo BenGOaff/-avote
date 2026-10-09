@@ -1,0 +1,12 @@
+{
+ "_note": "Votes nominatifs au Sénat sur l’ensemble des textes, recopiés des pages officielles des scrutins publics.",
+ "source": "https://www.senat.fr/scrutin-public/scr2025.html",
+ "fetchedAt": "2026-10-09",
+ "senateurs": {
+  "bruno-retailleau": {
+   "since": "2025-11-13",
+   "page": "https://www.senat.fr/senateur/retailleau_bruno04033b.html",
+   "scrutins": []
+  }
+ }
+}

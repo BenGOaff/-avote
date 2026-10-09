@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
-import { itemsByTheme, questionnaire as set } from '@/lib/data'
+import { QUICK_ITEMS, itemsByTheme, questionnaire as set } from '@/lib/data'
 import { ORDINALS, type Answer, type Answers, type Ordinal, type Priorities } from '@/lib/engine/types'
 import { emptyState, loadState, saveState, type LocalVoterState } from '@/lib/local-store'
 import { answerLabel, effectiveAnswers } from '@/lib/answers'
@@ -16,8 +16,9 @@ import { TokenBoard } from './TokenBoard'
 
 type Step = { kind: 'intro' } | { kind: 'question'; index: number } | { kind: 'mirror'; themeIndex: number } | { kind: 'priorities' }
 
-const groups = itemsByTheme(set)
-const flat = groups.flatMap((g) => g.items)
+const allGroups = itemsByTheme(set)
+const groupsFor = (quick: boolean) => (quick ? allGroups.map((g) => ({ ...g, items: g.items.filter((i) => QUICK_ITEMS.includes(i.id)) })) : allGroups)
+const groups = allGroups
 const TOKENS = 10
 // Taille du rond selon la force de la réponse : plus on est tranché, plus le rond est grand
 const DOT = { [-2]: 40, [-1]: 30, 0: 22, 1: 30, 2: 40 } as Record<Ordinal, number>
@@ -67,6 +68,9 @@ export function TestFlow() {
     [update],
   )
 
+  const quick = !!state?.quick
+  const G = groupsFor(quick)
+  const flat = G.flatMap((g) => g.items)
   const answers = useMemo(() => effectiveAnswers(state, set), [state])
   const answeredCount = Object.keys(answers).length
   const redLines = new Set(state?.essentials ?? [])
@@ -79,11 +83,12 @@ export function TestFlow() {
         state={state}
         answeredCount={answeredCount}
         headingRef={headingRef}
-        onStart={(persist, restart) => {
-          const base = restart || !state ? emptyState(set.version, persist) : { ...state, persist }
+        onStart={(persist, restart, wantQuick = false) => {
+          const base = restart || !state ? { ...emptyState(set.version, persist), quick: wantQuick } : { ...state, persist, quick: false }
           setState(base)
           void saveState(base)
-          const firstUnanswered = restart ? 0 : flat.findIndex((i) => !(i.id in effectiveAnswers(base, set)))
+          const order = groupsFor(!!base.quick).flatMap((g) => g.items)
+          const firstUnanswered = restart ? 0 : order.findIndex((i) => !(i.id in effectiveAnswers(base, set)))
           setStep(firstUnanswered === -1 ? { kind: 'priorities' } : { kind: 'question', index: firstUnanswered })
         }}
       />
@@ -92,8 +97,8 @@ export function TestFlow() {
   if (step.kind === 'question') {
     const item = flat[step.index]
     if (!item) return null
-    const themeIndex = groups.findIndex((g) => g.theme.id === item.theme)
-    const group = groups[themeIndex]!
+    const themeIndex = G.findIndex((g) => g.theme.id === item.theme)
+    const group = G[themeIndex]!
     const posInTheme = group.items.findIndex((i) => i.id === item.id)
     const current = answers[item.id]
     const isRed = redLines.has(item.id)
@@ -109,11 +114,18 @@ export function TestFlow() {
     }
     const next = () => {
       const isLastOfTheme = posInTheme === group.items.length - 1
+      // Version rapide : pas de pause entre les thèmes ni de jetons, direction les résultats
+      if (quick) {
+        if (step.index === flat.length - 1) router.push('/resultats')
+        else setStep({ kind: 'question', index: step.index + 1 })
+        return
+      }
       if (isLastOfTheme) setStep({ kind: 'mirror', themeIndex })
       else setStep({ kind: 'question', index: step.index + 1 })
     }
     const prev = () => {
       if (step.index === 0) setStep({ kind: 'intro' })
+      else if (quick) setStep({ kind: 'question', index: step.index - 1 })
       else if (posInTheme === 0) setStep({ kind: 'mirror', themeIndex: themeIndex - 1 })
       else setStep({ kind: 'question', index: step.index - 1 })
     }
@@ -363,7 +375,7 @@ function Intro({
   state: LocalVoterState | null
   answeredCount: number
   headingRef: React.RefObject<HTMLHeadingElement | null>
-  onStart: (persist: 'session' | 'local', restart: boolean) => void
+  onStart: (persist: 'session' | 'local', restart: boolean, quick?: boolean) => void
 }) {
   const [persist, setPersist] = useState<'session' | 'local'>(state?.persist ?? 'session')
   const startButtons =
@@ -380,9 +392,14 @@ function Intro({
         </Link>
       </>
     ) : (
-      <button className="btn btn--highlight" onClick={() => onStart(persist, true)}>
-        {UI_COPY.test.start}
-      </button>
+      <>
+        <button className="btn btn--highlight" onClick={() => onStart(persist, true)}>
+          {UI_COPY.test.start}
+        </button>
+        <button className="btn btn--secondary" onClick={() => onStart(persist, true, true)}>
+          {UI_COPY.test.quickStart}
+        </button>
+      </>
     )
   return (
     <div>

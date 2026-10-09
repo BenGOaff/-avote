@@ -196,6 +196,8 @@ export interface RankOptions {
   mode: WeightMode
   priorities?: Priorities
   essentials?: ItemId[]
+  /** Version rapide : les affirmations du parcours court ; seuils calculés sur elles, classement annoncé comme indicatif */
+  quick?: ItemId[]
 }
 
 export function rankActors(
@@ -211,9 +213,10 @@ export function rankActors(
 
   // Seuils côté votant : assez de réponses pour qu'un classement veuille dire quelque chose
   const reasons: string[] = []
-  if (A.size < cfg.minAnswered) reasons.push(`Il faut au moins ${cfg.minAnswered} réponses sur ${set.items.length} (tu en as ${A.size}).`)
+  const minAnswered = opts.quick ? cfg.quickMinAnswered : cfg.minAnswered
+  if (A.size < minAnswered) reasons.push(`Il faut au moins ${minAnswered} réponses (tu en as ${A.size}).`)
   const halfThemes = set.themes.filter((t) => {
-    const items = set.items.filter((i) => i.theme === t.id && !i.inactive)
+    const items = set.items.filter((i) => i.theme === t.id && !i.inactive && (!opts.quick || opts.quick.includes(i.id)))
     const answered = items.filter((i) => A.has(i.id)).length
     return items.length > 0 && answered >= items.length / 2
   }).length
