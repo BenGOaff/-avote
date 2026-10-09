@@ -10,6 +10,9 @@ import { PositionScale } from '@/components/Viz'
 import { PartyTrail } from '@/components/PartyTrail'
 import { absolute } from '@/lib/site'
 import fiches from '@content/acteurs/fiches.json'
+import { Portrait } from '@/components/Portrait'
+import { portraitOf } from '@/lib/images'
+import { nuanceOf } from '@/lib/nuances'
 
 export const dynamicParams = false
 
@@ -51,7 +54,10 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
       <p className="kicker">
         <Link href="/candidats">Candidats</Link> · {STATUS_LABEL[a.status]}
       </p>
-      <h1>{a.name}</h1>
+      <div className="cand-hero">
+        <Portrait src={portraitOf(a.slug)} name={a.name} bloc={nuanceOf(a.slug)?.bloc ?? 'DIV'} size={120} notice />
+        <h1 style={{ margin: 0 }}>{a.name}</h1>
+      </div>
       <p className="row" style={{ gap: 'var(--s3)', margin: '0 0 var(--s3)' }}>
         <NuanceTag slug={a.slug} detail />
         <span className="small">
