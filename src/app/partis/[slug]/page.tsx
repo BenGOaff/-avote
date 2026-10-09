@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAnnouncedActors } from '@/lib/actors'
 import { BLOCS } from '@/lib/nuances'
+import { logoOf } from '@/lib/images'
 import { THEME_LABEL, blocOfParty, candidatesOf, getParti, getPartis, isClassified } from '@/lib/partis'
 
 export const dynamicParams = false
@@ -47,6 +49,7 @@ export default async function PartiPage({ params }: { params: Promise<{ slug: st
       <p className="kicker">
         <Link href="/partis">Partis</Link> · {isClassified(p) ? BLOCS.find((b) => b.id === bloc)?.label : 'Non classé'}
       </p>
+      {logoOf(p.slug) && <img className="parti__logo" src={logoOf(p.slug)!} alt={`Logo : ${p.name}`} />}
       <h1 className={`parti__title bloc-${bloc}`}>
         {p.sigle && <span className="parti-card__sigle">{p.sigle}</span>} {p.name}
       </h1>
