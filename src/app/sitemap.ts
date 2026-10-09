@@ -7,7 +7,7 @@ import { getPartis } from '@/lib/partis'
 // Pages publiques uniquement : jamais de route personnelle (test, résultats, profil).
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
-  const statics = ['/', '/radar', '/candidats', '/partis', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/studio', '/newsletter', '/medias', '/medias/libres', '/urne', '/quiz', '/boutique', '/confidentialite', '/mentions-legales']
+  const statics = ['/', '/radar', '/candidats', '/comparateur', '/partis', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/studio', '/newsletter', '/medias', '/medias/libres', '/urne', '/quiz', '/boutique', '/confidentialite', '/mentions-legales']
   return [
     ...statics.map((p) => ({ url: absolute(p), lastModified: now, changeFrequency: (p === '/radar' || p === '/' ? 'hourly' : 'weekly') as 'hourly' | 'weekly', priority: p === '/' ? 1 : 0.7 })),
     ...getAnnouncedActors().map((a) => ({ url: absolute(`/candidats/${a.slug}`), lastModified: now, changeFrequency: 'daily' as const, priority: 0.8 })),

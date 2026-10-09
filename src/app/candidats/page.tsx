@@ -25,7 +25,7 @@ export default function CandidatsPage() {
           constitutionnel.
         </p>
         <p>
-          <Link href="/partis">Les partis derrière les candidats</Link> : histoire, dirigeants, élus et idées.
+          <Link href="/comparateur">Comparer leurs positions, sujet par sujet</Link> · <Link href="/partis">Les partis derrière eux</Link>
         </p>
       </div>
 
