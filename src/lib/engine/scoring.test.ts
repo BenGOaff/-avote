@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { itemWeights, rankActors, redLineStatus, scoreActor, themeWeights } from './scoring'
+import { itemWeights, rankActors, rareAgreements, redLineStatus, sameSide, scoreActor, themeWeights } from './scoring'
 import { computeDimensions } from './dimensions'
 import type { Actor, Answers, Ordinal, Position, QuestionSet } from './types'
 
@@ -198,5 +198,33 @@ describe('lignes rouges et dimensions', () => {
     const all = allAnswers(set, 2)
     expect(computeDimensions(set, all)[0]?.index).toBe(100)
     expect(computeDimensions(set, allAnswers(set, -2))[0]?.index).toBe(0)
+  })
+})
+
+describe('accords rares (lecture, sans effet sur les scores)', () => {
+  const set = makeSet(2, 2)
+  const actors: Actor[] = ['a', 'b', 'c'].map((slug) => ({ slug, name: slug, status: 'declare' as const, summary: '' }))
+  it('signale un sujet tranché où un seul candidat est de ton côté, et un sujet où personne ne se prononce', () => {
+    const answers: Answers = { 't0-0': ans(2), 't0-1': ans(-2), 't1-0': ans(1), 't1-1': ans(2) }
+    const positions = {
+      a: { 't0-0': val(1), 't0-1': val(2), 't1-0': val(1) },
+      b: { 't0-0': val(-1), 't0-1': val(1) },
+      c: { 't0-0': { set: [-1, 0] as Ordinal[], status: 'ambigu' as const, sources: ['s'] }, 't0-1': val(-1) },
+    }
+    const r = rareAgreements(set, answers, actors, positions)
+    expect(r.rare.map((x) => [x.itemId, x.agree])).toEqual([
+      ['t0-0', ['a']],
+      ['t0-1', ['c']],
+    ])
+    expect(r.rare[0]!.documented).toBe(3)
+    // t1-0 n'est pas tranché (1) : ignoré ; t1-1 : personne
+    expect(r.silent).toEqual(['t1-1'])
+  })
+  it('une position entre pour et contre ne compte pas comme un accord ; une ligne rouge non tranchée est retenue', () => {
+    const answers: Answers = { 't0-0': ans(1) }
+    const positions = { a: { 't0-0': { set: [0, 1] as Ordinal[], status: 'ambigu' as const, sources: ['s'] } }, b: { 't0-0': val(2) } }
+    expect(sameSide(1, positions.a['t0-0'])).toBe(false)
+    const r = rareAgreements(set, answers, actors, positions, ['t0-0'])
+    expect(r.rare).toEqual([{ itemId: 't0-0', user: 1, agree: ['b'], documented: 2 }])
   })
 })

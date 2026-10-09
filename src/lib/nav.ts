@@ -2,6 +2,8 @@
  * Plan du site : une seule source pour le menu du haut, la barre mobile, la page « Plus » et le pied de page.
  * Toute nouvelle page s'ajoute ici, dans sa rubrique ; rien n'est ajouté ailleurs à la main.
  */
+import { questionnaire } from './data'
+
 export interface NavItem {
   href: string
   label: string
@@ -18,7 +20,7 @@ export const SECTIONS: NavSection[] = [
     id: 'vote',
     title: 'Ton vote',
     items: [
-      { href: '/test', label: 'Le test', desc: '42 questions, tes priorités, tes lignes rouges.' },
+      { href: '/test', label: 'Le test', desc: `${questionnaire.items.length} questions, tes priorités, tes lignes rouges.` },
       { href: '/resultats', label: 'Mes résultats', desc: 'Ta proximité avec chaque candidat, question par question.' },
       { href: '/urne', label: 'L’urne', desc: 'Tu sais pour qui tu votes ? Glisse ton bulletin, anonyme.' },
       { href: '/mon-profil', label: 'Mon profil', desc: 'Ce qui est gardé sur ton appareil, export, effacement.' },

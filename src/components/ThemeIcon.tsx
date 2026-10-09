@@ -1,4 +1,4 @@
-// Pictogrammes des sept thèmes, au trait, 24 × 24, décoratifs (le nom du thème est toujours écrit à côté).
+// Pictogrammes des thèmes, au trait, 24 × 24, décoratifs (le nom du thème est toujours écrit à côté).
 import type { SVGProps } from 'react'
 
 const base = { width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true } as const
@@ -18,6 +18,46 @@ const PATHS: Record<string, React.ReactNode> = {
     <>
       <rect x="3" y="7" width="18" height="13" rx="2" />
       <path d="M9 7V5h6v2M3 13h18M11 13v2h2v-2" />
+    </>
+  ),
+  // Croix de soin dans un cercle
+  sante: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 8v8M8 12h8" />
+    </>
+  ),
+  // Livre ouvert
+  ecole: (
+    <>
+      <path d="M3 6c3-1.5 6-1.5 9 0v13c-3-1.5-6-1.5-9 0z" />
+      <path d="M21 6c-3-1.5-6-1.5-9 0v13c3-1.5 6-1.5 9 0z" />
+    </>
+  ),
+  // Maison
+  logement: (
+    <>
+      <path d="M3 11l9-7 9 7" />
+      <path d="M5 10v10h14V10" />
+      <path d="M10 20v-5h4v5" />
+    </>
+  ),
+  // Passeport
+  immigration: (
+    <>
+      <rect x="5" y="3" width="14" height="18" rx="2" />
+      <circle cx="12" cy="10" r="3" />
+      <path d="M9 16h6" />
+    </>
+  ),
+  // Empreinte de patte
+  animaux: (
+    <>
+      <path d="M12 13c-3 0-5 3-5 5 0 1.5 1.5 2 2.5 2 1 0 1.5-.5 2.5-.5s1.5.5 2.5.5c1 0 2.5-.5 2.5-2 0-2-2-5-5-5z" />
+      <circle cx="6" cy="10" r="1.6" />
+      <circle cx="9.5" cy="6" r="1.6" />
+      <circle cx="14.5" cy="6" r="1.6" />
+      <circle cx="18" cy="10" r="1.6" />
     </>
   ),
   // Bouclier

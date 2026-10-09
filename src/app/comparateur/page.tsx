@@ -9,7 +9,7 @@ import { Comparateur, type CompareData } from './Comparateur'
 
 export const metadata: Metadata = {
   title: 'Comparateur des programmes 2027 : qui défend quoi, sujet par sujet',
-  description: 'Les positions des candidats à la présidentielle 2027 sur 42 sujets, côte à côte, avec la citation exacte et sa source. Compare jusqu’à 4 candidats.',
+  description: `Les positions des candidats à la présidentielle 2027 sur ${questionnaire.items.length} sujets, côte à côte, avec la citation exacte et sa source. Compare jusqu’à 4 candidats.`,
   alternates: { canonical: '/comparateur' },
 }
 
@@ -41,7 +41,7 @@ export default function ComparateurPage() {
       <PageHeader
         kicker="La campagne"
         title="Qui défend quoi"
-        lede="Les positions des candidats sur les 42 sujets du test, avec la phrase exacte et sa source. Choisis jusqu’à 4 candidats pour les mettre côte à côte."
+        lede="Les positions des candidats sur tous les sujets du test, avec la phrase exacte et sa source. Choisis jusqu’à 4 candidats pour les mettre côte à côte."
       />
       <Comparateur data={data} />
       <p className="small muted section">

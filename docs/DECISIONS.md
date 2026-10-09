@@ -23,7 +23,7 @@ Valeurs provisoires centralisées dans le code et la configuration. Aucune n’e
 
 ## Méthode (valeurs provisoires, `src/lib/engine/config.ts`)
 
-- Les 42 questions (`content/questionnaire/v0.1.0.json`) : brouillon à faire relire par des personnes de sensibilités différentes.
+- Les 96 questions (`content/questionnaire/v0.2.0.json`) : brouillon à faire relire par des personnes de sensibilités différentes.
 - Seuils de classement : 28 réponses, 70 % de socle commun, 5 thèmes, 60 % des exigences.
 - Seuil d’écart « proche » : 2 points. Seuil de désaccord sur une exigence : 2 crans.
 - Critères d’inclusion des candidats avant la liste officielle.
@@ -36,3 +36,6 @@ Valeurs provisoires centralisées dans le code et la configuration. Aucune n’e
 - **Ça change quoi pour moi** : nécessite des règles d’éligibilité sourcées par mesure.
 - **Portraits des candidats** (décision de la rédaction, octobre 2026) : illustrations générées par IA, caricature bienveillante dans le style du site, fournies par la rédaction. Conditions : même traitement pour tous (cadrage, expression neutre, aucun trait moqué sur le physique, l’origine ou la santé), mention « Illustration générée par IA » visible sur chaque portrait (AI Act, art. 50), fichiers servis par le site. Logos des partis : fichiers officiels fournis par la rédaction, usage informatif, servis par le site.
 - **Logo** : version vectorielle reconstruite (`public/brand`). Un passage par un·e graphiste pour l’ajustement optique final est recommandé.
+- **Questionnaire 0.2.0** (octobre 2026) : 96 affirmations en 12 thèmes, pour couvrir la vie de tous les jours (santé, école, logement et transports, animaux et agriculture, droits des personnes LGBT, énergie, médias). L’immigration a son propre thème, séparé de la sécurité, pour ne pas lier les deux sujets par construction. Les 42 affirmations de la 0.1.0 gardent leur texte : les réponses déjà données restent valables. Un thème pèse 1/12 quel que soit son nombre de questions : le nombre d’affirmations ne dit rien de l’importance d’un sujet, ce sont les jetons du votant qui la fixent.
+- **Les faits** : sous certaines affirmations, des chiffres et règles de droit officiels (`content/questionnaire/faits.json`), passage copié et lien, vérifiables par `npx tsx scripts/quotes-check.ts content/questionnaire/faits.json`. Hors calcul.
+- **Accords rares** : les résultats signalent les sujets tranchés pour le votant où un ou deux candidats seulement sont de son côté, et ceux où personne ne s’est prononcé (`rareAgreements`, `src/lib/engine/scoring.ts`). Hors calcul.

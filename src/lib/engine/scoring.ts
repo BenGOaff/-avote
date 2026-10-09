@@ -7,7 +7,7 @@ import type { Actor, Answers, ItemId, Ordinal, Position, Priorities, QuestionSet
 
 export type WeightMode = 'global' | 'priorities'
 
-/** Poids de thème bₜ. Global : 1/T. Priorités : (1+pₜ)/(T+Σp), soit (1+pₜ)/17 pour 7 thèmes et 10 jetons. */
+/** Poids de thème bₜ. Global : 1/T. Priorités : (1+pₜ)/(T+Σp), soit (1+pₜ)/22 pour 12 thèmes et 10 jetons. */
 export function themeWeights(set: QuestionSet, mode: WeightMode, priorities?: Priorities): Map<ThemeId, number> {
   const T = set.themes.length
   const out = new Map<ThemeId, number>()
@@ -324,4 +324,60 @@ export function redLineStatus(u: Ordinal, p: Position | undefined): RedLineStatu
   }
   const c = knownValue(p) as Ordinal
   return Math.abs(u - c) / 4 >= ENGINE_CONFIG.redLineDistance ? 'desaccord' : 'accord'
+}
+
+// ---------------------------------------------------------------------------
+// Accords rares et sujets sans réponse — lecture des positions, sans effet sur les scores
+// ---------------------------------------------------------------------------
+
+/**
+ * Le candidat est-il du même côté que toi ? Pour toi pour (ou contre), toutes ses positions possibles doivent être
+ * pour (ou contre) ; pour une position intermédiaire, toutes doivent être intermédiaires. Inconnu → null.
+ */
+export function sameSide(u: Ordinal, p: Position | undefined): boolean | null {
+  const kind = positionKind(p)
+  if (kind === 'unknown' || !p) return null
+  const values = 'set' in p && kind === 'ambiguous' ? p.set : [knownValue(p) as Ordinal]
+  return values.every((c) => Math.sign(c) === Math.sign(u))
+}
+
+export interface RareAgreement {
+  itemId: ItemId
+  user: Ordinal
+  /** Candidats du même côté que toi (1 ou 2) */
+  agree: string[]
+  /** Candidats dont la position est connue sur ce sujet */
+  documented: number
+}
+
+/**
+ * Sujets qui comptent pour toi (réponse tranchée, ±2, ou ligne rouge) :
+ * `rare` — un ou deux candidats seulement sont de ton côté, parmi ceux qui se sont prononcés ;
+ * `silent` — aucun candidat ne s'est prononcé.
+ */
+export function rareAgreements(
+  set: QuestionSet,
+  answers: Answers,
+  actors: Actor[],
+  positions: Record<string, Record<ItemId, Position>>,
+  essentials: ItemId[] = [],
+  maxAgree = 2,
+): { rare: RareAgreement[]; silent: ItemId[] } {
+  const A = answeredValues(set, answers)
+  const rare: RareAgreement[] = []
+  const silent: ItemId[] = []
+  for (const [itemId, u] of A) {
+    if (Math.abs(u) !== 2 && !essentials.includes(itemId)) continue
+    const sides = actors.map((a) => ({ slug: a.slug, side: sameSide(u, positions[a.slug]?.[itemId]) }))
+    const documented = sides.filter((s) => s.side !== null).length
+    if (documented === 0) {
+      silent.push(itemId)
+      continue
+    }
+    const agree = sides.filter((s) => s.side === true).map((s) => s.slug)
+    if (agree.length >= 1 && agree.length <= maxAgree) rare.push({ itemId, user: u, agree, documented })
+  }
+  // Les lignes rouges d'abord, puis les sujets où tu es le plus isolé
+  rare.sort((x, y) => Number(essentials.includes(y.itemId)) - Number(essentials.includes(x.itemId)) || x.agree.length - y.agree.length || y.documented - x.documented)
+  return { rare, silent }
 }
