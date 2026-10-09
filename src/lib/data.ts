@@ -17,3 +17,7 @@ export function assertCompatible(set: QuestionSet, corpus: Corpus): boolean {
 
 export const itemsByTheme = (set: QuestionSet) =>
   set.themes.map((t) => ({ theme: t, items: set.items.filter((i) => i.theme === t.id && !i.inactive) }))
+
+/** Affirmations de la version rapide (content/questionnaire/rapide.json). */
+import rapideJson from '@content/questionnaire/rapide.json'
+export const QUICK_ITEMS: string[] = (rapideJson as { items: string[] }).items

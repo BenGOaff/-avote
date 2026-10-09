@@ -44,6 +44,7 @@ export const UI_COPY = {
   },
   test: {
     start: 'Commencer',
+    quickStart: 'Version rapide : 14 questions',
     next: 'Suivante',
     back: 'Précédente',
     skip: 'Je préfère passer',
@@ -79,6 +80,8 @@ export const UI_COPY = {
     scoreLabel: 'Proximité sur les sujets documentés',
     notComparable: 'Pas de podium pour l’instant.',
     notComparableWhy: 'Pour classer honnêtement, il faut assez de tes réponses, et des candidats dont on connaît la position sur une bonne partie d’entre elles. On n’invente pas un classement.',
+    quickBanner: 'Classement indicatif : tu as fait la version rapide (14 questions). Les 28 autres rendent le résultat plus solide.',
+    quickContinue: 'Répondre aux 28 autres',
     verdictTop: (name: string) => `${name} est le plus proche de tes réponses.`,
     verdictTie: (names: string) => `Coude-à-coude en tête : ${names}.`,
     verdictGap: (score: string, gap: string, second: string) => `${score} sur 100, ${gap} devant ${second}.`,

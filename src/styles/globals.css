@@ -3626,3 +3626,27 @@ details.disclosure > div {
   border-style: dashed;
   color: var(--muted);
 }
+.decisive {
+  margin: var(--s4) 0 0;
+  padding: var(--s3) var(--s4);
+  background: var(--paper);
+  border: var(--hairline) solid var(--line);
+  border-radius: var(--radius);
+}
+.decisive__title {
+  margin: 0 0 var(--s2);
+  font-family: var(--font-display);
+}
+.decisive__list {
+  display: grid;
+  gap: var(--s2);
+  margin: 0 0 var(--s2);
+  padding-left: 1.1em;
+}
+.decisive__list li {
+  display: grid;
+  gap: 2px;
+}
+.decisive__q {
+  font-weight: 700;
+}

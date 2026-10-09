@@ -20,6 +20,8 @@ export interface LocalVoterState {
   essentials: string[]
   hiddenActors: string[]
   corpusVersion: string | null
+  /** Parcours rapide (14 affirmations) choisi au départ ; repasse à false si la personne complète le test */
+  quick?: boolean
   /** Dernier index de question vu, pour reprendre */
   cursor: number
   updatedAt: string
