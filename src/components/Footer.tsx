@@ -1,7 +1,8 @@
 import Link from 'next/link'
-import { AI_NOTICE } from '@/lib/copy'
+import { AI_NOTICE, UI_COPY } from '@/lib/copy'
 import { SECTIONS } from '@/lib/nav'
 import { tiquizHref } from './Support'
+import { DonateLink } from './Donate'
 import { ConsentLink } from './ConsentBanner'
 
 export function Footer() {
@@ -14,6 +15,9 @@ export function Footer() {
           </p>
           <p className="muted">Ton test se calcule sur ton appareil. Aucune réponse n’est envoyée à nos serveurs.</p>
           <p className="muted">{AI_NOTICE}</p>
+          <p>
+            <strong>{UI_COPY.donate.title}.</strong> <DonateLink />
+          </p>
           <p className="muted">
             Soutenu par{' '}
             <a href={tiquizHref('pied-de-page')} rel="sponsored noopener" target="_blank">

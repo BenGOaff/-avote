@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
+import { DonateLink } from '@/components/Donate'
 
 export const metadata: Metadata = {
   title: 'Indépendance et financement',
@@ -19,8 +20,8 @@ export default function IndependencePage() {
         </p>
         <h2 style={{ fontSize: 'var(--h3)' }}>D’où vient l’argent</h2>
         <p>
-          Le site sera financé par la vente d’objets et de visuels (<Link href="/boutique">boutique</Link>, pas encore ouverte). Pas de publicité ciblée, pas de
-          vente de données, pas de commission liée à un candidat.
+          Le site est financé par les dons de ses lecteurs (<DonateLink label="faire un don" />), et le sera aussi par la vente d’objets et de visuels dans la{' '}
+          <Link href="/boutique">boutique</Link>, pas encore ouverte. Pas de publicité ciblée, pas de vente de données, pas de commission liée à un candidat.
         </p>
         <p>
           Le site est soutenu par{' '}

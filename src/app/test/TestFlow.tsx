@@ -390,12 +390,9 @@ function Intro({
         <div>
       <p className="kicker">Présidentielle 2027</p>
       <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none' }}>
-        Qu’est-ce qui compte pour toi ?
+        {UI_COPY.home.title}
       </h1>
-      <p className="lede">
-        {set.items.length} affirmations, une dizaine de minutes. Ensuite, on regarde qui propose quoi, sources à l’appui. Tes réponses restent sur ton
-        téléphone.
-      </p>
+      <p className="lede">{UI_COPY.home.lede(set.items.length)}</p>
       <div className="row" style={{ marginTop: 'var(--s4)' }}>
         {startButtons}
       </div>

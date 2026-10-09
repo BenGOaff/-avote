@@ -21,9 +21,9 @@ export default async function OgImage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={symbolSrc} width={92} height={92} alt="" />
         </div>
-        <div style={{ fontFamily: 'Archivo Black', fontSize: 88, lineHeight: 1.05, maxWidth: 1000 }}>Qu’est-ce qui compte pour toi ?</div>
+        <div style={{ fontFamily: 'Archivo Black', fontSize: 76, lineHeight: 1.05, maxWidth: 1050 }}>Trouve le candidat le plus proche de tes idées</div>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'Public Sans', fontSize: 30 }}>
-          <span>Présidentielle 2027 · le test et le fil d’actu</span>
+          <span>Chaque calcul est public, chaque position a sa source</span>
           <span>çavote.fr</span>
         </div>
       </div>

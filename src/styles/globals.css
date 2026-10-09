@@ -922,6 +922,9 @@ details.disclosure > div {
   display: grid;
   gap: var(--s6) var(--s7);
 }
+.test-intro h1 {
+  font-size: clamp(2.1rem, 4.2vw, 3.6rem);
+}
 @media (min-width: 900px) {
   .test-intro {
     grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
@@ -2712,18 +2715,22 @@ details.disclosure > div {
   list-style: none;
   display: grid;
   gap: var(--s4);
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
   padding: 0;
   margin: var(--s4) 0 0;
 }
 .parti-card {
   display: grid;
-  gap: var(--s1);
+  gap: var(--s2);
+  align-content: start;
   height: 100%;
-  padding: var(--s4);
+  padding: var(--s4) var(--s5);
   color: var(--ink);
   text-decoration: none;
-  border-top: 8px solid var(--bloc);
+  background: var(--surface);
+  border: var(--border) solid var(--ink);
+  border-left: 8px solid var(--bloc);
+  border-radius: var(--radius);
   box-shadow: var(--shadow-signature);
   transition: transform var(--duration) var(--ease);
 }
@@ -2731,22 +2738,70 @@ details.disclosure > div {
 .parti-card:focus-visible {
   transform: translate(-2px, -2px);
 }
-.parti-card__sigle {
-  justify-self: start;
-  display: inline-block;
-  padding: 2px var(--s2);
+.parti-card__head {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+}
+.parti-card__head .nuance__dot,
+.spectrum__chip .nuance__dot {
+  background: var(--bloc);
+}
+.parti-card__name {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 1.2rem;
+  line-height: var(--lh-title);
+}
+.parti-card__sigle {
+  display: inline-block;
+  padding: 1px var(--s2);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
   color: var(--ink);
   background: var(--surface);
   border: var(--border) solid var(--bloc);
   border-radius: 999px;
-  box-shadow: inset 0 -4px 0 var(--bloc);
 }
-.parti-card__name {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  line-height: var(--lh-title);
+.parti-card__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.parti-card__foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s3);
+  margin-top: auto;
+}
+.parti-card__more {
+  font-weight: 700;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.spectrum {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin: 0 0 var(--s4);
+}
+.spectrum__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  min-height: var(--tap);
+  padding: 0 var(--s4);
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--surface);
+  border: var(--border) solid var(--ink);
+  border-radius: 999px;
+}
+.spectrum__chip:hover {
+  background: var(--paper);
 }
 .parti__title {
   display: flex;
@@ -2794,4 +2849,87 @@ details.disclosure > div {
 }
 .trail__current {
   margin: var(--s2) 0 0;
+}
+
+/* ---------- Soutien ---------- */
+.donate {
+  display: grid;
+  gap: var(--s2);
+  justify-items: start;
+  max-width: 560px;
+  margin: var(--s6) 0;
+  border-left: 8px solid var(--highlight);
+  box-shadow: var(--shadow-signature);
+}
+.donate__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--h3);
+  line-height: var(--lh-title);
+}
+.donate__text {
+  margin: 0 0 var(--s2);
+}
+
+/* ---------- Contact ---------- */
+.contact-form textarea.input {
+  min-height: 9rem;
+  resize: vertical;
+  font: inherit;
+}
+.contact-form__kinds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.contact-form__kinds legend {
+  margin-bottom: var(--s2);
+  font-weight: 600;
+}
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  min-height: var(--tap);
+  padding: 0 var(--s4);
+  border: var(--border) solid var(--ink);
+  border-radius: 999px;
+  background: var(--surface);
+  cursor: pointer;
+}
+.choice.is-on {
+  background: var(--highlight);
+  color: var(--on-highlight);
+}
+.choice input {
+  accent-color: var(--ink);
+}
+.choice:focus-within {
+  outline: 3px solid var(--reference);
+  outline-offset: 2px;
+}
+
+/* ---------- Accueil : ce que tu peux vérifier ---------- */
+.proofs {
+  list-style: none;
+  display: grid;
+  gap: var(--s4);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 0;
+  margin: 0;
+}
+.proofs__item {
+  display: grid;
+  gap: var(--s2);
+  align-content: start;
+  padding: var(--s4) 0 0;
+  border-top: 4px solid var(--ink);
+}
+.proofs__item strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  line-height: var(--lh-title);
 }

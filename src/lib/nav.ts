@@ -55,11 +55,13 @@ export const SECTIONS: NavSection[] = [
     id: 'site',
     title: 'Le site',
     items: [
+      { href: '/le-projet', label: 'Le projet', desc: 'Pourquoi ce site existe, qui paie, ce qu’on ne fait pas.' },
       { href: '/methodologie', label: 'Méthode', desc: 'Questions, codage, formules et limites.' },
       { href: '/sources', label: 'Sources', desc: 'D’où viennent les positions et les faits.' },
       { href: '/corrections', label: 'Corrections', desc: 'Ce qui était faux et ce qui a changé.' },
       { href: '/independance', label: 'Indépendance', desc: 'Qui finance, qui décide.' },
       { href: '/newsletter', label: 'Newsletter', desc: 'La campagne dans ta boîte mail.' },
+      { href: '/contact', label: 'Contact', desc: 'Une erreur, une question, une idée : écris-nous.' },
       { href: '/confidentialite', label: 'Confidentialité', desc: 'Ce qu’on collecte, et surtout ce qu’on ne collecte pas.' },
       { href: '/mentions-legales', label: 'Mentions légales', desc: '' },
     ],
