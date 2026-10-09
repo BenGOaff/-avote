@@ -161,6 +161,17 @@ for (const [slug, e] of Object.entries(patrimoine.entries)) {
   if (!e.url?.startsWith('https://') || !e.quote || /wikipedia\.org/.test(e.url) || !(e.amount > 0) || !e.label) errors.push(`patrimoine : ${slug} sans source valable ou sans montant`)
 }
 
+// Casier : types connus, source https, extrait, présomption pour les procédures en cours
+const casier = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/casier.json'), 'utf8')) as { entries: Record<string, { type: string; presumption: boolean; quote: string; url: string; date: string; decision: string }[]> }
+for (const [slug, list] of Object.entries(casier.entries)) {
+  if (!candSlugs.has(slug)) errors.push(`casier : ${slug} absent des candidatures`)
+  for (const e of list) {
+    if (!['condamnation', 'en-cours', 'relaxe', 'sanction'].includes(e.type)) errors.push(`casier : ${slug} type inconnu ${e.type}`)
+    if (!e.url?.startsWith('https://') || !e.quote || /wikipedia\.org/.test(e.url) || !e.decision || !/^\d{4}(-\d{2}){0,2}$/.test(e.date)) errors.push(`casier : ${slug} entrée sans source, décision ou date valable`)
+    if (e.type === 'en-cours' && !e.presumption) errors.push(`casier : ${slug} procédure en cours sans présomption d'innocence`)
+  }
+}
+
 // Mentions légales
 const legal = JSON.parse(readFileSync(path.join(ROOT, 'content/legal.json'), 'utf8')) as Record<string, unknown>
 for (const k of ['siteName', 'contactEmail', 'controllerName']) if (!legal[k]) errors.push(`content/legal.json : ${k} manquant`)

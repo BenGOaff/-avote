@@ -10,6 +10,7 @@ import { getParcours } from '@/lib/parcours'
 import { getPartis, partyOfPeriod } from '@/lib/partis'
 import { logoOf, portraitOf } from '@/lib/images'
 import { Portrait } from '@/components/Portrait'
+import { CASIER_TYPES, casierCounts } from '@/lib/casier'
 
 export const metadata: Metadata = {
   title: 'Candidats à la présidentielle 2027 : qui a annoncé quoi',
@@ -74,6 +75,7 @@ export default function CandidatsPage() {
                       <span style={{ width: `${(known / questionnaire.items.length) * 100}%` }} />
                     </span>
                   </div>
+                  <CasierLine slug={a.slug} />
                   <a className="cand-card__source muted" href={a.source.url} rel="noopener noreferrer nofollow" target="_blank">
                     Source de l’annonce : {a.source.publisher}
                   </a>
@@ -153,5 +155,17 @@ function Echiquier({ actors }: { actors: { slug: string; name: string }[] }) {
         </div>
       )}
     </section>
+  )
+}
+
+/** Résumé du casier sur la carte : mêmes catégories pour tous, rien d'affiché tant que la vérification n'est pas faite. */
+function CasierLine({ slug }: { slug: string }) {
+  const c = casierCounts(slug)
+  if (!c) return null
+  const parts = CASIER_TYPES.filter((t) => c[t.id] > 0).map((t) => `${c[t.id]} ${(c[t.id] > 1 ? t.label : t.one).toLowerCase()}`)
+  return (
+    <p className={`cand-card__casier${c.condamnation > 0 ? ' is-condamne' : ''}`}>
+      <strong>Casier :</strong> {parts.length > 0 ? parts.join(' · ') : 'aucune décision officielle trouvée'}
+    </p>
   )
 }
