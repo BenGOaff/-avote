@@ -849,7 +849,7 @@ details.disclosure > div {
     display: none !important;
   }
   body {
-    background: #fff;
+    background: var(--logo-plate);
     color: #000;
   }
 }
@@ -3205,12 +3205,6 @@ details.disclosure > div {
   font-weight: 700;
   font-size: var(--text-small);
 }
-.cand-card__party img {
-  height: 22px;
-  width: auto;
-  max-width: 72px;
-  object-fit: contain;
-}
 .cand-card__meta {
   margin: var(--s1) 0 0;
   font-size: var(--text-small);
@@ -3537,4 +3531,38 @@ details.disclosure > div {
 }
 .cand-card__casier.is-condamne strong {
   color: var(--correction);
+}
+
+/* Logos des partis : jamais étirés (object-fit: contain), posés sur une plaque blanche */
+.parti-card__logo {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: var(--radius);
+  border: var(--hairline) solid var(--line);
+  background: var(--logo-plate);
+}
+.parti__logo {
+  display: block;
+  max-width: min(280px, 70%);
+  max-height: 96px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: var(--s3) 0 0;
+  padding: var(--s2);
+  background: var(--logo-plate);
+  border: var(--hairline) solid var(--line);
+  border-radius: var(--radius);
+}
+.cand-card__party img {
+  height: 26px;
+  width: auto;
+  max-width: 96px;
+  object-fit: contain;
+  padding: 2px;
+  background: var(--logo-plate);
+  border-radius: 3px;
+  border: var(--hairline) solid var(--line);
 }

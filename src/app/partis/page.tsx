@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
 import { getAnnouncedActors } from '@/lib/actors'
 import { BLOCS } from '@/lib/nuances'
 import { BLOC_ORDER, blocOfParty, candidatesOf, getPartis, isClassified, type Party } from '@/lib/partis'
+import { squareLogoOf } from '@/lib/images'
 
 export const metadata: Metadata = {
   title: 'Les partis politiques : histoire, dirigeants, élus et idées',
@@ -47,7 +49,11 @@ export default function PartisPage() {
                 <li key={p.slug}>
                   <Link href={`/partis/${p.slug}`} className={`parti-card bloc-${bloc}`}>
                     <span className="parti-card__head">
-                      <span className="nuance__dot" aria-hidden="true" />
+                      {squareLogoOf(p.slug) ? (
+                        <img className="parti-card__logo" src={squareLogoOf(p.slug)!} alt="" width={48} height={48} loading="lazy" />
+                      ) : (
+                        <span className="nuance__dot" aria-hidden="true" />
+                      )}
                       <span className="parti-card__name">{p.name}</span>
                       {p.sigle && <span className="parti-card__sigle">{p.sigle}</span>}
                     </span>
