@@ -14,6 +14,7 @@ import { Portrait } from '@/components/Portrait'
 import { portraitOf } from '@/lib/images'
 import { nuanceOf } from '@/lib/nuances'
 import { NET_DEFINITION, patrimoineOf } from '@/lib/patrimoine'
+import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
 export const dynamicParams = false
 
@@ -80,6 +81,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
           <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${a.slug}`)}`}>Signaler une erreur</Link>
         </p>
         <PatrimoineBlock slug={a.slug} />
+        <CasierBlock slug={a.slug} />
       </div>
 
       {fiche && (
@@ -184,6 +186,70 @@ function PatrimoineBlock({ slug }: { slug: string }) {
           Pas de déclaration publiée qu’on puisse reprendre. Celles des candidats de 2027 seront rendues publiques par la Haute Autorité pour la transparence
           de la vie publique après la validation des candidatures.
         </p>
+      )}
+    </section>
+  )
+}
+
+/** Casier et affaires : décisions officielles seulement, même grille pour tous, relaxes comprises. */
+function CasierBlock({ slug }: { slug: string }) {
+  const list = casierOf(slug)
+  const counts = casierCounts(slug)
+  return (
+    <section className="casier" aria-labelledby="casier">
+      <h2 id="casier" className="patrimoine__title">
+        Casier et affaires
+      </h2>
+      {!list || !counts ? (
+        <p className="small muted">Vérification en cours.</p>
+      ) : (
+        <>
+          <ul className="casier__counts">
+            {CASIER_TYPES.map((t) => (
+              <li key={t.id} className={`casier__count casier__count--${t.id}${counts[t.id] > 0 ? ' is-on' : ''}`}>
+                <strong>{counts[t.id] || t.empty}</strong> <span>{t.label.toLowerCase()}</span>
+              </li>
+            ))}
+          </ul>
+          {list.length === 0 ? (
+            <p className="small">
+              Aucune décision de justice ni sanction officielle trouvée dans les sources consultées (au {formatDate(CASIER_CHECKED_AT)}).
+            </p>
+          ) : (
+            <ol className="casier__list">
+              {[...list]
+                .sort((x, y) => CASIER_TYPES.findIndex((t) => t.id === x.type) - CASIER_TYPES.findIndex((t) => t.id === y.type) || y.date.localeCompare(x.date))
+                .map((e) => (
+                  <li key={e.title + e.date} className={`casier__item casier__item--${e.type}`}>
+                    <p className="casier__head">
+                      <span className="stamp">{CASIER_TYPES.find((t) => t.id === e.type)?.one}</span>{' '}
+                      <time dateTime={e.date}>{casierDate(e.date)}</time>
+                    </p>
+                    <p className="casier__title">{e.title}</p>
+                    <p className="casier__decision">{e.decision}</p>
+                    <p className="small">
+                      {e.body}. {e.facts}
+                    </p>
+                    {e.presumption && <p className="small casier__presumption">Pas de décision définitive : présomption d’innocence.</p>}
+                    {e.note && <p className="small muted">{e.note}</p>}
+                    <details className="sources">
+                      <summary>Source</summary>
+                      <p className="small">
+                        « {e.quote} »{' '}
+                        <a href={e.url} rel="noopener noreferrer nofollow" target="_blank">
+                          {e.publisher}
+                        </a>
+                      </p>
+                    </details>
+                  </li>
+                ))}
+            </ol>
+          )}
+          <p className="small muted">
+            Seulement des décisions officielles visant la personne : jugements, mises en examen, sanctions de la HATVP ou du Parlement, comptes de campagne.{' '}
+            <Link href="/methodologie#casier">La règle</Link> · Une erreur ? <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${slug}`)}`}>Signale-la</Link>.
+          </p>
+        </>
       )}
     </section>
   )
