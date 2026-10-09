@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "date": "2026-10-09",
+    "object": "Position d'Éric Zemmour sur « L'État devrait financer la construction de beaucoup plus de logements sociaux » (log-02)",
+    "wasWrong": "Codée « entre tout à fait opposé et plutôt opposé » ([-2, -1]).",
+    "evidence": "Son programme 2022 arrête ce financement seulement dans les villes qui ont déjà plus d'un tiers de logements sociaux : ce n'est pas une opposition générale. Relecture croisée d'une recherche externe.",
+    "effect": "Recodée « entre plutôt opposé et position intermédiaire » ([-1, 0]). Les résultats ont été recalculés."
+  }
+]
