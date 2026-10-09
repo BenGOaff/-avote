@@ -139,6 +139,11 @@ export default function MethodPage() {
           avec leur proximité mais sans rang. S’il y a moins de deux candidats classables, aucun classement n’est affiché.
         </p>
         <p>
+          <strong>Version rapide.</strong> Quatorze affirmations, deux par thème : celles où les positions des candidats sont les mieux documentées et
+          les plus éloignées les unes des autres. Le classement apparaît dès {R.quickMinAnswered} réponses, avec les mêmes règles appliquées à ces
+          quatorze questions, et il est annoncé comme indicatif.
+        </p>
+        <p>
           Limite assumée : deux candidats classés ne sont pas toujours comparés sur exactement les mêmes questions. C’est pourquoi la part de tes réponses
           couverte est affichée à côté de chaque score, avec les bornes. Un écart de moins de {R.closeGap} points est signalé comme non déterminant. On teste
           aussi l’effet d’une variation de ±50 % du poids de chaque thème : si l’ordre s’inverse, le résultat l’indique.
