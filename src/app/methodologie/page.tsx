@@ -211,6 +211,20 @@ export default function MethodPage() {
           <Link href="/corrections">Les corrections</Link>
         </p>
 
+        <h2 id="casier">Casier et affaires : ce qui est retenu</h2>
+        <p>
+          Seules les décisions et étapes officielles qui visent la personne du candidat : condamnations, mises en examen, renvois devant un tribunal,
+          jugements frappés d’appel ou de pourvoi, relaxes et non-lieux, sanctions de la Haute Autorité pour la transparence de la vie publique ou du
+          Parlement, décisions civiles liées à l’activité publique. Chaque entrée renvoie à une décision officielle ou à un article de presse nationale qui la
+          rapporte, avec une citation vérifiée mot pour mot.
+        </p>
+        <ul>
+          <li>Une condamnation n’est dite « définitive » que si plus aucun recours n’est possible ou en cours. Sinon, c’est une procédure en cours, affichée avec la présomption d’innocence.</li>
+          <li>Quand l’issue d’un appel n’a pas pu être établie, l’affaire reste « en cours ». Le doute profite à la personne.</li>
+          <li>Les relaxes et les non-lieux sont affichés au même rang que les condamnations.</li>
+          <li>Ne sont pas retenus : plaintes sans suite judiciaire, enquêtes de presse, ouvertures d’enquête sans mise en examen, affaires visant seulement un proche ou un parti, vie privée.</li>
+        </ul>
+
         <h2 id="ia">Ce que fait l’IA, ce qu’elle ne fait pas</h2>
         <p>
           Une IA repère les nouvelles déclarations et candidatures, rédige les brèves à partir des seules pièces collectées, et code les positions des

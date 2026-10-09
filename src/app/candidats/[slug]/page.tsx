@@ -14,7 +14,7 @@ import { Portrait } from '@/components/Portrait'
 import { portraitOf } from '@/lib/images'
 import { nuanceOf } from '@/lib/nuances'
 import { NET_DEFINITION, patrimoineOf } from '@/lib/patrimoine'
-import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierOf } from '@/lib/casier'
+import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
 export const dynamicParams = false
 
@@ -223,7 +223,7 @@ function CasierBlock({ slug }: { slug: string }) {
                   <li key={e.title + e.date} className={`casier__item casier__item--${e.type}`}>
                     <p className="casier__head">
                       <span className="stamp">{CASIER_TYPES.find((t) => t.id === e.type)?.one}</span>{' '}
-                      <time dateTime={e.date}>{formatDate(e.date)}</time>
+                      <time dateTime={e.date}>{casierDate(e.date)}</time>
                     </p>
                     <p className="casier__title">{e.title}</p>
                     <p className="casier__decision">{e.decision}</p>
@@ -246,8 +246,8 @@ function CasierBlock({ slug }: { slug: string }) {
             </ol>
           )}
           <p className="small muted">
-            Seulement des décisions officielles visant la personne : jugements, mises en examen, sanctions de la HATVP ou du Parlement, comptes de campagne.
-            Une erreur ? <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${slug}`)}`}>Signale-la</Link>.
+            Seulement des décisions officielles visant la personne : jugements, mises en examen, sanctions de la HATVP ou du Parlement, comptes de campagne.{' '}
+            <Link href="/methodologie#casier">La règle</Link> · Une erreur ? <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${slug}`)}`}>Signale-la</Link>.
           </p>
         </>
       )}
