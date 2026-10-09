@@ -1,8 +1,8 @@
 {
-  "version": "live-202610090903",
+  "version": "live-202610091010",
   "mode": "live",
   "questionSet": "0.1.0",
-  "publishedAt": "2026-10-09T09:03:24.940Z",
+  "publishedAt": "2026-10-09T10:10:11.968Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -855,11 +855,18 @@
         "codedAt": "2026-10-08T14:49:46.768Z"
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "e108eb96c220cfe0"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:49:46.768Z"
+        "codedAt": "2026-10-09T10:10:11.968Z",
+        "note": "Vote nominatif sur la loi qui allège des contraintes pesant sur les agriculteurs (pesticides, stockage de l'eau, élevage). Elle ne porte pas sur les normes imposées aux autres entreprises, d'où deux niveaux possibles."
       },
       "eur-01": {
         "set": [
@@ -7428,11 +7435,18 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "e108eb96c220cfe0"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-09T10:10:11.968Z",
+        "note": "Vote nominatif sur la loi qui allège des contraintes pesant sur les agriculteurs (pesticides, stockage de l'eau, élevage). Elle ne porte pas sur les normes imposées aux autres entreprises, d'où deux niveaux possibles."
       },
       "eur-01": {
         "missing": true,
@@ -8820,6 +8834,34 @@
         "codedBy": "ia",
         "codedAt": "2026-10-09T08:59:14.422Z",
         "note": "Programme commun du Nouveau Front populaire, signé par la GRS et publié sur son site."
+      },
+      "cli-06": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "bf8ca36a289254e6"
+        ],
+        "basis": "vote",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T10:10:11.968Z",
+        "note": "Vote nominatif sur la loi qui allège des contraintes pesant sur les agriculteurs (pesticides, stockage de l'eau, élevage). Elle ne porte pas sur les normes imposées aux autres entreprises, d'où deux niveaux possibles. Il figure parmi les vo"
+      },
+      "lib-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "7ce915e159f677ae"
+        ],
+        "basis": "vote",
+        "codedBy": "ia",
+        "codedAt": "2026-10-09T10:10:11.968Z",
+        "note": "Vote nominatif sur le texte définitif de la loi créant un droit à l'aide à mourir, sous conditions."
       }
     },
     "segolene-royal": {
@@ -13126,11 +13168,35 @@
       "publisher": "Debout !",
       "url": "https://debout.fr/notre-manifeste/",
       "passage": "Il faut le faire. Pour des raisons économiques, évidemment. Pour retrouver des marges de manœuvre fiscales. Pour soutenir des services publics exsangues, l’hôpital pilier de l’État social, l’École pilier de la République, la Justice, la police, etc."
+    },
+    {
+      "id": "e108eb96c220cfe0",
+      "title": "Scrutin public n°2957 sur l'ensemble de la proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (texte de la commission mixte paritaire)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957",
+      "date": "2025-07-08",
+      "passage": "Pour : 64 M. Antoine Armand M. Gabriel Attal M. Olivier Becht"
+    },
+    {
+      "id": "bf8ca36a289254e6",
+      "title": "Scrutin public n°2957 sur l'ensemble de la proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (texte de la commission mixte paritaire)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957",
+      "date": "2025-07-08",
+      "passage": "Mme Karine Lebon M. Jean-Paul Lecoq M. Frédéric Maillot M. Emmanuel Maurel M. Yannick Monnet"
+    },
+    {
+      "id": "7ce915e159f677ae",
+      "title": "Scrutin public n°8280 sur l'ensemble de la proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+      "date": "2026-07-15",
+      "passage": "Pour : 10 M. Julien Brugerolles M. Édouard Bénard Mme Elsa Faucillon Mme Émeline K/Bidi Mme Karine Lebon M. Jean-Paul Lecoq M. Frédéric Maillot M. Emmanuel Maurel"
     }
   ],
   "refreshedAt": {
     "edouard-philippe": "2026-10-09T09:00:55.550Z",
-    "gabriel-attal": "2026-10-09T09:00:58.632Z",
+    "gabriel-attal": "2026-10-09T10:10:11.968Z",
     "bruno-retailleau": "2026-10-09T09:00:53.485Z",
     "david-lisnard": "2026-10-09T08:59:29.515Z",
     "marine-le-pen": "2026-10-09T09:00:46.359Z",
@@ -13146,12 +13212,12 @@
     "nathalie-arthaud": "2026-10-09T09:03:23.161Z",
     "anasse-kazib": "2026-10-08T18:23:36.781Z",
     "selma-labib": "2026-10-09T09:03:20.935Z",
-    "olivier-becht": "2026-10-09T08:59:36.147Z",
+    "olivier-becht": "2026-10-09T10:10:11.968Z",
     "raphael-glucksmann": "2026-10-09T08:59:06.187Z",
     "bernard-cazeneuve": "2026-10-09T08:59:33.560Z",
     "xavier-bertrand": "2026-10-09T08:59:23.891Z",
     "olivier-faure": "2026-10-09T08:58:51.820Z",
-    "emmanuel-maurel": "2026-10-09T08:59:14.422Z",
+    "emmanuel-maurel": "2026-10-09T10:10:11.968Z",
     "segolene-royal": "2026-10-09T08:59:31.905Z"
   }
 }
