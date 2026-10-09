@@ -34,7 +34,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
 async function main() {
   const list = text(await get(`https://www.senat.fr/scrutin-public/scr${SESSION}.html`))
-  const items = [...list.matchAll(/Scrutin N°\s*(\d+)\s*:\s*(sur .*?)\s*-\s*consulter le dossier législatif/g)].filter((m) => m[2]!.includes("l'ensemble"))
+  const items = [...list.matchAll(/Scrutin N°\s*(\d+)\s*:\s*(sur .*?)\s*-\s*consulter le dossier législatif/g)].filter((m) => /^sur l['’]ensemble|constituant l['’]ensemble/.test(m[2]!))
   const out: Record<string, { since: string; page: string; scrutins: unknown[] }> = {}
   for (const [slug, s] of Object.entries(SENATEURS)) out[slug] = { since: s.since, page: s.page, scrutins: [] }
   for (const m of items) {
