@@ -17,6 +17,8 @@ export const senatOf = (slug: string) => all.senateurs[slug]
 
 /** « sur l'ensemble du projet de loi … » → « Projet de loi … » */
 export const senatLabel = (t: string) => {
-  const x = t.replace(/^sur l[’']ensemble (du texte élaboré par la commission mixte paritaire sur |du |de la |des )?/i, '')
+  const x = t
+    .replace(/^sur l[’']article [^ ]+ constituant /i, 'sur ')
+    .replace(/^sur l[’']ensemble (du texte élaboré par la commission mixte paritaire sur |du |de la |des )?/i, '')
   return x.charAt(0).toUpperCase() + x.slice(1)
 }

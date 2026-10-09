@@ -6,7 +6,718 @@
   "bruno-retailleau": {
    "since": "2025-11-13",
    "page": "https://www.senat.fr/senateur/retailleau_bruno04033b.html",
-   "scrutins": []
+   "scrutins": [
+    {
+     "numero": 340,
+     "date": "2026-07-21",
+     "titre": "sur l'ensemble du projet de loi d'urgence pour la protection et la souveraineté agricoles",
+     "sort": "adopté",
+     "pour": 214,
+     "contre": 111,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-340.html"
+    },
+    {
+     "numero": 339,
+     "date": "2026-07-21",
+     "titre": "sur l'ensemble de la proposition de loi pour une montagne vivante et souveraine",
+     "sort": "adopté",
+     "pour": 325,
+     "contre": 16,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-339.html"
+    },
+    {
+     "numero": 338,
+     "date": "2026-07-21",
+     "titre": "sur l'ensemble du projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquillité de nos concitoyens",
+     "sort": "adopté",
+     "pour": 235,
+     "contre": 34,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-338.html"
+    },
+    {
+     "numero": 337,
+     "date": "2026-07-21",
+     "titre": "sur l'ensemble de la proposition de loi visant à protéger les mineurs des risques auxquels les expose l'utilisation des réseaux sociaux",
+     "sort": "adopté",
+     "pour": 243,
+     "contre": 2,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-337.html"
+    },
+    {
+     "numero": 336,
+     "date": "2026-07-21",
+     "titre": "sur l'ensemble de la proposition de loi relative à l'organisation, à la gestion et au financement du sport professionnel",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-336.html"
+    },
+    {
+     "numero": 335,
+     "date": "2026-07-09",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi organique relatif au renforcement des juridictions criminelles",
+     "sort": "adopté",
+     "pour": 231,
+     "contre": 100,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-335.html"
+    },
+    {
+     "numero": 334,
+     "date": "2026-07-09",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire le projet de loi sur la justice criminelle et le respect des victimes",
+     "sort": "adopté",
+     "pour": 232,
+     "contre": 99,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-334.html"
+    },
+    {
+     "numero": 327,
+     "date": "2026-07-02",
+     "titre": "sur l'ensemble du projet de loi d'urgence pour la protection et la souveraineté agricoles",
+     "sort": "adopté",
+     "pour": 219,
+     "contre": 111,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-327.html"
+    },
+    {
+     "numero": 323,
+     "date": "2026-06-30",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi actualisant la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense",
+     "sort": "adopté",
+     "pour": 309,
+     "contre": 34,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-323.html"
+    },
+    {
+     "numero": 317,
+     "date": "2026-06-22",
+     "titre": "sur l'ensemble du projet de loi portant approbation des comptes de la sécurité sociale de l'année 2025",
+     "sort": "adopté",
+     "pour": 226,
+     "contre": 106,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-317.html"
+    },
+    {
+     "numero": 316,
+     "date": "2026-06-22",
+     "titre": "sur l'ensemble du projet de loi relative aux résultats de la gestion et portant approbation des comptes de l'année 2025",
+     "sort": "adopté",
+     "pour": 226,
+     "contre": 100,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-316.html"
+    },
+    {
+     "numero": 314,
+     "date": "2026-06-17",
+     "titre": "sur l'ensemble de la proposition de loi portant diverses dispositions d'adaptation du droit des outre-mer",
+     "sort": "adopté",
+     "pour": 326,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-314.html"
+    },
+    {
+     "numero": 313,
+     "date": "2026-06-16",
+     "titre": "sur l'ensemble de la proposition de loi visant à réparer les préjudices causés par la transplantation de mineurs de La Réunion en France hexagonale de 1962 à 1984",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-313.html"
+    },
+    {
+     "numero": 312,
+     "date": "2026-06-16",
+     "titre": "sur l'ensemble du projet de loi de sécurisation du travail le 1er mai des salariés volontaires des boulangers-pâtissiers artisanaux et des artisans fleuristes grâce au dialogue social de branche",
+     "sort": "adopté",
+     "pour": 229,
+     "contre": 110,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-312.html"
+    },
+    {
+     "numero": 308,
+     "date": "2026-06-15",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur la proposition de loi visant à renforcer la sécurité, la rétention administrative et la prévention des risques d'attentat",
+     "sort": "adopté",
+     "pour": 233,
+     "contre": 102,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-308.html"
+    },
+    {
+     "numero": 304,
+     "date": "2026-06-11",
+     "titre": "sur l'ensemble de la proposition de loi visant à remobiliser le bâti rural",
+     "sort": "adopté",
+     "pour": 341,
+     "contre": 1,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-304.html"
+    },
+    {
+     "numero": 300,
+     "date": "2026-06-10",
+     "titre": "sur l'ensemble de la proposition de loi visant à moderniser la gestion du patrimoine immobilier de l'État",
+     "sort": "adopté",
+     "pour": 308,
+     "contre": 33,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-300.html"
+    },
+    {
+     "numero": 298,
+     "date": "2026-06-09",
+     "titre": "sur l'ensemble de la proposition de loi visant à exercer l'accès à l'emploi, à pérenniser et à étendre progressivement l'expérimentation « territoires zéro chômeur de longue durée » comme solution de retour à l'emploi pour les personnes privées durablement d'emploi",
+     "sort": "adopté",
+     "pour": 239,
+     "contre": 1,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-298.html"
+    },
+    {
+     "numero": 294,
+     "date": "2026-06-09",
+     "titre": "sur l'ensemble de la proposition de loi visant à garantir la neutralité financière du don d'organes et d'autres éléments et produits du corps humain par les vivants",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-294.html"
+    },
+    {
+     "numero": 293,
+     "date": "2026-06-09",
+     "titre": "sur l'ensemble du projet de loi actualisant la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense",
+     "sort": "adopté",
+     "pour": 296,
+     "contre": 33,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-293.html"
+    },
+    {
+     "numero": 287,
+     "date": "2026-06-01",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur la proposition de loi visant à améliorer l'accès au logement des travailleurs des services publics",
+     "sort": "adopté",
+     "pour": 246,
+     "contre": 99,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-287.html"
+    },
+    {
+     "numero": 286,
+     "date": "2026-06-01",
+     "titre": "sur l'article unique constituant l'ensemble de la proposition de loi concernant la représentativité au sein des unions régionales des professionnels de santé",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-286.html"
+    },
+    {
+     "numero": 280,
+     "date": "2026-05-28",
+     "titre": "sur l'ensemble de la proposition de loi visant à reconnaître les victimes de l'exposition aux essais nucléaires français et à améliorer leur indemnisation",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-280.html"
+    },
+    {
+     "numero": 276,
+     "date": "2026-05-28",
+     "titre": "sur l'article unique constituant l'ensemble de la proposition de loi visant à assouplir la procédure d'autorisation des établissements et services sociaux et médico-sociaux à caractère expérimental",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-276.html"
+    },
+    {
+     "numero": 275,
+     "date": "2026-05-26",
+     "titre": "sur l'ensemble du projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquillité de nos concitoyens",
+     "sort": "adopté",
+     "pour": 243,
+     "contre": 33,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-275.html"
+    },
+    {
+     "numero": 273,
+     "date": "2026-05-18",
+     "titre": "sur l'ensemble de la proposition de loi organique portant régularisation des natifs dans le corps électoral pour les élections au congrès et aux assemblées de province de Nouvelle-Calédonie",
+     "sort": "adopté",
+     "pour": 304,
+     "contre": 20,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-273.html"
+    },
+    {
+     "numero": 270,
+     "date": "2026-05-18",
+     "titre": "sur l'article unique constituant l'ensemble du projet de loi portant transposition de l'avenant n° 3 du 25 février 2026 au protocole d'accord du 10 novembre 2023 relatif à l'assurance chômage (deuxième lecture)",
+     "sort": "adopté",
+     "pour": 243,
+     "contre": 34,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-270.html"
+    },
+    {
+     "numero": 266,
+     "date": "2026-05-18",
+     "titre": "sur l'ensemble de la proposition de loi relative à la sortie des collections publiques de restes humains kali'nas et arawaks en vue de funérailles sur le territoire de la Guyane",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-266.html"
+    },
+    {
+     "numero": 251,
+     "date": "2026-05-11",
+     "titre": "sur l'ensemble de la proposition de loi visant à garantir l'égal accès de tous à l'accompagnement et aux soins palliatifs (deuxième lecture)",
+     "sort": "adopté",
+     "pour": 325,
+     "contre": 18,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-251.html"
+    },
+    {
+     "numero": 250,
+     "date": "2026-05-11",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi relatif à la lutte contre les fraudes sociales et fiscales",
+     "sort": "adopté",
+     "pour": 244,
+     "contre": 99,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-250.html"
+    },
+    {
+     "numero": 249,
+     "date": "2026-05-07",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi relatif à la restitution de biens culturels ayant fait l'objet d'une appropriation illicite",
+     "sort": "adopté",
+     "pour": 343,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-249.html"
+    },
+    {
+     "numero": 240,
+     "date": "2026-05-06",
+     "titre": "sur l'ensemble de la proposition de loi visant à soutenir les collectivités territoriales dans la prévention et la gestion des inondations",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-240.html"
+    },
+    {
+     "numero": 239,
+     "date": "2026-05-06",
+     "titre": "sur l'ensemble de la proposition de loi visant à donner aux acteurs locaux les moyens de lutter contre la cabanisation",
+     "sort": "adopté",
+     "pour": 242,
+     "contre": 34,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-239.html"
+    },
+    {
+     "numero": 238,
+     "date": "2026-05-05",
+     "titre": "sur l'ensemble de la proposition de loi visant à lutter contre l'entrisme islamiste en France",
+     "sort": "adopté",
+     "pour": 208,
+     "contre": 124,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-238.html"
+    },
+    {
+     "numero": 233,
+     "date": "2026-04-28",
+     "titre": "sur l'ensemble du projet de loi-cadre relatif au développement des transports",
+     "sort": "adopté",
+     "pour": 310,
+     "contre": 19,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-233.html"
+    },
+    {
+     "numero": 232,
+     "date": "2026-04-15",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi de simplification de la vie économique",
+     "sort": "adopté",
+     "pour": 223,
+     "contre": 100,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-232.html"
+    },
+    {
+     "numero": 231,
+     "date": "2026-04-14",
+     "titre": "sur l'ensemble du projet de loi organique relatif au renforcement des juridictions criminelles",
+     "sort": "adopté",
+     "pour": 231,
+     "contre": 101,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-231.html"
+    },
+    {
+     "numero": 230,
+     "date": "2026-04-14",
+     "titre": "sur l'ensemble du projet de loi sur la justice criminelle et le respect des victimes",
+     "sort": "adopté",
+     "pour": 219,
+     "contre": 111,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-230.html"
+    },
+    {
+     "numero": 226,
+     "date": "2026-04-09",
+     "titre": "sur l'ensemble de la proposition de loi visant à mettre fin au devoir conjugal",
+     "sort": "adopté",
+     "pour": 209,
+     "contre": 2,
+     "vote": "abstention",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-226.html"
+    },
+    {
+     "numero": 224,
+     "date": "2026-04-07",
+     "titre": "sur l'ensemble de la proposition de loi portant une gouvernance claire, juste et solidaire pour la gestion des milieux aquatiques et la prévention des inondations (GEMAPI)",
+     "sort": "adopté",
+     "pour": 328,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-224.html"
+    },
+    {
+     "numero": 223,
+     "date": "2026-04-07",
+     "titre": "sur l'ensemble de la proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en œuvre d'une procédure de déblocage exceptionnelle",
+     "sort": "adopté",
+     "pour": 230,
+     "contre": 111,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-223.html"
+    },
+    {
+     "numero": 221,
+     "date": "2026-04-01",
+     "titre": "sur l'article unique constituant l'ensemble du projet de loi portant transposition de l'avenant n° 3 du 25 février 2026 au protocole d'accord du 10 novembre 2023 relatif à l'assurance chômage",
+     "sort": "adopté",
+     "pour": 236,
+     "contre": 39,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-221.html"
+    },
+    {
+     "numero": 217,
+     "date": "2026-03-25",
+     "titre": "sur l'ensemble de la proposition de loi visant à soutenir et valoriser les commerces de proximité",
+     "sort": "rejeté",
+     "pour": 113,
+     "contre": 227,
+     "vote": "contre",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-217.html"
+    },
+    {
+     "numero": 214,
+     "date": "2026-02-26",
+     "titre": "sur l'ensemble de la proposition de loi constitutionnelle visant à préciser la procédure d'examen des textes budgétaires, à renforcer la place du Parlement et à sécuriser le périmètre et la constitutionnalité des dispositions mises en œuvre par les ordonnances mentionnées aux articles 47 et 47-1 de la Constitution",
+     "sort": "adopté",
+     "pour": 323,
+     "contre": 17,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-214.html"
+    },
+    {
+     "numero": 202,
+     "date": "2026-02-25",
+     "titre": "sur l'article 1er constituant l'ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France afin de préserver la souveraineté industrielle de la France",
+     "sort": "rejeté",
+     "pour": 112,
+     "contre": 227,
+     "vote": "contre",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-202.html"
+    },
+    {
+     "numero": 201,
+     "date": "2026-02-24",
+     "titre": "sur l'ensemble du projet de loi constitutionnelle relatif à la Nouvelle-Calédonie",
+     "sort": "adopté",
+     "pour": 215,
+     "contre": 41,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-201.html"
+    },
+    {
+     "numero": 197,
+     "date": "2026-02-19",
+     "titre": "sur l'ensemble de la proposition de loi visant à réduire les retards de paiement afin de lutter contre les défaillances d'entreprises",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-197.html"
+    },
+    {
+     "numero": 196,
+     "date": "2026-02-19",
+     "titre": "sur l'ensemble de la proposition de loi visant à garantir le droit de visite des parlementaires et des bâtonniers dans les lieux de privation de liberté",
+     "sort": "adopté",
+     "pour": 342,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-196.html"
+    },
+    {
+     "numero": 193,
+     "date": "2026-02-12",
+     "titre": "sur l'ensemble de la proposition de loi visant à la création d'un centre hospitalier universitaire en Corse",
+     "sort": "adopté",
+     "pour": 339,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-193.html"
+    },
+    {
+     "numero": 190,
+     "date": "2026-02-12",
+     "titre": "sur l'ensemble de la proposition de loi organique portant renforcement de la chaîne pénale criminelle et diverses dispositions de modernisation du corps judiciaire",
+     "sort": "adopté",
+     "pour": 325,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-190.html"
+    },
+    {
+     "numero": 186,
+     "date": "2026-02-10",
+     "titre": "sur l'ensemble de la proposition de loi relative à la lutte contre les installations illicites des gens du voyage",
+     "sort": "adopté",
+     "pour": 235,
+     "contre": 101,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-186.html"
+    },
+    {
+     "numero": 185,
+     "date": "2026-02-10",
+     "titre": "sur l'ensemble de la proposition de loi visant à prohiber l'achat de services sexuels virtuels personnalisés et à lutter contre le proxénétisme en ligne",
+     "sort": "adopté",
+     "pour": 258,
+     "contre": 65,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-185.html"
+    },
+    {
+     "numero": 184,
+     "date": "2026-02-10",
+     "titre": "sur l'ensemble du projet de loi relatif à l'extension des prérogatives, des moyens, de l'organisation et du contrôle des polices municipales et des gardes champêtres",
+     "sort": "adopté",
+     "pour": 290,
+     "contre": 24,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-184.html"
+    },
+    {
+     "numero": 183,
+     "date": "2026-02-05",
+     "titre": "sur l'ensemble de la proposition de loi visant à faciliter la création et le fonctionnement des communes nouvelles",
+     "sort": "adopté",
+     "pour": 338,
+     "contre": 3,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-183.html"
+    },
+    {
+     "numero": 178,
+     "date": "2026-01-29",
+     "titre": "sur l'ensemble de la proposition de loi visant à lever, dans les territoires d'outre-mer, l'interdiction de recherche, d'exploration et d'exploitation des hydrocarbures",
+     "sort": "adopté",
+     "pour": 227,
+     "contre": 105,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-178.html"
+    },
+    {
+     "numero": 174,
+     "date": "2026-01-29",
+     "titre": "sur l'ensemble de la proposition de loi visant à instaurer une procédure simplifiée de recouvrement des créances commerciales incontestées",
+     "sort": "adopté",
+     "pour": 308,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-174.html"
+    },
+    {
+     "numero": 171,
+     "date": "2026-01-28",
+     "titre": "sur l'ensemble du projet de loi autorisant l'approbation de l'accord entre le Gouvernement de la République française et le Gouvernement de la République du Kazakhstan sur la réadmission des personnes",
+     "sort": "adopté",
+     "pour": 308,
+     "contre": 34,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-171.html"
+    },
+    {
+     "numero": 170,
+     "date": "2026-01-28",
+     "titre": "sur l'ensemble de la proposition de loi visant à garantir l'égal accès de tous à l'accompagnement et aux soins palliatifs",
+     "sort": "adopté",
+     "pour": 307,
+     "contre": 17,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-170.html"
+    },
+    {
+     "numero": 169,
+     "date": "2026-01-28",
+     "titre": "sur l'ensemble de la proposition de loi relative au droit à l'aide à mourir",
+     "sort": "rejeté",
+     "pour": 122,
+     "contre": 181,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-169.html"
+    },
+    {
+     "numero": 147,
+     "date": "2026-01-20",
+     "titre": "sur l'ensemble de la proposition de loi visant à conforter l'habitat, l'offre de logements et la construction",
+     "sort": "adopté",
+     "pour": 230,
+     "contre": 102,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-147.html"
+    },
+    {
+     "numero": 146,
+     "date": "2026-01-14",
+     "titre": "sur l'ensemble de la proposition de loi relative à la confidentialité des consultations des juristes d'entreprise",
+     "sort": "adopté",
+     "pour": 196,
+     "contre": 125,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-146.html"
+    },
+    {
+     "numero": 145,
+     "date": "2026-01-14",
+     "titre": "sur l'ensemble de la proposition de loi visant à améliorer les moyens d'action de l'Agence de gestion et de recouvrement des avoirs saisis et confisqués et à faciliter l'exercice des missions d'expert judiciaire",
+     "sort": "adopté",
+     "pour": 324,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-145.html"
+    },
+    {
+     "numero": 136,
+     "date": "2025-12-23",
+     "titre": "sur l'ensemble du projet de loi spéciale prévue par l'article 45 de la loi organique n° 2001-692 du 1er août 2001 relative aux lois de finances",
+     "sort": "adopté",
+     "pour": 344,
+     "contre": 0,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-136.html"
+    },
+    {
+     "numero": 132,
+     "date": "2025-12-18",
+     "titre": "sur l'article 2 constituant l'ensemble de la proposition de loi visant à garantir la continuité des revenus des artistes auteurs",
+     "sort": "rejeté",
+     "pour": 118,
+     "contre": 206,
+     "vote": "contre",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-132.html"
+    },
+    {
+     "numero": 128,
+     "date": "2025-12-16",
+     "titre": "sur l'ensemble de la proposition de résolution européenne en application de l'article 73 quinquies C du Règlement, visant à demander au Gouvernement français de saisir la Cour de justice de l'Union européenne pour empêcher la ratification de l'accord avec le Mercosur",
+     "sort": "adopté",
+     "pour": 343,
+     "contre": 1,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-128.html"
+    },
+    {
+     "numero": 81,
+     "date": "2025-12-04",
+     "titre": "sur l'ensemble de la première partie du projet de loi de finances pour 2026",
+     "sort": "adopté",
+     "pour": 198,
+     "contre": 105,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-81.html"
+    },
+    {
+     "numero": 72,
+     "date": "2025-12-03",
+     "titre": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi de finances de fin de gestion pour 2025",
+     "sort": "adopté",
+     "pour": 239,
+     "contre": 37,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-72.html"
+    },
+    {
+     "numero": 61,
+     "date": "2025-11-26",
+     "titre": "sur l'ensemble du projet de loi de financement de la sécurité sociale pour 2026",
+     "sort": "adopté",
+     "pour": 196,
+     "contre": 119,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-61.html"
+    },
+    {
+     "numero": 56,
+     "date": "2025-11-25",
+     "titre": "sur l'ensemble du projet de loi de finances de fin de gestion pour 2025",
+     "sort": "adopté",
+     "pour": 226,
+     "contre": 104,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-56.html"
+    },
+    {
+     "numero": 49,
+     "date": "2025-11-22",
+     "titre": "sur l'ensemble de la deuxième partie du projet de loi de financement de la sécurité sociale pour 2026",
+     "sort": "adopté",
+     "pour": 224,
+     "contre": 113,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-49.html"
+    },
+    {
+     "numero": 29,
+     "date": "2025-11-18",
+     "titre": "sur l'ensemble du projet de loi relatif à la lutte contre les fraudes sociales et fiscales",
+     "sort": "adopté",
+     "pour": 239,
+     "contre": 32,
+     "vote": "pour",
+     "url": "https://www.senat.fr/scrutin-public/2025/scr2025-29.html"
+    }
+   ]
   }
  }
 }
