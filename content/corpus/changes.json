@@ -8557,5 +8557,29 @@
     "from": "inconnue",
     "to": "[0,1]",
     "source": "3e567fc3de73af9e"
+  },
+  {
+    "date": "2026-10-09T16:14:00.153Z",
+    "actor": "eric-zemmour",
+    "item": "eur-07",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "ea396c1125c7e7bb"
+  },
+  {
+    "date": "2026-10-09T16:14:00.153Z",
+    "actor": "eric-zemmour",
+    "item": "lib-02",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "1a54fc9a05cac60a"
+  },
+  {
+    "date": "2026-10-09T16:14:00.153Z",
+    "actor": "eric-zemmour",
+    "item": "sec-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "d2a92e7f4b75d36e"
   }
 ]
