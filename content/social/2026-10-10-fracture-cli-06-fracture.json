@@ -3,9 +3,27 @@
   "at": "2026-10-10T10:30:53.306Z",
   "kind": "fracture",
   "card": {
-    "kicker": "ÇA COUPE EN DEUX",
-    "title": "Alléger les normes environnementales : 6 candidats disent oui, 7 disent non",
-    "line": "19 candidats se sont prononcés sur cette affirmation du test. Six sont nettement pour, sept nettement contre."
+    "kicker": "Pour ou contre ?",
+    "title": "Alléger les normes environnementales ?",
+    "line": "6 candidats disent oui, 7 disent non.",
+    "cta": "Et toi ? Fais le test",
+    "yes": [
+      "gabriel-attal",
+      "bruno-retailleau",
+      "david-lisnard",
+      "eric-zemmour",
+      "nicolas-dupont-aignan",
+      "olivier-becht"
+    ],
+    "no": [
+      "jean-luc-melenchon",
+      "marine-tondelier",
+      "delphine-batho",
+      "nathalie-arthaud",
+      "raphael-glucksmann",
+      "olivier-faure",
+      "emmanuel-maurel"
+    ]
   },
   "text": {
     "x": "« Les normes environnementales imposées aux agriculteurs et aux entreprises devraient être allégées. » Sur 19 candidats, 6 sont nettement pour, 7 nettement contre. Et toi, tu es où ?",
