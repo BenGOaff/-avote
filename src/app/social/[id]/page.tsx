@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { SharePanel } from '@/components/SharePanel'
 import { notFound } from 'next/navigation'
 import { getSocialPost, getSocialPosts } from '@/lib/social'
 import { UI_COPY } from '@/lib/copy'
+import { absolute } from '@/lib/site'
 
 const t = UI_COPY.social
 
@@ -51,6 +53,9 @@ export default async function SocialPostPage({ params }: { params: Promise<{ id:
           </a>
         </p>
       )}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={`/social/${p.id}/carte.png`} width={1080} height={1350} alt={`${p.card.kicker} ${p.card.title}`} style={{ width: '100%', maxWidth: 420, height: 'auto', border: 'var(--border) solid var(--ink)', borderRadius: 'var(--radius)', display: 'block', margin: 'var(--s5) 0' }} />
+      <SharePanel url={absolute(`/social/${p.id}`)} title={p.card.title} text={p.text.x} imageSrc={`/social/${p.id}/carte.png`} />
       <p className="row" style={{ gap: 'var(--s3)', margin: 'var(--s5) 0' }}>
         <Link className="btn btn--highlight" href={p.target}>
           {p.targetLabel}

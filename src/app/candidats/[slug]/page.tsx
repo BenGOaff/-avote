@@ -11,6 +11,7 @@ import { formatDate } from '@/components/Editorial'
 import { PositionScale } from '@/components/Viz'
 import { PartyTrail } from '@/components/PartyTrail'
 import { absolute } from '@/lib/site'
+import { ShareButtons } from '@/components/ShareButtons'
 import fiches from '@content/acteurs/fiches.json'
 import { Portrait } from '@/components/Portrait'
 import { portraitOf } from '@/lib/images'
@@ -180,6 +181,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
           Comparer avec mes réponses
         </Link>
       </p>
+      <ShareButtons url={absolute(`/candidats/${a.slug}`)} title={a.name} text={UI_COPY.candidate.shareText(a.name)} />
     </div>
   )
 }

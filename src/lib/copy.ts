@@ -197,6 +197,7 @@ export const UI_COPY = {
   candidate: {
     parrainages: (n: number, threshold: number) => `Parrainages validés par le Conseil constitutionnel : ${n} sur ${threshold} nécessaires`,
     linksLead: 'À la source :',
+    shareText: (name: string) => `Ce que ${name} propose vraiment, phrase exacte et source à l’appui. Et toi, tu es d’accord ?`,
     linkKind: { campagne: 'site de campagne', parti: 'site du parti', programme: 'programme' } as Record<string, string>,
   },
   urne: {
@@ -260,4 +261,15 @@ export const UI_COPY = {
   },
   erase: 'Effacer toutes mes données',
   share: 'Préparer une image à partager',
+  partage: {
+    title: 'Partager sur',
+    copy: 'Copier le lien',
+    more: 'Autre appli',
+    copied: 'Lien copié.',
+    textCopied: 'Texte copié : colle-le dans ta publication.',
+    imageSaved: 'Image enregistrée : ajoute-la à ta publication. Le texte est copié.',
+    instagram: 'Image enregistrée et texte copié : publie-la sur Instagram, le lien va en story (sticker lien) ou en bio.',
+    publish: (net: string) => `Publier sur ${net}`,
+    studioText: (line: string) => `${line} Et toi, tu es plus proche de qui ? Le test :`,
+  },
 } as const

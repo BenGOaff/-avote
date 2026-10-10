@@ -1,21 +1,26 @@
 'use client'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { loadState } from '@/lib/local-store'
 import { questionnaire } from '@/lib/data'
 import { IconDownload } from '@/components/Icons'
+import { SharePanel } from '@/components/SharePanel'
+import { TARGETS, type ShareTarget } from '@/lib/share'
+import { absolute } from '@/lib/site'
+import { UI_COPY } from '@/lib/copy'
 
 /**
  * Studio de partage (cahier §16) : rendu canvas local, polices embarquées, aucun envoi.
  * Par défaut : aucune mention de candidat, d'identité ou d'intention de vote.
  */
 
-type FormatId = 'post' | 'story' | 'paysage' | 'wallpaper' | 'avatar'
+type FormatId = 'portrait' | 'post' | 'story' | 'paysage' | 'wallpaper' | 'avatar'
 const FORMATS: Record<FormatId, { label: string; w: number; h: number; hint: string }> = {
   wallpaper: { label: 'Fond d’écran', w: 1440, h: 2560, hint: 'Zone libre en haut pour l’heure et en bas pour les icônes.' },
   avatar: { label: 'Photo de profil', w: 1080, h: 1080, hint: 'Lisible même rognée en cercle.' },
-  post: { label: 'Post carré', w: 1080, h: 1080, hint: 'Instagram, Facebook, LinkedIn.' },
+  portrait: { label: 'Post portrait', w: 1080, h: 1350, hint: 'Instagram, Facebook, LinkedIn, X, Threads : le format qui prend le plus de place dans le fil.' },
+  post: { label: 'Post carré', w: 1080, h: 1080, hint: 'WhatsApp, Telegram, partout.' },
   story: { label: 'Story', w: 1080, h: 1920, hint: 'Marges hautes et basses laissées libres pour l’interface.' },
-  paysage: { label: 'Paysage', w: 1200, h: 630, hint: 'X, Bluesky, aperçu de lien.' },
+  paysage: { label: 'Paysage', w: 1200, h: 630, hint: 'Reddit, e-mail, aperçu de lien.' },
 }
 
 type Palette = 'papier' | 'encre' | 'jaune'
@@ -80,7 +85,7 @@ function fitText(ctx: CanvasRenderingContext2D, text: string, family: string, ma
 
 export function Studio() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [format, setFormat] = useState<FormatId>('wallpaper')
+  const [format, setFormat] = useState<FormatId>('portrait')
   const [palette, setPalette] = useState<Palette>('papier')
   const [style, setStyle] = useState<Style>('manifeste')
   const [phrase, setPhrase] = useState(PHRASES[0]!)
@@ -106,11 +111,9 @@ export function Studio() {
     return custom.trim() || phrase
   }, [custom, phrase, usePriority, priorityTheme])
 
-  useEffect(() => {
-    let cancelled = false
-    const draw = async () => {
-      const canvas = canvasRef.current
-      if (!canvas) return
+  // Dessin d'un format donné, sur le canevas de l'aperçu ou sur un canevas hors écran (partage au format du réseau)
+  const paint = useCallback(
+    async (canvas: HTMLCanvasElement, format: FormatId, cancelled: () => boolean) => {
       const f = FORMATS[format]
       const p = PALETTES[palette]
       canvas.width = f.w
@@ -122,7 +125,7 @@ export function Studio() {
       const serif = cssFamily('--ff-serif', 'Georgia')
       await Promise.all([document.fonts.load(`80px ${display}`), document.fonts.load(`700 40px ${ui}`), document.fonts.load(`40px ${serif}`)]).catch(() => {})
       const [symbol, logo] = await Promise.all([loadImage('/brand/symbole.svg'), loadImage(p.logo)])
-      if (cancelled) return
+      if (cancelled()) return
 
       ctx.fillStyle = p.bg
       ctx.fillRect(0, 0, f.w, f.h)
@@ -203,14 +206,31 @@ export function Studio() {
       ctx.textAlign = 'right'
       ctx.textBaseline = 'alphabetic'
       ctx.fillText('çavote.fr', f.w - m, bottom - logoH * 0.25)
-    }
-    draw()
+    },
+    [palette, style, text, headline, photo],
+  )
+
+  useEffect(() => {
+    let cancelled = false
+    const canvas = canvasRef.current
+    if (!canvas) return
+    paint(canvas, format, () => cancelled)
       .then(() => !cancelled && setReady(true))
       .catch(() => !cancelled && setReady(true))
     return () => {
       cancelled = true
     }
-  }, [format, palette, style, text, headline, photo])
+  }, [format, paint])
+
+  /** Le visuel redessiné au format conseillé pour le réseau choisi. */
+  const imageFor = async (target: ShareTarget): Promise<File | null> => {
+    const id = TARGETS[target].image
+    const c = document.createElement('canvas')
+    await paint(c, id, () => false)
+    const blob = await new Promise<Blob | null>((r) => c.toBlob(r, 'image/png'))
+    return blob ? new File([blob], `ca-vote-${id}.png`, { type: 'image/png' }) : null
+  }
+  const pick = (target: ShareTarget) => setFormat(TARGETS[target].image)
 
   const onPhoto = (file: File | undefined) => {
     if (!file) return
@@ -343,8 +363,9 @@ export function Studio() {
         )}
 
         <button className="btn btn--highlight" onClick={exportImage} disabled={!ready || busy}>
-          <IconDownload width={20} height={20} /> {busy ? 'Préparation…' : 'Enregistrer ou partager'}
+          <IconDownload width={20} height={20} /> {busy ? 'Préparation…' : 'Enregistrer l’image'}
         </button>
+        <SharePanel url={absolute('/test')} title="Ça vote ?" text={UI_COPY.partage.studioText(style === 'une' ? headline : text)} image={imageFor} onPick={pick} />
       </div>
 
       <figure style={{ margin: 0, position: 'sticky', top: 'calc(var(--topbar-h) + 16px)' }}>
