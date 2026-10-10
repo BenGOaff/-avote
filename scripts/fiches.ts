@@ -23,7 +23,7 @@ const MIN_KNOWN = 5
 const meter = new CostMeter('Fiches', budgetFromEnv('FICHES_BUDGET_USD', 1))
 
 const VOICE = readFileSync(path.join(ROOT, 'content/voix/profil-vocal.md'), 'utf8')
-const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.2.0.json'), 'utf8')) as {
+const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.3.0.json'), 'utf8')) as {
   themes: { id: string; label: string }[]
   items: { id: string; theme: string; text: string }[]
 }

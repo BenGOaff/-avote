@@ -30,7 +30,7 @@ if (!FILE) {
 }
 const LIVE = path.join(ROOT, 'content/corpus/live.json')
 const CHANGES = path.join(ROOT, 'content/corpus/changes.json')
-const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.2.0.json'), 'utf8')) as {
+const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.3.0.json'), 'utf8')) as {
   version: string
   items: { id: string; text: string }[]
 }

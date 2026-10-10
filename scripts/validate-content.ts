@@ -37,7 +37,7 @@ for (const [dir, schema] of [
 }
 
 // Questionnaire : identifiants uniques, items rattachés à un thème existant
-const q = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.2.0.json'), 'utf8')) as {
+const q = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.3.0.json'), 'utf8')) as {
   version: string
   themes: { id: string }[]
   dimensions: { id: string }[]

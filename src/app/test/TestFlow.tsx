@@ -454,9 +454,8 @@ function Intro({
 }) {
   const [persist, setPersist] = useState<'session' | 'local'>(state?.persist ?? 'session')
   // Affirmations ajoutées dans cette version, encore sans réponse, chez quelqu'un qui avait déjà répondu à l'ancienne
-  const fresh = state && answeredCount > 0 && set.items.some((i) => i.version !== set.version && i.id in state.answers)
-    ? set.items.filter((i) => i.version === set.version && !(i.id in state.answers)).length
-    : 0
+  // (toutes celles parues après la version du questionnaire avec laquelle la personne a commencé)
+  const fresh = state && answeredCount > 0 ? set.items.filter((i) => i.version > state.questionSet && !(i.id in state.answers)).length : 0
   const startButtons =
     answeredCount > 0 ? (
       <>

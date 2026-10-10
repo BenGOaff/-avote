@@ -23,7 +23,7 @@ Valeurs provisoires centralisées dans le code et la configuration. Aucune n’e
 
 ## Méthode (valeurs provisoires, `src/lib/engine/config.ts`)
 
-- Les 96 questions (`content/questionnaire/v0.2.0.json`) : brouillon à faire relire par des personnes de sensibilités différentes.
+- Les 111 questions (`content/questionnaire/v0.3.0.json`) : brouillon à faire relire par des personnes de sensibilités différentes.
 - Seuils de classement (méthode 0.3.0) : 28 réponses dont la moitié dans 5 thèmes ; un candidat est classé s’il est documenté sur 50 % de tes réponses aux sujets débattus, dans 4 thèmes.
 - Seuil d’écart « proche » : 2 points. Seuil de désaccord sur une exigence : 2 crans.
 - Critères d’inclusion des candidats avant la liste officielle.
