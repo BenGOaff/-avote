@@ -264,7 +264,9 @@ export default function MethodPage() {
           programme 2027, déclarations publiques depuis 2024, programme présidentiel 2022, programme du parti. Les réponses d’un candidat au questionnaire
           d’une association comptent comme une déclaration, à condition que la page publie sa réponse mot pour mot ; la note ou le classement attribué par
           l’association n’est jamais repris. Chaque position est accompagnée d’une citation
-          mot pour mot ; un programme retélécharge la page et vérifie que la citation y figure, sinon la position est marquée inconnue. La source et la
+          mot pour mot ; un programme retélécharge la page et vérifie que la citation y figure, sinon la position est marquée inconnue. Pour une émission
+          filmée, la citation est cherchée dans la transcription de la vidéo, au moment indiqué, et le lien ouvre la vidéo à cet instant : tu peux écouter
+          la phrase. Quand un média a repris la phrase entre guillemets, c’est son article qui sert de source. La source et la
           citation sont affichées sur la fiche de chaque candidat. Le codage automatique peut se tromper sur l’intensité d’une position : si tu vois une
           erreur, signale-la, elle sera corrigée et la correction publiée. <Link href="/sources">Les sources</Link> ·{' '}
           <Link href="/corrections">Les corrections</Link> · <a href="/donnees.json">Toutes les données (JSON)</a>

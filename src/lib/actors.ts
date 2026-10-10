@@ -12,6 +12,8 @@ export interface AnnouncedActor {
   retiredAt?: string
   retiredSource?: { title: string; publisher: string; url: string }
   addedBy?: string
+  /** Sites officiels : campagne, parti, programme */
+  links?: { kind: 'campagne' | 'parti' | 'programme'; url: string }[]
 }
 
 export function getAnnouncedActors(): AnnouncedActor[] {

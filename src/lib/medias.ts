@@ -51,6 +51,8 @@ export interface MediaEntry {
   slug: string
   name: string
   type: MediaType
+  /** Page d'accueil du média */
+  site?: string
   ownership: MediaOwnership | null
   /** Orientation politique du média selon eurotopics, toujours attribuée */
   orientation: Orientation | null
@@ -135,7 +137,7 @@ export const engagementsOf = (controller: string): Engagement[] => engagements[c
 const alertes = ((store as { alertes?: Record<string, { checkedAt: string; items: ArcomAlert[] }> }).alertes ?? {}) as Record<string, { checkedAt: string; items: ArcomAlert[] }>
 
 export function getMedias(): MediaEntry[] {
-  return (liste.medias as { slug: string; name: string; type: MediaType }[]).map((m) => ({
+  return (liste.medias as { slug: string; name: string; type: MediaType; site?: string }[]).map((m) => ({
     ...m,
     ownership: owned[m.slug] ?? null,
     orientation: orientations[m.slug] ?? null,

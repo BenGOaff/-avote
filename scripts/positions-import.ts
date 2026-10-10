@@ -11,6 +11,10 @@
  *
  * Format : { "actor": "slug", "positions": [{ itemId, value, set, basis, quote, url, sourceTitle, publisher, date, note }] }
  * (ou une liste de tels objets).
+ *
+ * Émission filmée (YouTube refuse les robots) : `transcript` donne le fichier local de la transcription de la vidéo
+ * et `timestamp` (« 12:34 » ou « 1:02:03 ») le moment de la phrase. La citation est cherchée dans la transcription,
+ * le lien enregistré ouvre la vidéo à ce moment : chacun peut écouter la phrase. La transcription n'est pas publiée.
  */
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
@@ -56,9 +60,38 @@ const Batch = z.object({
       publisher: z.string(),
       date: z.string().default(''),
       note: z.string().default(''),
+      transcript: z.string().optional(),
+      timestamp: z.string().regex(/^(\d+:)?\d{1,2}:\d{2}$/).optional(),
     }),
   ),
 })
+
+const VIDEO = /^https:\/\/(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)[\w-]{11}/
+
+const toSeconds = (t: string) => t.split(':').reduce((acc, n) => acc * 60 + Number(n), 0)
+
+/**
+ * Passage d'une transcription de vidéo autour du moment indiqué (du repère qui le précède jusqu'à trois minutes
+ * après), sans les repères de temps ni les indications de bruitage : la citation doit être dite à ce moment-là.
+ */
+function transcriptAt(file: string, timestamp: string): string {
+  const at = toSeconds(timestamp)
+  const marks = [...readFileSync(file, 'utf8').matchAll(/\(((?:\d+:)?\d{1,2}:\d{2})\)([^(]*)/g)].map((m) => ({ t: toSeconds(m[1]!), text: m[2]! }))
+  const start = Math.max(0, marks.findLastIndex((m) => m.t <= at))
+  return marks
+    .slice(start)
+    .filter((m) => m.t <= at + 180)
+    .map((m) => m.text.replace(/\[[^\]]{1,30}\]/g, ' '))
+    .join(' ')
+}
+
+/** Lien qui ouvre la vidéo au moment de la citation. */
+function videoAt(url: string, timestamp: string): string {
+  const secs = toSeconds(timestamp)
+  const u = new URL(url)
+  u.searchParams.set('t', `${secs}s`)
+  return u.toString()
+}
 
 async function main() {
   const raw = JSON.parse(readFileSync(FILE!, 'utf8'))
@@ -89,13 +122,18 @@ async function main() {
         ko++
         continue
       }
-      const url = canonicalUrl(p.url)
+      if (p.transcript && (!VIDEO.test(p.url) || !p.timestamp || !existsSync(p.transcript))) {
+        console.warn(`✗ ${label} : transcription sans vidéo, sans moment ou introuvable`)
+        ko++
+        continue
+      }
+      const url = canonicalUrl(p.transcript ? videoAt(p.url, p.timestamp!) : p.url)
       if (!url) {
         console.warn(`✗ ${label} : adresse invalide`)
         ko++
         continue
       }
-      if (!pages.has(url)) pages.set(url, await fetchText(url))
+      if (!pages.has(url)) pages.set(url, p.transcript ? transcriptAt(p.transcript, p.timestamp!) : await fetchText(url))
       const text = pages.get(url)
       if (!text || !quoteIsInSource(p.quote, text)) {
         console.warn(`✗ ${label} : citation introuvable dans ${url}`)
