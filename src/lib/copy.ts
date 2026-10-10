@@ -59,7 +59,7 @@ export const UI_COPY = {
     skipTheme: 'Passer ce thème',
     facts: 'Les faits',
     factsSource: 'Source',
-    newItems: (n: number) => `${n} nouvelles affirmations depuis ton dernier passage : santé, école, logement, animaux, droits LGBT, immigration… Tes réponses précédentes sont gardées.`,
+    newItems: (n: number) => `${n} nouvelles affirmations depuis ton dernier passage, tirées des mesures phares des programmes. Tes réponses précédentes sont gardées.`,
     redLine: 'Ligne rouge',
     redLineOn: 'Ligne rouge posée',
     redLineHint: 'Un désaccord sur ce point compterait vraiment pour toi. Il sera signalé à part dans les résultats, sans changer les scores.',

@@ -91,6 +91,12 @@ export default function MethodPage() {
           affirmations de la version 0.1.0 n’ont pas changé de texte : les réponses déjà données restent valables.
         </p>
         <p>
+          Version 0.3.0 (10 octobre 2026) : pour chaque candidat, on a relevé les mesures phares qu’il met lui-même en avant (site de campagne, discours,
+          grands entretiens), citation à l’appui. Quand plusieurs candidats s’opposaient sur une mesure absente du test, elle est devenue une affirmation : 15 au
+          total (regroupement familial, âge de départ au-delà de 64 ans, très gros héritages, salaire net, aides aux entreprises, règle d’or budgétaire,
+          suppression d’un échelon local…). L’affirmation sur la TVA de l’énergie est élargie à toutes les taxes sur l’énergie et redemandée.
+        </p>
+        <p>
           <strong>Les faits.</strong> Sous certaines affirmations, un encadré donne des chiffres et des règles de droit tirés de sources officielles (Insee,
           ministères, Cour des comptes, textes de loi), avec le lien. Ils servent à répondre en connaissant la situation actuelle. Ils n’entrent pas dans le calcul.
         </p>
