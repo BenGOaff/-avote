@@ -30,7 +30,9 @@ const due: SocialPost[] = readdirSync(DIR)
   .filter((f) => f.endsWith('.json') && !f.startsWith('_'))
   .map((f) => SocialPostSchema.parse(JSON.parse(readFileSync(path.join(DIR, f), 'utf8'))))
   .filter((p) => !state.posted[p.id] && Date.parse(p.at) <= now && now - Date.parse(p.at) < 24 * 3600e3)
-  .sort((a, b) => a.at.localeCompare(b.at))
+  // Les plus récentes d'abord, deux au plus par passage : un compte jeune qui publie en rafale se fait restreindre
+  .sort((a, b) => b.at.localeCompare(a.at) || b.id.localeCompare(a.id))
+  .slice(0, Number(process.env.X_MAX_PER_RUN || 2))
 
 const link = (p: SocialPost) => `${SITE}/social/${p.id}?utm_source=x&utm_medium=social&utm_campaign=${p.kind}`
 const text = (p: SocialPost) => `${p.text.x}\n\n${link(p)}`
