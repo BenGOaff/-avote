@@ -15,6 +15,8 @@
  * Émission filmée (YouTube refuse les robots) : `transcript` donne le fichier local de la transcription de la vidéo
  * et `timestamp` (« 12:34 » ou « 1:02:03 ») le moment de la phrase. La citation est cherchée dans la transcription,
  * le lien enregistré ouvre la vidéo à ce moment : chacun peut écouter la phrase. La transcription n'est pas publiée.
+ * Une transcription sans repères de temps est acceptée sans `timestamp` : la citation est cherchée dans tout le texte
+ * et le lien ouvre la vidéo au début.
  */
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
@@ -74,9 +76,11 @@ const toSeconds = (t: string) => t.split(':').reduce((acc, n) => acc * 60 + Numb
  * Passage d'une transcription de vidéo autour du moment indiqué (du repère qui le précède jusqu'à trois minutes
  * après), sans les repères de temps ni les indications de bruitage : la citation doit être dite à ce moment-là.
  */
-function transcriptAt(file: string, timestamp: string): string {
+function transcriptAt(file: string, timestamp: string | undefined): string {
+  const raw = readFileSync(file, 'utf8')
+  if (!timestamp) return raw.replace(/\[[^\]]{1,30}\]/g, ' ')
   const at = toSeconds(timestamp)
-  const marks = [...readFileSync(file, 'utf8').matchAll(/\(((?:\d+:)?\d{1,2}:\d{2})\)([^(]*)/g)].map((m) => ({ t: toSeconds(m[1]!), text: m[2]! }))
+  const marks = [...raw.matchAll(/\(((?:\d+:)?\d{1,2}:\d{2})\)([^(]*)/g)].map((m) => ({ t: toSeconds(m[1]!), text: m[2]! }))
   const start = Math.max(0, marks.findLastIndex((m) => m.t <= at))
   return marks
     .slice(start)
@@ -122,18 +126,19 @@ async function main() {
         ko++
         continue
       }
-      if (p.transcript && (!VIDEO.test(p.url) || !p.timestamp || !existsSync(p.transcript))) {
-        console.warn(`✗ ${label} : transcription sans vidéo, sans moment ou introuvable`)
+      const marked = p.transcript && existsSync(p.transcript) && /\((\d+:)?\d{1,2}:\d{2}\)/.test(readFileSync(p.transcript, 'utf8'))
+      if (p.transcript && (!VIDEO.test(p.url) || !existsSync(p.transcript) || (marked && !p.timestamp))) {
+        console.warn(`✗ ${label} : transcription sans vidéo, introuvable, ou repère de temps manquant`)
         ko++
         continue
       }
-      const url = canonicalUrl(p.transcript ? videoAt(p.url, p.timestamp!) : p.url)
+      const url = canonicalUrl(p.transcript && p.timestamp ? videoAt(p.url, p.timestamp) : p.url)
       if (!url) {
         console.warn(`✗ ${label} : adresse invalide`)
         ko++
         continue
       }
-      if (!pages.has(url)) pages.set(url, p.transcript ? transcriptAt(p.transcript, p.timestamp!) : await fetchText(url))
+      if (!pages.has(url)) pages.set(url, p.transcript ? transcriptAt(p.transcript, p.timestamp) : await fetchText(url))
       const text = pages.get(url)
       if (!text || !quoteIsInSource(p.quote, text)) {
         console.warn(`✗ ${label} : citation introuvable dans ${url}`)
