@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-10-08",
+  "collectedAt": "2026-10-10",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -604,6 +604,32 @@
         "title": "Présidentielle 2027 : le très droitier Gilles Platret présente sa candidature et embouteille son espace politique",
         "publisher": "Libération",
         "url": "https://www.liberation.fr/politique/elections/presidentielle-2027-le-tres-droitier-gilles-platret-presente-sa-candidature-et-embouteille-son-espace-politique-20261009_AKT3J6HRJJFFBJK6I7QQ6TSJ4Q/"
+      },
+      "verified": true,
+      "addedBy": "veille claude-sonnet-5-5"
+    },
+    {
+      "slug": "francis-lalanne",
+      "name": "Francis Lalanne",
+      "status": "declare",
+      "since": "2026-10-10",
+      "source": {
+        "title": "Présidentielle 2027 : « Ils me font rire »… Lalanne et Dieudonné lancent leur campagne à Valenciennes",
+        "publisher": "20 Minutes",
+        "url": "https://www.20minutes.fr/politique/4253051-20261010-presidentielle-2027-font-rire-lalanne-dieudonne-lancent-campagne-presidentielle-valenciennes?amp%3Bat_campaign=149"
+      },
+      "verified": true,
+      "addedBy": "veille claude-sonnet-5-5"
+    },
+    {
+      "slug": "dieudonne",
+      "name": "Dieudonné",
+      "status": "declare",
+      "since": "2026-10-10",
+      "source": {
+        "title": "Présidentielle 2027 : « Ils me font rire »… Lalanne et Dieudonné lancent leur campagne à Valenciennes",
+        "publisher": "20 Minutes",
+        "url": "https://www.20minutes.fr/politique/4253051-20261010-presidentielle-2027-font-rire-lalanne-dieudonne-lancent-campagne-presidentielle-valenciennes?amp%3Bat_campaign=149"
       },
       "verified": true,
       "addedBy": "veille claude-sonnet-5-5"
