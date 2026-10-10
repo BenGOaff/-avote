@@ -1,5 +1,5 @@
 {
-  "_note": "Version rapide du test : 2 affirmations par thème, choisies parmi celles où les positions des candidats sont les mieux documentées et les plus différentes (écart type des positions connues × part des candidats documentés), calculé sur le référentiel du 9 octobre 2026 (questionnaire 0.2.0, 12 thèmes). Le classement qui en sort est indicatif.",
+  "_note": "Version rapide du test : 2 affirmations par thème, choisies parmi celles où les positions des candidats sont les mieux documentées et les plus différentes (écart type des positions connues × part des candidats documentés). Calcul refait sur le référentiel du 10 octobre 2026 (questionnaire 0.3.0, 12 thèmes) : la sélection est inchangée. Le classement qui en sort est indicatif.",
   "items": [
     "eco-02",
     "eco-05",
