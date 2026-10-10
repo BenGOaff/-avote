@@ -9,11 +9,18 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
  * Flux d'une publication par réseau, prêt pour un outil d'automatisation (Zapier, Make, n8n) :
  * description = texte à publier (lien compris), enclosure = visuel aux couleurs du site.
  */
-export function socialFeed(network: 'x' | 'facebook' | 'linkedin'): Response {
-  const items = getSocialPosts().slice(0, 30)
+// Facebook, Instagram et LinkedIn passent par Zapier (formule gratuite : 100 publications par mois pour les trois réseaux) :
+// une publication par jour, la plus forte (pépite ou « pour ou contre »). X reçoit tout, par scripts/social-x.ts.
+const DAILY: SocialPost['kind'][] = ['pepite', 'fracture']
+
+export function socialFeed(network: 'x' | 'facebook' | 'linkedin' | 'instagram'): Response {
+  const items = getSocialPosts()
+    .filter((p) => network === 'x' || DAILY.includes(p.kind))
+    .slice(0, 30)
   const link = (p: SocialPost) => absolute(`/social/${p.id}?utm_source=${network}&utm_medium=social&utm_campaign=${p.kind}`)
-  // Facebook pénalise les liens sortants : le texte renvoie à çavote.fr en clair, sans URL
-  const body = (p: SocialPost) => (network === 'facebook' ? p.text.facebook : `${p.text[network]}\n\n${link(p)}`)
+  // Facebook pénalise les liens sortants et Instagram ne les rend pas cliquables : texte seul, çavote.fr en clair
+  const body = (p: SocialPost) =>
+    network === 'facebook' ? p.text.facebook : network === 'instagram' ? (p.text.instagram ?? p.text.facebook) : `${p.text[network]}\n\n${link(p)}`
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
