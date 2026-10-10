@@ -35,6 +35,7 @@ export const SECTIONS: NavSection[] = [
       { href: '/partis', label: 'Partis', desc: 'Histoire, dirigeants, élus et idées de chaque parti.' },
       { href: '/radar', label: 'Radar', desc: 'Le fil de la campagne, sourcé.' },
       { href: '/radar/2026-10-08-comment-voter', label: 'Comment voter', desc: 'Inscription, pièce d’identité, procuration : le mode d’emploi.' },
+      { href: '/radar/2026-10-10-lire-un-sondage', label: 'Lire un sondage', desc: 'Marge d’erreur, quotas, indécis : ce qu’un sondage dit, et ce qu’il ne dit pas.' },
     ],
   },
   {

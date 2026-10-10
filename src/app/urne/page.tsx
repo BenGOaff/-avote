@@ -30,7 +30,7 @@ export default function UrnePage() {
           ))}
         </ul>
         <p className="small">
-          <Link href="/confidentialite#urne">Le détail dans la politique de confidentialité</Link> · <Link href="/radar/2026-10-08-comment-voter">Comment voter pour de vrai</Link>
+          <Link href="/confidentialite#urne">Le détail dans la politique de confidentialité</Link> · <Link href="/radar/2026-10-08-comment-voter">Comment voter pour de vrai</Link> · <Link href="/radar/2026-10-10-lire-un-sondage">Comment lire un vrai sondage</Link>
         </p>
       </section>
     </div>
