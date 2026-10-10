@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import { getArticles, getBriefs, getVeilleStatus } from '@/lib/content'
+import { getArticles, getBriefs } from '@/lib/content'
 import { ArticleCard, BriefItem, formatDay } from '@/components/Editorial'
-import { VeilleState } from '@/components/VeilleState'
 
 export const metadata: Metadata = {
   title: 'Le Radar — l’actu de la présidentielle 2027',
@@ -30,7 +29,6 @@ export default function RadarPage() {
           <h2 id="fil" style={{ fontSize: 'var(--h3)' }}>
             Le fil
           </h2>
-          <VeilleState status={getVeilleStatus()} briefCount={briefs.length} />
           {[...byDay.entries()].map(([day, list]) => (
             <div key={day} style={{ marginTop: 'var(--s5)' }}>
               <h3 className="kicker" style={{ fontFamily: 'var(--font-ui)' }}>
