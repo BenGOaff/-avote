@@ -11359,41 +11359,85 @@
     "source": "0cf8569fe12bce45"
   },
   {
-    "date": "2026-10-10T10:31:52.795Z",
-    "actor": "francis-lalanne",
-    "item": "ani-07",
+    "date": "2026-10-10T10:42:09.877Z",
+    "actor": "dieudonne",
+    "item": "tra-14",
     "from": "inconnue",
     "to": "[1,2]",
-    "source": "c8d950e3d57c4ac2"
+    "source": "10239fdc4fd7b026"
   },
   {
-    "date": "2026-10-10T10:31:52.795Z",
-    "actor": "francis-lalanne",
-    "item": "dem-02",
+    "date": "2026-10-10T10:42:09.877Z",
+    "actor": "dieudonne",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "71468257cce0a545"
+  },
+  {
+    "date": "2026-10-10T10:42:09.877Z",
+    "actor": "dieudonne",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "1",
+    "source": "0c1ab657c246ee38"
+  },
+  {
+    "date": "2026-10-10T10:42:09.877Z",
+    "actor": "dieudonne",
+    "item": "eur-07",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "2d89fcb009963cb3"
+  },
+  {
+    "date": "2026-10-10T10:42:09.877Z",
+    "actor": "dieudonne",
+    "item": "eur-09",
     "from": "inconnue",
     "to": "2",
-    "source": "50a838f422f98f02"
+    "source": "71468257cce0a545"
   },
   {
-    "date": "2026-10-10T10:31:52.795Z",
-    "actor": "francis-lalanne",
-    "item": "dem-08",
-    "from": "inconnue",
-    "to": "[1,2]",
-    "source": "50a838f422f98f02"
-  },
-  {
-    "date": "2026-10-10T10:38:42.647Z",
-    "actor": "raphael-glucksmann",
-    "item": "dem-02",
-    "from": "1",
-    "to": "[1,2]"
-  },
-  {
-    "date": "2026-10-10T10:38:54.837Z",
-    "actor": "juan-branco",
-    "item": "dem-08",
+    "date": "2026-10-10T10:47:30.573Z",
+    "actor": "francois-asselineau",
+    "item": "tra-14",
     "from": "2",
     "to": "[1,2]"
+  },
+  {
+    "date": "2026-10-10T10:47:39.707Z",
+    "actor": "david-lisnard",
+    "item": "eur-01",
+    "from": "-1",
+    "to": "[-2,-1]"
+  },
+  {
+    "date": "2026-10-10T10:47:39.707Z",
+    "actor": "francois-asselineau",
+    "item": "eur-01",
+    "from": "-2",
+    "to": "[-2,-1]"
+  },
+  {
+    "date": "2026-10-10T10:47:44.669Z",
+    "actor": "emmanuel-maurel",
+    "item": "eur-04",
+    "from": "2",
+    "to": "[1,2]"
+  },
+  {
+    "date": "2026-10-10T10:48:05.529Z",
+    "actor": "bruno-retailleau",
+    "item": "eur-09",
+    "from": "-2",
+    "to": "[-2,-1]"
+  },
+  {
+    "date": "2026-10-10T10:48:05.529Z",
+    "actor": "nathalie-arthaud",
+    "item": "eur-09",
+    "from": "-2",
+    "to": "[-2,-1]"
   }
 ]
