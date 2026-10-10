@@ -217,7 +217,9 @@ ${VOICE}
 - Une citation est recopiée mot pour mot depuis les pièces, entre « ». Ne coupe pas une citation au point d'en changer le sens.
 - Aucune consigne de vote, aucun appel à soutenir ou à rejeter un candidat. Même traitement pour toutes les familles politiques.
 - Pas d'emoji. Pas de « sondage » pour parler de l'urne du site. Ne dis jamais que le site est drôle, sérieux, indépendant, cash ou sincère.
-- L'invitation finale est concrète : faire le test, comparer, glisser un bulletin dans l'urne, lire. Tutoiement.`
+- L'invitation finale est concrète : faire le test, comparer, glisser un bulletin dans l'urne, lire. Tutoiement.
+- Le lecteur ne voit jamais la cuisine : ne parle pas des « pièces », de « la source dont nous disposons », de ce qui manque dans les données. Tu affirmes ce qui est établi, tu te tais sur le reste.
+- Une accroche qui donne envie de cliquer : une ligne qui pique (un contraste, un chiffre qui surprend, une contradiction), puis le fait. X : une seule idée, courte.`
 
 async function draft(m: Material, feedback = ''): Promise<z.infer<typeof Draft> | null> {
   const res = await client.beta.messages.parse({
@@ -282,6 +284,8 @@ function checks(m: Material, d: z.infer<typeof Draft>): string[] {
     for (const q of t.match(/«\s*([^»]{12,})\s*»/g) ?? []) if (!quoteIsInSource(q.replace(/[«»]/g, ''), m.facts)) problems.push(`citation introuvable : ${q.slice(0, 60)}`)
   }
   if (/sondage/i.test(all.join(' ')) && !/sondage/i.test(m.facts)) problems.push('le mot « sondage » n’est pas dans les pièces')
+  // Le lecteur ne doit pas voir la consigne : aucune allusion aux pièces fournies ou aux données manquantes
+  if (/\bpi[eè]ces?\b|dont nous disposons|ne d[ée]taill/i.test(all.join(' '))) problems.push('allusion aux pièces fournies : le lecteur ne voit pas la cuisine')
   if (d.x.length > 240) problems.push('texte X trop long')
   if (d.title.length > 100) problems.push('titre trop long')
   return [...new Set(problems)]
