@@ -103,8 +103,7 @@ jobs:
           git pull --rebase origin "${{ github.ref_name }}"
           git push origin HEAD:${{ github.ref_name }}
           git stash pop || true
-          # Un push fait par le robot ne déclenche pas les autres workflows : on lance le repost explicitement
-          if [ -n "$BREVES" ]; then gh workflow run social.yml -f files="$BREVES" || true; fi
+          # Les brèves publiées sont relayées sur les réseaux par social.yml (passage suivant), si elles le méritent
           # Nouveau candidat : la recherche de ses positions part tout de suite, sans attendre le passage hebdomadaire
           # et la rédaction est prévenue (issue GitHub) de ce qui reste à faire : portrait, site officiel, nuance
           if [ -s .veille-new-actors ]; then

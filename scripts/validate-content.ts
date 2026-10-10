@@ -7,6 +7,7 @@ import { execSync } from 'node:child_process'
 import path from 'node:path'
 import { parse } from 'yaml'
 import { ArticleSchema, BriefSchema } from '../src/lib/content-schema'
+import { SocialPostSchema } from '../src/lib/social-schema'
 
 const ROOT = process.cwd()
 const errors: string[] = []
@@ -91,6 +92,16 @@ for (const a of cand.actors) {
   if (!a.source?.url?.startsWith('https://')) errors.push(`candidature ${a.slug} sans source https`)
   for (const l of a.links ?? [])
     if (!['campagne', 'parti', 'programme'].includes(l.kind) || !l.url.startsWith('https://')) errors.push(`candidature ${a.slug} : lien officiel invalide (${l.url})`)
+}
+// Publications pour les réseaux : schéma et page cible existante
+{
+  const dir = path.join(ROOT, 'content/social')
+  if (existsSync(dir))
+    for (const f of readdirSync(dir).filter((f) => f.endsWith('.json') && !f.startsWith('_'))) {
+      const r = SocialPostSchema.safeParse(JSON.parse(readFileSync(path.join(dir, f), 'utf8')))
+      if (!r.success) errors.push(`content/social/${f} : ${r.error.issues[0]?.message}`)
+      else if (r.data.id !== f.replace(/\.json$/, '')) errors.push(`content/social/${f} : identifiant différent du nom de fichier`)
+    }
 }
 const medList = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/liste.json'), 'utf8')) as { medias: { slug: string; site?: string }[] }
 for (const m of medList.medias) if (m.site && !m.site.startsWith('https://')) errors.push(`média ${m.slug} : site sans https`)

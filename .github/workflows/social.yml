@@ -1,21 +1,20 @@
-# Repost automatique des nouveaux articles et brèves sur X, Facebook et LinkedIn,
-# une fois la page en ligne. Chaque réseau est ignoré si ses secrets ne sont pas configurés.
+# Réseaux sociaux (scripts/social-plan.ts) : chaque jour, des publications tirées du site (pépite du matin,
+# rendez-vous du soir, flash quand une nouveauté le mérite), avec leur visuel et leur page (/social/<id>).
+# Les réseaux lisent les flux /social/x.xml, /social/facebook.xml et /social/linkedin.xml (voir docs/RESEAUX.md).
 name: Réseaux sociaux
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'content/fil/**'
-      - 'content/radar/**'
+  schedule:
+    # Heures UTC : ≈ 8 h 40, 13 h 40, 18 h 40 et 20 h 40 à Paris (heure d'été)
+    - cron: '40 6,11,16,18 * * *'
   workflow_dispatch:
     inputs:
-      files:
-        description: 'Fichiers à publier (séparés par des espaces)'
-        required: true
+      slot:
+        description: 'Passage : matin (pépite), midi (flash), soir (rendez-vous), nuit (flash)'
+        required: false
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: social
@@ -24,33 +23,63 @@ concurrency:
 jobs:
   social:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Publier
+      # Plafond mensuel commun à tous les robots (scripts/cost.ts)
+      - id: mois
+        run: echo "m=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/social
+          key: budget-social-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-social-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/veille
+          key: budget-veille-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-veille-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/positions
+          key: budget-positions-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-positions-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/medias
+          key: budget-medias-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-medias-${{ steps.mois.outputs.m }}-
+      - name: Préparer les publications
         env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://xn--avote-xra.fr' }}
-          SOCIAL_MAX: ${{ vars.SOCIAL_MAX || 3 }}
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
-          LINKEDIN_AUTHOR_URN: ${{ secrets.LINKEDIN_AUTHOR_URN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUDGET_LEDGER_DIR: .budget/social
+          MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD }}
+          SOCIAL_MODEL: ${{ vars.SOCIAL_MODEL }}
+          SOCIAL_BUDGET_USD: ${{ vars.SOCIAL_BUDGET_USD }}
+          SOCIAL_MAX_PER_DAY: ${{ vars.SOCIAL_MAX_PER_DAY }}
         run: |
-          if [ -n "${{ github.event.inputs.files }}" ]; then
-            FILES="${{ github.event.inputs.files }}"
-          else
-            FILES=$(git diff --name-only --diff-filter=A ${{ github.event.before }} ${{ github.sha }} -- content/fil content/radar | grep '\.md$' || true)
+          SLOT="${{ github.event.inputs.slot }}"
+          if [ -z "$SLOT" ]; then
+            case "$(date -u +%H)" in 06) SLOT=matin ;; 11) SLOT=midi ;; 16) SLOT=soir ;; *) SLOT=nuit ;; esac
           fi
-          [ -z "$FILES" ] && echo "Aucun nouveau contenu." && exit 0
-          npx tsx scripts/social.ts $FILES
+          npx tsx scripts/social-plan.ts --slot=$SLOT
+      - name: Valider
+        run: npx tsx scripts/validate-content.ts
+      - name: Mettre en ligne les publications (pages, visuels, flux)
+        run: |
+          git config user.name "social-ca-vote[bot]"
+          git config user.email "social@users.noreply.github.com"
+          git add content/social
+          git commit -m "réseaux : publications du $(date -u +%Y-%m-%d) ($(date -u +%H)h)" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }}
+      - name: Inscrire la dépense du passage
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .budget/social
+          key: budget-social-${{ steps.mois.outputs.m }}-${{ github.run_id }}-${{ github.run_attempt }}
