@@ -8589,5 +8589,21 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "159d5f49506f1eef"
+  },
+  {
+    "date": "2026-10-10T07:11:29.604Z",
+    "actor": "edouard-philippe",
+    "item": "sec-04",
+    "from": "[1,2]",
+    "to": "2",
+    "source": "0ba56a28348cd7c2"
+  },
+  {
+    "date": "2026-10-10T07:11:29.604Z",
+    "actor": "edouard-philippe",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "e56083206896d5df"
   }
 ]
