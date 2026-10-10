@@ -1,0 +1,24 @@
+{
+  "id": "2026-10-10-flash-20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor",
+  "at": "2026-10-10T10:30:53.306Z",
+  "kind": "flash",
+  "card": {
+    "kicker": "FLASH",
+    "title": "Primaire de la gauche : la plateforme de vote visée par une cyberattaque",
+    "line": "Le scrutin est prolongé jusqu'à dimanche 18 heures, selon Public Sénat."
+  },
+  "text": {
+    "x": "Primaire de la gauche : une cyberattaque a visé la plateforme de vote. Le scrutin est prolongé jusqu'à dimanche 18 heures, rapporte Public Sénat. La brève est sur Ça vote ?",
+    "linkedin": "Primaire de la gauche : la plateforme de vote a été la cible d'une cyberattaque.\n\nLe scrutin est prolongé jusqu'à dimanche 18 heures, d'après Public Sénat.\n\nC'est ce que dit la source, et rien de plus : les pièces dont nous disposons ne détaillent ni l'origine de l'attaque, ni ses conséquences sur le déroulement du vote.\n\nUne plateforme de vote en ligne est un outil technique comme un autre : quand il est attaqué, le calendrier s'en ressent. Ici, il est repoussé.\n\nLa brève est à lire sur Ça vote ?, avec le lien vers l'article de Public Sénat.",
+    "facebook": "Primaire de la gauche : la plateforme de vote a subi une cyberattaque. Selon Public Sénat, le scrutin est prolongé jusqu'à dimanche 18 heures. Les détails de l'attaque ne figurent pas dans la source que nous avons. Tu peux lire la brève sur Ça vote ?"
+  },
+  "target": "/radar#20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor",
+  "targetLabel": "Lire la brève",
+  "source": {
+    "publisher": "Public Sénat",
+    "url": "https://www.publicsenat.fr/actualites/politique/le-vote-du-premier-tour-de-la-primaire-du-ps-perturbe-par-une-cyberattaque",
+    "title": "Le vote du premier tour de la primaire du PS perturbé par une cyberattaque",
+    "quote": "",
+    "who": ""
+  }
+}

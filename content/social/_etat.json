@@ -1,1 +1,25 @@
-{ "mentions": {}, "items": {}, "seen": [], "rdv": 0 }
+{
+ "mentions": {},
+ "items": {
+  "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor": "2026-10-10T10:30:53.306Z",
+  "cli-06-fracture": "2026-10-10T10:30:53.306Z"
+ },
+ "seen": [
+  "2026-10-08-parrainages-500-signatures",
+  "2026-10-08-vote-blanc",
+  "20261008-2201-loi-integrale-contre-les-violences-sexuelles-l-ass",
+  "20261008-2201-lycees-edouard-geffray-annonce-un-plan-d-urgence-c",
+  "20261009-1307-budget-2027-la-commission-des-finances-alourdit-la",
+  "20261009-1307-edouard-philippe-propose-une-allocation-familiale",
+  "20261009-1307-mediapart-affirme-relier-le-compte-twitter-officie",
+  "20261009-2136-bardella-affirme-n-avoir-pas-de-compte-facebook-se",
+  "20261009-2136-budget-2027-la-commission-des-finances-rejette-lar",
+  "20261009-2136-loi-integrale-l-assemblee-finit-l-examen-vote-mard",
+  "20261009-2136-presidentielle-2027-gilles-platret-maire-de-chalon",
+  "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor",
+  "20261009-2136-remplacements-d-enseignants-le-ministre-geffray-an",
+  "2026-10-08-comment-voter",
+  "2026-10-10-lire-un-sondage"
+ ],
+ "rdv": 0
+}
