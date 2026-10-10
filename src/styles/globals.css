@@ -3746,3 +3746,25 @@ details.disclosure > div {
 .rare__who .portrait {
   flex: none;
 }
+
+/* Lignes rouges : expliquées une fois, au bilan de chaque thème */
+.redline-explain {
+  margin: 0 0 var(--s4);
+  padding: var(--s3) var(--s4);
+  border-left: var(--border) solid var(--correction);
+  background: var(--surface);
+  font-size: var(--text-small);
+}
+.redline-explain__title {
+  margin: 0 0 var(--s1);
+  font-weight: 700;
+  color: var(--correction);
+}
+.redline:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.redline:disabled:hover {
+  border-color: var(--line);
+  color: var(--muted);
+}

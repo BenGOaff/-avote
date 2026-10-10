@@ -29,6 +29,8 @@ export const ENGINE_CONFIG = {
     minAnswered: 3,
     minShare: 0.6,
   },
+  /** Nombre maximal de lignes rouges : au-delà, presque chaque candidat en franchit une et le signalement ne distingue plus personne */
+  maxRedLines: 5,
   /** Distance d'item à partir de laquelle on parle de désaccord documenté sur une exigence essentielle (2 crans sur 4) */
   redLineDistance: 0.5,
   /** Variation des poids de thème testée dans l'analyse de sensibilité */

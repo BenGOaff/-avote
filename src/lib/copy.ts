@@ -63,6 +63,12 @@ export const UI_COPY = {
     redLine: 'Ligne rouge',
     redLineOn: 'Ligne rouge posée',
     redLineHint: 'Un désaccord sur ce point compterait vraiment pour toi. Il sera signalé à part dans les résultats, sans changer les scores.',
+    redLineTitle: 'Lignes rouges (facultatif)',
+    redLineExplain:
+      'Coche « ligne rouge » seulement sur un point où tu ne pourrais pas voter pour quelqu’un qui pense le contraire : les scores ne changent pas, mais tes résultats signalent les candidats en désaccord avec toi sur ce point.',
+    redLineCount: (n: number, max: number) => `${n} sur ${max} possibles pour tout le test`,
+    redLineMax: (max: number) => `Tu as posé tes ${max} lignes rouges. Retire-en une pour en choisir une autre : au-delà, presque tous les candidats en franchiraient une.`,
+    redLineNeedAnswer: 'Réponds pour ou contre avant de poser une ligne rouge.',
     scaleAgainst: 'Contre',
     scaleFor: 'Pour',
     tokensLeft: (n: number) => (n === 0 ? 'Tous tes jetons sont posés' : `${n} jeton${n > 1 ? 's' : ''} à poser`),

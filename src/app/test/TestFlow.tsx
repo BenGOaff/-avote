@@ -10,6 +10,7 @@ import { answerLabel, effectiveAnswers } from '@/lib/answers'
 import { mirrorRemark } from '@/lib/humor'
 import { faitsOf } from '@/lib/faits'
 import { setAudiencePaused } from '@/lib/consent'
+import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { IconArrowLeft, IconCheck } from '@/components/Icons'
 import { ThemeIcon } from '@/components/ThemeIcon'
 import { Coin } from '@/components/Viz'
@@ -51,6 +52,7 @@ const newSeed = () => {
 }
 const groups = allGroups
 const TOKENS = 10
+const MAX_RED = ENGINE_CONFIG.maxRedLines
 // Taille du rond selon la force de la réponse : plus on est tranché, plus le rond est grand
 const DOT = { [-2]: 40, [-1]: 30, 0: 22, 1: 30, 2: 40 } as Record<Ordinal, number>
 
@@ -93,7 +95,7 @@ export function TestFlow() {
       update((s) => {
         const e = new Set(s.essentials)
         if (e.has(id)) e.delete(id)
-        else e.add(id)
+        else if (e.size < MAX_RED) e.add(id)
         return { ...s, essentials: [...e] }
       }),
     [update],
@@ -132,7 +134,6 @@ export function TestFlow() {
     const group = G[themeIndex]!
     const posInTheme = group.items.findIndex((i) => i.id === item.id)
     const current = answers[item.id]
-    const isRed = redLines.has(item.id)
 
     const go = (a: Answer, advance: boolean) => {
       update((s) => ({
@@ -246,13 +247,6 @@ export function TestFlow() {
             ))}
           </div>
 
-          <button className={`redline${isRed ? ' redline--on' : ''}`} aria-pressed={isRed} onClick={() => toggleRedLine(item.id)} title={UI_COPY.test.redLineHint}>
-            <span className="redline__box" aria-hidden="true">
-              {isRed && <IconCheck />}
-            </span>
-            {isRed ? UI_COPY.test.redLineOn : UI_COPY.test.redLine}
-            <span className="visually-hidden"> : {UI_COPY.test.redLineHint}</span>
-          </button>
             </div>
           </div>
         </article>
@@ -306,10 +300,18 @@ export function TestFlow() {
           <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none', fontSize: 'var(--h2)', margin: 'var(--s2) 0 var(--s4)' }}>
             {group.theme.label}
           </h1>
+          <div className="redline-explain">
+            <p className="redline-explain__title">{UI_COPY.test.redLineTitle}</p>
+            <p style={{ margin: 0 }}>{UI_COPY.test.redLineExplain}</p>
+            <p className="small muted" style={{ margin: 'var(--s2) 0 0' }} aria-live="polite">
+              {redLines.size >= MAX_RED ? UI_COPY.test.redLineMax(MAX_RED) : UI_COPY.test.redLineCount(redLines.size, MAX_RED)}
+            </p>
+          </div>
           <ul className="recap">
             {group.items.map((i) => {
               const a = answers[i.id]
               const isRed = redLines.has(i.id)
+              const canPose = isRed || (a?.kind === 'value' && redLines.size < MAX_RED)
               return (
                 <li key={i.id} className="recap__row">
                   <span className="recap__concept">{i.concept}</span>
@@ -317,6 +319,8 @@ export function TestFlow() {
                   <button
                     className={`redline redline--small${isRed ? ' redline--on' : ''}`}
                     aria-pressed={isRed}
+                    disabled={!canPose}
+                    title={a?.kind !== 'value' ? UI_COPY.test.redLineNeedAnswer : undefined}
                     onClick={() => toggleRedLine(i.id)}
                     aria-label={`${UI_COPY.test.redLine} : ${i.concept}`}
                   >
@@ -329,9 +333,6 @@ export function TestFlow() {
               )
             })}
           </ul>
-          <p className="hint" style={{ margin: 'var(--s3) 0 0' }}>
-            {UI_COPY.test.redLineHint}
-          </p>
           {remark.fact && <p style={{ margin: 'var(--s4) 0 0' }}>{remark.fact}</p>}
           {remark.humor && (
             <p className="annotation humor" style={{ margin: 'var(--s3) 0 0' }}>
@@ -566,7 +567,10 @@ function Intro({
         <div>
           <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
             <li>Pour chaque affirmation : pour, contre, entre les deux, ou « je ne sais pas ». Tu peux passer et revenir en arrière.</li>
-            <li>Si un point est non négociable pour toi, pose une « ligne rouge » : un désaccord sur ce point sera signalé à part, sans changer les scores.</li>
+            <li>
+              À la fin de chaque thème, tu peux poser jusqu’à {ENGINE_CONFIG.maxRedLines} « lignes rouges » dans tout le test : des points où tu ne pourrais pas voter
+              pour quelqu’un qui pense le contraire. Elles ne changent pas les scores ; les candidats en désaccord sur ces points sont signalés à part.
+            </li>
             <li>Ensuite, tu poses 10 jetons sur les thèmes qui comptent le plus pour toi. C’est facultatif.</li>
             <li>Le résultat compare tes réponses aux positions documentées des candidats. Il dit toujours ce qui manque. Ce n’est pas une consigne de vote.</li>
           </ul>
