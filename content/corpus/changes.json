@@ -11109,5 +11109,173 @@
     "from": "inconnue",
     "to": "1",
     "source": "dc24b9417066193f"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "bernard-cazeneuve",
+    "item": "tra-08",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "c14b1f3b6bf652c8"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "bruno-retailleau",
+    "item": "ani-07",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "1c9acdb41ec3983e"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "eco-09",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "8cd08edc32dc7b63"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "eco-02",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "bb4f2d2d3d9c9f4e"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "tra-13",
+    "from": "inconnue",
+    "to": "2",
+    "source": "e178dc27458773dc"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "eco-05",
+    "from": "inconnue",
+    "to": "1",
+    "source": "e178dc27458773dc"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "eco-11",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "65f62e61dffa781a"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "eco-07",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "1159b3d01a9f38e8"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "tra-08",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "74a6af5d32ca2cd9"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "gabriel-attal",
+    "item": "imm-07",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "b9542f66e673dd15"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "gabriel-attal",
+    "item": "cli-08",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "a57beba5e3f5a59b"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "gabriel-attal",
+    "item": "cli-03",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "1ab07a02beae91a7"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "olivier-becht",
+    "item": "imm-07",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "646587a436f45989"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "olivier-becht",
+    "item": "cli-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "aa73b9009082ee39"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "segolene-royal",
+    "item": "edu-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "3e2ed85a13167092"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "segolene-royal",
+    "item": "tra-13",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "8b39cc8537ac1085"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "xavier-bertrand",
+    "item": "tra-13",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "f3d476e58ca3931d"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "xavier-bertrand",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "2716fedec32c8cea"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "xavier-bertrand",
+    "item": "tra-07",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "221d6b19fe3b0b53"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "xavier-bertrand",
+    "item": "dem-12",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "0c5540f07259e6aa"
+  },
+  {
+    "date": "2026-10-10T09:35:32.589Z",
+    "actor": "xavier-bertrand",
+    "item": "eur-06",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "9559257b3393033b"
   }
 ]

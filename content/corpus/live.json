@@ -1,8 +1,8 @@
 {
-  "version": "live-202610100849",
+  "version": "live-202610100935",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-10T08:49:32.693Z",
+  "publishedAt": "2026-10-10T09:35:32.589Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -190,6 +190,12 @@
       "name": "Juan Branco",
       "status": "declare",
       "party": "Les Ruches (mouvement citoyen)",
+      "summary": ""
+    },
+    {
+      "slug": "emmanuel-dubuisson",
+      "name": "Emmanuel Dubuisson",
+      "status": "declare",
       "summary": ""
     }
   ],
@@ -1138,11 +1144,15 @@
         "codedAt": "2026-10-08T14:49:46.768Z"
       },
       "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "1ab07a02beae91a7"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:49:46.768Z"
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Réponse aux orateurs pendant le débat sur sa déclaration : il assume la réautorisation des néonicotinoïdes « car la filière était en train de couler », tout en citant 250 millions d’euros pour des alternatives aux produits phytosanitaires."
       },
       "cli-04": {
         "missing": true,
@@ -1610,6 +1620,34 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T07:56:33.406Z",
         "note": "Texte du site de campagne résumant son entretien sur LCI. L’échelon visé n’est pas précisé ; il parle ailleurs d’un « big bang » territorial (Le Parisien, 3 juillet 2026)."
+      },
+      "imm-07": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "b9542f66e673dd15"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Entretien (propos recueillis par Victor-Isaac Anne). Il s’oppose aux régularisations massives décidées unilatéralement par un pays de l’espace Schengen ; il ne dit pas s’il exclut toute régularisation au cas par cas."
+      },
+      "cli-08": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "a57beba5e3f5a59b"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Discours de Premier ministre : régulation des prix pour les rapprocher des coûts de production, sans sortie du marché européen évoquée."
       }
     },
     "bruno-retailleau": {
@@ -2452,6 +2490,20 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Propos tenus sur Europe 1 en présentant sa circulaire qui resserre les régularisations au cas par cas ; opposé a fortiori à une régularisation de tous les sans-papiers."
+      },
+      "ani-07": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "ambigu",
+        "sources": [
+          "1c9acdb41ec3983e"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Pas de prix minimum garanti par l’État : il veut sanctuariser la part non négociable liée aux matières premières, fixer une date butoir aux négociations et sanctionner les pratiques abusives des centrales d’achat."
       }
     },
     "david-lisnard": {
@@ -13460,11 +13512,18 @@
         "note": "« Reconnaissance du vote blanc » sans préciser qu'il serait compté dans les suffrages exprimés, d'où set [1, 2]. Page non datée, consultée le 08/10/2026."
       },
       "cli-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "aa73b9009082ee39"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Le livre présuppose de nouvelles centrales ; la page Énergie prévoit un mix « associant nucléaire, énergies renouvelables et nouvelles technologies de stockage ». Pas d’engagement chiffré."
       },
       "cli-02": {
         "missing": true,
@@ -13602,6 +13661,20 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Vote « Pour » sur le texte final de la loi Attal, qui faisait de l’exclusion de l’excuse de minorité la règle pour certains mineurs de plus de 16 ans récidivistes (disposition ensuite censurée par le Conseil constitutionnel). Un vote n’est "
+      },
+      "imm-07": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "646587a436f45989"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Vidéo publiée sur sa chaîne le jour de sa déclaration de candidature. Accueil en centres fermés pendant deux mois puis titre de séjour pour ceux que la France peut accueillir et qui s’intègrent ; reconduite des autres et exécution de 100 % "
       }
     },
     "raphael-glucksmann": {
@@ -14593,6 +14666,20 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Refuse un changement de régime ; préfère réformer la Ve République (septennat, rôle du Premier ministre)."
+      },
+      "tra-08": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c14b1f3b6bf652c8"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Lettre aux Français (PDF officiel, 15 juillet 2026). La répartition « seule » juste ; la capitalisation n’est pas nommée."
       }
     },
     "xavier-bertrand": {
@@ -14897,6 +14984,73 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Discours de sa candidature à la présidentielle 2022 (avant la primaire LR). Hausse ciblée sur la police judiciaire antistupéfiants, d’où 1."
+      },
+      "tra-13": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "f3d476e58ca3931d"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Il critique le « choc fiscal » d’Édouard Philippe (moins d’aides, moins d’impôts) : il défend le crédit d’impôt recherche et les aides à l’apprentissage, sans s’interdire d’autres économies."
+      },
+      "cli-06": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "2716fedec32c8cea"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Entretien au Parisien (propos recueillis par Quentin Laurent), reproduit sur le site de son mouvement. Allègement visé : les normes agricoles allant au-delà du droit européen."
+      },
+      "tra-07": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "221d6b19fe3b0b53"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Discours de candidat (campagne 2021-2022) : travailler davantage au-delà des 35 heures, à l’opposé d’une réduction à 32 heures, qu’il ne cite pas."
+      },
+      "dem-12": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "ambigu",
+        "sources": [
+          "0c5540f07259e6aa"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Discours de candidat (campagne 2021-2022) : un élu unique pour le département et la région (6 000 élus ramenés à 4 000), sans suppression d’un échelon ; « il ne faut pas toucher au Maire et à la commune »."
+      },
+      "eur-06": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "ambigu",
+        "sources": [
+          "9559257b3393033b"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Discours de candidat (campagne 2021-2022) : l’aide au développement conditionnée à la coopération migratoire, plus élevée pour les pays coopératifs, réduite ou supprimée pour les autres ; pas d’objectif global."
       }
     },
     "olivier-faure": {
@@ -16653,6 +16807,34 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Réduire le déficit par la chasse aux gaspillages, sans sacrifier les dépenses essentielles."
+      },
+      "edu-01": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "3e2ed85a13167092"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Réponse sur la levée du drapeau et la Marseillaise à l’école : elle juge l’uniforme un échec et non prioritaire, sans dire explicitement qu’elle l’interdirait."
+      },
+      "tra-13": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "8b39cc8537ac1085"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Économies sur les 160 milliards d’aides « sans conditions », sans ampleur chiffrée : plutôt favorable."
       }
     },
     "dominique-de-villepin": {
@@ -17662,6 +17844,94 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Services publics de base (dont la poste) dans chaque commune de plus de 3 000 habitants."
+      }
+    },
+    "emmanuel-dubuisson": {
+      "eco-09": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "8cd08edc32dc7b63"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Veut « réorganiser le travail public, pas le casser » et faire des économies par l’organisation, sans coupes d’effectifs."
+      },
+      "eco-02": {
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "bb4f2d2d3d9c9f4e"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "S’oppose à la taxe de 2 % sur les patrimoines de plus de 100 millions d’euros, tout en disant que les grandes fortunes doivent contribuer « par d’autres méthodes » non précisées."
+      },
+      "tra-13": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "e178dc27458773dc"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Suppression des aides publiques aux entreprises, en contrepartie d’un allègement des charges."
+      },
+      "eco-05": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "e178dc27458773dc"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Allègement des charges sociales des entreprises en échange de la suppression des aides ; la page « Ce qui change pour vous » simule un coût employeur réduit de 13,13 %."
+      },
+      "eco-11": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "65f62e61dffa781a"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "La simulation de la même page réaffecte 70 % des cotisations cumulées au salaire versé, avant une retenue de capitalisation retraite et un impôt."
+      },
+      "eco-07": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "1159b3d01a9f38e8"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Simulation : SP95-E10 de 2,09 € à 1,43 € le litre, électricité du foyer environ 27 % moins chère ; scénario fiscal, pas engagement chiffré."
+      },
+      "tra-08": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "74a6af5d32ca2cd9"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:35:32.589Z",
+        "note": "Cas de paie simulé : 10 % du salaire prélevés pour une capitalisation retraite ; le retraité type reçoit une pension initiale plus un complément."
       }
     }
   },
@@ -27423,12 +27693,164 @@
       "url": "https://www.nousfrance.fr/2021/09/la-securite-a-nouveau-discours-de-saint-quentin/",
       "date": "2021-09-15",
       "passage": "Enfin, je renforcerai considérablement les effectifs de police judiciaire dédiés à la lutte contre les stupéfiants, ainsi que les moyens humains dans les Juridictions interrégionales spécialisées."
+    },
+    {
+      "id": "c14b1f3b6bf652c8",
+      "title": "Tenir la promesse de la France – Lettre aux Français",
+      "publisher": "La Convention (Bernard Cazeneuve)",
+      "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf",
+      "date": "2026-07-15",
+      "passage": "Les retraites doivent être consolidées dans le cadre d’un système par répartition que nul ne saurait remettre en cause, car lui seul assure la justice"
+    },
+    {
+      "id": "1c9acdb41ec3983e",
+      "title": "Mesure n° 58 : Rééquilibrer les négociations commerciales",
+      "publisher": "Site de campagne de Bruno Retailleau",
+      "url": "https://www.avecretailleau.fr/projet/mesure/encadrer-les-negociations-et-controler-les-importations",
+      "passage": "Il ne s'agit pas de subventionner le revenu, mais de faire fonctionner correctement l'économie de marché. Un marché où deux cent mille vendeurs font face à quatre acheteurs n'est pas un marché libre, c'est un rapport de force."
+    },
+    {
+      "id": "8cd08edc32dc7b63",
+      "title": "Dossier 04 : Fonction publique",
+      "publisher": "Dubuisson 2027 (site de campagne)",
+      "url": "https://dubuisson2027.fr/dossiers/4-fonction-publique",
+      "passage": "On parle du nombre de fonctionnaires. On parle de coupes massives. On laisse croire qu’un pays irait mieux simplement parce qu’il aurait moins d’agents publics. Je pense que cette réponse est trop facile."
+    },
+    {
+      "id": "bb4f2d2d3d9c9f4e",
+      "title": "Dossier 09 : Fiscalité et budget",
+      "publisher": "Dubuisson 2027 (site de campagne)",
+      "url": "https://dubuisson2027.fr/dossiers/9-fiscalite-budget",
+      "passage": "Il y a un risque dont on ne parle pas assez. Une taxe sur le patrimoine peut parfois concentrer encore plus la richesse au lieu de mieux la répartir."
+    },
+    {
+      "id": "e178dc27458773dc",
+      "title": "Qui suis-je ? (Profil exécutif)",
+      "publisher": "Dubuisson 2027 (site de campagne)",
+      "url": "https://dubuisson2027.fr/qui-suis-je",
+      "passage": "En contrepartie d’un allègement de charges fiscales et sociales, rendu largement possible par un transfert de richesse aux travailleurs, les aides publiques aux entreprises seront supprimées."
+    },
+    {
+      "id": "65f62e61dffa781a",
+      "title": "Ce qui change pour vous",
+      "publisher": "Dubuisson 2027 (site de campagne)",
+      "url": "https://dubuisson2027.fr/ce-qui-change-pour-vous",
+      "passage": "Le travail doit se voir sur la paie. Réaffecter une partie des cotisations, partager davantage la valeur et revoir les prélèvements pour redonner des choix au foyer."
+    },
+    {
+      "id": "1159b3d01a9f38e8",
+      "title": "Ce qui change pour vous",
+      "publisher": "Dubuisson 2027 (site de campagne)",
+      "url": "https://dubuisson2027.fr/ce-qui-change-pour-vous",
+      "passage": "Dépenses du foyer Un plein et une facture plus légers. Comparaisons à produit, volume et consommation constants. Les montants ci-dessous reprennent les scénarios fiscaux de la plaquette."
+    },
+    {
+      "id": "74a6af5d32ca2cd9",
+      "title": "Ce qui change pour vous",
+      "publisher": "Dubuisson 2027 (site de campagne)",
+      "url": "https://dubuisson2027.fr/ce-qui-change-pour-vous",
+      "passage": "Salaire avant impôt 2 983,81 € moins Capitalisation retraite, 10 % 298,38 € moins Impôt, 15 % du solde 402,81 €"
+    },
+    {
+      "id": "b9542f66e673dd15",
+      "title": "EXCLUSIF. Gabriel Attal : «Je propose la plus grande réforme institutionnelle depuis 1958»",
+      "publisher": "Le JDD",
+      "url": "https://www.lejdd.fr/politique/exclusif-gabriel-attal-je-propose-la-plus-grande-reforme-institutionnelle-depuis-1958-180333",
+      "date": "2026-08-01",
+      "passage": "Je veux aussi réformer les règles de Schengen : les pays doivent pouvoir refouler des personnes en situation irrégulière à leurs frontières et un pays ne devrait pas décider unilatéralement de régularisations massives impactant ses voisins."
+    },
+    {
+      "id": "a57beba5e3f5a59b",
+      "title": "Déclaration de politique générale du Premier ministre (deuxième séance du mardi 30 janvier 2024)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/session-ordinaire-de-2023-2024/deuxieme-seance-du-mardi-30-janvier-2024",
+      "date": "2024-01-30",
+      "passage": "Nous protégerons mieux les consommateurs et régulerons les prix de l’électricité afin qu’ils se rapprochent des coûts de production."
+    },
+    {
+      "id": "1ab07a02beae91a7",
+      "title": "Déclaration de politique générale du Premier ministre (deuxième séance du mardi 30 janvier 2024)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/session-ordinaire-de-2023-2024/deuxieme-seance-du-mardi-30-janvier-2024",
+      "date": "2024-01-30",
+      "passage": "Ce ne fut pas simple, mais nous avons assumé de réautoriser l’usage des néonicotinoïdes pour la production de betteraves,"
+    },
+    {
+      "id": "646587a436f45989",
+      "title": "Entretien avec Olivier Becht : « La plus grande refondation de toute notre Histoire » (24 septembre 2026)",
+      "publisher": "Olivier Becht (vidéo)",
+      "url": "https://www.youtube.com/watch?v=tpavI42fWDE&t=1155s",
+      "date": "2026-09-24",
+      "passage": "à la fin, toute personne qui est en situation irrégulière sur le territoire français et qui ne peut pas rester parce que nous ne pouvons pas l'accueillir et bien cette personne-là, elle doit être reconduite dans son pays."
+    },
+    {
+      "id": "aa73b9009082ee39",
+      "title": "Le Projet France, partie 2 : « Regarde la France tomber »",
+      "publisher": "Site de campagne d’Olivier Becht (livre en ligne)",
+      "url": "https://becht2027.fr/chapitre/partie-2/",
+      "passage": "Comment recruterons-nous les 100 000 personnes qu’exigeront nos nouvelles centrales nucléaires si le niveau s’effondre ?"
+    },
+    {
+      "id": "3e2ed85a13167092",
+      "title": "Face à Face (Apolline de Malherbe), RMC / BFMTV, 2 septembre 2026",
+      "publisher": "RMC / BFMTV (vidéo)",
+      "url": "https://www.youtube.com/watch?v=QVkWJ2p31cI",
+      "date": "2026-09-02",
+      "passage": "c'est pas prioritaire, c'est comme l'uniforme, ça a complètement échoué. Ce qui est prioritaire, je vais vous dire, c'est que le matin, tous les enfants arrivent heureux à l'école"
+    },
+    {
+      "id": "8b39cc8537ac1085",
+      "title": "Les 4 Vérités, France 2, 29 octobre 2025 (retranscription franceinfo)",
+      "publisher": "franceinfo",
+      "url": "https://www.franceinfo.fr/politique/segolene-royal/budget-2026-pour-reduire-le-deficit-il-faut-lutter-contre-les-gaspillages-il-ne-faut-pas-baisser-les-depenses-essentielles-estime-segolene-royal_7582286.html",
+      "date": "2025-10-29",
+      "passage": "En revanche, dire les 160 milliards donnés aux entreprises sans conditions, là, on peut faire des économies."
+    },
+    {
+      "id": "f3d476e58ca3931d",
+      "title": "Crise politique, budget, présidentielle de 2027… Xavier Bertrand est l’invité de LCI (10 novembre 2025)",
+      "publisher": "LCI (vidéo)",
+      "url": "https://www.youtube.com/watch?v=6kFFLBX9FFU",
+      "date": "2025-11-10",
+      "passage": "Et la deuxième chose dans son choc fiscal comme vous dites ça veut dire quoi ? le crédit impôt recherche dont on a besoin pour innover en France serait tué."
+    },
+    {
+      "id": "2716fedec32c8cea",
+      "title": "Xavier Bertrand : « On ne dirige pas un pays par la peur » (entretien au Parisien)",
+      "publisher": "Nous France (reprise de l’entretien du Parisien)",
+      "url": "https://www.nousfrance.fr/2026/01/xavier-bertrand-on-ne-dirige-pas-un-pays-par-la-peur-le-parisien/",
+      "date": "2026-01-10",
+      "passage": "Hors de question de faire la même chose avec l’agriculture ! Déjà, revenons sur les surtranspositions franco-françaises dès cette année."
+    },
+    {
+      "id": "221d6b19fe3b0b53",
+      "title": "Pour une société du travail (discours de Saint-Denis, 2 octobre 2021)",
+      "publisher": "Nous France (site de son mouvement)",
+      "url": "https://www.nousfrance.fr/2021/10/pour-une-societe-du-travail/",
+      "date": "2021-10-02",
+      "passage": "Ne nous mentons pas, il ne peut pas y avoir d’augmentation importante du revenu et du pouvoir d’achat si nous ne travaillons pas davantage. Les heures travaillées au-delà de 35h seront clairement sans impôt et sans charge sociale"
+    },
+    {
+      "id": "0c5540f07259e6aa",
+      "title": "La République des territoires (discours de Châlons-en-Champagne, 7 septembre 2021)",
+      "publisher": "Nous France (site de son mouvement)",
+      "url": "https://www.nousfrance.fr/2021/09/la-republique-des-territoires/",
+      "date": "2021-09-07",
+      "passage": "J’assume de proposer d’avoir, aux côtés du Maire, un conseiller territorial, représentant unique au département et à la région. Ce conseiller territorial sera élu dans les cantons en respectant la parité et siègera aussi bien au conseil départemental que régional."
+    },
+    {
+      "id": "9559257b3393033b",
+      "title": "Immigration : reprenons le contrôle ! (discours, novembre 2021)",
+      "publisher": "Nous France (site de son mouvement)",
+      "url": "https://www.nousfrance.fr/2021/11/immigration-reprenons-le-controle/",
+      "date": "2021-11-04",
+      "passage": "Je n’hésiterai pas un instant à réduire, voire à supprimer, l’aide au développement apportée aux États récalcitrants, et à remettre à plat nos accords bilatéraux avec eux."
     }
   ],
   "refreshedAt": {
     "edouard-philippe": "2026-10-10T08:49:32.693Z",
-    "gabriel-attal": "2026-10-10T08:49:32.693Z",
-    "bruno-retailleau": "2026-10-10T08:49:32.693Z",
+    "gabriel-attal": "2026-10-10T09:35:32.589Z",
+    "bruno-retailleau": "2026-10-10T09:35:32.589Z",
     "david-lisnard": "2026-10-10T08:49:32.693Z",
     "marine-le-pen": "2026-10-10T08:49:32.693Z",
     "eric-zemmour": "2026-10-10T08:49:32.693Z",
@@ -27443,15 +27865,16 @@
     "nathalie-arthaud": "2026-10-10T08:49:32.693Z",
     "anasse-kazib": "2026-10-10T08:49:32.693Z",
     "selma-labib": "2026-10-10T08:49:32.693Z",
-    "olivier-becht": "2026-10-10T08:49:32.693Z",
+    "olivier-becht": "2026-10-10T09:35:32.589Z",
     "raphael-glucksmann": "2026-10-10T08:49:32.693Z",
-    "bernard-cazeneuve": "2026-10-10T08:49:32.693Z",
-    "xavier-bertrand": "2026-10-10T08:49:32.693Z",
+    "bernard-cazeneuve": "2026-10-10T09:35:32.589Z",
+    "xavier-bertrand": "2026-10-10T09:35:32.589Z",
     "olivier-faure": "2026-10-10T08:49:32.693Z",
     "emmanuel-maurel": "2026-10-10T08:49:32.693Z",
-    "segolene-royal": "2026-10-10T08:49:32.693Z",
+    "segolene-royal": "2026-10-10T09:35:32.589Z",
     "dominique-de-villepin": "2026-10-10T08:49:32.693Z",
     "francois-asselineau": "2026-10-10T08:49:32.693Z",
-    "juan-branco": "2026-10-10T08:49:32.693Z"
+    "juan-branco": "2026-10-10T08:49:32.693Z",
+    "emmanuel-dubuisson": "2026-10-10T09:35:32.589Z"
   }
 }
