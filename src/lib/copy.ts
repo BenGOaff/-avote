@@ -188,6 +188,12 @@ export const UI_COPY = {
     },
     follow: 'Être prévenu des rachats',
   },
+  social: {
+    source: 'Source :',
+    test: 'Faire le test',
+    urne: 'Glisser un bulletin dans l’urne',
+    how: 'Comment les positions sont établies',
+  },
   candidate: {
     parrainages: (n: number, threshold: number) => `Parrainages validés par le Conseil constitutionnel : ${n} sur ${threshold} nécessaires`,
     linksLead: 'À la source :',
