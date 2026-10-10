@@ -69,27 +69,41 @@ async function main() {
   let failed = 0
   try {
     for (const p of due) {
+      let clicked = false
       try {
         const img = await image(p)
         await page.goto('https://x.com/compose/post', { waitUntil: 'domcontentloaded' })
         if (/\/login|\/i\/flow\/login/.test(page.url())) throw new Error('session X expirée : renouveler le secret X_AUTH_TOKEN')
-        const box = page.locator('[data-testid="tweetTextarea_0"]').first()
+        // Tout se passe dans la fenêtre de rédaction : la page d'accueil derrière a sa propre zone d'écriture
+        const dialog = page.locator('[role="dialog"]').filter({ has: page.locator('[data-testid="tweetTextarea_0"]') }).first()
+        const box = dialog.locator('[data-testid="tweetTextarea_0"]').first()
         await box.waitFor({ timeout: 30_000 })
         await box.click()
         await page.keyboard.insertText(text(p))
-        await page.locator('input[data-testid="fileInput"]').first().setInputFiles({ name: `${p.id}.png`, mimeType: 'image/png', buffer: img })
-        await page.locator('[data-testid="attachments"] img').first().waitFor({ timeout: 60_000 })
-        const send = page.locator('[data-testid="tweetButton"]').first()
+        await dialog.locator('input[data-testid="fileInput"]').first().setInputFiles({ name: `${p.id}.png`, mimeType: 'image/png', buffer: img })
+        await dialog.locator('[data-testid="attachments"] img').first().waitFor({ timeout: 60_000 })
+        const send = dialog.locator('[data-testid="tweetButton"]').first()
         await send.waitFor({ timeout: 30_000 })
-        await page.waitForFunction(() => document.querySelector('[data-testid="tweetButton"]')?.getAttribute('aria-disabled') !== 'true', null, { timeout: 60_000 })
+        await page.waitForFunction(() => document.querySelector('[role="dialog"] [data-testid="tweetButton"]')?.getAttribute('aria-disabled') !== 'true', null, { timeout: 60_000 })
+        // La preuve de publication est la réponse de X à la création du post, pas l'état de la page
+        const created = page.waitForResponse((r) => /\/CreateTweet\b/.test(r.url()) && r.request().method() === 'POST', { timeout: 45_000 })
         await send.click()
-        await box.waitFor({ state: 'detached', timeout: 30_000 })
+        clicked = true
+        const res = await created
+        const body = (await res.json().catch(() => null)) as { data?: { create_tweet?: { tweet_results?: { result?: { rest_id?: string } } } }; errors?: { message: string }[] } | null
+        const tweetId = body?.data?.create_tweet?.tweet_results?.result?.rest_id
+        if (!res.ok() || body?.errors?.length) throw new Error(`X a refusé le post : ${body?.errors?.map((e) => e.message).join(' ; ') || res.status()}`)
         state.posted[p.id] = new Date().toISOString()
         writeFileSync(STATE, JSON.stringify(state, null, 1) + '\n')
-        console.log(`X : publié ${p.id}`)
+        console.log(`X : publié ${p.id}${tweetId ? ` (https://x.com/cavote_fr/status/${tweetId})` : ''}`)
         await page.waitForTimeout(20_000 + Math.random() * 20_000)
       } catch (e) {
         failed++
+        // Envoi parti sans confirmation : on ne republie pas, mieux vaut un post manquant qu'un doublon
+        if (clicked) {
+          state.posted[p.id] = `incertain ${new Date().toISOString()}`
+          writeFileSync(STATE, JSON.stringify(state, null, 1) + '\n')
+        }
         mkdirSync(DEBUG, { recursive: true })
         await page.screenshot({ path: path.join(DEBUG, `${p.id}.png`) }).catch(() => {})
         console.error(`X : échec ${p.id} sur ${page.url()} : ${(e as Error).message}`)
