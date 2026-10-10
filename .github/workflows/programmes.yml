@@ -11,6 +11,7 @@ on:
 permissions:
   contents: write
   actions: write
+  issues: write
 
 concurrency:
   group: programmes
@@ -29,17 +30,31 @@ jobs:
       - run: npm ci
       - name: Relire les sites officiels
         run: npx tsx scripts/programmes.ts
+      - name: Sources officielles (parrainages publiés par le Conseil constitutionnel)
+        run: npx tsx scripts/officiel.ts
       - name: Enregistrer l'état et relancer les candidats concernés
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "programmes-ca-vote[bot]"
           git config user.email "programmes@users.noreply.github.com"
-          git add content/acteurs/programmes-veille.json
-          git commit -m "programmes : état des sites officiels ($(date -u +%Y%m%d))" || true
+          git add content/acteurs/programmes-veille.json content/acteurs/parrainages.json content/acteurs/candidatures.json content/veille/officiel.json
+          git commit -m "programmes : état des sites officiels et parrainages ($(date -u +%Y%m%d))" || true
           git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }} || true
+          # Ouverture d'une source officielle : la rédaction est prévenue
+          if [ -s .officiel-alert ]; then
+            gh issue create --title "Source officielle : $(head -1 .officiel-alert | cut -c1-90)" --body "$(cat .officiel-alert)" || true
+          fi
+          # Candidat ajouté d'après les parrainages : recherche de ses positions et liste de ce qui reste à faire
+          if [ -s .officiel-new-actors ]; then
+            for SLUG in $(cat .officiel-new-actors); do
+              gh workflow run positions.yml -f actor="$SLUG" || true
+              NAME=$(node -e 'const c=require("./content/acteurs/candidatures.json");console.log((c.actors.find(a=>a.slug===process.argv[1])||{}).name||process.argv[1])' "$SLUG")
+              gh issue create --title "Nouveau candidat : $NAME (portrait et site à ajouter)" --body "$(npx tsx scripts/a-completer.ts "$SLUG")" || true
+            done
+          fi
           if [ -s .programmes-changes ]; then
-            while read -r SLUG URL; do
+            while read -r SLUG URL <&3; do
               [ -n "$SLUG" ] && gh workflow run positions.yml -f actor="$SLUG" -f force=true -f source="$URL" || true
-            done < .programmes-changes
+            done 3< .programmes-changes
           fi

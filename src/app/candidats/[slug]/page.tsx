@@ -4,6 +4,7 @@ import { NuanceTag, NuanceSourceLink } from '@/components/Nuance'
 import { notFound } from 'next/navigation'
 import { getActor, getAnnouncedActors, STATUS_LABEL } from '@/lib/actors'
 import { UI_COPY } from '@/lib/copy'
+import { PARRAINAGES_THRESHOLD, parrainagesDate, parrainagesOf, parrainagesSource } from '@/lib/parrainages'
 import { itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
 import { BASIS_LABEL, positionLabel } from '@/lib/answers'
 import { formatDate } from '@/components/Editorial'
@@ -79,6 +80,15 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
             Source : {a.source.publisher}
           </a>
         </p>
+        {parrainagesSource && parrainagesOf(a.slug) !== null && (
+          <p>
+            {UI_COPY.candidate.parrainages(parrainagesOf(a.slug)!, PARRAINAGES_THRESHOLD)}
+            {parrainagesDate && `, au ${formatDate(parrainagesDate)}`}.{' '}
+            <a href={parrainagesSource.url} rel="noopener noreferrer" target="_blank">
+              Source : {parrainagesSource.publisher}
+            </a>
+          </p>
+        )}
         {a.links && a.links.length > 0 && (
           <p>
             {UI_COPY.candidate.linksLead}{' '}

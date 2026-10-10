@@ -189,6 +189,7 @@ export const UI_COPY = {
     follow: 'Être prévenu des rachats',
   },
   candidate: {
+    parrainages: (n: number, threshold: number) => `Parrainages validés par le Conseil constitutionnel : ${n} sur ${threshold} nécessaires`,
     linksLead: 'À la source :',
     linkKind: { campagne: 'site de campagne', parti: 'site du parti', programme: 'programme' } as Record<string, string>,
   },
