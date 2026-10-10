@@ -205,10 +205,10 @@ const Draft = z.object({
   line: z.string().describe('Ligne sous le titre, 0 à 110 caractères, factuelle'),
   quote: z.string().describe('Pépite seulement : extrait mot pour mot de la citation, 40 à 180 caractères, le passage le plus frappant ; sinon vide'),
   cta: z.string().describe('Invitation du bandeau noir, 12 à 30 caractères, tutoiement (ex. « Et toi ? Fais le test »)'),
-  x: z.string().describe('X : 100 à 200 caractères, une seule idée, une chute ou une question ; sans lien (ajouté ensuite), 0 ou 1 hashtag'),
-  instagram: z.string().describe('Instagram : 1re ligne = accroche de 90 caractères au plus (seule visible avant « plus ») ; puis 3 à 6 lignes courtes séparées par des retours à la ligne ; puis « Le test est en lien dans la bio. » ; puis une ligne vide et 3 à 5 hashtags (#presidentielle2027 et le thème). Aucune URL.'),
-  linkedin: z.string().describe('LinkedIn : 2 premières lignes = accroche de 200 caractères au plus (visible avant « voir plus ») ; paragraphes d’une ou deux phrases séparés par une ligne vide ; 500 à 1100 caractères ; finit par une question qui appelle les commentaires ; 3 hashtags en fin. Sans lien (ajouté ensuite).'),
-  facebook: z.string().describe('Facebook : 150 à 400 caractères, ton de conversation, finit par une question qui appelle les commentaires puis « Le test est sur çavote.fr ». Aucune URL.'),
+  x: z.string().describe('X : 100 à 200 caractères, une seule idée, une chute ou une question ; sans lien (ajouté ensuite) ; 0 ou 1 hashtag, seulement s’il est précis'),
+  instagram: z.string().describe('Instagram : 1re ligne = accroche de 90 caractères au plus (seule visible avant « plus ») ; puis 3 à 6 lignes courtes séparées par des retours à la ligne ; puis « Le test est en lien dans la bio. » ; puis une ligne vide et 2 ou 3 hashtags précis (#presidentielle2027 et le sujet, jamais de générique comme #politique). Les mots-clés du sujet dans la légende comptent plus que les hashtags. Aucune URL.'),
+  linkedin: z.string().describe('LinkedIn : 2 premières lignes = accroche de 200 caractères au plus (visible avant « voir plus ») ; paragraphes d’une ou deux phrases séparés par une ligne vide ; 500 à 1100 caractères ; finit par une question qui appelle les commentaires ; 0 à 2 hashtags précis en fin (le suivi des hashtags n’existe plus sur LinkedIn). Sans lien (ajouté ensuite).'),
+  facebook: z.string().describe('Facebook : 150 à 400 caractères, ton de conversation, finit par une question qui appelle les commentaires puis « Le test est sur çavote.fr ». Aucune URL, aucun hashtag.'),
 })
 
 const SYSTEM = `Tu écris les publications de Ça vote ? sur Instagram, X, LinkedIn et Facebook. Le but : arrêter le pouce qui défile, faire réagir, puis donner envie de venir sur le site faire le test ou glisser un bulletin dans l'urne.
@@ -301,6 +301,10 @@ function checks(m: Material, d: z.infer<typeof Draft>): string[] {
   if (d.x.length > 220) problems.push('texte X trop long')
   if (d.cta.length > 34) problems.push('invitation du bandeau trop longue')
   if (d.kicker.length > 30) problems.push('accroche du visuel trop longue')
+  // Hashtags : quelques-uns, précis, là où ils servent encore (Instagram plafonne à 5, LinkedIn n'a plus de suivi)
+  const tags = (t: string) => (t.match(/#[\p{L}\d_]+/gu) ?? []).length
+  if (tags(d.instagram) > 3 || tags(d.linkedin) > 2 || tags(d.x) > 1 || tags(d.facebook) > 0) problems.push('trop de hashtags (Instagram 3, LinkedIn 2, X 1, Facebook 0)')
+  if (/#politique\b/i.test(all.join(' '))) problems.push('hashtag générique (#politique) : en mettre un précis ou aucun')
   if (d.title.length > 100) problems.push('titre trop long')
   return [...new Set(problems)]
 }
