@@ -162,6 +162,9 @@ La viralité supposée n'est pas un critère. Applique les mêmes critères quel
 const CAND_FILE = path.join(ROOT, 'content/acteurs/candidatures.json')
 type Cand = { slug: string; name: string; party?: string; status: string; since: string; source: { title: string; publisher: string; url: string }; verified: boolean; retiredAt?: string; retiredSource?: { title: string; publisher: string; url: string }; addedBy?: string }
 
+/** Candidats ajoutés pendant ce passage : le workflow lance aussitôt la recherche de leurs positions. */
+const newActors: string[] = []
+
 function applyCandidacies(found: z.infer<typeof Selection>['candidacies'], byId: Map<string, RawItem>, now: Date): string[] {
   const file = JSON.parse(readFileSync(CAND_FILE, 'utf8')) as { actors: Cand[]; collectedAt: string }
   const changes: string[] = []
@@ -191,6 +194,7 @@ function applyCandidacies(found: z.infer<typeof Selection>['candidacies'], byId:
     if (!existing) {
       file.actors.push({ slug, name: c.name.trim(), ...(c.party.trim() ? { party: c.party.trim() } : {}), status: c.kind, since: (item.date ?? now.toISOString()).slice(0, 10), source, verified: true, addedBy: `veille ${MODEL}` })
       changes.push(`Nouvelle ${c.kind === 'declare' ? 'candidature' : 'démarche'} : ${c.name}`)
+      newActors.push(slug)
     } else if (existing.status === 'demarche' && c.kind === 'declare') {
       existing.status = 'declare'
       existing.source = source
@@ -463,6 +467,7 @@ async function main() {
     `Modèle : ${MODEL}, effort ${EFFORT}. Aucune donnée de votant n'est traitée par ce robot.`,
   ].join('\n')
   writeFileSync(path.join(ROOT, '.veille-summary.md'), summary)
+  writeFileSync(path.join(ROOT, '.veille-new-actors'), newActors.join('\n'))
   console.log(summary)
   meter.report()
 }

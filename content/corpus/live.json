@@ -1,8 +1,8 @@
 {
-  "version": "live-202610100935",
+  "version": "live-202610100949",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-10T09:35:32.589Z",
+  "publishedAt": "2026-10-10T09:49:46.540Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -15051,6 +15051,62 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T09:35:32.589Z",
         "note": "Discours de candidat (campagne 2021-2022) : l’aide au développement conditionnée à la coopération migratoire, plus élevée pour les pays coopératifs, réduite ou supprimée pour les autres ; pas d’objectif global."
+      },
+      "tra-08": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "011cf5f4eb1e6661"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Capitalisation en complément de la répartition."
+      },
+      "eco-09": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "93f8eebae4d41850"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Hors hôpital, sécurité, justice et armées."
+      },
+      "eco-01": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "4a1535fe1669f123"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Maintien de la contribution minimale sur les hauts revenus ; il propose aussi de baisser l'impôt sur le revenu des premières tranches."
+      },
+      "dem-11": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "f96f4c0ac8a24f7f"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Règle d'or proposée par référendum."
       }
     },
     "olivier-faure": {
@@ -16835,6 +16891,34 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T09:35:32.589Z",
         "note": "Économies sur les 160 milliards d’aides « sans conditions », sans ampleur chiffrée : plutôt favorable."
+      },
+      "tra-09": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "2dd4dbd445f8a673"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Contre la désindexation des pensions."
+      },
+      "eco-04": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "149786d9f5f94b9a"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Prix de l'essence négocié avec les pétroliers, pas un plafond fixé par la loi."
       }
     },
     "dominique-de-villepin": {
@@ -17932,6 +18016,62 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T09:35:32.589Z",
         "note": "Cas de paie simulé : 10 % du salaire prélevés pour une capitalisation retraite ; le retraité type reçoit une pension initiale plus un complément."
+      },
+      "eco-01": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "9d8803ade8c982ab"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Impôt sur le revenu à taux unique."
+      },
+      "eur-09": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "6c967ebdcd098454"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Il veut d'abord renégocier, la menace de sortie servant de levier."
+      },
+      "eur-07": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "09a56aef8f7a9ef3"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Sur l'aide à l'Ukraine."
+      },
+      "dem-02": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "0cf8569fe12bce45"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T09:49:46.540Z",
+        "note": "Référendum d'initiative présidentielle d'abord ; l'initiative citoyenne « en l'état » jugée impossible."
       }
     }
   },
@@ -27845,6 +27985,86 @@
       "url": "https://www.nousfrance.fr/2021/11/immigration-reprenons-le-controle/",
       "date": "2021-11-04",
       "passage": "Je n’hésiterai pas un instant à réduire, voire à supprimer, l’aide au développement apportée aux États récalcitrants, et à remettre à plat nos accords bilatéraux avec eux."
+    },
+    {
+      "id": "011cf5f4eb1e6661",
+      "title": "Discours de Xavier Bertrand à Saint-Quentin, 25 octobre 2025",
+      "publisher": "Nous France (vidéo)",
+      "url": "https://www.youtube.com/watch?v=BvcAcCiIBTI&t=495s",
+      "date": "2025-10-25",
+      "passage": "Et la capitalisation, elle ne sera pas à la place de la répartition, elle sera en plus de la répartition. Et cette capitalisation devra être ouverte pour tous"
+    },
+    {
+      "id": "93f8eebae4d41850",
+      "title": "Discours de Xavier Bertrand à Saint-Quentin, 25 octobre 2025",
+      "publisher": "Nous France (vidéo)",
+      "url": "https://www.youtube.com/watch?v=BvcAcCiIBTI&t=544s",
+      "date": "2025-10-25",
+      "passage": "Nous ne devons pas remplacer tous les fonctionnaires qui partent à la retraite. L'an prochain, 45000 personnes partiront à la retraite. L'État ne supprimera pour autant que 3000 postes."
+    },
+    {
+      "id": "4a1535fe1669f123",
+      "title": "Discours de Xavier Bertrand à Saint-Quentin, 25 octobre 2025",
+      "publisher": "Nous France (vidéo)",
+      "url": "https://www.youtube.com/watch?v=BvcAcCiIBTI&t=859s",
+      "date": "2025-10-25",
+      "passage": "En 2026, la contribution minimum de 20 % doit être maintenue et pourquoi ne pas relever la flat taxe qui touche les revenus distribués plutôt que d'inventer les folies fiscales de monsieur Zucman."
+    },
+    {
+      "id": "f96f4c0ac8a24f7f",
+      "title": "Discours de Xavier Bertrand à Saint-Quentin, 25 octobre 2025",
+      "publisher": "Nous France (vidéo)",
+      "url": "https://www.youtube.com/watch?v=BvcAcCiIBTI&t=1227s",
+      "date": "2025-10-25",
+      "passage": "Plusieurs questions pourraient être soumises au français. La règle d'or budgétaire, la réforme territoriale pour simplifier et fusionner conseillers régionaux et conseillers départementaux."
+    },
+    {
+      "id": "2dd4dbd445f8a673",
+      "title": "Entretien de Ségolène Royal dans « La Matinale », LCI, 16 septembre 2026",
+      "publisher": "LCI (vidéo)",
+      "url": "https://www.youtube.com/watch?v=fy9JsCJuNyw&t=963s",
+      "date": "2026-09-16",
+      "passage": "L'arnaque c'est que les retraites sont déjà désindexées. C'est une arnaque."
+    },
+    {
+      "id": "149786d9f5f94b9a",
+      "title": "Entretien de Ségolène Royal dans « La Matinale », LCI, 16 septembre 2026",
+      "publisher": "LCI (vidéo)",
+      "url": "https://www.youtube.com/watch?v=fy9JsCJuNyw&t=660s",
+      "date": "2026-09-16",
+      "passage": "dire à total on veut de l'essence à 1,70 € et ensuite on veut une péréquation aussi avec les petits distributeurs"
+    },
+    {
+      "id": "9d8803ade8c982ab",
+      "title": "Conférence-entretien d'Emmanuel Dubuisson, Cercle des dirigeants d'entreprise",
+      "publisher": "Chaîne d'Emmanuel Dubuisson (vidéo)",
+      "url": "https://www.youtube.com/watch?v=m0mxL-Efh9E",
+      "date": "2026-10-07",
+      "passage": "avoir une flat taxe quasi à 15 % sur le revenu des personnes, avoir 15 % pas plus d'impôts sur les sociétés"
+    },
+    {
+      "id": "6c967ebdcd098454",
+      "title": "Conférence-entretien d'Emmanuel Dubuisson, Cercle des dirigeants d'entreprise",
+      "publisher": "Chaîne d'Emmanuel Dubuisson (vidéo)",
+      "url": "https://www.youtube.com/watch?v=m0mxL-Efh9E",
+      "date": "2026-10-07",
+      "passage": "Après sortir de l'Europe dans la situation actuelle, c'est très utopique."
+    },
+    {
+      "id": "09a56aef8f7a9ef3",
+      "title": "Conférence-entretien d'Emmanuel Dubuisson, Cercle des dirigeants d'entreprise",
+      "publisher": "Chaîne d'Emmanuel Dubuisson (vidéo)",
+      "url": "https://www.youtube.com/watch?v=m0mxL-Efh9E",
+      "date": "2026-10-07",
+      "passage": "Moi c'est plutôt je suis plutôt sur un axe ou à demander des comptes aujourd'hui avant de continuer à envoyer de l'argent."
+    },
+    {
+      "id": "0cf8569fe12bce45",
+      "title": "Conférence-entretien d'Emmanuel Dubuisson, Cercle des dirigeants d'entreprise",
+      "publisher": "Chaîne d'Emmanuel Dubuisson (vidéo)",
+      "url": "https://www.youtube.com/watch?v=m0mxL-Efh9E",
+      "date": "2026-10-07",
+      "passage": "moi le référendum, je suis je suis pour très clair, mais sous une version un petit peu différente. C'està-dire que j'ai prévu un référendum plutôt d'initiative présidentielle dans un premier temps"
     }
   ],
   "refreshedAt": {
@@ -27868,13 +28088,13 @@
     "olivier-becht": "2026-10-10T09:35:32.589Z",
     "raphael-glucksmann": "2026-10-10T08:49:32.693Z",
     "bernard-cazeneuve": "2026-10-10T09:35:32.589Z",
-    "xavier-bertrand": "2026-10-10T09:35:32.589Z",
+    "xavier-bertrand": "2026-10-10T09:49:46.540Z",
     "olivier-faure": "2026-10-10T08:49:32.693Z",
     "emmanuel-maurel": "2026-10-10T08:49:32.693Z",
-    "segolene-royal": "2026-10-10T09:35:32.589Z",
+    "segolene-royal": "2026-10-10T09:49:46.540Z",
     "dominique-de-villepin": "2026-10-10T08:49:32.693Z",
     "francois-asselineau": "2026-10-10T08:49:32.693Z",
     "juan-branco": "2026-10-10T08:49:32.693Z",
-    "emmanuel-dubuisson": "2026-10-10T09:35:32.589Z"
+    "emmanuel-dubuisson": "2026-10-10T09:49:46.540Z"
   }
 }

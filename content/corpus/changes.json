@@ -11277,5 +11277,85 @@
     "from": "inconnue",
     "to": "[-1,0]",
     "source": "9559257b3393033b"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "xavier-bertrand",
+    "item": "tra-08",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "011cf5f4eb1e6661"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "xavier-bertrand",
+    "item": "eco-09",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "93f8eebae4d41850"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "xavier-bertrand",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "4a1535fe1669f123"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "xavier-bertrand",
+    "item": "dem-11",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "f96f4c0ac8a24f7f"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "segolene-royal",
+    "item": "tra-09",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "2dd4dbd445f8a673"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "segolene-royal",
+    "item": "eco-04",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "149786d9f5f94b9a"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "9d8803ade8c982ab"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "eur-09",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "6c967ebdcd098454"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "eur-07",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "09a56aef8f7a9ef3"
+  },
+  {
+    "date": "2026-10-10T09:49:46.540Z",
+    "actor": "emmanuel-dubuisson",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "0cf8569fe12bce45"
   }
 ]

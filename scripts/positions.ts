@@ -35,6 +35,8 @@ const MODEL = process.env.POSITIONS_MODEL || process.env.VEILLE_MODEL || 'claude
 const EFFORT = (process.env.POSITIONS_EFFORT || 'high') as 'low' | 'medium' | 'high'
 const PARALLEL = Number(process.env.POSITIONS_PARALLEL || 3)
 const FORCE = args.includes('--force')
+// Page officielle à lire en premier (programme tout juste publié, repéré par scripts/programmes.ts)
+const SOURCE = arg('source')
 const RECHECK = args.includes('--recheck')
 // Une position connue est revérifiée après 90 jours ; une position introuvable est recherchée de nouveau après 30 jours
 const KNOWN_MAX_AGE = 90 * 86_400_000
@@ -57,7 +59,7 @@ const questionnaire = JSON.parse(readFileSync(path.join(ROOT, 'content/questionn
   items: Item[]
 }
 const candidatures = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/candidatures.json'), 'utf8')) as {
-  actors: { slug: string; name: string; party?: string; status: string; verified?: boolean }[]
+  actors: { slug: string; name: string; party?: string; status: string; verified?: boolean; links?: { kind: string; url: string }[] }[]
 }
 const live = JSON.parse(readFileSync(LIVE, 'utf8')) as Corpus & { sources: CorpusSource[]; refreshedAt?: Record<string, string>; note?: string }
 live.sources ??= []
@@ -104,13 +106,15 @@ const Coded = z.object({
 })
 type CodedOut = z.infer<typeof Coded>
 
-async function research(actor: { name: string; party?: string }, themeLabel: string, items: Item[], evidence: Map<string, string>): Promise<string> {
+async function research(actor: { name: string; party?: string; links?: { kind: string; url: string }[] }, themeLabel: string, items: Item[], evidence: Map<string, string>): Promise<string> {
+  const official = [...new Set([...(SOURCE ? [SOURCE] : []), ...(actor.links ?? []).filter((l) => l.kind !== 'parti').map((l) => l.url)])]
   const messages: Anthropic.Beta.BetaMessageParam[] = [
     {
       role: 'user',
       content: `Candidat : ${actor.name}${actor.party ? ` (${actor.party})` : ''}.
 Thème : ${themeLabel}.
-
+${official.length ? `Sources officielles à lire en premier : ${official.join(' ; ')}.
+` : ''}
 Questions :
 ${items.map((i) => `- ${i.id} : « ${i.text} » (${i.explanation})`).join('\n')}
 
@@ -235,7 +239,7 @@ async function recheck() {
 const FATAL = /credit balance|authentication_error|invalid x-api-key|permission_error/i
 let fatal: string | null = null
 
-async function codeActor(actor: { slug: string; name: string; party?: string; status: string }) {
+async function codeActor(actor: { slug: string; name: string; party?: string; status: string; links?: { kind: string; url: string }[] }) {
   const now = new Date().toISOString()
   // Le dossier n'est créé qu'après au moins une recherche aboutie
   const current = live.positions[actor.slug] ?? {}

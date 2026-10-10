@@ -13,6 +13,14 @@ Six fois par jour (≈ 7 h, 10 h, 13 h, 16 h, 19 h, 22 h), le workflow `.github/
 
 L’état des flux (`content/veille/status.json`) est publié directement : le site affiche « surveillance interrompue » si la collecte tombe en panne.
 
+## Candidats et programmes : suivis tout seuls
+
+- **Annonces et retraits.** À chaque passage, la veille repère dans les flux les annonces de candidature et les retraits. Elle ne retient que ceux dont la phrase est retrouvée dans la source et qui nomment la personne. Le changement est publié directement dans `content/acteurs/candidatures.json`, sans PR. Un candidat retiré sort aussitôt des résultats, du comparateur et de l'urne ; sa fiche reste en ligne avec la mention « Candidature retirée ».
+- **Nouveau candidat.** La recherche de ses positions (`positions.yml`) part dans la foulée, sans attendre le passage du lundi.
+- **Programme publié.** Chaque matin, `programmes.yml` (`scripts/programmes.ts`, sans IA) relit les sites officiels listés dans le champ `links` de chaque candidat. Il relance la recherche de positions de ce candidat (tous les thèmes, en lisant d'abord la page qui a changé) dans deux cas : un nouveau PDF apparaît, ou une page programme gagne au moins 12 phrases nouvelles. Trois candidats au plus sont relancés par jour, et chacun au plus une fois tous les 14 jours.
+- **Positions.** Elles sont publiées directement quand tous les contrôles sont verts : citation retrouvée dans la source, contrôle de pertinence, schéma, tests. Pour revenir à la relecture par PR, crée la variable `POSITIONS_AUTOMERGE` = `false`.
+- **Nouveau site officiel.** Un nouveau candidat ajouté par la veille n'a pas encore de lien `links`. Ajoute son site de campagne dans `candidatures.json` pour que le guetteur de programmes le suive.
+
 ## Ton rôle
 
 Sur GitHub (l’app mobile suffit) :
@@ -33,6 +41,7 @@ Une PR non fusionnée n’est jamais publiée. Tu peux fermer une PR entière.
 | `VEILLE_EFFORT` | variable | `low`, `medium` (défaut) ou `high` |
 | `VEILLE_MAX` | variable | Nombre de brèves maximum par passage (défaut 6) |
 | `VEILLE_AUTOMERGE` | variable | `true` pour publier les brèves sans relecture (déconseillé, voir ci-dessous) |
+| `POSITIONS_AUTOMERGE` | variable | `false` pour relire les positions par PR avant publication (par défaut : publication directe si les contrôles sont verts) |
 
 Et dans **Settings → Actions → General** : cocher *Allow GitHub Actions to create and approve pull requests* et *Read and write permissions*.
 
