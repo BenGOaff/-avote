@@ -32,6 +32,7 @@ export default function CandidatsPage() {
         <p>
           <Link href="/comparateur">Comparer leurs positions, sujet par sujet</Link> · <Link href="/partis">Les partis derrière eux</Link>
         </p>
+        <p className="small muted">Portraits : illustrations générées par IA, dans le même style pour tous.</p>
       </div>
 
       {actors.length > 0 && <Echiquier actors={actors} />}
