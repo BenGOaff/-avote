@@ -17,6 +17,7 @@ permissions:
   contents: write
   pull-requests: write
   actions: write
+  issues: write
 
 concurrency:
   group: veille
@@ -105,8 +106,13 @@ jobs:
           # Un push fait par le robot ne déclenche pas les autres workflows : on lance le repost explicitement
           if [ -n "$BREVES" ]; then gh workflow run social.yml -f files="$BREVES" || true; fi
           # Nouveau candidat : la recherche de ses positions part tout de suite, sans attendre le passage hebdomadaire
+          # et la rédaction est prévenue (issue GitHub) de ce qui reste à faire : portrait, site officiel, nuance
           if [ -s .veille-new-actors ]; then
-            while read -r SLUG; do [ -n "$SLUG" ] && gh workflow run positions.yml -f actor="$SLUG" || true; done < .veille-new-actors
+            for SLUG in $(cat .veille-new-actors); do
+              gh workflow run positions.yml -f actor="$SLUG" || true
+              NAME=$(node -e 'const c=require("./content/acteurs/candidatures.json");console.log((c.actors.find(a=>a.slug===process.argv[1])||{}).name||process.argv[1])' "$SLUG")
+              gh issue create --title "Nouveau candidat : $NAME (portrait et site à ajouter)" --body "$(npx tsx scripts/a-completer.ts "$SLUG")" || true
+            done
           fi
 
           # 2. Les brouillons restants partent dans une Pull Request à relire

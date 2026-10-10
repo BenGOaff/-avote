@@ -1,0 +1,30 @@
+# Portraits : une image déposée dans candidats/ (« Prénom Nom.png ») est convertie et mise en ligne toute seule.
+name: Portraits
+
+on:
+  push:
+    branches: [main]
+    paths: ['candidats/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  portraits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/portraits.ts
+      - name: Publier
+        run: |
+          git config user.name "portraits-ca-vote[bot]"
+          git config user.email "portraits@users.noreply.github.com"
+          git add -A candidats public/img/candidats
+          git commit -m "portraits : conversion des images déposées" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main
