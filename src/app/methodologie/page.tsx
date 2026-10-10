@@ -190,7 +190,8 @@ export default function MethodPage() {
         <p>
           <strong>Lignes rouges.</strong> Les questions sur lesquelles tu poses une ligne rouge apparaissent à part pour chaque candidat : « désaccord documenté » si
           l’écart atteint {ENGINE_CONFIG.redLineDistance * 4} crans, « position inconnue » ou « position ambiguë » sinon. Elles ne retirent aucun point et
-          n’éliminent aucun candidat.
+          n’éliminent aucun candidat. On en pose au bilan de chaque thème, cinq au plus pour tout le test, et seulement sur une question où l’on a
+          répondu pour ou contre : au-delà, presque chaque candidat en franchit une et le signalement ne distingue plus personne.
         </p>
         <p id="accords-rares">
           <strong>Accords rares.</strong> Sur les questions où ta réponse est tranchée (« tout à fait ») ou porte une ligne rouge, les résultats signalent celles
