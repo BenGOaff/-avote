@@ -1,8 +1,8 @@
 {
-  "version": "live-202610100637",
+  "version": "live-202610100711",
   "mode": "live",
   "questionSet": "0.2.0",
-  "publishedAt": "2026-10-10T06:37:37.378Z",
+  "publishedAt": "2026-10-10T07:11:29.604Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -175,11 +175,18 @@
   "positions": {
     "edouard-philippe": {
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          0
+        ],
+        "status": "ambigu",
+        "sources": [
+          "e56083206896d5df"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-10-10T07:11:29.604Z",
+        "note": "Pas de nouvel impôt pendant le quinquennat : cela ne dit pas explicitement s’il refuse de relever l’impôt sur le revenu des plus hauts revenus, d’où [-1, 0]."
       },
       "eco-02": {
         "value": -2,
@@ -330,20 +337,6 @@
         "codedBy": "ia",
         "codedAt": "2026-10-08T18:12:55.891Z",
         "note": "Le programme admet la reconnaissance faciale, mais de façon ciblée, contre le narcotrafic et dans un régime d’exception limité dans le temps et l’espace. Ce n’est pas une autorisation générale dans l’espace public."
-      },
-      "sec-04": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "208d2697dd650108"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z",
-        "note": "Propos du candidat entre guillemets, tenus dans un entretien à France Mayotte Matin et portant sur Mayotte uniquement. Il s'agit d'une mesure voisine (territoire précis), pas d'un engagement explicite sur le nombre national d'admissions au "
       },
       "sec-05": {
         "missing": true,
@@ -720,6 +713,17 @@
         "codedBy": "ia",
         "codedAt": "2026-10-09T14:25:28.451Z",
         "note": "Discours du candidat."
+      },
+      "sec-04": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "0ba56a28348cd7c2"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T07:11:29.604Z",
+        "note": "Propos tenus dans « L’Heure de vérité » (France 2, 8 octobre 2026) : réduire le nombre de premiers titres de séjour sous 200 000 par an, avec un moratoire sur le regroupement familial."
       }
     },
     "gabriel-attal": {
@@ -21627,10 +21631,26 @@
       "url": "https://tetu.com/2024/04/26/gpa-ethique-gestation-pour-autrui-raphael-glucksmann-ps-elections-europeennes/",
       "date": "2024-04-26",
       "passage": "La GPA, quand elle n’est pas commerciale, je suis pour."
+    },
+    {
+      "id": "0ba56a28348cd7c2",
+      "title": "Présidentielle 2027 : Édouard Philippe veut « diviser par deux l’immigration légale » et propose un moratoire sur le regroupement familial",
+      "publisher": "Le Télégramme avec AFP",
+      "url": "https://www.letelegramme.fr/politique/presidentielle-2027-edouard-philippe-veut-diviser-par-deux-limmigration-legale-et-propose-un-moratoire-sur-le-regroupement-familial-7134662.php",
+      "date": "2026-10-09",
+      "passage": "On doit diviser par deux l’immigration légale aujourd’hui"
+    },
+    {
+      "id": "e56083206896d5df",
+      "title": "Pour une France plus prospère",
+      "publisher": "Site de campagne d’Édouard Philippe",
+      "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+      "date": "2026",
+      "passage": "Sceller un moratoire normatif et fiscal : pas de nouvelle norme et de nouvel impôt sur le quinquennat."
     }
   ],
   "refreshedAt": {
-    "edouard-philippe": "2026-10-09T14:25:28.451Z",
+    "edouard-philippe": "2026-10-10T07:11:29.604Z",
     "gabriel-attal": "2026-10-09T14:25:28.451Z",
     "bruno-retailleau": "2026-10-09T14:25:28.451Z",
     "david-lisnard": "2026-10-09T13:44:39.674Z",
