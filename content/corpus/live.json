@@ -1,8 +1,8 @@
 {
-  "version": "live-202610091614",
+  "version": "live-202610100637",
   "mode": "live",
   "questionSet": "0.2.0",
-  "publishedAt": "2026-10-09T16:14:00.153Z",
+  "publishedAt": "2026-10-10T06:37:37.378Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -12191,6 +12191,20 @@
         "codedBy": "ia",
         "codedAt": "2026-10-09T14:25:28.451Z",
         "note": "Encadrement strict du commerce des animaux de compagnie, pas d’interdiction de l’élevage destiné à la vente."
+      },
+      "lib-07": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "159d5f49506f1eef"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-10T06:37:37.378Z",
+        "note": "Favorable à une GPA non commerciale, d'où « plutôt » ou « tout à fait » favorable à une GPA autorisée sous conditions."
       }
     },
     "bernard-cazeneuve": {
@@ -21605,6 +21619,14 @@
       "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
       "date": "2022",
       "passage": "Supprimer les aides sociales non-contributives (allocations familiales, aides au logement, RSA, minimum vieillesse…) pour les étrangers extra-européens"
+    },
+    {
+      "id": "159d5f49506f1eef",
+      "title": "GPA éthique : Raphaël Glucksmann s'y déclare à son tour favorable",
+      "publisher": "Têtu",
+      "url": "https://tetu.com/2024/04/26/gpa-ethique-gestation-pour-autrui-raphael-glucksmann-ps-elections-europeennes/",
+      "date": "2024-04-26",
+      "passage": "La GPA, quand elle n’est pas commerciale, je suis pour."
     }
   ],
   "refreshedAt": {
@@ -21626,7 +21648,7 @@
     "anasse-kazib": "2026-10-09T13:44:39.674Z",
     "selma-labib": "2026-10-09T13:44:39.674Z",
     "olivier-becht": "2026-10-09T13:47:01.862Z",
-    "raphael-glucksmann": "2026-10-09T14:25:28.451Z",
+    "raphael-glucksmann": "2026-10-10T06:37:37.378Z",
     "bernard-cazeneuve": "2026-10-09T13:44:39.674Z",
     "xavier-bertrand": "2026-10-09T13:44:39.674Z",
     "olivier-faure": "2026-10-09T13:44:39.674Z",
