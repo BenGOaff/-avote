@@ -33,10 +33,11 @@ Comptes et coûts : la formule gratuite de Zapier compte une tâche par publicat
 
 ## X
 
-Le flux `/social/x.xml` est prêt : texte de 230 caractères au plus, lien compris dans la limite.
+Publication directe, sans l'API officielle (choix de la rédaction, risque de restriction du compte accepté) : `scripts/social-x.ts`, lancé par `social.yml` à chaque passage.
 
-- **Avec Zapier ou Make** : même principe, *RSS → X (Twitter) : Create Post*, si l'intégration X est disponible sur ton compte.
-- **Publication directe par navigateur automatisé** avec la session du compte : préparée puis retirée en attendant ta décision. Voir la réponse de la session du 10 octobre 2026.
+- Un navigateur sans écran reprend la session de @cavote_fr grâce au cookie `auth_token`, rangé dans le secret GitHub `X_AUTH_TOKEN` (`X_CT0` facultatif).
+- Il publie le texte X, le lien et le visuel de chaque publication des dernières 24 h, une seule fois (`content/social/_x.json`).
+- Sans secret, l'étape est ignorée. Si la session expire, le passage échoue avec « session X expirée » : renouveler le secret. Une capture d'écran de l'échec est jointe au passage (artefact `x-debug`, 3 jours).
 
 ## Réglages (Settings → Secrets and variables → Actions)
 

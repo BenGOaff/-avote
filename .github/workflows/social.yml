@@ -1,6 +1,6 @@
 # Réseaux sociaux (scripts/social-plan.ts) : chaque jour, des publications tirées du site (pépite du matin,
 # rendez-vous du soir, flash quand une nouveauté le mérite), avec leur visuel et leur page (/social/<id>).
-# Les réseaux lisent les flux /social/x.xml, /social/facebook.xml et /social/linkedin.xml (voir docs/RESEAUX.md).
+# Facebook et LinkedIn via Zapier (flux /social/facebook.xml et linkedin.xml) ; X via scripts/social-x.ts (secret X_AUTH_TOKEN).
 name: Réseaux sociaux
 
 on:
@@ -23,7 +23,7 @@ concurrency:
 jobs:
   social:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -77,6 +77,30 @@ jobs:
           git add content/social
           git commit -m "réseaux : publications du $(date -u +%Y-%m-%d) ($(date -u +%H)h)" || exit 0
           git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }}
+      # X sans API officielle : navigateur sans écran sur la session du compte (secret X_AUTH_TOKEN)
+      - name: Publier sur X
+        id: x
+        env:
+          X_AUTH_TOKEN: ${{ secrets.X_AUTH_TOKEN }}
+          X_CT0: ${{ secrets.X_CT0 }}
+        run: |
+          if [ -z "$X_AUTH_TOKEN" ]; then echo "Secret X_AUTH_TOKEN absent : X ignoré"; exit 0; fi
+          npx playwright-core install --with-deps chromium
+          npx tsx scripts/social-x.ts
+      - name: Garder la trace des publications sur X
+        if: always()
+        run: |
+          [ -f content/social/_x.json ] || exit 0
+          git add content/social/_x.json
+          git commit -m "réseaux : publié sur X ($(date -u +%Y-%m-%d) $(date -u +%H)h)" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }}
+      - name: Captures en cas d'échec sur X
+        if: failure() && steps.x.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: x-debug
+          path: .x-debug
+          retention-days: 3
       - name: Inscrire la dépense du passage
         if: always()
         uses: actions/cache/save@v4
