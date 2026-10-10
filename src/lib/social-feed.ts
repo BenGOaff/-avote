@@ -7,7 +7,8 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 
 /**
  * Flux d'une publication par réseau, prêt pour un outil d'automatisation (Zapier, Make, n8n) :
- * description = texte à publier (lien compris), enclosure = visuel aux couleurs du site.
+ * description = texte à publier, retours à la ligne compris ; guid (« ID » dans Zapier) = adresse du visuel portrait,
+ * le champ le plus sûr à brancher sur « Photo » ; enclosure et media:content la répètent pour les autres outils.
  */
 // Facebook, Instagram et LinkedIn passent par Zapier (formule gratuite : 100 publications par mois pour les trois réseaux) :
 // une publication par jour, la plus forte (pépite ou « pour ou contre »). X reçoit tout, par scripts/social-x.ts.
@@ -31,7 +32,7 @@ export function socialFeed(network: 'x' | 'facebook' | 'linkedin' | 'instagram')
 ${items
   .map((p) => {
     const img = absolute(`/social/${p.id}/carte.png`)
-    return `<item><title>${esc(p.card.title)}</title><link>${esc(link(p))}</link><guid isPermaLink="false">${p.id}-${network}</guid><pubDate>${new Date(p.at).toUTCString()}</pubDate><description>${esc(body(p))}</description><enclosure url="${esc(img)}" type="image/png" length="0"/><media:content url="${esc(img)}" medium="image" type="image/png"/></item>`
+    return `<item><title>${esc(p.card.title)}</title><link>${esc(link(p))}</link><guid isPermaLink="false">${esc(img)}</guid><pubDate>${new Date(p.at).toUTCString()}</pubDate><description>${esc(body(p))}</description><enclosure url="${esc(img)}" type="image/png" length="0"/><media:content url="${esc(img)}" medium="image" type="image/png"/></item>`
   })
   .join('\n')}
 </channel>
