@@ -1,5 +1,5 @@
 # Veille automatisée : collecte, brouillons rédigés par Claude, Pull Request à relire.
-# Rien n'est publié sans fusion de la PR (sauf brèves si VEILLE_AUTOMERGE = true, voir docs/VEILLE.md).
+# Brèves et articles sont publiés directement une fois les contrôles passés (VEILLE_AUTOMERGE = false pour revenir à la relecture par PR).
 name: Veille
 
 on:
@@ -92,10 +92,9 @@ jobs:
           git add content/veille/status.json content/veille/seen.json content/acteurs/candidatures.json
           git commit -m "veille : état des flux ($STAMP)" || true
 
-          if [ -n "$NEW" ] && [ "$AUTOMERGE" = "true" ]; then
-            # Option assumée par la rédaction : brèves publiées directement, articles toujours relus
-            BREVES=$(git ls-files --others --exclude-standard content/fil | tr '\n' ' ')
-            git add content/fil
+          if [ -n "$NEW" ] && [ "$AUTOMERGE" != "false" ]; then
+            # Choix de la rédaction : brèves et articles publiés directement après les contrôles automatiques
+            git add content/fil content/radar
             git commit -m "veille : brèves ($STAMP)" || true
           fi
           # main a pu bouger pendant la veille : on se recale avant de pousser

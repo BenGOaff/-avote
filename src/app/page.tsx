@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import { UI_COPY } from '@/lib/copy'
-import { getArticles, getBriefs, getVeilleStatus } from '@/lib/content'
+import { getArticles, getBriefs } from '@/lib/content'
 import { getAnnouncedActors } from '@/lib/actors'
 import { liveCorpus, questionnaire } from '@/lib/data'
 import { ArticleCard, BriefItem } from '@/components/Editorial'
-import { VeilleState } from '@/components/VeilleState'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { ExampleResult } from '@/components/ExampleResult'
 import { TestFlow } from './test/TestFlow'
@@ -88,15 +87,11 @@ export default function HomePage() {
         </div>
         <div className="grid grid--2" style={{ marginTop: 'var(--s5)', alignItems: 'start' }}>
           <div>
-            {briefs.length > 0 ? (
-              <ul className="feed">
-                {briefs.map((b) => (
-                  <BriefItem key={b.slug} b={b} />
-                ))}
-              </ul>
-            ) : (
-              <VeilleState status={getVeilleStatus()} briefCount={0} />
-            )}
+            <ul className="feed">
+              {briefs.map((b) => (
+                <BriefItem key={b.slug} b={b} />
+              ))}
+            </ul>
           </div>
           <div className="stack">
             {articles.map((a, i) => (

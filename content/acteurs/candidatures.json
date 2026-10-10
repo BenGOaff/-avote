@@ -594,6 +594,19 @@
         }
       ],
       "addedBy": "recherche manuelle"
+    },
+    {
+      "slug": "gilles-platret",
+      "name": "Gilles Platret",
+      "status": "declare",
+      "since": "2026-10-09",
+      "source": {
+        "title": "Présidentielle 2027 : le très droitier Gilles Platret présente sa candidature et embouteille son espace politique",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/elections/presidentielle-2027-le-tres-droitier-gilles-platret-presente-sa-candidature-et-embouteille-son-espace-politique-20261009_AKT3J6HRJJFFBJK6I7QQ6TSJ4Q/"
+      },
+      "verified": true,
+      "addedBy": "veille claude-sonnet-5-5"
     }
   ]
 }
