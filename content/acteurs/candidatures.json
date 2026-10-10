@@ -493,6 +493,88 @@
           "url": "https://bc2027.fr/"
         }
       ]
+    },
+    {
+      "slug": "dominique-de-villepin",
+      "name": "Dominique de Villepin",
+      "party": "La France humaniste",
+      "status": "demarche",
+      "since": "2026-01-19",
+      "source": {
+        "title": "Dominique de Villepin : \"Nous voulons être présents en 2027\"",
+        "publisher": "LCP",
+        "url": "https://lcp.fr/actualites/dominique-de-villepin-nous-voulons-etre-presents-en-2027-429413"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://lafrancehumaniste.fr/"
+        }
+      ],
+      "addedBy": "recherche manuelle"
+    },
+    {
+      "slug": "francois-asselineau",
+      "name": "François Asselineau",
+      "party": "Union populaire républicaine (UPR)",
+      "status": "declare",
+      "since": "2026-09-30",
+      "source": {
+        "title": "Discours de rentrée 2026 de François Asselineau : la Libération nationale !",
+        "publisher": "UPR (site officiel)",
+        "url": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://upr.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://upr.fr/notre-programme"
+        }
+      ],
+      "addedBy": "recherche manuelle"
+    },
+    {
+      "slug": "jerome-guedj",
+      "name": "Jérôme Guedj",
+      "party": "Parti socialiste (primaire PS-PP-GRS)",
+      "status": "declare",
+      "since": "2026-09-15",
+      "source": {
+        "title": "Choisir 2027 : les candidat·e·s à la primaire de la gauche socialiste et démocratique",
+        "publisher": "Choisir 2027 (primaire PS-PP-GRS)",
+        "url": "https://choisir2027.fr/"
+      },
+      "verified": true,
+      "addedBy": "recherche manuelle"
+    },
+    {
+      "slug": "juan-branco",
+      "name": "Juan Branco",
+      "party": "Les Ruches (mouvement citoyen)",
+      "status": "declare",
+      "since": "2025-12-19",
+      "source": {
+        "title": "Présidentielle 2027 : qui sont les candidats déclarés ?",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://ruches.org/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://ruches.org/le-projet"
+        }
+      ],
+      "addedBy": "recherche manuelle"
     }
   ]
 }
