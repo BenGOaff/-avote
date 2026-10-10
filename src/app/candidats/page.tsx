@@ -61,7 +61,7 @@ export default function CandidatsPage() {
                     </h2>
                     <p className="cand-card__party">
                       {logo && <img src={logo} alt="" />}
-                      {a.party ?? <span className="muted">Formation non précisée</span>}
+                      {a.party ?? (nuanceOf(a.slug) ? `Sans parti · ${nuanceOf(a.slug)!.label}` : <span className="muted">Formation non précisée</span>)}
                     </p>
                     {role && <p className="cand-card__meta">{role.charAt(0).toUpperCase() + role.slice(1)}</p>}
                     <p className="cand-card__meta">
