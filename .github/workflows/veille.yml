@@ -86,8 +86,9 @@ jobs:
           STAMP=$(date -u +%Y%m%d-%H%M)
           NEW=$(git ls-files --others --exclude-standard content/fil content/radar)
 
-          # 1. L'état des flux et la mémoire des éléments vus vont directement sur la branche principale
-          git add content/veille/status.json content/veille/seen.json
+          # 1. L'état des flux, la mémoire des éléments vus et les candidatures (annonce ou retrait, citation vérifiée
+          #    dans la source) vont directement sur la branche principale
+          git add content/veille/status.json content/veille/seen.json content/acteurs/candidatures.json
           git commit -m "veille : état des flux ($STAMP)" || true
 
           if [ -n "$NEW" ] && [ "$AUTOMERGE" = "true" ]; then
@@ -103,6 +104,10 @@ jobs:
           git stash pop || true
           # Un push fait par le robot ne déclenche pas les autres workflows : on lance le repost explicitement
           if [ -n "$BREVES" ]; then gh workflow run social.yml -f files="$BREVES" || true; fi
+          # Nouveau candidat : la recherche de ses positions part tout de suite, sans attendre le passage hebdomadaire
+          if [ -s .veille-new-actors ]; then
+            while read -r SLUG; do [ -n "$SLUG" ] && gh workflow run positions.yml -f actor="$SLUG" || true; done < .veille-new-actors
+          fi
 
           # 2. Les brouillons restants partent dans une Pull Request à relire
           REMAINING=$(git ls-files --others --exclude-standard content/fil content/radar)

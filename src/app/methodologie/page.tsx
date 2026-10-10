@@ -260,7 +260,9 @@ export default function MethodPage() {
           central et élargit les bornes.
         </p>
         <p>
-          Les positions sont codées automatiquement par une IA, avec les mêmes consignes pour tous les candidats. Ordre de préférence des sources :
+          Les positions sont codées automatiquement par une IA, avec les mêmes consignes pour tous les candidats. Chaque matin, un robot relit les
+          sites officiels des candidats : quand un programme paraît ou s’enrichit, les positions de ce candidat sont recherchées de nouveau. Un candidat
+          qui retire sa candidature sort aussitôt des résultats. Ordre de préférence des sources :
           programme 2027, déclarations publiques depuis 2024, programme présidentiel 2022, programme du parti. Les réponses d’un candidat au questionnaire
           d’une association comptent comme une déclaration, à condition que la page publie sa réponse mot pour mot ; la note ou le classement attribué par
           l’association n’est jamais repris. Chaque position est accompagnée d’une citation

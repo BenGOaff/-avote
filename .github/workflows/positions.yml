@@ -18,6 +18,13 @@ on:
         description: 'Seulement repasser le contrôle de pertinence (aucune recherche web)'
         type: boolean
         default: false
+      force:
+        description: 'Rechercher tous les thèmes, même récents (programme tout juste publié)'
+        type: boolean
+        default: false
+      source:
+        description: 'Page officielle à lire en premier (programme publié)'
+        required: false
 
 permissions:
   contents: write
@@ -69,7 +76,10 @@ jobs:
           if [ "${{ github.event.inputs.recheck }}" = "true" ]; then
             npx tsx scripts/positions.ts --recheck
           elif [ -n "${{ github.event.inputs.actor }}" ]; then
-            npx tsx scripts/positions.ts --actor=${{ github.event.inputs.actor }}
+            EXTRA=""
+            if [ "${{ github.event.inputs.force }}" = "true" ]; then EXTRA="--force"; fi
+            if [ -n "${{ github.event.inputs.source }}" ]; then EXTRA="$EXTRA --source=${{ github.event.inputs.source }}"; fi
+            npx tsx scripts/positions.ts --actor=${{ github.event.inputs.actor }} $EXTRA
           else
             npx tsx scripts/positions.ts --limit=${{ github.event.inputs.limit || vars.POSITIONS_PER_DAY || 2 }}
           fi
@@ -83,6 +93,7 @@ jobs:
           FICHES_BUDGET_USD: ${{ vars.FICHES_BUDGET_USD }}
         run: npx tsx scripts/fiches.ts
       - name: Valider
+        id: valider
         if: always()
         env:
           ANONYMITY_BLOCKLIST: ${{ secrets.ANONYMITY_BLOCKLIST }}
@@ -91,11 +102,22 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTOMERGE: ${{ vars.POSITIONS_AUTOMERGE }}
         run: |
           git config user.name "positions-ca-vote[bot]"
           git config user.email "positions@users.noreply.github.com"
           if [ -z "$(git status --porcelain content/corpus content/acteurs/fiches.json)" ]; then exit 0; fi
           STAMP=$(date -u +%Y%m%d-%H%M)
+          # Publication directe si les contrôles sont verts (citations retrouvées, pertinence, schéma, tests),
+          # sauf si la rédaction a choisi la relecture (variable POSITIONS_AUTOMERGE = false)
+          if [ "${{ steps.valider.outcome }}" = "success" ] && [ "$AUTOMERGE" != "false" ]; then
+            git add content/corpus content/acteurs/fiches.json
+            git commit -m "positions : mise à jour du référentiel ($STAMP)"
+            git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }} && exit 0
+            echo "Publication directe impossible (conflit) : une Pull Request est proposée."
+            git rebase --abort 2>/dev/null || true
+            git reset --soft HEAD~1
+          fi
           # La branche part de la dernière version de main (sinon elle porterait d'anciens workflows et serait refusée)
           git stash push --include-untracked -- content/corpus content/acteurs/fiches.json
           git fetch origin "${{ github.ref_name }}"
