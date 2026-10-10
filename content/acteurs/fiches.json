@@ -1,16 +1,198 @@
 {
   "anasse-kazib": {
-    "analysis": "Sur le travail et le logement, le programme 2027 avance des chiffres précis : « SMIC à 2000 € net », « augmentation des salaires de 500 € », retraite « à 60 ans et 55 ans pour les métiers pénibles », « plafonnement et gel des loyers » assortis de l'« expropriation des logements vides ». Sur les migrations, la ligne tient en une formule : « Régularisation de tous les sans-papiers, liberté de circulation et d'installation ». Sur les signes religieux, le programme demande l'abrogation de « la loi de 2004 ». La position sur la dette repose sur une déclaration qui qualifie de « provocation » un budget de « 54 milliards d'euros d'économies », et non sur le programme, tandis que la gratuité des transports est une position du parti, pas du candidat. Les sept thèmes, du climat à l'Europe en passant par les institutions, comptent chacun au moins trois questions sans position documentée.",
-    "remark": "Les hausses sont chiffrées à l'euro près. Pour le financement, les pièces fournies ne mentionnent que « l'argent de la guerre », et seulement pour les services publics.",
-    "basedOn": "live-202610081700",
-    "generatedAt": "2026-10-08T17:03:07.516Z",
-    "model": "claude-opus-5-5"
+    "analysis": "Les positions documentées vont presque toutes dans le même sens. Sur l'économie et le travail : impôt jusqu'à 100 % sur les revenus du capital au-dessus de 260.000 euros, SMIC à 2000 € net, retraite à 60 ans, interdiction des licenciements, suppression des aides aux grandes entreprises, expropriation des secteurs stratégiques. Sur l'immigration : « Régularisation de tous les sans-papiers, liberté de circulation et d'installation. » Sur la défense : « Pas un euro pour la guerre ». Sur le nucléaire, les taxes carbone et la police, les positions sont opposées aux mesures testées. Sur l'Europe : « Ni Frexit ni Europe du Capital ». Dans la plupart des thèmes, notamment école, animaux et agriculture, institutions, il manque des positions explicites.",
+    "remark": "Beaucoup de réponses reposent sur la même phrase de programme, citée pour plusieurs questions.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:38.490Z",
+    "model": "claude-sonnet-5-5"
   },
   "selma-labib": {
-    "analysis": "Sur les revenus et le travail, les déclarations sont nettes : « augmenter les salaires et les pensions de 400 euros par mois », aucun revenu « sous les 2000 euros net », refus de baisser les cotisations patronales et de durcir l'indemnisation du chômage, et taxation des « actionnaires et des milliardaires ». Sur les migrations, elle réclame la « liberté de circulation et d'installation » et la « régularisation de tous les sans-papiers », et elle qualifie l'interdiction du voile dans la rue de « pur racisme ». Elle s'oppose à la hausse du budget militaire. Sur l'aide à mourir, la position favorable relevée vient du parti et non d'elle, avec des « garde-fous » et des moyens pour les services de soin. Aucune position n'est documentée ici sur le climat, l'Europe ou les institutions, et chaque thème reste incomplet.",
-    "remark": "Plusieurs des citations retenues répondent à des adversaires nommés plutôt qu'elles ne détaillent une mesure.",
-    "basedOn": "live-202610081700",
-    "generatedAt": "2026-10-08T17:03:20.451Z",
-    "model": "claude-opus-5-5"
+    "analysis": "Sur le travail et les revenus, les positions documentées vont dans le même sens : hausse du SMIC, salaires et pensions indexés sur les prix, retraite à 60 ans « au plus tard », refus de la capitalisation et de la baisse des cotisations. Les plus grands patrimoines devraient être davantage taxés. Sur l'immigration, la candidate défend la « liberté de circulation et d'installation » et la régularisation de tous les sans-papiers. Sur le plafonnement des prix, le ton est plus réservé : « pourquoi pas » pour les loyers et l'électricité, avec une question sur le contrôle des grands groupes. Elle s'oppose à la hausse du budget de la défense et souhaite la fin des livraisons d'armes à Israël. À l'école : moins d'élèves par classe, suppression de Parcoursup. Sécurité et justice, climat et énergie, agriculture, institutions : peu ou pas de positions codées.",
+    "remark": "Les salaires et les retraites sont documentés avec précision. Sur la sécurité ou l'agriculture, on n'a pas trouvé de position explicite.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:50.144Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "edouard-philippe": {
+    "analysis": "Sur la fiscalité, les positions documentées vont vers moins d'impôts : moratoire sur les nouveaux impôts, opposition à la taxe Zucman et à l'ISF, règle d'or sur les déficits. Sur les retraites, il propose un départ à 65 ans et un pilier de capitalisation. Côté sécurité, la citation retient peines planchers, places de prison et comparution immédiate des mineurs pour le narcotrafic. Sur l'Europe, il défend une « souveraineté européenne intégrale » et rejette la sortie de l'Union. Il est opposé au plafonnement des loyers, à la proportionnelle et au RIC. Sur l'aide à mourir, il distingue conviction intime et inscription dans la loi. Pour les thèmes listés comme lacunaires, on n'a pas trouvé de position explicite sur plusieurs points.",
+    "remark": "La règle d'or sur le déficit figure deux fois dans le dossier, sous deux intitulés, avec la même citation.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:38:59.727Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "gabriel-attal": {
+    "analysis": "Les positions documentées dessinent une ligne cohérente sur l'économie : pas de hausse d'impôt, baisse des charges salariales et patronales, 100 000 postes publics en moins, règle d'or budgétaire, effort sur la dépense sociale. Sur les retraites, il refuse de repousser l'âge légal tout en défendant la capitalisation et un gel d'une partie des pensions. Sur l'Europe, les déclarations vont vers plus de compétences, une dette commune et le maintien des accords de libre-échange. Sécurité, immigration et école convergent vers plus de restrictions ou de cadre (mineurs, prisons, groupes de niveau, uniforme, moins d'immigration familiale), avec des recrutements d'enseignants. Pour plusieurs thèmes, il manque encore des positions explicites.",
+    "remark": "Le refus de toute hausse d'impôt et l'objectif de réduire la dette sont tous deux documentés ; le détail du financement, lui, ne l'est pas.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:39:03.274Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "bruno-retailleau": {
+    "analysis": "Les positions documentées pour Bruno Retailleau portent d'abord sur la sécurité, l'immigration et la fiscalité. Il se déclare favorable aux peines minimales obligatoires, à l'abaissement de la majorité pénale à quinze ans, à la suppression du droit du sol simple et à un référendum sur l'immigration. Côté économie, il défend la baisse des cotisations et des droits de succession, une règle d'or sur le déficit, et s'oppose à la progressivité de l'impôt sur le revenu et à l'encadrement des loyers. Sur l'environnement et l'Europe, il veut supprimer les ZFE et le ZAN, et refuse le Frexit tout en souhaitant pouvoir écarter certaines règles européennes. Plusieurs thèmes restent peu couverts : santé, école, travail et retraites, démocratie, agriculture.",
+    "remark": "Deux positions reposent sur une simple liste de noms de sénateurs : un vote, pas un discours.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:39:06.326Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "david-lisnard": {
+    "analysis": "Les positions documentées pour David Lisnard sont nombreuses et se recoupent. Sur la fiscalité et la dépense, il s'oppose à la taxe dite Zucman, aux droits de succession en ligne directe (« suppression ») et à la gratuité des transports, et il soutient la baisse des cotisations, la capitalisation et la réduction du nombre d'agents publics. Sur l'immigration et la justice, il défend « Diviser par huit la délivrance de titres de séjour », la fin de l'automaticité du droit du sol, les peines planchers et la majorité pénale à 16 ans. Sur l'Europe, il écrit ne pas vouloir sortir de l'Union, mais défend le référendum en cas de blocage. Plusieurs thèmes (santé, climat, école, logement, animaux, démocratie) restent insuffisamment documentés.",
+    "remark": "Il veut moins de bureaucrates et plus de policiers, mais les sources ne chiffrent pas le lien entre les deux.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:39:09.408Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "marine-le-pen": {
+    "analysis": "Sur l'immigration, la sécurité et l'Europe, les positions documentées sont tranchées : réduction de l'immigration, priorité nationale, suppression du droit du sol, refus de tout transfert de compétences vers l'Union, peines planchers et places de prison supplémentaires. Sur le pouvoir d'achat, le programme cite une TVA à 5,5 % sur les produits énergétiques, la réindexation des retraites et le refus de tout allongement de l'âge de départ. Sur l'énergie, il retient de nouveaux EPR, l'arrêt des projets éoliens et la suppression des zones à faibles émissions. Côté institutions, il prévoit le référendum d'initiative citoyenne et la proportionnelle. Plusieurs thèmes restent incomplets, dont l'école, le logement, la santé et l'agriculture. Beaucoup de positions viennent d'un programme déjà publié.",
+    "remark": "Beaucoup de positions s'appuient sur un programme déjà publié. Il reste à les confronter à des textes plus récents.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:39:26.183Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "eric-zemmour": {
+    "analysis": "Sur l'immigration et la justice, les positions documentées vont dans le même sens : supprimer le droit du sol, le regroupement familial et la régularisation, instaurer des peines planchers, abaisser la majorité pénale à 16 ans, construire 10 000 places de prison. En économie, il propose de baisser les charges sociales, l'accise sur les carburants et les droits de succession, et de supprimer 800000 postes de fonctionnaire. Sur l'Europe, il veut bloquer tout nouveau transfert de compétence et dit agir au sein de l'Union. Sur l'énergie, il prévoit au moins 14 réacteurs EPR2 et la fin des projets d'éoliennes. Sur les retraites, il envisage de relever l'âge de départ et la durée de cotisation. Les positions codées restent peu nombreuses en santé et autonomie, école et jeunesse, logement et transports, démocratie et institutions, agriculture, libertés et laïcité.",
+    "remark": "Sur l'immigration, la fiche abonde. Sur d'autres sujets, on n'a pas trouvé assez de positions explicites.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:39:39.785Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "nicolas-dupont-aignan": {
+    "analysis": "Sur l'Europe, les citations convergent : sortir de l'Union européenne, quitter le commandement militaire intégré de l'OTAN, rétablir la primauté du droit français. Sur l'immigration, il propose la suppression du droit du sol, la suspension du regroupement familial et la fin de la régularisation. Côté sécurité, il annonce 10 000 policiers et gendarmes supplémentaires nets et 40.000 places de prison. En fiscalité, il veut zéro droit de succession sur la résidence principale, financé par un impôt sur les fortunes supérieures à 10 millions d'euros. Il se dit opposé à l'aide à mourir et à la proportionnelle. Plusieurs thèmes restent lacunaires, dont le logement et les transports, l'école et la jeunesse, les animaux et l'alimentation : on n'y a pas trouvé de position explicite sur certains points.",
+    "remark": "Les 20 000 lits d'hôpital sont chiffrés. Leur financement ne figure pas dans la citation retenue.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:39:51.711Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "florian-philippot": {
+    "analysis": "Les positions documentées convergent autour de la sortie de l'Union européenne et de l'euro, présentée comme la condition de plusieurs mesures : baisse de l'âge de départ à la retraite, baisse de la TVA sur les carburants, prix planchers agricoles, sortie du marché européen de l'électricité. Sur la fiscalité, les citations évoquent l'allègement pour les classes moyennes et une hausse pour les plus riches, avec le rétablissement de l'ISF. Sur l'immigration et la sécurité, elles réclament des flux « extrêmement limités », des peines planchers et davantage de places de prison. Elles s'opposent à l'aide à mourir, à l'interdiction des réseaux sociaux avant 15 ans et à la reconnaissance faciale. Plusieurs thèmes, dont le logement et les transports, la santé et l'école, restent peu couverts : on n'a pas trouvé de position explicite sur de nombreux points.",
+    "remark": "La sortie de l'UE sert de clé à une bonne part des mesures citées ; le chiffrage de cette étape, lui, n'apparaît dans aucune citation.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:39:55.387Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "jean-luc-melenchon": {
+    "analysis": "Les positions documentées dessinent une ligne constante sur l'économie : impôt sur le revenu plus progressif, taxe sur les milliardaires, SMIC à 1 700 euros dans une déclaration, retraite à 60 ans, blocage des prix de première nécessité. Sur l'Europe, le programme 2027 prévoit un « Opt Out » sur les dispositions des traités qui empêchent d'appliquer son programme, et la sortie du commandement intégré de l'OTAN. Sur l'immigration, les positions sont opposées à une baisse des arrivées et à la restriction des aides, favorables à des régularisations ciblées ; sur la sécurité, elles passent par un récépissé de contrôle d'identité et des peines alternatives. Sur l'énergie : sortie du nucléaire et plan pour l'éolien maritime. Les positions manquent encore sur le pouvoir d'achat et les impôts, sur les animaux, l'agriculture et l'alimentation, et sur la démocratie et les institutions.",
+    "remark": "Plusieurs positions viennent d'un programme plus ancien ; la fiche ne dit pas lesquelles le programme actuel a reprises.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:04.379Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "fabien-roussel": {
+    "analysis": "Les positions documentées dessinent un programme très orienté vers la dépense publique et la redistribution : impôt sur le revenu plus progressif, impôt sur la fortune rétabli, SMIC à 1 923 euros brut, retraite à 60 ans, semaine de 32 heures. Sur l'énergie, les citations associent six EPR supplémentaires au minimum, baisse des taxes et sortie du marché européen de l'énergie. Sur la sécurité, l'embauche de 60 000 agents va avec des alternatives à l'incarcération et l'interdiction de la reconnaissance faciale. Sur l'immigration, les textes cités défendent le droit du sol intégral et le maintien de l'AME. Pour les thèmes où les positions manquent (école, libertés et laïcité, climat, agriculture, institutions), le tableau reste partiel : certaines citations ne portent qu'indirectement sur la question posée.",
+    "remark": "Plusieurs positions reposent sur des citations qui répondent à côté de la question posée, ce qui rend leur codage fragile.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:07.631Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "marine-tondelier": {
+    "analysis": "Les positions documentées viennent surtout du programme du parti. Sur le travail et les revenus : une tranche d'impôt à 60 % au-delà de 250 000 € annuels, un salaire minimum à 2000 € brut dès 2027, un retour à un âge minimum de 62 ans pour la retraite. Sur l'énergie : une sortie planifiée du nucléaire et la fin des programmes EPR-2 et SMR. Sur la santé : une prise en charge à 100 % par l'Assurance maladie et la suppression des franchises. Sur la sécurité : le retour de la police de proximité, un moratoire sur les nouvelles places de prison et l'interdiction de la reconnaissance faciale. Sur l'immigration : la régularisation des travailleurs, des étudiants et des parents d'enfants scolarisés. Sur l'Europe et le monde, comme sur la démocratie et les institutions, les positions codées sont trop peu nombreuses pour un tableau solide.",
+    "remark": "Le programme du parti est détaillé sur les salaires et l'impôt. Sur l'Europe et les institutions, la fiche reste lacunaire.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:16.667Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "francois-ruffin": {
+    "analysis": "Les positions documentées de François Ruffin portent surtout sur la fiscalité, les salaires, les retraites, le logement et les services publics. Il se déclare favorable à une tranche d'impôt à 94 %, au SMIC à 1 600 €, à la retraite à 60 ans, à l'indexation des salaires sur l'inflation et à l'encadrement des loyers. Sur l'Europe, il écarte tout transfert de compétences et annonce qu'il désobéira aux traités qui contredisent ses engagements. Sur l'énergie, il cite la poursuite de six réacteurs EPR2 et de l'éolien. Sur l'immigration, la citation dit non à une immigration de travailleurs et oui à une régularisation par le travail. Dans les thèmes cités, plusieurs sujets restent peu couverts : sécurité et justice, École et jeunesse, démocratie et institutions.",
+    "remark": "Pour l'immigration, deux citations tirent chacune de leur côté, et on n'a pas trouvé de texte qui les concilie.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:20.382Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "delphine-batho": {
+    "analysis": "Les positions documentées dessinent un profil porté sur la fiscalité du patrimoine, la retraite, le logement et l'écologie. Sur l'énergie et l'agriculture, la candidate s'oppose à de nouveaux EPR et défend zéro pesticide, tout en votant contre l'allègement des normes agricoles. Sur l'immigration, les textes cités se réjouissent de la censure de la préférence nationale et de la remise en cause du droit du sol. Elle approuve une hausse du budget de la défense et le soutien à l'Ukraine. Sur la plupart des thèmes, trop peu de positions sont documentées pour en tirer un tableau, notamment la sécurité et la justice.",
+    "remark": "Les votes sont nombreux, les programmes chiffrés restent à trouver.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:23.025Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "karim-bouamrane": {
+    "analysis": "Les positions documentées portent sur la sécurité, la fiscalité, le travail, le logement, la défense, l'environnement et l'immigration. Sur la sécurité, il se dit plutôt favorable à plus de policiers et d'éducateurs, avec « une trajectoire politique et des moyens ». Il défend une taxation accrue des grands patrimoines, citant la taxe Zucman. Sur les retraites et le SMIC, il récuse des mesures « relevant d'un monde idéal » au nom de « la réalité budgétaire ». Il se dit tout à fait favorable à une hausse de l'effort de défense et propose une peine d'inéligibilité pour les maires qui préfèrent payer l'amende plutôt que construire des logements sociaux. Sur l'immigration, il oppose régularisation générale et reconduite de ceux qui se maintiennent irrégulièrement. Pour la plupart des autres thèmes, dont la santé, l'école, l'Europe et les institutions, on n'a pas trouvé de position explicite.",
+    "remark": "Le SMIC à 1 600 euros et la retraite à 60 ans sont écartés d'une seule phrase, la même pour les deux.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:26.175Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "nathalie-arthaud": {
+    "analysis": "Les positions documentées vont presque toutes dans le même sens sur l'économie et le social : hausse du SMIC, indexation des salaires et des pensions sur les prix, refus du relèvement de l'âge de départ, rejet de la baisse des cotisations patronales et des suppressions de postes publics. Pour financer hôpitaux et écoles, une citation évoque de « réquisitionner » les profits. Sur l'immigration, les citations réclament la régularisation de tous les sans-papiers et rejettent la préférence nationale. Sur la défense, la candidate s'oppose à la hausse du budget militaire, au service national obligatoire et à l'aide militaire à l'Ukraine. Sur le cannabis, la position reste hésitante. Plusieurs thèmes, dont la sécurité et la justice ou la démocratie et les institutions, restent peu documentés.",
+    "remark": "Plusieurs citations répondent à un adversaire ou à une mesure du gouvernement : la position se lit alors en creux.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:40:29.348Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "olivier-becht": {
+    "analysis": "Les positions documentées portent surtout sur la sécurité et la justice : 10 000 policiers supplémentaires, davantage de places en prisons de haute sécurité, travaux d'intérêt général pour les petits délinquants, vote pour juger plus souvent les mineurs de 16 ans et plus comme des majeurs. Sur les institutions, le programme cite un référendum d'initiative citoyenne, la reconnaissance du vote blanc et plus d'autonomie pour les collectivités. Côté budget, la dette est présentée comme un problème (« un milliard d'euros par jour »), l'accès aux services publics est garanti partout et les allocations familiales commenceraient dès le premier enfant. Sur l'immigration, la citation demande la reconduite des personnes en situation irrégulière qui ne peuvent pas être accueillies. Ailleurs, dont impôts, travail, logement et Europe, les positions explicites manquent.",
+    "remark": "Le financement des 10 000 policiers et des services publics partout n'apparaît pas dans les pièces.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:01.807Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "raphael-glucksmann": {
+    "analysis": "Les positions documentées, surtout issues du programme du parti, vont vers plus de dépense publique et d'encadrement : SMIC à 1600 euros net, plafonnement des loyers et des prix de première nécessité, taxation des grands patrimoines et des gros héritages, abrogation de la réforme des retraites de 2023. Sur l'Europe, elles vont vers plus d'intégration (emprunt commun, « ambition fédérale »), avec un refus de tout nouvel accord de libre-échange. Côté institutions : proportionnelle, fin du 49.3, référendum d'initiative citoyenne, convention citoyenne. Sur l'énergie, le nucléaire est maintenu et les renouvelables développés. Sur le cannabis et l'élevage de chiens et de chats, les positions restent intermédiaires. Plusieurs thèmes (immigration, sécurité et justice, santé, école, logement) comptent peu de positions explicites.",
+    "remark": "Le désendettement est annoncé, le financement de tout le reste se lit ailleurs.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:05.117Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "bernard-cazeneuve": {
+    "analysis": "Sur la fiscalité, les positions vont vers plus de contribution des grands patrimoines et des hauts revenus, et vers une réduction des aides aux entreprises pour baisser les impôts sur la production. Sur les retraites, l'âge légal ne doit pas reculer ; la capitalisation est écartée. Nucléaire, défense, logement social et services de proximité : les positions penchent pour davantage d'investissement. Côté institutions, la proportionnelle partielle et la limitation du 49.3 sont évoquées ; une nouvelle Constitution est écartée, tout comme la sortie de l'Union européenne. Pour la plupart des thèmes, les positions sont trop peu nombreuses : immigration, école, santé et libertés n'ont pas de position explicite.",
+    "remark": "Le programme détaille la fiscalité et les institutions ; sur l'immigration ou l'école, on n'a pas trouvé de position explicite.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:15.219Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "xavier-bertrand": {
+    "analysis": "Les positions documentées dessinent des lignes nettes sur la sécurité et la justice : prisons, peines planchers, majorité pénale à 15 ans, courtes peines rétablies. Sur l'immigration, les citations vont vers moins d'immigration familiale, plus de restrictions aux aides et aucune régularisation. Sur le travail et les retraites, il défend un âge légal repoussé, la capitalisation en complément et des baisses de cotisations, et s'oppose à un impôt sur les grands patrimoines. Sur les institutions, il veut plus de pouvoirs locaux, et le 49.3 reste possible. Plusieurs positions viennent du programme de 2022 : leur reprise en 2027 n'est pas établie. Les positions manquent sur le logement, les transports, l'école, les libertés et la laïcité, l'écologie.",
+    "remark": "Beaucoup de positions viennent d'un programme de 2022 : on n'a pas trouvé de confirmation qu'elles tiennent pour 2027.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:18.507Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "olivier-faure": {
+    "analysis": "Les positions documentées viennent surtout du parti, avec quelques déclarations et une ligne de programme. Sur l'énergie, le texte cité prévoit un parc nucléaire « partiellement renouvelé » à côté des renouvelables, avec interdiction du glyphosate et fiscalité du carbone compensée pour les classes populaires. Sur le travail et la protection sociale : SMIC à 1 690 € net, âge légal à 62 ans, refus de la capitalisation, mutuelle publique (la « Grande Sécu »), rejet de la sanction renforcée des chômeurs. Sur les institutions : proportionnelle, RIC, 49.3 limité aux lois de finances et de financement de la sécurité sociale. Plusieurs thèmes (immigration, Europe et monde, démocratie, pouvoir d'achat, libertés) restent partiellement couverts, et certaines positions sont notées comme intermédiaires entre deux réponses.",
+    "remark": "Sur la taxe Zucman, la citation documente un doute sur le vote, pas le contenu du texte.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:21.600Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "emmanuel-maurel": {
+    "analysis": "Sur l'économie et le social, les positions codées vont dans le même sens : rétablir l'ISF, porter le SMIC à 1700 euros net, indexer les salaires, ne pas baisser les cotisations, maintenir la retraite à 62 ans. Sur l'Europe, il refuse un « saut fédéral » et dit que la France n'a « pas d'autre choix que de s'écarter des règles européennes » sur l'énergie, les marchés publics et les aides d'État. Sur l'immigration, les positions sont plus nuancées : régularisation des travailleurs sans-papiers, défense du droit du sol, mais pas de régularisation générale établie. Pour l'école, la santé, le climat, l'agriculture ou les institutions, plusieurs positions manquent ou reposent sur des votes ou des textes de parti.",
+    "remark": "Le financement des hausses de dépenses est qualifié de « bonne dette » ; le détail chiffré reste à chercher dans les pièces.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:25.016Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "segolene-royal": {
+    "analysis": "Sur la fiscalité, Ségolène Royal dit qu'elle rétablirait l'ISF et qu'elle retirerait la taxe carbone en 24 heures. Elle demande aussi à Bruxelles de supprimer une taxe sur le gasoil et propose de baisser la TVA. Sur les dépenses, elle cible les « 160 milliards donnés aux entreprises sans conditions » et refuse de baisser les dépenses essentielles. Elle défend la régularisation de « ceux qui travaillent », la suppression de Parcoursup et le maintien de la défense de l'Ukraine, avec un effort pour arrêter la guerre. Elle juge la restriction des signes religieux « dégradante » et l'uniforme à l'école non prioritaire. Sur la plupart des thèmes, dont la sécurité, le logement et les institutions, aucune position n'a été trouvée.",
+    "remark": "Le texte retire une taxe en 24 heures ; le financement de cette mesure ne figure pas dans les citations.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:28.031Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "dominique-de-villepin": {
+    "analysis": "Sur la fiscalité, les positions documentées vont vers un impôt unique sur le patrimoine, un renforcement de l'imposition des successions, un transfert de cotisations vers la CSG et un prix unique du carbone redistribué sous forme de dividende. Elles associent aussi une réduction des déficits « dès maintenant » à des services publics de proximité et à l'hôpital. Sur l'Europe, les euro-obligations sont défendues, le pilier européen est à consolider au sein de l'OTAN et la préférence nationale est rejetée. Sur les médias, l'audiovisuel public doit garder un financement pluriannuel et la concentration de la propriété est posée comme question. Pour le logement, l'école, la sécurité, les libertés et les institutions, les positions codées manquent ou restent trop partielles.",
+    "remark": "Le financement des services publics et celui de la baisse des déficits n'apparaissent pas dans les mêmes citations.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:30.991Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "francois-asselineau": {
+    "analysis": "Les positions documentées de François Asselineau portent surtout sur la fiscalité, les salaires et les services publics : deux nouvelles tranches d'impôt sur le revenu, hausse du SMIC brut de 24 % sur le quinquennat, gel des tarifs de l'électricité et du gaz, nationalisations, budget de l'hôpital public en hausse de 15 %. Sur l'Europe, les textes citent la sortie de l'UE et de l'euro, la sortie de l'OTAN et l'arrêt de l'aide à l'Ukraine. Sur la sécurité et l'immigration figurent des peines planchers, un référendum sur l'immigration et un retrait de certains articles de la CEDH ; en matière d'institutions, le référendum d'initiative citoyenne et une réduction du nombre de parlementaires. Presque tous les thèmes comptent encore des positions manquantes, et les sources sont surtout le programme de 2022, avec trois citations du parti.",
+    "remark": "Le programme date de 2022 et prévoyait un référendum « avant la fin de l'année 2022 » : le calendrier, lui, n'a pas été actualisé.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:34.351Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "juan-branco": {
+    "analysis": "Sur les institutions, le programme cite le référendum d'initiative citoyenne (RIC), les mandats révocables, l'abrogation du 49.3 et une assemblée constituante en partie tirée au sort. Il prévoit aussi la suppression des régions et des intercommunalités, et l'expropriation des propriétaires de médias pour en faire des SCOP. En économie, il propose de rétablir l'ISF, de supprimer les droits de succession pour 90 % des foyers, de taxer très fortement les gros héritages et de nationaliser l'électricité, l'eau, la santé, les télécoms et les autoroutes. En santé, il veut supprimer les mutuelles au profit d'une sécurité sociale unique. Il propose de construire 14 EPR 2, de sortir du marché européen de l'électricité, d'arrêter les livraisons d'armes à l'Ukraine et de supprimer les ZFE. Sur l'immigration, la laïcité, le logement et les transports, aucune position explicite n'a été trouvée.",
+    "remark": "Le programme veut à la fois supprimer et étendre la sécurité sociale, sans que le coût apparaisse dans les citations.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:37.635Z",
+    "model": "claude-sonnet-5-5"
+  },
+  "emmanuel-dubuisson": {
+    "analysis": "Sur la fiscalité et le travail, les positions documentées vont vers moins de prélèvements sur les salaires, les employeurs et l'énergie, et vers la suppression des aides publiques aux entreprises, en contrepartie d'un allègement de charges. La capitalisation pour une partie des retraites est aussi soutenue. Il se montre opposé à une taxation accrue des grands patrimoines et à une baisse du nombre d'agents publics. Il évoque une « flat taxe quasi à 15 % » sur le revenu. Sur l'Europe, sortir de l'UE est jugé « très utopique ». Sur l'Ukraine, il veut « demander des comptes » avant de continuer à envoyer de l'argent. Pour le référendum, il parle d'une initiative présidentielle « dans un premier temps », sans position nette sur la pétition citoyenne. Les autres thèmes, dont la santé, l'école, le logement, la sécurité, l'immigration et le climat, n'ont pas de position documentée suffisante.",
+    "remark": "Une même citation sert de source à deux positions distinctes. Sur la santé, l'école ou la sécurité, on n'a pas trouvé de position explicite.",
+    "basedOn": "live-202610101038",
+    "generatedAt": "2026-10-10T10:41:46.095Z",
+    "model": "claude-sonnet-5-5"
   }
 }

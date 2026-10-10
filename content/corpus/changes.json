@@ -11357,5 +11357,43 @@
     "from": "inconnue",
     "to": "[-1,0]",
     "source": "0cf8569fe12bce45"
+  },
+  {
+    "date": "2026-10-10T10:31:52.795Z",
+    "actor": "francis-lalanne",
+    "item": "ani-07",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "c8d950e3d57c4ac2"
+  },
+  {
+    "date": "2026-10-10T10:31:52.795Z",
+    "actor": "francis-lalanne",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "50a838f422f98f02"
+  },
+  {
+    "date": "2026-10-10T10:31:52.795Z",
+    "actor": "francis-lalanne",
+    "item": "dem-08",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "50a838f422f98f02"
+  },
+  {
+    "date": "2026-10-10T10:38:42.647Z",
+    "actor": "raphael-glucksmann",
+    "item": "dem-02",
+    "from": "1",
+    "to": "[1,2]"
+  },
+  {
+    "date": "2026-10-10T10:38:54.837Z",
+    "actor": "juan-branco",
+    "item": "dem-08",
+    "from": "2",
+    "to": "[1,2]"
   }
 ]
