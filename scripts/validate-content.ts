@@ -84,8 +84,16 @@ for (const name of ['demo', 'live']) {
 }
 
 // Candidatures : source obligatoire
-const cand = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/candidatures.json'), 'utf8')) as { actors: { slug: string; source?: { url?: string }; verified: boolean }[] }
-for (const a of cand.actors) if (!a.source?.url?.startsWith('https://')) errors.push(`candidature ${a.slug} sans source https`)
+const cand = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/candidatures.json'), 'utf8')) as {
+  actors: { slug: string; source?: { url?: string }; verified: boolean; links?: { kind: string; url: string }[] }[]
+}
+for (const a of cand.actors) {
+  if (!a.source?.url?.startsWith('https://')) errors.push(`candidature ${a.slug} sans source https`)
+  for (const l of a.links ?? [])
+    if (!['campagne', 'parti', 'programme'].includes(l.kind) || !l.url.startsWith('https://')) errors.push(`candidature ${a.slug} : lien officiel invalide (${l.url})`)
+}
+const medList = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/liste.json'), 'utf8')) as { medias: { slug: string; site?: string }[] }
+for (const m of medList.medias) if (m.site && !m.site.startsWith('https://')) errors.push(`média ${m.slug} : site sans https`)
 const pending = cand.actors.filter((a) => !a.verified).length
 if (pending) warnings.push(`${pending} candidature(s) en attente de vérification (non publiées)`)
 

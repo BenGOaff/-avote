@@ -13,7 +13,13 @@
         "publisher": "BFMTV",
         "url": "https://www.bfmtv.com/politique/elections/un-peu-de-clarte-ne-nuit-pas-edouard-philippe-balaie-les-critiques-sur-le-timing-de-sa-candidature-a-l-election-presidentielle_AN-202409070142.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://www.edouardphilippe.fr/"
+        }
+      ]
     },
     {
       "slug": "gabriel-attal",
@@ -26,7 +32,17 @@
         "publisher": "Le Figaro",
         "url": "https://www.lefigaro.fr/politique/presidentielle-2027-j-ai-decide-d-etre-candidat-annonce-gabriel-attal-20260522"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://attalpresident.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://attalpresident.fr/programme"
+        }
+      ]
     },
     {
       "slug": "bruno-retailleau",
@@ -39,7 +55,13 @@
         "publisher": "franceinfo",
         "url": "https://www.franceinfo.fr/politique/les-republicains/presidentielle-2027-bruno-retailleau-largement-designe-candidat-par-les-adherents-du-parti-les-republicains_7949957.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://avecretailleau.fr/"
+        }
+      ]
     },
     {
       "slug": "david-lisnard",
@@ -52,7 +74,17 @@
         "publisher": "franceinfo",
         "url": "https://www.franceinfo.fr/elections/presidentielle/le-maire-de-cannes-david-lisnard-annonce-sa-candidature-a-l-election-presidentielle-et-officialise-son-depart-des-republicains_7907063.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://www.unenouvelleenergie.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://www.unenouvelleenergie.fr/notre-programme/"
+        }
+      ]
     },
     {
       "slug": "marine-le-pen",
@@ -65,7 +97,17 @@
         "publisher": "LCP",
         "url": "https://lcp.fr/actualites/ce-soir-je-suis-candidate-a-l-election-presidentielle-annonce-marine-le-pen-438886"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://rassemblementnational.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://rassemblementnational.fr/livrets-thematiques"
+        }
+      ]
     },
     {
       "slug": "eric-zemmour",
@@ -78,7 +120,13 @@
         "publisher": "BFMTV",
         "url": "https://www.bfmtv.com/politique/elections/presidentielle/je-serai-candidat-eric-zemmour-annonce-sur-bfmtv-qu-il-se-presentera-a-l-election-presidentielle_AV-202609170947.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://www.parti-reconquete.fr/"
+        }
+      ]
     },
     {
       "slug": "nicolas-dupont-aignan",
@@ -91,7 +139,17 @@
         "publisher": "franceinfo",
         "url": "https://www.francetvinfo.fr/politique/nicolas-dupont-aignan/le-souverainiste-nicolas-dupont-aignan-se-lance-pour-la-4e-fois-dans-la-course-a-l-elysee_7118136.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://www.debout-la-france.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://www.debout-la-france.fr/notre-projet/"
+        }
+      ]
     },
     {
       "slug": "florian-philippot",
@@ -104,7 +162,17 @@
         "publisher": "franceinfo",
         "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://les-patriotes.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://les-patriotes.fr/projetpourlafrance/"
+        }
+      ]
     },
     {
       "slug": "jean-luc-melenchon",
@@ -117,7 +185,17 @@
         "publisher": "RTL",
         "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-a-un-an-du-scrutin-7900630247"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://melenchon2027.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://melenchon2027.fr/programme/decouvrir/"
+        }
+      ]
     },
     {
       "slug": "fabien-roussel",
@@ -130,7 +208,13 @@
         "publisher": "Le Figaro",
         "url": "https://www.lefigaro.fr/elections/presidentielles/candidats/presidentielle-2027-adoube-par-ses-militants-le-communiste-fabien-roussel-officialise-sa-candidature-en-solitaire-20260906"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://www.pcf.fr/"
+        }
+      ]
     },
     {
       "slug": "marine-tondelier",
@@ -143,7 +227,17 @@
         "publisher": "franceinfo",
         "url": "https://www.franceinfo.fr/elections/presidentielle/la-patronne-des-ecologistes-marine-tondelier-se-declare-candidate-a-l-election-presidentielle-de-2027_7568824.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://lesecologistes.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027"
+        }
+      ]
     },
     {
       "slug": "francois-ruffin",
@@ -156,7 +250,17 @@
         "publisher": "LCP",
         "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-n-y-a-pas-de-primaire-moi-j-y-vais-annonce-francois-ruffin"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://nouspresident.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://nouspresident.fr/cahiers-de-campagne/"
+        }
+      ]
     },
     {
       "slug": "delphine-batho",
@@ -169,7 +273,13 @@
         "publisher": "L'Obs",
         "url": "https://www.nouvelobs.com/politique/20251125.OBS110076/delphine-batho-je-suis-candidate-a-l-election-presidentielle-pour-reconstruire-une-ecologie-capable-de-gouverner.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://www.generationecologie.fr/"
+        }
+      ]
     },
     {
       "slug": "karim-bouamrane",
@@ -182,7 +292,13 @@
         "publisher": "Le Figaro",
         "url": "https://www.lefigaro.fr/politique/presidentielle-2027-je-suis-candidat-annonce-karim-bouamrane-ps-20260609"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://www.karimbouamrane2027.org/"
+        }
+      ]
     },
     {
       "slug": "nathalie-arthaud",
@@ -195,7 +311,13 @@
         "publisher": "RTL",
         "url": "https://www.rtl.fr/actu/politique/presidentielle-2027-qui-est-vraiment-nathalie-arthaud-la-porte-parole-de-lutte-ouvriere-7900575536"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://www.lutte-ouvriere.org/"
+        }
+      ]
     },
     {
       "slug": "anasse-kazib",
@@ -208,7 +330,17 @@
         "publisher": "franceinfo",
         "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://anasse2027.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://anasse2027.fr/programme"
+        }
+      ]
     },
     {
       "slug": "selma-labib",
@@ -221,7 +353,13 @@
         "publisher": "BFMTV",
         "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://npa-revolutionnaires.org/"
+        }
+      ]
     },
     {
       "slug": "olivier-becht",
@@ -247,7 +385,17 @@
         "publisher": "TF1 Info",
         "url": "https://www.tf1info.fr/politique/oui-je-suis-candidat-a-l-election-presidentielle-2027-confirme-raphael-glucksmann-place-publique-sur-tf1-2459966.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "parti",
+          "url": "https://place-publique.eu/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://place-publique.eu/pages/6mRSwq5tuSrSi68Cw1IADX/l-acte-i"
+        }
+      ]
     },
     {
       "slug": "olivier-faure",
@@ -260,7 +408,13 @@
         "publisher": "TF1 Info",
         "url": "https://www.tf1info.fr/politique/oui-je-suis-candidat-a-la-presidence-de-la-republique-confirme-olivier-faure-sur-tf1-2461307.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "programme",
+          "url": "https://projet-socialiste.fr/projet/"
+        }
+      ]
     },
     {
       "slug": "segolene-royal",
@@ -273,7 +427,13 @@
         "publisher": "franceinfo",
         "url": "https://www.franceinfo.fr/elections/presidentielle/segolene-royal-annonce-qu-elle-participera-a-la-primaire-socialiste-en-vue-de-l-election-presidentielle_8102696.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "programme",
+          "url": "https://choisir2027.fr/wp-content/uploads/2026/09/Profession_de_foi_Segolene_Royal_2027.pdf"
+        }
+      ]
     },
     {
       "slug": "emmanuel-maurel",
@@ -286,7 +446,17 @@
         "publisher": "franceinfo",
         "url": "https://www.franceinfo.fr/politique/ps/primaire-socialiste/le-depute-emmanuel-maurel-annonce-sa-candidature-a-la-primaire-socialiste-pour-l-election-presidentielle_8176532.html"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://emmanuel-maurel.fr/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://emmanuel-maurel.fr/programme/"
+        }
+      ]
     },
     {
       "slug": "xavier-bertrand",
@@ -298,7 +468,13 @@
         "publisher": "LCP",
         "url": "https://lcp.fr/actualites/2027-figure-de-la-droite-xavier-bertrand-confirme-qu-il-sera-candidat-a-l-election"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://www.nousfrance.fr/"
+        }
+      ]
     },
     {
       "slug": "bernard-cazeneuve",
@@ -310,7 +486,13 @@
         "publisher": "LCP",
         "url": "https://lcp.fr/actualites/presidentielle-2027-pret-a-se-lancer-dans-la-course-a-l-elysee-bernard-cazeneuve-decline"
       },
-      "verified": true
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://bc2027.fr/"
+        }
+      ]
     }
   ]
 }

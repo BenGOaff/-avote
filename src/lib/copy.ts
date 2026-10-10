@@ -173,6 +173,7 @@ export const UI_COPY = {
     alsoOwns: 'Le même propriétaire a aussi',
     extract: 'L’extrait',
     source: 'Source',
+    visit: 'Aller sur le site',
     howTo: 'Comment on établit une fiche',
     free: {
       teaser: (n: number) => `${n} médias n’ont ni milliardaire, ni grand groupe, ni l’État au-dessus d’eux.`,
@@ -186,6 +187,10 @@ export const UI_COPY = {
       empty: 'Les premières fiches arrivent.',
     },
     follow: 'Être prévenu des rachats',
+  },
+  candidate: {
+    linksLead: 'À la source :',
+    linkKind: { campagne: 'site de campagne', parti: 'site du parti', programme: 'programme' } as Record<string, string>,
   },
   urne: {
     kicker: 'L’urne de Ça vote ?',

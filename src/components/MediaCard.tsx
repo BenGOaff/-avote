@@ -11,6 +11,14 @@ export function MediaCard({ m }: { m: MediaEntry }) {
   return (
     <article id={m.slug} className="card media-card">
       <h4 className="media-card__name">{m.name}</h4>
+      {m.site && (
+        <p className="small" style={{ margin: '0 0 var(--s2)' }}>
+          <a href={m.site} rel="noopener noreferrer" target="_blank">
+            {t.visit}
+            <span className="visually-hidden"> {m.name}</span>
+          </a>
+        </p>
+      )}
       <p className="media-card__ctl">
         <span className="media-card__k">{t.controller}</span> {o.controller}
       </p>

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { NuanceTag, NuanceSourceLink } from '@/components/Nuance'
 import { notFound } from 'next/navigation'
 import { getActor, getAnnouncedActors, STATUS_LABEL } from '@/lib/actors'
+import { UI_COPY } from '@/lib/copy'
 import { itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
 import { BASIS_LABEL, positionLabel } from '@/lib/answers'
 import { formatDate } from '@/components/Editorial'
@@ -78,6 +79,19 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
             Source : {a.source.publisher}
           </a>
         </p>
+        {a.links && a.links.length > 0 && (
+          <p>
+            {UI_COPY.candidate.linksLead}{' '}
+            {a.links.map((l, i) => (
+              <span key={l.url}>
+                {i > 0 && ' · '}
+                <a href={l.url} rel="noopener noreferrer" target="_blank">
+                  {UI_COPY.candidate.linkKind[l.kind] ?? l.kind}
+                </a>
+              </span>
+            ))}
+          </p>
+        )}
         <p className="muted">
           {known > 0 ? `${known} positions connues sur ${questionnaire.items.length}.` : 'Positions en cours de collecte.'}{' '}
           <Link href="/methodologie#codage">Comment c’est codé</Link> ·{' '}
