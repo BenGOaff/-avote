@@ -575,6 +575,25 @@
         }
       ],
       "addedBy": "recherche manuelle"
+    },
+    {
+      "slug": "emmanuel-dubuisson",
+      "name": "Emmanuel Dubuisson",
+      "status": "declare",
+      "since": "2026-06-18",
+      "source": {
+        "title": "Qui est cet inconnu qui se dit « milliardaire » et veut se présenter à l'élection présidentielle ? (et droit de réponse d'Emmanuel Dubuisson)",
+        "publisher": "Le Dauphiné libéré",
+        "url": "https://www.ledauphine.com/elections/2026/08/18/qui-est-cet-inconnu-qui-se-dit-milliardaire-et-veut-se-presenter-a-l-election-presidentielle"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://dubuisson2027.fr/"
+        }
+      ],
+      "addedBy": "recherche manuelle"
     }
   ]
 }
