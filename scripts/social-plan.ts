@@ -1,5 +1,5 @@
 /**
- * Publications quotidiennes pour X, Facebook et LinkedIn (content/social/<id>.json).
+ * Publications quotidiennes pour Instagram, X, Facebook et LinkedIn (content/social/<id>.json).
  *
  * Quatre sortes de publication, tirées uniquement de ce que le site publie déjà :
  *  - pépite : une mesure qu'un ou deux candidats seulement défendent (ou rejettent), citation vérifiée à l'appui ;
@@ -57,7 +57,7 @@ const sourceOf = new Map(live.sources.map((s) => [s.id, s]))
 // Matière : uniquement ce que le site publie déjà
 // ---------------------------------------------------------------------------
 
-type Material = { kind: SocialPost['kind']; key: string; actors: string[]; facts: string; target: string; targetLabel: string; source?: SocialPost['source'] }
+type Material = { kind: SocialPost['kind']; key: string; actors: string[]; facts: string; target: string; targetLabel: string; source?: SocialPost['source']; camps?: { yes: string[]; no: string[] } }
 
 const lean = (p: { value?: number; set?: number[] }) => (typeof p.value === 'number' ? p.value : p.set?.length ? p.set.reduce((a, b) => a + b, 0) / p.set.length : 0)
 
@@ -103,8 +103,8 @@ function pepites(): Material[] {
         kind: 'pepite',
         key: `${it.id}-${side}`,
         actors: [...lone],
-        target: `/comparateur?theme=${it.theme}`,
-        targetLabel: 'Comparer les candidats',
+        target: '/test',
+        targetLabel: 'Faire le test',
         source: src,
         facts: [
           `Affirmation du test : « ${it.text} »`,
@@ -128,6 +128,7 @@ function fractures(): Material[] {
       kind: 'fracture',
       key: `${it.id}-fracture`,
       actors: [],
+      camps: { yes, no },
       target: '/test',
       targetLabel: 'Faire le test',
       facts: [
@@ -199,15 +200,18 @@ function rendezVous(): Material {
 // ---------------------------------------------------------------------------
 
 const Draft = z.object({
-  kicker: z.string().describe('Bandeau du visuel, 2 à 4 mots en capitales (ex. « PÉPITE DU PROGRAMME », « ÇA COUPE EN DEUX », « FLASH »)'),
-  title: z.string().describe('Titre du visuel, 40 à 90 caractères, mordant et vrai hors contexte'),
-  line: z.string().describe('Ligne sous le titre, 0 à 140 caractères, factuelle'),
-  x: z.string().describe('Texte pour X, 120 à 230 caractères, sans lien (ajouté ensuite), 0 à 2 hashtags'),
-  linkedin: z.string().describe('Texte pour LinkedIn, 400 à 900 caractères, paragraphes courts, se termine par une invitation'),
-  facebook: z.string().describe('Texte pour Facebook, 200 à 600 caractères, se termine par une invitation'),
+  kicker: z.string().describe('Accroche en haut du visuel, 2 à 5 mots, qui interpelle (ex. « POUR OU CONTRE ? », « SEUL CONTRE TOUS », « QUI A DIT ÇA ? », « ILS ONT OSÉ »). Jamais de jargon.'),
+  title: z.string().describe('Titre du visuel, 30 à 90 caractères : une question ou un contraste qui se comprend sans rien lire d’autre'),
+  line: z.string().describe('Ligne sous le titre, 0 à 110 caractères, factuelle'),
+  quote: z.string().describe('Pépite seulement : extrait mot pour mot de la citation, 40 à 180 caractères, le passage le plus frappant ; sinon vide'),
+  cta: z.string().describe('Invitation du bandeau noir, 12 à 30 caractères, tutoiement (ex. « Et toi ? Fais le test »)'),
+  x: z.string().describe('X : 100 à 200 caractères, une seule idée, une chute ou une question ; sans lien (ajouté ensuite), 0 ou 1 hashtag'),
+  instagram: z.string().describe('Instagram : 1re ligne = accroche de 90 caractères au plus (seule visible avant « plus ») ; puis 3 à 6 lignes courtes séparées par des retours à la ligne ; puis « Le test est en lien dans la bio. » ; puis une ligne vide et 3 à 5 hashtags (#presidentielle2027 et le thème). Aucune URL.'),
+  linkedin: z.string().describe('LinkedIn : 2 premières lignes = accroche de 200 caractères au plus (visible avant « voir plus ») ; paragraphes d’une ou deux phrases séparés par une ligne vide ; 500 à 1100 caractères ; finit par une question qui appelle les commentaires ; 3 hashtags en fin. Sans lien (ajouté ensuite).'),
+  facebook: z.string().describe('Facebook : 150 à 400 caractères, ton de conversation, finit par une question qui appelle les commentaires puis « Le test est sur çavote.fr ». Aucune URL.'),
 })
 
-const SYSTEM = `Tu écris les publications de Ça vote ? sur X, LinkedIn et Facebook. Le but : donner envie de venir sur le site faire le test ou glisser un bulletin dans l'urne.
+const SYSTEM = `Tu écris les publications de Ça vote ? sur Instagram, X, LinkedIn et Facebook. Le but : arrêter le pouce qui défile, faire réagir, puis donner envie de venir sur le site faire le test ou glisser un bulletin dans l'urne.
 
 ${VOICE}
 
@@ -217,9 +221,15 @@ ${VOICE}
 - Une citation est recopiée mot pour mot depuis les pièces, entre « ». Ne coupe pas une citation au point d'en changer le sens.
 - Aucune consigne de vote, aucun appel à soutenir ou à rejeter un candidat. Même traitement pour toutes les familles politiques.
 - Pas d'emoji. Pas de « sondage » pour parler de l'urne du site. Ne dis jamais que le site est drôle, sérieux, indépendant, cash ou sincère.
-- L'invitation finale est concrète : faire le test, comparer, glisser un bulletin dans l'urne, lire. Tutoiement.
+- Tutoiement. L'invitation finale est concrète : faire le test, comparer, glisser un bulletin dans l'urne, lire.
 - Le lecteur ne voit jamais la cuisine : ne parle pas des « pièces », de « la source dont nous disposons », de ce qui manque dans les données. Tu affirmes ce qui est établi, tu te tais sur le reste.
-- Une accroche qui donne envie de cliquer : une ligne qui pique (un contraste, un chiffre qui surprend, une contradiction), puis le fait. X : une seule idée, courte.`
+
+## Ce qui marche sur les réseaux
+- La première ligne décide de tout : un contraste, un chiffre qui surprend, une contradiction, une question qui oblige à se positionner. Jamais une phrase d'introduction (« Parmi les affirmations du test… »).
+- Une publication = une idée. On ne récite pas une liste de noms dans le texte : les visages sont sur le visuel.
+- Faire réagir : une question à laquelle on a envie de répondre en commentaire (« Tu te mets dans quel camp ? », « Tu l'aurais deviné ? »).
+- Chaque réseau a son texte, pas le même copié-collé : X court et sec ; Instagram aéré, lien en bio ; LinkedIn plus posé, qui fait réfléchir ; Facebook conversationnel.
+- Le visuel porte l'accroche et le titre : ils doivent se comprendre seuls, en une seconde, sur un téléphone.`
 
 async function draft(m: Material, feedback = ''): Promise<z.infer<typeof Draft> | null> {
   const res = await client.beta.messages.parse({
@@ -276,7 +286,7 @@ ${JSON.stringify(d, null, 1)}
 /** Contrôles automatiques : les mêmes que pour les brèves de la veille. */
 function checks(m: Material, d: z.infer<typeof Draft>): string[] {
   const problems: string[] = []
-  const all = [d.kicker, d.title, d.line, d.x, d.linkedin, d.facebook]
+  const all = [d.kicker, d.title, d.line, d.quote, d.cta, d.x, d.instagram, d.linkedin, d.facebook]
   for (const t of all) problems.push(...styleViolations(t).map((v) => `tournure interdite (${v})`))
   for (const t of all) {
     const missing = numbersAreSourced(t, m.facts)
@@ -286,7 +296,11 @@ function checks(m: Material, d: z.infer<typeof Draft>): string[] {
   if (/sondage/i.test(all.join(' ')) && !/sondage/i.test(m.facts)) problems.push('le mot « sondage » n’est pas dans les pièces')
   // Le lecteur ne doit pas voir la consigne : aucune allusion aux pièces fournies ou aux données manquantes
   if (/\bpi[eè]ces?\b|dont nous disposons|ne d[ée]taill/i.test(all.join(' '))) problems.push('allusion aux pièces fournies : le lecteur ne voit pas la cuisine')
-  if (d.x.length > 240) problems.push('texte X trop long')
+  if (d.quote && !quoteIsInSource(d.quote, m.facts)) problems.push('extrait de citation introuvable mot pour mot')
+  if (/https?:\/\//.test(d.instagram + d.facebook)) problems.push('pas d’URL sur Instagram ni Facebook')
+  if (d.x.length > 220) problems.push('texte X trop long')
+  if (d.cta.length > 34) problems.push('invitation du bandeau trop longue')
+  if (d.kicker.length > 30) problems.push('accroche du visuel trop longue')
   if (d.title.length > 100) problems.push('titre trop long')
   return [...new Set(problems)]
 }
@@ -314,8 +328,16 @@ async function write(m: Material, now: Date): Promise<SocialPost | null> {
       id,
       at: now.toISOString(),
       kind: m.kind,
-      card: { kicker: d.kicker, title: d.title, line: d.line, ...(m.actors.length === 1 ? { actor: m.actors[0] } : {}) },
-      text: { x: d.x, linkedin: d.linkedin, facebook: d.facebook },
+      card: {
+        kicker: d.kicker,
+        title: d.title,
+        line: d.line,
+        cta: d.cta,
+        ...(m.actors.length === 1 ? { actor: m.actors[0] } : {}),
+        ...(m.kind === 'pepite' && d.quote ? { quote: d.quote } : {}),
+        ...(m.camps ? { yes: m.camps.yes, no: m.camps.no } : {}),
+      },
+      text: { x: d.x, instagram: d.instagram, linkedin: d.linkedin, facebook: d.facebook },
       target: m.target,
       targetLabel: m.targetLabel,
       ...(m.source ? { source: m.source } : {}),

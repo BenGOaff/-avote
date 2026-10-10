@@ -52,12 +52,14 @@ const securityHeaders = [
   { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
 ]
 
-// Surfaces personnelles : jamais de référent transmis, jamais indexées, jamais en cache partagé.
-const personalHeaders = [
+// Surfaces où l'on répond ou compose (test, studio) : jamais de référent transmis, jamais en cache partagé.
+// Elles restent indexables : la page elle-même est publique, les réponses ne quittent pas le navigateur.
+const privateHeaders = [
   { key: 'Referrer-Policy', value: 'no-referrer' },
-  { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
   { key: 'Cache-Control', value: 'private, no-store' },
 ]
+// Surfaces personnelles (résultats, profil) : en plus, jamais indexées.
+const personalHeaders = [...privateHeaders, { key: 'X-Robots-Tag', value: 'noindex, nofollow' }]
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -67,7 +69,8 @@ const nextConfig = {
   async headers() {
     return [
       { source: '/:path*', headers: securityHeaders },
-      ...['/test', '/resultats', '/mon-profil', '/studio'].map((source) => ({ source, headers: personalHeaders })),
+      ...['/test', '/studio'].map((source) => ({ source, headers: privateHeaders })),
+      ...['/resultats', '/mon-profil'].map((source) => ({ source, headers: personalHeaders })),
       { source: '/sw.js', headers: [{ key: 'Cache-Control', value: 'no-cache' }, { key: 'Service-Worker-Allowed', value: '/' }] },
     ]
   },

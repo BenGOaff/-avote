@@ -12,7 +12,8 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 export function socialFeed(network: 'x' | 'facebook' | 'linkedin'): Response {
   const items = getSocialPosts().slice(0, 30)
   const link = (p: SocialPost) => absolute(`/social/${p.id}?utm_source=${network}&utm_medium=social&utm_campaign=${p.kind}`)
-  const body = (p: SocialPost) => `${p.text[network]}\n\n${link(p)}`
+  // Facebook pénalise les liens sortants : le texte renvoie à çavote.fr en clair, sans URL
+  const body = (p: SocialPost) => (network === 'facebook' ? p.text.facebook : `${p.text[network]}\n\n${link(p)}`)
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
@@ -22,7 +23,7 @@ export function socialFeed(network: 'x' | 'facebook' | 'linkedin'): Response {
 <language>fr-FR</language>
 ${items
   .map((p) => {
-    const img = absolute(`/social/${p.id}/opengraph-image`)
+    const img = absolute(`/social/${p.id}/carte.png`)
     return `<item><title>${esc(p.card.title)}</title><link>${esc(link(p))}</link><guid isPermaLink="false">${p.id}-${network}</guid><pubDate>${new Date(p.at).toUTCString()}</pubDate><description>${esc(body(p))}</description><enclosure url="${esc(img)}" type="image/png" length="0"/><media:content url="${esc(img)}" medium="image" type="image/png"/></item>`
   })
   .join('\n')}

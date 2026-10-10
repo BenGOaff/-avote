@@ -4,7 +4,7 @@
  * et envoie. Choix assumé de la rédaction : le compte peut être restreint par X.
  *
  * Seules les publications du jour (24 h) sont reprises, chacune une fois (content/social/_x.json).
- * Le visuel doit être en ligne : on attend que /social/<id>/opengraph-image réponde, 10 minutes au plus.
+ * Le visuel doit être en ligne : on attend que /social/<id>/carte.png réponde, 10 minutes au plus.
  * En cas d'échec, une capture d'écran est laissée dans .x-debug/ pour comprendre ce qui a coincé.
  *
  * Usage : X_AUTH_TOKEN=… npx tsx scripts/social-x.ts [--dry]
@@ -36,7 +36,7 @@ const link = (p: SocialPost) => `${SITE}/social/${p.id}?utm_source=x&utm_medium=
 const text = (p: SocialPost) => `${p.text.x}\n\n${link(p)}`
 
 async function image(p: SocialPost): Promise<Buffer> {
-  const url = `${SITE}/social/${p.id}/opengraph-image`
+  const url = `${SITE}/social/${p.id}/carte.png`
   for (let i = 0; i < 20; i++) {
     const res = await fetch(url).catch(() => null)
     if (res?.ok) return Buffer.from(await res.arrayBuffer())
@@ -90,7 +90,7 @@ async function main() {
         failed++
         mkdirSync(DEBUG, { recursive: true })
         await page.screenshot({ path: path.join(DEBUG, `${p.id}.png`) }).catch(() => {})
-        console.error(`X : échec ${p.id} : ${(e as Error).message}`)
+        console.error(`X : échec ${p.id} sur ${page.url()} : ${(e as Error).message}`)
         if (/session X expirée/.test((e as Error).message)) break
       }
     }

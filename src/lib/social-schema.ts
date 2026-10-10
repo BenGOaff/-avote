@@ -1,6 +1,7 @@
 /**
  * Publications pour les réseaux sociaux (content/social/*.json), écrites par scripts/social-plan.ts.
- * Chaque publication a sa page (/social/<id>) et son visuel (/social/<id>/opengraph-image), aux couleurs du site.
+ * Chaque publication a sa page (/social/<id>), son visuel portrait (/social/<id>/carte.png, 1080 × 1350) pour les fils
+ * et son aperçu de lien (/social/<id>/opengraph-image), aux couleurs du site.
  * Partagé entre le site et les scripts : aucune dépendance serveur ici.
  */
 import { z } from 'zod'
@@ -18,11 +19,20 @@ export const SocialPostSchema = z.object({
     line: z.string().max(180).default(''),
     /** Portrait affiché sur le visuel (un seul candidat concerné) */
     actor: z.string().optional(),
+    /** Extrait mot pour mot de sa citation, en grand sur le visuel */
+    quote: z.string().max(260).optional(),
+    /** Les deux camps, visages à l'appui (fracture) */
+    yes: z.array(z.string()).optional(),
+    no: z.array(z.string()).optional(),
+    /** Invitation du bandeau noir (sinon targetLabel) */
+    cta: z.string().max(40).optional(),
   }),
   text: z.object({
     x: z.string().max(250),
     linkedin: z.string().max(1500),
     facebook: z.string().max(900),
+    /** Légende Instagram (lien en bio, hashtags en fin) ; à défaut, le texte Facebook */
+    instagram: z.string().max(2200).optional(),
   }),
   /** Page du site vers laquelle la publication invite (test, urne, article…) */
   target: z.string().startsWith('/'),

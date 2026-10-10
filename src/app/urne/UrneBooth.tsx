@@ -5,6 +5,8 @@ import { UI_COPY } from '@/lib/copy'
 import { BLANK, leadingZeroBits } from '@/lib/urne-shared'
 import { BoothScene } from './BoothScene'
 import { DonateCard } from '@/components/Donate'
+import { SharePanel } from '@/components/SharePanel'
+import { absolute } from '@/lib/site'
 
 const t = { ...UI_COPY.urne, afterVote: UI_COPY.donate.afterVote }
 const VOTED_KEY = 'ca-vote:urne'
@@ -30,7 +32,6 @@ export function UrneBooth({ choices }: { choices: Choice[] }) {
   const [picked, setPicked] = useState<Choice | null>(null)
   const [message, setMessage] = useState('')
   const [totals, setTotals] = useState<Totals>(null)
-  const [copied, setCopied] = useState(false)
   // Compteur de la scène : figé au moment du vote, jamais affiché pendant la période de réserve
   const [sceneCount, setSceneCount] = useState<number | null>(null)
   const work = useRef<Promise<{ challenge: string; nonce: string } | null> | null>(null)
@@ -111,19 +112,6 @@ export function UrneBooth({ choices }: { choices: Choice[] }) {
       setMessage(t.down)
     }
     setPhase('error')
-  }
-
-  async function share() {
-    const url = `${location.origin}/urne`
-    try {
-      if (navigator.share) await navigator.share({ title: 'L’urne de Ça vote ?', text: t.shareText, url })
-      else {
-        await navigator.clipboard.writeText(url)
-        setCopied(true)
-      }
-    } catch {
-      /* partage annulé */
-    }
   }
 
   const max = Math.max(1, ...(totals?.rows.map((r) => r.votes) ?? [1]))
@@ -237,9 +225,7 @@ export function UrneBooth({ choices }: { choices: Choice[] }) {
           </>
         )}
         <p className="small muted">{t.notPoll}</p>
-        <button type="button" className="btn" onClick={share}>
-          {copied ? t.copied : t.share}
-        </button>
+        <SharePanel url={absolute('/urne')} title="L’urne de Ça vote ?" text={t.shareText} />
       </section>
     </div>
   )
