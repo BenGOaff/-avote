@@ -7,6 +7,7 @@ import { BASIS_LABEL } from '@/lib/answers'
 import { UI_COPY } from '@/lib/copy'
 import { absolute } from '@/lib/site'
 import { getSujet, getSujets, SIDES, summaryOf, type SujetItem } from '@/lib/sujets'
+import { OpenFromHash } from './OpenFromHash'
 
 const t = UI_COPY.programmes
 
@@ -78,39 +79,43 @@ export default async function SujetPage({ params }: { params: Promise<{ sujet: s
         {t.stats(s.positions, s.candidates)}
       </p>
 
-      <section className="card card--featured sujet__essentials section" aria-labelledby="essentiel">
-        <h2 id="essentiel">{t.essentials}</h2>
-        <ul className="sujet__summary" role="list">
-          {s.items.map((r) => (
-            <li key={r.item.id}>
-              <a href={`#${r.item.id}`} className="sujet__summary-link">
-                {r.item.text}
-              </a>
-              <SplitBar r={r} />
-            </li>
-          ))}
-        </ul>
-        <p className="small muted sujet__legend" aria-hidden="true">
-          <span className="sujet__key sujet__key--pour" /> {t.sides.pour} <span className="sujet__key sujet__key--entre" /> {t.sides.entre}{' '}
-          <span className="sujet__key sujet__key--contre" /> {t.sides.contre}
-        </p>
-      </section>
+      <nav className="sujet__tabs" aria-label={t.others}>
+        {getSujets().map((o) => (
+          <Link key={o.slug} href={`/programmes/${o.slug}`} className={`cmp__theme sujet__tab${o.slug === s.slug ? ' is-on' : ''}`} aria-current={o.slug === s.slug ? 'page' : undefined}>
+            {o.theme.label}
+          </Link>
+        ))}
+      </nav>
 
-      <ol className="cmp__items section" role="list">
+      <p className="small muted sujet__hint">
+        <span aria-hidden="true">
+          <span className="sujet__key sujet__key--pour" /> {t.sides.pour} <span className="sujet__key sujet__key--entre" /> {t.sides.entre}{' '}
+          <span className="sujet__key sujet__key--contre" /> {t.sides.contre} ·{' '}
+        </span>
+        {t.hint}
+      </p>
+
+      <ol className="sujet__list" role="list">
         {s.items.map((r) => (
-          <li key={r.item.id} id={r.item.id} className="cmp__item sujet__item">
-            <h2 className="cmp__q">{r.item.concept}</h2>
-            <p className="sujet__proposal">
-              <span className="muted small">{t.proposal} : </span>« {r.item.text} »
-            </p>
-            <p className="small muted measure">{r.item.explanation}</p>
-            <Sides r={r} />
-            <p className="small muted cmp__unknown">
-              {t.unknown(r.unknown)} {t.strongNote}
-            </p>
+          <li key={r.item.id}>
+            <details id={r.item.id} className="sujet__row">
+              <summary className="sujet__head">
+                <h2 className="sujet__concept">{r.item.concept}</h2>
+                <span className="sujet__text">{r.item.text}</span>
+                <SplitBar r={r} />
+              </summary>
+              <div className="sujet__body">
+                <p className="small muted measure">{r.item.explanation}</p>
+                <Sides r={r} />
+                <p className="small muted cmp__unknown">
+                  {t.unknown(r.unknown)} {t.strongNote}
+                </p>
+              </div>
+            </details>
           </li>
         ))}
       </ol>
+      <OpenFromHash />
 
       <section className="card section sujet__cta">
         <h2>{t.testTitle}</h2>
@@ -128,25 +133,11 @@ export default async function SujetPage({ params }: { params: Promise<{ sujet: s
       <section className="section sujet__share">
         <figure className="sujet__card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={card} width={1080} height={1350} loading="lazy" alt={`${t.sujetTitle(s.theme.label)} : qui est pour, qui est contre, question par question.`} />
+          <img src={card} width={1080} height={1350} loading="lazy" alt={`${s.theme.label} : qui est pour, qui est contre parmi les candidats à la présidentielle 2027.`} />
         </figure>
         <ShareButtons title={t.sujetMetaTitle(s.theme.label)} url={url} text={`${s.theme.label} : qui est pour, qui est contre parmi les candidats 2027, avec les sources.`} imageSrc={card} />
       </section>
 
-      <nav className="section" aria-labelledby="autres">
-        <h2 id="autres">{t.others}</h2>
-        <ul className="row sujet__others" role="list">
-          {getSujets()
-            .filter((o) => o.slug !== s.slug)
-            .map((o) => (
-              <li key={o.slug}>
-                <Link href={`/programmes/${o.slug}`} className="cmp__theme sujet__other">
-                  {o.theme.label}
-                </Link>
-              </li>
-            ))}
-        </ul>
-      </nav>
 
       <p className="small muted section">
         {t.empty} <Link href="/methodologie">Méthode</Link> · <Link href="/contact?sujet=correction">{t.error}</Link>
