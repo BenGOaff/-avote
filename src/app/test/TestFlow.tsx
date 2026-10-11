@@ -67,6 +67,9 @@ export function TestFlow() {
     loadState().then((s) => {
       setState(s)
       setLoaded(true)
+      // Lien direct vers la version courte (/test?rapide=1), sauf si un test est déjà en cours
+      const started = s && Object.keys(s.answers).length > 0
+      if (!started && new URLSearchParams(window.location.search).has('rapide')) setStep({ kind: 'storage', quick: true })
     })
   }, [])
 

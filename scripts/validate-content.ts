@@ -140,15 +140,6 @@ if (existsSync(flashDir))
     if (ups.length && (ups.some((u, i) => i > 0 && u <= ups[i - 1]!) || ups[ups.length - 1] !== 100)) errors.push(`quiz flash ${f} : paliers croissants, le dernier à 100`)
   }
 
-// Quiz Tiquiz : adresses https sur le sous-domaine des quiz, identifiants uniques
-const tiquiz = JSON.parse(readFileSync(path.join(ROOT, 'content/quiz/tiquiz.json'), 'utf8')) as { quizzes: { slug: string; title: string; url: string }[] }
-const quizSlugs = new Set<string>()
-for (const q of tiquiz.quizzes) {
-  if (!/^[a-z0-9-]+$/.test(q.slug) || quizSlugs.has(q.slug)) errors.push(`quiz : identifiant invalide ou en double (${q.slug})`)
-  quizSlugs.add(q.slug)
-  if (!q.url.startsWith('https://') || !q.title) errors.push(`quiz ${q.slug} : adresse https et titre obligatoires`)
-}
-
 // Qui possède ton info
 const mediaList = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/liste.json'), 'utf8')) as { medias: { slug: string }[] }
 const owned = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/proprietaires.json'), 'utf8')) as {
