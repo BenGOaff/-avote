@@ -45,7 +45,7 @@ export default function ComparateurPage() {
       />
       <Comparateur data={data} />
       <p className="small muted section">
-        Une case vide veut dire qu’on n’a pas trouvé de position explicite, pas que le candidat n’en a pas. <Link href="/methodologie">Comment les positions sont codées</Link>{' '}
+        Une case vide veut dire qu’on n’a pas trouvé de position explicite, pas que le candidat n’en a pas. <Link href="/programmes">Les programmes sujet par sujet</Link> · <Link href="/methodologie">Comment les positions sont codées</Link>{' '}
         · <Link href="/contact?sujet=correction">Signaler une erreur</Link>
       </p>
     </div>

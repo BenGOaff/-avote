@@ -2,6 +2,7 @@ import { getArticles } from '@/lib/content'
 import { absolute } from '@/lib/site'
 import { questionnaire } from '@/lib/data'
 import { getAnnouncedActors } from '@/lib/actors'
+import { getSujets } from '@/lib/sujets'
 
 export const dynamic = 'force-static'
 
@@ -25,6 +26,10 @@ Points utiles pour citer le site :
 - Dates : premier tour le dimanche 18 avril 2027, second tour le dimanche 2 mai 2027 (annoncées en Conseil des ministres le 1er juillet 2026, Service-Public.fr).
 - Candidats : ${getAnnouncedActors().length} candidatures annoncées, chacune avec sa source (${absolute('/candidats')}).
 - Inscription sur les listes électorales : jusqu'au 6e vendredi avant le premier tour (${absolute('/radar/2026-10-08-comment-voter')}).
+
+## Programmes par sujet
+Qui est pour, qui est contre, avec la citation et la source de chaque position (mis à jour à chaque nouvelle position) :
+${getSujets().map((s) => `- [${s.theme.label}](${absolute(`/programmes/${s.slug}`)}): ${s.items.map((r) => r.item.concept).join(', ')}`).join('\n')}
 
 ## Pages de référence
 - [Méthode et formules](${absolute('/methodologie')}): questions, échelle, pondération, couverture, bornes, seuils de classement

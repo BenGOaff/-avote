@@ -4,7 +4,7 @@
  * Rien n'est envoyé par le site : c'est la personne qui publie, avec ce qu'elle a choisi de montrer.
  */
 
-export type ShareTarget = 'instagram' | 'facebook' | 'x' | 'linkedin' | 'whatsapp' | 'threads' | 'reddit' | 'bluesky' | 'telegram' | 'sms' | 'mail'
+export type ShareTarget = 'instagram' | 'facebook' | 'x' | 'linkedin' | 'whatsapp' | 'threads' | 'reddit' | 'bluesky' | 'telegram' | 'sms' | 'mail' | 'pinterest'
 
 /** Nom affiché et format d'image conseillé pour chaque réseau. */
 export const TARGETS: Record<ShareTarget, { label: string; image: 'portrait' | 'post' | 'story' | 'paysage' }> = {
@@ -19,6 +19,7 @@ export const TARGETS: Record<ShareTarget, { label: string; image: 'portrait' | '
   telegram: { label: 'Telegram', image: 'post' },
   sms: { label: 'SMS', image: 'post' },
   mail: { label: 'E-mail', image: 'paysage' },
+  pinterest: { label: 'Pinterest', image: 'portrait' },
 }
 
 /** Lien de la page, marqué pour savoir d'où viennent les visites (aucune donnée personnelle). */
@@ -32,7 +33,7 @@ export function trackedUrl(url: string, target: ShareTarget | 'copie' | 'autre')
 const enc = encodeURIComponent
 
 /** Lien de publication préremplie ; null quand le réseau n'en propose pas (Instagram). */
-export function intentUrl(target: ShareTarget, { url, text, title }: { url: string; text: string; title: string }): string | null {
+export function intentUrl(target: ShareTarget, { url, text, title, media }: { url: string; text: string; title: string; media?: string }): string | null {
   const both = `${text}\n\n${url}`
   switch (target) {
     case 'facebook':
@@ -55,6 +56,8 @@ export function intentUrl(target: ShareTarget, { url, text, title }: { url: stri
       return `sms:?&body=${enc(both)}`
     case 'mail':
       return `mailto:?subject=${enc(title)}&body=${enc(both)}`
+    case 'pinterest':
+      return `https://www.pinterest.com/pin/create/button/?url=${enc(url)}&description=${enc(text)}${media ? `&media=${enc(media)}` : ''}`
     case 'instagram':
       return null
   }
@@ -88,10 +91,11 @@ export type ShareOutcome = 'shared' | 'opened' | 'image-saved' | 'instagram' | '
  * sur ordinateur, l'image est enregistrée, le texte copié, puis la publication préremplie s'ouvre.
  * La fenêtre est ouverte avant tout `await` pour ne pas être bloquée par le navigateur.
  */
-export async function shareTo(target: ShareTarget, opts: { url: string; text: string; title: string; file?: File | null }): Promise<ShareOutcome> {
+export async function shareTo(target: ShareTarget, opts: { url: string; text: string; title: string; file?: File | null; media?: string }): Promise<ShareOutcome> {
   const url = trackedUrl(opts.url, target)
   const intent = intentUrl(target, { ...opts, url })
-  const file = opts.file ?? null
+  // Pinterest épingle directement le visuel en ligne : rien à télécharger
+  const file = target === 'pinterest' && opts.media ? null : (opts.file ?? null)
 
   if (file && isTouch() && canShareFile(file)) {
     try {
