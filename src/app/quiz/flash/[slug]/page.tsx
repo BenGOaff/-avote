@@ -32,8 +32,16 @@ export default async function FlashPage({ params }: { params: Promise<{ slug: st
       <p className="kicker">
         <Link href="/quiz">{t.kicker}</Link>
       </p>
-      <h1>{q.title}</h1>
-      <p className="lede">{q.lede}</p>
+      <div className={q.avatar ? 'flash-head' : undefined}>
+        <div>
+          <h1>{q.title}</h1>
+          <p className="lede">{q.lede}</p>
+        </div>
+        {q.avatar && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img className="flash-head__avatar" src={q.avatar} width={800} height={800} alt={t.avatarAlt(q.tribe)} />
+        )}
+      </div>
       <FlashQuiz quiz={q} url={absolute(`/quiz/flash/${q.slug}`)} others={others} />
       <p className="small muted section">{t.privacy}</p>
     </div>

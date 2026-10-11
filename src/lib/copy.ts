@@ -331,6 +331,7 @@ export const UI_COPY = {
     sources: 'Sources :',
     othersTitle: 'Les autres quiz',
     testCta: 'Le test complet : de quel candidat es-tu proche ?',
+    avatarAlt: (tribe: string) => `Le personnage « ${tribe} » : une caricature inventée, qui ne représente personne.`,
     privacy: 'Tes réponses et ton score restent sur ton téléphone. L’image se fabrique sur ton appareil, rien n’est envoyé.',
   },
   programmes: {

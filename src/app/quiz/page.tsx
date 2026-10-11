@@ -24,8 +24,14 @@ export default function QuizHub() {
           {getFlashQuizzes().map((q) => (
             <li key={q.slug}>
               <Link href={`/quiz/flash/${q.slug}`} className="flash-hub__card">
-                <span className="flash-hub__title">{q.title}</span>
-                <span className="small">{q.lede}</span>
+                {q.avatar && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img className="flash-hub__avatar" src={q.avatar} width={800} height={800} alt="" loading="lazy" />
+                )}
+                <span className="flash-hub__text">
+                  <span className="flash-hub__title">{q.title}</span>
+                  <span className="small">{q.lede}</span>
+                </span>
               </Link>
             </li>
           ))}
