@@ -30,7 +30,10 @@ export const UI_COPY = {
   },
   home: {
     title: 'Trouve le candidat le plus proche de tes idées',
-    lede: 'Un quart d’heure pour savoir quels candidats pensent comme toi sur ce qui compte dans ta vie. Ensuite, tu votes en sachant. Gratuit, anonyme, sans inscription.',
+    lede: 'Nous avons le droit de voter et le devoir de le faire en toute connaissance de cause. Fais le test pour découvrir qui est le candidat le plus proche de tes idées et de tes besoins. C’est anonyme, évidemment !',
+    promise: 'Garanti sans bullshit ni influence',
+    reassure: ['15 minutes, pause quand tu veux', 'Tes réponses restent sur ton téléphone', 'Chaque position a sa source'],
+    howLink: 'Comment ça marche',
     cardAlt: 'Ta carte d’électeur Ça vote ? : ta compatibilité avec les candidats et la mention « Je vote en sachant ».',
     proofTitle: 'Ce que tu peux vérifier',
     proofs: [
@@ -79,12 +82,13 @@ export const UI_COPY = {
     seeResults: 'Voir mes résultats',
   },
   storage: {
-    title: 'Où vont tes réponses ?',
-    body: 'Nulle part. Le calcul se fait dans ton navigateur. Rien n’est envoyé à nos serveurs ni à une IA.',
-    session: 'Ne rien garder après fermeture',
-    sessionHint: 'Tout s’efface quand tu fermes l’onglet.',
+    title: 'Confidentialité',
+    body: 'Tes réponses ne quittent jamais ton appareil : rien n’est envoyé à nos serveurs ni à une IA. Ton seul choix : les garder ou non une fois la page fermée.',
+    session: 'Tout effacer en fermant la page',
+    sessionHint: 'Le plus discret. Si tu fermes l’onglet avant la fin, tu repars de zéro.',
     local: 'Garder sur cet appareil',
-    localHint: 'Pour reprendre plus tard et voir ce qui change pendant la campagne. Si l’appareil est partagé, préfère l’autre option. Vider les données du navigateur efface aussi ton profil.',
+    localHint: 'Pour reprendre plus tard et suivre l’évolution des candidats pendant la campagne. À éviter sur un appareil partagé. Tu peux tout effacer à tout moment depuis ton profil.',
+    go: 'C’est parti',
   },
   results: {
     title: 'Voilà ce qui ressort de tes réponses.',

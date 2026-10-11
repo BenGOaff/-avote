@@ -16,7 +16,7 @@ import { ThemeIcon } from '@/components/ThemeIcon'
 import { Coin } from '@/components/Viz'
 import { TokenBoard } from './TokenBoard'
 
-type Step = { kind: 'intro' } | { kind: 'question'; index: number } | { kind: 'mirror'; themeIndex: number } | { kind: 'priorities' }
+type Step = { kind: 'intro' } | { kind: 'storage'; quick: boolean } | { kind: 'question'; index: number } | { kind: 'mirror'; themeIndex: number } | { kind: 'priorities' }
 
 const allGroups = itemsByTheme(set)
 
@@ -110,22 +110,29 @@ export function TestFlow() {
 
   if (!loaded) return <p aria-live="polite">Chargement…</p>
 
+  const begin = (persist: 'session' | 'local', restart: boolean, wantQuick = false) => {
+    const base = restart || !state ? { ...emptyState(set.version, persist), quick: wantQuick, orderSeed: newSeed() } : { ...state, persist, quick: false }
+    setState(base)
+    void saveState(base)
+    const order = groupsFor(!!base.quick, base.orderSeed).flatMap((g) => g.items)
+    const firstUnanswered = restart ? 0 : order.findIndex((i) => !(i.id in effectiveAnswers(base, set)))
+    setStep(firstUnanswered === -1 ? { kind: 'priorities' } : { kind: 'question', index: firstUnanswered })
+  }
+
   if (step.kind === 'intro')
     return (
       <Intro
-        state={state}
         answeredCount={answeredCount}
+        fresh={state && answeredCount > 0 ? set.items.filter((i) => i.version > state.questionSet && !(i.id in state.answers)).length : 0}
         headingRef={headingRef}
-        onStart={(persist, restart, wantQuick = false) => {
-          const base = restart || !state ? { ...emptyState(set.version, persist), quick: wantQuick, orderSeed: newSeed() } : { ...state, persist, quick: false }
-          setState(base)
-          void saveState(base)
-          const order = groupsFor(!!base.quick, base.orderSeed).flatMap((g) => g.items)
-          const firstUnanswered = restart ? 0 : order.findIndex((i) => !(i.id in effectiveAnswers(base, set)))
-          setStep(firstUnanswered === -1 ? { kind: 'priorities' } : { kind: 'question', index: firstUnanswered })
-        }}
+        // Reprendre garde le choix déjà fait ; un nouveau départ commence par « où vont tes réponses »
+        onResume={() => begin(state?.persist ?? 'session', false)}
+        onNew={(wantQuick) => setStep({ kind: 'storage', quick: wantQuick })}
       />
     )
+
+  if (step.kind === 'storage')
+    return <StorageStep initial={state?.persist ?? 'session'} onBack={() => setStep({ kind: 'intro' })} onGo={(persist) => begin(persist, true, step.quick)} />
 
   if (step.kind === 'question') {
     const item = flat[step.index]
@@ -442,27 +449,26 @@ function MiniScale({ answer }: { answer: Answers[string] | undefined }) {
 }
 
 function Intro({
-  state,
   answeredCount,
+  fresh,
   headingRef,
-  onStart,
+  onResume,
+  onNew,
 }: {
-  state: LocalVoterState | null
   answeredCount: number
+  fresh: number
   headingRef: React.RefObject<HTMLHeadingElement | null>
-  onStart: (persist: 'session' | 'local', restart: boolean, quick?: boolean) => void
+  onResume: () => void
+  onNew: (quick: boolean) => void
 }) {
-  const [persist, setPersist] = useState<'session' | 'local'>(state?.persist ?? 'session')
-  // Affirmations ajoutées dans cette version, encore sans réponse, chez quelqu'un qui avait déjà répondu à l'ancienne
-  // (toutes celles parues après la version du questionnaire avec laquelle la personne a commencé)
-  const fresh = state && answeredCount > 0 ? set.items.filter((i) => i.version > state.questionSet && !(i.id in state.answers)).length : 0
+  const h = UI_COPY.home
   const startButtons =
     answeredCount > 0 ? (
       <>
-        <button className="btn btn--highlight" onClick={() => onStart(persist, false)}>
+        <button className="btn btn--highlight" onClick={onResume}>
           Reprendre ({answeredCount}/{set.items.length})
         </button>
-        <button className="btn btn--secondary" onClick={() => onStart(persist, true)}>
+        <button className="btn btn--secondary" onClick={() => onNew(false)}>
           Recommencer
         </button>
         <Link className="btn btn--ghost" href="/resultats">
@@ -471,10 +477,10 @@ function Intro({
       </>
     ) : (
       <>
-        <button className="btn btn--highlight" onClick={() => onStart(persist, true)}>
+        <button className="btn btn--highlight" onClick={() => onNew(false)}>
           {UI_COPY.test.start}
         </button>
-        <button className="btn btn--secondary" onClick={() => onStart(persist, true, true)}>
+        <button className="btn btn--secondary" onClick={() => onNew(true)}>
           {UI_COPY.test.quickStart(QUICK_ITEMS.length)}
         </button>
       </>
@@ -483,89 +489,110 @@ function Intro({
     <div>
       <div className="test-intro">
         <div className="test-intro__text">
-      <p className="kicker">Présidentielle 2027</p>
-      <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none' }}>
-        {UI_COPY.home.title}
-      </h1>
-      <p className="lede">{UI_COPY.home.lede}</p>
-      {fresh > 0 && (
-        <p className="alert alert--info" role="status">
-          {UI_COPY.test.newItems(fresh)}
-        </p>
-      )}
-      <div className="row" style={{ marginTop: 'var(--s4)' }}>
-        {startButtons}
-      </div>
-
+          <p className="kicker">Présidentielle 2027</p>
+          <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none' }}>
+            {h.title}
+          </h1>
+          <p className="lede test-intro__lede">{h.lede}</p>
+          <p className="test-intro__promise">
+            <span className="mark">{h.promise}</span>
+          </p>
+          {fresh > 0 && (
+            <p className="alert alert--info" role="status">
+              {UI_COPY.test.newItems(fresh)}
+            </p>
+          )}
+          <div className="row" style={{ marginTop: 'var(--s4)' }}>
+            {startButtons}
+          </div>
         </div>
 
-      <figure className="hero-card">
-        <span className="hero-card__rays deco" aria-hidden="true" />
-        <Coin size={44} className="hero-card__coin hero-card__coin--1 deco" />
-        <Coin size={34} className="hero-card__coin hero-card__coin--2 deco" />
-        <Coin size={28} className="hero-card__coin hero-card__coin--3 deco" />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          className="hero-card__img"
-          src="/img/accueil/carte-electeur-1000.webp"
-          srcSet="/img/accueil/carte-electeur-560.webp 560w, /img/accueil/carte-electeur-1000.webp 1000w"
-          sizes="(min-width: 900px) 520px, 86vw"
-          width={1000}
-          height={794}
-          alt={UI_COPY.home.cardAlt}
-          fetchPriority="high"
-        />
-      </figure>
+        <figure className="hero-card">
+          <span className="hero-card__rays deco" aria-hidden="true" />
+          <Coin size={44} className="hero-card__coin hero-card__coin--1 deco" />
+          <Coin size={34} className="hero-card__coin hero-card__coin--2 deco" />
+          <Coin size={28} className="hero-card__coin hero-card__coin--3 deco" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="hero-card__img"
+            src="/img/accueil/carte-electeur-1000.webp"
+            srcSet="/img/accueil/carte-electeur-560.webp 560w, /img/accueil/carte-electeur-1000.webp 1000w"
+            sizes="(min-width: 900px) 520px, 86vw"
+            width={1000}
+            height={794}
+            alt={h.cardAlt}
+            fetchPriority="high"
+          />
+        </figure>
 
-      <ul className="theme-row" aria-label="Les thèmes">
-        {set.themes.map((t) => (
-          <li key={t.id}>
-            <ThemeIcon theme={t.id} width={22} height={22} />
-            <span>{t.label}</span>
-          </li>
-        ))}
-      </ul>
       </div>
 
-      <div className="test-intro__more">
-      <fieldset className="card card--flat" style={{ margin: 0 }}>
-        <legend className="visually-hidden">{UI_COPY.storage.title}</legend>
-        <p style={{ fontWeight: 700, marginBottom: 'var(--s2)' }}>{UI_COPY.storage.title}</p>
-        <p className="small">{UI_COPY.storage.body}</p>
-        <div role="radiogroup" className="answers">
-          {(['session', 'local'] as const).map((k) => (
-            <button key={k} role="radio" aria-checked={persist === k} className="answer answer--secondary" onClick={() => setPersist(k)} style={{ alignItems: 'flex-start' }}>
-              <span className="answer__check" style={{ marginTop: 2 }}>
-                <IconCheck />
-              </span>
-              <span>
-                {k === 'session' ? UI_COPY.storage.session : UI_COPY.storage.local}
-                <br />
-                <span style={{ fontWeight: 400, fontSize: 'var(--text-small)' }}>{k === 'session' ? UI_COPY.storage.sessionHint : UI_COPY.storage.localHint}</span>
-              </span>
-            </button>
+      {/* Les thèmes défilent en bandeau pleine largeur ; la seconde copie ne sert qu'à boucler sans à-coup */}
+      <div className="marquee" role="region" aria-label="Les thèmes du test">
+        <div className="marquee__track">
+          {[0, 1].map((copy) => (
+            <ul key={copy} className="marquee__list" aria-hidden={copy === 1 ? true : undefined}>
+              {set.themes.map((t) => (
+                <li key={t.id}>
+                  <ThemeIcon theme={t.id} width={18} height={18} />
+                  <span>{t.label}</span>
+                </li>
+              ))}
+            </ul>
           ))}
         </div>
-      </fieldset>
-
-      <details className="disclosure" style={{ margin: 0 }}>
-        <summary>Comment ça marche</summary>
-        <div>
-          <ul className="small" style={{ paddingLeft: '1.2em', margin: 0 }}>
-            <li>Pour chaque affirmation : pour, contre, entre les deux, ou « je ne sais pas ». Tu peux passer et revenir en arrière.</li>
-            <li>
-              À la fin de chaque thème, tu peux poser jusqu’à {ENGINE_CONFIG.maxRedLines} « lignes rouges » dans tout le test : des points où tu ne pourrais pas voter
-              pour quelqu’un qui pense le contraire. Elles ne changent pas les scores ; les candidats en désaccord sur ces points sont signalés à part.
-            </li>
-            <li>Ensuite, tu poses 10 jetons sur les thèmes qui comptent le plus pour toi. C’est facultatif.</li>
-            <li>Le résultat compare tes réponses aux positions documentées des candidats. Il dit toujours ce qui manque. Ce n’est pas une consigne de vote.</li>
-          </ul>
-          <p className="hint" style={{ margin: 'var(--s3) 0 0' }}>
-            Questions v{set.version}. <Link href="/methodologie#questions">Toutes les questions et le calcul</Link>
-          </p>
-        </div>
-      </details>
       </div>
+
+      {/* Ce qui rassure, en une ligne : le détail est sur la page Méthode */}
+      <ul className="reassure" aria-label="En bref">
+        {h.reassure.map((r) => (
+          <li key={r}>
+            <IconCheck width={18} height={18} aria-hidden="true" />
+            {r}
+          </li>
+        ))}
+        <li>
+          <Link href="/methodologie">{h.howLink}</Link>
+        </li>
+      </ul>
+    </div>
+  )
+}
+
+/** Première étape du test : où restent les réponses (rien ne part, seule la durée de conservation se choisit). */
+function StorageStep({ initial, onBack, onGo }: { initial: 'session' | 'local'; onBack: () => void; onGo: (persist: 'session' | 'local') => void }) {
+  const [persist, setPersist] = useState<'session' | 'local'>(initial)
+  const ref = useRef<HTMLHeadingElement>(null)
+  useEffect(() => ref.current?.focus(), [])
+  const t = UI_COPY.storage
+  return (
+    <div className="measure" style={{ margin: '0 auto' }}>
+      <button className="btn btn--ghost btn--small" onClick={onBack}>
+        <IconArrowLeft width={18} height={18} /> Retour
+      </button>
+      <h1 ref={ref} tabIndex={-1} style={{ outline: 'none', marginTop: 'var(--s4)' }}>
+        {t.title}
+      </h1>
+      <p className="lede">{t.body}</p>
+      <div role="radiogroup" aria-label={t.title} className="answers">
+        {(['session', 'local'] as const).map((k) => (
+          <button key={k} role="radio" aria-checked={persist === k} className="answer answer--secondary" onClick={() => setPersist(k)} style={{ alignItems: 'flex-start' }}>
+            <span className="answer__check" style={{ marginTop: 2 }}>
+              <IconCheck />
+            </span>
+            <span>
+              {k === 'session' ? t.session : t.local}
+              <br />
+              <span style={{ fontWeight: 400, fontSize: 'var(--text-small)' }}>{k === 'session' ? t.sessionHint : t.localHint}</span>
+            </span>
+          </button>
+        ))}
+      </div>
+      <p style={{ marginTop: 'var(--s5)' }}>
+        <button className="btn btn--highlight" onClick={() => onGo(persist)}>
+          {t.go}
+        </button>
+      </p>
     </div>
   )
 }
