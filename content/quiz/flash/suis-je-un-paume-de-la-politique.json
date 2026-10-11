@@ -1,0 +1,168 @@
+{
+ "slug": "suis-je-un-paume-de-la-politique",
+ "title": "Suis-je un paumé de la politique ?",
+ "tribe": "paumé",
+ "order": 0,
+ "lede": "7 questions, 30 secondes. Si tu as la flemme de répondre, c’est déjà un indice.",
+ "questions": [
+  {
+   "q": "Un débat politique à la télé.",
+   "answers": [
+    {
+     "label": "Tu regardes jusqu’au bout.",
+     "points": 0
+    },
+    {
+     "label": "Tu zappes au bout de dix minutes.",
+     "points": 1
+    },
+    {
+     "label": "Tu zappes pendant le générique.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "« Tous pourris » ?",
+   "answers": [
+    {
+     "label": "Faux, il y a des gens bien.",
+     "points": 0
+    },
+    {
+     "label": "Pas tous. Mais beaucoup.",
+     "points": 1
+    },
+    {
+     "label": "C’est ta devise, brodée sur un coussin.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Le nom du Premier ministre ?",
+   "answers": [
+    {
+     "label": "Tu le connais.",
+     "points": 0
+    },
+    {
+     "label": "Tu hésites entre deux.",
+     "points": 1
+    },
+    {
+     "label": "Il a sûrement changé depuis la dernière fois que tu as vérifié.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ton dernier vote ?",
+   "answers": [
+    {
+     "label": "À la dernière élection, sans hésiter.",
+     "points": 0
+    },
+    {
+     "label": "Pour le moins pire, en te bouchant le nez.",
+     "points": 1
+    },
+    {
+     "label": "Pour l’Eurovision.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Un programme électoral ?",
+   "answers": [
+    {
+     "label": "Tu en as lu un en entier.",
+     "points": 0
+    },
+    {
+     "label": "Tu as lu le résumé.",
+     "points": 1
+    },
+    {
+     "label": "Tu attends le film.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Un ami te demande pour qui tu votes.",
+   "answers": [
+    {
+     "label": "Tu lui réponds.",
+     "points": 0
+    },
+    {
+     "label": "« Je sais pas encore. »",
+     "points": 1
+    },
+    {
+     "label": "Tu soupires si fort qu’il change de sujet.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ton plan pour 2027 ?",
+   "answers": [
+    {
+     "label": "Voter.",
+     "points": 0
+    },
+    {
+     "label": "Voter blanc, peut-être.",
+     "points": 1
+    },
+    {
+     "label": "Aller à la pêche, et que le meilleur gagne.",
+     "points": 2
+    }
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 19,
+   "headline": "{s} % paumé. Toi, tu sais où tu vas.",
+   "line": "Débats jusqu’au bout, programme lu : on se demande ce que tu fais là."
+  },
+  {
+   "upTo": 39,
+   "headline": "{s} % paumé. Un peu perdu, pas encore largué.",
+   "line": "Tu votes pour le moins pire, en espérant que ce ne soit pas toujours le même."
+  },
+  {
+   "upTo": 59,
+   "headline": "{s} % paumé. La boussole est dans le tiroir.",
+   "line": "Tu sais que ça compte. Tu ne sais juste pas pour qui."
+  },
+  {
+   "upTo": 79,
+   "headline": "{s} % paumé. Le nuage gris te suit partout.",
+   "line": "« Tous pourris » te démange, mais tu lis encore les titres."
+  },
+  {
+   "upTo": 100,
+   "headline": "{s} % paumé. Et tu n’es pas seul.",
+   "line": "Débats zappés, programme en attente du film, pêche en 2027 : le grand chelem."
+  }
+ ],
+ "fact": {
+  "cliche": "« Mon vote ne sert à rien. »",
+  "text": "Au second tour de 2022, 13 655 861 inscrits ne sont pas allés voter et 2 233 904 ont voté blanc : près de 15,9 millions de personnes. C’est plus que les voix de Marine Le Pen (13,3 millions) et pas si loin de celles d’Emmanuel Macron (18,8 millions). Aucun programme ne te parle en entier ? Le test complet te montre de qui tu es le plus proche, sujet par sujet.",
+  "sources": [
+   {
+    "title": "Décision n° 2022-197 PDR du 27 avril 2022 : proclamation des résultats de l’élection présidentielle",
+    "publisher": "Conseil constitutionnel",
+    "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022197PDR.htm",
+    "date": "2022-04-27"
+   }
+  ]
+ },
+ "avatar": "/img/quiz/suis-je-un-paume-de-la-politique.png"
+}

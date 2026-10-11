@@ -47,9 +47,15 @@ async function paintResult(canvas: HTMLCanvasElement, quiz: Quiz, score: number,
   ctx.textAlign = 'left'
 
   // Bandeau-question en jaune
-  const hookSize = Math.round(w * (wide ? 0.032 : 0.045))
-  ctx.font = `${hookSize}px ${display}`
   const hook = quiz.title.toUpperCase()
+  // Taille réduite si le titre est long : le bandeau ne dépasse jamais l'image
+  let hookSize = Math.round(w * (wide ? 0.032 : 0.045))
+  ctx.font = `${hookSize}px ${display}`
+  const maxHook = w - 2 * m
+  if (ctx.measureText(hook).width + hookSize > maxHook) {
+    hookSize = Math.floor((hookSize * maxHook) / (ctx.measureText(hook).width + hookSize))
+    ctx.font = `${hookSize}px ${display}`
+  }
   const hw = ctx.measureText(hook).width
   ctx.fillStyle = YELLOW
   ctx.fillRect(m, top, hw + hookSize, hookSize * 1.5)
