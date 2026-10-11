@@ -4,7 +4,7 @@ import { UI_COPY } from '@/lib/copy'
 import { copyText, shareTo, TARGETS, trackedUrl, type ShareOutcome, type ShareTarget } from '@/lib/share'
 
 const t = UI_COPY.partage
-const ORDER: ShareTarget[] = ['instagram', 'facebook', 'x', 'linkedin', 'whatsapp', 'threads', 'reddit', 'bluesky', 'telegram', 'sms', 'mail']
+const ORDER: ShareTarget[] = ['instagram', 'facebook', 'x', 'linkedin', 'whatsapp', 'threads', 'pinterest', 'reddit', 'bluesky', 'telegram', 'sms', 'mail']
 
 const MESSAGES: Partial<Record<ShareOutcome, string>> = { 'image-saved': t.imageSaved, instagram: t.instagram }
 
@@ -38,7 +38,8 @@ export function SharePanel({
   const go = async (target: ShareTarget) => {
     onPick?.(target)
     const file = getImage ? await getImage(target) : null
-    const out = await shareTo(target, { url, text, title, file })
+    const media = imageSrc ? new URL(imageSrc, window.location.href).href : undefined
+    const out = await shareTo(target, { url, text, title, file, media })
     setStatus(MESSAGES[out] ?? (target === 'facebook' ? t.textCopied : ''))
   }
   const more = async () => {

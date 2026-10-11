@@ -21,7 +21,8 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image' },
   appleWebApp: { capable: true, title: 'Ça vote ?', statusBarStyle: 'default' },
   formatDetection: { telephone: false },
-  robots: { index: true, follow: true },
+  // Grandes images autorisées dans Google Discover et Google Images
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } },
 }
 
 export const viewport: Viewport = {

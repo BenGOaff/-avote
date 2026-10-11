@@ -12,9 +12,9 @@ import type { SocialPost } from './social-schema'
  *  - « apercu » : 1200 × 630, l'aperçu de lien (Open Graph).
  * Les visages font le travail : un candidat seul en grand, ou les deux camps face à face.
  */
-const PAPER = '#F5F0E6'
-const INK = '#191919'
-const YELLOW = '#FFE34D'
+export const PAPER = '#F5F0E6'
+export const INK = '#191919'
+export const YELLOW = '#FFE34D'
 
 const ROOT = process.cwd()
 const names = new Map(
@@ -31,7 +31,7 @@ async function face(slug: string, px: number): Promise<string | null> {
   return `data:image/png;base64,${png.toString('base64')}`
 }
 
-async function fonts() {
+export async function fonts() {
   const [display, ui] = await Promise.all([
     readFile(path.join(ROOT, 'src/og-fonts/archivo-black-latin-400-normal.woff')),
     readFile(path.join(ROOT, 'src/og-fonts/public-sans-latin-700-normal.woff')),
@@ -42,7 +42,7 @@ async function fonts() {
   ]
 }
 
-const fit = (text: string, sizes: [number, number][]) => sizes.find(([max]) => text.length <= max)?.[1] ?? sizes[sizes.length - 1]![1]
+export const fit = (text: string, sizes: [number, number][]) => sizes.find(([max]) => text.length <= max)?.[1] ?? sizes[sizes.length - 1]![1]
 /** Taille de titre plafonnée par le mot le plus long, pour qu'aucun mot ne déborde (≈ 0,62 em par lettre en Archivo Black). */
 const fitWords = (text: string, sizes: [number, number][], width: number) => {
   const longest = Math.max(...text.split(/\s+/).map((w) => w.length))
@@ -84,7 +84,7 @@ function Camp({ label, slugs, faces, dark }: { label: string; slugs: string[]; f
   )
 }
 
-function Hook({ text, size }: { text: string; size: number }) {
+export function Hook({ text, size }: { text: string; size: number }) {
   return (
     <div style={{ display: 'flex' }}>
       <span style={{ fontFamily: 'Archivo Black', fontSize: size, lineHeight: 1.05, padding: '6px 18px', background: YELLOW, border: `4px solid ${INK}` }}>{text.toUpperCase()}</span>
@@ -92,7 +92,7 @@ function Hook({ text, size }: { text: string; size: number }) {
   )
 }
 
-function Cta({ label, size }: { label: string; size: number }) {
+export function Cta({ label, size }: { label: string; size: number }) {
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: INK, color: PAPER, padding: '22px 36px', fontFamily: 'Archivo Black', fontSize: size }}>
       <span style={{ color: YELLOW }}>{label.toUpperCase()}</span>

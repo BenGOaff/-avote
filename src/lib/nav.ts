@@ -31,6 +31,7 @@ export const SECTIONS: NavSection[] = [
     title: 'La campagne',
     items: [
       { href: '/candidats', label: 'Candidats', desc: 'Qui se présente, d’où il vient, ce qu’il propose.' },
+      { href: '/programmes', label: 'Programmes par sujet', desc: 'Impôts, retraites, santé, climat… qui est pour, qui est contre.' },
       { href: '/comparateur', label: 'Comparateur', desc: 'Qui défend quoi, sujet par sujet, citations à l’appui.' },
       { href: '/partis', label: 'Partis', desc: 'Histoire, dirigeants, élus et idées de chaque parti.' },
       { href: '/radar', label: 'Radar', desc: 'Le fil de la campagne, sourcé.' },
