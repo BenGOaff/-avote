@@ -1,0 +1,175 @@
+{
+ "slug": "suis-je-un-facho",
+ "title": "Suis-je un facho ?",
+ "tribe": "facho",
+ "order": 1,
+ "lede": "7 questions, 30 secondes. On ne juge pas tes idées, juste tes habitudes.",
+ "questions": [
+  {
+   "q": "Quelqu’un dit « on ne peut plus rien dire ». Tu…",
+   "answers": [
+    {
+     "label": "lèves les yeux au ciel.",
+     "points": 0
+    },
+    {
+     "label": "dis que ça dépend.",
+     "points": 1
+    },
+    {
+     "label": "applaudis : c’est ta phrase préférée.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ton journal télévisé idéal ?",
+   "answers": [
+    {
+     "label": "Arte, sous-titré.",
+     "points": 0
+    },
+    {
+     "label": "Celui de 20 h, comme tout le monde.",
+     "points": 1
+    },
+    {
+     "label": "Une chaîne d’info en continu, quatre débatteurs et un bandeau rouge.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "« C’était mieux avant. » Avant quand ?",
+   "answers": [
+    {
+     "label": "Jamais. Avant, c’était pire.",
+     "points": 0
+    },
+    {
+     "label": "Avant l’euro, pour le prix de la baguette.",
+     "points": 1
+    },
+    {
+     "label": "Avant tout. Précisément avant tout.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Sur ton balcon ?",
+   "answers": [
+    {
+     "label": "Des herbes aromatiques.",
+     "points": 0
+    },
+    {
+     "label": "Un barbecue.",
+     "points": 1
+    },
+    {
+     "label": "Un drapeau, au cas où un voisin oublierait dans quel pays il habite.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Un ado te parle en verlan.",
+   "answers": [
+    {
+     "label": "Tu réponds en verlan.",
+     "points": 0
+    },
+    {
+     "label": "Tu fais semblant de comprendre.",
+     "points": 1
+    },
+    {
+     "label": "Tu réclames le retour du service militaire.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Au repas de famille, la politique arrive sur la table.",
+   "answers": [
+    {
+     "label": "Tu changes de sujet.",
+     "points": 0
+    },
+    {
+     "label": "Tu attends le dessert.",
+     "points": 1
+    },
+    {
+     "label": "C’est toi qui l’as servie, entre le fromage et la poire.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ton héros historique ?",
+   "answers": [
+    {
+     "label": "Simone Veil.",
+     "points": 0
+    },
+    {
+     "label": "Aucun, les héros c’est surfait.",
+     "points": 1
+    },
+    {
+     "label": "Un général à cheval, de préférence en bronze.",
+     "points": 2
+    }
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 19,
+   "headline": "{s} % facho. Ton oncle va être déçu.",
+   "line": "Aucun drapeau, aucune nostalgie suspecte. Le repas de Noël va être long."
+  },
+  {
+   "upTo": 39,
+   "headline": "{s} % facho. Juste de quoi râler au comptoir.",
+   "line": "Tu dis « c’était mieux avant » une fois par an, le jour de la déclaration d’impôts."
+  },
+  {
+   "upTo": 59,
+   "headline": "{s} % facho. Un pied dans le bandeau rouge.",
+   "line": "Pas encore de drapeau au balcon, mais tu as regardé les prix."
+  },
+  {
+   "upTo": 79,
+   "headline": "{s} % facho. Le barbecue est prêt, le débat aussi.",
+   "line": "Le service militaire, le verlan, les héros en bronze : tu coches beaucoup de cases."
+  },
+  {
+   "upTo": 100,
+   "headline": "Ah bah apparemment t’es {s} % facho.",
+   "line": "C’est pas nous, c’est toi qui le dis. Mieux avant, rien dire, service militaire : le grand chelem."
+  }
+ ],
+ "fact": {
+  "cliche": "« Les fraudeurs, ce sont les assistés. »",
+  "text": "La fraude des assurés et allocataires représente 36 % de la fraude sociale estimée à 14 Md€, soit environ 5 Md€ par an. Plus de la moitié (52 %) vient des cotisations non payées : travail dissimulé, cotisations éludées. Et la seule fraude à la TVA est estimée à environ 15 Md€ par an.",
+  "sources": [
+   {
+    "title": "Note annuelle de suivi et d’évaluation des fraudes sociales (synthèse)",
+    "publisher": "Haut Conseil du financement de la protection sociale",
+    "url": "https://www.securite-sociale.fr/files/live/sites/SSFR/files/medias/HCFIPS/2026/HCFIPS%20-%20Synth%C3%A8se%20Fraude%20sociale%202025%20-%20Version%20finalis%C3%A9e.pdf",
+    "date": "2025-12-04",
+    "passage": "L’essentiel de la fraude demeure concentré sur le recouvrement des cotisations (plus de 52 % de la fraude évaluée). La fraude des assurés arrive en seconde position (36 %)"
+   },
+   {
+    "title": "La fraude aux prélèvements obligatoires",
+    "publisher": "Cour des comptes",
+    "url": "https://www.ccomptes.fr/fr/publications/la-fraude-aux-prelevements-obligatoires",
+    "date": "2019-12-02"
+   }
+  ]
+ },
+ "avatar": "/img/quiz/suis-je-un-facho.png"
+}

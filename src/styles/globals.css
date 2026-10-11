@@ -4230,3 +4230,158 @@ details.disclosure > div {
   border-color: var(--line);
   color: var(--muted);
 }
+
+/* ---------- Quiz flash ---------- */
+.flash-hub {
+  list-style: none;
+  display: grid;
+  gap: var(--s3);
+  padding: 0;
+  margin: var(--s4) 0 0;
+}
+@media (min-width: 700px) {
+  .flash-hub {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.flash-hub__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+  min-height: var(--tap);
+  padding: var(--s4) var(--s5);
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--highlight);
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-signature);
+}
+.flash-hub__card,
+.flash-hub__card .small {
+  color: var(--on-highlight);
+}
+.flash-hub__card:hover .flash-hub__title {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.flash-hub__title {
+  font-family: var(--font-display);
+  font-size: var(--h3);
+  line-height: var(--lh-title);
+}
+.flash {
+  margin-top: var(--s5);
+}
+.flash__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  min-height: var(--tap);
+}
+.flash__count {
+  margin: 0;
+  font-weight: 700;
+  color: var(--muted);
+}
+.flash__progress {
+  height: 8px;
+  margin: var(--s2) 0 var(--s4);
+  background: var(--paper);
+  border: var(--hairline) solid var(--ink);
+}
+.flash__progress span {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+  transition: width 0.2s ease;
+}
+.flash__q {
+  margin: 0 0 var(--s4);
+  font-size: var(--h2);
+  line-height: var(--lh-title);
+}
+.flash__q:focus {
+  outline: none;
+}
+.flash__answers {
+  display: grid;
+  gap: var(--s3);
+}
+.flash__answer {
+  min-height: var(--tap);
+  padding: var(--s3) var(--s4);
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--ink);
+  background: var(--paper);
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.flash__answer:hover,
+.flash__answer:focus-visible {
+  background: var(--highlight);
+  color: var(--on-highlight);
+}
+.flash__score {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--s3);
+  margin: 0;
+}
+.flash__score:focus {
+  outline: none;
+}
+.flash__pct {
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 1;
+}
+.flash__tribe {
+  padding: 0 0.15em;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  background: var(--highlight);
+  color: var(--on-highlight);
+}
+.flash__headline {
+  margin: var(--s4) 0 var(--s2);
+  font-family: var(--font-display);
+  font-size: var(--h3);
+  line-height: var(--lh-title);
+}
+.flash__line {
+  margin: 0 0 var(--s5);
+}
+.flash__share {
+  display: grid;
+  gap: var(--s5);
+  align-items: start;
+}
+@media (min-width: 760px) {
+  .flash__share {
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  }
+}
+.flash__preview {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: var(--border) solid var(--ink);
+}
+.flash__fact h2 {
+  margin-top: 0;
+}
+.flash__others {
+  list-style: none;
+  padding: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .flash__progress span {
+    transition: none;
+  }
+}

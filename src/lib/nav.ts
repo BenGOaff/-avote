@@ -51,7 +51,7 @@ export const SECTIONS: NavSection[] = [
     id: 'jouer',
     title: 'Jouer et partager',
     items: [
-      { href: '/quiz', label: 'Quiz', desc: 'Les règles de l’élection, ton profil de spectateur, qui a dit quoi.' },
+      { href: '/quiz', label: 'Quiz', desc: 'Quiz flash satiriques en 30 secondes, règles de l’élection, qui a dit quoi.' },
       { href: '/studio', label: 'Studio', desc: 'Visuels à partager, fabriqués sur ton téléphone.' },
       { href: '/boutique', label: 'Boutique', desc: 'Objets et visuels, sans lien avec ton résultat.' },
     ],

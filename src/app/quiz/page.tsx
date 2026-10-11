@@ -5,10 +5,11 @@ import { SupportLine } from '@/components/Support'
 import { UI_COPY } from '@/lib/copy'
 import { TIQUIZ_QUIZZES } from '@/lib/tiquiz'
 import { questionnaire } from '@/lib/data'
+import { getFlashQuizzes } from '@/lib/flash-content'
 
 export const metadata: Metadata = {
   title: 'Quiz présidentielle 2027',
-  description: 'Des quiz courts sur la présidentielle 2027, à faire et à partager.',
+  description: 'Suis-je un facho ? Suis-je une gauchiasse ? Des quiz flash satiriques sur la présidentielle 2027, à faire en 30 secondes et à partager.',
   alternates: { canonical: '/quiz' },
 }
 
@@ -16,6 +17,20 @@ export default function QuizHub() {
   return (
     <div className="container">
       <PageHeader kicker="Quiz" title="Joue, partage, compare" lede="Des quiz courts sur la présidentielle. Pour comparer tes idées aux programmes, le test complet reste sur ton appareil." />
+      <section className="section" aria-labelledby="flash">
+        <h2 id="flash">{UI_COPY.flash.hubTitle}</h2>
+        <p className="measure">{UI_COPY.flash.hubLede}</p>
+        <ul className="flash-hub" role="list">
+          {getFlashQuizzes().map((q) => (
+            <li key={q.slug}>
+              <Link href={`/quiz/flash/${q.slug}`} className="flash-hub__card">
+                <span className="flash-hub__title">{q.title}</span>
+                <span className="small">{q.lede}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
       <ul className="grid grid--3" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
         {TIQUIZ_QUIZZES.map((q, i) => (
           <li key={q.slug} className={`card${i === 0 ? ' card--featured' : ''}`} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s2)' }}>
