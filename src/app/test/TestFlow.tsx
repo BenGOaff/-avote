@@ -482,12 +482,12 @@ function Intro({
   return (
     <div>
       <div className="test-intro">
-        <div>
+        <div className="test-intro__text">
       <p className="kicker">Présidentielle 2027</p>
       <h1 ref={headingRef} tabIndex={-1} style={{ outline: 'none' }}>
         {UI_COPY.home.title}
       </h1>
-      <p className="lede">{UI_COPY.home.lede(set.items.length)}</p>
+      <p className="lede">{UI_COPY.home.lede}</p>
       {fresh > 0 && (
         <p className="alert alert--info" role="status">
           {UI_COPY.test.newItems(fresh)}
@@ -497,6 +497,26 @@ function Intro({
         {startButtons}
       </div>
 
+        </div>
+
+      <figure className="hero-card">
+        <span className="hero-card__rays deco" aria-hidden="true" />
+        <Coin size={44} className="hero-card__coin hero-card__coin--1 deco" />
+        <Coin size={34} className="hero-card__coin hero-card__coin--2 deco" />
+        <Coin size={28} className="hero-card__coin hero-card__coin--3 deco" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="hero-card__img"
+          src="/img/accueil/carte-electeur-1000.webp"
+          srcSet="/img/accueil/carte-electeur-560.webp 560w, /img/accueil/carte-electeur-1000.webp 1000w"
+          sizes="(min-width: 900px) 520px, 86vw"
+          width={1000}
+          height={794}
+          alt={UI_COPY.home.cardAlt}
+          fetchPriority="high"
+        />
+      </figure>
+
       <ul className="theme-row" aria-label="Les thèmes">
         {set.themes.map((t) => (
           <li key={t.id}>
@@ -505,39 +525,6 @@ function Intro({
           </li>
         ))}
       </ul>
-        </div>
-
-      <ol className="steps" aria-label="Les trois étapes">
-        <li>
-          <span className="steps__visual" aria-hidden="true">
-            {[40, 30, 22, 30, 40].map((d, i) => (
-              <span key={i} className="steps__dot" style={{ width: d * 0.6, height: d * 0.6 }} />
-            ))}
-          </span>
-          <strong>{set.items.length} affirmations</strong>
-          <span className="small muted">Pour, contre, entre les deux, ou « je ne sais pas ».</span>
-        </li>
-        <li>
-          <span className="steps__visual" aria-hidden="true">
-            <Coin size={26} />
-            <Coin size={26} />
-            <Coin size={26} />
-          </span>
-          <strong>10 jetons</strong>
-          <span className="small muted">Sur les thèmes qui comptent le plus pour toi.</span>
-        </li>
-        <li>
-          <span className="steps__visual" aria-hidden="true">
-            <span className="steps__card">
-              <span />
-              <span />
-              <span />
-            </span>
-          </span>
-          <strong>Ta carte d’électeur</strong>
-          <span className="small muted">Ton profil et les candidats proches, sources à l’appui.</span>
-        </li>
-      </ol>
       </div>
 
       <div className="test-intro__more">

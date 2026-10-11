@@ -30,7 +30,8 @@ export const UI_COPY = {
   },
   home: {
     title: 'Trouve le candidat le plus proche de tes idées',
-    lede: (n: number) => `Chaque calcul est public, chaque position a sa source. ${n} affirmations sur ta vie de tous les jours, un quart d’heure environ, et tes réponses restent sur ton téléphone.`,
+    lede: 'Un quart d’heure pour savoir quels candidats pensent comme toi sur ce qui compte dans ta vie. Ensuite, tu votes en sachant. Gratuit, anonyme, sans inscription.',
+    cardAlt: 'Ta carte d’électeur Ça vote ? : ta compatibilité avec les candidats et la mention « Je vote en sachant ».',
     proofTitle: 'Ce que tu peux vérifier',
     proofs: [
       { title: 'La phrase exacte du candidat', text: 'Chaque position renvoie à la page où il l’a écrite ou dite. Un programme vérifie que la citation y figure mot pour mot.', href: '/sources', link: 'Les sources' },
