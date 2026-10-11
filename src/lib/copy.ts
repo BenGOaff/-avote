@@ -32,8 +32,12 @@ export const UI_COPY = {
     title: 'Trouve le candidat le plus proche de tes idées',
     lede: 'Nous avons le droit de voter et le devoir de le faire en toute connaissance de cause. Fais le test pour découvrir qui est le candidat le plus proche de tes idées et de tes besoins. C’est anonyme, évidemment !',
     promise: 'Garanti sans bullshit ni influence',
-    reassure: ['15 minutes, pause quand tu veux', 'Tes réponses restent sur ton téléphone', 'Chaque position a sa source'],
-    howLink: 'Comment ça marche',
+    howLink: 'Comment ça marche ?',
+    how: [
+      'Tu réponds à des affirmations sur ta vie de tous les jours : pour, contre, ou entre les deux.',
+      'Tu indiques les thèmes qui comptent le plus pour toi.',
+      'Tu découvres les candidats les plus proches de tes idées, chaque position avec sa source.',
+    ],
     cardAlt: 'Ta carte d’électeur Ça vote ? : ta compatibilité avec les candidats et la mention « Je vote en sachant ».',
     proofTitle: 'Ce que tu peux vérifier',
     proofs: [

@@ -942,7 +942,7 @@ details.disclosure > div {
 /* Bandeau des thèmes : pleine largeur, défilement continu, arrêt au survol */
 .marquee {
   width: 100vw;
-  margin: var(--s6) 0 0 calc(50% - 50vw);
+  margin: var(--s8) 0 0 calc(50% - 50vw);
   overflow: hidden;
   border-block: var(--border) solid var(--on-highlight);
   background: var(--highlight);
@@ -993,27 +993,47 @@ details.disclosure > div {
 [data-sobre='true'] .marquee__track {
   animation: none;
 }
-.reassure {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--s2) var(--s5);
-  margin: var(--s5) 0 0;
-  padding: var(--s3) 0 0;
-  border-top: var(--hairline) solid var(--line);
-  font-size: var(--text-small);
+.howtip {
+  position: relative;
+  display: inline-block;
+  margin-top: var(--s3);
 }
-.reassure li {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--s1);
-}
-.reassure li svg {
+.howtip__btn {
+  min-height: 32px;
+  padding: 0;
+  border: 0;
+  background: none;
   color: var(--ink);
-  background: var(--highlight);
-  border-radius: 50%;
-  padding: 2px;
+  font: 600 var(--text-xs) / 1.2 var(--font-ui);
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+  cursor: help;
+}
+.howtip__bubble {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  left: 0;
+  display: grid;
+  gap: var(--s1);
+  width: min(320px, 80vw);
+  padding: var(--s3);
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 4px 4px 0 var(--ink);
+  font: 400 var(--text-xs) / 1.4 var(--font-ui);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity var(--duration) ease, transform var(--duration) ease, visibility var(--duration);
+}
+.howtip:hover .howtip__bubble,
+.howtip:focus-within .howtip__bubble,
+.howtip--open .howtip__bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
 }
 @media (min-width: 900px) {
   .test-intro {
