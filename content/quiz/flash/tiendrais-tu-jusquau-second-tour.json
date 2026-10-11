@@ -1,0 +1,167 @@
+{
+ "slug": "tiendrais-tu-jusquau-second-tour",
+ "mode": "score",
+ "order": 5,
+ "title": "Tiendrais-tu jusqu’au second tour ?",
+ "tribe": "présidentiable",
+ "lede": "Candidat d’un jour : signatures, débat, scandale… Découvre jusqu’où tu irais, et les vraies règles du jeu.",
+ "questions": [
+  {
+   "q": "Il te faut 500 signatures d’élus. Tu…",
+   "answers": [
+    {
+     "label": "fais le tour des mairies rurales, une par une.",
+     "points": 2
+    },
+    {
+     "label": "appelles les maires de ta région.",
+     "points": 1
+    },
+    {
+     "label": "lances une pétition en ligne. Ça compte, non ?",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "q": "Il faut financer la campagne.",
+   "answers": [
+    {
+     "label": "Dons de particuliers et prêt bancaire, tout déclaré.",
+     "points": 2
+    },
+    {
+     "label": "Tu vides ton livret A.",
+     "points": 1
+    },
+    {
+     "label": "Un ami très riche propose de tout payer.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "q": "Premier grand débat télé.",
+   "answers": [
+    {
+     "label": "Tu connais tes chiffres par cœur.",
+     "points": 2
+    },
+    {
+     "label": "Tu improvises, avec aplomb.",
+     "points": 1
+    },
+    {
+     "label": "Tu arrives en retard, sans fiches.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "q": "Un vieux tweet gênant ressort.",
+   "answers": [
+    {
+     "label": "Tu t’expliques et tu t’excuses.",
+     "points": 2
+    },
+    {
+     "label": "Tu dis qu’il a été sorti de son contexte.",
+     "points": 1
+    },
+    {
+     "label": "Tu accuses les médias, puis tu en postes un autre.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "q": "Ton slogan ?",
+   "answers": [
+    {
+     "label": "Quatre mots, clairs.",
+     "points": 2
+    },
+    {
+     "label": "Un jeu de mots que seule ta famille comprend.",
+     "points": 1
+    },
+    {
+     "label": "Une phrase de quarante mots, avec trois virgules.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "q": "Le soir du premier tour, tu es qualifié.",
+   "answers": [
+    {
+     "label": "Tu parles aux électeurs des autres candidats.",
+     "points": 2
+    },
+    {
+     "label": "Tu restes sur ta ligne, rien ne change.",
+     "points": 1
+    },
+    {
+     "label": "Tu fêtes ça jusqu’à 5 h, en direct sur les réseaux.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "q": "Dernier meeting avant le vote.",
+   "answers": [
+    {
+     "label": "Une salle pleine et un discours court.",
+     "points": 2
+    },
+    {
+     "label": "Une salle à moitié pleine, un discours long.",
+     "points": 1
+    },
+    {
+     "label": "Un hologramme. Il bugue.",
+     "points": 0
+    }
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 29,
+   "headline": "{s} % présidentiable. Éliminé aux parrainages.",
+   "line": "Il te manquait quelques centaines de maires. Ils t’attendaient dans le Cantal."
+  },
+  {
+   "upTo": 54,
+   "headline": "{s} % présidentiable. Éliminé au premier tour.",
+   "line": "Assez pour passer à la télé, pas assez pour le second tour. Tu feras mieux dans cinq ans."
+  },
+  {
+   "upTo": 79,
+   "headline": "{s} % présidentiable. Battu au second tour.",
+   "line": "Si près du but. Il te reste un livre à écrire et une tournée des plateaux."
+  },
+  {
+   "upTo": 100,
+   "headline": "{s} % présidentiable. Élu !",
+   "line": "Félicitations. Maintenant, il faut tenir les promesses."
+  }
+ ],
+ "fact": {
+  "cliche": "« N’importe qui peut se présenter. »",
+  "text": "Pour être candidat, il faut 500 parrainages d’élus, venant d’au moins 30 départements ou collectivités d’outre-mer, sans plus d’un dixième d’un même département. En 2022, les dépenses de campagne étaient plafonnées à 16,851 millions d’euros au premier tour. L’État rembourse jusqu’à 47,5 % de ce plafond aux candidats qui dépassent 5 % des voix, et 4,75 % aux autres.",
+  "sources": [
+   {
+    "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l’élection du Président de la République au suffrage universel",
+    "publisher": "Légifrance",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037/"
+   },
+   {
+    "title": "Présidentielle 2022 : quelles sont les règles de financement de la campagne ?",
+    "publisher": "Public Sénat",
+    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-quelles-sont-les-regles-de-financement-de-la-campagne-191106"
+   }
+  ]
+ }
+}
