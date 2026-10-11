@@ -4473,3 +4473,27 @@ details.disclosure > div {
   font-size: clamp(2.25rem, 9vw, 4rem);
   line-height: 1.05;
 }
+
+.flash__stances {
+  list-style: none;
+  display: grid;
+  gap: var(--s3);
+  padding: 0;
+  margin: 0 0 var(--s4);
+}
+.flash__stances li {
+  padding-left: var(--s3);
+  border-left: 4px solid var(--highlight);
+}
+.flash__stances p {
+  margin: 0;
+}
+.flash__stance-q {
+  font-weight: 700;
+}
+.flash__side {
+  font-size: var(--text-small);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}

@@ -14,6 +14,18 @@ const AnswerSchema = z.object({
   outcome: z.string().optional(),
   /** Mode « connaissances » : la bonne réponse */
   correct: z.boolean().optional(),
+  /** Mode « partis » : la valeur sur l'échelle du test (-2 à 2), null pour « sans avis » */
+  value: z.number().int().min(-2).max(2).nullable().optional(),
+})
+
+const PartySchema = z.object({
+  key: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(2).max(60),
+  short: z.string().min(1).max(20),
+  /** Candidats issus du parti : leurs positions sourcées tiennent lieu de positions du parti */
+  actors: z.array(z.string().regex(/^[a-z0-9-]+$/)).min(1),
+  /** Noms des candidats, ajoutés au chargement (jamais saisis à la main) */
+  actorNames: z.array(z.string()).optional(),
 })
 
 const TierSchema = z.object({
@@ -35,12 +47,13 @@ const OutcomeSchema = z.object({
  * Trois sortes de quiz flash :
  *  - « score » : un pourcentage d'appartenance à une tribu (« 72 % facho ») ;
  *  - « profil » : la réponse la plus choisie désigne un résultat (« Tu es Bercy ») ;
- *  - « connaissances » : des questions à bonne réponse, expliquées une à une.
+ *  - « connaissances » : des questions à bonne réponse, expliquées une à une ;
+ *  - « partis » : des questions du test, comparées aux positions sourcées des candidats de chaque parti (même formule que le test).
  */
 export const FlashQuizSchema = z
   .object({
     slug: z.string().regex(/^[a-z0-9-]+$/),
-    mode: z.enum(['score', 'profil', 'connaissances']).default('score'),
+    mode: z.enum(['score', 'profil', 'connaissances', 'partis']).default('score'),
     title: z.string().min(5).max(70),
     /** Ce qui suit le score : la tribu (« facho »), ou l'unité (« bonnes réponses ») */
     tribe: z.string().min(2).max(30).optional(),
@@ -54,8 +67,11 @@ export const FlashQuizSchema = z
           explain: z.string().min(5).max(260).optional(),
         }),
       )
-      .min(5)
-      .max(12),
+      .max(12)
+      .default([]),
+    /** Mode « partis » : identifiants des questions du test reprises (10 au plus) */
+    items: z.array(z.string()).max(10).optional(),
+    parties: z.array(PartySchema).min(2).optional(),
     /** Paliers de résultat (modes score et connaissances), du plus bas au plus haut ; `{s}` score, `{c}` bonnes réponses, `{n}` questions */
     tiers: z.array(TierSchema).min(3).optional(),
     outcomes: z.array(OutcomeSchema).min(2).optional(),
@@ -72,6 +88,11 @@ export const FlashQuizSchema = z
   })
   .superRefine((q, ctx) => {
     const bad = (message: string) => ctx.addIssue({ code: 'custom', message })
+    if (q.mode === 'partis') {
+      if (!q.items?.length || !q.parties?.length) bad('questions du test et partis obligatoires')
+      return
+    }
+    if (q.questions.length < 5) bad('au moins 5 questions')
     if (q.mode !== 'profil' && !q.tiers) bad('paliers obligatoires')
     if (q.mode !== 'profil' && !q.tribe) bad('libellé du score obligatoire')
     if (q.mode === 'profil') {
@@ -83,3 +104,14 @@ export const FlashQuizSchema = z
     if (q.mode === 'score') q.questions.forEach((x, i) => x.answers.some((a) => a.points === undefined) && bad(`question ${i + 1} : points manquants`))
   })
 export type FlashQuiz = z.infer<typeof FlashQuizSchema>
+
+/** Position sourcée d'un candidat sur une question, transmise au navigateur pour le calcul (mode « partis ») */
+export interface PartyStance {
+  p: import('./engine/types').Position
+  quote?: string
+  url?: string
+  publisher?: string
+}
+export type PartyData = Record<string, Record<string, PartyStance>>
+/** Quiz tel qu'envoyé au navigateur : questions résolues et, en mode « partis », positions des candidats */
+export type FlashQuizFull = FlashQuiz & { partyData?: PartyData }

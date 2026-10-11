@@ -1,0 +1,110 @@
+{
+ "slug": "quel-parti-politique-es-tu",
+ "mode": "partis",
+ "order": 5,
+ "title": "Quel parti politique es-tu ?",
+ "lede": "Découvre en 10 questions le parti qui pense le plus comme toi. Version express et pour rire : pour un vrai résultat, le test complet.",
+ "items": [
+  "tra-01",
+  "eco-02",
+  "tra-05",
+  "sec-04",
+  "cli-01",
+  "cli-06",
+  "eur-01",
+  "eur-07",
+  "lib-01",
+  "dem-02"
+ ],
+ "parties": [
+  {
+   "key": "lo",
+   "name": "Lutte ouvrière",
+   "short": "LO",
+   "actors": [
+    "nathalie-arthaud"
+   ]
+  },
+  {
+   "key": "pcf",
+   "name": "Parti communiste français",
+   "short": "PCF",
+   "actors": [
+    "fabien-roussel"
+   ]
+  },
+  {
+   "key": "lfi",
+   "name": "La France insoumise",
+   "short": "LFI",
+   "actors": [
+    "jean-luc-melenchon"
+   ]
+  },
+  {
+   "key": "ecologistes",
+   "name": "Les Écologistes",
+   "short": "Les Écologistes",
+   "actors": [
+    "marine-tondelier"
+   ]
+  },
+  {
+   "key": "ps",
+   "name": "Parti socialiste",
+   "short": "PS",
+   "actors": [
+    "olivier-faure"
+   ]
+  },
+  {
+   "key": "place-publique",
+   "name": "Place publique",
+   "short": "Place publique",
+   "actors": [
+    "raphael-glucksmann"
+   ]
+  },
+  {
+   "key": "renaissance",
+   "name": "Renaissance",
+   "short": "Renaissance",
+   "actors": [
+    "gabriel-attal"
+   ]
+  },
+  {
+   "key": "horizons",
+   "name": "Horizons",
+   "short": "Horizons",
+   "actors": [
+    "edouard-philippe"
+   ]
+  },
+  {
+   "key": "lr",
+   "name": "Les Républicains",
+   "short": "LR",
+   "actors": [
+    "bruno-retailleau"
+   ]
+  },
+  {
+   "key": "rn",
+   "name": "Rassemblement national",
+   "short": "RN",
+   "actors": [
+    "marine-le-pen"
+   ]
+  },
+  {
+   "key": "reconquete",
+   "name": "Reconquête",
+   "short": "Reconquête",
+   "actors": [
+    "eric-zemmour"
+   ]
+  }
+ ],
+ "avatar": "/img/stock/hemicycle.webp"
+}
