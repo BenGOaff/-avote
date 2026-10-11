@@ -1,0 +1,169 @@
+{
+ "slug": "suis-je-un-macroniste",
+ "title": "Suis-je un macroniste ?",
+ "tribe": "macroniste",
+ "order": 4,
+ "lede": "7 questions, 30 secondes. En même temps, c’est rapide.",
+ "questions": [
+  {
+   "q": "Au travail, tu dis…",
+   "answers": [
+    {
+     "label": "« On fait quoi ? »",
+     "points": 0
+    },
+    {
+     "label": "« On se cale un point. »",
+     "points": 1
+    },
+    {
+     "label": "« On va embarquer tout le monde dans une logique de transformation. »",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ton héros ?",
+   "answers": [
+    {
+     "label": "Personne.",
+     "points": 0
+    },
+    {
+     "label": "Ton banquier : il a dit oui.",
+     "points": 1
+    },
+    {
+     "label": "Une start-up qui lève des fonds pour livrer des croquettes en trottinette.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Gauche ou droite ?",
+   "answers": [
+    {
+     "label": "Clairement l’un des deux.",
+     "points": 0
+    },
+    {
+     "label": "Ça dépend des sujets.",
+     "points": 1
+    },
+    {
+     "label": "« En même temps. »",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ta tenue du vendredi ?",
+   "answers": [
+    {
+     "label": "Jogging.",
+     "points": 0
+    },
+    {
+     "label": "Jean.",
+     "points": 1
+    },
+    {
+     "label": "Chemise blanche, manches retroussées, sans cravate, pour faire proche des gens.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Une grève.",
+   "answers": [
+    {
+     "label": "Tu soutiens.",
+     "points": 0
+    },
+    {
+     "label": "Tu télétravailles.",
+     "points": 1
+    },
+    {
+     "label": "Tu expliques que la réforme est mal comprise, avec un schéma.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ton réseau social ?",
+   "answers": [
+    {
+     "label": "TikTok.",
+     "points": 0
+    },
+    {
+     "label": "Instagram.",
+     "points": 1
+    },
+    {
+     "label": "LinkedIn, avec un post sur ce que ton échec t’a appris.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Le mot « pédagogie » ?",
+   "answers": [
+    {
+     "label": "Un truc d’école.",
+     "points": 0
+    },
+    {
+     "label": "Un truc de réunion.",
+     "points": 1
+    },
+    {
+     "label": "La réponse à tout ce qui ne marche pas.",
+     "points": 2
+    }
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 19,
+   "headline": "{s} % macroniste. Ni en même temps, ni du tout.",
+   "line": "Pas de chemise blanche, pas de schéma. Tu choisis un camp, comme avant."
+  },
+  {
+   "upTo": 39,
+   "headline": "{s} % macroniste. Tu te cales des points, sans plus.",
+   "line": "Le télétravail les jours de grève, c’est ton seul « en même temps »."
+  },
+  {
+   "upTo": 59,
+   "headline": "{s} % macroniste. En même temps oui, en même temps non.",
+   "line": "Tu as un compte LinkedIn. Tu n’y as encore rien raconté sur ton échec."
+  },
+  {
+   "upTo": 79,
+   "headline": "{s} % macroniste. Ton schéma explique très bien la grève.",
+   "line": "Tu dis « pédagogie » au moins une fois par réunion."
+  },
+  {
+   "upTo": 100,
+   "headline": "{s} % macroniste. Ton échec t’a beaucoup appris.",
+   "line": "En même temps, pédagogie, LinkedIn : le grand chelem."
+  }
+ ],
+ "fact": {
+  "cliche": "« Au moins, eux, ils tiennent les comptes. »",
+  "text": "Fin 2025, la dette publique atteint 3 460,5 Md€, soit 115,6 % du PIB, selon l’Insee. Un an plus tôt, elle était de 3 306,1 Md€ (112,6 % du PIB) : environ 154 Md€ de plus en un an.",
+  "sources": [
+   {
+    "title": "Dette des administrations publiques au 4e trimestre 2025 (Informations rapides n° 79)",
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/8955019",
+    "date": "2026-03-27",
+    "passage": "La dette publique au sens de Maastricht s’établit à 3 460,5 Md€ […] elle s’établit à 115,6 % du PIB"
+   }
+  ]
+ },
+ "avatar": "/img/quiz/suis-je-un-macroniste.png"
+}

@@ -7,6 +7,7 @@ import { SharePanel } from '@/components/SharePanel'
 import { TARGETS, type ShareTarget } from '@/lib/share'
 import { absolute } from '@/lib/site'
 import { UI_COPY } from '@/lib/copy'
+import { cssFamily, fitText, loadImage } from '@/lib/canvas'
 
 /**
  * Studio de partage (cahier §16) : rendu canvas local, polices embarquées, aucun envoi.
@@ -42,46 +43,6 @@ const PHRASES = [
   'Le montant est précis. Le financement, moins.',
   'Tout le monde promet. Je compare.',
 ]
-
-function loadImage(src: string): Promise<HTMLImageElement> {
-  return new Promise((resolve, reject) => {
-    const img = new Image()
-    img.onload = () => resolve(img)
-    img.onerror = reject
-    img.src = src
-  })
-}
-
-function cssFamily(varName: string, fallback: string) {
-  const v = getComputedStyle(document.documentElement).getPropertyValue(varName).trim()
-  return v || fallback
-}
-
-function wrap(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): string[] {
-  const words = text.split(/\s+/)
-  const lines: string[] = []
-  let line = ''
-  for (const w of words) {
-    const test = line ? `${line} ${w}` : w
-    if (ctx.measureText(test).width > maxWidth && line) {
-      lines.push(line)
-      line = w
-    } else line = test
-  }
-  if (line) lines.push(line)
-  return lines
-}
-
-/** Taille de police maximale pour que le texte tienne dans la boîte. */
-function fitText(ctx: CanvasRenderingContext2D, text: string, family: string, maxW: number, maxH: number, maxSize: number, lh = 1.08) {
-  for (let size = maxSize; size > 24; size -= 4) {
-    ctx.font = `${size}px ${family}`
-    const lines = wrap(ctx, text, maxW)
-    if (lines.length * size * lh <= maxH && lines.every((l) => ctx.measureText(l).width <= maxW)) return { size, lines }
-  }
-  ctx.font = `24px ${family}`
-  return { size: 24, lines: wrap(ctx, text, maxW) }
-}
 
 export function Studio() {
   const canvasRef = useRef<HTMLCanvasElement>(null)

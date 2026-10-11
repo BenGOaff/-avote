@@ -1,0 +1,168 @@
+{
+ "slug": "suis-je-un-bobo-ecolo",
+ "title": "Suis-je un bobo écolo ?",
+ "tribe": "bobo écolo",
+ "order": 3,
+ "lede": "7 questions, 30 secondes, zéro émission.",
+ "questions": [
+  {
+   "q": "Pour aller au travail ?",
+   "answers": [
+    {
+     "label": "La voiture.",
+     "points": 0
+    },
+    {
+     "label": "Les transports en commun.",
+     "points": 1
+    },
+    {
+     "label": "Un vélo cargo à 4 000 €, avec un enfant dedans et un autocollant dessus.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ton lait ?",
+   "answers": [
+    {
+     "label": "De vache.",
+     "points": 0
+    },
+    {
+     "label": "Ce qui reste au frigo.",
+     "points": 1
+    },
+    {
+     "label": "D’avoine, barista, bio, et tu as un avis sur la marque.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Tes vacances ?",
+   "answers": [
+    {
+     "label": "L’avion, et pas qu’une fois.",
+     "points": 0
+    },
+    {
+     "label": "Le train, quand il n’est pas trop cher.",
+     "points": 1
+    },
+    {
+     "label": "Le train de nuit, et tu le racontes pendant six mois.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Tes courses ?",
+   "answers": [
+    {
+     "label": "Le supermarché.",
+     "points": 0
+    },
+    {
+     "label": "Le marché du dimanche.",
+     "points": 1
+    },
+    {
+     "label": "L’AMAP, le vrac, et des bocaux étiquetés à la main.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Le mot « résilience » ?",
+   "answers": [
+    {
+     "label": "Jamais entendu.",
+     "points": 0
+    },
+    {
+     "label": "En réunion, parfois.",
+     "points": 1
+    },
+    {
+     "label": "Tu pourrais te le faire tatouer.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ta déco ?",
+   "answers": [
+    {
+     "label": "Un écran plat.",
+     "points": 0
+    },
+    {
+     "label": "Quelques plantes.",
+     "points": 1
+    },
+    {
+     "label": "Une jungle en pot. Chaque plante a un prénom.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Au barbecue, tu apportes…",
+   "answers": [
+    {
+     "label": "des saucisses.",
+     "points": 0
+    },
+    {
+     "label": "un peu de tout.",
+     "points": 1
+    },
+    {
+     "label": "des brochettes de tofu, et tu les défends.",
+     "points": 2
+    }
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 19,
+   "headline": "{s} % bobo écolo. Le vélo cargo passe sans te voir.",
+   "line": "Saucisses, avion, écran plat : l’AMAP ne connaît pas ton prénom."
+  },
+  {
+   "upTo": 39,
+   "headline": "{s} % bobo écolo. Un bocal en vrac, c’est un début.",
+   "line": "Tu tries tes déchets. La plupart du temps."
+  },
+  {
+   "upTo": 59,
+   "headline": "{s} % bobo écolo. Le lait d’avoine, sauf le dimanche.",
+   "line": "Une plante sur deux a un prénom. L’autre attend."
+  },
+  {
+   "upTo": 79,
+   "headline": "{s} % bobo écolo. Ta plante préférée s’appelle Gérard.",
+   "line": "Tu as déjà dit « circuit court » dans un dîner, et tu n’as pas eu honte."
+  },
+  {
+   "upTo": 100,
+   "headline": "{s} % bobo écolo. Le train de nuit t’a changé.",
+   "line": "Vélo cargo, AMAP, lait d’avoine : le grand chelem."
+  }
+ ],
+ "fact": {
+  "cliche": "« Le nucléaire, c’est mauvais pour le climat. »",
+  "text": "Sur tout son cycle de vie (construction, combustible, démantèlement), une centrale nucléaire émet en médiane 12 g de CO₂ par kWh, selon le GIEC. L’éolien terrestre : 11 g. Le gaz : 490 g. Le charbon : 820 g. Pour le climat, le nucléaire et l’éolien sont à égalité. Les débats sur les déchets et le coût restent entiers.",
+  "sources": [
+   {
+    "title": "Climate Change 2014, Mitigation – Annex III, Technology-specific Cost and Performance Parameters (table A.III.2)",
+    "publisher": "GIEC (IPCC), groupe de travail III",
+    "url": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf",
+    "date": "2014"
+   }
+  ]
+ },
+ "avatar": "/img/quiz/suis-je-un-bobo-ecolo.png"
+}

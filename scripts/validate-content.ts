@@ -8,6 +8,7 @@ import path from 'node:path'
 import { parse } from 'yaml'
 import { ArticleSchema, BriefSchema } from '../src/lib/content-schema'
 import { SocialPostSchema } from '../src/lib/social-schema'
+import { FlashQuizSchema } from '../src/lib/flash'
 
 const ROOT = process.cwd()
 const errors: string[] = []
@@ -124,6 +125,20 @@ for (const [slug, a] of Object.entries(nuances.actors)) {
 }
 const sansNuance = cand.actors.filter((a) => a.verified && !nuances.actors[a.slug] && (a as { party?: string }).party).length
 if (sansNuance) warnings.push(`${sansNuance} candidat(s) avec un parti mais sans nuance`)
+
+// Quiz flash : schéma, identifiant = nom du fichier, paliers croissants jusqu'à 100
+const flashDir = path.join(ROOT, 'content/quiz/flash')
+if (existsSync(flashDir))
+  for (const f of readdirSync(flashDir).filter((f) => f.endsWith('.json'))) {
+    const r = FlashQuizSchema.safeParse(JSON.parse(readFileSync(path.join(flashDir, f), 'utf8')))
+    if (!r.success) {
+      errors.push(`quiz flash ${f} : ${r.error.issues.map((i) => `${i.path.join('.')} ${i.message}`).join(' ; ')}`)
+      continue
+    }
+    if (`${r.data.slug}.json` !== f) errors.push(`quiz flash ${f} : le slug doit reprendre le nom du fichier`)
+    const ups = r.data.tiers.map((t) => t.upTo)
+    if (ups.some((u, i) => i > 0 && u <= ups[i - 1]!) || ups[ups.length - 1] !== 100) errors.push(`quiz flash ${f} : paliers croissants, le dernier à 100`)
+  }
 
 // Quiz Tiquiz : adresses https sur le sous-domaine des quiz, identifiants uniques
 const tiquiz = JSON.parse(readFileSync(path.join(ROOT, 'content/quiz/tiquiz.json'), 'utf8')) as { quizzes: { slug: string; title: string; url: string }[] }

@@ -1,0 +1,169 @@
+{
+ "slug": "suis-je-une-gauchiasse",
+ "title": "Suis-je une gauchiasse ?",
+ "tribe": "gauchiasse",
+ "order": 2,
+ "lede": "7 questions, 30 secondes. Tote bag non obligatoire.",
+ "questions": [
+  {
+   "q": "Ton sac ?",
+   "answers": [
+    {
+     "label": "Un sac à dos.",
+     "points": 0
+    },
+    {
+     "label": "Un sac de courses réutilisable.",
+     "points": 1
+    },
+    {
+     "label": "Un tote bag de librairie indépendante, rempli d’autres tote bags.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Tu appelles ton collègue…",
+   "answers": [
+    {
+     "label": "par son prénom.",
+     "points": 0
+    },
+    {
+     "label": "« mon pote ».",
+     "points": 1
+    },
+    {
+     "label": "« camarade ». Au second degré. Enfin, presque.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Ton week-end idéal ?",
+   "answers": [
+    {
+     "label": "Un match.",
+     "points": 0
+    },
+    {
+     "label": "Un brunch.",
+     "points": 1
+    },
+    {
+     "label": "La manif le samedi, le débat sur la manif le dimanche.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Le mot « capitalisme », tu le dis…",
+   "answers": [
+    {
+     "label": "jamais.",
+     "points": 0
+    },
+    {
+     "label": "en parlant du prix des loyers.",
+     "points": 1
+    },
+    {
+     "label": "avant le café, pendant le café, et à propos du café.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Un ami se met à son compte.",
+   "answers": [
+    {
+     "label": "Tu le félicites.",
+     "points": 0
+    },
+    {
+     "label": "Tu lui demandes s’il a une mutuelle.",
+     "points": 1
+    },
+    {
+     "label": "Tu lui expliques l’aliénation du travail en 45 minutes.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "La Fête de l’Huma ?",
+   "answers": [
+    {
+     "label": "C’est quoi ?",
+     "points": 0
+    },
+    {
+     "label": "J’y suis allé pour un concert.",
+     "points": 1
+    },
+    {
+     "label": "J’ai mon stand de merguez préféré et mon débat préféré.",
+     "points": 2
+    }
+   ]
+  },
+  {
+   "q": "Une discussion qui s’éternise.",
+   "answers": [
+    {
+     "label": "Tu pars.",
+     "points": 0
+    },
+    {
+     "label": "Tu proposes de voter.",
+     "points": 1
+    },
+    {
+     "label": "Tu proposes une AG pour décider si on vote.",
+     "points": 2
+    }
+   ]
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 19,
+   "headline": "{s} % gauchiasse. Le tote bag te regarde de travers.",
+   "line": "Ni AG, ni merguez de l’Huma. Tu as même dit « mon banquier » sans ironie."
+  },
+  {
+   "upTo": 39,
+   "headline": "{s} % gauchiasse. Brunch solidaire, mais brunch.",
+   "line": "Tu signes les pétitions. Tu ne lis pas toujours jusqu’au bout."
+  },
+  {
+   "upTo": 59,
+   "headline": "{s} % gauchiasse. « Camarade », mais après 22 h.",
+   "line": "Le cœur à gauche, le porte-monnaie qui hésite."
+  },
+  {
+   "upTo": 79,
+   "headline": "{s} % gauchiasse. L’AG ne commence pas sans toi.",
+   "line": "Tu as déjà expliqué la plus-value à quelqu’un qui n’avait rien demandé."
+  },
+  {
+   "upTo": 100,
+   "headline": "0 % discret, {s} % gauchiasse. Bonne chance en 2027.",
+   "line": "Tote bag, AG, merguez de l’Huma : le grand chelem."
+  }
+ ],
+ "fact": {
+  "cliche": "« Les riches ne paient pas d’impôts. »",
+  "text": "Sur l’impôt sur le revenu (92 Md€ en 2024), les 10 % de foyers les plus aisés paient à eux seuls près des trois quarts du total, selon la DGFiP. L’impôt sur le revenu n’est qu’un impôt parmi d’autres, mais sur celui-là, ils paient.",
+  "sources": [
+   {
+    "title": "L’impôt sur le revenu 2024 a été plus dynamique que les revenus (DGFiP Statistiques n° 41)",
+    "publisher": "DGFiP",
+    "url": "https://www.impots.gouv.fr/dgfip-statistiques-limpot-sur-le-revenu-2024-ete-plus-dynamique-que-les-revenus",
+    "date": "2025-11",
+    "passage": "Ces foyers acquittent à eux seuls près des trois quarts de l’impôt sur le revenu."
+   }
+  ]
+ },
+ "avatar": "/img/quiz/suis-je-une-gauchiasse.png"
+}
