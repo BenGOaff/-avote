@@ -505,6 +505,7 @@ function Intro({
           <div className="row" style={{ marginTop: 'var(--s4)' }}>
             {startButtons}
           </div>
+          <HowTip />
         </div>
 
         <figure className="hero-card">
@@ -543,19 +544,25 @@ function Intro({
         </div>
       </div>
 
-      {/* Ce qui rassure, en une ligne : le détail est sur la page Méthode */}
-      <ul className="reassure" aria-label="En bref">
-        {h.reassure.map((r) => (
-          <li key={r}>
-            <IconCheck width={18} height={18} aria-hidden="true" />
-            {r}
-          </li>
-        ))}
-        <li>
-          <Link href="/methodologie">{h.howLink}</Link>
-        </li>
-      </ul>
     </div>
+  )
+}
+
+/** « Comment ça marche ? » en infobulle : au survol, au focus clavier, ou au toucher sur téléphone. */
+function HowTip() {
+  const [open, setOpen] = useState(false)
+  const h = UI_COPY.home
+  return (
+    <span className={`howtip${open ? ' howtip--open' : ''}`} onMouseLeave={() => setOpen(false)}>
+      <button type="button" className="howtip__btn" aria-expanded={open} aria-describedby="howtip-bulle" onClick={() => setOpen((o) => !o)} onBlur={() => setOpen(false)}>
+        {h.howLink}
+      </button>
+      <span id="howtip-bulle" role="tooltip" className="howtip__bubble">
+        {h.how.map((l) => (
+          <span key={l}>{l}</span>
+        ))}
+      </span>
+    </span>
   )
 }
 
