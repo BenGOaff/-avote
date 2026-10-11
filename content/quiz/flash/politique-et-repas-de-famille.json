@@ -137,25 +137,29 @@
    "key": "casque-bleu",
    "name": "Le casque bleu",
    "headline": "Paix sur la table, bûche à la main.",
-   "line": "La parade : « On en reparle au café ? » Et au café, on n’en reparle pas."
+   "line": "La parade : « On en reparle au café ? » Et au café, on n’en reparle pas.",
+   "avatar": "/img/quiz/casque-bleu.webp"
   },
   {
    "key": "allumeur",
    "name": "L’allumeur de mèche",
    "headline": "Une allumette, et tout le repas flambe.",
-   "line": "Tu lances le sujet entre deux toasts. La parade : pose la boîte d’allumettes et sors plutôt un chiffre sourcé."
+   "line": "Tu lances le sujet entre deux toasts. La parade : pose la boîte d’allumettes et sors plutôt un chiffre sourcé.",
+   "avatar": "/img/quiz/allumeur.webp"
   },
   {
    "key": "fuyard",
    "name": "Le fuyard du fromage",
    "headline": "Introuvable dès le plateau de fromages.",
-   "line": "Dès qu’on dit « 2027 », tu as un appel urgent. La parade : garde deux chiffres en tête, tu tiendras jusqu’au dessert."
+   "line": "Dès qu’on dit « 2027 », tu as un appel urgent. La parade : garde deux chiffres en tête, tu tiendras jusqu’au dessert.",
+   "avatar": "/img/quiz/fuyard.webp"
   },
   {
    "key": "fact-checker",
    "name": "Le fact-checker de la table",
    "headline": "Ton téléphone dégaine plus vite que tonton.",
-   "line": "La parade : une source, pas dix. Et laisse tonton finir sa phrase."
+   "line": "La parade : une source, pas dix. Et laisse tonton finir sa phrase.",
+   "avatar": "/img/quiz/fact-checker.webp"
   }
  ],
  "fact": {
@@ -189,5 +193,6 @@
     "date": "2014"
    }
   ]
- }
+ },
+ "avatar": "/img/quiz/tonton.webp"
 }

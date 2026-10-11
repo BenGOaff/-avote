@@ -137,37 +137,44 @@
    "key": "interieur",
    "name": "Le ministère de l’Intérieur",
    "headline": "Tu sais tout sur tout le monde.",
-   "line": "En vrai, il gère la police, la gendarmerie, les préfectures et l’organisation des élections."
+   "line": "En vrai, il gère la police, la gendarmerie, les préfectures et l’organisation des élections.",
+   "avatar": "/img/quiz/interieur.webp"
   },
   {
    "key": "bercy",
    "name": "Bercy",
    "headline": "Tu comptes même les miettes.",
-   "line": "En vrai, le ministère de l’Économie prépare le budget de l’État et lève les impôts."
+   "line": "En vrai, le ministère de l’Économie prépare le budget de l’État et lève les impôts.",
+   "avatar": "/img/quiz/bercy.webp"
   },
   {
    "key": "culture",
    "name": "Le ministère de la Culture",
    "headline": "Un avis sur chaque film, même ceux que tu n’as pas vus.",
-   "line": "En vrai, il veille sur les musées, le patrimoine, le spectacle vivant et l’audiovisuel public."
+   "line": "En vrai, il veille sur les musées, le patrimoine, le spectacle vivant et l’audiovisuel public.",
+   "avatar": "/img/quiz/culture.webp"
   },
   {
    "key": "ecologie",
    "name": "Le ministère de la Transition écologique",
    "headline": "Une gourde pour chaque occasion.",
-   "line": "En vrai, il s’occupe du climat, de l’énergie, de la biodiversité et des transports."
+   "line": "En vrai, il s’occupe du climat, de l’énergie, de la biodiversité et des transports.",
+   "avatar": "/img/quiz/ecologie.webp"
   },
   {
    "key": "education",
    "name": "L’Éducation nationale",
    "headline": "Tu expliques tout. Deux fois.",
-   "line": "En vrai, c’est le premier budget de l’État : écoles, collèges, lycées et leurs enseignants."
+   "line": "En vrai, c’est le premier budget de l’État : écoles, collèges, lycées et leurs enseignants.",
+   "avatar": "/img/quiz/education.webp"
   },
   {
    "key": "armees",
    "name": "Le ministère des Armées",
    "headline": "Debout avant le soleil.",
-   "line": "En vrai, il assure la défense du pays, en France et en opérations extérieures."
+   "line": "En vrai, il assure la défense du pays, en France et en opérations extérieures.",
+   "avatar": "/img/quiz/armees.webp"
   }
- ]
+ ],
+ "avatar": "/img/quiz/bercy.webp"
 }

@@ -16,7 +16,9 @@ export function getFlashQuizzes(): FlashQuiz[] {
       if (!parsed.success) throw new Error(`content/quiz/flash/${f} invalide : ${parsed.error.message}`)
       // Avatar affiché seulement quand le fichier existe : rien de simulé
       const q = parsed.data
-      if (q.avatar && !existsSync(path.join(process.cwd(), 'public', q.avatar))) delete q.avatar
+      const missing = (src?: string) => !!src && !existsSync(path.join(process.cwd(), 'public', src))
+      if (missing(q.avatar)) delete q.avatar
+      for (const o of q.outcomes ?? []) if (missing(o.avatar)) delete o.avatar
       list.push(q)
     }
   cache = list.sort((a, b) => a.order - b.order)
