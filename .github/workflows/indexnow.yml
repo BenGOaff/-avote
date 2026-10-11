@@ -1,0 +1,36 @@
+# Signale les pages nouvelles ou modifiées à Bing et aux moteurs IndexNow (Bing alimente la recherche de ChatGPT et Copilot).
+# Gratuit, sans compte : la clé est publiée à la racine du site (public/<clé>.txt).
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ['content/**', 'src/app/**']
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Pages à signaler
+        run: |
+          SITE=https://xn--avote-xra.fr
+          URLS="$SITE/ $SITE/test $SITE/radar $SITE/candidats $SITE/comparateur"
+          # Articles du Radar ajoutés ou modifiés par ce push
+          for f in $(git diff --name-only HEAD~1 HEAD -- content/radar 2>/dev/null); do
+            URLS="$URLS $SITE/radar/$(basename "$f" .md)"
+          done
+          echo "URLS=$URLS" >> "$GITHUB_ENV"
+      # Laisser le temps au déploiement Hostinger de publier la nouvelle version
+      - run: sleep 300
+      - name: Envoi IndexNow
+        run: |
+          KEY=$(basename public/*.txt .txt | grep -E '^[0-9a-f]{32}$' | head -1)
+          LIST=$(printf '"%s",' $URLS | sed 's/,$//')
+          curl -sS -o /dev/null -w "IndexNow : %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"xn--avote-xra.fr\",\"key\":\"$KEY\",\"keyLocation\":\"https://xn--avote-xra.fr/$KEY.txt\",\"urlList\":[$LIST]}"
