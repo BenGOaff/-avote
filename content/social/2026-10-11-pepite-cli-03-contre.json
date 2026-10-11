@@ -1,0 +1,28 @@
+{
+  "id": "2026-10-11-pepite-cli-03-contre",
+  "at": "2026-10-11T08:30:46.218Z",
+  "kind": "pepite",
+  "card": {
+    "kicker": "SEULE CONTRE ONZE",
+    "title": "Pesticides : 11 candidats pour en réduire l'usage, une seule nettement contre",
+    "line": "Sur 18 candidats qui se sont prononcés, Marine Le Pen est la seule à dire non nettement.",
+    "actor": "marine-le-pen",
+    "quote": "Pas d’interdiction de produits phytosanitaires existant sans alternatives efficaces",
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Réduire les pesticides même si certains coûts de production augmentent ? 11 candidats disent oui nettement. Marine Le Pen est la seule à dire non nettement. Et toi, tu es dans quel camp ?",
+    "linkedin": "Réduire l'usage des pesticides, même si cela augmente certains coûts de production : sur 18 candidats à la présidentielle qui se sont prononcés, 11 sont nettement pour.\n\nUne seule candidate est nettement contre : Marine Le Pen. Son site de campagne indique : « Pas d’interdiction de produits phytosanitaires existant sans alternatives efficaces ».\n\nL'affirmation figure dans le test de Ça vote ?, qui permet de situer sa propre position face à celle des candidats sur chaque sujet.\n\nSur ce sujet, où places-tu l'équilibre entre réduction des pesticides et coûts de production ?\n\n#presidentielle2027 #agriculture",
+    "facebook": "Sur les pesticides, 18 candidats se sont prononcés sur l'idée de réduire leur usage même si cela augmente certains coûts de production. 11 sont nettement pour. Marine Le Pen est la seule nettement contre. Et toi, tu aurais parié sur ce score ? Le test est sur çavote.fr",
+    "instagram": "Pesticides : 11 candidats pour, une seule nettement contre.\nL'affirmation : réduire l'usage des pesticides, même si cela augmente certains coûts de production.\n18 candidats se sont prononcés.\nMarine Le Pen est la seule à dire non nettement.\nSon site de campagne : « Pas d’interdiction de produits phytosanitaires existant sans alternatives efficaces ».\nEt toi, tu te mets dans quel camp ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #pesticides #agriculture"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test",
+  "source": {
+    "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+    "url": "https://mlafrance.fr/pdfs/projet-l-agriculture.pdf",
+    "title": "Projet de Marine Le Pen : l’agriculture",
+    "quote": "Pas d’interdiction de produits phytosanitaires existant sans alternatives efficaces",
+    "who": "Marine Le Pen"
+  }
+}
