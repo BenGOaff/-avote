@@ -65,20 +65,22 @@ async function paintResult(canvas: HTMLCanvasElement, quiz: Quiz, score: number,
   ctx.fillStyle = INK
   ctx.fillText(hook, m + hookSize / 2, top + hookSize * 0.27)
 
-  // Avatar (personnage inventé) à droite, s'il existe
-  const textW = avatar ? (w - 2 * m) * (wide ? 0.62 : 0.6) : w - 2 * m
-  if (avatar) {
-    const size = wide ? h * 0.62 : Math.min(w * 0.42, (bottom - top) * 0.45)
-    ctx.drawImage(avatar, w - m - size, wide ? (h - footH - size) / 2 : top + hookSize * 2.2, size, size)
-  }
-
-  // Le score en très grand, la tribu surlignée dessous
+  // Le score à gauche, l'avatar (personnage inventé) à droite, jamais l'un sur l'autre
   const y0 = top + hookSize * 2.3
-  const scoreSize = Math.round(Math.min(textW * 0.55, (bottom - y0) * (wide ? 0.42 : 0.3)))
+  const gap = m * 0.4
+  const avatarSize = avatar ? (wide ? h * 0.62 : Math.min((w - 2 * m) * 0.42, (bottom - y0) * 0.5)) : 0
+  const textW = avatar && !wide ? w - 2 * m - avatarSize - gap : avatar ? (w - 2 * m) * 0.6 : w - 2 * m
+  if (avatar) ctx.drawImage(avatar, w - m - avatarSize, wide ? (h - footH - avatarSize) / 2 : y0, avatarSize, avatarSize)
+  const pct = `${score}\u00a0%`
+  let scoreSize = Math.round((bottom - y0) * (wide ? 0.42 : 0.3))
   ctx.font = `${scoreSize}px ${display}`
-  ctx.fillText(`${score} %`, m, y0)
+  while (scoreSize > 40 && ctx.measureText(pct).width > textW) {
+    scoreSize -= 6
+    ctx.font = `${scoreSize}px ${display}`
+  }
+  ctx.fillText(pct, m, y0)
   const tribe = quiz.tribe.toUpperCase()
-  const tribeFit = fitText(ctx, tribe, display, textW, scoreSize * 0.9, Math.round(scoreSize * 0.45))
+  const tribeFit = fitText(ctx, tribe, display, textW, scoreSize * 0.9, Math.round(scoreSize * 0.55))
   const ty = y0 + scoreSize * 1.02
   tribeFit.lines.forEach((l, i) => {
     const lw = ctx.measureText(l).width
@@ -87,9 +89,10 @@ async function paintResult(canvas: HTMLCanvasElement, quiz: Quiz, score: number,
     ctx.fillStyle = INK
     ctx.fillText(l, m, ty + i * tribeFit.size * 1.08)
   })
+  const blockEnd = Math.max(ty + tribeFit.lines.length * tribeFit.size * 1.08, wide ? 0 : y0 + avatarSize)
 
   // La punchline, puis la phrase
-  const py = ty + tribeFit.lines.length * tribeFit.size * 1.08 + m * 0.5
+  const py = blockEnd + m * 0.5
   const head = fillScore(tier.headline, score)
   const room = bottom - py
   const hf = fitText(ctx, head, display, wide ? textW : w - 2 * m, room * 0.55, Math.round(w * (wide ? 0.04 : 0.065)), 1.1)
@@ -180,6 +183,10 @@ export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; othe
   return (
     <>
       <section className="flash flash--result card card--featured" aria-live="polite">
+        {quiz.avatar && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img className="flash__avatar" src={quiz.avatar} width={800} height={800} alt="" />
+        )}
         <h2 className="flash__score" tabIndex={-1} ref={head}>
           <span className="flash__pct">{score}&nbsp;%</span> <span className="flash__tribe">{quiz.tribe}</span>
         </h2>

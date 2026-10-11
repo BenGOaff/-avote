@@ -4257,6 +4257,46 @@ details.disclosure > div {
   border-radius: var(--radius);
   box-shadow: var(--shadow-signature);
 }
+.flash-hub__card {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--s4);
+}
+.flash-hub__avatar {
+  flex: none;
+  width: 88px;
+  height: 88px;
+}
+.flash-hub__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+}
+.flash-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px;
+  gap: var(--s4);
+  align-items: center;
+}
+.flash-head__avatar {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 700px) {
+  .flash-head {
+    grid-template-columns: minmax(0, 1fr) 220px;
+  }
+}
+.flash__avatar ~ .flash__score .flash__pct {
+  font-size: clamp(3.25rem, 14vw, 7rem);
+}
+.flash__avatar {
+  float: right;
+  width: 38%;
+  max-width: 220px;
+  height: auto;
+  margin: 0 0 var(--s3) var(--s3);
+}
 .flash-hub__card,
 .flash-hub__card .small {
   color: var(--on-highlight);
