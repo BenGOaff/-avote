@@ -30,7 +30,10 @@ export const UI_COPY = {
   },
   home: {
     title: 'Trouve le candidat le plus proche de tes idées',
-    lede: 'Un quart d’heure pour savoir quels candidats pensent comme toi sur ce qui compte dans ta vie. Ensuite, tu votes en sachant. Gratuit, anonyme, sans inscription.',
+    lede: 'Nous avons le droit de voter et le devoir de le faire en toute connaissance de cause. Fais le test pour découvrir qui est le candidat le plus proche de tes idées et de tes besoins. C’est anonyme, évidemment !',
+    promise: 'Garanti sans bullshit ni influence',
+    reassure: ['15 minutes, pause quand tu veux', 'Tes réponses restent sur ton téléphone', 'Chaque position a sa source'],
+    howLink: 'Comment ça marche',
     cardAlt: 'Ta carte d’électeur Ça vote ? : ta compatibilité avec les candidats et la mention « Je vote en sachant ».',
     proofTitle: 'Ce que tu peux vérifier',
     proofs: [
@@ -85,6 +88,7 @@ export const UI_COPY = {
     sessionHint: 'Tout s’efface quand tu fermes l’onglet.',
     local: 'Garder sur cet appareil',
     localHint: 'Pour reprendre plus tard et voir ce qui change pendant la campagne. Si l’appareil est partagé, préfère l’autre option. Vider les données du navigateur efface aussi ton profil.',
+    go: 'C’est parti',
   },
   results: {
     title: 'Voilà ce qui ressort de tes réponses.',

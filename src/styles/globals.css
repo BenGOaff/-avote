@@ -926,9 +926,99 @@ details.disclosure > div {
   font-size: clamp(2.1rem, 4.2vw, 3.6rem);
 }
 @media (min-width: 900px) {
+  /* Trois lignes sur ordinateur, quelle que soit la largeur */
+  .test-intro h1 {
+    max-width: 10.5em;
+    text-wrap: balance;
+  }
+}
+.test-intro__lede {
+  font-size: var(--text-lede-hero);
+}
+.test-intro__promise {
+  margin: var(--s3) 0 0;
+  font: 700 var(--text-ui) / 1.3 var(--font-ui);
+}
+/* Bandeau des thèmes : pleine largeur, défilement continu, arrêt au survol */
+.marquee {
+  width: 100vw;
+  margin: var(--s6) 0 0 calc(50% - 50vw);
+  overflow: hidden;
+  border-block: var(--border) solid var(--on-highlight);
+  background: var(--highlight);
+  color: var(--on-highlight);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+.marquee:hover .marquee__track,
+.marquee:focus-within .marquee__track {
+  animation-play-state: paused;
+}
+.marquee__list {
+  list-style: none;
+  display: flex;
+  gap: var(--s2);
+  margin: 0;
+  padding: var(--s3) var(--s2) var(--s3) 0;
+}
+.marquee__list li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  padding: var(--s1) var(--s3);
+  border: var(--hairline) solid var(--on-highlight);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 600 var(--text-xs) / 1.2 var(--font-ui);
+  white-space: nowrap;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    overflow-x: auto;
+  }
+  .marquee__track {
+    animation: none;
+  }
+}
+[data-sobre='true'] .marquee__track {
+  animation: none;
+}
+.reassure {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s5);
+  margin: var(--s5) 0 0;
+  padding: var(--s3) 0 0;
+  border-top: var(--hairline) solid var(--line);
+  font-size: var(--text-small);
+}
+.reassure li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+}
+.reassure li svg {
+  color: var(--ink);
+  background: var(--highlight);
+  border-radius: 50%;
+  padding: 2px;
+}
+@media (min-width: 900px) {
   .test-intro {
     grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    grid-template-areas: 'text card' 'themes card';
+    grid-template-areas: 'text card';
     align-items: start;
   }
   .test-intro__text {
@@ -937,10 +1027,6 @@ details.disclosure > div {
   .test-intro .hero-card {
     grid-area: card;
     align-self: center;
-  }
-  .test-intro .theme-row {
-    grid-area: themes;
-    margin-top: 0;
   }
 }
 

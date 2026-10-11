@@ -36,6 +36,8 @@
   --text-ui: 1.0625rem; /* 17 px */
   --text-article: 1.1875rem; /* 19 px */
   --text-small: 0.9rem; /* ~14,4 px */
+  --text-xs: 0.75rem; /* 12 px : étiquettes compactes */
+  --text-lede-hero: 1.125rem; /* 18 px : chapô de l'accueil */
   --text-button: 1.0625rem;
   --text-hand: 1.375rem; /* 22 px minimum */
   --lh-ui: 1.5;
