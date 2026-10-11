@@ -207,7 +207,7 @@ const Draft = z.object({
   cta: z.string().describe('Invitation du bandeau noir, 12 à 30 caractères, tutoiement (ex. « Et toi ? Fais le test »)'),
   x: z.string().describe('X : 100 à 200 caractères, une seule idée, une chute ou une question ; sans lien (ajouté ensuite) ; 0 ou 1 hashtag, seulement s’il est précis'),
   instagram: z.string().describe('Instagram : 1re ligne = accroche de 90 caractères au plus (seule visible avant « plus ») ; puis 3 à 6 lignes courtes séparées par des retours à la ligne ; puis « Le test est en lien dans la bio. » ; puis une ligne vide et 2 ou 3 hashtags précis (#presidentielle2027 et le sujet, jamais de générique comme #politique). Les mots-clés du sujet dans la légende comptent plus que les hashtags. Aucune URL.'),
-  linkedin: z.string().describe('LinkedIn : 2 premières lignes = accroche de 200 caractères au plus (visible avant « voir plus ») ; paragraphes d’une ou deux phrases séparés par une ligne vide ; 500 à 1100 caractères ; finit par une question qui appelle les commentaires ; 0 à 2 hashtags précis en fin (le suivi des hashtags n’existe plus sur LinkedIn). Sans lien (ajouté ensuite).'),
+  linkedin: z.string().describe('LinkedIn : 2 premières lignes = accroche de 200 caractères au plus (visible avant « voir plus ») ; paragraphes d’une ou deux phrases séparés par une ligne vide ; 350 à 700 caractères, uniquement des faits des pièces ; finit par une question qui appelle les commentaires ; 0 à 2 hashtags précis en fin (le suivi des hashtags n’existe plus sur LinkedIn). Sans lien (ajouté ensuite).'),
   facebook: z.string().describe('Facebook : 150 à 400 caractères, ton de conversation, finit par une question qui appelle les commentaires puis « Le test est sur çavote.fr ». Aucune URL, aucun hashtag.'),
 })
 
@@ -290,7 +290,8 @@ function checks(m: Material, d: z.infer<typeof Draft>): string[] {
   const all = [d.kicker, d.title, d.line, d.quote, d.cta, d.x, d.instagram, d.linkedin, d.facebook]
   for (const t of all) problems.push(...styleViolations(t).map((v) => `tournure interdite (${v})`))
   for (const t of all) {
-    const missing = numbersAreSourced(t, m.facts)
+    // « 1 » (un seul, une) n'est pas un chiffre à sourcer
+    const missing = numbersAreSourced(t, m.facts).filter((n) => n !== '1')
     if (missing.length) problems.push(`nombre absent des pièces : ${missing.join(', ')}`)
     for (const q of t.match(/«\s*([^»]{12,})\s*»/g) ?? []) if (!quoteIsInSource(q.replace(/[«»]/g, ''), m.facts)) problems.push(`citation introuvable : ${q.slice(0, 60)}`)
   }
@@ -312,7 +313,7 @@ function checks(m: Material, d: z.infer<typeof Draft>): string[] {
 
 async function write(m: Material, now: Date): Promise<SocialPost | null> {
   let feedback = ''
-  for (let attempt = 0; attempt < 2; attempt++) {
+  for (let attempt = 0; attempt < 3; attempt++) {
     if (meter.exhausted) return null
     const d = await draft(m, feedback)
     if (!d) return null
