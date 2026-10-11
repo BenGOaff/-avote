@@ -6,7 +6,11 @@ name: Réseaux sociaux
 on:
   schedule:
     # Heures UTC : ≈ 8 h 40, 13 h 40, 18 h 40 et 20 h 40 à Paris (heure d'été)
-    - cron: '40 6,11,16,18 * * *'
+    # Une ligne par créneau : GitHub lance parfois avec des heures de retard, le créneau se lit dans la ligne déclenchée
+    - cron: '40 6 * * *'
+    - cron: '40 11 * * *'
+    - cron: '40 16 * * *'
+    - cron: '40 18 * * *'
   workflow_dispatch:
     inputs:
       slot:
@@ -65,7 +69,7 @@ jobs:
         run: |
           SLOT="${{ github.event.inputs.slot }}"
           if [ -z "$SLOT" ]; then
-            case "$(date -u +%H)" in 06) SLOT=matin ;; 11) SLOT=midi ;; 16) SLOT=soir ;; *) SLOT=nuit ;; esac
+            case "${{ github.event.schedule }}" in '40 6 * * *') SLOT=matin ;; '40 11 * * *') SLOT=midi ;; '40 16 * * *') SLOT=soir ;; *) SLOT=nuit ;; esac
           fi
           npx tsx scripts/social-plan.ts --slot=$SLOT
       - name: Valider
