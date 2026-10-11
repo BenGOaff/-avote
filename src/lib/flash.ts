@@ -16,8 +16,20 @@ const AnswerSchema = z.object({
   correct: z.boolean().optional(),
 })
 
-const TierSchema = z.object({ upTo: z.number().int().min(0).max(100), headline: z.string().min(5).max(90), line: z.string().min(5).max(220) })
-const OutcomeSchema = z.object({ key: z.string().regex(/^[a-z0-9-]+$/), name: z.string().min(2).max(60), headline: z.string().min(5).max(90), line: z.string().min(5).max(260) })
+const TierSchema = z.object({
+  upTo: z.number().int().min(0).max(100),
+  headline: z.string().min(5).max(90),
+  line: z.string().min(5).max(220),
+})
+const AvatarSchema = z.string().regex(/^\/img\/quiz\/[a-z0-9-]+\.(png|webp)$/)
+const OutcomeSchema = z.object({
+  key: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(2).max(60),
+  headline: z.string().min(5).max(90),
+  line: z.string().min(5).max(260),
+  /** Personnage inventé du résultat (public/img/quiz/<nom>.webp) */
+  avatar: AvatarSchema.optional(),
+})
 
 /**
  * Trois sortes de quiz flash :
@@ -35,16 +47,28 @@ export const FlashQuizSchema = z
     lede: z.string().min(10).max(220),
     order: z.number().int(),
     questions: z
-      .array(z.object({ q: z.string().min(5).max(200), answers: z.array(AnswerSchema).min(2).max(6), explain: z.string().min(5).max(260).optional() }))
+      .array(
+        z.object({
+          q: z.string().min(5).max(200),
+          answers: z.array(AnswerSchema).min(2).max(6),
+          explain: z.string().min(5).max(260).optional(),
+        }),
+      )
       .min(5)
       .max(12),
     /** Paliers de résultat (modes score et connaissances), du plus bas au plus haut ; `{s}` score, `{c}` bonnes réponses, `{n}` questions */
     tiers: z.array(TierSchema).min(3).optional(),
     outcomes: z.array(OutcomeSchema).min(2).optional(),
     /** Le vrai chiffre : un cliché confronté à une donnée officielle */
-    fact: z.object({ cliche: z.string().min(5).max(120), text: z.string().min(20).max(600), sources: z.array(SourceSchema).min(1) }).optional(),
+    fact: z
+      .object({
+        cliche: z.string().min(5).max(120),
+        text: z.string().min(20).max(600),
+        sources: z.array(SourceSchema).min(1),
+      })
+      .optional(),
     /** Avatar facultatif (public/img/quiz/<slug>.webp), personnage inventé */
-    avatar: z.string().regex(/^\/img\/quiz\/[a-z0-9-]+\.(png|webp)$/).optional(),
+    avatar: AvatarSchema.optional(),
   })
   .superRefine((q, ctx) => {
     const bad = (message: string) => ctx.addIssue({ code: 'custom', message })
