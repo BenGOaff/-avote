@@ -9,7 +9,7 @@ import { getFlashQuizzes } from '@/lib/flash-content'
 
 export const metadata: Metadata = {
   title: 'Quiz présidentielle 2027',
-  description: 'Suis-je un facho ? Suis-je une gauchiasse ? Des quiz flash satiriques sur la présidentielle 2027, à faire en 30 secondes et à partager.',
+  description: 'Suis-je un facho ? Suis-je une gauchiasse ? Des quiz flash satiriques sur la présidentielle 2027 : ris de ton camp, chambre celui d’en face, partage ton score.',
   alternates: { canonical: '/quiz' },
 }
 
@@ -29,6 +29,7 @@ export default function QuizHub() {
                   <img className="flash-hub__avatar" src={q.avatar} width={800} height={800} alt="" loading="lazy" />
                 )}
                 <span className="flash-hub__text">
+                  <span className="flash-hub__badge">{UI_COPY.flash.length(q.questions.length)}</span>
                   <span className="flash-hub__title">{q.title}</span>
                   <span className="small">{q.lede}</span>
                 </span>
