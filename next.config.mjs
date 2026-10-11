@@ -54,7 +54,10 @@ const nextConfig = {
   output: 'standalone',
   // Ancien quiz Tiquiz, remplacé par la version courte du test
   async redirects() {
-    return [{ source: '/quiz/quel-indecis-es-tu', destination: '/test?rapide=1', permanent: true }]
+    return [
+      { source: '/quiz/quel-indecis-es-tu', destination: '/test?rapide=1', permanent: true },
+      { source: '/quiz/flash/tiendrais-tu-jusquau-second-tour', destination: '/quiz/flash/quel-parti-politique-es-tu', permanent: true },
+    ]
   },
   async headers() {
     return [

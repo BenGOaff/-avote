@@ -136,6 +136,11 @@ if (existsSync(flashDir))
       continue
     }
     if (`${r.data.slug}.json` !== f) errors.push(`quiz flash ${f} : le slug doit reprendre le nom du fichier`)
+    // Mode « partis » : questions du test existantes, candidats présents dans le corpus
+    const liveCorpus = JSON.parse(readFileSync(path.join(ROOT, 'content/corpus/live.json'), 'utf8')) as { positions: Record<string, unknown> }
+    const qs = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.3.0.json'), 'utf8')) as { items: { id: string }[] }
+    for (const id of r.data.items ?? []) if (!qs.items.some((i) => i.id === id)) errors.push(`quiz flash ${f} : question inconnue ${id}`)
+    for (const p of r.data.parties ?? []) for (const a of p.actors) if (!liveCorpus.positions[a]) errors.push(`quiz flash ${f} : candidat sans positions ${a} (${p.key})`)
     const ups = (r.data.tiers ?? []).map((t) => t.upTo)
     if (ups.length && (ups.some((u, i) => i > 0 && u <= ups[i - 1]!) || ups[ups.length - 1] !== 100)) errors.push(`quiz flash ${f} : paliers croissants, le dernier à 100`)
   }

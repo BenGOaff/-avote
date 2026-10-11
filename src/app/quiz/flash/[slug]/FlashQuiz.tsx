@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { SharePanel } from '@/components/SharePanel'
 import { cssFamily, fitText, loadImage } from '@/lib/canvas'
 import { UI_COPY } from '@/lib/copy'
-import type { FlashQuiz as Quiz } from '@/lib/flash'
+import type { FlashQuizFull as Quiz } from '@/lib/flash'
 import { flashResult, type FlashResult } from '@/lib/flash-score'
 import { TARGETS, type ShareTarget } from '@/lib/share'
 
@@ -263,6 +263,20 @@ export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; othe
         </div>
       </section>
 
+      {r.details && r.details.length > 0 && (
+        <section className="flash__fact card section" aria-labelledby="accords">
+          <h2 id="accords">{t.partyCommon(r.big)}</h2>
+          <Stances list={r.details.filter((d) => d.agree)} />
+          {r.details.some((d) => !d.agree) && (
+            <>
+              <h3>{t.partyDiff(r.big)}</h3>
+              <Stances list={r.details.filter((d) => !d.agree)} />
+            </>
+          )}
+          <p className="small muted">{t.partyBasis}</p>
+        </section>
+      )}
+
       {quiz.fact && (
         <section className="flash__fact card section" aria-labelledby="vrai-chiffre">
           <p className="kicker">{t.factKicker}</p>
@@ -300,5 +314,29 @@ export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; othe
         </p>
       </section>
     </>
+  )
+}
+
+function Stances({ list }: { list: NonNullable<FlashResult['details']> }) {
+  if (!list.length) return <p className="muted">{t.noOpinion}</p>
+  return (
+    <ul className="flash__stances" role="list">
+      {list.map((d) => (
+        <li key={d.text}>
+          <p className="flash__stance-q">{d.text}</p>
+          <p className="flash__side">{d.agree ? t.bothSide(d.you) : t.youSide(d.you, d.who)}</p>
+          {d.quote && (
+            <p className="small">
+              {d.who} : « {d.quote} »{' '}
+              {d.url && (
+                <a href={d.url} rel="noopener noreferrer nofollow" target="_blank">
+                  {d.publisher || t.sources}
+                </a>
+              )}
+            </p>
+          )}
+        </li>
+      ))}
+    </ul>
   )
 }
