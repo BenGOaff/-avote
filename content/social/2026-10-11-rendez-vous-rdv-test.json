@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-11-rendez-vous-rdv-test",
+  "at": "2026-10-11T20:34:21.300Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "111 AFFIRMATIONS",
+    "title": "111 affirmations, 12 thèmes : de qui es-tu vraiment proche pour 2027 ?",
+    "line": "Le résultat compare tes réponses à 32 candidats, question par question.",
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "111 affirmations, 12 thèmes, 32 candidats. Tes réponses restent dans ton navigateur. Avec qui es-tu d'accord, question par question ?",
+    "linkedin": "111 affirmations, 12 thèmes, 32 candidats : voilà ce que contient le test de Ça vote ?\n\nTu réponds aux affirmations, une à une. Le résultat affiche ta proximité avec chacun des 32 candidats, question par question, avec la citation de chacun.\n\nLes réponses restent dans le navigateur de la personne. Rien n'est envoyé.\n\nQuand on regarde question par question plutôt que par étiquette, qui se retrouve le plus près de toi ? Dis-le-nous en commentaire.\n\n#presidentielle2027",
+    "facebook": "111 affirmations, 12 thèmes, 32 candidats. Tu réponds, et le résultat te montre de qui tu es proche, question par question, avec la citation de chacun. Tes réponses restent dans ton navigateur. Tu penses être surpris par ton résultat ? Le test est sur çavote.fr",
+    "instagram": "111 affirmations. 12 thèmes. 32 candidats.\nTu réponds, on compare.\nLe résultat te montre ta proximité avec chacun, question par question.\nAvec la citation de chaque candidat.\nTes réponses restent dans ton navigateur : rien n'est envoyé.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #testpolitique #candidats2027"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
