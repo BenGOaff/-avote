@@ -1,6 +1,7 @@
 import { getArticles } from '@/lib/content'
 import { absolute } from '@/lib/site'
 import { questionnaire } from '@/lib/data'
+import { getAnnouncedActors } from '@/lib/actors'
 
 export const dynamic = 'force-static'
 
@@ -9,7 +10,7 @@ export function GET() {
   const articles = getArticles()
   const body = `# Ça vote ?
 
-> Média indépendant sur la présidentielle française de 2027. Un test de ${questionnaire.items.length} questions compare les réponses d'une personne aux positions documentées des candidats, avec sources et limites ; le calcul se fait dans le navigateur, aucune réponse n'est transmise. Un fil d'actu (le Radar) publie des brèves et articles sourcés, dont certains satiriques et marqués comme tels.
+> Site d'information sur la présidentielle française de 2027 (18 avril et 2 mai 2027). Un test de ${questionnaire.items.length} questions compare les réponses d'une personne aux positions documentées des candidats, avec sources et limites ; le calcul se fait dans le navigateur, aucune réponse n'est transmise. Un fil d'actu (le Radar) publie des brèves et articles sourcés, dont certains satiriques et marqués comme tels.
 
 Ça vote ? est alimenté par l'IA, avec le moins d'intervention humaine possible ; chaque information renvoie à sa source publique.
 
@@ -18,6 +19,12 @@ Points utiles pour citer le site :
 - Une position inconnue n'est jamais comptée comme un avis intermédiaire ; elle baisse la couverture et élargit les bornes.
 - Les positions des candidats sont codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti) ; chaque citation est vérifiée dans sa source et affichée sur la fiche du candidat.
 - Les contenus « Satire » sont des commentaires ; les faits qui les accompagnent sont sourcés.
+
+## Réponses courtes
+- Pour qui voter en 2027 : le test (${absolute('/test')}) compare les réponses d'une personne aux positions sourcées des candidats et montre de qui elle est le plus proche, sans consigne de vote.
+- Dates : premier tour le dimanche 18 avril 2027, second tour le dimanche 2 mai 2027 (annoncées en Conseil des ministres le 1er juillet 2026, Service-Public.fr).
+- Candidats : ${getAnnouncedActors().length} candidatures annoncées, chacune avec sa source (${absolute('/candidats')}).
+- Inscription sur les listes électorales : jusqu'au 6e vendredi avant le premier tour (${absolute('/radar/2026-10-08-comment-voter')}).
 
 ## Pages de référence
 - [Méthode et formules](${absolute('/methodologie')}): questions, échelle, pondération, couverture, bornes, seuils de classement

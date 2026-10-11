@@ -7,7 +7,7 @@ export const SITE = {
   name: 'Ça vote ?',
   domain: 'çavote.fr',
   description:
-    'Un test pour voir quels candidats à la présidentielle 2027 sont proches de tes réponses, avec les sources et les limites. Et un fil d’actu politique qui ne se prend pas au sérieux, sauf sur les faits.',
+    'Pour qui voter en 2027 ? Test gratuit et anonyme : découvre les candidats à la présidentielle les plus proches de tes idées, chaque position avec sa source.',
 }
 
 /** Mention éditoriale publique, voulue par la rédaction */
@@ -32,6 +32,39 @@ export const UI_COPY = {
     title: 'Trouve le candidat le plus proche de tes idées',
     lede: 'Nous avons le droit de voter et le devoir de le faire en toute connaissance de cause. Fais le test pour découvrir qui est le candidat le plus proche de tes idées et de tes besoins. C’est anonyme, évidemment !',
     promise: 'Garanti sans bullshit ni influence',
+    faqTitle: 'Questions fréquentes',
+    faq: (n: number, candidates: number) => [
+      {
+        q: 'Pour qui voter en 2027 ?',
+        a: `Personne ne peut le décider à ta place, mais tu peux voir qui pense comme toi. Le test Ça vote ? compare tes réponses à ${n} affirmations aux positions des candidats, chacune avec sa source, et te montre de qui tu es le plus proche. Il est gratuit, anonyme, et tes réponses restent sur ton téléphone.`,
+        href: '/test',
+        link: 'Faire le test',
+      },
+      {
+        q: 'Quand a lieu l’élection présidentielle 2027 ?',
+        a: 'Le premier tour a lieu le dimanche 18 avril 2027 et le second tour le dimanche 2 mai 2027, selon les dates annoncées en Conseil des ministres le 1er juillet 2026 (Service-Public.fr).',
+        href: '/radar/2026-10-08-comment-voter',
+        link: 'Le mode d’emploi du vote',
+      },
+      {
+        q: 'Qui sont les candidats à la présidentielle 2027 ?',
+        a: `${candidates} candidatures sont annoncées à ce jour. Chaque fiche donne la source de l’annonce, les positions du candidat avec ses propres mots et, quand ils sont publiés, ses parrainages.`,
+        href: '/candidats',
+        link: 'Voir les candidats',
+      },
+      {
+        q: 'Jusqu’à quand s’inscrire sur les listes électorales ?',
+        a: 'Jusqu’au 6e vendredi avant le premier tour, en mairie ou en ligne, selon la règle en vigueur depuis le 1er juillet 2026 (Service-Public.fr).',
+        href: '/radar/2026-10-08-comment-voter',
+        link: 'S’inscrire et voter',
+      },
+      {
+        q: 'Le test me dit-il pour qui voter ?',
+        a: 'Non. Il te montre de quels candidats tu es proche, sujet par sujet, et ce qui reste à vérifier. La décision reste la tienne.',
+        href: '/methodologie',
+        link: 'Comment le résultat est calculé',
+      },
+    ],
     howLink: 'Comment ça marche ?',
     how: [
       'Tu réponds à des affirmations sur ta vie de tous les jours : pour, contre, ou entre les deux.',

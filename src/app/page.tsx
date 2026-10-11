@@ -23,6 +23,13 @@ export default function HomePage() {
     0,
   )
   const h = UI_COPY.home
+  // Questions que les gens posent aux moteurs de recherche et aux IA, avec une réponse courte et sourcée
+  const faq = h.faq(questionnaire.items.length, actors.length)
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  }
   return (
     <>
       {/* L'accueil s'ouvre directement sur le test complet */}
@@ -131,6 +138,22 @@ export default function HomePage() {
             <p className="muted">Inscription avant le 6e vendredi, pièce d’identité, procuration : le mode d’emploi du 18 avril 2027.</p>
             <Link href="/radar/2026-10-08-comment-voter">Lire le mode d’emploi</Link>
           </div>
+        </div>
+      </section>
+
+      <section className="section container" aria-labelledby="faq">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
+        <h2 id="faq">{h.faqTitle}</h2>
+        <div className="stack">
+          {faq.map((f) => (
+            <details key={f.q} className="disclosure">
+              <summary>{f.q}</summary>
+              <div>
+                <p style={{ marginTop: 0 }}>{f.a}</p>
+                <Link href={f.href}>{f.link}</Link>
+              </div>
+            </details>
+          ))}
         </div>
       </section>
 
