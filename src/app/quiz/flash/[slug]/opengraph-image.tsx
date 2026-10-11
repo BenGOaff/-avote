@@ -23,9 +23,9 @@ export default async function Image({ params }: { params: Promise<{ slug: string
       <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK }}>
         <div style={{ display: 'flex', flex: 1, alignItems: 'center', padding: '24px 40px 24px 56px', gap: 24 }}>
         <div style={{ display: 'flex', flexDirection: 'column', flex: 1, gap: 26, justifyContent: 'center' }}>
-          <Hook text="Quiz flash · 30 secondes" size={32} />
+          <Hook text={`Quiz flash · ${q?.questions.length ?? 7} questions`} size={32} />
           <div style={{ fontFamily: 'Archivo Black', fontSize: fit(title, avatar ? [[18, 84], [26, 70], [40, 56]] : [[18, 110], [26, 92], [40, 72]]), lineHeight: 1.02 }}>{title}</div>
-          <div style={{ fontFamily: 'Public Sans', fontSize: 32 }}>7 questions, un score à partager, un vrai chiffre pour finir.</div>
+          <div style={{ fontFamily: 'Public Sans', fontSize: 32, lineHeight: 1.25 }}>{q?.lede ?? ''}</div>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         {avatar && <img src={avatar} width={440} height={440} alt="" />}

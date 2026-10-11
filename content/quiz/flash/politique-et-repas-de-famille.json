@@ -1,0 +1,193 @@
+{
+ "slug": "politique-et-repas-de-famille",
+ "mode": "profil",
+ "order": 5,
+ "title": "Politique et repas de famille : comment t’en sortir ?",
+ "lede": "Découvre ton profil de convive et repars avec la parade qui sauve le dessert.",
+ "questions": [
+  {
+   "q": "Tonton lance : « De toute façon, on ne peut plus rien dire. »",
+   "answers": [
+    {
+     "label": "« Et sinon, la dinde, elle est cuite ? »",
+     "outcome": "casque-bleu"
+    },
+    {
+     "label": "« Ah bon ? Vas-y, développe, on a le temps. »",
+     "outcome": "allumeur"
+    },
+    {
+     "label": "Tu vas aider en cuisine. Longtemps.",
+     "outcome": "fuyard"
+    },
+    {
+     "label": "« Qu’est-ce que tu n’as pas pu dire, exactement ? »",
+     "outcome": "fact-checker"
+    }
+   ]
+  },
+  {
+   "q": "Ta cousine annonce pour qui elle votera en 2027.",
+   "answers": [
+    {
+     "label": "« Chacun son vote, il est secret. »",
+     "outcome": "casque-bleu"
+    },
+    {
+     "label": "Tu demandes à papy ce qu’il en pense.",
+     "outcome": "allumeur"
+    },
+    {
+     "label": "Tu proposes une partie de cartes.",
+     "outcome": "fuyard"
+    },
+    {
+     "label": "Tu lui cites son programme, page 47.",
+     "outcome": "fact-checker"
+    }
+   ]
+  },
+  {
+   "q": "Quelqu’un affirme : « Les fraudeurs, c’est les assistés. »",
+   "answers": [
+    {
+     "label": "« On peut parler d’autre chose ? »",
+     "outcome": "casque-bleu"
+    },
+    {
+     "label": "« Et les patrons, alors ? », en tapant sur la table.",
+     "outcome": "allumeur"
+    },
+    {
+     "label": "Tu remplis tous les verres. Tous.",
+     "outcome": "fuyard"
+    },
+    {
+     "label": "« 5 milliards côté assurés, 15 rien que pour la fraude à la TVA. »",
+     "outcome": "fact-checker"
+    }
+   ]
+  },
+  {
+   "q": "Mamie te demande ce que tu penses des retraites.",
+   "answers": [
+    {
+     "label": "« Que tu as bien mérité la tienne, mamie. »",
+     "outcome": "casque-bleu"
+    },
+    {
+     "label": "Tu réponds « 64 ans » et tu attends.",
+     "outcome": "allumeur"
+    },
+    {
+     "label": "Tu fais semblant de ne pas avoir entendu.",
+     "outcome": "fuyard"
+    },
+    {
+     "label": "Tu dessines la réforme sur la nappe.",
+     "outcome": "fact-checker"
+    }
+   ]
+  },
+  {
+   "q": "Le ton monte, quelqu’un crie.",
+   "answers": [
+    {
+     "label": "Tu lances un blind test.",
+     "outcome": "casque-bleu"
+    },
+    {
+     "label": "Tu montes le son.",
+     "outcome": "allumeur"
+    },
+    {
+     "label": "Tu sors le chien. Même sans chien.",
+     "outcome": "fuyard"
+    },
+    {
+     "label": "Tu demandes la source. Calmement. Deux fois.",
+     "outcome": "fact-checker"
+    }
+   ]
+  },
+  {
+   "q": "Ton arme secrète pour survivre au repas ?",
+   "answers": [
+    {
+     "label": "La bûche, servie au bon moment.",
+     "outcome": "casque-bleu"
+    },
+    {
+     "label": "Une phrase qui commence par « Moi, je dis ça… »",
+     "outcome": "allumeur"
+    },
+    {
+     "label": "Un train à prendre, à 16 h 12.",
+     "outcome": "fuyard"
+    },
+    {
+     "label": "Un onglet ouvert sur çavote.fr.",
+     "outcome": "fact-checker"
+    }
+   ]
+  }
+ ],
+ "outcomes": [
+  {
+   "key": "casque-bleu",
+   "name": "Le casque bleu",
+   "headline": "Paix sur la table, bûche à la main.",
+   "line": "La parade : « On en reparle au café ? » Et au café, on n’en reparle pas."
+  },
+  {
+   "key": "allumeur",
+   "name": "L’allumeur de mèche",
+   "headline": "Une allumette, et tout le repas flambe.",
+   "line": "Tu lances le sujet entre deux toasts. La parade : pose la boîte d’allumettes et sors plutôt un chiffre sourcé."
+  },
+  {
+   "key": "fuyard",
+   "name": "Le fuyard du fromage",
+   "headline": "Introuvable dès le plateau de fromages.",
+   "line": "Dès qu’on dit « 2027 », tu as un appel urgent. La parade : garde deux chiffres en tête, tu tiendras jusqu’au dessert."
+  },
+  {
+   "key": "fact-checker",
+   "name": "Le fact-checker de la table",
+   "headline": "Ton téléphone dégaine plus vite que tonton.",
+   "line": "La parade : une source, pas dix. Et laisse tonton finir sa phrase."
+  }
+ ],
+ "fact": {
+  "cliche": "Les chiffres à sortir entre la poire et le fromage",
+  "text": "La fraude des assurés aux prestations : environ 5 Md€ par an, quand la seule fraude à la TVA est estimée à 15 Md€. Les 10 % de foyers les plus aisés paient près des trois quarts de l’impôt sur le revenu. Sur tout son cycle de vie, le nucléaire émet autant de CO₂ par kWh que l’éolien : 12 g contre 11 g.",
+  "sources": [
+   {
+    "title": "Note annuelle de suivi et d’évaluation des fraudes sociales (synthèse)",
+    "publisher": "Haut Conseil du financement de la protection sociale",
+    "url": "https://www.securite-sociale.fr/files/live/sites/SSFR/files/medias/HCFIPS/2026/HCFIPS%20-%20Synth%C3%A8se%20Fraude%20sociale%202025%20-%20Version%20finalis%C3%A9e.pdf",
+    "date": "2025-12-04",
+    "passage": "L’essentiel de la fraude demeure concentré sur le recouvrement des cotisations (plus de 52 % de la fraude évaluée). La fraude des assurés arrive en seconde position (36 %)"
+   },
+   {
+    "title": "La fraude aux prélèvements obligatoires",
+    "publisher": "Cour des comptes",
+    "url": "https://www.ccomptes.fr/fr/publications/la-fraude-aux-prelevements-obligatoires",
+    "date": "2019-12-02"
+   },
+   {
+    "title": "L’impôt sur le revenu 2024 a été plus dynamique que les revenus (DGFiP Statistiques n° 41)",
+    "publisher": "DGFiP",
+    "url": "https://www.impots.gouv.fr/dgfip-statistiques-limpot-sur-le-revenu-2024-ete-plus-dynamique-que-les-revenus",
+    "date": "2025-11",
+    "passage": "Ces foyers acquittent à eux seuls près des trois quarts de l’impôt sur le revenu."
+   },
+   {
+    "title": "Climate Change 2014, Mitigation – Annex III, Technology-specific Cost and Performance Parameters (table A.III.2)",
+    "publisher": "GIEC (IPCC), groupe de travail III",
+    "url": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf",
+    "date": "2014"
+   }
+  ]
+ }
+}

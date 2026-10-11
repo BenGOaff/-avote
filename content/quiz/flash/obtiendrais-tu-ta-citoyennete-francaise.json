@@ -1,0 +1,276 @@
+{
+ "slug": "obtiendrais-tu-ta-citoyennete-francaise",
+ "mode": "connaissances",
+ "order": 6,
+ "title": "Obtiendrais-tu ta citoyenneté française ?",
+ "tribe": "bonnes réponses",
+ "lede": "Teste tes compétences de citoyen avec les vraies questions de l’examen de naturalisation.",
+ "questions": [
+  {
+   "q": "Quelle est la durée du mandat du Président de la République française ?",
+   "answers": [
+    {
+     "label": "4 ans",
+     "correct": false
+    },
+    {
+     "label": "5 ans",
+     "correct": true
+    },
+    {
+     "label": "6 ans",
+     "correct": false
+    },
+    {
+     "label": "7 ans",
+     "correct": false
+    }
+   ],
+   "explain": "Cinq ans depuis le référendum de 2000 sur le quinquennat. Avant, c’était sept ans."
+  },
+  {
+   "q": "En quelle année la loi de séparation des Églises et de l’État a-t-elle été votée ?",
+   "answers": [
+    {
+     "label": "1789",
+     "correct": false
+    },
+    {
+     "label": "1905",
+     "correct": true
+    },
+    {
+     "label": "1945",
+     "correct": false
+    },
+    {
+     "label": "1958",
+     "correct": false
+    }
+   ],
+   "explain": "La loi du 9 décembre 1905. C’est le texte fondateur de la laïcité."
+  },
+  {
+   "q": "Quel jour célèbre-t-on officiellement la laïcité en France ?",
+   "answers": [
+    {
+     "label": "Le 1er mai",
+     "correct": false
+    },
+    {
+     "label": "Le 14 juillet",
+     "correct": false
+    },
+    {
+     "label": "Le 9 décembre",
+     "correct": true
+    },
+    {
+     "label": "Le 11 novembre",
+     "correct": false
+    }
+   ],
+   "explain": "Le 9 décembre, jour anniversaire de la loi de 1905."
+  },
+  {
+   "q": "Que porte Marianne sur la tête ?",
+   "answers": [
+    {
+     "label": "Une couronne",
+     "correct": false
+    },
+    {
+     "label": "Un bonnet phrygien",
+     "correct": true
+    },
+    {
+     "label": "Un casque",
+     "correct": false
+    },
+    {
+     "label": "Une couronne de laurier",
+     "correct": false
+    }
+   ],
+   "explain": "Le bonnet phrygien, symbole de liberté hérité de la Révolution."
+  },
+  {
+   "q": "En France, est-ce obligatoire de voter ?",
+   "answers": [
+    {
+     "label": "Oui, sous peine d’amende",
+     "correct": false
+    },
+    {
+     "label": "Non",
+     "correct": true
+    },
+    {
+     "label": "Seulement pour la présidentielle",
+     "correct": false
+    },
+    {
+     "label": "Seulement après 25 ans",
+     "correct": false
+    }
+   ],
+   "explain": "Non. Voter est un droit et un devoir civique, pas une obligation légale."
+  },
+  {
+   "q": "À quel âge peut-on devenir électeur ?",
+   "answers": [
+    {
+     "label": "16 ans",
+     "correct": false
+    },
+    {
+     "label": "18 ans",
+     "correct": true
+    },
+    {
+     "label": "21 ans",
+     "correct": false
+    },
+    {
+     "label": "25 ans",
+     "correct": false
+    }
+   ],
+   "explain": "À 18 ans, si l’on est de nationalité française et inscrit sur les listes électorales."
+  },
+  {
+   "q": "Comment sont désignés les députés ?",
+   "answers": [
+    {
+     "label": "Ils sont nommés par le Président",
+     "correct": false
+    },
+    {
+     "label": "Ils sont élus par les sénateurs",
+     "correct": false
+    },
+    {
+     "label": "Ils sont élus au suffrage universel direct",
+     "correct": true
+    },
+    {
+     "label": "Ils sont tirés au sort",
+     "correct": false
+    }
+   ],
+   "explain": "Les 577 députés sont élus directement par les citoyens, pour cinq ans."
+  },
+  {
+   "q": "Quand la sécurité sociale a-t-elle été établie en France ?",
+   "answers": [
+    {
+     "label": "1905",
+     "correct": false
+    },
+    {
+     "label": "1936",
+     "correct": false
+    },
+    {
+     "label": "1945",
+     "correct": true
+    },
+    {
+     "label": "1968",
+     "correct": false
+    }
+   ],
+   "explain": "Par les ordonnances d’octobre 1945, à la Libération."
+  },
+  {
+   "q": "Peut-on brûler publiquement un drapeau français ?",
+   "answers": [
+    {
+     "label": "Oui, c’est la liberté d’expression",
+     "correct": false
+    },
+    {
+     "label": "Non, c’est puni par la loi",
+     "correct": true
+    },
+    {
+     "label": "Oui, mais seulement le 14 juillet",
+     "correct": false
+    },
+    {
+     "label": "Oui, si le drapeau nous appartient",
+     "correct": false
+    }
+   ],
+   "explain": "Non. L’outrage au drapeau commis en public est sanctionné par une amende."
+  },
+  {
+   "q": "Qui vote les lois ?",
+   "answers": [
+    {
+     "label": "Le Président de la République",
+     "correct": false
+    },
+    {
+     "label": "Le Gouvernement",
+     "correct": false
+    },
+    {
+     "label": "Le Parlement",
+     "correct": true
+    },
+    {
+     "label": "Le Conseil constitutionnel",
+     "correct": false
+    }
+   ],
+   "explain": "Le Parlement, c’est-à-dire l’Assemblée nationale et le Sénat."
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 49,
+   "headline": "Dossier refusé.",
+   "line": "Le préfet te remercie de ta visite. Révise la Marianne et reviens dans six mois."
+  },
+  {
+   "upTo": 79,
+   "headline": "Presque.",
+   "line": "Il en fallait 8. Encore un effort et tu chantes la Marseillaise en entier."
+  },
+  {
+   "upTo": 99,
+   "headline": "Naturalisé !",
+   "line": "Bienvenue en France. Ton livret de famille t’attend, et ta première déclaration d’impôts aussi."
+  },
+  {
+   "upTo": 100,
+   "headline": "Sans faute.",
+   "line": "Tu pourrais faire passer l’examen. Ou te présenter en 2027 : il te manque juste 500 parrainages."
+  }
+ ],
+ "fact": {
+  "cliche": "« On donne la nationalité sans rien demander. »",
+  "text": "Pour être naturalisé, il faut réussir un examen civique : 40 questions en 45 minutes, 28 de connaissance et 12 mises en situation, avec au moins 32 bonnes réponses, soit 80 %. Les questions de ce quiz viennent de la liste officielle publiée par le ministère de l’Intérieur.",
+  "sources": [
+   {
+    "title": "Informations générales sur l’examen civique",
+    "publisher": "Ministère de l’Intérieur",
+    "url": "https://formation-civique.interieur.gouv.fr/examen-civique/informations-g%C3%A9n%C3%A9rales-sur-lexamen-civique/",
+    "passage": "C’est un examen de 40 questions en français sous forme de questions à choix multiples (QCM)."
+   },
+   {
+    "title": "Examen civique, naturalisation : questions de connaissance",
+    "publisher": "Ministère de l’Intérieur",
+    "url": "https://www.interieur.gouv.fr/fr/content/download/138954/1097120/file/examen-civique-naturalisation-questions-de-connaissance-20251212.pdf",
+    "date": "2025-12-12"
+   },
+   {
+    "title": "Arrêté du 10 octobre 2025 relatif au programme, aux épreuves et aux modalités d’organisation de l’examen civique",
+    "publisher": "Légifrance",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052381620",
+    "date": "2025-10-10"
+   }
+  ]
+ }
+}

@@ -136,8 +136,8 @@ if (existsSync(flashDir))
       continue
     }
     if (`${r.data.slug}.json` !== f) errors.push(`quiz flash ${f} : le slug doit reprendre le nom du fichier`)
-    const ups = r.data.tiers.map((t) => t.upTo)
-    if (ups.some((u, i) => i > 0 && u <= ups[i - 1]!) || ups[ups.length - 1] !== 100) errors.push(`quiz flash ${f} : paliers croissants, le dernier à 100`)
+    const ups = (r.data.tiers ?? []).map((t) => t.upTo)
+    if (ups.length && (ups.some((u, i) => i > 0 && u <= ups[i - 1]!) || ups[ups.length - 1] !== 100)) errors.push(`quiz flash ${f} : paliers croissants, le dernier à 100`)
   }
 
 // Quiz Tiquiz : adresses https sur le sous-domaine des quiz, identifiants uniques

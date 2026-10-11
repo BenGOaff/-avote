@@ -1,0 +1,173 @@
+{
+ "slug": "quelle-promesse-de-campagne-es-tu",
+ "mode": "profil",
+ "order": 8,
+ "title": "Quelle promesse de campagne es-tu ?",
+ "lede": "Découvre la promesse de campagne qui te ressemble, et la question qui la fait tomber.",
+ "questions": [
+  {
+   "q": "On te demande un service.",
+   "answers": [
+    {
+     "label": "Tu dis oui à tout, gratuitement.",
+     "outcome": "gratis"
+    },
+    {
+     "label": "Tu promets de faire plus simple que la dernière fois.",
+     "outcome": "simplifier"
+    },
+    {
+     "label": "« Je m’en occupe dès demain matin. »",
+     "outcome": "premier-jour"
+    },
+    {
+     "label": "Tu proposes de voter pour savoir si tu le fais.",
+     "outcome": "referendum"
+    }
+   ]
+  },
+  {
+   "q": "Ton budget du mois ?",
+   "answers": [
+    {
+     "label": "Moins de dépenses, plus de sorties. Tu verras bien.",
+     "outcome": "baisser-depenser"
+    },
+    {
+     "label": "Tout le monde t’invite, c’est le plan.",
+     "outcome": "gratis"
+    },
+    {
+     "label": "Tu partages tout avec tout le monde.",
+     "outcome": "rassembler"
+    },
+    {
+     "label": "Un seul compte, une seule carte, zéro paperasse.",
+     "outcome": "simplifier"
+    }
+   ]
+  },
+  {
+   "q": "Un conflit entre amis.",
+   "answers": [
+    {
+     "label": "Tu réconcilies tout le monde autour d’un apéro.",
+     "outcome": "rassembler"
+    },
+    {
+     "label": "Tu organises un sondage dans le groupe.",
+     "outcome": "referendum"
+    },
+    {
+     "label": "Tu règles ça avant la fin de la soirée.",
+     "outcome": "premier-jour"
+    },
+    {
+     "label": "Tu donnes raison aux deux camps.",
+     "outcome": "baisser-depenser"
+    }
+   ]
+  },
+  {
+   "q": "Ta résolution du Nouvel An ?",
+   "answers": [
+    {
+     "label": "Tout changer, dès le 1er janvier.",
+     "outcome": "premier-jour"
+    },
+    {
+     "label": "Ranger enfin ta vie administrative.",
+     "outcome": "simplifier"
+    },
+    {
+     "label": "Faire plaisir à tout le monde.",
+     "outcome": "gratis"
+    },
+    {
+     "label": "Revoir tous tes amis, même ceux d’avant.",
+     "outcome": "rassembler"
+    }
+   ]
+  },
+  {
+   "q": "Ton défaut ?",
+   "answers": [
+    {
+     "label": "Tu veux le beurre et l’argent du beurre.",
+     "outcome": "baisser-depenser"
+    },
+    {
+     "label": "Tu n’arrives jamais à trancher.",
+     "outcome": "referendum"
+    },
+    {
+     "label": "Tu promets plus que tu ne peux offrir.",
+     "outcome": "gratis"
+    },
+    {
+     "label": "Tu veux plaire à tout le monde.",
+     "outcome": "rassembler"
+    }
+   ]
+  },
+  {
+   "q": "Ta phrase culte ?",
+   "answers": [
+    {
+     "label": "« Ça va être beaucoup plus simple. »",
+     "outcome": "simplifier"
+    },
+    {
+     "label": "« Dès lundi, promis. »",
+     "outcome": "premier-jour"
+    },
+    {
+     "label": "« On n’a qu’à voter. »",
+     "outcome": "referendum"
+    },
+    {
+     "label": "« On peut tout faire en même temps. »",
+     "outcome": "baisser-depenser"
+    }
+   ]
+  }
+ ],
+ "outcomes": [
+  {
+   "key": "gratis",
+   "name": "« Rasons gratis »",
+   "headline": "Tout gratuit, pour tout le monde.",
+   "line": "La question qui fâche : qui paie la facture, et quand ?"
+  },
+  {
+   "key": "simplifier",
+   "name": "« On va tout simplifier »",
+   "headline": "Moins de paperasse, promis juré.",
+   "line": "Le vrai test : combien de formulaires supprimés, et lesquels ?"
+  },
+  {
+   "key": "premier-jour",
+   "name": "« Dès le premier jour »",
+   "headline": "Tout change, tout de suite.",
+   "line": "Le vrai test : le calendrier, et ce qui passe par une loi votée."
+  },
+  {
+   "key": "referendum",
+   "name": "« Un référendum sur tout »",
+   "headline": "Tu demandes l’avis de tout le monde.",
+   "line": "Le vrai test : sur quelles questions précises, et quand ?"
+  },
+  {
+   "key": "baisser-depenser",
+   "name": "« Moins d’impôts, plus de services »",
+   "headline": "Le beurre, l’argent du beurre et le crémier.",
+   "line": "Le vrai test : le chiffrage, ligne par ligne."
+  },
+  {
+   "key": "rassembler",
+   "name": "« Je rassemblerai tous les Français »",
+   "headline": "Tout le monde à la même table.",
+   "line": "Le vrai test : sur quoi, concrètement, et avec qui ?"
+  }
+ ]
+}

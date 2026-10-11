@@ -1,0 +1,173 @@
+{
+ "slug": "quel-ministere-es-tu",
+ "mode": "profil",
+ "order": 7,
+ "title": "Quel ministère es-tu ?",
+ "lede": "Découvre le ministère qui te ressemble, et ce qu’il fait vraiment.",
+ "questions": [
+  {
+   "q": "Ton dimanche idéal ?",
+   "answers": [
+    {
+     "label": "Surveiller le quartier depuis la fenêtre.",
+     "outcome": "interieur"
+    },
+    {
+     "label": "Faire tes comptes, avec un tableur.",
+     "outcome": "bercy"
+    },
+    {
+     "label": "Un musée le matin, un concert le soir.",
+     "outcome": "culture"
+    },
+    {
+     "label": "Une rando, gourde comprise.",
+     "outcome": "ecologie"
+    }
+   ]
+  },
+  {
+   "q": "En soirée, tu es celui ou celle qui…",
+   "answers": [
+    {
+     "label": "organise le covoiturage comme une opération militaire.",
+     "outcome": "armees"
+    },
+    {
+     "label": "explique les règles du jeu à tout le monde.",
+     "outcome": "education"
+    },
+    {
+     "label": "vérifie qui est invité.",
+     "outcome": "interieur"
+    },
+    {
+     "label": "fait les comptes à la fin.",
+     "outcome": "bercy"
+    }
+   ]
+  },
+  {
+   "q": "Ton super-pouvoir ?",
+   "answers": [
+    {
+     "label": "Citer un film pour chaque situation.",
+     "outcome": "culture"
+    },
+    {
+     "label": "Savoir quel bac pour quel déchet.",
+     "outcome": "ecologie"
+    },
+    {
+     "label": "Te réveiller à 6 h sans réveil.",
+     "outcome": "armees"
+    },
+    {
+     "label": "Faire taire une salle d’un regard.",
+     "outcome": "education"
+    }
+   ]
+  },
+  {
+   "q": "Une réunion de travail ?",
+   "answers": [
+    {
+     "label": "Tu demandes combien ça coûte.",
+     "outcome": "bercy"
+    },
+    {
+     "label": "Tu demandes qui est au courant.",
+     "outcome": "interieur"
+    },
+    {
+     "label": "Tu fais un tableau au feutre.",
+     "outcome": "education"
+    },
+    {
+     "label": "Tu proposes de la faire au théâtre.",
+     "outcome": "culture"
+    }
+   ]
+  },
+  {
+   "q": "Ton objet fétiche ?",
+   "answers": [
+    {
+     "label": "Un sac en tissu.",
+     "outcome": "ecologie"
+    },
+    {
+     "label": "Un couteau suisse.",
+     "outcome": "armees"
+    },
+    {
+     "label": "Une calculatrice.",
+     "outcome": "bercy"
+    },
+    {
+     "label": "Un carnet de croquis.",
+     "outcome": "culture"
+    }
+   ]
+  },
+  {
+   "q": "Ta phrase préférée ?",
+   "answers": [
+    {
+     "label": "« Qui peut me rappeler la consigne ? »",
+     "outcome": "education"
+    },
+    {
+     "label": "« On n’a pas de planète B. »",
+     "outcome": "ecologie"
+    },
+    {
+     "label": "« Rompez. »",
+     "outcome": "armees"
+    },
+    {
+     "label": "« Circulez, il n’y a rien à voir. »",
+     "outcome": "interieur"
+    }
+   ]
+  }
+ ],
+ "outcomes": [
+  {
+   "key": "interieur",
+   "name": "Le ministère de l’Intérieur",
+   "headline": "Tu sais tout sur tout le monde.",
+   "line": "En vrai, il gère la police, la gendarmerie, les préfectures et l’organisation des élections."
+  },
+  {
+   "key": "bercy",
+   "name": "Bercy",
+   "headline": "Tu comptes même les miettes.",
+   "line": "En vrai, le ministère de l’Économie prépare le budget de l’État et lève les impôts."
+  },
+  {
+   "key": "culture",
+   "name": "Le ministère de la Culture",
+   "headline": "Un avis sur chaque film, même ceux que tu n’as pas vus.",
+   "line": "En vrai, il veille sur les musées, le patrimoine, le spectacle vivant et l’audiovisuel public."
+  },
+  {
+   "key": "ecologie",
+   "name": "Le ministère de la Transition écologique",
+   "headline": "Une gourde pour chaque occasion.",
+   "line": "En vrai, il s’occupe du climat, de l’énergie, de la biodiversité et des transports."
+  },
+  {
+   "key": "education",
+   "name": "L’Éducation nationale",
+   "headline": "Tu expliques tout. Deux fois.",
+   "line": "En vrai, c’est le premier budget de l’État : écoles, collèges, lycées et leurs enseignants."
+  },
+  {
+   "key": "armees",
+   "name": "Le ministère des Armées",
+   "headline": "Debout avant le soleil.",
+   "line": "En vrai, il assure la défense du pays, en France et en opérations extérieures."
+  }
+ ]
+}
