@@ -1,5 +1,7 @@
 # Le quiz Tiquiz
 
+> **Retiré du site le 11 octobre 2026** : le quiz Tiquiz est remplacé par la version courte du test (`/test?rapide=1`), calculée dans le navigateur. L’ancienne adresse `/quiz/quel-indecis-es-tu` y redirige. Tiquiz reste soutien du site.
+
 ## Le point bloquant
 
 Le test politique ne peut **pas** être sur Tiquiz si Tiquiz collecte un email. Associer un email à des réponses politiques ou à un profil « proche de tel candidat », c’est stocker « qui pense quoi » : une donnée sensible au sens du RGPD (article 9), exactement ce que le projet promet de ne jamais faire. Un tag Systeme.io du type « profil écolo » sur un contact suffit à créer ce fichier.

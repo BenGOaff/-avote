@@ -1,23 +1,9 @@
-import { readFileSync } from 'node:fs'
-// Configuration en JavaScript (pas TypeScript) : l'hébergeur ne peut pas compiler un next.config.ts
-// avec le compilateur de secours (SWC WebAssembly) imposé par son système.
 const isDev = process.env.NODE_ENV !== 'production'
 
 // Aucune origine tierce : polices, scripts, images et données sont servis par le site.
 // Exception : Google Analytics, chargé seulement après consentement (src/lib/consent.ts), si NEXT_PUBLIC_GA_ID n'est pas vide.
 // 'unsafe-inline' sur les scripts : nécessaire au rendu statique de Next sans nonce
 // (voir docs/SECURITE.md). Tout le reste est verrouillé.
-// Seule exception : l'iframe du quiz Tiquiz, si son URL est configurée (page /quiz).
-// Origines des quiz Tiquiz listés dans content/quiz/tiquiz.json (plus l'adresse par défaut)
-const tiquizOrigins = (() => {
-  const urls = [process.env.NEXT_PUBLIC_TIQUIZ_URL || 'https://quiz.xn--avote-xra.fr/pourquivoter']
-  try {
-    urls.push(...JSON.parse(readFileSync(new URL('./content/quiz/tiquiz.json', import.meta.url), 'utf8')).quizzes.map((q) => q.url))
-  } catch {
-    /* liste absente : adresse par défaut seulement */
-  }
-  return [...new Set(urls.map((u) => { try { return new URL(u).origin } catch { return null } }).filter(Boolean))]
-})()
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID ?? 'G-8BPS8RSJ3B'
 const ga = gaId
@@ -34,7 +20,7 @@ const csp = [
   "media-src 'self' blob:",
   "worker-src 'self'",
   "manifest-src 'self'",
-  tiquizOrigins.length ? `frame-src ${tiquizOrigins.join(' ')}` : "frame-src 'none'",
+  "frame-src 'none'",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
@@ -66,6 +52,10 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   output: 'standalone',
+  // Ancien quiz Tiquiz, remplacé par la version courte du test
+  async redirects() {
+    return [{ source: '/quiz/quel-indecis-es-tu', destination: '/test?rapide=1', permanent: true }]
+  },
   async headers() {
     return [
       { source: '/:path*', headers: securityHeaders },

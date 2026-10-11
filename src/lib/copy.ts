@@ -179,8 +179,14 @@ export const UI_COPY = {
     gaugeLegend: 'Noir : proximité sur les positions connues. Jaune : la fourchette possible tant que des positions manquent.',
   },
   quiz: {
-    play: 'Faire le quiz',
-    data: 'Tes réponses ne sont pas gardées : seul ton email l’est, si tu choisis de le donner.',
+    quickKicker: (n: number) => `Le test · version courte · ${n} questions`,
+    quickTitle: 'De quels candidats es-tu le plus proche ?',
+    quickLede: 'Réponds sur l’essentiel et découvre tout de suite qui pense comme toi, chaque position avec sa source.',
+    quickCta: 'Commencer',
+    fullKicker: (n: number) => `Le test complet · ${n} questions`,
+    fullTitle: 'Le portrait le plus fidèle',
+    fullLede: 'Tous les sujets, tes priorités, tes lignes rouges : le classement le plus solide, calculé sur ton téléphone.',
+    fullCta: 'Faire le test complet',
   },
   consent: {
     title: 'Un cookie ? Seulement pour compter.',
