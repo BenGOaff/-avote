@@ -267,7 +267,7 @@ async function review(m: Material, d: z.infer<typeof Draft>): Promise<z.infer<ty
     messages: [
       {
         role: 'user',
-        content: `Relis cette publication d'un média sur la présidentielle avant diffusion. Refuse (ok=false) si : un fait, un chiffre ou une citation ne vient pas des pièces ; une citation est déformée ; le texte donne une consigne de vote ou favorise un camp ; l'humour vise une personne et non un discours ; le texte peut être lu comme une information fausse hors contexte. Sinon ok=true.
+        content: `Relis cette publication d'un média sur la présidentielle avant diffusion. Sont imposés par la rédaction et ne comptent jamais comme des ajouts : l'invitation vers le site (« Le test est en lien dans la bio », « Le test est sur çavote.fr », faire le test, comparer, lire), la question finale adressée au lecteur, les hashtags précis (dont #presidentielle2027), l'accroche du visuel tant qu'elle reste vraie. Refuse (ok=false) si : un fait, un chiffre ou une citation ne vient pas des pièces ; une citation est déformée ; le texte donne une consigne de vote ou favorise un camp ; l'humour vise une personne et non un discours ; le texte peut être lu comme une information fausse hors contexte. Sinon ok=true.
 
 <pieces>
 ${m.facts}
