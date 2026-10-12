@@ -4366,8 +4366,105 @@ details.disclosure > div {
 }
 .flash-hub__avatar {
   flex: none;
-  width: 88px;
-  height: 88px;
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+/* Quiz à la une : grand visuel, comme une couverture */
+.flash-hub__card--big {
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: var(--s4);
+  padding: var(--s5);
+}
+.flash-hub__card--big .flash-hub__avatar {
+  width: min(100%, 280px);
+  height: auto;
+  align-self: center;
+}
+.flash-hub__card--big .flash-hub__title {
+  font-size: var(--h2);
+}
+@media (min-width: 700px) {
+  .flash-hub__card--big {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--s6);
+  }
+  .flash-hub__card--big .flash-hub__avatar {
+    width: 280px;
+  }
+}
+.flash-hub__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+.flash-hub__badge--ink {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+/* Avant-goût du résultat : visages des résultats possibles, ou échelle du score */
+.flash-hub__teaser {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  margin-top: var(--s1);
+  font-size: var(--text-small);
+  font-weight: 700;
+}
+.flash-hub__teaser img {
+  width: 32px;
+  height: 32px;
+  margin-right: calc(-1 * var(--s3));
+  object-fit: cover;
+  border: var(--hairline) solid var(--ink);
+  border-radius: 50%;
+  background: var(--paper);
+}
+.flash-hub__teaser img[src*='/img/medias/'] {
+  object-fit: contain;
+  background: var(--logo-plate);
+}
+.flash-hub__teaser img:last-of-type {
+  margin-right: 0;
+}
+.flash-hub__play {
+  align-self: flex-start;
+  margin-top: var(--s2);
+}
+.flash-next {
+  margin-top: var(--s5);
+}
+.flash-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin: var(--s4) 0 0;
+}
+.flash-cats__chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 var(--s4);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  border: var(--border) solid var(--ink);
+  border-radius: 999px;
+  background: var(--surface);
+}
+.flash-cats__chip:hover {
+  background: var(--highlight);
+  color: var(--on-highlight);
+}
+.flash-cat {
+  margin-top: var(--s6);
+  scroll-margin-top: 80px;
+}
+.flash-cat .flash-hub {
+  margin-top: var(--s3);
 }
 .flash-hub__text {
   display: flex;
@@ -4403,7 +4500,7 @@ details.disclosure > div {
 .flash-hub__card .small {
   color: var(--on-highlight);
 }
-.flash-hub__card:hover .flash-hub__badge {
+.flash-hub__badge {
   align-self: flex-start;
   padding: 0 var(--s2);
   font-size: var(--text-xs);

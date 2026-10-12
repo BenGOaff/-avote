@@ -5,6 +5,7 @@
  "title": "Quel média es-tu ?",
  "lede": "Dis-nous comment tu passes tes soirées : on te dit quelle chaîne, radio ou journal te ressemble, qui le possède et ce que l’Arcom lui reproche.",
  "avatar": "/img/medias/mosaique-quel-media.webp",
+ "featured": true,
  "outcomes": [
   {
    "key": "cnews",

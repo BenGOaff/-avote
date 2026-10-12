@@ -24,9 +24,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function FlashPage({ params }: { params: Promise<{ slug: string }> }) {
   const q = getFlashQuiz((await params).slug)
   if (!q) notFound()
-  const others = getFlashQuizzes()
-    .filter((o) => o.slug !== q.slug)
-    .map((o) => ({ slug: o.slug, title: o.title }))
+  // Les autres quiz, en commençant par celui qui suit : la fin d'un quiz enchaîne sur le prochain
+  const all = getFlashQuizzes()
+  const at = all.findIndex((o) => o.slug === q.slug)
+  const others = [...all.slice(at + 1), ...all.slice(0, at)].map((o) => ({ slug: o.slug, title: o.title, lede: o.lede, avatar: o.avatar }))
   return (
     <div className="container" style={{ paddingTop: 'var(--s6)' }}>
       <p className="kicker">
