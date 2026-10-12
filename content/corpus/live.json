@@ -1,8 +1,8 @@
 {
-  "version": "live-202610101038",
+  "version": "live-202610120931",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-10T10:38:54.837Z",
+  "publishedAt": "2026-10-12T09:31:54.645Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -151,27 +151,6 @@
       "summary": ""
     },
     {
-      "slug": "olivier-faure",
-      "name": "Olivier Faure",
-      "status": "declare",
-      "party": "Parti socialiste (primaire PS-PP-GRS)",
-      "summary": ""
-    },
-    {
-      "slug": "emmanuel-maurel",
-      "name": "Emmanuel Maurel",
-      "status": "declare",
-      "party": "Gauche républicaine et socialiste (primaire PS-PP-GRS)",
-      "summary": ""
-    },
-    {
-      "slug": "segolene-royal",
-      "name": "Ségolène Royal",
-      "status": "declare",
-      "party": "Primaire PS-PP-GRS",
-      "summary": ""
-    },
-    {
       "slug": "dominique-de-villepin",
       "name": "Dominique de Villepin",
       "status": "demarche",
@@ -201,6 +180,18 @@
     {
       "slug": "francis-lalanne",
       "name": "Francis Lalanne",
+      "status": "declare",
+      "summary": ""
+    },
+    {
+      "slug": "gilles-platret",
+      "name": "Gilles Platret",
+      "status": "declare",
+      "summary": ""
+    },
+    {
+      "slug": "dieudonne",
+      "name": "Dieudonné",
       "status": "declare",
       "summary": ""
     }
@@ -15118,1818 +15109,6 @@
         "note": "Règle d'or proposée par référendum."
       }
     },
-    "olivier-faure": {
-      "cli-01": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "b4ccbcb81fa5736e"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "« Le nucléaire autant que nécessaire, les énergies renouvelables autant que possible » ; nombre de réacteurs non précisé."
-      },
-      "cli-02": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "35227a42655016c5"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "cli-03": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "16efa06efe357959"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Avec un accompagnement financier des agriculteurs."
-      },
-      "cli-04": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "7fe5a01ca07aebf9"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "La compensation passe par une baisse d’impôts plutôt que par un versement."
-      },
-      "cli-05": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "7a8607415750ecde"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Gratuités partielles ciblées (week-end, jeunes, demandeurs d’emploi), pas de gratuité générale."
-      },
-      "cli-06": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "4c42ee1f50eab0d4"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Formulé à propos des produits phytosanitaires."
-      },
-      "dem-01": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "b02f3542cff3117f"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "dem-02": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "0737e080b5a5f9c4"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "dem-03": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "d6bbd6d876c66961"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Maintenu pour les lois de finances et de financement de la sécurité sociale."
-      },
-      "dem-04": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "10f1ff19085424c1"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "dem-05": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "b2f6aaba1da27086"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Compétences élargies « là où cela rend l’action publique plus performante »."
-      },
-      "dem-06": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "1a000d35dd41be48"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Ne dit pas explicitement que les blancs entrent dans les suffrages exprimés."
-      },
-      "eco-01": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "9abbacae624b740c"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Objectif soumis à des « États généraux de la justice fiscale » ; aucun taux marginal chiffré pour les plus hauts revenus."
-      },
-      "eco-02": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "f67baa0222853b89"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Taxe Zucman : impôt plancher de 2 % sur les patrimoines de plus de 100 millions d’euros, aussi inscrite au projet du PS."
-      },
-      "eco-05": {
-        "value": -1,
-        "status": "parti-uniquement",
-        "sources": [
-          "734a14e756b2402f"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Hausse ciblée des cotisations patronales (fin d’allègements entre 2 et 3,5 SMIC), pas une hausse générale."
-      },
-      "eco-06": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "86a3223139c444d1"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "eur-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "b828c3bd973a97cd"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "eur-04": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "b4824b25c8947f5b"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Refus conditionnel ; refus explicite de l’accord UE-Mercosur."
-      },
-      "eur-05": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "3fcc09c0cd47be14"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Dette commune « ad hoc » pour des projets industriels ; le projet demande aussi un nouvel emprunt européen commun de 500 milliards d’euros."
-      },
-      "eur-06": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "4eb8354f57c25043"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "lib-01": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "544f785a56de614f"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "lib-03": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "07e7e751cb048378"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Passe d’abord par une convention citoyenne."
-      },
-      "lib-04": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "48b7db8b3aea3d55"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Sanction par la perte des aides publiques ; le projet propose aussi d’inverser la charge de la preuve."
-      },
-      "lib-05": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "6c56c95356759ce1"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "sec-02": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "8f9ab6958006c8a5"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Ne vise pas explicitement les seules courtes peines."
-      },
-      "sec-05": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "0728628cf96989df"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Va au-delà des seuls métiers en tension."
-      },
-      "tra-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "ef9ff4f7af3f58b1"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "tra-02": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "7d66e7381e40faa0"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Le projet ne dit pas quelles économies ou recettes financeraient ces moyens."
-      },
-      "tra-04": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "63c039f5eb701b6e"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "tra-05": {
-        "value": -1,
-        "status": "parti-uniquement",
-        "sources": [
-          "ce63c13fa4581737"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Porte sur les sanctions et radiations, pas sur la durée d’indemnisation."
-      },
-      "tra-06": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "0223d553f96dfe7e"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Le projet admet des fermetures en zone rurale « avec concertation préalable et solution alternative »."
-      },
-      "tra-03": {
-        "value": 0,
-        "status": "parti-uniquement",
-        "sources": [
-          "e406a633c08b332f"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:58:51.820Z",
-        "note": "Projet du parti dont Olivier Faure est le premier secrétaire. Objectif de classes moins chargées, mais par le maintien des effectifs d’enseignants (baisse démographique), sans recrutement supplémentaire : voie médiane."
-      },
-      "sec-01": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "82c433b5258a28fc"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:58:51.820Z",
-        "note": "Projet du parti dont Olivier Faure est le premier secrétaire, passage « Restaurer la confiance des Français dans leur police » : recrutements annoncés sans chiffre ; le même chapitre prévoit le « maintien des effectifs de gendarmes »."
-      },
-      "sec-04": {
-        "value": -1,
-        "status": "parti-uniquement",
-        "sources": [
-          "1ca5fef615a21bd2"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:58:51.820Z",
-        "note": "Projet du parti dont Olivier Faure est le premier secrétaire. Élargit certaines voies d’entrée régulière, sans objectif chiffré global."
-      },
-      "eco-08": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "f6239b986781f2d4"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : impôt sur les grandes successions « sans impact pour 99 % des Français » ; ni hausse ni baisse annoncée pour la plupart des héritages."
-      },
-      "tra-08": {
-        "value": -1,
-        "status": "parti-uniquement",
-        "sources": [
-          "a290ab2c04988475"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "tra-10": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "60b8a56c31ad5085"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : un RSA inconditionnel exclut l’obligation de 15 heures d’activité."
-      },
-      "san-01": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "feb958eaae16bdfc"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "san-03": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "7f606eee143a871b"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : remboursement intégral limité à un panier de soins et de médicaments essentiels."
-      },
-      "san-04": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "47929838b2955499"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : plafond des dépassements à 50 % du tarif opposable pour le secteur 2."
-      },
-      "san-05": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "29c082dd2336ea00"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : prise en charge publique universelle de la dépendance, sans montant chiffré."
-      },
-      "san-06": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "c33816c386c5b23c"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "edu-03": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "53faf721dd6b75e5"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : gratuité réservée aux familles les plus modestes, pas pour tous."
-      },
-      "edu-04": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "0af35f9b60e2820f"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "edu-05": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "7345ebd1d7c7d113"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : remplacé par une procédure nationale publique."
-      },
-      "edu-06": {
-        "value": -1,
-        "status": "parti-uniquement",
-        "sources": [
-          "55feda98eea578d1"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : service national volontaire, pas obligatoire."
-      },
-      "log-01": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "c7c7c4900955f177"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "log-02": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "e6eff983f2d2dd5f"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : le financement par l’État n’est pas précisé."
-      },
-      "log-04": {
-        "value": -1,
-        "status": "parti-uniquement",
-        "sources": [
-          "742e2fd0864b9cf8"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : accompagner les ménages concernés par les ZFE plutôt que les supprimer."
-      },
-      "sec-08": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "0b1753042ebe7baf"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : la loi Attal de 2025 visait notamment à juger plus sévèrement les mineurs de 16 ans et plus."
-      },
-      "sec-09": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "8dee99e28584a76e"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : construction liée à la dignité de la détention, avec un recours accru aux peines alternatives."
-      },
-      "imm-01": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "c41cf9af9ebe8305"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "imm-05": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "1a107abf79701822"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "lib-07": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "52bb83df2ac51300"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "lib-08": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "6f31097b1ad66a8a"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS, chapitre sur les droits des personnes LGBTQIA+."
-      },
-      "cli-08": {
-        "value": 1,
-        "status": "parti-uniquement",
-        "sources": [
-          "98ed009fdebafda6"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : tarifs réglementés étendus ; la référence aux coûts de production français n’est pas explicite."
-      },
-      "ani-06": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "db9c095e66e89d91"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : pas d’exception religieuse mentionnée."
-      },
-      "ani-07": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "5796d623c5a7b6c7"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "eur-07": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "5fcbd3de82c60342"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "eur-10": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "b29b83630f45334d"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "dem-08": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "86d8af4e1c698976"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS : révision par une convention mixte (tirés au sort, élus, juristes) et référendum, pas une assemblée constituante élue."
-      },
-      "dem-09": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "c0f193a8192fc806"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "dem-10": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "454d6ae815b57909"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Projet du PS."
-      },
-      "sec-07": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "09a73fc27c3630c3"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Entretien sur Sud Radio ; il invoque aussi « un principe constitutionnel d’individualisation des peines »."
-      },
-      "ani-09": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "769e01b34940ce4a"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z"
-      },
-      "tra-11": {
-        "value": -2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "80658129fbdab52e"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Abrogation de la réforme de 2023 et retour à 62 ans (débat BFMTV du 4 octobre 2026), donc opposé à un relèvement au-delà de 64 ans."
-      },
-      "edu-07": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "8ba37b9b5b5c5f45"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Projet du Parti socialiste, dont Olivier Faure est premier secrétaire : étendre la carte scolaire au privé, à l’inverse de sa suppression."
-      },
-      "tra-14": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "dd62ebc2742d85b6"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Projet du Parti socialiste ; prises de contrôle nationales, locales ou européennes."
-      },
-      "eco-12": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "f6239b986781f2d4"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Projet du Parti socialiste : nouvel impôt ciblé sur les 1 % de plus grosses successions, taux non précisé."
-      },
-      "tra-07": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "bd44fbc9a6b17b42"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Réduction progressive et conditionnelle du temps de travail ; les 32 heures ne sont pas nommées."
-      },
-      "tra-13": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "d6bce8a4e6e6ae18"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Réorienter 30 milliards d’aides jugées inefficaces et conditionner les autres."
-      },
-      "imm-07": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "0728628cf96989df"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Régularisation par le travail, pas de toutes les personnes sans titre."
-      },
-      "ani-01": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "3d14edb0751f1916"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Fin de l’élevage en cage ; l’accès à l’extérieur n’est pas nommé."
-      }
-    },
-    "emmanuel-maurel": {
-      "eco-02": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "067c6af0832bb109"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "eco-03": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "3663de64bd3655b5"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Il s’agit du grand emprunt finançant un plan d’investissement de 300 milliards d’euros ; le programme ajoute : « Le problème n’est pas que la France dépense trop, mais qu’elle ne produit plus assez. »"
-      },
-      "eco-05": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "29258a58f415d3a1"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Le texte de congrès de la GRS (juin 2026) envisage toutefois de modifier les allègements de cotisations patronales en avantageant les secteurs industriels."
-      },
-      "eco-06": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "e04f5c2dd10b4ef4"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "tra-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "c035bb68ae95d743"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Retour à 62 ans (et non 60 ans) : abaissement par rapport à la réforme de 2023."
-      },
-      "tra-02": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "3cb324a1202fa75e"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Le programme propose aussi de supprimer la T2A et de reprendre une partie de la dette hospitalière."
-      },
-      "tra-03": {
-        "value": 0,
-        "status": "parti-uniquement",
-        "sources": [
-          "c58958f97e6ab4d9"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Texte proposé par Emmanuel Maurel et Marie-Noëlle Lienemann. Le programme 2027 compte sur la baisse démographique pour réduire les classes surchargées et prévoit des enseignants supplémentaires en éducation prioritaire."
-      },
-      "tra-04": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "6713a78d48a170be"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "tra-05": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "cfa98f3895120ed9"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "sec-02": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "80809eff6cccb375"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Juste avant : « Cela ne signifie pas que toute sanction doive être une peine de prison. »"
-      },
-      "sec-04": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "8e17f69c1fcbf64b"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Il qualifie cette position d’« équilibrée et républicaine » ; le programme dit que la France doit « maîtriser démocratiquement sa politique migratoire »."
-      },
-      "sec-05": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "43d3f985337e49db"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "La mesure vise les travailleurs sans papiers en général, pas seulement les métiers en tension."
-      },
-      "lib-04": {
-        "value": 1,
-        "status": "explicite",
-        "sources": [
-          "858cd4da6a6f24ae"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "La sanction proposée prend la forme d’un conditionnement des aides publiques."
-      },
-      "lib-06": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "b02053dfd3630a40"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Texte proposé par Emmanuel Maurel et Marie-Noëlle Lienemann. En entretien (Libre Journal, 6 octobre 2026), il veut conserver les lois de 2004 et 2010 et juge l’interdiction du voile dans la rue proposée par le RN « des stigmatisations insup"
-      },
-      "cli-01": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "4e118fd477c27e12"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Le texte de congrès de la GRS mentionne explicitement « des nouveaux réacteurs »."
-      },
-      "eur-01": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "d30b899855ca75b9"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "eur-02": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "112033165625b2dc"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Paragraphe « Désobéissance ciblée » ; s’y ajoute la fin de l’application de la directive sur le travail détaché. Le programme 2027 prévoit de sortir du marché européen de l’électricité."
-      },
-      "eur-03": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "95cb3f0c5f09ca01"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z"
-      },
-      "eur-04": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "0800ec34faf4e417"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Il cite son vote contre l’accord UE–Nouvelle-Zélande et critique les accords avec le Chili, le Mexique et le Mercosur."
-      },
-      "dem-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "07bfab4f6465e96b"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "« En tout ou partie » : proportionnelle intégrale ou mixte. Le programme 2027 ne reprend pas ce point."
-      },
-      "dem-02": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "da53e90f53c3b9b0"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Le texte de congrès de la GRS se dit « fervents partisans du Référendum d’Initiative Citoyenne (RIC) »."
-      },
-      "dem-05": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "cfd741e45f7253af"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:54:08.652Z",
-        "note": "Pas de nouveaux pouvoirs, mais le même texte promet de garantir « l’autonomie fiscale des collectivités territoriales » avec des ressources stables et dynamiques : plus de ressources, pas plus de pouvoirs."
-      },
-      "lib-02": {
-        "value": 1,
-        "status": "explicite",
-        "sources": [
-          "0fc5d83973fe3c1f"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:59:14.422Z",
-        "note": "Règle portée par « une grande campagne de prévention » ; la phrase suivante propose de « réguler voire interdire » les algorithmes des réseaux sociaux. Pas d’interdiction légale explicite pour les moins de 15 ans."
-      },
-      "eco-04": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "ba203b1219193463"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:59:14.422Z",
-        "note": "Programme commun du Nouveau Front populaire, signé par la GRS et publié sur son site."
-      },
-      "sec-03": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "dfa750542caba347"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:59:14.422Z",
-        "note": "Programme commun du Nouveau Front populaire, signé par la GRS et publié sur son site."
-      },
-      "cli-03": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "613a1d647cbc71d6"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:59:14.422Z",
-        "note": "Programme commun du Nouveau Front populaire, signé par la GRS et publié sur son site. Réduction des pesticides, avec compensation financière des agriculteurs."
-      },
-      "dem-03": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "3cccd2c59d625f47"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:59:14.422Z",
-        "note": "Programme commun du Nouveau Front populaire, signé par la GRS et publié sur son site."
-      },
-      "cli-06": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "bf8ca36a289254e6"
-        ],
-        "basis": "vote",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T10:10:11.968Z",
-        "note": "Vote nominatif sur la loi qui allège des contraintes pesant sur les agriculteurs (pesticides, stockage de l'eau, élevage). Elle ne porte pas sur les normes imposées aux autres entreprises, d'où deux niveaux possibles. Il figure parmi les vo"
-      },
-      "lib-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "7ce915e159f677ae"
-        ],
-        "basis": "vote",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T10:10:11.968Z",
-        "note": "Vote nominatif sur le texte définitif de la loi créant un droit à l'aide à mourir, sous conditions."
-      },
-      "eco-07": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "5952650e10d2a820"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme 2027 : la baisse vise l’électricité seulement (rien sur le gaz et les carburants), d’où deux niveaux."
-      },
-      "eco-10": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "0e0d18d7bda23f58"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme 2027, qui liste aussi « l’indexation des salaires sur l’inflation » parmi ses propositions."
-      },
-      "tra-07": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "9c1dd8e33295a810"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 signé par la GRS (position de parti) : 32 heures d’abord dans les métiers pénibles ou de nuit, puis extension par la négociation, d’où deux niveaux."
-      },
-      "tra-10": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "041709c479329c38"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti) : annuler les réformes Macron du RSA, dont l’obligation d’activité de 15 heures prévue par la loi pour le plein emploi. Le texte ne cite pas les 15 heures, d’où deux niveaux."
-      },
-      "san-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "6011bebbfbc8a09d"
-        ],
-        "basis": "vote",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Vote pour, en première lecture, sur l’ensemble de la proposition de loi Garot, dont la mesure centrale régule l’installation des médecins dans les zones déjà bien dotées. Le programme NFP 2024 prévoit aussi de « Réguler l’installation des m"
-      },
-      "san-06": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "7dd4ac634caaf775"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti) : AAH au niveau du SMIC, soit au-dessus du seuil de pauvreté."
-      },
-      "edu-02": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "de09ca1405e5ec87"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti) : abroger le « choc des savoirs », la réforme qui a instauré les groupes de niveau au collège. Le texte ne nomme pas les groupes de niveau, d’où deux niveaux."
-      },
-      "edu-03": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "5b0f93a2886351e5"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti) : « premiers pas » vers la gratuité, d’où deux niveaux."
-      },
-      "edu-04": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "ec684406c074e05c"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme 2027, qui ajoute : « À plus long terme, les financements publics seront réservés à l’école publique »."
-      },
-      "edu-05": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "b42d5502be9096c0"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti)."
-      },
-      "log-01": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "bb65a9c2097ec501"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti)."
-      },
-      "log-02": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "01411ebaae14c1e0"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme 2027 (aussi dans le texte du congrès de la GRS, 2026)."
-      },
-      "log-04": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "3b4bd359b6297a26"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Texte du congrès de la GRS (juin 2026), écrit après le vote de suppression des ZFE censuré par le Conseil constitutionnel : les ZFE doivent revenir, mais au rythme des ménages. Ni suppression définitive ni maintien en l’état, d’où deux nive"
-      },
-      "sec-08": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "e05caf05e66f766f"
-        ],
-        "basis": "vote",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Vote contre, en première lecture, sur l’ensemble de la proposition de loi Attal sur la justice des mineurs, qui écarte plus souvent l’excuse de minorité et ouvre la comparution immédiate à partir de 16 ans. Le texte contient d’autres mesure"
-      },
-      "imm-01": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "312131e8b6ad432b"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti)."
-      },
-      "imm-02": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "dcce2e6ec0d0af18"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme 2027 (même phrase dans le texte du congrès de la GRS, 2026)."
-      },
-      "imm-05": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "4ea1e41f0dc0edcf"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Texte d’orientation du congrès de la GRS (juin 2026), présenté par Emmanuel Maurel : position de parti."
-      },
-      "lib-08": {
-        "value": -2,
-        "status": "parti-uniquement",
-        "sources": [
-          "04229426ad05307d"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti) : rembourser la PMA et l’élargir, donc opposé à sa suppression."
-      },
-      "cli-07": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "2ceeb2d8b1b10fea"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti) : développer l’éolien en mer. Le texte ne parle pas de l’éolien terrestre, d’où deux niveaux. Le programme 2027 prévoit de nouvelles capacités « renouvelables » sans détail."
-      },
-      "cli-08": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "21feb86d041103e7"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme 2027 : sortie du marché européen, tarifs « ajustés au prix de revient du mix nucléaire-hydroélectricité-renouvelables »."
-      },
-      "ani-07": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "0f86a56065c825cd"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Entretien à l’Humanité (février 2024). Le livret agricole de la GRS (2026) défend aussi « le retour du principe des prix garantis »."
-      },
-      "eur-07": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "15487493cd07627c"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme 2027. À noter : il s’est abstenu le 12 mars 2025 sur la proposition de résolution européenne appelant au renforcement du soutien à l’Ukraine (scrutin n°988)."
-      },
-      "eur-10": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "429365c42c540b1a"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme NFP 2024 (position de parti)."
-      },
-      "dem-09": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "403a2fea5294dcd6"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Programme 2027."
-      },
-      "dem-10": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "21cb99b3d3540321"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Texte d’orientation du congrès de la GRS (juin 2026) : position de parti."
-      },
-      "tra-11": {
-        "value": -2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "4e390e87422836a3"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Débat BFMTV du 4 octobre 2026."
-      },
-      "eco-11": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "29258a58f415d3a1"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z"
-      },
-      "tra-14": {
-        "value": 1,
-        "status": "explicite",
-        "sources": [
-          "989ff6179af233e7"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Nationalisations « si nécessaire » ; le programme prévoit aussi la reprise des autoroutes par l’État à la fin des concessions."
-      },
-      "tra-13": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "ambigu",
-        "sources": [
-          "6cf9ccc4667a9a72"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Conditionnement des aides (et réforme de niches comme le crédit d’impôt recherche), sans réduction globale annoncée."
-      },
-      "eco-13": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "3e961eefb3fdbdbf"
-        ],
-        "basis": "vote",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Vote pour l’ensemble de la proposition de loi (première lecture, 5 juin 2025) ; un vote n’est pas un engagement de programme."
-      },
-      "tra-12": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "248ab922268791f3"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Proposition de loi du groupe GDR cosignée par Emmanuel Maurel : licenciement économique sans cause réelle et sérieuse si l’entreprise a eu un résultat positif ou versé des dividendes ; cosignature, pas une déclaration de campagne."
-      },
-      "eco-09": {
-        "value": -1,
-        "status": "explicite",
-        "sources": [
-          "1edcfae50f9d925b"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "À propos des agents publics ; veut aussi renforcer certains effectifs (contrôleurs fiscaux, services déconcentrés)."
-      },
-      "sec-01": {
-        "value": 1,
-        "status": "explicite",
-        "sources": [
-          "b2fa2f609d0fa31b"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Hausse ciblée sur la police judiciaire."
-      },
-      "imm-07": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "ambigu",
-        "sources": [
-          "ec4a5938b7fa60c1"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Régularisation des travailleurs ; il veut aussi concentrer les moyens sur l’éloignement des étrangers sous OQTF pour raisons graves."
-      },
-      "eur-09": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "6dbea286b3fefbcd"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Veut un rapport de force avec l’Union, pas une sortie."
-      },
-      "tra-06": {
-        "value": 1,
-        "status": "explicite",
-        "sources": [
-          "7e4c962f226e0fa1"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Propose aussi un plan de développement des services publics locaux."
-      }
-    },
-    "segolene-royal": {
-      "eco-02": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "8105fc6dd518cbcb"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:58:09.138Z",
-        "note": "Débat BFMTV de la primaire. Le 31 août 2026 (France 2), elle parlait de l'« Impôt de solidarité sur la fortune financière » supprimé sous Macron."
-      },
-      "cli-03": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "a64ee843c49a2ade"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:58:09.138Z",
-        "note": "Réponse sur le retour de pesticides interdits (néonicotinoïdes), qu'elle qualifie de « faute grave ». Elle demande aussi des exigences comparables pour les produits importés."
-      },
-      "cli-04": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "68f3a2d54e6ce533"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:58:09.138Z",
-        "note": "Propos tenus à propos des Gilets jaunes. La compensation pour les ménages modestes n'est pas abordée. En septembre 2026, elle demande aussi une baisse de la TVA et des taxes sur les carburants."
-      },
-      "lib-06": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "a2ea7e6622aa592f"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:58:09.138Z",
-        "note": "Réponse sur BFMTV (7 septembre 2026) à la proposition du RN d'interdire le voile dans l'espace public. Elle rappelle que la burqa y est déjà interdite. En décembre 2025, elle préférait la pédagogie à une interdiction pour les mineures."
-      },
-      "sec-05": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "0b9bf10b9b9e697d"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T17:58:09.138Z",
-        "note": "Débat BFMTV du 4 octobre 2026. Ne précise pas les critères. En septembre 2024, elle jugeait « idéologique » et « impossible » la régularisation de tous les sans-papiers."
-      },
-      "lib-02": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "9dbb32dfc3b5018f"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T08:59:31.905Z",
-        "note": "Réponse à la question sur l'interdiction des réseaux sociaux aux moins de 15 ans voulue par Emmanuel Macron ; juste avant, elle dit : « Je suis donc favorable à ça, je l'ai dit même avant qu'il se prononce. » Le seuil d'âge figure dans la q"
-      },
-      "edu-05": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "929aa9b0af07376a"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Invitée de BFMTV pendant le mouvement lycéen ; la page est une vidéo dont le titre cite ses mots."
-      },
-      "eur-07": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "41b13ada44ebede6"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Débat BFMTV du 4 octobre 2026. Soutien maintenu mais assorti d’un effort égal pour une négociation avec la Russie ; l’aide militaire n’est pas nommée en tant que telle."
-      },
-      "eco-07": {
-        "value": 1,
-        "status": "declaration-provisoire",
-        "sources": [
-          "57808d2642da1b6a"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Ses mots sur BFMTV, cités entre guillemets. Mesure temporaire (jusqu’au 31 décembre) pour plafonner l’essence à 1,70 € ; porte sur les carburants seulement, rien sur l’électricité et le gaz : +1."
-      },
-      "eco-03": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "836b609647fb51fa"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Réduire le déficit par la chasse aux gaspillages, sans sacrifier les dépenses essentielles."
-      },
-      "edu-01": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "3e2ed85a13167092"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T09:35:32.589Z",
-        "note": "Réponse sur la levée du drapeau et la Marseillaise à l’école : elle juge l’uniforme un échec et non prioritaire, sans dire explicitement qu’elle l’interdirait."
-      },
-      "tra-13": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "8b39cc8537ac1085"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T09:35:32.589Z",
-        "note": "Économies sur les 160 milliards d’aides « sans conditions », sans ampleur chiffrée : plutôt favorable."
-      },
-      "tra-09": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "2dd4dbd445f8a673"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T09:49:46.540Z",
-        "note": "Contre la désindexation des pensions."
-      },
-      "eco-04": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "149786d9f5f94b9a"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T09:49:46.540Z",
-        "note": "Prix de l'essence négocié avec les pétroliers, pas un plafond fixé par la loi."
-      }
-    },
     "dominique-de-villepin": {
       "eco-02": {
         "value": 2,
@@ -18881,6 +17060,878 @@
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
         "codedAt": "2026-10-10T10:31:52.795Z"
+      }
+    },
+    "gilles-platret": {
+      "san-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "san-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "san-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "san-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "san-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "san-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-14": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eco-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "log-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "log-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "log-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "log-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "imm-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "imm-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "imm-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "imm-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "imm-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "imm-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "imm-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "sec-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "lib-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "edu-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "edu-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "edu-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "edu-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "edu-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "edu-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "edu-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "tra-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "eur-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "ani-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "cli-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      },
+      "dem-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:21:51.397Z"
+      }
+    },
+    "dieudonne": {
+      "eco-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
+      },
+      "eco-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-12T09:30:55.509Z"
       }
     }
   },
@@ -28921,6 +27972,8 @@
     "francois-asselineau": "2026-10-10T08:49:32.693Z",
     "juan-branco": "2026-10-10T08:49:32.693Z",
     "emmanuel-dubuisson": "2026-10-10T09:49:46.540Z",
-    "francis-lalanne": "2026-10-10T10:31:52.795Z"
+    "francis-lalanne": "2026-10-10T10:31:52.795Z",
+    "gilles-platret": "2026-10-12T09:21:51.397Z",
+    "dieudonne": "2026-10-12T09:30:55.509Z"
   }
 }
