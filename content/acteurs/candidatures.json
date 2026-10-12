@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-10-10",
+  "collectedAt": "2026-10-12",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -377,7 +377,7 @@
     {
       "slug": "raphael-glucksmann",
       "name": "Raphaël Glucksmann",
-      "party": "Place publique (primaire PS-PP-GRS)",
+      "party": "Place publique (désigné par la primaire PS-PP-GRS)",
       "status": "declare",
       "since": "2026-08-23",
       "source": {
@@ -401,7 +401,7 @@
       "slug": "olivier-faure",
       "name": "Olivier Faure",
       "party": "Parti socialiste (primaire PS-PP-GRS)",
-      "status": "declare",
+      "status": "retire",
       "since": "2026-08-30",
       "source": {
         "title": "« Oui, je suis candidat à la présidence de la République », confirme Olivier Faure sur TF1",
@@ -414,13 +414,20 @@
           "kind": "programme",
           "url": "https://projet-socialiste.fr/projet/"
         }
-      ]
+      ],
+      "retiredAt": "2026-10-11",
+      "retiredSource": {
+        "title": "Raphaël Glucksmann remporte dès le premier tour la primaire à gauche",
+        "publisher": "franceinfo",
+        "url": "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html"
+      },
+      "retiredReason": "Battu à la primaire PS-PP-GRS (14,48 % des voix)"
     },
     {
       "slug": "segolene-royal",
       "name": "Ségolène Royal",
       "party": "Primaire PS-PP-GRS",
-      "status": "declare",
+      "status": "retire",
       "since": "2026-07-10",
       "source": {
         "title": "Ségolène Royal annonce qu'elle participera à la primaire socialiste en vue de l'élection présidentielle",
@@ -433,13 +440,20 @@
           "kind": "programme",
           "url": "https://choisir2027.fr/wp-content/uploads/2026/09/Profession_de_foi_Segolene_Royal_2027.pdf"
         }
-      ]
+      ],
+      "retiredAt": "2026-10-11",
+      "retiredSource": {
+        "title": "Raphaël Glucksmann remporte dès le premier tour la primaire à gauche",
+        "publisher": "franceinfo",
+        "url": "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html"
+      },
+      "retiredReason": "Battue à la primaire PS-PP-GRS (7,62 % des voix)"
     },
     {
       "slug": "emmanuel-maurel",
       "name": "Emmanuel Maurel",
       "party": "Gauche républicaine et socialiste (primaire PS-PP-GRS)",
-      "status": "declare",
+      "status": "retire",
       "since": "2026-09-04",
       "source": {
         "title": "Le député Emmanuel Maurel annonce sa candidature à la primaire socialiste pour l'élection présidentielle",
@@ -456,7 +470,14 @@
           "kind": "programme",
           "url": "https://emmanuel-maurel.fr/programme/"
         }
-      ]
+      ],
+      "retiredAt": "2026-10-11",
+      "retiredSource": {
+        "title": "Raphaël Glucksmann remporte dès le premier tour la primaire à gauche",
+        "publisher": "franceinfo",
+        "url": "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html"
+      },
+      "retiredReason": "Battu à la primaire PS-PP-GRS (5,92 % des voix)"
     },
     {
       "slug": "xavier-bertrand",
@@ -542,7 +563,7 @@
       "slug": "jerome-guedj",
       "name": "Jérôme Guedj",
       "party": "Parti socialiste (primaire PS-PP-GRS)",
-      "status": "declare",
+      "status": "retire",
       "since": "2026-09-15",
       "source": {
         "title": "Choisir 2027 : les candidat·e·s à la primaire de la gauche socialiste et démocratique",
@@ -550,7 +571,14 @@
         "url": "https://choisir2027.fr/"
       },
       "verified": true,
-      "addedBy": "recherche manuelle"
+      "addedBy": "recherche manuelle",
+      "retiredAt": "2026-10-11",
+      "retiredSource": {
+        "title": "Raphaël Glucksmann remporte dès le premier tour la primaire à gauche",
+        "publisher": "franceinfo",
+        "url": "https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html"
+      },
+      "retiredReason": "Battu à la primaire PS-PP-GRS (5,83 % des voix)"
     },
     {
       "slug": "juan-branco",

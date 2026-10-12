@@ -5,14 +5,14 @@ import { ThemeIcon } from '@/components/ThemeIcon'
 import { formatDate } from '@/components/Editorial'
 import { UI_COPY } from '@/lib/copy'
 import { getSujets } from '@/lib/sujets'
-import { getAnnouncedActors } from '@/lib/actors'
+import { getActiveActors } from '@/lib/actors'
 import { absolute } from '@/lib/site'
 
 const t = UI_COPY.programmes
 
 export const metadata: Metadata = {
   title: t.metaTitle,
-  description: t.metaDescription(getAnnouncedActors().filter((a) => a.status !== 'retire').length),
+  description: t.metaDescription(getActiveActors().length),
   alternates: { canonical: '/programmes' },
 }
 

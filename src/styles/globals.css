@@ -3696,6 +3696,17 @@ details.disclosure > div {
   grid-column: 1 / -1;
   font-size: var(--text-small);
 }
+.cand-retired {
+  list-style: none;
+  padding: 0;
+  margin: var(--s3) 0 0;
+  display: grid;
+  gap: var(--s2);
+}
+.cand-retired li {
+  padding-bottom: var(--s2);
+  border-bottom: 1px solid var(--line);
+}
 .cand-hero {
   display: flex;
   align-items: center;

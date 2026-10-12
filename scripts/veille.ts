@@ -115,7 +115,10 @@ const Selection = z.object({
       z.object({
         name: z.string().describe('Prénom et nom de la personne'),
         party: z.string().describe('Formation politique indiquée dans l’extrait, ou chaîne vide'),
-        kind: z.enum(['declare', 'demarche', 'retrait']).describe('declare : annonce sa candidature ; demarche : annonce une démarche (« je serai candidat ») ; retrait : renonce'),
+        kind: z
+          .enum(['declare', 'demarche', 'retrait'])
+          .describe('declare : annonce sa candidature ; demarche : annonce une démarche (« je serai candidat ») ; retrait : renonce, ou perd la primaire qui désignait le candidat (une entrée par perdant nommé)'),
+        reason: z.string().describe('Retrait seulement : la cause en quelques mots, vraie hors contexte (« Battu à la primaire PS-PP-GRS »), sinon chaîne vide'),
         itemId: z.string().describe("Identifiant de l'extrait qui l'établit"),
         quote: z.string().describe("Passage copié mot pour mot de l'extrait qui l'établit"),
       }),
@@ -160,7 +163,7 @@ La viralité supposée n'est pas un critère. Applique les mêmes critères quel
 // ---------------------------------------------------------------------------
 
 const CAND_FILE = path.join(ROOT, 'content/acteurs/candidatures.json')
-type Cand = { slug: string; name: string; party?: string; status: string; since: string; source: { title: string; publisher: string; url: string }; verified: boolean; retiredAt?: string; retiredSource?: { title: string; publisher: string; url: string }; addedBy?: string }
+type Cand = { slug: string; name: string; party?: string; status: string; since: string; source: { title: string; publisher: string; url: string }; verified: boolean; retiredAt?: string; retiredSource?: { title: string; publisher: string; url: string }; retiredReason?: string; addedBy?: string }
 
 /** Candidats ajoutés pendant ce passage : le workflow lance aussitôt la recherche de leurs positions. */
 const newActors: string[] = []
@@ -187,6 +190,7 @@ function applyCandidacies(found: z.infer<typeof Selection>['candidacies'], byId:
         existing.status = 'retire'
         existing.retiredAt = (item.date ?? now.toISOString()).slice(0, 10)
         existing.retiredSource = source
+        if (c.reason.trim()) existing.retiredReason = c.reason.trim().slice(0, 120)
         changes.push(`Retrait : ${existing.name}`)
       }
       continue

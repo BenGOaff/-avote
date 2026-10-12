@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { UI_COPY } from '@/lib/copy'
 import { getArticles, getBriefs } from '@/lib/content'
-import { getAnnouncedActors } from '@/lib/actors'
+import { getActiveActors } from '@/lib/actors'
 import { liveCorpus, questionnaire } from '@/lib/data'
 import { ArticleCard, BriefItem } from '@/components/Editorial'
 import { NewsletterForm } from '@/components/NewsletterForm'
@@ -17,7 +17,7 @@ export const revalidate = 1800
 export default function HomePage() {
   const briefs = getBriefs().slice(0, 6)
   const articles = getArticles().slice(0, 3)
-  const actors = getAnnouncedActors()
+  const actors = getActiveActors()
   const known = Object.values(liveCorpus.positions as Record<string, Record<string, { missing?: boolean }>>).reduce(
     (n, p) => n + Object.values(p).filter((x) => !x.missing).length,
     0,

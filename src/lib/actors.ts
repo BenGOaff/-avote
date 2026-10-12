@@ -11,6 +11,8 @@ export interface AnnouncedActor {
   verified: boolean
   retiredAt?: string
   retiredSource?: { title: string; publisher: string; url: string }
+  /** Pourquoi la candidature s'arrête (« Battu à la primaire… »), sinon « Candidature retirée » */
+  retiredReason?: string
   addedBy?: string
   /** Sites officiels : campagne, parti, programme */
   links?: { kind: 'campagne' | 'parti' | 'programme'; url: string }[]
@@ -19,6 +21,9 @@ export interface AnnouncedActor {
 export function getAnnouncedActors(): AnnouncedActor[] {
   return (candidatures.actors as AnnouncedActor[]).filter((a) => a.verified !== false).sort((a, b) => a.name.localeCompare(b.name, 'fr'))
 }
+
+/** Candidatures en cours : un candidat retiré ou battu à une primaire sort aussitôt du test, des listes et des quiz. */
+export const getActiveActors = () => getAnnouncedActors().filter((a) => a.status !== 'retire')
 
 export function getActor(slug: string): AnnouncedActor | undefined {
   return getAnnouncedActors().find((a) => a.slug === slug)

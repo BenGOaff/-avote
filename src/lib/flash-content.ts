@@ -4,7 +4,7 @@ import path from 'node:path'
 import { FlashQuizSchema, type FlashQuizFull, type PartyData } from './flash'
 import { liveCorpus, questionnaire } from './data'
 import { UI_COPY } from './copy'
-import { getAnnouncedActors } from './actors'
+import { getActiveActors } from './actors'
 
 const DIR = path.join(process.cwd(), 'content/quiz/flash')
 let cache: FlashQuizFull[] | null = null
@@ -33,13 +33,16 @@ export const getFlashQuiz = (slug: string) => getFlashQuizzes().find((q) => q.sl
 /**
  * Mode « partis » : les questions sont celles du test (même texte, même échelle), et chaque parti
  * reprend les positions sourcées de ses candidats. Seules les questions retenues partent vers le navigateur.
+ * Un candidat retiré ou battu à une primaire sort aussitôt ; un parti sans candidat en lice disparaît du quiz.
  */
 function withParties(q: FlashQuizFull): FlashQuizFull {
+  const nameOf = new Map(getActiveActors().map((a) => [a.slug, a.name]))
+  const parties = (q.parties ?? []).map((p) => ({ ...p, actors: p.actors.filter((s) => nameOf.has(s)) })).filter((p) => p.actors.length > 0)
   const items = (q.items ?? []).map((id) => questionnaire.items.find((i) => i.id === id)).filter((i) => !!i)
   const scale = UI_COPY.test.scale
   const sources = new Map((liveCorpus.sources ?? []).map((s) => [s.id, s]))
   const partyData: PartyData = {}
-  for (const party of q.parties ?? [])
+  for (const party of parties)
     for (const slug of party.actors) {
       partyData[slug] = {}
       for (const it of items) {
@@ -49,10 +52,9 @@ function withParties(q: FlashQuizFull): FlashQuizFull {
         partyData[slug][it.id] = { p, quote: src?.passage, url: src?.url ?? undefined, publisher: src?.publisher }
       }
     }
-  const nameOf = new Map(getAnnouncedActors().map((a) => [a.slug, a.name]))
   return {
     ...q,
-    parties: (q.parties ?? []).map((p) => ({ ...p, actorNames: p.actors.map((s) => nameOf.get(s) ?? s) })),
+    parties: parties.map((p) => ({ ...p, actorNames: p.actors.map((s) => nameOf.get(s)!) })),
     items: items.map((i) => i.id),
     questions: items.map((i) => ({
       q: i.text,
