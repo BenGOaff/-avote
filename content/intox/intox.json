@@ -1,5 +1,331 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-10-12T18:02:46.623Z",
+  "items": [
+    {
+      "id": "une-video-prouverait-que-bally-bagayoko-a-mis-le-feu-a-une-p-fb0749",
+      "claim": "Une vidéo prouverait que Bally Bagayoko a mis le feu à une poubelle lors de la mobilisation lycéenne",
+      "verdict": "trompeur",
+      "truth": "La vidéo montre l'élu s'éloignant d'une poubelle déjà en feu, sous les clameurs de jeunes. Elle ne prouve pas qu'il a mis le feu à la poubelle.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-10-08",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/mobilisation-lyceenne-non-cette-video-ne-prouve-pas-que-bally-bagayoko-a-mis-le-feu-a-une-poubelle/",
+          "title": "Mobilisation lycéenne : non, cette vidéo ne prouve pas que Bally Bagayoko a mis le feu à une poubelle",
+          "date": "2026-10-08",
+          "quote": "Mobilisation lycéenne : non, cette vidéo ne prouve pas que Bally Bagayoko a mis le feu à une poubelle"
+        }
+      ]
+    },
+    {
+      "id": "une-video-montrerait-un-adolescent-prenomme-mael-blesse-lors-5b9ef1",
+      "claim": "Une vidéo montrerait un adolescent prénommé Maël, blessé lors des mobilisations lycéennes de la rentrée 2026",
+      "verdict": "hors-contexte",
+      "truth": "Selon la procureure de Tours, Maël, 16 ans, a été gravement blessé à l'œil le 30 septembre 2026 à Tours, probablement par une balle de LBD lors du blocus de son lycée. La vidéo ne montre pas cet adolescent.",
+      "spreaders": [],
+      "topic": "securite",
+      "firstSeen": "2026-10-08",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/non-cette-video-ne-montre-pas-un-adolescent-prenomme-mael-blesse-au-cours-des-mobilisations-lyceennes-de-la-rentree-2026/",
+          "title": "Non, cette vidéo ne montre pas un adolescent prénommé Maël, blessé au cours des mobilisations lycéennes de la rentrée 2026",
+          "date": "2026-10-08",
+          "quote": "Non, cette vidéo ne montre pas un adolescent prénommé Maël, blessé au cours des mobilisations lycéennes de la rentrée 2026"
+        }
+      ]
+    },
+    {
+      "id": "une-video-montrant-un-bus-en-flammes-filme-lors-de-la-mobili-a6ff08",
+      "claim": "Une vidéo montrant un bus en flammes filmé lors de la mobilisation lycéenne de la rentrée 2026.",
+      "verdict": "hors-contexte",
+      "truth": "Cette vidéo de bus en flammes n'a rien à voir avec la mobilisation lycéenne de la rentrée 2026.",
+      "spreaders": [],
+      "topic": "securite",
+      "firstSeen": "2026-10-12",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/cette-video-dun-bus-en-flammes-na-rien-a-voir-avec-la-mobilisation-lyceenne/",
+          "title": "Cette vidéo d’un bus en flammes n’a rien à voir avec la mobilisation lycéenne",
+          "date": "2026-10-12",
+          "quote": "Cette vidéo d’un bus en flammes n’a rien à voir avec la mobilisation lycéenne"
+        }
+      ]
+    },
+    {
+      "id": "le-japon-aurait-inaugure-des-salles-de-cinema-en-12d-present-4e9d9a",
+      "claim": "Le Japon aurait inauguré des salles de cinéma en 12D, présentées comme une révolution.",
+      "verdict": "ia",
+      "truth": "Le contenu qui montre ces salles de cinéma en 12D est un deepfake, selon l'extrait.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-09-30",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/societe/4249579-20260930-japon-inaugure-salles-cinema-12d-vend-reve?amp%3Bat_campaign=149",
+          "title": "Le Japon inaugure des salles de cinéma en… 12D ? On vous vend du rêve",
+          "date": "2026-09-30",
+          "quote": "il s’agit d’un deepfake"
+        }
+      ]
+    },
+    {
+      "id": "les-femmes-seraient-mobilisees-de-force-pour-la-guerre-en-uk-033bac",
+      "claim": "Les femmes seraient mobilisées de force pour la guerre en Ukraine, faute de soldats.",
+      "verdict": "faux",
+      "truth": "La mobilisation des femmes pour la guerre en Ukraine se fait toujours sur la base du volontariat.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-10-06",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/monde/ukraine/4251593-20261006-guerre-ukraine-face-manque-soldats-femmes-mobilisees-force-prudence?amp%3Bat_campaign=149",
+          "title": "Guerre en Ukraine : Face au manque de soldats, des femmes mobilisées de force ? Prudence",
+          "date": "2026-10-06",
+          "quote": "Contrairement à ce qu’affirment des internautes, la mobilisation des femmes pour la guerre en Ukraine se fait toujours sur la base du volontariat"
+        }
+      ]
+    },
+    {
+      "id": "le-budget-prevoit-650-millions-d-euros-de-moins-et-1-600-pos-346f88",
+      "claim": "Le budget prévoit 650 millions d'euros de moins et 1 600 postes de professeurs en moins pour l'Éducation nationale.",
+      "verdict": "trompeur",
+      "truth": "Calculée en fonction de l'inflation, l'enveloppe du ministère de l'Éducation nationale est effectivement en baisse.",
+      "spreaders": [
+        "La France insoumise"
+      ],
+      "topic": "ecole",
+      "firstSeen": "2026-10-07",
+      "debunks": [
+        {
+          "publisher": "Vrai ou fake (franceinfo)",
+          "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-le-budget-prevoit-il-650-millions-en-moins-pour-l-education-nationale-et-1-600-postes-de-professeurs-en-moins-comme-l-affirme-lfi_8223316.html",
+          "title": "VRAI OU FAUX. Le budget prévoit-il \"650 millions en moins\" pour l'Education nationale et \"1 600 postes de professeurs en moins\", comme l'affirme LFI ?",
+          "date": "2026-10-07",
+          "quote": "Plusieurs cadres de La France insoumise dénoncent une présentation trompeuse du budget de l'Education nationale."
+        }
+      ]
+    },
+    {
+      "id": "une-citation-du-general-de-gaulle-justifierait-la-priorite-n-7ed9f0",
+      "claim": "Une citation du général de Gaulle justifierait la priorité nationale.",
+      "verdict": "faux",
+      "truth": "La citation utilisée est introuvable dans les écrits officiels du Général. Rapportée par son fils quarante ans après sa prononciation présumée, elle n'aurait pas le sens que lui prête la candidate.",
+      "spreaders": [
+        "Marine Le Pen"
+      ],
+      "topic": "immigration",
+      "firstSeen": "2026-09-17",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/dou-vient-la-citation-de-charles-de-gaulle-utilisee-par-marine-le-pen-pour-defendre-la-priorite-nationale-20260917_RGTEJVKKPNFLVANZRTNHNAW3TQ/",
+          "title": "D’où vient la citation de Charles de Gaulle utilisée par Marine Le Pen pour défendre la «priorité nationale» ?",
+          "date": "2026-09-17",
+          "quote": "introuvable dans les écrits officiels"
+        }
+      ]
+    },
+    {
+      "id": "70-des-francais-sont-eligibles-au-parc-social-mais-seulement-f3310f",
+      "claim": "70 % des Français sont éligibles au parc social, mais seulement 11 % en bénéficient, ce qui justifierait la priorité nationale dans le logement social.",
+      "verdict": "trompeur",
+      "truth": "Selon la vérification, les chiffres avancés n'ont pas de rapport avec la revendication de priorité nationale dans le logement social.",
+      "spreaders": [
+        "Marine Le Pen"
+      ],
+      "topic": "logement",
+      "firstSeen": "2026-09-14",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/est-il-vrai-que-70-des-francais-sont-eligibles-au-parc-social-mais-seulement-11-en-beneficient-comme-le-dit-marine-le-pen-20260914_SXW5FDHVGFEAFBZA5BO5J34LJU/",
+          "title": "Est-il vrai que «70 % des Français sont éligibles au parc social», mais «seulement 11 % en bénéficient», comme le dit Marine Le Pen ?",
+          "date": "2026-09-14",
+          "quote": "s'appuie sur des chiffres sans rapport avec sa revendication"
+        }
+      ]
+    },
+    {
+      "id": "les-associations-ont-englouti-60-milliards-d-euros-d-aides-p-c6195a",
+      "claim": "Les associations ont englouti 60 milliards d'euros d'aides publiques",
+      "verdict": "trompeur",
+      "truth": "Le chiffre repris en une du JDD, issu de l'observatoire Hexagone, s'appuie sur le travail de l'économiste Lionel Prouteau, qui pointe un problème de cohérence dans son utilisation.",
+      "spreaders": [
+        "JDD"
+      ],
+      "topic": "eco",
+      "firstSeen": "2026-09-24",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/60-milliards-deuros-daides-publiques-englouties-par-les-associations-que-vaut-lestimation-reprise-en-une-du-jdd-20260924_3QDYLQC4GVCKXFUHEFQKSNBZBI/",
+          "title": "«60 milliards d’euros d’aides publiques englouties par les associations» : que vaut l’estimation reprise en une du «JDD» ?",
+          "date": "2026-09-24",
+          "quote": "ce dernier pointe un «problème de cohérence» dans leur utilisation"
+        }
+      ]
+    },
+    {
+      "id": "le-maire-de-seine-saint-denis-bally-bagayoko-aurait-celebre-7556a1",
+      "claim": "Le maire de Seine-Saint-Denis Bally Bagayoko aurait célébré des débordements autour d'une poubelle en feu",
+      "verdict": "trompeur",
+      "truth": "Une séquence plus longue que celle diffusée montre qu'il a empêché des dégradations.",
+      "spreaders": [
+        "Europe 1",
+        "Frontières"
+      ],
+      "topic": "securite",
+      "firstSeen": "2026-09-29",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/bally-bagayoko-et-la-poubelle-en-feu-checknews-a-retrouve-une-video-qui-met-mal-la-version-de-lextreme-droite-20260929_N2LIM2TYAZBMNCL4DLRXKYYWVI/",
+          "title": "Bally Bagayoko et la poubelle en feu : «CheckNews» a retrouvé une vidéo qui met à mal la version de l’extrême droite",
+          "date": "2026-09-29",
+          "quote": "Une séquence plus longue récupérée par «CheckNews» montre qu’il a empêché des dégradations."
+        }
+      ]
+    },
+    {
+      "id": "les-deputes-se-seraient-augmentes-en-secret-de-5-900-a-7-200-325b7b",
+      "claim": "Les députés se seraient augmentés en secret de 5 900 à 7 200 euros par mois",
+      "verdict": "faux",
+      "truth": "Une vidéo virale publiée par un soutien de Patrick Balkany affirmait cette hausse validée en secret par le bureau de l'Assemblée nationale ; la démonstration est fausse.",
+      "spreaders": [],
+      "topic": "democratie",
+      "firstSeen": "2026-09-29",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/non-les-deputes-ne-se-sont-pas-augmentes-de-5-900-a-7-200-euros-par-mois-20260929_ZFDLTNSILNFIJDFUF2YS7AKS7A/",
+          "title": "Non, les députés ne se sont pas augmentés de 5 900 à 7 200 euros par mois",
+          "date": "2026-09-29",
+          "quote": "La démonstration est fausse."
+        }
+      ]
+    },
+    {
+      "id": "des-personnels-du-lycee-victor-hugo-a-marseille-auraient-ete-cca0db",
+      "claim": "Des personnels du lycée Victor Hugo à Marseille auraient été aspergés d'essence",
+      "verdict": "faux",
+      "truth": "Un acte de ce type rapporté par la région Paca a été démenti par le rectorat ; l'entourage du ministre assure qu'il parlait d'un autre lycée.",
+      "spreaders": [
+        "Edouard Geffray"
+      ],
+      "topic": "ecole",
+      "firstSeen": "2026-10-01",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/non-des-personnels-dun-lycee-de-marseille-nont-pas-ete-asperges-dessence-comme-laffirme-le-ministre-de-leducation-nationale-20261001_HRRNV4EYNBGZ3LUVNUMSCOZBIQ/",
+          "title": "Des personnels d’un lycée de Marseille ont-ils été «aspergés d’essence», comme l’affirme le ministre de l’Education nationale ?",
+          "date": "2026-10-01",
+          "quote": "avant d’être démenti par le rectorat"
+        }
+      ]
+    },
+    {
+      "id": "une-lyceenne-de-saint-denis-aurait-ete-blessee-a-l-acide-par-0c8874",
+      "claim": "Une lycéenne de Saint-Denis aurait été blessée à l'acide par des agresseurs violents",
+      "verdict": "trompeur",
+      "truth": "Une élève a bien été hospitalisée après l'explosion d'une poubelle devant le lycée Paul-Eluard, mais les images et les témoignages ne montrent aucun agresseur.",
+      "spreaders": [
+        "Sébastien Lecornu"
+      ],
+      "topic": "securite",
+      "firstSeen": "2026-10-01",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/a-saint-denis-une-lyceenne-a-t-elle-ete-blessee-a-lacide-par-des-agresseurs-violents-comme-laffirme-sebastien-lecornu-20261001_KJ2S3IQRSJHTFFV3RWCGXXR6RY/",
+          "title": "A Saint-Denis, une lycéenne a-t-elle été blessée à l’acide par des «agresseurs violents», comme l’affirme Sébastien Lecornu ?",
+          "date": "2026-10-01",
+          "quote": "les images de la scène et les témoignages recueillis par «CheckNews» ne montrent aucun agresseur."
+        }
+      ]
+    },
+    {
+      "id": "une-difference-de-couleur-des-semelles-sur-deux-photos-prouv-c617a3",
+      "claim": "Une différence de couleur des semelles sur deux photos prouverait que le sauvetage du vol Flydubai a été mis en scène",
+      "verdict": "faux",
+      "truth": "Les deux images montrent des passagers différents ; la différence de couleur des semelles ne prouve pas une mise en scène.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-10-02",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/vol-flydubai-non-la-difference-de-couleur-des-semelles-sur-deux-photos-ne-prouve-pas-une-mise-en-scene-20261002_SETZRUNLPFBKVKGZT6Y6VVU7QM/",
+          "title": "Vol Flydubai : non, la différence de couleur des semelles sur deux photos ne prouve pas une mise en scène",
+          "date": "2026-10-02",
+          "quote": "Les deux images montrent des passagers différents."
+        }
+      ]
+    },
+    {
+      "id": "un-enfant-de-8-ans-aurait-ingere-autant-de-sucre-que-son-gra-9006f5",
+      "claim": "Un enfant de 8 ans aurait ingéré autant de sucre que son grand-père durant toute sa vie",
+      "verdict": "faux",
+      "truth": "Cette comparaison, citée partout et reprise dans le débat sur une nouvelle taxe sur le sucre, n'a pas d'origine sourcée selon CheckNews.",
+      "spreaders": [],
+      "topic": "sante",
+      "firstSeen": "2026-10-07",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/un-enfant-de-8-ans-a-ingere-autant-de-sucre-que-son-grand-pere-durant-toute-sa-vie-une-idee-citee-partout-mais-sortie-de-nulle-part-20261007_KQIOX2W4DZFRBBZQO2PFIZEMM4/",
+          "title": "«Un enfant de 8 ans a ingéré autant de sucre que son grand-père durant toute sa vie» : une idée citée partout, mais sortie de nulle part",
+          "date": "2026-10-07",
+          "quote": "une idée citée partout, mais sortie de nulle part"
+        }
+      ]
+    },
+    {
+      "id": "jordan-bardella-affirme-ne-pas-avoir-de-compte-facebook-et-n-78236a",
+      "claim": "Jordan Bardella affirme ne pas avoir de compte Facebook et ne pas pouvoir extraire ses données de ce réseau social",
+      "verdict": "faux",
+      "truth": "Une adresse mail personnelle de Jordan Bardella, retrouvée par CheckNews, reste associée à un compte Facebook existant.",
+      "spreaders": [
+        "Jordan Bardella"
+      ],
+      "topic": "autre",
+      "firstSeen": "2026-10-09",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/ecrits-antisemites-contrairement-a-ce-quaffirme-jordan-bardella-un-compte-facebook-associe-a-un-de-ses-mails-personnels-existe-toujours-20261009_VRU6HCTBXNDTBIYGFG2LNWFR2Y/",
+          "title": "Ecrits antisémites : contrairement à ce qu’affirme Jordan Bardella, un compte Facebook associé à un de ses mails personnels existe toujours",
+          "date": "2026-10-09",
+          "quote": "une adresse mail de Jordan Bardella, retrouvée par «CheckNews», est toujours associée à un compte Facebook."
+        }
+      ]
+    },
+    {
+      "id": "les-arguments-avances-par-jordan-bardella-pour-contester-l-e-08e549",
+      "claim": "Les arguments avancés par Jordan Bardella pour contester l'enquête de Mediapart sur des écrits antisémites qui lui sont attribués",
+      "verdict": "trompeur",
+      "truth": "Selon Les Décodeurs, plusieurs arguments de Jordan Bardella pour contester l'enquête de Mediapart se heurtent aux faits.",
+      "spreaders": [
+        "Jordan Bardella"
+      ],
+      "topic": "democratie",
+      "firstSeen": "2026-10-07",
+      "debunks": [
+        {
+          "publisher": "Les Décodeurs (Le Monde)",
+          "url": "https://www.lemonde.fr/les-decodeurs/article/2026/10/07/ecrits-antisemites-les-contre-verites-de-jordan-bardella-pour-se-defendre-contre-l-enquete-de-mediapart_6789593_4355770.html",
+          "title": "Ecrits antisémites : les contre-vérités de Jordan Bardella pour se défendre contre l’enquête de « Mediapart »",
+          "date": "2026-10-07",
+          "quote": "plusieurs de ses arguments se heurtent aux faits"
+        }
+      ]
+    }
+  ]
 }
