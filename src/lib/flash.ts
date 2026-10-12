@@ -33,7 +33,7 @@ const TierSchema = z.object({
   headline: z.string().min(5).max(90),
   line: z.string().min(5).max(220),
 })
-const AvatarSchema = z.string().regex(/^\/img\/(quiz|stock)\/[a-z0-9-]+\.(png|webp)$/)
+const AvatarSchema = z.string().regex(/^\/img\/(quiz|stock|medias)\/[a-z0-9-]+\.(png|webp)$/)
 const OutcomeSchema = z.object({
   key: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().min(2).max(60),

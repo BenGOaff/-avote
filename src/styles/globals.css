@@ -2418,6 +2418,13 @@ details.disclosure > div {
 }
 
 /* Fiche média */
+.media-card__logo {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin: 0 0 var(--s2);
+}
 .media-card__name {
   margin: 0;
   font-size: 1.15rem;

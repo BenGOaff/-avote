@@ -17,5 +17,7 @@ const find = (dir: string, slug: string, exts: string[]) => {
 
 export const portraitOf = (slug: string) => find('candidats', slug, ['webp', 'png', 'jpg'])
 export const logoOf = (partySlug: string) => find('partis', partySlug, ['webp', 'svg', 'png'])
+/** Logo d'un média (public/img/medias/<slug>.webp), fourni par la rédaction ; absent, rien ne s'affiche. */
+export const mediaLogoOf = (slug: string) => find('medias', slug, ['webp', 'svg', 'png'])
 /** Version carrée du logo (pastille), pour les listes. */
 export const squareLogoOf = (partySlug: string) => find('partis', `${partySlug}-carre`, ['webp', 'svg', 'png'])

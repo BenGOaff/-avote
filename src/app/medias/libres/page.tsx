@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { mediaLogoOf } from '@/lib/images'
 import { PageHeader } from '@/components/PageHeader'
 import { MediaCard } from '@/components/MediaCard'
 import { UI_COPY } from '@/lib/copy'
@@ -54,7 +55,7 @@ export default function FreeMediasPage() {
                 </p>
                 <div className="grid grid--2">
                   {list.map((m) => (
-                    <MediaCard key={m.slug} m={m} />
+                    <MediaCard key={m.slug} m={m} logo={mediaLogoOf(m.slug)} />
                   ))}
                 </div>
               </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { mediaLogoOf } from '@/lib/images'
 import { PageHeader } from '@/components/PageHeader'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { formatDate } from '@/components/Editorial'
@@ -58,6 +59,9 @@ export default function MediasPage() {
               <strong>{t.free.teaser(free.length)}</strong> <Link href="/medias/libres">{t.free.cta}</Link>
             </p>
           )}
+          <p className="small">
+            {t.quizLead} <Link href="/quiz/flash/teste-tes-connaissances-sur-les-medias">{t.quizKnow}</Link> · <Link href="/quiz/flash/quel-media-es-tu">{t.quizProfile}</Link>
+          </p>
 
           <section className="section" aria-labelledby="dernier-mot">
             <h2 id="dernier-mot" style={{ fontSize: 'var(--h3)' }}>
@@ -150,7 +154,7 @@ export default function MediasPage() {
                   <h3>{MEDIA_TYPE_LABEL[type]}</h3>
                   <div className="grid grid--2">
                     {list.map((m) => (
-                      <MediaCard key={m.slug} m={m} />
+                      <MediaCard key={m.slug} m={m} logo={mediaLogoOf(m.slug)} />
                     ))}
                   </div>
                 </div>

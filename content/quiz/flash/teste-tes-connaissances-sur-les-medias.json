@@ -1,0 +1,271 @@
+{
+ "slug": "teste-tes-connaissances-sur-les-medias",
+ "mode": "connaissances",
+ "order": 10,
+ "title": "Teste tes connaissances sur les médias : qui possède ton info ?",
+ "tribe": "bonnes réponses",
+ "lede": "Découvre qui possède les chaînes, les radios et les journaux que tu suis, qui se fait rappeler à l’ordre par l’Arcom, et quels médias n’ont aucun milliardaire au-dessus d’eux.",
+ "avatar": "/img/stock/micro.webp",
+ "questions": [
+  {
+   "q": "Qui possède Le Figaro ?",
+   "answers": [
+    {
+     "label": "La famille Arnault (LVMH)",
+     "correct": false
+    },
+    {
+     "label": "La famille Dassault",
+     "correct": true
+    },
+    {
+     "label": "Le groupe Bolloré",
+     "correct": false
+    },
+    {
+     "label": "La famille Pinault",
+     "correct": false
+    }
+   ],
+   "explain": "La famille Dassault, depuis 2004. Serge Dassault fut aussi sénateur ; son élection à la mairie de Corbeil-Essonnes a été annulée en 2009 par le Conseil d’État pour « dons d’argent »."
+  },
+  {
+   "q": "BFMTV, RMC et Brut appartiennent à…",
+   "answers": [
+    {
+     "label": "Xavier Niel",
+     "correct": false
+    },
+    {
+     "label": "Bernard Arnault",
+     "correct": false
+    },
+    {
+     "label": "La famille Saadé, propriétaire de l’armateur CMA CGM",
+     "correct": true
+    },
+    {
+     "label": "L’État",
+     "correct": false
+    }
+   ],
+   "explain": "Rachetées en 2024 par l’armateur CMA CGM et la holding de la famille Saadé, qui possède aussi La Provence et a pris environ 4 % de Carrefour en 2025."
+  },
+  {
+   "q": "Le Parisien, Les Échos, L’Opinion, Paris Match et Challenges ont le même propriétaire. Lequel ?",
+   "answers": [
+    {
+     "label": "Le groupe Bolloré",
+     "correct": false
+    },
+    {
+     "label": "La famille Arnault (LVMH)",
+     "correct": true
+    },
+    {
+     "label": "La famille Dassault",
+     "correct": false
+    },
+    {
+     "label": "Xavier Niel",
+     "correct": false
+    }
+   ],
+   "explain": "Tous appartiennent à la famille Arnault, via LVMH. Le groupe a renfloué Le Parisien de 150 millions d’euros en 2025."
+  },
+  {
+   "q": "CNews, Europe 1 et Le JDD : quel groupe pèse derrière les trois ?",
+   "answers": [
+    {
+     "label": "Bouygues",
+     "correct": false
+    },
+    {
+     "label": "La famille Saadé",
+     "correct": false
+    },
+    {
+     "label": "Le groupe Bolloré",
+     "correct": true
+    },
+    {
+     "label": "LVMH",
+     "correct": false
+    }
+   ],
+   "explain": "Le groupe Bolloré détient 30,8 % de Canal+ (CNews) et 31 % de Louis Hachette Group (Europe 1, Le JDD et, depuis août 2026, la revue Front populaire)."
+  },
+  {
+   "q": "TF1, TMC et LCI appartiennent à…",
+   "answers": [
+    {
+     "label": "L’État",
+     "correct": false
+    },
+    {
+     "label": "Bouygues",
+     "correct": true
+    },
+    {
+     "label": "Le groupe M6",
+     "correct": false
+    },
+    {
+     "label": "Le groupe Bolloré",
+     "correct": false
+    }
+   ],
+   "explain": "Bouygues contrôle le groupe TF1 avec 43,7 % du capital. Oui, le même Bouygues que le béton et les forfaits mobiles."
+  },
+  {
+   "q": "Qui possède Mediapart ?",
+   "answers": [
+    {
+     "label": "Xavier Niel",
+     "correct": false
+    },
+    {
+     "label": "Ses fondateurs, qui touchent des dividendes",
+     "correct": false
+    },
+    {
+     "label": "Un fonds à but non lucratif",
+     "correct": true
+    },
+    {
+     "label": "Le groupe Le Monde",
+     "correct": false
+    }
+   ],
+   "explain": "Le Fonds pour une presse libre, une structure à but non lucratif dont les statuts interdisent d’intervenir sur la ligne éditoriale."
+  },
+  {
+   "q": "À qui appartient Le Canard enchaîné ?",
+   "answers": [
+    {
+     "label": "À ses salariés",
+     "correct": true
+    },
+    {
+     "label": "À la famille Dassault",
+     "correct": false
+    },
+    {
+     "label": "À l’État",
+     "correct": false
+    },
+    {
+     "label": "Au groupe Bolloré",
+     "correct": false
+    }
+   ],
+   "explain": "Ses salariés détiennent tout le capital, et le journal ne verse pas de dividendes. Blast, Politis, Le Média ou L’Humanité appartiennent aussi à leurs lecteurs ou à leurs salariés."
+  },
+  {
+   "q": "En 2024, le Conseil d’État a obligé l’Arcom à réexaminer le pluralisme d’une chaîne. Laquelle ?",
+   "answers": [
+    {
+     "label": "BFMTV",
+     "correct": false
+    },
+    {
+     "label": "France 2",
+     "correct": false
+    },
+    {
+     "label": "CNews",
+     "correct": true
+    },
+    {
+     "label": "TF1",
+     "correct": false
+    }
+   ],
+   "explain": "CNews, après une saisine de Reporters sans frontières. Suite : mise en garde en juillet 2024, puis mise en demeure en juin 2026 pour défaut de pluralisme."
+  },
+  {
+   "q": "Juin 2026 : l’Arcom met en demeure France Inter et franceinfo. Pourquoi ?",
+   "answers": [
+    {
+     "label": "Trop de temps de parole pour LFI",
+     "correct": false
+    },
+    {
+     "label": "Le RN y parlait surtout… la nuit",
+     "correct": true
+    },
+    {
+     "label": "Trop de publicité",
+     "correct": false
+    },
+    {
+     "label": "Une fausse information sur la dette",
+     "correct": false
+    }
+   ],
+   "explain": "Du 1er janvier au 31 mars 2026, les temps de parole du Rassemblement national y ont été très majoritairement diffusés la nuit. Le service public aussi se fait rappeler à l’ordre."
+  },
+  {
+   "q": "Selon l’observatoire européen eurotopics, quel journal est classé « droite » ?",
+   "answers": [
+    {
+     "label": "Le Monde",
+     "correct": false
+    },
+    {
+     "label": "Libération",
+     "correct": false
+    },
+    {
+     "label": "Le JDD",
+     "correct": true
+    },
+    {
+     "label": "Ouest-France",
+     "correct": false
+    }
+   ],
+   "explain": "Le JDD et Valeurs actuelles : « droite ». Le Figaro : « libéral-conservateur ». Le Monde et Libération : « centre-gauche ». Mediapart et Marianne : « gauche »."
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 39,
+   "headline": "Tu crois encore que ton journal appartient à ses journalistes.",
+   "line": "Rarement. Fais un tour sur « Qui possède ton info », ça pique mais ça soigne."
+  },
+  {
+   "upTo": 69,
+   "headline": "Tu sais qui signe le chèque, à peu près.",
+   "line": "Bolloré, Arnault, Saadé : les noms reviennent, pas toujours dans le bon ordre. Encore un effort."
+  },
+  {
+   "upTo": 99,
+   "headline": "Tu lis les mentions légales avant les articles.",
+   "line": "Rien ne t’échappe, ou presque. Le dernier mot appartient toujours à quelqu’un : maintenant tu sais à qui."
+  },
+  {
+   "upTo": 100,
+   "headline": "Sans faute. L’Arcom devrait t’embaucher.",
+   "line": "Propriétaires, mises en demeure, médias libres : tu as tout. Partage, et regarde qui de tes amis tombe des nues."
+  }
+ ],
+ "fact": {
+  "cliche": "« De toute façon, les médias appartiennent tous à des milliardaires. »",
+  "text": "Pas tous, mais beaucoup. Sur les 62 médias que nous suivons, 24 appartiennent à une personne ou à une famille (Bolloré, Arnault, Dassault, Saadé, Pinault…), 3 au groupe Bouygues, 8 à l’État ou au Parlement. Et 16 médias libres n’ont ni milliardaire, ni grand groupe, ni État au-dessus d’eux. Chiffres au 8 octobre 2026 ; chaque propriétaire est sourcé.",
+  "sources": [
+   {
+    "title": "Qui possède ton info : les propriétaires des médias français",
+    "publisher": "Ça vote ?",
+    "url": "https://xn--avote-xra.fr/medias",
+    "date": "2026-10-08"
+   },
+   {
+    "title": "Les médias libres",
+    "publisher": "Ça vote ?",
+    "url": "https://xn--avote-xra.fr/medias/libres",
+    "date": "2026-10-08"
+   }
+  ]
+ }
+}

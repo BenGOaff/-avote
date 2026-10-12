@@ -5,11 +5,15 @@ import { ALERT_KIND_LABEL, ALERT_TOPIC_LABEL, engagementsOf, type MediaEntry } f
 const t = UI_COPY.medias
 
 /** Fiche d'un média : qui a le dernier mot, actionnaires, note, orientation (attribuée), preuves repliées. */
-export function MediaCard({ m }: { m: MediaEntry }) {
+export function MediaCard({ m, logo }: { m: MediaEntry; logo?: string | null }) {
   const o = m.ownership!
   const others = o.otherMedia.filter((x) => x && x !== m.name)
   return (
     <article id={m.slug} className="card media-card">
+      {logo && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img className="media-card__logo" src={logo} width={800} height={800} alt="" loading="lazy" />
+      )}
       <h4 className="media-card__name">{m.name}</h4>
       {m.site && (
         <p className="small" style={{ margin: '0 0 var(--s2)' }}>
