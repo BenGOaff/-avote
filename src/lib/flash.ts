@@ -39,7 +39,7 @@ const OutcomeSchema = z.object({
   name: z.string().min(2).max(60),
   headline: z.string().min(5).max(90),
   line: z.string().min(5).max(260),
-  /** Personnage inventé du résultat (public/img/quiz/<nom>.webp) */
+  /** Image du résultat (public/img/quiz/<nom>.webp) : personnage inventé, ou portrait dessiné d’une figure historique */
   avatar: AvatarSchema.optional(),
 })
 
