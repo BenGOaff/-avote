@@ -1,5 +1,5 @@
 {
-  "_note": "Livres écrits par les candidats (« Lire les candidats »). Un livre par candidat au plus pour l'instant, sans avis : on les liste tous, quel que soit le camp. title null = titre à confirmer, affiché « Son livre ». Les liens Amazon prennent l'identifiant de suivi `amazonTag` ; vide = lien simple, sans commission. `essais` : livres de référence de chaque camp (classement de la rédaction, selon le camp qui s'en réclame) ; les rayons n'apparaissent qu'une fois chaque famille politique garnie d'au moins deux livres, pour ne pas pencher.",
+  "_note": "Livres écrits par les candidats (« Lire les candidats »). Un livre par candidat au plus pour l'instant, sans avis : on les liste tous, quel que soit le camp. title null = titre à confirmer, affiché « Son livre ». Les liens Amazon prennent l'identifiant de suivi `amazonTag` ; vide = lien simple, sans commission. `essais` : livres de référence de chaque camp (classement de la rédaction, selon le camp qui s'en réclame) ; rayons vides masqués ; on complète les rayons maigres pour garder l'équilibre.",
   "amazonTag": "cavote-21",
   "items": [
     {
