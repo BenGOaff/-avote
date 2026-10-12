@@ -176,11 +176,13 @@ const rayonIds = new Set(((livres as unknown as { rayons: { id: string }[] }).ra
 for (const e of (livres as unknown as { essais: { rayon: string; title: string; author: string; asin: string }[] }).essais ?? []) {
   if (!rayonIds.has(e.rayon)) errors.push(`livres : rayon inconnu pour « ${e.title} »`)
   if (!/^[A-Z0-9]{10}$/.test(e.asin) || !e.title || !e.author) errors.push(`livres : essai incomplet « ${e.title} »`)
+  if ((e as { cover?: string }).cover && !existsSync(path.join(ROOT, 'public', (e as { cover?: string }).cover!))) errors.push(`livres : couverture absente pour « ${e.title} »`)
 }
 for (const b of livres.items) {
   if (!livreActors.has(b.actor)) errors.push(`livres : candidat inconnu ${b.actor}`)
   if (!/^[A-Z0-9]{10}$/.test(b.asin)) errors.push(`livres : ASIN invalide pour ${b.actor}`)
   if (b.title !== null && (b.title.length < 2 || b.title.length > 120)) errors.push(`livres : titre invalide pour ${b.actor}`)
+  if ((b as { cover?: string }).cover && !existsSync(path.join(ROOT, 'public', (b as { cover?: string }).cover!))) errors.push(`livres : couverture absente pour ${b.actor}`)
 }
 
 // Qui possède ton info

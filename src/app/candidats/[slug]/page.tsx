@@ -196,13 +196,19 @@ function LivreBlock({ slug }: { slug: string }) {
   if (!l) return null
   const t = UI_COPY.livres
   return (
-    <p>
-      <strong>{t.blockTitle} :</strong>{' '}
-      <a href={l.url} rel="sponsored noopener noreferrer" target="_blank">
-        {l.title ? `« ${l.title} »` : 'sur Amazon'}
-      </a>
-      {isAffiliate ? <span className="small muted"> (lien affilié)</span> : null} · <Link href="/livres">{t.blockLink}</Link>
-    </p>
+    <div className="livre" style={{ margin: 'var(--s3) 0' }}>
+      {l.cover && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img className="livre__cover" src={l.cover} alt="" width={56} height={86} loading="lazy" decoding="async" style={{ width: 56 }} />
+      )}
+      <p style={{ margin: 0 }}>
+        <strong>{t.blockTitle} :</strong>{' '}
+        <a href={l.url} rel="sponsored noopener noreferrer" target="_blank">
+          {l.title ? `« ${l.title} »` : 'sur Amazon'}
+        </a>
+        {isAffiliate ? <span className="small muted"> (lien affilié)</span> : null} · <Link href="/livres">{t.blockLink}</Link>
+      </p>
+    </div>
   )
 }
 

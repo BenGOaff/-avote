@@ -47,7 +47,7 @@ export default function LivresPage() {
           <ul className="livres" role="list">
             {b.livres.map((l) => (
               <li key={l.actor.slug} className="card card--flat livre">
-                <Portrait src={portraitOf(l.actor.slug)} name={l.actor.name} bloc={b.id} size={56} />
+                {l.cover ? <Cover src={l.cover} /> : <Portrait src={portraitOf(l.actor.slug)} name={l.actor.name} bloc={b.id} size={56} />}
                 <div>
                   <p className="livre__title">
                     <a href={l.url} rel="sponsored noopener noreferrer" target="_blank">
@@ -74,7 +74,9 @@ export default function LivresPage() {
               <h3>{r.label}</h3>
               <ul className="livres" role="list">
                 {r.essais.map((e) => (
-                  <li key={e.url} className="card card--flat">
+                  <li key={e.url} className="card card--flat livre">
+                    {e.cover && <Cover src={e.cover} />}
+                    <div>
                     <p className="livre__title">
                       <a href={e.url} rel="sponsored noopener noreferrer" target="_blank">
                         {e.title}
@@ -83,6 +85,7 @@ export default function LivresPage() {
                     <p className="small muted" style={{ margin: 0 }}>
                       {e.author}
                     </p>
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -95,4 +98,10 @@ export default function LivresPage() {
       </p>
     </div>
   )
+}
+
+/** Couverture servie par le site (aucune image tierce), décorative : le titre est juste à côté */
+function Cover({ src }: { src: string }) {
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img className="livre__cover" src={src} alt="" width={72} height={110} loading="lazy" decoding="async" />
 }
