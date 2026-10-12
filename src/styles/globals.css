@@ -2391,6 +2391,15 @@ details.disclosure > div {
   flex: none;
   margin: 0;
 }
+.livre__cover {
+  flex: none;
+  width: 72px;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  border-radius: 2px;
+  box-shadow: var(--shadow-signature);
+}
 .livre__title {
   margin: 0 0 var(--s1);
   font-weight: 700;
