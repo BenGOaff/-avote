@@ -57,62 +57,6 @@
       ]
     },
     {
-      "id": "le-japon-aurait-inaugure-des-salles-de-cinema-en-12d-present-4e9d9a",
-      "claim": "Le Japon aurait inauguré des salles de cinéma en 12D, présentées comme une révolution.",
-      "verdict": "ia",
-      "truth": "Le contenu qui montre ces salles de cinéma en 12D est un deepfake, selon l'extrait.",
-      "spreaders": [],
-      "topic": "autre",
-      "firstSeen": "2026-09-30",
-      "debunks": [
-        {
-          "publisher": "Fake Off (20 Minutes)",
-          "url": "https://www.20minutes.fr/societe/4249579-20260930-japon-inaugure-salles-cinema-12d-vend-reve?amp%3Bat_campaign=149",
-          "title": "Le Japon inaugure des salles de cinéma en… 12D ? On vous vend du rêve",
-          "date": "2026-09-30",
-          "quote": "il s’agit d’un deepfake"
-        }
-      ]
-    },
-    {
-      "id": "les-femmes-seraient-mobilisees-de-force-pour-la-guerre-en-uk-033bac",
-      "claim": "Les femmes seraient mobilisées de force pour la guerre en Ukraine, faute de soldats.",
-      "verdict": "faux",
-      "truth": "La mobilisation des femmes pour la guerre en Ukraine se fait toujours sur la base du volontariat.",
-      "spreaders": [],
-      "topic": "autre",
-      "firstSeen": "2026-10-06",
-      "debunks": [
-        {
-          "publisher": "Fake Off (20 Minutes)",
-          "url": "https://www.20minutes.fr/monde/ukraine/4251593-20261006-guerre-ukraine-face-manque-soldats-femmes-mobilisees-force-prudence?amp%3Bat_campaign=149",
-          "title": "Guerre en Ukraine : Face au manque de soldats, des femmes mobilisées de force ? Prudence",
-          "date": "2026-10-06",
-          "quote": "Contrairement à ce qu’affirment des internautes, la mobilisation des femmes pour la guerre en Ukraine se fait toujours sur la base du volontariat"
-        }
-      ]
-    },
-    {
-      "id": "le-budget-prevoit-650-millions-d-euros-de-moins-et-1-600-pos-346f88",
-      "claim": "Le budget prévoit 650 millions d'euros de moins et 1 600 postes de professeurs en moins pour l'Éducation nationale.",
-      "verdict": "trompeur",
-      "truth": "Calculée en fonction de l'inflation, l'enveloppe du ministère de l'Éducation nationale est effectivement en baisse.",
-      "spreaders": [
-        "La France insoumise"
-      ],
-      "topic": "ecole",
-      "firstSeen": "2026-10-07",
-      "debunks": [
-        {
-          "publisher": "Vrai ou fake (franceinfo)",
-          "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-le-budget-prevoit-il-650-millions-en-moins-pour-l-education-nationale-et-1-600-postes-de-professeurs-en-moins-comme-l-affirme-lfi_8223316.html",
-          "title": "VRAI OU FAUX. Le budget prévoit-il \"650 millions en moins\" pour l'Education nationale et \"1 600 postes de professeurs en moins\", comme l'affirme LFI ?",
-          "date": "2026-10-07",
-          "quote": "Plusieurs cadres de La France insoumise dénoncent une présentation trompeuse du budget de l'Education nationale."
-        }
-      ]
-    },
-    {
       "id": "une-citation-du-general-de-gaulle-justifierait-la-priorite-n-7ed9f0",
       "claim": "Une citation du général de Gaulle justifierait la priorité nationale.",
       "verdict": "faux",
@@ -252,44 +196,8 @@
       ]
     },
     {
-      "id": "une-difference-de-couleur-des-semelles-sur-deux-photos-prouv-c617a3",
-      "claim": "Une différence de couleur des semelles sur deux photos prouverait que le sauvetage du vol Flydubai a été mis en scène",
-      "verdict": "faux",
-      "truth": "Les deux images montrent des passagers différents ; la différence de couleur des semelles ne prouve pas une mise en scène.",
-      "spreaders": [],
-      "topic": "autre",
-      "firstSeen": "2026-10-02",
-      "debunks": [
-        {
-          "publisher": "CheckNews (Libération)",
-          "url": "https://www.liberation.fr/checknews/vol-flydubai-non-la-difference-de-couleur-des-semelles-sur-deux-photos-ne-prouve-pas-une-mise-en-scene-20261002_SETZRUNLPFBKVKGZT6Y6VVU7QM/",
-          "title": "Vol Flydubai : non, la différence de couleur des semelles sur deux photos ne prouve pas une mise en scène",
-          "date": "2026-10-02",
-          "quote": "Les deux images montrent des passagers différents."
-        }
-      ]
-    },
-    {
-      "id": "un-enfant-de-8-ans-aurait-ingere-autant-de-sucre-que-son-gra-9006f5",
-      "claim": "Un enfant de 8 ans aurait ingéré autant de sucre que son grand-père durant toute sa vie",
-      "verdict": "faux",
-      "truth": "Cette comparaison, citée partout et reprise dans le débat sur une nouvelle taxe sur le sucre, n'a pas d'origine sourcée selon CheckNews.",
-      "spreaders": [],
-      "topic": "sante",
-      "firstSeen": "2026-10-07",
-      "debunks": [
-        {
-          "publisher": "CheckNews (Libération)",
-          "url": "https://www.liberation.fr/checknews/un-enfant-de-8-ans-a-ingere-autant-de-sucre-que-son-grand-pere-durant-toute-sa-vie-une-idee-citee-partout-mais-sortie-de-nulle-part-20261007_KQIOX2W4DZFRBBZQO2PFIZEMM4/",
-          "title": "«Un enfant de 8 ans a ingéré autant de sucre que son grand-père durant toute sa vie» : une idée citée partout, mais sortie de nulle part",
-          "date": "2026-10-07",
-          "quote": "une idée citée partout, mais sortie de nulle part"
-        }
-      ]
-    },
-    {
       "id": "jordan-bardella-affirme-ne-pas-avoir-de-compte-facebook-et-n-78236a",
-      "claim": "Jordan Bardella affirme ne pas avoir de compte Facebook et ne pas pouvoir extraire ses données de ce réseau social",
+      "claim": "Jordan Bardella n'aurait aucun compte Facebook",
       "verdict": "faux",
       "truth": "Une adresse mail personnelle de Jordan Bardella, retrouvée par CheckNews, reste associée à un compte Facebook existant.",
       "spreaders": [
@@ -304,26 +212,6 @@
           "title": "Ecrits antisémites : contrairement à ce qu’affirme Jordan Bardella, un compte Facebook associé à un de ses mails personnels existe toujours",
           "date": "2026-10-09",
           "quote": "une adresse mail de Jordan Bardella, retrouvée par «CheckNews», est toujours associée à un compte Facebook."
-        }
-      ]
-    },
-    {
-      "id": "les-arguments-avances-par-jordan-bardella-pour-contester-l-e-08e549",
-      "claim": "Les arguments avancés par Jordan Bardella pour contester l'enquête de Mediapart sur des écrits antisémites qui lui sont attribués",
-      "verdict": "trompeur",
-      "truth": "Selon Les Décodeurs, plusieurs arguments de Jordan Bardella pour contester l'enquête de Mediapart se heurtent aux faits.",
-      "spreaders": [
-        "Jordan Bardella"
-      ],
-      "topic": "democratie",
-      "firstSeen": "2026-10-07",
-      "debunks": [
-        {
-          "publisher": "Les Décodeurs (Le Monde)",
-          "url": "https://www.lemonde.fr/les-decodeurs/article/2026/10/07/ecrits-antisemites-les-contre-verites-de-jordan-bardella-pour-se-defendre-contre-l-enquete-de-mediapart_6789593_4355770.html",
-          "title": "Ecrits antisémites : les contre-vérités de Jordan Bardella pour se défendre contre l’enquête de « Mediapart »",
-          "date": "2026-10-07",
-          "quote": "plusieurs de ses arguments se heurtent aux faits"
         }
       ]
     }

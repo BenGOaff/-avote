@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-12",
+    "object": "Fake news : « Le budget prévoit 650 millions d'euros de moins et 1 600 postes de professeurs en moins pour l'Éducation nationale »",
+    "wasWrong": "Classée « trompeuse » et attribuée à La France insoumise par le robot des intox, quelques minutes après le premier relevé.",
+    "evidence": "La vérification de franceinfo indique que l'enveloppe de l'Éducation nationale est effectivement en baisse une fois l'inflation prise en compte : le robot a inversé qui dénonçait quoi.",
+    "effect": "Retirée de la page Fake news, avec cinq autres entrées hors sujet ou mal formulées. Les consignes du robot interdisent désormais d'attribuer une intox à qui la dénonce et écartent les vérifications « en partie vrai ».",
+    "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-le-budget-prevoit-il-650-millions-en-moins-pour-l-education-nationale-et-1-600-postes-de-professeurs-en-moins-comme-l-affirme-lfi_8223316.html"
+  },
+  {
     "date": "2026-10-09",
     "object": "Position d'Éric Zemmour sur « L'État devrait financer la construction de beaucoup plus de logements sociaux » (log-02)",
     "wasWrong": "Codée « entre tout à fait opposé et plutôt opposé » ([-2, -1]).",
