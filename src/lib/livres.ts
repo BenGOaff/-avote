@@ -38,23 +38,18 @@ export function livresByBloc(): { id: BlocId; label: string; livres: Livre[] }[]
   })).filter((b) => b.livres.length > 0)
 }
 
-/**
- * Essais de référence de chaque camp, par rayon. Montrés seulement quand chaque famille politique
- * (gauche, écologistes, centre, droite, souverainistes) a au moins deux livres : un rayon vide ou maigre ferait pencher la page.
- */
+/** Essais de référence de chaque camp, par rayon (classement de la rédaction). Rayons vides masqués. */
 export interface Essai {
   title: string
   author: string
   url: string
   cover?: string
 }
-const POLITICAL = ['gauche', 'ecologie', 'centre', 'droite', 'souverainistes']
 const rayons = (data as { rayons: { id: string; label: string }[] }).rayons
 const essais = (data as { essais: { rayon: string; title: string; author: string; asin: string; cover?: string }[] }).essais
 export function essaisByRayon(): { id: string; label: string; essais: Essai[] }[] {
   const shelves = rayons
     .map((r) => ({ ...r, essais: essais.filter((e) => e.rayon === r.id).map((e) => ({ title: e.title, author: e.author, url: amazonUrl(e.asin), cover: e.cover })) }))
     .filter((r) => r.essais.length > 0)
-  const balanced = POLITICAL.every((id) => (shelves.find((s) => s.id === id)?.essais.length ?? 0) >= 2)
-  return balanced ? shelves : []
+  return shelves
 }
