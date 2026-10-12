@@ -85,8 +85,6 @@ export const FlashQuizSchema = z
       .optional(),
     /** Avatar facultatif (public/img/quiz/<slug>.webp), personnage inventé */
     avatar: AvatarSchema.optional(),
-    /** Mis « à la une » en tête de la page des quiz (choix de la rédaction) */
-    featured: z.boolean().optional(),
   })
   .superRefine((q, ctx) => {
     const bad = (message: string) => ctx.addIssue({ code: 'custom', message })

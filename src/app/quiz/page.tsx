@@ -13,6 +13,9 @@ const t = UI_COPY.flash
 // Les tribus d'abord : ce sont les quiz qui se partagent le plus volontiers
 const CATS: FlashCat[] = ['score', 'profil', 'connaissances']
 
+// La page se reconstruit chaque heure : le quiz à la une change à minuit
+export const revalidate = 3600
+
 export const metadata: Metadata = {
   title: 'Quiz présidentielle 2027',
   description: 'Suis-je un facho ? Suis-je une gauchiasse ? Des quiz flash satiriques sur la présidentielle 2027 : ris de ton camp, chambre celui d’en face, partage ton score.',
@@ -22,7 +25,9 @@ export const metadata: Metadata = {
 export default function QuizHub() {
   const copy = UI_COPY.quiz
   const quizzes = getFlashQuizzes()
-  const featured = quizzes.find((q) => q.featured)
+  // À la une : un quiz différent chaque jour, à tour de rôle (jour calendaire à Paris)
+  const day = Math.floor(Date.parse(new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Paris' })) / 86_400_000)
+  const featured = quizzes[day % quizzes.length]
   // Données structurées : la liste des quiz, pour les moteurs et les assistants IA
   const jsonLd = {
     '@context': 'https://schema.org',

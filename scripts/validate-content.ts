@@ -136,6 +136,13 @@ if (existsSync(flashDir))
       continue
     }
     if (`${r.data.slug}.json` !== f) errors.push(`quiz flash ${f} : le slug doit reprendre le nom du fichier`)
+    // Cadre des titres d'accroche (content/voix/titres.md) : court, à la deuxième personne, une question ou une révélation, aucun mode d'emploi
+    const title = r.data.title.replace(/\u00a0/g, ' ')
+    if (title.length > 60) errors.push(`quiz flash ${f} : titre de ${title.length} caractères (60 au plus)`)
+    if (!/\b(tu|toi|ton|ta|tes|te|t’)\b|Suis-je/i.test(title)) errors.push(`quiz flash ${f} : le titre doit parler à la personne (tu, ton, ta…)`)
+    if (!/[?!]$/.test(title) && !/\b(dit|disent|dirai)\b/.test(title)) errors.push(`quiz flash ${f} : le titre doit finir par « ? » ou « ! », ou annoncer ce qu’il révèle`)
+    if (/\b(quiz|test|teste|découvre|connaissances|compétences)\b|\d+\s*(questions|min)/i.test(title)) errors.push(`quiz flash ${f} : pas de mode d’emploi dans le titre (quiz, test, découvre, nombre de questions…)`)
+    if (/\d+\s*(questions|secondes|minutes|min)\b/i.test(r.data.lede)) errors.push(`quiz flash ${f} : pas de nombre de questions ni de durée dans le chapô`)
     // Mode « partis » : questions du test existantes, candidats présents dans le corpus
     const liveCorpus = JSON.parse(readFileSync(path.join(ROOT, 'content/corpus/live.json'), 'utf8')) as { positions: Record<string, unknown> }
     const qs = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.3.0.json'), 'utf8')) as { items: { id: string }[] }
