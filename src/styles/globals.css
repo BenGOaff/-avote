@@ -2232,6 +2232,11 @@ details.disclosure > div {
     gap: var(--s2);
   }
 }
+@media (min-width: 900px) {
+  .echiquier--6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
 .echiquier__col {
   border: var(--border) solid var(--ink);
   border-radius: var(--radius);

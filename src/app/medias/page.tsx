@@ -15,6 +15,7 @@ import {
   familySplit,
   getMedias,
   freeMedias,
+  orientationAxis,
   mediasUpdatedAt,
   type MediaType,
 } from '@/lib/medias'
@@ -37,6 +38,7 @@ export default function MediasPage() {
   const decisions = flagged.reduce((n, m) => n + m.alerts!.length, 0)
   const top = groups.find((g) => g.kind !== 'etat')
   const free = freeMedias(medias)
+  const axis = orientationAxis(medias)
   const lead = [...split].sort((a, b) => b.medias.length - a.medias.length)[0]
 
   return (
@@ -62,6 +64,51 @@ export default function MediasPage() {
           <p className="small">
             {t.quizLead} <Link href="/quiz/flash/teste-tes-connaissances-sur-les-medias">{t.quizKnow}</Link> · <Link href="/quiz/flash/quel-media-es-tu">{t.quizProfile}</Link>
           </p>
+
+          {axis.total > 0 && (
+            <section className="section" aria-labelledby="orientation">
+              <h2 id="orientation" style={{ fontSize: 'var(--h3)' }}>
+                {t.axisTitle}
+              </h2>
+              <p className="small muted" style={{ marginTop: 0 }}>
+                {t.axisHint(axis.total, medias.length)}
+              </p>
+              <div className="echiquier echiquier--6">
+                {axis.columns.map((c) => (
+                  <div key={c.label} className={`echiquier__col bloc-${c.bloc}`}>
+                    <p className="echiquier__head" style={{ margin: 0 }}>
+                      {c.label.charAt(0).toUpperCase() + c.label.slice(1)} <span className="small muted">{c.medias.length}</span>
+                    </p>
+                    <ul className="echiquier__list">
+                      {c.medias.map((m) => (
+                        <li key={m.slug}>
+                          <a href={m.orientation!.url} rel="noopener noreferrer" target="_blank" title={t.axisSource(m.name)}>
+                            {m.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <p className="echiquier__axis" aria-hidden="true">
+                <span>← gauche</span>
+                <span>droite →</span>
+              </p>
+              {axis.others.length > 0 && (
+                <p className="echiquier__extra">
+                  {axis.others.map((m) => (
+                    <span key={m.slug}>
+                      <a href={m.orientation!.url} rel="noopener noreferrer" target="_blank">
+                        {m.name}
+                      </a>{' '}
+                      : {m.orientation!.label}
+                    </span>
+                  ))}
+                </p>
+              )}
+            </section>
+          )}
 
           <section className="section" aria-labelledby="dernier-mot">
             <h2 id="dernier-mot" style={{ fontSize: 'var(--h3)' }}>

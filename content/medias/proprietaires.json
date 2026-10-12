@@ -2312,6 +2312,41 @@
       "url": "https://www.eurotopics.net/fr/228634/valeurs-actuelles",
       "publisher": "eurotopics",
       "checkedAt": "2026-10-08T17:57:05.908Z"
+    },
+    "alternatives-economiques": {
+      "label": "gauche",
+      "quote": "Orientation politique gauche Diffusion 59.000 (2022)",
+      "url": "https://www.eurotopics.net/fr/148410/alternatives-economiques",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-12T09:29:54.000Z"
+    },
+    "boulevard-voltaire": {
+      "label": "droite",
+      "quote": "Orientation politique droite Périodicité quotidien",
+      "url": "https://www.eurotopics.net/fr/148455/boulevard-voltaire",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-12T09:29:54.000Z"
+    },
+    "contrepoints": {
+      "label": "libéral",
+      "quote": "Orientation politique libéral Périodicité plusieurs fois par semaine",
+      "url": "https://www.eurotopics.net/fr/148461/contrepoints",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-12T09:29:54.000Z"
+    },
+    "le-monde-diplomatique": {
+      "label": "gauche",
+      "quote": "Orientation politique gauche Diffusion 170.000 (2022)",
+      "url": "https://www.eurotopics.net/fr/148684/le-monde-diplomatique",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-12T09:29:54.000Z"
+    },
+    "politis": {
+      "label": "gauche",
+      "quote": "Orientation politique gauche Diffusion 15.000 (2023)",
+      "url": "https://www.eurotopics.net/fr/155263/politis",
+      "publisher": "eurotopics",
+      "checkedAt": "2026-10-12T09:29:54.000Z"
     }
   },
   "engagements": {
