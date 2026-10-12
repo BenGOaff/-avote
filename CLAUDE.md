@@ -24,7 +24,7 @@
 ## Écriture
 - Textes d’interface dans `src/lib/copy.ts` : une action ou une information, jamais un slogan.
 - Humour facultatif, dans `src/lib/humor.ts`, masqué en mode sobre.
-- Profil vocal : `content/voix/profil-vocal.md`. Ne jamais écrire que le site est drôle, sérieux, indépendant, cash ou sincère : le prouver.
+- Profil vocal : `content/voix/profil-vocal.md`. Titres d’accroche (quiz, articles, posts) : `content/voix/titres.md`, vérifié par `validate:content` pour les quiz. Ne jamais écrire que le site est drôle, sérieux, indépendant, cash ou sincère : le prouver.
 
 ## Vérifier avant de pousser
 `npx tsc --noEmit && npm test && npm run validate:content && npm run build`

@@ -2,8 +2,8 @@
  "slug": "quel-parti-politique-es-tu",
  "mode": "partis",
  "order": 5,
- "title": "Quel parti politique es-tu ?",
- "lede": "Découvre en 10 questions le parti qui pense le plus comme toi. Version express et pour rire : pour un vrai résultat, le test complet.",
+ "title": "Quel parti politique es-tu vraiment ?",
+ "lede": "Découvre le parti qui pense le plus comme toi. Version express et pour rire : pour un vrai résultat, fais le test complet.",
  "items": [
   "tra-01",
   "eco-02",

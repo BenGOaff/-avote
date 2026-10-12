@@ -2,10 +2,9 @@
  "slug": "quel-media-es-tu",
  "mode": "profil",
  "order": 11,
- "title": "Quel média es-tu ?",
+ "title": "Dis-moi ce que tu regardes, je te dirai quel média tu es",
  "lede": "Dis-nous comment tu passes tes soirées : on te dit quelle chaîne, radio ou journal te ressemble, qui le possède et ce que l’Arcom lui reproche.",
  "avatar": "/img/medias/mosaique-quel-media.webp",
- "featured": true,
  "outcomes": [
   {
    "key": "cnews",
