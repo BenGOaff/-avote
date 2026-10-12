@@ -22,6 +22,7 @@ Hostinger « Web Apps » (= applications Node.js) héberge Next.js en mode serve
    - `RESEND_API_KEY`, `RESEND_FROM`, `RESEND_SEGMENT_ID`
    - `NEWSLETTER_SECRET` : générer avec `openssl rand -base64 32`, ne jamais le réutiliser
    - `NEXT_PUBLIC_TIQUIZ_URL` (facultatif)
+   - `ANTHROPIC_API_KEY` (facultatif) : verdict en une phrase du vérificateur `/verifier`. Créer la clé dans un espace de travail Anthropic dédié, avec un plafond de dépense mensuel : c’est la seule limite qui survit aux redémarrages. Sans clé, le vérificateur affiche les passages de nos sources, sans verdict. `FACTCHECK_DAILY_MAX` (défaut 300) plafonne les réponses par jour.
    Les variables `NEXT_PUBLIC_*` doivent être définies **avant** le build qui les utilise. Enregistrer déclenche un redéploiement.
 5. Domaine : rattacher çavote.fr à l’application et activer le SSL.
 6. Vérifier : `https://çavote.fr/`, `/test`, `/feed.xml`, `/sitemap.xml`, `/llms.txt`.

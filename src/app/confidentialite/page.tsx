@@ -48,6 +48,17 @@ export default function PrivacyPage() {
           ta demande.
         </p>
 
+        <h2 id="verifier" style={{ fontSize: 'var(--h3)' }}>
+          Le vérificateur « Vrai ou faux ? »
+        </h2>
+        <p>
+          Ta question part vers notre serveur, qui cherche dans nos sources. S’il trouve de quoi répondre, il transmet la question et les passages trouvés au
+          modèle Claude d’Anthropic, qui rédige la phrase. Rien d’autre ne l’accompagne : ni ton adresse IP, ni tes réponses au test, ni identifiant. Le
+          site ne stocke pas la question et ne la journalise pas ; seule la réponse est gardée quelques heures en mémoire, sous une empreinte de la
+          question, pour répondre plus vite à la même question. Ton adresse IP sert seulement, en mémoire, à limiter le nombre de questions par minute.
+          N’y mets rien de personnel. Base légale : ta demande.
+        </p>
+
         <h2 id="urne" style={{ fontSize: 'var(--h3)' }}>
           L’urne : un bulletin anonyme, si tu le choisis
         </h2>

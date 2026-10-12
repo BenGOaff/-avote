@@ -312,6 +312,17 @@ export default function MethodPage() {
           mois par nombre de rédactions différentes qui les ont démontées : on compte les démentis, pas les partages. Chaque affirmation est barrée et
           marquée fausse, pour les lecteurs comme pour les moteurs de recherche et les assistants IA.
         </p>
+        <h2 id="verifier">Vrai ou faux : comment le vérificateur répond</h2>
+        <p>
+          Le <Link href="/verifier">vérificateur</Link> ne cherche que dans nos propres sources : les intox démontées par les fact-checkeurs (consultées en
+          premier), les déclarations des candidats citées mot pour mot, le fil de la campagne, les données officielles des quiz et du test, les
+          propriétaires des médias et les candidatures. Pas de recherche sur le web, pas de réponse de mémoire. Si aucun passage ne contient assez de mots
+          de la question, la réponse est « pas encore vérifié chez nous », sans appel à une IA. Sinon, un petit modèle (Claude Haiku, d’Anthropic) lit les
+          passages trouvés et tranche en une phrase : oui, non, c’est plus compliqué, ou question d’opinion. Un programme vérifie ensuite que les sources
+          citées font partie des passages fournis, que la citation y figure mot pour mot et qu’aucun chiffre n’a été ajouté ; une réponse qui échoue n’est
+          pas affichée, seuls les passages le sont. Une réponse gardée en mémoire quelques heures sert à la même question posée de nouveau. Le nombre de
+          réponses par jour est plafonné, et la dépense mensuelle aussi.
+        </p>
         <h2 id="medias">Qui possède ton info : comment une fiche est établie</h2>
         <p>
           Chaque fiche dit qui possède le média aujourd’hui et qui décide en dernier ressort : le capital et le contrôle ne sont pas la même chose. La source
