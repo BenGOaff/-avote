@@ -1,0 +1,185 @@
+{
+  "_note": "Livres écrits par les candidats (« Lire les candidats »). Un livre par candidat au plus pour l'instant, sans avis : on les liste tous, quel que soit le camp. title null = titre à confirmer, affiché « Son livre ». Les liens Amazon prennent l'identifiant de suivi `amazonTag` ; vide = lien simple, sans commission. `essais` : livres de référence de chaque camp (classement de la rédaction, selon le camp qui s'en réclame) ; le rayon n'apparaît qu'une fois au moins quatre familles garnies, pour ne pas pencher.",
+  "amazonTag": "",
+  "items": [
+    {
+      "actor": "jean-luc-melenchon",
+      "title": "Faites mieux ! Vers la révolution citoyenne",
+      "asin": "B0DCJ9DLTL"
+    },
+    {
+      "actor": "marine-le-pen",
+      "title": "À contre flots",
+      "asin": "2733909576"
+    },
+    {
+      "actor": "bernard-cazeneuve",
+      "title": null,
+      "asin": "B0F1RDVJC2"
+    },
+    {
+      "actor": "bruno-retailleau",
+      "title": "Ne rien céder",
+      "asin": "B0F3DDRQC7"
+    },
+    {
+      "actor": "david-lisnard",
+      "title": "Ainsi va la France",
+      "asin": "B0F146JPBY"
+    },
+    {
+      "actor": "delphine-batho",
+      "title": "Insoumise",
+      "asin": "B00NGGPCM6"
+    },
+    {
+      "actor": "dieudonne",
+      "title": "Réponse à Éric Zemmour",
+      "asin": "B09K84V4T1"
+    },
+    {
+      "actor": "dominique-de-villepin",
+      "title": "Le pouvoir de dire non",
+      "asin": "B0HLBK63KV"
+    },
+    {
+      "actor": "edouard-philippe",
+      "title": "Le prix de nos mensonges",
+      "asin": "B0FB1GXDJR"
+    },
+    {
+      "actor": "eric-zemmour",
+      "title": "Le Suicide français",
+      "asin": "B0GY93Y1HR"
+    },
+    {
+      "actor": "fabien-roussel",
+      "title": "Le parti pris du travail",
+      "asin": "B0DSQYYQ4F"
+    },
+    {
+      "actor": "florian-philippot",
+      "title": "Frexit : sortir pour s’en sortir",
+      "asin": "B07GJM6C31"
+    },
+    {
+      "actor": "francis-lalanne",
+      "title": null,
+      "asin": "B0CP3D94Q6"
+    },
+    {
+      "actor": "francois-ruffin",
+      "title": "Leur progrès et le nôtre. De Prométhée à la 5G",
+      "asin": "B08XC1S64Y"
+    },
+    {
+      "actor": "gabriel-attal",
+      "title": "En homme libre",
+      "asin": "B0GRML2ZWG"
+    },
+    {
+      "actor": "gilles-platret",
+      "title": null,
+      "asin": "2952757631"
+    },
+    {
+      "actor": "juan-branco",
+      "title": "Crépuscule",
+      "asin": "B07YQ6X6XB"
+    },
+    {
+      "actor": "marine-tondelier",
+      "title": "Nouvelles du Front",
+      "asin": "B06VVN6661"
+    },
+    {
+      "actor": "nathalie-arthaud",
+      "title": "Communiste, révolutionnaire, internationaliste",
+      "asin": "2493083091"
+    },
+    {
+      "actor": "nicolas-dupont-aignan",
+      "title": "2027, la liberté ou la mort",
+      "asin": "B0GV46Q1HM"
+    },
+    {
+      "actor": "olivier-becht",
+      "title": null,
+      "asin": "B0HKWDRNKG"
+    },
+    {
+      "actor": "raphael-glucksmann",
+      "title": "Nous avons encore envie",
+      "asin": "B0H4X1GMSM"
+    },
+    {
+      "actor": "xavier-bertrand",
+      "title": "Rien n’est jamais écrit",
+      "asin": "B0FSG9KSLM"
+    }
+  ],
+  "rayons": [
+    {
+      "id": "gauche",
+      "label": "Lu à gauche"
+    },
+    {
+      "id": "ecologie",
+      "label": "Lu chez les écologistes"
+    },
+    {
+      "id": "centre",
+      "label": "Lu au centre"
+    },
+    {
+      "id": "droite",
+      "label": "Lu à droite"
+    },
+    {
+      "id": "souverainistes",
+      "label": "Lu chez les souverainistes"
+    },
+    {
+      "id": "tous",
+      "label": "Lu dans tous les camps"
+    }
+  ],
+  "essais": [
+    {
+      "rayon": "gauche",
+      "title": "Le Temps des salauds",
+      "author": "Hugues Jallon",
+      "asin": "B0F7K6MLL4"
+    },
+    {
+      "rayon": "gauche",
+      "title": "La Violence des riches",
+      "author": "Michel Pinçon et Monique Pinçon-Charlot",
+      "asin": "B00MYH0V1U"
+    },
+    {
+      "rayon": "gauche",
+      "title": "Pourquoi les riches sont-ils de plus en plus riches et les pauvres de plus en plus pauvres ?",
+      "author": "Michel Pinçon et Monique Pinçon-Charlot",
+      "asin": "B0F2967VFV"
+    },
+    {
+      "rayon": "gauche",
+      "title": "Le Méprisant de la République",
+      "author": "Monique Pinçon-Charlot",
+      "asin": "B0CGXMLS9T"
+    },
+    {
+      "rayon": "gauche",
+      "title": "Les Ghettos du Gotha",
+      "author": "Michel Pinçon et Monique Pinçon-Charlot",
+      "asin": "B00EZ8EBI0"
+    },
+    {
+      "rayon": "gauche",
+      "title": "Indignez-vous !",
+      "author": "Stéphane Hessel",
+      "asin": "2374255123"
+    }
+  ]
+}

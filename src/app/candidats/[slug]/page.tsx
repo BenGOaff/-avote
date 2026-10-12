@@ -20,6 +20,7 @@ import { NET_DEFINITION, patrimoineOf } from '@/lib/patrimoine'
 import { hatvpOf } from '@/lib/hatvp'
 import { VOTE_LABEL, VOTES_FETCHED_AT, VOTES_SOURCE, isDeputy, scrutinLabel, scrutinUrl, votesOf } from '@/lib/votes-an'
 import { SENAT_FETCHED_AT, senatLabel, senatOf } from '@/lib/votes-senat'
+import { isAffiliate, livreOf } from '@/lib/livres'
 import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
 export const dynamicParams = false
@@ -110,6 +111,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
           <Link href="/methodologie#codage">Comment c’est codé</Link> ·{' '}
           <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${a.slug}`)}`}>Signaler une erreur</Link>
         </p>
+        <LivreBlock slug={a.slug} />
         <PatrimoineBlock slug={a.slug} />
         <CasierBlock slug={a.slug} />
         <VotesBlock slug={a.slug} />
@@ -185,6 +187,22 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
       </p>
       <ShareButtons url={absolute(`/candidats/${a.slug}`)} title={a.name} text={UI_COPY.candidate.shareText(a.name)} />
     </div>
+  )
+}
+
+/** Son livre, s'il en a écrit un (même traitement pour tous) */
+function LivreBlock({ slug }: { slug: string }) {
+  const l = livreOf(slug)
+  if (!l) return null
+  const t = UI_COPY.livres
+  return (
+    <p>
+      <strong>{t.blockTitle} :</strong>{' '}
+      <a href={l.url} rel="sponsored noopener noreferrer" target="_blank">
+        {l.title ? `« ${l.title} »` : 'sur Amazon'}
+      </a>
+      {isAffiliate ? <span className="small muted"> (lien affilié)</span> : null} · <Link href="/livres">{t.blockLink}</Link>
+    </p>
   )
 }
 
