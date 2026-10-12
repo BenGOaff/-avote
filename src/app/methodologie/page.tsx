@@ -306,7 +306,7 @@ export default function MethodPage() {
         <h2 id="intox">Fake news : comment une intox entre dans la liste</h2>
         <p>
           La page <Link href="/fake-news">Fake news</Link> ne relaie que des affirmations jugées fausses ou trompeuses par une cellule de fact-checking
-          reconnue : Les Décodeurs (Le Monde), CheckNews (Libération), Vrai ou fake (franceinfo), Fake Off (20 Minutes), Les Surligneurs, AFP Factuel.
+          reconnue : Les Décodeurs (Le Monde), CheckNews (Libération), Vrai ou fake (franceinfo), Fake Off (20 Minutes), Les Surligneurs. AFP Factuel bloque la lecture automatique de son flux : il n’est pas suivi.
           Deux fois par jour, un robot lit leurs publications et ne retient une intox que si l’extrait établit qu’elle est fausse ; la phrase qui le prouve est
           vérifiée mot pour mot dans la source, et la personne qui l’a propagée n’est nommée que si le fact-checkeur la nomme. Le podium classe les intox du
           mois par nombre de rédactions différentes qui les ont démontées : on compte les démentis, pas les partages. Chaque affirmation est barrée et

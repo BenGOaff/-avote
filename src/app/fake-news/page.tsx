@@ -11,7 +11,7 @@ const t = UI_COPY.intox
 export const metadata: Metadata = {
   title: 'Fake news de la présidentielle 2027 : les intox démontées',
   description:
-    'Les fausses informations sur la politique française, démontées par les cellules de fact-checking (Les Décodeurs, CheckNews, franceinfo, 20 Minutes, AFP Factuel). Toutes les affirmations citées sont FAUSSES.',
+    'Les fausses informations sur la politique française, démontées par les cellules de fact-checking (Les Décodeurs, CheckNews, franceinfo, 20 Minutes, Les Surligneurs). Toutes les affirmations citées sont FAUSSES.',
   alternates: { canonical: '/fake-news' },
 }
 

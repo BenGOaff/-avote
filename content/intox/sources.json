@@ -5,7 +5,6 @@
     { "id": "checknews", "name": "CheckNews (Libération)", "url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/checknews/?outputType=xml", "kind": "factcheck" },
     { "id": "franceinfo-vrai-ou-fake", "name": "Vrai ou fake (franceinfo)", "url": "https://www.franceinfo.fr/vrai-ou-fake.rss", "kind": "factcheck" },
     { "id": "20minutes-fake-off", "name": "Fake Off (20 Minutes)", "url": "https://www.20minutes.fr/feeds/rss-fake-off.xml", "kind": "factcheck" },
-    { "id": "surligneurs", "name": "Les Surligneurs", "url": "https://www.lessurligneurs.eu/feed/", "kind": "factcheck" },
-    { "id": "afp-factuel", "name": "AFP Factuel", "url": "https://factuel.afp.com/rss.xml", "kind": "factcheck" }
+    { "id": "surligneurs", "name": "Les Surligneurs", "url": "https://www.lessurligneurs.eu/feed/", "kind": "factcheck" }
   ]
 }
