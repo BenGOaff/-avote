@@ -4,7 +4,7 @@
  "order": 11,
  "title": "Quel média es-tu ?",
  "lede": "Dis-nous comment tu passes tes soirées : on te dit quelle chaîne, radio ou journal te ressemble, qui le possède et ce que l’Arcom lui reproche.",
- "avatar": "/img/stock/pupitre-debat.webp",
+ "avatar": "/img/medias/mosaique-quel-media.webp",
  "outcomes": [
   {
    "key": "cnews",
@@ -25,7 +25,7 @@
    "name": "TF1 (ou M6)",
    "headline": "Se vider la tête, on connaît : TF1 et M6 t’attendent au chaud.",
    "line": "Le dernier sabotier de Corrèze au 13 h, un jeu, une série, dodo. Propriétaires : Bouygues pour TF1, l’allemand Bertelsmann pour M6.",
-   "avatar": "/img/medias/tf1-carre.webp"
+   "avatar": "/img/medias/tf1-m6-carre.webp"
   },
   {
    "key": "arte",
