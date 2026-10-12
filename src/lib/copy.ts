@@ -215,7 +215,7 @@ export const UI_COPY = {
     feedTitle: 'Toutes les intox démontées',
     empty: 'Le premier relevé arrive : le robot lit les cellules de fact-checking deux fois par jour.',
     updated: (d: string) => `Relevé mis à jour le ${d}`,
-    sourcesNote: 'Sources : Les Décodeurs (Le Monde), CheckNews (Libération), Vrai ou fake (franceinfo), Fake Off (20 Minutes), Les Surligneurs, AFP Factuel.',
+    sourcesNote: 'Sources : Les Décodeurs (Le Monde), CheckNews (Libération), Vrai ou fake (franceinfo), Fake Off (20 Minutes), Les Surligneurs.',
     method: 'Comment on choisit',
     factcheck: 'Une info te paraît louche ?',
     factcheckLink: 'Demande au vérificateur',

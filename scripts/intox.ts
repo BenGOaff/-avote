@@ -25,6 +25,7 @@ const args = process.argv.slice(2)
 const DRY = args.includes('--dry-run')
 const WINDOW_HOURS = Number(args.find((a) => a.startsWith('--window='))?.split('=')[1] ?? 72)
 const MODEL = process.env.INTOX_MODEL || 'claude-haiku-5-5'
+const BATCH = 15
 const meter = new CostMeter('Intox', budgetFromEnv('INTOX_BUDGET_USD', 0.15))
 const FILE = path.join(ROOT, 'content/intox/intox.json')
 const SEEN = path.join(ROOT, 'content/intox/seen.json')
@@ -95,19 +96,29 @@ async function main() {
   const recent = store.items.filter((x) => now.getTime() - new Date(x.firstSeen).getTime() < 60 * 86_400_000).slice(0, 80)
   let added = 0
   let linked = 0
-  for (let k = 0; k < fresh.length; k += 40) {
+  // Extraits traités : seuls ceux-là sont marqués « vus » ; un lot en échec sera repris au prochain passage
+  const done: string[] = []
+  // Petits lots : une réponse trop longue serait coupée et illisible
+  for (let k = 0; k < fresh.length; k += BATCH) {
     if (meter.exhausted) break
-    const batch = fresh.slice(k, k + 40)
+    const batch = fresh.slice(k, k + BATCH)
     const list = batch.map((i) => `[${i.id}] (${i.feedName}${i.date ? `, ${i.date.slice(0, 10)}` : ''}) ${i.title} — ${i.summary.slice(0, 500)}`).join('\n')
     const known = recent.map((x) => `[${x.id}] ${x.claim}`).join('\n') || '(aucune)'
-    const res = await client.beta.messages.parse({
-      model: MODEL,
-      max_tokens: 6000,
-      system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
-      output_config: { format: betaZodOutputFormat(Extraction) },
-      messages: [{ role: 'user', content: `<intox_connues>\n${known}\n</intox_connues>\n\n<extraits>\n${list}\n</extraits>\n\nRelève les fausses informations démontées dans ces extraits.` }],
-    })
+    let res
+    try {
+      res = await client.beta.messages.parse({
+        model: MODEL,
+        max_tokens: 8000,
+        system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
+        output_config: { format: betaZodOutputFormat(Extraction) },
+        messages: [{ role: 'user', content: `<intox_connues>\n${known}\n</intox_connues>\n\n<extraits>\n${list}\n</extraits>\n\nRelève les fausses informations démontées dans ces extraits.` }],
+      })
+    } catch (e) {
+      console.log(`lot ${k / BATCH + 1} en échec, repris au prochain passage (${e instanceof Error ? e.message : e})`)
+      continue
+    }
     meter.add(res.model, res.usage)
+    done.push(...batch.map((i) => i.id))
     for (const d of res.parsed_output?.debunks ?? []) {
       const item = byId.get(d.itemId)
       if (!item) continue
@@ -144,7 +155,8 @@ async function main() {
       added++
     }
   }
-  for (const id of byId.keys()) seen.items[id] = now.toISOString()
+  if (done.length === 0) throw new Error('aucun lot traité')
+  for (const id of done) seen.items[id] = now.toISOString()
   for (const [id, t] of Object.entries(seen.items)) if (now.getTime() - new Date(t).getTime() > 30 * 86_400_000) delete seen.items[id]
   store.updatedAt = now.toISOString()
   writeFileSync(FILE, JSON.stringify(store, null, 2) + '\n')
