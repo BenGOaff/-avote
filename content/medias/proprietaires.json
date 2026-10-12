@@ -1821,6 +1821,30 @@
       "date": "",
       "checkedAt": "2026-10-08T18:18:49.390Z",
       "model": "recherche vérifiée hors API"
+    },
+    "radio-nova": {
+      "slug": "radio-nova",
+      "owners": [
+        {
+          "name": "Combat (holding de Matthieu Pigasse)",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Combat",
+      "controller": "Matthieu Pigasse",
+      "controllerKind": "personne",
+      "otherMedia": [
+        "Les Inrockuptibles"
+      ],
+      "note": "Rachetée en 2015 par Matthieu Pigasse ; sa holding Combat détient aussi Les Inrockuptibles.",
+      "quote": "Le propriétaire de Radio Nova et des \"Inrockuptibles\"",
+      "url": "https://www.ozap.com/actu/cest-la-rancon-du-succes-matthieu-pigasse-repond-a-larticle-de-liberation-sur-le-management-juge-brutal-humiliant-et-autoritaire-par-certains-salaries-de-son-groupe-combat/654766",
+      "sourceTitle": "« C'est la rançon du succès » : Matthieu Pigasse répond à l'article de « Libération » sur le management de son groupe Combat",
+      "publisher": "Ozap",
+      "date": "2026-04-22",
+      "checkedAt": "2026-10-12T10:30:00.000Z",
+      "model": "recherche vérifiée hors API"
     }
   },
   "alertes": {

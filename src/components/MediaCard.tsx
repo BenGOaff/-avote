@@ -12,7 +12,7 @@ export function MediaCard({ m, logo }: { m: MediaEntry; logo?: string | null }) 
     <article id={m.slug} className="card media-card">
       {logo && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img className="media-card__logo" src={logo} width={800} height={800} alt="" loading="lazy" />
+        <img className="media-card__logo" src={logo} alt={`Logo ${m.name}`} loading="lazy" decoding="async" />
       )}
       <h4 className="media-card__name">{m.name}</h4>
       {m.site && (
