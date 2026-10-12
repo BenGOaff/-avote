@@ -42,6 +42,7 @@ ${getIntox()
   .join('\n') || '- Premier relevé en cours.'}
 
 ## Pages de référence
+- [Lire les candidats](${absolute('/livres')}): le livre de chaque candidat, rangé par famille politique (grille officielle des nuances), sans avis
 - [Méthode et formules](${absolute('/methodologie')}): questions, échelle, pondération, couverture, bornes, seuils de classement
 - [Candidatures annoncées](${absolute('/candidats')}): liste avec la source de chaque annonce
 - [Sources](${absolute('/sources')}): toutes les sources citées

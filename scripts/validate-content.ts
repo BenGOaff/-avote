@@ -168,6 +168,21 @@ for (const x of intox.items) {
   for (const d of x.debunks) if (!d.url?.startsWith('https://') || !d.quote || !/^\d{4}-\d{2}-\d{2}$/.test(d.date)) errors.push(`intox ${x.id} : vérification sans lien https, extrait ou date`)
 }
 
+// Livres des candidats : candidat connu, identifiant Amazon valide, identifiant de suivi neutre (anonymat)
+const livres = JSON.parse(readFileSync(path.join(ROOT, 'content/livres/livres.json'), 'utf8')) as { amazonTag: string; items: { actor: string; title: string | null; asin: string }[] }
+const livreActors = new Set((JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/candidatures.json'), 'utf8')) as { actors: { slug: string }[] }).actors.map((a) => a.slug))
+if (livres.amazonTag && !/^[a-z0-9-]{3,40}-21$/.test(livres.amazonTag)) errors.push('livres : identifiant de suivi Amazon invalide')
+const rayonIds = new Set(((livres as unknown as { rayons: { id: string }[] }).rayons ?? []).map((r) => r.id))
+for (const e of (livres as unknown as { essais: { rayon: string; title: string; author: string; asin: string }[] }).essais ?? []) {
+  if (!rayonIds.has(e.rayon)) errors.push(`livres : rayon inconnu pour « ${e.title} »`)
+  if (!/^[A-Z0-9]{10}$/.test(e.asin) || !e.title || !e.author) errors.push(`livres : essai incomplet « ${e.title} »`)
+}
+for (const b of livres.items) {
+  if (!livreActors.has(b.actor)) errors.push(`livres : candidat inconnu ${b.actor}`)
+  if (!/^[A-Z0-9]{10}$/.test(b.asin)) errors.push(`livres : ASIN invalide pour ${b.actor}`)
+  if (b.title !== null && (b.title.length < 2 || b.title.length > 120)) errors.push(`livres : titre invalide pour ${b.actor}`)
+}
+
 // Qui possède ton info
 const mediaList = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/liste.json'), 'utf8')) as { medias: { slug: string }[] }
 const owned = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/proprietaires.json'), 'utf8')) as {

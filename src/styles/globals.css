@@ -2369,6 +2369,33 @@ details.disclosure > div {
   margin: var(--s1) 0 0;
 }
 
+/* ---------- Livres des candidats ---------- */
+.livres {
+  list-style: none;
+  padding: 0;
+  margin: var(--s3) 0 0;
+  display: grid;
+  gap: var(--s3);
+}
+@media (min-width: 760px) {
+  .livres {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.livre {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+}
+.livre .portrait {
+  flex: none;
+  margin: 0;
+}
+.livre__title {
+  margin: 0 0 var(--s1);
+  font-weight: 700;
+}
+
 /* ---------- Vérificateur ---------- */
 .verifier-form {
   display: grid;
