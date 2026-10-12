@@ -1,6 +1,7 @@
 {
  "mentions": {
-  "marine-le-pen": 1
+  "marine-le-pen": 1,
+  "dominique-de-villepin": 1
  },
  "items": {
   "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor": "2026-10-10T10:30:53.306Z",
@@ -8,7 +9,9 @@
   "cli-03-contre": "2026-10-11T08:30:46.218Z",
   "20261011-1240-le-ministere-de-l-interieur-engage-la-dissolution": "2026-10-11T16:46:25.784Z",
   "rdv-test": "2026-10-11T20:34:21.300Z",
-  "20261011-2055-primaire-de-la-gauche-sociale-democrate-raphael-gl": "2026-10-11T22:27:14.498Z"
+  "20261011-2055-primaire-de-la-gauche-sociale-democrate-raphael-gl": "2026-10-11T22:27:14.498Z",
+  "20261012-1513-primaire-de-la-gauche-sociale-democrate-raphael-gl": "2026-10-12T16:05:27.013Z",
+  "cli-04-pour": "2026-10-12T16:05:27.013Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -47,7 +50,11 @@
   "20261011-2055-budget-2027-roland-lescure-dit-preferer-eviter-les",
   "20261011-2055-le-ministere-de-l-interieur-engage-une-procedure-d",
   "20261011-2055-microentrepreneurs-deux-inspections-generales-juge",
-  "20261011-2055-primaire-de-la-gauche-sociale-democrate-raphael-gl"
+  "20261011-2055-primaire-de-la-gauche-sociale-democrate-raphael-gl",
+  "20261012-1513-budget-2027-rejete-en-commission-le-texte-arrive-a",
+  "20261012-1513-le-ministere-de-l-interieur-engage-une-procedure-d",
+  "20261012-1513-primaire-de-la-gauche-sociale-democrate-raphael-gl",
+  "20261012-1513-saint-fons-la-justice-annule-les-municipales-rempo"
  ],
  "rdv": 1
 }
