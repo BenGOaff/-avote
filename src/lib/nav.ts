@@ -45,6 +45,7 @@ export const SECTIONS: NavSection[] = [
     items: [
       { href: '/medias', label: 'Qui possède ton info', desc: 'Propriétaires, engagements, rappels à l’ordre de l’Arcom.' },
       { href: '/medias/libres', label: 'Les médias libres', desc: 'Ni milliardaire, ni grand groupe, ni État.' },
+      { href: '/fake-news', label: 'Fake news', desc: 'Les intox de la campagne, démontées preuve à l’appui.' },
     ],
   },
   {

@@ -8,7 +8,7 @@ on:
     paths: ['content/**', 'src/app/**']
   # Les robots publient avec le jeton GitHub, qui ne déclenche pas « push » : on passe après eux
   workflow_run:
-    workflows: [Veille, Positions, Programmes]
+    workflows: [Veille, Positions, Programmes, Intox]
     types: [completed]
   workflow_dispatch:
 
@@ -38,6 +38,8 @@ jobs:
             URLS="$URLS $SITE/programmes"
             echo "SUJETS=1" >> "$GITHUB_ENV"
           fi
+          # Nouvelles intox démontées
+          if echo "$CHANGED" | grep -qE '^content/intox/intox.json'; then URLS="$URLS $SITE/fake-news"; fi
           echo "URLS=$URLS" >> "$GITHUB_ENV"
       # Laisser le temps au déploiement Hostinger de publier la nouvelle version
       - run: sleep 300

@@ -155,6 +155,19 @@ if (existsSync(flashDir))
     if (ups.length && (ups.some((u, i) => i > 0 && u <= ups[i - 1]!) || ups[ups.length - 1] !== 100)) errors.push(`quiz flash ${f} : paliers croissants, le dernier à 100`)
   }
 
+// Fake news : chaque intox renvoie à une vérification d'un fact-checkeur, avec le passage qui la démontre
+const intox = JSON.parse(readFileSync(path.join(ROOT, 'content/intox/intox.json'), 'utf8')) as {
+  items: { id: string; claim: string; verdict: string; truth: string; debunks: { url: string; quote: string; publisher: string; date: string }[] }[]
+}
+const intoxIds = new Set<string>()
+for (const x of intox.items) {
+  if (intoxIds.has(x.id)) errors.push(`intox : identifiant en double ${x.id}`)
+  intoxIds.add(x.id)
+  if (!['faux', 'trompeur', 'hors-contexte', 'manipule', 'ia'].includes(x.verdict)) errors.push(`intox ${x.id} : verdict inconnu`)
+  if (!x.claim || !x.truth || x.debunks.length === 0) errors.push(`intox ${x.id} : affirmation, réalité ou vérification manquante`)
+  for (const d of x.debunks) if (!d.url?.startsWith('https://') || !d.quote || !/^\d{4}-\d{2}-\d{2}$/.test(d.date)) errors.push(`intox ${x.id} : vérification sans lien https, extrait ou date`)
+}
+
 // Qui possède ton info
 const mediaList = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/liste.json'), 'utf8')) as { medias: { slug: string }[] }
 const owned = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/proprietaires.json'), 'utf8')) as {
