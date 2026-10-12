@@ -39,6 +39,30 @@ export interface Orientation {
   publisher: string
 }
 
+/**
+ * Axe gauche-droite des libellés d'eurotopics, de l'extrême gauche à la droite. Le libellé reste celui d'eurotopics ;
+ * seul l'ordre est le nôtre. Les libellés hors axe (« catholique », « critique envers le gouvernement ») sont listés à part.
+ */
+export const ORIENTATION_AXIS: { label: string; bloc: string }[] = [
+  { label: 'extrême gauche', bloc: 'EXG' },
+  { label: 'gauche', bloc: 'GAU' },
+  { label: 'centre-gauche', bloc: 'GAU' },
+  { label: 'libéral', bloc: 'CENT' },
+  { label: 'libéral-conservateur', bloc: 'DTE' },
+  { label: 'droite', bloc: 'DTE' },
+]
+
+/** Médias classés par eurotopics, rangés sur l'axe ; `others` : libellés hors axe. */
+export function orientationAxis(medias: MediaEntry[]) {
+  const classified = medias.filter((m) => m.orientation)
+  const onAxis = new Set(ORIENTATION_AXIS.map((a) => a.label))
+  return {
+    columns: ORIENTATION_AXIS.map((a) => ({ ...a, medias: classified.filter((m) => m.orientation!.label === a.label) })),
+    others: classified.filter((m) => !onAxis.has(m.orientation!.label)),
+    total: classified.length,
+  }
+}
+
 export interface Engagement {
   text: string
   quote: string

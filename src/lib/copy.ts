@@ -210,6 +210,10 @@ export const UI_COPY = {
     figOwners: (owners: number, medias: number) => ({ num: String(owners), label: `propriétaires pour ${medias} médias` }),
     figTop: (name: string, n: number) => ({ num: String(n), label: `médias pour ${name} : le plus gros portefeuille privé` }),
     figArcom: (n: number, chans: number) => ({ num: String(n), label: `décisions de l’Arcom ou du Conseil d’État sur l’info politique, pour ${chans} chaîne${chans > 1 ? 's' : ''}` }),
+    axisTitle: 'Gauche ou droite\u00a0?',
+    axisHint: (n: number, total: number) =>
+      `${n} médias sur ${total} ont une orientation politique attribuée par eurotopics, l’observatoire de la presse européenne de l’Agence fédérale allemande pour l’éducation civique. Libellés d’eurotopics, rangés de gauche à droite par nos soins. Les chaînes de télévision et la plupart des sites n’y sont pas classés : nous n’inventons pas leur étiquette.`,
+    axisSource: (name: string) => `${name} sur eurotopics`,
     splitTitle: 'Qui a le dernier mot',
     splitHint: 'Part des médias selon qui décide en dernier ressort.',
     splitLead: (n: number, total: number, label: string) => `${n} médias sur ${total} : ${label.charAt(0).toLowerCase()}${label.slice(1)} a le dernier mot.`,
