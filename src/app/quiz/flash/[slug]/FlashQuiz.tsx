@@ -144,7 +144,7 @@ async function resultFile(quiz: Quiz, r: FlashResult, format: Format): Promise<F
   return blob ? new File([blob], `${quiz.slug}-${r.id}.png`, { type: 'image/png' }) : null
 }
 
-export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; others: { slug: string; title: string }[] }) {
+export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; others: { slug: string; title: string; lede: string; avatar?: string }[] }) {
   const [picks, setPicks] = useState<number[]>([])
   // Quiz de connaissances : la réponse choisie, affichée avec la correction avant de passer à la suite
   const [reveal, setReveal] = useState<number | null>(null)
@@ -262,6 +262,22 @@ export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; othe
           </div>
         </div>
       </section>
+
+      {others[0] && (
+        <Link href={`/quiz/flash/${others[0].slug}`} className="flash-hub__card flash-next">
+          {others[0].avatar && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img className="flash-hub__avatar" src={others[0].avatar} width={800} height={800} alt="" loading="lazy" />
+          )}
+          <span className="flash-hub__text">
+            <span className="flash-hub__badges">
+              <span className="flash-hub__badge flash-hub__badge--ink">{t.nextQuiz}</span>
+            </span>
+            <span className="flash-hub__title">{others[0].title}</span>
+            <span className="small">{others[0].lede}</span>
+          </span>
+        </Link>
+      )}
 
       {r.details && r.details.length > 0 && (
         <section className="flash__fact card section" aria-labelledby="accords">
