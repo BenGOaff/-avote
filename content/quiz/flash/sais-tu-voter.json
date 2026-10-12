@@ -1,0 +1,197 @@
+{
+ "slug": "sais-tu-voter",
+ "mode": "connaissances",
+ "order": 12,
+ "title": "Vote blanc, carte Vitale, isoloir : sais-tu vraiment voter ?",
+ "tribe": "bonnes réponses",
+ "lede": "Vrai ou faux : les règles du bureau de vote que tout le monde croit connaître. Repars incollable avant le 18 avril 2027.",
+ "avatar": "/img/stock/isoloir.webp",
+ "questions": [
+  {
+   "q": "Sans ta carte électorale, tu ne peux pas voter.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": false
+    },
+    {
+     "label": "Faux",
+     "correct": true
+    }
+   ],
+   "explain": "Faux. Dans une commune de 1 000 habitants et plus, une pièce d’identité seule suffit. La carte électorale est un plus, pas une obligation."
+  },
+  {
+   "q": "Ta carte Vitale avec photo suffit pour voter.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": true
+    },
+    {
+     "label": "Faux",
+     "correct": false
+    }
+   ],
+   "explain": "Vrai. Elle est dans la liste officielle des pièces acceptées, comme le permis de conduire en cours de validité."
+  },
+  {
+   "q": "Ta carte d’identité est périmée depuis trois ans : recalé.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": false
+    },
+    {
+     "label": "Faux",
+     "correct": true
+    }
+   ],
+   "explain": "Faux. Carte d’identité et passeport sont acceptés s’ils sont périmés depuis moins de cinq ans."
+  },
+  {
+   "q": "Une photo de ta carte d’identité sur ton téléphone, ça passe.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": false
+    },
+    {
+     "label": "Faux",
+     "correct": true
+    }
+   ],
+   "explain": "Faux. Il faut l’original : photo, capture ou photocopie sont refusées."
+  },
+  {
+   "q": "Le vote blanc compte dans les suffrages exprimés.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": false
+    },
+    {
+     "label": "Faux",
+     "correct": true
+    }
+   ],
+   "explain": "Faux. Blancs et nuls sont comptés parmi les votants, pas dans les suffrages exprimés : ils ne pèsent pas sur le résultat."
+  },
+  {
+   "q": "Tu glisses un petit mot doux sur ton bulletin : il devient nul.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": true
+    },
+    {
+     "label": "Faux",
+     "correct": false
+    }
+   ],
+   "explain": "Vrai. Un bulletin déchiré ou annoté est nul. Garde tes mots doux pour la fin du dépouillement."
+  },
+  {
+   "q": "Tu as déjà ton bulletin en poche : tu peux zapper l’isoloir.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": false
+    },
+    {
+     "label": "Faux",
+     "correct": true
+    }
+   ],
+   "explain": "Faux. Le passage par l’isoloir est obligatoire, même si tu sais déjà pour qui tu votes."
+  },
+  {
+   "q": "Pour faire une procuration, tu dois justifier ton absence.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": false
+    },
+    {
+     "label": "Faux",
+     "correct": true
+    }
+   ],
+   "explain": "Faux. Aucun justificatif d’absence n’est demandé. La démarche commence en ligne, sur Maprocuration."
+  },
+  {
+   "q": "Ta procuration peut aller à un ami inscrit dans une autre ville.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": true
+    },
+    {
+     "label": "Faux",
+     "correct": false
+    }
+   ],
+   "explain": "Vrai. Tu choisis librement ton mandataire. Lui viendra voter dans ton bureau de vote."
+  },
+  {
+   "q": "Tu peux t’inscrire sur les listes et voter la même année.",
+   "answers": [
+    {
+     "label": "Vrai",
+     "correct": true
+    },
+    {
+     "label": "Faux",
+     "correct": false
+    }
+   ],
+   "explain": "Vrai, à condition de t’inscrire au plus tard le 6e vendredi avant le premier tour, en ligne ou en mairie."
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 49,
+   "headline": "Bureau de vote : accès refusé.",
+   "line": "{c} sur {n}. L’assesseur te regarde comme un tonton sans papiers. Révise, tu as jusqu’au 6e vendredi avant le scrutin."
+  },
+  {
+   "upTo": 79,
+   "headline": "Tu votes, mais en tremblant.",
+   "line": "{c} sur {n}. Tu trouveras l’urne, mais garde ta pièce d’identité à la main, au cas où."
+  },
+  {
+   "upTo": 99,
+   "headline": "Assesseur en puissance.",
+   "line": "{c} sur {n}. Le jour J, c’est toi qui expliques la procuration à toute la file d’attente."
+  },
+  {
+   "upTo": 100,
+   "headline": "Sans faute : le bureau de vote t’appartient.",
+   "line": "Tu pourrais le présider. Ou au moins expliquer à ta cousine que son vote blanc ne fera pas annuler l’élection."
+  }
+ ],
+ "fact": {
+  "cliche": "« Si assez de gens votent blanc, l’élection est annulée. »",
+  "text": "Faux. Les votes blancs et nuls sont comptés parmi les votants, pas dans les suffrages exprimés, et le président est élu à la majorité absolue des suffrages exprimés. Au second tour de 2022, 2 233 904 votes blancs et 805 249 nuls n’ont rien changé au résultat.",
+  "sources": [
+   {
+    "title": "Élections politiques : déroulement du scrutin",
+    "publisher": "Service-Public.fr",
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16828",
+    "passage": "Les votes blancs et nuls sont comptés dans le nombre des votants, mais pas des suffrages exprimés."
+   },
+   {
+    "title": "Constitution du 4 octobre 1958, article 7",
+    "publisher": "Conseil constitutionnel",
+    "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+    "passage": "Le Président de la République est élu à la majorité absolue des suffrages exprimés."
+   },
+   {
+    "title": "Décision n° 2022-197 PDR du 27 avril 2022 (résultats du second tour)",
+    "publisher": "Conseil constitutionnel",
+    "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022197PDR.htm",
+    "date": "2022-04-27"
+   }
+  ]
+ }
+}
