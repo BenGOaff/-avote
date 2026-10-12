@@ -2369,6 +2369,77 @@ details.disclosure > div {
   margin: var(--s1) 0 0;
 }
 
+/* ---------- Vérificateur ---------- */
+.verifier-form {
+  display: grid;
+  gap: var(--s2);
+}
+.verifier-form__label {
+  font-family: var(--font-hand);
+  font-size: var(--text-hand);
+  font-weight: 700;
+}
+.verifier-form__row {
+  display: grid;
+  gap: var(--s2);
+}
+@media (min-width: 600px) {
+  .verifier-form__row {
+    grid-template-columns: 1fr auto;
+  }
+}
+.verifier-example {
+  height: auto;
+  padding-block: var(--s2);
+  line-height: 1.3;
+  text-align: left;
+}
+.verifier-out:focus {
+  outline: none;
+}
+.verifier-result__verdict {
+  margin: 0 0 var(--s2);
+}
+.verifier-result__verdict .stamp {
+  font-size: var(--text-ui);
+}
+.verifier-result--non .stamp {
+  color: var(--correction);
+}
+.verifier-result--oui .stamp {
+  background: var(--highlight);
+  color: var(--on-highlight);
+  border-color: var(--ink);
+}
+.verifier-result--plus-complique .stamp,
+.verifier-result--opinion .stamp {
+  border-style: dashed;
+}
+.verifier-result__answer {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-article);
+  font-weight: 700;
+}
+.verifier-result__quote {
+  margin: var(--s1) 0 0;
+  padding-left: var(--s3);
+  border-left: var(--border) solid var(--line);
+  font-style: italic;
+}
+.verifier-sources__excerpt {
+  margin: var(--s1) 0 0;
+  padding-left: var(--s3);
+  border-left: var(--hairline) solid var(--line);
+}
+.verifier-sources {
+  list-style: none;
+  padding: 0;
+  margin: var(--s2) 0 0;
+  display: grid;
+  gap: var(--s2);
+}
+
 /* ---------- Temps de parole (Arcom) ---------- */
 .speech {
   list-style: none;

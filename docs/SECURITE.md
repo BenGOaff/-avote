@@ -10,6 +10,8 @@
 6. L’urne (`/urne`) ne reçoit que le choix de bulletin, jamais une réponse du test. Deux registres jamais reliés (Supabase UE, schéma `urne`, RLS sans politique) : compteurs (nombres seuls) et empreintes HMAC de l’IP (anti-doublon). Deux appels distincts, protégés par un jeton serveur ; aucun ne porte à la fois une empreinte et un choix. Anti-robots : preuve de travail signée, sans service tiers. Rien n’est journalisé. Résultats gelés la veille et le jour de chaque tour. Empreintes à effacer après le second tour.
 7. Le formulaire de contact (`/api/contact`) transmet le message par email (Resend) à l’adresse de contact, puis l’oublie : rien n’est stocké ni journalisé. Champs limités (type, page, message, email facultatif), pot de miel, délai minimal, limite par IP en mémoire. Le lien de don (Buy Me a Coffee) est un simple lien sortant : aucun script ni widget tiers.
 
+8. Le vérificateur (`/api/verifier`) reçoit une question de fait, jamais une réponse au test. Il cherche d’abord dans nos sources ; seulement s’il trouve un passage proche, il envoie la question et ces passages au modèle (Anthropic), sans IP ni identifiant. Rien n’est stocké ni journalisé : la réponse (pas la question) est gardée quelques heures en mémoire sous une empreinte SHA-256 de la question. Limite par IP en mémoire, plafond d’appels par jour (`FACTCHECK_DAILY_MAX`), plafond de dépense mensuel fixé côté Anthropic (espace de travail dédié). Réponse affichée seulement si les sources citées, la citation mot pour mot et les nombres passent les contrôles.
+
 Vérifié le 8 octobre 2026 : parcours complet du test au navigateur, **aucune requête vers un domaine extérieur**, aucune erreur JavaScript.
 
 ## En-têtes HTTP (`next.config.mjs`)
@@ -32,4 +34,4 @@ Les flux RSS sont traités comme des données non fiables : pas d’outil donné
 
 ## Secrets
 
-Jamais dans le dépôt. `ANTHROPIC_API_KEY` en secret GitHub Actions ; `RESEND_API_KEY`, `NEWSLETTER_SECRET`, `URNE_SUPABASE_URL`, `URNE_SUPABASE_KEY`, `URNE_TOKEN` et `URNE_SECRET` dans hPanel.
+Jamais dans le dépôt. `ANTHROPIC_API_KEY` en secret GitHub Actions (robots) et dans hPanel (vérificateur, clé d’un espace de travail Anthropic dédié avec plafond de dépense) ; `RESEND_API_KEY`, `NEWSLETTER_SECRET`, `URNE_SUPABASE_URL`, `URNE_SUPABASE_KEY`, `URNE_TOKEN` et `URNE_SECRET` dans hPanel.

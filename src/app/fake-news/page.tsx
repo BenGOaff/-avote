@@ -96,6 +96,9 @@ export default function FakeNewsPage() {
       )}
 
       <section className="section measure">
+        <p>
+          <strong>{t.factcheck}</strong> <Link href="/verifier">{t.factcheckLink}</Link>
+        </p>
         <p className="small muted">{t.sourcesNote}</p>
         <p>
           <Link href="/methodologie#intox">{t.method}</Link> · <Link href="/medias">Qui possède ton info</Link> · <Link href="/radar">Le radar</Link>
