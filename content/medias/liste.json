@@ -19,6 +19,7 @@
     { "slug": "europe-1", "name": "Europe 1", "type": "radio", "site": "https://www.europe1.fr/" },
     { "slug": "rmc", "name": "RMC", "type": "radio", "site": "https://rmc.bfmtv.com/" },
     { "slug": "sud-radio", "name": "Sud Radio", "type": "radio", "site": "https://www.sudradio.fr/" },
+    { "slug": "radio-nova", "name": "Radio Nova", "type": "radio", "site": "https://www.nova.fr/" },
     { "slug": "le-monde", "name": "Le Monde", "type": "presse", "site": "https://www.lemonde.fr/" },
     { "slug": "le-figaro", "name": "Le Figaro", "type": "presse", "site": "https://www.lefigaro.fr/" },
     { "slug": "liberation", "name": "Libération", "type": "presse", "site": "https://www.liberation.fr/" },

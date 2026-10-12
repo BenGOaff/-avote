@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { mediaLogoOf } from '@/lib/images'
+import { absolute } from '@/lib/site'
 import { PageHeader } from '@/components/PageHeader'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { formatDate } from '@/components/Editorial'
@@ -40,9 +41,34 @@ export default function MediasPage() {
   const free = freeMedias(medias)
   const axis = orientationAxis(medias)
   const lead = [...split].sort((a, b) => b.medias.length - a.medias.length)[0]
+  // Données structurées : chaque média, son logo et qui le contrôle, pour les moteurs et les assistants IA
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: t.title,
+    url: absolute('/medias'),
+    numberOfItems: done.length,
+    itemListElement: done.map((m, i) => {
+      const logo = mediaLogoOf(m.slug)
+      return {
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+          '@type': 'NewsMediaOrganization',
+          name: m.name,
+          ...(m.site ? { url: m.site } : {}),
+          ...(logo ? { logo: absolute(logo) } : {}),
+          parentOrganization: { '@type': 'Organization', name: m.ownership!.group || m.ownership!.controller },
+          description: `${t.controller}\u00a0: ${m.ownership!.controller}. ${m.ownership!.note}`,
+          subjectOf: { '@type': 'CreativeWork', name: m.ownership!.sourceTitle, url: m.ownership!.url, publisher: m.ownership!.publisher },
+        },
+      }
+    }),
+  }
 
   return (
     <div className="container">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
       <PageHeader kicker={t.kicker} title={t.title} lede={t.lede} />
       <p className="humor quip">{MEDIAS_QUIP}</p>
 

@@ -252,19 +252,19 @@
  ],
  "fact": {
   "cliche": "« De toute façon, les médias appartiennent tous à des milliardaires. »",
-  "text": "Pas tous, mais beaucoup. Sur les 62 médias que nous suivons, 24 appartiennent à une personne ou à une famille (Bolloré, Arnault, Dassault, Saadé, Pinault…), 3 au groupe Bouygues, 8 à l’État ou au Parlement. Et 16 médias libres n’ont ni milliardaire, ni grand groupe, ni État au-dessus d’eux. Chiffres au 8 octobre 2026 ; chaque propriétaire est sourcé.",
+  "text": "Pas tous, mais beaucoup. Sur les 63 médias que nous suivons, 25 appartiennent à une personne ou à une famille (Bolloré, Arnault, Dassault, Saadé, Pinault, Pigasse…), 3 au groupe Bouygues, 8 à l’État ou au Parlement. Et 16 médias libres n’ont ni milliardaire, ni grand groupe, ni État au-dessus d’eux. Chiffres au 12 octobre 2026 ; chaque propriétaire est sourcé.",
   "sources": [
    {
     "title": "Qui possède ton info : les propriétaires des médias français",
     "publisher": "Ça vote ?",
     "url": "https://xn--avote-xra.fr/medias",
-    "date": "2026-10-08"
+    "date": "2026-10-12"
    },
    {
     "title": "Les médias libres",
     "publisher": "Ça vote ?",
     "url": "https://xn--avote-xra.fr/medias/libres",
-    "date": "2026-10-08"
+    "date": "2026-10-12"
    }
   ]
  }
