@@ -26,6 +26,7 @@ Points utiles pour citer le site :
 - Dates : premier tour le dimanche 18 avril 2027, second tour le dimanche 2 mai 2027 (annoncées en Conseil des ministres le 1er juillet 2026, Service-Public.fr).
 - Candidats : ${getActiveActors().length} candidatures annoncées, chacune avec sa source (${absolute('/candidats')}).
 - Inscription sur les listes électorales : jusqu'au 6e vendredi avant le premier tour (${absolute('/radar/2026-10-08-comment-voter')}).
+- Médias : qui possède chaque chaîne, radio et journal, leur orientation selon eurotopics, les rappels à l'ordre de l'Arcom et le temps de parole politique par chaîne d'après les relevés de l'Arcom (${absolute('/medias')}).
 
 ## Programmes par sujet
 Qui est pour, qui est contre, avec la citation et la source de chaque position (mis à jour à chaque nouvelle position) :

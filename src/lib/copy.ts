@@ -210,6 +210,16 @@ export const UI_COPY = {
     figOwners: (owners: number, medias: number) => ({ num: String(owners), label: `propriétaires pour ${medias} médias` }),
     figTop: (name: string, n: number) => ({ num: String(n), label: `médias pour ${name} : le plus gros portefeuille privé` }),
     figArcom: (n: number, chans: number) => ({ num: String(n), label: `décisions de l’Arcom ou du Conseil d’État sur l’info politique, pour ${chans} chaîne${chans > 1 ? 's' : ''}` }),
+    speechTitle: 'Qui parle à l’antenne\u00a0?',
+    speechLead: (from: string, to: string) =>
+      `Temps de parole des personnalités politiques relevé par l’Arcom, du ${from} au ${to}. Chaque barre montre la part de chaque famille politique ; président et gouvernement sont comptés à part.`,
+    speechNote:
+      'Ce chrono ne compte que les personnalités politiques. Chroniqueurs, animateurs et invités n’y entrent pas : c’est sur eux que portent les reproches de pluralisme faits à certaines chaînes.',
+    speechArcom: 'Voir les décisions de l’Arcom',
+    speechGrid: 'Familles politiques selon la grille officielle des nuances',
+    speechTop: 'En tête',
+    speechHours: (h: number) => `${String(h).replace('.', ',')}\u00a0h de parole politique`,
+    speechSource: 'Source : relevés de l’Arcom',
     axisTitle: 'Gauche ou droite\u00a0?',
     axisHint: (n: number, total: number) =>
       `${n} médias sur ${total} ont une orientation politique attribuée par eurotopics, l’observatoire de la presse européenne de l’Agence fédérale allemande pour l’éducation civique. Libellés d’eurotopics, rangés de gauche à droite par nos soins. Les chaînes de télévision et la plupart des sites n’y sont pas classés : nous n’inventons pas leur étiquette.`,

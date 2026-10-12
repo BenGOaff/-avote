@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { mediaLogoOf } from '@/lib/images'
 import { absolute } from '@/lib/site'
+import { getSpeechTime, SPEECH_SEGMENTS } from '@/lib/temps-parole'
 import { PageHeader } from '@/components/PageHeader'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { formatDate } from '@/components/Editorial'
@@ -40,6 +41,8 @@ export default function MediasPage() {
   const top = groups.find((g) => g.kind !== 'etat')
   const free = freeMedias(medias)
   const axis = orientationAxis(medias)
+  const speech = getSpeechTime()
+  const nameOf = new Map(medias.map((m) => [m.slug, m.name]))
   const lead = [...split].sort((a, b) => b.medias.length - a.medias.length)[0]
   // Données structurées : chaque média, son logo et qui le contrôle, pour les moteurs et les assistants IA
   const jsonLd = {
@@ -133,6 +136,59 @@ export default function MediasPage() {
                   ))}
                 </p>
               )}
+            </section>
+          )}
+
+          {speech.channels.length > 0 && (
+            <section className="section" aria-labelledby="temps-parole">
+              <h2 id="temps-parole" style={{ fontSize: 'var(--h3)' }}>
+                {t.speechTitle}
+              </h2>
+              <p className="measure" style={{ marginTop: 0 }}>
+                {t.speechLead(formatDate(speech.from), formatDate(speech.to))}
+              </p>
+              <ul className="speech__legend" aria-hidden="true">
+                {SPEECH_SEGMENTS.map((s) => (
+                  <li key={s.id}>
+                    <span className={`speech__dot speech__seg--${s.id}`} />
+                    {s.label}
+                  </li>
+                ))}
+              </ul>
+              <ul className="speech" role="list">
+                {speech.channels.map((c) => {
+                  const logo = mediaLogoOf(c.slug)
+                  return (
+                    <li key={c.slug} className="speech__row">
+                      <p className="speech__name">
+                        {logo && (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={logo} alt="" className="speech__logo" loading="lazy" decoding="async" />
+                        )}
+                        <a href={`#${c.slug}`}>{nameOf.get(c.slug) ?? c.service}</a> <span className="hint">{t.speechHours(c.hours)}</span>
+                      </p>
+                      <div className="speech__bar" aria-hidden="true">
+                        {c.shares.map((s) => (
+                          <span key={s.id} className={`speech__seg speech__seg--${s.id}`} style={{ flexGrow: s.pct }} title={`${s.label} : ${String(s.pct).replace('.', ',')} %`} />
+                        ))}
+                      </div>
+                      <p className="visually-hidden">{c.shares.map((s) => `${s.label} : ${String(s.pct).replace('.', ',')} %`).join(' ; ')}</p>
+                      <p className="small muted" style={{ margin: 'var(--s1) 0 0' }}>
+                        {t.speechTop} : {c.top.map((x) => `${x.party} ${String(x.pct).replace('.', ',')} %`).join(' · ')}
+                      </p>
+                    </li>
+                  )
+                })}
+              </ul>
+              <p className="small" style={{ marginTop: 'var(--s3)' }}>
+                {t.speechNote} <a href="#arcom">{t.speechArcom}</a>
+              </p>
+              <p className="small muted">
+                <a href={speech.source.url} rel="noopener noreferrer" target="_blank">
+                  {t.speechSource}
+                </a>{' '}
+                · <Link href="/methodologie#couleurs">{t.speechGrid}</Link>
+              </p>
             </section>
           )}
 

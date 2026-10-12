@@ -322,6 +322,13 @@ export default function MethodPage() {
           pas pour autant « blanchie » : on n’affiche que ce qu’on a trouvé et vérifié. Les fiches sont revues au moins chaque trimestre ; une erreur se
           signale sur <Link href="/corrections">la page des corrections</Link>.
         </p>
+        <p>
+          « Qui parle à l’antenne » additionne, sans les retoucher, les relevés mensuels de temps de parole que l’Arcom publie en données ouvertes : les trois
+          derniers mois publiés (l’Arcom publie avec environ trois mois de retard), journaux, magazines et autres émissions confondus. Chaque parti est rangé
+          dans sa famille selon la grille officielle des nuances ; un parti absent de la grille va dans « divers et non classés ». Président et gouvernement
+          sont comptés à part, comme le fait l’Arcom. Ce chrono ne mesure que les personnalités politiques : chroniqueurs, animateurs et invités n’y entrent
+          pas. Un programme relit chaque jour la page de l’Arcom et intègre un nouveau mois dès sa parution.
+        </p>
       </div>
     </div>
   )

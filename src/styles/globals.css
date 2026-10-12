@@ -2287,6 +2287,75 @@ details.disclosure > div {
   font-size: var(--text-small);
 }
 
+/* ---------- Temps de parole (Arcom) ---------- */
+.speech {
+  list-style: none;
+  padding: 0;
+  margin: var(--s3) 0 0;
+  display: grid;
+  gap: var(--s4);
+}
+@media (min-width: 900px) {
+  .speech {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--s6);
+  }
+}
+.speech__name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin: 0 0 var(--s1);
+  font-weight: 700;
+}
+.speech__name .hint {
+  font-weight: 400;
+}
+.speech__logo {
+  height: 24px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  padding: 2px 4px;
+  background: var(--logo-plate);
+  border-radius: var(--radius);
+}
+.speech__bar {
+  display: flex;
+  height: 20px;
+  border: var(--hairline) solid var(--ink);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.speech__seg {
+  min-width: 0;
+}
+.speech__seg--EXG { background: var(--bloc-exg); }
+.speech__seg--GAU { background: var(--bloc-gau); }
+.speech__seg--CENT { background: var(--bloc-cent); }
+.speech__seg--DTE { background: var(--bloc-dte); }
+.speech__seg--EXD { background: var(--bloc-exd); }
+.speech__seg--DIV { background: var(--bloc-div); }
+.speech__seg--EXEC { background: repeating-linear-gradient(45deg, var(--muted) 0 3px, var(--surface) 3px 6px); }
+.speech__legend {
+  list-style: none;
+  padding: 0;
+  margin: var(--s3) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2) var(--s4);
+  font-size: var(--text-small);
+}
+.speech__dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: var(--s1);
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
 /* ---------- Qui possède ton info ---------- */
 .owners {
   list-style: none;
