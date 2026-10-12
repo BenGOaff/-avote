@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-12-rendez-vous-rdv-urne",
+  "at": "2026-10-12T23:13:27.231Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "UN BULLETIN, UNE VOIX",
+    "title": "Ton avis compte, mais où est-ce qu'on le glisse ? Dans l'urne, en deux clics",
+    "line": "Un bulletin par connexion, anonyme, compté dans des totaux.",
+    "cta": "Glisse ton bulletin"
+  },
+  "text": {
+    "x": "Un bulletin par connexion. Anonyme. Compté dans des totaux. L'urne de Ça vote ? est ouverte à tous, et elle n'attend que le tien.",
+    "linkedin": "Un bulletin par connexion, anonyme, compté dans des totaux : voilà le principe de l'urne de Ça vote ?\n\nElle est ouverte à tous. C'est une consultation en ligne, non représentative : elle ne prétend pas dire ce que pensent les Français, seulement ce que pensent celles et ceux qui y glissent un bulletin.\n\nL'exercice a un intérêt simple : voir comment les totaux évoluent à mesure que la campagne avance, sans prétendre en tirer une vérité nationale.\n\nSi tu devais expliquer à un collègue pourquoi un tel outil est utile, ou limité, que dirais-tu ?\n\n#presidentielle2027",
+    "facebook": "Il y a une urne sur Ça vote ? : un bulletin par connexion, anonyme, compté dans des totaux. Ouverte à tous, mais non représentative : c'est une consultation en ligne, pas une photographie du pays. Tu y glisserais ton bulletin les yeux fermés, ou tu veux d'abord voir comment ça marche ? Le test est sur çavote.fr",
+    "instagram": "Un bulletin. Une connexion. Zéro nom.\nL'urne de Ça vote ? est ouverte à tous.\nTon bulletin est anonyme.\nIl est compté dans des totaux.\nC'est une consultation en ligne, non représentative.\nÀ toi de voir de quel côté il tombe.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #urne #bulletin"
+  },
+  "target": "/urne",
+  "targetLabel": "Glisser un bulletin"
+}

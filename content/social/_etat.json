@@ -11,7 +11,8 @@
   "rdv-test": "2026-10-11T20:34:21.300Z",
   "20261011-2055-primaire-de-la-gauche-sociale-democrate-raphael-gl": "2026-10-11T22:27:14.498Z",
   "20261012-1513-primaire-de-la-gauche-sociale-democrate-raphael-gl": "2026-10-12T16:05:27.013Z",
-  "cli-04-pour": "2026-10-12T16:05:27.013Z"
+  "cli-04-pour": "2026-10-12T16:05:27.013Z",
+  "rdv-urne": "2026-10-12T23:13:27.231Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -56,5 +57,5 @@
   "20261012-1513-primaire-de-la-gauche-sociale-democrate-raphael-gl",
   "20261012-1513-saint-fons-la-justice-annule-les-municipales-rempo"
  ],
- "rdv": 1
+ "rdv": 2
 }
