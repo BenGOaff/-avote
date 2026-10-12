@@ -1,0 +1,305 @@
+{
+ "slug": "le-juste-prix-de-la-republique",
+ "mode": "connaissances",
+ "order": 13,
+ "title": "Député, Élysée, campagne : devines-tu combien ça coûte ?",
+ "tribe": "bonnes réponses",
+ "lede": "Les vrais montants de la République, du salaire de ton député au budget de l’Élysée. De quoi avoir le dernier mot au prochain « tous pourris ».",
+ "avatar": "/img/stock/cheque.webp",
+ "questions": [
+  {
+   "q": "Combien touche un député par mois, en brut ?",
+   "answers": [
+    {
+     "label": "3 900 €",
+     "correct": false
+    },
+    {
+     "label": "7 637 €",
+     "correct": true
+    },
+    {
+     "label": "12 500 €",
+     "correct": false
+    },
+    {
+     "label": "21 000 €",
+     "correct": false
+    }
+   ],
+   "explain": "7 637,39 € brut, soit 5 953,34 € net, depuis le 1er janvier 2024."
+  },
+  {
+   "q": "Et pour payer ses collaborateurs, chaque député dispose chaque mois de…",
+   "answers": [
+    {
+     "label": "2 500 €",
+     "correct": false
+    },
+    {
+     "label": "6 000 €",
+     "correct": false
+    },
+    {
+     "label": "11 463 €",
+     "correct": true
+    },
+    {
+     "label": "25 000 €",
+     "correct": false
+    }
+   ],
+   "explain": "11 463 € par mois, versés directement aux collaborateurs : ce n’est pas un salaire pour le député."
+  },
+  {
+   "q": "Depuis 2026, ses frais de mandat (permanence, transports, matériel) sont couverts par une dotation de…",
+   "answers": [
+    {
+     "label": "1 200 €",
+     "correct": false
+    },
+    {
+     "label": "3 500 €",
+     "correct": false
+    },
+    {
+     "label": "7 238 €",
+     "correct": true
+    },
+    {
+     "label": "15 000 €",
+     "correct": false
+    }
+   ],
+   "explain": "7 238,04 € par mois pour un député élu en métropole. Elle remplace l’ancienne avance de frais de mandat."
+  },
+  {
+   "q": "Un sénateur touche-t-il plus qu’un député ?",
+   "answers": [
+    {
+     "label": "Deux fois plus",
+     "correct": false
+    },
+    {
+     "label": "Exactement la même chose",
+     "correct": true
+    },
+    {
+     "label": "Moitié moins",
+     "correct": false
+    },
+    {
+     "label": "Rien, c’est bénévole",
+     "correct": false
+    }
+   ],
+   "explain": "Même indemnité : 7 637,39 € brut par mois. Le président du Sénat touche en plus 7 591,58 € d’indemnité de fonction."
+  },
+  {
+   "q": "Le président de la République gagne par mois, en brut…",
+   "answers": [
+    {
+     "label": "8 000 €",
+     "correct": false
+    },
+    {
+     "label": "16 038 €",
+     "correct": true
+    },
+    {
+     "label": "45 000 €",
+     "correct": false
+    },
+    {
+     "label": "120 000 €",
+     "correct": false
+    }
+   ],
+   "explain": "16 038 € brut, comme le Premier ministre, selon Public Sénat. Un ministre touche 10 692 € brut."
+  },
+  {
+   "q": "Quel est le budget annuel de l’Élysée ?",
+   "answers": [
+    {
+     "label": "12 millions €",
+     "correct": false
+    },
+    {
+     "label": "45 millions €",
+     "correct": false
+    },
+    {
+     "label": "123 millions €",
+     "correct": true
+    },
+    {
+     "label": "1,2 milliard €",
+     "correct": false
+    }
+   ],
+   "explain": "122,56 millions d’euros, inchangé entre 2025 et le projet de budget 2026."
+  },
+  {
+   "q": "Combien un candidat a-t-il le droit de dépenser au premier tour de la présidentielle ?",
+   "answers": [
+    {
+     "label": "1,5 million €",
+     "correct": false
+    },
+    {
+     "label": "6 millions €",
+     "correct": false
+    },
+    {
+     "label": "16,9 millions €",
+     "correct": true
+    },
+    {
+     "label": "50 millions €",
+     "correct": false
+    }
+   ],
+   "explain": "16,851 millions d’euros au premier tour, 22,509 millions pour les deux finalistes. Au-delà, le compte de campagne est rejeté."
+  },
+  {
+   "q": "Un candidat fait 5 % ou plus : l’État lui rembourse au maximum…",
+   "answers": [
+    {
+     "label": "Rien du tout",
+     "correct": false
+    },
+    {
+     "label": "800 000 €",
+     "correct": false
+    },
+    {
+     "label": "8 millions €",
+     "correct": true
+    },
+    {
+     "label": "Toutes ses dépenses",
+     "correct": false
+    }
+   ],
+   "explain": "47,5 % du plafond : 8 004 225 € en 2022. Sous 5 %, le remboursement tombe à 800 423 €."
+  },
+  {
+   "q": "Combien a coûté l’organisation de la présidentielle 2022 ?",
+   "answers": [
+    {
+     "label": "23 millions €",
+     "correct": false
+    },
+    {
+     "label": "90 millions €",
+     "correct": false
+    },
+    {
+     "label": "234 millions €",
+     "correct": true
+    },
+    {
+     "label": "1 milliard €",
+     "correct": false
+    }
+   ],
+   "explain": "233,9 millions d’euros prévus, soit 4,72 € par électeur."
+  },
+  {
+   "q": "Combien l’État verse-t-il chaque année aux partis politiques ?",
+   "answers": [
+    {
+     "label": "6 millions €",
+     "correct": false
+    },
+    {
+     "label": "64 millions €",
+     "correct": true
+    },
+    {
+     "label": "640 millions €",
+     "correct": false
+    },
+    {
+     "label": "2 milliards €",
+     "correct": false
+    }
+   ],
+   "explain": "Environ 64,1 millions d’euros par an à partir de 2025, partagés entre 40 partis."
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 39,
+   "headline": "Tu crois encore qu’ils sont bénévoles.",
+   "line": "{c} sur {n}. Ton député te remercie pour ta confiance. Révise avant de dire « tous pourris » au dîner."
+  },
+  {
+   "upTo": 69,
+   "headline": "Tu connais les prix… des soldes.",
+   "line": "{c} sur {n}. Tu as l’ordre de grandeur, pas encore la facture exacte."
+  },
+  {
+   "upTo": 99,
+   "headline": "Commissaire aux comptes en herbe.",
+   "line": "{c} sur {n}. La Cour des comptes cherche du monde, renseigne-toi."
+  },
+  {
+   "upTo": 100,
+   "headline": "Le juste prix, sans faute.",
+   "line": "Tu connais la facture de la République au centime près. Bercy t’envoie un fauteuil."
+  }
+ ],
+ "fact": {
+  "cliche": "« Les politiques coûtent une fortune au pays. »",
+  "text": "Tout est question d’échelle. L’Élysée coûte 122,56 millions d’euros par an et une présidentielle 233,9 millions. La charge de la dette de l’État, elle, devrait atteindre 61,6 milliards d’euros en 2026 : environ 500 fois le budget de l’Élysée.",
+  "sources": [
+   {
+    "title": "Avis sur la mission « Pouvoirs publics » (projet de loi de finances pour 2026)",
+    "publisher": "Sénat",
+    "url": "https://www.senat.fr/rap/a25-145-10/a25-145-10_mono.html"
+   },
+   {
+    "title": "Avis sur le projet de loi de finances : coût des élections",
+    "publisher": "Assemblée nationale",
+    "url": "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L15B4525-tI.html"
+   },
+   {
+    "title": "Projet annuel de performances 2027, « Engagements financiers de l’État »",
+    "publisher": "Assemblée nationale",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1128231/file/PAP%202027%20-%20Engagements%20financiers%20de%20l'Etat.pdf"
+   },
+   {
+    "title": "La situation matérielle du député",
+    "publisher": "Assemblée nationale",
+    "url": "https://www.assemblee-nationale.fr/dyn/synthese/deputes-groupes-parlementaires/la-situation-materielle-du-depute"
+   },
+   {
+    "title": "L’indemnité parlementaire",
+    "publisher": "Sénat",
+    "url": "https://www.senat.fr/connaitre-le-senat/role-et-fonctionnement/lindemnite-parlementaire.html"
+   },
+   {
+    "title": "Guide à l’usage des candidats à l’élection du président de la République, édition 2026-2027",
+    "publisher": "CNCCFP",
+    "url": "https://cnccfp.fr/wp-content/uploads/2026/04/Guide-a-lusage-des-candidats-a-lelection-du-President-de-la-Republique.pdf"
+   },
+   {
+    "title": "Seuils de remboursement des frais de campagne (2022)",
+    "publisher": "Conseil constitutionnel",
+    "url": "https://presidentielle2022.conseil-constitutionnel.fr/l-election/le-financement-de-la-campagne/seuils-de-remboursement-frais-de-campagne.html"
+   },
+   {
+    "title": "Questions fréquentes : aide publique aux partis",
+    "publisher": "CNCCFP",
+    "url": "https://cnccfp.fr/nos-faq/page/7/"
+   },
+   {
+    "title": "Montants, modalités : comment est fixée la rémunération des ministres",
+    "publisher": "Public Sénat",
+    "url": "https://www.publicsenat.fr/actualites/politique/montants-modalites-comment-est-fixe-la-remuneration-des-ministres",
+    "date": "2026-09-09"
+   }
+  ]
+ }
+}

@@ -1,0 +1,289 @@
+{
+ "slug": "quel-president-es-tu",
+ "mode": "profil",
+ "order": 15,
+ "title": "Quel président es-tu, et qu’a-t-il changé dans ta vie ?",
+ "lede": "De Gaulle à Macron : trouve le président qui te ressemble, et ce qu’il a vraiment changé dans ton quotidien.",
+ "avatar": "/img/stock/pupitre-debat.webp",
+ "outcomes": [
+  {
+   "key": "de-gaulle",
+   "name": "Charles de Gaulle",
+   "headline": "Tu ne demandes pas l’avis : tu organises un référendum.",
+   "line": "Grand, solennel, un peu vexé quand on ne t’écoute pas. Ce qu’il a changé dans ta vie : depuis le référendum de 1962, c’est toi qui élis le président, au suffrage universel.",
+   "avatar": "/img/quiz/president-de-gaulle.webp"
+  },
+  {
+   "key": "pompidou",
+   "name": "Georges Pompidou",
+   "headline": "De l’art abstrait au salon et de la poésie dans la poche.",
+   "line": "Amateur d’art contemporain, il a lancé le centre Beaubourg. Ce qu’il a changé dans ta vie : le SMIC, créé par la loi du 2 janvier 1970.",
+   "avatar": "/img/quiz/president-pompidou.webp"
+  },
+  {
+   "key": "giscard",
+   "name": "Valéry Giscard d’Estaing",
+   "headline": "Tu sors l’accordéon dès que la soirée s’essouffle.",
+   "line": "Moderne, un brin chic, toujours prêt à jouer. Ce qu’il a changé dans ta vie : le droit de vote à 18 ans, le divorce par consentement mutuel et l’avortement dépénalisé.",
+   "avatar": "/img/quiz/president-giscard.webp"
+  },
+  {
+   "key": "mitterrand",
+   "name": "François Mitterrand",
+   "headline": "La force tranquille, c’est toi.",
+   "line": "Tu prends ton temps et tu ne dis jamais tout. Ce qu’il a changé dans ta vie : la cinquième semaine de congés payés et les 39 heures, en 1982.",
+   "avatar": "/img/quiz/president-mitterrand.webp"
+  },
+  {
+   "key": "chirac",
+   "name": "Jacques Chirac",
+   "headline": "Au Salon de l’agriculture, tu connais toutes les vaches.",
+   "line": "Chaleureux, tu serres toutes les mains, même celles qui ont des sabots. Ce qu’il a changé dans ta vie : le service militaire obligatoire est suspendu depuis la loi de 1997.",
+   "avatar": "/img/quiz/president-chirac.webp"
+  },
+  {
+   "key": "sarkozy",
+   "name": "Nicolas Sarkozy",
+   "headline": "Chaque victoire se fête au Fouquet’s.",
+   "line": "Pressé, énergique, impossible à arrêter. Ce qu’il a changé dans ta vie : l’âge légal de départ à la retraite porté à 62 ans, en 2010.",
+   "avatar": "/img/quiz/president-sarkozy.webp"
+  },
+  {
+   "key": "hollande",
+   "name": "François Hollande",
+   "headline": "Tu arrives partout en scooter.",
+   "line": "Sympa, normal, toujours une blague en réserve. Ce qu’il a changé dans ta vie : depuis la loi du 17 mai 2013, deux personnes de même sexe peuvent se marier.",
+   "avatar": "/img/quiz/president-hollande.webp"
+  },
+  {
+   "key": "macron",
+   "name": "Emmanuel Macron",
+   "headline": "Tu traverses la rue et tu trouves un job.",
+   "line": "Tout et son contraire, mais toujours en marche. Ce qu’il a changé dans ta vie : plus de taxe d’habitation sur ta résidence principale depuis 2023.",
+   "avatar": "/img/quiz/president-macron.webp"
+  }
+ ],
+ "questions": [
+  {
+   "q": "Ton vendredi soir idéal ?",
+   "answers": [
+    {
+     "label": "Un discours au balcon devant la foule",
+     "outcome": "de-gaulle"
+    },
+    {
+     "label": "Un dîner chez des inconnus, accordéon compris",
+     "outcome": "giscard"
+    },
+    {
+     "label": "Une brasserie chic sur les Champs-Élysées",
+     "outcome": "sarkozy"
+    },
+    {
+     "label": "Une virée en scooter, casque bien vissé",
+     "outcome": "hollande"
+    }
+   ]
+  },
+  {
+   "q": "Au bureau, tu es celui ou celle qui…",
+   "answers": [
+    {
+     "label": "accroche de l’art abstrait au-dessus de la photocopieuse",
+     "outcome": "pompidou"
+    },
+    {
+     "label": "ne dit jamais tout, mais sait tout",
+     "outcome": "mitterrand"
+    },
+    {
+     "label": "serre la main de tout le monde, même du livreur",
+     "outcome": "chirac"
+    },
+    {
+     "label": "propose une réforme du planning à chaque réunion",
+     "outcome": "macron"
+    }
+   ]
+  },
+  {
+   "q": "Ta devise ?",
+   "answers": [
+    {
+     "label": "Ce sera oui ou ce sera non",
+     "outcome": "de-gaulle"
+    },
+    {
+     "label": "Laisser du temps au temps",
+     "outcome": "mitterrand"
+    },
+    {
+     "label": "Travailler plus pour gagner plus",
+     "outcome": "sarkozy"
+    },
+    {
+     "label": "Et en même temps…",
+     "outcome": "macron"
+    }
+   ]
+  },
+  {
+   "q": "En vacances, tu…",
+   "answers": [
+    {
+     "label": "fais le tour des fermes et goûtes tous les fromages",
+     "outcome": "chirac"
+    },
+    {
+     "label": "emmènes ton accordéon",
+     "outcome": "giscard"
+    },
+    {
+     "label": "pars en scooter sans prévenir personne",
+     "outcome": "hollande"
+    },
+    {
+     "label": "visites trois musées d’art moderne par jour",
+     "outcome": "pompidou"
+    }
+   ]
+  },
+  {
+   "q": "Ton repas parfait ?",
+   "answers": [
+    {
+     "label": "Une raclette entre amis, accordéon en fond",
+     "outcome": "giscard"
+    },
+    {
+     "label": "Une tête de veau, sans hésiter",
+     "outcome": "chirac"
+    },
+    {
+     "label": "Vite fait : il y a mieux à faire",
+     "outcome": "sarkozy"
+    },
+    {
+     "label": "Un brunch où l’on refait le monde jusqu’à midi",
+     "outcome": "macron"
+    }
+   ]
+  },
+  {
+   "q": "Face à une crise, tu…",
+   "answers": [
+    {
+     "label": "demandes au peuple de choisir : moi ou le chaos",
+     "outcome": "de-gaulle"
+    },
+    {
+     "label": "attends que ça passe, tranquillement",
+     "outcome": "mitterrand"
+    },
+    {
+     "label": "fais une blague pour détendre l’atmosphère",
+     "outcome": "hollande"
+    },
+    {
+     "label": "lances un grand débat national",
+     "outcome": "macron"
+    }
+   ]
+  },
+  {
+   "q": "Ta tenue fétiche ?",
+   "answers": [
+    {
+     "label": "Un uniforme, toujours impeccable",
+     "outcome": "de-gaulle"
+    },
+    {
+     "label": "Un pull, très décontracté",
+     "outcome": "giscard"
+    },
+    {
+     "label": "Des lunettes de soleil et une montre qui brille",
+     "outcome": "sarkozy"
+    },
+    {
+     "label": "Un costume trois-pièces et un recueil de poèmes",
+     "outcome": "pompidou"
+    }
+   ]
+  },
+  {
+   "q": "Ton héritage, ce serait…",
+   "answers": [
+    {
+     "label": "un musée qui porte ton nom",
+     "outcome": "pompidou"
+    },
+    {
+     "label": "une pyramide en verre au milieu d’un palais",
+     "outcome": "mitterrand"
+    },
+    {
+     "label": "des souvenirs au Salon de l’agriculture",
+     "outcome": "chirac"
+    },
+    {
+     "label": "une loi qui change la vie de milliers de couples",
+     "outcome": "hollande"
+    }
+   ]
+  }
+ ],
+ "fact": {
+  "cliche": "« Les présidents passent, ma vie ne change pas. »",
+  "text": "Ton vote à 18 ans (Giscard), ton SMIC (Pompidou, 1970), ta cinquième semaine de congés (Mitterrand, 1982), la fin du service militaire obligatoire (Chirac, 1997), l’âge légal de la retraite (Sarkozy, 2010), le mariage pour tous (Hollande, 2013), la fin de la taxe d’habitation (Macron, 2023) : chaque président a laissé une trace dans ton quotidien.",
+  "sources": [
+   {
+    "title": "Charles de Gaulle",
+    "publisher": "Élysée",
+    "url": "https://www.elysee.fr/charles-de-gaulle",
+    "passage": "Référendum sur la réforme constitutionnelle, qui valide l’élection du chef d’Etat au suffrage universel."
+   },
+   {
+    "title": "1950-1970 : du SMIG au SMIC",
+    "publisher": "INA",
+    "url": "https://www.ina.fr/ina-eclaire-actu/1950-1970-du-smig-au-smic",
+    "passage": "Par la loi du 2 janvier 1970, le SMIG laisse la place au Salaire minimum interprofessionnel de croissance (SMIC)."
+   },
+   {
+    "title": "Valéry Giscard d’Estaing",
+    "publisher": "Élysée",
+    "url": "https://www.elysee.fr/valery-giscard-d-estaing",
+    "passage": "Son mandat est marqué notamment par l’abaissement du droit de vote à 18 ans, la dépénalisation de l’avortement, l’instauration du divorce par consentement mutuel"
+   },
+   {
+    "title": "L’instauration des 39 heures et de la 5e semaine de congés payés",
+    "publisher": "INA",
+    "url": "https://fresques.ina.fr/jalons/fiche-media/InaEdu01177/l-instauration-des-39-heures-et-de-la-5e-semaine-de-conges-payes.html",
+    "passage": "Une ordonnance prise en Conseil des ministres le 13 janvier 1982 instaure les 39 heures hebdomadaires de travail, une cinquième semaine de congés payés"
+   },
+   {
+    "title": "Service militaire : Jacques Chirac et la fin de la conscription",
+    "publisher": "INA",
+    "url": "https://www.ina.fr/ina-eclaire-actu/service-militaire-jacques-chirac-armee-guerre-economie-france",
+    "passage": "Le 28 octobre 1997, Jacques Chirac promulgue la loi actant de la « suspension » du service militaire."
+   },
+   {
+    "title": "Retraite à 62 ans : la réforme Sarkozy-Woerth de 2010",
+    "publisher": "INA",
+    "url": "https://www.ina.fr/ina-eclaire-actu/retraite-62-ans-reforme-sarkozy-woerth-2010",
+    "passage": "Et en novembre 2010, la loi est promulguée. L’âge légal de départ à la retraite passe à 62 ans."
+   },
+   {
+    "title": "Mariage pour tous : loi n° 2013-404 du 17 mai 2013",
+    "publisher": "Sénat",
+    "url": "https://www.senat.fr/dossier-legislatif/pjl12-349.html"
+   },
+   {
+    "title": "Taxe d’habitation sur les résidences principales",
+    "publisher": "impots.gouv.fr",
+    "url": "https://www.impots.gouv.fr/particulier/questions/je-suis-non-imposable-limpot-sur-le-revenu-vais-je-payer-une-taxe-dhabitation",
+    "passage": "La taxe d’habitation sur les résidences principales est supprimée depuis le 1er janvier 2023."
+   }
+  ]
+ }
+}
