@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((m) => mediaLogoOf(m.slug))
     .filter((x): x is string => !!x)
     .map((x) => absolute(x))
-  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/studio', '/newsletter', '/medias', '/medias/libres', '/urne', '/quiz', '/boutique', '/confidentialite', '/mentions-legales']
+  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/studio', '/newsletter', '/medias', '/medias/libres', '/fake-news', '/urne', '/quiz', '/boutique', '/confidentialite', '/mentions-legales']
   return [
     ...statics.map((p) => ({
       url: absolute(p),

@@ -1,0 +1,79 @@
+# Robot des intox (scripts/intox.ts) : relève deux fois par jour les fausses informations démontées par les
+# cellules de fact-checking et met à jour la page /fake-news. Petit modèle, dépense plafonnée par passage
+# (INTOX_BUDGET_USD) et par mois (MONTHLY_BUDGET_USD, commun aux robots).
+name: Intox
+
+on:
+  schedule:
+    - cron: '23 7,18 * * *'
+  workflow_dispatch:
+    inputs:
+      window:
+        description: 'Fenêtre de collecte en heures (720 pour un premier remplissage sur 30 jours)'
+        default: '72'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intox
+  cancel-in-progress: false
+
+jobs:
+  intox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - id: mois
+        run: echo "m=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/veille
+          key: budget-veille-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-veille-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/positions
+          key: budget-positions-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-positions-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/medias
+          key: budget-medias-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-medias-${{ steps.mois.outputs.m }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: .budget/intox
+          key: budget-intox-${{ steps.mois.outputs.m }}-aucun
+          restore-keys: budget-intox-${{ steps.mois.outputs.m }}-
+      - name: Relever les intox démontées
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUDGET_LEDGER_DIR: .budget/intox
+          MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD }}
+          INTOX_MODEL: ${{ vars.INTOX_MODEL }}
+          INTOX_BUDGET_USD: ${{ vars.INTOX_BUDGET_USD }}
+        run: npx tsx scripts/intox.ts --window=${{ github.event.inputs.window || 72 }}
+      - name: Valider
+        env:
+          ANONYMITY_BLOCKLIST: ${{ secrets.ANONYMITY_BLOCKLIST }}
+        run: npx tsx scripts/validate-content.ts
+      - name: Publier
+        run: |
+          git config user.name "intox-ca-vote[bot]"
+          git config user.email "intox@users.noreply.github.com"
+          git add content/intox
+          git commit -m "intox : relevé des fausses informations démontées ($(date -u +%Y%m%d-%H%M))" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }}
+      - name: Inscrire la dépense du passage
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .budget/intox
+          key: budget-intox-${{ steps.mois.outputs.m }}-${{ github.run_id }}-${{ github.run_attempt }}

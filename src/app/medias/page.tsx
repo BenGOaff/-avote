@@ -91,7 +91,7 @@ export default function MediasPage() {
             </p>
           )}
           <p className="small">
-            {t.quizLead} <Link href="/quiz/flash/teste-tes-connaissances-sur-les-medias">{t.quizKnow}</Link> · <Link href="/quiz/flash/quel-media-es-tu">{t.quizProfile}</Link>
+            {t.quizLead} <Link href="/quiz/flash/teste-tes-connaissances-sur-les-medias">{t.quizKnow}</Link> · <Link href="/quiz/flash/quel-media-es-tu">{t.quizProfile}</Link> · <Link href="/fake-news">{t.fakeNews}</Link>
           </p>
 
           {axis.total > 0 && (
