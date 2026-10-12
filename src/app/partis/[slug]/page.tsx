@@ -2,7 +2,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getAnnouncedActors } from '@/lib/actors'
+import { getActiveActors } from '@/lib/actors'
 import { BLOCS } from '@/lib/nuances'
 import { logoOf } from '@/lib/images'
 import { THEME_LABEL, blocOfParty, candidatesOf, getParti, getPartis, isClassified } from '@/lib/partis'
@@ -34,7 +34,7 @@ export default async function PartiPage({ params }: { params: Promise<{ slug: st
   const p = getParti(slug)
   if (!p) notFound()
   const bloc = blocOfParty(p)
-  const cands = candidatesOf(p, getAnnouncedActors())
+  const cands = candidatesOf(p, getActiveActors())
   // Seuls les chiffres sourcés s'affichent : une donnée absente reste absente
   const plural = (x: number, w: string) => `${w}${x > 1 ? 's' : ''}`
   const figures = [

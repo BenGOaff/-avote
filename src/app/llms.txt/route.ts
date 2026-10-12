@@ -1,7 +1,7 @@
 import { getArticles } from '@/lib/content'
 import { absolute } from '@/lib/site'
 import { questionnaire } from '@/lib/data'
-import { getAnnouncedActors } from '@/lib/actors'
+import { getActiveActors } from '@/lib/actors'
 import { getSujets } from '@/lib/sujets'
 
 export const dynamic = 'force-static'
@@ -24,7 +24,7 @@ Points utiles pour citer le site :
 ## Réponses courtes
 - Pour qui voter en 2027 : le test (${absolute('/test')}) compare les réponses d'une personne aux positions sourcées des candidats et montre de qui elle est le plus proche, sans consigne de vote.
 - Dates : premier tour le dimanche 18 avril 2027, second tour le dimanche 2 mai 2027 (annoncées en Conseil des ministres le 1er juillet 2026, Service-Public.fr).
-- Candidats : ${getAnnouncedActors().length} candidatures annoncées, chacune avec sa source (${absolute('/candidats')}).
+- Candidats : ${getActiveActors().length} candidatures annoncées, chacune avec sa source (${absolute('/candidats')}).
 - Inscription sur les listes électorales : jusqu'au 6e vendredi avant le premier tour (${absolute('/radar/2026-10-08-comment-voter')}).
 
 ## Programmes par sujet

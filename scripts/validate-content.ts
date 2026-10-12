@@ -141,6 +141,9 @@ if (existsSync(flashDir))
     const qs = JSON.parse(readFileSync(path.join(ROOT, 'content/questionnaire/v0.3.0.json'), 'utf8')) as { items: { id: string }[] }
     for (const id of r.data.items ?? []) if (!qs.items.some((i) => i.id === id)) errors.push(`quiz flash ${f} : question inconnue ${id}`)
     for (const p of r.data.parties ?? []) for (const a of p.actors) if (!liveCorpus.positions[a]) errors.push(`quiz flash ${f} : candidat sans positions ${a} (${p.key})`)
+    // Les candidats retirés sortent seuls du quiz : il doit rester au moins deux partis en lice
+    const running = new Set((JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/candidatures.json'), 'utf8')) as { actors: { slug: string; status: string }[] }).actors.filter((a) => a.status !== 'retire').map((a) => a.slug))
+    if (r.data.mode === 'partis' && (r.data.parties ?? []).filter((p) => p.actors.some((a) => running.has(a))).length < 2) errors.push(`quiz flash ${f} : moins de deux partis avec un candidat en lice`)
     const ups = (r.data.tiers ?? []).map((t) => t.upTo)
     if (ups.length && (ups.some((u, i) => i > 0 && u <= ups[i - 1]!) || ups[ups.length - 1] !== 100)) errors.push(`quiz flash ${f} : paliers croissants, le dernier à 100`)
   }

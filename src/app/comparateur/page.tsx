@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
-import { getAnnouncedActors } from '@/lib/actors'
+import { getActiveActors } from '@/lib/actors'
 import { liveCorpus, questionnaire } from '@/lib/data'
 import { nuanceOf } from '@/lib/nuances'
 import type { Position } from '@/lib/engine/types'
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default function ComparateurPage() {
-  const actors = getAnnouncedActors().filter((a) => a.status !== 'retire')
+  const actors = getActiveActors()
   const sources = new Map((liveCorpus.sources ?? []).map((s) => [s.id, s]))
   const positions = liveCorpus.positions as Record<string, Record<string, Position>>
   const data: CompareData = {

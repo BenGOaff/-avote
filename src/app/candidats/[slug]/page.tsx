@@ -56,6 +56,8 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
     url: absolute(`/candidats/${a.slug}`),
     inLanguage: 'fr-FR',
   }
+  // Candidature arrêtée : la source montrée est celle de l'arrêt
+  const shown = (a.status === 'retire' && a.retiredSource) || a.source
   return (
     <div className="container" style={{ paddingTop: 'var(--s6)' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
@@ -76,9 +78,9 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
       <div className="measure">
         <p className="lede">
           {a.party ? `${a.party}. ` : ''}
-          {a.status === 'retire' ? `Candidature retirée le ${formatDate(a.retiredAt ?? a.since)}.` : `Annonce le ${formatDate(a.since)}.`}{' '}
-          <a href={a.source.url} rel="noopener noreferrer nofollow" target="_blank">
-            Source : {a.source.publisher}
+          {a.status === 'retire' ? `${a.retiredReason ?? STATUS_LABEL.retire} le ${formatDate(a.retiredAt ?? a.since)}.` : `Annonce le ${formatDate(a.since)}.`}{' '}
+          <a href={shown.url} rel="noopener noreferrer nofollow" target="_blank">
+            Source : {shown.publisher}
           </a>
         </p>
         {parrainagesSource && parrainagesOf(a.slug) !== null && (

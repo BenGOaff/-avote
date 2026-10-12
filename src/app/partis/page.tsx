@@ -2,7 +2,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
-import { getAnnouncedActors } from '@/lib/actors'
+import { getActiveActors } from '@/lib/actors'
 import { BLOCS } from '@/lib/nuances'
 import { BLOC_ORDER, blocOfParty, candidatesOf, getPartis, isClassified, type Party } from '@/lib/partis'
 import { squareLogoOf } from '@/lib/images'
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function PartisPage() {
   const partis = getPartis()
-  const actors = getAnnouncedActors()
+  const actors = getActiveActors()
   const groups = [
     ...BLOC_ORDER.map((bloc) => ({ id: bloc as string, bloc, label: BLOCS.find((b) => b.id === bloc)?.label ?? bloc, list: partis.filter((p) => isClassified(p) && blocOfParty(p) === bloc) })),
     { id: 'NC', bloc: 'DIV', label: 'Non classés', list: partis.filter((p: Party) => !isClassified(p)) },

@@ -50,17 +50,9 @@
    ]
   },
   {
-   "key": "ps",
-   "name": "Parti socialiste",
-   "short": "PS",
-   "actors": [
-    "olivier-faure"
-   ]
-  },
-  {
-   "key": "place-publique",
-   "name": "Place publique",
-   "short": "Place publique",
+   "key": "ps-pp-grs",
+   "name": "Gauche sociale-démocrate (PS, Place publique, GRS)",
+   "short": "PS-PP-GRS",
    "actors": [
     "raphael-glucksmann"
    ]

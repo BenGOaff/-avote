@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAnnouncedActors, STATUS_LABEL, candidaturesCollectedAt } from '@/lib/actors'
+import { getActiveActors, getAnnouncedActors, STATUS_LABEL, candidaturesCollectedAt } from '@/lib/actors'
 import { liveCorpus } from '@/lib/data'
 import { formatDate } from '@/components/Editorial'
 import { BLOCS, nuanceOf } from '@/lib/nuances'
@@ -19,7 +19,8 @@ export const metadata: Metadata = {
 }
 
 export default function CandidatsPage() {
-  const actors = getAnnouncedActors()
+  const actors = getActiveActors()
+  const retired = getAnnouncedActors().filter((a) => a.status === 'retire')
   return (
     <div className="container" style={{ paddingTop: 'var(--s6)' }}>
       <p className="kicker">Présidentielle 2027</p>
@@ -85,6 +86,30 @@ export default function CandidatsPage() {
             )
           })}
         </ul>
+      )}
+      {retired.length > 0 && (
+        <section className="section" aria-labelledby="retires">
+          <h2 id="retires" style={{ fontSize: 'var(--h3)' }}>
+            Ne sont plus candidats
+          </h2>
+          <p className="small muted measure">Ils sortent du test, du comparateur et des quiz dès l’arrêt de leur candidature. Leur fiche reste consultable.</p>
+          <ul className="cand-retired" role="list">
+            {retired.map((a) => (
+              <li key={a.slug}>
+                <Link href={`/candidats/${a.slug}`}>{a.name}</Link> · {a.retiredReason ?? STATUS_LABEL.retire} le {formatDate(a.retiredAt ?? a.since)}
+                {a.retiredSource && (
+                  <>
+                    {' '}
+                    ·{' '}
+                    <a className="muted" href={a.retiredSource.url} rel="noopener noreferrer nofollow" target="_blank">
+                      Source : {a.retiredSource.publisher}
+                    </a>
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
       {actors.some((a) => portraitOf(a.slug)) && <p className="small muted">Portraits : illustrations générées par IA.</p>}
       <p className="small" style={{ marginTop: 'var(--s4)' }}>

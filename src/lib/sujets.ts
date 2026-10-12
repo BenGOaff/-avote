@@ -4,7 +4,7 @@ import 'server-only'
  * avec la citation et la source de chaque position. Tout vient du corpus en ligne (content/corpus/live.json) :
  * une nouvelle position codée par la veille apparaît au déploiement suivant, rien n'est écrit à la main.
  */
-import { getAnnouncedActors } from './actors'
+import { getActiveActors } from './actors'
 import { positionLabel } from './answers'
 import { itemsByTheme, liveCorpus, questionnaire } from './data'
 import type { Item, Position, Theme } from './engine/types'
@@ -68,7 +68,7 @@ const valuesOf = (p: Position): number[] => ('set' in p ? [...p.set] : 'value' i
 const sideOf = (v: number[]): Side => (v.every((x) => x > 0) ? 'pour' : v.every((x) => x < 0) ? 'contre' : 'entre')
 
 export function getSujets(): Sujet[] {
-  const actors = getAnnouncedActors().filter((a) => a.status !== 'retire')
+  const actors = getActiveActors()
   const sources = new Map((liveCorpus.sources ?? []).map((s) => [s.id, s]))
   const refreshed = (liveCorpus as { refreshedAt?: Record<string, string> }).refreshedAt ?? {}
   return itemsByTheme(questionnaire).map(({ theme, items }) => {
