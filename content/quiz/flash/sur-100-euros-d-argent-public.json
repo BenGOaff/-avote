@@ -1,0 +1,270 @@
+{
+ "slug": "sur-100-euros-d-argent-public",
+ "mode": "connaissances",
+ "order": 14,
+ "title": "Sur 100 € d’argent public, devines-tu où ils partent ?",
+ "tribe": "bonnes réponses",
+ "lede": "Retraites, hôpital, école, armée, dette : la vraie répartition de l’argent public. Tu vas enfin savoir ce que deviennent tes impôts.",
+ "questions": [
+  {
+   "q": "Quel poste avale le plus d’argent public ?",
+   "answers": [
+    {
+     "label": "L’armée",
+     "correct": false
+    },
+    {
+     "label": "L’école",
+     "correct": false
+    },
+    {
+     "label": "Les retraites et la protection sociale",
+     "correct": true
+    },
+    {
+     "label": "Les salaires des élus",
+     "correct": false
+    }
+   ],
+   "explain": "La protection sociale hors santé, retraites comprises : 693 milliards d’euros en 2024, 41 % de toute la dépense publique."
+  },
+  {
+   "q": "Sur 100 €, combien pour les retraites et la protection sociale (hors santé) ?",
+   "answers": [
+    {
+     "label": "12,40 €",
+     "correct": false
+    },
+    {
+     "label": "25,10 €",
+     "correct": false
+    },
+    {
+     "label": "41,40 €",
+     "correct": true
+    },
+    {
+     "label": "70,20 €",
+     "correct": false
+    }
+   ],
+   "explain": "41,40 €. C’est de loin le premier poste de la dépense publique."
+  },
+  {
+   "q": "Combien pour la santé ?",
+   "answers": [
+    {
+     "label": "4,20 €",
+     "correct": false
+    },
+    {
+     "label": "15,60 €",
+     "correct": true
+    },
+    {
+     "label": "30,00 €",
+     "correct": false
+    },
+    {
+     "label": "45,50 €",
+     "correct": false
+    }
+   ],
+   "explain": "15,60 € : 261 milliards d’euros en 2024."
+  },
+  {
+   "q": "Combien pour l’école et l’enseignement ?",
+   "answers": [
+    {
+     "label": "3,10 €",
+     "correct": false
+    },
+    {
+     "label": "8,90 €",
+     "correct": true
+    },
+    {
+     "label": "20,00 €",
+     "correct": false
+    },
+    {
+     "label": "35,00 €",
+     "correct": false
+    }
+   ],
+   "explain": "8,90 € : 149 milliards d’euros en 2024."
+  },
+  {
+   "q": "Combien pour l’armée ?",
+   "answers": [
+    {
+     "label": "3,20 €",
+     "correct": true
+    },
+    {
+     "label": "10,50 €",
+     "correct": false
+    },
+    {
+     "label": "18,00 €",
+     "correct": false
+    },
+    {
+     "label": "25,00 €",
+     "correct": false
+    }
+   ],
+   "explain": "3,20 € : 54 milliards d’euros pour la défense en 2024."
+  },
+  {
+   "q": "Combien pour payer les intérêts de la dette ?",
+   "answers": [
+    {
+     "label": "0,50 €",
+     "correct": false
+    },
+    {
+     "label": "3,60 €",
+     "correct": true
+    },
+    {
+     "label": "15,00 €",
+     "correct": false
+    },
+    {
+     "label": "30,00 €",
+     "correct": false
+    }
+   ],
+   "explain": "3,60 € : 60 milliards d’euros d’intérêts en 2024. Plus que l’armée."
+  },
+  {
+   "q": "Combien pour la police, la gendarmerie et la justice ?",
+   "answers": [
+    {
+     "label": "3,10 €",
+     "correct": true
+    },
+    {
+     "label": "8,00 €",
+     "correct": false
+    },
+    {
+     "label": "15,00 €",
+     "correct": false
+    },
+    {
+     "label": "22,00 €",
+     "correct": false
+    }
+   ],
+   "explain": "3,10 € : 52 milliards d’euros pour l’ordre et la sécurité publics."
+  },
+  {
+   "q": "Combien pour l’environnement ?",
+   "answers": [
+    {
+     "label": "1,80 €",
+     "correct": true
+    },
+    {
+     "label": "6,00 €",
+     "correct": false
+    },
+    {
+     "label": "12,00 €",
+     "correct": false
+    },
+    {
+     "label": "20,00 €",
+     "correct": false
+    }
+   ],
+   "explain": "1,80 € : 30 milliards d’euros. Moins que la culture et les loisirs (2,60 €)."
+  },
+  {
+   "q": "Combien pour le logement et les équipements collectifs ?",
+   "answers": [
+    {
+     "label": "0,30 €",
+     "correct": false
+    },
+    {
+     "label": "2,50 €",
+     "correct": true
+    },
+    {
+     "label": "9,00 €",
+     "correct": false
+    },
+    {
+     "label": "16,00 €",
+     "correct": false
+    }
+   ],
+   "explain": "2,50 € : 42 milliards d’euros."
+  },
+  {
+   "q": "En 2024, la dépense publique représente quelle part de la richesse produite (PIB) ?",
+   "answers": [
+    {
+     "label": "25 %",
+     "correct": false
+    },
+    {
+     "label": "40 %",
+     "correct": false
+    },
+    {
+     "label": "57 %",
+     "correct": true
+    },
+    {
+     "label": "75 %",
+     "correct": false
+    }
+   ],
+   "explain": "57 % du PIB : 1 672 milliards d’euros, en hausse de 64 milliards sur un an."
+  }
+ ],
+ "tiers": [
+  {
+   "upTo": 39,
+   "headline": "Tes impôts partent… quelque part.",
+   "line": "{c} sur {n}. Rassure-toi, l’État ne sait pas toujours non plus. Révise avant ta prochaine déclaration."
+  },
+  {
+   "upTo": 69,
+   "headline": "Tu suis l’argent, de loin.",
+   "line": "{c} sur {n}. Tu as compris où ça part, pas encore combien."
+  },
+  {
+   "upTo": 99,
+   "headline": "Ministre du Budget en puissance.",
+   "line": "{c} sur {n}. Tu pourrais défendre le budget à l’Assemblée. Courage pour le 49.3."
+  },
+  {
+   "upTo": 100,
+   "headline": "Sans faute : Bercy, c’est toi.",
+   "line": "Tu sais où part chaque euro. Ton tonton n’a plus aucune chance au dîner."
+  }
+ ],
+ "fact": {
+  "cliche": "« L’argent public part dans les salaires des politiques. »",
+  "text": "Sur 100 € de dépense publique en 2024, 41,40 € vont à la protection sociale et aux retraites, 15,60 € à la santé, 8,90 € à l’école. L’Élysée, l’Assemblée et le Sénat réunis, environ 1,08 milliard d’euros par an, pèsent moins de 7 centimes. Montants pour 100 € calculés par Ça vote ? à partir des chiffres de l’Insee.",
+  "sources": [
+   {
+    "title": "Les dépenses publiques par fonction en 2024 (Insee Première n° 2093)",
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/8735252",
+    "date": "2026-02-05",
+    "passage": "les dépenses publiques sont en hausse de 4,0 % (+64 Md€) en valeur et s’élèvent à 1 672 Md€, soit 57,0 % du PIB"
+   },
+   {
+    "title": "Avis sur la mission « Pouvoirs publics » (projet de loi de finances pour 2026)",
+    "publisher": "Sénat",
+    "url": "https://www.senat.fr/rap/a25-145-10/a25-145-10_mono.html"
+   }
+  ]
+ }
+}
