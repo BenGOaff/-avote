@@ -1,0 +1,45 @@
+{
+  "_note": "Aperçus affichés sur /boutique : uniquement des designs déjà en ligne sur la boutique. Image : public/img/boutique/<id>.webp, tirée de docs/boutique/impression/clair.",
+  "apercus": [
+    {
+      "id": "cafe",
+      "alt": "Pas de politique avant le café."
+    },
+    {
+      "id": "vaisselle",
+      "alt": "Le premier qui parle politique fait la vaisselle."
+    },
+    {
+      "id": "tonton-rn",
+      "alt": "Tonton vote RN. Noël va être long."
+    },
+    {
+      "id": "tonton-lfi",
+      "alt": "Tonton vote LFI. Noël aussi."
+    },
+    {
+      "id": "chat-elle-gauche",
+      "alt": "Elle vote à gauche. Je vote à droite. Le chat s’abstient."
+    },
+    {
+      "id": "lit",
+      "alt": "Je couche avec l’opposition."
+    },
+    {
+      "id": "gauchiasse",
+      "alt": "Gauchiasse. Et alors ?"
+    },
+    {
+      "id": "droitard",
+      "alt": "Droitard. Et alors ?"
+    },
+    {
+      "id": "centriste",
+      "alt": "Centriste. Des ennemis partout."
+    },
+    {
+      "id": "vote-blanc",
+      "alt": "Vote blanc. Mon avis, non."
+    }
+  ]
+}

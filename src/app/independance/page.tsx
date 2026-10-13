@@ -20,8 +20,9 @@ export default function IndependencePage() {
         </p>
         <h2 style={{ fontSize: 'var(--h3)' }}>D’où vient l’argent</h2>
         <p>
-          Le site est financé par les dons de ses lecteurs (<DonateLink label="faire un don" />), et le sera aussi par la vente d’objets et de visuels dans la{' '}
-          <Link href="/boutique">boutique</Link>, pas encore ouverte. Pas de publicité ciblée, pas de vente de données, pas de commission liée à un candidat.
+          Le site est financé par les dons de ses lecteurs (<DonateLink label="faire un don" />), par une commission sur les objets vendus dans la{' '}
+          <Link href="/boutique">boutique</Link> (versée par Spreadshirt) et par les liens affiliés vers les <Link href="/livres">livres</Link> (versés par
+          Amazon). Pas de publicité ciblée, pas de vente de données, pas d’argent venu d’un candidat ou d’un parti.
         </p>
         <p>
           Le site est soutenu par{' '}

@@ -1,45 +1,68 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import boutique from '@content/boutique.json'
 import { PageHeader } from '@/components/PageHeader'
-import { NewsletterForm } from '@/components/NewsletterForm'
+import { UI_COPY } from '@/lib/copy'
 import { LEGAL } from '@/lib/legal'
 
 const shop = LEGAL.shop
+const t = UI_COPY.boutique
+const apercus = (boutique as { apercus: { id: string; alt: string }[] }).apercus
 
 export const metadata: Metadata = {
   title: 'Boutique',
-  description: 'Tee-shirts, mugs, badges et thèmes de téléphone Ça vote ?. Ouverture prochaine.',
+  description: 'Tee-shirts, sweats, mugs et sacs de la présidentielle 2027 : des phrases pour chaque camp, et pour ceux qui hésitent. Vendus et livrés par Spreadshirt.',
   alternates: { canonical: '/boutique' },
 }
 
-// Module « non activé » (cahier §17, §28) : aucun prix, aucun paiement, aucun produit fictif.
 export default function BoutiquePage() {
+  if (!shop.open)
+    return (
+      <div className="container">
+        <PageHeader kicker={t.kicker} title="Pas encore ouverte." lede="Rien n’est en vente pour l’instant." />
+      </div>
+    )
   return (
     <div className="container">
-      <PageHeader kicker="Boutique" title="Pas encore ouverte." lede="Des tee-shirts, des mugs, des badges et des thèmes pour téléphone sont en préparation. Rien n’est en vente pour l’instant." />
+      <PageHeader kicker={t.kicker} title={t.title} lede={t.lede} />
+      <div className="measure stack">
+        <p>
+          <a className="btn btn--highlight" href={shop.url} rel="noopener">
+            {t.cta}
+          </a>
+        </p>
+        <p>{t.daily}</p>
+      </div>
+
+      <section className="section" aria-labelledby="apercus">
+        <h2 id="apercus" style={{ fontSize: 'var(--h3)' }}>
+          {t.previewTitle}
+        </h2>
+        <p className="small muted">{t.previewNote}</p>
+        <ul className="shop-grid">
+          {apercus.map((a) => (
+            <li key={a.id}>
+              <a href={shop.url} rel="noopener">
+                <img src={`/img/boutique/${a.id}.webp`} alt={a.alt} width={640} height={640} loading="lazy" />
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p className="small">{t.variants}</p>
+      </section>
+
       <div className="measure stack">
         <div className="card card--flat">
-          <h2 style={{ fontSize: 'var(--h3)' }}>Ce qui ne changera pas</h2>
+          <h2 style={{ fontSize: 'var(--h3)' }}>{t.rulesTitle}</h2>
           <ul style={{ margin: 0, paddingLeft: '1.2em' }}>
-            <li>Le test, les sources et la méthode restent gratuits.</li>
-            <li>Un achat n’a aucun effet sur les résultats ni sur l’ordre des candidats.</li>
-            <li>La boutique ne reçoit jamais tes réponses au test.</li>
-            <li>Si tu personnalises un objet, tu verras exactement ce qui part chez le fabricant avant de valider.</li>
-            <li>
-              Vendu, fabriqué et livré par {shop.maker}, sur sa plateforme {shop.name} ; le site touche une commission par objet.{' '}
-              <Link href="/mentions-legales#boutique">Qui vend quoi</Link> · <Link href="/confidentialite#boutique">Tes données</Link>
-            </li>
+            {t.rules.map((r) => (
+              <li key={r}>{r}</li>
+            ))}
           </ul>
-        </div>
-        {shop.open && (
-          <p>
-            <a className="btn btn--highlight" href={shop.url} rel="noopener">
-              Ouvrir la boutique
-            </a>
+          <p className="small" style={{ marginTop: 'var(--s3)' }}>
+            <Link href="/mentions-legales#boutique">{t.who}</Link> · <Link href="/confidentialite#boutique">{t.data}</Link>
           </p>
-        )}
-        <h2 style={{ fontSize: 'var(--h3)' }}>Être prévenu à l’ouverture</h2>
-        <NewsletterForm />
+        </div>
       </div>
     </div>
   )
