@@ -80,8 +80,13 @@ export function TestFlow() {
     return () => setAudiencePaused(false)
   }, [inTest])
 
-  // Le focus suit le changement d'écran (lecteurs d'écran, clavier)
+  // Le focus suit le changement d'écran (lecteurs d'écran, clavier), pas l'arrivée sur la page
+  const firstStep = useRef(true)
   useEffect(() => {
+    if (firstStep.current) {
+      firstStep.current = false
+      return
+    }
     headingRef.current?.focus()
   }, [step])
 
@@ -111,7 +116,10 @@ export function TestFlow() {
   const answeredCount = Object.keys(answers).length
   const redLines = new Set(state?.essentials ?? [])
 
-  if (!loaded) return <p aria-live="polite">Chargement…</p>
+  // Avant la lecture de l'appareil, l'introduction d'un premier test : le titre et le texte sont dans le HTML
+  // servi (moteurs de recherche, robots d'IA qui n'exécutent pas le JavaScript), sans écart à l'hydratation.
+  if (!loaded)
+    return <Intro answeredCount={0} fresh={0} headingRef={headingRef} onResume={() => {}} onNew={(wantQuick) => setStep({ kind: 'storage', quick: wantQuick })} />
 
   const begin = (persist: 'session' | 'local', restart: boolean, wantQuick = false) => {
     const base = restart || !state ? { ...emptyState(set.version, persist), quick: wantQuick, orderSeed: newSeed() } : { ...state, persist, quick: false }

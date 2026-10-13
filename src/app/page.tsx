@@ -96,7 +96,7 @@ export default function HomePage() {
           <div>
             <ul className="feed">
               {briefs.map((b) => (
-                <BriefItem key={b.slug} b={b} />
+                <BriefItem key={b.slug} b={b} withDay />
               ))}
             </ul>
           </div>

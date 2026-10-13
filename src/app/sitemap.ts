@@ -19,7 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...statics.map((p) => ({
       url: absolute(p),
-      lastModified: now,
+      // Une date seulement là où le contenu change vraiment à chaque mise en ligne : une date fausse fait ignorer les vraies
+      ...(p === '/' || p === '/radar' ? { lastModified: now } : {}),
       changeFrequency: (p === '/radar' || p === '/' ? 'hourly' : 'weekly') as 'hourly' | 'weekly',
       priority: p === '/' ? 1 : p === '/test' ? 0.9 : 0.7,
       // Logos des médias : la page « Qui possède ton info » ressort aussi en recherche d'images
@@ -27,8 +28,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...getAnnouncedActors().map((a) => ({ url: absolute(`/candidats/${a.slug}`), lastModified: now, changeFrequency: 'daily' as const, priority: 0.8 })),
     ...getSujets().map((s) => ({ url: absolute(`/programmes/${s.slug}`), lastModified: s.updatedAt ? new Date(s.updatedAt) : now, changeFrequency: 'daily' as const, priority: 0.9, images: [absolute(`/programmes/${s.slug}/carte.png`)] })),
-    ...getFlashQuizzes().map((q) => ({ url: absolute(`/quiz/flash/${q.slug}`), lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7 })),
-    ...getPartis().map((p) => ({ url: absolute(`/partis/${p.slug}`), lastModified: now, changeFrequency: 'weekly' as const, priority: 0.7 })),
+    ...getFlashQuizzes().map((q) => ({ url: absolute(`/quiz/flash/${q.slug}`), changeFrequency: 'monthly' as const, priority: 0.7 })),
+    ...getPartis().map((p) => ({ url: absolute(`/partis/${p.slug}`), changeFrequency: 'weekly' as const, priority: 0.7 })),
     ...getArticles().map((a) => ({ url: absolute(`/radar/${a.slug}`), lastModified: new Date(a.updated ?? a.date), changeFrequency: 'monthly' as const, priority: 0.8 })),
   ]
 }

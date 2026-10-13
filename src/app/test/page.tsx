@@ -4,7 +4,7 @@ import { SupportLine } from '@/components/Support'
 import { questionnaire } from '@/lib/data'
 
 export const metadata: Metadata = {
-  title: 'Le test',
+  title: 'Test présidentielle 2027 : pour qui voter ?',
   description: `${questionnaire.items.length} questions sur ce que tu veux pour le pays, du pouvoir d’achat aux animaux, avec une explication pour chacune. Le calcul se fait sur ton appareil.`,
   alternates: { canonical: '/test' },
 }
