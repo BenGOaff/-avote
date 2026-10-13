@@ -2,44 +2,44 @@
   "_note": "Aperçus affichés sur /boutique : uniquement des designs déjà en ligne sur la boutique. Image : public/img/boutique/<id>.webp, tirée de docs/boutique/impression/clair.",
   "apercus": [
     {
-      "id": "cafe",
-      "alt": "Pas de politique avant le café."
+      "id": "insoumise-belle-mere",
+      "alt": "Insoumise. Sauf à ma belle-mère."
     },
     {
-      "id": "centriste",
-      "alt": "Centriste. Des ennemis partout."
+      "id": "insoumise-mere",
+      "alt": "Insoumise. Sauf à ma mère."
     },
     {
-      "id": "chat-elle-gauche",
-      "alt": "Elle vote à gauche. Je vote à droite. Le chat s’abstient."
+      "id": "insoumis-belle-mere",
+      "alt": "Insoumis. Sauf à ma belle-mère."
     },
     {
-      "id": "chat-elle-droite",
-      "alt": "Elle vote à droite. Je vote à gauche. Le chat s’abstient."
+      "id": "insoumise-chat",
+      "alt": "Insoumise. Sauf à mon chat."
     },
     {
-      "id": "49-3",
-      "alt": "49.3. Et mon avis ?"
+      "id": "insoumise-mari",
+      "alt": "Insoumise. Sauf à mon mari."
     },
     {
-      "id": "1789",
-      "alt": "1789. On en reparle ?"
+      "id": "insoumise-patron",
+      "alt": "Insoumise. Sauf à mon patron."
     },
     {
-      "id": "1871",
-      "alt": "1871. On se souvient."
+      "id": "insoumise-fils",
+      "alt": "Insoumise. Sauf à mon fils."
     },
     {
-      "id": "1936",
-      "alt": "1936. Pas un cadeau."
+      "id": "insoumise-fille",
+      "alt": "Insoumise. Sauf à ma fille."
     },
     {
-      "id": "1968",
-      "alt": "1968. Sous les pavés, la plage."
+      "id": "subir",
+      "alt": "Je refuse de subir. Mais qui choisir ?"
     },
     {
-      "id": "1er-mai",
-      "alt": "1er mai. Pas que le muguet."
+      "id": "velo",
+      "alt": "Je viens à vélo. Avec mes convictions."
     }
   ]
 }
