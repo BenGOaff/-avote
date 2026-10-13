@@ -4,7 +4,8 @@
  * et envoie. Choix assumé de la rédaction : le compte peut être restreint par X.
  *
  * Seules les publications du jour (24 h) sont reprises, chacune une fois (content/social/_x.json).
- * Le visuel doit être en ligne : on attend que /social/<id>/carte.png réponde, 10 minutes au plus.
+ * Le visuel doit être en ligne : on attend que /social/<id>/carte.png réponde, 10 minutes au plus. Sinon (déploiement
+ * lent la nuit), la publication est simplement remise au passage suivant, sans faire échouer celui-ci.
  * En cas d'échec, une capture d'écran est laissée dans .x-debug/ pour comprendre ce qui a coincé.
  *
  * Usage : X_AUTH_TOKEN=… npx tsx scripts/social-x.ts [--dry]
@@ -37,6 +38,8 @@ const due: SocialPost[] = readdirSync(DIR)
 const link = (p: SocialPost) => `${SITE}/social/${p.id}?utm_source=x&utm_medium=social&utm_campaign=${p.kind}`
 const text = (p: SocialPost) => `${p.text.x}\n\n${link(p)}`
 
+class NotOnlineYet extends Error {}
+
 async function image(p: SocialPost): Promise<Buffer> {
   const url = `${SITE}/social/${p.id}/carte.png`
   for (let i = 0; i < 20; i++) {
@@ -44,7 +47,7 @@ async function image(p: SocialPost): Promise<Buffer> {
     if (res?.ok) return Buffer.from(await res.arrayBuffer())
     await new Promise((r) => setTimeout(r, 30_000))
   }
-  throw new Error(`visuel pas en ligne après 10 minutes : ${url}`)
+  throw new NotOnlineYet(`visuel pas en ligne après 10 minutes : ${url}`)
 }
 
 async function main() {
@@ -98,6 +101,10 @@ async function main() {
         console.log(`X : publié ${p.id}${tweetId ? ` (https://x.com/cavote_fr/status/${tweetId})` : ''}`)
         await page.waitForTimeout(20_000 + Math.random() * 20_000)
       } catch (e) {
+        if (e instanceof NotOnlineYet) {
+          console.log(`X : ${p.id} remis au prochain passage (${e.message})`)
+          continue
+        }
         failed++
         // Envoi parti sans confirmation : on ne republie pas, mieux vaut un post manquant qu'un doublon
         if (clicked) {
