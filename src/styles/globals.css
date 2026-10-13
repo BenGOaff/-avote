@@ -4951,3 +4951,14 @@ details.disclosure > div {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
+
+/* ---------- Résultats : image à partager ---------- */
+.share-result__preview {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: var(--s4) 0;
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+}

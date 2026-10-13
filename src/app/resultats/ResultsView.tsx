@@ -14,6 +14,7 @@ import { VERDICT_QUIP, resultQuip } from '@/lib/humor'
 import { Portrait } from '@/components/Portrait'
 import { fmt, fmtPct } from '@/components/ScoreBar'
 import { NewsletterForm } from '@/components/NewsletterForm'
+import { ResultShare } from './ResultShare'
 import { ThemeIcon } from '@/components/ThemeIcon'
 import { NuanceTag } from '@/components/Nuance'
 import { nuanceOf } from '@/lib/nuances'
@@ -142,6 +143,9 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
               </p>
             </div>
           ))}
+
+        {/* Partage du résultat : seulement un vrai classement, jamais les candidats fictifs */}
+        {ranking && ranking.ranked && !demo && <ResultShare entries={ranking.entries.slice(0, ranking.rankedCount)} quick={!!state.quick} />}
 
         {ranking && (
           <>

@@ -31,7 +31,7 @@ export const UI_COPY = {
   home: {
     title: 'Trouve le candidat le plus proche de tes idées',
     lede: 'Nous avons le droit de voter et le devoir de le faire en toute connaissance de cause. Fais le test pour découvrir qui est le candidat le plus proche de tes idées et de tes besoins. C’est anonyme, évidemment !',
-    promise: 'On cite, tu tranches.',
+    promise: 'On te donne les faits, tu votes en ton âme et conscience.',
     faqTitle: 'Questions fréquentes',
     faq: (n: number, candidates: number) => [
       {
@@ -142,6 +142,20 @@ export const UI_COPY = {
     go: 'C’est parti',
   },
   results: {
+    shareTitle: 'Partager mon résultat',
+    shareText: 'Tu choisis ce que tu montres. L’image est fabriquée sur ton téléphone : rien ne passe par nos serveurs.',
+    shareTop3: 'Mon top 3',
+    shareTop1: 'Seulement mon n° 1',
+    shareBtn: 'Partager l’image',
+    shareBusy: 'Préparation…',
+    shareAlt: 'Aperçu de l’image à partager',
+    shareImgKicker: 'Présidentielle 2027 · mon test',
+    shareImgTitle: (n: number) => (n > 1 ? 'Les candidats les plus proches de mes idées' : 'Le candidat le plus proche de mes idées'),
+    shareImgQuick: 'Version rapide',
+    shareImgTie: 'à égalité',
+    shareImgNote: 'Indice de proximité sur 100, sur les sujets documentés. Pas une consigne de vote.',
+    shareImgCta: 'Fais le test sur çavote.fr',
+    shareMessage: 'Mon résultat au test de Ça vote ?. Et toi, de qui es-tu le plus proche ?',
     title: 'Voilà ce qui ressort de tes réponses.',
     scoreLabel: 'Proximité sur les sujets documentés',
     notComparable: 'Pas de podium pour l’instant.',
