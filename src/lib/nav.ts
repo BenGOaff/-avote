@@ -3,6 +3,7 @@
  * Toute nouvelle page s'ajoute ici, dans sa rubrique ; rien n'est ajouté ailleurs à la main.
  */
 import { questionnaire } from './data'
+import { LEGAL } from './legal'
 
 export interface NavItem {
   href: string
@@ -85,5 +86,6 @@ export const TOP_NAV: { href: string; label: string }[] = [
   { href: '/radar', label: 'Radar' },
   { href: '/medias', label: 'Médias' },
   { href: '/quiz', label: 'Quiz' },
-  { href: '/methodologie', label: 'Méthode' },
+  // La boutique prend la place de la méthode (toujours dans le pied de page) dès que la vitrine est ouverte
+  LEGAL.shop.open ? { href: '/boutique', label: 'Boutique' } : { href: '/methodologie', label: 'Méthode' },
 ]
