@@ -1,5 +1,5 @@
 {
-  "_note": "Édition non professionnelle et anonyme (LCEN art. 6, III, 2) : l'identité de la personne qui édite le site est communiquée à l'hébergeur, jamais publiée sur le site ni dans ce dépôt. À revoir à l'ouverture de la boutique (activité commerciale = identification obligatoire).",
+  "_note": "Édition non professionnelle et anonyme (LCEN art. 6, III, 2) : l'identité de la personne qui édite le site est communiquée à l'hébergeur, jamais publiée sur le site ni dans ce dépôt. Boutique : Spreadshop, où Spreadshirt est le vendeur (contrat, paiement, livraison, retours, données des acheteurs) ; le site fournit les dessins et touche une commission. Ne jamais publier ici ni sur le site d'adresse ou d'identité de vendeur.",
   "siteName": "çavote.fr",
   "contactEmail": "citoyen@xn--avote-xra.fr",
   "controllerName": "La personne qui édite çavote.fr (identité communiquée à l’hébergeur)",
@@ -11,5 +11,11 @@
   "emailProvider": {
     "name": "Resend (Plus Five Five, Inc.)",
     "url": "https://resend.com/legal/privacy-policy"
+  },
+  "shop": {
+    "name": "Spreadshop",
+    "maker": "Spreadshirt",
+    "url": "https://ca-vote.myspreadshop.fr/",
+    "open": false
   }
 }

@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
 import { NewsletterForm } from '@/components/NewsletterForm'
+import { LEGAL } from '@/lib/legal'
+
+const shop = LEGAL.shop
 
 export const metadata: Metadata = {
   title: 'Boutique',
@@ -21,8 +25,19 @@ export default function BoutiquePage() {
             <li>Un achat n’a aucun effet sur les résultats ni sur l’ordre des candidats.</li>
             <li>La boutique ne reçoit jamais tes réponses au test.</li>
             <li>Si tu personnalises un objet, tu verras exactement ce qui part chez le fabricant avant de valider.</li>
+            <li>
+              Vendu, fabriqué et livré par {shop.maker}, sur sa plateforme {shop.name} ; le site touche une commission par objet.{' '}
+              <Link href="/mentions-legales#boutique">Qui vend quoi</Link> · <Link href="/confidentialite#boutique">Tes données</Link>
+            </li>
           </ul>
         </div>
+        {shop.open && (
+          <p>
+            <a className="btn btn--highlight" href={shop.url} rel="noopener">
+              Ouvrir la boutique
+            </a>
+          </p>
+        )}
         <h2 style={{ fontSize: 'var(--h3)' }}>Être prévenu à l’ouverture</h2>
         <NewsletterForm />
       </div>
