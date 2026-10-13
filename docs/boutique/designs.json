@@ -1,49 +1,445 @@
 {
   "_note": "Designs de la boutique. Une ligne par entrée de `lines` ; *mot* = le mot surligné en jaune. `image` = dessin de docs/boutique/visuels. `sig` : « verifie » seulement pour un fait ou une date, sinon « site ». Fichiers produits par `npx tsx scripts/boutique-impression.ts` dans docs/boutique/impression/{clair,sombre}.",
   "designs": [
-    { "id": "cafe", "image": "cafe", "lines": ["Pas de politique", "avant le *café*."], "sig": "site" },
-    { "id": "vaisselle", "image": "vaisselle", "lines": ["Le premier qui", "parle politique", "fait la *vaisselle*."], "sig": "site" },
-    { "id": "tonton-rn", "image": "noel", "lines": ["Tonton vote RN.", "Noël va être *long*."], "sig": "site" },
-    { "id": "tonton-lfi", "image": "noel", "lines": ["Tonton vote LFI.", "Noël *aussi*."], "sig": "site" },
-    { "id": "chat-elle-gauche", "image": "chat", "lines": ["Elle vote à gauche.", "Je vote à droite.", "Le chat *s’abstient*."], "sig": "site" },
-    { "id": "chat-elle-droite", "image": "chat", "lines": ["Elle vote à droite.", "Je vote à gauche.", "Le chat *s’abstient*."], "sig": "site" },
-    { "id": "chat-il-gauche", "image": "chat", "lines": ["Il vote à gauche.", "Je vote à droite.", "Le chat *s’abstient*."], "sig": "site" },
-    { "id": "chat-il-droite", "image": "chat", "lines": ["Il vote à droite.", "Je vote à gauche.", "Le chat *s’abstient*."], "sig": "site" },
-    { "id": "lit", "image": "lit", "lines": ["Je couche avec", "l’*opposition*."], "sig": "site" },
-    { "id": "vote-blanc", "image": "vote-blanc", "lines": ["Vote blanc.", "Mon avis, *non*."], "sig": "site" },
-    { "id": "centriste", "image": "niveau", "lines": ["Centriste.", "Des ennemis", "*partout*."], "sig": "site" },
-    { "id": "pasteque", "image": "pasteque", "lines": ["Pastèque.", "Verte dehors,", "rouge *dedans*."], "sig": "site" },
-    { "id": "mandat", "image": "chaise", "lines": ["Un mandat.", "Pas un *trône*."], "sig": "site" },
-    { "id": "velo", "image": "velo", "lines": ["Je viens à vélo.", "Avec mes", "*convictions*."], "sig": "site" },
-    { "id": "tract", "image": "tract", "lines": ["Je sais.", "Encore un *tract*."], "sig": "site" },
-    { "id": "1er-mai", "image": "muguet", "lines": ["1er mai.", "Pas que le *muguet*."], "sig": "verifie" },
-    { "id": "1871", "image": "cerises", "lines": ["1871.", "On se *souvient*."], "sig": "verifie" },
-    { "id": "1936", "image": "tandem", "lines": ["1936.", "Pas un *cadeau*."], "sig": "verifie" },
-    { "id": "1968", "image": "pave", "lines": ["*1968*."], "sig": "verifie" },
-    { "id": "1789", "image": "bonnet", "lines": ["1789.", "On en *reparle* ?"], "sig": "verifie" },
-    { "id": "49-3", "lines": ["49.3", "Et mon *avis* ?"], "sig": "verifie" },
-    { "id": "comptes", "lines": ["Des comptes.", "Pas des *contes*."], "sig": "site" },
-    { "id": "servir", "lines": ["Servir.", "Pas se *servir*."], "sig": "site" },
-    { "id": "merite", "lines": ["Mon vote", "se *mérite*."], "sig": "site" },
-    { "id": "subir", "lines": ["Je refuse", "de subir.", "Mais qui *choisir* ?"], "sig": "site" },
-    { "id": "renseigne", "lines": ["Je vote,", "donc je me", "*renseigne*."], "sig": "site" },
-    { "id": "gauchiasse", "lines": ["Gauchiasse.", "Et *alors* ?"], "sig": "site" },
-    { "id": "droitard", "lines": ["Droitard.", "Et *alors* ?"], "sig": "site" },
-    { "id": "ruisselle", "lines": ["Mon salaire", "ne *ruisselle* pas."], "sig": "site" },
-    { "id": "modere", "lines": ["Modéré.", "Pas *muet*."], "sig": "site" },
-    { "id": "insoumis-mere", "lines": ["Insoumis.", "Sauf à ma *mère*."], "sig": "site" },
-    { "id": "insoumis-femme", "lines": ["Insoumis.", "Sauf à ma *femme*."], "sig": "site" },
-    { "id": "insoumis-fille", "lines": ["Insoumis.", "Sauf à ma *fille*."], "sig": "site" },
-    { "id": "insoumis-fils", "lines": ["Insoumis.", "Sauf à mon *fils*."], "sig": "site" },
-    { "id": "insoumis-chat", "lines": ["Insoumis.", "Sauf à mon *chat*."], "sig": "site" },
-    { "id": "insoumis-patron", "lines": ["Insoumis.", "Sauf à mon *patron*."], "sig": "site" },
-    { "id": "insoumis-belle-mere", "lines": ["Insoumis.", "Sauf à ma *belle-mère*."], "sig": "site" },
-    { "id": "insoumise-mere", "lines": ["Insoumise.", "Sauf à ma *mère*."], "sig": "site" },
-    { "id": "insoumise-mari", "lines": ["Insoumise.", "Sauf à mon *mari*."], "sig": "site" },
-    { "id": "insoumise-fille", "lines": ["Insoumise.", "Sauf à ma *fille*."], "sig": "site" },
-    { "id": "insoumise-fils", "lines": ["Insoumise.", "Sauf à mon *fils*."], "sig": "site" },
-    { "id": "insoumise-chat", "lines": ["Insoumise.", "Sauf à mon *chat*."], "sig": "site" },
-    { "id": "insoumise-patron", "lines": ["Insoumise.", "Sauf à mon *patron*."], "sig": "site" },
-    { "id": "insoumise-belle-mere", "lines": ["Insoumise.", "Sauf à ma *belle-mère*."], "sig": "site" }
+    {
+      "id": "cafe",
+      "image": "cafe",
+      "lines": [
+        "Pas de politique",
+        "avant le *café*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "vaisselle",
+      "image": "vaisselle",
+      "lines": [
+        "Le premier qui",
+        "parle politique",
+        "fait la *vaisselle*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "tonton-rn",
+      "image": "noel",
+      "lines": [
+        "Tonton vote RN.",
+        "Noël va être *long*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "tonton-lfi",
+      "image": "noel",
+      "lines": [
+        "Tonton vote LFI.",
+        "Noël *aussi*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "chat-elle-gauche",
+      "image": "chat",
+      "lines": [
+        "Elle vote à gauche.",
+        "Je vote à droite.",
+        "Le chat *s’abstient*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "chat-elle-droite",
+      "image": "chat",
+      "lines": [
+        "Elle vote à droite.",
+        "Je vote à gauche.",
+        "Le chat *s’abstient*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "chat-il-gauche",
+      "image": "chat",
+      "lines": [
+        "Il vote à gauche.",
+        "Je vote à droite.",
+        "Le chat *s’abstient*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "chat-il-droite",
+      "image": "chat",
+      "lines": [
+        "Il vote à droite.",
+        "Je vote à gauche.",
+        "Le chat *s’abstient*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "lit",
+      "image": "lit",
+      "lines": [
+        "Je couche avec",
+        "l’*opposition*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "vote-blanc",
+      "image": "vote-blanc",
+      "lines": [
+        "Vote blanc.",
+        "Mon avis, *non*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "centriste",
+      "image": "niveau",
+      "lines": [
+        "Centriste.",
+        "Des ennemis",
+        "*partout*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "pasteque",
+      "image": "pasteque",
+      "lines": [
+        "Pastèque.",
+        "Verte dehors,",
+        "rouge *dedans*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "mandat",
+      "image": "chaise",
+      "lines": [
+        "Un mandat.",
+        "Pas un *trône*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "velo",
+      "image": "velo",
+      "lines": [
+        "Je viens à vélo.",
+        "Avec mes",
+        "*convictions*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "tract",
+      "image": "tract",
+      "lines": [
+        "Je sais.",
+        "Encore un *tract*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "1er-mai",
+      "image": "muguet",
+      "lines": [
+        "1er mai.",
+        "Pas que le *muguet*."
+      ],
+      "sig": "verifie"
+    },
+    {
+      "id": "1871",
+      "image": "cerises",
+      "lines": [
+        "1871.",
+        "On se *souvient*."
+      ],
+      "sig": "verifie"
+    },
+    {
+      "id": "1936",
+      "image": "tandem",
+      "lines": [
+        "1936.",
+        "Pas un *cadeau*."
+      ],
+      "sig": "verifie"
+    },
+    {
+      "id": "1968",
+      "image": "pave",
+      "lines": [
+        "*1968*."
+      ],
+      "sig": "verifie"
+    },
+    {
+      "id": "1789",
+      "image": "bonnet",
+      "lines": [
+        "1789.",
+        "On en *reparle* ?"
+      ],
+      "sig": "verifie"
+    },
+    {
+      "id": "49-3",
+      "lines": [
+        "49.3",
+        "Et mon *avis* ?"
+      ],
+      "sig": "verifie"
+    },
+    {
+      "id": "comptes",
+      "lines": [
+        "Des comptes.",
+        "Pas des *contes*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "servir",
+      "lines": [
+        "Servir.",
+        "Pas se *servir*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "merite",
+      "lines": [
+        "Mon vote",
+        "se *mérite*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "subir",
+      "lines": [
+        "Je refuse",
+        "de subir.",
+        "Mais qui *choisir* ?"
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "renseigne",
+      "lines": [
+        "Je vote,",
+        "donc je me",
+        "*renseigne*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "gauchiasse",
+      "lines": [
+        "Gauchiasse.",
+        "Et *alors* ?"
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "droitard",
+      "lines": [
+        "Droitard.",
+        "Et *alors* ?"
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ruisselle",
+      "lines": [
+        "Mon salaire",
+        "ne *ruisselle* pas."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "modere",
+      "lines": [
+        "Modéré.",
+        "Pas *muet*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumis-mere",
+      "lines": [
+        "Insoumis.",
+        "Sauf à ma *mère*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumis-femme",
+      "lines": [
+        "Insoumis.",
+        "Sauf à ma *femme*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumis-fille",
+      "lines": [
+        "Insoumis.",
+        "Sauf à ma *fille*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumis-fils",
+      "lines": [
+        "Insoumis.",
+        "Sauf à mon *fils*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumis-chat",
+      "lines": [
+        "Insoumis.",
+        "Sauf à mon *chat*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumis-patron",
+      "lines": [
+        "Insoumis.",
+        "Sauf à mon *patron*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumis-belle-mere",
+      "lines": [
+        "Insoumis.",
+        "Sauf à ma *belle-mère*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumise-mere",
+      "lines": [
+        "Insoumise.",
+        "Sauf à ma *mère*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumise-mari",
+      "lines": [
+        "Insoumise.",
+        "Sauf à mon *mari*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumise-fille",
+      "lines": [
+        "Insoumise.",
+        "Sauf à ma *fille*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumise-fils",
+      "lines": [
+        "Insoumise.",
+        "Sauf à mon *fils*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumise-chat",
+      "lines": [
+        "Insoumise.",
+        "Sauf à mon *chat*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumise-patron",
+      "lines": [
+        "Insoumise.",
+        "Sauf à mon *patron*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "insoumise-belle-mere",
+      "lines": [
+        "Insoumise.",
+        "Sauf à ma *belle-mère*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "de-droite",
+      "lines": [
+        "De droite.",
+        "Sans demander",
+        "*pardon*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "patriote",
+      "lines": [
+        "Patriote.",
+        "Sans mode",
+        "d’*emploi*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "travail",
+      "lines": [
+        "Le travail",
+        "mérite de *payer*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "impots",
+      "lines": [
+        "Je veux savoir",
+        "où passent",
+        "mes *impôts*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "anti-woke",
+      "lines": [
+        "Anti-woke.",
+        "Et réveillé à *6 h*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "18-06-40",
+      "lines": [
+        "18.06.40",
+        "L’*appel*."
+      ],
+      "sig": "verifie"
+    },
+    {
+      "id": "bulletin",
+      "lines": [
+        "Mon bulletin",
+        "m’*appartient*."
+      ],
+      "sig": "site"
+    }
   ]
 }
