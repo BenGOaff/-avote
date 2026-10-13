@@ -1,0 +1,34 @@
+{
+  "id": "2026-10-13-fracture-dem-01-fracture",
+  "at": "2026-10-13T14:34:19.797Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "POUR OU CONTRE ?",
+    "title": "Députés à la proportionnelle : 6 candidats pour, 5 contre, et les camps sont mélangés",
+    "line": "13 candidats se sont prononcés sur la proportionnelle pour élire les députés. 6 sont nettement pour, 5 nettement contre.",
+    "yes": [
+      "marine-le-pen",
+      "florian-philippot",
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "marine-tondelier",
+      "raphael-glucksmann"
+    ],
+    "no": [
+      "edouard-philippe",
+      "bruno-retailleau",
+      "david-lisnard",
+      "nicolas-dupont-aignan",
+      "francois-ruffin"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Les députés élus à la proportionnelle : 6 candidats nettement pour, 5 nettement contre. Marine Le Pen et Jean-Luc Mélenchon d'un côté, Édouard Philippe et François Ruffin de l'autre. Tu te ranges où ?",
+    "linkedin": "Faut-il élire les députés à la proportionnelle ? Sur 13 candidats à la présidentielle qui se sont prononcés, 6 disent oui nettement et 5 disent non nettement.\n\nPour : Marine Le Pen, Florian Philippot, Jean-Luc Mélenchon, Fabien Roussel, Marine Tondelier et Raphaël Glucksmann.\n\nContre : Édouard Philippe, Bruno Retailleau, David Lisnard, Nicolas Dupont-Aignan et François Ruffin.\n\nLes deux camps réunissent des candidats issus de familles politiques différentes. Le mode de scrutin des députés ne se range pas sur l'axe habituel.\n\nSelon toi, qu'est-ce qui doit primer pour une Assemblée nationale : refléter les voix de chacun ou dégager une majorité nette ?\n\n#presidentielle2027",
+    "facebook": "Élire les députés à la proportionnelle : 6 candidats à la présidentielle disent nettement oui, 5 disent nettement non. Et les deux camps mélangent des familles politiques très différentes. Toi, tu es pour ou contre ? Le test est sur çavote.fr",
+    "instagram": "Proportionnelle : 6 candidats pour, 5 contre. Les camps sont mélangés.\n\n13 candidats se sont prononcés sur l'élection des députés à la proportionnelle.\n6 sont nettement pour.\n5 sont nettement contre.\nLe clivage ne suit pas les familles politiques que tu connais.\n\nEt toi, tu votes pour ou contre ?\n\nLe test est en lien dans la bio.\n\n#presidentielle2027 #proportionnelle #electionslegislatives"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
