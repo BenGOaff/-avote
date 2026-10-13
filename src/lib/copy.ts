@@ -31,7 +31,7 @@ export const UI_COPY = {
   home: {
     title: 'Trouve le candidat le plus proche de tes idées',
     lede: 'Nous avons le droit de voter et le devoir de le faire en toute connaissance de cause. Fais le test pour découvrir qui est le candidat le plus proche de tes idées et de tes besoins. C’est anonyme, évidemment !',
-    promise: 'On cite, tu tranches.',
+    promise: 'On te donne les faits, tu votes en ton âme et conscience.',
     faqTitle: 'Questions fréquentes',
     faq: (n: number, candidates: number) => [
       {
