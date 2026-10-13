@@ -438,7 +438,7 @@ export const UI_COPY = {
     teaserKnow: (n: number) => `Ton score sur ${n}`,
     teaserParties: (n: number) => `${n} partis possibles`,
     nextQuiz: 'Enchaîne avec',
-    metaTitle: (title: string) => `${title} Le quiz Ça vote ?`,
+    metaTitle: (title: string) => `${title} Le quiz`,
     metaTail: 'Le résultat se partage, les réponses restent sur ton téléphone.',
     count: (i: number, n: number) => `Question ${i} sur ${n}`,
     back: 'Retour',
@@ -481,7 +481,8 @@ export const UI_COPY = {
     metaDescription: (n: number) => `Impôts, retraites, santé, école, immigration, climat… Ce que proposent les ${n} candidats à la présidentielle 2027, sujet par sujet, avec la citation et la source de chaque position.`,
     sujetTitle: (label: string) => `${label}\u00a0: qui propose quoi\u00a0?`,
     sujetMetaTitle: (label: string) => `${label} : les propositions des candidats à la présidentielle 2027`,
-    sujetMetaDescription: (label: string, concepts: string) => `${label} : qui est pour, qui est contre parmi les candidats à la présidentielle 2027. ${concepts}. Chaque position avec sa citation et sa source.`,
+    // Courte : Google coupe vers 155 caractères
+    sujetMetaDescription: (label: string) => `${label} : qui est pour, qui est contre parmi les candidats à la présidentielle 2027. Chaque position avec sa citation et sa source.`,
     stats: (positions: number, candidates: number) => `${positions} positions sourcées · ${candidates} candidats`,
     updated: (date: string) => `Mis à jour le ${date}`,
     hint: 'Touche une proposition pour voir qui est où, puis un nom pour lire sa phrase exacte et sa source.',

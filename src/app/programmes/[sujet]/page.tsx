@@ -21,10 +21,9 @@ export async function generateMetadata({ params }: { params: Promise<{ sujet: st
   const { sujet } = await params
   const s = getSujet(sujet)
   if (!s) return {}
-  const concepts = s.items.map((r) => r.item.concept).join(', ')
   return {
     title: t.sujetMetaTitle(s.theme.label),
-    description: t.sujetMetaDescription(s.theme.label, concepts),
+    description: t.sujetMetaDescription(s.theme.label),
     alternates: { canonical: `/programmes/${s.slug}` },
     openGraph: { type: 'article', modifiedTime: s.updatedAt ?? undefined },
   }

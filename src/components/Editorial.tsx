@@ -16,6 +16,7 @@ const dayFmt = new Intl.DateTimeFormat('fr-FR', { weekday: 'long', day: 'numeric
 
 export const formatDate = (iso: string) => dateFmt.format(new Date(iso))
 export const formatTime = (iso: string) => timeFmt.format(new Date(iso))
+const shortDayFmt = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', timeZone: 'Europe/Paris' })
 export const formatDay = (iso: string) => dayFmt.format(new Date(iso))
 
 export function ArticleCard({ a, featured = false }: { a: Article; featured?: boolean }) {
@@ -39,11 +40,12 @@ export function ArticleCard({ a, featured = false }: { a: Article; featured?: bo
   )
 }
 
-export function BriefItem({ b }: { b: Brief }) {
+/** `withDay` : hors du fil groupé par jour (accueil), la date remplace l'heure : une brève ne paraît jamais du jour, et les brèves d'un même passage du robot n'affichent pas toutes la même heure. */
+export function BriefItem({ b, withDay = false }: { b: Brief; withDay?: boolean }) {
   return (
     <li className="feed__item" id={b.slug}>
       <time className="feed__time" dateTime={b.date}>
-        {formatTime(b.date)}
+        {withDay ? shortDayFmt.format(new Date(b.date)) : formatTime(b.date)}
       </time>
       <div>
         <h3 className="feed__title">{b.title}</h3>
