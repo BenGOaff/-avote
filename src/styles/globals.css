@@ -4915,3 +4915,39 @@ details.disclosure > div {
   width: 100%;
   height: auto;
 }
+
+/* ---------- Accueil : les trois portes ---------- */
+.doors {
+  display: grid;
+  gap: var(--s4);
+}
+@media (min-width: 900px) {
+  .doors {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.door h3 {
+  margin: var(--s1) 0 var(--s2);
+}
+.door .muted {
+  margin: 0 0 var(--s3);
+}
+.door__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s2);
+}
+.door__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  font-weight: 600;
+}
+/* Titres de brèves en lien (accueil) : la couleur du texte, le soulignement signale le lien */
+.feed__title a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}

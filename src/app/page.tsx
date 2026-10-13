@@ -5,18 +5,18 @@ import { getActiveActors } from '@/lib/actors'
 import { liveCorpus, questionnaire } from '@/lib/data'
 import { ArticleCard, BriefItem } from '@/components/Editorial'
 import { NewsletterForm } from '@/components/NewsletterForm'
-import { ExampleResult } from '@/components/ExampleResult'
 import { TestFlow } from './test/TestFlow'
 import { SupportLine } from '@/components/Support'
 import { DonateCard } from '@/components/Donate'
-import { getPartis } from '@/lib/partis'
+import { getFlashQuizzes } from '@/lib/flash-content'
 
 
 export const revalidate = 1800
 
 export default function HomePage() {
-  const briefs = getBriefs().slice(0, 6)
-  const articles = getArticles().slice(0, 3)
+  const briefs = getBriefs().slice(0, 5)
+  const articles = getArticles().slice(0, 2)
+  const quizzes = getFlashQuizzes().slice(0, 3)
   const actors = getActiveActors()
   const known = Object.values(liveCorpus.positions as Record<string, Record<string, { missing?: boolean }>>).reduce(
     (n, p) => n + Object.values(p).filter((x) => !x.missing).length,
@@ -36,6 +36,75 @@ export default function HomePage() {
       <section className="container" style={{ paddingTop: 'var(--s5)' }} aria-label="Le test">
         <TestFlow />
         <SupportLine placement="accueil-test" />
+      </section>
+
+      {/* Trois portes : le test, les jeux, la vérification */}
+      <section className="section container" aria-labelledby="portes">
+        <h2 id="portes">{h.doorsTitle}</h2>
+        <div className="doors">
+          <div className="card door">
+            <p className="kicker">{h.doors.test.kicker}</p>
+            <h3>{h.doors.test.title}</h3>
+            <p className="muted">{h.doors.test.text}</p>
+            <ul className="door__links">
+              {h.doors.test.links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href}>{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="card door">
+            <p className="kicker">{h.doors.play.kicker}</p>
+            <h3>{h.doors.play.title}</h3>
+            <p className="muted">{h.doors.play.text}</p>
+            <ul className="door__links">
+              {quizzes.map((q) => (
+                <li key={q.slug}>
+                  <Link href={`/quiz/flash/${q.slug}`}>{q.title}</Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/quiz">{h.doors.play.more}</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="card door">
+            <p className="kicker">{h.doors.check.kicker}</p>
+            <h3>{h.doors.check.title}</h3>
+            <p className="muted">{h.doors.check.text}</p>
+            <ul className="door__links">
+              {h.doors.check.links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href}>{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section container" aria-labelledby="radar-titre">
+        <div className="row" style={{ justifyContent: 'space-between' }}>
+          <h2 id="radar-titre" style={{ margin: 0 }}>
+            {h.radarTitle}
+          </h2>
+          <Link href="/radar">{h.radarAll}</Link>
+        </div>
+        <div className="grid grid--2" style={{ marginTop: 'var(--s5)', alignItems: 'start' }}>
+          <div>
+            <ul className="feed">
+              {briefs.map((b) => (
+                <BriefItem key={b.slug} b={b} compact />
+              ))}
+            </ul>
+          </div>
+          <div className="stack">
+            {articles.map((a, i) => (
+              <ArticleCard key={a.slug} a={a} featured={i === 0} />
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="section container" aria-labelledby="preuves">
@@ -63,82 +132,6 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-      </section>
-
-      <section className="section container">
-        <div className="grid grid--2" style={{ alignItems: 'start' }}>
-          <div>
-            <h2>Ce que tu obtiens</h2>
-            <p>
-              D’abord un résumé de ce que tu as répondu, thème par thème. Ensuite, pour chaque candidat dont les positions sont documentées, une
-              proximité sur 100, ce qu’il manque pour la calculer et les passages des programmes qui la justifient.
-            </p>
-            <p>
-              Pas de podium quand les données ne permettent pas de comparer. Et les sujets sur lesquels personne ne s’est prononcé restent marqués
-              comme tels.
-            </p>
-            <p>
-              <Link href="/methodologie">Voir le calcul exact</Link>
-            </p>
-          </div>
-          <ExampleResult />
-        </div>
-      </section>
-
-      <section className="section container" aria-labelledby="radar-titre">
-        <div className="row" style={{ justifyContent: 'space-between' }}>
-          <h2 id="radar-titre" style={{ margin: 0 }}>
-            Le Radar
-          </h2>
-          <Link href="/radar">Tout le fil</Link>
-        </div>
-        <div className="grid grid--2" style={{ marginTop: 'var(--s5)', alignItems: 'start' }}>
-          <div>
-            <ul className="feed">
-              {briefs.map((b) => (
-                <BriefItem key={b.slug} b={b} withDay />
-              ))}
-            </ul>
-          </div>
-          <div className="stack">
-            {articles.map((a, i) => (
-              <ArticleCard key={a.slug} a={a} featured={i === 0} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section container" aria-labelledby="explorer">
-        <h2 id="explorer">Explorer</h2>
-        <div className="grid grid--2">
-          <div className="card card--flat">
-            <h3>Les candidats</h3>
-            <p className="muted">
-              {actors.length > 0 ? `${actors.length} candidatures annoncées : d’où ils viennent, ce qu’ils proposent, avec les sources.` : 'La liste des candidatures annoncées arrive.'}
-            </p>
-            <Link href="/candidats">Voir les candidats</Link>
-          </div>
-          <div className="card card--flat">
-            <h3>Les partis</h3>
-            <p className="muted">{getPartis().length} partis : d’où ils viennent, qui les dirige, combien d’élus, ce qu’ils proposent.</p>
-            <Link href="/partis">Voir les partis</Link>
-          </div>
-          <div className="card card--flat">
-            <h3>L’urne</h3>
-            <p className="muted">Tu sais déjà pour qui tu votes ? Glisse ton bulletin, anonyme, et regarde le dépouillement.</p>
-            <Link href="/urne">Aller voter</Link>
-          </div>
-          <div className="card card--flat">
-            <h3>Qui possède ton info</h3>
-            <p className="muted">Les propriétaires des médias, leurs engagements, et les chaînes rappelées à l’ordre par l’Arcom.</p>
-            <Link href="/medias">Voir qui possède quoi</Link>
-          </div>
-          <div className="card card--flat">
-            <h3>Comment voter</h3>
-            <p className="muted">Inscription avant le 6e vendredi, pièce d’identité, procuration : le mode d’emploi du 18 avril 2027.</p>
-            <Link href="/radar/2026-10-08-comment-voter">Lire le mode d’emploi</Link>
-          </div>
-        </div>
       </section>
 
       <section className="section container" aria-labelledby="faq">
