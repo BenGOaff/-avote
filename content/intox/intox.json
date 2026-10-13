@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-12T18:02:46.623Z",
+  "updatedAt": "2026-10-13T15:07:16.232Z",
   "items": [
+    {
+      "id": "bally-bagayoko-refuserait-de-combattre-les-mutilations-sexue-89ad25",
+      "claim": "Bally Bagayoko refuserait de combattre les mutilations sexuelles en s'abstenant sur un vœu contre l'excision",
+      "verdict": "trompeur",
+      "truth": "Bally Bagayoko s'est abstenu sur un vœu sur la lutte contre l'excision et la loi VSS ; il s'agit d'un désaccord tactique entre LFI et le PS sur la proposition de loi sur les VSS.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-10-13",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/societe/4253608-20261013-derriere-fausse-polemique-excision-saint-denis-vrai-desaccord-politique-entre-lfi-ps-loi-vss?amp%3Bat_campaign=149",
+          "title": "Derrière la fausse polémique sur l’excision à Saint-Denis, le vrai désaccord politique entre LFI et le PS sur la loi VSS",
+          "date": "2026-10-13",
+          "quote": "c'est avant tout un désaccord tactique sur la proposition de loi sur les VSS"
+        }
+      ]
+    },
     {
       "id": "une-video-prouverait-que-bally-bagayoko-a-mis-le-feu-a-une-p-fb0749",
       "claim": "Une vidéo prouverait que Bally Bagayoko a mis le feu à une poubelle lors de la mobilisation lycéenne",
