@@ -143,6 +143,10 @@
   ],
   "rayons": [
     {
+      "id": "extreme-gauche",
+      "label": "Lu à l’extrême gauche"
+    },
+    {
       "id": "gauche",
       "label": "Lu à gauche"
     },
@@ -297,6 +301,125 @@
       "author": "Pierre Bourdieu",
       "asin": "2912107008",
       "cover": "/img/livres/sur-la-television.webp"
+    },
+    {
+      "rayon": "droite",
+      "title": "Ce qu’on voit et ce qu’on ne voit pas",
+      "author": "Frédéric Bastiat",
+      "asin": "2381274367",
+      "cover": "/img/livres/ce-qu-on-voit-et-ce-qu-on-ne-voit-pas.webp"
+    },
+    {
+      "rayon": "droite",
+      "title": "Réflexions sur la Révolution en France",
+      "author": "Edmund Burke",
+      "asin": "2251445935",
+      "cover": "/img/livres/reflexions-sur-la-revolution-en-france.webp"
+    },
+    {
+      "rayon": "droite",
+      "title": "La Route de la servitude",
+      "author": "Friedrich Hayek",
+      "asin": "2130619533",
+      "cover": "/img/livres/la-route-de-la-servitude.webp"
+    },
+    {
+      "rayon": "souverainistes",
+      "title": "Mémoires de guerre",
+      "author": "Charles de Gaulle",
+      "asin": "2382926414",
+      "cover": "/img/livres/memoires-de-guerre.webp"
+    },
+    {
+      "rayon": "souverainistes",
+      "title": "La Défaite de l’Occident",
+      "author": "Emmanuel Todd",
+      "asin": "2073041132",
+      "cover": "/img/livres/la-defaite-de-l-occident.webp"
+    },
+    {
+      "rayon": "centre",
+      "title": "Une vie",
+      "author": "Simone Veil",
+      "asin": "2253127760",
+      "cover": "/img/livres/une-vie.webp"
+    },
+    {
+      "rayon": "centre",
+      "title": "Mémoires",
+      "author": "Jacques Delors",
+      "asin": "2259192920",
+      "cover": "/img/livres/memoires-delors.webp"
+    },
+    {
+      "rayon": "ecologie",
+      "title": "Printemps silencieux",
+      "author": "Rachel Carson",
+      "asin": "2918490997",
+      "cover": "/img/livres/printemps-silencieux.webp"
+    },
+    {
+      "rayon": "ecologie",
+      "title": "Où atterrir ? Comment s’orienter en politique",
+      "author": "Bruno Latour",
+      "asin": "2707197009",
+      "cover": "/img/livres/ou-atterrir.webp"
+    },
+    {
+      "rayon": "ecologie",
+      "title": "Vers la sobriété heureuse",
+      "author": "Pierre Rabhi",
+      "asin": "2330026595",
+      "cover": "/img/livres/vers-la-sobriete-heureuse.webp"
+    },
+    {
+      "rayon": "tous",
+      "title": "Le Prince",
+      "author": "Machiavel",
+      "asin": "B0FHQCGHYS",
+      "cover": "/img/livres/le-prince.webp"
+    },
+    {
+      "rayon": "tous",
+      "title": "De l’esprit des lois (anthologie)",
+      "author": "Montesquieu",
+      "asin": "2081470128",
+      "cover": "/img/livres/de-l-esprit-des-lois.webp"
+    },
+    {
+      "rayon": "tous",
+      "title": "Les Origines du totalitarisme. Sur l’antisémitisme",
+      "author": "Hannah Arendt",
+      "asin": "B0DH82RVPR",
+      "cover": "/img/livres/les-origines-du-totalitarisme.webp"
+    },
+    {
+      "rayon": "medias",
+      "title": "Les Nouveaux Chiens de garde",
+      "author": "Serge Halimi",
+      "asin": "B09ND2PWR3",
+      "cover": "/img/livres/les-nouveaux-chiens-de-garde.webp"
+    },
+    {
+      "rayon": "medias",
+      "title": "La Fabrication du consentement",
+      "author": "Noam Chomsky et Edward Herman",
+      "asin": "2748900723",
+      "cover": "/img/livres/la-fabrication-du-consentement.webp"
+    },
+    {
+      "rayon": "extreme-gauche",
+      "title": "Manifeste du parti communiste",
+      "author": "Karl Marx et Friedrich Engels",
+      "asin": "2930718307",
+      "cover": "/img/livres/manifeste-du-parti-communiste.webp"
+    },
+    {
+      "rayon": "extreme-gauche",
+      "title": "Figures du communisme",
+      "author": "Frédéric Lordon",
+      "asin": "2358722138",
+      "cover": "/img/livres/figures-du-communisme.webp"
     }
   ]
 }

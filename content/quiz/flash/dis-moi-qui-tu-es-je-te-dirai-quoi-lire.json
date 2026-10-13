@@ -3,7 +3,7 @@
  "mode": "profil",
  "order": 16,
  "title": "Dis-moi qui tu es, je te dirai quoi lire",
- "lede": "Ta façon de vivre la politique dit quel livre tu devrais ouvrir ensuite. Huit lectures, d’un bout à l’autre de l’échiquier, et chacune bouscule un peu.",
+ "lede": "Ta façon de vivre la politique dit quel livre tu devrais ouvrir ensuite. Dix lectures, d’un bout à l’autre de l’échiquier, et chacune bouscule un peu.",
  "avatar": "/img/quiz/mosaique-livres.webp",
  "questions": [
   {
@@ -30,8 +30,8 @@
      "outcome": "decodeur"
     },
     {
-     "label": "Téléphone éteint : ils écoutent déjà bien assez",
-     "outcome": "guetteur"
+     "label": "Le déjeuner de famille, comme chaque dimanche depuis toujours",
+     "outcome": "gardien"
     }
    ]
   },
@@ -39,8 +39,8 @@
    "q": "Au repas de famille, tonton lance la politique. Tu…",
    "answers": [
     {
-     "label": "T’enflammes en deux secondes",
-     "outcome": "indigne"
+     "label": "Lui expliques que le vrai problème, c’est le capitalisme",
+     "outcome": "revolutionnaire"
     },
     {
      "label": "Lui demandes ses sources",
@@ -72,16 +72,16 @@
      "outcome": "sceptique"
     },
     {
-     "label": "Qui l’a décidée, et où ?",
-     "outcome": "souverain"
+     "label": "Qui va encore s’enrichir ?",
+     "outcome": "revolutionnaire"
     },
     {
      "label": "Qu’est-ce qu’on ne nous dit pas ?",
      "outcome": "guetteur"
     },
     {
-     "label": "Combien de CO₂ ?",
-     "outcome": "eco-lucide"
+     "label": "Qu’est-ce qu’on va encore casser ?",
+     "outcome": "gardien"
     },
     {
      "label": "Quel média en parle, et comment ?",
@@ -105,8 +105,8 @@
      "outcome": "eco-lucide"
     },
     {
-     "label": "Mettre tout le monde d’accord",
-     "outcome": "funambule"
+     "label": "Abolir l’héritage d’un claquement de doigts",
+     "outcome": "revolutionnaire"
     },
     {
      "label": "Battre monnaie",
@@ -130,8 +130,8 @@
      "outcome": "indigne"
     },
     {
-     "label": "Lucidité",
-     "outcome": "sceptique"
+     "label": "Transmission",
+     "outcome": "gardien"
     },
     {
      "label": "Nuance",
@@ -146,8 +146,8 @@
      "outcome": "souverain"
     },
     {
-     "label": "Vigilance",
-     "outcome": "guetteur"
+     "label": "Lutte",
+     "outcome": "revolutionnaire"
     }
    ]
   },
@@ -200,12 +200,12 @@
      "outcome": "sceptique"
     },
     {
-     "label": "« Les gens ne sont pas tous pareils, regarde la carte. »",
-     "outcome": "sociologue"
+     "label": "« Ils ne nous disent pas tout. »",
+     "outcome": "guetteur"
     },
     {
-     "label": "« Il est encore temps. »",
-     "outcome": "eco-lucide"
+     "label": "« C’était mieux avant. Et je le pense vraiment. »",
+     "outcome": "gardien"
     }
    ]
   }
@@ -223,6 +223,17 @@
    }
   },
   {
+   "key": "revolutionnaire",
+   "name": "Révolutionnaire de salon",
+   "headline": "Ta prochaine lecture : « Manifeste du parti communiste » de Marx et Engels.",
+   "line": "Tu vois des rapports de force partout, et souvent tu as raison. Une cinquantaine de pages écrites en 1848, toujours citées, toujours contestées.",
+   "avatar": "/img/livres/manifeste-du-parti-communiste-carre.webp",
+   "link": {
+    "href": "/livres#manifeste-du-parti-communiste",
+    "label": "Voir le livre"
+   }
+  },
+  {
    "key": "sceptique",
    "name": "Sceptique en chef",
    "headline": "Ta prochaine lecture : « L’Opium des intellectuels » de Raymond Aron.",
@@ -230,6 +241,17 @@
    "avatar": "/img/livres/l-opium-des-intellectuels-carre.webp",
    "link": {
     "href": "/livres#l-opium-des-intellectuels",
+    "label": "Voir le livre"
+   }
+  },
+  {
+   "key": "gardien",
+   "name": "Gardien du temple",
+   "headline": "Ta prochaine lecture : « Réflexions sur la Révolution en France » d’Edmund Burke.",
+   "line": "Tu te méfies de ceux qui veulent tout raser pour tout refaire. Burke aussi, dès 1790, en pleine Révolution. C’est le texte fondateur du conservatisme.",
+   "avatar": "/img/livres/reflexions-sur-la-revolution-en-france-carre.webp",
+   "link": {
+    "href": "/livres#reflexions-sur-la-revolution-en-france",
     "label": "Voir le livre"
    }
   },
