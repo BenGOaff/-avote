@@ -19,3 +19,11 @@ Maquettes de référence : `planche.html` (s'ouvre dans un navigateur depuis ce 
 - Exclus : nazisme, Vichy, négationnisme, codes haineux, insultes visant une origine, une religion ou une orientation.
 - Citations historiques : attribution vérifiée avant impression.
 - Vente : Spreadshop (impression à la demande, vendeur Spreadshirt). Numérique : Gumroad.
+- Pas de Printful tant que le site reste anonyme : avec Printful, la vendeuse est la personne qui édite le site, et la loi impose alors son identité dans les mentions légales.
+- Personnalisation : variantes prêtes à choisir (une variante = un design), jamais de texte libre.
+
+## Sélection (octobre 2026)
+- Retenus : SERVIR. PAS SE SERVIR. · DES COMPTES. PAS DES CONTES. · MON VOTE SE MÉRITE. · JE REFUSE DE SUBIR. MAIS QUI CHOISIR ? · GAUCHIASSE / DROITARD. ET ALORS ? · CENTRISTE. DES ENNEMIS PARTOUT. · VOTE BLANC. MON AVIS, NON. · PAS DE POLITIQUE AVANT LE CAFÉ. · LE PREMIER QUI PARLE POLITIQUE FAIT LA VAISSELLE. · TONTON VOTE RN / LFI · 49.3 — ET MON AVIS ? · JE COUCHE AVEC L'OPPOSITION. · LE CHAT S'ABSTIENT (avec son dessin) · MON SALAIRE NE RUISSELLE PAS. · MODÉRÉ. PAS MUET.
+- Écartés : CONSERVATEUR. PAS CONSERVÉ. (pas compris) · DEUX VOIX. DEUX CAMPS. UN COMPTE JOINT. · FIN DU MONDE. FIN DU MOIS. · PAS CONVAINCU. PAS ABSENT. (pas clair)
+- Règle tirée de ces choix : si la phrase demande une seconde lecture, elle part.
+- Dessins : prompts dans `prompts-visuels.md`, images déposées dans `visuels/`.
