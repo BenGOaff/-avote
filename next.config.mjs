@@ -66,7 +66,7 @@ const nextConfig = {
   async headers() {
     return [
       { source: '/:path*', headers: securityHeaders },
-      ...['/test', '/studio'].map((source) => ({ source, headers: privateHeaders })),
+      ...['/test', '/studio', '/duel'].map((source) => ({ source, headers: privateHeaders })),
       ...['/resultats', '/mon-profil'].map((source) => ({ source, headers: personalHeaders })),
       { source: '/sw.js', headers: [{ key: 'Cache-Control', value: 'no-cache' }, { key: 'Service-Worker-Allowed', value: '/' }] },
     ]

@@ -4962,3 +4962,32 @@ details.disclosure > div {
   border: var(--border) solid var(--ink);
   border-radius: var(--radius);
 }
+
+/* ---------- Duel ---------- */
+.duel-turn {
+  font: 400 var(--h3) / 1.2 var(--font-display);
+  margin: 0;
+}
+.duel-handoff {
+  display: grid;
+  gap: var(--s4);
+  justify-items: start;
+  padding: var(--s6) 0;
+}
+.duel-score {
+  font: 400 clamp(2.4rem, 9vw, 4rem) / 1 var(--font-display);
+  margin: var(--s2) 0;
+}
+.duel-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s3);
+}
+.duel-list li {
+  display: grid;
+  gap: var(--s1);
+  padding-bottom: var(--s3);
+  border-bottom: 1px solid var(--line);
+}

@@ -73,6 +73,15 @@ export default function PrivacyPage() {
           Supabase, hébergée dans l’Union européenne (Paris). Base légale : ton consentement, exprimé par le clic sur « À l’urne ».
         </p>
 
+        <h2 id="duel" style={{ fontSize: 'var(--h3)' }}>
+          Le duel
+        </h2>
+        <p>
+          Le duel se joue sur un seul appareil. Les réponses des deux joueurs restent en mémoire le temps de la page : elles ne sont ni enregistrées
+          dans le navigateur, ni envoyées. Les prénoms aussi. Si le joueur 1 reprend ses réponses au test, elles sont seulement lues. L’image à
+          partager montre les prénoms et le taux d’accord, jamais les réponses ni les candidats. La mesure d’audience est coupée sur cette page.
+        </p>
+
         <h2 id="boutique" style={{ fontSize: 'var(--h3)' }}>
           La boutique
         </h2>

@@ -65,6 +65,9 @@ export default function HomePage() {
                 </li>
               ))}
               <li>
+                <Link href="/duel">{h.doors.play.duel}</Link>
+              </li>
+              <li>
                 <Link href="/quiz">{h.doors.play.more}</Link>
               </li>
             </ul>

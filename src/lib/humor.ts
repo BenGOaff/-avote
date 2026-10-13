@@ -73,3 +73,12 @@ export const MEDIAS_QUIP = 'Spoiler : pas toi.'
 
 /** Sous le podium des résultats. Masqué en mode sobre. */
 export const VERDICT_QUIP = 'Une boussole, pas un GPS. Le bulletin reste à toi.'
+
+/** Duel (/duel) : une remarque selon le taux d'accord. Elle constate, ne juge personne. Retirée en mode sobre. */
+export function duelQuip(score: number): string {
+  if (score >= 85) return 'Vous pourriez partager le même bulletin. Gardez-en quand même deux.'
+  if (score >= 70) return 'D’accord sur l’essentiel. Le reste se règle au dessert.'
+  if (score >= 50) return 'Le repas de famille sera animé, mais il aura lieu.'
+  if (score >= 30) return 'Débat garanti. Prévoyez une zone neutre : la machine à café.'
+  return 'Il va falloir faire avec. Et voter chacun de son côté.'
+}

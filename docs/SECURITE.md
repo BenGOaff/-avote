@@ -4,7 +4,7 @@
 
 1. Les réponses au test ne quittent jamais le navigateur : pas d’API `/score`, `/profile` ou équivalent, pas de table de profils.
 2. Aucune réponse politique n’est envoyée à un LLM.
-3. Aucune ressource tierce sur le site (polices, scripts, images) : la CSP l’interdit. Exception : Google Analytics (googletagmanager.com, google-analytics.com), chargé seulement après consentement, coupé pendant le test et sur /test, /resultats, /mon-profil, /studio. Aucun événement personnalisé n’est envoyé.
+3. Aucune ressource tierce sur le site (polices, scripts, images) : la CSP l’interdit. Exception : Google Analytics (googletagmanager.com, google-analytics.com), chargé seulement après consentement, coupé pendant le test et sur /test, /resultats, /mon-profil, /studio, /duel. Aucun événement personnalisé n’est envoyé.
 4. Les URL ne contiennent jamais de réponse, de score ou d’identifiant de profil.
 5. La newsletter ne reçoit aucune information du test.
 6. L’urne (`/urne`) ne reçoit que le choix de bulletin, jamais une réponse du test. Deux registres jamais reliés (Supabase UE, schéma `urne`, RLS sans politique) : compteurs (nombres seuls) et empreintes HMAC de l’IP (anti-doublon). Deux appels distincts, protégés par un jeton serveur ; aucun ne porte à la fois une empreinte et un choix. Anti-robots : preuve de travail signée, sans service tiers. Rien n’est journalisé. Résultats gelés la veille et le jour de chaque tour. Empreintes à effacer après le second tour.
@@ -13,6 +13,7 @@
 8. Le vérificateur (`/api/verifier`) reçoit une question de fait, jamais une réponse au test. Il cherche d’abord dans nos sources ; seulement s’il trouve un passage proche, il envoie la question et ces passages au modèle (Anthropic), sans IP ni identifiant. Rien n’est stocké ni journalisé : la réponse (pas la question) est gardée quelques heures en mémoire sous une empreinte SHA-256 de la question. Limite par IP en mémoire, plafond d’appels par jour (`FACTCHECK_DAILY_MAX`), plafond de dépense mensuel fixé côté Anthropic (espace de travail dédié). Réponse affichée seulement si les sources citées, la citation mot pour mot et les nombres passent les contrôles.
 
 Vérifié le 8 octobre 2026 : parcours complet du test au navigateur, **aucune requête vers un domaine extérieur**, aucune erreur JavaScript.
+9. Le duel (`/duel`) se joue sur un seul appareil : les réponses des deux joueurs et leurs prénoms restent dans l’état de la page, jamais écrits dans le navigateur ni envoyés. L’image à partager ne porte que les prénoms et le taux d’accord.
 
 ## En-têtes HTTP (`next.config.mjs`)
 
