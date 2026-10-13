@@ -228,6 +228,7 @@ export const UI_COPY = {
     retired: 'ne se présente plus',
     blocNote: 'Familles selon la grille officielle des nuances du ministère de l’Intérieur.',
     missing: 'Un candidat a écrit un livre et il manque ici ? Dis-le-nous.',
+    quiz: 'Pas d’idée ? Dis-moi qui tu es, je te dirai quoi lire',
     affiliate: 'Liens affiliés : en tant que Partenaire Amazon, Ça vote ? réalise un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour toi. Ça ne change ni la liste ni l’ordre.',
     plain: 'Liens vers Amazon, sans commission.',
     blockTitle: 'Son livre',

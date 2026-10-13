@@ -136,6 +136,14 @@ if (existsSync(flashDir))
       continue
     }
     if (`${r.data.slug}.json` !== f) errors.push(`quiz flash ${f} : le slug doit reprendre le nom du fichier`)
+    // Lien « pour aller plus loin » : la page et l'ancre doivent exister
+    for (const o of r.data.outcomes ?? []) {
+      const href = o.link?.href
+      if (!href) continue
+      const [page, anchor] = href.split('#')
+      if (page === '/livres' && anchor && !existsSync(path.join(ROOT, 'public/img/livres', `${anchor}.webp`))) errors.push(`quiz flash ${f} : livre introuvable pour ${o.key} (${href})`)
+      if (o.avatar && !existsSync(path.join(ROOT, 'public', o.avatar))) errors.push(`quiz flash ${f} : image absente pour ${o.key}`)
+    }
     // Cadre des titres d'accroche (content/voix/titres.md) : court, à la deuxième personne, une question ou une révélation, aucun mode d'emploi
     const title = r.data.title.replace(/\u00a0/g, ' ')
     if (title.length > 60) errors.push(`quiz flash ${f} : titre de ${title.length} caractères (60 au plus)`)

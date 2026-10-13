@@ -39,6 +39,11 @@ export default function LivresPage() {
       <p className="small muted measure">
         {isAffiliate ? t.affiliate : t.plain} {t.blocNote}
       </p>
+      <p>
+        <Link className="btn btn--highlight" href="/quiz/flash/dis-moi-qui-tu-es-je-te-dirai-quoi-lire">
+          {t.quiz}
+        </Link>
+      </p>
       {blocs.map((b) => (
         <section key={b.id} className="section" aria-labelledby={`bloc-${b.id}`}>
           <h2 id={`bloc-${b.id}`} style={{ fontSize: 'var(--h3)' }}>
@@ -74,7 +79,7 @@ export default function LivresPage() {
               <h3>{r.label}</h3>
               <ul className="livres" role="list">
                 {r.essais.map((e) => (
-                  <li key={e.url} className="card card--flat livre">
+                  <li key={e.url} id={e.id} className="card card--flat livre">
                     {e.cover && <Cover src={e.cover} />}
                     <div>
                     <p className="livre__title">

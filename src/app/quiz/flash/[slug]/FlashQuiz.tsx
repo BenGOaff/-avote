@@ -238,6 +238,13 @@ export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; othe
         </h2>
         <p className="flash__headline">{r.headline}</p>
         <p className="flash__line">{r.line}</p>
+        {r.link && (
+          <p style={{ margin: 'var(--s3) 0 0' }}>
+            <Link className="btn btn--highlight" href={r.link.href}>
+              {r.link.label}
+            </Link>
+          </p>
+        )}
         <div className="flash__share">
           <canvas
             ref={preview}

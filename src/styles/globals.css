@@ -2382,7 +2382,11 @@ details.disclosure > div {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+.livre:target {
+  outline: var(--border) solid var(--highlight);
+}
 .livre {
+  scroll-margin-top: calc(var(--topbar-h) + var(--s4));
   display: flex;
   align-items: center;
   gap: var(--s3);

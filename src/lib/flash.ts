@@ -33,7 +33,7 @@ const TierSchema = z.object({
   headline: z.string().min(5).max(90),
   line: z.string().min(5).max(220),
 })
-const AvatarSchema = z.string().regex(/^\/img\/(quiz|stock|medias)\/[a-z0-9-]+\.(png|webp)$/)
+const AvatarSchema = z.string().regex(/^\/img\/(quiz|stock|medias|livres)\/[a-z0-9-]+\.(png|webp)$/)
 const OutcomeSchema = z.object({
   key: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().min(2).max(60),
@@ -41,6 +41,10 @@ const OutcomeSchema = z.object({
   line: z.string().min(5).max(260),
   /** Image du résultat (public/img/quiz/<nom>.webp) : personnage inventé, ou portrait dessiné d’une figure historique */
   avatar: AvatarSchema.optional(),
+  /** Pour aller plus loin : une page du site (« Voir le livre » → /livres#…) */
+  link: z
+    .object({ href: z.string().regex(/^\/[a-z0-9\-/]*(#[a-z0-9-]+)?$/), label: z.string().min(2).max(40) })
+    .optional(),
 })
 
 /**

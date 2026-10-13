@@ -17,6 +17,8 @@ export interface FlashResult {
   line: string
   /** Personnage propre au résultat, sinon celui du quiz */
   avatar?: string
+  /** Pour aller plus loin (page du site) */
+  link?: { href: string; label: string }
   /** Mode « partis » : accords et désaccords avec le parti le plus proche, sources à l'appui */
   details?: { text: string; agree: boolean; you: number; who: string; quote?: string; url?: string; publisher?: string }[]
 }
@@ -95,6 +97,7 @@ export function flashResult(q: FlashQuiz, picks: number[]): FlashResult {
       headline: best.headline,
       line: best.line,
       avatar: best.avatar ?? q.avatar,
+      ...(best.link ? { link: best.link } : {}),
     }
   }
   const c = q.mode === 'connaissances' ? picks.filter((p, i) => q.questions[i]?.answers[p]?.correct).length : 0
