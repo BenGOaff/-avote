@@ -31,7 +31,7 @@ export const UI_COPY = {
   home: {
     title: 'Trouve le candidat le plus proche de tes idées',
     lede: 'Nous avons le droit de voter et le devoir de le faire en toute connaissance de cause. Fais le test pour découvrir qui est le candidat le plus proche de tes idées et de tes besoins. C’est anonyme, évidemment !',
-    promise: 'Garanti sans bullshit ni influence',
+    promise: 'On cite, tu tranches.',
     faqTitle: 'Questions fréquentes',
     faq: (n: number, candidates: number) => [
       {
@@ -72,6 +72,20 @@ export const UI_COPY = {
       'Tu découvres les candidats les plus proches de tes idées, chaque position avec sa source.',
     ],
     cardAlt: 'Ta carte d’électeur Ça vote ? : ta compatibilité avec les candidats et la mention « Je vote en sachant ».',
+    gainTitle: 'Ce que tu obtiens',
+    gain: [
+      'D’abord un résumé de ce que tu as répondu, thème par thème. Ensuite, pour chaque candidat dont les positions sont documentées, une proximité sur 100, ce qu’il manque pour la calculer et les passages des programmes qui la justifient.',
+      'Pas de podium quand les données ne permettent pas de comparer. Et les sujets sur lesquels personne ne s’est prononcé restent marqués comme tels.',
+    ],
+    gainLink: 'Voir le calcul exact',
+    doorsTitle: 'Par où commencer',
+    doors: {
+      test: { kicker: 'Ton vote', title: 'Fais le test', text: 'Tes réponses face aux positions sourcées des candidats. Le calcul reste sur ton téléphone.', links: [{ href: '/test', label: 'Le test complet' }, { href: '/test?rapide=1', label: 'La version rapide' }, { href: '/urne', label: 'L’urne' }] },
+      play: { kicker: 'Jouer', title: 'Joue', text: 'Ris de ton camp, chambre celui d’en face, teste ta culture citoyenne.', more: 'Tous les quiz' },
+      check: { kicker: 'Vérifier', title: 'Vérifie', text: 'Pose ta question : la réponse en une phrase, avec la source.', links: [{ href: '/verifier', label: 'Vrai ou faux ?' }, { href: '/fake-news', label: 'Les intox démontées' }, { href: '/medias', label: 'Qui possède ton info' }] },
+    },
+    radarTitle: 'Le Radar',
+    radarAll: 'Tout le fil',
     proofTitle: 'Ce que tu peux vérifier',
     proofs: [
       { title: 'La phrase exacte du candidat', text: 'Chaque position renvoie à la page où il l’a écrite ou dite. Un programme vérifie que la citation y figure mot pour mot.', href: '/sources', link: 'Les sources' },

@@ -40,12 +40,31 @@ export function ArticleCard({ a, featured = false }: { a: Article; featured?: bo
   )
 }
 
-/** `withDay` : hors du fil groupé par jour (accueil), la date remplace l'heure : une brève ne paraît jamais du jour, et les brèves d'un même passage du robot n'affichent pas toutes la même heure. */
-export function BriefItem({ b, withDay = false }: { b: Brief; withDay?: boolean }) {
+/**
+ * `compact` (accueil) : le titre seul, qui mène à la brève dans le fil, et la date à la place de l'heure
+ * (hors du fil groupé par jour, une brève ne doit jamais paraître du jour).
+ */
+export function BriefItem({ b, compact = false }: { b: Brief; compact?: boolean }) {
+  if (compact)
+    return (
+      <li className="feed__item">
+        <time className="feed__time" dateTime={b.date}>
+          {shortDayFmt.format(new Date(b.date))}
+        </time>
+        <div>
+          <h3 className="feed__title">
+            <Link href={`/radar#${b.slug}`}>{b.title}</Link>
+          </h3>
+          <p className="small muted" style={{ margin: 0 }}>
+            Source : {b.source.publisher}
+          </p>
+        </div>
+      </li>
+    )
   return (
     <li className="feed__item" id={b.slug}>
       <time className="feed__time" dateTime={b.date}>
-        {withDay ? shortDayFmt.format(new Date(b.date)) : formatTime(b.date)}
+        {formatTime(b.date)}
       </time>
       <div>
         <h3 className="feed__title">{b.title}</h3>

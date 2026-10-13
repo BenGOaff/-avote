@@ -57,6 +57,8 @@ const nextConfig = {
     return [
       // Une seule adresse : www renvoie vers le domaine sans www
       { source: '/:path*', has: [{ type: 'host', value: 'www.xn--avote-xra.fr' }], destination: 'https://xn--avote-xra.fr/:path*', permanent: true },
+      // cavote.fr (sans cédille) : l'adresse qu'on tape au clavier, renvoyée vers le site
+      { source: '/:path*', has: [{ type: 'host', value: '(www\\.)?cavote\\.fr' }], destination: 'https://xn--avote-xra.fr/:path*', permanent: true },
       { source: '/quiz/quel-indecis-es-tu', destination: '/test?rapide=1', permanent: true },
       { source: '/quiz/flash/tiendrais-tu-jusquau-second-tour', destination: '/quiz/flash/quel-parti-politique-es-tu', permanent: true },
     ]
