@@ -1,0 +1,45 @@
+{
+  "_note": "Aperçus affichés sur /boutique : uniquement des designs déjà en ligne sur la boutique. Image : public/img/boutique/<id>.webp, tirée de docs/boutique/impression/clair.",
+  "apercus": [
+    {
+      "id": "cafe",
+      "alt": "Pas de politique avant le café."
+    },
+    {
+      "id": "centriste",
+      "alt": "Centriste. Des ennemis partout."
+    },
+    {
+      "id": "chat-elle-gauche",
+      "alt": "Elle vote à gauche. Je vote à droite. Le chat s’abstient."
+    },
+    {
+      "id": "chat-elle-droite",
+      "alt": "Elle vote à droite. Je vote à gauche. Le chat s’abstient."
+    },
+    {
+      "id": "49-3",
+      "alt": "49.3. Et mon avis ?"
+    },
+    {
+      "id": "1789",
+      "alt": "1789. On en reparle ?"
+    },
+    {
+      "id": "1871",
+      "alt": "1871. On se souvient."
+    },
+    {
+      "id": "1936",
+      "alt": "1936. Pas un cadeau."
+    },
+    {
+      "id": "1968",
+      "alt": "1968. Sous les pavés, la plage."
+    },
+    {
+      "id": "1er-mai",
+      "alt": "1er mai. Pas que le muguet."
+    }
+  ]
+}

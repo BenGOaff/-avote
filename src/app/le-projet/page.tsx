@@ -51,7 +51,7 @@ export default function ProjectPage() {
 
         <h2 style={{ fontSize: 'var(--h3)' }}>Qui paie</h2>
         <p>
-          Les dons des lecteurs, le soutien de Tiquiz, un logiciel de quiz, et bientôt une boutique. Aucun de ces soutiens ne touche aux règles ni aux
+          Les dons des lecteurs, le soutien de Tiquiz, un logiciel de quiz, la boutique et les liens affiliés vers les livres. Aucun de ces soutiens ne touche aux règles ni aux
           résultats : le détail est sur la page <Link href="/independance">Indépendance</Link>.
         </p>
       </div>
