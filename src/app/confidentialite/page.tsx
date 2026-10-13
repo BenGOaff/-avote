@@ -73,6 +73,16 @@ export default function PrivacyPage() {
           Supabase, hébergée dans l’Union européenne (Paris). Base légale : ton consentement, exprimé par le clic sur « À l’urne ».
         </p>
 
+        <h2 id="boutique" style={{ fontSize: 'var(--h3)' }}>
+          La boutique
+        </h2>
+        <p>
+          Le lien « Boutique » t’emmène sur {LEGAL.shop.name}, chez {LEGAL.shop.maker}, qui vend les objets. Ton nom, ton adresse de livraison et ton
+          paiement sont donnés à {LEGAL.shop.maker} et traités selon sa propre politique de confidentialité. Le site ne te les demande pas et n’en garde
+          aucune copie. Aucune réponse au test, aucun résultat, aucun profil ne passe dans la boutique, et un objet acheté ne sert jamais à deviner tes
+          opinions.
+        </p>
+
         <h2 id="audience" style={{ fontSize: 'var(--h3)' }}>
           Mesure d’audience, seulement si tu l’acceptes
         </h2>

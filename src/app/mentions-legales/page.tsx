@@ -29,6 +29,15 @@ export default function LegalPage() {
             {LEGAL.host.url.replace('https://', '')}
           </a>
         </p>
+        <h2 id="boutique" style={{ fontSize: 'var(--h3)' }}>
+          La boutique
+        </h2>
+        <p>
+          Les objets du site sont vendus sur une boutique {LEGAL.shop.name}. Le vendeur est {LEGAL.shop.maker} : c’est avec lui que tu passes commande,
+          que tu paies, et c’est lui qui fabrique, livre, reprend et rembourse, selon ses conditions de vente, ses mentions légales et sa politique de
+          confidentialité, en lien au bas de chaque page de la boutique. Le site crée les dessins et touche une commission sur chaque objet vendu. Une
+          question sur une commande : le service client de {LEGAL.shop.maker}. Une question sur un dessin : l’adresse de contact ci-dessus.
+        </p>
         <h2 style={{ fontSize: 'var(--h3)' }}>Satire, IA et droit de réponse</h2>
         <p>
           Les contenus marqués « Satire » se moquent des propos, des actes et des promesses publics, pas des personnes. Les faits qui les accompagnent sont
