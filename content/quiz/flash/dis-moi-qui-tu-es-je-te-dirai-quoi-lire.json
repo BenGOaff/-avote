@@ -1,0 +1,303 @@
+{
+ "slug": "dis-moi-qui-tu-es-je-te-dirai-quoi-lire",
+ "mode": "profil",
+ "order": 16,
+ "title": "Dis-moi qui tu es, je te dirai quoi lire",
+ "lede": "Ta façon de vivre la politique dit quel livre tu devrais ouvrir ensuite. Huit lectures, d’un bout à l’autre de l’échiquier, et chacune bouscule un peu.",
+ "avatar": "/img/quiz/mosaique-livres.webp",
+ "questions": [
+  {
+   "q": "Ton dimanche idéal ?",
+   "answers": [
+    {
+     "label": "Une manif, puis un grand repas entre camarades",
+     "outcome": "indigne"
+    },
+    {
+     "label": "Une balade en forêt, à vélo évidemment",
+     "outcome": "eco-lucide"
+    },
+    {
+     "label": "Un débat où personne ne crie",
+     "outcome": "funambule"
+    },
+    {
+     "label": "Un café en terrasse à regarder passer les gens",
+     "outcome": "sociologue"
+    },
+    {
+     "label": "Trois journaux à comparer, stylo à la main",
+     "outcome": "decodeur"
+    },
+    {
+     "label": "Téléphone éteint : ils écoutent déjà bien assez",
+     "outcome": "guetteur"
+    }
+   ]
+  },
+  {
+   "q": "Au repas de famille, tonton lance la politique. Tu…",
+   "answers": [
+    {
+     "label": "T’enflammes en deux secondes",
+     "outcome": "indigne"
+    },
+    {
+     "label": "Lui demandes ses sources",
+     "outcome": "decodeur"
+    },
+    {
+     "label": "Rappelles que c’est plus compliqué que ça",
+     "outcome": "funambule"
+    },
+    {
+     "label": "Lui dis que tout se décide à Bruxelles de toute façon",
+     "outcome": "souverain"
+    },
+    {
+     "label": "Souris : les grandes promesses, tu n’y crois plus",
+     "outcome": "sceptique"
+    },
+    {
+     "label": "Notes en silence qui vote quoi autour de la table",
+     "outcome": "sociologue"
+    }
+   ]
+  },
+  {
+   "q": "Une grande annonce politique tombe. Ton premier réflexe ?",
+   "answers": [
+    {
+     "label": "Qui va payer ?",
+     "outcome": "sceptique"
+    },
+    {
+     "label": "Qui l’a décidée, et où ?",
+     "outcome": "souverain"
+    },
+    {
+     "label": "Qu’est-ce qu’on ne nous dit pas ?",
+     "outcome": "guetteur"
+    },
+    {
+     "label": "Combien de CO₂ ?",
+     "outcome": "eco-lucide"
+    },
+    {
+     "label": "Quel média en parle, et comment ?",
+     "outcome": "decodeur"
+    },
+    {
+     "label": "Est-ce que c’est juste ?",
+     "outcome": "indigne"
+    }
+   ]
+  },
+  {
+   "q": "Ton super-pouvoir rêvé ?",
+   "answers": [
+    {
+     "label": "Lire les arrière-pensées",
+     "outcome": "guetteur"
+    },
+    {
+     "label": "Voir le climat de 2100",
+     "outcome": "eco-lucide"
+    },
+    {
+     "label": "Mettre tout le monde d’accord",
+     "outcome": "funambule"
+    },
+    {
+     "label": "Battre monnaie",
+     "outcome": "souverain"
+    },
+    {
+     "label": "Comprendre la France d’un coup d’œil",
+     "outcome": "sociologue"
+    },
+    {
+     "label": "Ne jamais te laisser embarquer",
+     "outcome": "sceptique"
+    }
+   ]
+  },
+  {
+   "q": "Le mot qui te ressemble ?",
+   "answers": [
+    {
+     "label": "Révolte",
+     "outcome": "indigne"
+    },
+    {
+     "label": "Lucidité",
+     "outcome": "sceptique"
+    },
+    {
+     "label": "Nuance",
+     "outcome": "funambule"
+    },
+    {
+     "label": "Sobriété",
+     "outcome": "eco-lucide"
+    },
+    {
+     "label": "Souveraineté",
+     "outcome": "souverain"
+    },
+    {
+     "label": "Vigilance",
+     "outcome": "guetteur"
+    }
+   ]
+  },
+  {
+   "q": "L’appli que tu ouvres le plus ?",
+   "answers": [
+    {
+     "label": "La banque, pour surveiller ce que vaut ton argent",
+     "outcome": "souverain"
+    },
+    {
+     "label": "Le covoiturage",
+     "outcome": "eco-lucide"
+    },
+    {
+     "label": "Trois applis d’info, jamais la même version",
+     "outcome": "decodeur"
+    },
+    {
+     "label": "Les cartes, pour savoir où vivent les gens",
+     "outcome": "sociologue"
+    },
+    {
+     "label": "Aucune : tu as mis du scotch sur la caméra",
+     "outcome": "guetteur"
+    },
+    {
+     "label": "Les pétitions en ligne",
+     "outcome": "indigne"
+    }
+   ]
+  },
+  {
+   "q": "La phrase que tu dis le plus souvent ?",
+   "answers": [
+    {
+     "label": "« C’est plus compliqué que ça. »",
+     "outcome": "funambule"
+    },
+    {
+     "label": "« Il faut lire entre les lignes. »",
+     "outcome": "decodeur"
+    },
+    {
+     "label": "« Ça se décide ailleurs, et sans nous. »",
+     "outcome": "souverain"
+    },
+    {
+     "label": "« Ça ne marchera pas, ça n’a jamais marché. »",
+     "outcome": "sceptique"
+    },
+    {
+     "label": "« Les gens ne sont pas tous pareils, regarde la carte. »",
+     "outcome": "sociologue"
+    },
+    {
+     "label": "« Il est encore temps. »",
+     "outcome": "eco-lucide"
+    }
+   ]
+  }
+ ],
+ "outcomes": [
+  {
+   "key": "indigne",
+   "name": "Indigné de naissance",
+   "headline": "Ta prochaine lecture : « Indignez-vous ! » de Stéphane Hessel.",
+   "line": "Une trentaine de pages écrites par un ancien résistant de plus de 90 ans, et de quoi nourrir tes colères pour dix ans. Lu à gauche, cité bien au-delà.",
+   "avatar": "/img/livres/indignez-vous-carre.webp",
+   "link": {
+    "href": "/livres#indignez-vous",
+    "label": "Voir le livre"
+   }
+  },
+  {
+   "key": "sceptique",
+   "name": "Sceptique en chef",
+   "headline": "Ta prochaine lecture : « L’Opium des intellectuels » de Raymond Aron.",
+   "line": "Tu te méfies des grandes idées qui promettent tout. Aron aussi, dès 1955, quand c’était très mal vu. Lu à droite, respecté au-delà.",
+   "avatar": "/img/livres/l-opium-des-intellectuels-carre.webp",
+   "link": {
+    "href": "/livres#l-opium-des-intellectuels",
+    "label": "Voir le livre"
+   }
+  },
+  {
+   "key": "funambule",
+   "name": "Funambule du centre",
+   "headline": "Ta prochaine lecture : « De la démocratie en Amérique » de Tocqueville.",
+   "line": "Tu pèses le pour, le contre, puis encore le pour. Tocqueville a fait pareil avec toute une démocratie, et on le cite encore pour comprendre la nôtre.",
+   "avatar": "/img/livres/de-la-democratie-en-amerique-carre.webp",
+   "link": {
+    "href": "/livres#de-la-democratie-en-amerique",
+    "label": "Voir le livre"
+   }
+  },
+  {
+   "key": "eco-lucide",
+   "name": "Éco-lucide",
+   "headline": "Ta prochaine lecture : « Le Monde sans fin » de Blain et Jancovici.",
+   "line": "Tu veux comprendre l’énergie et le climat sans tableur. C’est une bande dessinée, elle a fait un carton, et tu ne regarderas plus ton chauffage pareil.",
+   "avatar": "/img/livres/le-monde-sans-fin-carre.webp",
+   "link": {
+    "href": "/livres#le-monde-sans-fin",
+    "label": "Voir le livre"
+   }
+  },
+  {
+   "key": "souverain",
+   "name": "Souverain dans l’âme",
+   "headline": "Ta prochaine lecture : « Faut-il sortir de l’euro ? » de Jacques Sapir.",
+   "line": "Pour toi, la France doit décider chez elle. Sapir pose la question qui fâche, avec des arguments d’économiste. Lu chez les souverainistes, de gauche comme de droite.",
+   "avatar": "/img/livres/faut-il-sortir-de-l-euro-carre.webp",
+   "link": {
+    "href": "/livres#faut-il-sortir-de-l-euro",
+    "label": "Voir le livre"
+   }
+  },
+  {
+   "key": "sociologue",
+   "name": "Sociologue de terrasse",
+   "headline": "Ta prochaine lecture : « L’Archipel français » de Jérôme Fourquet.",
+   "line": "Tu observes, tu classes, tu commentes. Fourquet a fait pareil avec tout le pays, cartes à l’appui, et tous les camps le citent.",
+   "avatar": "/img/livres/l-archipel-francais-carre.webp",
+   "link": {
+    "href": "/livres#l-archipel-francais",
+    "label": "Voir le livre"
+   }
+  },
+  {
+   "key": "decodeur",
+   "name": "Décodeur",
+   "headline": "Ta prochaine lecture : « Sur la télévision » de Pierre Bourdieu.",
+   "line": "Tu regardes le JT en te demandant qui a choisi les sujets. Bourdieu se posait la même question, et il l’a posée à la télévision elle-même.",
+   "avatar": "/img/livres/sur-la-television-carre.webp",
+   "link": {
+    "href": "/livres#sur-la-television",
+    "label": "Voir le livre"
+   }
+  },
+  {
+   "key": "guetteur",
+   "name": "Guetteur",
+   "headline": "Ta prochaine lecture : « 1984 » de George Orwell.",
+   "line": "Tu vois des caméras partout et des mots détournés plus encore. Orwell t’avait prévenu. Tous les camps le citent, chacun contre les autres.",
+   "avatar": "/img/livres/1984-carre.webp",
+   "link": {
+    "href": "/livres#1984",
+    "label": "Voir le livre"
+   }
+  }
+ ]
+}

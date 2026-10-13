@@ -40,6 +40,8 @@ export function livresByBloc(): { id: BlocId; label: string; livres: Livre[] }[]
 
 /** Essais de référence de chaque camp, par rayon (classement de la rédaction). Rayons vides masqués. */
 export interface Essai {
+  /** Ancre sur /livres (nom du fichier de couverture) */
+  id: string
   title: string
   author: string
   url: string
@@ -49,7 +51,7 @@ const rayons = (data as { rayons: { id: string; label: string }[] }).rayons
 const essais = (data as { essais: { rayon: string; title: string; author: string; asin: string; cover?: string }[] }).essais
 export function essaisByRayon(): { id: string; label: string; essais: Essai[] }[] {
   const shelves = rayons
-    .map((r) => ({ ...r, essais: essais.filter((e) => e.rayon === r.id).map((e) => ({ title: e.title, author: e.author, url: amazonUrl(e.asin), cover: e.cover })) }))
+    .map((r) => ({ ...r, essais: essais.filter((e) => e.rayon === r.id).map((e) => ({ id: (e.cover ?? e.asin).replace(/^.*\//, '').replace(/\.webp$/, '').toLowerCase(), title: e.title, author: e.author, url: amazonUrl(e.asin), cover: e.cover })) }))
     .filter((r) => r.essais.length > 0)
   return shelves
 }
