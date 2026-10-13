@@ -56,6 +56,7 @@ export const SECTIONS: NavSection[] = [
     title: 'Jouer et partager',
     items: [
       { href: '/quiz', label: 'Quiz', desc: 'Ris de ton camp, chambre celui d’en face, teste ta culture citoyenne.' },
+      { href: '/duel', label: 'Le duel', desc: 'À deux sur un téléphone : d’accord sur quoi, fâchés sur quoi.' },
       { href: '/studio', label: 'Studio', desc: 'Visuels à partager, fabriqués sur ton téléphone.' },
       { href: '/boutique', label: 'Boutique', desc: 'Objets et visuels, sans lien avec ton résultat.' },
     ],

@@ -270,6 +270,9 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
           <Link className="btn btn--secondary" href="/studio">
             {UI_COPY.share}
           </Link>
+          <Link className="btn btn--secondary" href="/duel">
+            {UI_COPY.duel.title}
+          </Link>
         </div>
       </section>
     </div>

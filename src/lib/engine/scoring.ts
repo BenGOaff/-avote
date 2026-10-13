@@ -409,3 +409,52 @@ export function rareAgreements(
   rare.sort((x, y) => Number(essentials.includes(y.itemId)) - Number(essentials.includes(x.itemId)) || x.agree.length - y.agree.length || y.documented - x.documented)
   return { rare, silent }
 }
+
+// ---------------------------------------------------------------------------
+// Duel : accord entre deux personnes sur les mêmes affirmations (page /duel, calcul sur l'appareil)
+// ---------------------------------------------------------------------------
+
+export type DuelVerdict = 'accord' | 'nuance' | 'desaccord'
+
+export interface DuelItem {
+  itemId: ItemId
+  a: Ordinal
+  b: Ordinal
+  /** Écart sur l'échelle de 5 crans (0 à 4) */
+  gap: number
+  verdict: DuelVerdict
+}
+
+export interface DuelResult {
+  /** Accord sur 100 (null si trop peu de réponses communes pour conclure) */
+  score: number | null
+  /** Affirmations auxquelles les deux ont répondu sur l'échelle */
+  both: number
+  items: DuelItem[]
+}
+
+/** En dessous, pas de pourcentage : on le dit plutôt que d'afficher un chiffre fragile. */
+export const DUEL_MIN_BOTH = 5
+
+/**
+ * Accord entre deux jeux de réponses. Seules les réponses sur l'échelle comptent (« je ne sais pas », « ça dépend »
+ * et « passée » sont écartées des deux côtés). Par affirmation : 1 − écart / 4 ; le score est la moyenne, sur 100.
+ * Désaccord : l'un pour, l'autre contre. Accord : même côté (ou tous deux au milieu) et au plus un cran d'écart.
+ * Nuance : le reste (même côté mais loin, ou l'un au milieu et l'autre tranché).
+ */
+export function duelAgreement(itemIds: ItemId[], a: Answers, b: Answers): DuelResult {
+  const items: DuelItem[] = []
+  for (const id of itemIds) {
+    const x = a[id]
+    const y = b[id]
+    if (x?.kind !== 'value' || y?.kind !== 'value') continue
+    const gap = Math.abs(x.value - y.value)
+    const verdict: DuelVerdict = x.value * y.value < 0 ? 'desaccord' : gap <= 1 ? 'accord' : 'nuance'
+    items.push({ itemId: id, a: x.value, b: y.value, gap, verdict })
+  }
+  const both = items.length
+  const score = both >= DUEL_MIN_BOTH ? Math.round((items.reduce((s, i) => s + (1 - i.gap / 4), 0) / both) * 100) : null
+  // Les plus gros écarts d'abord
+  items.sort((p, q) => q.gap - p.gap)
+  return { score, both, items }
+}
