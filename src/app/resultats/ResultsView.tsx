@@ -35,6 +35,8 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
   const [mode, setMode] = useState<WeightMode>('global')
   const [useDemo, setUseDemo] = useState(liveCorpus.actors.length === 0)
   const [previousCorpus, setPreviousCorpus] = useState<string | null>(null)
+  // Dernier résultat mémorisé avant cette visite : pour dire si le premier a changé
+  const [prevLast, setPrevLast] = useState<LocalVoterState['lastResult'] | null>(null)
 
   useEffect(() => {
     loadState().then((s) => {
@@ -46,6 +48,7 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
         void saveState(next)
         setState(next)
       } else setState(s)
+      setPrevLast(s?.lastResult ?? null)
       setLoaded(true)
       if (s?.priorities) setMode('priorities')
     })
@@ -62,6 +65,19 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [answers, mode, corpus, state?.hiddenActors?.join(','), state?.priorities, state?.essentials, state?.quick, compatible],
   )
+
+  // Mémorise le résultat affiché (sur l'appareil) : au retour, le site dira s'il a bougé (lib/result-drift.ts)
+  const topSlugs = ranking?.ranked && corpus.mode !== 'demo' ? ranking.entries.slice(0, 3).map((e) => e.slug) : null
+  const topKey = topSlugs?.join(',') ?? ''
+  useEffect(() => {
+    if (!state || !topSlugs) return
+    const last = state.lastResult
+    if (last && last.corpusVersion === corpus.version && last.top.join(',') === topKey) return
+    const next = { ...state, lastResult: { at: new Date().toISOString(), corpusVersion: corpus.version, top: topSlugs } }
+    setState(next)
+    void saveState(next)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [topKey, corpus.version, !!state])
 
   if (!loaded) return <p aria-live="polite">Chargement…</p>
   const answered = Object.values(answers).filter((a) => a.kind === 'value').length
@@ -95,8 +111,11 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
 
       {previousCorpus && (
         <div className="alert alert--info" role="status">
-          Les positions des candidats ont changé depuis ton dernier passage (version {previousCorpus} → {corpus.version}). Tes résultats ont été recalculés avec
-          les mêmes réponses. <Link href="/corrections">Voir ce qui a changé</Link>
+          {R.driftRecalc}
+          {prevLast?.top[0] && topSlugs?.[0] && prevLast.top[0] !== topSlugs[0] && (
+            <> {R.driftTop(corpus.actors.find((a) => a.slug === prevLast.top[0])?.name ?? prevLast.top[0], corpus.actors.find((a) => a.slug === topSlugs[0])?.name ?? topSlugs[0])}</>
+          )}{' '}
+          <Link href="/corrections">{R.driftLink}</Link>
         </div>
       )}
 

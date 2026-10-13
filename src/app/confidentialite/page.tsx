@@ -27,6 +27,10 @@ export default function PrivacyPage() {
           <li>
             Tu peux tout effacer en un clic depuis <Link href="/mon-profil">Mon profil</Link>.
           </li>
+          <li>
+            Ton profil garde aussi, au même endroit, les trois premiers noms de ton dernier résultat et sa date : au retour, le site compare avec les
+            positions publiées depuis et te dit si ton résultat a bougé. Ce calcul se fait sur l’appareil.
+          </li>
           <li>Les adresses de pages ne contiennent jamais tes réponses ni ton résultat.</li>
           <li>Le studio fabrique les images sur ton appareil ; ta photo et ton texte ne sont pas envoyés.</li>
         </ul>

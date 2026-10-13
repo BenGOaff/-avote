@@ -26,6 +26,11 @@ export interface LocalVoterState {
   orderSeed?: number
   /** Dernier index de question vu, pour reprendre */
   cursor: number
+  /**
+   * Dernier résultat affiché (sur l'appareil seulement) : sert à prévenir au retour si le résultat a bougé
+   * depuis, avec les positions publiées entre-temps. Les trois premiers candidats, la date, la version du corpus.
+   */
+  lastResult?: { at: string; corpusVersion: string; top: string[] }
   updatedAt: string
 }
 

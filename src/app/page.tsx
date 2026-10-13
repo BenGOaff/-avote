@@ -34,7 +34,7 @@ export default function HomePage() {
     <>
       {/* L'accueil s'ouvre directement sur le test complet */}
       <section className="container" style={{ paddingTop: 'var(--s5)' }} aria-label="Le test">
-        <TestFlow />
+        <TestFlow corpusVersion={liveCorpus.version} />
         <SupportLine placement="accueil-test" />
       </section>
 
