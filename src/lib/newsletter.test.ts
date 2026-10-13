@@ -14,7 +14,11 @@ describe('jeton de confirmation newsletter', () => {
   })
   it('refuse un jeton modifié', () => {
     const t = sealToken({ email: 'a@b.fr', firstName: '' })
-    const altered = t.slice(0, -2) + (t.endsWith('A') ? 'BB' : 'AA')
+    // On modifie un octet du message chiffré (et non les derniers caractères base64url, qui peuvent ne porter
+    // que des bits de remplissage : le jeton serait alors inchangé une fois décodé)
+    const raw = Buffer.from(t, 'base64url')
+    raw[raw.length - 1] = raw[raw.length - 1]! ^ 0x01
+    const altered = raw.toString('base64url')
     expect(openToken(altered)).toBeNull()
     expect(openToken('nimporte-quoi')).toBeNull()
   })
