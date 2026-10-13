@@ -3,9 +3,10 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
-import { QUICK_ITEMS, itemsByTheme, questionnaire as set } from '@/lib/data'
+import { QUICK_ITEMS, itemsByTheme, questionnaire as set } from '@/lib/questions'
 import { ORDINALS, type Answer, type Answers, type Ordinal, type Priorities } from '@/lib/engine/types'
 import { emptyState, loadState, saveState, type LocalVoterState } from '@/lib/local-store'
+import type { ResultDrift } from '@/lib/result-drift'
 import { answerLabel, effectiveAnswers } from '@/lib/answers'
 import { mirrorRemark } from '@/lib/humor'
 import { faitsOf } from '@/lib/faits'
@@ -56,12 +57,14 @@ const MAX_RED = ENGINE_CONFIG.maxRedLines
 // Taille du rond selon la force de la réponse : plus on est tranché, plus le rond est grand
 const DOT = { [-2]: 40, [-1]: 30, 0: 22, 1: 30, 2: 40 } as Record<Ordinal, number>
 
-export function TestFlow() {
+/** `corpusVersion` : version du corpus publiée (fournie par la page serveur) ; sert à repérer un résultat qui a pu bouger. */
+export function TestFlow({ corpusVersion }: { corpusVersion?: string } = {}) {
   const router = useRouter()
   const [state, setState] = useState<LocalVoterState | null>(null)
   const [loaded, setLoaded] = useState(false)
   const [step, setStep] = useState<Step>({ kind: 'intro' })
   const headingRef = useRef<HTMLHeadingElement>(null)
+  const [drift, setDrift] = useState<ResultDrift | null>(null)
 
   useEffect(() => {
     loadState().then((s) => {
@@ -72,6 +75,25 @@ export function TestFlow() {
       if (!started && new URLSearchParams(window.location.search).has('rapide')) setStep({ kind: 'storage', quick: true })
     })
   }, [])
+
+  // Au retour : le corpus n'est chargé (import différé, plus d'un mégaoctet) que si un résultat a été vu
+  // sur cet appareil avec une version antérieure des positions
+  useEffect(() => {
+    const last = state?.lastResult
+    if (!state || !last || !corpusVersion || last.corpusVersion === corpusVersion) return
+    let cancelled = false
+    Promise.all([import('@/lib/result-drift'), import('@/lib/data')])
+      .then(([m, d]) => {
+        if (cancelled) return
+        const corpus = d.liveCorpus.actors.length > 0 ? d.liveCorpus : d.demoCorpus
+        setDrift(m.resultDrift(state, d.questionnaire, corpus, d.QUICK_ITEMS))
+      })
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loaded, corpusVersion])
 
   // Pendant les questions (y compris sur l'accueil), la mesure d'audience est coupée
   const inTest = step.kind !== 'intro'
@@ -132,7 +154,9 @@ export function TestFlow() {
 
   if (step.kind === 'intro')
     return (
-      <Intro
+      <>
+        {drift && <DriftNotice d={drift} />}
+        <Intro
         answeredCount={answeredCount}
         fresh={state && answeredCount > 0 ? set.items.filter((i) => i.version > state.questionSet && !(i.id in state.answers)).length : 0}
         headingRef={headingRef}
@@ -140,6 +164,7 @@ export function TestFlow() {
         onResume={() => begin(state?.persist ?? 'session', false)}
         onNew={(wantQuick) => setStep({ kind: 'storage', quick: wantQuick })}
       />
+      </>
     )
 
   if (step.kind === 'storage')
@@ -611,6 +636,21 @@ function StorageStep({ initial, onBack, onGo }: { initial: 'session' | 'local'; 
           {t.go}
         </button>
       </p>
+    </div>
+  )
+}
+
+/** Encadré de retour : ce qui a bougé depuis le dernier résultat vu sur cet appareil. */
+function DriftNotice({ d }: { d: ResultDrift }) {
+  const t = UI_COPY.test
+  return (
+    <div className="alert alert--info drift" role="status">
+      <p className="alert__title">{d.topChanged ? t.driftMovedTitle : t.driftNewTitle}</p>
+      {d.topChanged && d.before && d.now && <p style={{ margin: 0 }}>{t.driftTop(d.before, d.now)}</p>}
+      {d.newPositions > 0 && <p style={{ margin: 0 }}>{t.driftCount(d.newPositions, d.actors)}</p>}
+      <Link className="btn btn--highlight btn--small" style={{ marginTop: 'var(--s3)' }} href="/resultats">
+        {t.driftCta}
+      </Link>
     </div>
   )
 }

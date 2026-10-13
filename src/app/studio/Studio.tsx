@@ -1,7 +1,7 @@
 'use client'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { loadState } from '@/lib/local-store'
-import { questionnaire } from '@/lib/data'
+import { questionnaire } from '@/lib/questions'
 import { IconDownload } from '@/components/Icons'
 import { SharePanel } from '@/components/SharePanel'
 import { TARGETS, type ShareTarget } from '@/lib/share'

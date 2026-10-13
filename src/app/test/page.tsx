@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { SupportLine } from '@/components/Support'
 import { ExampleResult } from '@/components/ExampleResult'
 import { UI_COPY } from '@/lib/copy'
-import { questionnaire } from '@/lib/data'
+import { liveCorpus, questionnaire } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Test présidentielle 2027 : pour qui voter ?',
@@ -17,7 +17,7 @@ const h = UI_COPY.home
 export default function TestPage() {
   return (
     <div className="container" style={{ paddingTop: 'var(--s5)' }}>
-      <TestFlow />
+      <TestFlow corpusVersion={liveCorpus.version} />
       <SupportLine placement="test" />
       {/* Ce que donne le test : utile avant de commencer, et lisible par les moteurs (page sinon presque vide sans JavaScript) */}
       <section className="section" aria-labelledby="obtiens">

@@ -98,6 +98,14 @@ export const UI_COPY = {
     duration: 'Environ 15 minutes. Tu peux passer une question ou un thème entier.',
   },
   test: {
+    driftMovedTitle: 'Ton résultat a bougé',
+    driftNewTitle: 'Du nouveau depuis ton dernier résultat',
+    driftTop: (before: string, now: string) => `Ton candidat le plus proche était ${before}. Avec les positions publiées depuis, c’est ${now}.`,
+    driftCount: (n: number, actors: string[]) => {
+      const who = actors.length <= 3 ? actors.join(', ') : `${actors.slice(0, 3).join(', ')} et ${actors.length - 3} autre${actors.length - 3 > 1 ? 's' : ''}`
+      return `${n} position${n > 1 ? 's' : ''} publiée${n > 1 ? 's' : ''} depuis, sur des sujets où tu as donné ton avis : ${who}.`
+    },
+    driftCta: 'Voir mes résultats',
     start: 'Commencer',
     quickStart: (n: number) => `Version rapide : ${n} questions`,
     next: 'Suivante',
@@ -142,6 +150,9 @@ export const UI_COPY = {
     go: 'C’est parti',
   },
   results: {
+    driftRecalc: 'Des positions de candidats ont été publiées ou corrigées depuis ton dernier passage : tes résultats sont recalculés avec les mêmes réponses.',
+    driftTop: (before: string, now: string) => `Ton candidat le plus proche a changé : ${before} avant, ${now} maintenant.`,
+    driftLink: 'Les corrections',
     shareTitle: 'Partager mon résultat',
     shareText: 'Tu choisis ce que tu montres. L’image est fabriquée sur ton téléphone : rien ne passe par nos serveurs.',
     shareTop3: 'Mon top 3',
