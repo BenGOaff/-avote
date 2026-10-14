@@ -24,6 +24,18 @@ export default function ProjectPage() {
           de route. Ça vote ? les met côte à côte, sujet par sujet, avec la phrase exacte du candidat et le lien vers l’endroit où il l’a dite.
         </p>
 
+        <h2 style={{ fontSize: 'var(--h3)' }}>Le pari : l’éducation populaire</h2>
+        <p>
+          Ça vote ? reprend une idée ancienne, celle de l’éducation populaire : donner à chacun les moyens de comprendre pour décider soi-même, sans maître à
+          penser. L’équipe fait appel au bon sens. Son pari : avec les faits, les dates et les sources sous les yeux, chacun peut choisir en connaissance de
+          cause plutôt que sur le coup de l’émotion.
+        </p>
+        <p>
+          L’émotion a sa place dans un vote. Elle gagne à s’appuyer sur ce que les candidats proposent vraiment. D’où le <Link href="/test">test</Link>, les{' '}
+          <Link href="/programmes">programmes sujet par sujet</Link>, le <Link href="/lexique">lexique</Link> et les{' '}
+          <Link href="/questions">réponses sourcées aux questions qu’on se pose sur les candidats</Link>.
+        </p>
+
         <h2 style={{ fontSize: 'var(--h3)' }}>Ce que fait l’IA</h2>
         <p>
           Une IA lit les programmes, les déclarations et les documents publics, puis code chaque position selon des règles écrites à l’avance, les mêmes pour

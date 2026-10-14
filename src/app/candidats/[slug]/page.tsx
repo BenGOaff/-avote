@@ -276,6 +276,9 @@ function PatrimoineBlock({ slug }: { slug: string }) {
         </p>
       )}
       {!p && <HatvpLink slug={slug} />}
+      <p className="small">
+        <Link href="/questions/candidat-le-plus-riche">Les patrimoines de tous les candidats</Link>
+      </p>
     </section>
   )
 }
@@ -351,7 +354,7 @@ function CasierBlock({ slug }: { slug: string }) {
           )}
           <p className="small muted">
             Seulement des décisions officielles visant la personne : jugements, mises en examen, sanctions de la HATVP ou du Parlement, comptes de campagne.{' '}
-            <Link href="/methodologie#casier">La règle</Link> · Une erreur ? <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${slug}`)}`}>Signale-la</Link>.
+            <Link href="/methodologie#casier">La règle</Link> · <Link href="/questions/candidats-condamnes">Tous les candidats comparés</Link> · Une erreur ? <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${slug}`)}`}>Signale-la</Link>.
           </p>
         </>
       )}

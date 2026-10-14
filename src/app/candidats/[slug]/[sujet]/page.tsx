@@ -9,7 +9,7 @@ import { getActiveActors, getActor } from '@/lib/actors'
 import { BASIS_LABEL } from '@/lib/answers'
 import { UI_COPY } from '@/lib/copy'
 import { absolute } from '@/lib/site'
-import { actorUpdatedAt, candidatSujetSummary, getCandidatSujet, getCandidatSujets } from '@/lib/sujets'
+import { actorUpdatedAt, candidatSujetSummary, getCandidatSujet, getCandidatSujets, propositionPath } from '@/lib/sujets'
 
 const t = UI_COPY.candidatSujet
 
@@ -126,7 +126,7 @@ export default async function CandidatSujetPage({ params }: { params: Promise<{ 
                 st!.publisher
               )}
               {st!.date && ` · ${st!.date}`} ·{' '}
-              <Link href={`/programmes/${sujet}#${item.id}`}>
+              <Link href={propositionPath(sujet, item)}>
                 {t.compareTitle(item.concept)}
               </Link>
             </p>

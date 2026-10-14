@@ -3,7 +3,8 @@ import { getArticles } from '@/lib/content'
 import { absolute } from '@/lib/site'
 import { getAnnouncedActors } from '@/lib/actors'
 import { getPartis } from '@/lib/partis'
-import { actorUpdatedAt, getCandidatSujets, getSujets } from '@/lib/sujets'
+import { actorUpdatedAt, getCandidatSujets, getPropositions, getSujets, propositionPath } from '@/lib/sujets'
+import { QUESTION_PAGES } from '@/lib/questions-candidats'
 import { getIntox, intoxPath, intoxUpdated } from '@/lib/intox'
 import { getCandidateDuels } from '@/lib/duels'
 import { GUIDES } from '@/lib/guides'
@@ -20,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((m) => mediaLogoOf(m.slug))
     .filter((x): x is string => !!x)
     .map((x) => absolute(x))
-  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/studio', '/newsletter', '/medias', '/medias/libres', '/fake-news', '/verifier', '/urne', '/quiz', '/duel', '/voter', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales']
+  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/studio', '/newsletter', '/medias', '/medias/libres', '/fake-news', '/verifier', '/urne', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales']
   return [
     ...statics.map((p) => ({
       url: absolute(p),
@@ -51,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .map((m) => ({ url: absolute(`/medias/${m.slug}`), lastModified: new Date(m.ownership!.checkedAt), changeFrequency: 'monthly' as const, priority: 0.7, ...(mediaLogoOf(m.slug) ? { images: [absolute(mediaLogoOf(m.slug)!)] } : {}) })),
     ...getIntox().map((x) => ({ url: absolute(intoxPath(x)), lastModified: new Date(intoxUpdated(x)), changeFrequency: 'monthly' as const, priority: 0.7 })),
     ...getSujets().map((s) => ({ url: absolute(`/programmes/${s.slug}`), lastModified: s.updatedAt ? new Date(s.updatedAt) : now, changeFrequency: 'daily' as const, priority: 0.9, images: [absolute(`/programmes/${s.slug}/carte.png`)] })),
+    ...QUESTION_PAGES.filter((q) => q.path.startsWith('/questions/')).map((q) => ({ url: absolute(q.path), changeFrequency: 'weekly' as const, priority: 0.8 })),
+    ...getPropositions().map(({ sujet, row }) => ({ url: absolute(propositionPath(sujet.slug, row.item)), ...(sujet.updatedAt ? { lastModified: new Date(sujet.updatedAt) } : {}), changeFrequency: 'weekly' as const, priority: 0.7 })),
     ...getFlashQuizzes().map((q) => ({ url: absolute(`/quiz/flash/${q.slug}`), changeFrequency: 'monthly' as const, priority: 0.7 })),
     ...getPartis().map((p) => ({ url: absolute(`/partis/${p.slug}`), changeFrequency: 'weekly' as const, priority: 0.7 })),
     ...getArticles().map((a) => ({ url: absolute(`/radar/${a.slug}`), lastModified: new Date(a.updated ?? a.date), changeFrequency: 'monthly' as const, priority: 0.8 })),

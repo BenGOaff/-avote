@@ -35,6 +35,7 @@ export const SECTIONS: NavSection[] = [
     items: [
       { href: '/candidats', label: 'Candidats', desc: 'Qui se présente, d’où il vient, ce qu’il propose.' },
       { href: '/programmes', label: 'Programmes par sujet', desc: 'Impôts, retraites, santé, climat… qui est pour, qui est contre.' },
+      { href: '/questions', label: 'Les questions sur les candidats', desc: 'Le plus riche, les condamnations, la télé, les 500 parrainages, pour ou contre.' },
       { href: '/comparateur', label: 'Comparateur', desc: 'Qui défend quoi, sujet par sujet, citations à l’appui.' },
       { href: '/livres', label: 'Lire les candidats', desc: 'Le livre de chaque candidat, rangé par famille politique.' },
       { href: '/partis', label: 'Partis', desc: 'Histoire, dirigeants, élus et idées de chaque parti.' },
