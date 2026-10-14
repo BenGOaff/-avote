@@ -1,0 +1,28 @@
+{
+  "_note": "Précisions factuelles à côté d'une orientation attribuée par eurotopics, quand un fait public la nuance. Le libellé d'eurotopics n'est jamais modifié. Chaque précision cite ses sources, avec un extrait vérifié mot pour mot.",
+  "nuances": {
+    "l-humanite": {
+      "text": "L’Humanité a été l’organe central du Parti communiste à partir de 1923 ; elle dit n’appartenir aujourd’hui à aucun parti. La grille officielle du ministère de l’Intérieur range le PCF à gauche, pas à l’extrême gauche.",
+      "sources": [
+        {
+          "title": "À propos de l’Humanité",
+          "publisher": "L’Humanité",
+          "url": "https://www.humanite.fr/a-propos",
+          "quote": "Nous n’appartenons à aucun parti politique non plus."
+        },
+        {
+          "title": "À propos de l’Humanité (grandes dates)",
+          "publisher": "L’Humanité",
+          "url": "https://www.humanite.fr/a-propos",
+          "quote": "8 février 1923 : l’Humanité devient l’organe central du Parti communiste"
+        },
+        {
+          "title": "Instruction du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 et 3",
+          "publisher": "Ministère de l’Intérieur (Légifrance)",
+          "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+          "quote": ""
+        }
+      ]
+    }
+  }
+}

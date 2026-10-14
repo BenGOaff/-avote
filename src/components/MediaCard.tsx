@@ -1,6 +1,6 @@
 import { formatDate } from '@/components/Editorial'
 import { UI_COPY } from '@/lib/copy'
-import { ALERT_KIND_LABEL, ALERT_TOPIC_LABEL, engagementsOf, type MediaEntry } from '@/lib/medias'
+import { ALERT_KIND_LABEL, ALERT_TOPIC_LABEL, engagementsOf, orientationNuanceOf, type MediaEntry } from '@/lib/medias'
 
 const t = UI_COPY.medias
 
@@ -35,6 +35,7 @@ export function MediaCard({ m, logo }: { m: MediaEntry; logo?: string | null }) 
           <span className="badge">{m.orientation.label}</span> <span className="hint">selon eurotopics</span>
         </p>
       )}
+      {m.orientation && <OrientationNuance slug={m.slug} />}
       <dl className="dl" style={{ marginTop: 'var(--s3)' }}>
         {o.owners.length > 0 && (
           <>
@@ -106,5 +107,24 @@ export function AlertList({ m }: { m: MediaEntry }) {
         </li>
       ))}
     </ul>
+  )
+}
+
+/** Précision factuelle sous l'orientation d'eurotopics, avec ses sources */
+export function OrientationNuance({ slug }: { slug: string }) {
+  const n = orientationNuanceOf(slug)
+  if (!n) return null
+  return (
+    <p className="small" style={{ margin: 'var(--s1) 0 0' }}>
+      <span className="media-card__k">{t.nuance}</span> {n.text}{' '}
+      {n.sources.map((s, i) => (
+        <span key={s.url + i}>
+          {i > 0 && ' · '}
+          <a href={s.url} rel="noopener noreferrer nofollow" target="_blank" title={s.quote || undefined}>
+            {s.publisher}
+          </a>
+        </span>
+      ))}
+    </p>
   )
 }

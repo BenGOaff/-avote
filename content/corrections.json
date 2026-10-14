@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-14",
+    "object": "Candidature de Dieudonné",
+    "wasWrong": "Inscrit comme candidat déclaré par le robot de veille, d'après un article sur le lancement commun de la campagne avec Francis Lalanne à Valenciennes.",
+    "evidence": "Le site de campagne précise que Dieudonné n'est pas lui-même candidat : il soutient la candidature de Francis Lalanne.",
+    "effect": "Retiré de la liste des candidats, du test et des pages de questions. Francis Lalanne reste candidat.",
+    "url": "https://dieudolalanne2027.com/candidats/"
+  },
+  {
     "date": "2026-10-12",
     "object": "Fake news : « Le budget prévoit 650 millions d'euros de moins et 1 600 postes de professeurs en moins pour l'Éducation nationale »",
     "wasWrong": "Classée « trompeuse » et attribuée à La France insoumise par le robot des intox, quelques minutes après le premier relevé.",

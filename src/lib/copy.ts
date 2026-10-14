@@ -435,6 +435,7 @@ export const UI_COPY = {
     error: 'Signaler une erreur',
   },
   medias: {
+    nuance: 'À savoir :',
     kicker: 'Observatoire des médias',
     title: 'Qui possède ton info',
     lede: 'Chaînes, radios, journaux, sites : à qui ils appartiennent, et qui a le dernier mot.',

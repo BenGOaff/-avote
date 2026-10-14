@@ -662,7 +662,7 @@
     {
       "slug": "dieudonne",
       "name": "Dieudonné",
-      "status": "declare",
+      "status": "retire",
       "since": "2026-10-10",
       "source": {
         "title": "Présidentielle 2027 : « Ils me font rire »… Lalanne et Dieudonné lancent leur campagne à Valenciennes",
@@ -680,7 +680,14 @@
           "kind": "programme",
           "url": "https://dieudolalanne2027.com/programme/"
         }
-      ]
+      ],
+      "retiredAt": "2026-10-14",
+      "retiredSource": {
+        "title": "Les Candidats : « Bien qu’il ne soit pas lui-même candidat à la présidence, il apporte son soutien total […] à la candidature de Francis Lalanne »",
+        "publisher": "Site de campagne Dieudo Lalanne 2027",
+        "url": "https://dieudolalanne2027.com/candidats/"
+      },
+      "retiredReason": "Pas candidat : soutient la candidature de Francis Lalanne"
     },
     {
       "slug": "sylvain-durif",
