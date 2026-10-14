@@ -132,7 +132,7 @@ const nuances = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/nuances
   source: { url: string }
   nuances: Record<string, { bloc: string }>
   blocs: { id: string }[]
-  actors: Record<string, { nuance: string; basis: string }>
+  actors: Record<string, { nuance: string; basis: string; sources?: { url: string; quote: string }[] }>
 }
 if (!nuances.source.url.startsWith('https://')) errors.push('nuances.json : source sans https')
 for (const [code, n] of Object.entries(nuances.nuances)) if (!nuances.blocs.some((b) => b.id === n.bloc)) errors.push(`nuances.json : bloc inconnu pour ${code}`)
@@ -140,9 +140,11 @@ for (const [slug, a] of Object.entries(nuances.actors)) {
   if (!nuances.nuances[a.nuance]) errors.push(`nuances.json : nuance inconnue ${a.nuance} (${slug})`)
   if (a.basis !== 'grille' && a.basis !== 'deduite') errors.push(`nuances.json : base invalide pour ${slug}`)
   if (!cand.actors.some((x) => x.slug === slug)) errors.push(`nuances.json : candidat inconnu ${slug}`)
+  for (const x of a.sources ?? [])
+    if (!x.url.startsWith('https://') || !x.quote || x.quote.length < 12 || /wikipedia\.org|franceinfo\.fr/.test(x.url)) errors.push(`nuances.json : source invalide pour ${slug}`)
 }
-const sansNuance = cand.actors.filter((a) => a.verified && !nuances.actors[a.slug] && (a as { party?: string }).party).length
-if (sansNuance) warnings.push(`${sansNuance} candidat(s) avec un parti mais sans nuance`)
+const sansNuance = cand.actors.filter((a) => a.verified && !nuances.actors[a.slug] && (a as { status?: string }).status !== 'retire').length
+if (sansNuance) warnings.push(`${sansNuance} candidat(s) en lice sans nuance : à classer, sources à l'appui`)
 
 // Quiz flash : schéma, identifiant = nom du fichier, paliers croissants jusqu'à 100
 const flashDir = path.join(ROOT, 'content/quiz/flash')

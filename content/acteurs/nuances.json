@@ -1,17 +1,7 @@
 {
   "_note": "Grille officielle des nuances politiques du ministère de l'Intérieur (instruction du 2 février 2026, annexes 1 et 3), validée par le Conseil d'État le 27 février 2026. « grille » : le parti est nommé dans la grille. « deduite » : le parti n'y est pas nommé, la nuance de sensibilité est appliquée par Ça vote ? selon les règles de l'instruction. Pas de parti indiqué : non classé.",
-  "source": {
-    "title": "Instruction du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 et 3",
-    "publisher": "Légifrance",
-    "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
-    "date": "2026-02-02"
-  },
-  "validation": {
-    "title": "Élections municipales 2026 : le Conseil d'État rejette les recours de LFI et de l'UDR contre la circulaire attribuant des nuances politiques",
-    "publisher": "Conseil d'État",
-    "url": "https://www.conseil-etat.fr/actualites/elections-municipales-2026-le-conseil-d-etat-rejette-les-recours-de-lfi-et-de-l-udr-contre-la-circulaire-attribuant-des-nuances-politiques-pour-l",
-    "date": "2026-02-27"
-  },
+  "source": { "title": "Instruction du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 et 3", "publisher": "Légifrance", "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC", "date": "2026-02-02" },
+  "validation": { "title": "Élections municipales 2026 : le Conseil d'État rejette les recours de LFI et de l'UDR contre la circulaire attribuant des nuances politiques", "publisher": "Conseil d'État", "url": "https://www.conseil-etat.fr/actualites/elections-municipales-2026-le-conseil-d-etat-rejette-les-recours-de-lfi-et-de-l-udr-contre-la-circulaire-attribuant-des-nuances-politiques-pour-l", "date": "2026-02-27" },
   "blocs": [
     { "id": "EXG", "label": "Extrême gauche" },
     { "id": "GAU", "label": "Gauche" },
@@ -68,10 +58,161 @@
     "edouard-philippe": { "nuance": "HOR", "basis": "grille" },
     "bruno-retailleau": { "nuance": "LR", "basis": "grille" },
     "david-lisnard": { "nuance": "DVD", "basis": "deduite", "note": "Nouvelle Énergie n'est pas nommée ; sensibilité de droite." },
-    "gilles-platret": { "nuance": "DVD", "basis": "deduite", "note": "Sans parti : ancien vice-président des Républicains, parti quitté en 2023 ; maire divers droite de Chalon-sur-Saône (France 3, 8 octobre 2026)." },
+    "gilles-platret": {
+      "nuance": "DVD",
+      "basis": "deduite",
+      "note": "Sans parti : ancien vice-président des Républicains, parti qu'il a quitté en 2024 ; le ministère l'a classé divers droite aux législatives de 2024.",
+      "sources": [
+        { "title": "Lyon Capitale", "publisher": "Lyon Capitale", "url": "https://www.lyoncapitale.fr/politique/gilles-platret-nouveau-candidat-a-lelection-presidentielle-de-2027", "quote": "Ancien membre de l’UMP puis des Républicains, il siège parmi les divers droite depuis 2024." },
+        { "title": "Sud Radio", "publisher": "Sud Radio", "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gilles-platret", "quote": "2015–2024 : Membre du parti Les Républicains (LR)." }
+      ]
+    },
     "nicolas-dupont-aignan": { "nuance": "DSV", "basis": "grille", "note": "Debout la France est cité dans la nuance DSV." },
     "marine-le-pen": { "nuance": "RN", "basis": "grille" },
     "eric-zemmour": { "nuance": "REC", "basis": "grille" },
-    "florian-philippot": { "nuance": "EXD", "basis": "grille", "note": "Les Patriotes sont cités dans la nuance EXD." }
+    "florian-philippot": { "nuance": "EXD", "basis": "grille", "note": "Les Patriotes sont cités dans la nuance EXD." },
+    "xavier-bertrand": {
+      "nuance": "DVD",
+      "basis": "deduite",
+      "note": "Membre des Républicains et président de Nous France, parti associé à LR, il est candidat sans l'investiture de LR, qui a désigné Bruno Retailleau ; la grille réserve LR aux candidats investis ou soutenus par le parti, d'où la nuance de sensibilité Divers droite.",
+      "sources": [
+        { "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants", "publisher": "LCP", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "quote": "A droite, le président LR des Hauts-de-France, Xavier Bertrand (Nous France), assure qu'il en sera également." },
+        { "title": "Présidentielle de 2027 : qui sont les candidats déclarés, ou presque, à l’élection ?", "publisher": "Public Sénat", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-de-2027-qui-sont-les-candidats-declares-ou-presque-a-lelection", "quote": "A la tête de Nous France, parti associé à LR, le président du conseil régional des Hauts-de-France a officialisé sa candidature" },
+        { "title": "Présidentielle 2027 : qui sont les candidats déclarés ?", "publisher": "Sud Radio", "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares", "quote": "Le président des LR sera le représentant de la droite républicaine mais il peine à rassembler derrière lui." }
+      ]
+    },
+    "bernard-cazeneuve": {
+      "nuance": "DVG",
+      "basis": "deduite",
+      "note": "La Convention n'est pas nommée dans la grille. Ancien Premier ministre socialiste, il a quitté le PS en 2022 et se dit « républicain de gauche » ; Public Sénat range La Convention dans la gauche réformiste.",
+      "sources": [
+        { "title": "Présidentielle 2027: prêt à se lancer dans la course à l'Élysée, Bernard Cazeneuve décline la primaire socialiste", "publisher": "LCP", "url": "https://lcp.fr/actualites/presidentielle-2027-pret-a-se-lancer-dans-la-course-a-l-elysee-bernard-cazeneuve-decline", "quote": "l'ancien Premier ministre, qui a quitté le PS en 2022, affirme qu'il ne participera pas à la primaire socialiste" },
+        { "title": "Présidentielle 2027: prêt à se lancer dans la course à l'Élysée, Bernard Cazeneuve décline la primaire socialiste", "publisher": "LCP", "url": "https://lcp.fr/actualites/presidentielle-2027-pret-a-se-lancer-dans-la-course-a-l-elysee-bernard-cazeneuve-decline", "quote": "Je suis un républicain de gauche et humaniste" },
+        { "title": "Présidentielle de 2027 : qui sont les candidats déclarés, ou presque, à l’élection ?", "publisher": "Public Sénat", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-de-2027-qui-sont-les-candidats-declares-ou-presque-a-lelection", "quote": "une fédération de la gauche réformiste, réunissant le PS, Place Publique, mais aussi La Convention menée par Bernard Cazeneuve" }
+      ]
+    },
+    "dominique-de-villepin": {
+      "nuance": "DVD",
+      "basis": "deduite",
+      "note": "La France humaniste n'est pas nommée dans la grille et il ne s'est jamais présenté à une élection. Parcours entièrement à droite : RPR dès 1977, UMP jusqu'en 2011, Premier ministre de Jacques Chirac. Il dit lui-même que ses thèmes échappent au clivage droite-gauche.",
+      "sources": [
+        { "title": "Dominique de Villepin (biographie)", "publisher": "CIDOB", "url": "https://www.cidob.org/lider-politico/dominique-villepin", "quote": "Villepin se afilió al partido gaullista Reagrupamiento por la República (RPR)" },
+        { "title": "Dominique Galouzeau de Villepin", "publisher": "Encyclopédie Larousse", "url": "https://www.larousse.fr/encyclopedie/personnage/Dominique_Galouzeau_de_Villepin/149004", "quote": "D. de Villepin fait savoir qu’il quitte l’UMP en janvier 2011" },
+        { "title": "Dominique de Villepin lance son parti et se positionne pour 2027 (L'édito politique)", "publisher": "Sud Radio", "url": "https://www.sudradio.fr/emission/leditopolitique-430", "quote": "Donc c'est lui, l'ancien Premier ministre de Jacques Chirac, qui entre dans la course avec un nouveau parti et un nouveau livre." },
+        { "title": "Dominique de Villepin : \"Nous voulons être présents en 2027\"", "publisher": "LCP", "url": "https://lcp.fr/actualites/dominique-de-villepin-nous-voulons-etre-presents-en-2027-429413", "quote": "échappaient au clivage droite-gauche" }
+      ]
+    },
+    "francois-asselineau": {
+      "nuance": "DSV",
+      "basis": "deduite",
+      "note": "L'UPR n'est pas nommée dans la grille. À sa dernière candidature, les législatives de 2024 (11e circonscription des Français de l'étranger), le ministère l'a classé Droite souverainiste ; sa liste aux européennes de 2024 était classée Divers, comme l'UPR l'a longtemps été.",
+      "sources": [
+        { "title": "Français établis hors de France, 11e circonscription : résultats des législatives 2024", "publisher": "Le Courrier de la Mayenne (résultats officiels)", "url": "https://elections.lecourrierdelamayenne.fr/legislatives/2024/circonscription/ZZ/ZZ11/11eme-circonscription", "quote": "DSV François ASSELINEAU Droite souverainiste" },
+        { "title": "Résultats des élections européennes 2024 (France)", "publisher": "Le Courrier de la Mayenne (résultats officiels)", "url": "https://elections.lecourrierdelamayenne.fr/europeennes/2024/", "quote": "FA François ASSELINEAU Liste Divers" },
+        { "title": "Le ministre de l'Intérieur adresse une fin de non-recevoir à la demande de François Asselineau d'attribuer la nuance politique propre « UPR » à nos 574 candidats", "publisher": "UPR (communiqué, 7 juin 2017)", "url": "https://www.upr.fr/actualite/ministre-de-linterieur-adresse-fin-de-non-recevoir-a-demande-de-francois-asselineau-dattribuer-nuance-politique-propre-upr-a-nos-574-candidats-resteront-noyes/", "quote": "au lieu de la nuance « divers » comme c’est le cas actuellement" },
+        { "title": "Présidentielle 2027 : qui sont les candidats déclarés ?", "publisher": "Sud Radio", "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares", "quote": "François Asselineau (droite souverainiste, UPR)" }
+      ]
+    },
+    "juan-branco": {
+      "nuance": "DIV",
+      "basis": "deduite",
+      "note": "Candidat sous la bannière de La France insoumise aux législatives de 2017, il s'en est éloigné et se présente avec Les Ruches, mouvement qui se dit sans parti ; aucune nuance officielle récente ni qualification de presse ne permet de trancher.",
+      "sources": [
+        { "title": "Législatives: un avocat de Wikileaks « insoumis » laboure le « 9-3 »", "publisher": "Public Sénat", "url": "https://www.publicsenat.fr/actualites/politique/legislatives-un-avocat-de-wikileaks-insoumis-laboure-le-9-3-61008", "quote": "en campagne pour les législatives sous la bannière de La France insoumise dans la 12e circonscription de Seine-Saint-Denis" },
+        { "title": "Les Ruches — Mouvement citoyen pour Juan Branco en 2027", "publisher": "Les Ruches (site du mouvement)", "url": "https://ruches.org/", "quote": "Un mouvement citoyen organisé en cellules locales. Sans parti, sans chef, financé à 100 % par le peuple." },
+        { "title": "Présidentielle 2027 : qui sont les candidats déclarés ?", "publisher": "Sud Radio", "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares", "quote": "Juan Branco (se lance avec son propre mouvement)" }
+      ]
+    },
+    "emmanuel-dubuisson": {
+      "nuance": "DIV",
+      "basis": "deduite",
+      "note": "Candidat sans étiquette, sans parcours politique ni candidature antérieure connus : rien ne permet de le classer.",
+      "sources": [
+        { "title": "Emmanuel Dubuisson, candidat à l'élection présidentielle 2027", "publisher": "Site de campagne Dubuisson 2027", "url": "https://dubuisson2027.fr/", "quote": "Candidat sans étiquette" }
+      ]
+    },
+    "francis-lalanne": {
+      "nuance": "DIV",
+      "basis": "deduite",
+      "note": "France Libre n'est pas nommée dans la grille. À sa dernière candidature, les législatives de 2024 en Guadeloupe, le ministère l'a classé Divers, comme sa liste aux européennes de 2024.",
+      "sources": [
+        { "title": "Guadeloupe, 3e circonscription : résultats des législatives 2024", "publisher": "Le Courrier de la Mayenne (résultats officiels)", "url": "https://elections.lecourrierdelamayenne.fr/legislatives/2024/circonscription/971/97103/3eme-circonscription", "quote": "DIV Francis LALANNE Divers" },
+        { "title": "Résultats des élections européennes 2024 (France)", "publisher": "Le Courrier de la Mayenne (résultats officiels)", "url": "https://elections.lecourrierdelamayenne.fr/europeennes/2024/", "quote": "FL Francis LALANNE Liste Divers" }
+      ]
+    },
+    "sylvain-durif": {
+      "nuance": "DIV",
+      "basis": "deduite",
+      "note": "Sans parti ; sa seule candidature connue est une municipale de 2014 dans un village de l'Aude, sans nuance publiée : rien ne permet de le classer.",
+      "sources": [
+        { "title": "Présidentielle 2027 : Qui est Sylvain Durif, le « Christ cosmique » qui veut se présenter ?", "publisher": "20 Minutes", "url": "https://www.20minutes.fr/politique/4241053-20260826-presidentielle-2027-sylvain-durif-christ-cosmique-veut-presenter", "quote": "Le quinquagénaire avait été ensuite candidat aux municipales en 2014 dans un village voisin." }
+      ]
+    },
+    "natacha-polony": {
+      "nuance": "DIV",
+      "basis": "deduite",
+      "note": "Sans parti. Son seul engagement partisan date du début des années 2000, au Mouvement des citoyens de Jean-Pierre Chevènement ; elle se dit souverainiste et se place entre les offres existantes. Pas assez pour la classer à gauche ou à droite.",
+      "sources": [
+        { "title": "« Oui, je suis candidate à l'élection présidentielle », annonce Natacha Polony", "publisher": "LCP", "url": "https://lcp.fr/actualites/oui-je-suis-candidate-a-l-election-presidentielle-annonce-natacha-polony-443808", "quote": "Côté politique, Natacha Polony s'était un temps, au début des années 2000, engagée aux côtés du Mouvement des citoyens de Jean-Pierre Chevènement." },
+        { "title": "« Oui, je suis candidate à l'élection présidentielle », annonce Natacha Polony", "publisher": "LCP", "url": "https://lcp.fr/actualites/oui-je-suis-candidate-a-l-election-presidentielle-annonce-natacha-polony-443808", "quote": "Elle souhaite se positionner entre les \"deux offres clairement identifiées\" aujourd'hui" },
+        { "title": "La biographie et le CV de Natacha Polony", "publisher": "Sud Radio", "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-natacha-polony", "quote": "Se revendiquant du gaullisme social, souverainiste, antilibérale et favorable à la décroissance" }
+      ]
+    },
+    "jean-lassalle": {
+      "nuance": "DVD",
+      "basis": "deduite",
+      "note": "Résistons ! n'est pas nommé dans la grille. Aux législatives de 2024, sa dernière candidature, le ministère l'a classé Divers droite ; sa liste aux européennes de 2024 l'était aussi. Il a été élu sous l'étiquette UDF puis MoDem.",
+      "sources": [
+        { "title": "Pyrénées-Atlantiques, 4e circonscription : résultats des législatives 2024", "publisher": "Le Courrier de la Mayenne (résultats officiels)", "url": "https://elections.lecourrierdelamayenne.fr/legislatives/2024/circonscription/64/6404/4eme-circonscription", "quote": "DVD Jean LASSALLE Qualifié Divers droite" },
+        { "title": "Résultats des élections européennes 2024 (France)", "publisher": "Le Courrier de la Mayenne (résultats officiels)", "url": "https://elections.lecourrierdelamayenne.fr/europeennes/2024/", "quote": "JL Jean LASSALLE Liste divers droite" },
+        { "title": "Législatives 2024 : trois triangulaires pour le second tour au Pays basque", "publisher": "ICI Pays basque (Radio France)", "url": "https://www.francebleu.fr/infos/politique/direct-legislatives-2024-suivez-toutes-les-informations-du-premier-tour-des-elections-au-pays-basque-9697708", "quote": "Jean Lassalle , Divers Droite (Résistons !)" }
+      ]
+    },
+    "benoit-mathieu": {
+      "nuance": "DIV",
+      "basis": "deduite",
+      "note": "Sans parti et sans aucun parcours politique : rien ne permet de le classer.",
+      "sources": [
+        { "title": "Chauffailles. Benoît Mathieu part à vélo en quête des 500 parrainages pour être candidat à la présidentielle", "publisher": "Le Journal de Saône-et-Loire", "url": "https://www.lejsl.com/elections/2026/04/01/benoit-mathieu-candidat-a-la-presidentielle-a-velo-il-part-en-quete-des-500-parrainages", "quote": "Ce Chauffaillon de 27 ans n’a pourtant aucune antériorité dans le milieu politique." },
+        { "title": "« C'est la première fois que je viens en Creuse » : à 27 ans, il parcourt la France à vélo pour devenir président", "publisher": "ICI Creuse (Radio France)", "url": "https://www.ici.fr/nouvelle-aquitaine/creuse-23/evaux-les-bains/c-est-la-premiere-fois-que-je-viens-en-creuse-a-27-ans-il-parcourt-la-france-a-velo-pour-devenir-president-2595353", "quote": "Encarté dans aucun parti, nous l'avons rencontré à Évaux-les-Bains." }
+      ]
+    },
+    "manolo-mlekuz": {
+      "nuance": "DVG",
+      "basis": "deduite",
+      "note": "Trajectoire n'est pas nommée dans la grille. Ancien adhérent du PS, il a milité à La France insoumise avant de quitter ces partis ; il dit que ses idées « demeurent à gauche ».",
+      "sources": [
+        { "title": "Présidentielle 2027 : qui est Manolo Mlekuz, ce candidat âgé de 20 ans parti sillonner la France pour faire campagne ?", "publisher": "CNews", "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti", "quote": "Ancien adhérent au Parti socialiste , il a ensuite milité pour La France Insoumise ." },
+        { "title": "Présidentielle 2027 : qui est Manolo Mlekuz, ce candidat âgé de 20 ans parti sillonner la France pour faire campagne ?", "publisher": "CNews", "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti", "quote": "même si ses «idées demeurent à gauche»" }
+      ]
+    },
+    "clara-egger": {
+      "nuance": "DIV",
+      "basis": "deduite",
+      "note": "Solution démocratique n'est pas nommée dans la grille. Sans parcours partisan, elle fait campagne sur une seule proposition, le référendum d'initiative citoyenne constituant. Sud Radio la range dans une rubrique « Gauche ni LFI ni PS » sans l'expliquer : pas assez pour la classer.",
+      "sources": [
+        { "title": "Présidentielle : RIC, RIP… 50 nuances de référendums dans les programmes des candidats", "publisher": "Public Sénat", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-ric-rip-50-nuances-de-referendums-dans-les-programmes-des-candidats", "quote": "ne fait qu’une proposition : l’instauration d’un référendum d’initiative citoyenne constituant" },
+        { "title": "Présidentielle 2027 : qui sont les candidats déclarés ?", "publisher": "Sud Radio", "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares", "quote": "Gauche ni LFI ni PS Clara Egger (part seule)" }
+      ]
+    },
+    "jean-francois-legendre": {
+      "nuance": "DIV",
+      "basis": "deduite",
+      "note": "À nous maintenant, mouvement citoyen fondé en 2026, n'est pas nommé dans la grille ; aucun parcours politique connu : rien ne permet de le classer.",
+      "sources": [
+        { "title": "Le mouvement citoyen À NOUS MAINTENANT émerge", "publisher": "TV83", "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/", "quote": "« À nous maintenant » est un site et un mouvement citoyen indépendant fondé en 2026." }
+      ]
+    },
+    "antoine-mikolajczak": {
+      "nuance": "ECO",
+      "basis": "deduite",
+      "note": "Équinoxe n'est pas nommé dans la grille. Le ministère a classé « Liste écologiste » la liste d'Équinoxe conduite par Marine Cholley aux européennes de 2024, et la presse décrit Équinoxe comme un parti écologiste. Lui ne s'était jamais présenté.",
+      "sources": [
+        { "title": "Quelles sont les listes et têtes de listes pour les Européennes 2024 ?", "publisher": "Ma Commune.info", "url": "https://www.macommune.info/quelles-sont-les-listes-et-tetes-de-listes-pour-les-europeennes", "quote": "Pour la première fois le parti Equinoxe présente sa liste aux élections européennes, portée par Marine Cholley." },
+        { "title": "Résultats des élections européennes 2024 (France)", "publisher": "Le Courrier de la Mayenne (résultats officiels)", "url": "https://elections.lecourrierdelamayenne.fr/europeennes/2024/", "quote": "MC Marine CHOLLEY Liste écologiste" },
+        { "title": "Européennes : ces partis écolos dont on parle peu", "publisher": "L'info durable", "url": "https://www.linfodurable.fr/politique/europeennes-ces-partis-ecolos-dont-parle-peu-45537", "quote": "Equinoxe est un parti écologique indépendant" },
+        { "title": "Présidentielle 2027 : qui sont les candidats déclarés ?", "publisher": "Sud Radio", "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares", "quote": "L’ingénieur et patron du parti Équinoxe annonce sa candidature le 27 juin 2026" }
+      ]
+    }
   }
 }

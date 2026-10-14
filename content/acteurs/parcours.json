@@ -719,6 +719,281 @@
         "url": "https://www.publicsenat.fr/actualites/politique/des-transfuges-du-ps-et-du-mrc-fusionnent-pour-fonder-un-nouveau-parti-137491",
         "publisher": "Public Sénat"
       }
+    ],
+    "dominique-de-villepin": [
+      {
+        "party": "Rassemblement pour la République",
+        "sigle": "RPR",
+        "from": "1977",
+        "to": "2002",
+        "role": "membre",
+        "quote": "En 1977, antes de flanquear las puertas de la ENA para luego ser reclutado en el servicio diplomático, Villepin se afilió al partido gaullista Reagrupamiento por la República (RPR)",
+        "url": "https://www.cidob.org/lider-politico/dominique-villepin",
+        "publisher": "CIDOB"
+      },
+      {
+        "party": "Union pour un mouvement populaire",
+        "sigle": "UMP",
+        "from": "2002",
+        "to": "2011",
+        "role": "membre",
+        "quote": "D. de Villepin fait savoir qu’il quitte l’UMP en janvier 2011",
+        "url": "https://www.larousse.fr/encyclopedie/personnage/Dominique_Galouzeau_de_Villepin/149004",
+        "publisher": "Encyclopédie Larousse"
+      },
+      {
+        "party": "République solidaire",
+        "sigle": "RS",
+        "from": "2010",
+        "to": "?",
+        "role": "fondateur",
+        "quote": "En juin 2010, il lance son nouveau mouvement, République solidaire.",
+        "url": "https://www.larousse.fr/encyclopedie/personnage/Dominique_Galouzeau_de_Villepin/149004",
+        "publisher": "Encyclopédie Larousse"
+      },
+      {
+        "party": "La France humaniste",
+        "sigle": "LFH",
+        "from": "2025",
+        "to": "",
+        "role": "fondateur, président d'honneur",
+        "quote": "Dominique de Villepin lance son parti et se positionne pour 2027 Épisode du vendredi 27 juin 2025",
+        "url": "https://www.sudradio.fr/emission/leditopolitique-430",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "francois-asselineau": [
+      {
+        "party": "Rassemblement pour la France",
+        "sigle": "RPF",
+        "from": "1999",
+        "to": "2006",
+        "role": "membre du bureau national, porte-parole",
+        "quote": "En 1999, il rejoint le Rassemblement pour la France (RPF) fondé par Charles Pasqua et Philippe de Villiers, dont il devient membre du bureau national, directeur des études et porte-parole.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Union pour un mouvement populaire",
+        "sigle": "UMP",
+        "from": "2004",
+        "to": "2006",
+        "role": "membre",
+        "quote": "Membre de l'UMP entre 2004 et 2006, il démissionne du groupe par opposition à la ligne européenne du parti",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Rassemblement pour l'indépendance et la souveraineté de la France",
+        "sigle": "RIF",
+        "from": "2006",
+        "to": "2007",
+        "role": "membre du comité directeur",
+        "quote": "2006–2007 : Membre du comité directeur du RIF.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Union populaire républicaine",
+        "sigle": "UPR",
+        "from": "2007",
+        "to": "",
+        "role": "fondateur, président",
+        "quote": "Depuis le 25 mars 2007 : Fondateur et président de l'Union populaire républicaine (UPR).",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "juan-branco": [
+      {
+        "party": "La France insoumise",
+        "sigle": "LFI",
+        "from": "2017",
+        "to": "?",
+        "role": "candidat aux législatives",
+        "quote": "en campagne pour les législatives sous la bannière de La France insoumise dans la 12e circonscription de Seine-Saint-Denis",
+        "url": "https://www.publicsenat.fr/actualites/politique/legislatives-un-avocat-de-wikileaks-insoumis-laboure-le-9-3-61008",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "Les Ruches",
+        "sigle": "",
+        "from": "2025",
+        "to": "",
+        "role": "candidat porté par le mouvement",
+        "quote": "Mouvement citoyen pour Juan Branco en 2027",
+        "url": "https://ruches.org/",
+        "publisher": "Les Ruches (site du mouvement)"
+      }
+    ],
+    "emmanuel-dubuisson": [],
+    "gilles-platret": [
+      {
+        "party": "Union pour un mouvement populaire",
+        "sigle": "UMP",
+        "from": "?",
+        "to": "2015",
+        "role": "membre",
+        "quote": "Ancien membre de l’UMP puis des Républicains, il siège parmi les divers droite depuis 2024.",
+        "url": "https://www.lyoncapitale.fr/politique/gilles-platret-nouveau-candidat-a-lelection-presidentielle-de-2027",
+        "publisher": "Lyon Capitale"
+      },
+      {
+        "party": "Les Républicains",
+        "sigle": "LR",
+        "from": "2015",
+        "to": "2024",
+        "role": "membre, porte-parole (2017), vice-président (2019-2023)",
+        "quote": "2015–2024 : Membre du parti Les Républicains (LR).",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gilles-platret",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "francis-lalanne": [
+      {
+        "party": "Alliance jaune",
+        "sigle": "",
+        "from": "2019",
+        "to": "2019",
+        "role": "tête de liste aux européennes",
+        "quote": "Le chanteur Francis Lalanne a annoncé mardi prendre la tête d'une liste nommée \"Alliance jaune\" réunissant des \"gilets jaunes\", pour les élections européennes du 26 mai.",
+        "url": "https://www.publicsenat.fr/actualites/politique/gilets-jaunes-francis-lalanne-prend-la-tete-d-une-liste-alliance-jaune-140749",
+        "publisher": "Public Sénat"
+      },
+      {
+        "party": "France Libre",
+        "sigle": "",
+        "from": "2024",
+        "to": "",
+        "role": "cofondateur avec Dieudonné, candidat",
+        "quote": "pour former la liste \"France Libre\" aux élections européennes, puis aux législatives en Guadeloupe.",
+        "url": "https://www.sudradio.fr/politique/francis-lalanne-du-chanteur-engage-des-annees-1980-aux-spheres-complotistes",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "sylvain-durif": [],
+    "natacha-polony": [
+      {
+        "party": "Mouvement des citoyens",
+        "sigle": "MDC",
+        "from": "2001",
+        "to": "?",
+        "role": "secrétaire nationale, candidate du Pôle républicain aux législatives de 2002",
+        "quote": "Son parcours politique s'amorce en juin 2001 lorsqu'elle devient secrétaire nationale chargée des questions de société au Mouvement des citoyens (MDC) de Jean-Pierre Chevènement",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-natacha-polony",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "jean-lassalle": [
+      {
+        "party": "Union pour la démocratie française",
+        "sigle": "UDF",
+        "from": "?",
+        "to": "2007",
+        "role": "député",
+        "quote": "élu sous l'étiquette UDF, puis MoDem, non-inscrit et membre du groupe Libertés et territoires",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Mouvement démocrate",
+        "sigle": "MoDem",
+        "from": "?",
+        "to": "2016",
+        "role": "vice-président (2010-2016)",
+        "quote": "2010–2016 : Vice-président du Mouvement démocrate (MoDem).",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle",
+        "publisher": "Sud Radio"
+      },
+      {
+        "party": "Résistons !",
+        "sigle": "",
+        "from": "2016",
+        "to": "",
+        "role": "fondateur, président",
+        "quote": "Depuis 2016 : Fondateur et président du parti politique Résistons.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "benoit-mathieu": [],
+    "manolo-mlekuz": [
+      {
+        "party": "Parti socialiste",
+        "sigle": "PS",
+        "from": "?",
+        "to": "?",
+        "role": "adhérent",
+        "quote": "Ancien adhérent au Parti socialiste",
+        "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti",
+        "publisher": "CNews"
+      },
+      {
+        "party": "La France insoumise",
+        "sigle": "LFI",
+        "from": "?",
+        "to": "?",
+        "role": "militant",
+        "quote": "il a ensuite milité pour La France Insoumise",
+        "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti",
+        "publisher": "CNews"
+      },
+      {
+        "party": "Trajectoire",
+        "sigle": "",
+        "from": "?",
+        "to": "",
+        "role": "fondateur",
+        "quote": "Le jeune homme a même créé son propre parti, «Trajectoire»",
+        "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti",
+        "publisher": "CNews"
+      }
+    ],
+    "clara-egger": [
+      {
+        "party": "Espoir RIC",
+        "sigle": "",
+        "from": "2022",
+        "to": "2022",
+        "role": "candidate du mouvement à la présidentielle de 2022",
+        "quote": "Il a porté à l'élection présidentielle 2022 la candidature de Clara Egger",
+        "url": "https://www.ifop.com/wp-content/uploads/2022/02/cp_ifop_ric_07.02.2022.pdf",
+        "publisher": "Ifop"
+      },
+      {
+        "party": "Solution démocratique",
+        "sigle": "",
+        "from": "?",
+        "to": "",
+        "role": "présidente",
+        "quote": "Universitaire et présidente de Solution démocratique",
+        "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+        "publisher": "Sud Radio"
+      }
+    ],
+    "jean-francois-legendre": [
+      {
+        "party": "À nous maintenant",
+        "sigle": "",
+        "from": "2026",
+        "to": "",
+        "role": "porteur de la candidature",
+        "quote": "Porté par Jean-François Legendre, citoyen engagé et observateur des crises de notre époque",
+        "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/",
+        "publisher": "TV83"
+      }
+    ],
+    "antoine-mikolajczak": [
+      {
+        "party": "Équinoxe",
+        "sigle": "",
+        "from": "2023",
+        "to": "",
+        "role": "adhérent, candidat désigné par les adhérents",
+        "quote": "Jusqu’à ce qu’il découvre Équinoxe, auquel il adhère, il y a trois ans.",
+        "url": "https://jhm.fr/sous-la-banniere-dequinoxe-antoine-mikolajczak-brigue-la-presidence-de-la-republique/",
+        "publisher": "Le Journal de la Haute-Marne"
+      }
     ]
   }
 }
