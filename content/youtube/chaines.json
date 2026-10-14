@@ -140,6 +140,13 @@
       "media": "france-culture"
     },
     {
+      "id": "UCGvjUWz3mGV9cssraATuEsw",
+      "name": "Radio Nova",
+      "group": "media",
+      "handle": "@radionova",
+      "media": "radio-nova"
+    },
+    {
       "id": "UCQd5LYcykaFeZtjDaP3bNSA",
       "name": "Le Point",
       "group": "media",
