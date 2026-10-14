@@ -2,44 +2,68 @@
   "_note": "Aperçus affichés sur /boutique : uniquement des designs déjà en ligne sur la boutique. Image : public/img/boutique/<id>.webp, tirée de docs/boutique/impression/clair.",
   "apercus": [
     {
-      "id": "insoumise-belle-mere",
-      "alt": "Insoumise. Sauf à ma belle-mère."
+      "id": "droitard",
+      "alt": "Droitard. Et alors ?"
+    },
+    {
+      "id": "gauchiasse",
+      "alt": "Gauchiasse. Et alors ?"
+    },
+    {
+      "id": "modere",
+      "alt": "Modéré. Pas muet."
+    },
+    {
+      "id": "ruisselle",
+      "alt": "Mon salaire ne ruisselle pas."
     },
     {
       "id": "insoumise-mere",
       "alt": "Insoumise. Sauf à ma mère."
     },
     {
-      "id": "insoumis-belle-mere",
-      "alt": "Insoumis. Sauf à ma belle-mère."
-    },
-    {
-      "id": "insoumise-chat",
-      "alt": "Insoumise. Sauf à mon chat."
+      "id": "insoumise-belle-mere",
+      "alt": "Insoumise. Sauf à ma belle-mère."
     },
     {
       "id": "insoumise-mari",
       "alt": "Insoumise. Sauf à mon mari."
     },
     {
+      "id": "insoumise-chat",
+      "alt": "Insoumise. Sauf à mon chat."
+    },
+    {
       "id": "insoumise-patron",
       "alt": "Insoumise. Sauf à mon patron."
     },
     {
-      "id": "insoumise-fils",
-      "alt": "Insoumise. Sauf à mon fils."
+      "id": "insoumis-mere",
+      "alt": "Insoumis. Sauf à ma mère."
     },
     {
-      "id": "insoumise-fille",
-      "alt": "Insoumise. Sauf à ma fille."
+      "id": "insoumis-belle-mere",
+      "alt": "Insoumis. Sauf à ma belle-mère."
     },
     {
-      "id": "subir",
-      "alt": "Je refuse de subir. Mais qui choisir ?"
+      "id": "insoumis-femme",
+      "alt": "Insoumis. Sauf à ma femme."
     },
     {
-      "id": "velo",
-      "alt": "Je viens à vélo. Avec mes convictions."
+      "id": "insoumis-fille",
+      "alt": "Insoumis. Sauf à ma fille."
+    },
+    {
+      "id": "insoumis-fils",
+      "alt": "Insoumis. Sauf à mon fils."
+    },
+    {
+      "id": "insoumis-chat",
+      "alt": "Insoumis. Sauf à mon chat."
+    },
+    {
+      "id": "insoumis-patron",
+      "alt": "Insoumis. Sauf à mon patron."
     }
   ]
 }

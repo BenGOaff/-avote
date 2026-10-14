@@ -2,41 +2,19 @@
 
 Limites Spreadshop : nom 50 caractères, description 200, 25 mots-clés. Toutes les fiches ci-dessous les respectent. Fichier : `impression/clair/<fichier>`, ou `impression/sombre/` pour les produits foncés (même fiche).
 
-Équilibre : le lot 1 en ligne compte 8 « Insoumis·e » sur 10. Le lot 2 rééquilibre (droite, centre) ; ensuite, alterner les camps à chaque lot.
+Équilibre (relevé de la boutique du 14 octobre 2026) : 16 designs en ligne, dont 14 « Insoumis·e ». Le prochain lot doit être le lot à droite et au centre ci-dessous, sinon la boutique se lit comme une boutique de camp. Ensuite, alterner les camps à chaque lot.
 
 ## Description de la boutique
 
 Tee-shirts, sweats, mugs et sacs pour la présidentielle 2027. Chaque camp a sa phrase, et ceux qui hésitent aussi. Vendus, fabriqués et livrés par Spreadshirt.
 
-## Déjà en ligne (lot 1)
+## Déjà en ligne (relevé du 14 octobre 2026)
 
-`insoumise-belle-mere`, `insoumise-mere`, `insoumis-belle-mere`, `insoumise-chat`, `insoumise-mari`, `insoumise-patron`, `insoumise-fils`, `insoumise-fille`, `subir`, `velo`
+`droitard`, `gauchiasse`, `modere`, `ruisselle`, `insoumise-mere`, `insoumise-belle-mere`, `insoumise-mari`, `insoumise-chat`, `insoumise-patron`, `insoumis-mere`, `insoumis-belle-mere`, `insoumis-femme`, `insoumis-fille`, `insoumis-fils`, `insoumis-chat`, `insoumis-patron`
 
-## Lot 2 : à importer en priorité
+Vus en ligne le 13 octobre, absents du relevé du 14 : `insoumise-fils`, `insoumise-fille`, `subir`, `velo`. À vérifier dans le tableau de bord Spreadshop (dépubliés ou en attente de validation).
 
-### `18-06-40.png`
-
-**Nom** : 18.06.40. L’appel.
-
-**Description** : Le 18 juin 1940, de Gaulle appelle depuis Londres, à la BBC, à continuer le combat. Une date que les gaullistes reconnaissent sans légende.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, de Gaulle, 18 juin 1940, appel du 18 juin, gaulliste, histoire, Résistance
-
-### `anti-woke.png`
-
-**Nom** : Anti-woke. Et réveillé à 6 h.
-
-**Description** : Pour qui se méfie du wokisme et se lève tôt. Le jeu de mots est voulu : woke veut dire éveillé.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, anti-woke, wokisme, droite, humour de droite, travail
-
-### `bulletin.png`
-
-**Nom** : Mon bulletin m’appartient.
-
-**Description** : Personne ne vote à ta place : ni ta famille, ni ton patron, ni un sondage. Pour les électeurs qui décident seuls.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, électeur, vote, liberté, isoloir, citoyen
+## Prochain lot : à importer en priorité, dans cet ordre
 
 ### `de-droite.png`
 
@@ -45,14 +23,6 @@ Tee-shirts, sweats, mugs et sacs pour la présidentielle 2027. Chaque camp a sa 
 **Description** : Pour une droite qui assume ses idées sans s’excuser. En face, il existe aussi : Gauchiasse. Et alors ?
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, droite, LR, conservateur, humour de droite, militant
-
-### `impots.png`
-
-**Nom** : Je veux savoir où passent mes impôts.
-
-**Description** : Pour les contribuables qui lisent leur avis d’impôt et posent la question. Valable quel que soit le gouvernement.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, impôts, contribuable, dépense publique, budget, droite
 
 ### `patriote.png`
 
@@ -70,21 +40,37 @@ Tee-shirts, sweats, mugs et sacs pour la présidentielle 2027. Chaque camp a sa 
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, travail, salaire, droite, classe moyenne, pouvoir d’achat
 
-### `droitard.png`
+### `impots.png`
 
-**Nom** : Droitard. Et alors ?
+**Nom** : Je veux savoir où passent mes impôts.
 
-**Description** : Le surnom, repris par celles et ceux qu’il visait. Pour une droite qui assume. En face, il existe aussi : Gauchiasse. Et alors ?
+**Description** : Pour les contribuables qui lisent leur avis d’impôt et posent la question. Valable quel que soit le gouvernement.
 
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, droite, droitard, humour de droite, militant
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, impôts, contribuable, dépense publique, budget, droite
 
-### `modere.png`
+### `anti-woke.png`
 
-**Nom** : Modéré. Pas muet.
+**Nom** : Anti-woke. Et réveillé à 6 h.
 
-**Description** : Pour celles et ceux qui nuancent et le disent fort. Le centre aussi a des choses à dire.
+**Description** : Pour qui se méfie du wokisme et se lève tôt. Le jeu de mots est voulu : woke veut dire éveillé.
 
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, modéré, nuance, centriste
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, anti-woke, wokisme, droite, humour de droite, travail
+
+### `18-06-40.png`
+
+**Nom** : 18.06.40. L’appel.
+
+**Description** : Le 18 juin 1940, de Gaulle appelle depuis Londres, à la BBC, à continuer le combat. Une date que les gaullistes reconnaissent sans légende.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, de Gaulle, 18 juin 1940, appel du 18 juin, gaulliste, histoire, Résistance
+
+### `bulletin.png`
+
+**Nom** : Mon bulletin m’appartient.
+
+**Description** : Personne ne vote à ta place : ni ta famille, ni ton patron, ni un sondage. Pour les électeurs qui décident seuls.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, électeur, vote, liberté, isoloir, citoyen
 
 ### `centriste.png`
 
@@ -93,6 +79,22 @@ Tee-shirts, sweats, mugs et sacs pour la présidentielle 2027. Chaque camp a sa 
 **Description** : Trop à droite pour la gauche, trop à gauche pour la droite. La bulle du niveau est pile au milieu, les reproches arrivent des deux côtés.
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, centriste, modéré, juste milieu, niveau à bulle
+
+### `vote-blanc.png`
+
+**Nom** : Vote blanc. Mon avis, non.
+
+**Description** : Voter blanc, c’est se déplacer pour dire qu’aucun candidat ne convient. Une enveloppe, une feuille vierge, un coup de surligneur jaune.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, vote blanc, abstention, bulletin, électeur, citoyen
+
+### `cafe.png`
+
+**Nom** : Pas de politique avant le café.
+
+**Description** : Pour le bureau, la cuisine ou le matin en famille : le débat attend la première tasse. Dessin au trait, la vapeur dessine un point d’interrogation. Pour tous les camps.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, café, bureau, collègues, matin, mug, débat, cadeau collègue
 
 ## Ensuite (alterner les camps à chaque lot)
 
@@ -144,14 +146,6 @@ Tee-shirts, sweats, mugs et sacs pour la présidentielle 2027. Chaque camp a sa 
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, 49.3, Assemblée nationale, Constitution, démocratie, gouvernement
 
-### `cafe.png`
-
-**Nom** : Pas de politique avant le café.
-
-**Description** : Pour le bureau, la cuisine ou le matin en famille : le débat attend la première tasse. Dessin au trait, la vapeur dessine un point d’interrogation. Pour tous les camps.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, café, bureau, collègues, matin, mug, débat, cadeau collègue
-
 ### `chat-elle-droite.png`
 
 **Nom** : Elle à droite, moi à gauche, le chat s’abstient.
@@ -191,62 +185,6 @@ Tee-shirts, sweats, mugs et sacs pour la présidentielle 2027. Chaque camp a sa 
 **Description** : Pour celles et ceux qui préfèrent les chiffres et les bilans aux promesses, quel que soit le camp au pouvoir.
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, transparence, bilan, budget, promesses, démocratie
-
-### `gauchiasse.png`
-
-**Nom** : Gauchiasse. Et alors ?
-
-**Description** : Le surnom, repris par celles et ceux qu’il visait. Pour une gauche qui assume. En face, il existe aussi : Droitard. Et alors ?
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, gauchiste, humour de gauche, militant
-
-### `insoumis-chat.png`
-
-**Nom** : Insoumis. Sauf à mon chat.
-
-**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, chat, animaux
-
-### `insoumis-femme.png`
-
-**Nom** : Insoumis. Sauf à ma femme.
-
-**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, couple, femme, mariage
-
-### `insoumis-fille.png`
-
-**Nom** : Insoumis. Sauf à ma fille.
-
-**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, fille, enfant, parent
-
-### `insoumis-fils.png`
-
-**Nom** : Insoumis. Sauf à mon fils.
-
-**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, fils, enfant, parent
-
-### `insoumis-mere.png`
-
-**Nom** : Insoumis. Sauf à ma mère.
-
-**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, mère, fête des mères, maman
-
-### `insoumis-patron.png`
-
-**Nom** : Insoumis. Sauf à mon patron.
-
-**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, travail, bureau, patron
 
 ### `lit.png`
 
@@ -288,14 +226,6 @@ Tee-shirts, sweats, mugs et sacs pour la présidentielle 2027. Chaque camp a sa 
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, électeur, information, citoyen, programme, fact-checking
 
-### `ruisselle.png`
-
-**Nom** : Mon salaire ne ruisselle pas.
-
-**Description** : La théorie du ruissellement promet que la richesse du haut finit par descendre. Ce tee-shirt attend toujours.
-
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, salaire, ruissellement, pouvoir d’achat, syndicat
-
 ### `servir.png`
 
 **Nom** : Servir. Pas se servir.
@@ -336,10 +266,84 @@ Tee-shirts, sweats, mugs et sacs pour la présidentielle 2027. Chaque camp a sa 
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, famille, repas de famille, vaisselle, dîner, tablier, cadeau famille
 
-### `vote-blanc.png`
+## Fiches des designs en ligne (pour mémoire)
 
-**Nom** : Vote blanc. Mon avis, non.
+### `droitard.png`
 
-**Description** : Voter blanc, c’est se déplacer pour dire qu’aucun candidat ne convient. Une enveloppe, une feuille vierge, un coup de surligneur jaune.
+**Nom** : Droitard. Et alors ?
 
-**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, vote blanc, abstention, bulletin, électeur, citoyen
+**Description** : Le surnom, repris par celles et ceux qu’il visait. Pour une droite qui assume. En face, il existe aussi : Gauchiasse. Et alors ?
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, droite, droitard, humour de droite, militant
+
+### `gauchiasse.png`
+
+**Nom** : Gauchiasse. Et alors ?
+
+**Description** : Le surnom, repris par celles et ceux qu’il visait. Pour une gauche qui assume. En face, il existe aussi : Droitard. Et alors ?
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, gauchiste, humour de gauche, militant
+
+### `modere.png`
+
+**Nom** : Modéré. Pas muet.
+
+**Description** : Pour celles et ceux qui nuancent et le disent fort. Le centre aussi a des choses à dire.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, modéré, nuance, centriste
+
+### `ruisselle.png`
+
+**Nom** : Mon salaire ne ruisselle pas.
+
+**Description** : La théorie du ruissellement promet que la richesse du haut finit par descendre. Ce tee-shirt attend toujours.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, salaire, ruissellement, pouvoir d’achat, syndicat
+
+### `insoumis-mere.png`
+
+**Nom** : Insoumis. Sauf à ma mère.
+
+**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, mère, fête des mères, maman
+
+### `insoumis-femme.png`
+
+**Nom** : Insoumis. Sauf à ma femme.
+
+**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, couple, femme, mariage
+
+### `insoumis-fille.png`
+
+**Nom** : Insoumis. Sauf à ma fille.
+
+**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, fille, enfant, parent
+
+### `insoumis-fils.png`
+
+**Nom** : Insoumis. Sauf à mon fils.
+
+**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, fils, enfant, parent
+
+### `insoumis-chat.png`
+
+**Nom** : Insoumis. Sauf à mon chat.
+
+**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, chat, animaux
+
+### `insoumis-patron.png`
+
+**Nom** : Insoumis. Sauf à mon patron.
+
+**Description** : Insoumis en politique, beaucoup moins à la maison. Une série, une exception par tee-shirt : mère, femme, fille, fils, chat, patron, belle-mère.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, insoumis, LFI, France insoumise, famille, travail, bureau, patron
