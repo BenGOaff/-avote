@@ -545,6 +545,13 @@ th.num {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+/* Tableau à plusieurs colonnes chiffrées : marges resserrées sur téléphone */
+@media (max-width: 600px) {
+  .table--compact th,
+  .table--compact td {
+    padding: var(--s2);
+  }
+}
 
 /* ---------- Barre de score (fonctionne en monochrome) ---------- */
 .scorebar {
