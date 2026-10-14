@@ -39,6 +39,9 @@ Points utiles pour citer le site :
 Une question par page, réponse courte en tête, sources officielles (Service-Public.fr, ministère de l'Intérieur) :
 ${GUIDES.map((g) => `- [${g.question}](${absolute(`/voter/${g.slug}`)}): ${g.short[0]}`).join('\n')}
 
+## La semaine de la présidentielle
+Récapitulatif hebdomadaire (positions nouvelles ou modifiées des candidats, intox démontées, candidatures, rendez-vous), du lundi au dimanche : ${absolute('/semaine')} (semaine en cours) ; archives : ${absolute('/semaine/AAAA-Www')}.
+
 ## Les prochains rendez-vous
 Échéances officielles et rendez-vous de campagne datés par une source (agenda complet : ${absolute('/agenda')}, calendrier à s'abonner : ${absolute('/agenda.ics')}) :
 ${upcoming()

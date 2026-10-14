@@ -5,7 +5,9 @@ import data from '@content/intox/intox.json'
  * Intox démontées par des cellules de fact-checking reconnues (scripts/intox.ts).
  * Chaque affirmation est FAUSSE ou trompeuse : elle n'est citée que pour être réfutée.
  */
-export type Verdict = 'faux' | 'trompeur' | 'hors-contexte' | 'manipule' | 'ia'
+import { VERDICT_LABEL, type Verdict } from './intox-labels'
+
+export { VERDICT_LABEL, type Verdict }
 export interface Debunk {
   publisher: string
   url: string
@@ -24,13 +26,6 @@ export interface Intox {
   debunks: Debunk[]
 }
 
-export const VERDICT_LABEL: Record<Verdict, string> = {
-  faux: 'Faux',
-  trompeur: 'Trompeur',
-  'hors-contexte': 'Sorti de son contexte',
-  manipule: 'Trafiqué',
-  ia: 'Généré par IA',
-}
 
 const items = (data.items as Intox[]).map((x) => ({ ...x, debunks: [...x.debunks].sort((a, b) => b.date.localeCompare(a.date)) }))
 

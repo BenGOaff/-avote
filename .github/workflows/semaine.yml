@@ -1,0 +1,44 @@
+# Lettre du lundi : « La semaine de la présidentielle », la même pour tous les inscrits (Resend, broadcast).
+# Aucune réponse au test n'existe côté serveur : la lettre renvoie au site, où le calcul « ton résultat a bougé » se fait sur l'appareil.
+# Secrets à créer dans GitHub (Settings > Secrets and variables > Actions) : RESEND_API_KEY, RESEND_FROM, RESEND_SEGMENT_ID.
+name: Semaine
+
+on:
+  schedule:
+    # Lundi ≈ 7 h 47 à Paris (heure d'hiver : 6 h 47) : récapitule la semaine du lundi au dimanche qui vient de finir
+    - cron: '47 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Semaine AAAA-Www (vide : la semaine qui vient de finir)'
+        type: string
+        default: ''
+      send:
+        description: 'Envoyer pour de vrai (sinon : aperçu dans le journal)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: semaine
+  cancel-in-progress: false
+
+jobs:
+  lettre:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Rédiger et envoyer
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ secrets.RESEND_FROM }}
+          RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
+        run: |
+          ARGS="${{ inputs.week }}"
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.send }}" = "true" ]; then ARGS="$ARGS --send"; fi
+          npx tsx scripts/semaine-email.ts $ARGS
