@@ -701,6 +701,19 @@
       },
       "verified": true,
       "addedBy": "rédaction"
+    },
+    {
+      "slug": "natacha-polony",
+      "name": "Natacha Polony",
+      "status": "declare",
+      "since": "2026-10-14",
+      "source": {
+        "title": "L'essayiste Natacha Polony annonce sa candidature à l'élection présidentielle",
+        "publisher": "franceinfo (présidentielle)",
+        "url": "https://www.franceinfo.fr/elections/presidentielle/l-essayiste-natacha-polony-annonce-sa-candidature-a-l-election-presidentielle_8236714.html"
+      },
+      "verified": true,
+      "addedBy": "veille claude-sonnet-5-5"
     }
   ]
 }
