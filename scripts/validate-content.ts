@@ -237,6 +237,13 @@ for (const c of yt.channels) {
   if (c.actor && !livreActors.has(c.actor)) errors.push(`youtube : candidat ${c.actor} absent des candidatures`)
   if (c.owner && (!c.owner.url.startsWith('https://') || !c.owner.quote)) errors.push(`youtube : propriétaire de ${c.name} sans source https ou sans extrait`)
 }
+const ytFiches = JSON.parse(readFileSync(path.join(ROOT, 'content/youtube/fiches.json'), 'utf8')) as { fiches: Record<string, { owner: { url: string; quote: string } | null; polemiques: { url: string; quote: string; title: string; text: string }[] }> }
+for (const [id, f] of Object.entries(ytFiches.fiches)) {
+  if (!ytIds.has(id)) errors.push(`youtube : fiche ${id} sans chaîne dans la liste`)
+  for (const e of [...(f.owner ? [f.owner] : []), ...f.polemiques])
+    if (!e.url?.startsWith('https://') || !e.quote || e.quote.length < 12) errors.push(`youtube : fiche ${id} sans source https ou sans extrait`)
+  for (const p of f.polemiques) if (!p.title || !p.text) errors.push(`youtube : polémique sans titre ou sans texte (${id})`)
+}
 const orientationNuances = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/orientation-nuances.json'), 'utf8')) as { nuances: Record<string, { text: string; sources: { url: string }[] }> }
 for (const [slug, n] of Object.entries(orientationNuances.nuances)) {
   if (!(owned as { orientations?: Record<string, unknown> }).orientations?.[slug]) errors.push(`nuance d'orientation : ${slug} sans orientation eurotopics`)

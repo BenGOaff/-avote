@@ -128,32 +128,7 @@ function Table({ rows }: { rows: YoutubeRow[] }) {
           {rows.map((r) => (
             <tr key={r.id}>
               <td>
-                <a href={r.url} rel="noopener noreferrer nofollow" target="_blank">
-                  {r.name}
-                </a>
-                <br />
-                <span className="small muted">
-                  {t.cols.last} : {r.last ? shortDate(r.last) : '—'}
-                </span>
-                <br />
-                <span className="small">
-                  {r.actor ? (
-                    <Link href={`/candidats/${r.actor}`}>{UI_COPY.candidatSujet.fiche(r.name)}</Link>
-                  ) : r.media ? (
-                    <Link href={`/medias/${r.media}`}>{t.cols.owner}</Link>
-                  ) : r.owner ? (
-                    <>
-                      {r.owner.text}{' '}
-                      <a href={r.owner.url} rel="noopener noreferrer nofollow" target="_blank" title={r.owner.quote}>
-                        {r.owner.publisher}
-                      </a>
-                    </>
-                  ) : (
-                    <span className="muted">
-                      {t.cols.owner} : {t.ownerUnknown.toLowerCase()}
-                    </span>
-                  )}
-                </span>
+                <ChannelCell r={r} />
               </td>
               <td className="num">{r.subscribers === null ? '—' : short(r.subscribers)}</td>
               <td className="num">{r.viewsMonth === null ? '—' : short(r.viewsMonth)}</td>
@@ -164,6 +139,72 @@ function Table({ rows }: { rows: YoutubeRow[] }) {
           ))}
         </tbody>
       </table>
+    </div>
+  )
+}
+
+/** Nom, image, date de création, nombre de vidéos, propriétaire, orientation du média lié, rappels de l'Arcom, polémiques documentées */
+function ChannelCell({ r }: { r: YoutubeRow }) {
+  return (
+    <div className="yt-cell">
+      {r.avatar && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img className="yt-cell__avatar" src={r.avatar} alt="" width={40} height={40} loading="lazy" decoding="async" />
+      )}
+      <div>
+        <a href={r.url} rel="noopener noreferrer nofollow" target="_blank">
+          {r.name}
+        </a>
+        <span className="small muted yt-cell__line">
+          {[r.created && t.created(r.created.slice(0, 4)), t.videos(nb(r.videos)), r.last && `${t.cols.last} : ${shortDate(r.last)}`].filter(Boolean).join(' · ')}
+        </span>
+        {r.orientation && (
+          <span className="small yt-cell__line">
+            <span className="badge">{r.orientation.label}</span> <span className="hint">selon eurotopics</span>
+            {r.orientation.nuance && <span className="muted"> · {t.nuance}</span>}
+          </span>
+        )}
+        <span className="small yt-cell__line">
+          {r.actor ? (
+            <Link href={`/candidats/${r.actor}`}>{UI_COPY.candidatSujet.fiche(r.name)}</Link>
+          ) : r.media ? (
+            <Link href={`/medias/${r.media}`}>{t.cols.owner}</Link>
+          ) : r.owner ? (
+            <>
+              {r.owner.text}{' '}
+              <a href={r.owner.url} rel="noopener noreferrer nofollow" target="_blank" title={r.owner.quote}>
+                {r.owner.publisher}
+              </a>
+            </>
+          ) : (
+            <span className="muted">
+              {t.cols.owner} : {t.ownerUnknown.toLowerCase()}
+            </span>
+          )}
+          {r.arcom > 0 && r.media && (
+            <>
+              {' · '}
+              <Link href={`/medias/${r.media}#arcom-${r.media}`}>{t.arcom(r.arcom)}</Link>
+            </>
+          )}
+        </span>
+        {r.polemiques.length > 0 && (
+          <details className="sources yt-cell__pol">
+            <summary>{t.polemiques(r.polemiques.length)}</summary>
+            <ul className="small">
+              {r.polemiques.map((p) => (
+                <li key={p.url + p.title}>
+                  <strong>{p.title}</strong>
+                  {p.date && ` (${p.date.length === 10 ? shortDate(p.date) : p.date})`} : {p.text}{' '}
+                  <a href={p.url} rel="noopener noreferrer nofollow" target="_blank" title={p.quote}>
+                    {p.publisher}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
+      </div>
     </div>
   )
 }

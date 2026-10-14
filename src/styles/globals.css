@@ -691,6 +691,26 @@ th.num {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+/* Cellule d'une chaîne YouTube : image, nom, détails */
+.yt-cell {
+  display: flex;
+  gap: var(--s2);
+  align-items: flex-start;
+}
+.yt-cell__avatar {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: var(--hairline) solid var(--line);
+}
+.yt-cell__line {
+  display: block;
+  margin-top: 2px;
+}
+.yt-cell__pol {
+  margin-top: var(--s1);
+}
 /* Tableau à plusieurs colonnes chiffrées : marges resserrées sur téléphone */
 @media (max-width: 600px) {
   .table--compact th,
