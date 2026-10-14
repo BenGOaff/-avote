@@ -86,6 +86,14 @@ export default function PrivacyPage() {
           partager montre les prénoms et le taux d’accord, jamais les réponses ni les candidats. La mesure d’audience est coupée sur cette page.
         </p>
 
+        <h2 id="agenda" style={{ fontSize: 'var(--h3)' }}>
+          L’agenda
+        </h2>
+        <p>
+          Les fichiers d’agenda et le calendrier auquel on s’abonne sont les mêmes pour tout le monde : ils ne contiennent aucun identifiant. Ton
+          application d’agenda vient relire le calendrier de temps en temps, comme on charge une page ; on ne sait pas qui est abonné.
+        </p>
+
         <h2 id="boutique" style={{ fontSize: 'var(--h3)' }}>
           La boutique
         </h2>

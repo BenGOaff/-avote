@@ -38,6 +38,7 @@ export const SECTIONS: NavSection[] = [
       { href: '/livres', label: 'Lire les candidats', desc: 'Le livre de chaque candidat, rangé par famille politique.' },
       { href: '/partis', label: 'Partis', desc: 'Histoire, dirigeants, élus et idées de chaque parti.' },
       { href: '/radar', label: 'Radar', desc: 'Le fil de la campagne, sourcé.' },
+      { href: '/agenda', label: 'Les prochains rendez-vous', desc: 'Votes internes, débats, dates limites : à ajouter à ton agenda.' },
       { href: '/radar/2026-10-10-lire-un-sondage', label: 'Lire un sondage', desc: 'Marge d’erreur, quotas, indécis : ce qu’un sondage dit, et ce qu’il ne dit pas.' },
     ],
   },

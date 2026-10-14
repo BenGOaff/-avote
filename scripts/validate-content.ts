@@ -2,6 +2,7 @@
  * Contrôle des contenus avant publication (CI et veille).
  * Échoue si un fichier est invalide : la PR ne doit pas être fusionnée.
  */
+import { AGENDA_KINDS, quoteStatesDate } from './agenda-lib'
 import { readdirSync, readFileSync, existsSync } from 'node:fs'
 import { execSync } from 'node:child_process'
 import path from 'node:path'
@@ -93,6 +94,22 @@ for (const a of cand.actors) {
   if (!a.source?.url?.startsWith('https://')) errors.push(`candidature ${a.slug} sans source https`)
   for (const l of a.links ?? [])
     if (!['campagne', 'parti', 'programme'].includes(l.kind) || !l.url.startsWith('https://')) errors.push(`candidature ${a.slug} : lien officiel invalide (${l.url})`)
+}
+// Agenda : chaque rendez-vous a sa source https, une citation qui donne la date, des candidats connus
+{
+  const ag = JSON.parse(readFileSync(path.join(ROOT, 'content/agenda/agenda.json'), 'utf8')) as {
+    events: { id: string; kind: string; date: string; end?: string; quote?: string; who?: string[]; source?: { url?: string } }[]
+  }
+  const seenIds = new Set<string>()
+  for (const e of ag.events) {
+    if (seenIds.has(e.id)) errors.push(`agenda : identifiant en double ${e.id}`)
+    seenIds.add(e.id)
+    if (!AGENDA_KINDS.includes(e.kind as never)) errors.push(`agenda ${e.id} : type inconnu ${e.kind}`)
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(e.date) || (e.end && e.end < e.date)) errors.push(`agenda ${e.id} : date invalide`)
+    if (!e.source?.url?.startsWith('https://')) errors.push(`agenda ${e.id} : source sans https`)
+    if (!e.quote || !quoteStatesDate(e.quote, e.end ?? e.date)) errors.push(`agenda ${e.id} : la citation ne donne pas la date`)
+    for (const w of e.who ?? []) if (!cand.actors.some((a) => a.slug === w)) errors.push(`agenda ${e.id} : candidat inconnu ${w}`)
+  }
 }
 // Publications pour les réseaux : schéma et page cible existante
 {

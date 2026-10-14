@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { daysBefore, nthFridayBefore, REGISTRATION_DEADLINE, REGISTRATION_DEADLINE_SPECIAL } from './vote-dates'
+import { daysBefore, nthFridayBefore, OFFICIAL_CAMPAIGN, REGISTRATION_DEADLINE, REGISTRATION_DEADLINE_SPECIAL, SPONSORSHIP_CLOSE } from './vote-dates'
 
 describe('délais du scrutin', () => {
   it('6e vendredi avant le dimanche 18 avril 2027 : le 12 mars 2027', () => {
@@ -11,5 +11,9 @@ describe('délais du scrutin', () => {
   it('10e jour avant le premier tour : le 8 avril 2027', () => {
     expect(REGISTRATION_DEADLINE_SPECIAL).toBe('2027-04-08')
     expect(daysBefore('2027-03-01', 1)).toBe('2027-02-28')
+  })
+  it('parrainages clos le 12 mars 2027, campagne officielle ouverte le lundi 5 avril 2027', () => {
+    expect(SPONSORSHIP_CLOSE).toBe('2027-03-12')
+    expect(OFFICIAL_CAMPAIGN).toBe('2027-04-05')
   })
 })

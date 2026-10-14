@@ -33,6 +33,6 @@ Principe : une question que les gens posent = une page qui y répond en tête, a
 - Autoriser GPTBot dans le pare-feu Hostinger (hPanel) : il reçoit encore des 429 par moments.
 
 ## Suite possible
-- Rappels dans l'agenda (.ics) : date limite d'inscription, premier et second tour. Fichier généré par le site, sans compte.
+- ~~Rappels dans l'agenda (.ics)~~ : fait, page `/agenda`, calendrier `/agenda.ics`, rendez-vous repérés par la veille (citation qui donne la date, vérifiée).
 - « La semaine de la présidentielle » : récapitulatif hebdomadaire de ce qui a bougé (positions, intox, candidatures).
 - Image de partage dédiée pour les duels « X ou Y » et les pages candidat × sujet.
