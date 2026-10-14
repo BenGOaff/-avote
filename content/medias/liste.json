@@ -32,6 +32,7 @@
     { "slug": "l-express", "name": "L’Express", "type": "presse", "site": "https://www.lexpress.fr/" },
     { "slug": "le-point", "name": "Le Point", "type": "presse", "site": "https://www.lepoint.fr/" },
     { "slug": "le-nouvel-obs", "name": "Le Nouvel Obs", "type": "presse", "site": "https://www.nouvelobs.com/" },
+    { "slug": "les-inrocks", "name": "Les Inrocks", "type": "presse", "site": "https://www.lesinrocks.com/" },
     { "slug": "marianne", "name": "Marianne", "type": "presse", "site": "https://www.marianne.net/" },
     { "slug": "paris-match", "name": "Paris Match", "type": "presse", "site": "https://www.parismatch.com/" },
     { "slug": "valeurs-actuelles", "name": "Valeurs actuelles", "type": "presse", "site": "https://www.valeursactuelles.com/" },
