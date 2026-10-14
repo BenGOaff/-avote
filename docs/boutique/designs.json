@@ -657,6 +657,148 @@
         "*chaud*."
       ],
       "sig": "site"
+    },
+    {
+      "id": "lf-cigale",
+      "lines": [
+        "Vous chantiez ?",
+        "J’en suis fort aise.",
+        "Eh bien ! *Travaillez*",
+        "maintenant."
+      ],
+      "sig": "site",
+      "byline": "Jean de La Fontaine, presque."
+    },
+    {
+      "id": "lf-fourmi",
+      "lines": [
+        "La Fourmi",
+        "n’est pas prêteuse.",
+        "*Taxons* la Fourmi."
+      ],
+      "sig": "site",
+      "byline": "Jean de La Fontaine, presque."
+    },
+    {
+      "id": "lf-avocat",
+      "lines": [
+        "Selon que vous serez",
+        "puissant ou misérable,",
+        "votre avocat sera",
+        "brillant ou *commis*",
+        "*d’office*."
+      ],
+      "sig": "site",
+      "byline": "Jean de La Fontaine, presque."
+    },
+    {
+      "id": "lf-velo",
+      "lines": [
+        "Rien ne sert de courir,",
+        "il faut partir",
+        "à *vélo*."
+      ],
+      "sig": "site",
+      "byline": "Jean de La Fontaine, presque."
+    },
+    {
+      "id": "lf-modere",
+      "lines": [
+        "La raison",
+        "du plus *modéré*",
+        "est toujours",
+        "la meilleure."
+      ],
+      "sig": "site",
+      "byline": "Jean de La Fontaine, presque."
+    },
+    {
+      "id": "lf-collier",
+      "lines": [
+        "Plutôt mourir de faim",
+        "que de porter",
+        "un *collier*."
+      ],
+      "sig": "site",
+      "byline": "Jean de La Fontaine, presque."
+    },
+    {
+      "id": "ad-riches",
+      "lines": [
+        "Les riches",
+        "coûtent trop *cher*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ad-instruisent",
+      "lines": [
+        "L’avenir appartient",
+        "à ceux qui",
+        "s’*instruisent* tôt."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ad-canicule",
+      "lines": [
+        "Après nous,",
+        "la *canicule*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ad-negocie",
+      "lines": [
+        "Choisir,",
+        "c’est renoncer.",
+        "Alors je *négocie*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ad-aide-toi",
+      "lines": [
+        "Aide-toi,",
+        "la *République*",
+        "t’aidera."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ad-herbe",
+      "lines": [
+        "L’herbe n’est pas",
+        "plus verte",
+        "*ailleurs*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ad-reine",
+      "lines": [
+        "Le roi est mort,",
+        "vive la *reine*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ad-cote",
+      "lines": [
+        "Je ne suis pas",
+        "de votre *côte*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ad-travail",
+      "lines": [
+        "Le travail,",
+        "c’est la santé.",
+        "Ne rien faire,",
+        "c’est *tricher*."
+      ],
+      "sig": "site"
     }
   ]
 }

@@ -11,7 +11,8 @@ import { join } from 'node:path'
 import { chromium } from 'playwright-core'
 import sharp from 'sharp'
 
-type Design = { id: string; image?: string; lines: string[]; sig: 'site' | 'verifie' }
+/** byline : attribution en italique sous le texte (« Jean de La Fontaine, presque. ») */
+type Design = { id: string; image?: string; lines: string[]; sig: 'site' | 'verifie'; byline?: string }
 
 const ROOT = process.cwd()
 const DIR = join(ROOT, 'docs/boutique')
@@ -32,17 +33,18 @@ async function main() {
   // tsx garde les noms de fonctions via un assistant __name, absent de la page
   await page.evaluate('window.__name = (f) => f')
   await page.evaluate(
-    async ([ab, ps]) => {
+    async ([ab, ps, ssi]) => {
       for (const [name, url, weight] of [
         ['AB', ab, '400'],
         ['PS', ps, '700'],
+        ['SSI', ssi, '400'],
       ]) {
         const f = new FontFace(name!, `url(${url})`, { weight })
         await f.load()
         document.fonts.add(f)
       }
     },
-    [font('archivo-black-latin-400-normal.woff2'), font('public-sans-latin-700-normal.woff2')],
+    [font('archivo-black-latin-400-normal.woff2'), font('public-sans-latin-700-normal.woff2'), font('source-serif-4-latin-400-italic.woff2')],
   )
 
   for (const mode of Object.keys(MODES) as (keyof typeof MODES)[]) mkdirSync(join(DIR, 'impression', mode), { recursive: true })
@@ -53,7 +55,7 @@ async function main() {
       let scale = 1
       let out: { url: string; w: number; h: number } | null = null
       for (let i = 0; i < 3; i++) {
-        out = await page.evaluate(render, { lines: d.lines, img, sig: d.sig, ink, yellow: YELLOW, dark: mode === 'sombre', S: scale })
+        out = await page.evaluate(render, { lines: d.lines, byline: d.byline ?? null, img, sig: d.sig, ink, yellow: YELLOW, dark: mode === 'sombre', S: scale })
         const long = Math.max(out.w, out.h)
         if (long >= MIN_LONG_SIDE) break
         scale *= (MIN_LONG_SIDE / long) * 1.01
@@ -70,7 +72,16 @@ async function main() {
 }
 
 /** S'exécute dans la page : compose sur un canvas, binarise, recadre, renvoie un PNG. */
-async function render(o: { lines: string[]; img: string | null; sig: 'site' | 'verifie'; ink: string; yellow: string; dark: boolean; S: number }) {
+async function render(o: {
+  lines: string[]
+  byline: string | null
+  img: string | null
+  sig: 'site' | 'verifie'
+  ink: string
+  yellow: string
+  dark: boolean
+  S: number
+}) {
   const CW = Math.round(4400 * o.S)
   const hex = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)) as [number, number, number]
   const INK = hex(o.ink)
@@ -90,7 +101,10 @@ async function render(o: { lines: string[]; img: string | null; sig: 'site' | 'v
     x0.fillRect(0, 0, c0.width, c0.height)
     x0.drawImage(im, 0, 0)
     const p0 = x0.getImageData(0, 0, c0.width, c0.height).data
-    let minX = c0.width, minY = c0.height, maxX = 0, maxY = 0
+    let minX = c0.width,
+      minY = c0.height,
+      maxX = 0,
+      maxY = 0
     for (let y = 0; y < c0.height; y++)
       for (let x = 0; x < c0.width; x++) {
         const k = (y * c0.width + x) * 4
@@ -116,10 +130,12 @@ async function render(o: { lines: string[]; img: string | null; sig: 'site' | 'v
     const id = xa.getImageData(0, 0, art.width, art.height)
     const p = id.data
     for (let i = 0; i < p.length; i += 4) {
-      const r = p[i]!, g = p[i + 1]!, b = p[i + 2]!
+      const r = p[i]!,
+        g = p[i + 1]!,
+        b = p[i + 2]!
       const lum = 0.299 * r + 0.587 * g + 0.114 * b
       const col = r > 170 && g > 140 && b < 160 && r - b > 70 ? YEL : lum < 150 ? INK : null
-      if (col) (p[i] = col[0]), (p[i + 1] = col[1]), (p[i + 2] = col[2]), (p[i + 3] = 255)
+      if (col) ((p[i] = col[0]), (p[i + 1] = col[1]), (p[i + 2] = col[2]), (p[i + 3] = 255))
       else p[i + 3] = 0
     }
     xa.clearRect(0, 0, art.width, art.height)
@@ -127,7 +143,12 @@ async function render(o: { lines: string[]; img: string | null; sig: 'site' | 'v
   }
 
   // Texte : Archivo Black, taille ajustée à la ligne la plus longue
-  const segs = o.lines.map((l) => l.split(/(\*[^*]+\*)/).filter(Boolean).map((t) => ({ t: t.replace(/\*/g, ''), hl: t.startsWith('*') })))
+  const segs = o.lines.map((l) =>
+    l
+      .split(/(\*[^*]+\*)/)
+      .filter(Boolean)
+      .map((t) => ({ t: t.replace(/\*/g, ''), hl: t.startsWith('*') })),
+  )
   const meas = document.createElement('canvas').getContext('2d')!
   const setFont = (ctx: CanvasRenderingContext2D, size: number) => {
     ctx.font = `400 ${size}px AB`
@@ -141,7 +162,8 @@ async function render(o: { lines: string[]; img: string | null; sig: 'site' | 'v
   const sigText = o.sig === 'verifie' ? 'Vérifié par çavote.fr' : 'çavote.fr'
 
   const gap = CW * 0.08
-  const H = Math.ceil((art ? art.height + gap : 0) + segs.length * lh + size * 0.3 + gap * 0.7 + sigSize * 1.6)
+  const bySize = size * 0.34
+  const H = Math.ceil((art ? art.height + gap : 0) + segs.length * lh + (o.byline ? bySize * 1.8 : 0) + size * 0.3 + gap * 0.7 + sigSize * 1.6)
   const c = document.createElement('canvas')
   c.width = CW
   c.height = H
@@ -168,6 +190,13 @@ async function render(o: { lines: string[]; img: string | null; sig: 'site' | 'v
     }
     y += lh
   }
+  if (o.byline) {
+    ctx.font = `400 ${bySize}px SSI`
+    ctx.letterSpacing = '0px'
+    ctx.fillStyle = o.ink
+    ctx.fillText(`— ${o.byline}`, 0, y + bySize * 1.2)
+    y += bySize * 1.8
+  }
   y += size * 0.3 + gap * 0.7
   ctx.font = `700 ${sigSize}px PS`
   ctx.letterSpacing = `${0.04 * sigSize}px`
@@ -177,7 +206,10 @@ async function render(o: { lines: string[]; img: string | null; sig: 'site' | 'v
   // Binarisation : opaque ou vide, encre ou jaune
   const all = ctx.getImageData(0, 0, c.width, c.height)
   const p = all.data
-  let minX = c.width, minY = c.height, maxX = 0, maxY = 0
+  let minX = c.width,
+    minY = c.height,
+    maxX = 0,
+    maxY = 0
   for (let i = 0; i < p.length; i += 4) {
     if (p[i + 3]! < 128) {
       p[i + 3] = 0
@@ -186,7 +218,7 @@ async function render(o: { lines: string[]; img: string | null; sig: 'site' | 'v
     const dI = Math.abs(p[i]! - INK[0]) + Math.abs(p[i + 1]! - INK[1]) + Math.abs(p[i + 2]! - INK[2])
     const dY = Math.abs(p[i]! - YEL[0]) + Math.abs(p[i + 1]! - YEL[1]) + Math.abs(p[i + 2]! - YEL[2])
     const col = dY < dI ? YEL : INK
-    ;(p[i] = col[0]), (p[i + 1] = col[1]), (p[i + 2] = col[2]), (p[i + 3] = 255)
+    ;((p[i] = col[0]), (p[i + 1] = col[1]), (p[i + 2] = col[2]), (p[i + 3] = 255))
     const n = i / 4
     const px = n % c.width
     const py = (n - px) / c.width

@@ -46,4 +46,7 @@ Maquettes de référence : `planche.html` (s'ouvre dans un navigateur depuis ce 
 - Série « Fronton » validée par la rédaction : Liberté Égalité SOLIDARITÉ (gauche radicale) · FRATERNITÉ (gauche) · BIODIVERSITÉ (écologistes) · CENTRALITÉ (centre) · PROPRIÉTÉ (droite) · SOUVERAINETÉ (patriotes). Typographie : Source Serif 4 droit (même famille que le site, OFL), `docs/boutique/fonts/`.
 - « Patriotes » remplace « extrême droite » dans la boutique (choix de la rédaction). Drapeaux tricolores admis, impression couleur.
 - Fables de La Fontaine et chute en deux temps : idée retenue, exécution à reprendre.
+- Fronton : jugé « pas ouf » par la rédaction, non mis en ligne. Piste suivante pour les mots de la devise : la plaque de rue parisienne.
+- Séries « La Fontaine, presque » et « Adages » validées (14 octobre 2026). Écartés : marques déposées (Game of Thrones, Hunger Games), réplique d’Intouchables (blague sur le handicap), « Le premier sexe » (titre d’un livre d’Éric Zemmour), « plus d’actions » (double sens boursier), slogans sans forme connue ni chute.
+- La charte n’est pas un carcan (rédaction, 14 octobre 2026) : une série peut avoir sa propre direction graphique (couleur, illustration) si l’idée le demande, à condition de garder le même traitement pour tous les camps d’une même série.
 
