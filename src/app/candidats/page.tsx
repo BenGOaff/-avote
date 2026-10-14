@@ -11,11 +11,13 @@ import { getPartis, partyOfPeriod } from '@/lib/partis'
 import { logoOf, portraitOf } from '@/lib/images'
 import { Portrait } from '@/components/Portrait'
 import { Shuffle } from '@/components/Shuffle'
+import { BlocFilter } from '@/components/BlocFilter'
 import { CASIER_TYPES, casierCounts } from '@/lib/casier'
 
 export const metadata: Metadata = {
   title: 'Candidats à la présidentielle 2027 : qui a annoncé quoi',
-  description: 'La liste des candidatures annoncées pour la présidentielle 2027, chacune avec la source de l’annonce. Avant la liste officielle du Conseil constitutionnel.',
+  description:
+    'La liste des candidatures annoncées pour la présidentielle 2027, chacune avec la source de l’annonce. Avant la liste officielle du Conseil constitutionnel.',
   alternates: { canonical: '/candidats' },
 }
 
@@ -45,48 +47,56 @@ export default function CandidatsPage() {
           <p>Dernière mise à jour : {formatDate(candidaturesCollectedAt)}.</p>
         </div>
       ) : (
-        <Shuffle className="cand-grid">
-          {actors.map((a) => {
-            const bloc = nuanceOf(a.slug)?.bloc ?? 'DIV'
-            const current = getParcours(a.slug).find((x) => x.to === '')
-            const party = current ? partyOfPeriod(current) : getPartis().find((x) => x.name === a.party)
-            const logo = party ? logoOf(party.slug) : null
-            const role = current?.role && current.role !== 'membre' ? current.role : ''
-            const known = Object.values((liveCorpus.positions as Record<string, Record<string, { missing?: boolean }>>)[a.slug] ?? {}).filter((x) => !x.missing).length
-            return (
-              <li key={a.slug}>
-                <article className={`cand-card bloc-${bloc}`}>
-                  <Portrait src={portraitOf(a.slug)} name={a.name} bloc={bloc} />
-                  <div>
-                    <h2 className="cand-card__name">
-                      <Link href={`/candidats/${a.slug}`}>{a.name}</Link>
-                    </h2>
-                    <p className="cand-card__party">
-                      {logo && <img src={logo} alt="" loading="lazy" decoding="async" />}
-                      {a.party ?? (nuanceOf(a.slug) ? `Sans parti · ${nuanceOf(a.slug)!.label}` : <span className="muted">Formation non précisée</span>)}
-                    </p>
-                    {role && <p className="cand-card__meta">{role.charAt(0).toUpperCase() + role.slice(1)}</p>}
-                    <p className="cand-card__meta">
-                      {STATUS_LABEL[a.status]} le {formatDate(a.since)}
-                    </p>
-                  </div>
-                  <div className="cand-card__docs" aria-label={`${known} positions connues sur ${questionnaire.items.length}`}>
-                    <span>
-                      <strong>{known}</strong>/{questionnaire.items.length} positions connues
-                    </span>
-                    <span className="cand-card__bar" aria-hidden="true">
-                      <span style={{ width: `${(known / questionnaire.items.length) * 100}%` }} />
-                    </span>
-                  </div>
-                  <CasierLine slug={a.slug} />
-                  <a className="cand-card__source muted" href={a.source.url} rel="noopener noreferrer nofollow" target="_blank">
-                    Source de l’annonce : {a.source.publisher}
-                  </a>
-                </article>
-              </li>
-            )
-          })}
-        </Shuffle>
+        <BlocFilter
+          label="Afficher une seule famille politique"
+          all="Tous"
+          blocs={BLOCS.map((b) => ({ id: b.id, label: b.label, count: actors.filter((a) => (nuanceOf(a.slug)?.bloc ?? 'DIV') === b.id).length }))}
+        >
+          <Shuffle className="cand-grid">
+            {actors.map((a) => {
+              const bloc = nuanceOf(a.slug)?.bloc ?? 'DIV'
+              const current = getParcours(a.slug).find((x) => x.to === '')
+              const party = current ? partyOfPeriod(current) : getPartis().find((x) => x.name === a.party)
+              const logo = party ? logoOf(party.slug) : null
+              const role = current?.role && current.role !== 'membre' ? current.role : ''
+              const known = Object.values((liveCorpus.positions as Record<string, Record<string, { missing?: boolean }>>)[a.slug] ?? {}).filter(
+                (x) => !x.missing,
+              ).length
+              return (
+                <li key={a.slug} data-bloc={bloc}>
+                  <article className={`cand-card bloc-${bloc}`}>
+                    <Portrait src={portraitOf(a.slug)} name={a.name} bloc={bloc} />
+                    <div>
+                      <h2 className="cand-card__name">
+                        <Link href={`/candidats/${a.slug}`}>{a.name}</Link>
+                      </h2>
+                      <p className="cand-card__party">
+                        {logo && <img src={logo} alt="" loading="lazy" decoding="async" />}
+                        {a.party ?? (nuanceOf(a.slug) ? `Sans parti · ${nuanceOf(a.slug)!.label}` : <span className="muted">Formation non précisée</span>)}
+                      </p>
+                      {role && <p className="cand-card__meta">{role.charAt(0).toUpperCase() + role.slice(1)}</p>}
+                      <p className="cand-card__meta">
+                        {STATUS_LABEL[a.status]} le {formatDate(a.since)}
+                      </p>
+                    </div>
+                    <div className="cand-card__docs" aria-label={`${known} positions connues sur ${questionnaire.items.length}`}>
+                      <span>
+                        <strong>{known}</strong>/{questionnaire.items.length} positions connues
+                      </span>
+                      <span className="cand-card__bar" aria-hidden="true">
+                        <span style={{ width: `${(known / questionnaire.items.length) * 100}%` }} />
+                      </span>
+                    </div>
+                    <CasierLine slug={a.slug} />
+                    <a className="cand-card__source muted" href={a.source.url} rel="noopener noreferrer nofollow" target="_blank">
+                      Source de l’annonce : {a.source.publisher}
+                    </a>
+                  </article>
+                </li>
+              )
+            })}
+          </Shuffle>
+        </BlocFilter>
       )}
       {retired.length > 0 && (
         <section className="section" aria-labelledby="retires">
@@ -114,8 +124,8 @@ export default function CandidatsPage() {
       )}
       {actors.some((a) => portraitOf(a.slug)) && <p className="small muted">Portraits : illustrations générées par IA.</p>}
       <p className="small" style={{ marginTop: 'var(--s4)' }}>
-        Ordre d’affichage tiré au hasard à chaque visite, pour ne mettre personne en tête. Critères d’inclusion et statuts : <Link href="/methodologie#acteurs">méthode</Link>. Un oubli, une erreur ?{' '}
-        <Link href="/corrections#signaler">Signale-le</Link>.
+        Ordre d’affichage tiré au hasard à chaque visite, pour ne mettre personne en tête. Critères d’inclusion et statuts :{' '}
+        <Link href="/methodologie#acteurs">méthode</Link>. Un oubli, une erreur ? <Link href="/corrections#signaler">Signale-le</Link>.
       </p>
     </div>
   )

@@ -2463,6 +2463,29 @@ details.disclosure > div {
   border-radius: 50%;
   background: var(--bloc, transparent);
 }
+/* Filtre par famille politique : les cartes hors du bloc choisi sont masquées */
+.bloc-filter__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin: var(--s5) 0 var(--s4);
+}
+.bloc-filter__chips .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+}
+.bloc-filter[data-filter] [data-bloc] {
+  display: none;
+}
+.bloc-filter[data-filter='EXG'] [data-bloc='EXG'],
+.bloc-filter[data-filter='GAU'] [data-bloc='GAU'],
+.bloc-filter[data-filter='CENT'] [data-bloc='CENT'],
+.bloc-filter[data-filter='DTE'] [data-bloc='DTE'],
+.bloc-filter[data-filter='EXD'] [data-bloc='EXD'],
+.bloc-filter[data-filter='DIV'] [data-bloc='DIV'] {
+  display: revert;
+}
 .nuance__code {
   font-weight: 400;
   color: var(--muted);
