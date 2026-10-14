@@ -8,7 +8,7 @@ on:
     paths: ['content/**', 'src/app/**']
   # Les robots publient avec le jeton GitHub, qui ne déclenche pas « push » : on passe après eux
   workflow_run:
-    workflows: [Veille, Positions, Programmes, Intox, YouTube]
+    workflows: [Veille, Positions, Programmes, Intox, YouTube, Sondages]
     types: [completed]
   workflow_dispatch:
 

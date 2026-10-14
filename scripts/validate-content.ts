@@ -10,6 +10,7 @@ import { parse } from 'yaml'
 import { ArticleSchema, BriefSchema } from '../src/lib/content-schema'
 import { SocialPostSchema } from '../src/lib/social-schema'
 import { FlashQuizSchema } from '../src/lib/flash'
+import type { Poll } from '../src/lib/sondages-stats'
 
 const ROOT = process.cwd()
 const errors: string[] = []
@@ -244,6 +245,31 @@ for (const [id, f] of Object.entries(ytFiches.fiches)) {
     if (!e.url?.startsWith('https://') || !e.quote || e.quote.length < 12) errors.push(`youtube : fiche ${id} sans source https ou sans extrait`)
   for (const p of f.polemiques) if (!p.title || !p.text) errors.push(`youtube : polémique sans titre ou sans texte (${id})`)
 }
+// Sondages : chiffres plausibles, dates, sources https, candidats connus
+const sondages = JSON.parse(readFileSync(path.join(ROOT, 'content/sondages/sondages.json'), 'utf8')) as {
+  institutes: Record<string, { text: string; url: string; publisher: string }>
+  polls: Poll[]
+}
+const pollIds = new Set<string>()
+const isDay = (d: string) => /^\d{4}-\d{2}-\d{2}$/.test(d)
+for (const p of sondages.polls) {
+  const at = `sondage ${p.id}`
+  if (pollIds.has(p.id)) errors.push(`${at} : identifiant en double`)
+  pollIds.add(p.id)
+  if (!p.institute || !p.buyer || !p.base || !p.method) errors.push(`${at} : institut, acheteur, base ou méthode manquant`)
+  if (![p.fieldStart, p.fieldEnd, p.published].every(isDay) || p.fieldStart > p.fieldEnd || p.fieldEnd > p.published) errors.push(`${at} : dates invalides`)
+  if (!(p.sample >= 300)) errors.push(`${at} : échantillon invalide`)
+  if (!p.url.startsWith('https://') || (p.notice && !p.notice.startsWith('https://'))) errors.push(`${at} : source non https`)
+  if (p.firstRound.length === 0 && p.secondRound.length === 0) errors.push(`${at} : aucun résultat`)
+  const lists = [...p.firstRound.map((h) => h.results), ...p.secondRound.map((d) => d.results)]
+  for (const r of lists.flat()) {
+    if (!(r.pct >= 0 && r.pct <= 100)) errors.push(`${at} : pourcentage invalide (${r.name})`)
+    if (r.slug !== null && !livreActors.has(r.slug)) errors.push(`${at} : candidat ${r.slug} absent des candidatures`)
+  }
+  for (const h of p.firstRound) if (h.results.reduce((s, r) => s + r.pct, 0) > 103) errors.push(`${at} : premier tour au-delà de 100 % (${h.hypothesis})`)
+  for (const d of p.secondRound) if (d.results.length !== 2 || Math.abs(d.results[0]!.pct + d.results[1]!.pct - 100) > 1.5) errors.push(`${at} : duel de second tour invalide`)
+}
+for (const [name, n] of Object.entries(sondages.institutes)) if (!n.text || !n.url.startsWith('https://')) errors.push(`sondages : méthode de ${name} sans texte ou sans source https`)
 const orientationNuances = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/orientation-nuances.json'), 'utf8')) as { nuances: Record<string, { text: string; sources: { url: string }[] }> }
 for (const [slug, n] of Object.entries(orientationNuances.nuances)) {
   if (!(owned as { orientations?: Record<string, unknown> }).orientations?.[slug]) errors.push(`nuance d'orientation : ${slug} sans orientation eurotopics`)
