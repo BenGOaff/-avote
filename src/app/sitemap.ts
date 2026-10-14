@@ -3,7 +3,8 @@ import { getArticles } from '@/lib/content'
 import { absolute } from '@/lib/site'
 import { getAnnouncedActors } from '@/lib/actors'
 import { getPartis } from '@/lib/partis'
-import { getSujets } from '@/lib/sujets'
+import { actorUpdatedAt, getSujets } from '@/lib/sujets'
+import { getIntox, intoxPath, intoxUpdated } from '@/lib/intox'
 import { getFlashQuizzes } from '@/lib/flash-content'
 import { getMedias } from '@/lib/medias'
 import { mediaLogoOf } from '@/lib/images'
@@ -26,7 +27,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       // Logos des médias : la page « Qui possède ton info » ressort aussi en recherche d'images
       ...(p === '/medias' ? { images: mediaLogos } : {}),
     })),
-    ...getAnnouncedActors().map((a) => ({ url: absolute(`/candidats/${a.slug}`), lastModified: now, changeFrequency: 'daily' as const, priority: 0.8 })),
+    ...getAnnouncedActors().map((a) => {
+      const updated = actorUpdatedAt(a.slug)
+      return { url: absolute(`/candidats/${a.slug}`), ...(updated ? { lastModified: new Date(updated) } : {}), changeFrequency: 'daily' as const, priority: 0.8 }
+    }),
+    ...getIntox().map((x) => ({ url: absolute(intoxPath(x)), lastModified: new Date(intoxUpdated(x)), changeFrequency: 'monthly' as const, priority: 0.7 })),
     ...getSujets().map((s) => ({ url: absolute(`/programmes/${s.slug}`), lastModified: s.updatedAt ? new Date(s.updatedAt) : now, changeFrequency: 'daily' as const, priority: 0.9, images: [absolute(`/programmes/${s.slug}/carte.png`)] })),
     ...getFlashQuizzes().map((q) => ({ url: absolute(`/quiz/flash/${q.slug}`), changeFrequency: 'monthly' as const, priority: 0.7 })),
     ...getPartis().map((p) => ({ url: absolute(`/partis/${p.slug}`), changeFrequency: 'weekly' as const, priority: 0.7 })),

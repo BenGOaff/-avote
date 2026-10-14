@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
 import { formatDate } from '@/components/Editorial'
 import { UI_COPY } from '@/lib/copy'
-import { getIntox, intoxUpdatedAt, outletCount, podium, VERDICT_LABEL, type Intox } from '@/lib/intox'
+import { claimReviewOf, getIntox, intoxPath, intoxUpdatedAt, outletCount, podium, VERDICT_LABEL, type Intox } from '@/lib/intox'
 import { absolute } from '@/lib/site'
 
 const t = UI_COPY.intox
@@ -32,17 +32,7 @@ export default function FakeNewsPage() {
     itemListElement: items.slice(0, 60).map((x, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      item: {
-        '@type': 'ClaimReview',
-        url: absolute(`/fake-news#${x.id}`),
-        claimReviewed: x.claim,
-        datePublished: x.firstSeen,
-        reviewRating: { '@type': 'Rating', ratingValue: 1, bestRating: 5, worstRating: 1, alternateName: VERDICT_LABEL[x.verdict] },
-        reviewBody: x.truth,
-        author: { '@type': 'Organization', name: x.debunks[0]!.publisher, url: x.debunks[0]!.url },
-        itemReviewed: { '@type': 'Claim', ...(x.spreaders.length ? { author: x.spreaders.map((s) => ({ '@type': 'Thing', name: s })) } : {}) },
-        citation: x.debunks.map((d) => ({ '@type': 'CreativeWork', name: d.title, url: d.url, publisher: d.publisher })),
-      },
+      item: claimReviewOf(x, absolute(intoxPath(x))),
     })),
   }
   return (
@@ -137,6 +127,11 @@ function IntoxCard({ x, badge }: { x: Intox; badge?: string }) {
             <span className="muted">({formatDate(d.date)})</span>
           </span>
         ))}
+      </p>
+      <p className="small" style={{ margin: 'var(--s2) 0 0' }}>
+        <Link href={intoxPath(x)} aria-label={`${UI_COPY.intox.detail} : ${x.claim}`}>
+          {UI_COPY.intox.detail}
+        </Link>
       </p>
     </article>
   )
