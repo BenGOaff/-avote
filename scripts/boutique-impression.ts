@@ -72,7 +72,16 @@ async function main() {
 }
 
 /** S'exécute dans la page : compose sur un canvas, binarise, recadre, renvoie un PNG. */
-async function render(o: { lines: string[]; byline: string | null; img: string | null; sig: 'site' | 'verifie'; ink: string; yellow: string; dark: boolean; S: number }) {
+async function render(o: {
+  lines: string[]
+  byline: string | null
+  img: string | null
+  sig: 'site' | 'verifie'
+  ink: string
+  yellow: string
+  dark: boolean
+  S: number
+}) {
   const CW = Math.round(4400 * o.S)
   const hex = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)) as [number, number, number]
   const INK = hex(o.ink)
@@ -92,7 +101,10 @@ async function render(o: { lines: string[]; byline: string | null; img: string |
     x0.fillRect(0, 0, c0.width, c0.height)
     x0.drawImage(im, 0, 0)
     const p0 = x0.getImageData(0, 0, c0.width, c0.height).data
-    let minX = c0.width, minY = c0.height, maxX = 0, maxY = 0
+    let minX = c0.width,
+      minY = c0.height,
+      maxX = 0,
+      maxY = 0
     for (let y = 0; y < c0.height; y++)
       for (let x = 0; x < c0.width; x++) {
         const k = (y * c0.width + x) * 4
@@ -118,10 +130,12 @@ async function render(o: { lines: string[]; byline: string | null; img: string |
     const id = xa.getImageData(0, 0, art.width, art.height)
     const p = id.data
     for (let i = 0; i < p.length; i += 4) {
-      const r = p[i]!, g = p[i + 1]!, b = p[i + 2]!
+      const r = p[i]!,
+        g = p[i + 1]!,
+        b = p[i + 2]!
       const lum = 0.299 * r + 0.587 * g + 0.114 * b
       const col = r > 170 && g > 140 && b < 160 && r - b > 70 ? YEL : lum < 150 ? INK : null
-      if (col) (p[i] = col[0]), (p[i + 1] = col[1]), (p[i + 2] = col[2]), (p[i + 3] = 255)
+      if (col) ((p[i] = col[0]), (p[i + 1] = col[1]), (p[i + 2] = col[2]), (p[i + 3] = 255))
       else p[i + 3] = 0
     }
     xa.clearRect(0, 0, art.width, art.height)
@@ -129,7 +143,12 @@ async function render(o: { lines: string[]; byline: string | null; img: string |
   }
 
   // Texte : Archivo Black, taille ajustée à la ligne la plus longue
-  const segs = o.lines.map((l) => l.split(/(\*[^*]+\*)/).filter(Boolean).map((t) => ({ t: t.replace(/\*/g, ''), hl: t.startsWith('*') })))
+  const segs = o.lines.map((l) =>
+    l
+      .split(/(\*[^*]+\*)/)
+      .filter(Boolean)
+      .map((t) => ({ t: t.replace(/\*/g, ''), hl: t.startsWith('*') })),
+  )
   const meas = document.createElement('canvas').getContext('2d')!
   const setFont = (ctx: CanvasRenderingContext2D, size: number) => {
     ctx.font = `400 ${size}px AB`
@@ -187,7 +206,10 @@ async function render(o: { lines: string[]; byline: string | null; img: string |
   // Binarisation : opaque ou vide, encre ou jaune
   const all = ctx.getImageData(0, 0, c.width, c.height)
   const p = all.data
-  let minX = c.width, minY = c.height, maxX = 0, maxY = 0
+  let minX = c.width,
+    minY = c.height,
+    maxX = 0,
+    maxY = 0
   for (let i = 0; i < p.length; i += 4) {
     if (p[i + 3]! < 128) {
       p[i + 3] = 0
@@ -196,7 +218,7 @@ async function render(o: { lines: string[]; byline: string | null; img: string |
     const dI = Math.abs(p[i]! - INK[0]) + Math.abs(p[i + 1]! - INK[1]) + Math.abs(p[i + 2]! - INK[2])
     const dY = Math.abs(p[i]! - YEL[0]) + Math.abs(p[i + 1]! - YEL[1]) + Math.abs(p[i + 2]! - YEL[2])
     const col = dY < dI ? YEL : INK
-    ;(p[i] = col[0]), (p[i + 1] = col[1]), (p[i + 2] = col[2]), (p[i + 3] = 255)
+    ;((p[i] = col[0]), (p[i + 1] = col[1]), (p[i + 2] = col[2]), (p[i + 3] = 255))
     const n = i / 4
     const px = n % c.width
     const py = (n - px) / c.width
