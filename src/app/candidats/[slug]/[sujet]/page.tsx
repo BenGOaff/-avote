@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { formatDate } from '@/components/Editorial'
 import { ShortAnswer } from '@/components/ShortAnswer'
+import { Glossed } from '@/components/Gloss'
 import { ShareButtons } from '@/components/ShareButtons'
 import { getActiveActors, getActor } from '@/lib/actors'
 import { BASIS_LABEL } from '@/lib/answers'
@@ -109,7 +110,7 @@ export default async function CandidatSujetPage({ params }: { params: Promise<{ 
           <li key={item.id} className="card card--flat">
             <h2 className="cs-list__concept">{item.concept}</h2>
             <p className="small muted" style={{ margin: 0 }}>
-              {t.proposition} : {item.text}
+              {t.proposition} : <Glossed text={item.text} />
             </p>
             <p style={{ margin: 'var(--s2) 0' }}>
               <span className="stamp">{t.sides[st!.side]}</span> <strong>{st!.label}</strong>

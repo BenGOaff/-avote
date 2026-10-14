@@ -1,4 +1,5 @@
 'use client'
+import { Glossed, glossedIds } from '@/components/Gloss'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
@@ -240,9 +241,11 @@ export function TestFlow({ corpusVersion }: { corpusVersion?: string } = {}) {
           <div className="qcard__grid">
             <div>
               <h1 ref={headingRef} tabIndex={-1} className="qcard__text">
-                {item.text}
+                <Glossed text={item.text} newTab />
               </h1>
-              <p className="muted qcard__help">{item.explanation}</p>
+              <p className="muted qcard__help">
+                <Glossed text={item.explanation} skip={glossedIds(item.text)} newTab />
+              </p>
               <Faits itemId={item.id} />
             </div>
 

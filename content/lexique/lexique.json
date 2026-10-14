@@ -1,0 +1,253 @@
+{
+  "_note": "Lexique : les termes techniques du test et des pages, expliqués en une phrase (infobulle) puis en deux ou trois (page /lexique). Une source n'est citée que si elle a été vérifiée ; sinon, définition de la rédaction. Motifs : expressions régulières ; « ci » = insensible à la casse.",
+  "terms": [
+    {
+      "id": "nationalisation",
+      "term": "Nationalisation",
+      "patterns": ["nationalis(?:er|ation|ations|é|ée|és|ées)"],
+      "ci": true,
+      "short": "Transfert d’une entreprise privée vers le secteur public : l’État en devient propriétaire.",
+      "long": "Il faut une loi. Grandes vagues après 1945 puis en 1982 (banques, industrie). L’opération inverse est la privatisation."
+    },
+    {
+      "id": "privatisation",
+      "term": "Privatisation",
+      "patterns": ["privatis(?:er|ation|ations|é|ée|és|ées)"],
+      "ci": true,
+      "short": "L’État vend tout ou partie d’une entreprise publique à des actionnaires privés.",
+      "long": "Grandes vagues de 1986 à la fin des années 1990 (banques, industrie, télécoms), puis les sociétés d’autoroutes en 2006. L’opération inverse est la nationalisation."
+    },
+    {
+      "id": "smic",
+      "term": "SMIC",
+      "patterns": ["SMIC", "Smic"],
+      "short": "Salaire minimum interprofessionnel de croissance : le salaire horaire le plus bas autorisé en France.",
+      "long": "Il est revalorisé chaque année au 1er janvier, indexé sur l’inflation mesurée pour les 20 % des ménages aux revenus les plus faibles. Le gouvernement peut décider d’une hausse supplémentaire.",
+      "source": { "title": "Smic (salaire minimum interprofessionnel de croissance)", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300" }
+    },
+    {
+      "id": "49-3",
+      "term": "Article 49.3",
+      "patterns": ["(?:article )?49[.-]3"],
+      "short": "Article de la Constitution qui permet au gouvernement de faire adopter un texte sans vote des députés, sauf si une motion de censure le renverse.",
+      "long": "Utilisable pour les lois de finances et de financement de la Sécurité sociale, et pour un seul autre texte par session depuis 2008. Les députés ont 24 heures pour déposer une motion de censure.",
+      "source": { "title": "Constitution du 4 octobre 1958, article 49", "publisher": "Conseil constitutionnel", "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur" }
+    },
+    {
+      "id": "motion-de-censure",
+      "term": "Motion de censure",
+      "patterns": ["motions? de censure"],
+      "ci": true,
+      "short": "Vote par lequel les députés peuvent renverser le gouvernement.",
+      "long": "Elle doit être signée par un dixième des députés et adoptée à la majorité des membres de l’Assemblée, soit 289 voix sur 577 : seules les voix pour comptent. Si elle passe, le Premier ministre remet la démission du gouvernement.",
+      "source": { "title": "Constitution du 4 octobre 1958, articles 49 et 50", "publisher": "Conseil constitutionnel", "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur" }
+    },
+    {
+      "id": "ric",
+      "term": "RIC",
+      "patterns": ["RIC", "référendum d[’']initiative citoyenne"],
+      "short": "Référendum d’initiative citoyenne : un vote déclenché par une pétition de citoyens, sans passer par le Parlement. Il n’existe pas en France.",
+      "long": "Réclamé notamment par les Gilets jaunes en 2018 et 2019. Selon les projets, il servirait à proposer ou abroger une loi, révoquer un élu ou modifier la Constitution. Ce qui existe : le référendum d’initiative partagée."
+    },
+    {
+      "id": "rip",
+      "term": "Référendum d’initiative partagée",
+      "patterns": ["référendum d[’']initiative partagée", "RIP"],
+      "short": "Référendum lancé par un cinquième des parlementaires et soutenu par un dixième des électeurs inscrits.",
+      "long": "Prévu par l’article 11 de la Constitution depuis 2008. Un dixième des inscrits représente plusieurs millions de signatures, recueillies sur un site officiel.",
+      "source": { "title": "Constitution du 4 octobre 1958, article 11", "publisher": "Conseil constitutionnel", "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur" }
+    },
+    {
+      "id": "proportionnelle",
+      "term": "Proportionnelle",
+      "patterns": ["proportionnelle"],
+      "ci": true,
+      "short": "Mode de scrutin où chaque liste obtient un nombre de sièges proportionnel à ses voix.",
+      "long": "Les députés sont aujourd’hui élus au scrutin majoritaire à deux tours, circonscription par circonscription. La proportionnelle n’a servi qu’une fois pour les législatives, en 1986. Elle peut être intégrale ou ne concerner qu’une partie des sièges."
+    },
+    {
+      "id": "ame",
+      "term": "AME",
+      "patterns": ["AME", "aide médicale d[’']État", "aide médicale de l[’']État"],
+      "short": "Aide médicale de l’État : prise en charge des soins des étrangers en situation irrégulière, sous conditions.",
+      "long": "Il faut résider en France depuis plus de 3 mois et avoir des ressources sous un plafond. Elle dispense d’avancer les frais médicaux.",
+      "source": { "title": "Qu’est-ce que l’aide médicale de l’État (AME) ?", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3079" }
+    },
+    {
+      "id": "regroupement-familial",
+      "term": "Regroupement familial",
+      "patterns": ["regroupement familial"],
+      "ci": true,
+      "short": "Procédure qui permet à un étranger installé légalement en France de faire venir son conjoint et ses enfants mineurs.",
+      "long": "Il faut résider en France depuis au moins 18 mois avec un titre de séjour d’au moins un an, et justifier de ressources et d’un logement suffisants.",
+      "source": { "title": "Regroupement familial", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166" }
+    },
+    {
+      "id": "csg",
+      "term": "CSG",
+      "patterns": ["CSG"],
+      "short": "Contribution sociale généralisée : prélèvement sur presque tous les revenus pour financer la Sécurité sociale.",
+      "long": "Elle s’applique aux salaires, mais aussi aux pensions, aux allocations chômage et aux revenus du patrimoine, avec des taux différents. Elle a été créée en 1991.",
+      "source": { "title": "CSG et CRDS sur les revenus d’activité et de remplacement", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2971" }
+    },
+    {
+      "id": "tva",
+      "term": "TVA",
+      "patterns": ["TVA"],
+      "short": "Taxe sur la valeur ajoutée : impôt compris dans le prix de presque tout ce qu’on achète.",
+      "long": "Le taux normal est de 20 % ; des taux réduits s’appliquent à certains produits (alimentation, livres, certains travaux…). C’est la première recette de l’État."
+    },
+    {
+      "id": "cotisations",
+      "term": "Cotisations",
+      "patterns": ["cotisations?(?: patronales| sociales| salariales)?"],
+      "ci": true,
+      "short": "Sommes prélevées sur les salaires pour financer la protection sociale : retraite, maladie, chômage, famille.",
+      "long": "Une partie est payée par le salarié (on la voit sur la fiche de paie), une autre par l’employeur (les cotisations patronales). Elles ouvrent des droits : pension de retraite, indemnités."
+    },
+    {
+      "id": "capitalisation",
+      "term": "Retraite par capitalisation",
+      "patterns": ["capitalisation"],
+      "ci": true,
+      "short": "Chacun épargne pour sa propre retraite ; l’épargne est placée, notamment sur les marchés financiers.",
+      "long": "En France, le système obligatoire fonctionne par répartition. La capitalisation existe à côté, sous forme d’épargne retraite facultative."
+    },
+    {
+      "id": "repartition",
+      "term": "Retraite par répartition",
+      "patterns": ["répartition"],
+      "ci": true,
+      "short": "Les cotisations des actifs d’aujourd’hui paient les pensions des retraités d’aujourd’hui.",
+      "long": "C’est le système obligatoire en France, pour la retraite de base et la complémentaire. Son équilibre dépend du nombre de cotisants par retraité."
+    },
+    {
+      "id": "dette-publique",
+      "term": "Dette publique",
+      "patterns": ["dette publique"],
+      "ci": true,
+      "short": "Ce que doivent ensemble l’État, la Sécurité sociale et les collectivités locales.",
+      "long": "Elle se mesure selon une définition européenne et se compare au PIB, la richesse produite en un an. Elle augmente chaque année où il y a un déficit."
+    },
+    {
+      "id": "deficit-public",
+      "term": "Déficit public",
+      "patterns": ["déficits? publics?"],
+      "ci": true,
+      "short": "Quand les dépenses publiques d’une année dépassent les recettes : la différence est empruntée.",
+      "long": "Il s’exprime en pourcentage du PIB. Les règles européennes fixent une limite de 3 %."
+    },
+    {
+      "id": "otan",
+      "term": "OTAN",
+      "patterns": ["OTAN"],
+      "short": "Organisation du traité de l’Atlantique nord : alliance militaire de pays d’Europe et d’Amérique du Nord, créée en 1949.",
+      "long": "Ses membres s’engagent à se défendre mutuellement. La France en est membre depuis l’origine ; elle a quitté le commandement militaire intégré en 1966 et l’a rejoint en 2009."
+    },
+    {
+      "id": "rsa",
+      "term": "RSA",
+      "patterns": ["RSA"],
+      "short": "Revenu de solidarité active : revenu minimum versé aux personnes sans ressources ou à faibles ressources.",
+      "long": "Il est versé en général à partir de 25 ans. Depuis 2025, les bénéficiaires sont inscrits à France Travail et doivent, sauf exceptions, 15 heures d’activité par semaine.",
+      "source": { "title": "Revenu de solidarité active (RSA)", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/N19775" }
+    },
+    {
+      "id": "carte-scolaire",
+      "term": "Carte scolaire",
+      "patterns": ["carte scolaire"],
+      "ci": true,
+      "short": "Règle qui affecte chaque élève à l’école ou au collège public de son secteur, selon son adresse.",
+      "long": "Des dérogations sont possibles (frère ou sœur dans l’établissement, santé, parcours particulier). Elle ne s’applique pas aux établissements privés."
+    },
+    {
+      "id": "parcoursup",
+      "term": "Parcoursup",
+      "patterns": ["Parcoursup"],
+      "short": "Plateforme nationale où les lycéens formulent leurs vœux pour entrer dans l’enseignement supérieur.",
+      "long": "Elle a remplacé APB en 2018. Les formations examinent et classent les candidatures ; les réponses arrivent au fil de la phase d’admission.",
+      "source": { "title": "Parcoursup", "publisher": "Ministère de l’Enseignement supérieur", "url": "https://www.parcoursup.gouv.fr/" }
+    },
+    {
+      "id": "zfe",
+      "term": "ZFE",
+      "patterns": ["ZFE", "zones? à faibles émissions"],
+      "short": "Zones à faibles émissions : secteurs de grandes villes interdits aux véhicules les plus polluants, selon leur vignette Crit’Air.",
+      "long": "Les règles varient d’une ville à l’autre. Leur avenir fait l’objet de débats au Parlement depuis 2025."
+    },
+    {
+      "id": "mercosur",
+      "term": "Mercosur",
+      "patterns": ["Mercosur"],
+      "short": "Marché commun d’Amérique du Sud : Brésil, Argentine, Uruguay, Paraguay, et Bolivie depuis 2024.",
+      "long": "L’Union européenne a négocié avec lui un accord de libre-échange, critiqué notamment par les agriculteurs français."
+    },
+    {
+      "id": "libre-echange",
+      "term": "Libre-échange",
+      "patterns": ["libre-échange"],
+      "ci": true,
+      "short": "Accord de libre-échange : traité qui réduit les droits de douane et les obstacles au commerce entre deux zones.",
+      "long": "Pour la France, c’est l’Union européenne qui négocie ces accords au nom de tous les États membres (avec le Canada, le Mercosur…)."
+    },
+    {
+      "id": "titre-de-sejour",
+      "term": "Titre de séjour",
+      "patterns": ["titres? de séjour", "cartes? de séjour"],
+      "ci": true,
+      "short": "Document qui autorise un étranger non européen à vivre en France pendant une durée donnée.",
+      "long": "Il en existe plusieurs : carte de séjour temporaire (un an), carte pluriannuelle, carte de résident (dix ans)…",
+      "source": { "title": "Titres, cartes de séjour et documents de circulation pour étranger en France", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/N110" }
+    },
+    {
+      "id": "regularisation",
+      "term": "Régularisation",
+      "patterns": ["régularis(?:er|ation|ations|é|ée|és|ées)"],
+      "ci": true,
+      "short": "Délivrance d’un titre de séjour à une personne étrangère qui vivait en France sans autorisation.",
+      "long": "Elle se fait aujourd’hui au cas par cas (travail, liens familiaux, ancienneté du séjour). Une régularisation collective concernerait tout un groupe à la fois."
+    },
+    {
+      "id": "peines-planchers",
+      "term": "Peines planchers",
+      "patterns": ["peines? planchers?"],
+      "ci": true,
+      "short": "Peines minimales que le juge doit prononcer pour certaines infractions, sauf décision motivée.",
+      "long": "Elles ont existé en France pour les récidivistes de 2007 à 2014, avant d’être supprimées."
+    },
+    {
+      "id": "pma",
+      "term": "PMA",
+      "patterns": ["PMA", "procréation médicalement assistée"],
+      "short": "Procréation médicalement assistée : techniques médicales pour aider à concevoir un enfant (insémination, fécondation in vitro).",
+      "long": "Depuis la loi de bioéthique de 2021, elle est ouverte aux couples de femmes et aux femmes seules, et prise en charge par l’Assurance maladie.",
+      "source": { "title": "Procréation médicalement assistée (PMA)", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31462" }
+    },
+    {
+      "id": "gpa",
+      "term": "GPA",
+      "patterns": ["GPA", "gestation pour autrui"],
+      "short": "Gestation pour autrui : une femme porte un enfant pour une autre personne ou un couple, à qui elle le remet à la naissance.",
+      "long": "Elle est interdite en France (Code civil, article 16-7) et autorisée sous conditions dans d’autres pays."
+    },
+    {
+      "id": "droits-de-succession",
+      "term": "Droits de succession",
+      "patterns": ["droits de succession"],
+      "ci": true,
+      "short": "Impôt payé par les héritiers sur ce qu’ils reçoivent après un décès.",
+      "long": "Le montant dépend du lien de parenté et de la somme reçue, après un abattement de 100 000 € par enfant. Le conjoint marié ou pacsé n’en paie pas.",
+      "source": { "title": "Droits de succession", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198" }
+    },
+    {
+      "id": "vote-blanc",
+      "term": "Vote blanc",
+      "patterns": ["votes? blancs?"],
+      "ci": true,
+      "short": "Enveloppe vide ou bulletin sans nom de candidat.",
+      "long": "Il est compté parmi les votants et publié à part, mais pas parmi les suffrages exprimés : il ne change pas le résultat.",
+      "source": { "title": "Élections : déroulement du scrutin", "publisher": "Service-Public.fr", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16828" },
+      "href": "/radar/2026-10-08-vote-blanc"
+    }
+  ]
+}

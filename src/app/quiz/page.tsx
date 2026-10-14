@@ -17,8 +17,8 @@ const CATS: FlashCat[] = ['score', 'profil', 'connaissances']
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Quiz présidentielle 2027',
-  description: 'Suis-je un facho ? Suis-je une gauchiasse ? Des quiz flash satiriques sur la présidentielle 2027 : ris de ton camp, chambre celui d’en face, partage ton score.',
+  title: 'Quiz présidentielle 2027 : pour qui voter, quiz politiques',
+  description: `Les quiz de l’élection présidentielle 2027 : le test pour savoir de quels candidats tu es proche (${QUICK_ITEMS.length} ou ${questionnaire.items.length} questions), puis des quiz sur le vote, les impôts, la Ve République et les tribus politiques.`,
   alternates: { canonical: '/quiz' },
 }
 
@@ -38,7 +38,7 @@ export default function QuizHub() {
   return (
     <div className="container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
-      <PageHeader kicker="Quiz" title="Joue, partage, compare" lede="Découvre de quels candidats tu es proche, ris de ton camp, et repars avec de vrais chiffres à partager." />
+      <PageHeader kicker="Quiz" title="Les quiz de la présidentielle 2027" lede="Découvre de quels candidats tu es proche, ris de ton camp, et repars avec de vrais chiffres à partager." />
       <ul className="grid grid--2 section" role="list" style={{ listStyle: 'none', padding: 0 }}>
         <li className="card card--featured" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s2)' }}>
           <p className="kicker" style={{ margin: 0 }}>

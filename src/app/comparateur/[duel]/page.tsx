@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { formatDate } from '@/components/Editorial'
 import { ShortAnswer } from '@/components/ShortAnswer'
+import { Glossed } from '@/components/Gloss'
 import { ShareButtons } from '@/components/ShareButtons'
 import { UI_COPY } from '@/lib/copy'
 import { questionnaire } from '@/lib/data'
@@ -164,7 +165,7 @@ function DuelRow({ x, a, b }: { x: DuelItem; a: { slug: string; name: string }; 
     <li className="card card--flat">
       <h3 className="cs-list__concept">{item.concept}</h3>
       <p className="small muted" style={{ margin: 0 }}>
-        {UI_COPY.candidatSujet.proposition} : {item.text}
+        {UI_COPY.candidatSujet.proposition} : <Glossed text={item.text} />
       </p>
       {[a, b].map((who) => {
         const st = stanceOf(who.slug, x.itemId)

@@ -5040,3 +5040,67 @@ details.disclosure > div {
   margin: 0 0 var(--s1);
   font-size: var(--h3);
 }
+
+/* ---------- Lexique : termes techniques avec définition courte ---------- */
+.gloss {
+  display: inline;
+}
+.gloss__btn {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: help;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--muted);
+}
+.gloss__btn[aria-expanded='true'] {
+  background: var(--highlight);
+  color: var(--on-highlight);
+}
+.gloss__btn:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+.gloss__pop {
+  position: fixed;
+  z-index: 60;
+  display: grid;
+  gap: var(--s2);
+  width: min(340px, calc(100vw - 32px));
+  padding: var(--s4);
+  background: var(--surface);
+  color: var(--ink);
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-signature);
+  font: 400 var(--text-ui) / var(--lh-ui) var(--font-ui);
+  text-align: left;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.gloss__term {
+  font: 700 var(--text-small) / var(--lh-ui) var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.gloss__more {
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.lexique-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--s4) 0 0;
+  display: grid;
+  gap: var(--s4);
+}
+.lexique-list li {
+  scroll-margin-top: calc(var(--topbar-h) + var(--s4));
+}
