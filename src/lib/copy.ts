@@ -46,8 +46,8 @@ export const UI_COPY = {
       {
         q: 'Quand a lieu l’élection présidentielle 2027 ?',
         a: 'Le premier tour a lieu le dimanche 18 avril 2027 et le second tour le dimanche 2 mai 2027, selon les dates annoncées en Conseil des ministres le 1er juillet 2026 (Service-Public.fr).',
-        href: '/radar/2026-10-08-comment-voter',
-        link: 'Le mode d’emploi du vote',
+        href: '/voter/dates-presidentielle-2027',
+        link: 'Les dates et le mode d’emploi du vote',
       },
       {
         q: 'Qui sont les candidats à la présidentielle 2027 ?',
@@ -58,7 +58,7 @@ export const UI_COPY = {
       {
         q: 'Jusqu’à quand s’inscrire sur les listes électorales ?',
         a: 'Jusqu’au 6e vendredi avant le premier tour, en mairie ou en ligne, selon la règle en vigueur depuis le 1er juillet 2026 (Service-Public.fr).',
-        href: '/radar/2026-10-08-comment-voter',
+        href: '/voter/inscription-listes-electorales',
         link: 'S’inscrire et voter',
       },
       {
@@ -447,6 +447,26 @@ export const UI_COPY = {
     test: 'Faire le test',
     urne: 'Glisser un bulletin dans l’urne',
     how: 'Comment les positions sont établies',
+  },
+  guides: {
+    kicker: 'Voter en 2027',
+    hubTitle: 'Voter en 2027 : le mode d’emploi',
+    hubMetaTitle: 'Voter à la présidentielle 2027 : dates, inscription, procuration, pièce d’identité',
+    hubDescription: (r1: string, r2: string, d: string) => `Premier tour le ${r1}, second tour le ${r2}. Inscription jusqu’au ${d}. Pièce d’identité, procuration : les réponses avec les sources officielles.`,
+    hubLede: 'Les démarches pour voter, une question par page, avec la source officielle de chaque règle.',
+    hubRounds: (r1: string, r2: string) => `Premier tour le ${r1}, second tour le ${r2}.`,
+    hubDeadline: (d: string) => `Inscription sur les listes électorales jusqu’au ${d}, en ligne comme en mairie (date calculée à partir de la règle officielle).`,
+    hubId: 'Pièce d’identité originale obligatoire dans les communes de 1 000 habitants ou plus ; la carte électorale est facultative.',
+    hubProxy: 'Absent ce jour-là : procuration en ligne, le plus tôt possible, sans justifier ton absence.',
+    checked: (d: string) => `Sources officielles relues le ${d}`,
+    sources: 'Sources officielles',
+    others: 'Les autres questions',
+    article: 'Le mode d’emploi complet, en un seul article',
+    blank: 'Vote blanc : ce qu’il change, et ce qu’il ne change pas',
+    quiz: 'Le quiz « Sais-tu voter ? »',
+    whoTitle: 'Reste à savoir pour qui',
+    whoBody: 'Le test compare tes réponses aux positions sourcées des candidats. Le calcul se fait sur ton appareil ; tes réponses ne sont envoyées nulle part.',
+    testCta: 'Faire le test',
   },
   candidateDuel: {
     metaTitle: (a: string, b: string) => `${a} ou ${b} : leurs positions comparées pour 2027`,
