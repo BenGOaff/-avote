@@ -2544,6 +2544,484 @@
           "publisher": "Le Point, repris par Nous France (octobre 2025)"
         }
       ]
+    },
+    {
+      "slug": "equinoxe",
+      "name": "Équinoxe",
+      "sigle": "",
+      "nuance": "",
+      "founded": {
+        "date": "2021",
+        "text": "Fondé en 2021 ; son candidat revendique 60 élus.",
+        "quote": "Rappelant que son parti, fondé il y a cinq ans, compte déjà 60 élus.",
+        "url": "https://jhm.fr/sous-la-banniere-dequinoxe-antoine-mikolajczak-brigue-la-presidence-de-la-republique/",
+        "publisher": "Le Journal de la Haute-Marne (11 juillet 2026)"
+      },
+      "leaders": [
+        {
+          "name": "Alexia de Montgolfier",
+          "role": "présidente",
+          "since": "2025"
+        },
+        {
+          "name": "Anatole Reverbori",
+          "role": "vice-président",
+          "since": ""
+        },
+        {
+          "name": "Nathalie Lamy",
+          "role": "secrétaire générale",
+          "since": ""
+        },
+        {
+          "name": "Louis Brémaud",
+          "role": "trésorier",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Alexia de Montgolfier est la présidente d'Équinoxe depuis janvier 2025, suite à l'élection au jugement majoritaire du nouveau Bureau Politique.",
+        "url": "https://parti-equinoxe.fr/alexia-de-montgolfier/",
+        "publisher": "Équinoxe (site officiel)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Équinoxe dit vouloir placer « la sobriété, la convivialité et l'engagement » au cœur du débat public et refuse de se situer sur l'axe gauche-droite.",
+        "quote": "Équinoxe vous propose de reprendre le temps, de placer au cœur de la société et du débat public la sobriété, la convivialité et l'engagement",
+        "url": "https://parti-equinoxe.fr/",
+        "publisher": "Équinoxe (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2021",
+          "text": "Fondation du parti par de jeunes étudiants et actifs.",
+          "quote": "Né de la volonté de jeunes étudiants et actifs de transformer la société en mettant les idées avant les ambitions personnelles, Équinoxe est fondé comme un espace de liberté politique.",
+          "url": "https://parti-equinoxe.fr/notre-histoire/",
+          "publisher": "Équinoxe (site officiel)"
+        },
+        {
+          "date": "2022",
+          "text": "Premières candidatures aux élections législatives, à Paris, Lyon et Strasbourg.",
+          "quote": "Équinoxe fait ses débuts électoraux lors des législatives de 2022 à Paris, Lyon et Strasbourg.",
+          "url": "https://parti-equinoxe.fr/notre-histoire/",
+          "publisher": "Équinoxe (site officiel)"
+        },
+        {
+          "date": "2024",
+          "text": "Liste conduite par Marine Cholley aux élections européennes : 0,29 % des voix.",
+          "quote": "Désignée par jugement majoritaire, Marine Cholley mène une liste de 81 candidats aux élections européennes de 2024. Avec plus de 75 000 voix (0,29 %)",
+          "url": "https://parti-equinoxe.fr/notre-histoire/",
+          "publisher": "Équinoxe (site officiel)"
+        },
+        {
+          "date": "2026-06-27",
+          "text": "Antoine Mikolajczak, désigné par les adhérents, annonce sa candidature à l'élection présidentielle.",
+          "quote": "L'ingénieur et patron du parti Équinoxe annonce sa candidature le 27 juin 2026 devant adhérents et partisans de son parti.",
+          "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+          "publisher": "Sud Radio"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Donner davantage de pouvoirs et de moyens aux territoires, simplifier le droit et ouvrir de nouveaux espaces de participation citoyenne.",
+          "quote": "Cela passe par davantage de pouvoirs et de moyens pour les territoires, un droit plus simple et de nouveaux espaces de participation citoyenne.",
+          "url": "https://parti-equinoxe.fr/presidentielle-2027/",
+          "publisher": "Équinoxe (site officiel)"
+        },
+        {
+          "theme": "économie",
+          "text": "Garantir des prix rémunérateurs aux éleveurs et encadrer les marges de la distribution.",
+          "quote": "Garantir des prix rémunérateurs aux éleveurs et encadrer les marges sur la distribution pour limiter la hausse du prix final.",
+          "url": "https://parti-equinoxe.fr/proteger-les-animaux-lenvironnement-et-nos-eleveurs/",
+          "publisher": "Équinoxe (site officiel)"
+        },
+        {
+          "theme": "économie",
+          "text": "Instaurer un « protectionnisme stratégique » sur certaines filières contre les importations non soumises aux règles françaises.",
+          "quote": "Instaurer un protectionnisme stratégique sur certaines filières en luttant contre les importations non soumises à nos règles.",
+          "url": "https://parti-equinoxe.fr/proteger-les-animaux-lenvironnement-et-nos-eleveurs/",
+          "publisher": "Équinoxe (site officiel)"
+        },
+        {
+          "theme": "europe",
+          "text": "Répartir les aides de la politique agricole commune selon la main-d'œuvre plutôt que selon la surface.",
+          "quote": "Passer d'une logique de surface à une logique de main-d'œuvre dans la PAC (Politique Agricole Commune).",
+          "url": "https://parti-equinoxe.fr/proteger-les-animaux-lenvironnement-et-nos-eleveurs/",
+          "publisher": "Équinoxe (site officiel)"
+        },
+        {
+          "theme": "climat",
+          "text": "Conditionner davantage les aides agricoles à des critères environnementaux, au profit des élevages à l'herbe et en plein air.",
+          "quote": "Renforcer l'éco-conditionnalité des aides en favorisant les élevages herbagers et plein air.",
+          "url": "https://parti-equinoxe.fr/proteger-les-animaux-lenvironnement-et-nos-eleveurs/",
+          "publisher": "Équinoxe (site officiel)"
+        }
+      ]
+    },
+    {
+      "slug": "resistons",
+      "name": "Résistons !",
+      "sigle": "",
+      "nuance": "",
+      "founded": {
+        "date": "2016",
+        "text": "Mouvement fondé en 2016 par Jean Lassalle, alors député des Pyrénées-Atlantiques.",
+        "quote": "Depuis 2016 : Fondateur et président du parti politique Résistons.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle",
+        "publisher": "Sud Radio"
+      },
+      "leaders": [
+        {
+          "name": "Jean Lassalle",
+          "role": "président",
+          "since": "2016"
+        }
+      ],
+      "leadersSource": {
+        "quote": "Depuis 2016 : Fondateur et président du parti politique Résistons.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle",
+        "publisher": "Sud Radio"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Résistons ! se présente comme « un mouvement politique qui engage les Français à reprendre la parole ».",
+        "quote": "Résistons ! est un mouvement politique qui engage les Français à reprendre la parole.",
+        "url": "https://resistons-france.fr/",
+        "publisher": "Résistons ! (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2017",
+          "text": "Jean Lassalle obtient 1,21 % des voix à l'élection présidentielle (3,13 % en 2022).",
+          "quote": "2017 et 2022 : Candidat aux élections présidentielles (obtient 1,21 % des voix en 2017 puis 3,13 % en 2022).",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle",
+          "publisher": "Sud Radio"
+        },
+        {
+          "date": "2024",
+          "text": "Jean Lassalle conduit la liste « L'Alliance rurale » aux élections européennes : 2,35 % des voix.",
+          "quote": "2024 : Tête de liste aux élections européennes sous la bannière « L'Alliance rurale » (2,35 % des voix)",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle",
+          "publisher": "Sud Radio"
+        },
+        {
+          "date": "2026-07-10",
+          "text": "Jean Lassalle lance une cagnotte pour financer une candidature à l'élection présidentielle de 2027.",
+          "quote": "Jean Lassalle lance une cagnotte pour pouvoir être candidat à l'élection présidentielle de 2027.",
+          "url": "https://www.ici.fr/emissions/l-invite-de-la-redaction-de-ici-bearn-bigorre/jean-lassalle-lance-une-cagnotte-pour-etre-candidat-a-la-presidentielle-de-2027-2094458",
+          "publisher": "ICI Béarn Bigorre (Radio France)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Instaurer le référendum d'initiative citoyenne (RIC).",
+          "quote": "Instaurer le RIC, le Référendum d'initiative citoyenne",
+          "url": "https://resistons-france.fr/",
+          "publisher": "Résistons ! (site officiel)"
+        },
+        {
+          "theme": "économie",
+          "text": "Baisser la TVA sur les carburants de 20 % à 5,5 %.",
+          "quote": "Baisser la TVA sur les hydrocarbures de 20 % à 5,5 %",
+          "url": "https://resistons-france.fr/",
+          "publisher": "Résistons ! (site officiel)"
+        },
+        {
+          "theme": "économie",
+          "text": "Rétablir l'impôt sur la fortune et supprimer l'impôt sur la fortune immobilière.",
+          "quote": "Rétablir l'ISF (Impôt sur la fortune) et supprimer l'IFI (Impôt sur la fortune immobilière)",
+          "url": "https://resistons-france.fr/",
+          "publisher": "Résistons ! (site officiel)"
+        },
+        {
+          "theme": "travail",
+          "text": "Exonérer de charges sociales les très petites entreprises pour l'embauche de leurs deux premiers salariés.",
+          "quote": "Exonérer les TPE et PMI de charges sociales pour l'embauche des deux premiers salariés",
+          "url": "https://resistons-france.fr/",
+          "publisher": "Résistons ! (site officiel)"
+        },
+        {
+          "theme": "europe",
+          "text": "Revoir la répartition des aides de la politique agricole commune au profit des paysans plutôt que de la spéculation foncière.",
+          "quote": "Revoir la distribution de la PAC pour que les aides aillent aux paysans qui respectent leur terre et leurs bêtes, non à la spéculation foncière.",
+          "url": "https://resistons-france.fr/",
+          "publisher": "Résistons ! (site officiel)"
+        }
+      ]
+    },
+    {
+      "slug": "solution-democratique",
+      "name": "Solution démocratique",
+      "sigle": "",
+      "nuance": "",
+      "founded": {
+        "date": "2024-09-15",
+        "text": "Parti lancé le 15 septembre 2024, issu du mouvement citoyen Espoir RIC, actif depuis 2022 sans structure juridique.",
+        "quote": "À l'occasion de la journée internationale de la démocratie le 15 septembre 2024, un tout nouveau parti politique se lance. Il s'agit de Solution Démocratique.",
+        "url": "https://solutiondemocratique.fr/communique-de-presse-lancement-a-loccasion-de-la-journee-internationale-de-la-democratie/",
+        "publisher": "Solution démocratique (site officiel)"
+      },
+      "leaders": [
+        {
+          "name": "Clara Egger",
+          "role": "présidente",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Universitaire et présidente de Solution démocratique, elle présente sa candidature le 20 avril 2026",
+        "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+        "publisher": "Sud Radio"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Le parti se donne pour « unique objet » d'instaurer la démocratie directe en France, sur le modèle suisse.",
+        "quote": "Son unique objet est d'instaurer la démocratie directe en France.",
+        "url": "https://solutiondemocratique.fr/communique-de-presse-lancement-a-loccasion-de-la-journee-internationale-de-la-democratie/",
+        "publisher": "Solution démocratique (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2022",
+          "text": "Sous le nom d'Espoir RIC, le mouvement obtient 36 parrainages pour la candidature de Clara Egger.",
+          "quote": "En 2022, alors que nous existions uniquement sous la forme d'un mouvement citoyen sans structure juridique (Espoir RIC), nous avions réussi à obtenir 36 parrainages.",
+          "url": "https://solutiondemocratique.fr/notre-solution/",
+          "publisher": "Solution démocratique (site officiel)"
+        },
+        {
+          "date": "2024-09-15",
+          "text": "Lancement du parti Solution démocratique.",
+          "quote": "À l'occasion de la journée internationale de la démocratie le 15 septembre 2024, un tout nouveau parti politique se lance.",
+          "url": "https://solutiondemocratique.fr/communique-de-presse-lancement-a-loccasion-de-la-journee-internationale-de-la-democratie/",
+          "publisher": "Solution démocratique (site officiel)"
+        },
+        {
+          "date": "2026-04-20",
+          "text": "Clara Egger présente sa candidature à l'élection présidentielle.",
+          "quote": "Universitaire et présidente de Solution démocratique, elle présente sa candidature le 20 avril 2026 dans un communiqué de presse publié sur le site de Solution démocratique.",
+          "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+          "publisher": "Sud Radio"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Permettre à tout citoyen d'être à l'initiative d'une proposition de modification de la Constitution (RIC constituant).",
+          "quote": "être à l'initiative d'une proposition de modification de la Constitution",
+          "url": "https://solutiondemocratique.fr/notre-solution/",
+          "publisher": "Solution démocratique (site officiel)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Rendre le référendum obligatoire pour toute modification de la Constitution.",
+          "quote": "le référendum obligatoire pour modifier la Constitution.",
+          "url": "https://solutiondemocratique.fr/notre-solution/",
+          "publisher": "Solution démocratique (site officiel)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Nommer dès l'élection un gouvernement de transition chargé seulement de lancer le référendum.",
+          "quote": "Le président nomme un Premier ministre chargé de former un gouvernement de transition, dont la seule mission est de permettre le lancement du référendum.",
+          "url": "https://solutiondemocratique.fr/notre-solution/calendrier-president/",
+          "publisher": "Solution démocratique (site officiel)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Permettre à chaque commune de se doter de ses propres règles électorales.",
+          "quote": "chaque commune pourra prendre en main la constitution de son propre code électoral.",
+          "url": "https://solutiondemocratique.fr/notre-solution/calendrier-president/",
+          "publisher": "Solution démocratique (site officiel)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Remettre la commune au centre de l'organisation politique, par une décentralisation « par le bas ».",
+          "quote": "Nous souhaitons remettre la commune au centre de l'organisation politique française.",
+          "url": "https://solutiondemocratique.fr/notre-solution/",
+          "publisher": "Solution démocratique (site officiel)"
+        }
+      ]
+    },
+    {
+      "slug": "trajectoire",
+      "name": "Trajectoire",
+      "sigle": "",
+      "nuance": "",
+      "founded": null,
+      "leaders": [
+        {
+          "name": "Manolo Mlekuz",
+          "role": "fondateur",
+          "since": ""
+        },
+        {
+          "name": "Gaspard Geniteau",
+          "role": "secrétaire",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "Manolo Mlekuz (à gauche) et Gaspard Geniteau, secrétaire du parti trajectoire, sillonnent la France à deux dans leur camion aménagé.",
+        "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti",
+        "publisher": "CNews (27 mai 2026)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Le parti affiche « un seul objectif » : « répartir le pouvoir politique pour que les décisions soient prises par tous et pour tous ».",
+        "quote": "Un seul objectif : répartir le pouvoir politique pour que les décisions soient prises par tous et pour tous.",
+        "url": "https://trajectoire2027.fr/programme",
+        "publisher": "Trajectoire (site du parti)"
+      },
+      "dates": [
+        {
+          "date": "2026-05",
+          "text": "Manolo Mlekuz, fondateur du parti, parcourt la France en camion aménagé pour réunir les 500 parrainages.",
+          "quote": "Le jeune homme a même créé son propre parti, «Trajectoire», et sillonne la France pour obtenir ses 500 signatures d'élus.",
+          "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti",
+          "publisher": "CNews (27 mai 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Réunir un collège de constitutionnalistes pour fixer les modalités de convocation d'une assemblée constituante.",
+          "quote": "Un collège de constitutionnalistes est réuni dans le but de rédiger les modalités de convocation de l'assemblée constituante.",
+          "url": "https://trajectoire2027.fr/programme",
+          "publisher": "Trajectoire (site du parti)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Soumettre ces modalités à référendum (article 11 de la Constitution).",
+          "quote": "Ces modalités sont soumises à référendum par le biais de l'article 11.",
+          "url": "https://trajectoire2027.fr/programme",
+          "publisher": "Trajectoire (site du parti)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Faire rédiger une nouvelle Constitution par une assemblée constituante composée d'un échantillon représentatif des Français.",
+          "quote": "L'assemblée constituante, composée d'un échantillon représentatif des Français, commence la rédaction d'une nouvelle Constitution.",
+          "url": "https://trajectoire2027.fr/programme",
+          "publisher": "Trajectoire (site du parti)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Soumettre la nouvelle Constitution à référendum ; en cas de refus, garder celle de 1958.",
+          "quote": "Une fois rédigée, la nouvelle Constitution est soumise à référendum.",
+          "url": "https://trajectoire2027.fr/programme",
+          "publisher": "Trajectoire (site du parti)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Organiser de nouvelles élections législatives et nommer Premier ministre le président du parti arrivé en tête.",
+          "quote": "de nouvelles élections législatives seront organisées, et le président du parti arrivé en tête sera nommé Premier ministre.",
+          "url": "https://trajectoire2027.fr/programme",
+          "publisher": "Trajectoire (site du parti)"
+        }
+      ]
+    },
+    {
+      "slug": "a-nous-maintenant",
+      "name": "À nous maintenant",
+      "sigle": "",
+      "nuance": "",
+      "founded": {
+        "date": "2026",
+        "text": "Mouvement citoyen fondé en 2026 et basé en Provence-Alpes-Côte d'Azur, porté par Jean-François Legendre.",
+        "quote": "« À nous maintenant » est un site et un mouvement citoyen indépendant fondé en 2026.",
+        "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/",
+        "publisher": "TV83 (23 mai 2026)"
+      },
+      "leaders": [
+        {
+          "name": "Jean-François Legendre",
+          "role": "fondateur, candidat",
+          "since": "2026"
+        }
+      ],
+      "leadersSource": {
+        "quote": "Porté par Jean-François Legendre, citoyen engagé et observateur des crises de notre époque",
+        "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/",
+        "publisher": "TV83 (23 mai 2026)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Le mouvement dit vouloir porter « une alternative politique et un candidat citoyen » hors des partis.",
+        "quote": "Le mouvement \"À nous maintenant\" entend porter cette alternative politique et un candidat citoyen lors de la prochaine élection présidentielle.",
+        "url": "https://www.anousmaintenant.fr/",
+        "publisher": "À nous maintenant (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2026-05",
+          "text": "Lancement de la campagne présidentielle du mouvement, avec la candidature de Jean-François Legendre.",
+          "quote": "Le mouvement citoyen « À nous maintenant » annonce officiellement le lancement de sa campagne en vue de l'élection présidentielle de 2027, portée par la candidature citoyenne de Jean-François Legendre.",
+          "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/",
+          "publisher": "TV83 (23 mai 2026)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Instaurer un dialogue structuré entre gouvernement et citoyens, appuyé sur des référendums d'initiative citoyenne.",
+          "quote": "L'instauration d'un véritable dialogue structuré entre le gouvernement et les citoyens, permettant de mettre en place de nouvelles législations et s'appuyant sur des référendums (RIC et RIG)",
+          "url": "https://www.anousmaintenant.fr/",
+          "publisher": "À nous maintenant (site officiel)"
+        },
+        {
+          "theme": "économie",
+          "text": "Voter des budgets à l'équilibre, rationaliser les subventions et lutter contre la spéculation et l'optimisation fiscale.",
+          "quote": "voter des budgets à l'équilibre en maîtrisant les dépenses, rationaliser les subventions, et lutter fermement contre la spéculation et l'optimisation fiscale",
+          "url": "https://www.anousmaintenant.fr/",
+          "publisher": "À nous maintenant (site officiel)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Créer un ministère chargé du retour de la population vers les zones rurales et les villes moyennes, en lien direct avec les maires.",
+          "quote": "Un ministère dédié sera créé en lien direct avec les maires.",
+          "url": "https://www.anousmaintenant.fr/",
+          "publisher": "À nous maintenant (site officiel)"
+        },
+        {
+          "theme": "climat",
+          "text": "Soutenir l'agriculture biologique, garantir un revenu minimum aux agriculteurs et relocaliser la production alimentaire.",
+          "quote": "Soutenir massivement le développement de l'agriculture biologique, garantir un revenu minimum décent aux agriculteurs et relocaliser la production alimentaire.",
+          "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/",
+          "publisher": "TV83 (23 mai 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Encourager un mouvement de population vers les zones rurales et les villes moyennes.",
+          "quote": "nous encouragerons un vaste mouvement de population vers les zones rurales et les villes moyennes",
+          "url": "https://www.anousmaintenant.fr/",
+          "publisher": "À nous maintenant (site officiel)"
+        }
+      ]
     }
   ]
 }

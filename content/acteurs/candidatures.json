@@ -714,6 +714,119 @@
       },
       "verified": true,
       "addedBy": "veille claude-sonnet-5-5"
+    },
+    {
+      "slug": "jean-lassalle",
+      "name": "Jean Lassalle",
+      "party": "Résistons !",
+      "status": "demarche",
+      "since": "2026-07-10",
+      "source": {
+        "title": "Présidentielle 2027 : Jean Lassalle lance une cagnotte pour être candidat",
+        "publisher": "ICI Béarn Bigorre (Radio France)",
+        "url": "https://www.ici.fr/emissions/l-invite-de-la-redaction-de-ici-bearn-bigorre/jean-lassalle-lance-une-cagnotte-pour-etre-candidat-a-la-presidentielle-de-2027-2094458"
+      },
+      "verified": true,
+      "addedBy": "rédaction"
+    },
+    {
+      "slug": "benoit-mathieu",
+      "name": "Benoît Mathieu",
+      "status": "declare",
+      "since": "2026-03-30",
+      "source": {
+        "title": "Chauffailles. Benoît Mathieu part à vélo en quête des 500 parrainages pour être candidat à la présidentielle : « Je crois vraiment en mes chances »",
+        "publisher": "Le Journal de Saône-et-Loire",
+        "url": "https://www.lejsl.com/elections/2026/04/01/benoit-mathieu-candidat-a-la-presidentielle-a-velo-il-part-en-quete-des-500-parrainages"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://benoitmathieu2027.fr/"
+        }
+      ],
+      "addedBy": "rédaction"
+    },
+    {
+      "slug": "manolo-mlekuz",
+      "name": "Manolo Mlekuz",
+      "party": "Trajectoire",
+      "status": "declare",
+      "since": "2026-05-27",
+      "source": {
+        "title": "Présidentielle 2027 : qui est Manolo Mlekuz, ce candidat âgé de 20 ans parti sillonner la France pour faire campagne ?",
+        "publisher": "CNews",
+        "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://trajectoire2027.fr/"
+        }
+      ],
+      "addedBy": "rédaction"
+    },
+    {
+      "slug": "clara-egger",
+      "name": "Clara Egger",
+      "party": "Solution démocratique",
+      "status": "declare",
+      "since": "2026-04-20",
+      "source": {
+        "title": "Présidentielle 2027 : qui sont les candidats déclarés ?",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://solutiondemocratique.fr/clara-egger/"
+        }
+      ],
+      "addedBy": "rédaction"
+    },
+    {
+      "slug": "jean-francois-legendre",
+      "name": "Jean-François Legendre",
+      "party": "À nous maintenant",
+      "status": "declare",
+      "since": "2026-05-23",
+      "source": {
+        "title": "Le mouvement citoyen À NOUS MAINTENANT émerge",
+        "publisher": "TV83",
+        "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://www.anousmaintenant.fr/"
+        }
+      ],
+      "addedBy": "rédaction"
+    },
+    {
+      "slug": "antoine-mikolajczak",
+      "name": "Antoine Mikolajczak",
+      "party": "Équinoxe",
+      "status": "declare",
+      "since": "2026-06-27",
+      "source": {
+        "title": "Présidentielle 2027 : qui sont les candidats déclarés ?",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares"
+      },
+      "verified": true,
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://parti-equinoxe.fr/presidentielle-2027/"
+        }
+      ],
+      "addedBy": "rédaction"
     }
   ]
 }

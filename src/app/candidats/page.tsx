@@ -12,6 +12,8 @@ import { logoOf, portraitOf } from '@/lib/images'
 import { Portrait } from '@/components/Portrait'
 import { Shuffle } from '@/components/Shuffle'
 import { BlocFilter } from '@/components/BlocFilter'
+import { UI_COPY } from '@/lib/copy'
+import { presentationOf } from '@/lib/presentations'
 import { CASIER_TYPES, casierCounts } from '@/lib/casier'
 
 export const metadata: Metadata = {
@@ -58,6 +60,7 @@ export default function CandidatsPage() {
               const current = getParcours(a.slug).find((x) => x.to === '')
               const party = current ? partyOfPeriod(current) : getPartis().find((x) => x.name === a.party)
               const logo = party ? logoOf(party.slug) : null
+              const pres = presentationOf(a.slug)
               const role = current?.role && current.role !== 'membre' ? current.role : ''
               const known = Object.values((liveCorpus.positions as Record<string, Record<string, { missing?: boolean }>>)[a.slug] ?? {}).filter(
                 (x) => !x.missing,
@@ -75,6 +78,12 @@ export default function CandidatsPage() {
                         {a.party ?? (nuanceOf(a.slug) ? `Sans parti · ${nuanceOf(a.slug)!.label}` : <span className="muted">Formation non précisée</span>)}
                       </p>
                       {role && <p className="cand-card__meta">{role.charAt(0).toUpperCase() + role.slice(1)}</p>}
+                      {pres && (
+                        <p className="cand-card__intro">
+                          {pres.age !== null && <strong>{UI_COPY.candidate.age(pres.age)}. </strong>}
+                          {pres.intro}
+                        </p>
+                      )}
                       <p className="cand-card__meta">
                         {STATUS_LABEL[a.status]} le {formatDate(a.since)}
                       </p>
