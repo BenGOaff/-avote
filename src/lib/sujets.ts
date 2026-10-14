@@ -130,3 +130,14 @@ export function summaryOf(r: SujetItem): string {
   ]
   return parts.filter(Boolean).join(' ')
 }
+
+/**
+ * Date de mise à jour d'une fiche candidat : la plus récente entre le dernier codage d'une de ses positions
+ * et la dernière relecture complète de ses sources. null si rien n'est daté (on n'invente pas de date).
+ */
+export function actorUpdatedAt(slug: string): string | null {
+  const refreshed = (liveCorpus as { refreshedAt?: Record<string, string> }).refreshedAt?.[slug]
+  let last: string | null = refreshed ?? null
+  for (const p of Object.values(liveCorpus.positions[slug] ?? {})) if (p.codedAt && (!last || p.codedAt > last)) last = p.codedAt
+  return last
+}

@@ -15,6 +15,9 @@ export const AI_NOTICE =
   'Ça vote ? est alimenté par l’IA, avec le moins d’intervention humaine possible, pour limiter le risque d’influence humaine. Les mêmes règles s’appliquent à tous les candidats, et chaque information renvoie à sa source publique : programmes, déclarations, documents officiels, presse.'
 
 export const UI_COPY = {
+  shortAnswer: {
+    title: 'La réponse courte',
+  },
   nav: {
     home: 'Accueil',
     test: 'Le test',
@@ -258,6 +261,20 @@ export const UI_COPY = {
     method: 'Comment on choisit',
     factcheck: 'Une info te paraît louche ?',
     factcheckLink: 'Demande au vérificateur',
+    pageTitle: (verdict: string, claim: string) => `${verdict} : « ${claim} »`,
+    pageDescription: (verdict: string, truth: string) => `Verdict : ${verdict.toLowerCase()}. ${truth}`,
+    pageKicker: 'Intox démontée',
+    pageWarning: 'L’affirmation ci-dessous est fausse ou trompeuse. Elle est citée pour être réfutée, pas pour être relayée.',
+    verdictLine: (verdict: string) => `Verdict : ${verdict.toLowerCase()}.`,
+    checksTitle: 'Les vérifications',
+    checkedOn: (d: string) => `Vérifié le ${d}`,
+    firstSeen: (d: string) => `Repérée le ${d}`,
+    updatedOn: (d: string) => `Mis à jour le ${d}`,
+    readCheck: (publisher: string) => `Lire la vérification de ${publisher}`,
+    detail: 'La fiche',
+    related: 'D’autres intox démontées',
+    topicLink: (label: string) => `Ce que proposent les candidats : ${label}`,
+    all: 'Toutes les intox démontées',
   },
   livres: {
     kicker: 'La campagne',
@@ -432,6 +449,7 @@ export const UI_COPY = {
     how: 'Comment les positions sont établies',
   },
   candidate: {
+    updated: (d: string) => `Positions mises à jour le ${d}`,
     parrainages: (n: number, threshold: number) => `Parrainages validés par le Conseil constitutionnel : ${n} sur ${threshold} nécessaires`,
     linksLead: 'À la source :',
     shareText: (name: string) => `Ce que ${name} propose vraiment, phrase exacte et source à l’appui. Et toi, tu es d’accord ?`,

@@ -56,3 +56,32 @@ export function podium(now = new Date()): { month: string; top: Intox[] } {
     .slice(0, 3)
   return { month, top }
 }
+
+export const getIntoxById = (id: string): Intox | undefined => items.find((x) => x.id === id)
+export const intoxPath = (x: Intox) => `/fake-news/${x.id}`
+/** Date de la vérification la plus récente : c'est la date de mise à jour de la fiche */
+export const intoxUpdated = (x: Intox) => x.debunks[0]?.date ?? x.firstSeen
+
+/** Données structurées ClaimReview d'une intox (même objet sur la liste et sur sa fiche) */
+export function claimReviewOf(x: Intox, url: string) {
+  return {
+    '@type': 'ClaimReview',
+    url,
+    claimReviewed: x.claim,
+    datePublished: x.firstSeen,
+    dateModified: intoxUpdated(x),
+    inLanguage: 'fr-FR',
+    reviewRating: { '@type': 'Rating', ratingValue: 1, bestRating: 5, worstRating: 1, alternateName: VERDICT_LABEL[x.verdict] },
+    reviewBody: x.truth,
+    author: { '@type': 'Organization', name: x.debunks[0]!.publisher, url: x.debunks[0]!.url },
+    itemReviewed: { '@type': 'Claim', ...(x.spreaders.length ? { author: x.spreaders.map((s) => ({ '@type': 'Thing', name: s })) } : {}) },
+    citation: x.debunks.map((d) => ({ '@type': 'CreativeWork', name: d.title, url: d.url, publisher: d.publisher })),
+  }
+}
+
+/** Autres intox du même thème d'abord, puis les plus récentes */
+export function relatedIntox(x: Intox, n = 3): Intox[] {
+  const others = getIntox().filter((o) => o.id !== x.id)
+  const same = x.topic === 'autre' ? [] : others.filter((o) => o.topic === x.topic)
+  return [...same, ...others.filter((o) => !same.includes(o))].slice(0, n)
+}

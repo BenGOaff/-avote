@@ -4991,3 +4991,41 @@ details.disclosure > div {
   padding-bottom: var(--s3);
   border-bottom: 1px solid var(--line);
 }
+
+/* ---------- La réponse courte : la réponse d'abord, le détail ensuite ---------- */
+.short-answer {
+  margin: var(--s4) 0 var(--s5);
+  padding: var(--s4) var(--s5);
+  background: var(--surface);
+  border: var(--border) solid var(--ink);
+  border-left: 8px solid var(--highlight);
+  border-radius: var(--radius);
+}
+.short-answer__title {
+  margin: 0 0 var(--s2);
+  font: 700 var(--text-small) / var(--lh-ui) var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.short-answer__body > :first-child {
+  margin-top: 0;
+}
+.short-answer__body > :last-child {
+  margin-bottom: 0;
+}
+.short-answer__date {
+  margin: var(--s3) 0 0;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+.intox-page__verdict {
+  margin-right: var(--s2);
+  color: var(--correction);
+}
+.intox-checks {
+  list-style: none;
+  padding: 0;
+  margin: var(--s3) 0 0;
+  display: grid;
+  gap: var(--s3);
+}

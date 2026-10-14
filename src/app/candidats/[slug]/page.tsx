@@ -21,6 +21,7 @@ import { hatvpOf } from '@/lib/hatvp'
 import { VOTE_LABEL, VOTES_FETCHED_AT, VOTES_SOURCE, isDeputy, scrutinLabel, scrutinUrl, votesOf } from '@/lib/votes-an'
 import { SENAT_FETCHED_AT, senatLabel, senatOf } from '@/lib/votes-senat'
 import { isAffiliate, livreOf } from '@/lib/livres'
+import { actorUpdatedAt } from '@/lib/sujets'
 import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
 export const dynamicParams = false
@@ -50,12 +51,14 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
   const sources = new Map((liveCorpus.sources ?? []).map((s) => [s.id, s]))
   const known = Object.values(positions).filter((p) => !('missing' in p)).length
   const fiche = (fiches as Record<string, { analysis: string; remark: string }>)[slug]
+  const updated = known > 0 ? actorUpdatedAt(slug) : null
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
     mainEntity: { '@type': 'Person', name: a.name, ...(a.party ? { affiliation: { '@type': 'Organization', name: a.party } } : {}) },
     url: absolute(`/candidats/${a.slug}`),
     inLanguage: 'fr-FR',
+    ...(updated ? { dateModified: updated } : {}),
   }
   // Candidature arrêtée : la source montrée est celle de l'arrêt
   const shown = (a.status === 'retire' && a.retiredSource) || a.source
@@ -108,6 +111,11 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
         )}
         <p className="muted">
           {known > 0 ? `${known} positions connues sur ${questionnaire.items.length}.` : 'Positions en cours de collecte.'}{' '}
+          {updated && (
+            <>
+              <time dateTime={updated}>{UI_COPY.candidate.updated(formatDate(updated))}</time>.{' '}
+            </>
+          )}
           <Link href="/methodologie#codage">Comment c’est codé</Link> ·{' '}
           <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/candidats/${a.slug}`)}`}>Signaler une erreur</Link>
         </p>
