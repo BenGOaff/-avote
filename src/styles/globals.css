@@ -217,6 +217,152 @@ main {
   }
 }
 
+/* Menus déroulants par rubrique (ordinateur) */
+.topbar__nav {
+  align-items: center;
+}
+.topbar__cta {
+  background: var(--highlight);
+  color: var(--on-highlight) !important;
+}
+.topbar__menu {
+  position: relative;
+}
+.topbar__trigger {
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+  background: none;
+  border: 0;
+  padding: var(--s2) var(--s3);
+  border-radius: var(--radius);
+  min-height: var(--tap);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+}
+.topbar__trigger::after {
+  content: '';
+  width: 0.45em;
+  height: 0.45em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-25%) rotate(45deg);
+  transition: transform var(--duration) var(--ease);
+}
+.topbar__trigger[aria-expanded='true']::after {
+  transform: translateY(15%) rotate(-135deg);
+}
+.topbar__trigger:hover,
+.topbar__trigger[aria-expanded='true'] {
+  background: var(--surface);
+}
+.topbar__trigger.is-active {
+  box-shadow: inset 0 -4px 0 var(--highlight);
+}
+.topbar__panel {
+  position: absolute;
+  top: calc(100% + var(--s1));
+  left: 0;
+  z-index: 60;
+  width: min(360px, calc(100vw - 32px));
+  background: var(--paper);
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-signature);
+  padding: var(--s3);
+}
+.topbar__menu:last-child .topbar__panel {
+  left: auto;
+  right: 0;
+}
+.topbar__panel-title {
+  margin: 0 0 var(--s2);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.topbar__panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+.topbar__panel a {
+  display: grid;
+  gap: 2px;
+  padding: var(--s2);
+  border-radius: var(--radius);
+  color: var(--ink);
+  text-decoration: none;
+  min-height: auto;
+}
+.topbar__panel a:hover,
+.topbar__panel a:focus-visible {
+  background: var(--surface);
+}
+.topbar__panel a[aria-current='page'] {
+  box-shadow: inset 4px 0 0 var(--highlight);
+}
+.topbar__item {
+  font-weight: 700;
+}
+.topbar__desc {
+  font-size: var(--text-small);
+  font-weight: 400;
+  color: var(--muted);
+}
+@media (prefers-reduced-motion: reduce) {
+  .topbar__trigger::after {
+    transition: none;
+  }
+}
+
+/* Barre « dans cette rubrique » : les pages voisines, défilement horizontal sur téléphone */
+.subnav {
+  border-bottom: var(--hairline) solid var(--line);
+  background: var(--paper);
+}
+.subnav__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.subnav__inner::-webkit-scrollbar {
+  display: none;
+}
+.subnav__title {
+  flex: none;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding-right: var(--s2);
+}
+.subnav__link {
+  flex: none;
+  min-height: var(--tap);
+  display: inline-flex;
+  align-items: center;
+  padding: 0 var(--s3);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: var(--text-small);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.subnav__link:hover {
+  background: var(--surface);
+}
+.subnav__link[aria-current='page'] {
+  box-shadow: inset 0 -3px 0 var(--highlight);
+}
+
 /* ---------- Barre d'onglets mobile (aspect application) ---------- */
 .tabbar {
   position: fixed;
@@ -850,6 +996,7 @@ details.disclosure > div {
 
 @media print {
   .topbar,
+  .subnav,
   .tabbar,
   .footer,
   .deco {

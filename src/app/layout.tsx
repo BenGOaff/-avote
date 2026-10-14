@@ -4,6 +4,7 @@ import { display, hand, serif, ui } from './fonts'
 import { SITE } from '@/lib/copy'
 import { SITE_URL } from '@/lib/site'
 import { TopBar } from '@/components/TopBar'
+import { SubNav } from '@/components/SubNav'
 import { TabBar } from '@/components/TabBar'
 import { Footer } from '@/components/Footer'
 import { ConsentBanner } from '@/components/ConsentBanner'
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Aller au contenu
         </a>
         <TopBar logo={<Logo />} />
+        <SubNav />
         <main id="contenu">{children}</main>
         <Footer />
         <TabBar />

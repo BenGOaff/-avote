@@ -2,11 +2,9 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
-import { TOP_NAV } from '@/lib/nav'
+import { sectionOf, SECTIONS, type NavSection } from '@/lib/nav'
 import { getPref, setPref, type ThemePref } from '@/lib/local-store'
 import { IconSettings } from './Icons'
-
-const NAV = TOP_NAV
 
 export function isCurrent(pathname: string, href: string) {
   return href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href + '/')
@@ -21,10 +19,11 @@ export function TopBar({ logo }: { logo: ReactNode }) {
           {logo}
         </Link>
         <nav className="topbar__nav" aria-label="Navigation principale">
-          {NAV.map((n) => (
-            <Link key={n.href} href={n.href} aria-current={isCurrent(pathname, n.href) ? 'page' : undefined}>
-              {n.label}
-            </Link>
+          <Link href="/test" className="topbar__cta" aria-current={isCurrent(pathname, '/test') ? 'page' : undefined}>
+            Le test
+          </Link>
+          {SECTIONS.map((sec) => (
+            <Menu key={sec.id} section={sec} pathname={pathname} />
           ))}
         </nav>
         <div className="topbar__actions">
@@ -32,6 +31,79 @@ export function TopBar({ logo }: { logo: ReactNode }) {
         </div>
       </div>
     </header>
+  )
+}
+
+/**
+ * Menu déroulant d'une rubrique : s'ouvre au survol (souris), au clic ou au clavier ; Échap, clic ailleurs ou changement de page le ferme.
+ */
+function Menu({ section, pathname }: { section: NavSection; pathname: string }) {
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+  const btn = useRef<HTMLButtonElement>(null)
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const panelId = useId()
+  const current = sectionOf(pathname)?.current
+  const active = section.items.some((it) => it.href === current)
+
+  useEffect(() => setOpen(false), [pathname])
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      setOpen(false)
+      btn.current?.focus()
+    }
+    const onDown = (e: PointerEvent) => ref.current && !ref.current.contains(e.target as Node) && setOpen(false)
+    document.addEventListener('keydown', onKey)
+    document.addEventListener('pointerdown', onDown)
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.removeEventListener('pointerdown', onDown)
+    }
+  }, [open])
+
+  const hover = () => typeof window !== 'undefined' && window.matchMedia('(hover: hover)').matches
+  const later = (v: boolean, ms: number) => {
+    if (!hover()) return
+    if (timer.current) clearTimeout(timer.current)
+    timer.current = setTimeout(() => setOpen(v), ms)
+  }
+
+  return (
+    <div
+      ref={ref}
+      className="topbar__menu"
+      onMouseEnter={() => later(true, 80)}
+      onMouseLeave={() => later(false, 220)}
+      onBlur={(e) => !ref.current?.contains(e.relatedTarget as Node) && setOpen(false)}
+    >
+      <button
+        ref={btn}
+        type="button"
+        className={`topbar__trigger${active ? ' is-active' : ''}`}
+        aria-expanded={open}
+        aria-controls={panelId}
+        onClick={() => setOpen((o) => !o)}
+      >
+        {section.short}
+      </button>
+      {open && (
+        <div id={panelId} className="topbar__panel">
+          <p className="topbar__panel-title">{section.title}</p>
+          <ul>
+            {section.items.map((it) => (
+              <li key={it.href}>
+                <Link href={it.href} aria-current={current === it.href ? 'page' : undefined}>
+                  <span className="topbar__item">{it.label}</span>
+                  {it.desc && <span className="topbar__desc">{it.desc}</span>}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
   )
 }
 
