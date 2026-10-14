@@ -1,6 +1,6 @@
 {
   "_note": "Décisions et étapes officielles visant la personne du candidat (justice, HATVP, comptes de campagne, sanctions parlementaires). Une condamnation n'est classée « définitive » que sans recours en cours. Procédures en cours : présomption d'innocence. Relaxes et non-lieux affichés comme le reste. Un candidat absent n'a pas encore été vérifié.",
-  "checkedAt": "2026-10-09",
+  "checkedAt": "2026-10-14",
   "entries": {
     "edouard-philippe": [
       {
@@ -583,6 +583,384 @@
         "note": "Mis en examen le 30 juin 2011 (mise en examen automatique après plainte avec constitution de partie civile). Appel annoncé par la partie civile, qui ne peut porter que sur les intérêts civils ; issue de cet appel non retrouvée. Date exacte (26 mars 2013) donnée par une dépêche reprise le jour même par jeanmarcmorandini.com."
       }
     ],
-    "bernard-cazeneuve": []
+    "bernard-cazeneuve": [],
+    "dominique-de-villepin": [
+      {
+        "type": "relaxe",
+        "date": "2011-09-14",
+        "title": "Affaire Clearstream",
+        "body": "Cour d'appel de Paris",
+        "facts": "Poursuivi pour complicité de dénonciation calomnieuse dans l'affaire des faux listings Clearstream, où figurait notamment Nicolas Sarkozy. Relaxé en première instance en janvier 2010 ; le parquet avait fait appel.",
+        "decision": "Relaxe confirmée en appel ; le parquet général avait requis quinze mois d'emprisonnement avec sursis. Nicolas Sarkozy, partie civile en première instance, s'était désisté en appel.",
+        "presumption": false,
+        "quote": "La cour d'appel de Paris a confirmé mercredi la relaxe de l'ancien Premier ministre, Dominique de Villepin, qui était poursuivi pour \"complicité de dénonciation calomnieuse\" dans l'affaire Clearstream.",
+        "url": "https://www.lejdd.fr/Societe/Affaire-Clearstream-le-parquet-a-confirme-la-relaxe-de-Dominique-de-Villepin-388867-3229157",
+        "publisher": "Le JDD (avec AFP)",
+        "note": "Selon la presse de septembre 2011, le parquet général a renoncé à se pourvoir en cassation ; aucune page de presse nationale lisible ne l'a confirmé ici et aucun pourvoi n'a été retrouvé : caractère définitif non confirmé par une source."
+      }
+    ],
+    "francois-asselineau": [
+      {
+        "type": "en-cours",
+        "date": "2026-04-07",
+        "title": "Harcèlement et agressions sexuelles sur des collaborateurs de l'UPR",
+        "body": "Cour d'appel de Paris, chambre de l'instruction",
+        "facts": "Plaintes de deux anciens salariés de l'UPR en 2020. Mis en examen en 2021 pour harcèlement moral, harcèlement sexuel, agressions sexuelles par personne ayant autorité et intimidation d'une victime, et placé sous contrôle judiciaire. Non-lieu rendu en décembre 2024, frappé d'appel par le parquet.",
+        "decision": "Ordonnance de non-lieu infirmée ; renvoi devant le tribunal correctionnel de Paris pour harcèlement sexuel et agression sexuelle par personne abusant de l'autorité que lui confère sa fonction sur un collaborateur, et tentative d'agression sexuelle sur un autre collaborateur.",
+        "presumption": true,
+        "quote": "Par arrêt en date du 7 avril, la chambre de l'instruction de la cour d'appel de Paris lui a donné raison : elle a infirmé l'ordonnance de non-lieu des juges d'instruction et a ordonné le renvoi de François Asselineau en correctionnelle",
+        "url": "https://www.cnews.fr/france/2026-05-19/agression-et-harcelement-sexuels-le-candidat-la-presidentielle-2027-francois",
+        "publisher": "CNews (avec AFP)",
+        "note": "Il conteste les faits. Arrêt rendu public le 19 mai 2026 ; date du procès non fixée à cette date. Aucun jugement retrouvé au 14 octobre 2026."
+      }
+    ],
+    "juan-branco": [
+      {
+        "type": "en-cours",
+        "date": "2021-11",
+        "title": "Accusation de viol (information judiciaire ouverte à Paris en 2021)",
+        "body": "Juge d'instruction du tribunal judiciaire de Paris",
+        "facts": "Une étudiante de 20 ans l'accuse de l'avoir violée au printemps 2021 ; il conteste les faits.",
+        "decision": "Mis en examen pour viol et placé sous contrôle judiciaire. Le 6 août 2026, le parquet de Paris a requis son renvoi devant la cour criminelle départementale pour ces faits, et un non-lieu pour d'autres faits dénoncés par deux autres femmes.",
+        "presumption": true,
+        "quote": "Un juge d'instruction parisien a décidé mardi la mise en examen de l'avocat Juan Branco pour \"viol\" après les accusations d'une femme fin avril dernier. Il a été placé sous contrôle judiciaire.",
+        "url": "https://www.ici.fr/infos/faits-divers-justice/l-avocat-juan-branco-mis-en-examen-pour-viol-et-place-sous-controle-judiciaire-1637748069",
+        "publisher": "ICI (France Bleu)",
+        "note": "Mise en examen décidée « mardi » selon l'article du 24 novembre 2021. Réquisitions du parquet : Sud Radio (AFP), https://www.sudradio.fr/societe/le-parquet-de-paris-requiert-le-renvoi-en-proces-pour-viol-de-lavocat-juan-branco. Le juge d'instruction doit encore statuer sur la tenue d'un procès ; aucune ordonnance retrouvée au 14 octobre 2026."
+      },
+      {
+        "type": "en-cours",
+        "date": "2025-10-16",
+        "title": "Diffusion de pièces de l'instruction le visant (discipline des avocats)",
+        "body": "Cour d'appel de Paris (pôle 4, chambre 13), sur recours contre une décision du conseil de discipline du barreau de Paris du 8 octobre 2024",
+        "facts": "Poursuites disciplinaires engagées par le bâtonnier, notamment pour la diffusion de pièces de la procédure d'instruction le visant ; manquements aux principes essentiels de la profession retenus.",
+        "decision": "Décision de première instance confirmée en toutes ses dispositions : trois ans d'interdiction d'exercice, dont 27 mois avec sursis, et privation pendant cinq ans du droit de faire partie des instances de la profession.",
+        "presumption": true,
+        "quote": "Confirme la décision dont appel en toutes ses dispositions",
+        "url": "https://www.avocatparis.org/sites/bdp/files/2025-11/CA_Paris_251016_24-18012_branco_0.pdf",
+        "publisher": "Barreau de Paris (publication de l'arrêt de la cour d'appel de Paris)",
+        "note": "Le document publié par le barreau porte la mention « frappé de pourvoi » : décision non définitive. Décision de première instance : https://www.avocatparis.org/sites/bdp/files/2025-11/AD_241008_386422_387600_BRANCO.pdf."
+      },
+      {
+        "type": "en-cours",
+        "date": "2026-05",
+        "title": "Diffamation envers un ancien responsable de master de Sciences Po",
+        "body": "Tribunal judiciaire de Paris",
+        "facts": "Messages publiés sur X après la nomination de Gabriel Attal à Matignon, le 9 janvier 2024, mettant en cause un ancien responsable du master suivi par celui-ci.",
+        "decision": "Condamné pour diffamation publique (jugement de première instance).",
+        "presumption": true,
+        "quote": "le tribunal judiciaire vient de le condamner pour diffamation publique envers un ancien responsable de master à Sciences-Po.",
+        "url": "https://www.lecanardenchaine.fr/police-justice/53900-juan-branco-decomplote-sur-les-diplomes-de-gabriel-attal",
+        "publisher": "Le Canard enchaîné",
+        "note": "Jugement rendu « à la mi-mai » 2026 selon la source ; peine non précisée dans la partie lisible de l'article. L'intéressé indique sur son site de campagne avoir fait appel (https://ruches.org/faq)."
+      }
+    ],
+    "emmanuel-dubuisson": [],
+    "gilles-platret": [
+      {
+        "type": "relaxe",
+        "date": "2023-05-12",
+        "title": "Noyade de trois enfants au lac des Prés-Saint-Jean (2018)",
+        "body": "Tribunal correctionnel de Chalon-sur-Saône",
+        "facts": "Cité à comparaître par la mère des enfants pour homicide involontaire : il lui était reproché, en tant que maire, de ne pas avoir rendu lisibles les panneaux d'interdiction de baignade.",
+        "decision": "Relaxe.",
+        "presumption": false,
+        "quote": "La belle-mère des trois enfants morts noyés en juillet 2018 au lac des Prés-Saint-Jean est reconnue coupable d'homicide involontaire par le tribunal correctionnel de Chalon-sur-Saône. Elle écope de trois ans d'emprisonnement avec sursis. Le maire, Gilles Platret, est lui relaxé.",
+        "url": "https://www.ici.fr/infos/faits-divers-justice/triple-noyade-a-chalon-sur-saone-trois-ans-de-prison-avec-sursis-pour-la-belle-mere-des-enfants-7012374",
+        "publisher": "ICI (France Bleu)",
+        "note": "Aucun appel retrouvé ; caractère définitif non confirmé."
+      }
+    ],
+    "francis-lalanne": [
+      {
+        "type": "sanction",
+        "date": "2025-04-17",
+        "title": "Compte de campagne des élections européennes de 2024",
+        "body": "Conseil d'État",
+        "facts": "Absence de dépôt de compte de campagne en tant que tête de liste « France libre » aux élections européennes de 2024 ; les pièces transmises par courrier électronique à la Commission nationale des comptes de campagne n'ont pas été jugées constituer un compte.",
+        "decision": "Inéligibilité pendant dix-huit mois.",
+        "presumption": false,
+        "quote": "C'est avec ces termes que le Conseil d'Etat a déclaré Francis Lalanne inéligible, jeudi 17 avril, pour une durée de dix-huit mois.",
+        "url": "https://www.franceinfo.fr/politique/francis-lalanne-chanteur-et-ex-candidat-aux-europeennes-declare-ineligible-pendant-18-mois_7196604.html",
+        "publisher": "franceinfo",
+        "note": "Le tribunal administratif de Lyon a rejeté le 26 février 2026 son recours contre le refus d'enregistrer sa candidature aux municipales de Lyon (Lyon Capitale, https://www.lyoncapitale.fr/?p=483578)."
+      },
+      {
+        "type": "en-cours",
+        "date": "2026-10",
+        "title": "Abandon de famille",
+        "body": "Tribunal correctionnel d'Aix-en-Provence",
+        "facts": "Non-paiement d'une pension alimentaire due à son ancienne compagne.",
+        "decision": "Six mois d'emprisonnement avec sursis simple et 6 500 euros de dommages et intérêts avec exécution provisoire.",
+        "presumption": true,
+        "quote": "Le tribunal correctionnel d'Aix-en-Provence le condamne ainsi à une peine de six mois de prison assortie d'un sursis simple, et à verser 6 500 euros de dommages et intérêts, avec exécution provisoire.",
+        "url": "https://www.dhnet.be/lifestyle/people/2026/10/12/francis-lalanne-candidat-aux-presidentielles-en-duo-avec-dieudonne-condamne-pour-abandon-de-famille-4DJ4PINUBZCMZPW66XQ4LVOSC4/",
+        "publisher": "La DH (d'après La Provence)",
+        "note": "Jugement de première instance rendu « jeudi dernier » selon Paris Match Belgique (12 octobre 2026), qui rapporte qu'il a fait appel : https://www.parismatch.be/actualites/people/2026/10/12/francis-lalanne-candidat-a-lelection-presidentielle-condamne-a-six-mois-de-prison-avec-sursis-pour-abandon-de-famille-le-chanteur-fait-appel-LAMK53HQ4NBHLLONYDKOUF5E3Y/."
+      }
+    ],
+    "dieudonne": [
+      {
+        "type": "en-cours",
+        "date": "2026-09-17",
+        "title": "Vidéos sur l'attaque du Hamas du 7 octobre et sur l'incendie de la synagogue de La Grande-Motte ; propos visant Laurent Nuñez",
+        "body": "Tribunal correctionnel de Paris",
+        "facts": "Vidéo publiée sur X le 7 octobre 2024 et vidéo publiée après l'incendie de la synagogue de La Grande-Motte en août 2024, jugées constitutives d'apologie du terrorisme ; vidéo visant Laurent Nuñez, alors préfet de police de Paris, jugée injurieuse.",
+        "decision": "Six mois d'emprisonnement sous forme de détention à domicile sous surveillance électronique, 5 000 euros d'amende et trois ans d'inéligibilité ; 1 000 euros à l'Organisation juive européenne et un euro symbolique à Laurent Nuñez.",
+        "presumption": true,
+        "quote": "Le polémiste Dieudonné a été condamné par le tribunal correctionnel de Paris, jeudi 17 septembre, à six mois d'emprisonnement sous forme de détention à domicile avec bracelet électronique pour \"apologie du terrorisme\" et \"injure publique\" envers le ministre de l'Intérieur Laurent Nuñez.",
+        "url": "https://www.franceinfo.fr/societe/justice/dieudonne/dieudonne-a-ete-condamne-a-six-mois-sous-bracelet-electronique-pour-apologie-du-terrorisme-et-injure-envers-laurent-nunez_8197703.html",
+        "publisher": "franceinfo (avec AFP)",
+        "note": "Jugement de première instance ; appel non établi au 14 octobre 2026. La source ne précise pas si l'inéligibilité est assortie de l'exécution provisoire. Selon la même source, son casier comptait jusqu'alors 34 condamnations : toutes n'ont pas pu être identifiées et sourcées ici."
+      },
+      {
+        "type": "en-cours",
+        "date": "2024-12-20",
+        "title": "Spectacle dans un château d'Ille-et-Vilaine (2023)",
+        "body": "Cour d'appel de Rennes",
+        "facts": "Spectacle donné le 25 février 2023 au château de Piré-Chancé, loué sans que la propriétaire sache qu'il s'y produirait ; recel d'escroquerie.",
+        "decision": "Condamnation de première instance confirmée (tribunal correctionnel de Rennes, 22 janvier 2024 : cent jours-amende à 80 euros, soit 8 000 euros), sans peine d'emprisonnement.",
+        "presumption": true,
+        "quote": "La cour d'appel de Rennes a confirmé ce vendredi 20 décembre 2024 la condamnation qui avait été prononcée en première instance à l'encontre de l'humoriste Dieudonné pour \"recel d'escroquerie\"",
+        "url": "https://france3-regions.franceinfo.fr/bretagne/ille-et-vilaine/rennes/pas-de-prison-mais-amende-confirmee-en-appel-pour-dieudonne-apres-la-location-d-un-chateau-pour-un-spectacle-clandestin-3080245.html",
+        "publisher": "France 3 Bretagne (franceinfo)",
+        "note": "Première instance : https://france3-regions.franceinfo.fr/bretagne/ille-et-vilaine/rennes/simple-amende-pour-dieudonne-apres-un-spectacle-clandestin-dans-un-chateau-en-bretagne-2911097.html. Aucun pourvoi retrouvé ; caractère définitif non établi."
+      },
+      {
+        "type": "en-cours",
+        "date": "2021-07-09",
+        "title": "Spectacles dans des salles louées sous un autre motif (métropole lilloise)",
+        "body": "Tribunal correctionnel de Lille",
+        "facts": "Spectacles organisés en 2018 et 2019 à Roubaix, La Chapelle-d'Armentières et Marcq-en-Barœul dans des salles louées pour une vente de cosmétiques ou un atelier théâtral ; recel d'escroquerie.",
+        "decision": "200 jours-amende à 30 euros ; 5 000 euros de dommages et intérêts à la Condition publique de Roubaix et 1 500 euros de frais de justice, avec une coprévenue.",
+        "presumption": true,
+        "quote": "Le polémiste Dieudonné a été condamné vendredi à 200 jours-amende à 30 euros pour recel d'escroquerie à Lille (nord), pour des spectacles organisés dans la métropole sous couvert de vente de cosmétiques ou d'atelier théâtral, a-t-on appris de source judiciaire.",
+        "url": "https://www.arabnews.fr/france/le-polemiste-dieudonne-condamne-a-200-jours-amende-pour-recel-descroquerie-116086",
+        "publisher": "Arab News en français (AFP)",
+        "note": "Jugement rendu en l'absence des prévenus. Aucun appel retrouvé ; caractère définitif non établi."
+      },
+      {
+        "type": "en-cours",
+        "date": "2021-06",
+        "title": "Fraude fiscale, blanchiment et abus de biens sociaux",
+        "body": "Cour d'appel de Paris",
+        "facts": "Recettes en liquide de spectacles non comptabilisées entre 2009 et 2014, fraude à l'impôt sur le revenu (2011-2012) et à la TVA, blanchiment et organisation frauduleuse d'insolvabilité.",
+        "decision": "Jugement du tribunal correctionnel de Paris (2019) confirmé : trois ans d'emprisonnement dont deux ferme, à aménager, 200 000 euros d'amende, dix ans d'interdiction de gérer une société et confiscation de 535 083 euros ; relaxe pour la fraude fiscale de 2009-2010 et pour l'impôt sur la fortune.",
+        "presumption": true,
+        "quote": "Le polémiste Dieudonné M'Bala M'Bala a été condamné en appel à trois ans d'emprisonnement, dont deux ferme, ainsi que 200.000 euros d'amende, pour avoir notamment détourné plus d'un million d'euros de recettes non comptabilisées de ses spectacles, a-t-on appris vendredi de source judiciaire.",
+        "url": "https://www.france24.com/fr/info-en-continu/20210625-dieudonn%C3%A9-condamn%C3%A9-%C3%A0-deux-ans-ferme-en-appel-pour-abus-de-biens-sociaux-et-fraude-fiscale",
+        "publisher": "France 24 (AFP)",
+        "note": "Arrêt rendu « mercredi » selon la dépêche du vendredi 25 juin 2021. Mis en examen en 2014 puis en 2015 dans ce dossier. Aucun arrêt de la Cour de cassation retrouvé ; caractère définitif non établi."
+      },
+      {
+        "type": "condamnation",
+        "date": "2023",
+        "title": "Sketch niant l'existence des chambres à gaz (Suisse, 2019)",
+        "body": "Tribunal fédéral suisse (après le Tribunal de police de Genève, 2021, et la Cour de justice du canton de Genève, 2022)",
+        "facts": "Sketch joué en 2019 à Nyon et à Genève où un personnage affirme que « les chambres à gaz n'ont jamais existé » ; discrimination raciale.",
+        "decision": "Recours rejeté : condamnation à une peine pécuniaire de 180 jours-amende confirmée, ainsi qu'une condamnation pour injure envers la CICAD et diffamation envers son secrétaire général.",
+        "presumption": false,
+        "quote": "Le Tribunal fédéral a confirmé la condamnation de Dieudonné pour discrimination raciale.",
+        "url": "https://www.rts.ch/info/suisse/13942137-le-tribunal-federal-confirme-la-condamnation-de-dieudonne-pour-discrimination-raciale.html",
+        "publisher": "RTS",
+        "note": "Arrêt rendu public le vendredi 14 avril 2023 ; la source ne donne pas la date de l'arrêt. Le Tribunal fédéral est la dernière instance suisse."
+      },
+      {
+        "type": "en-cours",
+        "date": "2017-11-08",
+        "title": "Spectacle « La Bête immonde »",
+        "body": "Cour d'appel de Paris",
+        "facts": "Propos tenus dans le spectacle « La Bête immonde » sur le rôle attribué aux Juifs dans la traite des Noirs et sur le génocide nazi ; injure raciale et provocation à la haine.",
+        "decision": "Condamnation de première instance (tribunal correctionnel de Paris, 10 mai 2016) confirmée : deux mois d'emprisonnement avec sursis, 10 000 euros d'amende et 2 500 euros à chaque partie civile.",
+        "presumption": true,
+        "quote": "Par ailleurs, la cour d'appel a confirmé, mercredi, la condamnation du polémiste à deux mois de prison avec sursis et 10 000 euros d'amende pour des propos antisémites dans son spectacle \"La bête immonde\".",
+        "url": "https://www.france24.com/fr/20171108-dieudonne-theatre-parisien-main-or-justice-expulsion",
+        "publisher": "France 24 (AFP)",
+        "note": "Première instance : https://www.ici.fr/infos/faits-divers-justice/dieudonne-condamne-deux-mois-avec-sursis-et-10-000-euros-d-amende-pour-des-textes-de-son-spectacle-1462884523. Aucun pourvoi retrouvé ; caractère définitif non établi."
+      },
+      {
+        "type": "condamnation",
+        "date": "2017-06-07",
+        "title": "Spectacle à Herstal (Belgique, 2012)",
+        "body": "Cour de cassation de Belgique (après la cour d'appel de Liège, janvier 2017)",
+        "facts": "Propos tenus lors d'un spectacle à Herstal, près de Liège, en mars 2012 ; incitation à la haine, propos antisémites et discriminatoires, diffusion d'idées racistes, négationnisme et révisionnisme.",
+        "decision": "Deux mois d'emprisonnement ferme et 9 000 euros d'amende, condamnation rendue définitive ; arrêt d'appel cassé sur le seul point de la contribution à un fonds d'aide aux victimes.",
+        "presumption": false,
+        "quote": "Le polémiste français Dieudonné a vu mercredi sa condamnation à deux mois de prison ferme et 9 000 euros d’amende pour incitation à la haine et propos antisémites confirmée par la Cour de cassation belge.",
+        "url": "https://www.sudradio.fr/faits-divers/dieudonne-definitivement-condamne-a-deux-mois-de-prison-ferme-en-belgique",
+        "publisher": "Sud Radio (AFP)",
+        "note": "Première instance : tribunal correctionnel de Liège, novembre 2015."
+      },
+      {
+        "type": "en-cours",
+        "date": "2016-06",
+        "title": "Message « Je me sens Charlie Coulibaly » (2015)",
+        "body": "Cour d'appel de Paris",
+        "facts": "Message publié sur Facebook le 11 janvier 2015, associant « Charlie » au nom d'Amedy Coulibaly, auteur de l'attaque de l'Hyper Cacher ; apologie d'actes de terrorisme.",
+        "decision": "Deux mois d'emprisonnement avec sursis, comme en première instance (tribunal correctionnel de Paris, 18 mars 2015), et 10 000 euros d'amende.",
+        "presumption": true,
+        "quote": "Pour ces faits, la cour d'appel de Paris l'avait condamné en juin 2016 à une peine de deux mois de prison avec sursis et une amende de 10.000 euros.",
+        "url": "https://www.lejdd.fr/Societe/dieudonne-a-cherche-a-rencontrer-salah-abdeslam-3547112",
+        "publisher": "Le JDD",
+        "note": "Première instance : https://www.lejdd.fr/Societe/Charlie-Coulibaly-Dieudonne-condamne-a-deux-mois-de-prison-avec-sursis-723406-3172121. Aucun arrêt de la Cour de cassation retrouvé ; caractère définitif non établi."
+      },
+      {
+        "type": "relaxe",
+        "date": "2015-03-24",
+        "title": "Propos visant Manuel Valls (2013)",
+        "body": "Tribunal correctionnel de Paris",
+        "facts": "Poursuivi pour injure publique pour avoir qualifié en août 2013 Manuel Valls, alors ministre de l'Intérieur, de « Mussolini moitié trisomique ».",
+        "decision": "Relaxe : selon le tribunal, l'expression se rapporte à un fait précis et ne relève pas de l'injure publique.",
+        "presumption": false,
+        "quote": "Dieudonné n'a pas été condamné pour injure publique contre Manuel Valls : le tribunal correctionnel de Paris a tranché en faveur de sa relaxe dans cette affaire, qui remonte à fin août 2013.",
+        "url": "https://www.ici.fr/infos/societe/injures-contre-manuel-valls-dieudonne-relaxe-1427205296",
+        "publisher": "ICI (France Bleu)",
+        "note": "Aucun appel retrouvé ; caractère définitif non confirmé."
+      },
+      {
+        "type": "en-cours",
+        "date": "2015-03-19",
+        "title": "Chanson « Shoah nanas » et propos visant Patrick Cohen (spectacle « Le Mur »)",
+        "body": "Juridiction de première instance à Paris",
+        "facts": "Chanson « Shoah nanas » et phrase visant le journaliste Patrick Cohen en décembre 2013 (« Quand je l'entends parler, je me dis, tu vois, les chambres à gaz... Dommage ») ; provocation à la haine raciale.",
+        "decision": "13 500 euros en jours-amende pour la chanson et 9 000 euros en jours-amende pour la phrase visant Patrick Cohen, soit 22 500 euros.",
+        "presumption": true,
+        "quote": "Dans plusieurs affaires distinctes , Dieudonné est condamnée pour provocation à la haine raciale et 22 500 euros d’amende qui, si elle n’est pas acquittée, pourra se transformer en jours de prison.",
+        "url": "https://www.cnews.fr/france/2015-11-10/les-deboires-judiciaires-de-dieudonne-712188",
+        "publisher": "CNews",
+        "note": "Deux affaires jugées le même jour selon la source. Suite (appel) non retrouvée ; caractère définitif non établi."
+      },
+      {
+        "type": "en-cours",
+        "date": "2015-01-16",
+        "title": "Appel aux dons pour payer des amendes",
+        "body": "Tribunal correctionnel de Paris",
+        "facts": "Appel aux dons lancé sur internet fin 2013 pour payer de précédentes amendes ; la loi punit l'annonce publique de souscriptions destinées à indemniser des amendes.",
+        "decision": "6 000 euros d'amende.",
+        "presumption": true,
+        "quote": "L'humoriste français controversé Dieudonné a été condamné vendredi par le tribunal correctionnel de Paris à 6.000 euros d'amende",
+        "url": "https://www.dhnet.be/actu/monde/2015/01/16/dieudonne-condamne-a-6000-euros-damende-GRUYQMNF35H4RPXTG27JXXPGWA/",
+        "publisher": "La DH (AFP)",
+        "note": "Suite (appel) non retrouvée ; caractère définitif non établi."
+      },
+      {
+        "type": "relaxe",
+        "date": "2014-02",
+        "title": "Vidéo appelant à la libération de Youssouf Fofana (2010)",
+        "body": "Tribunal correctionnel de Paris",
+        "facts": "Vidéo d'avril 2010 appelant à la libération de Youssouf Fofana, condamné pour l'enlèvement et le meurtre d'Ilan Halimi ; poursuivi pour diffamation et apologie de crime à la demande de l'UEJF.",
+        "decision": "Relaxe : il n'était pas établi qu'il était à l'origine de la diffusion de la vidéo ; le contenu des propos n'a pas été examiné.",
+        "presumption": false,
+        "quote": "was cleared of defamation and illegally defending a convicted criminal on Friday because the judge ruled that it had not been proven that Dieudonne was behind the distribution of the video",
+        "url": "https://www.aljazeera.com/news/2014/2/8/dieudonne-acquitted-over-anti-semitic-video",
+        "publisher": "Al Jazeera (AFP)",
+        "note": "Décision rendue « vendredi » selon l'article du 8 février 2014. L'avocat de l'UEJF a annoncé un appel ; issue non retrouvée."
+      },
+      {
+        "type": "en-cours",
+        "date": "2013-11-28",
+        "title": "Vidéos « Shoah nanas » et propos sur « les gros escrocs de la planète »",
+        "body": "Cour d'appel de Paris",
+        "facts": "Chanson « Shoah nanas », parodie de « Chaud cacao », diffusée dans des vidéos sur internet, et propos « les gros escrocs de la planète, ce sont des juifs » tenus dans un entretien en ligne ; diffamation, injure et provocation à la haine raciale.",
+        "decision": "28 000 euros d'amende au total : 8 000 euros confirmés pour la chanson, 20 000 euros (contre 12 000 en première instance) pour l'entretien.",
+        "presumption": true,
+        "quote": "De 12 000 euros en première instance, la cour a porté sa condamnation à 20 000 euros.",
+        "url": "https://www.rtbf.be/article/france-dieudonne-ecope-d-une-amende-de-28-000-euros-pour-racisme-8145762",
+        "publisher": "RTBF (Belga)",
+        "note": "Première instance : tribunal correctionnel de Paris, novembre 2012 (RTBF, https://www.rtbf.be/article/france-l-humoriste-dieudonne-condamne-pour-provocation-a-la-haine-7882319). Un pourvoi en cassation était annoncé selon franceinfo (2 janvier 2014) ; issue non retrouvée."
+      },
+      {
+        "type": "condamnation",
+        "date": "2012-10-16",
+        "title": "« Prix de l'infréquentabilité » remis à Robert Faurisson (Zénith, 2008)",
+        "body": "Cour de cassation (après le tribunal correctionnel de Paris, 27 octobre 2009, et la cour d'appel de Paris, 17 mars 2011)",
+        "facts": "Spectacle du 26 décembre 2008 au Zénith de Paris où il a fait remettre au négationniste Robert Faurisson un « prix de l'infréquentabilité et de l'insolence » par un acteur vêtu en déporté ; injure publique envers des personnes d'origine ou de confession juive.",
+        "decision": "10 000 euros d'amende, condamnation rendue définitive par le rejet du pourvoi. La Cour européenne des droits de l'homme a déclaré sa requête irrecevable le 20 octobre 2015.",
+        "presumption": false,
+        "quote": "Par un arrêt du 16 octobre 2012, la Cour de cassation déclara irrecevable le pourvoi des parties civiles et rejeta celui du requérant.",
+        "url": "https://www.dalloz-actualite.fr/document/cedh-10-nov-2015-req-n-2523913",
+        "publisher": "Cour européenne des droits de l'homme, décision M'Bala M'Bala c. France (requête n° 25239/13), texte publié par Dalloz Actualité",
+        "note": ""
+      },
+      {
+        "type": "en-cours",
+        "date": "2010",
+        "title": "Diffamation envers la Licra",
+        "body": "Justice française (juridiction non précisée par la source)",
+        "facts": "Propos jugés diffamatoires envers la Licra.",
+        "decision": "5 000 euros d'amende.",
+        "presumption": true,
+        "quote": "Il écope en 2010 de 5 000 euros d'amende pour propos diffamatoires à l'encontre de la Licra",
+        "url": "https://www.franceinfo.fr/societe/justice/dieudonne/dieudonne-et-la-justice-de-nombreuses-condamnations-et-une-strategie-de-victimisation_495760.html",
+        "publisher": "franceinfo (d'après Arrêt sur images)",
+        "note": "Date exacte et juridiction non données par la source ; caractère définitif non établi."
+      },
+      {
+        "type": "en-cours",
+        "date": "2009",
+        "title": "Diffamation envers une journaliste",
+        "body": "Justice française (juridiction non précisée par la source)",
+        "facts": "Propos jugés diffamatoires envers une journaliste.",
+        "decision": "1 000 euros d'amende et 2 000 euros de dommages et intérêts.",
+        "presumption": true,
+        "quote": "En 2009, il est condamné à 1 000 euros d'amende et 2 000 euros de dommages et intérêts pour avoir diffamé une journaliste.",
+        "url": "https://www.franceinfo.fr/societe/justice/dieudonne/dieudonne-et-la-justice-de-nombreuses-condamnations-et-une-strategie-de-victimisation_495760.html",
+        "publisher": "franceinfo (d'après Arrêt sur images)",
+        "note": "Date exacte et juridiction non données par la source ; caractère définitif non établi."
+      },
+      {
+        "type": "en-cours",
+        "date": "2008-06-26",
+        "title": "« Pornographie mémorielle » (2005)",
+        "body": "Cour d'appel de Paris",
+        "facts": "Propos tenus en 2005 qualifiant la mémoire de la Shoah de « pornographie mémorielle ».",
+        "decision": "Condamnation à 7 000 euros d'amende confirmée.",
+        "presumption": true,
+        "quote": "La cour d'appel de Paris confirme sa condamnation à 7 000 euros d'amende pour avoir assimilé en 2005 la mémoire de la Shoah à de la \"pornographie mémorielle\".",
+        "url": "https://www.cnews.fr/france/2015-11-10/les-deboires-judiciaires-de-dieudonne-712188",
+        "publisher": "CNews",
+        "note": "Aucun arrêt de la Cour de cassation retrouvé ; caractère définitif non établi."
+      },
+      {
+        "type": "en-cours",
+        "date": "2007-11-15",
+        "title": "Juifs comparés à des « négriers » (2004)",
+        "body": "Cour d'appel",
+        "facts": "Propos tenus en 2004 comparant les Juifs à des « négriers ».",
+        "decision": "5 000 euros d'amende.",
+        "presumption": true,
+        "quote": "La cour d'appel le condamne à 5 000 euros d'amende pour avoir comparé en 2004 les \"juifs\" à des \"négriers\".",
+        "url": "https://www.cnews.fr/france/2015-11-10/les-deboires-judiciaires-de-dieudonne-712188",
+        "publisher": "CNews",
+        "note": "Aucun arrêt de la Cour de cassation retrouvé ; caractère définitif non établi."
+      },
+      {
+        "type": "en-cours",
+        "date": "2006",
+        "title": "Déclarations sur l'animateur Arthur",
+        "body": "Justice française (juridiction non précisée par la source)",
+        "facts": "Déclarations visant l'animateur-producteur Arthur ; incitation à la haine raciale.",
+        "decision": "Reconnu coupable ; 3 000 euros d'amende.",
+        "presumption": true,
+        "quote": "En 2006, la justice le reconnaît coupable d'incitation à la haine raciale après des déclarations sur l'animateur-producteur Arthur, et lui inflige 3 000 euros d’amende.",
+        "url": "https://www.franceinfo.fr/societe/justice/dieudonne/dieudonne-et-la-justice-de-nombreuses-condamnations-et-une-strategie-de-victimisation_495760.html",
+        "publisher": "franceinfo (d'après Arrêt sur images)",
+        "note": "Date exacte et juridiction non données par la source ; caractère définitif non établi."
+      },
+      {
+        "type": "en-cours",
+        "date": "2000",
+        "title": "Injure envers l'animateur Patrick Sébastien",
+        "body": "Justice française (juridiction non précisée par la source)",
+        "facts": "Avoir traité l'animateur Patrick Sébastien de « con ».",
+        "decision": "2 000 francs d'amende.",
+        "presumption": true,
+        "quote": "Enfin, ce dernier a aussi écopé de 2 000 francs d'amende en 2000, après avoir traité de \"con\" l'animateur Patrick Sébastien.",
+        "url": "https://www.franceinfo.fr/societe/justice/dieudonne/dieudonne-et-la-justice-de-nombreuses-condamnations-et-une-strategie-de-victimisation_495760.html",
+        "publisher": "franceinfo (d'après Arrêt sur images)",
+        "note": "Date exacte et juridiction non données par la source ; caractère définitif non établi."
+      }
+    ],
+    "sylvain-durif": []
   }
 }
