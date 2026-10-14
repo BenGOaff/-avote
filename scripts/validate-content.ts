@@ -293,6 +293,17 @@ for (const [slug, periods] of Object.entries(parcours.parcours)) {
   for (const p of periods) if (!p.party || !p.url?.startsWith('https://') || !p.quote || /wikipedia\.org/.test(p.url)) errors.push(`parcours : ${slug} période sans source valable`)
 }
 
+// Présentations des candidats : texte court, sources https vérifiées par un extrait
+const presentations = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/presentations.json'), 'utf8')) as {
+  presentations: Record<string, { born: string | null; intro: string; sources: { url: string; quote: string }[] }>
+}
+for (const [slug, pr] of Object.entries(presentations.presentations)) {
+  if (!livreActors.has(slug)) errors.push(`présentation : ${slug} absent des candidatures`)
+  if (!pr.intro || pr.intro.length > 280) errors.push(`présentation : ${slug} sans texte ou trop longue`)
+  if (pr.born && !/^\d{4}(-\d{2}-\d{2})?$/.test(pr.born)) errors.push(`présentation : ${slug} date de naissance invalide`)
+  if (pr.sources.length === 0 || pr.sources.some((x) => !x.url.startsWith('https://') || !x.quote || x.quote.length < 12 || /wikipedia\.org|franceinfo\.fr/.test(x.url)))
+    errors.push(`présentation : ${slug} sans source https admise ou sans extrait`)
+}
 // Fiches partis : chaque champ rempli porte une source https (jamais Wikipédia) et un extrait
 type Src = { quote?: string; url?: string } | null
 const partis = JSON.parse(readFileSync(path.join(ROOT, 'content/partis/partis.json'), 'utf8')) as {

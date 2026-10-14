@@ -1,0 +1,759 @@
+{
+  "_note": "Présentation courte de chaque candidat : qui il ou elle est aujourd'hui, même grille pour tous, faits sourcés avec un extrait vérifié mot pour mot. Date de naissance seulement si une source admise la donne.",
+  "checkedAt": "2026-10-14",
+  "presentations": {
+    "edouard-philippe": {
+      "born": "1970-11-28",
+      "bornSource": {
+        "title": "Édouard Philippe : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-dedouard-philippe"
+      },
+      "intro": "Maire du Havre depuis 2020, réélu en 2026, il préside Horizons, parti qu'il a fondé en 2021. Il a été Premier ministre de 2017 à 2020.",
+      "sources": [
+        {
+          "title": "Édouard Philippe : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-dedouard-philippe",
+          "quote": "2010–2017 et depuis 2020 : Maire du Havre (réélu en 2014, 2020 et 2026)."
+        },
+        {
+          "title": "Édouard Philippe : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-dedouard-philippe",
+          "quote": "Depuis 2021 : Fondateur et président du parti politique Horizons."
+        }
+      ]
+    },
+    "gabriel-attal": {
+      "born": "1989-03-16",
+      "bornSource": {
+        "title": "Gabriel Attal : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gabriel-attal"
+      },
+      "intro": "Député des Hauts-de-Seine, il est secrétaire général de Renaissance et préside le groupe Ensemble pour la République à l'Assemblée nationale depuis 2024. Il a été Premier ministre en 2024.",
+      "sources": [
+        {
+          "title": "Gabriel Attal : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gabriel-attal",
+          "quote": "Depuis 2024 : président du groupe Ensemble pour la République à l'Assemblée nationale"
+        },
+        {
+          "title": "Gabriel Attal : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gabriel-attal",
+          "quote": "Depuis 2024 : secrétaire général du parti Renaissance"
+        }
+      ]
+    },
+    "bruno-retailleau": {
+      "born": "1960-11-20",
+      "bornSource": {
+        "title": "Bruno Retailleau : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-bruno-retailleau"
+      },
+      "intro": "Président des Républicains depuis mai 2025 et sénateur de la Vendée, il a été ministre de l'Intérieur de 2024 à 2025. Les adhérents de son parti l'ont désigné candidat en avril 2026.",
+      "sources": [
+        {
+          "title": "Bruno Retailleau : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-bruno-retailleau",
+          "quote": "Depuis mai 2025 : Président national du parti Les Républicains."
+        },
+        {
+          "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
+          "publisher": "LCP",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "quote": "Il a été désigné candidat par les adhérents du parti qu'il dirige, Les Républicains, à la mi-avril, lors d'une consultation interne."
+        }
+      ]
+    },
+    "david-lisnard": {
+      "born": "1969-02-02",
+      "bornSource": {
+        "title": "La biographie et le CV de David Lisnard",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-david-lisnard"
+      },
+      "intro": "Maire de Cannes depuis 2014, réélu en 2026, il préside le mouvement Nouvelle Énergie. Il a quitté Les Républicains fin mars 2026 en officialisant sa candidature.",
+      "sources": [
+        {
+          "title": "La biographie et le CV de David Lisnard",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-david-lisnard",
+          "quote": "Depuis 2014 : Maire de Cannes (LR)"
+        },
+        {
+          "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
+          "publisher": "LCP",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "quote": "Un parti que David Lisnard (Nouvelle Energie) a annoncé quitter fin mars ; le maire de Cannes en profitant pour officialiser sa candidature à la présidentielle."
+        }
+      ]
+    },
+    "marine-le-pen": {
+      "born": "1968-08-05",
+      "bornSource": {
+        "title": "Marine Le Pen : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-de-marine-le-pen"
+      },
+      "intro": "Députée du Pas-de-Calais depuis 2017, elle préside le groupe Rassemblement national à l'Assemblée nationale depuis 2022. Elle a dirigé le Front national, devenu Rassemblement national, de 2011 à 2021, et a été candidate en 2012, 2017 et 2022.",
+      "sources": [
+        {
+          "title": "Marine Le Pen : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-de-marine-le-pen",
+          "quote": "Depuis 2022 : Présidente du groupe Rassemblement national à l'Assemblée nationale."
+        },
+        {
+          "title": "Marine Le Pen : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-de-marine-le-pen",
+          "quote": "2011–2021 : Présidente du Front national, rebaptisé Rassemblement national (RN) en juin 2018."
+        }
+      ]
+    },
+    "eric-zemmour": {
+      "born": "1958-08-31",
+      "bornSource": {
+        "title": "Éric Zemmour : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-deric-zemmour"
+      },
+      "intro": "Président de Reconquête depuis 2021, il a été journaliste et éditorialiste au Figaro, sur RTL et sur CNews. Candidat en 2022, il avait recueilli 7 % des voix.",
+      "sources": [
+        {
+          "title": "Éric Zemmour : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-deric-zemmour",
+          "quote": "Depuis 2021 : Président de Reconquête"
+        },
+        {
+          "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
+          "publisher": "LCP",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "quote": "Eric Zemmour (Reconquête) se présentera pour la deuxième fois à l'élection présidentielle, après les 7 % recueillis en 2022."
+        }
+      ]
+    },
+    "nicolas-dupont-aignan": {
+      "born": "1961-03-07",
+      "bornSource": {
+        "title": "Nicolas Dupont‑Aignan : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-nicolas-dupont-aignan"
+      },
+      "intro": "Maire d'Yerres (Essonne) depuis mars 2026, fonction qu'il avait exercée de 1995 à 2017, il préside Debout la France. Député de l'Essonne de 1997 à 2024, il a été candidat en 2012, 2017 et 2022.",
+      "sources": [
+        {
+          "title": "Nicolas Dupont‑Aignan : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-nicolas-dupont-aignan",
+          "quote": "1995-2017 et depuis mars 2026 : Maire d'Yerres (Essonne)"
+        },
+        {
+          "title": "Nicolas Dupont‑Aignan : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-nicolas-dupont-aignan",
+          "quote": "Depuis 2008 : Président-fondateur du parti souverainiste Debout la République (renommé Debout la France en 2014)."
+        }
+      ]
+    },
+    "florian-philippot": {
+      "born": "1981-10-24",
+      "bornSource": {
+        "title": "Florian Philippot : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-florian-philippot"
+      },
+      "intro": "Il préside Les Patriotes, parti qu'il a fondé en 2017 après avoir été vice-président du Front national de 2012 à 2017. Il a été député européen de 2014 à 2019.",
+      "sources": [
+        {
+          "title": "Florian Philippot : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-florian-philippot",
+          "quote": "Depuis 2017 : Fondateur et président du parti politique Les Patriotes."
+        },
+        {
+          "title": "Florian Philippot : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-florian-philippot",
+          "quote": "2012-2017 : Vice-président du Front national, chargé de la stratégie et de la communication."
+        }
+      ]
+    },
+    "jean-luc-melenchon": {
+      "born": "1951-08-19",
+      "bornSource": {
+        "title": "Jean-Luc Mélenchon : Biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-luc-melenchon"
+      },
+      "intro": "Fondateur de La France insoumise, il n'exerce plus de mandat électif depuis 2022. Ancien sénateur, ministre et député, il a été candidat en 2012, 2017 et 2022, avec 21,95 % des voix lors de cette dernière élection.",
+      "sources": [
+        {
+          "title": "Jean-Luc Mélenchon : Biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-luc-melenchon",
+          "quote": "Depuis 2022 : Retrait des mandats électifs, tout en restant une figure centrale de La France insoumise et du débat politique national"
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ?",
+          "publisher": "Public Sénat",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "quote": "Parmi eux, Jean-Luc Mélenchon, déjà candidat en 2012, 2017 et 2022 où il avait récolté 21,95 % des voix, participera une quatrième fois à l'élection présidentielle."
+        }
+      ]
+    },
+    "fabien-roussel": {
+      "born": "1969-04-16",
+      "bornSource": {
+        "title": "Fabien Roussel : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-fabien-roussel"
+      },
+      "intro": "Secrétaire national du Parti communiste français depuis 2018 et maire de Saint-Amand-les-Eaux depuis 2025. Candidat en 2022, il avait obtenu 2,28 % des voix.",
+      "sources": [
+        {
+          "title": "Fabien Roussel : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-fabien-roussel",
+          "quote": "Depuis 2018 : Secrétaire national du Parti communiste français"
+        },
+        {
+          "title": "Fabien Roussel : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-fabien-roussel",
+          "quote": "2022 : Candidat du PCF à l'élection présidentielle (obtient 2,28 % des voix)."
+        }
+      ]
+    },
+    "marine-tondelier": {
+      "born": "1986-08-23",
+      "bornSource": {
+        "title": "Marine Tondelier : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-marine-tondelier"
+      },
+      "intro": "Secrétaire nationale des Écologistes depuis décembre 2022 et conseillère régionale des Hauts-de-France. Désignée par son parti, elle doit voir sa candidature validée par un vote des militants le 13 décembre 2026.",
+      "sources": [
+        {
+          "title": "Marine Tondelier : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-marine-tondelier",
+          "quote": "Depuis décembre 2022 : Secrétaire nationale d'EELV, devenu Les Écologistes"
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ?",
+          "publisher": "Public Sénat",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "quote": "Une candidature qui devra cependant être validée par les militants du parti lors d'un vote qui se tiendra le 13 décembre 2026."
+        }
+      ]
+    },
+    "francois-ruffin": {
+      "born": "1975-10-18",
+      "bornSource": {
+        "title": "François Ruffin : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-ruffin"
+      },
+      "intro": "Député de la Somme depuis 2017, il préside depuis juin 2025 le parti Debout !. Il a quitté le groupe La France insoumise en 2024 pour le groupe Écologiste et Social.",
+      "sources": [
+        {
+          "title": "François Ruffin : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-ruffin",
+          "quote": "Depuis juin 2025 : Président du parti Debout !."
+        },
+        {
+          "title": "François Ruffin : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-ruffin",
+          "quote": "Depuis 2024 : Membre du groupe Écologiste et Social (EcoS) à l'Assemblée nationale après sa rupture avec LFI."
+        }
+      ]
+    },
+    "delphine-batho": {
+      "born": "1973-03-23",
+      "bornSource": {
+        "title": "Delphine Batho - Base de données des députés français depuis 1789",
+        "publisher": "Assemblée nationale",
+        "url": "https://www2.assemblee-nationale.fr/sycomore/fiche?num_dept=17264"
+      },
+      "intro": "Députée des Deux-Sèvres depuis 2007, ancienne ministre de l'Écologie, elle préside Génération écologie depuis 2018, année où elle a quitté le Parti socialiste.",
+      "sources": [
+        {
+          "title": "Delphine Batho - Base de données des députés français depuis 1789",
+          "publisher": "Assemblée nationale",
+          "url": "https://www2.assemblee-nationale.fr/sycomore/fiche?num_dept=17264",
+          "quote": "Née le 23 mars 1973 à Paris (Paris - France)"
+        },
+        {
+          "title": "Delphine Batho quitte le PS pour prendre la tête de Génération écologie",
+          "publisher": "Public Sénat",
+          "url": "https://www.publicsenat.fr/actualites/politique/delphine-batho-quitte-le-ps-pour-prendre-la-tete-de-generation-ecologie-85531",
+          "quote": "L'ancienne ministre de l'Écologie Delphine Batho quitte le Parti socialiste pour prendre la tête de Génération écologie, a-t-elle annoncé mercredi dans un entretien au Monde."
+        }
+      ]
+    },
+    "karim-bouamrane": {
+      "born": "1973-02-21",
+      "bornSource": {
+        "title": "Karim Bouamrane : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-karim-bouamrane"
+      },
+      "intro": "Maire de Saint-Ouen-sur-Seine depuis 2020, réélu en 2026, membre du Parti socialiste, il a fondé en 2024 le mouvement La France humaine et forte. Il a refusé de participer à la primaire socialiste.",
+      "sources": [
+        {
+          "title": "Karim Bouamrane : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-karim-bouamrane",
+          "quote": "Depuis juillet 2020 : Maire de Saint-Ouen-sur-Seine (élu en 2020, réélu en mars 2026)."
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ?",
+          "publisher": "Public Sénat",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "quote": "le maire socialiste de Saint-Ouen, Karim Bouamrane, qui a refusé de participer à la primaire socialiste, sont candidats"
+        }
+      ]
+    },
+    "nathalie-arthaud": {
+      "born": "1970-02-23",
+      "bornSource": {
+        "title": "Nathalie Arthaud : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-nathalie-arthaud"
+      },
+      "intro": "Porte-parole de Lutte ouvrière depuis 2008 et professeure d'économie et gestion, elle a été la candidate de son parti aux présidentielles de 2012, 2017 et 2022.",
+      "sources": [
+        {
+          "title": "Nathalie Arthaud : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-nathalie-arthaud",
+          "quote": "Depuis 2008 : Porte-parole nationale de Lutte ouvrière."
+        },
+        {
+          "title": "Nathalie Arthaud : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-nathalie-arthaud",
+          "quote": "2012, 2017, 2022 : Candidate de Lutte ouvrière aux élections présidentielles"
+        }
+      ]
+    },
+    "anasse-kazib": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Cheminot et syndicaliste, il est porte-parole de Révolution permanente. Il avait déjà tenté de se présenter à l'élection présidentielle de 2022.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : le point sur toutes les candidatures",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/politique/presidentielle-2027-le-point-sur-toutes-les-candidatures",
+          "quote": "Le cheminot syndicaliste et porte-parole de Révolution permanente a communiqué sur sa candidature le 1er juin 2026 dans un clip de campagne publié sur ses réseaux sociaux."
+        },
+        {
+          "title": "Anasse Kazib, petit candidat, grandes ambitions",
+          "publisher": "Politis",
+          "url": "https://www.politis.fr/articles/2021/11/anasse-kazib-petit-candidat-grandes-ambitions-43743/",
+          "quote": "Le premier meeting public pour la candidature d'Anasse Kazib à l'élection présidentielle, le 20 octobre, n'a pas fait exception."
+        }
+      ]
+    },
+    "selma-labib": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Conductrice de bus, elle est porte-parole du NPA-Révolutionnaires, dont elle a conduit la liste aux élections européennes de 2024.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027: le NPA-Révolutionnaires annonce présenter la candidature de sa porte-parole Selma Labib",
+          "publisher": "BFMTV",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+          "quote": "Selma Labib, 30 ans, est conductrice de bus."
+        },
+        {
+          "title": "Présidentielle 2027: le NPA-Révolutionnaires annonce présenter la candidature de sa porte-parole Selma Labib",
+          "publisher": "BFMTV",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-le-npa-revolutionnaires-annonce-presenter-la-candidature-de-sa-porte-parole-selma-labib_AD-202606170500.html",
+          "quote": "Elle était la tête de liste du NPA-R aux européennes de 2024, où le parti avait réuni 0,15% des voix."
+        }
+      ]
+    },
+    "olivier-becht": {
+      "born": "1976-04-28",
+      "bornSource": {
+        "title": "Olivier Becht - Base de données des députés français depuis 1789",
+        "publisher": "Assemblée nationale",
+        "url": "https://www2.assemblee-nationale.fr/sycomore/fiche?num_dept=19033"
+      },
+      "intro": "Député du Haut-Rhin et ancien maire de Rixheim, il a été ministre chargé du Commerce extérieur dans le gouvernement d'Élisabeth Borne. Il est magistrat administratif.",
+      "sources": [
+        {
+          "title": "EXCLUSIF - « Je suis candidat à la présidentielle » : un ancien ministre d'Élisabeth Borne sort du bois",
+          "publisher": "Paris Match",
+          "url": "https://www.parismatch.com/actu/politique/exclusif-je-suis-candidat-a-la-presidentielle-un-ancien-ministre-delisabeth-borne-sort-du-bois-276281",
+          "quote": "Le député du Haut-Rhin, ex-maire de la petite ville de Rixheim, se déclare officiellement dans nos colonnes."
+        },
+        {
+          "title": "Olivier Becht - Base de données des députés français depuis 1789",
+          "publisher": "Assemblée nationale",
+          "url": "https://www2.assemblee-nationale.fr/sycomore/fiche?num_dept=19033",
+          "quote": "Né le 28 avril 1976 à Strasbourg (Bas-Rhin - France)"
+        }
+      ]
+    },
+    "raphael-glucksmann": {
+      "born": "1979-10-15",
+      "bornSource": {
+        "title": "Raphaël Glucksmann : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-raphael-glucksmann"
+      },
+      "intro": "Député européen depuis 2019 et coprésident de Place publique, parti qu'il a cofondé en 2018. Il a remporté dès le premier tour la primaire sociale-démocrate des 9 et 10 octobre 2026.",
+      "sources": [
+        {
+          "title": "Raphaël Glucksmann : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-raphael-glucksmann",
+          "quote": "Depuis 2018 : Cofondateur et coprésident du parti politique Place publique."
+        },
+        {
+          "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
+          "publisher": "LCP",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "quote": "Et on connaît aussi désormais le candidat de l'espace social-démocrate, puisque Raphaël Glucksmann a remporté, dès la premier tour, la primaire qui s'est tenue les 9 et 10 octobre."
+        }
+      ]
+    },
+    "xavier-bertrand": {
+      "born": "1965-03-21",
+      "bornSource": {
+        "title": "Xavier Bertrand : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-xavier-bertrand"
+      },
+      "intro": "Président du conseil régional des Hauts-de-France depuis 2016, il a fondé le parti Nous France en 2022. Il a été plusieurs fois ministre entre 2004 et 2012, notamment de la Santé et du Travail.",
+      "sources": [
+        {
+          "title": "Xavier Bertrand : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-xavier-bertrand",
+          "quote": "Depuis 2016 : Président du conseil régional des Hauts-de-France (réélu en 2021)."
+        },
+        {
+          "title": "Xavier Bertrand : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-xavier-bertrand",
+          "quote": "2022 : Fonde le parti politique « Nous France »."
+        }
+      ]
+    },
+    "bernard-cazeneuve": {
+      "born": "1963-06-02",
+      "bornSource": {
+        "title": "Bernard Cazeneuve : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-bernard-cazeneuve"
+      },
+      "intro": "Ancien Premier ministre (décembre 2016 - mai 2017) et ministre de l'Intérieur de 2014 à 2016, il a quitté le Parti socialiste en 2022 et fondé en 2023 le mouvement La Convention.",
+      "sources": [
+        {
+          "title": "Bernard Cazeneuve : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-bernard-cazeneuve",
+          "quote": "Décembre 2016 – Mai 2017 : Premier ministre sous la présidence de François Hollande."
+        },
+        {
+          "title": "Bernard Cazeneuve : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-bernard-cazeneuve",
+          "quote": "2022 : Quitte le Parti socialiste en opposition à l'accord NUPES et fonde en 2023 le mouvement La Convention."
+        }
+      ]
+    },
+    "dominique-de-villepin": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Ancien Premier ministre, ministre des Affaires étrangères de 2002 à 2004, il prépare une candidature avec La France humaniste et dit chercher les 500 parrainages sans l'avoir officialisée.",
+      "sources": [
+        {
+          "title": "Dominique de Villepin : \"Nous voulons être présents en 2027\"",
+          "publisher": "LCP",
+          "url": "https://lcp.fr/actualites/dominique-de-villepin-nous-voulons-etre-presents-en-2027-429413",
+          "quote": "Celui qui a également été à la tête du Quai D'orsay de mai 2002 à mars 2004"
+        },
+        {
+          "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
+          "publisher": "LCP",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "quote": "L'ancien Premier ministre Dominique de Villepin (La France humaniste), qui multiplie les déplacements, n'est pas encore officiellement dans la course à l'Elysée."
+        }
+      ]
+    },
+    "francois-asselineau": {
+      "born": "1957-09-14",
+      "bornSource": {
+        "title": "François Asselineau : Biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau"
+      },
+      "intro": "Fondateur et président de l'Union populaire républicaine (UPR) depuis 2007, ancien conseiller de Paris. Candidat en 2017, il avait recueilli 0,92 % des suffrages.",
+      "sources": [
+        {
+          "title": "François Asselineau : Biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+          "quote": "Depuis le 25 mars 2007 : Fondateur et président de l'Union populaire républicaine (UPR)."
+        },
+        {
+          "title": "François Asselineau : Biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+          "quote": "2017 : Candidat à l'élection présidentielle (recueille 0,92 % des suffrages exprimés au premier tour)."
+        }
+      ]
+    },
+    "juan-branco": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Écrivain et docteur en droit, auteur de plusieurs ouvrages sur Emmanuel Macron, il a défendu Julian Assange avant d'être exclu de l'ordre des avocats. Sa démarche est portée par le mouvement citoyen Les Ruches.",
+      "sources": [
+        {
+          "title": "L'avocat Juan Branco, candidat à la présidentielle",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle",
+          "quote": "Après plusieurs ouvrages sur Emmanuel Macron, après la défense de Julian Assange, après son exclusion de l'ordre des avocats, Juan Branco se lance officiellement en politique."
+        },
+        {
+          "title": "Juan Branco — Avocat, écrivain et docteur en droit",
+          "publisher": "Les Ruches (site de campagne)",
+          "url": "https://ruches.org/juan-branco",
+          "quote": "Démarche annoncée le 19 décembre 2025 et portée par le mouvement citoyen Les Ruches."
+        }
+      ]
+    },
+    "emmanuel-dubuisson": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Né au Sri Lanka et adopté en France, il a grandi entre le Jura et le Pays de Gex. Sans parcours électif connu, il dit avoir travaillé des années dans des pays en crise ou en conflit armé.",
+      "sources": [
+        {
+          "title": "Emmanuel DUBUISSON, candidat à l'élection présidentielle 2027",
+          "publisher": "Site de campagne Dubuisson 2027",
+          "url": "https://dubuisson2027.fr/",
+          "quote": "Né au Sri Lanka, adopté en France, grandi entre le Jura et le Pays de Gex"
+        },
+        {
+          "title": "Emmanuel Dubuisson : parcours, biographie et méthode",
+          "publisher": "Site de campagne Dubuisson 2027",
+          "url": "https://dubuisson2027.fr/qui-suis-je",
+          "quote": "j'ai travaillé pendant des années dans des pays en crise ou en conflit armé"
+        }
+      ]
+    },
+    "gilles-platret": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Maire de Chalon-sur-Saône depuis 2014 et conseiller régional de Bourgogne-Franche-Comté, ancien vice-président des Républicains. Il s'était présenté trois fois aux élections législatives sans être élu.",
+      "sources": [
+        {
+          "title": "Gilles Platret, nouveau candidat à l'élection présidentielle de 2027",
+          "publisher": "Lyon Capitale",
+          "url": "https://www.lyoncapitale.fr/politique/gilles-platret-nouveau-candidat-a-lelection-presidentielle-de-2027",
+          "quote": "Gilles Platret est maire de Chalon-sur-Saône depuis 2014 et conseiller régional de Bourgogne-Franche-Comté depuis 2016."
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ?",
+          "publisher": "Public Sénat",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "quote": "tout comme l'ancien vice-président de LR, Gilles Platret"
+        }
+      ]
+    },
+    "francis-lalanne": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Chanteur, il a conduit la liste « Alliance jaune » aux élections européennes de 2019. Il fait campagne sous l'étiquette France Libre, avec le soutien de Dieudonné.",
+      "sources": [
+        {
+          "title": "\"Gilets jaunes\": Francis Lalanne prend la tête d'une liste \"Alliance jaune\"",
+          "publisher": "Public Sénat",
+          "url": "https://www.publicsenat.fr/actualites/politique/gilets-jaunes-francis-lalanne-prend-la-tete-d-une-liste-alliance-jaune-140749",
+          "quote": "Le chanteur Francis Lalanne a annoncé mardi prendre la tête d'une liste nommée \"Alliance jaune\" réunissant des \"gilets jaunes\", pour les élections européennes du 26 mai."
+        },
+        {
+          "title": "Présidentielle 2027: la liste des candidats déjà en lice et des prétendants",
+          "publisher": "LCP",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "quote": "Antoine Mikolajczak (Equinoxe) et Francis Lalanne (France Libre)"
+        }
+      ]
+    },
+    "sylvain-durif": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Il se présente sous le surnom de « Christ cosmique ». Connu depuis 2012 à Bugarach (Aude), il a été candidat aux municipales de 2014 et avait annoncé une candidature à la présidentielle de 2017.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : Qui est Sylvain Durif, le « Christ cosmique » qui veut se présenter ?",
+          "publisher": "20 Minutes",
+          "url": "https://www.20minutes.fr/politique/4241053-20260826-presidentielle-2027-sylvain-durif-christ-cosmique-veut-presenter",
+          "quote": "Sylvain Durif s'était fait connaître en 2012, du côté de Bugarach, un village de l'Aude"
+        },
+        {
+          "title": "Présidentielle 2027 : Qui est Sylvain Durif, le « Christ cosmique » qui veut se présenter ?",
+          "publisher": "20 Minutes",
+          "url": "https://www.20minutes.fr/politique/4241053-20260826-presidentielle-2027-sylvain-durif-christ-cosmique-veut-presenter",
+          "quote": "Et en 2017, sa candidature à l'Elysée n'était pas allée plus loin qu'une simple annonce."
+        }
+      ]
+    },
+    "natacha-polony": {
+      "born": "1975-04-15",
+      "bornSource": {
+        "title": "Natacha Polony : biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-natacha-polony"
+      },
+      "intro": "Journaliste et essayiste, elle a dirigé la rédaction de l'hebdomadaire Marianne de 2018 à 2024. Elle a annoncé sa candidature le 14 octobre 2026.",
+      "sources": [
+        {
+          "title": "Natacha Polony : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-natacha-polony",
+          "quote": "2018–2024 : Directrice de la rédaction de l'hebdomadaire Marianne."
+        },
+        {
+          "title": "Natacha Polony : biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-natacha-polony",
+          "quote": "14 octobre 2026 : Annonce sa candidature à l'élection présidentielle de 2027."
+        }
+      ]
+    },
+    "jean-lassalle": {
+      "born": "1955-05-03",
+      "bornSource": {
+        "title": "Jean Lassalle : Biographie et CV politique",
+        "publisher": "Sud Radio",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle"
+      },
+      "intro": "Député des Pyrénées-Atlantiques de 2002 à 2022, il préside Résistons, parti qu'il a fondé en 2016. Candidat en 2017 et 2022, il a lancé en juillet 2026 une cagnotte pour financer une troisième campagne.",
+      "sources": [
+        {
+          "title": "Jean Lassalle : Biographie et CV politique",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-jean-lassalle",
+          "quote": "Depuis 2016 : Fondateur et président du parti politique Résistons."
+        },
+        {
+          "title": "Présidentielle 2027 : Jean Lassalle lance une cagnotte pour être candidat",
+          "publisher": "ICI Béarn Bigorre (Radio France)",
+          "url": "https://www.ici.fr/emissions/l-invite-de-la-redaction-de-ici-bearn-bigorre/jean-lassalle-lance-une-cagnotte-pour-etre-candidat-a-la-presidentielle-de-2027-2094458",
+          "quote": "Jean Lassalle lance une cagnotte pour pouvoir être candidat à l'élection présidentielle de 2027."
+        }
+      ]
+    },
+    "benoit-mathieu": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Ingénieur en agronomie devenu professeur de mathématiques contractuel, sans parti, il parcourt la France à vélo depuis le 30 mars 2026 pour réunir les 500 parrainages.",
+      "sources": [
+        {
+          "title": "Chauffailles. Benoît Mathieu part à vélo en quête des 500 parrainages pour être candidat à la présidentielle : « Je crois vraiment en mes chances »",
+          "publisher": "Le Journal de Saône-et-Loire",
+          "url": "https://www.lejsl.com/elections/2026/04/01/benoit-mathieu-candidat-a-la-presidentielle-a-velo-il-part-en-quete-des-500-parrainages",
+          "quote": "assure cet ingénieur en agronomie, devenu professeur de mathématiques contractuel"
+        },
+        {
+          "title": "\"C'est la première fois que je viens en Creuse\" : à 27 ans, il parcourt la France à vélo pour devenir Président",
+          "publisher": "ICI Creuse (Radio France)",
+          "url": "https://www.ici.fr/nouvelle-aquitaine/creuse-23/evaux-les-bains/c-est-la-premiere-fois-que-je-viens-en-creuse-a-27-ans-il-parcourt-la-france-a-velo-pour-devenir-president-2595353",
+          "quote": "Le jeune homme a quitté sa commune de Chaufailles en Saône-et-Loire le 30 mars dernier pour se lancer dans un tour de France à vélo, en quête de 500 parrainages pour pouvoir déposer sa candidature pour la présidentielle de 2027."
+        }
+      ]
+    },
+    "manolo-mlekuz": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Étudiant en histoire originaire de Montreuil, il a fondé le parti Trajectoire après avoir adhéré au Parti socialiste puis milité pour La France insoumise. Il propose une assemblée constituante tirée au sort.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : qui est Manolo Mlekuz, ce candidat âgé de 20 ans parti sillonner la France pour faire campagne ?",
+          "publisher": "CNews",
+          "url": "https://www.cnews.fr/france/2026-05-27/presidentielle-2027-qui-est-manolo-mlekuz-ce-candidat-age-de-20-ans-parti",
+          "quote": "Ancien adhérent au Parti socialiste, il a ensuite milité pour La France Insoumise."
+        },
+        {
+          "title": "Trajectoire — Rectifions la trajectoire",
+          "publisher": "Trajectoire (site du parti)",
+          "url": "https://trajectoire2027.fr/",
+          "quote": "Pour une démocratie renouvelée par et pour les citoyens : une assemblée constituante tirée au sort, puis un référendum."
+        }
+      ]
+    },
+    "clara-egger": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Professeure en relations internationales à l'Université de Groningen (Pays-Bas), elle préside Solution démocratique. En 2022, sa candidature avait recueilli 36 parrainages d'élus.",
+      "sources": [
+        {
+          "title": "Qui est Clara Egger, candidate à l'élection présidentielle 2027",
+          "publisher": "Solution démocratique (site du parti)",
+          "url": "https://solutiondemocratique.fr/clara-egger/",
+          "quote": "Clara Egger est professeure en relations internationales à l'Université de Groningen, aux Pays-Bas."
+        },
+        {
+          "title": "Présidentielle 2027 : qui sont les candidats déclarés ?",
+          "publisher": "Sud Radio",
+          "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+          "quote": "Universitaire et présidente de Solution démocratique, elle présente sa candidature le 20 avril 2026 dans un communiqué de presse publié sur le site de Solution démocratique."
+        }
+      ]
+    },
+    "jean-francois-legendre": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Il porte la candidature du mouvement citoyen À nous maintenant, fondé en 2026 et basé en Provence-Alpes-Côte d'Azur, qui défend le recours au référendum et la revitalisation des territoires ruraux.",
+      "sources": [
+        {
+          "title": "Le mouvement citoyen À NOUS MAINTENANT émerge",
+          "publisher": "TV83",
+          "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/",
+          "quote": "« À nous maintenant » est un site et un mouvement citoyen indépendant fondé en 2026."
+        },
+        {
+          "title": "Le mouvement citoyen À NOUS MAINTENANT émerge",
+          "publisher": "TV83",
+          "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/",
+          "quote": "Le mouvement, basé en PACA, travaille afin de présenter un candidat à la présidentielle"
+        }
+      ]
+    },
+    "antoine-mikolajczak": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Ingénieur diplômé de l'Icam de Lille, il a monté des projets d'énergies renouvelables avec des collectivités. Engagé à Équinoxe depuis 2024, il a été désigné candidat par les adhérents du parti au jugement majoritaire.",
+      "sources": [
+        {
+          "title": "Sous la bannière d'Équinoxe, Antoine Mikolajczak brigue la présidence de la République",
+          "publisher": "Le Journal de la Haute-Marne",
+          "url": "https://jhm.fr/sous-la-banniere-dequinoxe-antoine-mikolajczak-brigue-la-presidence-de-la-republique/",
+          "quote": "Ingénieur diplômé de l'Icam de Lille, il a travaillé « dans le secteur des énergies renouvelables auprès des collectivités,un peu partout en France »"
+        },
+        {
+          "title": "Présidentielle 2027 - Parti Équinoxe",
+          "publisher": "Équinoxe (site officiel)",
+          "url": "https://parti-equinoxe.fr/presidentielle-2027/",
+          "quote": "Antoine Mikolajczak est le candidat à l'élection présidentielle de 2027 pour Équinoxe, suite à l'élection au jugement majoritaire des adhérents du parti."
+        }
+      ]
+    }
+  }
+}

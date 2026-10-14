@@ -16,6 +16,7 @@ import fiches from '@content/acteurs/fiches.json'
 import { Portrait } from '@/components/Portrait'
 import { portraitOf } from '@/lib/images'
 import { nuanceOf } from '@/lib/nuances'
+import { presentationOf } from '@/lib/presentations'
 import { NET_DEFINITION, patrimoineOf } from '@/lib/patrimoine'
 import { hatvpOf } from '@/lib/hatvp'
 import { VOTE_LABEL, VOTES_FETCHED_AT, VOTES_SOURCE, isDeputy, scrutinLabel, scrutinUrl, votesOf } from '@/lib/votes-an'
@@ -65,6 +66,7 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
   }
   // Candidature arrêtée : la source montrée est celle de l'arrêt
   const shown = (a.status === 'retire' && a.retiredSource) || a.source
+  const pres = presentationOf(a.slug)
   return (
     <div className="container" style={{ paddingTop: 'var(--s6)' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
@@ -90,6 +92,23 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
             Source : {shown.publisher}
           </a>
         </p>
+        {pres && (
+          <p>
+            {pres.age !== null && <strong>{UI_COPY.candidate.age(pres.age)}. </strong>}
+            {pres.intro}{' '}
+            <span className="small">
+              {UI_COPY.candidate.introSources} :{' '}
+              {pres.sources.map((x, i) => (
+                <span key={x.url + i}>
+                  {i > 0 && ' · '}
+                  <a href={x.url} rel="noopener noreferrer nofollow" target="_blank" title={x.quote}>
+                    {x.publisher}
+                  </a>
+                </span>
+              ))}
+            </span>
+          </p>
+        )}
         {parrainagesSource && parrainagesOf(a.slug) !== null && (
           <p>
             {UI_COPY.candidate.parrainages(parrainagesOf(a.slug)!, PARRAINAGES_THRESHOLD)}

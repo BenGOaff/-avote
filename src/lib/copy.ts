@@ -795,6 +795,8 @@ export const UI_COPY = {
     testCta: 'Comparer avec mes réponses',
   },
   candidate: {
+    age: (n: number) => `${n} ans`,
+    introSources: 'Sources de la présentation',
     updated: (d: string) => `Positions mises à jour le ${d}`,
     parrainages: (n: number, threshold: number) => `Parrainages validés par le Conseil constitutionnel : ${n} sur ${threshold} nécessaires`,
     linksLead: 'À la source :',

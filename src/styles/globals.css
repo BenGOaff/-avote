@@ -4242,6 +4242,11 @@ details.disclosure > div {
   font-weight: 700;
   font-size: var(--text-small);
 }
+.cand-card__intro {
+  margin: var(--s2) 0 0;
+  font-size: var(--text-small);
+  line-height: var(--lh-ui);
+}
 .cand-card__meta {
   margin: var(--s1) 0 0;
   font-size: var(--text-small);
