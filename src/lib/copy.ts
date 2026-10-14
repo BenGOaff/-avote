@@ -595,6 +595,33 @@ export const UI_COPY = {
     remindersText: 'Un clic ajoute la date à ton agenda, avec un rappel avant. Rien n’est enregistré chez nous.',
     remindersAll: 'Tous les rendez-vous de la campagne, et l’abonnement à l’agenda',
   },
+  youtube: {
+    kicker: 'Les médias',
+    title: 'YouTube : les chaînes qui parlent politique',
+    metaTitle: 'YouTube et politique : abonnés, vues et évolution des chaînes françaises',
+    description:
+      'Les chaînes YouTube françaises d’actualité, de politique et de vérification des faits, de toutes sensibilités, et celles des candidats à la présidentielle 2027 : abonnés, vues sur 30 jours, évolution, propriétaires.',
+    lede: 'Médias, chaînes personnelles, chaînes qui démontent les fausses infos, et chaînes des candidats : les chiffres publics de YouTube, relevés chaque lundi.',
+    pending: 'Premier relevé en cours : les chiffres apparaissent au prochain passage du robot.',
+    groups: {
+      media: 'Les médias',
+      createur: 'Les chaînes personnelles',
+      verification: 'Enquêtes et vérification des faits',
+      candidat: 'Les chaînes des candidats',
+    },
+    cols: { name: 'Chaîne', subs: 'Abonnés', month: 'Vues 30 j', trend: 'Évolution', last: 'Vidéo', owner: 'Qui la possède' },
+    ownerUnknown: 'Non établi',
+    monthPending: (d: string) => `Les vues sur 30 jours s’affichent après un mois de relevés (premier relevé le ${d}).`,
+    inactiveTitle: (n: number) => `Sans nouvelle vidéo depuis 90 jours (${n})`,
+    noChannel: 'Pas de chaîne officielle trouvée',
+    method: [
+      'Sont suivies les chaînes francophones consacrées surtout à l’actualité, à la politique ou à la vérification des faits, de toutes sensibilités, à partir de 10 000 abonnés, ainsi que les chaînes officielles des candidats. Aucun qualificatif n’est attribué à leur ligne éditoriale.',
+      'Les chiffres viennent de l’API officielle de YouTube, relevés chaque lundi par un programme. YouTube arrondit les abonnés. Les vues sur 30 jours sont la différence des vues totales entre deux relevés, ramenée à 30 jours.',
+      'Le propriétaire d’une chaîne n’est indiqué que s’il est établi par une source ; pour les médias, il renvoie à la fiche « Qui possède ton info ».',
+    ],
+    missing: 'Une chaîne manque ou n’a plus sa place ?',
+    short: (n: number, date: string, top: string) => `${n} chaînes suivies, relevé du ${date}. Les plus suivies : ${top}.`,
+  },
   proposition: {
     title: (concept: string) => `${concept} : quels candidats sont pour, lesquels sont contre ?`,
     metaTitle: (concept: string) => `${concept} : quels candidats 2027 sont pour, lesquels contre ?`,

@@ -227,6 +227,16 @@ for (const [slug, o] of Object.entries((owned as { orientations?: Record<string,
   if (!mediaList.medias.some((x) => x.slug === slug)) errors.push(`orientations : ${slug} absent de la liste`)
   if (!/^https:\/\/([a-z0-9-]+\.)*eurotopics\.net\//.test(o.url) || !o.quote || !o.label) errors.push(`orientations : ${slug} sans source eurotopics ou sans extrait`)
 }
+const yt = JSON.parse(readFileSync(path.join(ROOT, 'content/youtube/chaines.json'), 'utf8')) as { channels: { id: string; name: string; group: string; media?: string; actor?: string; owner?: { url: string; quote: string } }[] }
+const ytIds = new Set<string>()
+for (const c of yt.channels) {
+  if (!/^UC[\w-]{22}$/.test(c.id) || ytIds.has(c.id)) errors.push(`youtube : identifiant invalide ou en double (${c.name})`)
+  ytIds.add(c.id)
+  if (!['media', 'createur', 'verification', 'candidat'].includes(c.group)) errors.push(`youtube : groupe inconnu (${c.name})`)
+  if (c.media && !mediaList.medias.some((m) => m.slug === c.media)) errors.push(`youtube : média ${c.media} absent de la liste`)
+  if (c.actor && !livreActors.has(c.actor)) errors.push(`youtube : candidat ${c.actor} absent des candidatures`)
+  if (c.owner && (!c.owner.url.startsWith('https://') || !c.owner.quote)) errors.push(`youtube : propriétaire de ${c.name} sans source https ou sans extrait`)
+}
 const orientationNuances = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/orientation-nuances.json'), 'utf8')) as { nuances: Record<string, { text: string; sources: { url: string }[] }> }
 for (const [slug, n] of Object.entries(orientationNuances.nuances)) {
   if (!(owned as { orientations?: Record<string, unknown> }).orientations?.[slug]) errors.push(`nuance d'orientation : ${slug} sans orientation eurotopics`)

@@ -36,6 +36,7 @@ Points utiles pour citer le site :
 - Inscription sur les listes électorales : jusqu'au 6e vendredi avant le premier tour, soit le ${dayLabel(REGISTRATION_DEADLINE)} (date calculée à partir de la règle officielle, à confirmer par le décret de convocation) (${absolute('/voter/inscription-listes-electorales')}).
 - Procuration : sur maprocuration.gouv.fr puis validation en commissariat ou gendarmerie, ou tout en ligne avec France Identité ; sans justificatif d'absence ; aucune date limite officielle, le plus tôt possible (${absolute('/voter/procuration')}).
 - Vrai ou faux : le vérificateur (${absolute('/verifier')}) répond en une phrase à une question de fait sur la campagne, uniquement à partir des sources de Ça vote ? (intox démontées, déclarations citées, données officielles), avec le lien vers la source ; sans source assez proche, il répond « pas encore vérifié ».
+- YouTube : abonnés, vues sur 30 jours et évolution des chaînes françaises d'actualité, de politique et de vérification des faits, et des chaînes des candidats, relevés chaque semaine par l'API YouTube (${absolute('/medias/youtube')}).
 - Médias : qui possède chaque chaîne, radio et journal, leur orientation selon eurotopics, les rappels à l'ordre de l'Arcom et le temps de parole politique par chaîne d'après les relevés de l'Arcom (${absolute('/medias')}).
 
 ## Voter en 2027 : guides pratiques

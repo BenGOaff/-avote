@@ -1,0 +1,665 @@
+{
+  "_note": "Chaînes YouTube suivies : francophones, consacrées surtout à l'actualité, à la politique ou à la vérification des faits, de toutes sensibilités, plus les chaînes officielles des candidats. Les chiffres sont relevés chaque semaine par scripts/youtube.ts (API YouTube Data) dans stats.json. Une chaîne sans vidéo depuis 90 jours est signalée comme inactive. Aucun qualificatif éditorial n'est attribué.",
+  "channels": [
+    {
+      "id": "UCdnaDhU-LDQrIEEmSIfq0-Q",
+      "name": "Mediapart",
+      "group": "media",
+      "handle": "@mediapart",
+      "media": "mediapart"
+    },
+    {
+      "id": "UC__xRB5L4toU9yYawt_lIKg",
+      "name": "Blast, le souffle de l'info",
+      "group": "media",
+      "handle": "@blastinfo",
+      "media": "blast"
+    },
+    {
+      "id": "UCar0yo-PpeMk51m116826pQ",
+      "name": "L'Humanité",
+      "group": "media",
+      "handle": "@lhumanitefr",
+      "media": "l-humanite"
+    },
+    {
+      "id": "UCT67YOMntJxfRnO_9bXDpvw",
+      "name": "Le Média",
+      "group": "media",
+      "media": "le-media"
+    },
+    {
+      "id": "UCYpRDnhk5H8h16jpS84uqsA",
+      "name": "Le Monde",
+      "group": "media",
+      "handle": "@lemondefr",
+      "media": "le-monde"
+    },
+    {
+      "id": "UCO6K_kkdP-lnSCiO3tPx7WA",
+      "name": "franceinfo",
+      "group": "media",
+      "handle": "@franceinfo",
+      "media": "franceinfo"
+    },
+    {
+      "id": "UCXwDLMDV86ldKoFVc_g8P0g",
+      "name": "BFMTV",
+      "group": "media",
+      "handle": "@BFMTV",
+      "media": "bfmtv"
+    },
+    {
+      "id": "UCXKJrYczY2_fJEZgFPGY0HQ",
+      "name": "CNews",
+      "group": "media",
+      "handle": "@CNEWSofficiel",
+      "media": "cnews"
+    },
+    {
+      "id": "UCCDz_XYeKWd0OIyjp95dqyQ",
+      "name": "Le Figaro",
+      "group": "media",
+      "handle": "@LeFigaro",
+      "media": "le-figaro"
+    },
+    {
+      "id": "UC9x4Iyu-D257P0P-VDRwSzw",
+      "name": "Libération",
+      "group": "media",
+      "handle": "@liberation",
+      "media": "liberation"
+    },
+    {
+      "id": "UCSKdvgqdnj72_SLggp7BDTg",
+      "name": "Brut",
+      "group": "media",
+      "handle": "@BrutFR",
+      "media": "brut"
+    },
+    {
+      "id": "UCCCPCZNChQdGa9EkATeye4g",
+      "name": "France 24",
+      "group": "media",
+      "handle": "@FRANCE24"
+    },
+    {
+      "id": "UCewhc0fvja891XkpIPGRMxQ",
+      "name": "LCI",
+      "group": "media",
+      "handle": "@LCI",
+      "media": "lci"
+    },
+    {
+      "id": "UCTa1bPArjpvNMgSHAb_pflA",
+      "name": "Public Sénat",
+      "group": "media",
+      "handle": "@publicsenat",
+      "media": "public-senat"
+    },
+    {
+      "id": "UCHGFbA0KWBgf6gMbyUCZeCQ",
+      "name": "LCP - Assemblée nationale",
+      "group": "media",
+      "handle": "@lcpassembleenationale",
+      "media": "lcp"
+    },
+    {
+      "id": "UCIMGfEAERXjmWwQeg15BFsg",
+      "name": "Europe 1",
+      "group": "media",
+      "handle": "@Europe1",
+      "media": "europe-1"
+    },
+    {
+      "id": "UCgGb7tN3tIH5_Kk05D1J_bA",
+      "name": "RMC",
+      "group": "media",
+      "handle": "@RMC",
+      "media": "rmc"
+    },
+    {
+      "id": "UCESTwDXpoMgiYBHipMdKTkQ",
+      "name": "Sud Radio",
+      "group": "media",
+      "handle": "@SudRadioOfficiel",
+      "media": "sud-radio"
+    },
+    {
+      "id": "UCJldRgT_D7Am-ErRHQZ90uw",
+      "name": "France Inter",
+      "group": "media",
+      "handle": "@FranceInter",
+      "media": "france-inter"
+    },
+    {
+      "id": "UCd5DKToXYTKAQ6khzewww2g",
+      "name": "France Culture",
+      "group": "media",
+      "handle": "@FranceCulture",
+      "media": "france-culture"
+    },
+    {
+      "id": "UCQd5LYcykaFeZtjDaP3bNSA",
+      "name": "Le Point",
+      "group": "media",
+      "handle": "@lepoint",
+      "media": "le-point"
+    },
+    {
+      "id": "UCp2kK3DyhpgFOdILF3BBC9A",
+      "name": "L'Express",
+      "group": "media",
+      "handle": "@lexpress",
+      "media": "l-express"
+    },
+    {
+      "id": "UCfHn_8-ehdem86fEvlFg-Gw",
+      "name": "Le Parisien",
+      "group": "media",
+      "handle": "@LeParisien",
+      "media": "le-parisien"
+    },
+    {
+      "id": "UCD25QI36ly-8hWm9OPOz7aw",
+      "name": "20 Minutes",
+      "group": "media",
+      "handle": "@20minutesFrance",
+      "media": "20-minutes"
+    },
+    {
+      "id": "UCrpsdF7UreiF-2r5Jp0YpRg",
+      "name": "Ouest-France",
+      "group": "media",
+      "handle": "@ouestfranceFR",
+      "media": "ouest-france"
+    },
+    {
+      "id": "UCpi-4daExRSchtsJzO06rwA",
+      "name": "Quotidien (TMC)",
+      "group": "media",
+      "handle": "@QuotidienTMC",
+      "media": "tmc"
+    },
+    {
+      "id": "UC1UUvhau_2V8ETvHfwkUQwg",
+      "name": "C ce soir (France Télévisions)",
+      "group": "media",
+      "handle": "@Ccesoir",
+      "media": "france-2"
+    },
+    {
+      "id": "UCvg4_wSz4Cmo4xRPXaKU47A",
+      "name": "C dans l'air (France Télévisions)",
+      "group": "media",
+      "handle": "@Cdanslairofficiel",
+      "media": "france-2"
+    },
+    {
+      "id": "UCPplJEsqnAH_8s8qvyI3BEw",
+      "name": "Complément d'enquête (France Télévisions)",
+      "group": "media",
+      "handle": "@complementdenquete",
+      "media": "france-2"
+    },
+    {
+      "id": "UC9gcw8-7IzzaosI4c0KCP0g",
+      "name": "Cash Investigation (France Télévisions)",
+      "group": "media",
+      "handle": "@cashinvestigationf2",
+      "media": "france-2"
+    },
+    {
+      "id": "UCnIWNujSpiiuH29-TBCz9aw",
+      "name": "VA Plus (Valeurs actuelles)",
+      "group": "media",
+      "handle": "@VAplusmedia",
+      "media": "valeurs-actuelles"
+    },
+    {
+      "id": "UCb0xB4NwoAANhxikOjw3Tnw",
+      "name": "Le JDD",
+      "group": "media",
+      "handle": "@le_jdd",
+      "media": "le-jdd"
+    },
+    {
+      "id": "UC4V5osIDMjFwtCRxMm2e0LA",
+      "name": "Marianne",
+      "group": "media",
+      "handle": "@Mariannetv",
+      "media": "marianne"
+    },
+    {
+      "id": "UCW2QcKZiU8aUGg4yxCIditg",
+      "name": "euronews (en français)",
+      "group": "media",
+      "handle": "@euronewsfr"
+    },
+    {
+      "id": "UC1yLBhh8eDSPm-_Hgz8AvNA",
+      "name": "Slate.fr",
+      "group": "media",
+      "handle": "@slatefr"
+    },
+    {
+      "id": "UCkgO4A3Fzm5D9Xu1Y_4vCKQ",
+      "name": "Élucid",
+      "group": "media",
+      "handle": "@ElucidMedia"
+    },
+    {
+      "id": "UCEFGCs68E9Vr5te5qZuJsbg",
+      "name": "Off Investigation",
+      "group": "media",
+      "handle": "@offinvestigation"
+    },
+    {
+      "id": "UCbXWhsd805LfcbAy7xL9d-A",
+      "name": "Le Crayon",
+      "group": "media",
+      "handle": "@lecrayonmedia"
+    },
+    {
+      "id": "UCCDPdHuBGfjMxlM3xZANgGQ",
+      "name": "QG TV",
+      "group": "media",
+      "handle": "@LibreQg"
+    },
+    {
+      "id": "UC8-FN_ftL-crIaXMouuykyQ",
+      "name": "Au Poste",
+      "group": "media",
+      "handle": "@au_poste"
+    },
+    {
+      "id": "UC11tPrPcudLv8J2ladG2DsA",
+      "name": "Hors-Série",
+      "group": "media"
+    },
+    {
+      "id": "UCysox6U9HnqgCiJ-Pd-Jy_w",
+      "name": "Frontières",
+      "group": "media",
+      "handle": "@Frontieresoff",
+      "media": "frontieres"
+    },
+    {
+      "id": "UC3lacWBPVK-JfmGyyHx4AAw",
+      "name": "Omerta",
+      "group": "media",
+      "handle": "@omertamediaoff"
+    },
+    {
+      "id": "UCyamXi0qEQJghCjJbj__aWQ",
+      "name": "TV Libertés",
+      "group": "media"
+    },
+    {
+      "id": "UCqgrelsJF19-0cwCwiKULuA",
+      "name": "Epoch Times France",
+      "group": "media",
+      "handle": "@EpochTimesFR"
+    },
+    {
+      "id": "UCIWw8PPP5OPNkDCLBrG9zVA",
+      "name": "NTD France",
+      "group": "media",
+      "handle": "@NTDFrance"
+    },
+    {
+      "id": "UCfidGlehytwCvV3qlsX5uVQ",
+      "name": "Front populaire",
+      "group": "media",
+      "handle": "@FrontPopulaireOff",
+      "media": "front-populaire"
+    },
+    {
+      "id": "UCx9ygIxPfYR05kY92KzvbvA",
+      "name": "Boulevard Voltaire",
+      "group": "media",
+      "handle": "@BoulevardVoltaire_",
+      "media": "boulevard-voltaire"
+    },
+    {
+      "id": "UCmbhrKMU_X7Gi47bZEEajEQ",
+      "name": "StreetPress",
+      "group": "media",
+      "handle": "@streetpress",
+      "media": "streetpress"
+    },
+    {
+      "id": "UC76pM1Auet3YolJ5vYLeINQ",
+      "name": "Disclose",
+      "group": "media",
+      "handle": "@Disclose_ngo",
+      "media": "disclose"
+    },
+    {
+      "id": "UCDn6zvBZNEWUv44xjgELicA",
+      "name": "Reporterre",
+      "group": "media",
+      "handle": "@reporterre_media",
+      "media": "reporterre"
+    },
+    {
+      "id": "UCtjc5x0RIiTsdYS4IFMjCGQ",
+      "name": "Politis",
+      "group": "media",
+      "handle": "@Politis_fr",
+      "media": "politis"
+    },
+    {
+      "id": "UCJZ-hXrLYUFHBnkM0Vb2mqw",
+      "name": "Le Monde diplomatique",
+      "group": "media",
+      "handle": "@LeMondediplomatique1954",
+      "media": "le-monde-diplomatique"
+    },
+    {
+      "id": "UCXHWT_QoQSsdGXbqF0hAMtg",
+      "name": "Arrêt sur images",
+      "group": "media",
+      "media": "arret-sur-images"
+    },
+    {
+      "id": "UCLuLxfwPrxe4wUPkdYM_VDA",
+      "name": "Tocsin",
+      "group": "media",
+      "handle": "@Tocsin-media"
+    },
+    {
+      "id": "UCpGdJo_WsBhAUf1WA2SYcIQ",
+      "name": "Antithèse",
+      "group": "media",
+      "handle": "@antitheseinfo"
+    },
+    {
+      "id": "UChq7IIJgKBr5cElD44Q6PlA",
+      "name": "Investig'Action",
+      "group": "media",
+      "handle": "@michelcollon"
+    },
+    {
+      "id": "UCIh7PDUAP226Pa_NtjN9Jqw",
+      "name": "Legend",
+      "group": "media",
+      "handle": "@legendmedia",
+      "owner": {
+        "text": "Guillaume Pley conserverait environ 55 % du capital ; FG Bros, le family office de la famille Frère, est entré au capital en 2026 (selon Maddyness, repris par Le Tribunal du Net).",
+        "quote": "Malgré cette cession partielle, Guillaume Pley conserverait environ 55% du capital de Legend.",
+        "url": "https://www.letribunaldunet.fr/argent/legend-guillaume-pley-valorisation-72-millions.html",
+        "publisher": "Le Tribunal du Net"
+      }
+    },
+    {
+      "id": "UCQgWpmt02UtJkyO32HGUASQ",
+      "name": "Thinkerview",
+      "group": "media",
+      "handle": "@thinkerview"
+    },
+    {
+      "id": "UCAcAnMF0OrCtUep3Y4M-ZPw",
+      "name": "HugoDécrypte - Actus du jour",
+      "group": "createur",
+      "handle": "@hugodecrypteactus"
+    },
+    {
+      "id": "UCUo1RqYV8tGjV38sQ8S5p9A",
+      "name": "HugoDécrypte - Grands formats",
+      "group": "createur",
+      "handle": "@hugodecryptegrandsformats"
+    },
+    {
+      "id": "UCI-8QMy9n3I5Pv6mTmXoAXA",
+      "name": "Gaspard G",
+      "group": "createur",
+      "handle": "@GaspardG"
+    },
+    {
+      "id": "UC_NukSq2ve_AHVAz_9ikTDg",
+      "name": "Usul",
+      "group": "createur",
+      "handle": "@usulmasta"
+    },
+    {
+      "id": "UCVeMw72tepFl1Zt5fvf9QKQ",
+      "name": "Osons Causer",
+      "group": "createur",
+      "handle": "@Osonscauser"
+    },
+    {
+      "id": "UC9hHeywcPBnLglqnQRaNShQ",
+      "name": "Le Fil d'Actu",
+      "group": "createur",
+      "handle": "@LeFildActu"
+    },
+    {
+      "id": "UCqv_wXmLSFtTDA39HQaLssQ",
+      "name": "Jean Massiet",
+      "group": "createur",
+      "handle": "@JeanMassiet"
+    },
+    {
+      "id": "UC2ijB3_Fg2pIW1g6FeIiYKA",
+      "name": "Backseat",
+      "group": "createur",
+      "handle": "@backseat_fr"
+    },
+    {
+      "id": "UCWS3mpxBmS9HXBcKymKfCRA",
+      "name": "Thaïs d'Escufon",
+      "group": "createur",
+      "handle": "@ThaisdEscufonYT"
+    },
+    {
+      "id": "UCr_3nQ4eRCwm_XUDpf62MAg",
+      "name": "Partager C'est Sympa",
+      "group": "createur",
+      "handle": "@PartagerCestSympa"
+    },
+    {
+      "id": "UCZkgWp0kovymbqDV24t0RaA",
+      "name": "Camille Reporter",
+      "group": "createur",
+      "handle": "@CamilleReporter"
+    },
+    {
+      "id": "UCYkZbyXcVmtdRUpCBi713vw",
+      "name": "Pure Politique",
+      "group": "createur",
+      "handle": "@PurePolitique"
+    },
+    {
+      "id": "UCPiye7__vJMKdBxebtERd7g",
+      "name": "Terra Bellum",
+      "group": "createur",
+      "handle": "@TerraBellum"
+    },
+    {
+      "id": "UC7sXGI8p8PvKosLWagkK9wQ",
+      "name": "Heu?reka",
+      "group": "createur",
+      "handle": "@Heu7reka"
+    },
+    {
+      "id": "UC1EacOJoqsKaYxaDomTCTEQ",
+      "name": "Le Réveilleur",
+      "group": "createur",
+      "handle": "@lereveilleur"
+    },
+    {
+      "id": "UCyJDHgrsUKuWLe05GvC2lng",
+      "name": "Stupid Economics",
+      "group": "createur",
+      "handle": "@StupidEco"
+    },
+    {
+      "id": "UCWtD8JN9hkxL5TJL_ktaNZA",
+      "name": "Grand Angle",
+      "group": "createur",
+      "handle": "@grandangleeco"
+    },
+    {
+      "id": "UCAoUBng0Mfu0qn4lPimS6MA",
+      "name": "G Milgram",
+      "group": "verification",
+      "handle": "@ggmilgram"
+    },
+    {
+      "id": "UC8S67r_w5xSQJZpWxPFdisQ",
+      "name": "TPZ",
+      "group": "verification",
+      "handle": "@TPZ"
+    },
+    {
+      "id": "UCq-8pBMM3I40QlrhM9ExXJQ",
+      "name": "La Tronche en Biais",
+      "group": "verification",
+      "handle": "@TroncheEnBiais"
+    },
+    {
+      "id": "UCMFcMhePnH4onVHt2-ItPZw",
+      "name": "Hygiène Mentale",
+      "group": "verification",
+      "handle": "@HygieneMentale"
+    },
+    {
+      "id": "UCU0FhLr6fr7U9GOn6OiQHpQ",
+      "name": "Defakator",
+      "group": "verification",
+      "handle": "@DefakatorOfficiel"
+    },
+    {
+      "id": "UCq9xMn8vudIEJpJ_orJryRg",
+      "name": "Les Observateurs (France 24)",
+      "group": "verification",
+      "handle": "@ObservateursF24"
+    },
+    {
+      "id": "UCoDttl6w1T-Stuw_pvNOvLA",
+      "name": "Édouard Philippe",
+      "group": "candidat",
+      "handle": "@EdouardPhilippe",
+      "actor": "edouard-philippe"
+    },
+    {
+      "id": "UCOcDPuYTuxoRBtfmTBXtqBA",
+      "name": "Gabriel Attal",
+      "group": "candidat",
+      "handle": "@gabriel_attal",
+      "actor": "gabriel-attal"
+    },
+    {
+      "id": "UCRkuLQabW1hsihpZuHJSbEA",
+      "name": "Bruno Retailleau",
+      "group": "candidat",
+      "handle": "@Bruno_Retailleau",
+      "actor": "bruno-retailleau"
+    },
+    {
+      "id": "UC2XZY-bjIEmyLZ9MPJQytZg",
+      "name": "David Lisnard",
+      "group": "candidat",
+      "handle": "@david_lisnard",
+      "actor": "david-lisnard"
+    },
+    {
+      "id": "UCU3z3px1_RCqYBwrs8LJVWg",
+      "name": "Marine Le Pen",
+      "group": "candidat",
+      "handle": "@MarineLePenOfficiel",
+      "actor": "marine-le-pen"
+    },
+    {
+      "id": "UCjTbZBXEw-gplUAnMXLYHpg",
+      "name": "Éric Zemmour",
+      "group": "candidat",
+      "handle": "@EricZemmourOff",
+      "actor": "eric-zemmour"
+    },
+    {
+      "id": "UCfA5DnCDX3Ixy5QOAMGtBlA",
+      "name": "Nicolas Dupont-Aignan",
+      "group": "candidat",
+      "handle": "@dupontaignannicolas",
+      "actor": "nicolas-dupont-aignan"
+    },
+    {
+      "id": "UClaa_CwoQEmSo9Mb_M1f91g",
+      "name": "Florian Philippot",
+      "group": "candidat",
+      "handle": "@FLORIANPHILIPPOT1",
+      "actor": "florian-philippot"
+    },
+    {
+      "id": "UCk-_PEY3iC6DIGJKuoEe9bw",
+      "name": "Jean-Luc Mélenchon",
+      "group": "candidat",
+      "handle": "@JLMelenchon",
+      "actor": "jean-luc-melenchon"
+    },
+    {
+      "id": "UCIQGSp79vVch0vO3Efqif_w",
+      "name": "François Ruffin",
+      "group": "candidat",
+      "handle": "@francois_ruffin",
+      "actor": "francois-ruffin"
+    },
+    {
+      "id": "UCZsh-MrJftAOP_-ZgRgLScw",
+      "name": "Nathalie Arthaud",
+      "group": "candidat",
+      "handle": "@NathalieArthaudLutteOuvriere",
+      "actor": "nathalie-arthaud"
+    },
+    {
+      "id": "UC7LNwiZKfwZmYj_RAWxjkKw",
+      "name": "Anasse Kazib",
+      "group": "candidat",
+      "actor": "anasse-kazib"
+    },
+    {
+      "id": "UCyVYj4HdtEbcMngyD6_OLzg",
+      "name": "Raphaël Glucksmann",
+      "group": "candidat",
+      "handle": "@RaphaelGlucksmann1",
+      "actor": "raphael-glucksmann"
+    },
+    {
+      "id": "UCMIpCiZdVlMoqfra4hT6d4Q",
+      "name": "Dominique de Villepin",
+      "group": "candidat",
+      "handle": "@dominiquedevillepin",
+      "actor": "dominique-de-villepin"
+    },
+    {
+      "id": "UCJEJTYYZkYjLnGCgRDqnIGA",
+      "name": "François Asselineau",
+      "group": "candidat",
+      "handle": "@f_asselineau",
+      "actor": "francois-asselineau"
+    },
+    {
+      "id": "UCMOrzCo7Jdp6qqEX24CXuog",
+      "name": "Juan Branco",
+      "group": "candidat",
+      "handle": "@JuanBrancoFR",
+      "actor": "juan-branco"
+    },
+    {
+      "id": "UC2vHCf5H8i_5WTWmdDvIK2Q",
+      "name": "Francis Lalanne",
+      "group": "candidat",
+      "handle": "@FrancislalanneFrOfficiel",
+      "actor": "francis-lalanne"
+    },
+    {
+      "id": "UCX33oHPsFlI8nhR6524-_Jg",
+      "name": "Sylvain Durif",
+      "group": "candidat",
+      "handle": "@TheGreatMonarch",
+      "actor": "sylvain-durif"
+    }
+  ]
+}
