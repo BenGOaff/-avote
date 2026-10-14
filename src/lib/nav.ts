@@ -3,7 +3,6 @@
  * Toute nouvelle page s'ajoute ici, dans sa rubrique ; rien n'est ajouté ailleurs à la main.
  */
 import { QUESTION_COUNT } from './question-count'
-import { LEGAL } from './legal'
 
 export interface NavItem {
   href: string
@@ -13,12 +12,15 @@ export interface NavItem {
 export interface NavSection {
   id: string
   title: string
+  /** Libellé court du menu déroulant (ordinateur) */
+  short: string
   items: NavItem[]
 }
 
 export const SECTIONS: NavSection[] = [
   {
     id: 'vote',
+    short: 'Ton vote',
     title: 'Ton vote',
     items: [
       { href: '/test', label: 'Le test', desc: `${QUESTION_COUNT} questions, tes priorités, tes lignes rouges.` },
@@ -31,6 +33,7 @@ export const SECTIONS: NavSection[] = [
   },
   {
     id: 'campagne',
+    short: 'Campagne',
     title: 'La campagne',
     items: [
       { href: '/candidats', label: 'Candidats', desc: 'Qui se présente, d’où il vient, ce qu’il propose.' },
@@ -47,6 +50,7 @@ export const SECTIONS: NavSection[] = [
   },
   {
     id: 'medias',
+    short: 'Médias',
     title: 'Les médias',
     items: [
       { href: '/medias', label: 'Qui possède ton info', desc: 'Propriétaires, engagements, rappels à l’ordre de l’Arcom.' },
@@ -58,6 +62,7 @@ export const SECTIONS: NavSection[] = [
   },
   {
     id: 'jouer',
+    short: 'Jouer',
     title: 'Jouer et partager',
     items: [
       { href: '/quiz', label: 'Quiz', desc: 'Ris de ton camp, chambre celui d’en face, teste ta culture citoyenne.' },
@@ -68,6 +73,7 @@ export const SECTIONS: NavSection[] = [
   },
   {
     id: 'site',
+    short: 'Le site',
     title: 'Le site',
     items: [
       { href: '/le-projet', label: 'Le projet', desc: 'Pourquoi ce site existe, qui paie, ce qu’on ne fait pas.' },
@@ -83,15 +89,16 @@ export const SECTIONS: NavSection[] = [
   },
 ]
 
-/** Menu du haut (ordinateur) : l'essentiel, une entrée par rubrique ou presque. */
-export const TOP_NAV: { href: string; label: string }[] = [
-  { href: '/test', label: 'Le test' },
-  { href: '/candidats', label: 'Candidats' },
-  { href: '/comparateur', label: 'Comparer' },
-  { href: '/urne', label: 'L’urne' },
-  { href: '/radar', label: 'Radar' },
-  { href: '/medias', label: 'Médias' },
-  { href: '/quiz', label: 'Quiz' },
-  // La boutique prend la place de la méthode (toujours dans le pied de page) dès que la vitrine est ouverte
-  LEGAL.shop.open ? { href: '/boutique', label: 'Boutique' } : { href: '/methodologie', label: 'Méthode' },
-]
+
+/**
+ * Rubrique d'une page, pour la barre « dans cette rubrique » : l'entrée du plan dont l'adresse est le plus long préfixe
+ * (une fiche /medias/le-monde appartient aux médias, /candidats/x/y à la campagne). Rien pour l'accueil.
+ */
+export function sectionOf(pathname: string): { section: NavSection; current: string } | undefined {
+  if (pathname === '/') return undefined
+  let best: { section: NavSection; current: string } | undefined
+  for (const section of SECTIONS)
+    for (const it of section.items)
+      if ((pathname === it.href || pathname.startsWith(it.href + '/')) && (!best || it.href.length > best.current.length)) best = { section, current: it.href }
+  return best
+}
