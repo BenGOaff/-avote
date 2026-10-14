@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-10-12",
+  "collectedAt": "2026-10-14",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -661,6 +661,19 @@
       },
       "verified": true,
       "addedBy": "veille claude-sonnet-5-5"
+    },
+    {
+      "slug": "sylvain-durif",
+      "name": "Sylvain Durif",
+      "status": "declare",
+      "since": "2026-08-23",
+      "source": {
+        "title": "Présidentielle 2027 : Qui est Sylvain Durif, le « Christ cosmique » qui veut se présenter ?",
+        "publisher": "20 Minutes",
+        "url": "https://www.20minutes.fr/politique/4241053-20260826-presidentielle-2027-sylvain-durif-christ-cosmique-veut-presenter"
+      },
+      "verified": true,
+      "addedBy": "rédaction"
     }
   ]
 }
