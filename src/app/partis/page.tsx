@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { Shuffle } from '@/components/Shuffle'
 import { PageHeader } from '@/components/PageHeader'
 import { getActiveActors } from '@/lib/actors'
 import { BLOCS } from '@/lib/nuances'
@@ -40,7 +41,7 @@ export default function PartisPage() {
           <h2 id={`bloc-${id}`} className={`partis__bloc bloc-${bloc}`} style={{ fontSize: 'var(--h3)' }}>
             <span className="nuance__dot" aria-hidden="true" /> {label}
           </h2>
-          <ul className="partis__grid">
+          <Shuffle className="partis__grid">
             {list.map((p) => {
               const cands = candidatesOf(p, actors)
               const year = p.founded?.date?.slice(0, 4)
@@ -69,7 +70,7 @@ export default function PartisPage() {
                 </li>
               )
             })}
-          </ul>
+          </Shuffle>
         </section>
       ))}
       <p className="small muted section">

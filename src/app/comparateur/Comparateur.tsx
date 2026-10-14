@@ -1,5 +1,6 @@
 'use client'
 
+import { useShuffled } from '@/components/Shuffle'
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { BASIS_LABEL, ordinalLabel } from '@/lib/answers'
@@ -63,6 +64,9 @@ export function Comparateur({ data }: { data: CompareData }) {
   const [theme, setTheme] = useState<string>(data.themes[0]?.id ?? '')
   const items = useMemo(() => data.items.filter((i) => i.theme === theme), [data.items, theme])
   const byslug = useMemo(() => new Map(data.actors.map((a) => [a.slug, a])), [data.actors])
+  // Ordre d'affichage tiré au hasard à chaque visite (boutons et listes), pour ne mettre personne en tête
+  const actors = useShuffled(data.actors)
+  const rank = useMemo(() => new Map(actors.map((a, i) => [a.slug, i])), [actors])
   const known = (slug: string) => Object.keys(data.pos[slug] ?? {}).length
 
   // Lien direct depuis les résultats : ?theme=…&c=slug,slug
@@ -85,7 +89,7 @@ export function Comparateur({ data }: { data: CompareData }) {
           Candidats à comparer <span className="muted">({picked.length}/{MAX})</span>
         </legend>
         <div className="cmp__chips">
-          {data.actors.map((a) => {
+          {actors.map((a) => {
             const on = picked.includes(a.slug)
             return (
               <button
@@ -123,7 +127,7 @@ export function Comparateur({ data }: { data: CompareData }) {
           <li key={it.id} className="cmp__item">
             <h2 className="cmp__q">{it.text}</h2>
             {picked.length === 0 ? (
-              <ByStance it={it.id} data={data} byslug={byslug} />
+              <ByStance it={it.id} data={data} byslug={byslug} rank={rank} />
             ) : (
               <div className="cmp__cols" style={{ ['--cols' as string]: picked.length }}>
                 {picked.map((slug) => {
@@ -156,7 +160,7 @@ export function Comparateur({ data }: { data: CompareData }) {
   )
 }
 
-function ByStance({ it, data, byslug }: { it: string; data: CompareData; byslug: Map<string, CompareData['actors'][number]> }) {
+function ByStance({ it, data, byslug, rank }: { it: string; data: CompareData; byslug: Map<string, CompareData['actors'][number]>; rank: Map<string, number> }) {
   const withPos = data.actors.flatMap((a) => {
     const pos = data.pos[a.slug]?.[it]
     return pos ? [{ ...a, pos }] : []
@@ -176,7 +180,7 @@ function ByStance({ it, data, byslug }: { it: string; data: CompareData; byslug:
                 <p className="muted small">Personne</p>
               ) : (
                 <ul>
-                  {list.map((a) => {
+                  {[...list].sort((x, y) => (rank.get(x.slug) ?? 0) - (rank.get(y.slug) ?? 0)).map((a) => {
                     const pos = a.pos
                     return (
                       <li key={a.slug} className={`bloc-${byslug.get(a.slug)?.bloc}`} title={label(pos.v)}>

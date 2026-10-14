@@ -10,6 +10,7 @@ import { getParcours } from '@/lib/parcours'
 import { getPartis, partyOfPeriod } from '@/lib/partis'
 import { logoOf, portraitOf } from '@/lib/images'
 import { Portrait } from '@/components/Portrait'
+import { Shuffle } from '@/components/Shuffle'
 import { CASIER_TYPES, casierCounts } from '@/lib/casier'
 
 export const metadata: Metadata = {
@@ -44,7 +45,7 @@ export default function CandidatsPage() {
           <p>Dernière mise à jour : {formatDate(candidaturesCollectedAt)}.</p>
         </div>
       ) : (
-        <ul className="cand-grid">
+        <Shuffle className="cand-grid">
           {actors.map((a) => {
             const bloc = nuanceOf(a.slug)?.bloc ?? 'DIV'
             const current = getParcours(a.slug).find((x) => x.to === '')
@@ -85,7 +86,7 @@ export default function CandidatsPage() {
               </li>
             )
           })}
-        </ul>
+        </Shuffle>
       )}
       {retired.length > 0 && (
         <section className="section" aria-labelledby="retires">
@@ -113,7 +114,7 @@ export default function CandidatsPage() {
       )}
       {actors.some((a) => portraitOf(a.slug)) && <p className="small muted">Portraits : illustrations générées par IA.</p>}
       <p className="small" style={{ marginTop: 'var(--s4)' }}>
-        Liste triée par ordre alphabétique. Critères d’inclusion et statuts : <Link href="/methodologie#acteurs">méthode</Link>. Un oubli, une erreur ?{' '}
+        Ordre d’affichage tiré au hasard à chaque visite, pour ne mettre personne en tête. Critères d’inclusion et statuts : <Link href="/methodologie#acteurs">méthode</Link>. Un oubli, une erreur ?{' '}
         <Link href="/corrections#signaler">Signale-le</Link>.
       </p>
     </div>
@@ -140,13 +141,13 @@ function Echiquier({ actors }: { actors: { slug: string; name: string }[] }) {
             <p className="echiquier__head" style={{ margin: 0 }}>
               {b.label} <span className="small muted">{inBloc(b.id).length}</span>
             </p>
-            <ul className="echiquier__list">
+            <Shuffle className="echiquier__list">
               {inBloc(b.id).map((a) => (
                 <li key={a.slug}>
                   <Link href={`/candidats/${a.slug}`}>{a.name}</Link>
                 </li>
               ))}
-            </ul>
+            </Shuffle>
           </div>
         ))}
       </div>
@@ -159,23 +160,25 @@ function Echiquier({ actors }: { actors: { slug: string; name: string }[] }) {
           {divers.length > 0 && (
             <span className="bloc-DIV">
               <span className="nuance__dot" aria-hidden="true" /> <strong>Divers</strong> :{' '}
-              {divers.map((a, i) => (
-                <span key={a.slug}>
-                  {i > 0 && ', '}
-                  <Link href={`/candidats/${a.slug}`}>{a.name}</Link>
-                </span>
-              ))}
+              <Shuffle as="span" className="echiquier__inline">
+                {divers.map((a) => (
+                  <span key={a.slug}>
+                    <Link href={`/candidats/${a.slug}`}>{a.name}</Link>
+                  </span>
+                ))}
+              </Shuffle>
             </span>
           )}
           {unclassified.length > 0 && (
             <span>
               <span className="nuance__dot" aria-hidden="true" /> <strong>Non classés</strong> (pas de parti indiqué) :{' '}
-              {unclassified.map((a, i) => (
-                <span key={a.slug}>
-                  {i > 0 && ', '}
-                  <Link href={`/candidats/${a.slug}`}>{a.name}</Link>
-                </span>
-              ))}
+              <Shuffle as="span" className="echiquier__inline">
+                {unclassified.map((a) => (
+                  <span key={a.slug}>
+                    <Link href={`/candidats/${a.slug}`}>{a.name}</Link>
+                  </span>
+                ))}
+              </Shuffle>
             </span>
           )}
         </div>

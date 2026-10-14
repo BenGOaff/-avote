@@ -5104,3 +5104,6 @@ details.disclosure > div {
 .lexique-list li {
   scroll-margin-top: calc(var(--topbar-h) + var(--s4));
 }
+.echiquier__inline > span + span::before {
+  content: ', ';
+}

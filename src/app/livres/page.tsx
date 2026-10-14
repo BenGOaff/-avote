@@ -1,3 +1,4 @@
+import { Shuffle } from '@/components/Shuffle'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
@@ -49,7 +50,7 @@ export default function LivresPage() {
           <h2 id={`bloc-${b.id}`} style={{ fontSize: 'var(--h3)' }}>
             {b.label}
           </h2>
-          <ul className="livres" role="list">
+          <Shuffle className="livres" role="list">
             {b.livres.map((l) => (
               <li key={l.actor.slug} className="card card--flat livre">
                 {l.cover ? <Cover src={l.cover} /> : <Portrait src={portraitOf(l.actor.slug)} name={l.actor.name} bloc={b.id} size={56} />}
@@ -67,7 +68,7 @@ export default function LivresPage() {
                 </div>
               </li>
             ))}
-          </ul>
+          </Shuffle>
         </section>
       ))}
       {shelves.length > 0 && (
