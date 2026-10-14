@@ -3022,6 +3022,386 @@
           "publisher": "À nous maintenant (site officiel)"
         }
       ]
+    },
+    {
+      "slug": "upr",
+      "name": "Union populaire républicaine",
+      "sigle": "UPR",
+      "nuance": "",
+      "founded": {
+        "date": "2007-03-25",
+        "text": "Fondée le 25 mars 2007 par François Asselineau, ancien conseiller de Paris, autour de la sortie de l'Union européenne, de l'euro et de l'OTAN.",
+        "quote": "Le 25 mars 2007, il fonde l'Union populaire républicaine (UPR), parti souverainiste militant pour la sortie unilatérale de l'Union européenne, de la zone euro et de l'OTAN via l'article 50 du TUE.",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+        "publisher": "Sud Radio"
+      },
+      "leaders": [
+        {
+          "name": "François Asselineau",
+          "role": "président",
+          "since": "2007"
+        },
+        {
+          "name": "Benjamin Nart",
+          "role": "secrétaire général",
+          "since": ""
+        },
+        {
+          "name": "Catherine Lassenay",
+          "role": "trésorière",
+          "since": ""
+        }
+      ],
+      "leadersSource": {
+        "quote": "François ASSELINEAU Président Haut fonctionnaire en retraite âgé de 68 ans, François Asselineau a fondé l'Union Populaire Républicaine le 25 mars 2007.",
+        "url": "https://upr.fr/responsables",
+        "publisher": "UPR (site officiel)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "L'UPR se présente comme un mouvement « transpartisan » qui veut rendre à la France son indépendance politique, économique et militaire par la sortie de l'Union européenne, de l'euro et de l'OTAN.",
+        "quote": "pour rendre à la France son indépendance politique, économique et militaire, en proposant la sortie de l'Union européenne, de l'euro et de l'OTAN",
+        "url": "https://upr.fr/qui-sommes-nous",
+        "publisher": "UPR (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2007-03-25",
+          "text": "Fondation de l'UPR, le jour du 50e anniversaire du traité de Rome.",
+          "quote": "L'UPR est fondée le 25 mars 2007 par François Asselineau, à l'occasion du 50e anniversaire du traité de Rome.",
+          "url": "https://upr.fr/qui-sommes-nous",
+          "publisher": "UPR (site officiel)"
+        },
+        {
+          "date": "2017",
+          "text": "François Asselineau obtient 0,92 % des suffrages exprimés au premier tour de l'élection présidentielle.",
+          "quote": "2017 : Candidat à l'élection présidentielle (recueille 0,92 % des suffrages exprimés au premier tour).",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+          "publisher": "Sud Radio"
+        },
+        {
+          "date": "2022",
+          "text": "François Asselineau ne réunit pas les 500 parrainages et n'est pas candidat à l'élection présidentielle.",
+          "quote": "Après avoir été candidat en 2017, sans réussir à l’être en 2022, faut de parrainages suffisants, le président de l’Union populaire républicaine, François Asselineau , entend bien retenter sa chance.",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-de-2027-qui-sont-les-candidats-declares-ou-presque-a-lelection",
+          "publisher": "Public Sénat"
+        },
+        {
+          "date": "2024",
+          "text": "François Asselineau conduit la liste nationale de l'UPR aux élections européennes, comme en 2014 et en 2019.",
+          "quote": "2014, 2019, 2024 : Tête de liste nationale de l'UPR aux élections européennes.",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-asselineau",
+          "publisher": "Sud Radio"
+        },
+        {
+          "date": "2026-09-30",
+          "text": "François Asselineau lance sa campagne pour l'élection présidentielle de 2027 lors de son discours de rentrée.",
+          "quote": "a officiellement lancé sa campagne pour l’élection présidentielle de 2027",
+          "url": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale",
+          "publisher": "UPR (site officiel)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "europe",
+          "text": "Notifier dès la première semaine du mandat l'activation de l'article 50 du traité sur l'Union européenne, pour une sortie en deux ans, sans référendum préalable.",
+          "quote": "dès la première semaine de son mandat, il s’engage à notifier l’activation de l’article 50 du Traité sur l’Union européenne afin d’engager une procédure de sortie sous deux ans",
+          "url": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale",
+          "publisher": "UPR (discours de rentrée de François Asselineau, 30 septembre 2026)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Notifier immédiatement aux États-Unis la sortie de l'OTAN (article 13), effective en un an.",
+          "quote": "notification immédiate au Département d’État américain via l’article 13 pour faire sortir la France de l’alliance sous un an",
+          "url": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale",
+          "publisher": "UPR (discours de rentrée de François Asselineau, 30 septembre 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Lancer un grand emprunt national réservé aux Français pour racheter la dette publique détenue par des fonds étrangers.",
+          "quote": "lancement d’un grand emprunt national réservé aux Français pour racheter la dette publique détenue par des fonds étrangers",
+          "url": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale",
+          "publisher": "UPR (discours de rentrée de François Asselineau, 30 septembre 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Instaurer le référendum d'initiative citoyenne (RIC).",
+          "quote": "Démocratie directe et liberté d’expression : instauration du Référendum d’Initiative Citoyenne (RIC)",
+          "url": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale",
+          "publisher": "UPR (discours de rentrée de François Asselineau, 30 septembre 2026)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Réduire le nombre de députés et de sénateurs, supprimer la moitié des conseillers départementaux et supprimer les régions.",
+          "quote": "réduction du nombre de députés et de sénateurs, suppression de la moitié des conseillers départementaux et suppression pure et simple des régions",
+          "url": "https://upr.fr/universites/discours-de-rentree-2026-de-francois-asselineau-la-liberation-nationale",
+          "publisher": "UPR (discours de rentrée de François Asselineau, 30 septembre 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "la-france-humaniste",
+      "name": "La France humaniste",
+      "sigle": "",
+      "nuance": "",
+      "founded": {
+        "date": "2025-06-23",
+        "text": "Lancée le 23 juin 2025 par l'ancien Premier ministre Dominique de Villepin, qui en devient le président d'honneur.",
+        "quote": "l’ex-Premier ministre Dominique de Villepin a annoncé lundi créer son propre parti, appelé La France humaniste, dont il sera le président d’honneur",
+        "url": "https://africanmanager.com/?p=540535",
+        "publisher": "African Manager (24 juin 2025)"
+      },
+      "leaders": [
+        {
+          "name": "Benoît Jimenez",
+          "role": "à la tête du mouvement",
+          "since": "2025"
+        },
+        {
+          "name": "Dominique de Villepin",
+          "role": "président d'honneur",
+          "since": "2025"
+        }
+      ],
+      "leadersSource": {
+        "quote": "un mouvement d'idées, de citoyens\", qui sera dirigé par un membre de l'Union des démocrates et indépendants (UDI, centre-droite), Benoît Jimenez",
+        "url": "https://www.rts.ch/info/monde/2025/article/dominique-de-villepin-lance-un-parti-pour-la-presidentielle-2027-28923750.html",
+        "publisher": "RTS (24 juin 2025)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Selon ses statuts, le mouvement a pour objet la défense des valeurs de la République, des principes de la Constitution et des grands traités internationaux, dont la Convention européenne des droits de l'homme.",
+        "quote": "le Mouvement a pour objet la défense des valeurs de la République, de Liberté, d’Égalité et de Fraternité, des principes fondamentaux consacrés par la Constitution française et les grands traités de droit international",
+        "url": "https://www.lafrancehumaniste.fr/statuts.pdf",
+        "publisher": "La France humaniste (statuts)"
+      },
+      "dates": [
+        {
+          "date": "2025-06-23",
+          "text": "Assemblée générale constitutive : la cotisation annuelle est fixée à zéro euro.",
+          "quote": "conformément au procès-verbal de l’assemblée générale du 23 juin 2025",
+          "url": "https://www.lafrancehumaniste.fr/reglement-interieur.pdf",
+          "publisher": "La France humaniste (règlement intérieur)"
+        },
+        {
+          "date": "2026-01-19",
+          "text": "Dominique de Villepin dit être en campagne pour réunir les 500 parrainages d'élus, sans officialiser sa candidature.",
+          "quote": "Dominique de Villepin indiqué être d'ores et déjà en campagne pour collecter les 500 parrainages d'élus nécessaires à une candidature à l'élection présidentielle",
+          "url": "https://lcp.fr/actualites/dominique-de-villepin-nous-voulons-etre-presents-en-2027-429413",
+          "publisher": "LCP"
+        },
+        {
+          "date": "2026-03-27",
+          "text": "Discours de Dominique de Villepin à la Sorbonne, publié par le mouvement comme texte socle de son projet pour 2027.",
+          "quote": "Discours lors de la Conférence à La Sorbonne le 27 mars 2026 par Dominique de Villepin",
+          "url": "https://lafrancehumaniste.fr/articles/le-moment-francais-sorbonne.html",
+          "publisher": "La France humaniste (site officiel)"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "économie",
+          "text": "Supprimer par une loi l'ensemble des niches fiscales et sociales, en gardant le taux réduit de TVA sur les produits essentiels et le quotient familial.",
+          "quote": "Ce sera le sens de cette loi d’extinction de toutes les niches fiscales et sociales. Le taux réduit de TVA sur les produits essentiels reste important à mes yeux, ainsi que le quotient familial",
+          "url": "https://lafrancehumaniste.fr/articles/big-bang-la-regle-republicaine.html",
+          "publisher": "La France humaniste (chronique de Dominique de Villepin, 28 août 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Ramener toute la fiscalité à neuf grands impôts et le code des impôts à quarante pages.",
+          "quote": "Je propose de porter à neuf grands impôts toute la fiscalité française, réduisant le code des impôts de dizaines de milliers à quarante pages",
+          "url": "https://lafrancehumaniste.fr/articles/big-bang-la-regle-republicaine.html",
+          "publisher": "La France humaniste (chronique de Dominique de Villepin, 28 août 2026)"
+        },
+        {
+          "theme": "économie",
+          "text": "Ramener le déficit public sous 3 % en 2031 et l'y maintenir.",
+          "quote": "Je m’engage à les ramener sous les 3% en 2031 et à les y maintenir ensuite.",
+          "url": "https://lafrancehumaniste.fr/articles/big-bang-la-regle-republicaine.html",
+          "publisher": "La France humaniste (chronique de Dominique de Villepin, 28 août 2026)"
+        },
+        {
+          "theme": "climat",
+          "text": "Fusionner les taxes environnementales en un impôt fondé sur un prix unique du carbone, dont les recettes seraient reversées à tous sous forme de « dividende climat universel ».",
+          "quote": "Un impôt de justice environnementale fusionnant l’ensemble des taxes existantes, autour du grand principe d’un prix unique du carbone incitant à la décarbonation, dont les recettes carbone seraient redistribuées à tous sous forme d’un dividende climat universel",
+          "url": "https://lafrancehumaniste.fr/articles/big-bang-la-regle-republicaine.html",
+          "publisher": "La France humaniste (chronique de Dominique de Villepin, 28 août 2026)"
+        },
+        {
+          "theme": "europe",
+          "text": "Étendre les décisions européennes prises à la majorité qualifiée en matière de défense, sous le contrôle d'un conseil de sécurité européen réunissant les cinq grandes armées du continent.",
+          "quote": "passe par l’extension d’un plus grand champ de décision à la majorité qualifiée, mais encadré par le contrôle étroit des cinq grandes armées continentales réunies au sein du conseil de sécurité européen",
+          "url": "https://lafrancehumaniste.fr/articles/moment-europeen-europe-souveraine.html",
+          "publisher": "La France humaniste (chronique de Dominique de Villepin, 6 mars 2026)"
+        }
+      ]
+    },
+    {
+      "slug": "les-ruches",
+      "name": "Les Ruches",
+      "sigle": "",
+      "nuance": "",
+      "founded": null,
+      "leaders": [],
+      "leadersSource": null,
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Les Ruches se présentent comme « un mouvement citoyen organisé en cellules locales », sans parti ni chef, qui porte la candidature de Juan Branco.",
+        "quote": "Un mouvement citoyen organisé en cellules locales. Sans parti, sans chef, financé à 100 % par le peuple.",
+        "url": "https://ruches.org/",
+        "publisher": "Les Ruches (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2025-12-19",
+          "text": "Juan Branco annonce sa candidature à l'élection présidentielle sur Sud Radio ; Les Ruches portent sa démarche.",
+          "quote": "Il annonce sa candidature en présentant son projet politique au micro de Sud Radio le 19 décembre 2025.",
+          "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+          "publisher": "Sud Radio"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "démocratie",
+          "text": "Instaurer le référendum d'initiative citoyenne et des mandats impératifs et révocables.",
+          "quote": "RIC et mandats impératifs et révocables",
+          "url": "https://ruches.org/le-projet",
+          "publisher": "Les Ruches (programme « La Voie »)"
+        },
+        {
+          "theme": "europe",
+          "text": "Organiser des référendums sur l'appartenance à l'Union européenne et à l'euro.",
+          "quote": "Référendums sur l’appartenance à l’Union Européenne et à l’euro",
+          "url": "https://ruches.org/le-projet",
+          "publisher": "Les Ruches (programme « La Voie »)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Organiser un référendum sur la sortie de l'OTAN.",
+          "quote": "Référendum sur la sortie de l’OTAN",
+          "url": "https://ruches.org/le-projet",
+          "publisher": "Les Ruches (programme « La Voie »)"
+        },
+        {
+          "theme": "économie",
+          "text": "Nationaliser l'électricité, l'eau, la santé, les télécoms et les autoroutes.",
+          "quote": "Nationalisation du marché de l’électricité, de l’eau, de la santé, des télécoms et des autoroutes",
+          "url": "https://ruches.org/le-projet",
+          "publisher": "Les Ruches (programme « La Voie »)"
+        },
+        {
+          "theme": "économie",
+          "text": "Supprimer plus de 300 taxes, cotisations et impôts.",
+          "quote": "Suppression de plus de 300 taxes, cotisations et impôts",
+          "url": "https://ruches.org/le-projet",
+          "publisher": "Les Ruches (programme « La Voie »)"
+        }
+      ]
+    },
+    {
+      "slug": "la-france-humaine-et-forte",
+      "name": "La France humaine et forte",
+      "sigle": "FHuF",
+      "nuance": "",
+      "founded": {
+        "date": "2024-10",
+        "text": "Mouvement lancé en octobre 2024 par Karim Bouamrane, maire socialiste de Saint-Ouen-sur-Seine.",
+        "quote": "Depuis octobre 2024 : Fondateur et dirigeant du mouvement social-démocrate La France humaine et forte (FHuF).",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-karim-bouamrane",
+        "publisher": "Sud Radio"
+      },
+      "leaders": [
+        {
+          "name": "Karim Bouamrane",
+          "role": "président",
+          "since": "2024"
+        }
+      ],
+      "leadersSource": {
+        "quote": "président du mouvement La France humaine et forte (FHuF)",
+        "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-karim-bouamrane",
+        "publisher": "Sud Radio"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Le mouvement résume son projet en cinq fondements : protéger, loger, soigner, éduquer et redonner de l'espoir.",
+        "quote": "Protéger, loger, soigner, éduquer et redonner de l’espoir : cinq fondements pour améliorer concrètement la vie des Françaises et des Français.",
+        "url": "https://www.karimbouamrane2027.org/",
+        "publisher": "La France humaine et forte (site de campagne)"
+      },
+      "dates": [
+        {
+          "date": "2024-10",
+          "text": "Présentation du mouvement, annoncée en présence de Bernard Cazeneuve, Carole Delga, François Hollande, Raphaël Glucksmann et Hélène Geoffroy.",
+          "quote": "Lors de notre présentation, Bernard Cazeneuve, Carole Delga, François Hollande, Raphaël Glucksmann, Hélène Geoffroy seront là.",
+          "url": "https://www.lecourrierdelatlas.com/karim-bouamrane-rn-gauche-france-humaine-forte/",
+          "publisher": "Le Courrier de l'Atlas (entretien avec Karim Bouamrane)"
+        },
+        {
+          "date": "2026-06-09",
+          "text": "Karim Bouamrane annonce sa candidature à l'élection présidentielle sur France Inter.",
+          "quote": "«Je suis candidat pour être le prochain président de la République», a lancé l’homme sur France Inter ce mardi.",
+          "url": "https://www.lefigaro.fr/politique/presidentielle-2027-je-suis-candidat-annonce-karim-bouamrane-ps-20260609",
+          "publisher": "Le Figaro"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "sécurité",
+          "text": "Faire de la protection des enfants la grande cause nationale, avec celle des femmes victimes de violences conjugales ou sexuelles.",
+          "quote": "Notre grande cause nationale sera celle de la protection des enfants",
+          "url": "https://www.karimbouamrane2027.org/manifeste.html",
+          "publisher": "La France humaine et forte (manifeste de Karim Bouamrane)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Augmenter l'effort de défense.",
+          "quote": "J'augmenterai l'effort de défense.",
+          "url": "https://www.karimbouamrane2027.org/manifeste.html",
+          "publisher": "La France humaine et forte (manifeste de Karim Bouamrane)"
+        },
+        {
+          "theme": "sécurité",
+          "text": "Accueillir ceux qui ont le droit de rester, agir à la source des migrations par le développement et reconduire les personnes en situation irrégulière.",
+          "quote": "accueillir dignement ceux qui ont le droit de rester, agir à la source des migrations par le développement et la coopération, et reconduire ceux qui se maintiennent irrégulièrement sur notre territoire",
+          "url": "https://www.karimbouamrane2027.org/manifeste.html",
+          "publisher": "La France humaine et forte (manifeste de Karim Bouamrane)"
+        },
+        {
+          "theme": "climat",
+          "text": "Mener une transition écologique qui rénove les logements des familles modestes et protège les agriculteurs de règles non exigées des importations.",
+          "quote": "Je veux une transition juste : qui rénove les logements des familles modestes, qui crée des emplois durables dans nos territoires, et qui protège nos agriculteurs, sans leur imposer des règles que nous refusons d'exiger de ceux qui nous nourrissent depuis l'étranger.",
+          "url": "https://www.karimbouamrane2027.org/manifeste.html",
+          "publisher": "La France humaine et forte (manifeste de Karim Bouamrane)"
+        },
+        {
+          "theme": "économie",
+          "text": "Simplifier l'action publique, réduire les doublons administratifs et alléger les normes.",
+          "quote": "Nous simplifierons l'action publique. Nous réduirons les doublons administratifs.",
+          "url": "https://www.karimbouamrane2027.org/manifeste.html",
+          "publisher": "La France humaine et forte (manifeste de Karim Bouamrane)"
+        }
+      ]
     }
   ]
 }
