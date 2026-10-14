@@ -1,0 +1,28 @@
+{
+  "id": "2026-10-14-pepite-cli-09-contre",
+  "at": "2026-10-14T12:21:47.171Z",
+  "kind": "pepite",
+  "card": {
+    "kicker": "SEULE CONTRE QUATRE",
+    "title": "Thermiques après 2035 : 4 candidats pour, une seule nettement contre",
+    "line": "6 candidats se sont prononcés sur la vente de voitures neuves essence et diesel après 2035.",
+    "actor": "marine-tondelier",
+    "quote": "Maintenir l’objectif de 100 % de véhicules zéro émission en 2035 pour les ventes de véhicules neufs.",
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Autoriser encore la vente de voitures neuves essence et diesel après 2035 ? 4 candidats disent nettement oui. Marine Tondelier est la seule à dire nettement non. Et toi ?",
+    "linkedin": "Faut-il continuer à autoriser la vente de voitures neuves essence et diesel après 2035 ? Sur 6 candidats qui se sont prononcés, 4 répondent nettement oui.\n\nUne seule candidate répond nettement non : Marine Tondelier. Le programme de son parti, Les Écologistes, prévoit de « Maintenir l’objectif de 100 % de véhicules zéro émission en 2035 pour les ventes de véhicules neufs. »\n\nL'affirmation soumise dans le test est la suivante : « La vente de voitures neuves essence et diesel devrait rester autorisée après 2035. » Sur ce point, 4 candidats sont d'accord, une candidate est en désaccord.\n\nToi, tu te places où sur cette question : autoriser encore ou maintenir l'objectif de 2035 ?\n\n#presidentielle2027",
+    "facebook": "Autoriser encore la vente de voitures neuves essence et diesel après 2035 ? Sur 6 candidats qui se sont prononcés, 4 disent nettement oui. Marine Tondelier est la seule à dire nettement non. Et toi, tu es de quel côté ? Le test est sur çavote.fr",
+    "instagram": "Voitures essence et diesel après 2035 : 4 candidats pour, 1 contre.\nL'affirmation du test : « La vente de voitures neuves essence et diesel devrait rester autorisée après 2035. »\n6 candidats se sont prononcés.\n4 sont nettement pour.\nMarine Tondelier est la seule nettement contre.\nTu te mets dans quel camp ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #voitureelectrique #thermique2035"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test",
+  "source": {
+    "publisher": "Les Écologistes",
+    "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+    "title": "Pour une prospérité écologique – Le nouveau programme des Écologistes (juillet 2026)",
+    "quote": "Maintenir l’objectif de 100 % de véhicules zéro émission en 2035 pour les ventes de véhicules neufs.",
+    "who": "Marine Tondelier (programme de son parti)"
+  }
+}

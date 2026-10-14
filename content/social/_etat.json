@@ -1,7 +1,8 @@
 {
  "mentions": {
   "marine-le-pen": 1,
-  "dominique-de-villepin": 1
+  "dominique-de-villepin": 1,
+  "marine-tondelier": 1
  },
  "items": {
   "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor": "2026-10-10T10:30:53.306Z",
@@ -16,7 +17,8 @@
   "20261012-2335-carburants-sebastien-lecornu-affirme-que-le-gazole": "2026-10-13T00:57:43.877Z",
   "20261013-1404-bruno-retailleau-presente-un-plan-de-197-milliards": "2026-10-13T14:34:19.797Z",
   "dem-01-fracture": "2026-10-13T14:34:19.797Z",
-  "rdv-comparateur": "2026-10-13T21:33:01.235Z"
+  "rdv-comparateur": "2026-10-13T21:33:01.235Z",
+  "cli-09-contre": "2026-10-14T12:21:47.171Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -75,7 +77,13 @@
   "20261013-2148-edouard-philippe-la-plaignante-a-l-origine-de-l-en",
   "20261013-2148-loi-integrale-contre-les-violences-sexuelles-l-ass",
   "20261013-2148-mouvement-lyceen-nunez-annonce-36-enquetes-de-l-ig",
-  "20261013-2148-presidentielle-2027-marine-le-pen-reprend-en-parti"
+  "20261013-2148-presidentielle-2027-marine-le-pen-reprend-en-parti",
+  "20261014-1143-blocus-lyceen-macron-juge-legitimes-les-angoisses",
+  "20261014-1143-budget-2027-l-assemblee-rejette-la-motion-de-rejet",
+  "20261014-1143-lfi-presente-son-projet-de-budget-2027-avec-25-mil",
+  "20261014-1143-violences-sexistes-et-sexuelles-la-loi-integrale-a",
+  "2026-10-14-ia-et-elections",
+  "2026-10-14-on-n-a-jamais-essaye"
  ],
  "rdv": 3
 }
