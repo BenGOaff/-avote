@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-13T22:52:55.253Z",
+  "updatedAt": "2026-10-14T12:55:31.506Z",
   "items": [
+    {
+      "id": "une-enseignante-parisienne-aurait-ete-licenciee-pour-avoir-e-50270b",
+      "claim": "Une enseignante parisienne aurait été licenciée pour avoir encordé des enfants",
+      "verdict": "faux",
+      "truth": "Selon Fake Off, les faits du récit qui circule sur TikTok semblent entièrement fictifs.",
+      "spreaders": [],
+      "topic": "ecole",
+      "firstSeen": "2026-10-14",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/societe/4253121-20261014-enseignante-parisienne-licenciee-avoir-encorde-enfants-gare-infox?amp%3Bat_campaign=149",
+          "title": "Une enseignante parisienne licenciée pour avoir « encordé » des enfants ? Gare à l’infox",
+          "date": "2026-10-14",
+          "quote": "les faits qui s’y déroulent semblent entièrement fictifs"
+        }
+      ]
+    },
     {
       "id": "bally-bagayoko-refuserait-de-combattre-les-mutilations-sexue-89ad25",
       "claim": "Bally Bagayoko refuserait de combattre les mutilations sexuelles en s'abstenant sur un vœu contre l'excision",
