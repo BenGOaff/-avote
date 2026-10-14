@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T18:18:49.390Z",
+  "updatedAt": "2026-10-14T11:51:53.763Z",
   "medias": {
     "france-2": {
       "slug": "france-2",
@@ -1845,6 +1845,32 @@
       "date": "2026-04-22",
       "checkedAt": "2026-10-12T10:30:00.000Z",
       "model": "recherche vérifiée hors API"
+    },
+    "les-inrocks": {
+      "slug": "les-inrocks",
+      "owners": [
+        {
+          "name": "Combat (Combat Media)",
+          "kind": "entreprise",
+          "share": ""
+        }
+      ],
+      "group": "Combat (Combat Media)",
+      "controller": "Matthieu Pigasse",
+      "controllerKind": "personne",
+      "otherMedia": [
+        "Radio Nova",
+        "Rock en Seine (festival)",
+        "We Love Green (festival)"
+      ],
+      "note": "Selon une dépêche AFP du 12 octobre 2026, Les Inrockuptibles font partie des médias et marques du groupe Combat, présenté comme le groupe de médias de Matthieu Pigasse. Aucune vente plus récente n'a été trouvée.",
+      "quote": "veut s'appuyer sur les médias et les marques existantes de Combat, comme Radio Nova, le magazine Les Inrockuptibles, et plusieurs festivals comme Rock en Seine et We Love Green.",
+      "url": "https://www.cbnews.fr/medias/matthieu-pigasse-entre-course-tnt",
+      "sourceTitle": "Matthieu Pigasse entre dans la course à la TNT",
+      "publisher": "CB News (dépêche AFP)",
+      "date": "2026-10-12",
+      "checkedAt": "2026-10-14T11:51:53.763Z",
+      "model": "claude-opus-5-5"
     }
   },
   "alertes": {
