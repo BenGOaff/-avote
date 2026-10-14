@@ -22,6 +22,7 @@ import { VOTE_LABEL, VOTES_FETCHED_AT, VOTES_SOURCE, isDeputy, scrutinLabel, scr
 import { SENAT_FETCHED_AT, senatLabel, senatOf } from '@/lib/votes-senat'
 import { isAffiliate, livreOf } from '@/lib/livres'
 import { actorUpdatedAt, getCandidatSujets } from '@/lib/sujets'
+import { duelsOf } from '@/lib/duels'
 import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
 export const dynamicParams = false
@@ -200,6 +201,20 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
           Comparer avec mes réponses
         </Link>
       </p>
+      {a.status !== 'retire' && duelsOf(a.slug).length > 0 && (
+        <nav className="section" aria-labelledby="duels">
+          <h2 id="duels" style={{ fontSize: 'var(--h3)' }}>
+            {UI_COPY.candidateDuel.listTitle}
+          </h2>
+          <p className="sujet__tabs">
+            {duelsOf(a.slug).map((d) => (
+              <Link key={d.slug} href={`/comparateur/${d.slug}`} className="cmp__theme sujet__tab">
+                {d.a.name} ou {d.b.name}
+              </Link>
+            ))}
+          </p>
+        </nav>
+      )}
       <ShareButtons url={absolute(`/candidats/${a.slug}`)} title={a.name} text={UI_COPY.candidate.shareText(a.name)} />
     </div>
   )

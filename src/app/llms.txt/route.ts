@@ -4,6 +4,7 @@ import { questionnaire } from '@/lib/data'
 import { getActiveActors } from '@/lib/actors'
 import { getCandidatSujets, getSujets } from '@/lib/sujets'
 import { getIntox, intoxPath, VERDICT_LABEL } from '@/lib/intox'
+import { getCandidateDuels } from '@/lib/duels'
 
 export const dynamic = 'force-static'
 
@@ -40,6 +41,12 @@ ${getActiveActors()
   .map((a) => ({ a, list: getCandidatSujets(a.slug) }))
   .filter((x) => x.list.length > 0)
   .map(({ a, list }) => `- ${a.name} (${absolute(`/candidats/${a.slug}`)}) : ${list.map((cs) => `[${cs.sujet.theme.label}](${absolute(`/candidats/${a.slug}/${cs.sujet.slug}`)})`).join(', ')}`)
+  .join('\n')}
+
+## Duels entre candidats : positions comparées
+Comparaison de deux candidats sur les propositions où les deux ont une position nette et sourcée (désaccords, nuances, accords, citations) :
+${getCandidateDuels()
+  .map((d) => `- [${d.a.name} ou ${d.b.name}](${absolute(`/comparateur/${d.slug}`)}): ${d.result.items.filter((x) => x.verdict === 'desaccord').length} désaccords sur ${d.result.both} propositions comparées`)
   .join('\n')}
 
 ## Fake news démontées : affirmations FAUSSES

@@ -179,3 +179,10 @@ export function candidatSujetSummary(name: string, cs: CandidatSujet): { lead: s
     sides: SIDES.map((side) => ({ side, texts: cs.rows.filter((r) => r.stance?.side === side).map((r) => r.item.text) })).filter((x) => x.texts.length > 0),
   }
 }
+
+let stanceIndex: Map<string, Stance> | null = null
+/** Position sourcée d'un candidat sur une proposition (citation, source, libellé), telle qu'affichée sur les pages sujets */
+export function stanceOf(slug: string, itemId: string): Stance | undefined {
+  stanceIndex ??= new Map(sujetsCached().flatMap((s) => s.items.flatMap((r) => r.stances.map((st) => [`${st.slug}|${r.item.id}`, st] as const))))
+  return stanceIndex.get(`${slug}|${itemId}`)
+}

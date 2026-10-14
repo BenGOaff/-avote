@@ -448,6 +448,27 @@ export const UI_COPY = {
     urne: 'Glisser un bulletin dans l’urne',
     how: 'Comment les positions sont établies',
   },
+  candidateDuel: {
+    metaTitle: (a: string, b: string) => `${a} ou ${b} : leurs positions comparées pour 2027`,
+    metaDescription: (a: string, b: string, n: number) =>
+      `${a} et ${b} comparés sur ${n} propositions de la présidentielle 2027 : désaccords, nuances, points d’accord, avec la citation et la source de chaque position.`,
+    title: (a: string, b: string) => `${a} ou ${b} : leurs positions comparées`,
+    lede: 'Seules les propositions où les deux ont une position nette et sourcée sont comparées. Une position ambiguë ou absente n’est jamais comptée.',
+    counts: (both: number, desaccord: number, nuance: number, accord: number) =>
+      `Sur ${both} propositions où les deux ont une position nette : ${desaccord} en désaccord, ${nuance} avec des nuances, ${accord} d’accord.`,
+    score: (n: number) => `Indice d’accord : ${n} sur 100.`,
+    scoreHow: 'Même calcul que le duel : pour chaque proposition, l’écart entre les deux positions sur l’échelle en cinq crans, puis la moyenne.',
+    topDisagree: 'Leurs désaccords les plus nets',
+    sections: { desaccord: 'Ce qui les oppose', nuance: 'Même direction, pas la même intensité', accord: 'Les points d’accord' },
+    notCompared: (n: number) => `${n} autre${n > 1 ? 's' : ''} proposition${n > 1 ? 's' : ''} : la position d’au moins un des deux manque ou n’est pas nette. Pas de comparaison.`,
+    allCandidates: 'Tous les candidats sur ce point',
+    others: (name: string) => `Les autres duels de ${name}`,
+    fiche: (name: string) => `La fiche de ${name}`,
+    listTitle: 'Les duels entre candidats',
+    listNote: (n: number, min: number) => `${n} duels, entre candidats qui ont chacun au moins ${min} positions connues et assez de positions nettes en commun.`,
+    duelGame: 'Faire le duel avec un proche',
+    testCta: 'Comparer avec mes réponses',
+  },
   candidatSujet: {
     metaTitle: (label: string, name: string) => `${label} : les positions de ${name} pour 2027`,
     metaDescription: (label: string, name: string, n: number) => `Ce que ${name} propose sur ${label.toLowerCase()} pour la présidentielle 2027 : ${n} positions, chacune avec sa citation et sa source.`,
