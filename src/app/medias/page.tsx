@@ -18,6 +18,7 @@ import {
   getMedias,
   freeMedias,
   orientationAxis,
+  orientationNuanceOf,
   mediasUpdatedAt,
   type MediaType,
 } from '@/lib/medias'
@@ -124,6 +125,14 @@ export default function MediasPage() {
                 <span>← gauche</span>
                 <span>droite →</span>
               </p>
+              {axis.columns
+                .flatMap((c) => c.medias)
+                .filter((m) => orientationNuanceOf(m.slug))
+                .map((m) => (
+                  <p key={m.slug} className="small" style={{ margin: 'var(--s2) 0 0' }}>
+                    <span className="media-card__k">{t.nuance}</span> <a href={`/medias/${m.slug}`}>{m.name}</a> : {orientationNuanceOf(m.slug)!.text}
+                  </p>
+                ))}
               {axis.others.length > 0 && (
                 <p className="echiquier__extra">
                   {axis.others.map((m) => (

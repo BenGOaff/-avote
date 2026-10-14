@@ -3,6 +3,7 @@
  */
 import liste from '@content/medias/liste.json'
 import store from '@content/medias/proprietaires.json'
+import nuancesStore from '@content/medias/orientation-nuances.json'
 
 export type MediaType = 'tv' | 'radio' | 'presse' | 'web'
 
@@ -184,3 +185,10 @@ export function byController(medias: MediaEntry[]): { controller: string; kind: 
   }
   return [...groups.values()].sort((a, b) => b.medias.length - a.medias.length || a.controller.localeCompare(b.controller, 'fr'))
 }
+
+export interface OrientationNuance {
+  text: string
+  sources: { title: string; publisher: string; url: string; quote: string }[]
+}
+/** Précision factuelle à côté d'une orientation d'eurotopics (content/medias/orientation-nuances.json) ; le libellé n'est jamais changé. */
+export const orientationNuanceOf = (slug: string): OrientationNuance | undefined => (nuancesStore.nuances as Record<string, OrientationNuance>)[slug]

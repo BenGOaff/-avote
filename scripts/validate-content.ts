@@ -227,6 +227,11 @@ for (const [slug, o] of Object.entries((owned as { orientations?: Record<string,
   if (!mediaList.medias.some((x) => x.slug === slug)) errors.push(`orientations : ${slug} absent de la liste`)
   if (!/^https:\/\/([a-z0-9-]+\.)*eurotopics\.net\//.test(o.url) || !o.quote || !o.label) errors.push(`orientations : ${slug} sans source eurotopics ou sans extrait`)
 }
+const orientationNuances = JSON.parse(readFileSync(path.join(ROOT, 'content/medias/orientation-nuances.json'), 'utf8')) as { nuances: Record<string, { text: string; sources: { url: string }[] }> }
+for (const [slug, n] of Object.entries(orientationNuances.nuances)) {
+  if (!(owned as { orientations?: Record<string, unknown> }).orientations?.[slug]) errors.push(`nuance d'orientation : ${slug} sans orientation eurotopics`)
+  if (!n.text || n.sources.length === 0 || n.sources.some((x) => !x.url.startsWith('https://'))) errors.push(`nuance d'orientation : ${slug} sans texte ou sans source https`)
+}
 for (const [ctl, e] of Object.entries((owned as { engagements?: Record<string, { items: { url: string; quote: string; text: string }[] }> }).engagements ?? {})) {
   if (!Object.values(owned.medias).some((m) => m.controller === ctl)) errors.push(`engagements : « ${ctl} » ne contrôle aucun média de la liste`)
   for (const it of e.items) if (!it.url?.startsWith('https://') || !it.quote || !it.text) errors.push(`engagements : « ${ctl} » sans source https ou sans extrait`)
