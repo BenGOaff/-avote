@@ -12,11 +12,27 @@
       },
       "polemiques": [
         {
+          "date": "2023-08-03",
+          "title": "Suspension au Niger",
+          "text": "Une semaine après le coup d'État au Niger, la diffusion de France 24 et de RFI a été coupée sur instruction des nouvelles autorités militaires. France Médias Monde a dénoncé une décision prise « hors de tout cadre conventionnel et légal », selon Puremédias.",
+          "quote": "France Médias Monde dénonce cette décision prise hors de tout cadre conventionnel et légal, qui prive un peu plus encore dans la région les citoyens de leur accès à une information libre, indépendante et vérifiée",
+          "url": "https://www.ozap.com/actu/coup-d-etat-au-niger-france-24-et-rfi-s-indignent-de-la-suspension-de-leur-diffusion-par-la-junte-militaire/635353",
+          "publisher": "Puremédias"
+        },
+        {
           "date": "2023-03-27",
           "title": "Suspension au Burkina Faso",
           "text": "Le gouvernement du Burkina Faso a suspendu la diffusion de France 24 après la diffusion de réponses écrites du chef d'AQMI, commentées par un journaliste de la chaîne. La direction de France 24 a dénoncé une décision « sans fondement », selon Puremédias.",
           "quote": "Ce lundi 27 mars, le gouvernement du Burkina Faso a annoncé suspendre la diffusion de la chaîne française internationale France 24. En cause, l'interview exceptionnelle d'Abou Obeida Youssef al-Annabi, l'émir d'Al-Qaïda au Maghreb islamique (Aqmi).",
           "url": "https://www.ozap.com/actu/le-burkina-faso-suspend-la-diffusion-de-france-24-apres-une-interview-du-chef-d-al-qaida-au-maghreb-islamique/629822",
+          "publisher": "Puremédias"
+        },
+        {
+          "date": "2023-03-15",
+          "title": "Messages de journalistes arabophones",
+          "text": "Après la mise en évidence par le site CAMERA de messages publiés sur les réseaux sociaux, France 24 a mis fin à sa collaboration avec sa correspondante à Beyrouth et adressé un rappel à l'ordre à trois autres journalistes, selon Puremédias.",
+          "quote": "France 24 vient d'annoncer dans un email interne mettre fin \"à toute collaboration\" avec sa correspondante à Beyrouth, Joëlle Maroun.",
+          "url": "https://www.ozap.com/actu/france-24-cesse-toute-collaboration-avec-une-journaliste-ayant-fait-l-apologie-d-adolf-hitler/629300",
           "publisher": "Puremédias"
         },
         {
@@ -26,14 +42,6 @@
           "quote": "Dans un climat tendu entre Paris et Bamako, les deux médias français RFI et France 24 ont été suspendus définitivement de diffusion au Mali, suite à la décision des autorités maliennes.",
           "url": "https://lepetitjournal.com/expat-mag/societe/rfi-france-24-definitivement-suspendus-diffusion-mali-336971",
           "publisher": "Lepetitjournal.com"
-        },
-        {
-          "date": "2023-03-15",
-          "title": "Messages de journalistes arabophones",
-          "text": "Après la mise en évidence par le site CAMERA de messages publiés sur les réseaux sociaux, France 24 a mis fin à sa collaboration avec sa correspondante à Beyrouth et adressé un rappel à l'ordre à trois autres journalistes, selon Puremédias.",
-          "quote": "France 24 vient d'annoncer dans un email interne mettre fin \"à toute collaboration\" avec sa correspondante à Beyrouth, Joëlle Maroun.",
-          "url": "https://www.ozap.com/actu/france-24-cesse-toute-collaboration-avec-une-journaliste-ayant-fait-l-apologie-d-adolf-hitler/629300",
-          "publisher": "Puremédias"
         }
       ]
     },
@@ -91,7 +99,24 @@
         "publisher": "Élucid (mentions légales)",
         "date": ""
       },
-      "polemiques": []
+      "polemiques": [
+        {
+          "date": "2019-12-17",
+          "title": "Procès en diffamation contre Le Monde et d'autres",
+          "text": "Olivier Berruyer, fondateur d'Élucid et du blog Les Crises, a poursuivi en diffamation des journalistes du Monde, un youtubeur et un chercheur. En première instance, le tribunal de Paris a jugé non diffamatoires les termes « complotiste » et « conspirationniste », mais a condamné Le Monde pour un article et un de ses journalistes pour un tweet, selon Arrêt sur images.",
+          "quote": "Si le tribunal a estimé que les termes \"complotiste\" et \"conspirationniste\" étaient des accusations trop imprécises pour être considérées comme diffamatoires, Le Monde a été condamné pour un article, ainsi que Samuel Laurent, journaliste du quotidien, pour un tweet.",
+          "url": "https://www.arretsurimages.net/articles/proces-berruyer-le-terme-complotiste-juge-non-diffamatoire",
+          "publisher": "Arrêt sur images"
+        },
+        {
+          "date": "2019-06-14",
+          "title": "Diffamation reconnue dans « Les Réseaux du Kremlin en France »",
+          "text": "Le tribunal correctionnel de Paris a condamné l'universitaire Cécile Vaissié et son éditrice pour un passage de son livre visant Olivier Berruyer, et rejeté les plaintes des cinq autres plaignants, selon Livres Hebdo. Le parquet avait estimé qu'aucun des propos n'était diffamatoire.",
+          "quote": "Lors de l'audience, les 14 et 15 mars, le parquet avait estimé qu'aucun des propos litigieux n'était diffamatoire.",
+          "url": "https://www.livreshebdo.fr/article/un-passage-des-reseaux-du-kremlin-en-france-devra-etre-supprime-en-cas-de-reedition",
+          "publisher": "Livres Hebdo"
+        }
+      ]
     },
     "UCEFGCs68E9Vr5te5qZuJsbg": {
       "owner": {
@@ -102,6 +127,14 @@
         "date": ""
       },
       "polemiques": [
+        {
+          "date": "2026-05-20",
+          "title": "Condamné en appel à payer Canal+",
+          "text": "Jean-Baptiste Rivoire, fondateur d'Off Investigation, a été condamné par la cour d'appel de Versailles à verser 142 500 euros à Canal+, son ancien employeur, pour avoir témoigné contre le groupe dans un documentaire de RSF malgré une clause de confidentialité. Il a déploré la décision ; RSF y voit un « dangereux précédent », selon CB News (AFP).",
+          "quote": "\"Pour avoir prononcé quelques mots dans un documentaire de RSF, je vais devoir verser 142.500 euros à Canal+\", a déploré M. Rivoire sur son site Off Investigation.",
+          "url": "https://www.cbnews.fr/node/101089",
+          "publisher": "CB News (AFP)"
+        },
         {
           "date": "2026-01-05",
           "title": "Contributeurs venus de la presse d'extrême droite",
@@ -115,6 +148,14 @@
     "UCbXWhsd805LfcbAy7xL9d-A": {
       "owner": null,
       "polemiques": [
+        {
+          "date": "2025-12-09",
+          "title": "Enquête de StreetPress sur ses invités",
+          "text": "Selon StreetPress, Le Crayon a invité depuis sa création une quarantaine de personnalités d'extrême droite, parfois présentées sans mention de leurs engagements. Son directeur de publication, Antonin Marin, dit vouloir « créer des échanges les plus constructifs possibles » entre « bulles idéologiques ».",
+          "quote": "Depuis sa création en 2019, la chaîne YouTube de débats a invité une quarantaine de personnalités appartenant à la mouvance — certaines plusieurs fois.",
+          "url": "https://www.streetpress.com/1765195804-bad-buzz-clashs-invites-extreme-droite-crayon-cyril-hanouna-web/",
+          "publisher": "StreetPress"
+        },
         {
           "date": "2025-09-06",
           "title": "Pierre-Édouard Stérin au capital",
@@ -137,7 +178,24 @@
         "publisher": "QG (mentions légales)",
         "date": ""
       },
-      "polemiques": []
+      "polemiques": [
+        {
+          "date": "2024-12-18",
+          "title": "Licenciement par Le Média jugé nul en appel",
+          "text": "Avant de fonder QG, Aude Lancelin a été licenciée en 2019 de la direction de la rédaction du Média. La cour d'appel de Paris a jugé ce licenciement nul et condamné Le Média à lui verser environ 60 000 euros ; Le Média a dit prendre acte « avec surprise » de la décision, selon franceinfo et l'AFP.",
+          "quote": "Cet arrêt de la cour d'appel de Paris, qui conclut à \"la nullité\" du licenciement, infirme la décision prise en première instance par le conseil des prud'hommes fin 2021.",
+          "url": "https://www.franceinfo.fr/economie/medias/le-media-condamne-en-appel-pour-le-licenciement-d-aude-lancelin-en-2019_6963512.html",
+          "publisher": "franceinfo (AFP)"
+        },
+        {
+          "date": "2017-12-08",
+          "title": "Licenciement de L'Obs jugé sans cause réelle et sérieuse",
+          "text": "Aude Lancelin, numéro 2 de L'Obs licenciée en mai 2016, estimait avoir été évincée pour des raisons politiques. Les prud'hommes ont condamné L'Obs à lui verser 90 000 euros, sans retenir la nullité qu'elle demandait, selon Puremédias.",
+          "quote": "Finalement, la décision des prud'hommes lui a donné partiellement raison puisque le licenciement n'a pas été considéré \"nul\", mais sans cause réelle et sérieuse.",
+          "url": "https://www.ozap.com/actu/licenciement-d-aude-lancelin-l-obs-condamne-a-lui-verser-90-000-euros/544752",
+          "publisher": "Puremédias"
+        }
+      ]
     },
     "UC8-FN_ftL-crIaXMouuykyQ": {
       "owner": {
@@ -157,7 +215,16 @@
         "publisher": "Hors-Série (mentions légales)",
         "date": ""
       },
-      "polemiques": []
+      "polemiques": [
+        {
+          "date": "2014-12-02",
+          "title": "Mise au point sur Étienne Chouard",
+          "text": "Après un article d'Arrêt sur images lui prêtant une « proximité idéologique » avec Étienne Chouard, Judith Bernard, directrice de la publication de Hors-Série, a démenti dans une mise au point publiée par le site et dénoncé « l'alliance ostensible » de Chouard avec Alain Soral.",
+          "quote": "Un article publié par la rédaction d'@si me prête avec Chouard une \"proximité idéologique\" que je démens catégoriquement.",
+          "url": "https://www.arretsurimages.net/articles/je-nai-pas-de-proximite-ideologique-avec-etienne-chouard",
+          "publisher": "Arrêt sur images"
+        }
+      ]
     },
     "UC3lacWBPVK-JfmGyyHx4AAw": {
       "owner": {
@@ -175,6 +242,14 @@
           "quote": "Le CDJM, réuni le 9 mai 2023 en séance plénière, estime que le site Omerta n’a pas respecté les obligations déontologiques d’exactitude et de respect de la véracité des faits, ainsi que celles imposant aux journalistes de pas user de méthodes déloyales et de respecter la dignité des personnes.",
           "url": "https://cdjm.org/avis-23-016/",
           "publisher": "Conseil de déontologie journalistique et de médiation (CDJM)"
+        },
+        {
+          "date": "2023-03",
+          "title": "Ligne éditoriale sur la guerre en Ukraine",
+          "text": "La revue Esprit, après Libération et Le Monde, présente Omerta comme un média pro-russe. Son directeur de la rédaction, Régis Le Sommier, ancien grand reporter à Paris Match « très présent sur RT France », rejette ces accusations et présente Omerta comme un « média privé » consacré aux enquêtes de terrain et aux documentaires.",
+          "quote": "Par la voix de son directeur de la rédaction, Régis Le Sommier, auparavant grand reporter à Paris Match et très présent sur RT France, Omerta a rejeté ces accusations.",
+          "url": "https://esprit.presse.fr/actualites/jean-louis-schlegel/omerta-nouvelle-revue-pro-russe-44563",
+          "publisher": "Esprit"
         }
       ]
     },
@@ -188,20 +263,20 @@
       },
       "polemiques": [
         {
-          "date": "2018-06-14",
-          "title": "Suppression de la chaîne YouTube",
-          "text": "La chaîne a été supprimée de YouTube le 14 juin 2018. La députée Emmanuelle Ménard y a vu une atteinte à la liberté de la presse ; le ministère de la Culture a répondu en renvoyant à la future régulation des plateformes.",
-          "quote": "Le jeudi 14 juin 2018, la chaîne « TV libertés » a été supprimée d'un célèbre site d'hébergement de vidéos.",
-          "url": "https://www.assemblee-nationale.fr/dyn/15/questions/QANR5L15QE10479.pdf",
-          "publisher": "Assemblée nationale (question écrite n° 10479)"
-        },
-        {
           "date": "2023-01-03",
           "title": "Classement NewsGuard sur la désinformation",
           "text": "Selon L'ADN, qui cite un classement 2022 de NewsGuard, TVL figure parmi les dix sites de désinformation les plus influents en France sur les réseaux sociaux. La réaction de la chaîne n'est pas rapportée.",
           "quote": "FranceSoir reste solidement ancré en seconde position, suivi par Le Média en 4-4-2, tenu par Marcel Dubreuil, proche de la sphère Soral et Dieudonné, à destination d’un public Gilets jaunes, TVL, une sorte de Web TV d’extrême droite",
           "url": "https://www.ladn.eu/media-mutants/quest-ce-quepochtimes-le-media-de-desinformation-le-plus-influent-de-france/",
           "publisher": "L'ADN"
+        },
+        {
+          "date": "2018-06-14",
+          "title": "Suppression de la chaîne YouTube",
+          "text": "La chaîne a été supprimée de YouTube le 14 juin 2018. La députée Emmanuelle Ménard y a vu une atteinte à la liberté de la presse ; le ministère de la Culture a répondu en renvoyant à la future régulation des plateformes.",
+          "quote": "Le jeudi 14 juin 2018, la chaîne « TV libertés » a été supprimée d'un célèbre site d'hébergement de vidéos.",
+          "url": "https://www.assemblee-nationale.fr/dyn/15/questions/QANR5L15QE10479.pdf",
+          "publisher": "Assemblée nationale (question écrite n° 10479)"
         }
       ]
     },
@@ -252,7 +327,16 @@
         "publisher": "Investig'Action (mentions légales)",
         "date": ""
       },
-      "polemiques": []
+      "polemiques": [
+        {
+          "date": "2025-04-18",
+          "title": "Retraits d'un événement à Perpignan",
+          "text": "Selon France Bleu, LFI, le NPA et l'association France Palestine se sont retirés d'une journée caritative pour la Palestine à Perpignan en raison de la venue de Michel Collon, fondateur d'Investig'Action. Les organisateurs ont maintenu sa conférence ; la réaction de Michel Collon n'est pas rapportée.",
+          "quote": "La France insoumise (LFI), le Nouveau parti anticapitaliste (NPA) et l'association France Palestine se sont retirés à cause de la présence de Michel Collon, un propagandiste belge qui a collaboré avec Russia Today, chaîne de propagande russe interdite en France.",
+          "url": "https://www.francebleu.fr/polemique-a-perpignan-autour-d-un-conferencier-controverse-qui-participe-a-une-operation-caritative-pour-la-palestine-1338030",
+          "publisher": "France Bleu"
+        }
+      ]
     },
     "UCIh7PDUAP226Pa_NtjN9Jqw": {
       "owner": {
@@ -264,12 +348,12 @@
       },
       "polemiques": [
         {
-          "date": "2026-08-05",
-          "title": "Accusations sur le climat de travail chez Legend",
-          "text": "D'anciens employés ont décrit aux Inrocks un climat de travail « délétère, raciste et sexiste ». Guillaume Pley conteste ; son avocate a annoncé des plaintes en diffamation au nom de l'animateur et de la société Legend, selon l'AFP.",
-          "quote": "Dans une enquête diffusée le 5 août, Les Inrocks ont donné la parole à plusieurs anciens employés de Guillaume Pley qui ont témoigné d'un \"climat de travail délétère, raciste et sexiste à ses côtés\" chez Legend - ce dont s'est défendu l'intéressé.",
-          "url": "https://www.cbnews.fr/medias/guillaume-pley-legend-tourmente",
-          "publisher": "CB News (AFP)"
+          "date": "2026-08-11",
+          "title": "Messages à une adolescente à l'époque de NRJ",
+          "text": "Selon Le Monde, cité par Puremédias, Guillaume Pley, alors animateur sur NRJ, aurait tenu en 2011 des propos sexuellement explicites dans des messages à une adolescente de 14 ans, qui lui aurait indiqué son âge. Son porte-parole affirme que ce compte servait aussi à administrer ses pages et annonce des plaintes en diffamation contre les publications « mensongères » ; la jeune femme n'avait pas engagé de poursuites à la date de l'article.",
+          "quote": "Le quotidien a pu consulter des conversations datées de 2011 sur la messagerie Facebook de l'animateur entre celui-ci et une adolescente de 14 ans.",
+          "url": "https://www.ozap.com/actu/jai-14-ans-moi-le-monde-publie-des-messages-a-caractere-sexuel-envoyes-par-guillaume-pley-a-une-mineure/656407",
+          "publisher": "Puremédias"
         },
         {
           "date": "2026-08-07",
@@ -278,6 +362,30 @@
           "quote": "\"Le format plaît aussi aux politiques, qui ont la plupart du temps un droit de regard avant publication, et la garantie d'être peu contredits\"",
           "url": "https://www.lalibre.be/culture/2026/08/07/management-toxique-interviews-complaisantes-relents-de-racisme-et-de-sexisme-le-podcast-legend-et-son-animateur-guillaume-pley-malmenes-2HZAXBCAMZE7NP7CUQIVANQU6A/",
           "publisher": "La Libre Belgique"
+        },
+        {
+          "date": "2026-08-05",
+          "title": "Accusations sur le climat de travail chez Legend",
+          "text": "D'anciens employés ont décrit aux Inrocks un climat de travail « délétère, raciste et sexiste ». Guillaume Pley conteste ; son avocate a annoncé des plaintes en diffamation au nom de l'animateur et de la société Legend, selon l'AFP.",
+          "quote": "Dans une enquête diffusée le 5 août, Les Inrocks ont donné la parole à plusieurs anciens employés de Guillaume Pley qui ont témoigné d'un \"climat de travail délétère, raciste et sexiste à ses côtés\" chez Legend - ce dont s'est défendu l'intéressé.",
+          "url": "https://www.cbnews.fr/medias/guillaume-pley-legend-tourmente",
+          "publisher": "CB News (AFP)"
+        },
+        {
+          "date": "2017-03-22",
+          "title": "Mise en garde du CSA pour une émission sur la drogue",
+          "text": "Avant Legend, Guillaume Pley animait « Guillaume Radio 2.0 » sur NRJ. Le CSA a mis en garde la station après l'émission du 8 novembre 2016 consacrée aux « histoires marrantes avec de la drogue », diffusée sans avertissement sur les dangers de la drogue et avant 22 h 30, selon Puremédias.",
+          "quote": "Ce mardi, le CSA a annoncé avoir mis en garde la radio NRJ suite à la diffusion de l'émission \"Guillaume Radio 2.0\" le 8 novembre dernier.",
+          "url": "https://www.ozap.com/actu/emission-de-guillaume-pley-sur-la-drogue-nrj-mise-en-garde-par-le-csa/522299",
+          "publisher": "Puremédias"
+        },
+        {
+          "date": "2013-10-22",
+          "title": "Vidéo de baisers forcés dans la rue",
+          "text": "En 2013, Guillaume Pley, alors animateur sur NRJ, a publié sur YouTube une vidéo où il embrassait des inconnues dans la rue, parfois malgré leurs réticences, ce que des associations féministes ont dénoncé. Il a présenté ses excuses à l'antenne, selon Puremédias.",
+          "quote": "L'animateur de NRJ Guillaume Pley a présenté hier ses excuses pour la publication sur YouTube d'une vidéo dans laquelle on le voyait forcer des filles à l'embrasser dans la rue.",
+          "url": "https://www.ozap.com/actu/baisers-forces-l-animateur-de-nrj-presente-ses-excuses/449773",
+          "publisher": "Puremédias"
         }
       ]
     },
@@ -290,6 +398,14 @@
         "date": "2019-05-22"
       },
       "polemiques": [
+        {
+          "date": "2019-11-19",
+          "title": "Présence à une rencontre avec Sergueï Lavrov",
+          "text": "Selon Arrêt sur images, l'intervieweur de Thinkerview, qui se fait appeler Sky, a participé en novembre 2019, en marge du Forum de Paris pour la paix, à une rencontre organisée par l'ambassade de Russie avec le ministre russe des Affaires étrangères, en présence de collaborateurs de RT. Sky a répondu au site.",
+          "quote": "Ainsi que sa participation à une rencontre avec le ministre russe des Affaires étrangères, à laquelle étaient notamment présents plusieurs collaborateurs de RT (Russia Today), ou le blogueur des \"Crises\".",
+          "url": "https://www.arretsurimages.net/articles/thinkerview-la-chaine-youtube-qui-aime-les-russes-et-vice-versa",
+          "publisher": "Arrêt sur images"
+        },
         {
           "date": "2019-05-22",
           "title": "Invités proches de thèses complotistes",
@@ -310,6 +426,14 @@
       },
       "polemiques": [
         {
+          "date": "2023-12-23",
+          "title": "Interview de Squeezie sur France 2 sans mention des liens professionnels",
+          "text": "Selon Télérama, lors de son interview de Squeezie pour « L'interview face cachée » sur France 2, Hugo Travers a mis en avant leur amitié sans signaler aux spectateurs les liens professionnels qui les unissent.",
+          "quote": "Tous deux affichent leur proximité amicale, mais n'avisent pas les spectateurs de leurs liens professionnels.",
+          "url": "https://www.telerama.fr/television/hugodecrypte-face-a-squeezie-sur-france-2-amabilites-promo-et-echange-de-bons-procedes-7018624.php",
+          "publisher": "Télérama"
+        },
+        {
           "date": "2023-03-14",
           "title": "Avis du CDJM sur un partenariat publicitaire",
           "text": "Le Conseil de déontologie journalistique et de médiation a jugé qu'une vidéo de décembre 2022 mêlait la présentation d'un sponsor et l'information, sans distinction suffisante. Le CDJM indique n'avoir reçu aucune réponse de Hugo Travers.",
@@ -329,6 +453,14 @@
       },
       "polemiques": [
         {
+          "date": "2023-12-23",
+          "title": "Interview de Squeezie sur France 2 sans mention des liens professionnels",
+          "text": "Selon Télérama, lors de son interview de Squeezie pour « L'interview face cachée » sur France 2, Hugo Travers a mis en avant leur amitié sans signaler aux spectateurs les liens professionnels qui les unissent.",
+          "quote": "Tous deux affichent leur proximité amicale, mais n'avisent pas les spectateurs de leurs liens professionnels.",
+          "url": "https://www.telerama.fr/television/hugodecrypte-face-a-squeezie-sur-france-2-amabilites-promo-et-echange-de-bons-procedes-7018624.php",
+          "publisher": "Télérama"
+        },
+        {
           "date": "2023-03-14",
           "title": "Avis du CDJM sur un partenariat publicitaire",
           "text": "Le Conseil de déontologie journalistique et de médiation a jugé qu'une vidéo de décembre 2022 mêlait la présentation d'un sponsor et l'information, sans distinction suffisante. Le CDJM indique n'avoir reçu aucune réponse de Hugo Travers.",
@@ -346,7 +478,16 @@
         "publisher": "The Media Leader (avec AFP)",
         "date": "2025-11-27"
       },
-      "polemiques": []
+      "polemiques": [
+        {
+          "date": "2018-05-21",
+          "title": "Démenti sur une rémunération pour une interview de Jean-Michel Blanquer",
+          "text": "Après un article du Figaro selon lequel des youtubeurs sollicités par les ministères de l'Éducation nationale et de l'Enseignement supérieur auraient été payés pour leurs vidéos, Gaspard G a démenti avoir été rémunéré pour son interview de Jean-Michel Blanquer, selon Purebreak.",
+          "quote": "Une info reprise par de nombreux médias... mais qui est fausse selon Gaspard G.",
+          "url": "https://www.purebreak.com/news/gaspard-g-paye-pour-interviewer-le-ministre-jean-michel-blanquer-son-coup-de-gueule/153721",
+          "publisher": "Purebreak"
+        }
+      ]
     },
     "UC_NukSq2ve_AHVAz_9ikTDg": {
       "owner": {
@@ -363,6 +504,30 @@
           "text": "En 2024, Usul a collecté plus de 288 000 euros auprès de plus de 6 000 contributions pour une série documentaire, « Societer ». En septembre 2025, le JDD rapporte que des contributeurs réclament des nouvelles. Selon Arrêt sur images, en mai 2026, le premier épisode n'est toujours pas diffusé ; Usul en a donné des nouvelles dans l'émission Backseat et l'annonce pour la rentrée.",
           "quote": "Deux ans après une levée de fonds record ayant réuni plus de 6 000 contributions, le premier des documentaires de la série Societer d'Usul n'est toujours pas diffusé",
           "url": "https://www.arretsurimages.net/articles/docu-en-retard-usul-annonce-le-premier-episode-de-societer-pour-la-rentree",
+          "publisher": "Arrêt sur images"
+        },
+        {
+          "date": "2025-12-12",
+          "title": "Propos sur l'audiovisuel public",
+          "text": "Invité d'une émission d'Arrêt sur images le 12 décembre 2025, Usul a résumé l'objectif de son émission « Rhinocéros » par « c'est tout cramer » et décrit l'audiovisuel public comme contrôlé par « une espèce d'entre-soi bourgeois, raciste et rétrograde », selon le JDD.",
+          "quote": "Je pense qu'il faut tout cramer, vraiment, a-t-il répété.",
+          "url": "https://www.lejdd.fr/Societe/il-faut-tout-cramer-la-charge-du-videaste-dextreme-gauche-usul-contre-laudiovisuel-public-165094",
+          "publisher": "Le JDD"
+        },
+        {
+          "date": "2024-02-09",
+          "title": "Tibo InShape annonce une plainte contre Blast après une émission d'Usul",
+          "text": "Dans une émission diffusée sur la chaîne YouTube de Blast, Usul et Lumi ont décrit Tibo InShape comme diffusant des idées « réactionnaires » ; Usul y déclarait qu'il « a inventé une nouvelle façon d'être facho sur internet ». Le youtubeur a annoncé le 9 février 2024 vouloir porter plainte contre le média, selon France 3 Occitanie.",
+          "quote": "Le youtubeur d'Albi (Tarn) annonce sur X, vendredi 9 février 2024, déposer plainte contre le média.",
+          "url": "https://france3-regions.francetvinfo.fr/occitanie/tarn/albi/idiot-facho-reac-tibo-inshape-fustige-par-un-media-le-2e-youtubeur-francais-annonce-deposer-plainte-2922279.html",
+          "publisher": "France 3 Occitanie"
+        },
+        {
+          "date": "2014-09",
+          "title": "Vidéo sur Étienne Chouard, puis rétractation",
+          "text": "Selon Arrêt sur images, Usul a publié un portrait de l'essayiste Étienne Chouard le défendant contre des accusations « de complotisme et de liens avec l'extrême droite », puis s'est rétracté en jugant non excusable la proximité de Chouard avec le mouvement d'Alain Soral.",
+          "quote": "Mais le jour même Usul s'est rétracté, estimant que la proximité de l'essayiste avec des mouvements comme celui d'Alain Soral n'est pas excusable.",
+          "url": "https://www.arretsurimages.net/breves/2014-09-16/Dediaboliser-Usul-defend-Chouard-et-se-ravise-id17941",
           "publisher": "Arrêt sur images"
         }
       ]
@@ -405,7 +570,40 @@
         "publisher": "L'ADN",
         "date": "2024-01-26"
       },
-      "polemiques": []
+      "polemiques": [
+        {
+          "date": "2026-06-18",
+          "title": "Condamnée en première instance pour des propos tenus sur BFMTV",
+          "text": "Selon BFMTV, le tribunal correctionnel de Paris l'a condamnée à 1 000 euros d'amende pour « injure publique en raison de l'origine, l'ethnie, la nation ou la race », pour des propos tenus en direct sur BFMTV le 18 décembre 2023. Elle a contesté tout caractère raciste à ces propos ; il s'agit d'un jugement de première instance : l'article ne dit pas si elle a fait appel, et elle reste présumée innocente tant que la décision n'est pas définitive.",
+          "quote": "pour des propos anti-immigration qu'elle avait tenus en direct sur BFMTV le 18 décembre 2023, selon un jugement du tribunal de Paris que BFMTV a pu consulter.",
+          "url": "https://www.bfmtv.com/police-justice/immigres-noirs-et-arabes-principal-danger-pour-les-femmes-l-influenceuse-d-extreme-droite-thais-d-escufon-condamnee-pour-des-propos-tenus-sur-bfmtv_AN-202606190780.html",
+          "publisher": "BFMTV"
+        },
+        {
+          "date": "2026-03-23",
+          "title": "Condamnée en appel après une action dans les locaux de SOS Méditerranée",
+          "text": "Selon BFMTV, la cour d'appel d'Aix-en-Provence l'a condamnée à 8 mois d'emprisonnement avec sursis et à trois ans d'interdiction de séjour à Marseille pour « violences volontaires », après une intrusion dans les locaux de SOS Méditerranée avec des banderoles de Génération identitaire. Elle indique avoir formé un pourvoi en cassation : la décision n'est pas définitive et elle reste présumée innocente.",
+          "quote": "Thaïs d'Escufon a déjà été condamnée par la cour d'appel d'Aix-en-Provence le 23 mars dernier, à 8 mois d'emprisonnement avec sursis ainsi qu'à une interdiction de séjour à Marseille pendant trois ans",
+          "url": "https://www.bfmtv.com/police-justice/immigres-noirs-et-arabes-principal-danger-pour-les-femmes-l-influenceuse-d-extreme-droite-thais-d-escufon-condamnee-pour-des-propos-tenus-sur-bfmtv_AN-202606190780.html",
+          "publisher": "BFMTV"
+        },
+        {
+          "date": "2024-08-30",
+          "title": "Écartée d'une émission d'Europe 1 après sa première apparition",
+          "text": "Selon La Dépêche, qui cite Puremédias, Thaïs d'Escufon a été écartée de l'émission de Cyril Hanouna « On marche sur la tête » sur Europe 1 après sa première apparition le 26 août 2024, à l'issue d'un échange avec la présidente de Lagardère News. Elle a regretté sur X qu'Europe 1 « cède aux pressions médiatiques de gauche ».",
+          "quote": "Nous avons convenu après cette première de Thaïs d'Escufon qu'elle ne convenait pas dans le rôle de chroniqueuse pour On marche sur la tête sur Europe 1",
+          "url": "https://www.ladepeche.fr/2024/08/30/on-marche-sur-la-tete-linfluenceuse-dextreme-droite-thais-descufon-licenciee-de-lemission-de-cyril-hanouna-sur-europe-1-12168306.php",
+          "publisher": "La Dépêche du Midi"
+        },
+        {
+          "date": "2022-09-14",
+          "title": "Relaxée en appel pour une vidéo sur la frontière franco-espagnole",
+          "text": "Condamnée en septembre 2021 par le tribunal de Saint-Gaudens à deux mois de prison avec sursis et 3 000 euros d'amende pour « injures publiques », après une vidéo publiée lors d'une opération contre les migrants à la frontière franco-espagnole, elle a été relaxée par la cour d'appel de Toulouse, qui a estimé les délits non caractérisés, selon La Dépêche.",
+          "quote": "Ce mercredi 14 septembre, la chambre des appels correctionnels de la cour de Toulouse a prononcé la relaxe des deux prévenus estimant que les délits n'étaient pas caractérisés",
+          "url": "https://www.ladepeche.fr/2022/09/14/ex-generation-identitaire-deux-militants-relaxes-en-appel-10543853.php",
+          "publisher": "La Dépêche du Midi"
+        }
+      ]
     },
     "UCr_3nQ4eRCwm_XUDpf62MAg": {
       "owner": {
@@ -494,12 +692,28 @@
       },
       "polemiques": [
         {
+          "date": "2024-05-03",
+          "title": "Plainte pour cyberharcèlement visant trois personnalités",
+          "text": "Selon L'Express, qui cite l'AFP, Thomas C. Durand a déposé une plainte contre X pour cyberharcèlement auprès du parquet de Paris, qui cite nommément André Bercoff, Xavier Azalbert et Idriss Aberkane. André Bercoff a qualifié ces accusations de « grotesques ». Les personnes citées sont présumées innocentes.",
+          "quote": "Cette plainte a été déposée le 3 mai contre X auprès du parquet de Paris et cite nommément les trois hommes",
+          "url": "https://www.lexpress.fr/societe/justice/bercoff-aberkane-et-azalbert-vises-par-une-plainte-pour-cyberharcelement-ZLOZ2MPF2VCZVI6IJFCN2BK4R4/",
+          "publisher": "L'Express (avec AFP)"
+        },
+        {
           "date": "2023-09-18",
           "title": "Conflit avec deux spécialistes de la désinformation",
           "text": "Selon Le Figaro, une longue vidéo de la chaîne, publiée environ un mois avant l'article, accuse Marie Peltier et Stéphanie Lamy de contrevérités, de « fausse expertise » et de cyberharcèlement. Le quotidien décrit ensuite un affrontement entre deux camps dans le milieu de la lutte contre le complotisme.",
           "quote": "Elle y accuse Marie Peltier et Stéphanie Lamy, deux femmes habituées des médias et présentées comme spécialistes de la lutte contre la désinformation, de contrevérités, de « fausse expertise » et de cyberharcèlement.",
           "url": "https://www.lefigaro.fr/actualite-france/insultes-cyberharcelement-fausse-expertise-scandales-et-rififi-chez-les-anti-complotisme-20230918",
           "publisher": "Le Figaro"
+        },
+        {
+          "date": "2022-09-26",
+          "title": "Différend avec l'université de Lorraine sur l'enseignement de l'homéopathie",
+          "text": "Selon L'Express, Thomas C. Durand a accusé dans une vidéo la faculté de pharmacie de l'université de Lorraine, avec laquelle il collaborait, de l'avoir sanctionné après qu'il a critiqué une enseignante promouvant l'homéopathie ; l'hebdomadaire évoque des « remous et incompréhensions ».",
+          "quote": "Le vidéaste Thomas Durand a dénoncé la promotion de l'homéopathie par une enseignante de l'université, non sans provoquer quelques remous et incompréhensions.",
+          "url": "https://www.lexpress.fr/sciences-sante/sciences/enseignement-de-l-homeopathie-imbroglio-entre-thomas-durand-et-l-universite-de-lorraine_2181438.html",
+          "publisher": "L'Express"
         }
       ]
     },

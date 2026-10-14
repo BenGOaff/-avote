@@ -711,6 +711,78 @@ th.num {
 .yt-cell__pol {
   margin-top: var(--s1);
 }
+/* Sondages : fourchette de chaque candidat (du plus bas au plus haut relevé), duels, fiches des sondages */
+.poll__ranges,
+.poll__duels,
+.poll__cards,
+.poll__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.poll__row,
+.poll__duel {
+  padding: var(--s3) 0;
+  border-bottom: var(--hairline) solid var(--line);
+}
+.poll__label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s1) var(--s3);
+  margin: 0;
+}
+.poll__vs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s1) var(--s2);
+  margin: 0;
+}
+.poll__name {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+}
+.poll__value {
+  font-variant-numeric: tabular-nums;
+}
+.poll__track {
+  position: relative;
+  height: 12px;
+  margin: var(--s2) 0 var(--s1);
+  border-radius: 6px;
+  background: var(--surface);
+  border: var(--hairline) solid var(--line);
+}
+.poll__span {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  border-radius: 6px;
+  background: var(--ink);
+}
+.poll__meta,
+.poll__scale {
+  margin: 0;
+}
+.poll__cards {
+  display: grid;
+  gap: var(--s3);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+}
+.poll__title {
+  font-size: var(--text-ui);
+  margin: 0 0 var(--s2);
+}
+.poll__facts {
+  margin: 0 0 var(--s2);
+  padding-left: var(--s4);
+}
+.poll__hyp + .poll__hyp {
+  margin-top: var(--s2);
+}
 /* Tableau à plusieurs colonnes chiffrées : marges resserrées sur téléphone */
 @media (max-width: 600px) {
   .table--compact th,
