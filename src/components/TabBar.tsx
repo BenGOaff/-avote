@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link'
+import { NavLink } from './NavLink'
 import { usePathname } from 'next/navigation'
 import { UI_COPY } from '@/lib/copy'
 import { IconBallot, IconHome, IconMore, IconPeople, IconTest } from './Icons'
@@ -20,12 +20,12 @@ export function TabBar() {
       <ul>
         {TABS.map(({ href, label, Icon }) => (
           <li key={href}>
-            <Link href={href} aria-current={isCurrent(pathname, href) ? 'page' : undefined}>
+            <NavLink href={href} aria-current={isCurrent(pathname, href) ? 'page' : undefined}>
               <span className="tabbar__icon">
                 <Icon />
               </span>
               {label}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
