@@ -33,6 +33,8 @@ export interface Polemique {
   quote: string
   url: string
   publisher: string
+  /** Seconde source, pour un fait ajouté au texte */
+  more?: { url: string; publisher: string }
 }
 interface Channel {
   id: string
