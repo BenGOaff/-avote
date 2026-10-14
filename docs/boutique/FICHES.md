@@ -266,6 +266,210 @@ Vus en ligne le 13 octobre, absents du relevé du 14 : `insoumise-fils`, `insoum
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, famille, repas de famille, vaisselle, dîner, tablier, cadeau famille
 
+## Lot « idées de la rédaction » (octobre 2026) : alterner les camps dans cet ordre
+
+Droite, centre, droite nationale, gauche radicale, gauche, puis on recommence : chaque bloc a le même nombre de phrases (4). Les variantes masculin/féminin comptent pour une phrase.
+
+### `garder.png`
+
+**Nom** : Pas tout changer. Garder ce qui marche.
+
+**Description** : Pour qui préfère réparer plutôt que tout casser. Une phrase de bon sens qu’on entend à droite, et pas seulement.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, droite, conservateur, bon sens, tradition, réforme
+
+### `reflechis.png`
+
+**Nom** : Ni fan. Ni contre tout. Je réfléchis.
+
+**Description** : Pour qui ne suit personne aveuglément et ne rejette rien par principe. Le tee-shirt de ceux qui lisent les programmes.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, indécis, réflexion, esprit critique, modéré
+
+### `campagne.png`
+
+**Nom** : La campagne n’est pas un décor.
+
+**Description** : Pour celles et ceux qui vivent à la campagne, pas en carte postale. Villages, champs, routes : la vraie vie, celle qui vote aussi.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, campagne, ruralité, village, terroir, France, agriculture
+
+### `ca-bosse.png`
+
+**Nom** : Ça bosse en bas. Ça encaisse en haut.
+
+**Description** : Pour qui trouve que l’effort et la récompense ne montent pas au même étage. Une phrase de gauche, sans nom ni logo.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, travail, salaires, inégalités, ouvrier, syndicat
+
+### `plafond-de-verre.png`
+
+**Nom** : Plafond de verre. Travaux en cours.
+
+**Description** : Pour celles qui cassent le plafond de verre, et ceux qui tiennent l’échelle. Le chantier avance, il n’est pas fini.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, féminisme, égalité, femmes, travail, carrière, parité
+
+### `trie.png`
+
+**Nom** : De droite. Et je trie mes déchets.
+
+**Description** : De droite, et pas en guerre contre la planète. Pour en finir avec les clichés, un tri sélectif à la fois.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, droite, écologie, recyclage, humour de droite, cliché
+
+### `compromis.png`
+
+**Nom** : Le compromis n’est pas un gros mot.
+
+**Description** : Pour qui pense qu’on avance en se parlant plutôt qu’en se criant dessus. Un tee-shirt pour les repas de famille.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, compromis, dialogue, modéré, démocratie
+
+### `fabrique-en-france.png`
+
+**Nom** : Fabriqué en France. Moi aussi.
+
+**Description** : Pour qui aime son pays et ce qui y est fait. Pas de drapeau, pas de logo : la phrase suffit. Existe au féminin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, France, patriote, made in France, fierté, souverainiste
+
+### `fabriquee-en-france.png`
+
+**Nom** : Fabriquée en France. Moi aussi.
+
+**Description** : Pour celle qui aime son pays et ce qui y est fait. Pas de drapeau, pas de logo : la phrase suffit. Existe au masculin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, France, patriote, made in France, fierté, souverainiste
+
+### `facture-collective.png`
+
+**Nom** : Bénéfices privés. Facture collective.
+
+**Description** : Quand les profits restent dans la poche de quelques-uns et que la note arrive chez tout le monde. Une phrase de gauche.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, capitalisme, profits, impôts, inégalités, anticapitaliste
+
+### `1-5-degre.png`
+
+**Nom** : +1,5 °C. Et ça discute encore.
+
+**Description** : L’objectif de l’accord de Paris, et le débat qui n’en finit pas. Pour qui trouve que le climat mérite plus qu’une conversation.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, écologie, climat, réchauffement, accord de Paris, planète
+
+### `reac.png`
+
+**Nom** : Réac. Mais à l’heure.
+
+**Description** : On vous traite de réac ? Vous, au moins, vous arrivez à l’heure. Pour une droite qui assume, avec le sourire.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, droite, conservateur, réac, humour de droite, ponctualité
+
+### `radicalement-modere.png`
+
+**Nom** : Radicalement modéré.
+
+**Description** : Modéré, oui, et sans demi-mesure. Pour qui défend le juste milieu avec conviction. Existe au féminin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, modéré, juste milieu, humour, nuance
+
+### `radicalement-moderee.png`
+
+**Nom** : Radicalement modérée.
+
+**Description** : Modérée, oui, et sans demi-mesure. Pour celle qui défend le juste milieu avec conviction. Existe au masculin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, modérée, juste milieu, humour, nuance
+
+### `achete-francais.png`
+
+**Nom** : J’achète français. Quand je trouve.
+
+**Description** : Pour qui regarde l’étiquette avant d’acheter, et la repose souvent. Un tee-shirt patriote, avec un peu d’autodérision.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, France, made in France, patriote, consommation, souverainiste
+
+### `proletaire.png`
+
+**Nom** : Prolétaire. Et pas prêt à me taire.
+
+**Description** : Pour qui travaille, le dit, et ne compte pas se taire. Une phrase de gauche ouvrière, sans nom ni logo. Existe au féminin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, ouvrier, travail, syndicat, lutte, prolétaire
+
+### `proletaire-f.png`
+
+**Nom** : Prolétaire. Et pas prête à me taire.
+
+**Description** : Pour celle qui travaille, le dit, et ne compte pas se taire. Une phrase de gauche ouvrière, sans nom ni logo. Existe au masculin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, ouvrière, travail, syndicat, lutte, prolétaire
+
+### `charge-mentale.png`
+
+**Nom** : Charge mentale. Poste non rémunéré.
+
+**Description** : Rendez-vous, courses, devoirs, anniversaires : un temps plein que personne ne paie. Pour qui le porte, et pour qui veut le partager.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, féminisme, charge mentale, égalité, couple, famille, femmes
+
+### `dette.png`
+
+**Nom** : La dette ? Mes enfants vous remercient.
+
+**Description** : Pour qui pense que la dette d’aujourd’hui est l’impôt de demain. Une phrase qu’on entend à droite et au centre.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, dette publique, budget, impôts, enfants, droite, économies
+
+### `nuance.png`
+
+**Nom** : Nuancé. Et fier de l’être. Enfin, plutôt.
+
+**Description** : Fier d’être nuancé, mais avec nuance. Pour qui n’a jamais su répondre par oui ou par non. Existe au féminin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, nuance, modéré, indécis, autodérision
+
+### `nuance-f.png`
+
+**Nom** : Nuancée. Et fière de l’être. Enfin, plutôt.
+
+**Description** : Fière d’être nuancée, mais avec nuance. Pour celle qui n’a jamais su répondre par oui ou par non. Existe au masculin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, nuance, modérée, indécise, autodérision
+
+### `pain-chaud.png`
+
+**Nom** : Ma France sent le pain chaud.
+
+**Description** : La boulangerie du coin, le matin. Pour qui aime la France simple, celle des villages et des quartiers.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, France, patriote, boulangerie, terroir, tradition, village
+
+### `service-public.png`
+
+**Nom** : Service public. Pas service minimum.
+
+**Description** : Hôpital, école, poste, train : pour qui veut des services publics qui fonctionnent vraiment, partout.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, service public, hôpital, école, gauche, fonctionnaire
+
+### `ecolo.png`
+
+**Nom** : Écolo. Pas un saint.
+
+**Description** : Écolo, oui. Parfait, non. Pour qui fait ce qu’il peut sans donner de leçons. Existe au féminin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, écologie, écolo, climat, autodérision, vélo, planète
+
+### `ecolo-f.png`
+
+**Nom** : Écolo. Pas une sainte.
+
+**Description** : Écolo, oui. Parfaite, non. Pour celle qui fait ce qu’elle peut sans donner de leçons. Existe au masculin.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, écologie, écolo, climat, autodérision, vélo, planète
+
 ## Fiches des designs en ligne (pour mémoire)
 
 ### `droitard.png`
