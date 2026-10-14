@@ -6,6 +6,10 @@ import { formatDate } from '@/components/Editorial'
 import { UI_COPY } from '@/lib/copy'
 import { dayLabel, GUIDES } from '@/lib/guides'
 import { absolute } from '@/lib/site'
+import { getAgendaEvent } from '@/lib/agenda'
+
+/** Rappels proposés en un clic : un fichier d'agenda par date, avec alertes avant l'échéance */
+const REMINDERS = ['inscription-listes', 'premier-tour', 'second-tour']
 import { FIRST_ROUND, REGISTRATION_DEADLINE, SECOND_ROUND } from '@/lib/vote-dates'
 
 const t = UI_COPY.guides
@@ -49,6 +53,25 @@ export default function VoterPage() {
           </li>
         ))}
       </ul>
+      <section className="card section measure" aria-labelledby="rappels">
+        <h2 id="rappels" style={{ fontSize: 'var(--h3)' }}>
+          {t.remindersTitle}
+        </h2>
+        <p>{t.remindersText}</p>
+        <ul>
+          {REMINDERS.map((id) => {
+            const e = getAgendaEvent(id)
+            return e ? (
+              <li key={id}>
+                <a href={`/agenda/${id}.ics`}>{e.title}</a> <span className="muted">({dayLabel(e.date)})</span>
+              </li>
+            ) : null
+          })}
+        </ul>
+        <p className="small" style={{ margin: 0 }}>
+          <Link href="/agenda">{t.remindersAll}</Link>
+        </p>
+      </section>
       <p className="section measure">
         <Link href="/radar/2026-10-08-comment-voter">{t.article}</Link> · <Link href="/radar/2026-10-08-vote-blanc">{t.blank}</Link> ·{' '}
         <Link href="/quiz">{t.quiz}</Link>

@@ -18,6 +18,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 import path from 'node:path'
 import Anthropic from '@anthropic-ai/sdk'
 import { CostMeter, budgetFromEnv } from './cost'
+import { AGENDA_KINDS, applyAgendaEvents, type StoredEvent } from './agenda-lib'
 import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
 import {
@@ -124,6 +125,22 @@ const Selection = z.object({
       }),
     )
     .describe('Annonces ou retraits de candidature à la présidentielle 2027 explicitement rapportés par les extraits. Liste vide sinon. Une simple rumeur ou hypothèse ne compte pas.'),
+  events: z
+    .array(
+      z.object({
+        title: z.string().describe('Le rendez-vous en quelques mots, neutre (« Débat entre les candidats de droite sur TF1 », « Vote des adhérents LR »)'),
+        kind: z.enum(AGENDA_KINDS).describe('parti : vote interne, primaire, congrès ; debat : débat ou grande émission politique ; meeting : meeting ou rassemblement de campagne ; institution : Conseil constitutionnel, Parlement, gouvernement ; campagne : règle de campagne'),
+        date: z.string().describe('Premier jour, AAAA-MM-JJ, tel que donné par la citation'),
+        end: z.string().describe('Dernier jour AAAA-MM-JJ si le rendez-vous dure plusieurs jours, sinon chaîne vide'),
+        time: z.string().describe('Heure de Paris HH:MM si la citation la donne, sinon chaîne vide'),
+        summary: z.string().describe('Ce qui va se passer et pourquoi cela peut faire bouger la campagne, une ou deux phrases neutres, sans rien ajouter à la source'),
+        who: z.array(z.string()).describe('Prénom et nom des candidats concernés, s’il y en a'),
+        place: z.string().describe('Ville ou chaîne, si la source la donne, sinon chaîne vide'),
+        itemId: z.string().describe("Identifiant de l'extrait qui l'établit"),
+        quote: z.string().describe("Passage copié mot pour mot de l'extrait, qui donne le jour et le mois du rendez-vous"),
+      }),
+    )
+    .describe('Rendez-vous à venir liés à la présidentielle 2027 dont la date exacte (jour et mois) est écrite dans un extrait : vote interne, primaire, congrès, débat, meeting annoncé, échéance institutionnelle. Liste vide sinon. Pas de date approximative (« mi-décembre », « à la rentrée »), pas de rendez-vous passé, pas les dates des deux tours ni la date limite d’inscription.'),
 })
 
 async function select(items: RawItem[]): Promise<z.infer<typeof Selection>> {
@@ -150,11 +167,12 @@ La viralité supposée n'est pas un critère. Applique les mêmes critères quel
     ],
   })
   meter.add(res.model, res.usage)
-  if (res.stop_reason === 'refusal' || !res.parsed_output) return { stories: [], candidacies: [] }
+  if (res.stop_reason === 'refusal' || !res.parsed_output) return { stories: [], candidacies: [], events: [] }
   const known = new Set(items.map((i) => i.id))
   return {
     stories: res.parsed_output.stories.filter((s) => known.has(s.primaryId)).map((s) => ({ ...s, itemIds: s.itemIds.filter((id) => known.has(id)) })),
     candidacies: res.parsed_output.candidacies.filter((c) => known.has(c.itemId)),
+    events: res.parsed_output.events.filter((e) => known.has(e.itemId)),
   }
 }
 
@@ -162,6 +180,8 @@ La viralité supposée n'est pas un critère. Applique les mêmes critères quel
 // Candidatures : ajout et retrait automatiques, avec source et citation vérifiée
 // ---------------------------------------------------------------------------
 
+const AGENDA_FILE = path.join(ROOT, 'content/agenda/agenda.json')
+const agendaChanges: string[] = []
 const CAND_FILE = path.join(ROOT, 'content/acteurs/candidatures.json')
 type Cand = { slug: string; name: string; party?: string; status: string; since: string; source: { title: string; publisher: string; url: string }; verified: boolean; retiredAt?: string; retiredSource?: { title: string; publisher: string; url: string }; retiredReason?: string; addedBy?: string }
 
@@ -413,6 +433,15 @@ async function main() {
     const selection = await select(candidates)
     const stories = selection.stories
     if (!DRY) candidacyChanges.push(...applyCandidacies(selection.candidacies, byId, now))
+    if (!DRY && selection.events.length) {
+      // Rendez-vous : citation vérifiée dans la source, et la citation elle-même doit donner le jour et le mois
+      const agenda = JSON.parse(readFileSync(AGENDA_FILE, 'utf8')) as { updatedAt: string; events: StoredEvent[] }
+      const cands = (JSON.parse(readFileSync(CAND_FILE, 'utf8')) as { actors: { slug: string; name: string }[] }).actors
+      const res = applyAgendaEvents(agenda, selection.events, byId, new Map(cands.map((a) => [slugify(a.name, 80), a.slug])), now, `veille ${SELECT_MODEL}`)
+      agendaChanges.push(...res.added)
+      for (const r of res.rejected) log(`agenda : ${r}`, '')
+      if (res.added.length) writeFileSync(AGENDA_FILE, JSON.stringify(agenda, null, 2) + '\n')
+    }
     for (const s of stories.slice(0, MAX)) {
       if (meter.exhausted) break
       try {
@@ -461,6 +490,7 @@ async function main() {
     '',
     `${drafts.length} texte(s) publiés automatiquement après contrôles.`,
     candidacyChanges.length ? `\nCandidatures : ${candidacyChanges.join(' ; ')}` : '',
+    agendaChanges.length ? `\nAgenda : ${agendaChanges.join(' ; ')}` : '',
     '',
     ...drafts.map((d) => `- \`${d.file}\``),
     '',

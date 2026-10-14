@@ -1,0 +1,22 @@
+{
+  "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
+  "updatedAt": "2026-10-14",
+  "events": [
+    {
+      "id": "2026-12-ecologistes-vote-interne",
+      "kind": "parti",
+      "title": "Les Écologistes : vote des adhérents sur la candidature",
+      "date": "2026-12-10",
+      "end": "2026-12-13",
+      "summary": "Les adhérents choisissent entre le maintien de la candidature de Marine Tondelier et le ralliement à un candidat d’une autre force de gauche. Vote interne, pas une primaire ouverte.",
+      "who": ["marine-tondelier"],
+      "source": {
+        "title": "Candidature à la présidentielle : pas de choix définitif des Écologistes avant la mi-décembre",
+        "publisher": "LCP",
+        "url": "https://lcp.fr/actualites/candidature-a-la-presidentielle-pas-de-choix-definitif-des-ecologistes-avant-la-mi"
+      },
+      "quote": "jusqu’au référendum interne qui aura lieu du 10 au 13 décembre",
+      "addedBy": "rédaction (vérifié le 14 octobre 2026)"
+    }
+  ]
+}

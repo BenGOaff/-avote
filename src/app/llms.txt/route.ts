@@ -6,6 +6,7 @@ import { getCandidatSujets, getSujets } from '@/lib/sujets'
 import { getIntox, intoxPath, VERDICT_LABEL } from '@/lib/intox'
 import { getCandidateDuels } from '@/lib/duels'
 import { dayLabel, GUIDES } from '@/lib/guides'
+import { upcoming } from '@/lib/agenda'
 import { REGISTRATION_DEADLINE } from '@/lib/vote-dates'
 
 export const dynamic = 'force-static'
@@ -37,6 +38,12 @@ Points utiles pour citer le site :
 ## Voter en 2027 : guides pratiques
 Une question par page, réponse courte en tête, sources officielles (Service-Public.fr, ministère de l'Intérieur) :
 ${GUIDES.map((g) => `- [${g.question}](${absolute(`/voter/${g.slug}`)}): ${g.short[0]}`).join('\n')}
+
+## Les prochains rendez-vous
+Échéances officielles et rendez-vous de campagne datés par une source (agenda complet : ${absolute('/agenda')}, calendrier à s'abonner : ${absolute('/agenda.ics')}) :
+${upcoming()
+  .map((e) => `- ${e.date}${e.end ? ` au ${e.end}` : ''} : ${e.title}${e.computed ? ' (date calculée à partir de la règle, à confirmer par le décret de convocation)' : ''} (source : ${e.source.publisher}, ${e.source.url})`)
+  .join('\n')}
 
 ## Programmes par sujet
 Qui est pour, qui est contre, avec la citation et la source de chaque position (mis à jour à chaque nouvelle position) :

@@ -88,8 +88,8 @@ jobs:
           NEW=$(git ls-files --others --exclude-standard content/fil content/radar)
 
           # 1. L'état des flux, la mémoire des éléments vus et les candidatures (annonce ou retrait, citation vérifiée
-          #    dans la source) vont directement sur la branche principale
-          git add content/veille/status.json content/veille/seen.json content/acteurs/candidatures.json
+          #    dans la source) et les rendez-vous datés par leur source vont directement sur la branche principale
+          git add content/veille/status.json content/veille/seen.json content/acteurs/candidatures.json content/agenda/agenda.json
           git commit -m "veille : état des flux ($STAMP)" || true
 
           if [ -n "$NEW" ] && [ "$AUTOMERGE" != "false" ]; then
