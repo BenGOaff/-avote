@@ -3,7 +3,7 @@ import { getArticles } from '@/lib/content'
 import { absolute } from '@/lib/site'
 import { getAnnouncedActors } from '@/lib/actors'
 import { getPartis } from '@/lib/partis'
-import { actorUpdatedAt, getSujets } from '@/lib/sujets'
+import { actorUpdatedAt, getCandidatSujets, getSujets } from '@/lib/sujets'
 import { getIntox, intoxPath, intoxUpdated } from '@/lib/intox'
 import { getFlashQuizzes } from '@/lib/flash-content'
 import { getMedias } from '@/lib/medias'
@@ -31,6 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const updated = actorUpdatedAt(a.slug)
       return { url: absolute(`/candidats/${a.slug}`), ...(updated ? { lastModified: new Date(updated) } : {}), changeFrequency: 'daily' as const, priority: 0.8 }
     }),
+    ...getAnnouncedActors()
+      .filter((a) => a.status !== 'retire')
+      .flatMap((a) => {
+        const updated = actorUpdatedAt(a.slug)
+        return getCandidatSujets(a.slug).map((cs) => ({ url: absolute(`/candidats/${a.slug}/${cs.sujet.slug}`), ...(updated ? { lastModified: new Date(updated) } : {}), changeFrequency: 'weekly' as const, priority: 0.7 }))
+      }),
     ...getIntox().map((x) => ({ url: absolute(intoxPath(x)), lastModified: new Date(intoxUpdated(x)), changeFrequency: 'monthly' as const, priority: 0.7 })),
     ...getSujets().map((s) => ({ url: absolute(`/programmes/${s.slug}`), lastModified: s.updatedAt ? new Date(s.updatedAt) : now, changeFrequency: 'daily' as const, priority: 0.9, images: [absolute(`/programmes/${s.slug}/carte.png`)] })),
     ...getFlashQuizzes().map((q) => ({ url: absolute(`/quiz/flash/${q.slug}`), changeFrequency: 'monthly' as const, priority: 0.7 })),

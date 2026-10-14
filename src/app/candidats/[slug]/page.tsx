@@ -21,7 +21,7 @@ import { hatvpOf } from '@/lib/hatvp'
 import { VOTE_LABEL, VOTES_FETCHED_AT, VOTES_SOURCE, isDeputy, scrutinLabel, scrutinUrl, votesOf } from '@/lib/votes-an'
 import { SENAT_FETCHED_AT, senatLabel, senatOf } from '@/lib/votes-senat'
 import { isAffiliate, livreOf } from '@/lib/livres'
-import { actorUpdatedAt } from '@/lib/sujets'
+import { actorUpdatedAt, getCandidatSujets } from '@/lib/sujets'
 import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
 
 export const dynamicParams = false
@@ -52,6 +52,8 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
   const known = Object.values(positions).filter((p) => !('missing' in p)).length
   const fiche = (fiches as Record<string, { analysis: string; remark: string }>)[slug]
   const updated = known > 0 ? actorUpdatedAt(slug) : null
+  // Pages « candidat × sujet » : seulement pour les candidats actifs, là où il y a au moins deux positions sourcées
+  const subPages = new Map(a.status === 'retire' ? [] : getCandidatSujets(slug).map((cs) => [cs.sujet.theme.id, cs.sujet.slug]))
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
@@ -152,6 +154,11 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
               <h2 id={`t-${theme.id}`} style={{ fontSize: 'var(--h3)' }}>
                 {theme.label} <span className="hint">{withPos.length}/{items.length}</span>
               </h2>
+              {subPages.has(theme.id) && (
+                <p className="small" style={{ marginTop: 0 }}>
+                  <Link href={`/candidats/${a.slug}/${subPages.get(theme.id)}`}>{UI_COPY.candidatSujet.title(theme.label, a.name)}</Link>
+                </p>
+              )}
               <div className="grid grid--2">
                 {withPos.map((it) => {
                   const p = positions[it.id]!
