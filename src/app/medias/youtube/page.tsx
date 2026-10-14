@@ -199,6 +199,14 @@ function ChannelCell({ r }: { r: YoutubeRow }) {
                   <a href={p.url} rel="noopener noreferrer nofollow" target="_blank" title={p.quote}>
                     {p.publisher}
                   </a>
+                  {p.more && (
+                    <>
+                      {' · '}
+                      <a href={p.more.url} rel="noopener noreferrer nofollow" target="_blank">
+                        {p.more.publisher}
+                      </a>
+                    </>
+                  )}
                 </li>
               ))}
             </ul>
