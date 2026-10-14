@@ -63,7 +63,7 @@ export default function CondamnesPage() {
           <p>
             Seules les décisions et étapes officielles qui visent la personne du candidat, chacune avec une source et une citation vérifiée. Une condamnation
             n’est dite « définitive » que si plus aucun recours n’est possible ou en cours ; sinon, c’est une procédure en cours, avec la présomption
-            d’innocence. Quand l’issue d’un appel n’a pas pu être établie, le doute profite à la personne. Les relaxes et les non-lieux sont comptés au même
+            d’innocence. Quand l’issue d’un appel n’a pas pu être établie, le doute profite à la personne : la décision reste comptée « en cours », même si elle est ancienne. Les relaxes et les non-lieux sont comptés au même
             rang.
           </p>
           <p>
