@@ -226,8 +226,9 @@ export default function MethodPage() {
         </p>
         <p id="ordre">
           L’ordre d’affichage des candidats et des partis est tiré au hasard à chaque visite : liste des candidats, échiquier, partis, bulletins de
-          l’urne, comparateur, pages Programmes, livres. L’ordre alphabétique mettrait toujours les mêmes en tête. Les familles politiques restent rangées
-          de gauche à droite, comme dans la grille officielle. Seuls tes résultats sont classés, par proximité avec tes réponses.
+          l’urne, comparateur, pages Programmes, livres, et l’ordre des familles politiques lui-même. L’ordre alphabétique mettrait toujours les mêmes en
+          tête. Seul l’échiquier garde la gauche à gauche et la droite à droite : c’est une carte, pas un classement. Tes résultats sont classés par
+          proximité avec tes réponses.
         </p>
 
         <h2 id="couleurs">Les couleurs des familles politiques</h2>
