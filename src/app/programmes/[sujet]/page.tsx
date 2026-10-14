@@ -10,6 +10,7 @@ import { getCandidatSujet, getSujet, getSujets, SIDES, summaryOf, type SujetItem
 import { getActiveActors } from '@/lib/actors'
 import { OpenFromHash } from './OpenFromHash'
 import { Glossed } from '@/components/Gloss'
+import { Shuffle } from '@/components/Shuffle'
 
 const t = UI_COPY.programmes
 
@@ -178,7 +179,7 @@ function Sides({ r, sujet, subPages }: { r: SujetItem; sujet: string; subPages: 
             {list.length === 0 ? (
               <p className="muted small">{t.nobody}</p>
             ) : (
-              <ul role="list">
+              <Shuffle role="list">
                 {list.map((st) => (
                   <li key={st.slug} className={`bloc-${st.bloc} sujet__who`}>
                     <details>
@@ -207,7 +208,7 @@ function Sides({ r, sujet, subPages }: { r: SujetItem; sujet: string; subPages: 
                     </details>
                   </li>
                 ))}
-              </ul>
+              </Shuffle>
             )}
           </div>
         )

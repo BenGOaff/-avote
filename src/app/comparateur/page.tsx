@@ -8,6 +8,7 @@ import type { Position } from '@/lib/engine/types'
 import { Comparateur, type CompareData } from './Comparateur'
 import { DUEL_MIN_KNOWN, getCandidateDuels } from '@/lib/duels'
 import { UI_COPY } from '@/lib/copy'
+import { Shuffle } from '@/components/Shuffle'
 
 export const metadata: Metadata = {
   title: 'Comparateur des programmes 2027 : qui défend quoi, sujet par sujet',
@@ -66,13 +67,13 @@ function DuelList() {
         {t.listTitle}
       </h2>
       <p className="small muted">{t.listNote(duels.length, DUEL_MIN_KNOWN)}</p>
-      <p className="sujet__tabs">
+      <Shuffle as="div" className="sujet__tabs">
         {duels.map((d) => (
           <Link key={d.slug} href={`/comparateur/${d.slug}`} className="cmp__theme sujet__tab">
             {d.a.name} ou {d.b.name}
           </Link>
         ))}
-      </p>
+      </Shuffle>
     </section>
   )
 }

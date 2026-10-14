@@ -224,6 +224,11 @@ export default function MethodPage() {
           et celles qui sont seulement évoquées. Ces dernières n’entrent pas dans la comparaison. Une personne peu documentée reste visible avec un dossier
           incomplet. <Link href="/candidats">La liste et ses sources</Link>
         </p>
+        <p id="ordre">
+          L’ordre d’affichage des candidats et des partis est tiré au hasard à chaque visite : liste des candidats, échiquier, partis, bulletins de
+          l’urne, comparateur, pages Programmes, livres. L’ordre alphabétique mettrait toujours les mêmes en tête. Les familles politiques restent rangées
+          de gauche à droite, comme dans la grille officielle. Seuls tes résultats sont classés, par proximité avec tes réponses.
+        </p>
 
         <h2 id="couleurs">Les couleurs des familles politiques</h2>
         <p>

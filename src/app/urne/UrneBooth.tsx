@@ -1,5 +1,6 @@
 'use client'
 
+import { useShuffled } from '@/components/Shuffle'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
 import { BLANK, leadingZeroBits } from '@/lib/urne-shared'
@@ -37,7 +38,9 @@ export function UrneBooth({ choices }: { choices: Choice[] }) {
   const work = useRef<Promise<{ challenge: string; nonce: string } | null> | null>(null)
   const stop = useRef({ stop: false })
 
-  const all: Choice[] = [...choices, { slug: BLANK, name: t.blank }]
+  // Bulletins dans un ordre tiré au hasard à chaque visite ; le vote blanc reste en dernier
+  const mixed = useShuffled(choices)
+  const all: Choice[] = [...mixed, { slug: BLANK, name: t.blank }]
   const nameOf = (slug: string) => all.find((c) => c.slug === slug)?.name ?? slug
 
   const loadTotals = useCallback(async () => {
