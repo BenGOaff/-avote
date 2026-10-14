@@ -39,3 +39,11 @@ Maquettes de référence : `planche.html` (s'ouvre dans un navigateur depuis ce 
   - Droite nationale (absente du pack, ajoutée) : FABRIQUÉ·E EN FRANCE. MOI AUSSI. · J’ACHÈTE FRANÇAIS. QUAND JE TROUVE. · LA CAMPAGNE N’EST PAS UN DÉCOR. · MA FRANCE SENT LE PAIN CHAUD.
 - En réserve pour un prochain lot (à équilibrer) : ASCENSEUR SOCIAL EN PANNE. PRENEZ L’ESCALIER. · À GAUCHE DEPUIS TOUJOURS. D’ACCORD AVEC PERSONNE. · VERT SUR L’ÉTIQUETTE. NOIR SUR LE BILAN. · MON CORPS N’EST PAS VOTRE PROGRAMME ÉLECTORAL. · PLANÈTE B. TOUJOURS INTROUVABLE. · SOLIDAIRES. PAS SEULEMENT QUAND ÇA NOUS ARRANGE.
 - Écartés : C’EST QUI LE PATRON ? (marque déposée) · 1871 (déjà en boutique) · DROITARD. C’ÉTAIT CENSÉ ME VEXER ? (doublon de DROITARD. ET ALORS ?) · CONSERVATEUR. PAS CONSERVÉ. (déjà écarté : pas compris) · LAISSEZ-MOI PENSER SANS MODE D’EMPLOI. (doublon de PATRIOTE. SANS MODE D’EMPLOI.) · TRAVAIL. MÉRITE. FICHE DE PAIE. (doublon de LE TRAVAIL MÉRITE DE PAYER.) · JE VOIS LES DEUX CÔTÉS. (doublon de CENTRISTE. DES ENNEMIS PARTOUT.) · LE CŒUR À GAUCHE. LES FACTURES PARTOUT. · MON CENTRE DE GRAVITÉ EST POLITIQUE. · 50 % DE LA POPULATION. PAS 50 % DU SILENCE. (seconde lecture) · FÉMINISTE. PAS TON ASSISTANTE. · ON NE PEUT PAS METTRE LE CLIMAT EN PAUSE. (sans chute)
+
+## Étude La Petite République et série « Fronton » (octobre 2026)
+- Ce qui fait vendre chez eux : une forme connue de tous avec un seul mot changé, la chute en deux temps, la fierté plutôt que l'attaque, l'intemporel avant l'actualité. Leur angle mort : un seul camp, et rien sur le vote.
+- Règle tirée : une série = le même gabarit pour les six camps, publiés ensemble (« test du miroir »).
+- Série « Fronton » validée par la rédaction : Liberté Égalité SOLIDARITÉ (gauche radicale) · FRATERNITÉ (gauche) · BIODIVERSITÉ (écologistes) · CENTRALITÉ (centre) · PROPRIÉTÉ (droite) · SOUVERAINETÉ (patriotes). Typographie : Source Serif 4 droit (même famille que le site, OFL), `docs/boutique/fonts/`.
+- « Patriotes » remplace « extrême droite » dans la boutique (choix de la rédaction). Drapeaux tricolores admis, impression couleur.
+- Fables de La Fontaine et chute en deux temps : idée retenue, exécution à reprendre.
+

@@ -266,6 +266,58 @@ Vus en ligne le 13 octobre, absents du relevé du 14 : `insoumise-fils`, `insoum
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, famille, repas de famille, vaisselle, dîner, tablier, cadeau famille
 
+## Série « Fronton » (octobre 2026) : les six ensemble, le même jour
+
+La devise gravée sur un fronton de mairie, dernier mot choisi par la rédaction pour chaque camp. Même gabarit, même taille de texte pour les six (script `scripts/boutique-fronton.ts`). Fichiers : `impression/{clair,sombre}/fronton-<id>.png`. Format large : tee-shirt, sweat, tote bag, mug.
+
+### `fronton-solidarite.png`
+
+**Nom** : Liberté Égalité Solidarité
+
+**Description** : La devise de nos mairies, avec le mot qui compte pour vous : la solidarité. Même fronton pour chaque camp, seul le dernier mot change.
+
+**Mots-clés** : présidentielle 2027, politique, élection, cadeau, République, devise, Liberté Égalité Fraternité, fronton, mairie, gauche, solidarité, social, partage
+
+### `fronton-fraternite.png`
+
+**Nom** : Liberté Égalité Fraternité
+
+**Description** : La devise de la République, telle qu’elle est gravée sur les mairies depuis 1880. Même fronton pour chaque camp, seul le dernier mot change.
+
+**Mots-clés** : présidentielle 2027, politique, élection, cadeau, République, devise, Liberté Égalité Fraternité, fronton, mairie, gauche, fraternité, République, classique
+
+### `fronton-biodiversite.png`
+
+**Nom** : Liberté Égalité Biodiversité
+
+**Description** : La devise de nos mairies, avec le mot qui compte pour vous : la biodiversité. Même fronton pour chaque camp, seul le dernier mot change.
+
+**Mots-clés** : présidentielle 2027, politique, élection, cadeau, République, devise, Liberté Égalité Fraternité, fronton, mairie, écologie, biodiversité, climat, nature, planète
+
+### `fronton-centralite.png`
+
+**Nom** : Liberté Égalité Centralité
+
+**Description** : La devise de nos mairies, avec le mot qui compte pour vous : le centre. Même fronton pour chaque camp, seul le dernier mot change.
+
+**Mots-clés** : présidentielle 2027, politique, élection, cadeau, République, devise, Liberté Égalité Fraternité, fronton, mairie, centre, modéré, juste milieu, humour
+
+### `fronton-propriete.png`
+
+**Nom** : Liberté Égalité Propriété
+
+**Description** : La devise de nos mairies, avec le mot qui compte pour vous : la propriété. Même fronton pour chaque camp, seul le dernier mot change.
+
+**Mots-clés** : présidentielle 2027, politique, élection, cadeau, République, devise, Liberté Égalité Fraternité, fronton, mairie, droite, propriété, liberté, libéral
+
+### `fronton-souverainete.png`
+
+**Nom** : Liberté Égalité Souveraineté
+
+**Description** : La devise de nos mairies, avec le mot qui compte pour vous : la souveraineté. Même fronton pour chaque camp, seul le dernier mot change.
+
+**Mots-clés** : présidentielle 2027, politique, élection, cadeau, République, devise, Liberté Égalité Fraternité, fronton, mairie, souveraineté, patriote, France, nation
+
 ## Lot « idées de la rédaction » (octobre 2026) : alterner les camps dans cet ordre
 
 Droite, centre, droite nationale, gauche radicale, gauche, puis on recommence : chaque bloc a le même nombre de phrases (4). Les variantes masculin/féminin comptent pour une phrase.
