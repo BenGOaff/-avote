@@ -5,12 +5,14 @@
  *
  *   YOUTUBE_API_KEY=… npx tsx scripts/youtube.ts
  */
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 
 const ROOT = process.cwd()
 const LIST = path.join(ROOT, 'content/youtube/chaines.json')
 const STATS = path.join(ROOT, 'content/youtube/stats.json')
+/** Images des chaînes, servies par le site (aucune ressource tierce) */
+const AVATARS = path.join(ROOT, 'public/img/youtube')
 const KEY = process.env.YOUTUBE_API_KEY
 /** Environ deux ans de relevés hebdomadaires */
 const MAX_SNAPSHOTS = 110
@@ -32,7 +34,9 @@ async function api(endpoint: string, params: Record<string, string>) {
 async function main() {
   if (!KEY) throw new Error('YOUTUBE_API_KEY manquante')
   const list = JSON.parse(readFileSync(LIST, 'utf8')) as { channels: { id: string; name: string }[] }
-  const store = JSON.parse(readFileSync(STATS, 'utf8')) as { _note: string; snapshots: Snapshot[] }
+  const store = JSON.parse(readFileSync(STATS, 'utf8')) as { _note: string; meta?: Record<string, { created: string }>; snapshots: Snapshot[] }
+  store.meta ??= {}
+  const thumbs = new Map<string, string>()
   const date = new Date().toISOString().slice(0, 10)
   const snap: Snapshot = { date, channels: {} }
   const uploads = new Map<string, string>()
@@ -40,12 +44,16 @@ async function main() {
   const ids = list.channels.map((c) => c.id)
   for (let i = 0; i < ids.length; i += 50) {
     const batch = ids.slice(i, i + 50)
-    const res = await api('channels', { part: 'statistics,contentDetails', id: batch.join(','), maxResults: '50' })
+    const res = await api('channels', { part: 'snippet,statistics,contentDetails', id: batch.join(','), maxResults: '50' })
     for (const it of (res.items ?? []) as {
       id: string
       statistics: { subscriberCount?: string; hiddenSubscriberCount?: boolean; viewCount: string; videoCount: string }
       contentDetails: { relatedPlaylists: { uploads?: string } }
+      snippet: { publishedAt: string; thumbnails?: Record<string, { url: string }> }
     }[]) {
+      store.meta![it.id] = { created: it.snippet.publishedAt.slice(0, 10) }
+      const thumb = it.snippet.thumbnails?.medium?.url ?? it.snippet.thumbnails?.default?.url
+      if (thumb) thumbs.set(it.id, thumb)
       const st = it.statistics
       snap.channels[it.id] = {
         s: st.hiddenSubscriberCount || st.subscriberCount === undefined ? null : Number(st.subscriberCount),
@@ -65,6 +73,19 @@ async function main() {
       snap.channels[id]!.last = item?.contentDetails?.videoPublishedAt?.slice(0, 10) ?? null
     } catch (e) {
       console.warn(`dernière vidéo introuvable pour ${id} : ${(e as Error).message}`)
+    }
+  }
+
+  // Image de la chaîne : téléchargée une fois, puis servie par le site
+  mkdirSync(AVATARS, { recursive: true })
+  for (const [id, url] of thumbs) {
+    const file = path.join(AVATARS, `${id}.jpg`)
+    if (existsSync(file)) continue
+    try {
+      const res = await fetch(url)
+      if (res.ok) writeFileSync(file, Buffer.from(await res.arrayBuffer()))
+    } catch (e) {
+      console.warn(`image introuvable pour ${id} : ${(e as Error).message}`)
     }
   }
 

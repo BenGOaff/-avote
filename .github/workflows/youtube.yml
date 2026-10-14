@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "youtube-ca-vote[bot]"
           git config user.email "youtube@users.noreply.github.com"
-          git add content/youtube/stats.json
+          git add content/youtube/stats.json public/img/youtube
           git commit -m "youtube : relevé des chaînes ($(date -u +%Y%m%d))" || exit 0
           git pull --rebase origin "${{ github.ref_name }}"
           git push origin HEAD:${{ github.ref_name }}
