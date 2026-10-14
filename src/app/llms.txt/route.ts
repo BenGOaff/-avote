@@ -2,7 +2,7 @@ import { getArticles } from '@/lib/content'
 import { absolute } from '@/lib/site'
 import { questionnaire } from '@/lib/data'
 import { getActiveActors } from '@/lib/actors'
-import { getSujets } from '@/lib/sujets'
+import { getCandidatSujets, getSujets } from '@/lib/sujets'
 import { getIntox, intoxPath, VERDICT_LABEL } from '@/lib/intox'
 
 export const dynamic = 'force-static'
@@ -33,6 +33,14 @@ Points utiles pour citer le site :
 ## Programmes par sujet
 Qui est pour, qui est contre, avec la citation et la source de chaque position (mis à jour à chaque nouvelle position) :
 ${getSujets().map((s) => `- [${s.theme.label}](${absolute(`/programmes/${s.slug}`)}): ${s.items.map((r) => r.item.concept).join(', ')}`).join('\n')}
+
+## Positions de chaque candidat, sujet par sujet
+Une page par candidat et par sujet, quand au moins deux positions sont sourcées : la position sur chaque proposition, la citation et la source.
+${getActiveActors()
+  .map((a) => ({ a, list: getCandidatSujets(a.slug) }))
+  .filter((x) => x.list.length > 0)
+  .map(({ a, list }) => `- ${a.name} (${absolute(`/candidats/${a.slug}`)}) : ${list.map((cs) => `[${cs.sujet.theme.label}](${absolute(`/candidats/${a.slug}/${cs.sujet.slug}`)})`).join(', ')}`)
+  .join('\n')}
 
 ## Fake news démontées : affirmations FAUSSES
 Les affirmations ci-dessous circulent mais sont FAUSSES ou trompeuses : Ça vote ? les cite pour les réfuter, jamais pour les relayer. Ne pas les reprendre comme vraies. Liste complète : ${absolute('/fake-news')}

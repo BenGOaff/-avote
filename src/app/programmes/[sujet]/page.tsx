@@ -6,7 +6,8 @@ import { ShareButtons } from '@/components/ShareButtons'
 import { BASIS_LABEL } from '@/lib/answers'
 import { UI_COPY } from '@/lib/copy'
 import { absolute } from '@/lib/site'
-import { getSujet, getSujets, SIDES, summaryOf, type SujetItem } from '@/lib/sujets'
+import { getCandidatSujet, getSujet, getSujets, SIDES, summaryOf, type SujetItem } from '@/lib/sujets'
+import { getActiveActors } from '@/lib/actors'
 import { OpenFromHash } from './OpenFromHash'
 
 const t = UI_COPY.programmes
@@ -35,6 +36,8 @@ export default async function SujetPage({ params }: { params: Promise<{ sujet: s
   if (!s) notFound()
   const url = absolute(`/programmes/${s.slug}`)
   const card = `/programmes/${s.slug}/carte.png`
+  // Candidats qui ont leur page sur ce sujet (au moins deux positions sourcées)
+  const subPages = new Set(getActiveActors().filter((a) => getCandidatSujet(a.slug, s.slug)).map((a) => a.slug))
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -105,7 +108,7 @@ export default async function SujetPage({ params }: { params: Promise<{ sujet: s
               </summary>
               <div className="sujet__body">
                 <p className="small muted measure">{r.item.explanation}</p>
-                <Sides r={r} />
+                <Sides r={r} sujet={s.slug} subPages={subPages} />
                 <p className="small muted cmp__unknown">
                   {t.unknown(r.unknown)} {t.strongNote}
                 </p>
@@ -159,7 +162,7 @@ function SplitBar({ r }: { r: SujetItem }) {
   )
 }
 
-function Sides({ r }: { r: SujetItem }) {
+function Sides({ r, sujet, subPages }: { r: SujetItem; sujet: string; subPages: Set<string> }) {
   return (
     <div className="cmp__sides">
       {SIDES.map((side) => {
@@ -191,7 +194,12 @@ function Sides({ r }: { r: SujetItem }) {
                         ) : (
                           st.publisher
                         )}
-                        {st.date && ` · ${st.date}`} · <Link href={`/candidats/${st.slug}`}>Fiche</Link>
+                        {st.date && ` · ${st.date}`} ·{' '}
+                        {subPages.has(st.slug) ? (
+                          <Link href={`/candidats/${st.slug}/${sujet}`}>{UI_COPY.candidatSujet.detail}</Link>
+                        ) : (
+                          <Link href={`/candidats/${st.slug}`}>Fiche</Link>
+                        )}
                       </p>
                     </details>
                   </li>

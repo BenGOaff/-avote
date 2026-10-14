@@ -5029,3 +5029,14 @@ details.disclosure > div {
   display: grid;
   gap: var(--s3);
 }
+.cs-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--s4) 0 0;
+  display: grid;
+  gap: var(--s3);
+}
+.cs-list__concept {
+  margin: 0 0 var(--s1);
+  font-size: var(--h3);
+}

@@ -141,3 +141,41 @@ export function actorUpdatedAt(slug: string): string | null {
   for (const p of Object.values(liveCorpus.positions[slug] ?? {})) if (p.codedAt && (!last || p.codedAt > last)) last = p.codedAt
   return last
 }
+
+/** Une page « candidat × sujet » n'existe que si le candidat a au moins ce nombre de positions sourcées sur le sujet */
+export const MIN_CANDIDAT_SUJET = 2
+
+export interface CandidatSujetRow {
+  item: Item
+  stance?: Stance
+}
+export interface CandidatSujet {
+  sujet: Sujet
+  rows: CandidatSujetRow[]
+  known: number
+}
+
+let cache: Sujet[] | null = null
+const sujetsCached = () => (cache ??= getSujets())
+
+/** Le sujet vu par un seul candidat : ses positions sourcées, et les propositions sur lesquelles on ne sait rien */
+export function getCandidatSujet(slug: string, sujet: string): CandidatSujet | undefined {
+  const s = sujetsCached().find((x) => x.slug === sujet)
+  if (!s) return undefined
+  const rows = s.items.map((r) => ({ item: r.item, stance: r.stances.find((st) => st.slug === slug) }))
+  const known = rows.filter((r) => r.stance).length
+  return known >= MIN_CANDIDAT_SUJET ? { sujet: s, rows, known } : undefined
+}
+
+/** Les sujets qui ont une page pour ce candidat (candidats actifs seulement) */
+export function getCandidatSujets(slug: string): CandidatSujet[] {
+  return sujetsCached().flatMap((s) => getCandidatSujet(slug, s.slug) ?? [])
+}
+
+/** Synthèse tirée des positions codées (aucun texte rédigé à la main ni par IA) : le décompte, puis les propositions par camp */
+export function candidatSujetSummary(name: string, cs: CandidatSujet): { lead: string; sides: { side: Side; texts: string[] }[] } {
+  return {
+    lead: `${name} a une position connue sur ${cs.known} des ${cs.rows.length} propositions de ce sujet.`,
+    sides: SIDES.map((side) => ({ side, texts: cs.rows.filter((r) => r.stance?.side === side).map((r) => r.item.text) })).filter((x) => x.texts.length > 0),
+  }
+}
