@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link'
+import { NavLink } from './NavLink'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef } from 'react'
 import { sectionOf } from '@/lib/nav'
@@ -25,9 +25,9 @@ export function SubNav() {
       <div ref={bar} className="container subnav__inner">
         <span className="subnav__title">{section.title}</span>
         {section.items.map((it) => (
-          <Link key={it.href} href={it.href} className="subnav__link" aria-current={it.href === current ? 'page' : undefined}>
+          <NavLink key={it.href} href={it.href} className="subnav__link" aria-current={it.href === current ? 'page' : undefined}>
             {it.label}
-          </Link>
+          </NavLink>
         ))}
       </div>
     </nav>

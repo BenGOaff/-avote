@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link'
+import { NavLink } from './NavLink'
 import { usePathname } from 'next/navigation'
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { sectionOf, SECTIONS, type NavSection } from '@/lib/nav'
@@ -15,13 +15,13 @@ export function TopBar({ logo }: { logo: ReactNode }) {
   return (
     <header className="topbar">
       <div className="container topbar__inner">
-        <Link href="/" className="topbar__logo" aria-label="Ça vote ? — accueil">
+        <NavLink href="/" className="topbar__logo" aria-label="Ça vote ? — accueil">
           {logo}
-        </Link>
+        </NavLink>
         <nav className="topbar__nav" aria-label="Navigation principale">
-          <Link href="/test" className="topbar__cta" aria-current={isCurrent(pathname, '/test') ? 'page' : undefined}>
+          <NavLink href="/test" className="topbar__cta" aria-current={isCurrent(pathname, '/test') ? 'page' : undefined}>
             Le test
-          </Link>
+          </NavLink>
           {SECTIONS.map((sec) => (
             <Menu key={sec.id} section={sec} pathname={pathname} />
           ))}
@@ -94,10 +94,10 @@ function Menu({ section, pathname }: { section: NavSection; pathname: string }) 
           <ul>
             {section.items.map((it) => (
               <li key={it.href}>
-                <Link href={it.href} aria-current={current === it.href ? 'page' : undefined}>
+                <NavLink href={it.href} aria-current={current === it.href ? 'page' : undefined}>
                   <span className="topbar__item">{it.label}</span>
                   {it.desc && <span className="topbar__desc">{it.desc}</span>}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

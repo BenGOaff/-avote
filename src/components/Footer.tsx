@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { NavLink } from './NavLink'
 import { AI_NOTICE, UI_COPY } from '@/lib/copy'
 import { SECTIONS } from '@/lib/nav'
 import { tiquizHref } from './Support'
@@ -32,7 +32,7 @@ export function Footer() {
             <ul>
               {s.items.map((i) => (
                 <li key={i.href}>
-                  <Link href={i.href}>{i.label}</Link>
+                  <NavLink href={i.href}>{i.label}</NavLink>
                 </li>
               ))}
               {s.id === 'site' && (
