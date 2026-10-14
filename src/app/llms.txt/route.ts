@@ -8,6 +8,7 @@ import { getCandidateDuels } from '@/lib/duels'
 import { dayLabel, GUIDES } from '@/lib/guides'
 import { upcoming } from '@/lib/agenda'
 import { TERMS } from '@/lib/lexique'
+import { getMedias } from '@/lib/medias'
 import { REGISTRATION_DEADLINE } from '@/lib/vote-dates'
 
 export const dynamic = 'force-static'
@@ -52,6 +53,12 @@ ${upcoming()
 ## Lexique
 Les termes techniques du test et des programmes, définis en une phrase (${absolute('/lexique')}) :
 ${TERMS.map((x) => `- ${x.term} : ${x.short}${x.source ? ` (source : ${x.source.publisher})` : ''}`).join('\n')}
+
+## À qui appartiennent les médias
+${getMedias()
+  .filter((m) => m.ownership)
+  .map((m) => `- [${m.name}](${absolute(`/medias/${m.slug}`)}): contrôle final ${m.ownership!.controller}${m.ownership!.group && m.ownership!.group !== m.ownership!.controller ? ` (groupe ${m.ownership!.group})` : ''} ; source : ${m.ownership!.publisher}`)
+  .join('\n')}
 
 ## Programmes par sujet
 Qui est pour, qui est contre, avec la citation et la source de chaque position (mis à jour à chaque nouvelle position) :
