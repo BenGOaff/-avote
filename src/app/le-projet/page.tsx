@@ -46,6 +46,10 @@ export default function ProjectPage() {
           Ce qui reste humain : écrire les règles et les corriger quand elles se trompent. Les règles sont dans la <Link href="/methodologie">méthode</Link>, les
           erreurs dans les <Link href="/corrections">corrections</Link>.
         </p>
+        <p>
+          Une IA a ses penchants, elle aussi : ce que la recherche a mesuré, et comment vérifier ce qu’un chatbot te répond, dans{' '}
+          <Link href="/radar/2026-10-14-ia-et-elections">IA et élections : peux-tu demander à un chatbot pour qui voter ?</Link>
+        </p>
 
         <h2 style={{ fontSize: 'var(--h3)' }}>Qui est derrière</h2>
         <p>
