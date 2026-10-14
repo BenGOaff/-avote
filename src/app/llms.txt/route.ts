@@ -7,6 +7,7 @@ import { getIntox, intoxPath, VERDICT_LABEL } from '@/lib/intox'
 import { getCandidateDuels } from '@/lib/duels'
 import { dayLabel, GUIDES } from '@/lib/guides'
 import { upcoming } from '@/lib/agenda'
+import { TERMS } from '@/lib/lexique'
 import { REGISTRATION_DEADLINE } from '@/lib/vote-dates'
 
 export const dynamic = 'force-static'
@@ -47,6 +48,10 @@ Récapitulatif hebdomadaire (positions nouvelles ou modifiées des candidats, in
 ${upcoming()
   .map((e) => `- ${e.date}${e.end ? ` au ${e.end}` : ''} : ${e.title}${e.computed ? ' (date calculée à partir de la règle, à confirmer par le décret de convocation)' : ''} (source : ${e.source.publisher}, ${e.source.url})`)
   .join('\n')}
+
+## Lexique
+Les termes techniques du test et des programmes, définis en une phrase (${absolute('/lexique')}) :
+${TERMS.map((x) => `- ${x.term} : ${x.short}${x.source ? ` (source : ${x.source.publisher})` : ''}`).join('\n')}
 
 ## Programmes par sujet
 Qui est pour, qui est contre, avec la citation et la source de chaque position (mis à jour à chaque nouvelle position) :

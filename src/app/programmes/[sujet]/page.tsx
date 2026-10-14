@@ -9,6 +9,7 @@ import { absolute } from '@/lib/site'
 import { getCandidatSujet, getSujet, getSujets, SIDES, summaryOf, type SujetItem } from '@/lib/sujets'
 import { getActiveActors } from '@/lib/actors'
 import { OpenFromHash } from './OpenFromHash'
+import { Glossed } from '@/components/Gloss'
 
 const t = UI_COPY.programmes
 
@@ -107,7 +108,9 @@ export default async function SujetPage({ params }: { params: Promise<{ sujet: s
                 <SplitBar r={r} />
               </summary>
               <div className="sujet__body">
-                <p className="small muted measure">{r.item.explanation}</p>
+                <p className="small muted measure">
+                  <Glossed text={r.item.explanation} />
+                </p>
                 <Sides r={r} sujet={s.slug} subPages={subPages} />
                 <p className="small muted cmp__unknown">
                   {t.unknown(r.unknown)} {t.strongNote}
