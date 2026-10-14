@@ -23,6 +23,7 @@ export const SECTIONS: NavSection[] = [
     items: [
       { href: '/test', label: 'Le test', desc: `${QUESTION_COUNT} questions, tes priorités, tes lignes rouges.` },
       { href: '/resultats', label: 'Mes résultats', desc: 'Ta proximité avec chaque candidat, question par question.' },
+      { href: '/voter', label: 'Voter en 2027', desc: 'Dates, inscription, procuration, pièce d’identité : le mode d’emploi.' },
       { href: '/urne', label: 'L’urne', desc: 'Tu sais pour qui tu votes ? Glisse ton bulletin, anonyme.' },
       { href: '/mon-profil', label: 'Mon profil', desc: 'Ce qui est gardé sur ton appareil, export, effacement.' },
     ],
@@ -37,7 +38,6 @@ export const SECTIONS: NavSection[] = [
       { href: '/livres', label: 'Lire les candidats', desc: 'Le livre de chaque candidat, rangé par famille politique.' },
       { href: '/partis', label: 'Partis', desc: 'Histoire, dirigeants, élus et idées de chaque parti.' },
       { href: '/radar', label: 'Radar', desc: 'Le fil de la campagne, sourcé.' },
-      { href: '/radar/2026-10-08-comment-voter', label: 'Comment voter', desc: 'Inscription, pièce d’identité, procuration : le mode d’emploi.' },
       { href: '/radar/2026-10-10-lire-un-sondage', label: 'Lire un sondage', desc: 'Marge d’erreur, quotas, indécis : ce qu’un sondage dit, et ce qu’il ne dit pas.' },
     ],
   },

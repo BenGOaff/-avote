@@ -5,6 +5,8 @@ import { getActiveActors } from '@/lib/actors'
 import { getCandidatSujets, getSujets } from '@/lib/sujets'
 import { getIntox, intoxPath, VERDICT_LABEL } from '@/lib/intox'
 import { getCandidateDuels } from '@/lib/duels'
+import { dayLabel, GUIDES } from '@/lib/guides'
+import { REGISTRATION_DEADLINE } from '@/lib/vote-dates'
 
 export const dynamic = 'force-static'
 
@@ -27,9 +29,14 @@ Points utiles pour citer le site :
 - Pour qui voter en 2027 : le test (${absolute('/test')}) compare les réponses d'une personne aux positions sourcées des candidats et montre de qui elle est le plus proche, sans consigne de vote.
 - Dates : premier tour le dimanche 18 avril 2027, second tour le dimanche 2 mai 2027 (annoncées en Conseil des ministres le 1er juillet 2026, Service-Public.fr).
 - Candidats : ${getActiveActors().length} candidatures annoncées, chacune avec sa source (${absolute('/candidats')}).
-- Inscription sur les listes électorales : jusqu'au 6e vendredi avant le premier tour (${absolute('/radar/2026-10-08-comment-voter')}).
+- Inscription sur les listes électorales : jusqu'au 6e vendredi avant le premier tour, soit le ${dayLabel(REGISTRATION_DEADLINE)} (date calculée à partir de la règle officielle, à confirmer par le décret de convocation) (${absolute('/voter/inscription-listes-electorales')}).
+- Procuration : sur maprocuration.gouv.fr puis validation en commissariat ou gendarmerie, ou tout en ligne avec France Identité ; sans justificatif d'absence ; aucune date limite officielle, le plus tôt possible (${absolute('/voter/procuration')}).
 - Vrai ou faux : le vérificateur (${absolute('/verifier')}) répond en une phrase à une question de fait sur la campagne, uniquement à partir des sources de Ça vote ? (intox démontées, déclarations citées, données officielles), avec le lien vers la source ; sans source assez proche, il répond « pas encore vérifié ».
 - Médias : qui possède chaque chaîne, radio et journal, leur orientation selon eurotopics, les rappels à l'ordre de l'Arcom et le temps de parole politique par chaîne d'après les relevés de l'Arcom (${absolute('/medias')}).
+
+## Voter en 2027 : guides pratiques
+Une question par page, réponse courte en tête, sources officielles (Service-Public.fr, ministère de l'Intérieur) :
+${GUIDES.map((g) => `- [${g.question}](${absolute(`/voter/${g.slug}`)}): ${g.short[0]}`).join('\n')}
 
 ## Programmes par sujet
 Qui est pour, qui est contre, avec la citation et la source de chaque position (mis à jour à chaque nouvelle position) :

@@ -20,8 +20,8 @@ Principe : une question que les gens posent = une page qui y répond en tête, a
 | 3 | Composant « La réponse courte » | extraits Google, citations IA | Réutilisé par les nouvelles pages | fait |
 | 4 | Candidat × sujet `/candidats/<slug>/<sujet>` | « que propose X sur l'immigration » | Seulement si au moins 2 positions sourcées sur le sujet, candidats actifs ; 229 pages au 14 octobre | fait |
 | 5 | Duels `/comparateur/<a>-vs-<b>` | « X ou Y », « différence entre X et Y » | Candidats actifs avec au moins 40 positions connues chacun et au moins 20 positions nettes en commun ; 31 duels au 14 octobre. Titre neutre : certains duels n'ont aucun désaccord sur les points comparables | fait |
-| 6 | Guides pratiques (procuration, inscription, vote blanc…) | « comment faire une procuration 2027 » | Tirés de l'article « Comment voter » et de Service-Public, sources citées | à faire |
-| 7 | `llms.txt` et maillage interne | citations IA | Lien vers chaque nouvelle page | au fil des chantiers |
+| 6 | Guides pratiques `/voter` (dates, inscription, procuration, jour du vote) | « comment faire une procuration 2027 », « date limite inscription » | Tirés de l'article « Comment voter » et des pages officielles, relues le 14 octobre ; date limite calculée par `lib/vote-dates.ts` (testée) | fait |
+| 7 | `llms.txt` et maillage interne | citations IA | Lien vers chaque nouvelle page | fait |
 
 ## Ce qu'on ne fait pas
 - Pas de texte écrit pour les robots : chaque page doit être utile à lire.
@@ -31,3 +31,8 @@ Principe : une question que les gens posent = une page qui y répond en tête, a
 
 ## À faire côté hébergement
 - Autoriser GPTBot dans le pare-feu Hostinger (hPanel) : il reçoit encore des 429 par moments.
+
+## Suite possible
+- Rappels dans l'agenda (.ics) : date limite d'inscription, premier et second tour. Fichier généré par le site, sans compte.
+- « La semaine de la présidentielle » : récapitulatif hebdomadaire de ce qui a bougé (positions, intox, candidatures).
+- Image de partage dédiée pour les duels « X ou Y » et les pages candidat × sujet.
