@@ -14,6 +14,8 @@ export interface ActorNuance {
   blocLabel: string
   basis: 'grille' | 'deduite'
   note?: string
+  /** Faits qui fondent une nuance déduite, chacun avec un extrait vérifié */
+  sources?: { title: string; publisher: string; url: string; quote: string }[]
 }
 
 export const BLOCS = data.blocs as { id: BlocId; label: string }[]
@@ -21,11 +23,11 @@ export const NUANCE_SOURCE = data.source
 export const NUANCE_VALIDATION = data.validation
 
 const nuances = data.nuances as Record<string, { label: string; bloc: BlocId }>
-const actors = data.actors as Record<string, { nuance: string; basis: 'grille' | 'deduite'; note?: string }>
+const actors = data.actors as Record<string, { nuance: string; basis: 'grille' | 'deduite'; note?: string; sources?: ActorNuance['sources'] }>
 
 export function nuanceOf(slug: string): ActorNuance | null {
   const a = actors[slug]
   const n = a ? nuances[a.nuance] : undefined
   if (!a || !n) return null
-  return { code: a.nuance, label: n.label, bloc: n.bloc, blocLabel: BLOCS.find((b) => b.id === n.bloc)?.label ?? n.bloc, basis: a.basis, ...(a.note ? { note: a.note } : {}) }
+  return { code: a.nuance, label: n.label, bloc: n.bloc, blocLabel: BLOCS.find((b) => b.id === n.bloc)?.label ?? n.bloc, basis: a.basis, ...(a.note ? { note: a.note } : {}), ...(a.sources?.length ? { sources: a.sources } : {}) }
 }

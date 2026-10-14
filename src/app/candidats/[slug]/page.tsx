@@ -83,6 +83,20 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
           <NuanceSourceLink />
         </span>
       </p>
+      {nuanceOf(a.slug)?.note && (
+        <p className="small muted measure" style={{ marginTop: 0 }}>
+          {UI_COPY.candidate.nuanceWhy} {nuanceOf(a.slug)!.note}
+          {nuanceOf(a.slug)!.sources?.map((x, i, all) => (
+            <span key={x.url}>
+              {' '}
+              <a href={x.url} rel="noopener noreferrer nofollow" target="_blank" title={x.quote}>
+                {x.publisher}
+                {all.slice(0, i).some((y) => y.publisher === x.publisher) && ` (${all.slice(0, i + 1).filter((y) => y.publisher === x.publisher).length})`}
+              </a>
+            </span>
+          ))}
+        </p>
+      )}
       <PartyTrail slug={a.slug} />
       <div className="measure">
         <p className="lede">
