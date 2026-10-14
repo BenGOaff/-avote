@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { shuffled } from './shuffle'
+import { seeded, shuffled } from './shuffle'
 
 describe('ordre tiré au hasard', () => {
   it('garde tous les éléments, sans toucher à la liste d’origine', () => {
@@ -15,5 +15,8 @@ describe('ordre tiré au hasard', () => {
       first[f] = (first[f] ?? 0) + 1
     }
     for (const x of ['a', 'b', 'c']) expect(first[x]).toBeGreaterThan(1700)
+  })
+  it('même graine, même ordre (le menu et les sections d’une page restent alignés)', () => {
+    expect(shuffled(['a', 'b', 'c', 'd'], seeded(42))).toEqual(shuffled(['a', 'b', 'c', 'd'], seeded(42)))
   })
 })
