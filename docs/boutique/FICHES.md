@@ -266,6 +266,130 @@ Vus en ligne le 13 octobre, absents du relevé du 14 : `insoumise-fils`, `insoum
 
 **Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, famille, repas de famille, vaisselle, dîner, tablier, cadeau famille
 
+## Séries « La Fontaine, presque » et « Adages » (octobre 2026) : validées par la rédaction
+
+Format gros titre, un mot surligné. La Fontaine : signature « — Jean de La Fontaine, presque. ». Un design par camp dans chaque série ; féminisme en plus (2) ; « Le travail, c’est la santé » en réserve pour la droite.
+
+### `lf-cigale.png`
+
+**Nom** : Vous chantiez ? Eh bien ! Travaillez maintenant.
+
+**Description** : La Cigale et la Fourmi, revue par un camp qui croit au travail. Un mot change, la morale aussi. En face, il existe : Taxons la Fourmi.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, La Fontaine, fable, détournement, littérature, citation, droite, travail, mérite
+
+### `lf-fourmi.png`
+
+**Nom** : La Fourmi n’est pas prêteuse. Taxons la Fourmi.
+
+**Description** : La Cigale et la Fourmi, revue par un camp qui croit au partage. En face, il existe : Eh bien ! Travaillez maintenant.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, La Fontaine, fable, détournement, littérature, citation, gauche, impôts, partage, riches
+
+### `lf-avocat.png`
+
+**Nom** : Selon que vous serez puissant ou misérable…
+
+**Description** : …votre avocat sera brillant ou commis d’office. Les Animaux malades de la peste, à un mot près. Qui a été condamné parmi les candidats ? Réponse sourcée sur çavote.fr.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, La Fontaine, fable, détournement, littérature, citation, gauche, justice, égalité
+
+### `lf-velo.png`
+
+**Nom** : Rien ne sert de courir, il faut partir à vélo.
+
+**Description** : Le Lièvre et la Tortue, version mobilité douce. Pour qui pédale lentement mais arrive quand même.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, La Fontaine, fable, détournement, littérature, citation, écologie, vélo, climat
+
+### `lf-modere.png`
+
+**Nom** : La raison du plus modéré est toujours la meilleure
+
+**Description** : Le Loup et l’Agneau, revu par le centre. La raison du plus fort, c’était avant.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, La Fontaine, fable, détournement, littérature, citation, centre, modéré, nuance
+
+### `lf-collier.png`
+
+**Nom** : Plutôt mourir de faim que de porter un collier.
+
+**Description** : Le Loup et le Chien : le loup préfère la liberté à la gamelle. Pour qui tient à décider chez soi.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, La Fontaine, fable, détournement, littérature, citation, patriote, liberté, souveraineté
+
+### `ad-riches.png`
+
+**Nom** : Les riches coûtent trop cher.
+
+**Description** : On entend souvent que tout coûte trop cher. Ici, on a juste changé le sujet.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, riches, impôts, inégalités
+
+### `ad-instruisent.png`
+
+**Nom** : L’avenir appartient à ceux qui s’instruisent tôt.
+
+**Description** : « L’avenir appartient à ceux qui se lèvent tôt », version école publique. Pour les profs, les parents et les élèves.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, gauche, école, éducation, prof
+
+### `ad-canicule.png`
+
+**Nom** : Après nous, la canicule.
+
+**Description** : « Après moi, le déluge », version réchauffement. La formule a pris quelques degrés.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, écologie, climat, canicule, réchauffement
+
+### `ad-negocie.png`
+
+**Nom** : Choisir, c’est renoncer. Alors je négocie.
+
+**Description** : André Gide disait : choisir, c’est renoncer. Le centre a trouvé la parade.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, centre, compromis, négociation, Gide
+
+### `ad-aide-toi.png`
+
+**Nom** : Aide-toi, la République t’aidera.
+
+**Description** : « Aide-toi, le ciel t’aidera », version effort et institutions. Pour qui croit qu’on se lève d’abord soi-même.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, droite, effort, mérite, République
+
+### `ad-herbe.png`
+
+**Nom** : L’herbe n’est pas plus verte ailleurs.
+
+**Description** : Pour qui aime son coin de France et n’a pas envie d’aller voir ailleurs si c’est mieux.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, patriote, France, terroir, fierté
+
+### `ad-reine.png`
+
+**Nom** : Le roi est mort, vive la reine.
+
+**Description** : La formule des monarchies, version parité. Pour celles et ceux qui attendent une présidente.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, féminisme, femmes, égalité, présidente
+
+### `ad-cote.png`
+
+**Nom** : Je ne suis pas de votre côte.
+
+**Description** : Ève n’est pas sortie de la côte d’Adam, en tout cas pas de la vôtre. Un tee-shirt féministe, avec un clin d’œil.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, féminisme, femmes, égalité, humour
+
+### `ad-travail.png`
+
+**Nom** : Le travail, c’est la santé. Ne rien faire…
+
+**Description** : …c’est tricher. La chanson disait l’inverse pour la seconde moitié. Pour qui croit que travailler, ça compte.
+
+**Mots-clés** : présidentielle 2027, politique, élection, humour, cadeau, droite, travail, mérite, humour
+
 ## Série « Fronton » (octobre 2026) : les six ensemble, le même jour
 
 La devise gravée sur un fronton de mairie, dernier mot choisi par la rédaction pour chaque camp. Même gabarit, même taille de texte pour les six (script `scripts/boutique-fronton.ts`). Fichiers : `impression/{clair,sombre}/fronton-<id>.png`. Format large : tee-shirt, sweat, tote bag, mug.
