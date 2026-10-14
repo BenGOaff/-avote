@@ -6,6 +6,8 @@ import { liveCorpus, questionnaire } from '@/lib/data'
 import { nuanceOf } from '@/lib/nuances'
 import type { Position } from '@/lib/engine/types'
 import { Comparateur, type CompareData } from './Comparateur'
+import { DUEL_MIN_KNOWN, getCandidateDuels } from '@/lib/duels'
+import { UI_COPY } from '@/lib/copy'
 
 export const metadata: Metadata = {
   title: 'Comparateur des programmes 2027 : qui défend quoi, sujet par sujet',
@@ -44,10 +46,33 @@ export default function ComparateurPage() {
         lede="Les positions des candidats sur tous les sujets du test, avec la phrase exacte et sa source. Choisis jusqu’à 4 candidats pour les mettre côte à côte."
       />
       <Comparateur data={data} />
+      <DuelList />
       <p className="small muted section">
         Une case vide veut dire qu’on n’a pas trouvé de position explicite, pas que le candidat n’en a pas. <Link href="/programmes">Les programmes sujet par sujet</Link> · <Link href="/methodologie">Comment les positions sont codées</Link>{' '}
         · <Link href="/contact?sujet=correction">Signaler une erreur</Link>
       </p>
     </div>
+  )
+}
+
+/** Les duels « X ou Y » publiés (règle de génération dans lib/duels.ts) */
+function DuelList() {
+  const duels = getCandidateDuels()
+  if (duels.length === 0) return null
+  const t = UI_COPY.candidateDuel
+  return (
+    <section className="section" aria-labelledby="duels">
+      <h2 id="duels" style={{ fontSize: 'var(--h3)' }}>
+        {t.listTitle}
+      </h2>
+      <p className="small muted">{t.listNote(duels.length, DUEL_MIN_KNOWN)}</p>
+      <p className="sujet__tabs">
+        {duels.map((d) => (
+          <Link key={d.slug} href={`/comparateur/${d.slug}`} className="cmp__theme sujet__tab">
+            {d.a.name} ou {d.b.name}
+          </Link>
+        ))}
+      </p>
+    </section>
   )
 }
