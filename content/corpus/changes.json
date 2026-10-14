@@ -11395,5 +11395,21 @@
     "item": "dem-08",
     "from": "2",
     "to": "[1,2]"
+  },
+  {
+    "date": "2026-10-14T11:44:35.974Z",
+    "actor": "natacha-polony",
+    "item": "eur-01",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "4a507bf79b3998d9"
+  },
+  {
+    "date": "2026-10-14T11:44:35.974Z",
+    "actor": "natacha-polony",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "072bc342ddba1dbf"
   }
 ]
