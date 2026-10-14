@@ -647,7 +647,17 @@
         "url": "https://www.20minutes.fr/politique/4253051-20261010-presidentielle-2027-font-rire-lalanne-dieudonne-lancent-campagne-presidentielle-valenciennes?amp%3Bat_campaign=149"
       },
       "verified": true,
-      "addedBy": "veille claude-sonnet-5-5"
+      "addedBy": "veille claude-sonnet-5-5",
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://dieudolalanne2027.com/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://dieudolalanne2027.com/programme/"
+        }
+      ]
     },
     {
       "slug": "dieudonne",
@@ -660,7 +670,17 @@
         "url": "https://www.20minutes.fr/politique/4253051-20261010-presidentielle-2027-font-rire-lalanne-dieudonne-lancent-campagne-presidentielle-valenciennes?amp%3Bat_campaign=149"
       },
       "verified": true,
-      "addedBy": "veille claude-sonnet-5-5"
+      "addedBy": "veille claude-sonnet-5-5",
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://dieudolalanne2027.com/"
+        },
+        {
+          "kind": "programme",
+          "url": "https://dieudolalanne2027.com/programme/"
+        }
+      ]
     },
     {
       "slug": "sylvain-durif",

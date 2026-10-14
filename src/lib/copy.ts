@@ -14,6 +14,40 @@ export const SITE = {
 export const AI_NOTICE =
   'Ça vote ? est alimenté par l’IA, avec le moins d’intervention humaine possible, pour limiter le risque d’influence humaine. Les mêmes règles s’appliquent à tous les candidats, et chaque information renvoie à sa source publique : programmes, déclarations, documents officiels, presse.'
 
+/**
+ * Article devant un nom de propriétaire : « à Groupe TF1 » → « au groupe TF1 », « à Famille Dassault » → « à la famille Dassault »,
+ * « à État français » → « à l’État français ». Les noms propres restent tels quels.
+ */
+const W = '(?=[\\s,(]|$)'
+const ARTICLES: [RegExp, 'le' | 'la' | 'l’' | 'les' | '', boolean][] = [
+  [new RegExp(`^(groupe|fonds|collège|monde)${W}`, 'i'), 'le', true],
+  [new RegExp(`^(famille|société|holding)${W}`, 'i'), 'la', true],
+  [new RegExp(`^association${W}`, 'i'), 'l’', true],
+  [new RegExp(`^(État|Etat|Assemblée|Institut)${W}`), 'l’', false],
+  [new RegExp(`^(salariés|lecteurs|socios)${W}`, 'i'), 'les', true],
+  [new RegExp(`^(États|Augustins)${W}`), 'les', false],
+  [new RegExp(`^(une|ses)${W}`, 'i'), '', true],
+  [new RegExp(`^Sénat${W}`), 'le', false],
+]
+function withArticle(n: string): string {
+  let name = n
+  let art: '' | 'le' | 'la' | 'l’' | 'les' = ''
+  if (/^Le /.test(name)) [art, name] = ['le', name.slice(3)]
+  else if (/^La /.test(name)) [art, name] = ['la', name.slice(3)]
+  else if (/^Les /.test(name)) [art, name] = ['les', name.slice(4)]
+  else
+    for (const [re, a, lower] of ARTICLES)
+      if (re.test(name)) {
+        art = a
+        if (lower) name = name.charAt(0).toLowerCase() + name.slice(1)
+        break
+      }
+  return art === 'le' ? `au ${name}` : art === 'les' ? `aux ${name}` : art === 'la' ? `à la ${name}` : art === 'l’' ? `à l’${name}` : `à ${name}`
+}
+const a = withArticle
+/** Même entité sous deux libellés (« Bouygues SA » et « Bouygues ») : on ne la nomme qu'une fois */
+const same = (x: string, y: string) => x.toLowerCase().replace(/[’']/g, ' ').startsWith(y.toLowerCase().replace(/[’']/g, ' ').slice(0, 12))
+
 export const UI_COPY = {
   shortAnswer: {
     title: 'La réponse courte',
@@ -385,6 +419,20 @@ export const UI_COPY = {
     how: 'Comment ça marche',
     ai: 'Phrase rédigée par une IA à partir des sources ci-dessous, contrôlée automatiquement. Une erreur ? Signale-la.',
     report: 'Signaler',
+  },
+  mediaPage: {
+    metaTitle: (name: string) => `À qui appartient ${name} ? Propriétaire et actionnaires`,
+    title: (name: string) => `À qui appartient ${name} ?`,
+    answer: (name: string, owner: string, controller: string) =>
+      owner && !same(owner, controller) ? `${name} appartient ${a(owner)} ; le dernier mot revient ${a(controller)}.` : `${name} appartient ${a(controller)}.`,
+    lastWord: (kind: string) => `Type de propriétaire : ${kind.toLowerCase()}.`,
+    same: (list: string) => `Le même propriétaire possède aussi : ${list}.`,
+    checked: (d: string) => `Vérifié le ${d}`,
+    arcomTitle: 'Les décisions de l’Arcom',
+    group: 'Les autres médias du même propriétaire',
+    all: 'Tous les médias : qui possède ton info',
+    free: 'Les médias libres',
+    error: 'Signaler une erreur',
   },
   medias: {
     kicker: 'Observatoire des médias',

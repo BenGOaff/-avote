@@ -14,7 +14,11 @@ export function MediaCard({ m, logo }: { m: MediaEntry; logo?: string | null }) 
         // eslint-disable-next-line @next/next/no-img-element
         <img className="media-card__logo" src={logo} alt={`Logo ${m.name}`} loading="lazy" decoding="async" />
       )}
-      <h4 className="media-card__name">{m.name}</h4>
+      <h4 className="media-card__name">
+        <a href={`/medias/${m.slug}`} className="card__link">
+          {m.name}
+        </a>
+      </h4>
       {m.site && (
         <p className="small" style={{ margin: '0 0 var(--s2)' }}>
           <a href={m.site} rel="noopener noreferrer" target="_blank">
