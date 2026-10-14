@@ -440,6 +440,223 @@
         "m’*appartient*."
       ],
       "sig": "site"
+    },
+    {
+      "id": "ca-bosse",
+      "lines": [
+        "Ça bosse en bas.",
+        "Ça encaisse",
+        "en *haut*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "facture-collective",
+      "lines": [
+        "Bénéfices privés.",
+        "Facture",
+        "*collective*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "proletaire",
+      "lines": [
+        "Prolétaire.",
+        "Et pas prêt",
+        "à me *taire*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "proletaire-f",
+      "lines": [
+        "Prolétaire.",
+        "Et pas prête",
+        "à me *taire*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "service-public",
+      "lines": [
+        "Service public.",
+        "Pas service",
+        "*minimum*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "plafond-de-verre",
+      "lines": [
+        "Plafond de verre.",
+        "Travaux",
+        "en *cours*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "charge-mentale",
+      "lines": [
+        "Charge mentale.",
+        "Poste non",
+        "*rémunéré*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "1-5-degre",
+      "lines": [
+        "+1,5 °C.",
+        "Et ça",
+        "*discute* encore."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ecolo",
+      "lines": [
+        "Écolo.",
+        "Pas un *saint*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "ecolo-f",
+      "lines": [
+        "Écolo.",
+        "Pas une *sainte*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "radicalement-modere",
+      "lines": [
+        "Radicalement",
+        "*modéré*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "radicalement-moderee",
+      "lines": [
+        "Radicalement",
+        "*modérée*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "compromis",
+      "lines": [
+        "Le compromis",
+        "n’est pas",
+        "un gros *mot*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "reflechis",
+      "lines": [
+        "Ni fan.",
+        "Ni contre tout.",
+        "Je *réfléchis*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "nuance",
+      "lines": [
+        "Nuancé.",
+        "Et fier de l’être.",
+        "Enfin, *plutôt*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "nuance-f",
+      "lines": [
+        "Nuancée.",
+        "Et fière de l’être.",
+        "Enfin, *plutôt*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "garder",
+      "lines": [
+        "Pas tout changer.",
+        "Garder ce qui",
+        "*marche*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "trie",
+      "lines": [
+        "De droite.",
+        "Et je trie",
+        "mes *déchets*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "reac",
+      "lines": [
+        "Réac.",
+        "Mais à l’*heure*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "dette",
+      "lines": [
+        "La dette ?",
+        "Mes enfants",
+        "vous *remercient*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "fabrique-en-france",
+      "lines": [
+        "Fabriqué en France.",
+        "Moi *aussi*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "fabriquee-en-france",
+      "lines": [
+        "Fabriquée en France.",
+        "Moi *aussi*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "achete-francais",
+      "lines": [
+        "J’achète français.",
+        "Quand je *trouve*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "campagne",
+      "lines": [
+        "La campagne",
+        "n’est pas",
+        "un *décor*."
+      ],
+      "sig": "site"
+    },
+    {
+      "id": "pain-chaud",
+      "lines": [
+        "Ma France",
+        "sent le pain",
+        "*chaud*."
+      ],
+      "sig": "site"
     }
   ]
 }
