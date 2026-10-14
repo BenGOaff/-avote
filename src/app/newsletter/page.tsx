@@ -4,7 +4,7 @@ import { NewsletterForm } from '@/components/NewsletterForm'
 
 export const metadata: Metadata = {
   title: 'Newsletter',
-  description: 'La campagne présidentielle 2027 dans ta boîte mail : ce qui a bougé, ce qui a été promis, ce qui a été corrigé.',
+  description: 'Chaque lundi, la semaine de la présidentielle 2027 dans ta boîte mail : positions nouvelles des candidats, intox démontées, prochains rendez-vous.',
   alternates: { canonical: '/newsletter' },
 }
 
@@ -20,7 +20,7 @@ export default async function NewsletterPage({ searchParams }: { searchParams: P
   const s = etat ? STATES[etat] : undefined
   return (
     <div className="container">
-      <PageHeader kicker="Newsletter" title="La campagne dans ta boîte mail" lede="Ce qui a bougé, ce qui a été promis, ce qui a été corrigé. Sans lien avec tes réponses au test." />
+      <PageHeader kicker="Newsletter" title="La campagne dans ta boîte mail" lede="Chaque lundi, la semaine de la présidentielle : positions nouvelles, intox démontées, prochains rendez-vous. La même lettre pour tout le monde, sans lien avec tes réponses au test." />
       <div className="narrow stack" style={{ margin: 0 }}>
         {s && (
           <div className={`alert alert--${s.tone}`} role="status">

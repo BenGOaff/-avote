@@ -42,6 +42,10 @@ export default function PrivacyPage() {
           par notre prestataire d’envoi, {LEGAL.emailProvider.name}.
         </p>
         <p>La newsletter n’a aucun lien avec le test. Elle ne sait pas si tu l’as fait, ni ce que tu as répondu, et elle n’est jamais segmentée selon des opinions.</p>
+        <p>
+          La lettre du lundi est la même pour tous les inscrits. Quand elle dit que des positions ont bougé, elle t’invite à ouvrir tes résultats : la
+          comparaison avec ton dernier résultat se fait sur ton appareil, et ni le site ni la lettre ne savent si ton résultat a changé.
+        </p>
 
         <h2 id="contact" style={{ fontSize: 'var(--h3)' }}>
           Le formulaire de contact

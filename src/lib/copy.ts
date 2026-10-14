@@ -448,6 +448,44 @@ export const UI_COPY = {
     urne: 'Glisser un bulletin dans l’urne',
     how: 'Comment les positions sont établies',
   },
+  semaine: {
+    kicker: 'La semaine de la présidentielle',
+    metaTitle: (range: string) => `La semaine de la présidentielle : ${range}`,
+    metaDescription: (summary: string) => `${summary} Positions des candidats, intox démontées, candidatures et prochains rendez-vous, avec les sources.`,
+    title: (range: string) => range,
+    current: 'Semaine en cours, mise à jour au fil des jours.',
+    summary: (added: number, changed: number, intox: number, cands: number) =>
+      (() => {
+        const parts = [
+          added && `${added} position${added > 1 ? 's' : ''} nouvelle${added > 1 ? 's' : ''}`,
+          changed && `${changed} position${changed > 1 ? 's' : ''} qui ${changed > 1 ? 'ont' : 'a'} changé`,
+          intox && `${intox} intox démontée${intox > 1 ? 's' : ''}`,
+          cands && `${cands} candidature${cands > 1 ? 's' : ''} annoncée${cands > 1 ? 's' : ''} ou retirée${cands > 1 ? 's' : ''}`,
+        ].filter(Boolean) as string[]
+        const s = parts.length > 1 ? `${parts.slice(0, -1).join(', ')} et ${parts.at(-1)}` : (parts[0] ?? '')
+        return `${s.charAt(0).toUpperCase()}${s.slice(1)}.`
+      })(),
+    empty: 'Semaine calme : rien de nouveau dans nos sources.',
+    addedTitle: 'Positions nouvelles',
+    addedHint: 'Trouvées pour la première fois dans un programme, une déclaration ou un vote, avec la citation sur la fiche.',
+    changedTitle: 'Positions qui ont changé',
+    changedHint: 'Une source plus récente ou plus précise a remplacé la précédente. L’ancienne et la nouvelle restent consultables.',
+    positions: (n: number) => `${n} position${n > 1 ? 's' : ''}`,
+    intoxTitle: 'Intox démontées',
+    candTitle: 'Candidatures',
+    candNew: 'annonce sa candidature ou sa démarche',
+    candOut: 'se retire',
+    nextTitle: 'Les prochains rendez-vous',
+    nextAll: 'Tout l’agenda',
+    driftTitle: 'Ton résultat a peut-être bougé',
+    driftText: 'Si tu as fait le test sur cet appareil, ouvre tes résultats : le site compare avec les positions publiées depuis, sur ton appareil. Tes réponses ne sont envoyées nulle part.',
+    driftCta: 'Voir mes résultats',
+    mailTitle: 'Ce récap, chaque lundi, dans ta boîte mail',
+    mailText: 'Le même pour tout le monde : il ne sait pas si tu as fait le test, ni ce que tu as répondu.',
+    archive: 'Les semaines précédentes',
+    prev: 'Semaine précédente',
+    next: 'Semaine suivante',
+  },
   agenda: {
     kicker: 'La campagne',
     title: 'Les prochains rendez-vous',
