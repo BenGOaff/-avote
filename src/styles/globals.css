@@ -3816,6 +3816,27 @@ details.disclosure > div {
 .cmp__side ul:has(.sujet__who) {
   gap: 0;
 }
+/* Page d'une proposition : toutes les citations dépliées, une colonne sur mobile */
+.cmp__sides--stack {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 800px) {
+  .cmp__sides--stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.cmp__sides--stack ul {
+  gap: var(--s4);
+}
+.prop__who {
+  flex: 1;
+  min-width: 0;
+}
+.prop__who + .prop__who,
+.cmp__sides--stack li + li {
+  padding-top: var(--s3);
+  border-top: var(--hairline) solid var(--line);
+}
 .sujet__who summary::-webkit-details-marker {
   display: none;
 }

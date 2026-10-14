@@ -186,3 +186,43 @@ export function stanceOf(slug: string, itemId: string): Stance | undefined {
   stanceIndex ??= new Map(sujetsCached().flatMap((s) => s.items.flatMap((r) => r.stances.map((st) => [`${st.slug}|${r.item.id}`, st] as const))))
   return stanceIndex.get(`${slug}|${itemId}`)
 }
+
+/** Page d'une proposition (/programmes/<sujet>/<proposition>) : le slug vient du nom court de la proposition, unique dans le questionnaire */
+export const propositionSlug = (item: Item) => sujetSlug(item.concept)
+export const propositionPath = (sujet: string, item: Item) => `/programmes/${sujet}/${propositionSlug(item)}`
+
+export interface Proposition {
+  sujet: Sujet
+  row: SujetItem
+  /** Candidats actifs sans position explicite trouvée */
+  unknown: { slug: string; name: string }[]
+  prev?: SujetItem
+  next?: SujetItem
+}
+
+export function getPropositions(): { sujet: Sujet; row: SujetItem }[] {
+  return sujetsCached().flatMap((s) => s.items.map((row) => ({ sujet: s, row })))
+}
+
+export function getProposition(sujet: string, slug: string): Proposition | undefined {
+  const s = sujetsCached().find((x) => x.slug === sujet)
+  const i = s?.items.findIndex((r) => propositionSlug(r.item) === slug) ?? -1
+  if (!s || i < 0) return undefined
+  const row = s.items[i]!
+  const known = new Set(row.stances.map((st) => st.slug))
+  return {
+    sujet: s,
+    row,
+    unknown: getActiveActors()
+      .filter((a) => !known.has(a.slug))
+      .map((a) => ({ slug: a.slug, name: a.name })),
+    prev: s.items[i - 1],
+    next: s.items[i + 1],
+  }
+}
+
+/** Page d'une proposition à partir de son identifiant de question (eur-09…) */
+export function propositionPathById(itemId: string): string | undefined {
+  const p = getPropositions().find((x) => x.row.item.id === itemId)
+  return p && propositionPath(p.sujet.slug, p.row.item)
+}

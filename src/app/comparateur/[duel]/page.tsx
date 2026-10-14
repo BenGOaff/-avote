@@ -10,7 +10,7 @@ import { questionnaire } from '@/lib/data'
 import { duelsOf, getCandidateDuel, getCandidateDuels } from '@/lib/duels'
 import type { DuelItem, DuelVerdict } from '@/lib/engine/scoring'
 import { absolute } from '@/lib/site'
-import { stanceOf, sujetSlug } from '@/lib/sujets'
+import { propositionPath, stanceOf, sujetSlug } from '@/lib/sujets'
 
 const t = UI_COPY.candidateDuel
 const VERDICTS: DuelVerdict[] = ['desaccord', 'nuance', 'accord']
@@ -188,7 +188,7 @@ function DuelRow({ x, a, b }: { x: DuelItem; a: { slug: string; name: string }; 
       })}
       {theme && (
         <p className="small" style={{ margin: 'var(--s3) 0 0' }}>
-          <Link href={`/programmes/${sujetSlug(theme)}#${item.id}`}>{t.allCandidates}</Link>
+          <Link href={propositionPath(sujetSlug(theme), item)}>{t.allCandidates}</Link>
         </p>
       )}
     </li>

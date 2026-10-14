@@ -6,7 +6,7 @@ import { ShareButtons } from '@/components/ShareButtons'
 import { BASIS_LABEL } from '@/lib/answers'
 import { UI_COPY } from '@/lib/copy'
 import { absolute } from '@/lib/site'
-import { getCandidatSujet, getSujet, getSujets, SIDES, summaryOf, type SujetItem } from '@/lib/sujets'
+import { getCandidatSujet, getSujet, getSujets, propositionPath, SIDES, summaryOf, type SujetItem } from '@/lib/sujets'
 import { getActiveActors } from '@/lib/actors'
 import { OpenFromHash } from './OpenFromHash'
 import { Glossed } from '@/components/Gloss'
@@ -114,7 +114,7 @@ export default async function SujetPage({ params }: { params: Promise<{ sujet: s
                 </p>
                 <Sides r={r} sujet={s.slug} subPages={subPages} />
                 <p className="small muted cmp__unknown">
-                  {t.unknown(r.unknown)} {t.strongNote}
+                  {t.unknown(r.unknown)} {t.strongNote} <Link href={propositionPath(s.slug, r.item)}>{t.dedicated}</Link>
                 </p>
               </div>
             </details>

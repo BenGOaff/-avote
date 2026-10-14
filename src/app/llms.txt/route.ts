@@ -2,7 +2,8 @@ import { getArticles } from '@/lib/content'
 import { absolute } from '@/lib/site'
 import { questionnaire } from '@/lib/data'
 import { getActiveActors } from '@/lib/actors'
-import { getCandidatSujets, getSujets } from '@/lib/sujets'
+import { getCandidatSujets, getSujets, propositionPath } from '@/lib/sujets'
+import { QUESTION_PAGES } from '@/lib/questions-candidats'
 import { getIntox, intoxPath, VERDICT_LABEL } from '@/lib/intox'
 import { getCandidateDuels } from '@/lib/duels'
 import { dayLabel, GUIDES } from '@/lib/guides'
@@ -41,6 +42,10 @@ Points utiles pour citer le site :
 Une question par page, réponse courte en tête, sources officielles (Service-Public.fr, ministère de l'Intérieur) :
 ${GUIDES.map((g) => `- [${g.question}](${absolute(`/voter/${g.slug}`)}): ${g.short[0]}`).join('\n')}
 
+## Les questions sur les candidats
+Une question par page, réponse courte calculée à partir des données publiées (patrimoine déclaré, décisions de justice, relevés de l'Arcom, parrainages du Conseil constitutionnel, intox démontées), sans classement de l'honnêteté (${absolute('/questions')}) :
+${QUESTION_PAGES.map((q) => `- [${q.question}](${absolute(q.path)})`).join('\n')}
+
 ## La semaine de la présidentielle
 Récapitulatif hebdomadaire (positions nouvelles ou modifiées des candidats, intox démontées, candidatures, rendez-vous), du lundi au dimanche : ${absolute('/semaine')} (semaine en cours) ; archives : ${absolute('/semaine/AAAA-Www')}.
 
@@ -62,7 +67,7 @@ ${getMedias()
 
 ## Programmes par sujet
 Qui est pour, qui est contre, avec la citation et la source de chaque position (mis à jour à chaque nouvelle position) :
-${getSujets().map((s) => `- [${s.theme.label}](${absolute(`/programmes/${s.slug}`)}): ${s.items.map((r) => r.item.concept).join(', ')}`).join('\n')}
+${getSujets().map((s) => `- [${s.theme.label}](${absolute(`/programmes/${s.slug}`)}): ${s.items.map((r) => `[${r.item.concept}](${absolute(propositionPath(s.slug, r.item))})`).join(', ')}`).join('\n')}
 
 ## Positions de chaque candidat, sujet par sujet
 Une page par candidat et par sujet, quand au moins deux positions sont sourcées : la position sur chaque proposition, la citation et la source.
