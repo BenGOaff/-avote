@@ -14,6 +14,7 @@
 
 Vérifié le 8 octobre 2026 : parcours complet du test au navigateur, **aucune requête vers un domaine extérieur**, aucune erreur JavaScript.
 9. Le duel (`/duel`) se joue sur un seul appareil : les réponses des deux joueurs et leurs prénoms restent dans l’état de la page, jamais écrits dans le navigateur ni envoyés. L’image à partager ne porte que les prénoms et le taux d’accord.
+10. Les alertes « ton résultat peut bouger » ne reçoivent aucune réponse. Notification : le navigateur fournit une adresse de service de notification (Google, Mozilla, Apple, Microsoft, vérifiée par liste) et deux clés de chiffrement, rangées dans Supabase (schéma `alertes`, RLS sans politique, fonctions protégées par le jeton serveur), sans IP ni date. Le robot (`scripts/alertes.ts`) envoie à tous le même contenu public chiffré (changements de position du corpus) ; c'est le service worker qui compare avec les réponses lues dans IndexedDB sur l'appareil. Une adresse déclarée morte par le service est supprimée. Email : case facultative à l'inscription, segment Resend dédié, même contenu pour tous.
 
 ## En-têtes HTTP (`next.config.mjs`)
 
@@ -35,4 +36,4 @@ Les flux RSS sont traités comme des données non fiables : pas d’outil donné
 
 ## Secrets
 
-Jamais dans le dépôt. `ANTHROPIC_API_KEY` en secret GitHub Actions (robots) et dans hPanel (vérificateur, clé d’un espace de travail Anthropic dédié avec plafond de dépense) ; `RESEND_API_KEY`, `NEWSLETTER_SECRET`, `URNE_SUPABASE_URL`, `URNE_SUPABASE_KEY`, `URNE_TOKEN` et `URNE_SECRET` dans hPanel.
+Jamais dans le dépôt. `ANTHROPIC_API_KEY` en secret GitHub Actions (robots) et dans hPanel (vérificateur, clé d’un espace de travail Anthropic dédié avec plafond de dépense) ; `RESEND_API_KEY`, `NEWSLETTER_SECRET`, `URNE_SUPABASE_URL`, `URNE_SUPABASE_KEY`, `URNE_TOKEN` et `URNE_SECRET` dans hPanel ; `RESEND_ALERT_SEGMENT_ID` dans hPanel et en secret GitHub ; `URNE_SUPABASE_URL`, `URNE_SUPABASE_KEY`, `URNE_TOKEN` et `VAPID_PRIVATE_KEY` en secrets GitHub pour le robot des alertes. La clé publique VAPID est dans `src/lib/push-shared.ts`.

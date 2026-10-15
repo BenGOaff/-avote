@@ -20,13 +20,15 @@ function key(): Buffer {
 export interface Pending {
   email: string
   firstName: string
+  /** Demande aussi l'email « ton résultat peut bouger » (segment RESEND_ALERT_SEGMENT_ID) */
+  alerts?: boolean
   issuedAt: number
 }
 
 export function sealToken(p: Omit<Pending, 'issuedAt'>): string {
   const iv = randomBytes(12)
   const cipher = createCipheriv('aes-256-gcm', key(), iv)
-  const body = Buffer.concat([cipher.update(JSON.stringify({ e: p.email, f: p.firstName, t: Date.now() }), 'utf8'), cipher.final()])
+  const body = Buffer.concat([cipher.update(JSON.stringify({ e: p.email, f: p.firstName, a: p.alerts ? 1 : 0, t: Date.now() }), 'utf8'), cipher.final()])
   return Buffer.concat([iv, cipher.getAuthTag(), body]).toString('base64url')
 }
 
@@ -37,9 +39,9 @@ export function openToken(token: string): Pending | null {
     const decipher = createDecipheriv('aes-256-gcm', key(), raw.subarray(0, 12))
     decipher.setAuthTag(raw.subarray(12, 28))
     const json = Buffer.concat([decipher.update(raw.subarray(28)), decipher.final()]).toString('utf8')
-    const { e, f, t } = JSON.parse(json) as { e: string; f: string; t: number }
+    const { e, f, a, t } = JSON.parse(json) as { e: string; f: string; a?: number; t: number }
     if (typeof e !== 'string' || typeof t !== 'number' || Date.now() - t > TOKEN_TTL_MS) return null
-    return { email: e, firstName: typeof f === 'string' ? f : '', issuedAt: t }
+    return { email: e, firstName: typeof f === 'string' ? f : '', alerts: a === 1, issuedAt: t }
   } catch {
     return null
   }
@@ -97,18 +99,22 @@ export async function sendConfirmation(p: Omit<Pending, 'issuedAt'>, confirmUrl:
 }
 
 export async function addContact(p: Pending): Promise<boolean> {
-  const segment = process.env.RESEND_SEGMENT_ID
+  const alerts = p.alerts ? process.env.RESEND_ALERT_SEGMENT_ID : undefined
+  const segments = [process.env.RESEND_SEGMENT_ID, alerts].filter((x): x is string => !!x)
   const res = await resend('/contacts', {
     email: p.email,
     first_name: p.firstName || undefined,
     unsubscribed: false,
-    ...(segment ? { segments: [{ id: segment }] } : {}),
+    ...(segments.length ? { segments: segments.map((id) => ({ id })) } : {}),
   })
   if (res.ok) return true
-  // Contact déjà existant : on le rattache au segment
-  if ((res.status === 409 || res.status === 422) && segment) {
-    const r2 = await resend(`/contacts/${encodeURIComponent(p.email)}/segments/${encodeURIComponent(segment)}`, {})
-    return r2.ok || r2.status === 409
+  // Contact déjà existant : on le rattache aux segments
+  if ((res.status === 409 || res.status === 422) && segments.length) {
+    for (const segment of segments) {
+      const r2 = await resend(`/contacts/${encodeURIComponent(p.email)}/segments/${encodeURIComponent(segment)}`, {})
+      if (!r2.ok && r2.status !== 409) return false
+    }
+    return true
   }
   return false
 }

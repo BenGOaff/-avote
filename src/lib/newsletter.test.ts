@@ -12,6 +12,10 @@ describe('jeton de confirmation newsletter', () => {
     expect(t).not.toContain('a@b.fr')
     expect(openToken(t)).toMatchObject({ email: 'a@b.fr', firstName: 'Béné' })
   })
+  it('garde la demande d’alerte', () => {
+    expect(openToken(sealToken({ email: 'a@b.fr', firstName: '', alerts: true }))?.alerts).toBe(true)
+    expect(openToken(sealToken({ email: 'a@b.fr', firstName: '' }))?.alerts).toBe(false)
+  })
   it('refuse un jeton modifié', () => {
     const t = sealToken({ email: 'a@b.fr', firstName: '' })
     // On modifie un octet du message chiffré (et non les derniers caractères base64url, qui peuvent ne porter

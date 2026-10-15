@@ -14,6 +14,7 @@ import { VERDICT_QUIP, resultQuip } from '@/lib/humor'
 import { Portrait } from '@/components/Portrait'
 import { fmt, fmtPct } from '@/components/ScoreBar'
 import { NewsletterForm } from '@/components/NewsletterForm'
+import { PushToggle } from '@/components/PushToggle'
 import { ResultShare } from './ResultShare'
 import { ThemeIcon } from '@/components/ThemeIcon'
 import { NuanceTag } from '@/components/Nuance'
@@ -272,6 +273,15 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
 
       <section className="section" aria-labelledby="prevenu">
         <h2 id="prevenu">Être prévenu quand ça bouge</h2>
+        <PushToggle
+          local={state.persist === 'local'}
+          onKeep={() => {
+            const next = { ...state, persist: 'local' as const }
+            setState(next)
+            void saveState(next)
+          }}
+        />
+        <h3>Par email</h3>
         <p>
           Nouveaux candidats, programmes publiés, positions qui changent : reçois la lettre et reviens recalculer. Ton email n’est jamais relié à tes
           réponses, qui restent sur ce téléphone.

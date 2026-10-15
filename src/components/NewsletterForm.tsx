@@ -1,6 +1,7 @@
 'use client'
 import { useId, useState, type FormEvent } from 'react'
 import Link from 'next/link'
+import { UI_COPY } from '@/lib/copy'
 
 export function NewsletterForm() {
   const [state, setState] = useState<'idle' | 'loading' | 'done' | 'error'>('idle')
@@ -19,6 +20,7 @@ export function NewsletterForm() {
           email: String(f.get('email') ?? ''),
           firstName: String(f.get('firstName') ?? ''),
           consent: f.get('consent') === 'on',
+          alerts: f.get('alerts') === 'on',
           website: String(f.get('website') ?? ''),
         }),
       })
@@ -63,6 +65,10 @@ export function NewsletterForm() {
           J’accepte de recevoir la lettre de Ça vote ?. Désinscription en un clic dans chaque envoi. Seuls l’email et le prénom sont conservés, chez notre
           prestataire d’envoi. <Link href="/donnees">Qui les garde</Link>
         </span>
+      </label>
+      <label className="checkbox">
+        <input type="checkbox" name="alerts" />
+        <span className="small">{UI_COPY.alertes.emailOptIn}</span>
       </label>
       {state === 'error' && (
         <p role="alert" className="alert alert--correction">
