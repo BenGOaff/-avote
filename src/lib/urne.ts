@@ -27,7 +27,8 @@ export function urneChoices(): { slug: string; name: string; party?: string }[] 
 }
 export const isChoice = (c: string) => c === BLANK || urneChoices().some((a) => a.slug === c)
 
-async function rpc<T>(fn: string, args: Record<string, unknown>): Promise<T> {
+/** Appel d’une fonction protégée par le jeton serveur (urne et abonnements aux notifications, même projet). */
+export async function rpc<T>(fn: string, args: Record<string, unknown>): Promise<T> {
   const e = env()
   if (!e) throw new Error('urne non configurée')
   const res = await fetch(`${e.url}/rest/v1/rpc/${fn}`, {

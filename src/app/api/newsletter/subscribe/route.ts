@@ -13,6 +13,7 @@ const Body = z
     email: z.string().trim().toLowerCase().email().max(254),
     firstName: z.string().trim().max(60).regex(/^[\p{L}\p{M}' -]*$/u, 'Prénom invalide').default(''),
     consent: z.literal(true),
+    alerts: z.boolean().default(false),
     website: z.string().max(0).optional(), // pot de miel anti-robots
   })
   .strict()
@@ -38,7 +39,7 @@ export async function POST(req: NextRequest) {
   if (rateLimited(`mail:${parsed.data.email}`, 3, 60 * 60 * 1000)) return NextResponse.json(GENERIC)
 
   try {
-    const token = sealToken({ email: parsed.data.email, firstName: parsed.data.firstName })
+    const token = sealToken({ email: parsed.data.email, firstName: parsed.data.firstName, alerts: parsed.data.alerts })
     await sendConfirmation({ email: parsed.data.email, firstName: parsed.data.firstName }, absolute(`/newsletter/confirmer?t=${token}`))
   } catch {
     // Pas de journalisation du corps de requête ni de l'adresse (cahier §15.3, §21)

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="container">
-      <PageHeader kicker="Confidentialité" title="Ce qu’on sait de toi" lede="Pour le test : rien. Pour la newsletter : ton email et ton prénom, si tu les donnes. Pour la fréquentation : des visites anonymes, si tu l’acceptes. Le meilleur moyen de ne pas perdre tes opinions politiques, c’est de ne jamais les avoir." />
+      <PageHeader kicker="Confidentialité" title="Ce qu’on sait de toi" lede="Pour le test : rien. Pour la newsletter : ton email et ton prénom, si tu les donnes. Pour les notifications : une adresse technique, si tu les actives. Pour la fréquentation : des visites anonymes, si tu l’acceptes. Le meilleur moyen de ne pas perdre tes opinions politiques, c’est de ne jamais les avoir." />
       <div className="measure stack">
         <h2 style={{ fontSize: 'var(--h3)' }}>Le test</h2>
         <p>
@@ -45,6 +45,22 @@ export default function PrivacyPage() {
         <p>
           La lettre du lundi est la même pour tous les inscrits. Quand elle dit que des positions ont bougé, elle t’invite à ouvrir tes résultats : la
           comparaison avec ton dernier résultat se fait sur ton appareil, et ni le site ni la lettre ne savent si ton résultat a changé.
+        </p>
+
+        <p>
+          Si tu coches « m’écrire aussi quand mon résultat peut bouger », ton adresse rejoint aussi la liste des alertes, chez le même prestataire. Ces emails
+          sont les mêmes pour tous : ils listent les positions publiées ou corrigées, sans savoir ce que tu as répondu.
+        </p>
+
+        <h2 id="notifications" style={{ fontSize: 'var(--h3)' }}>
+          Les notifications sur le téléphone
+        </h2>
+        <p>
+          Si tu les actives depuis tes résultats, ton navigateur nous donne une adresse technique chez son service de notification (Google, Mozilla, Apple ou
+          Microsoft) et deux clés pour chiffrer les messages. C’est tout ce que nous gardons, dans une base hébergée dans l’Union européenne : ni réponse, ni
+          résultat, ni adresse IP, ni date. Le message, chiffré, est le même pour tous et liste les positions qui ont changé. C’est ton téléphone qui regarde si
+          ça touche tes réponses, gardées sur l’appareil, pour choisir le texte de la notification. Base légale : ton consentement. Pour arrêter : « Ne plus me
+          prévenir » dans tes résultats, ou les réglages du navigateur ; une adresse que le service déclare inactive est supprimée au passage suivant.
         </p>
 
         <h2 id="contact" style={{ fontSize: 'var(--h3)' }}>

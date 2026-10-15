@@ -1,0 +1,54 @@
+# Alertes « ton résultat peut bouger » (scripts/alertes.ts) : une notification par jour au plus vers les téléphones
+# abonnés, un email tous les trois jours au plus vers le segment des alertes. Contenu public, le même pour tous :
+# aucune réponse au test n'existe côté serveur.
+# Secrets : URNE_SUPABASE_URL, URNE_SUPABASE_KEY, URNE_TOKEN (mêmes valeurs que dans hPanel), VAPID_PRIVATE_KEY,
+# RESEND_API_KEY, RESEND_FROM, RESEND_ALERT_SEGMENT_ID. Un canal sans ses secrets est simplement sauté.
+name: Alertes
+
+on:
+  schedule:
+    # ≈ 19 h 23 à Paris (heure d'été), après les passages des robots de la journée
+    - cron: '23 17 * * *'
+  workflow_dispatch:
+    inputs:
+      send:
+        description: 'Envoyer pour de vrai (sinon : aperçu dans le journal)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alertes
+  cancel-in-progress: false
+
+jobs:
+  alertes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Prévenir
+        env:
+          URNE_SUPABASE_URL: ${{ secrets.URNE_SUPABASE_URL }}
+          URNE_SUPABASE_KEY: ${{ secrets.URNE_SUPABASE_KEY }}
+          URNE_TOKEN: ${{ secrets.URNE_TOKEN }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ secrets.RESEND_FROM }}
+          RESEND_ALERT_SEGMENT_ID: ${{ secrets.RESEND_ALERT_SEGMENT_ID }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.send }}" = "true" ]; then npx tsx scripts/alertes.ts --send; else npx tsx scripts/alertes.ts; fi
+      - name: Enregistrer les curseurs
+        run: |
+          git config user.name "alertes-ca-vote[bot]"
+          git config user.email "alertes@users.noreply.github.com"
+          git add content/alertes
+          git commit -m "alertes : curseurs du $(date -u +%Y%m%d-%H%M)" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }}
