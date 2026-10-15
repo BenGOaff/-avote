@@ -23,12 +23,10 @@ begin
   return true;
 end $$;
 
+-- Sans le bon jeton, ne supprime rien
 create or replace function public.alertes_push_remove(p_token text, p_endpoint text)
-returns void language plpgsql security definer set search_path to '' as $$
-begin
-  if not public.urne_check(p_token) then raise exception 'refusé'; end if;
-  delete from alertes.push where endpoint = p_endpoint;
-end $$;
+returns void language sql security definer set search_path to '' as
+  'delete from alertes.push where endpoint = p_endpoint and public.urne_check(p_token)';
 
 create or replace function public.alertes_push_list(p_token text, p_after text default '', p_limit int default 1000)
 returns table(endpoint text, p256dh text, auth text) language plpgsql stable security definer set search_path to '' as $$
