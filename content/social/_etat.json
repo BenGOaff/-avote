@@ -2,7 +2,8 @@
  "mentions": {
   "marine-le-pen": 1,
   "dominique-de-villepin": 1,
-  "marine-tondelier": 1
+  "marine-tondelier": 1,
+  "edouard-philippe": 1
  },
  "items": {
   "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor": "2026-10-10T10:30:53.306Z",
@@ -18,7 +19,9 @@
   "20261013-1404-bruno-retailleau-presente-un-plan-de-197-milliards": "2026-10-13T14:34:19.797Z",
   "dem-01-fracture": "2026-10-13T14:34:19.797Z",
   "rdv-comparateur": "2026-10-13T21:33:01.235Z",
-  "cli-09-contre": "2026-10-14T12:21:47.171Z"
+  "cli-09-contre": "2026-10-14T12:21:47.171Z",
+  "20261015-1119-primaire-de-la-gauche-raphael-glucksmann-l-emporte": "2026-10-15T12:06:32.667Z",
+  "dem-02-contre": "2026-10-15T12:06:32.667Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -88,7 +91,12 @@
   "20261014-2037-budget-de-la-secu-2027-la-commission-des-affaires",
   "20261014-2037-melenchon-presente-un-budget-2027-106-4-milliards",
   "20261014-2037-mobilisation-lyceenne-retailleau-veut-une-selectio",
-  "20261014-2037-retraites-complementaires-hausse-de-1-4-apres-un-a"
+  "20261014-2037-retraites-complementaires-hausse-de-1-4-apres-un-a",
+  "20261015-1119-budget-2027-l-assemblee-adopte-la-contribution-fra",
+  "20261015-1119-budget-2027-l-assemblee-rejette-par-116-voix-contr",
+  "20261015-1119-le-rn-reclame-le-depart-de-richard-ferrand-du-cons",
+  "20261015-1119-marine-le-pen-veut-couper-l-aide-a-l-ukraine-six-m",
+  "20261015-1119-primaire-de-la-gauche-raphael-glucksmann-l-emporte"
  ],
  "rdv": 4
 }
