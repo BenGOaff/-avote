@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-16-rendez-vous-rdv-test-rapide",
+  "at": "2026-10-16T19:42:20.461Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "TES LIGNES ROUGES",
+    "title": "24 affirmations ou 111 : combien de temps pour savoir où tu te situes ?",
+    "line": "Version rapide ou complète. Jusqu'à 5 lignes rouges, les sujets sur lesquels tu ne transiges pas.",
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "24 affirmations pour aller vite, 111 pour aller au bout. Et jusqu'à 5 lignes rouges : les sujets sur lesquels tu ne transiges pas. Tu en choisirais combien ?",
+    "linkedin": "24 affirmations ou 111 : le même test, deux durées. À toi de choisir jusqu'où aller.\n\nLa version rapide compte 24 affirmations. La version complète en compte 111.\n\nDans les deux cas, tu peux poser jusqu'à 5 lignes rouges : les sujets sur lesquels tu ne transigeras pas, quoi qu'il arrive.\n\nLimiter à 5 oblige à hiérarchiser. Tout ne peut pas être une ligne rouge.\n\nSi tu devais en choisir une seule, ce serait laquelle ?\n\n#presidentielle2027",
+    "facebook": "Petit rendez-vous : le test existe en version rapide (24 affirmations) et en version complète (111). Tu peux aussi poser jusqu'à 5 lignes rouges, les sujets sur lesquels tu ne transigeras pas. Tu irais jusqu'aux 111, ou tu t'arrêtes à 24 ? Le test est sur çavote.fr",
+    "instagram": "24 affirmations ou 111 : tu choisis ta version.\nLe test existe en version rapide et en version complète.\nTu peux aussi poser jusqu'à 5 lignes rouges.\nCe sont les sujets sur lesquels tu ne transiges pas.\nCinq, pas une de plus. Lesquelles ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #testpolitique #lignesrouges"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
