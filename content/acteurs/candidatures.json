@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-10-14",
+  "collectedAt": "2026-10-16",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -482,12 +482,12 @@
     {
       "slug": "xavier-bertrand",
       "name": "Xavier Bertrand",
-      "status": "demarche",
-      "since": "2026-08-27",
+      "status": "declare",
+      "since": "2026-10-16",
       "source": {
-        "title": "2027 : figure de la droite, Xavier Bertrand confirme qu'il sera candidat à l'élection",
-        "publisher": "LCP",
-        "url": "https://lcp.fr/actualites/2027-figure-de-la-droite-xavier-bertrand-confirme-qu-il-sera-candidat-a-l-election"
+        "title": "« À l’EHPAD ! » : pour Xavier Bertrand, le candidat à droite qui « fera élire l’un des deux extrêmes aura intérêt à essayer la chirurgie esthétique ou l’exil »",
+        "publisher": "Public Sénat",
+        "url": "https://www.publicsenat.fr/actualites/politique/a-lehpad-pour-xavier-bertrand-le-candidat-a-droite-qui-fera-elire-lun-des-deux-extremes-aura-interet-a-essayer-la-chirurgie-esthetique-ou-lexil"
       },
       "verified": true,
       "links": [
