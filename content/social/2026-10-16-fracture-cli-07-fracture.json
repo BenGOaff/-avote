@@ -1,0 +1,33 @@
+{
+  "id": "2026-10-16-fracture-cli-07-fracture",
+  "at": "2026-10-16T11:54:00.868Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "POUR OU CONTRE ?",
+    "title": "Arrêter de construire de nouvelles éoliennes : 4 candidats pour, 6 contre",
+    "line": "12 candidats se sont prononcés sur cette affirmation du test. Les avis tranchent net.",
+    "yes": [
+      "marine-le-pen",
+      "eric-zemmour",
+      "nicolas-dupont-aignan",
+      "florian-philippot"
+    ],
+    "no": [
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "marine-tondelier",
+      "francois-ruffin",
+      "raphael-glucksmann",
+      "dominique-de-villepin"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Stopper les nouvelles éoliennes : 4 candidats disent oui, 6 disent non. Et toi, tu te ranges de quel côté ?",
+    "linkedin": "Arrêter de construire de nouvelles éoliennes : la question divise les candidats à la présidentielle 2027, 4 pour, 6 contre.\n\nL'affirmation soumise dans notre test est la suivante : « La France devrait arrêter de construire de nouvelles éoliennes. » Douze candidats se sont prononcés.\n\nQuatre y sont nettement favorables : Marine Le Pen, Éric Zemmour, Nicolas Dupont-Aignan et Florian Philippot.\n\nSix y sont nettement opposés : Jean-Luc Mélenchon, Fabien Roussel, Marine Tondelier, François Ruffin, Raphaël Glucksmann et Dominique de Villepin.\n\nEt vous, sur cette affirmation, de quel côté vous placez-vous, et pourquoi ?\n\n#presidentielle2027 #eoliennes",
+    "facebook": "Faut-il arrêter de construire de nouvelles éoliennes ? Sur 12 candidats qui se sont prononcés, 4 disent oui nettement et 6 disent non nettement. Toi, tu serais dans quel camp ? Dis-le en commentaire. Le test est sur çavote.fr",
+    "instagram": "Nouvelles éoliennes : 4 candidats pour l'arrêt, 6 contre.\nL'affirmation du test : « La France devrait arrêter de construire de nouvelles éoliennes. »\n12 candidats se sont prononcés.\n4 sont nettement pour.\n6 sont nettement contre.\nEt toi, tu te mets dans quel camp ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #eoliennes #energie"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
