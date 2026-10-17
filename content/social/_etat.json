@@ -3,7 +3,9 @@
   "marine-le-pen": 1,
   "dominique-de-villepin": 1,
   "marine-tondelier": 1,
-  "edouard-philippe": 1
+  "edouard-philippe": 1,
+  "david-lisnard": 1,
+  "bernard-cazeneuve": 1
  },
  "items": {
   "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor": "2026-10-10T10:30:53.306Z",
@@ -24,7 +26,9 @@
   "dem-02-contre": "2026-10-15T12:06:32.667Z",
   "cli-07-fracture": "2026-10-16T11:54:00.868Z",
   "rdv-test-rapide": "2026-10-16T19:42:20.461Z",
-  "20261016-1954-rn-et-udr-saisissent-le-conseil-constitutionnel-po": "2026-10-16T21:41:24.967Z"
+  "20261016-1954-rn-et-udr-saisissent-le-conseil-constitutionnel-po": "2026-10-16T21:41:24.967Z",
+  "20261017-1033-le-rn-reclame-la-demission-de-richard-ferrand-pres": "2026-10-17T11:10:10.486Z",
+  "dem-08-contre": "2026-10-17T11:10:10.486Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -116,7 +120,11 @@
   "20261016-1954-departements-une-partie-des-elus-quitte-la-salle-q",
   "20261016-1954-mobilisation-du-17-octobre-macron-appelle-au-calme",
   "20261016-1954-rn-et-udr-saisissent-le-conseil-constitutionnel-po",
-  "20261016-1954-vote-a-16-ans-melenchon-glucksmann-et-tondelier-de"
+  "20261016-1954-vote-a-16-ans-melenchon-glucksmann-et-tondelier-de",
+  "20261017-1033-cbd-le-senateur-ecologiste-guillaume-gontard-depos",
+  "20261017-1033-franco-allemand-un-accord-sur-une-approche-commune",
+  "20261017-1033-le-rn-reclame-la-demission-de-richard-ferrand-pres",
+  "20261017-1033-parcoursup-2025-le-chiffre-de-38-bacheliers-sans-s"
  ],
  "rdv": 6
 }
