@@ -1,7 +1,27 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-16T21:19:20.759Z",
+  "updatedAt": "2026-10-17T11:40:14.033Z",
   "items": [
+    {
+      "id": "seuls-38-bacheliers-n-auraient-eu-aucune-solution-sur-parcou-950da7",
+      "claim": "Seuls 38 bacheliers n'auraient eu aucune solution sur Parcoursup en 2025.",
+      "verdict": "trompeur",
+      "truth": "Le chiffre de 38 ne retient que les bacheliers ayant saisi une commission de recours et occulte la majeure partie des bacheliers restés sans affectation.",
+      "spreaders": [
+        "Philippe Baptiste"
+      ],
+      "topic": "ecole",
+      "firstSeen": "2026-10-17",
+      "debunks": [
+        {
+          "publisher": "Vrai ou fake (franceinfo)",
+          "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-n-y-a-t-il-eu-que-38-bacheliers-qui-n-ont-pas-eu-de-solution-sur-parcoursup-en-2025-comme-l-affirme-le-gouvernement_8239924.html",
+          "title": "VRAI OU FAUX. N'y a-t-il eu que 38 bacheliers qui \"n'ont pas eu de solution\" sur Parcoursup en 2025, comme l'affirme le gouvernement ?",
+          "date": "2026-10-17",
+          "quote": "il occulte la majeure partie des bacheliers restés sans affectation, ne retenant que ceux qui avaient saisi une commission de recours."
+        }
+      ]
+    },
     {
       "id": "une-enseignante-parisienne-aurait-ete-licenciee-pour-avoir-e-50270b",
       "claim": "Une enseignante parisienne aurait été licenciée pour avoir encordé des enfants",
