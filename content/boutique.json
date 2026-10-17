@@ -1,69 +1,127 @@
 {
-  "_note": "Aperçus affichés sur /boutique : uniquement des designs déjà en ligne sur la boutique. Image : public/img/boutique/<id>.webp, tirée de docs/boutique/impression/clair.",
+  "_note": "Aperçus affichés sur /boutique : uniquement des produits déjà en ligne sur la boutique (photos fournies par la rédaction). Image : public/img/boutique/<id>.webp, 640 × 640.",
   "apercus": [
     {
-      "id": "droitard",
-      "alt": "Droitard. Et alors ?"
+      "id": "tshirt-beton",
+      "alt": "Tee-shirt femme « Vous coulez du béton, on crèvera la dalle »"
     },
     {
-      "id": "gauchiasse",
-      "alt": "Gauchiasse. Et alors ?"
+      "id": "tshirt-thunes",
+      "alt": "Tee-shirt homme « On veut les thunes des actionnaires pour les retraites de nos grand-mères »"
     },
     {
-      "id": "modere",
-      "alt": "Modéré. Pas muet."
+      "id": "tshirt-planete",
+      "alt": "Tee-shirt « Non-assistance à planète en danger »"
     },
     {
-      "id": "ruisselle",
-      "alt": "Mon salaire ne ruisselle pas."
+      "id": "badge-planete",
+      "alt": "Badge « Non-assistance à planète en danger »"
     },
     {
-      "id": "insoumise-mere",
-      "alt": "Insoumise. Sauf à ma mère."
+      "id": "badge-thunes",
+      "alt": "Badge « On veut les thunes des actionnaires pour les retraites de nos grand-mères »"
     },
     {
-      "id": "insoumise-belle-mere",
-      "alt": "Insoumise. Sauf à ma belle-mère."
+      "id": "badge-enfer-paradis",
+      "alt": "Badge « C’est de l’enfer des pauvres qu’est fait le paradis des riches »"
     },
     {
-      "id": "insoumise-mari",
-      "alt": "Insoumise. Sauf à mon mari."
+      "id": "badge-humanite",
+      "alt": "Badge « Une seule nationalité : l’humanité »"
     },
     {
-      "id": "insoumise-chat",
-      "alt": "Insoumise. Sauf à mon chat."
+      "id": "badge-sans-frontieres",
+      "alt": "Badge « Pour un monde sans papiers, sans frontières ni barbelés »"
     },
     {
-      "id": "insoumise-patron",
-      "alt": "Insoumise. Sauf à mon patron."
+      "id": "badge-impossible",
+      "alt": "Badge « Impossible n’est pas français »"
     },
     {
-      "id": "insoumis-mere",
-      "alt": "Insoumis. Sauf à ma mère."
+      "id": "badge-mouton",
+      "alt": "Badge « Je ne suis pas un mouton »"
     },
     {
-      "id": "insoumis-belle-mere",
-      "alt": "Insoumis. Sauf à ma belle-mère."
+      "id": "badge-pensez",
+      "alt": "Badge « Pensez. Tant que c’est encore permis. »"
     },
     {
-      "id": "insoumis-femme",
-      "alt": "Insoumis. Sauf à ma femme."
+      "id": "badge-subir",
+      "alt": "Badge « Je refuse de subir. Mais qui choisir ? »"
     },
     {
-      "id": "insoumis-fille",
-      "alt": "Insoumis. Sauf à ma fille."
+      "id": "badge-velo",
+      "alt": "Badge « Je viens à vélo. Avec mes convictions. »"
     },
     {
-      "id": "insoumis-fils",
-      "alt": "Insoumis. Sauf à mon fils."
+      "id": "badge-opposition",
+      "alt": "Badge « Je couche avec l’opposition. »"
     },
     {
-      "id": "insoumis-chat",
-      "alt": "Insoumis. Sauf à mon chat."
+      "id": "badge-chat",
+      "alt": "Badge « Il vote à droite. Je vote à gauche. Le chat s’abstient. »"
     },
     {
-      "id": "insoumis-patron",
-      "alt": "Insoumis. Sauf à mon patron."
+      "id": "badge-cafe",
+      "alt": "Badge « Pas de politique avant le café. »"
+    },
+    {
+      "id": "badge-vaisselle",
+      "alt": "Badge « Le premier qui parle politique fait la vaisselle. »"
+    },
+    {
+      "id": "badge-droitard",
+      "alt": "Badge « Droitard. Et alors ? »"
+    },
+    {
+      "id": "badge-gauchiasse",
+      "alt": "Badge « Gauchiasse. Et alors ? »"
+    },
+    {
+      "id": "badge-modere",
+      "alt": "Badge « Modéré. Pas muet. »"
+    },
+    {
+      "id": "badge-ruisselle",
+      "alt": "Badge « Mon salaire ne ruisselle pas. »"
+    },
+    {
+      "id": "badge-insoumis-femme",
+      "alt": "Badge « Insoumis. Sauf à ma femme. »"
+    },
+    {
+      "id": "badge-insoumis-fille",
+      "alt": "Badge « Insoumis. Sauf à ma fille. »"
+    },
+    {
+      "id": "badge-insoumis-belle-mere",
+      "alt": "Badge « Insoumis. Sauf à ma belle-mère. »"
+    }
+  ],
+  "collections": [
+    {
+      "label": "Hommes",
+      "url": "https://ca-vote.myspreadshop.fr/hommes"
+    },
+    {
+      "label": "Femmes",
+      "url": "https://ca-vote.myspreadshop.fr/femmes"
+    },
+    {
+      "label": "Enfants et bébés",
+      "url": "https://ca-vote.myspreadshop.fr/enfants+et+b%C3%A9b%C3%A9s"
+    },
+    {
+      "label": "Accessoires",
+      "url": "https://ca-vote.myspreadshop.fr/accessoires"
+    },
+    {
+      "label": "Maison et vie",
+      "url": "https://ca-vote.myspreadshop.fr/maison+%26+vie"
+    },
+    {
+      "label": "Autocollants",
+      "url": "https://ca-vote.myspreadshop.fr/autocollants"
     }
   ]
 }

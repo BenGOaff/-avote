@@ -409,9 +409,10 @@ export const UI_COPY = {
     title: 'Tee-shirts, sweats, mugs et sacs.',
     lede: 'Des phrases pour chaque camp, et pour ceux qui hésitent. Vendus, fabriqués et livrés par Spreadshirt ; le site touche une commission par objet.',
     cta: 'Ouvrir la boutique',
-    daily: 'On ajoute 10 designs par jour jusqu’à ce que toute la collection soit en ligne : chaque camp aura les siens, et ceux qui hésitent aussi. L’ordre d’arrivée ne dit rien de nos préférences.',
+    daily: 'Chaque camp a ses phrases, et ceux qui hésitent aussi. L’ordre d’arrivée ne dit rien de nos préférences.',
+    collectionsTitle: 'Par rayon',
     previewTitle: 'Déjà en ligne',
-    previewNote: 'Un aperçu. Dans la boutique, chaque phrase existe sur tee-shirt, sweat, sac ou mug.',
+    previewNote: 'Un aperçu. Dans la boutique, chaque phrase existe sur tee-shirt, sweat, badge, sac ou mug.',
     variants: 'Certaines phrases existent en plusieurs versions, comme « Insoumis. Sauf à ma mère », « à ma fille », « à mon patron » : choisis la tienne dans la boutique.',
     rulesTitle: 'Ce qui ne change pas',
     rules: [
