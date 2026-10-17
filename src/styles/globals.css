@@ -4964,6 +4964,8 @@ details.disclosure > div {
   flex-wrap: wrap;
   gap: var(--s2);
   margin: var(--s4) 0 0;
+  padding: 0;
+  list-style: none;
 }
 .flash-cats__chip {
   display: inline-flex;
