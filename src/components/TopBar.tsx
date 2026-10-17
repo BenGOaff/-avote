@@ -4,7 +4,9 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { sectionOf, SECTIONS, type NavSection } from '@/lib/nav'
 import { getPref, setPref, type ThemePref } from '@/lib/local-store'
-import { IconSettings } from './Icons'
+import { IconBag, IconSettings } from './Icons'
+import { UI_COPY } from '@/lib/copy'
+import { LEGAL } from '@/lib/legal'
 
 export function isCurrent(pathname: string, href: string) {
   return href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href + '/')
@@ -27,6 +29,12 @@ export function TopBar({ logo }: { logo: ReactNode }) {
           ))}
         </nav>
         <div className="topbar__actions">
+          {LEGAL.shop.open && (
+            <NavLink href="/boutique" className="topbar__shop" aria-current={isCurrent(pathname, '/boutique') ? 'page' : undefined}>
+              <IconBag />
+              <span>{UI_COPY.boutiqueLink.nav}</span>
+            </NavLink>
+          )}
           <DisplaySettings />
         </div>
       </div>

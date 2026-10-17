@@ -186,6 +186,11 @@ export const UI_COPY = {
     localHint: 'Pour reprendre plus tard et suivre l’évolution des candidats pendant la campagne. À éviter sur un appareil partagé. Tu peux tout effacer à tout moment depuis ton profil.',
     go: 'C’est parti',
   },
+  boutiqueLink: {
+    nav: 'Boutique',
+    quiz: 'Tu trouveras de quoi afficher tes opinions, plus ou moins discrètement, dans notre boutique.',
+    quizCta: 'Voir la boutique',
+  },
   alertes: {
     pushTitle: 'Sur ce téléphone',
     pushText: 'Une notification quand des candidats changent de position ou entrent dans le test. C’est ton téléphone qui regarde si ça touche tes réponses : elles ne partent nulle part.',

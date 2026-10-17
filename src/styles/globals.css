@@ -205,8 +205,29 @@ main {
 }
 .topbar__actions {
   display: flex;
-  gap: var(--s2);
+  gap: var(--s1);
   align-items: center;
+}
+.topbar__shop {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  min-height: var(--tap);
+  padding: 0 var(--s2);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+.topbar__shop:hover {
+  background: var(--surface);
+}
+.topbar__shop[aria-current='page'] {
+  box-shadow: inset 0 -4px 0 var(--highlight);
+}
+.topbar__shop svg {
+  width: 22px;
+  height: 22px;
 }
 @media (min-width: 900px) {
   .topbar__nav {
@@ -505,6 +526,19 @@ main {
 .icon-btn svg {
   width: 24px;
   height: 24px;
+}
+
+/* Renvoi vers la boutique en fin de quiz */
+.shop-nudge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3);
+  justify-content: space-between;
+}
+.shop-nudge p {
+  margin: 0;
+  flex: 1 1 260px;
 }
 
 /* ---------- Cartes ---------- */
