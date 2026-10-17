@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-17-rendez-vous-rdv-test",
+  "at": "2026-10-17T18:49:56.013Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "111 AFFIRMATIONS",
+    "title": "111 affirmations, 12 thèmes : de quel candidat es-tu vraiment proche ?",
+    "line": "Le résultat compare tes réponses à 35 candidats, question par question, citation à l'appui.",
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "111 affirmations, 12 thèmes, 35 candidats. Tu réponds, on compare, avec la citation de chacun. Tes réponses restent dans ton navigateur. Tu t'attends à qui ?",
+    "linkedin": "111 affirmations, 12 thèmes, 35 candidats : on a construit un test pour comparer tes positions à celles des candidats, citations à l'appui.\n\nLe principe est simple : tu réponds à chaque affirmation, thème après thème.\n\nLe résultat montre ta proximité avec chacun des 35 candidats, question par question, avec ce que chacun a dit.\n\nTes réponses restent dans ton navigateur. Rien n'est envoyé.\n\nQuand tu regardes tes propres réponses, sur quel thème penses-tu que ton résultat te surprendrait le plus ?\n\n#presidentielle2027",
+    "facebook": "111 affirmations, 12 thèmes, 35 candidats. Tu réponds, et le résultat te montre ta proximité avec chacun, question par question, avec la citation de chacun. Tes réponses restent dans ton navigateur, rien n'est envoyé. Tu penses arriver près de qui ? Le test est sur çavote.fr",
+    "instagram": "111 affirmations, 35 candidats : qui est vraiment proche de toi ?\nTu réponds à 111 affirmations réparties en 12 thèmes.\nLe résultat te montre ta proximité avec 35 candidats.\nQuestion par question, avec la citation de chacun.\nTes réponses restent dans ton navigateur, rien n'est envoyé.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #testpolitique #candidats2027"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
