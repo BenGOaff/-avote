@@ -5,6 +5,7 @@ import { SupportLine } from '@/components/Support'
 import { UI_COPY } from '@/lib/copy'
 import { questionnaire, QUICK_ITEMS } from '@/lib/data'
 import { getFlashQuizzes } from '@/lib/flash-content'
+import { LEGAL } from '@/lib/legal'
 import type { FlashQuizFull } from '@/lib/flash'
 import { catOf, teaserOf, type FlashCat } from '@/lib/flash-teaser'
 import { absolute } from '@/lib/site'
@@ -97,6 +98,14 @@ export default function QuizHub() {
           )
         })}
       </section>
+      {LEGAL.shop.open && (
+        <aside className="shop-nudge card section">
+          <p>{UI_COPY.boutiqueLink.quiz}</p>
+          <Link className="btn btn--secondary" href="/boutique">
+            {UI_COPY.boutiqueLink.quizCta}
+          </Link>
+        </aside>
+      )}
       <SupportLine placement="quiz" />
     </div>
   )
