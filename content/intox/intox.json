@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-17T11:40:14.033Z",
+  "updatedAt": "2026-10-18T20:52:45.703Z",
   "items": [
+    {
+      "id": "une-photo-authentique-montrerait-un-couple-age-en-sous-vetem-989e56",
+      "claim": "Une photo authentique montrerait un couple âgé en sous-vêtements, dépouillé lors de la journée contre la vie chère du 17 octobre",
+      "verdict": "ia",
+      "truth": "Le cliché qui circule a été généré ou modifié par IA. La nouvelle du dépouillement du couple n'est pas confirmée à ce stade.",
+      "spreaders": [],
+      "topic": "securite",
+      "firstSeen": "2026-10-18",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/mouvement-du-17-octobre-cette-photo-de-personnes-agees-en-sous-vetements-est-elle-authentique-ou-generee-par-ia-20261018_LRDPMTYFGJDATNRVGGIV2EUQXI/",
+          "title": "Mouvement du 17 octobre : cette photo de personnes âgées en sous-vêtements est-elle authentique ou générée par IA ?",
+          "date": "2026-10-18",
+          "quote": "Sauf que le cliché qui circule a été généré ou modifié par IA."
+        }
+      ]
+    },
     {
       "id": "seuls-38-bacheliers-n-auraient-eu-aucune-solution-sur-parcou-950da7",
       "claim": "Seuls 38 bacheliers n'auraient eu aucune solution sur Parcoursup en 2025.",
