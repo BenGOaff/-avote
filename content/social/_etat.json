@@ -5,7 +5,9 @@
   "marine-tondelier": 1,
   "edouard-philippe": 1,
   "david-lisnard": 1,
-  "bernard-cazeneuve": 1
+  "bernard-cazeneuve": 1,
+  "jean-luc-melenchon": 1,
+  "fabien-roussel": 1
  },
  "items": {
   "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor": "2026-10-10T10:30:53.306Z",
@@ -28,7 +30,9 @@
   "rdv-test-rapide": "2026-10-16T19:42:20.461Z",
   "20261016-1954-rn-et-udr-saisissent-le-conseil-constitutionnel-po": "2026-10-16T21:41:24.967Z",
   "20261017-1033-le-rn-reclame-la-demission-de-richard-ferrand-pres": "2026-10-17T11:10:10.486Z",
-  "dem-08-contre": "2026-10-17T11:10:10.486Z"
+  "dem-08-contre": "2026-10-17T11:10:10.486Z",
+  "20261018-1055-violences-du-17-octobre-yael-braun-pivet-veut-prop": "2026-10-18T11:41:24.080Z",
+  "dem-11-contre": "2026-10-18T11:41:24.080Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -131,7 +135,11 @@
   "20261017-1917-lecornu-denonce-des-groupes-d-ultragauche-apres-le",
   "20261017-1917-manifestations-du-17-octobre-melenchon-bardella-to",
   "20261017-1917-manifestations-du-17-octobre-violences-en-marge-du",
-  "20261017-1917-mobilisation-du-17-octobre-macron-denonce-des-seme"
+  "20261017-1917-mobilisation-du-17-octobre-macron-denonce-des-seme",
+  "20261018-1055-apres-les-violences-du-17-octobre-des-elus-de-lfi",
+  "20261018-1055-manifestations-du-17-octobre-550-000-a-800-000-per",
+  "20261018-1055-presidentielle-david-lisnard-maire-de-cannes-a-la",
+  "20261018-1055-violences-du-17-octobre-yael-braun-pivet-veut-prop"
  ],
  "rdv": 7
 }
