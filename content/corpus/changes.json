@@ -11411,5 +11411,13 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "072bc342ddba1dbf"
+  },
+  {
+    "date": "2026-10-19T07:53:49.487Z",
+    "actor": "jean-lassalle",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "4970c1b40fe420fa"
   }
 ]

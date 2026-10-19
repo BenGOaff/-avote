@@ -1,8 +1,8 @@
 {
-  "version": "live-202610141151",
+  "version": "live-202610190801",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-14T11:51:38.362Z",
+  "publishedAt": "2026-10-19T08:01:41.454Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -198,6 +198,19 @@
     {
       "slug": "natacha-polony",
       "name": "Natacha Polony",
+      "status": "declare",
+      "summary": ""
+    },
+    {
+      "slug": "jean-lassalle",
+      "name": "Jean Lassalle",
+      "status": "demarche",
+      "party": "Résistons !",
+      "summary": ""
+    },
+    {
+      "slug": "benoit-mathieu",
+      "name": "Benoît Mathieu",
       "status": "declare",
       "summary": ""
     }
@@ -19327,6 +19340,861 @@
         "codedBy": "ia",
         "codedAt": "2026-10-14T11:44:35.974Z"
       }
+    },
+    "jean-lassalle": {
+      "tra-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-14": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "san-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "san-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "san-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "san-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "san-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "san-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eco-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "log-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "log-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "log-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "log-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "edu-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "edu-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "edu-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "edu-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "edu-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "edu-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "edu-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "tra-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "sec-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "4970c1b40fe420fa"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z",
+        "note": "Source : programme présidentiel 2022 (profession de foi officielle, qui renvoie à jl2022.fr). Engagement chiffré sans condition de recruter 6 000 gendarmes et policiers, avec une critique de la timidité du gouvernement : codé 2. Le volume m"
+      },
+      "sec-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "sec-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "sec-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "sec-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "sec-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "lib-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "imm-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "imm-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "imm-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "imm-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "imm-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "imm-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "imm-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "sec-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "sec-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "sec-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "eur-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "ani-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      },
+      "cli-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T07:53:49.487Z"
+      }
+    },
+    "benoit-mathieu": {
+      "eco-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "eco-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      },
+      "tra-14": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-10-19T08:00:00.072Z"
+      }
     }
   },
   "sources": [
@@ -29351,6 +30219,14 @@
       "url": "https://www.npolony.fr/vision",
       "date": "2026",
       "passage": "Regardez nos agriculteurs. Ils affrontent les prix imposés, les traités de libre-échange et la concurrence internationale déloyale qui va avec, les normes, les aléas climatiques, et pourtant continuent à nourrir le pays."
+    },
+    {
+      "id": "4970c1b40fe420fa",
+      "title": "Profession de foi de Jean Lassalle – élection présidentielle 2022",
+      "publisher": "Commission nationale de contrôle de la campagne électorale en vue de l'élection présidentielle (CNCC",
+      "url": "https://www.cnccep.fr/pdfs/Candidat-05-Jean-Lassalle-Declaration.pdf",
+      "date": "2022-03",
+      "passage": "Recruter 6 000 gendarmes et policiers. Ouvrir sur de larges horaires 2 000 bureaux de police et de gendarmerie dans les quartiers et les bourgs. La politique de « sécurité du quotidien » du gouvernement actuel est beaucoup trop timide."
     }
   ],
   "refreshedAt": {
@@ -29386,6 +30262,8 @@
     "gilles-platret": "2026-10-12T09:21:51.397Z",
     "dieudonne": "2026-10-12T09:30:55.509Z",
     "sylvain-durif": "2026-10-14T08:49:43.540Z",
-    "natacha-polony": "2026-10-14T11:44:35.974Z"
+    "natacha-polony": "2026-10-14T11:44:35.974Z",
+    "jean-lassalle": "2026-10-19T07:53:49.487Z",
+    "benoit-mathieu": "2026-10-19T08:00:00.072Z"
   }
 }
