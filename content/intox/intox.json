@@ -1,7 +1,65 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-19T14:44:58.262Z",
+  "updatedAt": "2026-10-19T22:27:01.482Z",
   "items": [
+    {
+      "id": "les-commerces-detenus-par-des-juifs-auraient-ete-cibles-a-ma-b8fd84",
+      "claim": "Les commerces détenus par des juifs auraient été ciblés à Marseille lors de la mobilisation du 17 octobre",
+      "verdict": "faux",
+      "truth": "Les responsables religieux locaux joints par CheckNews démentent tout ciblage des magasins dont les gérants sont de confession juive à Marseille.",
+      "spreaders": [
+        "CNews"
+      ],
+      "topic": "securite",
+      "firstSeen": "2026-10-19",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/mobilisation-du-17-octobre-non-les-commerces-detenus-par-des-juifs-nont-pas-ete-cibles-a-marseille-20261019_YF7GPASSENBOJNJ4VLPC4HM6GE/",
+          "title": "Mobilisation du 17 octobre : non, «les commerces détenus par des juifs» n’ont pas été ciblés à Marseille",
+          "date": "2026-10-19",
+          "quote": "Elle est démentie par tous les responsables religieux locaux joints par «CheckNews»."
+        }
+      ]
+    },
+    {
+      "id": "un-street-medic-frappe-par-des-crs-place-de-la-republique-se-55be65",
+      "claim": "Un street medic frappé par des CRS place de la République serait mort lors de la manifestation du 17 octobre",
+      "verdict": "faux",
+      "truth": "Antoine, présenté à tort comme le manifestant décédé, n'est pas mort ; il avait été filmé inconscient après avoir été violenté par des policiers, et CheckNews a recueilli son témoignage.",
+      "spreaders": [],
+      "topic": "securite",
+      "firstSeen": "2026-10-19",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/17-octobre-le-street-medic-frappe-par-des-crs-place-de-la-republique-a-paris-nest-pas-mort-20261019_JKIAESIYZZCQZDD2N6AC3QIZHQ/",
+          "title": "17 octobre : le «street medic» frappé par des CRS place de la République à Paris n’est pas mort",
+          "date": "2026-10-19",
+          "quote": "Présenté à tort comme le manifestant décédé lors de la journée de samedi, Antoine avait été filmé inconscient après avoir été violenté par des policiers."
+        }
+      ]
+    },
+    {
+      "id": "des-kalachnikovs-et-des-pistolets-mitrailleurs-auraient-ete-9d6a54",
+      "claim": "Des kalachnikovs et des pistolets-mitrailleurs auraient été retrouvés entre les mains d'émeutiers lors de la mobilisation du 17 octobre",
+      "verdict": "faux",
+      "truth": "La DGSI dément formellement que des armes de guerre aient été retrouvées parmi les émeutiers du 17 octobre.",
+      "spreaders": [
+        "CNews"
+      ],
+      "topic": "securite",
+      "firstSeen": "2026-10-19",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/la-dgsi-dement-que-des-armes-de-guerre-aient-ete-retrouvees-parmi-les-emeutiers-du-17-octobre-comme-annonce-sur-cnews-20261019_XP76P433JZERLLLW2RVBPDATZM/",
+          "title": "La DGSI dément que des armes de guerre aient été retrouvées parmi les émeutiers du 17 octobre, comme annoncé sur CNews",
+          "date": "2026-10-19",
+          "quote": "La DGSI dément que des armes de guerre aient été retrouvées parmi les émeutiers du 17 octobre"
+        }
+      ]
+    },
     {
       "id": "une-photo-authentique-montrerait-un-couple-age-en-sous-vetem-989e56",
       "claim": "Une photo authentique montrerait un couple âgé en sous-vêtements, dépouillé lors de la journée contre la vie chère du 17 octobre",
