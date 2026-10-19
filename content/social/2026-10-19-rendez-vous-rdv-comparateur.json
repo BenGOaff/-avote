@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-19-rendez-vous-rdv-comparateur",
+  "at": "2026-10-19T21:14:53.096Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "QUI DÉFEND QUOI ?",
+    "title": "36 candidats, un sujet à la fois : qui défend quoi, mot pour mot ?",
+    "line": "Chaque position avec la phrase exacte du candidat et sa source.",
+    "cta": "Compare les candidats"
+  },
+  "text": {
+    "x": "36 candidats. Un sujet. Leurs phrases exactes, sources à l'appui. Tu connais vraiment la position de celui dont tu te sens proche ?",
+    "linkedin": "36 candidats, un sujet à la fois : qui défend quoi ?\nLe comparateur de Ça vote ? met côte à côte les positions des candidats à la présidentielle, thème par thème.\n\nChaque position est accompagnée de la phrase exacte du candidat et de sa source. Pas de reformulation, pas de paraphrase : le texte d'origine, que chacun peut vérifier.\n\nLe format permet de lire plusieurs positions sur un même sujet, au même endroit, sans passer d'un site de campagne à l'autre.\n\nSur quel sujet aimerais-tu voir les positions comparées en premier ?\n\n#presidentielle2027",
+    "facebook": "36 candidats à la présidentielle, et un comparateur qui montre sujet par sujet qui défend quoi, avec la phrase exacte de chacun et sa source. Pas de résumé : leurs mots. Sur quel sujet irais-tu voir en premier ? Dis-nous en commentaire. Le test est sur çavote.fr",
+    "instagram": "36 candidats, un sujet à la fois : qui défend quoi ?\nPrends un thème qui compte pour toi.\nLis la phrase exacte de chaque candidat.\nRegarde la source, pas le résumé.\nPuis compare avec ce que tu croyais.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #comparateurcandidats #programmes2027"
+  },
+  "target": "/comparateur",
+  "targetLabel": "Comparer les candidats"
+}
