@@ -1,6 +1,6 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-18T20:52:45.703Z",
+  "updatedAt": "2026-10-19T14:44:58.262Z",
   "items": [
     {
       "id": "une-photo-authentique-montrerait-un-couple-age-en-sous-vetem-989e56",
@@ -17,6 +17,13 @@
           "title": "Mouvement du 17 octobre : cette photo de personnes âgées en sous-vêtements est-elle authentique ou générée par IA ?",
           "date": "2026-10-18",
           "quote": "Sauf que le cliché qui circule a été généré ou modifié par IA."
+        },
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/societe/4255681-20261019-violences-17-octobre-personnes-agees-depouillees-rue-ia?amp%3Bat_campaign=149",
+          "title": "Violences du 17 octobre : Des personnes âgées dépouillées dans la rue ? C’est de l’IA",
+          "date": "2026-10-19",
+          "quote": "Elle relève en réalité de l’intelligence artificielle"
         }
       ]
     },
