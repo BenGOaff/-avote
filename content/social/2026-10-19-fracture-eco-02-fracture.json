@@ -1,0 +1,42 @@
+{
+  "id": "2026-10-19-fracture-eco-02-fracture",
+  "at": "2026-10-19T13:56:16.289Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "POUR OU CONTRE ?",
+    "title": "Taxer davantage les plus grands patrimoines : 14 candidats pour, 5 contre",
+    "line": "23 candidats se sont prononcés sur cette affirmation du test. Les avis ne suivent pas toujours les camps habituels.",
+    "yes": [
+      "florian-philippot",
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "marine-tondelier",
+      "francois-ruffin",
+      "delphine-batho",
+      "karim-bouamrane",
+      "nathalie-arthaud",
+      "anasse-kazib",
+      "selma-labib",
+      "raphael-glucksmann",
+      "bernard-cazeneuve",
+      "dominique-de-villepin",
+      "juan-branco"
+    ],
+    "no": [
+      "edouard-philippe",
+      "gabriel-attal",
+      "david-lisnard",
+      "eric-zemmour",
+      "xavier-bertrand"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Taxer davantage les plus grands patrimoines : 14 candidats disent oui, 5 disent non. Et toi, tu te mets dans quel camp ?",
+    "linkedin": "Taxer davantage les plus grands patrimoines : 14 candidats à la présidentielle 2027 disent oui, 5 disent non.\n\nSur 23 candidats qui se sont prononcés sur cette affirmation, 14 y sont nettement favorables. Cinq y sont nettement opposés : Édouard Philippe, Gabriel Attal, David Lisnard, Éric Zemmour et Xavier Bertrand.\n\nLe oui réunit des candidats de familles politiques très différentes, de Jean-Luc Mélenchon à Dominique de Villepin, en passant par Florian Philippot et Bernard Cazeneuve.\n\nLa question est posée sans nuance dans le test : faut-il taxer davantage les plus grands patrimoines ?\n\nEt vous, où placez-vous le curseur ?\n\n#presidentielle2027 #fiscalité",
+    "facebook": "Taxer davantage les plus grands patrimoines : sur 23 candidats qui se sont prononcés, 14 disent nettement oui et 5 disent nettement non. Les camps ne se rangent pas toujours comme on l'imagine. Toi, tu es plutôt pour ou contre ? Le test est sur çavote.fr",
+    "instagram": "14 candidats pour taxer davantage les grands patrimoines, 5 contre.\nSur 23 qui se sont prononcés, la ligne de partage surprend.\nÀ gauche comme ailleurs, des candidats répondent oui.\nTu l'aurais deviné ?\nEt toi, tu en penses quoi ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #fiscalité #patrimoine"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
