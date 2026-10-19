@@ -117,7 +117,15 @@ async function sendEmail(d: Digest, key: string): Promise<boolean> {
     headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json', 'Idempotency-Key': `alerte-${key}` },
     body: JSON.stringify({ segment_id: RESEND_ALERT_SEGMENT_ID, from: RESEND_FROM, subject: m.subject, html: m.html, text: m.text, name: `Alerte ${key}`, send: true }),
   })
-  if (!res.ok) throw new Error(`Resend : ${res.status} ${(await res.text()).slice(0, 300)}`)
+  if (!res.ok) {
+    const body = (await res.text()).slice(0, 300)
+    // Personne n'a encore demandé les alertes : rien à envoyer, le curseur reste où il est
+    if (res.status === 422 && body.includes('no contacts')) {
+      console.log('Email : aucun inscrit aux alertes, rien envoyé.')
+      return false
+    }
+    throw new Error(`Resend : ${res.status} ${body}`)
+  }
   console.log('Email envoyé.')
   return true
 }

@@ -40,7 +40,8 @@ export async function POST(req: NextRequest) {
 
   try {
     const token = sealToken({ email: parsed.data.email, firstName: parsed.data.firstName, alerts: parsed.data.alerts })
-    await sendConfirmation({ email: parsed.data.email, firstName: parsed.data.firstName }, absolute(`/newsletter/confirmer?t=${token}`))
+    // Un refus de Resend (clé, domaine, quota) doit s'afficher, pas passer pour un envoi réussi
+    if (!(await sendConfirmation({ email: parsed.data.email, firstName: parsed.data.firstName }, absolute(`/newsletter/confirmer?t=${token}`)))) throw new Error('envoi')
   } catch {
     // Pas de journalisation du corps de requête ni de l'adresse (cahier §15.3, §21)
     return NextResponse.json({ ok: false, message: 'L’envoi a échoué. Réessaie plus tard.' }, { status: 502 })

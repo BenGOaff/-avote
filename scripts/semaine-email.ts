@@ -103,7 +103,12 @@ async function main() {
     headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json', 'Idempotency-Key': `semaine-${week}` },
     body: JSON.stringify({ segment_id: RESEND_SEGMENT_ID, from: RESEND_FROM, subject: mail.subject, html: mail.html, text: mail.text, name: `Semaine ${week}`, send: true }),
   })
-  if (!res.ok) throw new Error(`Resend : ${res.status} ${(await res.text()).slice(0, 300)}`)
+  if (!res.ok) {
+    const body = (await res.text()).slice(0, 300)
+    // Personne n'est encore inscrit : rien à envoyer, ce n'est pas une panne
+    if (res.status === 422 && body.includes('no contacts')) return console.log('\nAucun inscrit dans le segment : lettre non envoyée.')
+    throw new Error(`Resend : ${res.status} ${body}`)
+  }
   console.log(`\nLettre envoyée (${week}).`)
 }
 
