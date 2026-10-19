@@ -12,7 +12,13 @@ export const clientIp = (req: NextRequest): string => req.headers.get('x-real-ip
  */
 export function sameOrigin(req: NextRequest, siteHost: string, required = true): boolean {
   const origin = req.headers.get('origin')
-  if (!origin) return !required
+  // Pages servies sans référent (Referrer-Policy: no-referrer : résultats, profil, test, confirmation) : le navigateur
+  // envoie « Origin: null ». Sec-Fetch-Site, posé par le navigateur et qu'aucune page ne peut modifier, dit alors d'où vient la requête.
+  if (!origin || origin === 'null') {
+    const site = req.headers.get('sec-fetch-site')
+    if (site) return site === 'same-origin'
+    return !origin && !required
+  }
   let host: string
   try {
     host = new URL(origin).host

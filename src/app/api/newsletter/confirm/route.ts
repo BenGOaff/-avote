@@ -7,7 +7,8 @@ export const dynamic = 'force-dynamic'
 
 // Confirmation par POST (bouton) : les scanners de liens des messageries ne valident pas à la place de la personne.
 export async function POST(req: NextRequest) {
-  if (!sameOrigin(req, SITE_URL.host, false)) return NextResponse.json({ ok: false }, { status: 403 })
+  // Confirmation par formulaire : en cas de refus, une page lisible plutôt qu'une réponse brute
+  if (!sameOrigin(req, SITE_URL.host, false)) return NextResponse.redirect(new URL('/newsletter?etat=erreur', req.url), 303)
   const ip = clientIp(req) || 'unknown'
   if (rateLimited(`confirm:${ip}`, 10)) return NextResponse.redirect(new URL('/newsletter?etat=limite', req.url), 303)
 
