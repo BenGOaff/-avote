@@ -483,11 +483,11 @@
       "slug": "xavier-bertrand",
       "name": "Xavier Bertrand",
       "status": "declare",
-      "since": "2026-10-16",
+      "since": "2026-08-27",
       "source": {
-        "title": "« À l’EHPAD ! » : pour Xavier Bertrand, le candidat à droite qui « fera élire l’un des deux extrêmes aura intérêt à essayer la chirurgie esthétique ou l’exil »",
-        "publisher": "Public Sénat",
-        "url": "https://www.publicsenat.fr/actualites/politique/a-lehpad-pour-xavier-bertrand-le-candidat-a-droite-qui-fera-elire-lun-des-deux-extremes-aura-interet-a-essayer-la-chirurgie-esthetique-ou-lexil"
+        "title": "2027: figure de la droite, Xavier Bertrand confirme qu'il sera candidat à l'élection présidentielle",
+        "publisher": "LCP",
+        "url": "https://lcp.fr/actualites/2027-figure-de-la-droite-xavier-bertrand-confirme-qu-il-sera-candidat-a-l-election"
       },
       "verified": true,
       "links": [
@@ -627,7 +627,7 @@
       "slug": "gilles-platret",
       "name": "Gilles Platret",
       "status": "declare",
-      "since": "2026-10-09",
+      "since": "2026-10-08",
       "source": {
         "title": "Présidentielle 2027 : le très droitier Gilles Platret présente sa candidature et embouteille son espace politique",
         "publisher": "Libération",
@@ -827,6 +827,18 @@
         }
       ],
       "addedBy": "rédaction"
+    },
+    {
+      "slug": "mira-markovic",
+      "name": "Mira Markovic",
+      "status": "declare",
+      "since": "2026-10-02",
+      "source": {
+        "title": "Présidentielle 2027 : «Si nous ne sommes pas là, personne ne parle des animaux», déplore Mira Markovic, la candidate du Parti animaliste",
+        "publisher": "CNews",
+        "url": "https://www.cnews.fr/france/2026-10-02/presidentielle-2027-si-nous-ne-sommes-pas-la-personne-ne-parle-des-animaux"
+      },
+      "verified": true
     }
   ]
 }

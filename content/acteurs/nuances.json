@@ -58,6 +58,7 @@
     "edouard-philippe": { "nuance": "HOR", "basis": "grille" },
     "bruno-retailleau": { "nuance": "LR", "basis": "grille" },
     "david-lisnard": { "nuance": "DVD", "basis": "deduite", "note": "Nouvelle Énergie n'est pas nommée ; sensibilité de droite." },
+    "mira-markovic": { "nuance": "ANM", "basis": "deduite", "note": "Candidate du Parti animaliste, qu'elle a cofondé en 2016 ; la nuance ANM couvre les candidats animalistes.", "sources": [{ "title": "Présidentielle : la cofondatrice Mira Markovic est la candidate du Parti animaliste", "publisher": "Agra", "url": "https://www.agra.fr/lives/presidentielle-la-cofondatrice-mira-markovic-est-la-candidate-du-parti-animaliste", "quote": "le Parti animaliste a présenté sa candidate pour l'élection présidentielle de 2027 : Mira Markovic" }] },
     "gilles-platret": {
       "nuance": "DVD",
       "basis": "deduite",
