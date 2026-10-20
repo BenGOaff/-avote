@@ -5,21 +5,25 @@ import { addContact, openToken, rateLimited } from '@/lib/newsletter'
 
 export const dynamic = 'force-dynamic'
 
+// Retour vers la page de la lettre. Adresse relative : derrière le CDN, `req.url` est l'adresse interne du serveur,
+// et une redirection vers un autre hôte après le formulaire est bloquée par la CSP (form-action 'self').
+const back = (etat: 'confirme' | 'erreur' | 'limite' | 'expire') =>
+  new NextResponse(null, { status: 303, headers: { Location: `/newsletter?etat=${etat}`, 'Cache-Control': 'no-store' } })
+
 // Confirmation par POST (bouton) : les scanners de liens des messageries ne valident pas à la place de la personne.
 export async function POST(req: NextRequest) {
   // Confirmation par formulaire : en cas de refus, une page lisible plutôt qu'une réponse brute
-  if (!sameOrigin(req, SITE_URL.host, false)) return NextResponse.redirect(new URL('/newsletter?etat=erreur', req.url), 303)
+  if (!sameOrigin(req, SITE_URL.host, false)) return back('erreur')
   const ip = clientIp(req) || 'unknown'
-  if (rateLimited(`confirm:${ip}`, 10)) return NextResponse.redirect(new URL('/newsletter?etat=limite', req.url), 303)
+  if (rateLimited(`confirm:${ip}`, 10)) return back('limite')
 
   const form = await req.formData()
   const token = form.get('t')
   const pending = typeof token === 'string' ? openToken(token) : null
-  if (!pending) return NextResponse.redirect(new URL('/newsletter?etat=expire', req.url), 303)
+  if (!pending) return back('expire')
   try {
-    const ok = await addContact(pending)
-    return NextResponse.redirect(new URL(ok ? '/newsletter?etat=confirme' : '/newsletter?etat=erreur', req.url), 303)
+    return back((await addContact(pending)) ? 'confirme' : 'erreur')
   } catch {
-    return NextResponse.redirect(new URL('/newsletter?etat=erreur', req.url), 303)
+    return back('erreur')
   }
 }
