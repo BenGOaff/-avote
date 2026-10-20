@@ -1,6 +1,6 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-19T22:27:01.482Z",
+  "updatedAt": "2026-10-20T12:46:53.165Z",
   "items": [
     {
       "id": "les-commerces-detenus-par-des-juifs-auraient-ete-cibles-a-ma-b8fd84",
@@ -82,6 +82,13 @@
           "title": "Violences du 17 octobre : Des personnes âgées dépouillées dans la rue ? C’est de l’IA",
           "date": "2026-10-19",
           "quote": "Elle relève en réalité de l’intelligence artificielle"
+        },
+        {
+          "publisher": "Vrai ou fake (franceinfo)",
+          "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-un-couple-d-octogenaires-a-t-il-ete-depouille-et-denude-en-marge-des-manifestations-du-17-octobre_8243974.html",
+          "title": "VRAI OU FAUX. Un couple d'octogénaires a-t-il été dépouillé et dénudé en marge des manifestations du 17 octobre ?",
+          "date": "2026-10-20",
+          "quote": "publication d'une photographie générée ou modifiée par intelligence artificielle"
         }
       ]
     },
@@ -138,6 +145,13 @@
           "title": "Derrière la fausse polémique sur l’excision à Saint-Denis, le vrai désaccord politique entre LFI et le PS sur la loi VSS",
           "date": "2026-10-13",
           "quote": "c'est avant tout un désaccord tactique sur la proposition de loi sur les VSS"
+        },
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/abstention-sur-un-voeu-contre-lexcision-ce-que-les-attaques-contre-bally-bagayoko-occultent/",
+          "title": "Abstention sur un vœu contre l’excision : ce que les attaques contre Bally Bagayoko occultent",
+          "date": "2026-10-20",
+          "quote": "Plusieurs publications circulant en ligne ont soufflé sur les braises de cette polémique"
         }
       ]
     },
