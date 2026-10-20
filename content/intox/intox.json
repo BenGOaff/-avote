@@ -1,6 +1,6 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-20T12:46:53.165Z",
+  "updatedAt": "2026-10-20T21:42:54.360Z",
   "items": [
     {
       "id": "les-commerces-detenus-par-des-juifs-auraient-ete-cibles-a-ma-b8fd84",
@@ -37,6 +37,13 @@
           "title": "17 octobre : le «street medic» frappé par des CRS place de la République à Paris n’est pas mort",
           "date": "2026-10-19",
           "quote": "Présenté à tort comme le manifestant décédé lors de la journée de samedi, Antoine avait été filmé inconscient après avoir été violenté par des policiers."
+        },
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/societe/4256028-20261020-manifestation-17-octobre-street-medic-roue-coups-paris-mort?amp%3Bat_campaign=149",
+          "title": "Manifestation du 17 octobre : Le street médic roué de coups à Paris n’est pas mort",
+          "date": "2026-10-20",
+          "quote": "Le street médic roué de coups à Paris n’est pas mort"
         }
       ]
     },
@@ -89,6 +96,13 @@
           "title": "VRAI OU FAUX. Un couple d'octogénaires a-t-il été dépouillé et dénudé en marge des manifestations du 17 octobre ?",
           "date": "2026-10-20",
           "quote": "publication d'une photographie générée ou modifiée par intelligence artificielle"
+        },
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/rumeur-doctogenaires-depouilles-le-17-octobre-les-images-qui-circulent-ont-ete-generees-par-ia/",
+          "title": "Rumeur d’octogénaires dépouillés le 17 octobre : les images qui circulent ont été générées par IA",
+          "date": "2026-10-20",
+          "quote": "les images qui circulent ont été générées par IA"
         }
       ]
     },
