@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-10-16",
+  "collectedAt": "2026-10-21",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -839,6 +839,19 @@
         "url": "https://www.cnews.fr/france/2026-10-02/presidentielle-2027-si-nous-ne-sommes-pas-la-personne-ne-parle-des-animaux"
       },
       "verified": true
+    },
+    {
+      "slug": "zemmour",
+      "name": "Zemmour",
+      "status": "demarche",
+      "since": "2026-10-21",
+      "source": {
+        "title": "“Complément d'enquête”. Sarah Knafo : Zemmour, gloire et plan B",
+        "publisher": "franceinfo",
+        "url": "https://www.franceinfo.fr/replay-magazine/france-2/complement-d-enquete/complement-d-enquete-sarah-knafo-zemmour-gloire-et-plan-b_8219074.html"
+      },
+      "verified": true,
+      "addedBy": "veille claude-sonnet-5-5"
     }
   ]
 }

@@ -1,7 +1,22 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "events": [
+    {
+      "id": "2026-10-24-congres-du-rn-a-orleans",
+      "kind": "parti",
+      "title": "Congrès du RN à Orléans",
+      "date": "2026-10-24",
+      "summary": "Le Rassemblement national tient son 19e congrès à Orléans. Une cinquantaine d'organisations ont appelé à une contre-mobilisation.",
+      "place": "Orléans",
+      "source": {
+        "title": "«Les militants en roue libre, ça va être quelque chose» : le RN prépare son congrès, entre affaire Bardella et crise nationale",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/les-militants-en-roue-libre-ca-va-etre-quelque-chose-le-rn-prepare-son-congres-entre-affaire-bardella-et-crise-nationale-20261021_S6DKRTNR5RGNTJBR5YCBPIKMDE/"
+      },
+      "quote": "Le 19e congrès du parti, le 24 octobre à Orléans",
+      "addedBy": "veille claude-haiku-5-5"
+    },
     {
       "id": "2026-11-30-decision-dans-le-proces-de-rima-hassan-pour-apol",
       "kind": "institution",
