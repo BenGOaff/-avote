@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-21-rendez-vous-rdv-sondage",
+  "at": "2026-10-21T20:21:33.626Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "À ÉGALITÉ ?",
+    "title": "20 % dans un sondage, c'est entre 17,5 % et 22,5 %",
+    "line": "Avec 1 000 personnes interrogées, deux candidats à 1 ou 2 points d'écart sont à égalité.",
+    "cta": "Lis avant de commenter"
+  },
+  "text": {
+    "x": "Un candidat à 20 % avec 1 000 personnes interrogées, c'est entre 17,5 % et 22,5 %. Deux candidats à 1 ou 2 points d'écart sont donc à égalité. Tu le savais ?",
+    "linkedin": "Un candidat mesuré à 20 % dans un sondage n'est pas à 20 % tout rond.\n\nAvec 1 000 personnes interrogées, son score se situe entre 17,5 % et 22,5 %.\n\nConséquence directe : deux candidats séparés de 1 ou 2 points sont à égalité. Le classement affiché dans un titre de presse peut donc dire autre chose que ce que les chiffres permettent d'affirmer.\n\nNotre article explique comment lire un sondage de la présidentielle, pour distinguer un écart réel d'un simple bruit statistique.\n\nQuand vous voyez un sondage commenté, regardez-vous d'abord la taille de l'échantillon ou le classement ?\n\n#presidentielle2027 #sondages",
+    "facebook": "Un candidat à 20 % dans un sondage, c'est en réalité entre 17,5 % et 22,5 % quand 1 000 personnes sont interrogées. Deux candidats à 1 ou 2 points d'écart sont donc à égalité. Tu regardais les sondages comme ça, toi ? Le test est sur çavote.fr",
+    "instagram": "20 % au sondage ? Plutôt entre 17,5 % et 22,5 %.\nAvec 1 000 personnes interrogées, un score n'est pas un chiffre exact.\nIl se situe dans une fourchette.\nDeux candidats à 1 ou 2 points d'écart sont à égalité.\nLe prochain classement, tu le liras autrement.\nL'article explique comment lire un sondage de la présidentielle.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #sondage #margederreur"
+  },
+  "target": "/radar/2026-10-10-lire-un-sondage",
+  "targetLabel": "Lire l’article"
+}
