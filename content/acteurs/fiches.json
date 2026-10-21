@@ -194,5 +194,12 @@
     "basedOn": "live-202610101038",
     "generatedAt": "2026-10-10T10:41:46.095Z",
     "model": "claude-sonnet-5-5"
+  },
+  "zemmour": {
+    "analysis": "Les positions documentées portent surtout sur le pouvoir d'achat et le logement. Le candidat y propose un blocage du prix des carburants à 1,8 euro par litre, une franchise de droits de succession jusqu'à 200.000 euros par enfant et une baisse de la CSG pour les salaires de moins de 2.000 euros. Il demande la suppression de la loi SRU sur le logement social et de l'AME. Côté énergie, il annonce au moins 14 nouveaux réacteurs EPR2 à horizon 2050. Deux positions viennent d'un programme, les autres de déclarations. Pour les autres thèmes, dont l'Europe, la sécurité, l'école ou les institutions, on n'a pas trouvé de position codée.",
+    "remark": "Le financement des baisses de CSG et de droits de succession ne figure pas dans les pièces.",
+    "basedOn": "live-202610211150",
+    "generatedAt": "2026-10-21T11:50:58.524Z",
+    "model": "claude-sonnet-5-5"
   }
 }
