@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-20T21:42:54.360Z",
+  "updatedAt": "2026-10-21T12:59:44.965Z",
   "items": [
+    {
+      "id": "une-photo-de-saisie-publiee-par-la-police-nationale-dans-le-550598",
+      "claim": "Une photo de saisie publiée par la police nationale dans le Val-d'Oise serait une image authentique illustrant les saisies liées au mouvement contre la vie chère",
+      "verdict": "ia",
+      "truth": "L'image publiée par le compte X des forces de l'ordre du Val-d'Oise était une photographie modifiée avec un outil d'intelligence artificielle.",
+      "spreaders": [],
+      "topic": "securite",
+      "firstSeen": "2026-10-21",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/17-octobre-la-police-nationale-a-t-elle-publie-une-image-de-saisie-generee-par-ia-20261021_WVGFQGS4E5HPTMC6PUTRKIFIYM/",
+          "title": "17 octobre : la police nationale a-t-elle publié une image de saisie générée par IA ?",
+          "date": "2026-10-21",
+          "quote": "Le compte X des forces de l’ordre dans le Val-d’Oise a publié une photographie modifiée avec un outil d’intelligence artificielle pour illustrer des saisies consécutives au mouvement contre «la vie chère»."
+        }
+      ]
+    },
     {
       "id": "les-commerces-detenus-par-des-juifs-auraient-ete-cibles-a-ma-b8fd84",
       "claim": "Les commerces détenus par des juifs auraient été ciblés à Marseille lors de la mobilisation du 17 octobre",
