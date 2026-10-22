@@ -1,0 +1,32 @@
+{
+  "id": "2026-10-22-fracture-eco-05-fracture",
+  "at": "2026-10-22T12:23:40.853Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "POUR OU CONTRE ?",
+    "title": "Baisser les cotisations des employeurs sur les salaires : 4 candidats pour, 5 contre",
+    "line": "18 candidats se sont prononcés sur cette affirmation du test. Les avis tranchés se répartissent en deux camps.",
+    "yes": [
+      "bruno-retailleau",
+      "david-lisnard",
+      "eric-zemmour",
+      "nicolas-dupont-aignan"
+    ],
+    "no": [
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "nathalie-arthaud",
+      "anasse-kazib",
+      "selma-labib"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Baisser les cotisations payées par les employeurs sur les salaires : 4 candidats sont nettement pour, 5 nettement contre, sur 18 qui se sont prononcés. Et toi, tu es de quel côté ?",
+    "linkedin": "Les cotisations payées par les employeurs sur les salaires devraient-elles baisser ? Sur 18 candidats à la présidentielle qui se sont prononcés, 4 sont nettement pour et 5 nettement contre.\n\nL'affirmation figure telle quelle dans notre test : « Les cotisations payées par les employeurs sur les salaires devraient baisser. »\n\nCôté pour : Bruno Retailleau, David Lisnard, Éric Zemmour et Nicolas Dupont-Aignan. Côté contre : Jean-Luc Mélenchon, Fabien Roussel, Nathalie Arthaud, Anasse Kazib et Selma Labib.\n\nÀ chacun de situer sa propre position par rapport à ces deux camps. Et toi, tu te placerais où, et pourquoi ?\n\n#presidentielle2027",
+    "facebook": "Faut-il baisser les cotisations que les employeurs paient sur les salaires ? Sur 18 candidats qui se sont prononcés, 4 sont nettement pour et 5 nettement contre. Tu te mets dans quel camp ? Dis-le en commentaire. Le test est sur çavote.fr",
+    "instagram": "Cotisations des employeurs : 4 candidats pour, 5 contre.\nL'affirmation : « Les cotisations payées par les employeurs sur les salaires devraient baisser. »\n18 candidats se sont prononcés.\n4 sont nettement pour, 5 nettement contre.\nEt toi, tu réponds quoi ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #cotisationspatronales #salaires"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
