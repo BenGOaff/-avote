@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -15,6 +15,23 @@
         "url": "https://www.liberation.fr/politique/les-militants-en-roue-libre-ca-va-etre-quelque-chose-le-rn-prepare-son-congres-entre-affaire-bardella-et-crise-nationale-20261021_S6DKRTNR5RGNTJBR5YCBPIKMDE/"
       },
       "quote": "Le 19e congrès du parti, le 24 octobre à Orléans",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-11-16-confrontation-entre-presidentiables-organisee-pa",
+      "kind": "debat",
+      "title": "Confrontation entre présidentiables organisée par LCI",
+      "date": "2026-11-16",
+      "summary": "LCI doit organiser une confrontation entre présidentiables. Libération rapporte que les proches d'Edouard Philippe contestent la date fixée, en raison d'un conseil municipal au Havre.",
+      "who": [
+        "edouard-philippe"
+      ],
+      "source": {
+        "title": "Edouard Philippe snobe un débat entre présidentiables pour cause de conseil municipal au Havre",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/edouard-philippe-snobe-un-debat-entre-presidentiables-pour-cause-de-conseil-municipal-au-havre-20261022_E7EJPIBGLND6FDVSSP4E4IWI3Q/"
+      },
+      "quote": "la confrontation, le 16 novembre",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
