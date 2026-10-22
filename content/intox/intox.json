@@ -1,7 +1,43 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-21T21:48:27.633Z",
+  "updatedAt": "2026-10-22T13:01:21.057Z",
   "items": [
+    {
+      "id": "des-images-montreraient-des-manifestants-francais-deguises-e-a23e61",
+      "claim": "Des images montreraient des manifestants français déguisés en panthère rose lors des récentes mobilisations.",
+      "verdict": "ia",
+      "truth": "Ces images sont générées par intelligence artificielle, selon la vérification des Surligneurs.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-10-22",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/ces-images-de-manifestants-francais-deguises-en-panthere-rose-sont-fausses/",
+          "title": "Ces images de manifestants français déguisés en panthère rose sont fausses",
+          "date": "2026-10-22",
+          "quote": "Ces images de manifestants français déguisés en panthère rose sont fausses"
+        }
+      ]
+    },
+    {
+      "id": "une-image-aerienne-montrerait-paris-en-feu-lors-de-la-mobili-54b291",
+      "claim": "Une image aérienne montrerait Paris en feu lors de la mobilisation du 17 octobre 2026.",
+      "verdict": "ia",
+      "truth": "Cette image aérienne de Paris a été créée par intelligence artificielle, selon la vérification des Surligneurs.",
+      "spreaders": [],
+      "topic": "securite",
+      "firstSeen": "2026-10-22",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/cette-image-aerienne-de-paris-en-feu-a-ete-creee-par-intelligence-artificielle/",
+          "title": "Cette image aérienne de Paris en feu a été créée par intelligence artificielle",
+          "date": "2026-10-22",
+          "quote": "Cette image aérienne de Paris en feu a été créée par intelligence artificielle"
+        }
+      ]
+    },
     {
       "id": "une-photo-de-saisie-publiee-par-la-police-nationale-dans-le-550598",
       "claim": "Une photo de saisie publiée par la police nationale dans le Val-d'Oise serait une image authentique illustrant les saisies liées au mouvement contre la vie chère",
