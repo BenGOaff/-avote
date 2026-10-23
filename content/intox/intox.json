@@ -1,6 +1,6 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-22T21:43:19.177Z",
+  "updatedAt": "2026-10-23T12:40:47.374Z",
   "items": [
     {
       "id": "des-images-montreraient-des-manifestants-francais-deguises-e-a23e61",
@@ -17,6 +17,13 @@
           "title": "Ces images de manifestants français déguisés en panthère rose sont fausses",
           "date": "2026-10-22",
           "quote": "Ces images de manifestants français déguisés en panthère rose sont fausses"
+        },
+        {
+          "publisher": "Les Décodeurs (Le Monde)",
+          "url": "https://www.lemonde.fr/les-decodeurs/article/2026/10/23/le-17-octobre-a-suscite-une-vague-de-desinformation-de-grande-ampleur-en-france-comme-a-l-etranger_6799061_4355770.html",
+          "title": "Le 17 octobre a suscité une vague de désinformation de grande ampleur, en France comme à l’étranger",
+          "date": "2026-10-23",
+          "quote": "les fausses panthères roses générées par IA"
         }
       ]
     },
@@ -80,6 +87,13 @@
           "title": "Mobilisation du 17 octobre : rien ne prouve que des commerces détenus par des juifs ont été volontairement ciblés à Marseille",
           "date": "2026-10-22",
           "quote": "rien ne prouve que des commerces détenus par des juifs ont été volontairement ciblés à Marseille"
+        },
+        {
+          "publisher": "Les Décodeurs (Le Monde)",
+          "url": "https://www.lemonde.fr/les-decodeurs/article/2026/10/23/le-17-octobre-a-suscite-une-vague-de-desinformation-de-grande-ampleur-en-france-comme-a-l-etranger_6799061_4355770.html",
+          "title": "Le 17 octobre a suscité une vague de désinformation de grande ampleur, en France comme à l’étranger",
+          "date": "2026-10-23",
+          "quote": "les rumeurs de commerces juifs visés"
         }
       ]
     },
