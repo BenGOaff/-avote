@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -15,6 +15,21 @@
         "url": "https://www.liberation.fr/politique/les-militants-en-roue-libre-ca-va-etre-quelque-chose-le-rn-prepare-son-congres-entre-affaire-bardella-et-crise-nationale-20261021_S6DKRTNR5RGNTJBR5YCBPIKMDE/"
       },
       "quote": "Le 19e congrès du parti, le 24 octobre à Orléans",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-10-24-congres-du-rassemblement-national-a-orleans-reel",
+      "kind": "parti",
+      "title": "Congrès du Rassemblement national à Orléans, réélection de Jordan Bardella",
+      "date": "2026-10-24",
+      "summary": "Le RN tient son congrès à Orléans, où Jordan Bardella doit être réélu à la présidence du parti. Une manifestation d'opposition est annoncée dans la même ville.",
+      "place": "Orléans",
+      "source": {
+        "title": "« Certains chez nous paniquent » : ce week-end, un congrès du RN sur fond d’affaire Bardella et de divisions",
+        "publisher": "L'Humanité",
+        "url": "https://www.humanite.fr/politique/jordan-bardella/certains-chez-nous-paniquent-ce-week-end-un-congres-du-rn-sur-fond-daffaire-bardella-et-de-divisions"
+      },
+      "quote": "Jordan Bardella doit être réélu, ce samedi 24 octobre à Orléans",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
