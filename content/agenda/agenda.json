@@ -33,6 +33,25 @@
       "addedBy": "veille claude-haiku-5-5"
     },
     {
+      "id": "2026-10-24-congres-du-rassemblement-national-a-orleans",
+      "kind": "parti",
+      "title": "Congrès du Rassemblement national à Orléans",
+      "date": "2026-10-24",
+      "end": "2026-10-25",
+      "summary": "Le RN réélit Jordan Bardella à sa présidence et Marine Le Pen doit y tenir son premier gros meeting de campagne. Des manifestations d'opposants sont attendues.",
+      "who": [
+        "marine-le-pen"
+      ],
+      "place": "Orléans",
+      "source": {
+        "title": "Congrès d’Orléans : après les violences du 17 octobre, le RN se rêve en parti de l’ordre et espère faire oublier les déboires de Jordan Bardella",
+        "publisher": "Le Monde",
+        "url": "https://www.lemonde.fr/politique/article/2026/10/23/apres-les-violences-du-17-octobre-le-rn-en-congres-a-orleans-resserre-les-rangs-autour-de-jordan-bardella_6799110_823448.html"
+      },
+      "quote": "lors du congrès des 24 et 25 octobre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
       "id": "2026-11-16-confrontation-entre-presidentiables-organisee-pa",
       "kind": "debat",
       "title": "Confrontation entre présidentiables organisée par LCI",
