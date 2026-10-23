@@ -1,6 +1,6 @@
 {
  "_note": "Sondages d'intentions de vote pour la présidentielle 2027, tels que publiés par les instituts. Chiffres vérifiés dans la source primaire. Aucune moyenne ni projection n'est calculée (loi du 19 juillet 1977, art. 1er).",
- "checkedAt": "2026-10-22",
+ "checkedAt": "2026-10-23",
  "institutes": {
   "Ifop": {
    "text": "En ligne, de 984 à 1 598 inscrits selon les vagues. Redressement sur la présidentielle 2022 (1er tour), les européennes 2024 et les législatives 2024 (1er tour).",
@@ -9362,6 +9362,498 @@
        "slug": "jean-luc-melenchon",
        "name": "Jean-Luc Mélenchon",
        "pct": 34
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opinionway-2026-10-22-2352",
+   "institute": "OpinionWay",
+   "buyer": "CNews",
+   "sponsor": null,
+   "fieldStart": "2026-10-21",
+   "fieldEnd": "2026-10-22",
+   "published": "2026-10-22",
+   "sample": 973,
+   "base": "inscrits sur les listes électorales",
+   "method": "en ligne, méthode des quotas",
+   "margin": null,
+   "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2352",
+   "notice": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2352",
+   "firstRound": [
+    {
+     "hypothesis": "premier tour, liste de 13 candidats",
+     "results": [
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 0
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 16
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 1
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 1
+      },
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 13
+      },
+      {
+       "slug": "karim-bouamrane",
+       "name": "Karim Bouamrane",
+       "pct": 0
+      },
+      {
+       "slug": "gabriel-attal",
+       "name": "Gabriel Attal",
+       "pct": 4
+      },
+      {
+       "slug": "edouard-philippe",
+       "name": "Édouard Philippe",
+       "pct": 12
+      },
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 6
+      },
+      {
+       "slug": "david-lisnard",
+       "name": "David Lisnard",
+       "pct": 6
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 1
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 4
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 36
+      }
+     ]
+    }
+   ],
+   "secondRound": [
+    {
+     "results": [
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 31
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 69
+      }
+     ]
+    },
+    {
+     "results": [
+      {
+       "slug": "edouard-philippe",
+       "name": "Édouard Philippe",
+       "pct": 44
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 56
+      }
+     ]
+    },
+    {
+     "results": [
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 44
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 56
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "toluna-harris-interactive-2026-10-21-2351",
+   "institute": "Toluna Harris Interactive",
+   "buyer": "M6 & RTL",
+   "sponsor": null,
+   "fieldStart": "2026-10-19",
+   "fieldEnd": "2026-10-21",
+   "published": "2026-10-23",
+   "sample": 2094,
+   "base": "inscrits sur les listes électorales",
+   "method": "en ligne, méthode des quotas et redressement",
+   "margin": "1,4 à 3,1 points",
+   "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2351",
+   "notice": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2351",
+   "firstRound": [
+    {
+     "hypothesis": "hypothèse Édouard Philippe, Dominique de Villepin et David Lisnard",
+     "results": [
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 1
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 17
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 2
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 2
+      },
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 12
+      },
+      {
+       "slug": "edouard-philippe",
+       "name": "Édouard Philippe",
+       "pct": 15
+      },
+      {
+       "slug": "dominique-de-villepin",
+       "name": "Dominique de Villepin",
+       "pct": 1
+      },
+      {
+       "slug": "david-lisnard",
+       "name": "David Lisnard",
+       "pct": 7
+      },
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 4
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 1
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 33
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 5
+      }
+     ]
+    },
+    {
+     "hypothesis": "hypothèse Gabriel Attal, Dominique de Villepin et David Lisnard",
+     "results": [
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 1
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 17
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 2
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 2
+      },
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 14
+      },
+      {
+       "slug": "gabriel-attal",
+       "name": "Gabriel Attal",
+       "pct": 10
+      },
+      {
+       "slug": "dominique-de-villepin",
+       "name": "Dominique de Villepin",
+       "pct": 2
+      },
+      {
+       "slug": "david-lisnard",
+       "name": "David Lisnard",
+       "pct": 8
+      },
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 5
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 1
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 33
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 5
+      }
+     ]
+    },
+    {
+     "hypothesis": "hypothèse Gabriel Attal et Édouard Philippe",
+     "results": [
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 1
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 17
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 1
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 2
+      },
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 12
+      },
+      {
+       "slug": "gabriel-attal",
+       "name": "Gabriel Attal",
+       "pct": 5
+      },
+      {
+       "slug": "edouard-philippe",
+       "name": "Édouard Philippe",
+       "pct": 13
+      },
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 6
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 2
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 35
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 6
+      }
+     ]
+    },
+    {
+     "hypothesis": "hypothèse Édouard Philippe candidat unique du centre",
+     "results": [
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 1
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 17
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 2
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 2
+      },
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 13
+      },
+      {
+       "slug": "edouard-philippe",
+       "name": "Édouard Philippe",
+       "pct": 16
+      },
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 7
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 2
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 35
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 5
+      }
+     ]
+    },
+    {
+     "hypothesis": "hypothèse Gabriel Attal candidat unique du centre",
+     "results": [
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 1
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 19
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 2
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 2
+      },
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 13
+      },
+      {
+       "slug": "gabriel-attal",
+       "name": "Gabriel Attal",
+       "pct": 11
+      },
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 9
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 2
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 35
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 6
+      }
+     ]
+    }
+   ],
+   "secondRound": [
+    {
+     "results": [
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 30
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 70
+      }
+     ]
+    },
+    {
+     "results": [
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 41
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 59
+      }
+     ]
+    },
+    {
+     "results": [
+      {
+       "slug": "edouard-philippe",
+       "name": "Édouard Philippe",
+       "pct": 43
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 57
       }
      ]
     }
