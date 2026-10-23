@@ -1,6 +1,6 @@
 {
   "push": {
-    "at": "2026-10-22T19:52:50.302Z",
+    "at": "2026-10-23T19:46:54.856Z",
     "actors": [
       "edouard-philippe",
       "gabriel-attal",
@@ -37,7 +37,7 @@
     ]
   },
   "email": {
-    "at": "2026-10-20T19:58:36.092Z",
+    "at": "2026-10-23T19:46:54.856Z",
     "actors": [
       "edouard-philippe",
       "gabriel-attal",
@@ -69,7 +69,8 @@
       "sylvain-durif",
       "natacha-polony",
       "jean-lassalle",
-      "benoit-mathieu"
+      "benoit-mathieu",
+      "zemmour"
     ]
   }
 }
