@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-24",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -49,6 +49,20 @@
         "url": "https://www.lemonde.fr/politique/article/2026/10/23/apres-les-violences-du-17-octobre-le-rn-en-congres-a-orleans-resserre-les-rangs-autour-de-jordan-bardella_6799110_823448.html"
       },
       "quote": "lors du congrès des 24 et 25 octobre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-10-25-emission-franc-jeu-avec-mathilde-panot",
+      "kind": "debat",
+      "title": "Émission « Franc-Jeu » avec Mathilde Panot",
+      "date": "2026-10-25",
+      "summary": "Dans la perspective de la présidentielle de 2027, Benjamin Duhamel interroge la présidente de La France insoumise à l'Assemblée nationale sur ses propositions.",
+      "source": {
+        "title": "\"Franc-Jeu\". Avec Mathilde Panot",
+        "publisher": "franceinfo",
+        "url": "https://www.franceinfo.fr/replay-magazine/france-2/franc-jeu/franc-jeu-avec-mathilde-panot_8226022.html"
+      },
+      "quote": "Le 25 octobre 2026, il reçoit Mathilde Panot, présidente de La France insoumise à l'Assem",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
