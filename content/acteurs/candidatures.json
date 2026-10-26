@@ -831,6 +831,7 @@
     {
       "slug": "mira-markovic",
       "name": "Mira Markovic",
+      "party": "Parti animaliste",
       "status": "declare",
       "since": "2026-10-02",
       "source": {
@@ -838,20 +839,17 @@
         "publisher": "CNews",
         "url": "https://www.cnews.fr/france/2026-10-02/presidentielle-2027-si-nous-ne-sommes-pas-la-personne-ne-parle-des-animaux"
       },
-      "verified": true
-    },
-    {
-      "slug": "zemmour",
-      "name": "Zemmour",
-      "status": "demarche",
-      "since": "2026-10-21",
-      "source": {
-        "title": "“Complément d'enquête”. Sarah Knafo : Zemmour, gloire et plan B",
-        "publisher": "franceinfo",
-        "url": "https://www.franceinfo.fr/replay-magazine/france-2/complement-d-enquete/complement-d-enquete-sarah-knafo-zemmour-gloire-et-plan-b_8219074.html"
-      },
       "verified": true,
-      "addedBy": "veille claude-sonnet-5-5"
+      "links": [
+        {
+          "kind": "campagne",
+          "url": "https://parti-animaliste.fr/mira-markovic-2027"
+        },
+        {
+          "kind": "parti",
+          "url": "https://parti-animaliste.fr/"
+        }
+      ]
     }
   ]
 }

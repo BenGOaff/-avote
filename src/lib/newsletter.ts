@@ -100,6 +100,8 @@ export async function sendConfirmation(p: Omit<Pending, 'issuedAt'>, confirmUrl:
 
 export async function addContact(p: Pending): Promise<boolean> {
   const alerts = p.alerts ? process.env.RESEND_ALERT_SEGMENT_ID : undefined
+  // Sans la variable, la case cochée resterait sans effet : on le signale dans les journaux (sans l'adresse)
+  if (p.alerts && !alerts) console.error('RESEND_ALERT_SEGMENT_ID absente : inscription aux alertes non enregistrée')
   const segments = [process.env.RESEND_SEGMENT_ID, alerts].filter((x): x is string => !!x)
   const res = await resend('/contacts', {
     email: p.email,
@@ -107,14 +109,12 @@ export async function addContact(p: Pending): Promise<boolean> {
     unsubscribed: false,
     ...(segments.length ? { segments: segments.map((id) => ({ id })) } : {}),
   })
-  if (res.ok) return true
-  // Contact déjà existant : on le rattache aux segments
-  if ((res.status === 409 || res.status === 422) && segments.length) {
-    for (const segment of segments) {
-      const r2 = await resend(`/contacts/${encodeURIComponent(p.email)}/segments/${encodeURIComponent(segment)}`, {})
-      if (!r2.ok && r2.status !== 409) return false
-    }
-    return true
+  if (!res.ok && res.status !== 409 && res.status !== 422) return false
+  // Contact déjà connu (première inscription sans alertes, par exemple) : la création ne touche pas à ses segments,
+  // on l'y rattache explicitement. Un rattachement déjà fait n'est pas une erreur.
+  for (const segment of segments) {
+    const r2 = await resend(`/contacts/${encodeURIComponent(p.email)}/segments/${encodeURIComponent(segment)}`, {})
+    if (!r2.ok && r2.status !== 409 && r2.status !== 422) return false
   }
-  return false
+  return true
 }

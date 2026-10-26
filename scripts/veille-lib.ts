@@ -154,5 +154,23 @@ export function slugify(s: string, max = 60): string {
   )
 }
 
+/**
+ * Candidat déjà suivi sous un autre libellé ? Un nom de famille seul (« Zemmour ») désigne le candidat suivi qui
+ * porte ce nom ; prénom et nom doivent sinon concorder (« Marion Maréchal » n'est pas « Marine Le Pen »).
+ */
+export function sameCandidate<T extends { slug: string }>(actors: T[], name: string): T | undefined {
+  const words = slugify(name, 80).split('-')
+  const last = words.at(-1)
+  return actors.find((a) => {
+    const known = a.slug.split('-')
+    if (a.slug === words.join('-')) return true
+    if (known.at(-1) !== last) return false
+    return words.length === 1 || known[0] === words[0]
+  })
+}
+
+/** Prénom et nom : un nom de famille seul ne suffit pas à ajouter quelqu'un aux candidatures. */
+export const isFullName = (name: string) => slugify(name, 80).split('-').length >= 2
+
 /** Échappe une chaîne pour YAML (toujours entre guillemets doubles). */
 export const yamlStr = (s: string) => JSON.stringify(s)

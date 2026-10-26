@@ -23,9 +23,11 @@ import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
 import {
   hashId,
+  isFullName,
   numbersAreSourced,
   parseFeed,
   quoteIsInSource,
+  sameCandidate,
   slugify,
   styleViolations,
   yamlStr,
@@ -203,16 +205,22 @@ function applyCandidacies(found: z.infer<typeof Selection>['candidacies'], byId:
       continue
     }
     const slug = norm(c.name)
-    const existing = file.actors.find((a) => a.slug === slug)
+    // Même personne sous un autre libellé (« Zemmour » pour Éric Zemmour) : jamais de doublon
+    const existing = sameCandidate(file.actors, c.name)
     const source = { title: item.title, publisher: item.feedName, url: item.link }
     if (c.kind === 'retrait') {
-      if (existing && existing.status !== 'retire') {
+      // Un retrait se lit sur un nom complet : un nom de famille seul peut désigner un proche, un parti, un camp
+      if (existing && existing.status !== 'retire' && isFullName(c.name)) {
         existing.status = 'retire'
         existing.retiredAt = (item.date ?? now.toISOString()).slice(0, 10)
         existing.retiredSource = source
         if (c.reason.trim()) existing.retiredReason = c.reason.trim().slice(0, 120)
         changes.push(`Retrait : ${existing.name}`)
       }
+      continue
+    }
+    if (!existing && !isFullName(c.name)) {
+      log('candidature : prénom et nom requis', c.name)
       continue
     }
     if (!existing) {

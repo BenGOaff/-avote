@@ -754,6 +754,37 @@
           "quote": "Antoine Mikolajczak est le candidat à l'élection présidentielle de 2027 pour Équinoxe, suite à l'élection au jugement majoritaire des adhérents du parti."
         }
       ]
+    },
+    "mira-markovic": {
+      "born": null,
+      "bornSource": null,
+      "intro": "Cofondatrice du Parti animaliste en 2016, elle en est coprésidente et porte-parole. Psychologue pendant plus de 17 ans, elle a été élue dans le 18e arrondissement puis conseillère de Paris, de 2014 à 2020.",
+      "sources": [
+        {
+          "title": "Le bureau",
+          "publisher": "Parti animaliste (site officiel)",
+          "url": "https://parti-animaliste.fr/bureau",
+          "quote": "Douchka MARKOVIC Paris – Cofondatrice, coprésidente et porte-parole du Parti animaliste"
+        },
+        {
+          "title": "Mira Markovic représentera le Parti animaliste à la présidentielle",
+          "publisher": "Parti animaliste (site officiel)",
+          "url": "https://parti-animaliste.fr/news/communique-de-presse/mira-markovic-representera-le-parti-animaliste-a-la-presidentielle",
+          "quote": "Cofondatrice du Parti animaliste en 2016"
+        },
+        {
+          "title": "Mira Markovic représentera le Parti animaliste à la présidentielle",
+          "publisher": "Parti animaliste (site officiel)",
+          "url": "https://parti-animaliste.fr/news/communique-de-presse/mira-markovic-representera-le-parti-animaliste-a-la-presidentielle",
+          "quote": "Elle a exercé plus de 17 ans comme psychologue."
+        },
+        {
+          "title": "Mira Markovic représentera le Parti animaliste à la présidentielle",
+          "publisher": "Parti animaliste (site officiel)",
+          "url": "https://parti-animaliste.fr/news/communique-de-presse/mira-markovic-representera-le-parti-animaliste-a-la-presidentielle",
+          "quote": "Élue municipale dans le 18e arrondissement puis conseillère de Paris de 2014 à 2020"
+        }
+      ]
     }
   }
 }

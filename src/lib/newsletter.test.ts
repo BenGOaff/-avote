@@ -1,6 +1,6 @@
-import { beforeAll, describe, expect, it } from 'vitest'
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
 import { randomBytes } from 'node:crypto'
-import { openToken, sealToken } from './newsletter'
+import { addContact, openToken, sealToken } from './newsletter'
 
 beforeAll(() => {
   process.env.NEWSLETTER_SECRET = randomBytes(32).toString('base64')
@@ -25,5 +25,22 @@ describe('jeton de confirmation newsletter', () => {
     const altered = raw.toString('base64url')
     expect(openToken(altered)).toBeNull()
     expect(openToken('nimporte-quoi')).toBeNull()
+  })
+})
+
+describe('inscription chez Resend', () => {
+  afterEach(() => vi.unstubAllGlobals())
+  it('rattache un contact déjà connu au segment des alertes', async () => {
+    process.env.RESEND_API_KEY = 'cle'
+    process.env.RESEND_SEGMENT_ID = 'general'
+    process.env.RESEND_ALERT_SEGMENT_ID = 'alertes'
+    const calls: string[] = []
+    vi.stubGlobal('fetch', async (url: string) => {
+      calls.push(url)
+      return new Response('{}', { status: 200 })
+    })
+    expect(await addContact({ email: 'a@b.fr', firstName: '', alerts: true, issuedAt: Date.now() })).toBe(true)
+    expect(calls).toContain('https://api.resend.com/contacts/a%40b.fr/segments/alertes')
+    expect(calls).toContain('https://api.resend.com/contacts/a%40b.fr/segments/general')
   })
 })
