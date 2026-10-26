@@ -3,12 +3,42 @@
  * relecture des pages citées et collecte des pages lues par Claude.
  */
 import { execFile } from 'node:child_process'
+import { mkdtemp, readdir, readFile, rm, writeFile } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
+import path from 'node:path'
 import type Anthropic from '@anthropic-ai/sdk'
 import { canonicalUrl, stripHtml } from './veille-lib'
 
 const BOT_UA = 'Mozilla/5.0 (compatible; CaVoteRecherche/1.0; +https://xn--avote-xra.fr/methodologie)'
 const BROWSER_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
 const MAX_BYTES = 25_000_000
+const OCR_MAX_PAGES = 80
+
+const run = (cmd: string, args: string[], timeout = 120_000) =>
+  new Promise<boolean>((resolve) => execFile(cmd, args, { timeout }, (err) => resolve(!err)))
+
+/**
+ * PDF scanné (pages en image, sans texte) : lecture par reconnaissance de caractères, si pdftoppm et tesseract sont
+ * installés (paquets poppler-utils, tesseract-ocr, tesseract-ocr-fra). Sinon, rien : la citation reste non vérifiée.
+ */
+async function ocrPdf(buf: Buffer): Promise<string | null> {
+  const dir = await mkdtemp(path.join(tmpdir(), 'ocr-'))
+  try {
+    await writeFile(path.join(dir, 'doc.pdf'), buf)
+    if (!(await run('pdftoppm', ['-r', '150', '-png', '-l', String(OCR_MAX_PAGES), path.join(dir, 'doc.pdf'), path.join(dir, 'p')], 300_000))) return null
+    const pages = (await readdir(dir)).filter((f) => f.endsWith('.png')).sort()
+    const out: string[] = []
+    for (const png of pages) {
+      const base = path.join(dir, png.replace(/\.png$/, ''))
+      if (await run('tesseract', [path.join(dir, png), base, '-l', 'fra'])) out.push(await readFile(`${base}.txt`, 'utf8'))
+    }
+    return out.length ? out.join('\n') : null
+  } catch {
+    return null
+  } finally {
+    await rm(dir, { recursive: true, force: true })
+  }
+}
 
 /**
  * Certains sites refusent les clients Node quel que soit l’en-tête (empreinte TLS) ou saturent par moments :
@@ -43,7 +73,9 @@ export async function fetchText(url: string): Promise<string | null> {
       const { extractText, getDocumentProxy } = await import('unpdf')
       const pdf = await getDocumentProxy(new Uint8Array(buf))
       const { text } = await extractText(pdf, { mergePages: true })
-      return Array.isArray(text) ? text.join('\n') : text
+      const plain = Array.isArray(text) ? text.join('\n') : text
+      // Moins de 200 caractères pour tout un PDF : ce sont des images, on tente la lecture optique
+      return plain.replace(/\s+/g, '').length >= 200 ? plain : ((await ocrPdf(buf)) ?? plain)
     }
     return stripHtml(buf.toString('utf8'))
   } catch {

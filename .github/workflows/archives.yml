@@ -29,6 +29,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Lecture des PDF scannés (reconnaissance de caractères)
+        continue-on-error: true
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-fra
       - name: Archiver et vérifier
         env:
           ARCHIVE_ORG_AUTH: ${{ secrets.ARCHIVE_ORG_AUTH }}
