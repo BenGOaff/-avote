@@ -12,11 +12,14 @@ import { setAudiencePaused } from '@/lib/consent'
 import { duelQuip } from '@/lib/humor'
 import { cssFamily, fitText, loadImage } from '@/lib/canvas'
 import { ThemeIcon } from '@/components/ThemeIcon'
+import { decodeDuel, encodeDuel, linkVersion } from '@/lib/duel-link'
 
 /**
  * Le duel : deux personnes, un seul appareil, les questions de la version rapide.
  * Les réponses vivent dans l'état React de cette page : rien n'est écrit dans le navigateur, rien n'est envoyé.
  * Le joueur 1 peut reprendre ses réponses au test déjà gardées sur l'appareil (lecture seule).
+ * À distance : les réponses du joueur 1 partent dans la partie « # » d'un lien (src/lib/duel-link.ts), que le
+ * navigateur n'envoie jamais au serveur ; l'ami répond sur son appareil et voit le résultat chez lui.
  * Mesure d'audience coupée pendant toute la page.
  */
 
@@ -26,7 +29,11 @@ const THEME = new Map(set.themes.map((t) => [t.id, t]))
 const DOT: Record<Ordinal, number> = { [-2]: 40, [-1]: 30, 0: 22, 1: 30, 2: 40 } as Record<Ordinal, number>
 
 type Player = 0 | 1
-type Step = { kind: 'setup' } | { kind: 'question'; player: Player; index: number } | { kind: 'handoff' } | { kind: 'result' }
+type Step = { kind: 'setup' } | { kind: 'question'; player: Player; index: number } | { kind: 'handoff' } | { kind: 'link' } | { kind: 'result' }
+/** local : deux sur un téléphone ; remote : je défie quelqu'un par lien ; challenged : j'ai ouvert un lien de défi */
+type Mode = 'local' | 'remote' | 'challenged'
+const LINK_VERSION = linkVersion(QUICK_ITEMS, set.version)
+const duelUrl = (answers: Answers, name: string) => `${window.location.origin}/duel#${encodeDuel(QUICK_ITEMS, answers, name, LINK_VERSION)}`
 
 export function DuelFlow() {
   const [names, setNames] = useState<[string, string]>(['', ''])
@@ -36,6 +43,8 @@ export function DuelFlow() {
   const [step, setStep] = useState<Step>({ kind: 'setup' })
   // Revanche : le joueur 1 garde ses réponses, seul le joueur 2 change
   const [rematch, setRematch] = useState(false)
+  const [mode, setMode] = useState<Mode>('local')
+  const [badLink, setBadLink] = useState(false)
   const headingRef = useRef<HTMLHeadingElement>(null)
   const first = useRef(true)
 
@@ -48,6 +57,23 @@ export function DuelFlow() {
       for (const it of ITEMS) if (eff[it.id]) mine[it.id] = eff[it.id]!
       if (Object.keys(mine).length > 0) setSaved(mine)
     })
+  }, [])
+
+  // Lien de défi : lu une fois, puis retiré de la barre d'adresse (il ne reste ni dans l'historique ni dans un partage)
+  useEffect(() => {
+    const hash = window.location.hash
+    // Venu des résultats avec « Défie un proche » : mode lien présélectionné
+    if (new URLSearchParams(window.location.search).get('mode') === 'lien') setMode('remote')
+    if (!hash.startsWith('#d=')) return
+    window.history.replaceState(null, '', window.location.pathname + window.location.search)
+    const ch = decodeDuel(hash, QUICK_ITEMS, LINK_VERSION)
+    if (!ch) {
+      setBadLink(true)
+      return
+    }
+    setNames([ch.name || T.challengerDefault, ''])
+    setAnswers([ch.answers, {}])
+    setMode('challenged')
   }, [])
 
   useEffect(() => {
@@ -72,13 +98,20 @@ export function DuelFlow() {
     [saved, useSaved],
   )
 
+  const afterFirst = (): Step => (mode === 'remote' ? { kind: 'link' } : { kind: 'handoff' })
+
   const startPlayer = (p: Player) => {
     const list = todo(p)
-    if (list.length === 0) setStep(p === 0 ? { kind: 'handoff' } : { kind: 'result' })
+    if (list.length === 0) setStep(p === 0 ? afterFirst() : { kind: 'result' })
     else setStep({ kind: 'question', player: p, index: 0 })
   }
 
   const start = () => {
+    if (mode === 'challenged') {
+      setAnswers((prev) => [prev[0], {}])
+      startPlayer(1)
+      return
+    }
     if (rematch) {
       setAnswers((prev) => [prev[0], {}])
       setStep({ kind: 'handoff' })
@@ -91,18 +124,40 @@ export function DuelFlow() {
   if (step.kind === 'setup')
     return (
       <div className="stack">
-        <p className="small muted">{T.privacy}</p>
-        {!rematch && (
+        {badLink && <p className="alert">{T.badLink}</p>}
+        {mode === 'challenged' ? (
+          <div className="card card--flat">
+            <h2 ref={headingRef} tabIndex={-1} style={{ outline: 'none', marginTop: 0 }}>
+              {T.challengedTitle(name(0))}
+            </h2>
+            <p style={{ margin: 0 }}>{T.challengedText(name(0), ITEMS.length)}</p>
+          </div>
+        ) : (
+          !rematch && (
+            <div className="chips" role="radiogroup" aria-label={T.modeLabel}>
+              <button className="chip" role="radio" aria-checked={mode === 'local'} onClick={() => setMode('local')}>
+                {T.modeLocal}
+              </button>
+              <button className="chip" role="radio" aria-checked={mode === 'remote'} onClick={() => setMode('remote')}>
+                {T.modeRemote}
+              </button>
+            </div>
+          )
+        )}
+        <p className="small muted">{mode === 'local' ? T.privacy : mode === 'remote' ? T.privacyRemote : T.privacyChallenged}</p>
+        {!rematch && mode !== 'challenged' && (
           <div className="field">
             <label htmlFor="duel-p1">{T.p1Label}</label>
             <input id="duel-p1" className="input" maxLength={24} value={names[0]} onChange={(e) => setNames([e.target.value, names[1]])} autoComplete="off" />
           </div>
         )}
-        <div className="field">
-          <label htmlFor="duel-p2">{T.p2Label}</label>
-          <input id="duel-p2" className="input" maxLength={24} value={names[1]} onChange={(e) => setNames([names[0], e.target.value])} autoComplete="off" />
-        </div>
-        {saved && !rematch && (
+        {mode !== 'remote' && (
+          <div className="field">
+            <label htmlFor="duel-p2">{mode === 'challenged' ? T.meLabel : T.p2Label}</label>
+            <input id="duel-p2" className="input" maxLength={24} value={names[1]} onChange={(e) => setNames([names[0], e.target.value])} autoComplete="off" />
+          </div>
+        )}
+        {saved && !rematch && mode !== 'challenged' && (
           <label className="row" style={{ gap: 'var(--s2)', alignItems: 'flex-start' }}>
             <input type="checkbox" checked={useSaved} onChange={(e) => setUseSaved(e.target.checked)} style={{ marginTop: 4 }} />
             <span>{T.useSaved(Object.keys(saved).length, ITEMS.length)}</span>
@@ -110,7 +165,30 @@ export function DuelFlow() {
         )}
         <p>
           <button className="btn btn--highlight" onClick={start}>
-            {T.start}
+            {mode === 'challenged' ? T.startChallenged : mode === 'remote' ? T.startRemote : T.start}
+          </button>
+        </p>
+      </div>
+    )
+
+  if (step.kind === 'link')
+    return (
+      <div className="stack">
+        <h2 ref={headingRef} tabIndex={-1} style={{ outline: 'none', margin: 0 }}>
+          {T.linkTitle}
+        </h2>
+        <p>{T.linkText}</p>
+        <DuelLinkShare url={duelUrl(answers[0], names[0])} message={T.linkMessage(name(0))} />
+        <p className="small muted">{T.linkPrivacy}</p>
+        <p>
+          <button
+            className="btn btn--ghost btn--small"
+            onClick={() => {
+              setMode('local')
+              setStep({ kind: 'handoff' })
+            }}
+          >
+            {T.linkLocalInstead}
           </button>
         </p>
       </div>
@@ -144,7 +222,7 @@ export function DuelFlow() {
       })
       setTimeout(() => {
         if (step.index < list.length - 1) setStep({ kind: 'question', player: step.player, index: step.index + 1 })
-        else setStep(step.player === 0 ? { kind: 'handoff' } : { kind: 'result' })
+        else setStep(step.player === 0 ? afterFirst() : { kind: 'result' })
       }, 220)
     }
     const prev = () => {
@@ -225,6 +303,7 @@ export function DuelFlow() {
     <DuelResultView
       names={[name(0), name(1)]}
       answers={answers}
+      replyUrl={mode === 'challenged' ? duelUrl(answers[1], names[1]) : null}
       headingRef={headingRef}
       onAgain={() => {
         // Le joueur 1 garde ses réponses, un nouveau joueur 2 donne son prénom puis répond
@@ -234,6 +313,7 @@ export function DuelFlow() {
         setStep({ kind: 'setup' })
       }}
       onRestart={() => {
+        setMode('local')
         setRematch(false)
         setAnswers([{}, {}])
         setNames(['', ''])
@@ -246,12 +326,15 @@ export function DuelFlow() {
 function DuelResultView({
   names,
   answers,
+  replyUrl,
   headingRef,
   onAgain,
   onRestart,
 }: {
   names: [string, string]
   answers: [Answers, Answers]
+  /** Ouvert depuis un lien de défi : le lien à renvoyer, avec mes réponses */
+  replyUrl: string | null
   headingRef: React.RefObject<HTMLHeadingElement | null>
   onAgain: () => void
   onRestart: () => void
@@ -277,6 +360,15 @@ function DuelResultView({
       )}
       {r.score !== null && <p className="humor">{duelQuip(r.score)}</p>}
       <p className="muted">{T.counts(count('accord'), count('nuance'), count('desaccord'), r.both)}</p>
+      {replyUrl && (
+        <section className="card card--flat" aria-labelledby="duel-reply">
+          <h3 id="duel-reply" style={{ marginTop: 0 }}>
+            {T.replyTitle(names[0])}
+          </h3>
+          <p className="muted">{T.replyText(names[0])}</p>
+          <DuelLinkShare url={replyUrl} message={T.replyMessage(names[1])} />
+        </section>
+      )}
 
       <section aria-labelledby="duel-desaccords">
         <h3 id="duel-desaccords">{T.disagreeTitle}</h3>
@@ -482,5 +574,42 @@ function DuelShare({ names, result }: { names: [string, string]; result: DuelRes
         {busy ? T.shareBusy : T.shareBtn}
       </button>
     </section>
+  )
+}
+
+/** Partage du lien de défi : feuille de partage du téléphone, sinon copie. Le lien n'est envoyé nulle part par le site. */
+function DuelLinkShare({ url, message }: { url: string; message: string }) {
+  const [copied, setCopied] = useState(false)
+  const share = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: T.linkShareTitle, text: message, url })
+        return
+      } catch {
+        // Partage annulé : on propose la copie
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(`${message} ${url}`)
+      setCopied(true)
+    } catch {
+      setCopied(false)
+    }
+  }
+  return (
+    <div className="stack" style={{ gap: 'var(--s2)' }}>
+      <p>
+        <button className="btn btn--highlight" onClick={share}>
+          {T.linkShareBtn}
+        </button>
+      </p>
+      <label className="field">
+        <span className="small muted">{T.linkFieldLabel}</span>
+        <input className="input" readOnly value={url} onFocus={(e) => e.currentTarget.select()} />
+      </label>
+      <p className="small" aria-live="polite">
+        {copied ? T.linkCopied : ' '}
+      </p>
+    </div>
   )
 }

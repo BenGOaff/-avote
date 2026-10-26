@@ -6,9 +6,9 @@ import { DuelFlow } from './DuelFlow'
 const T = UI_COPY.duel
 
 export const metadata: Metadata = {
-  title: 'Le duel : à deux sur un téléphone, êtes-vous d’accord sur la présidentielle ?',
+  title: 'Le duel : es-tu d’accord avec tes proches sur la présidentielle ?',
   description:
-    'Deux personnes, un téléphone, 24 questions chacun : le taux d’accord, vos plus gros désaccords et, si vous le voulez, le candidat le plus proche de chacun. Rien n’est enregistré.',
+    'À deux sur un téléphone ou à distance par un lien, 24 questions chacun : le taux d’accord, vos plus gros désaccords et, si vous le voulez, le candidat le plus proche de chacun. Rien n’est enregistré.',
   alternates: { canonical: '/duel' },
 }
 

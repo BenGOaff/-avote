@@ -289,6 +289,16 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
         <NewsletterForm />
       </section>
 
+      {!demo && (
+        <section className="section" aria-labelledby="defi">
+          <h2 id="defi">{UI_COPY.duel.fromResultsTitle}</h2>
+          <p>{UI_COPY.duel.fromResultsText}</p>
+          <Link className="btn btn--highlight" href="/duel?mode=lien">
+            {UI_COPY.duel.fromResultsBtn}
+          </Link>
+        </section>
+      )}
+
       <section className="section" aria-labelledby="bilan">
         <h2 id="bilan">Garder une trace</h2>
         <p>Un bilan texte avec tes priorités, tes lignes rouges, les désaccords et ce qu’il reste à vérifier. Il est fabriqué sur ton appareil.</p>
@@ -719,6 +729,7 @@ function ActorResult({
         <p className="small cand__cover">
           Position connue sur <strong>{fmtPct(s.documented)}</strong> de tes réponses ({fmtPct(s.documentedDebated)} sur les sujets débattus). Selon ce qui manque, entre {fmt(s.low)} et {fmt(s.high)}.
         </p>
+        {!demo && s.unknownCount > 0 && <p className="small muted cand__cover">{R.unknownHuman(s.unknownCount, e.name)}</p>}
         <div className="cand__facts">
           <AgreementStrip contributions={s.contributions} themes={set.themes} name={e.name} />
           {close.length > 0 && (

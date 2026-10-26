@@ -67,7 +67,7 @@ export const SECTIONS: NavSection[] = [
     title: 'Jouer et partager',
     items: [
       { href: '/quiz', label: 'Quiz', desc: 'Ris de ton camp, chambre celui d’en face, teste ta culture citoyenne.' },
-      { href: '/duel', label: 'Le duel', desc: 'À deux sur un téléphone : d’accord sur quoi, fâchés sur quoi.' },
+      { href: '/duel', label: 'Le duel', desc: 'À deux sur un téléphone ou à distance par un lien : d’accord sur quoi, fâchés sur quoi.' },
       { href: '/studio', label: 'Studio', desc: 'Visuels à partager, fabriqués sur ton téléphone.' },
       { href: '/boutique', label: 'Boutique', desc: 'Objets et visuels, sans lien avec ton résultat.' },
     ],
@@ -82,6 +82,7 @@ export const SECTIONS: NavSection[] = [
       { href: '/sources', label: 'Sources', desc: 'D’où viennent les positions et les faits.' },
       { href: '/corrections', label: 'Corrections', desc: 'Ce qui était faux et ce qui a changé.' },
       { href: '/independance', label: 'Indépendance', desc: 'Qui finance, qui décide.' },
+      { href: '/presse', label: 'Presse', desc: 'Chiffres du jour, méthode, visuels, contact.' },
       { href: '/newsletter', label: 'Newsletter', desc: 'La campagne dans ta boîte mail.' },
       { href: '/contact', label: 'Contact', desc: 'Une erreur, une question, une idée : écris-nous.' },
       { href: '/confidentialite', label: 'Confidentialité', desc: 'Ce qu’on collecte, et surtout ce qu’on ne collecte pas.' },
