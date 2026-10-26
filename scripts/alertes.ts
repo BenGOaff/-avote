@@ -84,20 +84,29 @@ function mail(d: Digest) {
   const html = `<!doctype html><html lang="fr"><body style="margin:0;background:#F5F0E6;font-family:Arial,sans-serif;color:#191919">
 <div style="max-width:560px;margin:0 auto;padding:32px 20px">
 <p style="font-size:24px;font-weight:900;margin:0 0 24px">ÇA VOTE <span style="background:#FFE34D;padding:0 6px">?</span></p>
+<p style="font-size:17px;line-height:1.5">${esc(t.mailHello)}</p>
 <p style="font-size:17px;line-height:1.5">${esc(t.mailIntro)}</p>
+<p style="font-size:17px;line-height:1.5">${esc(t.mailMaybe)}</p>
 ${d.fresh.length ? `<h2 style="font-size:19px;margin:24px 0 8px">${esc(t.mailFresh)}</h2><ul style="padding-left:20px;font-size:16px;line-height:1.5">${d.fresh.map((a) => li(link(a))).join('')}</ul>` : ''}
 ${people.length ? `<h2 style="font-size:19px;margin:24px 0 8px">${esc(t.mailChanged)}</h2><ul style="padding-left:20px;font-size:16px;line-height:1.5">${people.map((p) => li(`${link(p.actor)} : ${esc(t.mailPositions(p.count))}`)).join('')}</ul>` : ''}
 <p style="margin:28px 0 12px"><a href="${url}" style="background:#191919;color:#F5F0E6;padding:14px 22px;border-radius:6px;text-decoration:none;font-weight:700;display:inline-block">${esc(t.mailCta)}</a></p>
-<p style="font-size:15px;line-height:1.5">${esc(t.mailHint)}</p>
+<p style="font-size:17px;line-height:1.5">${esc(t.mailSign)}</p>
+<p style="font-size:15px;line-height:1.5">${esc(t.mailPs)}</p>
 <p style="font-size:13px;line-height:1.5;color:#625E57">${esc(t.mailWhy)}<br><a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#625E57">Se désinscrire</a></p>
 </div></body></html>`
   const text = [
+    t.mailHello,
+    '',
     t.mailIntro,
+    t.mailMaybe,
     ...(d.fresh.length ? ['', `${t.mailFresh} :`, ...d.fresh.map((a) => `- ${name(a)} ${SITE}/candidats/${a}`)] : []),
     ...(people.length ? ['', `${t.mailChanged} :`, ...people.map((p) => `- ${name(p.actor)} : ${t.mailPositions(p.count)}`)] : []),
     '',
     `${t.mailCta} : ${url}`,
-    t.mailHint,
+    '',
+    t.mailSign,
+    '',
+    t.mailPs,
     '',
     t.mailWhy,
     'Se désinscrire : {{{RESEND_UNSUBSCRIBE_URL}}}',
