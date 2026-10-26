@@ -271,7 +271,7 @@ export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; othe
         </div>
       </section>
 
-      <ShopPicks seed={`flash-${quiz.slug}`} />
+      <ShopPicks seed={`flash-${quiz.slug}`} designs quiz={quiz.slug} />
 
       {others[0] && (
         <Link href={`/quiz/flash/${others[0].slug}`} className="flash-hub__card flash-next">
