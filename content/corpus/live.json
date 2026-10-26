@@ -1,8 +1,8 @@
 {
-  "version": "live-202610260845",
+  "version": "live-202610261025",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-26T08:45:24.015Z",
+  "publishedAt": "2026-10-26T10:25:25.183Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -10521,18 +10521,29 @@
         "codedAt": "2026-10-08T15:49:50.025Z"
       },
       "eco-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "5e5211e8196d9096"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Engagement de sa profession de foi législative de 2024 (même engagement en 2022) ; pas encore un programme présidentiel 2027."
       },
       "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "5e7ff2efca9c087e"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Amendement de son groupe cosigné par Delphine Batho (rejeté le 6 novembre 2025) : supprimer les réductions de cotisations patronales sur les salaires au-delà de 2 SMIC. Il ne vise pas les bas salaires, et c’est une cosignature collective."
       },
       "eco-06": {
         "missing": true,
@@ -10556,11 +10567,18 @@
         "note": "Vote Pour une résolution (non contraignante) demandant l’abrogation de la réforme de 2023, qui a relevé l’âge légal de 62 à 64 ans."
       },
       "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "f084dbba9f3cf2a4"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Amendement de son groupe en commission, cosigné par Delphine Batho (tombé) : relever l’objectif de dépenses hospitalières à 117 milliards d’euros, financé par la baisse d’un autre sous-objectif. Cosignature collective."
       },
       "tra-03": {
         "missing": true,
@@ -10584,18 +10602,29 @@
         "note": "Vote pour l’ensemble du texte, limité aux outre-mer (5 juin 2025). Un vote n’est pas un engagement de campagne."
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "101a378b6a1fc203"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Demande l’abrogation de la réforme qui a durci l’indemnisation du chômage. En mai 2026, elle cosigne aussi avec son groupe un amendement contre la réduction de la durée d’indemnisation après rupture conventionnelle."
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "9b14afb0008e55c8"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T15:49:50.025Z"
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Engagement de maintien des services publics ruraux ; la question du coût n’est pas abordée, d’où deux niveaux possibles."
       },
       "lib-01": {
         "set": [
@@ -11018,6 +11047,73 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Orientation du CESE retenue par Génération Écologie : conditionner les aides, sans les réduire."
+      },
+      "tra-11": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "d3b2a4c4c98b1799"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Programme de sa campagne législative de 2022 (pas un programme présidentiel). Rien de plus récent ne le contredit : en 2024 elle demande l’abrogation de la réforme qui a porté l’âge à 64 ans, et elle a voté en 2025 la résolution demandant c"
+      },
+      "eco-12": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "87cbd2a7f70c6d0f"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Amendement du groupe Écologiste et Social cosigné par Delphine Batho (rejeté le 16 octobre 2026) : taux de 50 %, 60 % et 70 % au-delà de 1,8, 4 et 13 millions d’euros, contre 45 % aujourd’hui. Cosignature collective, pas une déclaration de "
+      },
+      "ani-07": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "f0fdc27fe71ef2c2"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Amendement de Marie Pochon cosigné par Delphine Batho et son groupe : une conférence de filière fixe un prix minimal d’achat au moins égal aux coûts de production, et à défaut ce sont les ministres qui l’arrêtent. Cosignature collective, pa"
+      },
+      "tra-09": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "4442763572786a87"
+        ],
+        "basis": "vote",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Vote pour la suppression de l’article 44, qui gelait en 2026 les pensions de retraite et les prestations sociales (« année blanche ») ; amendement adopté. Un vote n’est pas un engagement de campagne."
+      },
+      "sec-08": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c562ace228b6046a"
+        ],
+        "basis": "vote",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:25:25.183Z",
+        "note": "Vote contre la loi qui instaurait une comparution immédiate pour les mineurs de 16 ans et plus et écartait plus souvent l’excuse de minorité. Le texte contient d’autres mesures, d’où deux niveaux possibles."
       }
     },
     "karim-bouamrane": {
@@ -12755,11 +12851,15 @@
         "note": "Mesure voisine : « faire payer » actionnaires et milliardaires dans le cadre d'un futur pouvoir des travailleurs. Le texte ne parle pas explicitement d'un impôt sur le patrimoine, ce qui peut désigner une expropriation plutôt qu'une taxatio"
       },
       "eco-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "76603fe2b396d669"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T17:00:10.351Z"
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Le même article revendique l’annulation de l’intégralité de la dette publique et dénonce le fait d’invoquer la dette pour couper dans les dépenses utiles aux classes populaires."
       },
       "eco-04": {
         "set": [
@@ -12798,11 +12898,15 @@
         "note": "Revendication catégorique d'un revenu minimum de 2000 € net et de +400 € pour tous, très au-delà de la revalorisation automatique du SMIC. Le mot SMIC n'apparaît pas. Elle mise sur les luttes plutôt que sur une décision gouvernementale (« C"
       },
       "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "7ba66760c930c880"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Dossier prisons du journal Révolutionnaires n° 59."
       },
       "sec-02": {
         "missing": true,
@@ -12862,11 +12966,18 @@
         "codedAt": "2026-10-08T16:07:45.245Z"
       },
       "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "80cf3e5ef66cfbcf"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Opposition à la levée des restrictions sur les pesticides (loi Duplomb) ; même ligne en 2026 contre la loi d’urgence agricole. Intensité discutable."
       },
       "cli-04": {
         "missing": true,
@@ -12890,11 +13001,15 @@
         "note": "Article cosigné par Selma Labib et Marina Kuné. Il défend la gratuité des transports en commun, mais ne dit pas comment la financer."
       },
       "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "fc08385612602276"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "À propos de la loi d’urgence agricole de 2026."
       },
       "tra-01": {
         "set": [
@@ -12964,11 +13079,15 @@
         "note": "Ses propres mots. Elle s'oppose sans nuance au décret Attal de 2024, qui durcissait les règles d'indemnisation du chômage, et le qualifie de « décret contre les droits des chômeurs ». La citation ne détaille pas le contenu du décret. Le com"
       },
       "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "3c4767dcc8c72ade"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T17:00:12.691Z"
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Appelle à combattre la fermeture de bureaux de poste justifiée par la « baisse du trafic »."
       },
       "dem-01": {
         "missing": true,
@@ -13013,11 +13132,18 @@
         "codedAt": "2026-10-08T16:07:45.245Z"
       },
       "eur-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "c1f4f6022dc35ac1"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:07:45.245Z"
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Rejette une Europe capitaliste « plus unifiée » ; le parti défend les « États-Unis socialistes d’Europe et du monde ». Intensité discutable."
       },
       "eur-02": {
         "missing": true,
@@ -13278,6 +13404,95 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Réponse de la candidate ; dénonce les suppressions de postes à l’hôpital public."
+      },
+      "sec-08": {
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "c477c1d642fbbbb9"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Critique du projet de Gabriel Attal d’atténuer l’excuse de minorité pour les 16 ans et plus. Source antérieure à la campagne 2027."
+      },
+      "sec-09": {
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "e4bf10221b27a02b"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Dossier prisons du journal Révolutionnaires n° 59 ; un autre article du dossier critique la construction de nouveaux établissements pénitentiaires comme « un véritable marché »."
+      },
+      "san-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "1f5b91b829c25699"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Soutient la régulation de l’installation des médecins (loi Garot), tout en jugeant qu’elle « ne réparera pas un système exsangue ». Intensité discutable."
+      },
+      "log-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "70d8ea1501c57588"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Brève qui défend la loi SRU contre son abolition proposée par Marine Le Pen. Intensité discutable."
+      },
+      "log-03": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "6bc8b6775a675c96"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Brève qui qualifie de « recul » l’assouplissement de l’interdiction de louer les logements classés F et G. Intensité discutable."
+      },
+      "eur-09": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "c1f4f6022dc35ac1"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Rejette le Frexit comme piège souverainiste. Intensité discutable."
+      },
+      "eur-07": {
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "4850f649489e90ff"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Résolution du comité politique national du parti, qui critique la défense des livraisons d’armes à l’Ukraine ; à la fête de l’Humanité 2026, la candidate dit « pas un euro pour les guerres impérialistes »."
       }
     },
     "olivier-becht": {
@@ -13331,18 +13546,32 @@
         "note": "Garantie d'accès aux services publics partout, mais rien sur le maintien des services coûteux mentionné dans l'affirmation, d'où set [1, 2]. Page non datée, consultée le 08/10/2026."
       },
       "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "fb0dfb4846902231"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Vote « Contre » l'amendement qui désindexait les seuils des deux dernières tranches de l'impôt sur le revenu, c'est-à-dire qui augmentait l'impôt des revenus les plus élevés ; même vote « Contre » sur l'impôt sur le revenu à quatorze tranch"
       },
       "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "0ecb1ad16595af3e"
+        ],
+        "basis": "vote",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Vote « Contre » l'amendement LFI créant une contribution exceptionnelle sur le patrimoine (1,7 % entre 3 et 5 M€ jusqu'à 5 % au-delà d'un milliard). Le programme va dans le même sens : « Plutôt que d’alourdir sans cesse l’impôt sur ceux qui"
       },
       "eco-03": {
         "set": [
@@ -13708,6 +13937,34 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T09:35:32.589Z",
         "note": "Vidéo publiée sur sa chaîne le jour de sa déclaration de candidature. Accueil en centres fermés pendant deux mois puis titre de séjour pour ceux que la France peut accueillir et qui s’intègrent ; reconduite des autres et exécution de 100 % "
+      },
+      "tra-08": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "291915e7e9a3ba42"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Retraite par points dans laquelle chacun choisit son âge de départ, complétée par une épargne de capitalisation facultative, avec un avantage fiscal. La part de capitalisation est un complément volontaire, pas un financement obligatoire d'u"
+      },
+      "eco-12": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c850bf9202641087"
+        ],
+        "basis": "vote",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Vote « Contre » l'amendement socialiste créant une contribution sur les successions et donations réservée aux transmissions de plus de 900 000 € (taux de 1 % à 2,5 %). Il refuse donc même une hausse modérée sur les plus gros héritages ; il "
       }
     },
     "raphael-glucksmann": {
@@ -15149,6 +15406,84 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T09:49:46.540Z",
         "note": "Règle d'or proposée par référendum."
+      },
+      "tra-09": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "2c5dfca83d4669c4"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Rejette l’année blanche et la sous-indexation des pensions. En août 2026 (L’Opinion, repris par Nous France) : « Pas question de désindexer les pensions »."
+      },
+      "eur-09": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "3608aba4300fd281"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Juge l’Europe « indispensable » pour la France et se dit « Européen convaincu » : rejette une sortie de l’UE."
+      },
+      "cli-07": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "d90d3a594ec017bd"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Contre l’éolien terrestre, ouvert à l’éolien flottant en mer. Déclaration de 2022 : rien de plus récent ne la contredit."
+      },
+      "log-04": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "781d819efba0c0ed"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Veut assouplir et étaler les ZFE, sans demander leur suppression. Déclaration de 2022 : rien de plus récent trouvé."
+      },
+      "san-01": {
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "b9d2bde30495a5d4"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Déclaration de 2022. En janvier 2026 (Le Parisien), il rejette encore les « méthodes technocratiques, punitives » envers les médecins libéraux."
+      },
+      "eur-03": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "3097a47ccde1bf80"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Réclamait 20 milliards de plus pour les armées en 2022 ; rien de plus récent trouvé sur le niveau du budget."
       }
     },
     "dominique-de-villepin": {
@@ -15385,6 +15720,153 @@
         "basis": "declaration",
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z"
+      },
+      "log-01": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "cfcd9d342104895d"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Va au-delà du maintien de l'obligation SRU : relèvement du quota et sanctions renforcées."
+      },
+      "log-02": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "5edaefcae1224d13"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Même texte : « Le logement social stagne (+0,9 % par an seulement depuis 2018) ». Programme 2027 : 500 000 logements par an, coopératives de logement social et banque publique du logement. Intensité et mode de financement non chiffrés."
+      },
+      "cli-01": {
+        "value": 2,
+        "status": "explicite",
+        "sources": [
+          "e8c2116b9de4518e"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Page programme non datée, consultée le 2026-10-26. Proposition 14 : « Un Plan sous l’autorité du Président : nouveau nucléaire ». Une chronique d'août 2025 était plus prudente (« un éventuel renouveau nucléaire ») ; le programme 2026 tranch"
+      },
+      "eco-11": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "4b652e88ce65df80"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Page programme non datée, consultée le 2026-10-26. Les cotisations salariales baissent mais la CSG augmente (assiette élargie aux revenus du capital, aux retraites et à l'IA) : le net des salariés augmente, d'où 1 et pas 2."
+      },
+      "tra-08": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "7e36b4da76ca3b93"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "En août 2026 (« Big Bang ») le fonds est décrit comme « véhicule d’une capitalisation populaire, à rendement garanti » abondé par l'épargne volontaire ; le caractère obligatoire n'y est pas repris, d'où l'ensemble."
+      },
+      "tra-13": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "c293da2937922f75"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Porte sur les exonérations de cotisations patronales (« environ 80 milliards d’euros »). En août 2026 (« Big Bang ») : extinction progressive de toutes les niches fiscales et sociales, dont un tiers des économies compenserait l'impact sur l"
+      },
+      "imm-07": {
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "66898a2e846dd9e2"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Propos tenus sur LCI le 17 septembre 2026. Voir aussi le discours de la Sorbonne (27/03/2026) : exécution des OQTF et « refus de l’acceptation tacite de la clandestinité »."
+      },
+      "lib-06": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "9ef4319dff0c8f23"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Critique des restrictions vestimentaires au-delà de l'école ; confirmé en septembre 2026 (« Dieu, la République et nous ») : la laïcité « transformée en une arme ». Pas de proposition explicite d'assouplissement, d'où l'ensemble."
+      },
+      "cli-06": {
+        "value": -1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "223116dcea8e6a66"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Opposition à la loi « lever les contraintes à l'exercice du métier d'agriculteur ». Position de 2025 non contredite, mais le programme 2027 vise « la fin des surtranspositions » et des codes divisés par quatre, d'où -1 et pas -2."
+      },
+      "ani-07": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "fa2513790192744e"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Ouverture prudente. En août 2025 (« La bifurcation écologique ») il réclamait avec la grande distribution « des contrats pluriannuels avec volumes garantis et prix planchers »."
+      },
+      "eur-01": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "43b59f5f1d80a409"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Même texte : extension des votes à la majorité qualifiée encadrée par un conseil de sécurité européen. Il se démarque des fédéralistes (« Europe à taille unique »), d'où 1."
+      },
+      "eur-09": {
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "51c452012c5747f7"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Engagement qu'il propose à tous les candidats ; cohérent avec le manifeste européen du 6 mars 2026."
       }
     },
     "francois-asselineau": {
@@ -15787,6 +16269,59 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Sortie de l'UE : la France n'appliquerait plus aucune règle européenne."
+      },
+      "lib-01": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "93e47b3ebce220e0"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Rejet du projet de loi sur l'aide à mourir (« procédure diabolique »). Intensité laissée ouverte : la phrase oppose le texte à des « cas exceptionnels » sans dire s'il les admettrait. En mai 2025, il demandait aussi un référendum sur ce tex"
+      },
+      "tra-11": {
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "613871ad7d806a69"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Communiqué listant les engagements retraites du programme présidentiel 2022 (« François Asselineau proposera … d’arrêter tout report de l’âge légal »). Ligne confirmée en juillet 2026 (« L'impudence règne ») : il range le report à 67 puis 7"
+      },
+      "eco-09": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "3a9a63ea85632c30"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Rejet des suppressions massives de postes de fonctionnaires, aussi exprimé sur Divergence politique (08/10/2026). Intensité ouverte : il vise les suppressions « massives » sans exclure toute baisse ; il propose en revanche de supprimer les "
+      },
+      "dem-05": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "f0322eec91a2c0ca"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Critique du transfert de pouvoirs aux régions, dont il propose la « suppression pure et simple » (discours de rentrée du 30/09/2026) ainsi que la division par deux des conseillers départementaux. Pas -2 strict : le programme 2022 relève les"
       }
     },
     "juan-branco": {
@@ -16165,6 +16700,73 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Services publics de base (dont la poste) dans chaque commune de plus de 3 000 habitants."
+      },
+      "imm-06": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "0db26becb07a2cf0"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Conditionne le regroupement familial, sans parler de le restreindre fortement ni de le suspendre."
+      },
+      "imm-07": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c8da584c5dd79066"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Régularisations soumises à des critères d’intégration et à des obligations de service, donc pas de régularisation de toutes les personnes."
+      },
+      "dem-05": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c99c155c6719a285"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Fin de la décentralisation et suppression des régions ; la commune, elle, verrait ses pouvoirs accrus."
+      },
+      "eur-01": {
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "71ca49b0f1b30334"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Critique les contraintes européennes et appelle à se préparer à sortir de l’UE."
+      },
+      "eur-09": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "a74d01667fcacce2"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T10:23:24.342Z",
+        "note": "Le programme soumet la sortie de l’UE à un référendum."
       }
     },
     "emmanuel-dubuisson": {
@@ -31013,6 +31615,424 @@
       "publisher": "Parti animaliste",
       "url": "https://parti-animaliste.fr/programme",
       "passage": "Reconnaître le vote blanc comme suffrage exprimé. Mettre en place des mesures de transparence"
+    },
+    {
+      "id": "cfcd9d342104895d",
+      "title": "Protection sociale (chronique)",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/protection-sociale.html",
+      "date": "2025-12-04",
+      "passage": "Le quota de logements sociaux doit être relevé dans les zones où les tensions sont les plus fortes, et les sanctions doivent devenir réellement dissuasives"
+    },
+    {
+      "id": "5edaefcae1224d13",
+      "title": "La rupture du pacte social",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/la-rupture-du-pacte-social.html",
+      "date": "2025-12-02",
+      "passage": "L’égalité des chances suppose aussi de relancer le logement social"
+    },
+    {
+      "id": "e8c2116b9de4518e",
+      "title": "Projet économique : 20 propositions (proposition 16)",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/programme/economie.html",
+      "passage": "6 EPR2, éolien en mer industrialisé, électrification massive des usages, pour les ménages comme pour l’industrie."
+    },
+    {
+      "id": "4b652e88ce65df80",
+      "title": "Projet économique : 20 propositions (proposition 1)",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/programme/economie.html",
+      "passage": "Plus de 200 Md€ de cotisations basculés vers une CSG universelle : +200 € nets par mois en moyenne, +100 € au Smic."
+    },
+    {
+      "id": "7e36b4da76ca3b93",
+      "title": "La grande transformation du monde",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/la-grande-transformation-du-monde.html",
+      "date": "2025-12-26",
+      "passage": "Ce fonds, réunissant les participations de l’Etat et le Fonds de réserve pour les retraites se verrait abondé par un volet d’épargne retraite obligatoire, servie au départ à la retraite sous forme de rente à rendement garanti"
+    },
+    {
+      "id": "c293da2937922f75",
+      "title": "Un nouveau monde du travail",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/un-nouveau-monde-du-travail.html",
+      "date": "2025-12-08",
+      "passage": "Concernant les exonérations, il convient de les réduire, de les cibler sur des secteurs spécifiques"
+    },
+    {
+      "id": "66898a2e846dd9e2",
+      "title": "Présidentielle 2027 : « Pas de régularisation massive et globale », dit de Villepin sur l’immigration",
+      "publisher": "20 Minutes (avec AFP)",
+      "url": "https://www.20minutes.fr/politique/4246387-20260918-presidentielle-2027-regularisation-massive-globale-dit-villepin-immigration",
+      "date": "2026-09-18",
+      "passage": "l’ancien Premier ministre s’est prononcé pour une immigration « maîtrisée », tout en rejetant toute « régularisation massive et globale » des étrangers en situation irrégulière."
+    },
+    {
+      "id": "9ef4319dff0c8f23",
+      "title": "La France face au piège identitaire",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/la-france-face-au-piege-identitaire.html",
+      "date": "2025-11-16",
+      "passage": "Ce qui n’était qu’un débat sur la neutralité de l’école est devenu le signe d’un pays qui ne se reconnaît plus, pris dans les surenchères de la police vestimentaire."
+    },
+    {
+      "id": "223116dcea8e6a66",
+      "title": "Sur la loi Duplomb",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/sur-la-loi-duplomb.html",
+      "date": "2025-07-20",
+      "passage": "Non à la loi Duplomb, adoptée sans réflexion et sans concertation. Une loi dangereuse pour notre environnement, dangereuse pour la santé des Français"
+    },
+    {
+      "id": "fa2513790192744e",
+      "title": "Souveraineté agricole et alimentaire",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/souverainete-agricole-et-alimentaire.html",
+      "date": "2026-02-25",
+      "passage": "voire en ouvrant sans tabous la question de la garantie de rémunération et des prix planchers, à volume d’aides total constant."
+    },
+    {
+      "id": "43b59f5f1d80a409",
+      "title": "Le moment européen : manifeste pour une Europe souveraine",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/moment-europeen-europe-souveraine.html",
+      "date": "2026-03-06",
+      "passage": "Construire des capacités militaires européennes d’envergure, nécessite d’européaniser, un grand nombre de décisions, notamment sur les technologies et les équipements critiques que nous devons développer en commun."
+    },
+    {
+      "id": "51c452012c5747f7",
+      "title": "Appel à la paix civile et sociale",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/appel-paix-civile-sociale.html",
+      "date": "2026-10-21",
+      "passage": "S’engager à ne pas sortir de l’Union européenne ni engager de démarches en ce sens pendant le quinquennat."
+    },
+    {
+      "id": "0db26becb07a2cf0",
+      "title": "La Voie — programme intégral (Le Projet 2027, 845 mesures)",
+      "publisher": "Les Ruches, mouvement de Juan Branco (site officiel)",
+      "url": "https://ruches.org/le-projet",
+      "passage": "Conditionnalisation du regroupement familial et déconcentration du traitement de l’asile au niveau consulaire."
+    },
+    {
+      "id": "c8da584c5dd79066",
+      "title": "La Voie — programme intégral (Le Projet 2027, 845 mesures)",
+      "publisher": "Les Ruches, mouvement de Juan Branco (site officiel)",
+      "url": "https://ruches.org/le-projet",
+      "passage": "Mise en place de critères objectivables d’intégration concernant les étrangers, accompagnée d’obligations de service à la nation, dans le cadre des régularisations de personnes dénuées de titres de séjour."
+    },
+    {
+      "id": "c99c155c6719a285",
+      "title": "La Voie — programme intégral (Le Projet 2027, 845 mesures)",
+      "publisher": "Les Ruches, mouvement de Juan Branco (site officiel)",
+      "url": "https://ruches.org/le-projet",
+      "passage": "Création d’une Fédération Française, ayant pour langue d’État le Français et reconnaissant des langues officielles, mettant fin à la décentralisation, renforçant la déconcentration, supprimant les régions et consacrant la commune comme échelon de gouvernance principal."
+    },
+    {
+      "id": "71ca49b0f1b30334",
+      "title": "L’avocat Juan Branco, candidat à la présidentielle",
+      "publisher": "Sud Radio",
+      "url": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle",
+      "date": "2025-12-19",
+      "passage": "En réalité, on avait un gouvernement tenu par ses engagements européens. Par toute une série de règles dont ils ne peuvent rien faire."
+    },
+    {
+      "id": "a74d01667fcacce2",
+      "title": "L’avocat Juan Branco, candidat à la présidentielle",
+      "publisher": "Sud Radio",
+      "url": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle",
+      "date": "2025-12-19",
+      "passage": "Je pense qu'il faut se préparer à la sortie de l'Union européenne. Il ne s'agit pas d'être contre l'Europe."
+    },
+    {
+      "id": "93e47b3ebce220e0",
+      "title": "Le monstrueux projet de loi sur l'euthanasie",
+      "publisher": "UPR",
+      "url": "https://upr.fr/analyses/le-monstrueux-projet-de-loi-sur-leuthanasie",
+      "date": "2026-06-29",
+      "passage": "Il ne s’agit en effet plus d’ouvrir un droit à l’euthanasie dans des cas exceptionnels mais bien de jeter les bases légales et laxistes d’une véritable machine à tuer industrielle de tous les indésirables"
+    },
+    {
+      "id": "613871ad7d806a69",
+      "title": "Le programme de François Asselineau pour les retraites",
+      "publisher": "UPR",
+      "url": "https://upr.fr/communiques-de-presse/le-programme-de-francois-asselineau-pour-les-retraites",
+      "date": "2021-06-09",
+      "passage": "d’arrêter tout report de l’âge légal"
+    },
+    {
+      "id": "3a9a63ea85632c30",
+      "title": "François Asselineau face à Coûteaux et Lours sur Radio Courtoisie – 23/10/2026",
+      "publisher": "UPR (compte rendu d'une émission de Radio Courtoisie)",
+      "url": "https://upr.fr/actualites/francois-asselineau-face-a-couteaux-et-lours-sur-radio-courtoisie-23-10-2026",
+      "date": "2026-10-23",
+      "passage": "supprimer 800 000 fonctionnaires, comme certains le proposent, ferait selon lui chuter les recettes d’impôt sur le revenu, de TVA et d’impôt sur les sociétés, et creuserait le déficit au lieu de le réduire"
+    },
+    {
+      "id": "f0322eec91a2c0ca",
+      "title": "Les mondialistes veulent détruire le Royaume-Uni",
+      "publisher": "UPR",
+      "url": "https://upr.fr/analyses/les-mondialistes-veulent-detruire-le-royaume-uni",
+      "date": "2026-09-13",
+      "passage": "la totalité des partis et des candidats pro-européens, y compris le RN, acquiescent à l’idée de principe qu’il faudrait donner toujours plus de pouvoirs aux régions, au détriment de l’État central"
+    },
+    {
+      "id": "76603fe2b396d669",
+      "title": "Dette : qui, des travailleurs ou des patrons, la paiera ?",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/dette-qui-des-travailleurs-ou-des-patrons-la-paiera",
+      "date": "2026-09-03",
+      "passage": "Les prophètes de malheur qui prétendent qu’il n’y a pas d’alternative au paiement de ce tribut antisocial qu’est la dette sont des ennemis."
+    },
+    {
+      "id": "3c4767dcc8c72ade",
+      "title": "500 bureaux de poste voués à la fermeture : et maintenant on fait quoi ?",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/500-bureaux-de-poste-voues-a-la-fermeture-et-maintenant-on-fait-quoi",
+      "date": "2026-10-02",
+      "passage": "La bagarre contre les fermetures de bureaux et celle contre les suppressions d’emplois posent la même exigence : il faut une mobilisation nationale, une grève de toutes les postières et tous les postiers appuyée par une large coalition de soutiens, syndicats, partis, associations."
+    },
+    {
+      "id": "7ba66760c930c880",
+      "title": "Un pilier de l’ordre capitaliste à abattre",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/un-pilier-de-lordre-capitaliste-a-abattre",
+      "date": "2026-06-09",
+      "passage": "Il faut se débarrasser des prisons dont la destination première est la répression des classes populaires, comme il faut se débarrasser de tous les autres instruments répressifs de l’État bourgeois – police, armée, tribunaux –"
+    },
+    {
+      "id": "c477c1d642fbbbb9",
+      "title": "Législatives 2024 : « tout le monde aime la police » ?",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/legislatives-2024-tout-le-monde-aime-la-police",
+      "date": "2024-07-05",
+      "passage": "Celui-ci souhaite faire la guerre aux mineurs en instaurant des peines courtes et rapides pour les mineurs de plus de 16 ans (« atténuer l’excuse de minorité »)"
+    },
+    {
+      "id": "e4bf10221b27a02b",
+      "title": "Un pilier de l’ordre capitaliste à abattre",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/un-pilier-de-lordre-capitaliste-a-abattre",
+      "date": "2026-06-09",
+      "passage": "nous ne pouvons nous contenter de chercher à rendre les prisons plus humaines. Ce sont les prisons elles-mêmes qui sont à détruire."
+    },
+    {
+      "id": "1f5b91b829c25699",
+      "title": "Déserts médicaux : réguler l’installation, oui, mais surtout reconstruire la santé publique",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/deserts-medicaux-reguler-linstallation-oui-mais-surtout-reconstruire-la-sante-publique",
+      "date": "2025-04-30",
+      "passage": "Dans une société tournée vers l’intérêt général, la priorité serait d’organiser la répartition des soignants, médecins compris, pour assurer un accès équitable aux soins, non de défendre des intérêts privés sous couvert de « liberté »."
+    },
+    {
+      "id": "70d8ea1501c57588",
+      "title": "Marine Le Pen contre le logement social",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/marine-le-pen-contre-le-logement-social",
+      "date": "2026-09-15",
+      "passage": "Son objectif est de tenter de répartir équitablement la charge du logement social et éviter que les villes réfractaires, qui ne veulent pas de pauvres chez elles, échappent à cet effort collectif."
+    },
+    {
+      "id": "6bc8b6775a675c96",
+      "title": "Le gouvernement et les passoires thermiques : un nouveau recul",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/le-gouvernement-et-les-passoires-thermiques-un-nouveau-recul",
+      "date": "2026-04-25",
+      "passage": "C’est pourquoi, depuis le 1 er janvier 2025, il est interdit de mettre en location un logement en G et une loi similaire devait s’appliquer à partir du 1 er janvier 2028 pour les logements en F. Mais, de passage à Marseille, le Premier ministre Sébastien Lecornu, face à la fronde des propriétaires, vient de reculer."
+    },
+    {
+      "id": "80cf3e5ef66cfbcf",
+      "title": "L’agriculture a Duplomb dans l’aile",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/lagriculture-a-duplomb-dans-laile",
+      "date": "2025-05-31",
+      "passage": "À les écouter, il faudrait niveler par le bas les restrictions sur les pesticides, alors que les médecins et experts environnementaux alertent sur les risques liés aux produits phytosanitaires, auxquels les agriculteurs sont les premiers exposés."
+    },
+    {
+      "id": "fc08385612602276",
+      "title": "Une loi d’urgence pour la souveraineté des industriels",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/une-loi-durgence-pour-la-souverainete-des-industriels",
+      "date": "2026-06-09",
+      "passage": "Leur objectif n’est pas que tout le monde mange à sa faim et dispose d’une alimentation de qualité, c’est de gratter des parts de marché pour leurs produits. Quitte pour cela à niveler par le bas les normes environnementales et empoisonner environnement et populations."
+    },
+    {
+      "id": "c1f4f6022dc35ac1",
+      "title": "Concurrence entre capitalistes ? Unité entre travailleurs !",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/concurrence-entre-capitalistes-unite-entre-travailleurs",
+      "date": "2025-02-21",
+      "passage": "Il n’y a rien à attendre de quelconques souverainismes et protectionnismes économiques dans le piège desquels sombrent les directions syndicales, ni d’un improbable « Frexit », ni d’une Europe capitaliste plus unifiée et militarisée."
+    },
+    {
+      "id": "4850f649489e90ff",
+      "title": "Résolution sur la situation internationale, adoptée au CPN des 27 et 28 septembre",
+      "publisher": "NPA-Révolutionnaires",
+      "url": "https://npa-revolutionnaires.org/articles/resolution-sur-la-situation-internationale-adoptee-au-cpn-des-27-et-28-septembre",
+      "date": "2025-09-29",
+      "passage": "Ils ont été rejoints dans ce concert par certains courants issus de l’extrême-gauche, qui sous couvert de « défense du droit des peuples à disposer d’eux-mêmes », défendent les livraisons d’armes à l’armée ukrainienne, et l’alignement derrière le gouvernement bourgeois de Zelensky."
+    },
+    {
+      "id": "2c5dfca83d4669c4",
+      "title": "Discours de Xavier Bertrand à Saint-Quentin, 25 octobre 2025",
+      "publisher": "Nous France (vidéo)",
+      "url": "https://www.youtube.com/watch?v=BvcAcCiIBTI&t=361s",
+      "date": "2025-10-25",
+      "passage": "des retraités à qui on impose une triple peine, la suppression de l'abattement de 10 %, l'année blanche y compris pour les retraités les plus modestes et la sous-indexation des pensions. Les pensions qui augmenteront moins vite que l'inflation. Trop, c'est trop."
+    },
+    {
+      "id": "3608aba4300fd281",
+      "title": "Xavier Bertrand signe un accord avec le Nord du Portugal : « Je connais la vitalité de l’économie portugaise » (entretien)",
+      "publisher": "Nous France (reprise de l’entretien de LusoJornal)",
+      "url": "https://www.nousfrance.fr/2026/07/xavier-bertrand-signe-un-accord-avec-le-nord-du-portugal-je-connais-la-vitalite-de-leconomie-portugaise-lusojournal/",
+      "date": "2026-07-16",
+      "passage": "Nous avons parlé des liens entre les deux pays, de l’Europe – indispensable pour le Portugal, pour la France et pour les Hauts‑de‑France. Nous sommes des Européens convaincus."
+    },
+    {
+      "id": "d90d3a594ec017bd",
+      "title": "« Il faut en terminer avec l’ère de la naïveté » : Xavier Bertrand replonge dans le bain politique (Face aux Territoires, TV5 Monde)",
+      "publisher": "Nous France (reprise de l’article de Nice-Matin)",
+      "url": "https://www.nousfrance.fr/2022/11/video-il-faut-en-terminer-avec-lere-de-la-naivete-xavier-bertrand-replonge-dans-le-bain-politique-nice-matin-tv5-monde/",
+      "date": "2022-11-10",
+      "passage": "Les énergies renouvelables, il en faut, mais je suis opposé au déploiement de l’éolien terrestre: on est en train de détruire les paysages de la France. En revanche, on peut envisager de l’éolien flottant au large de nos côtes."
+    },
+    {
+      "id": "781d819efba0c0ed",
+      "title": "« Il faut en terminer avec l’ère de la naïveté » : Xavier Bertrand replonge dans le bain politique (Face aux Territoires, TV5 Monde)",
+      "publisher": "Nous France (reprise de l’article de Nice-Matin)",
+      "url": "https://www.nousfrance.fr/2022/11/video-il-faut-en-terminer-avec-lere-de-la-naivete-xavier-bertrand-replonge-dans-le-bain-politique-nice-matin-tv5-monde/",
+      "date": "2022-11-10",
+      "passage": "On n’a pas le droit d’interdire l’accès aux centres-villes à des gens qui n’ont pas les moyens de changer de voiture. On doit simplifier le dispositif, l’étaler dans le temps et permettre aux Français de faire contrôler leur véhicule à moindre coût."
+    },
+    {
+      "id": "b9d2bde30495a5d4",
+      "title": "« Il faut en terminer avec l’ère de la naïveté » : Xavier Bertrand replonge dans le bain politique (Face aux Territoires, TV5 Monde)",
+      "publisher": "Nous France (reprise de l’article de Nice-Matin)",
+      "url": "https://www.nousfrance.fr/2022/11/video-il-faut-en-terminer-avec-lere-de-la-naivete-xavier-bertrand-replonge-dans-le-bain-politique-nice-matin-tv5-monde/",
+      "date": "2022-11-10",
+      "passage": "Il faut mieux penser la répartition des médecins sur les territoires, mais il ne faut pas les contraindre. Les jeunes médecins ne sont pas des pions qu’on déplace sur un échiquier."
+    },
+    {
+      "id": "3097a47ccde1bf80",
+      "title": "« Il faut en terminer avec l’ère de la naïveté » : Xavier Bertrand replonge dans le bain politique (Face aux Territoires, TV5 Monde)",
+      "publisher": "Nous France (reprise de l’article de Nice-Matin)",
+      "url": "https://www.nousfrance.fr/2022/11/video-il-faut-en-terminer-avec-lere-de-la-naivete-xavier-bertrand-replonge-dans-le-bain-politique-nice-matin-tv5-monde/",
+      "date": "2022-11-10",
+      "passage": "Le plan présenté à Toulon par Emmanuel Macron est insuffisant. On aurait besoin de 20 milliards d’euros supplémentaires pour être à la hauteur des défis des prochaines années."
+    },
+    {
+      "id": "291915e7e9a3ba42",
+      "title": "Un nouveau modèle social – Olivier BECHT Président 2027 (extrait du livre-programme « Le Projet France »)",
+      "publisher": "Site officiel de campagne Becht 2027",
+      "url": "https://becht2027.fr/chapitre/partie-5/",
+      "passage": "Chacun pourra compléter sa pension par une épargne de capitalisation, que parents et grands-parents pourront abonder en franchise d’impôt."
+    },
+    {
+      "id": "0ecb1ad16595af3e",
+      "title": "Scrutin public n°3433 sur l'amendement n° 828 de M. Maudet après l'article 6 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3433",
+      "date": "2025-11-05",
+      "passage": "Contre : 55 M. Pieyre-Alexandre Anglade M. Olivier Becht"
+    },
+    {
+      "id": "c850bf9202641087",
+      "title": "Scrutin public n°3430 sur l'amendement n° 158 de M. Guedj après l'article 6 du projet de loi de financement de la sécurité sociale pour 2026 (première lecture)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3430",
+      "date": "2025-11-05",
+      "passage": "Contre : 51 M. Pieyre-Alexandre Anglade M. Olivier Becht"
+    },
+    {
+      "id": "fb0dfb4846902231",
+      "title": "Scrutin public n°11 sur l'amendement n° 464 de M. Maurel et les amendements identiques suivants à l'article 2 du projet de loi de finances pour 2025 (première lecture)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/11",
+      "date": "2024-10-22",
+      "passage": "Contre : 19 M. David Amiel M. Pieyre-Alexandre Anglade M. Gabriel Attal M. Olivier Becht"
+    },
+    {
+      "id": "5e5211e8196d9096",
+      "title": "Profession de foi de Delphine Batho, élections législatives du 30 juin 2024 (1er tour), 2e circonscription des Deux-Sèvres",
+      "publisher": "Assemblée nationale (recueil Barodet)",
+      "url": "https://www2.assemblee-nationale.fr/static/barodet/Barodet-2024/Professions_de_foi_par_d%C3%A9partement/79_Deux-S%C3%A8vres_3%20circonscriptions/79-7902-BATHO%20Delphine_T1.pdf",
+      "date": "2024-06-30",
+      "passage": "Lutter contre la vie chère, bloquer les prix de l’énergie et des produits de première nécessité"
+    },
+    {
+      "id": "101a378b6a1fc203",
+      "title": "Profession de foi de Delphine Batho, élections législatives du 30 juin 2024 (1er tour), 2e circonscription des Deux-Sèvres",
+      "publisher": "Assemblée nationale (recueil Barodet)",
+      "url": "https://www2.assemblee-nationale.fr/static/barodet/Barodet-2024/Professions_de_foi_par_d%C3%A9partement/79_Deux-S%C3%A8vres_3%20circonscriptions/79-7902-BATHO%20Delphine_T1.pdf",
+      "date": "2024-06-30",
+      "passage": "Abrogation de la réforme des retraites et de l’assurance chômage."
+    },
+    {
+      "id": "9b14afb0008e55c8",
+      "title": "Profession de foi de Delphine Batho, élections législatives du 30 juin 2024 (1er tour), 2e circonscription des Deux-Sèvres",
+      "publisher": "Assemblée nationale (recueil Barodet)",
+      "url": "https://www2.assemblee-nationale.fr/static/barodet/Barodet-2024/Professions_de_foi_par_d%C3%A9partement/79_Deux-S%C3%A8vres_3%20circonscriptions/79-7902-BATHO%20Delphine_T1.pdf",
+      "date": "2024-06-30",
+      "passage": "Maintenir les services publics dans la ruralité, soutenir les petites et moyennes entreprises"
+    },
+    {
+      "id": "d3b2a4c4c98b1799",
+      "title": "Profession de foi de Delphine Batho, élections législatives du 12 juin 2022 (1er tour), 2e circonscription des Deux-Sèvres",
+      "publisher": "Assemblée nationale (recueil Barodet)",
+      "url": "https://www2.assemblee-nationale.fr/static/barodet/Barodet-2022/Professions_de_foi_par_d%C3%A9partement/79_Deux-S%C3%A8vres_3%20circonscriptions/79-02_Delphine_BATHO_1.pdf",
+      "date": "2022-06-12",
+      "passage": "Améliorer les petits salaires et les retraites, et empêcher la réforme de la retraite à 65 ans."
+    },
+    {
+      "id": "87cbd2a7f70c6d0f",
+      "title": "Amendement n° I-809 au projet de loi de finances pour 2027 (après l’article 4)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/809",
+      "date": "2026-10-08",
+      "passage": "Cet amendement vise à réintroduire davantage de progressivité sur les gros héritages"
+    },
+    {
+      "id": "f0fdc27fe71ef2c2",
+      "title": "Amendement n° 2329 à la proposition de loi visant à lever les contraintes à l’exercice du métier d’agriculteur",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1437/AN/2329",
+      "date": "2025-05-22",
+      "passage": "les ministres arrêtent un prix minimal d’achat des produits agricoles, qui ne peut être inférieur aux coûts de production des produits agricoles concernés"
+    },
+    {
+      "id": "5e7ff2efca9c087e",
+      "title": "Amendement n° 303 (rect.) au projet de loi de financement de la sécurité sociale pour 2026 (après l’article 8)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1907/AN/303",
+      "date": "2025-10-28",
+      "passage": "Nous proposons par conséquent de supprimer les allégements généraux au-delà de 2 SMIC pour mettre un terme définitif à cette politique d’exonération de cotisations dispendieuse et inefficace."
+    },
+    {
+      "id": "f084dbba9f3cf2a4",
+      "title": "Amendement n° AS1500 au projet de loi de financement de la sécurité sociale pour 2027",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3211/CION-SOC/AS1500",
+      "date": "2026-10-08",
+      "passage": "Le groupe Écologiste et Social propose de relever les sous-objectifs de l’ONDAM consacrés aux établissements de santé et aux établissements et services médico-sociaux"
+    },
+    {
+      "id": "4442763572786a87",
+      "title": "Scrutin public n° 4641 sur l’amendement n° 199 de suppression de l’article 44 du projet de loi de financement de la sécurité sociale pour 2026 (nouvelle lecture)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4641",
+      "date": "2025-12-05",
+      "passage": "Écologiste et Social (38 membres) Pour : 13 M. Pouria Amirshahi Mme Delphine Batho"
+    },
+    {
+      "id": "c562ace228b6046a",
+      "title": "Scrutin public n° 1624 sur l’ensemble de la proposition de loi visant à renforcer l’autorité de la justice à l’égard des mineurs délinquants et de leurs parents (texte de la CMP)",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1624",
+      "date": "2025-05-13",
+      "passage": "Écologiste et Social (38 membres) Contre : 36 M. Pouria Amirshahi Mme Christine Arrighi Mme Clémentine Autain Mme Léa Balage El Mariky Mme Delphine Batho"
     }
   ],
   "refreshedAt": {
@@ -31028,21 +32048,21 @@
     "fabien-roussel": "2026-10-10T08:49:32.693Z",
     "marine-tondelier": "2026-10-10T08:49:32.693Z",
     "francois-ruffin": "2026-10-10T08:49:32.693Z",
-    "delphine-batho": "2026-10-10T08:49:32.693Z",
+    "delphine-batho": "2026-10-26T10:25:25.183Z",
     "karim-bouamrane": "2026-10-10T08:49:32.693Z",
     "nathalie-arthaud": "2026-10-10T08:49:32.693Z",
     "anasse-kazib": "2026-10-10T08:49:32.693Z",
-    "selma-labib": "2026-10-10T08:49:32.693Z",
-    "olivier-becht": "2026-10-10T09:35:32.589Z",
+    "selma-labib": "2026-10-26T10:23:24.342Z",
+    "olivier-becht": "2026-10-26T10:23:24.342Z",
     "raphael-glucksmann": "2026-10-10T08:49:32.693Z",
     "bernard-cazeneuve": "2026-10-10T09:35:32.589Z",
-    "xavier-bertrand": "2026-10-10T09:49:46.540Z",
+    "xavier-bertrand": "2026-10-26T10:23:24.342Z",
     "olivier-faure": "2026-10-10T08:49:32.693Z",
     "emmanuel-maurel": "2026-10-10T08:49:32.693Z",
     "segolene-royal": "2026-10-10T09:49:46.540Z",
-    "dominique-de-villepin": "2026-10-10T08:49:32.693Z",
-    "francois-asselineau": "2026-10-10T08:49:32.693Z",
-    "juan-branco": "2026-10-10T08:49:32.693Z",
+    "dominique-de-villepin": "2026-10-26T10:23:24.342Z",
+    "francois-asselineau": "2026-10-26T10:23:24.342Z",
+    "juan-branco": "2026-10-26T10:23:24.342Z",
     "emmanuel-dubuisson": "2026-10-10T09:49:46.540Z",
     "francis-lalanne": "2026-10-10T10:31:52.795Z",
     "gilles-platret": "2026-10-12T09:21:51.397Z",

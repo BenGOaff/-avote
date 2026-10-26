@@ -1,0 +1,2397 @@
+{
+ "_note": "Comparatif des tests en ligne pour la présidentielle 2027. Constats relevés sur les sites eux-mêmes ; chaque point fort ou limite s’appuie sur une page citée dans evidence (citations vérifiées mot pour mot le jour du relevé). Ça vote ? figure dans la liste avec la même grille.",
+ "checkedAt": "2026-10-26",
+ "tools": [
+  {
+   "self": true,
+   "name": "Ça vote ?",
+   "url": "https://xn--avote-xra.fr/test",
+   "editor": "anonyme (projet citoyen)",
+   "model": "dons, sans publicité",
+   "format": {
+    "questions": "24 (rapide) ou 111 (complet)",
+    "shortVersion": true,
+    "answerType": "accord/désaccord sur 5 niveaux, « je ne sais pas » et « passer », priorités et lignes rouges",
+    "duration": "non annoncée"
+   },
+   "candidates": {
+    "count": 33,
+    "nonDeclaredOrParties": "candidatures déclarées ou démarches annoncées, avec la source de l’annonce"
+   },
+   "positions": {
+    "codedBy": "une IA, selon des règles publiques ; relecture humaine des cas douteux",
+    "sourcesPerPosition": "oui, chaque position a sa citation et son lien",
+    "quotesOrSummaries": "citations exactes, retrouvées mot pour mot dans la page par un programme avant publication",
+    "unknownPosition": "laissée vide et exclue du calcul ; un candidat trop peu documenté sur tes réponses est affiché sans rang"
+   },
+   "method": {
+    "published": true,
+    "summary": "proximité = 1 − écart/4 par question, pondérée par thème ; seuils de documentation avant tout classement"
+   },
+   "privacy": {
+    "computation": "dans le navigateur",
+    "server": "rien n’est envoyé ; le duel à distance passe par la partie # du lien",
+    "accounts": "aucun",
+    "trackers": "Google Analytics seulement après consentement, coupé pendant le test, les résultats et le duel"
+   },
+   "open": {
+    "data": "questions, positions, citations et liens dans /donnees.json",
+    "code": "non publié"
+   },
+   "updated": "positions mises à jour chaque semaine",
+   "strengths": [
+    "Chaque position est une citation retrouvée mot pour mot dans sa source.",
+    "Une position inconnue reste vide : elle ne devient ni « neutre » ni une déduction.",
+    "Calcul dans le navigateur, données ouvertes."
+   ],
+   "limits": [
+    "Une partie des candidats suivis n’a pas assez de positions documentées pour être classée : ils sont affichés à part, sans rang.",
+    "Le codage est fait par une IA ; le programme vérifie l’exactitude des citations, la pertinence reste une relecture.",
+    "Éditeur anonyme, code non publié."
+   ],
+   "evidence": [
+    {
+     "claim": "Citations vérifiées et position inconnue laissée vide",
+     "url": "https://xn--avote-xra.fr/methodologie",
+     "quote": ""
+    },
+    {
+     "claim": "Ce qui est collecté",
+     "url": "https://xn--avote-xra.fr/confidentialite",
+     "quote": ""
+    },
+    {
+     "claim": "Données ouvertes",
+     "url": "https://xn--avote-xra.fr/donnees.json",
+     "quote": ""
+    }
+   ]
+  },
+  {
+   "name": "MonVote2027",
+   "url": "https://monvote2027.fr/",
+   "editor": "anonyme (« petite équipe de bénévoles », site « édité à titre personnel et bénévole »)",
+   "model": "dons, sans publicité (déclaré)",
+   "format": {
+    "questions": "20 (rapide) ou 100 (complet)",
+    "shortVersion": true,
+    "answerType": "accord/désaccord sur 5 niveaux (Likert), question passable",
+    "duration": "≈ 2 min (20 questions), ≈ 10 min (100 questions)"
+   },
+   "candidates": {
+    "count": 21,
+    "nonDeclaredOrParties": "21 « candidats déclarés ou pressentis » ; la fiche de D. de Villepin ne mentionne pas de déclaration de candidature ; J. Bardella, O. Faure et J. Guedj listés à part comme « plus dans la course »"
+   },
+   "positions": {
+    "codedBy": "l’équipe (non précisé : humains ou outils)",
+    "sourcesPerPosition": "oui, sur chaque page candidat, mais pas pour toutes les positions (23 positions sur 100 sans source sur la page de D. de Villepin, 9 sur 100 sur celle de B. Retailleau, relevé du 26/10/2026)",
+    "quotesOrSummaries": "résumés à la troisième personne présentés entre guillemets (ex. « Retailleau appelle à… »)",
+    "unknownPosition": "affichée « Neutre / sans opinion » sans source et comptée dans le calcul (une position neutre donne une concordance de 0, soit 50 %) ; certaines positions non neutres n’ont pas non plus de source"
+   },
+   "method": {
+    "published": true,
+    "summary": "concordance = 1 − distance × 0,5 sur une échelle −2…+2, moyenne ramenée à 0–100 %, pondération optionnelle des thèmes de 0,5× à 3×"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "rien n’est envoyé (déclaré) ; logs serveur 7 jours",
+    "accounts": "aucun",
+    "trackers": "aucun traceur détecté dans le code de la page d’accueil ; « aucun cookie publicitaire, analytique ou de pistage » (déclaré)"
+   },
+   "open": {
+    "data": "positions et sources consultables sur /donnees, contenu « sous licence ouverte » (licence non nommée)",
+    "code": "non trouvé"
+   },
+   "updated": "bandeau « Sources mises à jour · 03/06/2026 » ; fiche B. Retailleau « état au 16 octobre 2026 »",
+   "strengths": [
+    "Méthode de calcul publiée avec formules et table de concordance.",
+    "Calcul local annoncé, aucun traceur relevé dans le code de la page.",
+    "Sources listées question par question sur les pages candidats."
+   ],
+   "limits": [
+    "Une partie des positions n’a aucune source affichée (23/100 pour D. de Villepin, 9/100 pour B. Retailleau).",
+    "Les positions sans information apparaissent en « Neutre / sans opinion » et entrent dans le calcul.",
+    "Les extraits entre guillemets sont des résumés, pas des citations du candidat."
+   ],
+   "evidence": [
+    {
+     "claim": "Méthode de calcul publiée",
+     "url": "https://monvote2027.fr/methodologie",
+     "quote": "concordance(q, C) = 1 − distance × 0,5 ∈ [−1 ; +1]"
+    },
+    {
+     "claim": "Calcul local annoncé",
+     "url": "https://monvote2027.fr/methodologie",
+     "quote": "Vos réponses au quiz sont calculées localement dans votre navigateur (JavaScript côté client)."
+    },
+    {
+     "claim": "Pas de traceur annoncé",
+     "url": "https://monvote2027.fr/methodologie",
+     "quote": "Nous n'utilisons aucun cookie publicitaire, analytique ou de pistage."
+    },
+    {
+     "claim": "Sources par question sur les pages candidats",
+     "url": "https://monvote2027.fr/methodologie",
+     "quote": "Chaque candidat dispose d'une page dédiée qui liste, question par question,"
+    },
+    {
+     "claim": "Positions sans source affichées en neutre (ex. Q7, proportionnelle)",
+     "url": "https://monvote2027.fr/candidat/devillepin",
+     "quote": "Une part de représentation proportionnelle doit être introduite aux législatives."
+    },
+    {
+     "claim": "Position non neutre sans source (Q41)",
+     "url": "https://monvote2027.fr/candidat/devillepin",
+     "quote": "Il faut nationaliser les secteurs stratégiques (énergie, transports)."
+    },
+    {
+     "claim": "Extrait entre guillemets rédigé à la troisième personne",
+     "url": "https://monvote2027.fr/candidat/retailleau",
+     "quote": "« Retailleau appelle à une politique de réduction drastique de l'immigration légale"
+    },
+    {
+     "claim": "Positions approximatives annoncées",
+     "url": "https://monvote2027.fr/methodologie",
+     "quote": "Les positions indiquées sont des approximations basées sur leurs positions connues à ce jour"
+    },
+    {
+     "claim": "Éditeur anonyme",
+     "url": "https://monvote2027.fr/le-projet",
+     "quote": "Nous avons fait le choix de rester anonymes"
+    },
+    {
+     "claim": "Formats et durées",
+     "url": "https://monvote2027.fr/quiz",
+     "quote": "Le quiz rapide (20 questions, ≈ 2 min) reprend les sujets les plus clivants"
+    },
+    {
+     "claim": "21 candidats déclarés ou pressentis",
+     "url": "https://monvote2027.fr/candidats",
+     "quote": "Retrouvez ci-dessous les 21 candidats déclarés ou pressentis pour"
+    }
+   ]
+  },
+  {
+   "name": "Le Quizz du Berger",
+   "url": "https://www.quizz-du-berger.com/",
+   "editor": "Arnaud Ambroselli, Roméo Vincent (développement), Clint (design) ; questions rédigées à l’origine par Interface Junior Conseil (Sciences Po Toulouse)",
+   "model": "gratuit, sans publicité, dons via Tipeee (déclaré) ; projet « sans but lucratif »",
+   "format": {
+    "questions": "162 sur 20 thèmes, au choix",
+    "shortVersion": "pas de version courte fixe : « Cinq questions suffisent pour un premier classement »",
+    "answerType": "choix concrets, 3 à 6 réponses par question",
+    "duration": "30 à 40 minutes pour les 162 questions (annoncé)"
+   },
+   "candidates": {
+    "count": 46,
+    "nonDeclaredOrParties": "candidats « déclarés ou pressentis » ; ceux qui ont renoncé restent dans le classement avec une mention"
+   },
+   "positions": {
+    "codedBy": "humains : à l’origine des étudiants ayant répondu « à la place des candidats », mises à jour 2027 par l’équipe",
+    "sourcesPerPosition": "non : la fiche d’Édouard Philippe liste les réponses aux 162 questions sans source à côté des réponses (relevé du 26/10/2026)",
+    "quotesOrSummaries": "réponses choisies parmi des options rédigées par le site",
+    "unknownPosition": "non précisé ; chaque fiche consultée affiche une réponse pour les 162 questions"
+   },
+   "method": {
+    "published": "en partie",
+    "summary": "réponse identique = 5 points, proche = 2 à 4, opposée = 0 ; matrice de proximité symétrique (détail de la matrice non affiché sur la page)"
+   },
+   "privacy": {
+    "computation": "non précisé pour les visiteurs sans compte",
+    "server": "avec compte (pseudonyme) : réponses enregistrées en base PostgreSQL ; Sentry peut enregistrer l’IP",
+    "accounts": "facultatif",
+    "trackers": "mesure d’audience maison sans cookie (déclaré) ; chat IA Mistral séparé"
+   },
+   "open": {
+    "data": "non trouvé",
+    "code": "oui, dépôt GitHub ambroselli-io/quizz-berger (licence non affichée sur la page du dépôt)"
+   },
+   "updated": "politique de confidentialité : 19 août 2026 ; sondages mis à jour le 2026-10-14",
+   "strengths": [
+    "Réponses concrètes à plusieurs options plutôt qu’un simple pour/contre.",
+    "Code source publié.",
+    "Résultat global et par thème ; on répond aux seules questions choisies."
+   ],
+   "limits": [
+    "Aucune source affichée à côté des positions sur la fiche candidat consultée.",
+    "46 personnalités comparées, dont des candidatures abandonnées.",
+    "Version complète longue : 30 à 40 minutes annoncées."
+   ],
+   "evidence": [
+    {
+     "claim": "Réponses concrètes 3 à 6 options",
+     "url": "https://www.quizz-du-berger.com/qui-sommes-nous",
+     "quote": "Chaque question propose entre 3 et 6 réponses concrètes, et non un simple pour ou contre."
+    },
+    {
+     "claim": "Code ouvert",
+     "url": "https://www.quizz-du-berger.com/qui-sommes-nous",
+     "quote": "Ce projet est entièrement open-source."
+    },
+    {
+     "claim": "Barème",
+     "url": "https://www.quizz-du-berger.com/pour-qui-voter-2027",
+     "quote": "Une réponse identique vaut 5 points, une réponse proche 2 à 4 points, une réponse opposée 0."
+    },
+    {
+     "claim": "Candidats abandonnés conservés",
+     "url": "https://www.quizz-du-berger.com/pour-qui-voter-2027",
+     "quote": "Ceux qui ont abandonné restent dans le classement avec une mention"
+    },
+    {
+     "claim": "46 candidats, déclarés ou pressentis",
+     "url": "https://www.quizz-du-berger.com/pour-qui-voter-2027",
+     "quote": "Le test compare vos réponses à 46 candidats, déclarés ou pressentis."
+    },
+    {
+     "claim": "Durée",
+     "url": "https://www.quizz-du-berger.com/pour-qui-voter-2027",
+     "quote": "Comptez trente à quarante minutes pour répondre aux 162 questions."
+    },
+    {
+     "claim": "Codage par des étudiants à la place des candidats",
+     "url": "https://www.quizz-du-berger.com/qui-sommes-nous",
+     "quote": "Ils ont aussi répondu au quizz « à la place des candidats », en se basant sur leurs programmes respectifs."
+    },
+    {
+     "claim": "Fiche candidat : réponses listées (ex.)",
+     "url": "https://www.quizz-du-berger.com/candidat/edouard-philippe",
+     "quote": "Que devrait faire la France face à la guerre en Ukraine ?"
+    },
+    {
+     "claim": "Stockage avec compte",
+     "url": "https://www.quizz-du-berger.com/confidentialite",
+     "quote": "vos réponses au quizz et les thèmes auxquels vous avez répondu ;"
+    },
+    {
+     "claim": "Sentry et IP",
+     "url": "https://www.quizz-du-berger.com/confidentialite",
+     "quote": "Sentry — outil de détection d'erreurs techniques, qui peut enregistrer votre adresse IP afin de corriger les bugs ;"
+    },
+    {
+     "claim": "Chat IA payant financé par dons",
+     "url": "https://www.quizz-du-berger.com/soutenir",
+     "quote": "Le chat avec l'IA Mistral n'est pas gratuit"
+    }
+   ]
+  },
+  {
+   "name": "Votons (test d’affinité)",
+   "url": "https://votons-2027.fr/quiz",
+   "editor": "association VOTONS (loi 1901, Toulouse) ; fondateurs nommés sur le site",
+   "model": "« Financé par ses créateurs, sans publicité » ; dons (Stripe)",
+   "format": {
+    "questions": "tours de 40 puis 25 propositions, « une dizaine de tours » pour un résultat net",
+    "shortVersion": "on peut s’arrêter à tout moment (résultat provisoire)",
+    "answerType": "Pour / Contre / Je passe sur des propositions anonymisées (sans nom de candidat)",
+    "duration": "non précisée en minutes"
+   },
+   "candidates": {
+    "count": "20 dans le quiz (l’accueil annonce « 25 candidats » pour le site)",
+    "nonDeclaredOrParties": "personnalités non déclarées exclues du quiz ; candidats avec moins de 30 propositions exclus"
+   },
+   "positions": {
+    "codedBy": "humains (« curées à la main »)",
+    "sourcesPerPosition": "oui (source et année affichées)",
+    "quotesOrSummaries": "texte du candidat « cité mot pour mot » ; à défaut, ce que son parti a défendu aux dernières élections",
+    "unknownPosition": "pas de position inférée : chaque candidat a exactement 30 propositions ; un « Contre » retire un point aux candidats qui portent la proposition"
+   },
+   "method": {
+    "published": true,
+    "summary": "+1 / −1 par proposition ; élimination des 5 candidats les plus éloignés avant les tours 2, 3 et 4 (repêchage possible)"
+   },
+   "privacy": {
+    "computation": "sur l’appareil (déclaré)",
+    "server": "signal anonyme de fin de tour avec « meilleure correspondance » ; profil âge/genre/code postal demandé (obligatoire selon la page du quiz, facultatif selon la politique de confidentialité)",
+    "accounts": "aucun",
+    "trackers": "mesure d’audience sur ses propres serveurs (déclaré) ; assistant IA (Mistral, Anthropic) séparé"
+   },
+   "open": {
+    "data": "liste des sources publique (page Sources) ; pas de jeu de données téléchargeable trouvé",
+    "code": "non trouvé"
+   },
+   "updated": "politique de confidentialité : 11 octobre 2026",
+   "strengths": [
+    "Propositions présentées sans nom de candidat ni de parti.",
+    "Même nombre de propositions (30) pour chaque candidat du quiz.",
+    "Propositions citées mot pour mot avec source et année."
+   ],
+   "limits": [
+    "Âge, genre et code postal demandés pendant le quiz ; la page du quiz dit « obligatoire », la politique de confidentialité dit « facultatif ».",
+    "La meilleure correspondance de fin de test est envoyée au serveur (anonymement, selon le site).",
+    "Les candidats les plus éloignés sont mis de côté en cours de partie ; une proposition peut venir du parti et non du candidat."
+   ],
+   "evidence": [
+    {
+     "claim": "Propositions anonymisées",
+     "url": "https://votons-2027.fr/quiz",
+     "quote": "Vous voyez une proposition, sans nom de candidat ni de parti."
+    },
+    {
+     "claim": "30 propositions par candidat",
+     "url": "https://votons-2027.fr/quiz",
+     "quote": "Chacun a exactement 30 propositions, avec leur source : la même quantité pour tous, pour comparer à égalité."
+    },
+    {
+     "claim": "Citation mot pour mot, source et année",
+     "url": "https://votons-2027.fr/quiz",
+     "quote": "Le texte est cité mot pour mot. Sa source et son année sont affichées."
+    },
+    {
+     "claim": "Repli sur le parti",
+     "url": "https://votons-2027.fr/quiz",
+     "quote": "sinon, ce que son parti a défendu aux dernières élections."
+    },
+    {
+     "claim": "Profil démographique obligatoire (page du quiz)",
+     "url": "https://votons-2027.fr/quiz",
+     "quote": "Une fois, après la première mise de côté, le quiz vous demande votre âge, votre genre et votre code postal. Cette réponse est obligatoire pour continuer."
+    },
+    {
+     "claim": "Profil démographique facultatif (politique de confidentialité)",
+     "url": "https://votons-2027.fr/confidentialite",
+     "quote": "un profil démographique facultatif (genre, âge, code postal, ville)"
+    },
+    {
+     "claim": "Signal de fin de test",
+     "url": "https://votons-2027.fr/confidentialite",
+     "quote": "en fin de test, un signal anonyme est envoyé (identifiant aléatoire, tour, plateforme, meilleure correspondance)."
+    },
+    {
+     "claim": "Mise de côté de 5 candidats",
+     "url": "https://votons-2027.fr/quiz",
+     "quote": "Avant les tours 2, 3 et 4 , les 5 candidats les plus loin de vos réponses sont mis de côté."
+    },
+    {
+     "claim": "20 candidats dans le quiz",
+     "url": "https://votons-2027.fr/quiz",
+     "quote": "Le quiz compare 20 candidats."
+    },
+    {
+     "claim": "Financement",
+     "url": "https://votons-2027.fr/",
+     "quote": "Financé par ses créateurs, sans publicité."
+    }
+   ]
+  },
+  {
+   "name": "MonParti",
+   "url": "https://mon-parti.fr/",
+   "editor": "anonyme (« projet citoyen independant, benevole et non-lucratif »)",
+   "model": "bénévole, hébergement gratuit, aucune collecte de dons (déclaré)",
+   "format": {
+    "questions": "33 (rapide) ou 210 (complet)",
+    "shortVersion": true,
+    "answerType": "Likert 5 niveaux + « Je ne sais pas », et 14 curseurs numériques",
+    "duration": "~5 min (rapide), ~12-15 min (complet)"
+   },
+   "candidates": {
+    "count": "27 partis (pas des candidats)",
+    "nonDeclaredOrParties": "compare des partis ; les candidats sont affichés comme leurs représentants"
+   },
+   "positions": {
+    "codedBy": "codage initial croisé par « deux codeurs IA independants », divergences arbitrées manuellement",
+    "sourcesPerPosition": "oui, avec niveau de confiance",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "peut être déduite de la « famille politique » (confiance basse) ; score tiré vers 50 % selon la confiance"
+   },
+   "method": {
+    "published": true,
+    "summary": "moyenne pondérée par priorités et confiance ; score = 50 + (brut − 50) × confiance ; marge d’erreur affichée"
+   },
+   "privacy": {
+    "computation": "100 % dans le navigateur (déclaré)",
+    "server": "aucun appel réseau pendant le quiz (déclaré)",
+    "accounts": "aucun",
+    "trackers": "aucun traceur détecté dans le code de la page d’accueil"
+   },
+   "open": {
+    "data": "positions sous licence ODbL",
+    "code": "oui, Codeberg (politiquefrance/mon-parti)"
+   },
+   "updated": "« Positions mises a jour : avril 2026 »",
+   "strengths": [
+    "Code et données publiés (Codeberg, ODbL).",
+    "Marge d’erreur et niveau de confiance affichés par résultat.",
+    "Calcul entièrement local annoncé, sans appel réseau pendant le quiz."
+   ],
+   "limits": [
+    "Compare des partis, pas des candidats.",
+    "Une partie des positions est déduite de la « famille politique » ; codage initial par deux IA.",
+    "Positions datées d’avril 2026 ; le site annonce une vérification par politologues « avant la sortie publique »."
+   ],
+   "evidence": [
+    {
+     "claim": "Partis et non candidats",
+     "url": "https://mon-parti.fr/",
+     "quote": "qui compare vos convictions aux programmes des 27 partis francais (pas 27 candidats)."
+    },
+    {
+     "claim": "Code ouvert",
+     "url": "https://mon-parti.fr/methodologie/",
+     "quote": "Le code source est publie en open source sur Codeberg"
+    },
+    {
+     "claim": "Licence des données",
+     "url": "https://mon-parti.fr/mentions-legales/",
+     "quote": "Les donnees des positions sont publiees sous licence ODbL."
+    },
+    {
+     "claim": "Formule et marge",
+     "url": "https://mon-parti.fr/methodologie/",
+     "quote": "score = 50 + (brut − 50) × confiance"
+    },
+    {
+     "claim": "Inférence famille politique",
+     "url": "https://mon-parti.fr/methodologie/",
+     "quote": "inference famille politique ( 0.48 )"
+    },
+    {
+     "claim": "Codage par deux IA",
+     "url": "https://mon-parti.fr/methodologie/",
+     "quote": "Un double codage croise par deux codeurs IA independants a ete effectue en phase initiale du projet"
+    },
+    {
+     "claim": "Vérification experte à venir",
+     "url": "https://mon-parti.fr/methodologie/",
+     "quote": "le codage sera soumis a une verification par des experts politologues avant la sortie publique"
+    },
+    {
+     "claim": "Aucun appel réseau",
+     "url": "https://mon-parti.fr/mentions-legales/",
+     "quote": "Aucun appel reseau pendant la session de quiz"
+    },
+    {
+     "claim": "Date des positions",
+     "url": "https://mon-parti.fr/",
+     "quote": "Positions mises a jour : avril 2026"
+    }
+   ]
+  },
+  {
+   "name": "France-Vote (simulateur)",
+   "url": "https://www.france-vote.fr/simulateur",
+   "editor": "« média indépendant » non nommé (contact@france-vote.fr)",
+   "model": "dons, encarts partenaires vendus en direct, Google AdSense (avec consentement)",
+   "format": {
+    "questions": "20 (rapide) ou 40 (complet)",
+    "shortVersion": true,
+    "answerType": "degré d’accord de « pas du tout d’accord » à « tout à fait d’accord »",
+    "duration": "environ 3 min / 7 min"
+   },
+   "candidates": {
+    "count": 32,
+    "nonDeclaredOrParties": "« personnalités » : dans le fichier de données, 22 au statut « Candidature déclarée », les autres « Envisage une candidature », « Candidature probable », battus à la primaire ou retirés"
+   },
+   "positions": {
+    "codedBy": "rédaction (« lecture éditoriale »)",
+    "sourcesPerPosition": "champ source par position dans les données ; 109 positions sur 1 280 ont une source renseignée dans donnees.json (téléchargé le 26/10/2026)",
+    "quotesOrSummaries": "valeur −2 à +2, sans citation",
+    "unknownPosition": "0 couvre « position nuancée, non tranchée ou absente » ; le comparateur exclut les propositions sans position tranchée, le simulateur n’en dit rien"
+   },
+   "method": {
+    "published": true,
+    "summary": "écart moyen converti en pourcentage d’affinité ; questions sans réponse ignorées"
+   },
+   "privacy": {
+    "computation": "non précisé",
+    "server": "réponses « enregistrées de façon anonyme et agrégée » (tendances, région approximative)",
+    "accounts": "aucun ; e-mail facultatif en fin de test",
+    "trackers": "mesure d’audience maison (cookies fv_v, fv_s) ; Google AdSense chargé sur la page du simulateur"
+   },
+   "open": {
+    "data": "oui, CSV/JSON sous CC BY 4.0, journal des révisions",
+    "code": "non"
+   },
+   "updated": "« Positions : 26 octobre 2026 »",
+   "strengths": [
+    "Jeu de données complet téléchargeable (CSV, JSON, CC BY 4.0).",
+    "Règle d’inclusion des personnalités publiée, avec journal des entrées et sorties.",
+    "Version courte et version complète sur la même base."
+   ],
+   "limits": [
+    "Réponses au simulateur enregistrées côté serveur pour des statistiques.",
+    "Seules 109 des 1 280 positions ont une source renseignée dans le fichier publié.",
+    "Publicité Google AdSense sur la page du test ; des personnalités non déclarées sont classées."
+   ],
+   "evidence": [
+    {
+     "claim": "Données ouvertes",
+     "url": "https://www.france-vote.fr/donnees",
+     "quote": "Réutilisation libre sous licence CC BY 4.0, avec mention de la source."
+    },
+    {
+     "claim": "Règle d’inclusion",
+     "url": "https://www.france-vote.fr/methodologie",
+     "quote": "Une personnalité entre dans la liste lorsque sa candidature, déclarée ou sérieusement envisagée, est attestée par des sources indépendantes"
+    },
+    {
+     "claim": "Seuil de 20 positions sourcées annoncé",
+     "url": "https://www.france-vote.fr/methodologie",
+     "quote": "lorsque au moins 20 de ses positions sur 40 sont documentées par une source vérifiable"
+    },
+    {
+     "claim": "Fichier JSON : champ source « null si non sourcée » (comptage local : 109/1 280 non nuls)",
+     "url": "https://www.france-vote.fr/donnees",
+     "quote": "( null si non sourcée)"
+    },
+    {
+     "claim": "Réponses stockées",
+     "url": "https://www.france-vote.fr/confidentialite",
+     "quote": "Vos réponses sont enregistrées de façon anonyme et agrégée"
+    },
+    {
+     "claim": "Usage des réponses",
+     "url": "https://www.france-vote.fr/methodologie",
+     "quote": "Les tendances 2027 sont calculées, de façon anonyme et agrégée, à partir des réponses au simulateur."
+    },
+    {
+     "claim": "Publicité",
+     "url": "https://www.france-vote.fr/confidentialite",
+     "quote": "Le site est financé par des dons, par des encarts partenaires vendus en direct et par des annonces diffusées via Google AdSense"
+    },
+    {
+     "claim": "Script AdSense sur la page du simulateur",
+     "url": "https://www.france-vote.fr/simulateur",
+     "quote": "pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    },
+    {
+     "claim": "Personnalité non déclarée (fiche)",
+     "url": "https://www.france-vote.fr/candidats/francois-hollande",
+     "quote": "Envisage une candidature"
+    },
+    {
+     "claim": "Échelle : 0 = absente",
+     "url": "https://www.france-vote.fr/methodologie",
+     "quote": "0 signalant une position nuancée, une voie intermédiaire assumée ou l'absence de doctrine identifiable sur le sujet"
+    },
+    {
+     "claim": "Date des positions",
+     "url": "https://www.france-vote.fr/simulateur",
+     "quote": "Positions  : 26 octobre 2026"
+    }
+   ]
+  },
+  {
+   "name": "Isoloir 2027",
+   "url": "https://isoloir2027.fr/",
+   "editor": "GO TO AGENCY (SAS, Dijon), directeur de la publication Robin Monteiro",
+   "model": "publicité Google AdSense",
+   "format": {
+    "questions": "20 (rapide) ou 77 (complet)",
+    "shortVersion": true,
+    "answerType": "accord/désaccord sur 5 crans ; sujet « important » compte double",
+    "duration": "trois minutes (version rapide)"
+   },
+   "candidates": {
+    "count": 24,
+    "nonDeclaredOrParties": "22 déclarés + 2 personnalités non déclarées, signalées sur leur fiche"
+   },
+   "positions": {
+    "codedBy": "non précisé ; vérification automatique des citations par un programme",
+    "sourcesPerPosition": "oui",
+    "quotesOrSummaries": "citation exacte pour 760 positions sur 1 079, résumé avec source pour les autres",
+    "unknownPosition": "exclue du calcul, jamais déduite ; candidat classé seulement s’il est comparable sur la moitié des réponses et 5 sujets minimum"
+   },
+   "method": {
+    "published": true,
+    "summary": "accord 100 % même cran, 0 % aux extrêmes ; moyenne pondérée"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "compteur de tests terminés sans réponses ; lien de partage contenant les réponses codées si on choisit de partager",
+    "accounts": "aucun",
+    "trackers": "Google AdSense (avec bandeau) et Datalenk sur le site ; ni publicité ni mesure d’audience sur le test et la page de résultat (déclaré)"
+   },
+   "open": {
+    "data": "oui, CSV/JSON sous CC BY 4.0",
+    "code": "non"
+   },
+   "updated": "liste des candidats LCP du 24 septembre 2026 (accueil) ; date de mise à jour des positions non précisée",
+   "strengths": [
+    "Position introuvable exclue du calcul, jamais devinée.",
+    "Citations vérifiées mot pour mot par un programme ; données sous CC BY 4.0.",
+    "Test et page de résultat sans publicité ni mesure d’audience (déclaré)."
+   ],
+   "limits": [
+    "Site financé par la publicité (Google AdSense) ; mesure d’audience détaillée (clics, défilement) hors du test.",
+    "319 positions sur 1 079 sans citation exacte à ce jour.",
+    "Deux personnalités non déclarées sont comparées."
+   ],
+   "evidence": [
+    {
+     "claim": "Position introuvable exclue",
+     "url": "https://isoloir2027.fr/methodologie",
+     "quote": "Quand aucune source fiable n'est trouvée, la position n'est jamais devinée ni déduite de l'étiquette d'un parti : le sujet est exclu du calcul pour ce candidat."
+    },
+    {
+     "claim": "Citations vérifiées",
+     "url": "https://isoloir2027.fr/methodologie",
+     "quote": "760 positions sur 1079 sont accompagnées de la citation exacte de leur source."
+    },
+    {
+     "claim": "Licence des données",
+     "url": "https://isoloir2027.fr/donnees-ouvertes",
+     "quote": "licence Creative Commons Attribution 4.0"
+    },
+    {
+     "claim": "Test sans publicité ni mesure",
+     "url": "https://isoloir2027.fr/confidentialite",
+     "quote": "La page de résultat n'affiche aucune publicité, et ni le test ni la page de résultat ne chargent l'outil de mesure d'audience."
+    },
+    {
+     "claim": "Financement publicitaire",
+     "url": "https://isoloir2027.fr/confidentialite",
+     "quote": "Le site est financé par la publicité, diffusée par Google AdSense."
+    },
+    {
+     "claim": "Mesure détaillée hors test",
+     "url": "https://isoloir2027.fr/confidentialite",
+     "quote": "Il mesure aussi le temps de lecture, la profondeur de défilement et les clics"
+    },
+    {
+     "claim": "Personnalités non déclarées",
+     "url": "https://isoloir2027.fr/methodologie",
+     "quote": "Le test compare 22 candidats déclarés et 2 personnalités qui préparent une candidature sans l'avoir déclarée"
+    },
+    {
+     "claim": "Éditeur",
+     "url": "https://isoloir2027.fr/mentions-legales",
+     "quote": "Directeur de la publication : Robin Monteiro, président ."
+    }
+   ]
+  },
+  {
+   "name": "TestPolitique.fr — « Quel candidat à la présidentielle 2027 ? »",
+   "url": "https://testpolitique.fr/quiz/presidentielle-2027-candidat.html",
+   "editor": "TestPolitique.fr (Paris), « La rédaction » comme directeur de publication ; personne nommée : aucune",
+   "model": "Google AdSense et newsletter (déclaré)",
+   "format": {
+    "questions": 10,
+    "shortVersion": false,
+    "answerType": "dans le code de la page, les réponses proposées à chaque question sont des noms de personnalités",
+    "duration": "4 min (annoncé)"
+   },
+   "candidates": {
+    "count": 6,
+    "nonDeclaredOrParties": "inclut Jordan Bardella et Marion Maréchal"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "non",
+    "quotesOrSummaries": "non applicable (choix de noms)",
+    "unknownPosition": "non applicable"
+   },
+   "method": {
+    "published": false,
+    "summary": "chaque réponse ajoute 2 points à la personnalité choisie (lu dans le code de la page)"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (moteur JavaScript chargé par la page)",
+    "server": "non précisé",
+    "accounts": "aucun",
+    "trackers": "Google Analytics (gtag) et Google AdSense chargés sur la page"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "datePublished 2026-01-01 (métadonnées de la page)",
+   "strengths": [
+    "Très court (10 questions).",
+    "Sans inscription."
+   ],
+   "limits": [
+    "Les réponses proposées sont des noms de personnalités, pas des positions.",
+    "Six personnalités seulement, dont J. Bardella et M. Maréchal ; aucune source.",
+    "Publicité et Google Analytics sur la page du test."
+   ],
+   "evidence": [
+    {
+     "claim": "10 questions",
+     "url": "https://testpolitique.fr/quiz/presidentielle-2027-candidat.html",
+     "quote": "10 questions pour savoir quel candidat vous correspond"
+    },
+    {
+     "claim": "Réponses = noms (code de la page)",
+     "url": "https://testpolitique.fr/quiz/presidentielle-2027-candidat.html",
+     "quote": "\"text\": \"Sur le plan économique, vous pensez que…\""
+    },
+    {
+     "claim": "Personnalités du résultat",
+     "url": "https://testpolitique.fr/quiz/presidentielle-2027-candidat.html",
+     "quote": "title: \"Marion Maréchal\""
+    },
+    {
+     "claim": "Google Analytics",
+     "url": "https://testpolitique.fr/quiz/presidentielle-2027-candidat.html",
+     "quote": "https://www.googletagmanager.com/gtag/js?id=G-G4C50DX7YJ"
+    },
+    {
+     "claim": "Financement",
+     "url": "https://testpolitique.fr/a-propos.html",
+     "quote": "Le site est financé par Google AdSense (publicité classique) et les abonnements newsletter."
+    },
+    {
+     "claim": "Caractère ludique",
+     "url": "https://testpolitique.fr/mentions-legales.html",
+     "quote": "Les quiz proposés ont un caractère ludique."
+    }
+   ]
+  },
+  {
+   "name": "QuiVoter 2027",
+   "url": "https://quivoter2027.com/",
+   "editor": "personne physique non nommée (identité communiquée à l’hébergeur)",
+   "model": "dons, rapport PDF payant optionnel, liens affiliés Amazon ; script Google AdSense présent dans la page",
+   "format": {
+    "questions": "14 sujets (Détaillé) ou 32 (Super détaillé)",
+    "shortVersion": true,
+    "answerType": "position de −2 à +2 et importance par sujet ; option « Décrire ma situation » en texte libre",
+    "duration": "environ 6 min / 12 min"
+   },
+   "candidates": {
+    "count": 19,
+    "nonDeclaredOrParties": "« candidats et pressentis » ; inclut J. Bardella (fiche : « Pressenti : candidature non confirmée »)"
+   },
+   "positions": {
+    "codedBy": "humains (« résumés écrits à la main ») ; brouillons des fiches d’actualité rédigés avec une IA puis vérifiés",
+    "sourcesPerPosition": "sources listées par fiche candidat, pas par position",
+    "quotesOrSummaries": "résumés, « Ce ne sont pas des citations »",
+    "unknownPosition": "non précisé"
+   },
+   "method": {
+    "published": true,
+    "summary": "accord = 1 − écart/4, moyenne pondérée par l’importance ; « peu importe » = 0"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (localStorage)",
+    "server": "rien, sauf l’option « Décrire ma situation » : texte envoyé à Anthropic (Claude, États-Unis)",
+    "accounts": "seulement pour le forum",
+    "trackers": "DataFast sans cookie (déclaré) ; script Google AdSense chargé alors que la page Confidentialité annonce « pas de cookie publicitaire »"
+   },
+   "open": {
+    "data": "non (reprise autorisée avec citation)",
+    "code": "non"
+   },
+   "updated": "positions « à jour au 20 octobre 2026 »",
+   "strengths": [
+    "Formule de calcul publiée, avec pondération par sujet.",
+    "Réponses gardées dans le navigateur, sauf l’option texte libre, signalée.",
+    "Date de mise à jour des positions affichée."
+   ],
+   "limits": [
+    "Positions résumées, pas des citations ; sources par fiche, pas par position.",
+    "L’option « Décrire ma situation » envoie le texte à une IA aux États-Unis.",
+    "Script Google AdSense chargé malgré l’annonce « Pas de cookie publicitaire » ; J. Bardella comparé alors que sa fiche indique « Il vise Matignon, pas l'Élysée »."
+   ],
+   "evidence": [
+    {
+     "claim": "Formule publiée",
+     "url": "https://quivoter2027.com/methodologie",
+     "quote": "l'accord sur ce sujet vaut 1 − écart/4"
+    },
+    {
+     "claim": "Réponses locales",
+     "url": "https://quivoter2027.com/confidentialite",
+     "quote": "Elles sont enregistrées uniquement dans votre navigateur (localStorage)"
+    },
+    {
+     "claim": "Envoi à Anthropic",
+     "url": "https://quivoter2027.com/confidentialite",
+     "quote": "le texte que vous écrivez est transmis à Anthropic (entreprise américaine, traitement aux États-Unis)"
+    },
+    {
+     "claim": "Résumés, pas citations",
+     "url": "https://quivoter2027.com/methodologie",
+     "quote": "Ce ne sont pas des citations."
+    },
+    {
+     "claim": "Annonce sans cookie publicitaire",
+     "url": "https://quivoter2027.com/confidentialite",
+     "quote": "Pas de cookie publicitaire, pas de mesure d'audience tierce."
+    },
+    {
+     "claim": "Script AdSense dans la page",
+     "url": "https://quivoter2027.com/",
+     "quote": "pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3711839786077606"
+    },
+    {
+     "claim": "Rapport payant et affiliation",
+     "url": "https://quivoter2027.com/mentions-legales",
+     "quote": "En tant que Partenaire Amazon, l'éditeur réalise un bénéfice sur les achats remplissant les conditions requises."
+    },
+    {
+     "claim": "Bardella pressenti",
+     "url": "https://quivoter2027.com/candidats/bardella",
+     "quote": "Il vise Matignon, pas l'Élysée"
+    },
+    {
+     "claim": "Date des positions",
+     "url": "https://quivoter2027.com/",
+     "quote": "19 candidats comparés · mis à jour le 20 octobre 2026"
+    }
+   ]
+  },
+  {
+   "name": "La Boussole 2027",
+   "url": "https://laboussole2027.fr/",
+   "editor": "« Quentin, citoyen français » (nom de famille non publié)",
+   "model": "financé par son créateur ; publicité envisagée « si le site se développe »",
+   "format": {
+    "questions": "20 (express) ou 60 (complet)",
+    "shortVersion": true,
+    "answerType": "accord/désaccord sur 5 niveaux (swipe), thèmes importants ×3",
+    "duration": "3 min / 7 min"
+   },
+   "candidates": {
+    "count": "35 candidatures recensées ; seuls les candidats avec au moins 20 positions connues sont comparés",
+    "nonDeclaredOrParties": "candidatures déclarées uniquement (critère publié)"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "lien « source » pour les positions sourcées ; 463 positions sourcées au 23 octobre 2026",
+    "quotesOrSummaries": "non précisé ; une partie des sources reprend les citations du site Votons",
+    "unknownPosition": "positions sans lien source = « estimations en cours de vérification », utilisées ; case vide quand aucune position fiable"
+   },
+   "method": {
+    "published": true,
+    "summary": "affinité = moyenne pondérée de (1 − écart ÷ 4)"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "rien (déclaré) ; lien de comparaison contenant les réponses si partagé",
+    "accounts": "aucun",
+    "trackers": "aucun script de mesure actif relevé ; polices chargées depuis Google Fonts ; module AdSense présent dans le code avec identifiant vide"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "« Mis à jour le 23 octobre 2026 » ; journal des mises à jour détaillé",
+   "strengths": [
+    "Journal des mises à jour daté, avec chaque correction de position.",
+    "Critère d’inclusion des candidatures publié ; ordre d’affichage tiré au sort.",
+    "Réponses gardées dans le navigateur."
+   ],
+   "limits": [
+    "Une partie des positions sont des « estimations » sans source.",
+    "Éditeur identifié par son seul prénom.",
+    "Validation par les équipes de campagne annoncée pour fin novembre 2026, pas encore faite."
+   ],
+   "evidence": [
+    {
+     "claim": "Estimations sans source",
+     "url": "https://laboussole2027.fr/",
+     "quote": "Les positions sans lien « source » sont des estimations en cours de vérification."
+    },
+    {
+     "claim": "463 positions sourcées",
+     "url": "https://laboussole2027.fr/methodologie",
+     "quote": "96 positions de plus sourcées, soit 463 au total."
+    },
+    {
+     "claim": "Journal des mises à jour",
+     "url": "https://laboussole2027.fr/methodologie",
+     "quote": "Journal des mises à jour"
+    },
+    {
+     "claim": "Seuil de comparaison",
+     "url": "https://laboussole2027.fr/methodologie",
+     "quote": "Un candidat n'est comparé que si ses positions sont connues sur au moins 20 affirmations."
+    },
+    {
+     "claim": "Éditeur",
+     "url": "https://laboussole2027.fr/a-propos",
+     "quote": "Éditeur Quentin, citoyen français"
+    },
+    {
+     "claim": "Validation contradictoire à venir",
+     "url": "https://laboussole2027.fr/methodologie",
+     "quote": "les équipes de campagne n'ont pas encore reçu leurs positions, l'envoi est prévu avant la fin novembre 2026."
+    },
+    {
+     "claim": "Réponses locales",
+     "url": "https://laboussole2027.fr/confidentialite",
+     "quote": "Elles ne sont jamais envoyées ni stockées sur un serveur"
+    },
+    {
+     "claim": "Module AdSense inactif dans le code",
+     "url": "https://laboussole2027.fr/",
+     "quote": "const ADS={client:\"\""
+    }
+   ]
+  },
+  {
+   "name": "République 2027 — Boussole électorale",
+   "url": "https://republique2027.fr/boussole",
+   "editor": "Arthur Pahon (site personnel, non professionnel)",
+   "model": "dons (Ko-fi), sans publicité",
+   "format": {
+    "questions": 25,
+    "shortVersion": false,
+    "answerType": "accord / désaccord / nuancé ; question importante compte double",
+    "duration": "non précisée"
+   },
+   "candidates": {
+    "count": "13 candidats ont au moins une position ; 21 candidats sans aucune position",
+    "nonDeclaredOrParties": "candidats déclarés ; candidat classé à partir de 4 questions communes"
+   },
+   "positions": {
+    "codedBy": "l’éditeur ; citations vérifiées par un programme",
+    "sourcesPerPosition": "oui (« Une position n’est attribuée à un candidat que si une source la documente »)",
+    "quotesOrSummaries": "citations mot pour mot vérifiées (déclaré)",
+    "unknownPosition": "rien n’est déduit ; score calculé sur les questions communes, nombre affiché"
+   },
+   "method": {
+    "published": "en partie (paliers non chiffrés)",
+    "summary": "accord 1 si même position, 0 si opposée, paliers intermédiaires"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "aucun envoi (déclaré)",
+    "accounts": "aucun",
+    "trackers": "Umami sans cookie"
+   },
+   "open": {
+    "data": "non trouvé",
+    "code": "non trouvé"
+   },
+   "updated": "« Positions de la boussole 12 octobre 2026 » ; données arrêtées au 16 octobre 2026",
+   "strengths": [
+    "Aucune position déduite du parti ou des votes passés.",
+    "Couverture par candidat publiée (ex. Mélenchon 20/25, Ruffin 1/25).",
+    "Éditeur nommé, sans publicité."
+   ],
+   "limits": [
+    "Couverture très inégale : 21 candidats déclarés sans aucune position.",
+    "Classement possible à partir de 4 questions communes seulement.",
+    "Données arrêtées au 16 octobre 2026."
+   ],
+   "evidence": [
+    {
+     "claim": "Rien de déduit",
+     "url": "https://republique2027.fr/boussole",
+     "quote": "Rien n’est déduit de son parti ni de ses votes passés."
+    },
+    {
+     "claim": "Seuil de 4 questions",
+     "url": "https://republique2027.fr/methodologie",
+     "quote": "Un candidat n’est classé qu’à partir de 4 questions communes."
+    },
+    {
+     "claim": "21 candidats sans position",
+     "url": "https://republique2027.fr/methodologie",
+     "quote": "Aucune mesure ni position documentée à ce jour pour 21 candidats"
+    },
+    {
+     "claim": "Éditeur",
+     "url": "https://republique2027.fr/methodologie",
+     "quote": "République 2027 est un site personnel, édité à titre non professionnel et sans publicité par Arthur Pahon."
+    },
+    {
+     "claim": "Umami",
+     "url": "https://republique2027.fr/methodologie",
+     "quote": "le site compte ses visites avec Umami, sans cookie."
+    },
+    {
+     "claim": "Date",
+     "url": "https://republique2027.fr/methodologie",
+     "quote": "Positions de la boussole 12 octobre 2026"
+    }
+   ]
+  },
+  {
+   "name": "Boussole présidentielle 2027 (site et skill Claude)",
+   "url": "https://lcharvol.github.io/boussole-2027-site/",
+   "editor": "anonyme (compte GitHub « Lcharvol ») ; mentions légales non remplies",
+   "model": "bénévole, « ne reçoit aucun financement »",
+   "format": {
+    "questions": "12 (rapide), 12 à 32 (adaptatif), 62 enjeux au total (la page d’accueil indique « complet (40) », la méthode « Complet : les 62 enjeux »)",
+    "shortVersion": true,
+    "answerType": "dilemme entre deux options, 5 crans, question passable ; thèmes prioritaires ×2 ou ×3",
+    "duration": "3 à 10 minutes"
+   },
+   "candidates": {
+    "count": 25,
+    "nonDeclaredOrParties": "« candidats déclarés ou pressentis »"
+   },
+   "positions": {
+    "codedBy": "relecture humaine de toutes les positions (872/872)",
+    "sourcesPerPosition": "oui, lien, date, niveau de confiance",
+    "quotesOrSummaries": "citation exacte + résumé",
+    "unknownPosition": "inconnue affichée ; dans le calcul, comptée comme « un accord égal au hasard » avec un poids réduit (√2 − 1)"
+   },
+   "method": {
+    "published": true,
+    "summary": "pondération par importance × confiance ; marge d’incertitude par rééchantillonnage ; audit de neutralité publié"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "GoatCounter : visites et compteurs « test commencé/terminé »",
+    "accounts": "aucun",
+    "trackers": "GoatCounter (sans cookie) ; la version « skill Claude » fait passer le test dans une conversation avec Claude"
+   },
+   "open": {
+    "data": "oui (dépôt du skill)",
+    "code": "oui, MIT"
+   },
+   "updated": "données version e30d3d3 du 21 octobre 2026",
+   "strengths": [
+    "Chaque position renseignée a une citation exacte, relue par un humain.",
+    "Code et données sous licence MIT ; audit de neutralité publié.",
+    "Marge d’incertitude affichée et peloton de tête signalé."
+   ],
+   "limits": [
+    "Mentions légales non remplies (« [À COMPLÉTER] »).",
+    "Les positions inconnues entrent dans le calcul comme un accord au hasard, avec un poids réduit.",
+    "Nombre de questions du mode complet incohérent entre l’accueil (40) et la méthode (62)."
+   ],
+   "evidence": [
+    {
+     "claim": "Citations relues",
+     "url": "https://lcharvol.github.io/boussole-2027-site/",
+     "quote": "Les 872 positions renseignées s'appuient sur une phrase exacte, recopiée depuis la source, avec le lien, la date et un niveau de confiance. Toutes ont été relues par un humain."
+    },
+    {
+     "claim": "Licence MIT",
+     "url": "https://lcharvol.github.io/boussole-2027-site/mentions-legales/",
+     "quote": "Code du site et données : licence MIT."
+    },
+    {
+     "claim": "Mentions légales à compléter",
+     "url": "https://lcharvol.github.io/boussole-2027-site/mentions-legales/",
+     "quote": "Nom ou dénomination : [À COMPLÉTER]"
+    },
+    {
+     "claim": "Traitement des inconnues",
+     "url": "https://lcharvol.github.io/boussole-2027-site/methode/",
+     "quote": "compte comme un accord égal au hasard, avec un poids de √2 - 1 ≈ 0,41 fois l'importance du thème"
+    },
+    {
+     "claim": "Mode complet 40 (accueil)",
+     "url": "https://lcharvol.github.io/boussole-2027-site/",
+     "quote": "Rapide (12 questions), adaptatif (12 à 32) ou complet (40)."
+    },
+    {
+     "claim": "Mode complet 62 (méthode)",
+     "url": "https://lcharvol.github.io/boussole-2027-site/methode/",
+     "quote": "Complet : les 62 enjeux."
+    },
+    {
+     "claim": "Marge d’incertitude",
+     "url": "https://lcharvol.github.io/boussole-2027-site/methode/",
+     "quote": "La marge est la moitié de l'intervalle qui contient 90 % des scores obtenus."
+    },
+    {
+     "claim": "Version skill Claude",
+     "url": "https://lcharvol.github.io/boussole-2027-site/skill-claude/",
+     "quote": "Vos réponses restent dans votre conversation avec Claude."
+    }
+   ]
+  },
+  {
+   "name": "Boussole 2027 (swipe)",
+   "url": "https://boussole-2027.github.io/",
+   "editor": "anonyme (aucun éditeur indiqué)",
+   "model": "non précisé",
+   "format": {
+    "questions": "122 propositions dans le fichier de données",
+    "shortVersion": "non précisé",
+    "answerType": "swipe d’accord / pas d’accord / sans avis, « coup de cœur » compte double",
+    "duration": "non précisée"
+   },
+   "candidates": {
+    "count": 23,
+    "nonDeclaredOrParties": "non précisé"
+   },
+   "positions": {
+    "codedBy": "reprises de MonVote2027 pour une partie, ajoutées par l’éditeur pour les autres",
+    "sourcesPerPosition": "oui ; positions sans source non prises en compte",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "non prise en compte"
+   },
+   "method": {
+    "published": true,
+    "summary": "100/75/50/25/0 % selon l’écart sur 5 niveaux, moyenne sur les positions connues"
+   },
+   "privacy": {
+    "computation": "votes gardés dans le navigateur",
+    "server": "non précisé",
+    "accounts": "aucun",
+    "trackers": "polices chargées depuis Google Fonts"
+   },
+   "open": {
+    "data": "fichier data.json public",
+    "code": "non précisé"
+   },
+   "updated": "données du 30 septembre 2026",
+   "strengths": [
+    "Positions sans source exclues du calcul.",
+    "Origine des données indiquée (MonVote2027 et ajouts)."
+   ],
+   "limits": [
+    "Aucun éditeur indiqué.",
+    "Données datées du 30 septembre 2026.",
+    "Dépend en partie des positions de MonVote2027."
+   ],
+   "evidence": [
+    {
+     "claim": "Sans source = exclue",
+     "url": "https://boussole-2027.github.io/",
+     "quote": "Une position sans aucune source n'est pas prise en compte."
+    },
+    {
+     "claim": "Origine MonVote2027",
+     "url": "https://boussole-2027.github.io/",
+     "quote": "propositions et leurs positions viennent de <a href=\"https://monvote2027.fr/donnees\""
+    },
+    {
+     "claim": "Date des données (data.json : \"date\": \"30 septembre 2026\")",
+     "url": "https://boussole-2027.github.io/",
+     "quote": "Données mises à jour le ${esc(DATA.date)}"
+    }
+   ]
+  },
+  {
+   "name": "Candidator",
+   "url": "https://www.candidator.fr/presidentielle2027/survey.html",
+   "editor": "Maxime Lasserre (développeur)",
+   "model": "Google AdSense",
+   "format": {
+    "questions": 16,
+    "shortVersion": false,
+    "answerType": "accord sur 5 niveaux",
+    "duration": "3 minutes (annoncé)"
+   },
+   "candidates": {
+    "count": "47 « toujours en lice » sur la page candidats",
+    "nonDeclaredOrParties": "non précisé"
+   },
+   "positions": {
+    "codedBy": "l’éditeur, qui se met « à leur place » ; IA utilisée côté données pour les gros scrutins et pour des « alter-ego virtuels » de candidats",
+    "sourcesPerPosition": "non",
+    "quotesOrSummaries": "notes de 1 à 5",
+    "unknownPosition": "non précisé"
+   },
+   "method": {
+    "published": true,
+    "summary": "distance euclidienne entre les notes de 1 à 5"
+   },
+   "privacy": {
+    "computation": "non précisé",
+    "server": "réponses « conservées de façon anonyme » ; réponses agrégées publiées en CSV",
+    "accounts": "aucun",
+    "trackers": "Google Analytics, AdSense, Axeptio"
+   },
+   "open": {
+    "data": "CSV candidats, positions et réponses agrégées",
+    "code": "non"
+   },
+   "updated": "« Mis à jour le 10 octobre 2026 »",
+   "strengths": [
+    "Court (16 questions) ; formule publiée.",
+    "Données téléchargeables, y compris réponses agrégées."
+   ],
+   "limits": [
+    "Réponses conservées côté serveur (anonymement selon le site).",
+    "Pas de source par position ; positions notées par une seule personne.",
+    "Publicité et Google Analytics."
+   ],
+   "evidence": [
+    {
+     "claim": "Réponses conservées",
+     "url": "https://www.candidator.fr/presidentielle2027/survey.html",
+     "quote": "Les réponses sont conservées de façon anonyme à des fins statistiques et de partage des résultats."
+    },
+    {
+     "claim": "Formule",
+     "url": "https://www.candidator.fr/a-propos.html",
+     "quote": "Distance (Citoyen, Candidat) = √ [ ∑ ( Note_Citoyen i - Note_Candidat i )² ]"
+    },
+    {
+     "claim": "Codage par l’éditeur",
+     "url": "https://www.candidator.fr/a-propos.html",
+     "quote": "se mettre méticuleusement à leur place pour répondre au questionnaire"
+    },
+    {
+     "claim": "Publicité",
+     "url": "https://www.candidator.fr/a-propos.html",
+     "quote": "j'ai fait le choix d'intégrer de la publicité (Google AdSense)"
+    },
+    {
+     "claim": "Données ouvertes",
+     "url": "https://www.candidator.fr/presidentielle2027/data.html",
+     "quote": "Les fichiers présentent les candidats, leur positionnement par question et les réponses aux questionnaires."
+    },
+    {
+     "claim": "16 questions",
+     "url": "https://www.candidator.fr/presidentielle2027/survey.html",
+     "quote": "Seulement 16 questions pour savoir quel candidat correspond le mieux à vos convictions."
+    }
+   ]
+  },
+  {
+   "name": "Politikz",
+   "url": "https://www.politikz.com/quiz",
+   "editor": "particulier non nommé (« disponible sur demande »)",
+   "model": "Google AdSense",
+   "format": {
+    "questions": "30 (rapide) ou jusqu’à 100 (complet), tirées au hasard dans un pool",
+    "shortVersion": true,
+    "answerType": "accord sur 5 niveaux ; sous-questions de précision",
+    "duration": "~5 min / 10-15 min"
+   },
+   "candidates": {
+    "count": "12 « candidats pressentis »",
+    "nonDeclaredOrParties": "« pressentis »"
+   },
+   "positions": {
+    "codedBy": "manuellement",
+    "sourcesPerPosition": "non précisé",
+    "quotesOrSummaries": "Pour / Pour sous conditions / Contre / Neutre",
+    "unknownPosition": "non comptabilisée"
+   },
+   "method": {
+    "published": true,
+    "summary": "même côté = points ; poids thème ×1 à ×3 fixés par le site ; questions structurantes ×2"
+   },
+   "privacy": {
+    "computation": "non précisé",
+    "server": "réponses « stockées de manière anonyme » (Supabase)",
+    "accounts": "aucun",
+    "trackers": "Google AdSense"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "mentions légales : mars 2025",
+   "strengths": [
+    "Méthode de score détaillée et publiée.",
+    "Positions non exprimées exclues du calcul."
+   ],
+   "limits": [
+    "Les mentions légales disent que les données reposent sur les programmes de 2022 ; positions 2027 présentées comme « projections ».",
+    "Poids des thèmes imposés par le site (×1 à ×3).",
+    "Réponses stockées côté serveur ; publicité."
+   ],
+   "evidence": [
+    {
+     "claim": "Données 2022",
+     "url": "https://www.politikz.com/mentions-legales",
+     "quote": "Les données des programmes électoraux sont basées sur les documents officiels de la campagne présidentielle 2022."
+    },
+    {
+     "claim": "Projections",
+     "url": "https://www.politikz.com/methodologie",
+     "quote": "Pour 2027, les positions sont des projections basées sur les déclarations connues à ce jour."
+    },
+    {
+     "claim": "Poids imposés",
+     "url": "https://www.politikz.com/methodologie",
+     "quote": "Chaque chapitre a un coefficient selon son importance politique globale"
+    },
+    {
+     "claim": "Stockage",
+     "url": "https://www.politikz.com/methodologie",
+     "quote": "Vos réponses sont stockées de manière anonyme ."
+    },
+    {
+     "claim": "Neutre exclu",
+     "url": "https://www.politikz.com/methodologie",
+     "quote": "Les questions auxquelles vous répondez \"neutre\" et celles où le candidat n'a pas de position ne sont pas comptabilisées."
+    },
+    {
+     "claim": "Publicité",
+     "url": "https://www.politikz.com/mentions-legales",
+     "quote": "Le site Politikz utilise Google AdSense pour afficher des publicités."
+    }
+   ]
+  },
+  {
+   "name": "2027 (2027.help)",
+   "url": "https://2027.help/quiz",
+   "editor": "Brice Lesné (micro-entreprise)",
+   "model": "dons (« Soutenir le projet »)",
+   "format": {
+    "questions": 20,
+    "shortVersion": false,
+    "answerType": "de « pour » à « contre », question passable ; sujet important compte double",
+    "duration": "≈ 4 min"
+   },
+   "candidates": {
+    "count": 12,
+    "nonDeclaredOrParties": "« déclarés ou pressentis »"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "non précisé",
+    "quotesOrSummaries": "synthèses (« Elles synthétisent les programmes »)",
+    "unknownPosition": "non précisé"
+   },
+   "method": {
+    "published": false,
+    "summary": "pourcentage de correspondance global et par thème ; formule non publiée"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "rien pour le quiz (déclaré) ; l’assistant envoie les questions à OpenRouter",
+    "accounts": "aucun",
+    "trackers": "Vercel Web Analytics sans cookie"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "non précisé pour le quiz",
+   "strengths": [
+    "Calcul local annoncé, sans inscription.",
+    "Pondération des thèmes par l’utilisateur."
+   ],
+   "limits": [
+    "Formule de calcul non publiée.",
+    "Positions « synthétisées », sans source affichée sur la page du quiz ; le comparateur iFRAP est cité parmi les sources."
+   ],
+   "evidence": [
+    {
+     "claim": "Calcul local",
+     "url": "https://2027.help/quiz",
+     "quote": "Le calcul s'effectue entièrement dans votre navigateur"
+    },
+    {
+     "claim": "Sources des positions",
+     "url": "https://2027.help/quiz",
+     "quote": "Elles synthétisent les programmes et déclarations publiques des 12 candidats déclarés ou pressentis (dont le comparateur iFRAP)"
+    },
+    {
+     "claim": "Pondération",
+     "url": "https://2027.help/quiz",
+     "quote": "Marquez un sujet « important » : il compte double dans le calcul."
+    },
+    {
+     "claim": "Éditeur",
+     "url": "https://2027.help/legal",
+     "quote": "est édité par Brice Lesné , entrepreneur individuel (micro-entreprise)."
+    }
+   ]
+  },
+  {
+   "name": "Présidentielles 2027 (electionpresidentielle2027.com)",
+   "url": "https://electionpresidentielle2027.com/quiz/",
+   "editor": "non trouvé (aucune page de mentions légales trouvée)",
+   "model": "non précisé",
+   "format": {
+    "questions": 14,
+    "shortVersion": false,
+    "answerType": "4 niveaux d’accord ou « sans avis »",
+    "duration": "2 minutes"
+   },
+   "candidates": {
+    "count": "20 annoncés ; 24 noms listés sur la même page",
+    "nonDeclaredOrParties": "« déclarés, pressentis ou en primaire » ; la liste inclut François Hollande"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "fiches candidats sourcées (page Sources)",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "non précisé"
+   },
+   "method": {
+    "published": false,
+    "summary": "top 3 et profil politique ; formule non publiée"
+   },
+   "privacy": {
+    "computation": "non précisé",
+    "server": "statistiques agrégées conservées (candidat n°1, répartition des réponses)",
+    "accounts": "aucun",
+    "trackers": "aucun script de mesure relevé ; polices chargées depuis Google Fonts"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "« Mis à jour le 22 septembre 2026 »",
+   "strengths": [
+    "Très court (14 affirmations) ; les affirmations sont listées sur la page.",
+    "Aucune réponse individuelle enregistrée (déclaré)."
+   ],
+   "limits": [
+    "Éditeur non indiqué.",
+    "Formule non publiée ; nombre de candidats annoncé (20) différent de la liste affichée (24).",
+    "Répartition des réponses envoyée au serveur pour statistiques."
+   ],
+   "evidence": [
+    {
+     "claim": "Stats agrégées",
+     "url": "https://electionpresidentielle2027.com/quiz/",
+     "quote": "Aucune réponse individuelle n’est enregistrée, seules des statistiques anonymes agrégées."
+    },
+    {
+     "claim": "20 candidats annoncés",
+     "url": "https://electionpresidentielle2027.com/quiz/",
+     "quote": "Vos réponses sont comparées aux positions publiques de 20 candidats déclarés, pressentis ou en primaire"
+    },
+    {
+     "claim": "Liste incluant F. Hollande",
+     "url": "https://electionpresidentielle2027.com/quiz/",
+     "quote": "François Hollande (Parti socialiste)"
+    },
+    {
+     "claim": "Date",
+     "url": "https://electionpresidentielle2027.com/quiz/",
+     "quote": "Mis à jour le 22 septembre 2026"
+    }
+   ]
+  },
+  {
+   "name": "ÉlyséeScope",
+   "url": "https://www.elyseescope.com/quiz",
+   "editor": "« Marion G. », auto-entrepreneur (SIRET affiché « [PLACEHOLDER_SIRET] »)",
+   "model": "non précisé ; newsletter",
+   "format": {
+    "questions": "15 (express) ou 30 (complet)",
+    "shortVersion": true,
+    "answerType": "pour / contre, question passable ; poids ×2",
+    "duration": "~4 min / ~8 min"
+   },
+   "candidates": {
+    "count": "non précisé sur la page du quiz (« chaque candidat déclaré »)",
+    "nonDeclaredOrParties": "candidats déclarés"
+   },
+   "positions": {
+    "codedBy": "non précisé (résumés d’actualité générés par GPT-4o-mini, positions : non précisé)",
+    "sourcesPerPosition": "source et année indiquées",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "exclue du calcul et signalée"
+   },
+   "method": {
+    "published": "en partie",
+    "summary": "1 si même position, 0 si opposée, paliers intermédiaires"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "rien (déclaré)",
+    "accounts": "aucun",
+    "trackers": "Google Analytics GA4, Google Fonts"
+   },
+   "open": {
+    "data": "non",
+    "code": "oui, AGPL-3.0 (annoncé)"
+   },
+   "updated": "non précisé",
+   "strengths": [
+    "Position non documentée exclue et signalée.",
+    "Code annoncé sous AGPL-3.0."
+   ],
+   "limits": [
+    "Google Analytics sur le site.",
+    "Mentions légales incomplètes (SIRET non renseigné)."
+   ],
+   "evidence": [
+    {
+     "claim": "Non documentée exclue",
+     "url": "https://www.elyseescope.com/quiz",
+     "quote": "Une position non documentée n'est jamais devinée : elle est exclue du calcul et signalée."
+    },
+    {
+     "claim": "AGPL",
+     "url": "https://www.elyseescope.com/mentions-legales",
+     "quote": "Le code source d'ÉlyséeScope est publié sous licence AGPL-3.0"
+    },
+    {
+     "claim": "Google Analytics",
+     "url": "https://www.elyseescope.com/mentions-legales",
+     "quote": "Google Analytics GA4 — statistiques de fréquentation"
+    },
+    {
+     "claim": "SIRET manquant",
+     "url": "https://www.elyseescope.com/mentions-legales",
+     "quote": "SIRET : [PLACEHOLDER_SIRET]"
+    }
+   ]
+  },
+  {
+   "name": "Quiz Présidentielle 2027 (presidentielles2027.info)",
+   "url": "https://presidentielles2027.info/",
+   "editor": "anonyme (« édité à titre personnel et indépendant »)",
+   "model": "Google AdSense (avec consentement), dons",
+   "format": {
+    "questions": "non précisé",
+    "shortVersion": "on peut voir le résultat puis continuer",
+    "answerType": "accord sur 5 niveaux",
+    "duration": "« quelques minutes »"
+   },
+   "candidates": {
+    "count": "non précisé",
+    "nonDeclaredOrParties": "non précisé"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "non précisé",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "positions « connues ou estimées » ; certaines « provisoires »"
+   },
+   "method": {
+    "published": "principes seulement, sans formule",
+    "summary": "tient compte de poids de questions et d’un « niveau de confiance » non chiffrés"
+   },
+   "privacy": {
+    "computation": "côté serveur (session)",
+    "server": "réponses stockées en session puis de façon anonyme « pour améliorer le quiz »",
+    "accounts": "aucun",
+    "trackers": "Google AdSense, mesure d’audience « ex. : Google Analytics ou équivalent »"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "non précisé",
+   "strengths": [
+    "Limites de l’outil listées explicitement."
+   ],
+   "limits": [
+    "Réponses envoyées au serveur et conservées anonymement.",
+    "Nombre de questions et de candidats non indiqués ; positions parfois « estimées ».",
+    "Éditeur et hébergeur non nommés."
+   ],
+   "evidence": [
+    {
+     "claim": "Réponses côté serveur",
+     "url": "https://presidentielles2027.info/confidentialite",
+     "quote": "Tes réponses au quiz — stockées temporairement en session serveur pour calculer le résultat, puis de façon anonyme (sans identifiant personnel) pour améliorer le quiz."
+    },
+    {
+     "claim": "Positions estimées",
+     "url": "https://presidentielles2027.info/methodologie",
+     "quote": "Ce quiz sert à comparer tes réponses avec les positions connues ou estimées de différents candidats à la présidentielle 2027."
+    },
+    {
+     "claim": "Éditeur non nommé",
+     "url": "https://presidentielles2027.info/mentions-legales",
+     "quote": "Le site presidentielles2027.info est édité à titre personnel et indépendant."
+    },
+    {
+     "claim": "Limites listées",
+     "url": "https://presidentielles2027.info/methodologie",
+     "quote": "Ce quiz reste une simplification ."
+    }
+   ]
+  },
+  {
+   "name": "SP2027 (sondages-presidentielle2027.fr) — quiz",
+   "url": "https://sondages-presidentielle2027.fr/quiz.html",
+   "editor": "« équipe éditoriale indépendante » ; directeur de la publication Marc Delval, responsable de la rédaction Élise Vernay",
+   "model": "Google AdSense",
+   "format": {
+    "questions": 15,
+    "shortVersion": false,
+    "answerType": "choix parmi 8 positions rédigées, précédées d’un exposé du débat ; noms masqués jusqu’au résultat",
+    "duration": "non précisée"
+   },
+   "candidates": {
+    "count": 11,
+    "nonDeclaredOrParties": "inclut Jordan Bardella et Marine Le Pen"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "non",
+    "quotesOrSummaries": "réponses rédigées par le site",
+    "unknownPosition": "non précisé"
+   },
+   "method": {
+    "published": false,
+    "summary": "dans le code de la page, Marine Le Pen reçoit les mêmes scores que Jordan Bardella"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (code inline)",
+    "server": "non précisé",
+    "accounts": "aucun",
+    "trackers": "Google Analytics GA4, Google AdSense (tarteaucitron)"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "pied de page « Dernière mise à jour : . » (date vide)",
+   "strengths": [
+    "Exposé du débat avant chaque question.",
+    "Noms des candidats masqués pendant le quiz."
+   ],
+   "limits": [
+    "Marine Le Pen hérite des scores de Jordan Bardella dans le calcul (code de la page).",
+    "Méthode et sources des positions non publiées sur la page du quiz.",
+    "Google Analytics et AdSense."
+   ],
+   "evidence": [
+    {
+     "claim": "Le Pen = Bardella dans le code",
+     "url": "https://sondages-presidentielle2027.fr/quiz.html",
+     "quote": "// Le Pen (G2) partage les scores de Bardella (G)"
+    },
+    {
+     "claim": "Noms masqués",
+     "url": "https://sondages-presidentielle2027.fr/quiz.html",
+     "quote": "Les résultats avec les noms des candidats s'affichent uniquement à la fin."
+    },
+    {
+     "claim": "Services tiers",
+     "url": "https://sondages-presidentielle2027.fr/quiz.html",
+     "quote": "Google Analytics (GA4) · Mesure d'audience anonymisée."
+    },
+    {
+     "claim": "Date vide",
+     "url": "https://sondages-presidentielle2027.fr/quiz.html",
+     "quote": "Dernière mise à jour : ."
+    }
+   ]
+  },
+  {
+   "name": "Prési2027",
+   "url": "https://presi2027.fr/",
+   "editor": "Khyri Chan Studio (KCS)",
+   "model": "« sans annonceur » ; dons (« Soutenir ») ; renvoi vers un jeu vidéo du même éditeur",
+   "format": {
+    "questions": "25 (quiz) ou 105 (« grand oral »)",
+    "shortVersion": true,
+    "answerType": "accord sur 5 niveaux, passable ; pondération des thèmes ×0,5 à ×3",
+    "duration": "3 min / 10 min"
+   },
+   "candidates": {
+    "count": "24 dans le quiz (30 « suivis »)",
+    "nonDeclaredOrParties": "candidats battus à la primaire retirés du classement"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "oui, avec niveau de fiabilité (directe, indirecte, estimée)",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "« position estimée » déduite de la ligne du parti, comptée pour moitié ; estimée neutre non comptée ; score ramené vers 50 % si méconnu"
+   },
+   "method": {
+    "published": true,
+    "summary": "écart 0 à 4 converti en accord, moyenne 0–100 % ; correction du 6 octobre 2026 documentée"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "totaux anonymes par question et décomptes d’intention de vote (sans nom)",
+    "accounts": "aucun (pseudonyme pour publier un programme)",
+    "trackers": "comptage maison sans cookie (déclaré)"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "« Mis à jour le 21 octobre 2026 »",
+   "strengths": [
+    "Niveau de fiabilité affiché pour chaque position.",
+    "Correction de méthode datée et expliquée."
+   ],
+   "limits": [
+    "Des positions sont « estimées » à partir de la ligne du parti (comptées pour moitié).",
+    "Réponses versées dans des totaux anonymes côté serveur ; intention de vote demandée en fin de quiz complet (facultative)."
+   ],
+   "evidence": [
+    {
+     "claim": "Positions estimées",
+     "url": "https://presi2027.fr/methodologie",
+     "quote": "Position estimée : déduite de la ligne du candidat ou de son parti, sans source précise — signalée comme telle."
+    },
+    {
+     "claim": "Comptée pour moitié",
+     "url": "https://presi2027.fr/methodologie",
+     "quote": "une position estimée, ou sans source en lien, compte pour moitié"
+    },
+    {
+     "claim": "Correction datée",
+     "url": "https://presi2027.fr/methodologie",
+     "quote": "(correction du 6 octobre 2026, après la remarque d'un visiteur)"
+    },
+    {
+     "claim": "Totaux anonymes",
+     "url": "https://presi2027.fr/mentions-legales",
+     "quote": "À la fin du quiz, elles alimentent uniquement des totaux anonymes par question"
+    },
+    {
+     "claim": "Intention de vote demandée",
+     "url": "https://presi2027.fr/methodologie",
+     "quote": "le site te demande pour qui tu pensais voter"
+    },
+    {
+     "claim": "24 candidats dans le quiz",
+     "url": "https://presi2027.fr/",
+     "quote": "compare tes idées aux positions sourcées de 24 candidats"
+    }
+   ]
+  },
+  {
+   "name": "Boussole2027 (boussole2027.com)",
+   "url": "https://boussole2027.com/",
+   "editor": "non renseigné (« [Votre nom ou raison sociale] » dans les mentions légales)",
+   "model": "Google AdSense",
+   "format": {
+    "questions": 45,
+    "shortVersion": false,
+    "answerType": "accord sur 5 niveaux, passable",
+    "duration": "environ 7 minutes"
+   },
+   "candidates": {
+    "count": 11,
+    "nonDeclaredOrParties": "« personnalités politiques » dont François Bayrou, Laurent Wauquiez, Jordan Bardella"
+   },
+   "positions": {
+    "codedBy": "éditorial",
+    "sourcesPerPosition": "non",
+    "quotesOrSummaries": "profil de référence sur 6 axes",
+    "unknownPosition": "non applicable (profils sur axes)"
+   },
+   "method": {
+    "published": true,
+    "summary": "scores sur 6 axes (0–100), distance euclidienne inverse"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "aucun envoi (déclaré) ; seuls les 6 scores dans l’URL de partage",
+    "accounts": "aucun",
+    "trackers": "Google AdSense"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "non précisé",
+   "strengths": [
+    "Calcul local annoncé ; formule décrite."
+   ],
+   "limits": [
+    "Mentions légales non remplies (gabarit).",
+    "Profils de candidats « estimations éditoriales » sans source par position.",
+    "Liste de 11 personnalités incluant F. Bayrou et L. Wauquiez."
+   ],
+   "evidence": [
+    {
+     "claim": "Gabarit non rempli",
+     "url": "https://boussole2027.com/mentions-legales",
+     "quote": "Responsable de la publication : [Votre nom ou raison sociale]"
+    },
+    {
+     "claim": "Estimations éditoriales",
+     "url": "https://boussole2027.com/methodologie",
+     "quote": "Les profils des candidats sont des estimations éditoriales, pas des positionnements officiels"
+    },
+    {
+     "claim": "Liste des personnalités",
+     "url": "https://boussole2027.com/methodologie",
+     "quote": "François Bayrou (MoDem)"
+    },
+    {
+     "claim": "Calcul local",
+     "url": "https://boussole2027.com/",
+     "quote": "Boussole2027 fonctionne entièrement dans votre navigateur : vos réponses ne sont jamais envoyées à un serveur."
+    }
+   ]
+  },
+  {
+   "name": "Politiquement.org — test présidentielle 2027",
+   "url": "https://www.politiquement.org/tests/presidentielle-2027/",
+   "editor": "Nicolas Belotti (directeur de la publication)",
+   "model": "non précisé",
+   "format": {
+    "questions": 30,
+    "shortVersion": false,
+    "answerType": "accord sur 5 niveaux ; 3 à 5 priorités ×2",
+    "duration": "« quelques minutes »"
+   },
+   "candidates": {
+    "count": 6,
+    "nonDeclaredOrParties": "candidatures déclarées ; positions de plusieurs candidats codées à partir du corpus de leur parti (« proxy »)"
+   },
+   "positions": {
+    "codedBy": "rédaction (« un outil d’IA ne constitue jamais une source »)",
+    "sourcesPerPosition": "documents par parti, niveau de confiance A/B/C",
+    "quotesOrSummaries": "positions codées",
+    "unknownPosition": "non précisé ; recalcul sans positions de confiance C"
+   },
+   "method": {
+    "published": true,
+    "summary": "similarité = 1 − |réponse − position| / 4, priorités ×2, contrôle de robustesse"
+   },
+   "privacy": {
+    "computation": "« calcul de la requête en cours »",
+    "server": "réponses non conservées (déclaré)",
+    "accounts": "aucun",
+    "trackers": "aucun script tiers relevé dans le code de la page"
+   },
+   "open": {
+    "data": "référentiel JSON avec empreintes SHA-256",
+    "code": "non"
+   },
+   "updated": "« Dernière vérification 26 août 2026 » ; révision 17 septembre 2026",
+   "strengths": [
+    "Formule et contrôle de robustesse publiés ; référentiel JSON ouvert.",
+    "Corpus utilisé pour chaque candidat expliqué."
+   ],
+   "limits": [
+    "Six candidats seulement.",
+    "Positions de candidats approchées par le corpus de leur parti (ex. projet socialiste pour R. Glucksmann).",
+    "Périmètre vérifié le 26 août 2026."
+   ],
+   "evidence": [
+    {
+     "claim": "Six candidatures",
+     "url": "https://www.politiquement.org/tests/presidentielle-2027/",
+     "quote": "obtenez votre top 3 de proximité parmi six candidatures déclarées"
+    },
+    {
+     "claim": "Proxy partisan",
+     "url": "https://www.politiquement.org/tests/presidentielle-2027/",
+     "quote": "Le projet socialiste sert de proxy explicite : ce résultat est donc le plus susceptible d’évoluer."
+    },
+    {
+     "claim": "Formule",
+     "url": "https://www.politiquement.org/tests/presidentielle-2027/",
+     "quote": "La similarité vaut 1 − |votre réponse − position codée| / 4."
+    },
+    {
+     "claim": "Données ouvertes",
+     "url": "https://www.politiquement.org/tests/presidentielle-2027/",
+     "quote": "Les questions, positions et sources sont ouvertes pour permettre la vérification, la critique et la correction."
+    },
+    {
+     "claim": "Réponses non conservées",
+     "url": "https://www.politiquement.org/tests/presidentielle-2027/",
+     "quote": "Elles servent au calcul de la requête en cours et ne sont ni associées à un compte, ni ajoutées aux données publiques du site."
+    },
+    {
+     "claim": "Date",
+     "url": "https://www.politiquement.org/tests/presidentielle-2027/",
+     "quote": "Dernière vérification 26 août 2026"
+    }
+   ]
+  },
+  {
+   "name": "Ma Politique",
+   "url": "https://www.mapolitique.com/",
+   "editor": "non trouvé",
+   "model": "non précisé",
+   "format": {
+    "questions": 60,
+    "shortVersion": false,
+    "answerType": "non précisé",
+    "duration": "non précisée"
+   },
+   "candidates": {
+    "count": 16,
+    "nonDeclaredOrParties": "non précisé (J. Bardella figure dans les exemples de la page d’accueil)"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "non précisé",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "non précisé"
+   },
+   "method": {
+    "published": false,
+    "summary": "non publiée"
+   },
+   "privacy": {
+    "computation": "non précisé",
+    "server": "résultats accessibles par une URL /results/<identifiant> ; base Supabase",
+    "accounts": "non précisé",
+    "trackers": "Google Analytics, Google Tag Manager"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "non précisé",
+   "strengths": [],
+   "limits": [
+    "Ni méthode, ni éditeur, ni politique de confidentialité trouvés (routes du site : accueil, actualités, quiz, résultats, dashboard).",
+    "Google Analytics et Tag Manager."
+   ],
+   "evidence": [
+    {
+     "claim": "60 questions",
+     "url": "https://www.mapolitique.com/",
+     "quote": "Quiz politique en 60 questions."
+    },
+    {
+     "claim": "Google Analytics",
+     "url": "https://www.mapolitique.com/",
+     "quote": "https://www.googletagmanager.com/gtag/js?id=G-E9QST27KPD"
+    }
+   ]
+  },
+  {
+   "name": "PULSE France",
+   "url": "https://pulsefrance.com/",
+   "editor": "non trouvé",
+   "model": "non précisé",
+   "format": {
+    "questions": 30,
+    "shortVersion": false,
+    "answerType": "non précisé",
+    "duration": "~5 min"
+   },
+   "candidates": {
+    "count": "non précisé",
+    "nonDeclaredOrParties": "non précisé"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "non précisé",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "non précisé"
+   },
+   "method": {
+    "published": "page méthodologie dans l’application (non lisible sans JavaScript)",
+    "summary": "non relevé"
+   },
+   "privacy": {
+    "computation": "non",
+    "server": "le code de l’application enregistre chaque réponse en base (Supabase), avec un identifiant utilisateur ou anonyme ; questionnaire sociodémographique",
+    "accounts": "oui (connexion) ou profil anonyme",
+    "trackers": "balise Google Ads (AW-)"
+   },
+   "open": {
+    "data": "non",
+    "code": "non"
+   },
+   "updated": "non précisé",
+   "strengths": [],
+   "limits": [
+    "Réponses enregistrées une à une côté serveur selon le code de l’application.",
+    "Balise publicitaire Google Ads sur la page.",
+    "Contenu non lisible sans JavaScript (pas de relevé de la méthode)."
+   ],
+   "evidence": [
+    {
+     "claim": "30 questions",
+     "url": "https://pulsefrance.com/",
+     "quote": "Répondez à 30 questions (~5 min)"
+    },
+    {
+     "claim": "Insertion des réponses en base",
+     "url": "https://pulsefrance.com/",
+     "quote": "anonymous_user_id:null,question_id:i,value:o,sequence_number:r"
+    },
+    {
+     "claim": "Google Ads",
+     "url": "https://pulsefrance.com/",
+     "quote": "https://www.googletagmanager.com/gtag/js?id=AW-17857064698"
+    }
+   ]
+  },
+  {
+   "name": "Swipe Your President",
+   "url": "https://swipeyourpresident.com/",
+   "editor": "120K (SAS, Saint-Dyé-sur-Loire)",
+   "model": "test gratuit ; classement complet et citations payants (1,99 €) ; campagnes publicitaires d’acquisition (étiquettes « meta »)",
+   "format": {
+    "questions": "jusqu’à 40, adaptatives ; résultat débloqué à 15",
+    "shortVersion": "parcours adaptatif",
+    "answerType": "pour / contre, « mitigé », « je ne connais pas ce sujet »",
+    "duration": "10 minutes"
+   },
+   "candidates": {
+    "count": 27,
+    "nonDeclaredOrParties": "non précisé"
+   },
+   "positions": {
+    "codedBy": "extraction assistée par un modèle de langage, deux contrôles automatiques, puis relecture humaine de chaque position",
+    "sourcesPerPosition": "oui, citation datée et archivée",
+    "quotesOrSummaries": "phrase exacte du candidat",
+    "unknownPosition": "retirée du calcul ; candidat écarté sous 45 % de couverture"
+   },
+   "method": {
+    "published": true,
+    "summary": "écart question par question pondéré par l’intensité ; pourcentage par transformation fixe"
+   },
+   "privacy": {
+    "computation": "dans le navigateur ou l’appli (déclaré)",
+    "server": "aucune réponse, sauf l’« analyse détaillée » payante sur demande : réponses envoyées à Anthropic (États-Unis)",
+    "accounts": "aucun",
+    "trackers": "PostHog (UE), sans cookie, désactivable"
+   },
+   "open": {
+    "data": "couverture publiée sur data.gouv.fr (sans les citations)",
+    "code": "non"
+   },
+   "updated": "comparatif relevé le 22 octobre 2026 ; sondages au 16 octobre",
+   "strengths": [
+    "Citations exactes, datées et archivées, relues par un humain.",
+    "Position manquante retirée du calcul, jamais comptée neutre.",
+    "Éditeur identifié (SAS, SIREN)."
+   ],
+   "limits": [
+    "Classement complet et citations payants (1,99 €).",
+    "L’analyse rédigée (option payante) envoie les réponses à un modèle de langage aux États-Unis.",
+    "Le comparatif des boussoles publié par l’éditeur classe son propre outil en tête."
+   ],
+   "evidence": [
+    {
+     "claim": "Relecture humaine",
+     "url": "https://swipeyourpresident.com/methode",
+     "quote": "Puis un humain reprend tout, une position à la fois."
+    },
+    {
+     "claim": "Extraction assistée par LLM",
+     "url": "https://swipeyourpresident.com/methode",
+     "quote": "L'extraction initiale des citations est assistée par un modèle de langage"
+    },
+    {
+     "claim": "Position manquante",
+     "url": "https://swipeyourpresident.com/methode",
+     "quote": "Une position manquante n'est jamais comptée comme neutre"
+    },
+    {
+     "claim": "Prix",
+     "url": "https://swipeyourpresident.com/cgv",
+     "quote": "Le prix est de 1,99 € , toutes taxes comprises pour un acheteur situé en France."
+    },
+    {
+     "claim": "Envoi à Anthropic sur demande",
+     "url": "https://swipeyourpresident.com/confidentialite",
+     "quote": "Si et seulement si tu le demandes, tes réponses sont transmises une seule fois à Anthropic PBC, aux États-Unis, pour rédiger ce texte."
+    },
+    {
+     "claim": "Éditeur",
+     "url": "https://swipeyourpresident.com/mentions-legales",
+     "quote": "sont édités par 120K , société par actions simplifiée au capital de 120 €"
+    },
+    {
+     "claim": "Auto-classement",
+     "url": "https://swipeyourpresident.com/comparatif-boussoles-electorales-2027",
+     "quote": "Swipe Your President C'est nous 27"
+    },
+    {
+     "claim": "Campagnes publicitaires",
+     "url": "https://swipeyourpresident.com/confidentialite",
+     "quote": "Si tu arrives par une publicité, le lien porte deux étiquettes que nous avons choisies en créant la campagne"
+    }
+   ]
+  },
+  {
+   "name": "Swipe ton vote",
+   "url": "https://swipetonvote.fr/",
+   "editor": "particulier anonyme (identité communiquée à l’hébergeur)",
+   "model": "non précisé ; « sans tracking publicitaire »",
+   "format": {
+    "questions": "paliers à 30, 60 et 100 réponses",
+    "shortVersion": "résultats partiels dès 30 réponses",
+    "answerType": "d’accord / pas d’accord (swipe)",
+    "duration": "non précisée"
+   },
+   "candidates": {
+    "count": "11 partis et 11 personnalités",
+    "nonDeclaredOrParties": "compare aussi des partis ; personnalités dont J. Bardella et O. Faure"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "« sourcées sur chaque page » (partis)",
+    "quotesOrSummaries": "« synthèses simplifiées et indicatives »",
+    "unknownPosition": "non applicable (profils sur 6 axes)"
+   },
+   "method": {
+    "published": "page méthodologie (non relevée en détail)",
+    "summary": "profil sur 6 axes comparé aux partis et personnalités"
+   },
+   "privacy": {
+    "computation": "côté serveur",
+    "server": "réponses stockées avec le compte (Supabase, UE)",
+    "accounts": "obligatoire (pseudo + mot de passe)",
+    "trackers": "aucun (déclaré)"
+   },
+   "open": {
+    "data": "statistiques agrégées sous CC BY 4.0",
+    "code": "non"
+   },
+   "updated": "mentions légales et confidentialité : 19 octobre 2026",
+   "strengths": [
+    "Pas d’e-mail ni de nom demandés ; export et suppression des données depuis le compte.",
+    "Données agrégées publiées sous CC BY 4.0."
+   ],
+   "limits": [
+    "Compte obligatoire ; réponses (opinions politiques) stockées côté serveur.",
+    "Positions = synthèses simplifiées, comparaison sur axes et partis."
+   ],
+   "evidence": [
+    {
+     "claim": "Compte",
+     "url": "https://swipetonvote.fr/",
+     "quote": "Un pseudo, un mot de passe. Dix secondes. Aucune donnée personnelle demandée."
+    },
+    {
+     "claim": "Stockage des réponses",
+     "url": "https://swipetonvote.fr/confidentialite",
+     "quote": "Vos réponses au test (elles révèlent des opinions politiques)"
+    },
+    {
+     "claim": "Synthèses",
+     "url": "https://swipetonvote.fr/mentions-legales",
+     "quote": "Les positionnements des partis et des personnalités sont des synthèses simplifiées et indicatives de programmes et de prises de position publiques, sourcées sur chaque page."
+    },
+    {
+     "claim": "CC BY",
+     "url": "https://swipetonvote.fr/mentions-legales",
+     "quote": "est publié sous licence Creative Commons Attribution 4.0 (CC BY 4.0)."
+    },
+    {
+     "claim": "Export",
+     "url": "https://swipetonvote.fr/confidentialite",
+     "quote": "vous pouvez tout télécharger ou tout supprimer depuis Mon compte"
+    }
+   ]
+  },
+  {
+   "name": "2027 et moi — Mes priorités",
+   "url": "https://2027etmoi.fr/mes-priorites.html",
+   "editor": "particulier anonyme (identité communiquée à l’hébergeur)",
+   "model": "aucun financement, sans publicité (déclaré)",
+   "format": {
+    "questions": "13 thèmes (rapide) ou 35 questions + propositions concrètes (approfondi)",
+    "shortVersion": true,
+    "answerType": "importance des thèmes + réponses ; propositions anonymes",
+    "duration": "environ 3 minutes (rapide)"
+   },
+   "candidates": {
+    "count": "non précisé pour le test (site : 32 candidatures déclarées, 5 pressenties)",
+    "nonDeclaredOrParties": "non précisé"
+   },
+   "positions": {
+    "codedBy": "collecte assistée par IA, relue et validée par l’auteur",
+    "sourcesPerPosition": "oui (« chacune sourcée »)",
+    "quotesOrSummaries": "mesures « reformulées brièvement »",
+    "unknownPosition": "nombre de questions réellement comparées affiché"
+   },
+   "method": {
+    "published": "non relevé en détail",
+    "summary": "non relevé"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "rien (déclaré)",
+    "accounts": "aucun",
+    "trackers": "aucun ; Google Fonts et Wikimedia reçoivent l’IP"
+   },
+   "open": {
+    "data": "oui, Licence Ouverte 2.0",
+    "code": "public sur GitHub, sans licence libre"
+   },
+   "updated": "non précisé sur la page du test",
+   "strengths": [
+    "Aucun traceur ni cookie ; réponses traitées localement.",
+    "Données sous Licence Ouverte, historique public des modifications."
+   ],
+   "limits": [
+    "Collecte assistée par une IA (relue par l’auteur).",
+    "Nombre de candidats comparés non indiqué sur la page du test."
+   ],
+   "evidence": [
+    {
+     "claim": "Local",
+     "url": "https://2027etmoi.fr/a-propos.html",
+     "quote": "Les réponses données dans « Mes priorités » sont traitées dans votre navigateur : rien n'est enregistré ni envoyé."
+    },
+    {
+     "claim": "Aucun traceur",
+     "url": "https://2027etmoi.fr/a-propos.html",
+     "quote": "Aucun traceur : pas de cookie, pas de mesure d'audience, pas de compte à créer."
+    },
+    {
+     "claim": "IA",
+     "url": "https://2027etmoi.fr/a-propos.html",
+     "quote": "Une partie de cette collecte est assistée par un outil d'intelligence artificielle"
+    },
+    {
+     "claim": "Licence",
+     "url": "https://2027etmoi.fr/a-propos.html",
+     "quote": "sont mises à disposition sous Licence Ouverte 2.0"
+    },
+    {
+     "claim": "Questions comparées affichées",
+     "url": "https://2027etmoi.fr/mes-priorites.html",
+     "quote": "ils comptent vos réponses et indiquent le nombre de questions réellement comparées."
+    }
+   ]
+  },
+  {
+   "name": "PresiTracker2027 — Mon test",
+   "url": "https://presitracker2027.fr/test",
+   "editor": "Fabrice Croiseaux",
+   "model": "gratuit, dons facultatifs, « indépendant de toute publicité »",
+   "format": {
+    "questions": "17 (courte) ou 34 (complète) ; question du jour en plus",
+    "shortVersion": true,
+    "answerType": "accord sur 5 niveaux, passable ; question importante ×2",
+    "duration": "environ 4 min / 8 min"
+   },
+   "candidates": {
+    "count": "72 recensés (déclarés, pressentis, retirés) ; classés si position connue sur au moins 5 questions et la moitié des réponses",
+    "nonDeclaredOrParties": "pressentis recensés"
+   },
+   "positions": {
+    "codedBy": "non précisé",
+    "sourcesPerPosition": "oui (« mesures et déclarations sourcées »)",
+    "quotesOrSummaries": "non précisé",
+    "unknownPosition": "inconnue, question ignorée pour ce candidat"
+   },
+   "method": {
+    "published": true,
+    "summary": "même formule dans le site et les apps, cas de test publiés"
+   },
+   "privacy": {
+    "computation": "sur l’appareil",
+    "server": "rien, sauf participation volontaire à la consultation (décochée par défaut)",
+    "accounts": "aucun",
+    "trackers": "« Aucun cookie, aucun traceur, aucune mesure d’audience, aucune ressource tierce »"
+   },
+   "open": {
+    "data": "oui, GitHub, Etalab 2.0",
+    "code": "non précisé"
+   },
+   "updated": "version 2026-10-26",
+   "strengths": [
+    "Position inconnue ignorée ; seuils de classement publiés.",
+    "Aucun traceur ni ressource tierce (déclaré) ; participation à la consultation décochée par défaut.",
+    "Données ouvertes et mises à jour quotidiennes datées."
+   ],
+   "limits": [
+    "La consultation envoie, si on l’accepte, le candidat classé premier chaque semaine.",
+    "72 candidats recensés, dont des pressentis et des retirés."
+   ],
+   "evidence": [
+    {
+     "claim": "Inconnue ignorée",
+     "url": "https://presitracker2027.fr/methodologie",
+     "quote": "Quand aucune source ne permet de la situer, la position est inconnue et la question est ignorée pour ce candidat."
+    },
+    {
+     "claim": "Aucun traceur",
+     "url": "https://presitracker2027.fr/test",
+     "quote": "Aucun cookie, aucun traceur, aucune mesure d'audience, aucune ressource tierce."
+    },
+    {
+     "claim": "Consultation décochée",
+     "url": "https://presitracker2027.fr/methodologie",
+     "quote": "décochée par défaut"
+    },
+    {
+     "claim": "Envoi hebdomadaire si consultation",
+     "url": "https://presitracker2027.fr/methodologie",
+     "quote": "le téléphone envoie, sans identifiant, le candidat classé premier sur l'appareil"
+    },
+    {
+     "claim": "72 candidats",
+     "url": "https://presitracker2027.fr/",
+     "quote": "72 candidats, 1862 mesures, 755 sources"
+    }
+   ]
+  },
+  {
+   "name": "Mon Choix 2027 (simulateur par situation)",
+   "url": "https://www.monchoix2027.com/",
+   "editor": "« projet citoyen » non nommé (dépôt GitHub NEWTON313)",
+   "model": "sans publicité, aucun financement de parti ou d’annonceur (déclaré)",
+   "format": {
+    "questions": "questions sur la situation (revenus du foyer) et les priorités",
+    "shortVersion": false,
+    "answerType": "situation socio-économique + importance des thèmes (pas un test d’opinion)",
+    "duration": "2 minutes"
+   },
+   "candidates": {
+    "count": "31 (dont 17 sans aucune mesure recensée)",
+    "nonDeclaredOrParties": "déclarés seulement"
+   },
+   "positions": {
+    "codedBy": "IA (Claude, d’Anthropic) ; relecture humaine depuis le 10/10/2026",
+    "sourcesPerPosition": "oui, 65 mesures sourcées",
+    "quotesOrSummaries": "résumés et scores d’impact −2 à +2",
+    "unknownPosition": "case vide, score « non calculable »"
+   },
+   "method": {
+    "published": true,
+    "summary": "moyenne pondérée des scores d’impact par catégorie de revenu (seuils INSEE)"
+   },
+   "privacy": {
+    "computation": "dans le navigateur (déclaré)",
+    "server": "rien (déclaré)",
+    "accounts": "aucun",
+    "trackers": "Vercel Analytics"
+   },
+   "open": {
+    "data": "oui (MIT, GitHub)",
+    "code": "oui (MIT)"
+   },
+   "updated": "2026-10-19",
+   "strengths": [
+    "Rôle de l’IA et limites détaillés sur une page Transparence.",
+    "Code et données sous MIT, historique public."
+   ],
+   "limits": [
+    "Mesures notées par une IA ; toutes les mesures antérieures au 10/10/2026 n’ont pas été relues une à une.",
+    "17 candidats sur 31 sans aucune mesure ; recherche limitée à quatre médias.",
+    "Mesure l’effet économique selon le revenu, pas l’accord d’opinion."
+   ],
+   "evidence": [
+    {
+     "claim": "IA Claude",
+     "url": "https://www.monchoix2027.com/transparence",
+     "quote": "Les mesures des candidats sont recherchées, résumées et notées avec l'aide d'un assistant d'intelligence artificielle (Claude, d'Anthropic)"
+    },
+    {
+     "claim": "Relecture partielle",
+     "url": "https://www.monchoix2027.com/transparence",
+     "quote": "les mesures publiées avant cette date n'ont pas toutes été relues une à une."
+    },
+    {
+     "claim": "Couverture",
+     "url": "https://www.monchoix2027.com/transparence",
+     "quote": "17 candidats sur 31 n'ont encore aucune mesure recensée"
+    },
+    {
+     "claim": "Quatre médias",
+     "url": "https://www.monchoix2027.com/transparence",
+     "quote": "La recherche automatique est volontairement limitée à quatre médias"
+    },
+    {
+     "claim": "MIT",
+     "url": "https://www.monchoix2027.com/transparence",
+     "quote": "Code et données publics (licence MIT)"
+    },
+    {
+     "claim": "Calcul local",
+     "url": "https://www.monchoix2027.com/",
+     "quote": "Le calcul se fait dans votre navigateur : rien n'est envoyé, rien n'est conservé."
+    }
+   ]
+  }
+ ],
+ "outdated2022": [
+  {
+   "name": "Candidator — test présidentielle 2022",
+   "url": "https://www.candidator.fr/presidentielle2022/survey.html",
+   "note": "Page du test 2022 toujours en ligne (titre « Test pour qui voter à la présidentielle 2022 »), à côté de la version 2027."
+  },
+  {
+   "name": "Politikz — archive 2022",
+   "url": "https://www.politikz.com/",
+   "note": "Bouton « 2022 Archive » en page d’accueil ; les mentions légales indiquent que les données du quiz reposent sur les programmes 2022 avec « Une mise à jour est prévue pour l'élection présidentielle 2027 »."
+  },
+  {
+   "name": "Elyze (appli 2022)",
+   "url": "https://elyze.app/",
+   "note": "Domaine parqué chez Hostinger au 26/10/2026 : plus de test en ligne."
+  },
+  {
+   "name": "Voxe",
+   "url": "https://www.voxe.org/",
+   "note": "Le site est désormais une newsletter (« La Quotidienne ») ; pas de comparateur de programmes relevé."
+  },
+  {
+   "name": "La Boussole présidentielle (Cevipof / 20 Minutes, éditions précédentes)",
+   "url": "https://www.laboussolepresidentielle.fr/",
+   "note": "Répond HTTP 403 à nos requêtes : contenu non vérifiable. Aucune édition 2027 trouvée par recherche."
+  }
+ ]
+}
