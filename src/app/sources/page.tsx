@@ -33,7 +33,8 @@ export default function SourcesPage() {
           <a href="/donnees.json" download="cavote-donnees.json">
             Télécharger toutes les données (JSON)
           </a>{' '}
-          : questions, positions des candidats avec leur citation et leur source, faits officiels. Pour vérifier, recalculer ou réutiliser.
+          : questions, positions des candidats avec leur citation et leur source, faits officiels. Pour vérifier, recalculer ou réutiliser. Version tableur, une
+          ligne par position : <a href="/positions.csv" download="cavote-positions.csv">positions.csv</a>.
         </p>
         <p className="small muted">
           Un programme établit ce qu’un candidat propose ; il ne prouve pas que la mesure est financée ou réalisable. Une statistique officielle renseigne un fait

@@ -82,7 +82,7 @@ export default function PressPage() {
             <Link href="/corrections">corrections</Link>.
           </li>
           <li>
-            Les données sont ouvertes : questions, positions, citations et liens en un fichier, <a href="/donnees.json">donnees.json</a>.
+            Les données sont ouvertes : questions, positions, citations et liens en un fichier, <a href="/donnees.json">donnees.json</a>, et en tableur, <a href="/positions.csv">positions.csv</a>.
           </li>
         </ol>
 
