@@ -7,6 +7,7 @@ import { LEGAL, displayEmail } from '@/lib/legal'
 import changes from '@content/corpus/changes.json'
 import { getAnnouncedActors } from '@/lib/actors'
 import { questionnaire } from '@/lib/data'
+import { REPONSES } from '@/lib/reponses'
 
 export const metadata: Metadata = {
   title: 'Corrections',
@@ -74,6 +75,44 @@ export default function CorrectionsPage() {
                 </tbody>
               </table>
             </div>
+          )}
+        </section>
+        <section id="droit-de-reponse" aria-labelledby="reponse-titre">
+          <h2 id="reponse-titre" style={{ fontSize: 'var(--h3)' }}>
+            Droit de réponse des candidats
+          </h2>
+          <p>
+            Un candidat, son équipe de campagne ou son parti conteste une position, une citation ou une fiche ? Écris à{' '}
+            <a href={`mailto:${LEGAL.contactEmail}?subject=Droit%20de%20r%C3%A9ponse`}>{displayEmail(LEGAL.contactEmail)}</a>, objet « Droit de réponse »,
+            depuis une adresse officielle de la campagne ou du parti.
+          </p>
+          <ul>
+            <li>La réponse est publiée en entier, sans coupe ni commentaire glissé dedans, ici et sur la fiche du candidat, dans les trois jours suivant sa réception, comme le prévoit la loi pour la confiance dans l’économie numérique.</li>
+            <li>Si elle donne une phrase publique du candidat, avec le lien où la lire, la position est vérifiée de la même façon que les autres et corrigée si la phrase le justifie. La correction apparaît dans le journal ci-dessus.</li>
+            <li>Sous la réponse, une ligne dit ce qui a été fait : position corrigée, ou maintenue et pourquoi.</li>
+          </ul>
+          {REPONSES.length === 0 ? (
+            <p className="muted">Aucune réponse reçue à ce jour.</p>
+          ) : (
+            <ol style={{ listStyle: 'none', padding: 0 }} className="stack">
+              {REPONSES.map((r) => (
+                <li key={r.actor + r.published} className="card card--flat">
+                  <p className="small muted" style={{ margin: 0 }}>
+                    {formatDate(r.published)} ·{' '}
+                    <Link href={`/candidats/${r.actor}`}>{getAnnouncedActors().find((a) => a.slug === r.actor)?.name ?? r.actor}</Link> · {r.from}, reçue le{' '}
+                    {formatDate(r.received)}
+                  </p>
+                  {r.text.split(/\n\s*\n/).map((para, i) => (
+                    <p key={i} style={{ margin: 'var(--s2) 0' }}>
+                      {para}
+                    </p>
+                  ))}
+                  <p className="small" style={{ margin: 0 }}>
+                    Ce qu’on a fait : {r.outcome}
+                  </p>
+                </li>
+              ))}
+            </ol>
           )}
         </section>
         <section id="signaler" className="card">

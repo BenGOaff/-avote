@@ -25,6 +25,8 @@ import { isAffiliate, livreOf } from '@/lib/livres'
 import { actorUpdatedAt, getCandidatSujets } from '@/lib/sujets'
 import { duelsOf } from '@/lib/duels'
 import { CASIER_CHECKED_AT, CASIER_TYPES, casierCounts, casierDate, casierOf } from '@/lib/casier'
+import { revirementsOf } from '@/lib/revirements'
+import { reponsesOf } from '@/lib/reponses'
 
 export const dynamicParams = false
 
@@ -237,6 +239,45 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
             </section>
           )
         })}
+      {revirementsOf(a.slug).length > 0 && (
+        <section className="section measure" aria-labelledby="revirements">
+          <h2 id="revirements" style={{ fontSize: 'var(--h3)' }}>
+            Changements d’avis
+          </h2>
+          <ul className="stack" style={{ paddingLeft: '1.2em' }}>
+            {revirementsOf(a.slug).map((r) => (
+              <li key={r.topic}>
+                <strong>{r.topic}</strong> : « {r.before.quote} » ({formatDate(r.before.date)}), puis « {r.after.quote} » ({formatDate(r.after.date)}).
+              </li>
+            ))}
+          </ul>
+          <p className="small">
+            <Link href="/revirements">Tous les revirements, avec leurs sources</Link>
+          </p>
+        </section>
+      )}
+      {reponsesOf(a.slug).length > 0 && (
+        <section className="section measure" aria-labelledby="reponses">
+          <h2 id="reponses" style={{ fontSize: 'var(--h3)' }}>
+            Droit de réponse
+          </h2>
+          {reponsesOf(a.slug).map((r) => (
+            <div key={r.published} className="card card--flat">
+              <p className="small muted" style={{ margin: 0 }}>
+                {r.from}, publiée le {formatDate(r.published)}
+              </p>
+              {r.text.split(/\n\s*\n/).map((para, i) => (
+                <p key={i} style={{ margin: 'var(--s2) 0' }}>
+                  {para}
+                </p>
+              ))}
+              <p className="small" style={{ margin: 0 }}>
+                Ce qu’on a fait : {r.outcome}
+              </p>
+            </div>
+          ))}
+        </section>
+      )}
       <p>
         <Link className="btn btn--highlight" href="/test">
           Comparer avec mes réponses

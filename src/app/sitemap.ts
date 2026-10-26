@@ -13,6 +13,7 @@ import { weekRange, weeksSince } from '@/lib/semaine'
 import { FIRST_DAY } from '@/lib/semaine-data'
 import { getFlashQuizzes } from '@/lib/flash-content'
 import { getMedias } from '@/lib/medias'
+import { REVIREMENTS } from '@/lib/revirements'
 import { mediaLogoOf } from '@/lib/images'
 
 // Pages publiques uniquement : jamais de route personnelle (résultats, profil). Le test est public : les réponses restent dans le navigateur.
@@ -22,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((m) => mediaLogoOf(m.slug))
     .filter((x): x is string => !!x)
     .map((x) => absolute(x))
-  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/presse', '/comparatif-tests', '/comprendre', '/couverture', '/studio', '/newsletter', '/medias', '/medias/libres', '/medias/youtube', '/fake-news', '/verifier', '/urne', '/sondages', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales']
+  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/presse', '/comparatif-tests', '/comprendre', '/couverture', '/studio', '/newsletter', '/medias', '/medias/libres', '/medias/youtube', '/fake-news', '/verifier', '/urne', '/sondages', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales', ...(REVIREMENTS.length > 0 ? ['/revirements'] : [])]
   return [
     ...statics.map((p) => ({
       url: absolute(p),
