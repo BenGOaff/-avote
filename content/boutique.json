@@ -123,5 +123,58 @@
       "label": "Autocollants",
       "url": "https://ca-vote.myspreadshop.fr/autocollants"
     }
+  ],
+  "designs": [
+    {
+      "id": "coq",
+      "label": "Coq français impossible",
+      "url": "https://ca-vote.myspreadshop.fr/all?mainDesignId=360512131&designName=Coq+Fran%C3%A7ais+Impossible",
+      "quizzes": [
+        "suis-je-un-facho"
+      ]
+    },
+    {
+      "id": "droitard",
+      "label": "Droitard. Et alors ?",
+      "url": "https://ca-vote.myspreadshop.fr/all?mainDesignId=360480613&designName=Droitard.+Et+alors+%3F",
+      "apercu": "badge-droitard",
+      "quizzes": [
+        "suis-je-un-facho"
+      ]
+    },
+    {
+      "id": "insoumis",
+      "label": "Insoumis. Sauf à ma belle-mère",
+      "url": "https://ca-vote.myspreadshop.fr/all?mainDesignId=360473372&designName=Insoumis.+Sauf+%C3%A0+ma+belle-m%C3%A8re",
+      "apercu": "badge-insoumis-belle-mere",
+      "quizzes": [
+        "suis-je-une-gauchiasse"
+      ]
+    },
+    {
+      "id": "modere",
+      "label": "Modéré. Pas muet.",
+      "url": "https://ca-vote.myspreadshop.fr/all?mainDesignId=360480655&designName=Mod%C3%A9r%C3%A9.+Pas+muet.",
+      "apercu": "badge-modere",
+      "quizzes": [
+        "suis-je-un-macroniste"
+      ]
+    },
+    {
+      "id": "internationale",
+      "label": "Partition de L’Internationale",
+      "url": "https://ca-vote.myspreadshop.fr/all?mainDesignId=360517805&designName=Partition+L%27Internationale",
+      "quizzes": [
+        "suis-je-une-gauchiasse"
+      ]
+    },
+    {
+      "id": "blanc",
+      "label": "Vote blanc. Mon avis, non.",
+      "url": "https://ca-vote.myspreadshop.fr/all?mainDesignId=360491596&designName=Vote+blanc.+Mon+avis%2C+non.",
+      "quizzes": [
+        "suis-je-un-paume-de-la-politique"
+      ]
+    }
   ]
 }

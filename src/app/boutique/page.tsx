@@ -4,7 +4,7 @@ import boutique from '@content/boutique.json'
 import { PageHeader } from '@/components/PageHeader'
 import { UI_COPY } from '@/lib/copy'
 import { LEGAL } from '@/lib/legal'
-import { giftPicks } from '@/components/ShopPicks'
+import { apercuUrl, giftPicks } from '@/components/ShopPicks'
 
 const shop = LEGAL.shop
 const t = UI_COPY.boutique
@@ -43,7 +43,7 @@ export default function BoutiquePage() {
         <ul className="shop-grid shop-grid--gifts">
           {giftPicks('cadeaux').map((a) => (
             <li key={a.id}>
-              <a href={shop.url} rel="noopener">
+              <a href={apercuUrl(a.id)} rel="noopener">
                 <img src={`/img/boutique/${a.id}.webp`} alt={a.alt} width={640} height={640} loading="lazy" />
               </a>
             </li>
@@ -74,7 +74,7 @@ export default function BoutiquePage() {
         <ul className="shop-grid">
           {apercus.map((a) => (
             <li key={a.id}>
-              <a href={shop.url} rel="noopener">
+              <a href={apercuUrl(a.id)} rel="noopener">
                 <img src={`/img/boutique/${a.id}.webp`} alt={a.alt} width={640} height={640} loading="lazy" />
               </a>
             </li>

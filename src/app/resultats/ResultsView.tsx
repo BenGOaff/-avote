@@ -302,7 +302,7 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
         </section>
       )}
 
-      {!demo && <ShopPicks seed="resultats" text={UI_COPY.boutiqueLink.results} />}
+      {!demo && <ShopPicks seed="resultats" text={UI_COPY.boutiqueLink.results} designs />}
 
       <section className="section" aria-labelledby="bilan">
         <h2 id="bilan">Garder une trace</h2>
