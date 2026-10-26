@@ -3,6 +3,7 @@
  * Toute nouvelle page s'ajoute ici, dans sa rubrique ; rien n'est ajouté ailleurs à la main.
  */
 import { QUESTION_COUNT } from './question-count'
+import { REVIREMENTS } from './revirements'
 
 export interface NavItem {
   href: string
@@ -46,6 +47,8 @@ export const SECTIONS: NavSection[] = [
       { href: '/partis', label: 'Partis', desc: 'Histoire, dirigeants, élus et idées de chaque parti.' },
       { href: '/radar', label: 'Radar', desc: 'Le fil de la campagne, sourcé.' },
       { href: '/semaine', label: 'La semaine', desc: 'Ce qui a bougé en sept jours : positions, intox, candidatures.' },
+      // Publiée seulement à partir d'un revirement vérifié (lib/revirements.ts)
+      ...(REVIREMENTS.length > 0 ? [{ href: '/revirements', label: 'Ils ont changé d’avis', desc: 'Avant, après : deux phrases datées du même candidat.' }] : []),
       { href: '/agenda', label: 'Les prochains rendez-vous', desc: 'Votes internes, débats, dates limites : à ajouter à ton agenda.' },
       { href: '/sondages', label: 'Sondages', desc: 'Les derniers sondages, qui est en tête, les duels testés, les biais.' },
       { href: '/radar/2026-10-10-lire-un-sondage', label: 'Lire un sondage', desc: 'Marge d’erreur, quotas, indécis : ce qu’un sondage dit, et ce qu’il ne dit pas.' },

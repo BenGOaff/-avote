@@ -1,0 +1,4 @@
+{
+  "_note": "Changements d’avis des candidats : deux phrases publiques du candidat, datées et sourcées, sur le même sujet. Chaque citation est retrouvée mot pour mot dans sa page (npx tsx scripts/quotes-check.ts content/revirements/revirements.json). La page /revirements n’est publiée qu’à partir d’une entrée vérifiée.",
+  "entries": []
+}

@@ -312,6 +312,43 @@ for (const [slug, pr] of Object.entries(presentations.presentations)) {
   if (pr.sources.length === 0 || pr.sources.some((x) => !x.url.startsWith('https://') || !x.quote || x.quote.length < 12 || /wikipedia\.org|franceinfo\.fr/.test(x.url)))
     errors.push(`présentation : ${slug} sans source https admise ou sans extrait`)
 }
+// Revirements : deux phrases du candidat, sources admises, dates dans l'ordre, sujet et candidat existants
+{
+  const rv = JSON.parse(readFileSync(path.join(ROOT, 'content/revirements/revirements.json'), 'utf8')) as {
+    entries: { actor: string; itemId?: string; topic: string; before: Record<string, string>; after: Record<string, string> }[]
+  }
+  const live = JSON.parse(readFileSync(path.join(ROOT, 'content/corpus/live.json'), 'utf8')) as { actors: { slug: string }[] }
+  const iso = /^\d{4}-\d{2}-\d{2}$/
+  for (const r of rv.entries) {
+    const at = `revirements : ${r.actor} / ${r.topic}`
+    if (!live.actors.some((a) => a.slug === r.actor)) errors.push(`${at} : candidat inconnu`)
+    if (r.itemId && !ids.has(r.itemId)) errors.push(`${at} : affirmation inconnue ${r.itemId}`)
+    if (!r.topic?.trim()) errors.push(`${at} : sujet manquant`)
+    for (const [k, x] of [['avant', r.before], ['après', r.after]] as const) {
+      if (!x?.url?.startsWith('https://') || isRefusedSource(x.url)) errors.push(`${at} : source ${k} absente ou refusée`)
+      if (!x?.quote || x.quote.length < 30) errors.push(`${at} : citation ${k} trop courte`)
+      if (!iso.test(x?.date ?? '') || !x?.publisher || !x?.title) errors.push(`${at} : date, éditeur ou titre ${k} manquant`)
+    }
+    if (r.before?.date && r.after?.date && r.before.date >= r.after.date) errors.push(`${at} : la phrase « avant » doit précéder la phrase « après »`)
+  }
+}
+
+// Droits de réponse : candidat existant, texte, dates, suite donnée
+{
+  const rep = JSON.parse(readFileSync(path.join(ROOT, 'content/reponses/reponses.json'), 'utf8')) as {
+    entries: { actor: string; from: string; received: string; published: string; text: string; items?: string[]; outcome: string }[]
+  }
+  const live = JSON.parse(readFileSync(path.join(ROOT, 'content/corpus/live.json'), 'utf8')) as { actors: { slug: string }[] }
+  const iso = /^\d{4}-\d{2}-\d{2}$/
+  for (const r of rep.entries) {
+    const at = `droit de réponse : ${r.actor} ${r.published}`
+    if (!live.actors.some((a) => a.slug === r.actor)) errors.push(`${at} : candidat inconnu`)
+    if (!r.from?.trim() || !r.text?.trim() || !r.outcome?.trim()) errors.push(`${at} : expéditeur, texte ou suite donnée manquant`)
+    if (!iso.test(r.received) || !iso.test(r.published) || r.published < r.received) errors.push(`${at} : dates invalides`)
+    for (const i of r.items ?? []) if (!ids.has(i)) errors.push(`${at} : affirmation inconnue ${i}`)
+  }
+}
+
 // Fiches partis : chaque champ rempli porte une source https (jamais Wikipédia) et un extrait
 type Src = { quote?: string; url?: string } | null
 const partis = JSON.parse(readFileSync(path.join(ROOT, 'content/partis/partis.json'), 'utf8')) as {
