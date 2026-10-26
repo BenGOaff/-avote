@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { canonicalUrl, numbersAreSourced, parseFeed, quoteIsInSource, styleViolations, stripHtml } from './veille-lib'
+import { canonicalUrl, isFullName, numbersAreSourced, parseFeed, quoteIsInSource, sameCandidate, styleViolations, stripHtml } from './veille-lib'
 
 const feed = { id: 'f', name: 'Flux', url: 'https://x', kind: 'media' }
 
@@ -35,5 +35,16 @@ describe('veille', () => {
     expect(styleViolations('Ce n’est pas une réforme, c’est un aveu.')).not.toHaveLength(0)
     expect(styleViolations('La dépense est annoncée. Le financement reste à préciser.')).toHaveLength(0)
     expect(stripHtml('<script>x</script>ok')).toBe('ok')
+  })
+
+  it('reconnaît un candidat déjà suivi sous un autre libellé', () => {
+    const actors = [{ slug: 'eric-zemmour' }, { slug: 'marine-le-pen' }, { slug: 'dominique-de-villepin' }]
+    expect(sameCandidate(actors, 'Zemmour')?.slug).toBe('eric-zemmour')
+    expect(sameCandidate(actors, 'Éric Zemmour')?.slug).toBe('eric-zemmour')
+    expect(sameCandidate(actors, 'Villepin')?.slug).toBe('dominique-de-villepin')
+    expect(sameCandidate(actors, 'Marion Maréchal-Le Pen')).toBeUndefined()
+    expect(sameCandidate(actors, 'Sarah Knafo')).toBeUndefined()
+    expect(isFullName('Zemmour')).toBe(false)
+    expect(isFullName('Sarah Knafo')).toBe(true)
   })
 })
