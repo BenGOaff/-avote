@@ -529,16 +529,32 @@ main {
 }
 
 /* Renvoi vers la boutique en fin de quiz */
-.shop-nudge {
+.shop-picks {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: var(--s3);
-  justify-content: space-between;
 }
-.shop-nudge p {
+.shop-picks__list {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  flex: 1 1 260px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s2);
+  max-width: 420px;
+}
+.shop-picks__list a {
+  display: block;
+  border: var(--border) solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.shop-picks__list img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* ---------- Cartes ---------- */
@@ -5311,6 +5327,9 @@ details.disclosure > div {
 @media (min-width: 700px) {
   .shop-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .shop-grid--gifts {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 .shop-grid a {

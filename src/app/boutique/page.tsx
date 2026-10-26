@@ -4,6 +4,7 @@ import boutique from '@content/boutique.json'
 import { PageHeader } from '@/components/PageHeader'
 import { UI_COPY } from '@/lib/copy'
 import { LEGAL } from '@/lib/legal'
+import { giftPicks } from '@/components/ShopPicks'
 
 const shop = LEGAL.shop
 const t = UI_COPY.boutique
@@ -33,6 +34,22 @@ export default function BoutiquePage() {
         </p>
         <p>{t.daily}</p>
       </div>
+
+      <section className="section" aria-labelledby="cadeaux">
+        <h2 id="cadeaux" style={{ fontSize: 'var(--h3)' }}>
+          {UI_COPY.boutiqueLink.giftsTitle}
+        </h2>
+        <p>{UI_COPY.boutiqueLink.giftsText}</p>
+        <ul className="shop-grid shop-grid--gifts">
+          {giftPicks('cadeaux').map((a) => (
+            <li key={a.id}>
+              <a href={shop.url} rel="noopener">
+                <img src={`/img/boutique/${a.id}.webp`} alt={a.alt} width={640} height={640} loading="lazy" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <nav className="section" aria-labelledby="rayons">
         <h2 id="rayons" style={{ fontSize: 'var(--h3)' }}>

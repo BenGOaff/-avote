@@ -191,6 +191,9 @@ export const UI_COPY = {
     nav: 'Boutique',
     quiz: 'Tu trouveras de quoi afficher tes opinions, plus ou moins discrètement, dans notre boutique.',
     quizCta: 'Voir la boutique',
+    results: 'Ton résultat reste sur ton téléphone. Tes idées, tu peux les porter : tee-shirts, badges et autocollants dans notre boutique.',
+    giftsTitle: 'À offrir pour Noël',
+    giftsText: 'Pour l’oncle qui refait le monde au dessert, la cousine qui a toujours le dernier mot, ou toi.',
   },
   alertes: {
     pushTitle: 'Sur ce téléphone',

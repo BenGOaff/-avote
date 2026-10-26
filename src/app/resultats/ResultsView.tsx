@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { ShopPicks } from '@/components/ShopPicks'
 import { Fragment, useEffect, useMemo, useState } from 'react'
 import { UI_COPY } from '@/lib/copy'
 import { QUICK_ITEMS, demoCorpus, liveCorpus, questionnaire as set, assertCompatible } from '@/lib/data'
@@ -300,6 +301,8 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
           </Link>
         </section>
       )}
+
+      {!demo && <ShopPicks seed="resultats" text={UI_COPY.boutiqueLink.results} />}
 
       <section className="section" aria-labelledby="bilan">
         <h2 id="bilan">Garder une trace</h2>

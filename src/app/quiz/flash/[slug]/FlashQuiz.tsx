@@ -1,10 +1,10 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import { ShopPicks } from '@/components/ShopPicks'
 import { SharePanel } from '@/components/SharePanel'
 import { cssFamily, fitText, loadImage } from '@/lib/canvas'
 import { UI_COPY } from '@/lib/copy'
-import { LEGAL } from '@/lib/legal'
 import type { FlashQuizFull as Quiz } from '@/lib/flash'
 import { flashResult, type FlashResult } from '@/lib/flash-score'
 import { TARGETS, type ShareTarget } from '@/lib/share'
@@ -271,14 +271,7 @@ export function FlashQuiz({ quiz, url, others }: { quiz: Quiz; url: string; othe
         </div>
       </section>
 
-      {LEGAL.shop.open && (
-        <aside className="shop-nudge card section">
-          <p>{UI_COPY.boutiqueLink.quiz}</p>
-          <Link className="btn btn--secondary" href="/boutique">
-            {UI_COPY.boutiqueLink.quizCta}
-          </Link>
-        </aside>
-      )}
+      <ShopPicks seed={`flash-${quiz.slug}`} />
 
       {others[0] && (
         <Link href={`/quiz/flash/${others[0].slug}`} className="flash-hub__card flash-next">
