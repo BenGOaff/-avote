@@ -63,7 +63,7 @@ export default function CouverturePage() {
         <p>
           Un candidat n’apparaît dans ton classement que si sa position est connue sur au moins la moitié de tes réponses aux sujets débattus. Les autres sont
           affichés à part, sans rang. Les détails sont dans <Link href="/methodologie">la méthode</Link> ; les données brutes, dans{' '}
-          <a href="/donnees.json">donnees.json</a>.
+          <a href="/donnees.json">donnees.json</a> ou, pour un tableur, <a href="/positions.csv">positions.csv</a>.
         </p>
       </div>
 
