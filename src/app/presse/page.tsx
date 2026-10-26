@@ -4,6 +4,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { liveCorpus, questionnaire, QUICK_ITEMS } from '@/lib/data'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { LEGAL, displayEmail } from '@/lib/legal'
+import { OPEN_DATA } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Espace presse : chiffres, méthode, visuels',
@@ -82,7 +83,8 @@ export default function PressPage() {
             <Link href="/corrections">corrections</Link>.
           </li>
           <li>
-            Les données sont ouvertes : questions, positions, citations et liens en un fichier, <a href="/donnees.json">donnees.json</a>, et en tableur, <a href="/positions.csv">positions.csv</a>.
+            Les données sont ouvertes : questions, positions, citations et liens en un fichier, <a href="/donnees.json">donnees.json</a>, et en tableur, <a href="/positions.csv">positions.csv</a>, sous licence{' '}
+            <a href={OPEN_DATA.licenceUrl}>{OPEN_DATA.licence}</a>. Elles sont aussi publiées sur <a href={OPEN_DATA.url}>data.gouv.fr</a>.
           </li>
         </ol>
 

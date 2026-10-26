@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { OPEN_DATA } from '@/lib/site'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
 import { QUICK_ITEMS, itemsByTheme, liveCorpus, questionnaire } from '@/lib/data'
@@ -277,7 +278,8 @@ export default function MethodPage() {
           la phrase. Quand un média a repris la phrase entre guillemets, c’est son article qui sert de source. La source et la
           citation sont affichées sur la fiche de chaque candidat. Le codage automatique peut se tromper sur l’intensité d’une position : si tu vois une
           erreur, signale-la, elle sera corrigée et la correction publiée. <Link href="/sources">Les sources</Link> ·{' '}
-          <Link href="/corrections">Les corrections</Link> · <a href="/donnees.json">Toutes les données (JSON)</a> · <a href="/positions.csv">Les positions (CSV)</a>
+          <Link href="/corrections">Les corrections</Link> · <a href="/donnees.json">Toutes les données (JSON)</a> · <a href="/positions.csv">Les positions (CSV)</a> ·{' '}
+          <a href={OPEN_DATA.url}>Sur data.gouv.fr (licence {OPEN_DATA.licence})</a>
         </p>
 
         <h2 id="casier">Casier et affaires : ce qui est retenu</h2>
