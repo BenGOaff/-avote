@@ -1,8 +1,8 @@
 {
-  "version": "live-202610261332",
+  "version": "live-202610261607",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-26T13:32:06.277Z",
+  "publishedAt": "2026-10-26T16:07:35.427Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -11114,6 +11114,31 @@
         "codedBy": "ia",
         "codedAt": "2026-10-26T10:25:25.183Z",
         "note": "Vote contre la loi qui instaurait une comparution immédiate pour les mineurs de 16 ans et plus et écartait plus souvent l’excuse de minorité. Le texte contient d’autres mesures, d’où deux niveaux possibles."
+      },
+      "tra-14": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "03412372fb977513"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Proposition de loi cosignée : nationalisation temporaire d'une entreprise jugée stratégique, pas un programme général de nationalisations."
+      },
+      "edu-06": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "afb950b2e9689905"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Favorable au service militaire à condition qu'il reste volontaire."
       }
     },
     "karim-bouamrane": {
@@ -13572,11 +13597,18 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          0,
+          1
+        ],
+        "status": "ambigu",
+        "sources": [
+          "7d2594955e7d4933"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Remplace l'assurance chômage par un « CDI universel » avec obligations de formation ou d'activité."
       },
       "tra-06": {
         "set": [
@@ -13754,11 +13786,14 @@
         "codedAt": "2026-10-08T16:12:12.614Z"
       },
       "lib-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "e891dd706f66c686"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:12:12.614Z"
+        "codedAt": "2026-10-26T16:07:35.427Z"
       },
       "dem-01": {
         "missing": true,
@@ -14012,6 +14047,73 @@
         "codedBy": "ia",
         "codedAt": "2026-10-26T10:23:24.342Z",
         "note": "Vote « Contre » l'amendement socialiste créant une contribution sur les successions et donations réservée aux transmissions de plus de 900 000 € (taux de 1 % à 2,5 %). Il refuse donc même une hausse modérée sur les plus gros héritages ; il "
+      },
+      "eco-09": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "c50b487b01c6c9e6"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Baisse ciblée sur les fonctions administratives centrales, avec redéploiement vers le terrain."
+      },
+      "tra-09": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "efe0b30c6fd3e179"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Pension pouvant baisser selon le rapport actifs/retraités ; en 2024, il voulait des retraites suivant l'inflation."
+      },
+      "edu-06": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "e3f200c0de810431"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Service civique obligatoire, modulable ; pas un service militaire."
+      },
+      "imm-06": {
+        "value": 1,
+        "status": "explicite",
+        "sources": [
+          "5dee8a9c447cd460"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Limitation, sans suspension ni chiffre."
+      },
+      "cli-07": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "2a8a915b3770ae90"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Il défend la poursuite des projets éoliens en assumant leur impact."
       }
     },
     "raphael-glucksmann": {
@@ -14822,12 +14924,12 @@
         ],
         "status": "ambigu",
         "sources": [
-          "308a6d0d1b0f05f7"
+          "a16c2bebec0ddbbe"
         ],
         "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T17:44:58.610Z",
-        "note": "Une dose de proportionnelle seulement, pas un scrutin entièrement proportionnel."
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Une dose de proportionnelle, pas une élection de tous les députés à la proportionnelle."
       },
       "dem-03": {
         "set": [
@@ -15023,6 +15125,17 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T09:35:32.589Z",
         "note": "Lettre aux Français (PDF officiel, 15 juillet 2026). La répartition « seule » juste ; la capitalisation n’est pas nommée."
+      },
+      "eur-07": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "064cf88c37f213ef"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T16:07:35.427Z",
+        "note": "Soutien à des achats de défense européens au profit de l'Ukraine."
       }
     },
     "xavier-bertrand": {
@@ -32230,6 +32343,90 @@
       "url": "https://lafrancehumaniste.fr/articles/sante-et-environnement.html",
       "date": "2025-08-27",
       "passage": "conditionnant l’attribution de bourses exceptionnelles aux étudiants en médecine à un engagement d’exercice dans les territoires les plus en crise."
+    },
+    {
+      "id": "a16c2bebec0ddbbe",
+      "title": "Aux Français — Lettre de Bernard Cazeneuve",
+      "publisher": "La Convention",
+      "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf?1784151599=",
+      "date": "2026-07-15",
+      "passage": "Introduire une dose de proportionnelle dans le mode de scrutin législatif y contribuerait utilement."
+    },
+    {
+      "id": "064cf88c37f213ef",
+      "title": "Discours de Bernard Cazeneuve — Convention du 10 mars 2024",
+      "publisher": "La Convention",
+      "url": "https://assets.nationbuilder.com/laconvention/pages/348/attachments/original/1725484797/Discours-Convention-10-MARS-def.pdf?1725484797=",
+      "date": "2024-03-10",
+      "passage": "C’est assumer l’ambition d’une véritable politique industrielle de défense : un fonds européen de défense puissant, des mécanismes d’achat groupé, et d’abord au profit de l’Ukraine."
+    },
+    {
+      "id": "03412372fb977513",
+      "title": "Proposition de loi n° 976 visant à la nationalisation temporaire de Vencorex",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/PIONANR5L17B0976.html",
+      "date": "2025-02-18",
+      "passage": "La solution de la nationalisation temporaire et stratégique constitue la piste la plus solide de sauvegarde des activités de Vencorex et deux plateformes chimiques du bassin grenoblois."
+    },
+    {
+      "id": "afb950b2e9689905",
+      "title": "Rapport d'information n° 2580, commission de la défense",
+      "publisher": "Assemblée nationale",
+      "url": "https://questions.assemblee-nationale.fr/dyn/opendata/RINFANR5L17B2580.html",
+      "date": "2025-12-03",
+      "passage": "Ensuite, je suis très favorable au service militaire volontaire à partir du moment où il n’est pas obligatoire."
+    },
+    {
+      "id": "c50b487b01c6c9e6",
+      "title": "Refaire Nation : les chemins d'une cohésion retrouvée",
+      "publisher": "Olivier Becht",
+      "url": "https://becht2024.fr/wp-content/uploads/2026/08/Rapport-Amenagement-du-territoire-_-Olivier-Becht.pdf",
+      "date": "2026-08",
+      "passage": "À terme, la réduction des effectifs dans les fonctions administratives centrales est un objectif assumé"
+    },
+    {
+      "id": "7d2594955e7d4933",
+      "title": "Un nouveau modèle social",
+      "publisher": "Olivier Becht (site de campagne)",
+      "url": "https://becht2027.fr/chapitre/partie-5/",
+      "passage": "Sans poste, le salaire de base est maintenu, mais la personne doit alors se former, ou, si l’emploi tarde malgré tout, consacrer vingt-cinq heures par semaine au service d’une collectivité ou d’une association."
+    },
+    {
+      "id": "efe0b30c6fd3e179",
+      "title": "Un nouveau modèle social",
+      "publisher": "Olivier Becht (site de campagne)",
+      "url": "https://becht2027.fr/chapitre/partie-5/",
+      "passage": "La pension dépend chaque mois du rapport entre actifs et retraités, augmentant quand le pays travaille davantage, baissant dans le cas contraire."
+    },
+    {
+      "id": "e3f200c0de810431",
+      "title": "Refaire Nation : les chemins d'une cohésion retrouvée",
+      "publisher": "Olivier Becht",
+      "url": "https://becht2024.fr/wp-content/uploads/2026/08/Rapport-Amenagement-du-territoire-_-Olivier-Becht.pdf",
+      "date": "2026-08",
+      "passage": "Renforcer le service civique obligatoire, en lui donnant une dimension de brassage social et territorial explicite"
+    },
+    {
+      "id": "5dee8a9c447cd460",
+      "title": "Un nouveau modèle de sécurité",
+      "publisher": "Olivier Becht (site de campagne)",
+      "url": "https://becht2027.fr/chapitre/partie-7/",
+      "passage": "Les titres de vie familiale seront encadrés, le regroupement familial limité hors Union européenne."
+    },
+    {
+      "id": "e891dd706f66c686",
+      "title": "Un nouveau modèle de sécurité",
+      "publisher": "Olivier Becht (site de campagne)",
+      "url": "https://becht2027.fr/chapitre/partie-7/",
+      "passage": "Nous imposerons que les tenues portées au nom de la religion dans l’espace public soient compatibles avec les valeurs et coutumes de la République."
+    },
+    {
+      "id": "2a8a915b3770ae90",
+      "title": "Rapport n° 631, commission du développement durable",
+      "publisher": "Assemblée nationale",
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B0631.html",
+      "date": "2024-11-27",
+      "passage": "La réalisation d’un projet public, notamment l’installation de panneaux solaires ou d’éoliennes, a un impact négatif sur l’environnement même si l’on essaie de préserver la biodiversité ; il faut l’assumer."
     }
   ],
   "refreshedAt": {
@@ -32245,14 +32442,14 @@
     "fabien-roussel": "2026-10-10T08:49:32.693Z",
     "marine-tondelier": "2026-10-10T08:49:32.693Z",
     "francois-ruffin": "2026-10-10T08:49:32.693Z",
-    "delphine-batho": "2026-10-26T10:25:25.183Z",
+    "delphine-batho": "2026-10-26T16:07:35.427Z",
     "karim-bouamrane": "2026-10-10T08:49:32.693Z",
     "nathalie-arthaud": "2026-10-10T08:49:32.693Z",
     "anasse-kazib": "2026-10-26T13:32:06.277Z",
     "selma-labib": "2026-10-26T10:23:24.342Z",
-    "olivier-becht": "2026-10-26T10:23:24.342Z",
+    "olivier-becht": "2026-10-26T16:07:35.427Z",
     "raphael-glucksmann": "2026-10-10T08:49:32.693Z",
-    "bernard-cazeneuve": "2026-10-10T09:35:32.589Z",
+    "bernard-cazeneuve": "2026-10-26T16:07:35.427Z",
     "xavier-bertrand": "2026-10-26T10:23:24.342Z",
     "olivier-faure": "2026-10-10T08:49:32.693Z",
     "emmanuel-maurel": "2026-10-10T08:49:32.693Z",

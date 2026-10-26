@@ -12047,5 +12047,85 @@
     "from": "inconnue",
     "to": "[0,1]",
     "source": "b23c800d390dbc74"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "bernard-cazeneuve",
+    "item": "eur-07",
+    "from": "inconnue",
+    "to": "1",
+    "source": "064cf88c37f213ef"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "delphine-batho",
+    "item": "tra-14",
+    "from": "inconnue",
+    "to": "1",
+    "source": "03412372fb977513"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "delphine-batho",
+    "item": "edu-06",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "afb950b2e9689905"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "olivier-becht",
+    "item": "eco-09",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "c50b487b01c6c9e6"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "olivier-becht",
+    "item": "tra-05",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "7d2594955e7d4933"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "olivier-becht",
+    "item": "tra-09",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "efe0b30c6fd3e179"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "olivier-becht",
+    "item": "edu-06",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "e3f200c0de810431"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "olivier-becht",
+    "item": "imm-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "5dee8a9c447cd460"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "olivier-becht",
+    "item": "lib-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "e891dd706f66c686"
+  },
+  {
+    "date": "2026-10-26T16:07:35.427Z",
+    "actor": "olivier-becht",
+    "item": "cli-07",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "2a8a915b3770ae90"
   }
 ]
