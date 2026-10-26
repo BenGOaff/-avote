@@ -322,6 +322,18 @@ for (const p of partis.partis) {
   if (all.some(badSrc)) errors.push(`partis : ${p.slug} contient un champ sans source valable`)
 }
 
+// Comprendre la politique : chaque source https (jamais Wikipédia) avec son extrait ; descriptions courtes
+const comprendre = JSON.parse(readFileSync(path.join(ROOT, 'content/comprendre/chapitres.json'), 'utf8')) as {
+  chapters: { slug: string; description: string; sources: Src[]; anecdotes: { source: Src }[] }[]
+}
+const chapSlugs = new Set<string>()
+for (const c of comprendre.chapters) {
+  if (chapSlugs.has(c.slug)) errors.push(`comprendre : ${c.slug} en double`)
+  chapSlugs.add(c.slug)
+  if (!c.description || c.description.length > 160) errors.push(`comprendre : ${c.slug} description absente ou trop longue`)
+  if ([...c.sources, ...c.anecdotes.map((a) => a.source)].some(badSrc) || c.sources.length === 0) errors.push(`comprendre : ${c.slug} contient une source non valable`)
+}
+
 // Patrimoine déclaré : source https, extrait, candidat connu
 const patrimoine = JSON.parse(readFileSync(path.join(ROOT, 'content/acteurs/patrimoine.json'), 'utf8')) as { entries: Record<string, { amount: number; quote: string; url: string; label: string }> }
 for (const [slug, e] of Object.entries(patrimoine.entries)) {

@@ -26,6 +26,7 @@ export const SECTIONS: NavSection[] = [
       { href: '/test', label: 'Le test', desc: `${QUESTION_COUNT} questions, tes priorités, tes lignes rouges.` },
       { href: '/resultats', label: 'Mes résultats', desc: 'Ta proximité avec chaque candidat, question par question.' },
       { href: '/comparatif-tests', label: 'Les tests comparés', desc: 'Les autres quiz 2027 passés à la même grille, le nôtre compris.' },
+      { href: '/comprendre', label: 'Comprendre la politique', desc: 'Gauche, droite, extrêmes, partis, grands moments : l’essentiel, sourcé.' },
       { href: '/lexique', label: 'Le lexique', desc: '49.3, RIC, AME, CSG… les mots du test expliqués simplement.' },
       { href: '/voter', label: 'Voter en 2027', desc: 'Dates, inscription, procuration, pièce d’identité : le mode d’emploi.' },
       { href: '/urne', label: 'L’urne', desc: 'Tu sais pour qui tu votes ? Glisse ton bulletin, anonyme.' },
