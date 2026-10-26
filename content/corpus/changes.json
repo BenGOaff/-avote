@@ -12127,5 +12127,45 @@
     "from": "inconnue",
     "to": "[-1,-2]",
     "source": "2a8a915b3770ae90"
+  },
+  {
+    "date": "2026-10-26T17:41:49.265Z",
+    "actor": "juan-branco",
+    "item": "eco-09",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "8647a714dd098a06"
+  },
+  {
+    "date": "2026-10-26T17:41:49.265Z",
+    "actor": "juan-branco",
+    "item": "cli-06",
+    "from": "inconnue",
+    "to": "1",
+    "source": "8bd039f8b5d619de"
+  },
+  {
+    "date": "2026-10-26T17:41:49.265Z",
+    "actor": "juan-branco",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "f4313d0cafa38aae"
+  },
+  {
+    "date": "2026-10-26T17:41:49.265Z",
+    "actor": "juan-branco",
+    "item": "eco-01",
+    "from": "inconnue",
+    "to": "1",
+    "source": "a693b1d2cb84df36"
+  },
+  {
+    "date": "2026-10-26T17:41:51.519Z",
+    "actor": "karim-bouamrane",
+    "item": "eur-09",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "233ae8a0b815b71d"
   }
 ]

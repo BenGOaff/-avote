@@ -91,6 +91,8 @@ export interface CorpusSource {
   url: string | null
   date?: string
   passage?: string
+  /** Copie archive.org où le passage a été retrouvé (content/corpus/archives.json) */
+  archive?: string
 }
 
 export interface Actor {

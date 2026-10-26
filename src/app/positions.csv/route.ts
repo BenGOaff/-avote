@@ -25,6 +25,7 @@ interface Source {
   url?: string
   date?: string
   passage?: string
+  archive?: string
 }
 
 const COLUMNS = [
@@ -42,6 +43,7 @@ const COLUMNS = [
   'source_editeur',
   'source_url',
   'source_date',
+  'source_archive',
   'note',
   'code_par',
   'code_le',
@@ -80,6 +82,7 @@ export function GET() {
           join((s) => s.publisher),
           join((s) => s.url),
           join((s) => s.date),
+          join((s) => s.archive),
           p.note,
           p.codedBy,
           p.codedAt?.slice(0, 10),

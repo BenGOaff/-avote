@@ -213,6 +213,14 @@ export default async function ActorPage({ params }: { params: Promise<{ slug: st
                               {src.publisher} — {src.title}
                             </a>
                             {src.date && `, ${src.date}`}
+                            {src.archive && (
+                              <>
+                                {' · '}
+                                <a href={src.archive} rel="noopener noreferrer nofollow" target="_blank">
+                                  copie archivée
+                                </a>
+                              </>
+                            )}
                           </p>
                           {'note' in p && p.note && <p className="hint" style={{ margin: 'var(--s1) 0 0' }}>{p.note}</p>}
                         </details>
