@@ -1,4 +1,45 @@
 {
  "_note": "Copies archive.org des sources du référentiel, rangées par adresse. Une copie n’est retenue que si le passage cité y figure mot pour mot (scripts/archives.ts).",
- "pages": {}
+ "pages": {
+  "https://actu.orange.fr/politique/fin-de-vie-edouard-philippe-se-confie-sur-son-parcours-personnel-sans-etre-pour-une-inscription-dans-la-loi-magic-CNT000002hd3Ip.html": {
+   "archive": "https://web.archive.org/web/20260920174351/https://actu.orange.fr/politique/fin-de-vie-edouard-philippe-se-confie-sur-son-parcours-personnel-sans-etre-pour-une-inscription-dans-la-loi-magic-CNT000002hd3Ip.html",
+   "at": "2026-10-26"
+  },
+  "https://fr.euronews.com/2026/08/21/a-mayotte-edouard-philippe-place-limmigration-au-coeur-de-sa-campagne-pour-2027": {
+   "archive": "https://web.archive.org/web/20261026174616/https://fr.euronews.com/2026/08/21/a-mayotte-edouard-philippe-place-limmigration-au-coeur-de-sa-campagne-pour-2027",
+   "at": "2026-10-26"
+  },
+  "https://lcp.fr/actualites/chomage-edouard-philippe-veut-abaisser-la-duree-d-indemnisation-a-douze-mois-maximum": {
+   "archive": "https://web.archive.org/web/20260911130215/https://lcp.fr/actualites/chomage-edouard-philippe-veut-abaisser-la-duree-d-indemnisation-a-douze-mois-maximum",
+   "at": "2026-10-26"
+  },
+  "https://lcp.fr/actualites/presidentielle-salaires-des-enseignants-sanctions-pour-les-parents-ce-que-propose": {
+   "archive": "https://web.archive.org/web/20260910063506/https://lcp.fr/actualites/presidentielle-salaires-des-enseignants-sanctions-pour-les-parents-ce-que-propose",
+   "at": "2026-10-26"
+  },
+  "https://lcp.fr/actualites/retraites-edouard-philippe-veut-porter-l-age-de-depart-a-65-ans-et-la-duree-de": {
+   "archive": "https://web.archive.org/web/20261022204849/https://lcp.fr/actualites/retraites-edouard-philippe-veut-porter-l-age-de-depart-a-65-ans-et-la-duree-de",
+   "at": "2026-10-26"
+  },
+  "https://monvote2027.fr/candidat/philippe": {
+   "tried": "2026-10-26",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante": {
+   "tried": "2026-10-26",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere": {
+   "archive": "https://web.archive.org/web/20261025024845/https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+   "at": "2026-10-26"
+  },
+  "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure": {
+   "tried": "2026-10-26",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.europe1.fr/politique/le-referendum-dinitiative-citoyenne-ca-me-herisse-declare-edouard-philippe-3845711": {
+   "tried": "2026-10-26",
+   "reason": "passage introuvable dans la copie"
+  }
+ }
 }
