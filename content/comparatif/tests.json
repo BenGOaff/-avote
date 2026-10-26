@@ -35,7 +35,7 @@
     "trackers": "Google Analytics seulement après consentement, coupé pendant le test, les résultats et le duel"
    },
    "open": {
-    "data": "questions, positions, citations et liens dans /donnees.json",
+    "data": "questions, positions, citations et liens dans /donnees.json et /positions.csv, sous licence ODbL, aussi sur data.gouv.fr",
     "code": "non publié"
    },
    "updated": "positions mises à jour chaque semaine",

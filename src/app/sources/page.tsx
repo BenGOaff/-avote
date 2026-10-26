@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '@/components/PageHeader'
+import { OPEN_DATA } from '@/lib/site'
 import { getArticles, getBriefs } from '@/lib/content'
 import { getAnnouncedActors } from '@/lib/actors'
 
@@ -34,7 +35,9 @@ export default function SourcesPage() {
             Télécharger toutes les données (JSON)
           </a>{' '}
           : questions, positions des candidats avec leur citation et leur source, faits officiels. Pour vérifier, recalculer ou réutiliser. Version tableur, une
-          ligne par position : <a href="/positions.csv" download="cavote-positions.csv">positions.csv</a>.
+          ligne par position : <a href="/positions.csv" download="cavote-positions.csv">positions.csv</a>. Licence{' '}
+          <a href={OPEN_DATA.licenceUrl}>{OPEN_DATA.licence}</a> : libre réutilisation en citant Ça vote ?, et une base qui les reprend reste ouverte. Aussi sur{' '}
+          <a href={OPEN_DATA.url}>data.gouv.fr</a>.
         </p>
         <p className="small muted">
           Un programme établit ce qu’un candidat propose ; il ne prouve pas que la mesure est financée ou réalisable. Une statistique officielle renseigne un fait

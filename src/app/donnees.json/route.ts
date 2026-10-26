@@ -4,6 +4,7 @@
  */
 import { liveCorpus, questionnaire } from '@/lib/data'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
+import { OPEN_DATA } from '@/lib/site'
 import faits from '@content/questionnaire/faits.json'
 
 export const dynamic = 'force-static'
@@ -12,6 +13,8 @@ export function GET() {
   const body = {
     _note:
       'Ça vote ? — questions du test, positions documentées des candidats (avec citation et source) et faits officiels. Une position absente est une position non documentée, pas un avis intermédiaire. Méthode : /methodologie.',
+    licence: `${OPEN_DATA.licence} 1.0 (${OPEN_DATA.licenceUrl}), en citant Ça vote ?`,
+    data_gouv: OPEN_DATA.url,
     methode: ENGINE_CONFIG.version,
     questionnaire,
     faits: (faits as { items: unknown }).items,
