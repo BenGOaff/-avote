@@ -14,6 +14,7 @@ import { faitsOf } from '@/lib/faits'
 import { setAudiencePaused } from '@/lib/consent'
 import { ENGINE_CONFIG } from '@/lib/engine/config'
 import { IconArrowLeft, IconCheck } from '@/components/Icons'
+import { SwipeCard } from '@/components/SwipeCard'
 import { ThemeIcon } from '@/components/ThemeIcon'
 import { Coin } from '@/components/Viz'
 import { TokenBoard } from './TokenBoard'
@@ -232,6 +233,8 @@ export function TestFlow({ corpusVersion }: { corpusVersion?: string } = {}) {
         </div>
         <Chapters current={themeIndex} />
 
+        {quick && <p className="small muted swipe__hint">{UI_COPY.test.swipeHint}</p>}
+        <SwipeWrap quick={quick} itemId={item.id} onAnswer={(v) => go({ kind: 'value', value: v }, true)}>
         <article className="qcard" key={item.id}>
           <p className="qcard__theme">
             <ThemeIcon theme={group.theme.id} width={22} height={22} />
@@ -296,6 +299,7 @@ export function TestFlow({ corpusVersion }: { corpusVersion?: string } = {}) {
             </div>
           </div>
         </article>
+        </SwipeWrap>
 
         {current?.kind === 'depends' && (
           <div className="field" style={{ marginTop: 'var(--s4)' }}>
@@ -655,5 +659,15 @@ function DriftNotice({ d }: { d: ResultDrift }) {
         {t.driftCta}
       </Link>
     </div>
+  )
+}
+
+/** Test rapide : la carte se fait glisser ; version complète : la carte reste fixe */
+function SwipeWrap({ quick, itemId, onAnswer, children }: { quick: boolean; itemId: string; onAnswer: (v: Ordinal) => void; children: React.ReactNode }) {
+  if (!quick) return <>{children}</>
+  return (
+    <SwipeCard key={itemId} onAnswer={onAnswer}>
+      {children}
+    </SwipeCard>
   )
 }

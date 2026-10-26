@@ -203,7 +203,9 @@ export function ResultsView({ media = {} }: { media?: Record<string, ActorMedia>
                 <summary>
                   {R.notDocumentedTitle} ({ranking.entries.length - ranking.rankedCount})
                 </summary>
-                <p className="small muted">{R.notDocumentedWhy}</p>
+                <p className="small muted">
+                  {R.notDocumentedWhy} <Link href="/couverture">{R.coverageLink}</Link>
+                </p>
                 <ol className="rank">
                   {ranking.entries.slice(ranking.rankedCount).map((e) => (
                     <ActorResult
@@ -517,7 +519,9 @@ function Podium({ entries, demo, media }: { entries: RankingEntry[]; demo: boole
             <div key={e.slug} role="listitem" className={`podium__col podium__col--${rank}`} aria-label={`${rank}e : ${e.name}, ${fmt(score)} sur 100`}>
               <Portrait src={media[e.slug]?.portrait ?? null} name={e.name} bloc={bloc} size={rank === 1 ? 96 : 72} />
               <span className="podium__name">{e.name}</span>
-              <span className="podium__score">{fmt(score)}</span>
+              <span className="podium__score">
+                <CountUp value={score} delay={rank === 1 ? 950 : rank === 2 ? 450 : 0} />
+              </span>
               <span className="podium__bar" style={{ height: `${30 + score * 1.1}px` }}>
                 <span className="podium__rank">{rank}</span>
               </span>
@@ -864,4 +868,23 @@ function downloadBilan(state: LocalVoterState, entries: RankingEntry[], corpus: 
   a.download = 'ca-vote-mon-bilan.txt'
   a.click()
   setTimeout(() => URL.revokeObjectURL(url), 1000)
+}
+
+/** Le score monte de 0 à sa valeur au moment où sa colonne apparaît ; valeur directe si l'appareil demande moins de mouvement */
+function CountUp({ value, delay }: { value: number; delay: number }) {
+  const [shown, setShown] = useState(value)
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    let raf = 0
+    const t0 = performance.now() + delay
+    const tick = (t: number) => {
+      const p = Math.min(1, Math.max(0, (t - t0) / 900))
+      setShown(value * (1 - Math.pow(1 - p, 3)))
+      if (p < 1) raf = requestAnimationFrame(tick)
+    }
+    setShown(0)
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [value, delay])
+  return <>{fmt(shown)}</>
 }

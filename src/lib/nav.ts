@@ -82,6 +82,7 @@ export const SECTIONS: NavSection[] = [
       { href: '/le-projet', label: 'Le projet', desc: 'Pourquoi ce site existe, qui paie, ce qu’on ne fait pas.' },
       { href: '/methodologie', label: 'Méthode', desc: 'Questions, codage, formules et limites.' },
       { href: '/sources', label: 'Sources', desc: 'D’où viennent les positions et les faits.' },
+      { href: '/couverture', label: 'Couverture', desc: 'Ce qu’on sait de chaque candidat, thème par thème, et ce qui manque.' },
       { href: '/corrections', label: 'Corrections', desc: 'Ce qui était faux et ce qui a changé.' },
       { href: '/independance', label: 'Indépendance', desc: 'Qui finance, qui décide.' },
       { href: '/presse', label: 'Presse', desc: 'Chiffres du jour, méthode, visuels, contact.' },
