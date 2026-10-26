@@ -3,6 +3,7 @@
  * Échoue si un fichier est invalide : la PR ne doit pas être fusionnée.
  */
 import { AGENDA_KINDS, quoteStatesDate } from './agenda-lib'
+import { isRefusedSource } from './veille-lib'
 import { readdirSync, readFileSync, existsSync } from 'node:fs'
 import { execSync } from 'node:child_process'
 import path from 'node:path'
@@ -76,13 +77,18 @@ for (const name of ['demo', 'live']) {
     sources?: { id: string; url: string | null }[]
   }
   const sourceIds = new Set((c.sources ?? []).map((s) => s.id))
+  const sourceUrl = new Map((c.sources ?? []).map((s) => [s.id, s.url]))
   if (c.questionSet !== q.version) errors.push(`corpus ${name} : version de questions ${c.questionSet} ≠ ${q.version}`)
   for (const [actor, pos] of Object.entries(c.positions)) {
     if (!c.actors.some((a) => a.slug === actor)) errors.push(`corpus ${name} : acteur inconnu ${actor}`)
     for (const [item, p] of Object.entries(pos)) {
       if (!ids.has(item)) errors.push(`corpus ${name} : question inconnue ${item}`)
       if (!p.missing && (!p.sources || p.sources.length === 0)) errors.push(`corpus ${name} : ${actor}/${item} sans source`)
-      for (const s of p.sources ?? []) if (!sourceIds.has(s)) errors.push(`corpus ${name} : ${actor}/${item} source inconnue ${s}`)
+      for (const s of p.sources ?? []) {
+        if (!sourceIds.has(s)) errors.push(`corpus ${name} : ${actor}/${item} source inconnue ${s}`)
+        const url = sourceUrl.get(s)
+        if (!p.missing && url && isRefusedSource(url)) errors.push(`corpus ${name} : ${actor}/${item} source refusée (comparateur ou encyclopédie) ${url}`)
+      }
     }
   }
 }

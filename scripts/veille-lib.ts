@@ -112,6 +112,19 @@ export function normalizeForMatch(s: string): string {
 }
 
 /** Une citation doit figurer mot pour mot (à la normalisation près) dans le texte source. */
+/**
+ * Sources refusées pour une position : encyclopédies collaboratives et autres tests ou comparateurs électoraux.
+ * Leur page peut reproduire une phrase du candidat, mais la preuve doit venir du candidat, de son parti ou d'un média.
+ */
+const REFUSED_HOSTS = /(^|\.)(wikipedia\.org|monvote2027\.fr|votons-2027\.fr|quizz-du-berger\.com|candidator\.fr|elyseescope\.fr|swipeyourpresident\.com|voxe\.org)$/i
+export function isRefusedSource(u: string): boolean {
+  try {
+    return REFUSED_HOSTS.test(new URL(u).hostname)
+  } catch {
+    return true
+  }
+}
+
 export function quoteIsInSource(quote: string, source: string): boolean {
   const q = normalizeForMatch(quote)
   return q.length >= 12 && normalizeForMatch(source).includes(q)

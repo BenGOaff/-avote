@@ -1,8 +1,8 @@
 {
-  "version": "live-202610261741",
+  "version": "live-202610261752",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-26T17:41:51.519Z",
+  "publishedAt": "2026-10-26T17:52:52.781Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -596,18 +596,11 @@
         "codedAt": "2026-10-08T14:44:37.471Z"
       },
       "dem-01": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "60e5e7745cfbc30b"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z",
-        "note": "Déclaration du candidat depuis 2024, mais lue sur un agrégateur. La source d'origine (France 24/AFP) n'a pas pu être ouverte (url_not_allowed) : citation à vérifier à la source. Il s'oppose à la proportionnelle parce qu'elle conduirait à un"
+        "missing": true,
+        "status": "inconnu",
+        "note": "Retirée : la seule source était un autre test électoral, et la phrase n’a pas été retrouvée sur les pages du candidat.",
+        "codedBy": "redaction",
+        "codedAt": "2026-10-26T17:52:26.966Z"
       },
       "dem-02": {
         "set": [
@@ -1980,18 +1973,11 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "cli-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "03c925f684d6246a"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z",
-        "note": "Mesure du programme 2027 reproduite par un site tiers. Le document source officiel (republicains.fr/qrtravail/) n'a pas pu être ouvert : il faut vérifier mot pour mot. Position clairement favorable, mais la commande de huit EPR2 supplémenta"
+        "missing": true,
+        "status": "inconnu",
+        "note": "Retirée : la seule source était un autre test électoral, et la phrase n’a pas été retrouvée sur les pages du candidat.",
+        "codedBy": "redaction",
+        "codedAt": "2026-10-26T17:52:26.966Z"
       },
       "cli-02": {
         "missing": true,
@@ -2026,15 +2012,11 @@
         "codedAt": "2026-10-08T14:55:16.338Z"
       },
       "cli-06": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "65d206f2e532586b"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T14:55:16.338Z",
-        "note": "Mesure catégorique portant sur une norme environnementale (sols). Même page : « elle n'imposera jamais plus que ce que l'Europe exige » ; suppression du principe de précaution de la Charte de l'environnement. Propos directs du candidat (Ple"
+        "missing": true,
+        "status": "inconnu",
+        "note": "Retirée : la seule source était un autre test électoral, et la phrase n’a pas été retrouvée sur les pages du candidat.",
+        "codedBy": "redaction",
+        "codedAt": "2026-10-26T17:52:26.966Z"
       },
       "eur-01": {
         "missing": true,
@@ -16555,6 +16537,16 @@
         "codedBy": "ia",
         "codedAt": "2026-10-26T10:23:24.342Z",
         "note": "Critique du transfert de pouvoirs aux régions, dont il propose la « suppression pure et simple » (discours de rentrée du 30/09/2026) ainsi que la division par deux des conseillers départementaux. Pas -2 strict : le programme 2022 relève les"
+      },
+      "imm-07": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "334d1e2885917584"
+        ],
+        "basis": "programme-2022",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T17:52:52.781Z"
       }
     },
     "juan-branco": {
@@ -21855,14 +21847,6 @@
       "passage": "Lancer une nouvelle LPM de la massification, au-delà de la LPM actuelle qui épaissit les armées sans les étendre."
     },
     {
-      "id": "60e5e7745cfbc30b",
-      "title": "Édouard Philippe : programme et positions · Présidentielle 2027 - MonVote2027",
-      "publisher": "MonVote2027 (reprend une dépêche AFP/France 24 du 22/05/2025)",
-      "url": "https://monvote2027.fr/candidat/philippe",
-      "date": "2025-05-22",
-      "passage": "Le scrutin proportionnel a plus de chance de perpétuer ce que nous voyons aujourd'hui, c'est-à-dire une absence de majorité."
-    },
-    {
       "id": "cb21984680b668b4",
       "title": "\"Le référendum d'initiative citoyenne, ça me hérisse\" : Édouard Philippe s'est lui aussi plié au \"grand débat\" dans les Yvelines",
       "publisher": "Europe 1 (avec AFP)",
@@ -22045,26 +22029,12 @@
       "passage": "Et la suppression de 15 milliards d’euros de cotisations patronales finançant des dépenses universelles qui bénéficient à toute la nation (famille, logement social, transport public local) — est la réforme de structure la plus évidente"
     },
     {
-      "id": "03c925f684d6246a",
-      "title": "Programme de Bruno Retailleau — le projet complet · Présidentielle 2027",
-      "publisher": "Votons (votons-2027.fr), d'après republicains.fr/qrtravail/",
-      "url": "https://votons-2027.fr/candidats/retailleau/programme",
-      "passage": "Si l'avancement des six premiers réacteurs s'avère satisfaisant, nous confirmerons la commande de huit EPR2 supplémentaires dès les deux premières années du mandat."
-    },
-    {
       "id": "c6168c7a87690118",
       "title": "Présidentielle 2027 : Bruno Retailleau défend le stockage de l’eau et la réduction des contraintes agricoles",
       "publisher": "Pleinchamp (avec AFP)",
       "url": "https://www.pleinchamp.com/actualite/presidentielle-2027-bruno-retailleau-defend-le-stockage-de-l-eau-et-la-reduction-des-contraintes-agricoles",
       "date": "2026-09-21",
       "passage": "Il y en a marre de voir qu’on interdit des molécules, des pratiques aux agriculteurs français et on les importe, finalement, à travers nos frontières."
-    },
-    {
-      "id": "65d206f2e532586b",
-      "title": "Programme de Bruno Retailleau — le projet complet · Présidentielle 2027",
-      "publisher": "Votons (votons-2027.fr), d'après republicains.fr/qrtravail/",
-      "url": "https://votons-2027.fr/candidats/retailleau/programme",
-      "passage": "Le zéro artificialisation nette (ZAN), qu'aucun autre pays européen ne s'impose dans ces conditions, sera supprimé."
     },
     {
       "id": "c9b4378558b61f72",
@@ -32518,6 +32488,14 @@
       "publisher": "Karim Bouamrane 2027",
       "url": "https://www.karimbouamrane2027.org/manifeste.html",
       "passage": "Elle est notre bien commun le plus précieux. La France l'a bâtie. Elle ne la laissera pas fléchir."
+    },
+    {
+      "id": "334d1e2885917584",
+      "title": "Notre programme de libération nationale pour 2022 – 22. Contrôler l'immigration",
+      "publisher": "Union populaire républicaine",
+      "url": "https://upr.fr/notre-programme/programme-2022",
+      "date": "2022-10-27",
+      "passage": "Notre objectif sera de porter à 75% minimum le taux effectif des expulsions, alors que ce taux est actuellement dérisoire (moins de 20%)."
     }
   ],
   "refreshedAt": {
@@ -32546,7 +32524,7 @@
     "emmanuel-maurel": "2026-10-10T08:49:32.693Z",
     "segolene-royal": "2026-10-10T09:49:46.540Z",
     "dominique-de-villepin": "2026-10-26T13:32:06.277Z",
-    "francois-asselineau": "2026-10-26T10:23:24.342Z",
+    "francois-asselineau": "2026-10-26T17:52:52.781Z",
     "juan-branco": "2026-10-26T17:41:49.265Z",
     "emmanuel-dubuisson": "2026-10-10T09:49:46.540Z",
     "francis-lalanne": "2026-10-10T10:31:52.795Z",

@@ -12167,5 +12167,37 @@
     "from": "inconnue",
     "to": "-2",
     "source": "233ae8a0b815b71d"
+  },
+  {
+    "date": "2026-10-26T17:52:26.966Z",
+    "actor": "edouard-philippe",
+    "item": "dem-01",
+    "from": "[-1, -2]",
+    "to": "inconnue",
+    "source": null
+  },
+  {
+    "date": "2026-10-26T17:52:26.966Z",
+    "actor": "bruno-retailleau",
+    "item": "cli-01",
+    "from": "[1, 2]",
+    "to": "inconnue",
+    "source": null
+  },
+  {
+    "date": "2026-10-26T17:52:26.966Z",
+    "actor": "bruno-retailleau",
+    "item": "cli-06",
+    "from": "2",
+    "to": "inconnue",
+    "source": null
+  },
+  {
+    "date": "2026-10-26T17:52:52.781Z",
+    "actor": "francois-asselineau",
+    "item": "imm-07",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "334d1e2885917584"
   }
 ]

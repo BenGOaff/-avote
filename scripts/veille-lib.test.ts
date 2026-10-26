@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { canonicalUrl, isFullName, numbersAreSourced, parseFeed, quoteIsInSource, sameCandidate, styleViolations, stripHtml } from './veille-lib'
+import { canonicalUrl, isFullName, isRefusedSource, numbersAreSourced, parseFeed, quoteIsInSource, sameCandidate, styleViolations, stripHtml } from './veille-lib'
 
 const feed = { id: 'f', name: 'Flux', url: 'https://x', kind: 'media' }
 
@@ -46,5 +46,15 @@ describe('veille', () => {
     expect(sameCandidate(actors, 'Sarah Knafo')).toBeUndefined()
     expect(isFullName('Zemmour')).toBe(false)
     expect(isFullName('Sarah Knafo')).toBe(true)
+  })
+})
+
+describe('isRefusedSource', () => {
+  it('refuse les autres tests électoraux et Wikipédia, pas les sites des candidats', () => {
+    expect(isRefusedSource('https://monvote2027.fr/candidat/philippe')).toBe(true)
+    expect(isRefusedSource('https://votons-2027.fr/candidats/retailleau/programme')).toBe(true)
+    expect(isRefusedSource('https://fr.wikipedia.org/wiki/Test')).toBe(true)
+    expect(isRefusedSource('https://www.avecretailleau.fr/projet/faq')).toBe(false)
+    expect(isRefusedSource('https://www.lutte-ouvriere.org/journal/article/2022-04-06-nathalie-arthaud-la-lutte-de-classe-est-notre-boussole_251898.html')).toBe(false)
   })
 })
