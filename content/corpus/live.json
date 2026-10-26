@@ -1,8 +1,8 @@
 {
-  "version": "live-202610260757",
+  "version": "live-202610260845",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-26T07:57:37.955Z",
+  "publishedAt": "2026-10-26T08:45:24.015Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -215,16 +215,17 @@
       "summary": ""
     },
     {
-      "slug": "zemmour",
-      "name": "Zemmour",
-      "status": "demarche",
-      "summary": ""
-    },
-    {
       "slug": "manolo-mlekuz",
       "name": "Manolo Mlekuz",
       "status": "declare",
       "party": "Trajectoire",
+      "summary": ""
+    },
+    {
+      "slug": "mira-markovic",
+      "name": "Mira Markovic",
+      "status": "declare",
+      "party": "Parti animaliste",
       "summary": ""
     }
   ],
@@ -20222,818 +20223,6 @@
         "codedAt": "2026-10-19T08:00:00.072Z"
       }
     },
-    "zemmour": {
-      "eco-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-04": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "3af05473ddc7a6bc"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z",
-        "note": "Propos du candidat entre guillemets, meeting de Toulon (6 mars 2022), campagne 2022. Engagement ferme de plafonner temporairement le prix des carburants, mais limité à l'énergie et au contexte de la guerre en Ukraine : 1 ou 2 défendables."
-      },
-      "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "La citation trouvée ne porte pas directement sur cette question.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-08": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "a52261371d6a45fe"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z",
-        "note": "Propos du candidat entre guillemets, campagne 2022 (contexte de l'entretien au Figaro du 22/02/2022). Doubler l'abattement par enfant, de 100 000 à 200 000 euros, baisse les droits pour la grande majorité des héritages. Proposition sans rés"
-      },
-      "eco-09": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-10": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-11": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "e0cfdb5d3cf7e43b"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z",
-        "note": "Entretien Europe 1/CNews/Les Echos, campagne 2022. Engagement net à baisser la CSG pour augmenter le salaire net, mais limité aux salaires de moins de 2 000 euros : 1 ou 2."
-      },
-      "eco-12": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eco-13": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-08": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-09": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-10": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-11": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-12": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-13": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-14": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "san-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "san-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "san-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "san-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "san-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "san-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "edu-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "edu-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "edu-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "edu-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "edu-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "edu-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "edu-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-08": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-09": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "cli-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "log-01": {
-        "value": -2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "c5cc500ac3e376e1"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z",
-        "note": "Propos du candidat entre guillemets, dans un entretien sur Europe 1 pendant la campagne présidentielle 2022 (déclaration antérieure à 2024 ; pas de source plus récente cherchée, faute d'outils). Suppression proposée sans condition : -2."
-      },
-      "log-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "log-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "log-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-08": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "lib-09": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "imm-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "e33529d1fad270c6"
-        ],
-        "basis": "programme-2022",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z",
-        "note": "Programme présidentiel 2022 : « Supprimer l’Aide Médicale d’État », cité par l'Institut Montaigne (page source du programme non consultée). Citation : propos du candidat à Béziers le 16 octobre 2021, antérieurs à 2024. Selon l'Institut, l'é"
-      },
-      "imm-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "imm-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "imm-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "imm-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "imm-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "imm-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "cli-01": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "44c2df344a4d4771"
-        ],
-        "basis": "programme-2022",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z",
-        "note": "Texte du programme 2022, cité entre guillemets par l'Institut Montaigne avec un lien vers le programme. La page du programme n'a pas pu être ouverte (url_not_allowed). Engagement chiffré sans condition, d'où +2. Aucune source 2027 consultée"
-      },
-      "cli-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "cli-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "cli-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "cli-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "cli-08": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "cli-09": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-08": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-09": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-10": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "eur-11": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-08": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "ani-09": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "cli-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-07": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-08": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-09": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-10": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-11": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-12": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      },
-      "dem-13": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-21T11:40:59.485Z"
-      }
-    },
     "manolo-mlekuz": {
       "san-01": {
         "missing": true,
@@ -21601,6 +20790,121 @@
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
         "codedAt": "2026-10-26T07:53:24.577Z"
+      }
+    },
+    "mira-markovic": {
+      "ani-01": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "11e4e1b1da7b77b7"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Programme du parti aux européennes 2024. Le communiqué de candidature (2 octobre 2026) cite aussi « la sortie de l’élevage intensif »."
+      },
+      "ani-02": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "0fdb2be337d2fabb"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Le programme national du parti demande aussi de supprimer les dérogations du Code pénal pour les corridas."
+      },
+      "ani-04": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "0e84fe3ac28ef69c"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Le parti demande l’interdiction de toute chasse, chasse à courre comprise."
+      },
+      "ani-06": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "8eeb65c85747d8f0"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Programme national 2022 du parti, sans exception. Le même programme veut supprimer du traité européen toute référence aux rites religieux."
+      },
+      "ani-08": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "7f7994b4755fe20f"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Programme national 2022 du parti. Il prévoit aussi au moins un jour sur deux un repas d’origine végétale."
+      },
+      "cli-03": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "20107d0c50841979"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Programme du parti aux européennes 2024. En juillet 2026, le parti a demandé de rétablir l’interdiction de l’acétamipride."
+      },
+      "cli-06": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "c8882cb7814de306"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Réaction à la loi d’urgence agricole ; porte sur les normes agricoles, rien sur les entreprises."
+      },
+      "dem-01": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "fa7afe015796256e"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Programme national 2022 du parti."
+      },
+      "dem-02": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "d52b15a8b1ebbf38"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Programme national 2022 du parti."
+      },
+      "dem-06": {
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "2fce4502a6e792c0"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T08:45:24.015Z",
+        "note": "Programme national 2022 du parti."
       }
     }
   },
@@ -31636,36 +30940,79 @@
       "passage": "Recruter 6 000 gendarmes et policiers. Ouvrir sur de larges horaires 2 000 bureaux de police et de gendarmerie dans les quartiers et les bourgs. La politique de « sécurité du quotidien » du gouvernement actuel est beaucoup trop timide."
     },
     {
-      "id": "a52261371d6a45fe",
-      "title": "Présidentielle 2022 : pouvoir d’achat, impôts, retraites… Le programme d’Éric Zemmour",
-      "publisher": "Toutsurmesfinances.com",
-      "url": "https://www.toutsurmesfinances.com/argent/a/eric-zemmour-programme",
-      "date": "2022-02-22",
-      "passage": "une franchise pour ne pas payer de droits de transmission, quand il y a un décès, jusqu’à 200.000 euros par enfant"
+      "id": "11e4e1b1da7b77b7",
+      "title": "Pour une agriculture d’avenir (programme des européennes 2024)",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/pour-une-agriculture-davenir",
+      "date": "2024-05-05",
+      "passage": "Interdire l’élevage intensif (sans accès au plein air) et industriel (ICPE – Installations classées pour la protection de l’environnement soumises aux régimes d’enregistrement et d’autorisation) à horizon 2030."
     },
     {
-      "id": "e0cfdb5d3cf7e43b",
-      "title": "Pouvoir d'achat : «Il faut améliorer le salaire net sans toucher au salaire brut», prône Zemmour",
-      "publisher": "Europe 1",
-      "url": "https://www.europe1.fr/politique/pouvoir-dachat-il-faut-ameliorer-le-salaire-net-sans-toucher-au-salaire-brut-prone-zemmour-4094964",
-      "date": "2022-02-20",
-      "passage": "Il faut améliorer le salaire net sans toucher au salaire brut. Je propose la baisse de la CSG pour les salaires de moins de 2.000 euros. Cela permet une augmentation du salaire net de 105 euros par mois"
+      "id": "0fdb2be337d2fabb",
+      "title": "Corrida : le Parti animaliste dénonce la triple impasse d’une pratique à l’agonie",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/news/communique-de-presse/corrida-le-parti-animaliste-denonce-la-triple-impasse-dune-pratique-a-lagonie",
+      "date": "2026-04-17",
+      "passage": "Le Parti animaliste demande l’abolition de la corrida, ainsi que la relaxe des poursuites contre Jeremstar et les militants de PETA."
     },
     {
-      "id": "c5cc500ac3e376e1",
-      "title": "Eric Zemmour veut supprimer la loi SRU, sur les quotas des logements sociaux",
-      "publisher": "Europe 1",
-      "url": "https://www.europe1.fr/politique/eric-zemmour-veut-supprimer-la-loi-sru-sur-les-quotas-des-logements-sociaux-4086305",
-      "date": "2022-01-06",
-      "passage": "Cette loi qui oblige toutes les villes à faire du logement social à 25% essaime l'immigration. C'est pourquoi je propose la suppression de la loi SRU"
+      "id": "0e84fe3ac28ef69c",
+      "title": "Pour une société apaisée (programme des européennes 2024)",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/pour-une-societe-apaisee",
+      "date": "2024-05-05",
+      "passage": "afin de fixer un objectif d’interdiction de la chasse. Interdire toute forme de chasse."
     },
     {
-      "id": "e33529d1fad270c6",
-      "title": "Éric Zemmour | Supprimer l'aide médicale d'État (AME) | Présidentielle 2022",
-      "publisher": "Institut Montaigne",
-      "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/supprimer-laide-medicale-detat-ame/",
-      "date": "2022-02-14",
-      "passage": "Je pense que c’est une des premières mesures à prendre : c’est à dire supprimer l’AME (…) Que l’hôpital français cesse d’être l’hôpital de toute l’Afrique, je pense que ça allégera nos frais!"
+      "id": "8eeb65c85747d8f0",
+      "title": "Programmes – Programme national 2022 du Parti animaliste",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/programme",
+      "passage": "Interdire l’abattage sans étourdissement préalable. Abolir la pratique du gavage"
+    },
+    {
+      "id": "7f7994b4755fe20f",
+      "title": "Programmes – Programme national 2022 du Parti animaliste",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/programme",
+      "passage": "Instaurer une alternative végétale quotidienne à chaque repas, dans l’ensemble de la restauration collective publique et privée."
+    },
+    {
+      "id": "20107d0c50841979",
+      "title": "Pour une terre vivable (programme des européennes 2024)",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/pour-une-terre-vivable",
+      "date": "2024-05-05",
+      "passage": "Exiger la réduction de moitié de l’utilisation des pesticides et produits phytosanitaires conventionnels d’ici à 2030, par rapport à la période 2015-2017."
+    },
+    {
+      "id": "c8882cb7814de306",
+      "title": "Loi d’urgence agricole, une fuite en avant qui ne protège ni les agriculteurs, ni les animaux, ni notre souveraineté",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/news/communique-de-presse/loi-durgence-agricole-une-fuite-en-avant-qui-ne-protege-ni-les-agriculteurs-ni-les-animaux-ni-notre-souverainete",
+      "date": "2026-06-28",
+      "passage": "Ce n’est pas en favorisant l’agrandissement des élevages, l’intensification des productions ou l’affaiblissement des protections environnementales que la situation des agriculteurs s’améliorera."
+    },
+    {
+      "id": "fa7afe015796256e",
+      "title": "Programmes – Programme national 2022 du Parti animaliste",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/programme",
+      "passage": "Garantir le pluralisme politique Instaurer un scrutin proportionnel pour les élections législatives."
+    },
+    {
+      "id": "d52b15a8b1ebbf38",
+      "title": "Programmes – Programme national 2022 du Parti animaliste",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/programme",
+      "passage": "Instaurer le Référendum d’initiative citoyenne – législatif et abrogatoire – (RIC) en toutes matières et notamment pour les questions relatives à la condition animale, avec un seuil d’un million de signatures."
+    },
+    {
+      "id": "2fce4502a6e792c0",
+      "title": "Programmes – Programme national 2022 du Parti animaliste",
+      "publisher": "Parti animaliste",
+      "url": "https://parti-animaliste.fr/programme",
+      "passage": "Reconnaître le vote blanc comme suffrage exprimé. Mettre en place des mesures de transparence"
     }
   ],
   "refreshedAt": {
@@ -31704,7 +31051,7 @@
     "natacha-polony": "2026-10-14T11:44:35.974Z",
     "jean-lassalle": "2026-10-19T07:53:49.487Z",
     "benoit-mathieu": "2026-10-19T08:00:00.072Z",
-    "zemmour": "2026-10-21T11:40:59.485Z",
-    "manolo-mlekuz": "2026-10-26T07:53:24.577Z"
+    "manolo-mlekuz": "2026-10-26T07:53:24.577Z",
+    "mira-markovic": "2026-10-26T08:45:24.015Z"
   }
 }

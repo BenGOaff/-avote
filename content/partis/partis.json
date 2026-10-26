@@ -3402,6 +3402,137 @@
           "publisher": "La France humaine et forte (manifeste de Karim Bouamrane)"
         }
       ]
+    },
+    {
+      "slug": "parti-animaliste",
+      "name": "Parti animaliste",
+      "sigle": "",
+      "nuance": "ANM",
+      "founded": {
+        "date": "2016",
+        "text": "Fondé en 2016, notamment par Mira Markovic, sa candidate à la présidentielle.",
+        "quote": "Mira Douchka Markovic est co-fondatrice du Parti animaliste (2016)",
+        "url": "https://parti-animaliste.fr/bureau",
+        "publisher": "Parti animaliste (site officiel)"
+      },
+      "leaders": [
+        {
+          "name": "Béatrice Canel Dépitre",
+          "role": "coprésidente",
+          "since": ""
+        },
+        {
+          "name": "Mira Markovic",
+          "role": "cofondatrice, coprésidente et porte-parole",
+          "since": ""
+        },
+        {
+          "name": "Eddine Ariztegui",
+          "role": "coprésident et porte-parole",
+          "since": "2024"
+        },
+        {
+          "name": "Jérôme Dumarty",
+          "role": "coprésident",
+          "since": ""
+        },
+        {
+          "name": "Sandra Krief",
+          "role": "coprésidente et porte-parole",
+          "since": "2024"
+        }
+      ],
+      "leadersSource": {
+        "quote": "La présidence est assurée par un collège composé des membres suivants (classés par ordre alphabétique de prénom)",
+        "url": "https://parti-animaliste.fr/bureau",
+        "publisher": "Parti animaliste (site officiel)"
+      },
+      "elus": {
+        "deputes": null,
+        "senateurs": null,
+        "eurodeputes": null,
+        "asOf": "2026-10"
+      },
+      "values": {
+        "text": "Le parti se dit centré sur la seule question animale et « transpartisan » : il s’adresse aux électeurs de tous bords.",
+        "quote": "Le Parti animaliste a pour sa part fait le choix d’être centré sur la question animale, et transpartisan",
+        "url": "https://parti-animaliste.fr/faq",
+        "publisher": "Parti animaliste (site officiel)"
+      },
+      "dates": [
+        {
+          "date": "2016",
+          "text": "Fondation du parti.",
+          "quote": "Mira Douchka Markovic est co-fondatrice du Parti animaliste (2016)",
+          "url": "https://parti-animaliste.fr/bureau",
+          "publisher": "Parti animaliste (site officiel)"
+        },
+        {
+          "date": "2017",
+          "text": "Première élection : 147 candidats aux législatives, 1,1 % en moyenne en métropole.",
+          "quote": "Pour sa première participation à des élections, le Parti animaliste a présenté 147 candidats à l’occasion des élections législatives de 2017. Malgré un budget particulièrement modeste, il a obtenu une moyenne de 1,1 % en métropole",
+          "url": "https://parti-animaliste.fr/faq",
+          "publisher": "Parti animaliste (site officiel)"
+        },
+        {
+          "date": "2019",
+          "text": "Européennes : 2,17 % des voix.",
+          "quote": "créant la surprise avec un score de 2,17 % des voix",
+          "url": "https://parti-animaliste.fr/faq",
+          "publisher": "Parti animaliste (site officiel)"
+        },
+        {
+          "date": "2026-03",
+          "text": "Municipales : 28 élus dans 27 communes, selon le parti.",
+          "quote": "En mars 2026, 28 de ses candidats ont été élus dans 27 communes, de Montpellier au Havre en passant par Grenoble et Marseille.",
+          "url": "https://parti-animaliste.fr/mira-markovic-2027",
+          "publisher": "Parti animaliste (site officiel)"
+        },
+        {
+          "date": "2026-10-02",
+          "text": "Mira Markovic est présentée comme la candidate du parti à l’élection présidentielle.",
+          "quote": "déplore Mira Markovic, la candidate du Parti animaliste",
+          "url": "https://www.cnews.fr/france/2026-10-02/presidentielle-2027-si-nous-ne-sommes-pas-la-personne-ne-parle-des-animaux",
+          "publisher": "CNews"
+        }
+      ],
+      "measures": [
+        {
+          "theme": "climat",
+          "text": "Interdire l’élevage intensif, sans accès au plein air, et l’élevage industriel d’ici 2030.",
+          "quote": "Interdire l’élevage intensif (sans accès au plein air) et industriel",
+          "url": "https://parti-animaliste.fr/pour-une-agriculture-davenir",
+          "publisher": "Parti animaliste (site officiel)"
+        },
+        {
+          "theme": "libertés",
+          "text": "Interdire toute forme de chasse.",
+          "quote": "afin de fixer un objectif d’interdiction de la chasse. Interdire toute forme de chasse.",
+          "url": "https://parti-animaliste.fr/pour-une-societe-apaisee",
+          "publisher": "Parti animaliste (site officiel)"
+        },
+        {
+          "theme": "climat",
+          "text": "Diviser par deux l’usage des pesticides d’ici 2030, par rapport à 2015-2017.",
+          "quote": "Exiger la réduction de moitié de l’utilisation des pesticides et produits phytosanitaires conventionnels d’ici à 2030, par rapport à la période 2015-2017.",
+          "url": "https://parti-animaliste.fr/pour-une-terre-vivable",
+          "publisher": "Parti animaliste (site officiel)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Créer un référendum d’initiative citoyenne en toutes matières, à partir d’un million de signatures.",
+          "quote": "Instaurer le Référendum d’initiative citoyenne – législatif et abrogatoire – (RIC) en toutes matières et notamment pour les questions relatives à la condition animale, avec un seuil d’un million de signatures.",
+          "url": "https://parti-animaliste.fr/programme",
+          "publisher": "Parti animaliste (site officiel)"
+        },
+        {
+          "theme": "démocratie",
+          "text": "Élire les députés à la proportionnelle.",
+          "quote": "Instaurer un scrutin proportionnel pour les élections législatives.",
+          "url": "https://parti-animaliste.fr/programme",
+          "publisher": "Parti animaliste (site officiel)"
+        }
+      ]
     }
   ]
 }
