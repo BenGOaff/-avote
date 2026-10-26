@@ -1,8 +1,8 @@
 {
-  "version": "live-202610261025",
+  "version": "live-202610261332",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-10-26T10:25:25.183Z",
+  "publishedAt": "2026-10-26T13:32:06.277Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -12346,11 +12346,18 @@
         "note": "Programme 2022 défendu par le candidat, renvoyé depuis son site de 2027. Passage du chapitre sur l’accès aux soins des personnes LGBTI ; le programme 2027 demande par ailleurs des « investissements massifs dans les services publics »."
       },
       "tra-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "1620b32d98d0befe"
+        ],
+        "basis": "declaration",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Billet signé Anasse Kazib sur l'école, qui dénonce les suppressions de postes et les classes de 35 élèves ; l'embauche n'est pas limitée aux enseignants."
       },
       "tra-04": {
         "value": 2,
@@ -12414,11 +12421,15 @@
         "note": "Axe 5 des premières mesures 2027 ; même texte dans le dépliant de campagne. Page non datée, consultée le 2026-10-08."
       },
       "eur-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "9cfa997d7b5ba297"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Opposé aux accords de libre-échange, refuse aussi le protectionnisme national."
       },
       "eur-05": {
         "missing": true,
@@ -12495,11 +12506,14 @@
         "codedAt": "2026-10-08T16:02:13.835Z"
       },
       "dem-01": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": 2,
+        "status": "parti-uniquement",
+        "sources": [
+          "48dee4af60848a7a"
+        ],
+        "basis": "parti",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T16:02:13.835Z"
+        "codedAt": "2026-10-26T13:32:06.277Z"
       },
       "dem-02": {
         "missing": true,
@@ -12773,6 +12787,39 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T07:56:33.406Z",
         "note": "Élus révocables d’une assemblée unique ; la procédure (référendum) n’est pas précisée."
+      },
+      "log-01": {
+        "value": 1,
+        "status": "parti-uniquement",
+        "sources": [
+          "93c2f4ea9c821dd8"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Le journal du mouvement dénonce l'affaiblissement de la loi SRU."
+      },
+      "eur-07": {
+        "value": -2,
+        "status": "parti-uniquement",
+        "sources": [
+          "d2f2e6a0b25efd91"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Éditorial de 2024 ; rien de plus récent ne le contredit (« Pas un euro pour la guerre » dans le programme 2027)."
+      },
+      "edu-02": {
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "56be3897a568383f"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Profession de foi des législatives 2024 ; rien de plus récent ne la contredit."
       }
     },
     "selma-labib": {
@@ -15867,6 +15914,69 @@
         "codedBy": "ia",
         "codedAt": "2026-10-26T10:23:24.342Z",
         "note": "Engagement qu'il propose à tous les candidats ; cohérent avec le manifeste européen du 6 mars 2026."
+      },
+      "sec-01": {
+        "value": 1,
+        "status": "declaration-provisoire",
+        "sources": [
+          "d95a064de7a8c76e"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Hausse des effectifs passant par la police municipale ; rien sur la gendarmerie."
+      },
+      "cli-08": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "c0f21dc78c7fd15c"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Proposition 3, « L’électricité au prix du nucléaire français » ; la sortie du marché européen n'est pas formulée."
+      },
+      "dem-02": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "8389a711c2cd5e3d"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T13:32:06.277Z"
+      },
+      "tra-11": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "50b410f18ebb010a"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Il propose de supprimer l'âge légal au profit d'une durée de cotisation."
+      },
+      "san-01": {
+        "set": [
+          0,
+          1
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "b23c800d390dbc74"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-10-26T13:32:06.277Z",
+        "note": "Obligation limitée aux étudiants qui reçoivent ces bourses, pas à tous les médecins."
       }
     },
     "francois-asselineau": {
@@ -32033,6 +32143,93 @@
       "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1624",
       "date": "2025-05-13",
       "passage": "Écologiste et Social (38 membres) Contre : 36 M. Pouria Amirshahi Mme Christine Arrighi Mme Clémentine Autain Mme Léa Balage El Mariky Mme Delphine Batho"
+    },
+    {
+      "id": "93c2f4ea9c821dd8",
+      "title": "Plus d’expulsions, moins de logements sociaux : le Sénat vote la loi CHOC pour s’attaquer aux précaires",
+      "publisher": "Révolution Permanente",
+      "url": "https://www.revolutionpermanente.fr/Plus-d-expulsion-moins-de-logements-sociaux-le-Senat-vote-la-loi-CHOC-pour-s-attaquer-aux-precaires",
+      "date": "2026-01-24",
+      "passage": "Cette proposition de loi, qui s’inscrit dans la continuité des mesures anti-pauvres de Guillaume Kasbarian, marque cependant un cap dans l’offensive contre le logement social à travers un détricotement de la loi SRU."
+    },
+    {
+      "id": "9cfa997d7b5ba297",
+      "title": "Contre l’accord UE-Mercosur, le protectionnisme est une impasse",
+      "publisher": "Révolution Permanente",
+      "url": "https://www.revolutionpermanente.fr/Contre-l-accord-UE-Mercosur-le-protectionnisme-est-une-impasse",
+      "date": "2025-12-16",
+      "passage": "Face aux accords de libre-échange qui mettent en concurrence les travailleurs et favorisent leur exploitation, le mouvement ouvrier doit s’allier aux petits producteurs en lutte contre le Mercosur."
+    },
+    {
+      "id": "d2f2e6a0b25efd91",
+      "title": "Consensus militariste aux européennes : il faut faire entendre une perspective ouvrière contre la guerre",
+      "publisher": "Révolution Permanente",
+      "url": "https://www.revolutionpermanente.fr/Consensus-militariste-aux-europeennes-il-faut-faire-entendre-une-perspective-ouvriere-contre-la",
+      "date": "2024-03-20",
+      "passage": "Face aux politiques militaristes de l’OTAN et aux faux pacifismes, il y a urgence à faire entendre à nouveau le mot d’ordre « ni Poutine, ni Otan », en dénonçant les livraisons d’armes et l’escalade guerrière et en refusant de marcher derrière la défense des prétendus « intérêts nationaux » qui ne sont pas les nôtres."
+    },
+    {
+      "id": "48dee4af60848a7a",
+      "title": "L’État finance les partis des riches : aidons Révolution Permanente à faire entendre une autre voix",
+      "publisher": "Révolution Permanente",
+      "url": "https://www.revolutionpermanente.fr/L-Etat-finance-les-partis-des-riches-aidons-Revolution-Permanente-a-faire-entendre-une-autre-voix",
+      "date": "2025-12-19",
+      "passage": "Pour défendre des élus révocables, payés à salaire d’ouvrier, élu à la proportionnelle, continuez de soutenir Révolution Permanente."
+    },
+    {
+      "id": "56be3897a568383f",
+      "title": "Profession de foi d'Anasse Kazib et Elsa Marcel — Élections législatives 2024",
+      "publisher": "Révolution Permanente",
+      "url": "https://www.revolutionpermanente.fr/IMG/pdf/profession_de_foi_-_profession_de_foi_-_anasse_kazib_3-1-1-2.pdf",
+      "date": "2024-06",
+      "passage": "Non aux groupes de niveaux à l’école et au tri social"
+    },
+    {
+      "id": "1620b32d98d0befe",
+      "title": "Anasse Kazib sur le rapport PISA : « la macronie ose s’indigner après 10 années à détruire l’école »",
+      "publisher": "Révolution Permanente",
+      "url": "https://www.revolutionpermanente.fr/Anasse-Kazib-sur-le-rapport-PISA-la-macronie-ose-s-indigner-apres-10-annees-a-detruire-l-ecole",
+      "date": "2026-09-09",
+      "passage": "La seule manière d’y parvenir, c’est avec un financement massif, des embauches massives, et en s’attaquant aux racines de la pauvreté."
+    },
+    {
+      "id": "d95a064de7a8c76e",
+      "title": "Appel à la paix civile et sociale",
+      "publisher": "La France Humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/appel-paix-civile-sociale.html",
+      "date": "2026-10-21",
+      "passage": "Il faut ensuite augmenter les effectifs opérationnels en contractant avec les communes de plus de 3 500 habitants pour le développement de leurs effectifs de police municipale."
+    },
+    {
+      "id": "c0f21dc78c7fd15c",
+      "title": "Projet économique — 20 propositions pour 2027",
+      "publisher": "La France Humaniste",
+      "url": "https://lafrancehumaniste.fr/programme/economie.html",
+      "passage": "Contrats universels au coût réel de production, fin des quasi-taxes : −15 % sur la facture."
+    },
+    {
+      "id": "8389a711c2cd5e3d",
+      "title": "Le moment français — Discours à la Sorbonne",
+      "publisher": "La France Humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/le-moment-francais-sorbonne.html",
+      "date": "2026-03-27",
+      "passage": "Nous avons besoin pour débloquer le pays d'un référendum d'initiative citoyenne, inscrit dans un processus législatif rigoureux, préparé par une convention citoyenne permanente."
+    },
+    {
+      "id": "50b410f18ebb010a",
+      "title": "Le moment français — Discours à la Sorbonne",
+      "publisher": "La France Humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/le-moment-francais-sorbonne.html",
+      "date": "2026-03-27",
+      "passage": "Il supprimerait l’âge légal et reposerait sur une règle de durée de cotisations, avec une prise en compte sérieuse de la pénibilité des métiers."
+    },
+    {
+      "id": "b23c800d390dbc74",
+      "title": "Santé et environnement : pour une exception sanitaire française",
+      "publisher": "La France Humaniste",
+      "url": "https://lafrancehumaniste.fr/articles/sante-et-environnement.html",
+      "date": "2025-08-27",
+      "passage": "conditionnant l’attribution de bourses exceptionnelles aux étudiants en médecine à un engagement d’exercice dans les territoires les plus en crise."
     }
   ],
   "refreshedAt": {
@@ -32051,7 +32248,7 @@
     "delphine-batho": "2026-10-26T10:25:25.183Z",
     "karim-bouamrane": "2026-10-10T08:49:32.693Z",
     "nathalie-arthaud": "2026-10-10T08:49:32.693Z",
-    "anasse-kazib": "2026-10-10T08:49:32.693Z",
+    "anasse-kazib": "2026-10-26T13:32:06.277Z",
     "selma-labib": "2026-10-26T10:23:24.342Z",
     "olivier-becht": "2026-10-26T10:23:24.342Z",
     "raphael-glucksmann": "2026-10-10T08:49:32.693Z",
@@ -32060,7 +32257,7 @@
     "olivier-faure": "2026-10-10T08:49:32.693Z",
     "emmanuel-maurel": "2026-10-10T08:49:32.693Z",
     "segolene-royal": "2026-10-10T09:49:46.540Z",
-    "dominique-de-villepin": "2026-10-26T10:23:24.342Z",
+    "dominique-de-villepin": "2026-10-26T13:32:06.277Z",
     "francois-asselineau": "2026-10-26T10:23:24.342Z",
     "juan-branco": "2026-10-26T10:23:24.342Z",
     "emmanuel-dubuisson": "2026-10-10T09:49:46.540Z",

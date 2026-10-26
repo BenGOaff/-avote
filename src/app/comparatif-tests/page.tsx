@@ -233,7 +233,8 @@ export default function ComparatifPage() {
           vérifie sur la page, on corrige, et la correction apparaît dans <Link href="/corrections">les corrections</Link>.
         </p>
         <p>
-          Pour faire le nôtre : <Link href="/test">le test</Link>, et la <Link href="/methodologie">méthode</Link> pour savoir comment il calcule.
+          Pour faire le nôtre : <Link href="/test">le test</Link>, la <Link href="/methodologie">méthode</Link> pour savoir comment il calcule, et{' '}
+          <Link href="/couverture">ce qu’on sait de chaque candidat</Link>.
         </p>
       </section>
     </div>

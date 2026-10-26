@@ -169,6 +169,7 @@ export const UI_COPY = {
     redLineCount: (n: number, max: number) => `${n} sur ${max} possibles pour tout le test`,
     redLineMax: (max: number) => `Tu as posé tes ${max} lignes rouges. Retire-en une pour en choisir une autre : au-delà, presque tous les candidats en franchiraient une.`,
     redLineNeedAnswer: 'Réponds pour ou contre avant de poser une ligne rouge.',
+    swipeHint: 'Fais glisser la carte : à droite si tu es pour, à gauche si tu es contre. Plus tu vas loin, plus c’est net. Ou touche un point.',
     scaleAgainst: 'Contre',
     scaleFor: 'Pour',
     tokensLeft: (n: number) => (n === 0 ? 'Tous tes jetons sont posés' : `${n} jeton${n > 1 ? 's' : ''} à poser`),
@@ -271,6 +272,7 @@ export const UI_COPY = {
     notDocumentedTitle: 'Pas assez documentés pour être classés',
     notDocumentedWhy:
       'Sur plus de la moitié de tes sujets, on n’a pas trouvé d’info vérifiée sur ce qu’ils pensent, donc on ne l’invente pas. Leur proximité est affichée, sans rang. Reviens dans quelque temps : ils auront peut-être apporté des précisions qu’on pourra vérifier.',
+    coverageLink: 'Ce qu’on sait de chaque candidat',
     /** Sous la couverture d'un candidat, quand des positions manquent sur les réponses du votant */
     unknownHuman: (n: number, name: string) =>
       `Sur ${n} de tes sujets, on n’a pas trouvé d’info vérifiée, donc on ne l’invente pas. Reviens dans quelque temps : ${name} aura peut-être apporté des précisions qu’on pourra vérifier.`,

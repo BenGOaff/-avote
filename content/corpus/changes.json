@@ -11959,5 +11959,93 @@
     "from": "inconnue",
     "to": "[-1,-2]",
     "source": "c562ace228b6046a"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "anasse-kazib",
+    "item": "log-01",
+    "from": "inconnue",
+    "to": "1",
+    "source": "93c2f4ea9c821dd8"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "anasse-kazib",
+    "item": "eur-04",
+    "from": "inconnue",
+    "to": "1",
+    "source": "9cfa997d7b5ba297"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "anasse-kazib",
+    "item": "eur-07",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "d2f2e6a0b25efd91"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "anasse-kazib",
+    "item": "dem-01",
+    "from": "inconnue",
+    "to": "2",
+    "source": "48dee4af60848a7a"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "anasse-kazib",
+    "item": "edu-02",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "56be3897a568383f"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "anasse-kazib",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "1620b32d98d0befe"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "dominique-de-villepin",
+    "item": "sec-01",
+    "from": "inconnue",
+    "to": "1",
+    "source": "d95a064de7a8c76e"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "dominique-de-villepin",
+    "item": "cli-08",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "c0f21dc78c7fd15c"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "dominique-de-villepin",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "8389a711c2cd5e3d"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "dominique-de-villepin",
+    "item": "tra-11",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "50b410f18ebb010a"
+  },
+  {
+    "date": "2026-10-26T13:32:06.277Z",
+    "actor": "dominique-de-villepin",
+    "item": "san-01",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "b23c800d390dbc74"
   }
 ]

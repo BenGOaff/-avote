@@ -2199,6 +2199,52 @@ details.disclosure > div {
   gap: 2px;
 }
 
+/* Test rapide : carte à faire glisser (SwipeCard) */
+.swipe {
+  position: relative;
+  touch-action: pan-y;
+  cursor: grab;
+  transition: transform 200ms var(--ease), opacity 200ms var(--ease);
+  -webkit-user-select: none;
+  user-select: none;
+}
+.swipe:active {
+  cursor: grabbing;
+}
+.swipe__hint {
+  margin: 0 0 var(--s2);
+}
+.swipe__tag {
+  position: absolute;
+  top: var(--s3);
+  padding: var(--s1) var(--s3);
+  border: var(--border) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-signature);
+  font-family: var(--font-display);
+  font-size: var(--text-ui);
+  line-height: 1.2;
+  pointer-events: none;
+}
+.swipe__tag--for {
+  left: var(--s3);
+  background: var(--highlight);
+  color: var(--on-highlight);
+  transform: rotate(4deg);
+}
+.swipe__tag--against {
+  right: var(--s3);
+  background: var(--ink);
+  color: var(--on-ink);
+  transform: rotate(-4deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .swipe {
+    transition: none;
+  }
+}
+
 /* Podium (uniquement quand le classement est publiable) */
 .podium-wrap {
   margin: var(--s5) 0 0;
@@ -2263,6 +2309,38 @@ details.disclosure > div {
   }
   to {
     transform: none;
+  }
+}
+/* Révélation du podium : le 3e, puis le 2e, puis le 1er */
+
+.podium__col > :not(.podium__bar):not(.podium__tie) {
+  animation: podium-in 400ms var(--ease) both;
+}
+.podium__col--3 .podium__bar,
+.podium__col--3 > :not(.podium__bar) {
+  animation-delay: 0ms;
+}
+.podium__col--2 .podium__bar,
+.podium__col--2 > :not(.podium__bar) {
+  animation-delay: 450ms;
+}
+.podium__col--1 .podium__bar,
+.podium__col--1 > :not(.podium__bar) {
+  animation-delay: 950ms;
+}
+@keyframes podium-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .podium__col > * {
+    animation: none !important;
   }
 }
 
