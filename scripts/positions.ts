@@ -19,7 +19,7 @@ import path from 'node:path'
 import Anthropic from '@anthropic-ai/sdk'
 import { betaZodOutputFormat } from '@anthropic-ai/sdk/helpers/beta/zod'
 import { z } from 'zod'
-import { canonicalUrl, quoteIsInSource } from './veille-lib'
+import { canonicalUrl, isRefusedSource, quoteIsInSource } from './veille-lib'
 import { collectEvidence, fetchText } from './web-lib'
 import { CostMeter, budgetFromEnv } from './cost'
 import { mergePosition, posLabel, verifiedPosition, type Change } from './positions-lib'
@@ -299,7 +299,7 @@ async function codeActor(actor: { slug: string; name: string; party?: string; st
       } else {
         const url = canonicalUrl(p.url)
         const page = url ? (evidence.get(url) ?? (await fetchText(url))) : null
-        if (!url || !page || !quoteIsInSource(p.quote, page)) {
+        if (!url || isRefusedSource(url) || !page || !quoteIsInSource(p.quote, page)) {
           rejected++
           next = { missing: true, status: 'inconnu', note: 'Une position a été repérée mais sa citation n’a pas pu être vérifiée dans la source.', codedBy: 'ia', codedAt: now }
         } else {

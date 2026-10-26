@@ -21,7 +21,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { z } from 'zod'
-import { canonicalUrl, quoteIsInSource } from './veille-lib'
+import { canonicalUrl, isRefusedSource, quoteIsInSource } from './veille-lib'
 import { fetchText } from './web-lib'
 import { mergePosition, posLabel, verifiedPosition, type Change } from './positions-lib'
 import type { Corpus, CorpusSource } from '../src/lib/engine/types'
@@ -133,8 +133,8 @@ async function main() {
         continue
       }
       const url = canonicalUrl(p.transcript && p.timestamp ? videoAt(p.url, p.timestamp) : p.url)
-      if (!url) {
-        console.warn(`✗ ${label} : adresse invalide`)
+      if (!url || isRefusedSource(url)) {
+        console.warn(`✗ ${label} : adresse invalide ou source refusée (comparateur, encyclopédie)`)
         ko++
         continue
       }
