@@ -1,0 +1,47 @@
+# Copies archive.org des sources du référentiel (scripts/archives.ts) : une copie n'est retenue que si le passage
+# cité y figure. Chaque jour, un lot plafonné (archive.org limite le débit) ; aucune dépense d'API.
+name: Archives
+
+on:
+  schedule:
+    - cron: '41 4 * * *'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Nombre de sources à traiter'
+        default: '60'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: archives
+  cancel-in-progress: false
+
+jobs:
+  archives:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Archiver et vérifier
+        env:
+          ARCHIVE_ORG_AUTH: ${{ secrets.ARCHIVE_ORG_AUTH }}
+        run: npx tsx scripts/archives.ts --limit=${{ github.event.inputs.limit || 60 }}
+      - name: Valider
+        env:
+          ANONYMITY_BLOCKLIST: ${{ secrets.ANONYMITY_BLOCKLIST }}
+        run: npx tsx scripts/validate-content.ts
+      - name: Publier
+        run: |
+          if [ -z "$(git status --porcelain content/corpus/archives.json)" ]; then exit 0; fi
+          git config user.name "archives-ca-vote[bot]"
+          git config user.email "archives@users.noreply.github.com"
+          git add content/corpus/archives.json
+          git commit -m "archives : copies vérifiées des sources ($(date -u +%Y%m%d-%H%M))"
+          git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }}
