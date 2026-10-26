@@ -443,6 +443,27 @@ export const UI_COPY = {
     replyText: (name: string) => `${name} ne voit pas le résultat de son côté. Envoie-lui ton propre lien : à son tour de découvrir où vous divergez.`,
     replyMessage: (name: string) => `${name || 'Quelqu’un'} a relevé ton duel. À toi de voir le résultat :`,
   },
+  comprendre: {
+    kicker: 'Éducation populaire',
+    title: 'Comprendre la politique',
+    lede: 'Gauche et droite, les extrêmes, d’où viennent les partis, les moments qui ont tout changé, les mots du débat. De quoi te faire ton avis tout seul, sources à l’appui.',
+    chapter: (i: number, n: number) => `Chapitre ${i} sur ${n}`,
+    checked: (d: string) => `Sources relues le ${d}`,
+    anecdotes: 'Pour briller au dîner',
+    sources: (n: number) => `Les ${n} sources de ce chapitre, avec l’extrait qui prouve chaque fait`,
+    navLabel: 'Chapitres',
+    backToIndex: 'Tous les chapitres',
+    ctaTitle: 'Et toi, tu es où ?',
+    ctaBody: 'Le test rapide compare tes réponses aux positions des candidats, citation à l’appui. Rien ne quitte ton téléphone.',
+    ctaBtn: 'Faire le test rapide',
+    teachersKicker: 'Pour les profs',
+    teachersTitle: 'Tu es prof ?',
+    teachersBody:
+      'Une séance de 50 minutes clé en main : un quiz pour s’échauffer, dix minutes d’histoire, le test rapide en solo, un duel à deux, un sondage à lire. Sans compte, sans collecte, et le vote reste secret.',
+    teachersBtn: 'Voir la séance',
+    method:
+      'Chaque date, chiffre ou citation renvoie à une source publique (Constitution, Conseil d’État, Assemblée nationale, BnF, INA, encyclopédies, presse), avec l’extrait exact. Jamais Wikipédia. Une erreur ? Le lien en bas de chaque chapitre.',
+  },
   boutique: {
     kicker: 'Boutique',
     title: 'Tee-shirts, sweats, mugs et sacs.',

@@ -8,6 +8,7 @@ import { QUESTION_PAGES } from '@/lib/questions-candidats'
 import { getIntox, intoxPath, intoxUpdated } from '@/lib/intox'
 import { getCandidateDuels } from '@/lib/duels'
 import { GUIDES } from '@/lib/guides'
+import { CHAPITRES, COMPRENDRE_CHECKED } from '@/lib/comprendre'
 import { weekRange, weeksSince } from '@/lib/semaine'
 import { FIRST_DAY } from '@/lib/semaine-data'
 import { getFlashQuizzes } from '@/lib/flash-content'
@@ -21,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((m) => mediaLogoOf(m.slug))
     .filter((x): x is string => !!x)
     .map((x) => absolute(x))
-  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/presse', '/comparatif-tests', '/studio', '/newsletter', '/medias', '/medias/libres', '/medias/youtube', '/fake-news', '/verifier', '/urne', '/sondages', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales']
+  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/presse', '/comparatif-tests', '/comprendre', '/studio', '/newsletter', '/medias', '/medias/libres', '/medias/youtube', '/fake-news', '/verifier', '/urne', '/sondages', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales']
   return [
     ...statics.map((p) => ({
       url: absolute(p),
@@ -43,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         return getCandidatSujets(a.slug).map((cs) => ({ url: absolute(`/candidats/${a.slug}/${cs.sujet.slug}`), ...(updated ? { lastModified: new Date(updated) } : {}), changeFrequency: 'weekly' as const, priority: 0.7 }))
       }),
     ...getCandidateDuels().map((d) => ({ url: absolute(`/comparateur/${d.slug}`), ...(d.updatedAt ? { lastModified: new Date(d.updatedAt) } : {}), changeFrequency: 'weekly' as const, priority: 0.8 })),
+    ...CHAPITRES.map((c) => ({ url: absolute(`/comprendre/${c.slug}`), lastModified: new Date(COMPRENDRE_CHECKED), changeFrequency: 'monthly' as const, priority: 0.7 })),
     ...GUIDES.map((g) => ({ url: absolute(`/voter/${g.slug}`), lastModified: new Date(g.checkedAt), changeFrequency: 'monthly' as const, priority: 0.8 })),
     ...weeksSince(FIRST_DAY, now)
       .slice(1)
