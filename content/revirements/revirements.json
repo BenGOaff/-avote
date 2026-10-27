@@ -78,6 +78,25 @@
         "title": "Face au chantier du siècle : pour un travaillisme écologique"
       },
       "note": "En 2022, il se disait opposé à une relance du nucléaire. En 2026, son programme accepte la construction de six réacteurs EPR2, présentés comme un remplacement des centrales qui fermeront, pas comme une expansion du parc."
+    },
+    {
+      "actor": "dominique-de-villepin",
+      "topic": "Le contrat première embauche (CPE)",
+      "before": {
+        "quote": "Je pense naturellement au contrat première embauche, qui offre à tous les jeunes, et en particulier à ceux qui connaissent le plus de difficultés, une nouvelle voie d'accès à l'emploi",
+        "url": "https://www.senat.fr/seances/s200603/s20060309/s20060309002.html",
+        "date": "2006-03-09",
+        "publisher": "Sénat",
+        "title": "Compte rendu de la séance du 9 mars 2006"
+      },
+      "after": {
+        "quote": "J'ai eu ma part d'erreurs aussi, c'est vrai. Je n'ai jamais craint de les reconnaître. Sur le CPE",
+        "url": "https://www.lagazettefrance.fr/article/de-retour-dans-l-arene-politique-villepin-se-place-comme-heritier-du-gaullisme-pour-2027",
+        "date": "2026-03-27",
+        "publisher": "AFP, repris par La Gazette France",
+        "title": "De retour dans l'arène politique, Villepin se place comme héritier du gaullisme pour 2027"
+      },
+      "note": "En 2006, Premier ministre, il défendait le CPE au Sénat comme une voie d’accès à l’emploi pour les jeunes ; le texte a été retiré en avril 2006 après des semaines de manifestations. En 2026, il le cite parmi ses erreurs, avec les autoroutes et les banlieues. La phrase ne dit pas s’il rejette le principe du CPE ou la façon dont il a été mené."
     }
   ]
 }
