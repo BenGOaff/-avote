@@ -1,7 +1,43 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-26T14:22:11.648Z",
+  "updatedAt": "2026-10-27T13:19:43.624Z",
   "items": [
+    {
+      "id": "des-policiers-auraient-pille-un-magasin-a-limoges-lors-de-la-d82176",
+      "claim": "Des policiers auraient pillé un magasin à Limoges lors de la mobilisation du 17 octobre.",
+      "verdict": "faux",
+      "truth": "La séquence de Limoges montre des motards de la police récupérant ce qui semble être une paire de chaussures, ce qui ne constitue pas un pillage établi par l'extrait.",
+      "spreaders": [],
+      "topic": "securite",
+      "firstSeen": "2026-10-26",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/mobilisation-du-17-octobre-des-policiers-ont-ils-pille-un-magasin-a-limoges/",
+          "title": "Mobilisation du 17 octobre : des policiers ont-ils pillé un magasin à Limoges ?",
+          "date": "2026-10-26",
+          "quote": "On y voit, durant quelques secondes, des motards de la police récupérer ce qui semble être une paire de chaussures d’un magasin"
+        }
+      ]
+    },
+    {
+      "id": "une-video-montrerait-des-articles-voles-lors-de-la-mobilisat-5790d2",
+      "claim": "Une vidéo montrerait des articles volés lors de la mobilisation du 17 octobre revendus à la sauvette en France.",
+      "verdict": "faux",
+      "truth": "Selon le Premier ministre, au moins 3 000 commerces ont été touchés par les dégradations et les vols du 17 octobre ; la vidéo ne montre pas la revente décrite.",
+      "spreaders": [],
+      "topic": "eco",
+      "firstSeen": "2026-10-26",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/non-cette-video-ne-montre-pas-des-articles-voles-le-17-octobre-revendus-a-la-sauvette-en-france/",
+          "title": "Non, cette vidéo ne montre pas des articles, volés le 17 octobre, revendus à la sauvette en France",
+          "date": "2026-10-26",
+          "quote": "Non, cette vidéo ne montre pas des articles, volés le 17 octobre, revendus à la sauvette en France"
+        }
+      ]
+    },
     {
       "id": "un-post-x-montrerait-la-tour-eiffel-en-feu-lors-d-une-manife-36f5d4",
       "claim": "Un post X montrerait la tour Eiffel en feu lors d'une manifestation de manifestants",
@@ -157,6 +193,13 @@
           "title": "La DGSI dément que des armes de guerre aient été retrouvées parmi les émeutiers du 17 octobre, comme annoncé sur CNews",
           "date": "2026-10-19",
           "quote": "La DGSI dément que des armes de guerre aient été retrouvées parmi les émeutiers du 17 octobre"
+        },
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/des-fusils-automatiques-ont-ils-ete-retrouves-entre-les-mains-de-manifestants-le-17-octobre/",
+          "title": "Des fusils automatiques ont-ils été retrouvés entre les mains de manifestants le 17 octobre ?",
+          "date": "2026-10-26",
+          "quote": "Etiqe :démenti"
         }
       ]
     },
