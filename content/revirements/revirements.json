@@ -97,6 +97,26 @@
         "title": "De retour dans l'arène politique, Villepin se place comme héritier du gaullisme pour 2027"
       },
       "note": "En 2006, Premier ministre, il défendait le CPE au Sénat comme une voie d’accès à l’emploi pour les jeunes ; le texte a été retiré en avril 2006 après des semaines de manifestations. En 2026, il le cite parmi ses erreurs, avec les autoroutes et les banlieues. La phrase ne dit pas s’il rejette le principe du CPE ou la façon dont il a été mené."
+    },
+    {
+      "actor": "edouard-philippe",
+      "topic": "Le regroupement familial",
+      "itemId": "imm-06",
+      "before": {
+        "quote": "Notre rôle est aussi de protéger l'immigration familiale en luttant contre certains détournements",
+        "url": "https://www.rtl.fr/actu/politique/immigration-le-detail-des-mesures-annoncees-par-edouard-philippe-7799403911",
+        "date": "2019-11-06",
+        "publisher": "RTL",
+        "title": "Immigration : le détail des mesures annoncées par Édouard Philippe"
+      },
+      "after": {
+        "quote": "Ce à quoi il faut mettre un terme - c'est pour ça que je propose, pendant la durée du quinquennat, un moratoire -, c'est l'immigration qui résulte de choix qui ne sont pas des choix de la France et qui sont des choix individuels",
+        "url": "https://lcp.fr/actualites/edouard-philippe-veut-diviser-par-deux-l-immigration-legale-et-propose-un-moratoire-sur",
+        "date": "2026-10-08",
+        "publisher": "LCP - Assemblée nationale",
+        "title": "Édouard Philippe veut « diviser par deux » l'immigration légale et propose un moratoire sur le regroupement familial"
+      },
+      "note": "En 2019, Premier ministre, il présente un plan immigration qui garde le regroupement familial et lutte contre les fraudes ; son ministre de l’Intérieur dit dans le même article « Nous ne toucherons pas au regroupement familial ». En 2026, il propose un moratoire sur le regroupement familial pendant tout le quinquennat."
     }
   ]
 }
