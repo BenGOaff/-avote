@@ -1,4 +1,43 @@
 {
   "_note": "Changements d’avis des candidats : deux phrases publiques du candidat, datées et sourcées, sur le même sujet. Chaque citation est retrouvée mot pour mot dans sa page (npx tsx scripts/quotes-check.ts content/revirements/revirements.json). La page /revirements n’est publiée qu’à partir d’une entrée vérifiée.",
-  "entries": []
+  "entries": [
+    {
+      "actor": "gabriel-attal",
+      "topic": "L’âge de départ à la retraite",
+      "before": {
+        "quote": "Comme Olivier Dussopt l’a rappelé, de 65 ans dans le projet initial, nous sommes passés à 64 ans dans le projet qui vous est soumis.",
+        "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/session-ordinaire-de-2022-2023/premiere-seance-du-lundi-06-fevrier-2023",
+        "date": "2023-02-06",
+        "publisher": "Assemblée nationale",
+        "title": "Compte rendu de la première séance du lundi 6 février 2023"
+      },
+      "after": {
+        "quote": "Chacun sera libre de choisir le moment où il part. On ne fixe qu'une condition, un montant de pension minimal à atteindre pour pouvoir liquider sa retraite.",
+        "url": "https://lcp.fr/actualites/retraites-avant-le-debat-sur-la-suspension-de-la-reforme-gabriel-attal-prone-une",
+        "date": "2025-11-10",
+        "publisher": "LCP - Assemblée nationale",
+        "title": "Retraites : avant le débat sur la suspension de la réforme, Gabriel Attal prône une « véritable révolution »"
+      },
+      "note": "En 2023, ministre délégué aux Comptes publics, il défendait à l’Assemblée la réforme qui fixe l’âge légal à 64 ans. En 2025, il propose de supprimer l’âge légal : on partirait quand on veut, à condition d’avoir atteint un montant de pension minimal."
+    },
+    {
+      "actor": "marine-le-pen",
+      "topic": "L’âge de départ à la retraite",
+      "before": {
+        "quote": "Rétablissement de la retraite à 60 ans avec 40 annuités de cotisations.",
+        "url": "https://rassemblementnational.fr/discours/reunion-publique-de-marine-le-pen-a-arcis-sur-aube",
+        "date": "2017-04-11",
+        "publisher": "Rassemblement national",
+        "title": "Réunion publique de Marine Le Pen à Arcis-sur-Aube"
+      },
+      "after": {
+        "quote": "Si l’on commence à travailler à 24 ans, on peut effectivement partir à 66 ans ; mais si l’on a commencé avant 20 ans, on part à 60 ans.",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-jeudi-31-octobre-2024",
+        "date": "2024-10-31",
+        "publisher": "Assemblée nationale",
+        "title": "Compte rendu de la première séance du jeudi 31 octobre 2024"
+      },
+      "note": "En 2017, elle promettait la retraite à 60 ans avec 40 annuités. En 2024, le départ à 60 ans est réservé à ceux qui ont commencé à travailler avant 20 ans ; dans le même débat, elle précise que l’âge augmente ensuite progressivement jusqu’à 62 ans."
+    }
+  ]
 }
