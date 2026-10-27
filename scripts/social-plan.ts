@@ -394,8 +394,10 @@ async function main() {
   const plan: Material[] = []
 
   const news = fresh()
-  const flash = room > 0 ? await bestFlash(news) : null
-  for (const m of news) state.seen.push(m.key)
+  // Une nouveauté n'est écartée qu'après avoir été jugée : sans budget (plafond atteint), elle attend le passage suivant
+  const canJudge = room > 0 && !meter.exhausted
+  const flash = canJudge ? await bestFlash(news) : null
+  if (canJudge) for (const m of news) state.seen.push(m.key)
   if (flash) plan.push(flash)
 
   if (SLOT === 'matin' && room - plan.length > 0) {
