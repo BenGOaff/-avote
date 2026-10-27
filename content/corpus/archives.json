@@ -1,21 +1,69 @@
 {
  "_note": "Copies archive.org des sources du référentiel, rangées par adresse. Une copie n’est retenue que si le passage cité y figure mot pour mot (scripts/archives.ts).",
  "pages": {
+  "https://actu.orange.fr/politique/aide-a-mourir-les-voix-s-opposent-entre-bruno-retailleau-et-gabriel-attal-magic-CNT000002iHa8v.html": {
+   "archive": "https://web.archive.org/web/20261027100117/https://actu.orange.fr/politique/aide-a-mourir-les-voix-s-opposent-entre-bruno-retailleau-et-gabriel-attal-magic-CNT000002iHa8v.html",
+   "at": "2026-10-27"
+  },
   "https://actu.orange.fr/politique/fin-de-vie-edouard-philippe-se-confie-sur-son-parcours-personnel-sans-etre-pour-une-inscription-dans-la-loi-magic-CNT000002hd3Ip.html": {
    "archive": "https://web.archive.org/web/20260920174351/https://actu.orange.fr/politique/fin-de-vie-edouard-philippe-se-confie-sur-son-parcours-personnel-sans-etre-pour-une-inscription-dans-la-loi-magic-CNT000002hd3Ip.html",
    "at": "2026-10-26"
+  },
+  "https://actu.orange.fr/politique/fin-de-vie-opposee-au-texte-sur-l-aide-a-mourir-marine-le-pen-denonce-un-manque-de-garde-fous-magic-CNT000002iIS18.html": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://attalpresident.fr/actualites/aux-assises-de-l-afer-gabriel-attal-defend-une-epargne-qui-finance-l-economie-francaise": {
+   "archive": "https://web.archive.org/web/20261015153005/https://attalpresident.fr/actualites/aux-assises-de-l-afer-gabriel-attal-defend-une-epargne-qui-finance-l-economie-francaise",
+   "at": "2026-10-27"
+  },
+  "https://attalpresident.fr/actualites/dans-le-jdd-gabriel-attal-veut-proposer-la-plus-grande-reforme-institutionnelle-depuis-1958": {
+   "archive": "https://web.archive.org/web/20261015153140/https://attalpresident.fr/actualites/dans-le-jdd-gabriel-attal-veut-proposer-la-plus-grande-reforme-institutionnelle-depuis-1958",
+   "at": "2026-10-27"
+  },
+  "https://attalpresident.fr/actualites/gabriel-attal-dans-politico-europe-ukraine-ia-et-finances-publiques-quatre-priorites-pour-preparer-la-france-de-demain": {
+   "archive": "https://web.archive.org/web/20261024073753/https://attalpresident.fr/actualites/gabriel-attal-dans-politico-europe-ukraine-ia-et-finances-publiques-quatre-priorites-pour-preparer-la-france-de-demain",
+   "at": "2026-10-27"
+  },
+  "https://attalpresident.fr/programme/dette-de-letat": {
+   "archive": "https://web.archive.org/web/20261027054659/https://attalpresident.fr/programme/dette-de-letat",
+   "at": "2026-10-27"
+  },
+  "https://attalpresident.fr/programme/education": {
+   "archive": "https://web.archive.org/web/20261014160155/https://attalpresident.fr/programme/education",
+   "at": "2026-10-27"
+  },
+  "https://back.deputes-rn.fr/wp-content/uploads/2024/09/WEB-GRN-LIVRET-ENTREPRISE.pdf": {
+   "archive": "https://web.archive.org/web/20261027101434/https://back.deputes-rn.fr/wp-content/uploads/2024/09/WEB-GRN-LIVRET-ENTREPRISE.pdf",
+   "at": "2026-10-27"
+  },
+  "https://contrepoints.org/flat-tax-aides-aux-entreprises-assurances-sociales-calendrier-des-reformes-bruno-retailleau-repond-a-nos-questions/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
   },
   "https://fr.euronews.com/2026/08/21/a-mayotte-edouard-philippe-place-limmigration-au-coeur-de-sa-campagne-pour-2027": {
    "archive": "https://web.archive.org/web/20261026174616/https://fr.euronews.com/2026/08/21/a-mayotte-edouard-philippe-place-limmigration-au-coeur-de-sa-campagne-pour-2027",
    "at": "2026-10-26"
   },
+  "https://francais.medscape.com/voirarticle/3608341": {
+   "archive": "https://web.archive.org/web/20250725075058/https://francais.medscape.com/voirarticle/3608341",
+   "at": "2026-10-27"
+  },
   "https://lcp.fr/actualites/chomage-edouard-philippe-veut-abaisser-la-duree-d-indemnisation-a-douze-mois-maximum": {
    "archive": "https://web.archive.org/web/20260911130215/https://lcp.fr/actualites/chomage-edouard-philippe-veut-abaisser-la-duree-d-indemnisation-a-douze-mois-maximum",
    "at": "2026-10-26"
   },
+  "https://lcp.fr/actualites/presidentielle-2027-qui-propose-quoi-sur-les-retraites-437864": {
+   "archive": "https://web.archive.org/web/20261012001031/https://lcp.fr/actualites/presidentielle-2027-qui-propose-quoi-sur-les-retraites-437864",
+   "at": "2026-10-27"
+  },
   "https://lcp.fr/actualites/presidentielle-salaires-des-enseignants-sanctions-pour-les-parents-ce-que-propose": {
    "archive": "https://web.archive.org/web/20260910063506/https://lcp.fr/actualites/presidentielle-salaires-des-enseignants-sanctions-pour-les-parents-ce-que-propose",
    "at": "2026-10-26"
+  },
+  "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65": {
+   "archive": "https://web.archive.org/web/20261014193417/https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65",
+   "at": "2026-10-27"
   },
   "https://lcp.fr/actualites/retraites-edouard-philippe-veut-porter-l-age-de-depart-a-65-ans-et-la-duree-de": {
    "archive": "https://web.archive.org/web/20261022204849/https://lcp.fr/actualites/retraites-edouard-philippe-veut-porter-l-age-de-depart-a-65-ans-et-la-duree-de",
@@ -24,6 +72,38 @@
   "https://monvote2027.fr/candidat/philippe": {
    "tried": "2026-10-26",
    "reason": "passage introuvable dans la copie"
+  },
+  "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/AGRICULTURE.pdf": {
+   "archive": "https://web.archive.org/web/20260927121131/https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/AGRICULTURE.pdf",
+   "at": "2026-10-27"
+  },
+  "https://www.avecretailleau.fr/projet/mesure/investir-toutes-les-autorites-publiques-francaises-du": {
+   "archive": "https://web.archive.org/web/20261016192946/https://www.avecretailleau.fr/projet/mesure/investir-toutes-les-autorites-publiques-francaises-du",
+   "at": "2026-10-27"
+  },
+  "https://www.cnews.fr/france/2022-02-01/repression-legalisation-depenalisation-que-pensent-les-candidats-la-presidentielle": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.cnews.fr/france/2025-09-21/budget-2026-quest-ce-que-limpot-sur-la-fortune-financiere-que-marine-le-pen": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.debout-la-france.fr/actualite/euthanasie-et-suicide-assiste-pourquoi-je-vote-contre-%C2%B7-assemblee-nationale-27-05-24/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.debout-la-france.fr/actualite/retraites-nicolas-dupont-aignan-propose-un-referendum-dinitiative-partagee/": {
+   "archive": "https://web.archive.org/web/20260606201112/https://www.debout-la-france.fr/actualite/retraites-nicolas-dupont-aignan-propose-un-referendum-dinitiative-partagee/",
+   "at": "2026-10-27"
+  },
+  "https://www.debout-la-france.fr/projet/immigration-et-assimilation/": {
+   "archive": "https://web.archive.org/web/20261006121424/https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "at": "2026-10-27"
+  },
+  "https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf": {
+   "archive": "https://web.archive.org/web/20260821172730/https://www.debout-la-france.fr/wp-content/uploads/2022/07/100-Decisions-pour-la-France_VFIN.pdf",
+   "at": "2026-10-27"
   },
   "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante": {
    "tried": "2026-10-26",
@@ -37,9 +117,129 @@
    "tried": "2026-10-26",
    "reason": "passage introuvable dans la copie"
   },
+  "https://www.europe1.fr/politique/budget-eric-zemmour-appelle-a-un-plan-de-reduction-des-depenses-de-200-milliards-deuros-par-an-4274014": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.europe1.fr/politique/immigration-il-faut-arreter-lhypocrisie-autour-du-travail-au-noir-estime-gabriel-attal-4145028": {
+   "archive": "https://web.archive.org/web/20260821172038/https://www.europe1.fr/politique/immigration-il-faut-arreter-lhypocrisie-autour-du-travail-au-noir-estime-gabriel-attal-4145028",
+   "at": "2026-10-27"
+  },
+  "https://www.europe1.fr/politique/la-suspension-de-la-reforme-des-retraites-nest-pas-un-drame-juge-nicolas-dupont-aignan-777428": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://www.europe1.fr/politique/le-referendum-dinitiative-citoyenne-ca-me-herisse-declare-edouard-philippe-3845711": {
    "tried": "2026-10-26",
    "reason": "passage introuvable dans la copie"
+  },
+  "https://www.europe1.fr/politique/legalisation-du-cannabis-ca-ne-marche-pas-estime-bruno-retailleau-396031": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.europe1.fr/politique/ne-pas-utiliser-le-493-un-contournement-de-la-constitution-estime-marine-le-pen-234792": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.europe1.fr/politique/pouvoir-dachat-il-faut-ameliorer-le-salaire-net-sans-toucher-au-salaire-brut-prone-zemmour-4094964": {
+   "archive": "https://web.archive.org/web/20261027102003/https://www.europe1.fr/politique/pouvoir-dachat-il-faut-ameliorer-le-salaire-net-sans-toucher-au-salaire-brut-prone-zemmour-4094964",
+   "at": "2026-10-27"
+  },
+  "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/augmenter-lage-legal-de-la-retraite-a-64-ans-et-aligner-les-differents-regimes-de-retraite/": {
+   "archive": "https://web.archive.org/web/20241219163004/https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/augmenter-lage-legal-de-la-retraite-a-64-ans-et-aligner-les-differents-regimes-de-retraite/",
+   "at": "2026-10-27"
+  },
+  "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/creer-une-prime-zero-charges-au-merite/": {
+   "archive": "https://web.archive.org/web/20250322193410/https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/creer-une-prime-zero-charges-au-merite/",
+   "at": "2026-10-27"
+  },
+  "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/investir-dans-le-nucleaire-en-construisant-14-nouveaux-epr-a-lhorizon-2050/": {
+   "archive": "https://web.archive.org/web/20241219210642/https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/investir-dans-le-nucleaire-en-construisant-14-nouveaux-epr-a-lhorizon-2050/",
+   "at": "2026-10-27"
+  },
+  "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/construire-6-epr-rouvrir-fessenheim-et-demanteler-toutes-les-eoliennes/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.lejdd.fr/politique/bruno-retailleau-veut-interdire-le-voile-islamique-a-luniversite-157637": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.lejdd.fr/politique/immigration-gabriel-attal-propose-des-quotas-par-metier-et-par-origine-geographique-180879": {
+   "archive": "https://web.archive.org/web/20260811133102/https://www.lejdd.fr/politique/immigration-gabriel-attal-propose-des-quotas-par-metier-et-par-origine-geographique-180879",
+   "at": "2026-10-27"
+  },
+  "https://www.lejdd.fr/politique/interdiction-du-voile-dans-lespace-public-eric-zemmour-abonde-dans-le-sens-du-rn-182307": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.ndf.fr/politique/04-03-2020/eric-zemmour-le-49-3-est-legitime-meme-si-cette-reforme-est-nulle-video/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.publicsenat.fr/actualites/non-classe/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme": {
+   "archive": "https://web.archive.org/web/20260821171920/https://www.publicsenat.fr/actualites/non-classe/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+   "at": "2026-10-27"
+  },
+  "https://www.publicsenat.fr/actualites/non-classe/presidentielle-ric-rip-50-nuances-de-referendums-dans-les-programmes-des-candidats": {
+   "archive": "https://web.archive.org/web/20260821171810/https://www.publicsenat.fr/actualites/non-classe/presidentielle-ric-rip-50-nuances-de-referendums-dans-les-programmes-des-candidats",
+   "at": "2026-10-27"
+  },
+  "https://www.publicsenat.fr/actualites/politique/gabriel-attal-propose-dinterdire-le-voile-pour-les-moins-de-15-ans-et-souhaite-une-nouvelle-loi-separatisme": {
+   "archive": "https://web.archive.org/web/20260410231809/https://www.publicsenat.fr/actualites/politique/gabriel-attal-propose-dinterdire-le-voile-pour-les-moins-de-15-ans-et-souhaite-une-nouvelle-loi-separatisme",
+   "at": "2026-10-27"
+  },
+  "https://www.toutsurmesfinances.com/argent/a/eric-zemmour-programme": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.unenouvelleenergie.fr/david-lisnard-je-peux-trouver-dieu-dans-une-foret-une-montagne-ou-dans-la-beaute-dun-opera-de-mozart/": {
+   "archive": "https://web.archive.org/web/20260122134616/https://www.unenouvelleenergie.fr/david-lisnard-je-peux-trouver-dieu-dans-une-foret-une-montagne-ou-dans-la-beaute-dun-opera-de-mozart/",
+   "at": "2026-10-27"
+  },
+  "https://www.unenouvelleenergie.fr/ne-faisons-pas-de-la-laicite-un-renoncement/": {
+   "archive": "https://web.archive.org/web/20260515132907/https://www.unenouvelleenergie.fr/ne-faisons-pas-de-la-laicite-un-renoncement/",
+   "at": "2026-10-27"
+  },
+  "https://www.unenouvelleenergie.fr/notre-programme/agriculture/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/": {
+   "archive": "https://web.archive.org/web/20261027004831/https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
+   "at": "2026-10-27"
+  },
+  "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.unenouvelleenergie.fr/notre-programme/immigration/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/": {
+   "archive": "https://web.archive.org/web/20261027004916/https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "at": "2026-10-27"
+  },
+  "https://www.unenouvelleenergie.fr/notre-programme/securite/": {
+   "tried": "2026-10-27",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/": {
+   "archive": "https://web.archive.org/web/20261006080851/https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/",
+   "at": "2026-10-27"
+  },
+  "https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/": {
+   "archive": "https://web.archive.org/web/20261027101053/https://www.unenouvelleenergie.fr/questions/que-propose-david-lisnard-pour-le-pouvoir-d-achat/",
+   "at": "2026-10-27"
+  },
+  "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires/": {
+   "archive": "https://web.archive.org/web/20261006083359/https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-construire-de-nouveaux-reacteurs-nucleaires/",
+   "at": "2026-10-27"
   }
  }
 }
