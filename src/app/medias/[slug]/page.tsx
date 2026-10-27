@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!m) return {}
   const o = m.ownership!
   return {
-    title: t.metaTitle(m.name),
+    title: t.metaTitle(m.name, o.group, o.controller),
     description: `${answerOf(m)} ${o.note}`.slice(0, 158),
     alternates: { canonical: `/medias/${m.slug}` },
   }
