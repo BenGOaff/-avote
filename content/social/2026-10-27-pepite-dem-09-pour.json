@@ -1,0 +1,28 @@
+{
+  "id": "2026-10-27-pepite-dem-09-pour",
+  "at": "2026-10-27T12:39:50.567Z",
+  "kind": "pepite",
+  "card": {
+    "kicker": "SEULE CONTRE QUATRE",
+    "title": "Privatiser l'audiovisuel public : une candidate pour, quatre nettement contre",
+    "line": "7 candidats se sont prononcés sur France Télévisions et Radio France.",
+    "actor": "marine-le-pen",
+    "quote": "Renationaliser les autoroutes pour baisser de 15% les péages et privatiser l’audiovisuel public pour supprimer les 138€ de redevance.",
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Privatiser France Télévisions et Radio France ? Sur 7 candidats qui se sont prononcés, une seule est nettement pour. Quatre sont nettement contre. Tu te mets où ?",
+    "linkedin": "Faut-il privatiser l'audiovisuel public ? Sur 7 candidats qui se sont prononcés, une seule est nettement pour.\n\nL'affirmation soumise dans le test : « L'audiovisuel public (France Télévisions, Radio France) devrait être privatisé. » Marine Le Pen est la seule à répondre nettement oui. Quatre candidats répondent nettement non.\n\nSur son site de campagne, elle écrit : « Renationaliser les autoroutes pour baisser de 15% les péages et privatiser l'audiovisuel public pour supprimer les 138€ de redevance. »\n\nLe sujet mêle financement public, redevance et place des médias publics dans le paysage français.\n\nSi tu devais trancher, tu serais plutôt du côté des quatre ou de celui de la candidate seule ?\n\n#presidentielle2027 #audiovisuelpublic",
+    "facebook": "Privatiser France Télévisions et Radio France, ça te paraît une bonne idée ? Sur 7 candidats qui se sont prononcés, Marine Le Pen est la seule nettement pour, face à 4 candidats nettement contre. Tu te mets dans quel camp ? Le test est sur çavote.fr",
+    "instagram": "Privatiser l'audiovisuel public : une seule candidate dit oui.\nFrance Télévisions, Radio France : 7 candidats se sont prononcés.\nMarine Le Pen est la seule nettement pour.\nQuatre candidats sont nettement contre.\nEt toi, tu te places où ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #audiovisuelpublic #redevance"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test",
+  "source": {
+    "publisher": "Site de campagne de Marine Le Pen (mlafrance.fr)",
+    "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+    "title": "22 mesures pour 2022",
+    "quote": "Renationaliser les autoroutes pour baisser de 15% les péages et privatiser l’audiovisuel public pour supprimer les 138€ de redevance.",
+    "who": "Marine Le Pen"
+  }
+}
