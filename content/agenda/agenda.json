@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-27",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -63,6 +63,24 @@
         "url": "https://www.franceinfo.fr/replay-magazine/france-2/franc-jeu/franc-jeu-avec-mathilde-panot_8226022.html"
       },
       "quote": "Le 25 octobre 2026, il reçoit Mathilde Panot, présidente de La France insoumise à l'Assem",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-10-27-rencontre-hec-debats-avec-bruno-retailleau",
+      "kind": "debat",
+      "title": "Rencontre HEC Débats avec Bruno Retailleau",
+      "date": "2026-10-27",
+      "time": "20:00",
+      "summary": "Bruno Retailleau, candidat à la présidentielle 2027, répond aux questions de la rencontre organisée en partenariat avec Public Sénat sur l’immigration, la jeunesse, la dépense publique et la présidentielle.",
+      "who": [
+        "bruno-retailleau"
+      ],
+      "source": {
+        "title": "HEC Débats – Public Sénat : suivez en direct la rencontre avec Bruno Retailleau",
+        "publisher": "Public Sénat",
+        "url": "https://www.publicsenat.fr/actualites/politique/hec-debats-public-senat-suivez-en-direct-la-rencontre-avec-bruno-retailleau"
+      },
+      "quote": "est l’invité de HEC Débats ce mardi 27 octobre, à partir de 20H",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
