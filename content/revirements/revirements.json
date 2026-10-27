@@ -58,6 +58,26 @@
         "title": "« J’ai changé d’avis » : Jean-Luc Mélenchon regrette aujourd’hui ses anciennes positions sur le port du voile"
       },
       "note": "En 2017, sur France 2 (propos rapportés par Le Parisien en 2019), il critiquait le voile. En 2026, il dit avoir fait une « erreur » en s’y opposant et avoir changé d’avis."
+    },
+    {
+      "actor": "francois-ruffin",
+      "itemId": "cli-01",
+      "topic": "Construire de nouveaux réacteurs nucléaires",
+      "before": {
+        "quote": "Je ne suis pas favorable à une relance nucléaire",
+        "url": "https://www.dailymotion.com/video/x87qyc1",
+        "date": "2022-02-09",
+        "publisher": "BFMTV",
+        "title": "François Ruffin : « Je ne suis pas favorable à une relance nucléaire »"
+      },
+      "after": {
+        "quote": "Nous poursuivrons aussi la construction des six réacteurs EPR2 : ces six réacteurs permettront surtout de compenser les fermetures des centrales actuelles qui ne pourraient pas fonctionner au-delà de 2040-2050.",
+        "url": "https://nouspresident.fr/travaillisme-ecologique/",
+        "date": "2026-09-09",
+        "publisher": "Nous Président ! (campagne de François Ruffin)",
+        "title": "Face au chantier du siècle : pour un travaillisme écologique"
+      },
+      "note": "En 2022, il se disait opposé à une relance du nucléaire. En 2026, son programme accepte la construction de six réacteurs EPR2, présentés comme un remplacement des centrales qui fermeront, pas comme une expansion du parc."
     }
   ]
 }
