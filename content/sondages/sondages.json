@@ -1,6 +1,6 @@
 {
  "_note": "Sondages d'intentions de vote pour la présidentielle 2027, tels que publiés par les instituts. Chiffres vérifiés dans la source primaire. Aucune moyenne ni projection n'est calculée (loi du 19 juillet 1977, art. 1er).",
- "checkedAt": "2026-10-25",
+ "checkedAt": "2026-10-27",
  "institutes": {
   "Ifop": {
    "text": "En ligne, de 984 à 1 598 inscrits selon les vagues. Redressement sur la présidentielle 2022 (1er tour), les européennes 2024 et les législatives 2024 (1er tour).",
@@ -10101,6 +10101,194 @@
        "slug": "eric-zemmour",
        "name": "Eric Zemmour",
        "pct": 4
+      }
+     ]
+    }
+   ],
+   "secondRound": []
+  },
+  {
+   "id": "cluster17-2026-10-22-2358",
+   "institute": "Cluster17",
+   "buyer": "Politico",
+   "sponsor": null,
+   "fieldStart": "2026-10-19",
+   "fieldEnd": "2026-10-22",
+   "published": "2026-10-26",
+   "sample": 2817,
+   "base": "inscrits sur les listes électorales",
+   "method": "en ligne, méthode des quotas",
+   "margin": null,
+   "url": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2358",
+   "notice": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2358",
+   "firstRound": [
+    {
+     "hypothesis": "hypothèse 1",
+     "results": [
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 8
+      },
+      {
+       "slug": "edouard-philippe",
+       "name": "Édouard Philippe",
+       "pct": 16
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 4
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 2
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 18.5
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 33
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 2
+      },
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 0.5
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 3
+      },
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 13
+      }
+     ]
+    },
+    {
+     "hypothesis": "hypothèse 2, avec Gabriel Attal",
+     "results": [
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 10
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 4
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 2
+      },
+      {
+       "slug": "gabriel-attal",
+       "name": "Gabriel Attal",
+       "pct": 12
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 19.5
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 32.5
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 2
+      },
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 0.5
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 3.5
+      },
+      {
+       "slug": "raphael-glucksmann",
+       "name": "Raphaël Glucksmann",
+       "pct": 14
+      }
+     ]
+    },
+    {
+     "hypothesis": "hypothèse 3, avec David Lisnard et François Hollande",
+     "results": [
+      {
+       "slug": "bruno-retailleau",
+       "name": "Bruno Retailleau",
+       "pct": 7
+      },
+      {
+       "slug": "david-lisnard",
+       "name": "David Lisnard",
+       "pct": 8
+      },
+      {
+       "slug": "edouard-philippe",
+       "name": "Édouard Philippe",
+       "pct": 17
+      },
+      {
+       "slug": "fabien-roussel",
+       "name": "Fabien Roussel",
+       "pct": 2
+      },
+      {
+       "slug": null,
+       "name": "François Hollande",
+       "pct": 6.5
+      },
+      {
+       "slug": "jean-luc-melenchon",
+       "name": "Jean-Luc Mélenchon",
+       "pct": 19.5
+      },
+      {
+       "slug": "marine-le-pen",
+       "name": "Marine Le Pen",
+       "pct": 30.5
+      },
+      {
+       "slug": "marine-tondelier",
+       "name": "Marine Tondelier",
+       "pct": 2.5
+      },
+      {
+       "slug": "nathalie-arthaud",
+       "name": "Nathalie Arthaud",
+       "pct": 0.5
+      },
+      {
+       "slug": "nicolas-dupont-aignan",
+       "name": "Nicolas Dupont-Aignan",
+       "pct": 3
+      },
+      {
+       "slug": "eric-zemmour",
+       "name": "Éric Zemmour",
+       "pct": 3.5
       }
      ]
     }
