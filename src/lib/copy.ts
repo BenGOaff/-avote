@@ -521,7 +521,9 @@ export const UI_COPY = {
     report: 'Signaler',
   },
   mediaPage: {
-    metaTitle: (name: string) => `À qui appartient ${name} ? Propriétaire et actionnaires`,
+    // Le groupe et celui qui le contrôle dans le titre : c'est ce que les gens tapent (« à qui appartient TF1 et LCI »)
+    metaTitle: (name: string, group: string, controller: string) =>
+      group && controller && !same(group, controller) ? `À qui appartient ${name} ? ${group} (${controller})` : `À qui appartient ${name} ? ${controller || group}`,
     title: (name: string) => `À qui appartient ${name} ?`,
     answer: (name: string, owner: string, controller: string) =>
       owner && !same(owner, controller) ? `${name} appartient ${a(owner)} ; le dernier mot revient ${a(controller)}.` : `${name} appartient ${a(controller)}.`,
