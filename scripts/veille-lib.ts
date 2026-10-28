@@ -25,11 +25,19 @@ export interface RawItem {
 
 const ENTITIES: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', rsquo: '’', lsquo: '‘', laquo: '«', raquo: '»', hellip: '…', eacute: 'é', egrave: 'è', agrave: 'à', ccedil: 'ç' }
 
+/** Lettres accentuées nommées (&ocirc;, &Eacute;…) : la lettre suivie de l'accent combinant, recomposées. */
+const ACCENTS: Record<string, string> = { acute: '́', grave: '̀', circ: '̂', uml: '̈', cedil: '̧', tilde: '̃' }
+const LIGATURES: Record<string, string> = { oelig: 'œ', OElig: 'Œ', aelig: 'æ', AElig: 'Æ' }
+
 export function decodeEntities(s: string): string {
   return s
     .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
     .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
-    .replace(/&([a-z]+);/gi, (m, n: string) => ENTITIES[n.toLowerCase()] ?? m)
+    .replace(/&([a-z]+);/gi, (m, n: string) => {
+      const [, letter, mark] = /^([a-z])(acute|grave|circ|uml|cedil|tilde)$/i.exec(n) ?? []
+      if (letter && mark) return (letter + ACCENTS[mark.toLowerCase()]).normalize('NFC')
+      return LIGATURES[n] ?? ENTITIES[n.toLowerCase()] ?? m
+    })
 }
 
 export function stripHtml(s: string): string {
