@@ -1,6 +1,6 @@
 {
   "push": {
-    "at": "2026-10-25T19:02:13.250Z",
+    "at": "2026-10-28T21:00:32.493Z",
     "actors": [
       "edouard-philippe",
       "gabriel-attal",
@@ -32,11 +32,13 @@
       "sylvain-durif",
       "natacha-polony",
       "jean-lassalle",
-      "benoit-mathieu"
+      "benoit-mathieu",
+      "manolo-mlekuz",
+      "mira-markovic"
     ]
   },
   "email": {
-    "at": "2026-10-23T19:46:54.856Z",
+    "at": "2026-10-28T21:00:32.493Z",
     "actors": [
       "edouard-philippe",
       "gabriel-attal",
@@ -68,7 +70,9 @@
       "sylvain-durif",
       "natacha-polony",
       "jean-lassalle",
-      "benoit-mathieu"
+      "benoit-mathieu",
+      "manolo-mlekuz",
+      "mira-markovic"
     ]
   }
 }
