@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { NextRequest } from 'next/server'
-import { sameOrigin } from './client-ip'
+import { clientIp, sameOrigin } from './client-ip'
 
 const req = (headers: Record<string, string>) => new NextRequest('https://xn--avote-xra.fr/api/x', { method: 'POST', headers })
 const HOST = 'xn--avote-xra.fr'
@@ -23,5 +23,12 @@ describe('sameOrigin', () => {
   it('sans origine : refusé si exigée, toléré sinon', () => {
     expect(sameOrigin(req({}), HOST)).toBe(false)
     expect(sameOrigin(req({}), HOST, false)).toBe(true)
+  })
+})
+
+describe('clientIp', () => {
+  it('lit X-Real-IP par défaut, jamais X-Forwarded-For', () => {
+    expect(clientIp(req({ 'x-real-ip': ' 203.0.113.7 ', 'x-forwarded-for': '198.51.100.1' }))).toBe('203.0.113.7')
+    expect(clientIp(req({ 'x-forwarded-for': '198.51.100.1' }))).toBe('')
   })
 })

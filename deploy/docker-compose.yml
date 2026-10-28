@@ -1,0 +1,48 @@
+# Déploiement du site sur un serveur Docker, derrière un tunnel Cloudflare (docs/DEPLOIEMENT-VPS.md).
+# Aucun port n'est ouvert sur le serveur : le tunnel sort vers Cloudflare, qui seul sert le public.
+# Les secrets viennent du fichier .env du projet (variables d'environnement du projet Docker), jamais du dépôt.
+
+name: cavote
+
+services:
+  app:
+    image: ghcr.io/bengoaff/cavote:latest
+    restart: unless-stopped
+    mem_limit: 1g
+    cpus: 2
+    environment:
+      # Derrière le tunnel, l'adresse du visiteur arrive dans CF-Connecting-IP (src/lib/client-ip.ts)
+      CLIENT_IP_HEADER: cf-connecting-ip
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      RESEND_FROM: ${RESEND_FROM:-}
+      RESEND_SEGMENT_ID: ${RESEND_SEGMENT_ID:-}
+      RESEND_ALERT_SEGMENT_ID: ${RESEND_ALERT_SEGMENT_ID:-}
+      NEWSLETTER_SECRET: ${NEWSLETTER_SECRET:-}
+      CONTACT_TO: ${CONTACT_TO:-}
+      URNE_SUPABASE_URL: ${URNE_SUPABASE_URL:-}
+      URNE_SUPABASE_KEY: ${URNE_SUPABASE_KEY:-}
+      URNE_SECRET: ${URNE_SECRET:-}
+      URNE_TOKEN: ${URNE_TOKEN:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      FACTCHECK_MODEL: ${FACTCHECK_MODEL:-}
+      FACTCHECK_DAILY_MAX: ${FACTCHECK_DAILY_MAX:-}
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:-}
+    depends_on: [app]
+
+  # Récupère la nouvelle image publiée par .github/workflows/image.yml et ne recrée que le service app.
+  updater:
+    image: docker:27-cli
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./:/project:ro
+    command:
+      - sh
+      - -c
+      - while true; do sleep 300; docker compose --project-directory /project -p cavote pull -q app && docker compose --project-directory /project -p cavote up -d --no-deps app; done
