@@ -1,0 +1,35 @@
+{
+  "id": "2026-10-28-fracture-eco-01-fracture",
+  "at": "2026-10-28T13:31:16.582Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "POUR OU CONTRE ?",
+    "title": "Les plus hauts revenus devraient-ils payer plus d'impôt sur le revenu ?",
+    "line": "16 candidats se sont prononcés : 7 sont nettement pour, 5 nettement contre.",
+    "yes": [
+      "florian-philippot",
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "marine-tondelier",
+      "francois-ruffin",
+      "anasse-kazib",
+      "francois-asselineau"
+    ],
+    "no": [
+      "gabriel-attal",
+      "bruno-retailleau",
+      "david-lisnard",
+      "olivier-becht",
+      "emmanuel-dubuisson"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "16 candidats ont répondu à la même question : les plus hauts revenus devraient-ils payer plus d'impôt sur le revenu ? 7 disent nettement oui, 5 nettement non. Et toi ?",
+    "linkedin": "Sur l'impôt sur le revenu, 16 candidats à la présidentielle se sont prononcés sur la même affirmation : « Les personnes aux revenus les plus élevés devraient payer davantage d'impôt sur le revenu. »\n\nSept sont nettement pour : Florian Philippot, Jean-Luc Mélenchon, Fabien Roussel, Marine Tondelier, François Ruffin, Anasse Kazib et François Asselineau.\n\nCinq sont nettement contre : Gabriel Attal, Bruno Retailleau, David Lisnard, Olivier Becht et Emmanuel Dubuisson.\n\nEt vous, que répondriez-vous à cette affirmation, et sur quel argument ?\n\n#presidentielle2027 #impotsurlerevenu",
+    "facebook": "Les personnes aux revenus les plus élevés devraient payer davantage d'impôt sur le revenu : sur 16 candidats qui se sont prononcés, 7 sont nettement pour et 5 nettement contre. Tu te mets dans quel camp ? Dis-le en commentaire. Le test est sur çavote.fr",
+    "instagram": "7 candidats pour, 5 contre : les hauts revenus doivent-ils payer plus ?\nL'affirmation : « Les personnes aux revenus les plus élevés devraient payer davantage d'impôt sur le revenu. »\n16 candidats se sont prononcés.\n7 sont nettement pour.\n5 sont nettement contre.\nEt toi, tu te mets dans quel camp ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #impotsurlerevenu #fiscalite"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
