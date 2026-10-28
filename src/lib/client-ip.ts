@@ -1,10 +1,12 @@
 import type { NextRequest } from 'next/server'
 
 /**
- * Adresse du visiteur. Derrière le CDN de l'hébergeur, `X-Real-IP` est réécrite avec l'adresse réelle (vérifié le
- * 8 octobre 2026), alors que la première valeur de `X-Forwarded-For` peut être fournie par le visiteur lui-même.
+ * Adresse du visiteur, lue dans l'en-tête que pose le frontal devant le site : `X-Real-IP` derrière le CDN de
+ * l'hébergeur (vérifié le 8 octobre 2026), `CF-Connecting-IP` derrière un tunnel Cloudflare (CLIENT_IP_HEADER).
+ * Jamais la première valeur de `X-Forwarded-For`, que le visiteur peut fournir lui-même.
  */
-export const clientIp = (req: NextRequest): string => req.headers.get('x-real-ip')?.trim() ?? ''
+const IP_HEADER = (process.env.CLIENT_IP_HEADER || 'x-real-ip').toLowerCase()
+export const clientIp = (req: NextRequest): string => req.headers.get(IP_HEADER)?.trim() ?? ''
 
 /**
  * La requête vient-elle de nos propres pages ? Derrière le CDN, `req.nextUrl.host` est l'adresse interne du serveur :

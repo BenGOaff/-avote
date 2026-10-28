@@ -1,0 +1,12 @@
+.git
+.github
+node_modules
+.next
+out
+coverage
+scripts/.tmp
+.env
+.env.*
+.budget
+.x-debug
+*.tsbuildinfo

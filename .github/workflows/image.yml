@@ -1,0 +1,44 @@
+name: Image
+
+# Construit l'image du site à chaque changement de main et la publie sur ghcr.io.
+# Le serveur la récupère tout seul (service « updater » de deploy/docker-compose.yml).
+# Sur une pull request qui touche l'image, on la construit sans la publier.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    paths: [Dockerfile, .dockerignore, .github/workflows/image.yml, deploy/**]
+  workflow_dispatch:
+
+concurrency:
+  group: image-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        if: github.event_name != 'pull_request'
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: |
+            ghcr.io/bengoaff/cavote:latest
+            ghcr.io/bengoaff/cavote:${{ github.sha }}
+          labels: org.opencontainers.image.source=https://github.com/${{ github.repository }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
