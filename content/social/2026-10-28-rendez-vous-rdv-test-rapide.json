@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-28-rendez-vous-rdv-test-rapide",
+  "at": "2026-10-28T21:19:37.132Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "TES LIGNES ROUGES",
+    "title": "24 affirmations ou 111 : et 5 sujets sur lesquels tu ne transigeras pas",
+    "line": "Version rapide ou version complète : à toi de choisir ton rythme.",
+    "cta": "Fais le test"
+  },
+  "text": {
+    "x": "24 affirmations pour aller vite, 111 pour aller au fond. Et jusqu'à 5 lignes rouges : les sujets sur lesquels tu ne transigeras pas. Tu en poses combien ?",
+    "linkedin": "24 affirmations ou 111 : le test existe en deux versions.\nEt jusqu'à 5 sujets sur lesquels tu ne transigeras pas.\n\nLa version rapide propose 24 affirmations. La version complète en propose 111.\n\nDans les deux cas, tu peux poser jusqu'à 5 lignes rouges : les sujets sur lesquels tu ne transigeras pas.\n\nCinq sujets, pas un de plus. Il faut donc choisir ce qui compte vraiment, parmi tout ce qui compte.\n\nSi tu devais poser tes lignes rouges aujourd'hui, quels seraient tes premiers sujets ?\n\n#presidentielle2027",
+    "facebook": "Version rapide avec 24 affirmations, ou version complète avec 111 : tu choisis. Et tu peux poser jusqu'à 5 lignes rouges, les sujets sur lesquels tu ne transigeras pas. Alors, tu en as combien, toi ? Le test est sur çavote.fr",
+    "instagram": "24 affirmations ou 111 : tu choisis ta version.\nLa version rapide compte 24 affirmations.\nLa version complète en compte 111.\nTu peux poser jusqu'à 5 lignes rouges.\nCe sont les sujets sur lesquels tu ne transigeras pas.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #testpolitique #lignesrouges"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
