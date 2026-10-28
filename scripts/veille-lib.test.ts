@@ -37,6 +37,10 @@ describe('veille', () => {
     expect(stripHtml('<script>x</script>ok')).toBe('ok')
   })
 
+  it('décode les lettres accentuées nommées', () => {
+    expect(stripHtml('ch&ocirc;meur, &Eacute;tat, &ecirc;tre, na&iuml;f, c&oelig;ur, &eacute;t&eacute;')).toBe('chômeur, État, être, naïf, cœur, été')
+  })
+
   it('reconnaît un candidat déjà suivi sous un autre libellé', () => {
     const actors = [{ slug: 'eric-zemmour' }, { slug: 'marine-le-pen' }, { slug: 'dominique-de-villepin' }]
     expect(sameCandidate(actors, 'Zemmour')?.slug).toBe('eric-zemmour')
