@@ -212,6 +212,26 @@
         "title": "Présidentielle 2027 : Marine Le Pen invitée du Grand entretien sur LCI"
       },
       "note": "En 2011, elle promet un référendum sur la peine de mort et dit qu’elle fait partie, pour elle, de l’échelle des peines. En 2026, interrogée sur ce référendum, elle répond que la perpétuité réelle aurait dû remplacer la peine de mort, sans dire si elle organiserait le référendum."
+    },
+    {
+      "actor": "nicolas-dupont-aignan",
+      "topic": "Sortir de l’Union européenne",
+      "itemId": "eur-09",
+      "before": {
+        "quote": "si on ne revoit pas les relations à l’UE, on sera un pays de seconde zone. Ça ne veut pas dire sortir, je ne veux pas sortir de l’Europe",
+        "url": "https://www.dna.fr/elections/2022/02/24/presidentielle-2022-nicolas-dupont-aignan-dans-un-face-aux-electeurs-du-groupe-ebra-a-19h",
+        "date": "2022-02-24",
+        "publisher": "Les Dernières Nouvelles d’Alsace",
+        "title": "Présidentielle 2022 : le récap du jeudi 24 février (face aux électeurs du groupe Ebra)"
+      },
+      "after": {
+        "quote": "Je veux sortir de l’Union européenne pour rendre son indépendance à la France, pour qu’elle puisse résoudre ses problèmes.",
+        "url": "https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible",
+        "date": "2026-09-20",
+        "publisher": "Sud Radio",
+        "title": "Nicolas Dupont-Aignan : « La position du RN est incompréhensible »"
+      },
+      "note": "En 2022, candidat à la présidentielle, il veut revoir les relations avec l’Union européenne sans en sortir. En 2026, il fait de la sortie de l’Union européenne la première des quatre différences de sa candidature."
     }
   ]
 }
