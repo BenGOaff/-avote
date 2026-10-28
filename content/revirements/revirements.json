@@ -174,6 +174,44 @@
         "title": "Mariage pour tous : Bruno Retailleau assure que « la loi est passée, elle doit être appliquée »"
       },
       "note": "En 2014, président du groupe UMP au Sénat, il se dit pour l’abrogation de la loi qui ouvre le mariage aux couples de même sexe. En 2024, ministre de l’Intérieur, il dit sur TF1 que la loi doit être appliquée et qu’il ne veut pas revenir dessus, tout en précisant : « J’ai des convictions ». Ce qui change, c’est ce qu’il veut faire de la loi ; il ne dit pas avoir changé d’avis sur le fond."
+    },
+    {
+      "actor": "xavier-bertrand",
+      "topic": "La durée du mandat présidentiel",
+      "before": {
+        "quote": "Voilà pourquoi je proposerai un referendum pour changer la Constitution, pour en revenir à un septennat, mais non renouvelable",
+        "url": "https://www.europe1.fr/politique/Presidentielle-Bertrand-veut-un-septennat-unique-837882",
+        "date": "2013-09-07",
+        "publisher": "Europe 1",
+        "title": "Présidentielle : Bertrand veut un septennat unique"
+      },
+      "after": {
+        "quote": "Je crois profondément à la logique d’un mandat unique de cinq ans.",
+        "url": "https://www.nousfrance.fr/2026/07/rencontres-economiques-daix-il-faut-une-republique-des-territoires-et-un-mandat-unique-pour-xavier-bertrand-la-provence/",
+        "date": "2026-07-04",
+        "publisher": "Nous France (interview de La Provence)",
+        "title": "Rencontres économiques d’Aix : « Il faut une République des territoires et un mandat unique », pour Xavier Bertrand"
+      },
+      "note": "L’idée d’un mandat unique, sans réélection possible, ne change pas. La durée, si : sept ans en 2013, six ans en 2020 selon franceinfo, cinq ans en 2026."
+    },
+    {
+      "actor": "marine-le-pen",
+      "topic": "La peine de mort",
+      "before": {
+        "quote": "Moi je suis avocat, je suis pour l'échelle des peines et je pense que la peine de mort participe de cette échelle des peines",
+        "url": "https://www.leparisien.fr/elections/presidentielle/fn-marine-le-pen-veut-un-referendum-sur-la-peine-de-mort-16-09-2011-1610833.php",
+        "date": "2011-09-16",
+        "publisher": "Le Parisien",
+        "title": "FN : Marine Le Pen veut un référendum sur la peine de mort"
+      },
+      "after": {
+        "quote": "Il eût fallu qu'à la peine de mort ait été substituée la perpétuité réelle",
+        "url": "https://www.tf1info.fr/politique/en-direct-presidentielle-2027-marine-le-pen-invitee-du-grand-entretien-ce-mercredi-1er-juillet-2026-21-heures-sur-lci-darius-rochebin-2450474.html",
+        "date": "2026-07-01",
+        "publisher": "TF1 Info",
+        "title": "Présidentielle 2027 : Marine Le Pen invitée du Grand entretien sur LCI"
+      },
+      "note": "En 2011, elle promet un référendum sur la peine de mort et dit qu’elle fait partie, pour elle, de l’échelle des peines. En 2026, interrogée sur ce référendum, elle répond que la perpétuité réelle aurait dû remplacer la peine de mort, sans dire si elle organiserait le référendum."
     }
   ]
 }
