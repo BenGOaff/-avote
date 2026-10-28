@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -81,6 +81,23 @@
         "url": "https://www.publicsenat.fr/actualites/politique/hec-debats-public-senat-suivez-en-direct-la-rencontre-avec-bruno-retailleau"
       },
       "quote": "est l’invité de HEC Débats ce mardi 27 octobre, à partir de 20H",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-11-03-rencontre-de-david-lisnard-avec-les-deputes-lr",
+      "kind": "meeting",
+      "title": "Rencontre de David Lisnard avec les députés LR",
+      "date": "2026-11-03",
+      "summary": "David Lisnard doit échanger avec les députés LR autour de son projet, alors qu'il est candidat à la présidentielle.",
+      "who": [
+        "david-lisnard"
+      ],
+      "source": {
+        "title": "David Lisnard dragouille les députés LR",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/david-lisnard-dragouille-les-deputes-lr-20261028_KVMETPZNHJETBJO5QUHLKZPDZI/"
+      },
+      "quote": "donne rendez-vous aux députés LR mardi 3 novembre",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
