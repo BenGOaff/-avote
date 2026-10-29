@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-28T22:40:46.280Z",
+  "updatedAt": "2026-10-29T14:26:52.328Z",
   "items": [
+    {
+      "id": "jordan-bardella-aurait-dissimule-une-montre-rolex-avant-de-p-aa9665",
+      "claim": "Jordan Bardella aurait dissimulé une montre Rolex avant de prendre la parole au congrès du RN à Orléans.",
+      "verdict": "faux",
+      "truth": "Jordan Bardella a bien enlevé sa montre avant de parler au congrès du RN, mais il ne s'agit pas d'une Rolex.",
+      "spreaders": [],
+      "topic": "democratie",
+      "firstSeen": "2026-10-28",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/politique/4258364-20261028-oui-jordan-bardella-enleve-montre-avant-prendre-parole-congres-rn-agit-rolex?amp%3Bat_campaign=149",
+          "title": "Oui, Jordan Bardella a enlevé sa montre avant de prendre la parole au congrès du RN, mais il ne s’agit pas d’une Rolex",
+          "date": "2026-10-28",
+          "quote": "il ne s’agit pas d’une Rolex"
+        }
+      ]
+    },
     {
       "id": "des-policiers-auraient-pille-un-magasin-a-limoges-lors-de-la-d82176",
       "claim": "Des policiers auraient pillé un magasin à Limoges lors de la mobilisation du 17 octobre.",
