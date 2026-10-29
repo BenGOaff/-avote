@@ -1,0 +1,22 @@
+name: Réveil de l'urne
+
+# La base de l'urne (formule gratuite) se met en pause après 7 jours sans activité : l'urne et les alertes tombent en
+# panne. Une lecture des totaux par jour suffit à la garder éveillée. Aucune donnée n'est écrite.
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Lire les totaux
+        run: |
+          code=$(curl -sS -o /tmp/totaux.json -w '%{http_code}' -A 'cavote-reveil' 'https://xn--avote-xra.fr/api/urne/totals')
+          cat /tmp/totaux.json; echo
+          test "$code" = 200
