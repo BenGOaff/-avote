@@ -23,14 +23,16 @@ Routes publiques du tunnel, toutes vers `http://app:3000` :
 - `xn--avote-xra.fr` et `www.xn--avote-xra.fr` ;
 - `cavote.fr` et `www.cavote.fr` (redirigés vers le domaine accentué par `next.config.mjs`).
 
-## DNS
+## DNS (zone Cloudflare)
 
-Les enregistrements de messagerie restent à l'identique :
-
-- MX vers Resend (réception) et vers la messagerie ;
-- SPF ;
-- sous-domaine `send` et `resend._domainkey` (envoi Resend) ;
-- `_dmarc`.
+- Le site et `www` des deux domaines : CNAME vers le tunnel, proxifiés.
+- Messagerie, à l'identique de l'ancienne zone :
+  - MX vers la messagerie Hostinger (`mx1`, `mx2`) ;
+  - SPF, DKIM de la messagerie (`hostingermail-*`), `autodiscover`, `autoconfig` ;
+  - envoi Resend : sous-domaines `send` et `rsend`, `resend._domainkey` ;
+  - `_dmarc`.
+- La ligne MX de réception Resend (`inbound-smtp…amazonaws.com`, priorité 4) a été retirée le 29 octobre 2026 : aucune boîte Resend n'existait, et le courrier adressé au domaine s'y perdait. Ne pas la remettre sans créer de boîte de réception chez Resend.
+- `quiz` : CNAME vers un service externe, gardé tel quel. `ftp` : retiré avec l'ancien hébergement.
 
 Avant tout changement de serveurs de noms, comparer la zone exportée ligne à ligne.
 
