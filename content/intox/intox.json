@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-10-29T22:50:06.139Z",
+  "updatedAt": "2026-10-30T14:17:39.780Z",
   "items": [
+    {
+      "id": "une-image-montrerait-une-librairie-intacte-au-milieu-de-maga-da65a6",
+      "claim": "Une image montrerait une librairie intacte au milieu de magasins pillés lors des violences du 17 octobre.",
+      "verdict": "ia",
+      "truth": "L'image diffusée sur Facebook est classée IA par la cellule de fact-checking : ce n'est pas une photo réelle des violences du 17 octobre.",
+      "spreaders": [],
+      "topic": "securite",
+      "firstSeen": "2026-10-30",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/violences-urbaines-du-17-octobre-cette-image-dune-librairie-intacte-au-milieu-de-magasins-pilles-est-fausse/",
+          "title": "Violences urbaines du 17 octobre : cette image d’une librairie intacte au milieu de magasins pillés est fausse",
+          "date": "2026-10-30",
+          "quote": "cette image d’une librairie intacte au milieu de magasins pillés est fausse"
+        }
+      ]
+    },
     {
       "id": "jordan-bardella-aurait-dissimule-une-montre-rolex-avant-de-p-aa9665",
       "claim": "Jordan Bardella aurait dissimulé une montre Rolex avant de prendre la parole au congrès du RN à Orléans.",
