@@ -19,6 +19,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: social
@@ -27,7 +28,7 @@ concurrency:
 jobs:
   social:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -81,6 +82,10 @@ jobs:
           git add content/social
           git commit -m "réseaux : publications du $(date -u +%Y-%m-%d) ($(date -u +%H)h)" || exit 0
           git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:${{ github.ref_name }}
+          # Un push fait avec le jeton d'Actions ne déclenche pas la construction du site : on la demande (image.yml)
+          gh workflow run image.yml --ref "${{ github.ref_name }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
       # X sans API officielle : navigateur sans écran sur la session du compte (secret X_AUTH_TOKEN)
       - name: Publier sur X
         id: x

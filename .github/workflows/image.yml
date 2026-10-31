@@ -3,6 +3,8 @@ name: Image
 # Construit l'image du site à chaque changement de main et la publie sur ghcr.io.
 # Le serveur la récupère tout seul (service « updater » de deploy/docker-compose.yml).
 # Sur une pull request qui touche l'image, on la construit sans la publier.
+# Les robots poussent avec le jeton d'Actions, ce qui ne déclenche pas « push » : on construit donc aussi à la fin de
+# chacun d'eux (workflow_run), et le robot des réseaux la demande lui-même après avoir mis ses visuels en ligne.
 
 on:
   push:
@@ -10,6 +12,10 @@ on:
   pull_request:
     paths: [Dockerfile, .dockerignore, .github/workflows/image.yml, deploy/**]
   workflow_dispatch:
+  workflow_run:
+    workflows: [Alertes, Archives, Intox, Médias, Portraits, Positions, Programmes, Réseaux sociaux, Sondages, Veille, YouTube]
+    types: [completed]
+    branches: [main]
 
 concurrency:
   group: image-${{ github.ref }}
