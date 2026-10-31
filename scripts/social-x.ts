@@ -4,7 +4,7 @@
  * et envoie. Choix assumé de la rédaction : le compte peut être restreint par X.
  *
  * Seules les publications du jour (24 h) sont reprises, chacune une fois (content/social/_x.json).
- * Le visuel doit être en ligne : on attend que /social/<id>/carte.png réponde, 10 minutes au plus. Sinon (déploiement
+ * Le visuel doit être en ligne : on attend que /social/<id>/carte.png réponde, 20 minutes au plus (construction de l'image du site, puis récupération par le serveur). Sinon (déploiement
  * lent la nuit), la publication est simplement remise au passage suivant, sans faire échouer celui-ci.
  * En cas d'échec, une capture d'écran est laissée dans .x-debug/ pour comprendre ce qui a coincé.
  *
@@ -42,12 +42,12 @@ class NotOnlineYet extends Error {}
 
 async function image(p: SocialPost): Promise<Buffer> {
   const url = `${SITE}/social/${p.id}/carte.png`
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 40; i++) {
     const res = await fetch(url).catch(() => null)
     if (res?.ok) return Buffer.from(await res.arrayBuffer())
     await new Promise((r) => setTimeout(r, 30_000))
   }
-  throw new NotOnlineYet(`visuel pas en ligne après 10 minutes : ${url}`)
+  throw new NotOnlineYet(`visuel pas en ligne après 20 minutes : ${url}`)
 }
 
 async function main() {
