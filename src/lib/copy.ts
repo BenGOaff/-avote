@@ -455,6 +455,126 @@ export const UI_COPY = {
     replyText: (name: string) => `${name} ne voit pas le résultat de son côté. Envoie-lui ton propre lien : à son tour de découvrir où vous divergez.`,
     replyMessage: (name: string) => `${name || 'Quelqu’un'} a relevé ton duel. À toi de voir le résultat :`,
   },
+  enClasse: {
+    kicker: 'Pour les profs',
+    metaTitle: 'Présidentielle 2027 en classe : séances EMC clés en main, test et quiz gratuits',
+    description: (quick: number) =>
+      `Quatre séances gratuites sur l’élection présidentielle 2027 pour l’EMC et l’éducation aux médias : quiz « Sais-tu voter ? », test rapide en ${quick} questions, propriétaires des médias, intox démontées, tests comparés. Sans compte, rien n’est enregistré.`,
+    title: 'La présidentielle 2027 en classe',
+    lede: 'Quatre séances clés en main pour l’EMC, l’éducation aux médias ou la vie de classe. Sans compte ni inscription : les réponses des élèves restent sur leur appareil.',
+    short: (quick: number) => [
+      'Une séance complète de 50 minutes, et trois séances de 30 minutes à enchaîner ou à prendre seules.',
+      `Le test rapide en ${quick} questions et le duel se calculent sur le téléphone de l’élève : rien n’est envoyé, rien n’est enregistré chez nous.`,
+      'Chaque position de candidat renvoie au passage exact où il le dit. Une position introuvable reste vide.',
+    ],
+    rulesTitle: 'Trois règles avant de commencer',
+    rules: [
+      'Personne ne montre ses résultats : le vote est secret. On parle des questions, jamais des réponses de chacun.',
+      'On discute des idées, pas des personnes. Chaque élève formule l’argument du camp qu’il ne partage pas avant de donner le sien.',
+      'Les quiz « Suis-je un… ? » se moquent de chaque camp : ils sont faits pour rire entre adultes, pas pour la classe.',
+    ],
+    duration: (min: number) => `${min} minutes`,
+    steps: 'Déroulé',
+    debate: 'Pour lancer le débat',
+    open: 'Ouvrir',
+    seances: [
+      {
+        id: 'voter',
+        title: 'Comprendre la présidentielle et savoir voter',
+        min: 50,
+        goal: 'Gauche et droite, les extrêmes, le bureau de vote, le test en solo, un duel, un sondage à lire.',
+        steps: [
+          'Six temps minutés, avec la consigne de chacun et ce que l’élève retient à la fin.',
+          'Le quiz « Sais-tu voter ? » pour s’échauffer : dix affirmations, vrai ou faux, sur le bureau de vote.',
+        ],
+        debate: 'Faut-il rendre le vote obligatoire ? Que devrait-on faire du vote blanc ?',
+        links: [
+          { href: '/comprendre/seance-50-minutes', label: 'La séance minute par minute' },
+          { href: '/quiz/flash/sais-tu-voter', label: 'Le quiz « Sais-tu voter ? »' },
+        ],
+      },
+      {
+        id: 'medias',
+        title: 'Qui possède ton info ?',
+        min: 30,
+        goal: 'Savoir qui possède les chaînes, les radios et les journaux que les élèves suivent, et ce que ça change.',
+        steps: [
+          '0 à 8 min : le quiz « Sais-tu qui possède tes infos ? », chacun seul. On lit ensemble les explications des deux questions les plus ratées.',
+          '8 à 22 min : par deux, ouvrir la fiche d’un média que l’un des deux suit. Relever le propriétaire, son groupe, et les rappels à l’ordre de l’Arcom.',
+          '22 à 30 min : comparer avec un média sans milliardaire ni grand groupe au-dessus de lui.',
+        ],
+        debate: 'Le propriétaire d’un média influence-t-il ce qu’il raconte ? Qu’est-ce qui permettrait de le vérifier ?',
+        links: [
+          { href: '/quiz/flash/teste-tes-connaissances-sur-les-medias', label: 'Le quiz sur les médias' },
+          { href: '/medias', label: 'Les fiches des médias' },
+          { href: '/medias/libres', label: 'Les médias libres' },
+        ],
+      },
+      {
+        id: 'intox',
+        title: 'Démonter une intox',
+        min: 30,
+        goal: 'Repérer une fausse information de campagne et la réfuter en une phrase, source à l’appui.',
+        steps: [
+          '0 à 15 min : par groupes, choisir une intox de la campagne. Lire la preuve, puis la résumer en une phrase qui cite sa source.',
+          '15 à 25 min : chaque groupe lit sa phrase. La classe vérifie que la source dit bien ce que le groupe affirme.',
+          '25 à 30 min : la classe pose une question à « Vrai ou faux ? ». La question part sur notre serveur pour trouver la réponse : n’y écrire ni nom ni information personnelle.',
+        ],
+        debate: 'Pourquoi une fausse information circule-t-elle plus vite qu’un démenti ?',
+        links: [
+          { href: '/fake-news', label: 'Les intox démontées' },
+          { href: '/verifier', label: 'Vrai ou faux ?' },
+        ],
+      },
+      {
+        id: 'tests',
+        title: 'Comparer les tests « pour qui voter »',
+        min: 30,
+        goal: 'Comprendre comment un test politique en ligne fabrique son résultat, et vérifier qu’il dit vrai.',
+        steps: [
+          '0 à 12 min : par groupes, prendre un test du comparatif. Relever qui le publie, qui range les positions des candidats, ce qu’il fait d’une position inconnue, où vont les réponses.',
+          '12 à 24 min : ouvrir une proposition, par exemple sur la retraite ou l’école. Cliquer sur la source d’un candidat : le passage dit-il bien ce que la page affirme ?',
+          '24 à 30 min : la classe classe les critères du plus au moins important pour faire confiance à un test.',
+        ],
+        debate: 'Un test peut-il dire pour qui voter ? Qu’est-ce qu’il ne sait pas de toi ?',
+        links: [
+          { href: '/comparatif-tests', label: 'Les tests comparés' },
+          { href: '/programmes', label: 'Les propositions par sujet' },
+        ],
+      },
+    ],
+    toolsTitle: 'Les outils, en un clic',
+    tools: [
+      { href: '/', label: 'Le test pour savoir pour qui voter en 2027', desc: 'Toutes les questions, tes priorités, tes lignes rouges.' },
+      { href: '/quiz', label: 'Les quiz de la présidentielle 2027', desc: 'Le test rapide, puis des quiz sur le vote, les impôts, la Ve République.' },
+      { href: '/lexique', label: 'Le lexique', desc: '49.3, RIC, AME, CSG : les mots du test expliqués simplement.' },
+      { href: '/voter', label: 'Voter en 2027', desc: 'Dates, inscription, procuration, pièce d’identité.' },
+      { href: '/duel', label: 'Le duel', desc: 'Deux élèves, un téléphone : d’accord sur quoi, en désaccord sur quoi.' },
+      { href: '/comprendre', label: 'Comprendre la politique', desc: 'Gauche, droite, extrêmes, partis, grands moments, sourcés.' },
+    ],
+    privacyTitle: 'Ce que le site enregistre sur tes élèves',
+    privacy: [
+      'Rien sur leurs réponses : le test, le duel et les quiz se calculent dans le navigateur. Ni compte, ni nom, ni adresse.',
+      'La mesure d’audience ne se charge qu’après accord dans le bandeau, et jamais pendant le test.',
+      'Le détail est sur la page Confidentialité.',
+    ],
+    faq: [
+      {
+        q: 'Le test peut-il être utilisé en classe avec des élèves mineurs ?',
+        a: 'Oui : il ne demande ni compte, ni nom, ni âge, et les réponses restent sur l’appareil de l’élève. La règle à poser : personne ne montre son résultat.',
+      },
+      {
+        q: 'Faut-il créer un compte ou payer ?',
+        a: 'Non. Tout est gratuit, sans inscription, sur téléphone comme sur les postes de la salle.',
+      },
+      {
+        q: 'Comment le site choisit-il les positions des candidats ?',
+        a: 'Chaque position renvoie au passage exact où le candidat le dit, avec le lien vers la page d’origine. Quand aucune position n’est trouvée, la case reste vide. La méthode est publique.',
+      },
+    ],
+    faqTitle: 'Les questions des profs',
+    contact: 'Une séance à corriger, une idée d’activité : écris-nous.',
+  },
   comprendre: {
     kicker: 'Éducation populaire',
     title: 'Comprendre la politique',
@@ -473,6 +593,7 @@ export const UI_COPY = {
     teachersBody:
       'Une séance de 50 minutes clé en main : un quiz pour s’échauffer, dix minutes d’histoire, le test rapide en solo, un duel à deux, un sondage à lire. Sans compte, sans collecte, et le vote reste secret.',
     teachersBtn: 'Voir la séance',
+    teachersAll: 'Toutes les séances pour la classe',
     method:
       'Chaque date, chiffre ou citation renvoie à une source publique (Constitution, Conseil d’État, Assemblée nationale, BnF, INA, encyclopédies, presse), avec l’extrait exact. Jamais Wikipédia. Une erreur ? Le lien en bas de chaque chapitre.',
   },

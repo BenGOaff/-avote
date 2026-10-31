@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((m) => mediaLogoOf(m.slug))
     .filter((x): x is string => !!x)
     .map((x) => absolute(x))
-  const statics = ['/', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/presse', '/comparatif-tests', '/comprendre', '/couverture', '/studio', '/newsletter', '/medias', '/medias/libres', '/medias/youtube', '/fake-news', '/verifier', '/urne', '/sondages', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales', ...(REVIREMENTS.length > 0 ? ['/revirements'] : [])]
+  const statics = ['/', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/presse', '/comparatif-tests', '/comprendre', '/en-classe', '/couverture', '/studio', '/newsletter', '/medias', '/medias/libres', '/medias/youtube', '/fake-news', '/verifier', '/urne', '/sondages', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales', ...(REVIREMENTS.length > 0 ? ['/revirements'] : [])]
   return [
     ...statics.map((p) => ({
       url: absolute(p),
