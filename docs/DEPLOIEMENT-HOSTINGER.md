@@ -1,5 +1,7 @@
 # Déployer sur Hostinger (Web Apps)
 
+> **Obsolète depuis le 29 octobre 2026.** Le site est servi par un serveur Docker derrière un tunnel Cloudflare : voir `DEPLOIEMENT-VPS.md`. Ce document reste pour l'historique.
+
 Hostinger « Web Apps » (= applications Node.js) héberge Next.js en mode serveur et redéploie à chaque push sur la branche connectée. Sources : docs.hostinger.com/node.js (vérifié le 8 octobre 2026).
 
 ## Prérequis

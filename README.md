@@ -40,7 +40,8 @@ Node 20.9 ou plus récent (22 recommandé).
 
 ## Documentation
 
-- [Déployer sur Hostinger](docs/DEPLOIEMENT-HOSTINGER.md)
+- [Déployer sur le serveur (Docker + tunnel Cloudflare)](docs/DEPLOIEMENT-VPS.md)
+- [Ancien déploiement Hostinger](docs/DEPLOIEMENT-HOSTINGER.md) (obsolète)
 - [La veille automatisée](docs/VEILLE.md)
 - [Le quiz Tiquiz](docs/TIQUIZ.md)
 - [Ajouter des positions de candidats](docs/CORPUS.md)
