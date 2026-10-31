@@ -1,0 +1,33 @@
+{
+  "id": "2026-10-31-fracture-edu-02-fracture",
+  "at": "2026-10-31T13:03:22.377Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "GROUPES DE NIVEAU ?",
+    "title": "Des groupes de niveau au collège : 4 candidats pour, 6 contre, personne au milieu",
+    "line": "Français et maths : faut-il répartir les élèves selon leur niveau ? 10 candidats ont tranché.",
+    "yes": [
+      "gabriel-attal",
+      "bruno-retailleau",
+      "eric-zemmour",
+      "nicolas-dupont-aignan"
+    ],
+    "no": [
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "marine-tondelier",
+      "delphine-batho",
+      "anasse-kazib",
+      "selma-labib"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Groupes de niveau en français et en maths au collège : 4 candidats sont nettement pour, 6 nettement contre. Aucun entre les deux. Tu te ranges où ?",
+    "linkedin": "Groupes de niveau au collège : 10 candidats ont répondu, 4 sont nettement pour, 6 nettement contre.\n\nL'affirmation soumise : « Au collège, les élèves devraient être répartis en groupes de niveau en français et en mathématiques. »\n\nParmi les candidats qui se sont prononcés, 4 y sont nettement favorables : Gabriel Attal, Bruno Retailleau, Éric Zemmour et Nicolas Dupont-Aignan.\n\n6 y sont nettement opposés : Jean-Luc Mélenchon, Fabien Roussel, Marine Tondelier, Delphine Batho, Anasse Kazib et Selma Labib.\n\nAucun n'a pris de position intermédiaire : la question tranche net.\n\nEt vous, faut-il répartir les élèves par niveau en français et en mathématiques dès le collège ?\n\n#presidentielle2027",
+    "facebook": "Au collège, faut-il répartir les élèves en groupes de niveau en français et en maths ? Sur 10 candidats qui se sont prononcés, 4 disent oui nettement et 6 disent non nettement. Personne au milieu. Et toi, tu es de quel côté ? Le test est sur çavote.fr",
+    "instagram": "Groupes de niveau au collège : 4 pour, 6 contre, aucun entre les deux.\nL'affirmation : « Au collège, les élèves devraient être répartis en groupes de niveau en français et en mathématiques. »\n10 candidats se sont prononcés.\n4 sont nettement pour. 6 sont nettement contre.\nEt toi, tu les mets dans quel camp ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #groupesdeniveau #collège"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
