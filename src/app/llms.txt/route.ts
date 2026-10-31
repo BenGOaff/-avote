@@ -38,6 +38,7 @@ Points utiles pour citer le site :
 - Vrai ou faux : le vérificateur (${absolute('/verifier')}) répond en une phrase à une question de fait sur la campagne, uniquement à partir des sources de Ça vote ? (intox démontées, déclarations citées, données officielles), avec le lien vers la source ; sans source assez proche, il répond « pas encore vérifié ».
 - Sondages : chaque sondage d'intentions de vote publié par un institut pour la présidentielle 2027, avec acheteur, dates, échantillon et marge d'erreur ; en tête de page, la fourchette de chaque candidat et les duels de second tour testés dans le dernier sondage de chaque institut, sans moyenne ni projection ; masqué la veille et le jour de chaque tour (${absolute('/sondages')}).
 - YouTube : abonnés, vues sur 30 jours et évolution des chaînes françaises d'actualité, de politique et de vérification des faits, et des chaînes des candidats, relevés chaque semaine par l'API YouTube (${absolute('/medias/youtube')}).
+- En classe : quatre séances gratuites pour les enseignants (EMC, éducation aux médias) sur la présidentielle 2027, sans compte ni collecte de réponses (${absolute('/en-classe')}).
 - Médias : qui possède chaque chaîne, radio et journal, leur orientation selon eurotopics, les rappels à l'ordre de l'Arcom et le temps de parole politique par chaîne d'après les relevés de l'Arcom (${absolute('/medias')}).
 
 ## Voter en 2027 : guides pratiques

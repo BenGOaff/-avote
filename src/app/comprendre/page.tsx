@@ -41,6 +41,9 @@ export default function ComprendrePage() {
             <p>{t.teachersBody}</p>
             <Link className="btn btn--highlight" href={`/comprendre/${seance.slug}`}>
               {t.teachersBtn}
+            </Link>{' '}
+            <Link className="btn" href="/en-classe">
+              {t.teachersAll}
             </Link>
           </section>
         )}
