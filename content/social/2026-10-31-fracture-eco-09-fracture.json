@@ -1,0 +1,34 @@
+{
+  "id": "2026-10-31-fracture-eco-09-fracture",
+  "at": "2026-10-31T08:52:05.962Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "CHACUN SON CAMP",
+    "title": "Moins d'agents publics : 5 candidats disent oui, 6 disent non",
+    "line": "15 candidats se sont prononcés sur la baisse des effectifs de l'État, des collectivités et des hôpitaux.",
+    "yes": [
+      "gabriel-attal",
+      "bruno-retailleau",
+      "david-lisnard",
+      "eric-zemmour",
+      "xavier-bertrand"
+    ],
+    "no": [
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "francois-ruffin",
+      "nathalie-arthaud",
+      "selma-labib",
+      "francois-asselineau"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Baisser le nombre d'agents publics (État, collectivités, hôpitaux) : 5 candidats sont nettement pour, 6 nettement contre. Et toi, tu te mets dans quel camp ?",
+    "linkedin": "Le nombre d'agents publics devrait baisser : 5 candidats à la présidentielle 2027 répondent nettement oui, 6 nettement non.\n\nL'affirmation couvre l'État, les collectivités et les hôpitaux. Sur ce point, 15 candidats se sont prononcés.\n\nCôté pour : Gabriel Attal, Bruno Retailleau, David Lisnard, Éric Zemmour et Xavier Bertrand.\n\nCôté contre : Jean-Luc Mélenchon, Fabien Roussel, François Ruffin, Nathalie Arthaud, Selma Labib et François Asselineau.\n\nEt toi, tu réduirais les effectifs publics, ou tu les maintiendrais ?\n\n#presidentielle2027",
+    "facebook": "Faut-il réduire le nombre d'agents publics (État, collectivités, hôpitaux) ? Sur 15 candidats qui se sont prononcés, 5 sont nettement pour et 6 nettement contre. Tu te mets dans quel camp ? Dis-le-nous en commentaire. Le test est sur çavote.fr",
+    "instagram": "5 candidats pour, 6 contre : les agents publics divisent\nLe nombre d'agents publics devrait baisser.\nÉtat, collectivités, hôpitaux.\n15 candidats se sont prononcés.\n5 sont nettement pour, 6 nettement contre.\nTu te mets dans quel camp ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #fonctionpublique #agentspublics"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
