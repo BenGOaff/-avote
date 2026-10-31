@@ -66,7 +66,7 @@ export const UI_COPY = {
     shop: 'Boutique',
   },
   home: {
-    title: 'Trouve le candidat le plus proche de tes idées',
+    title: 'Pour qui voter en 2027 ? Trouve le candidat le plus proche de tes idées',
     lede: 'Nous avons le droit de voter et le devoir de le faire en toute connaissance de cause. Fais le test pour découvrir qui est le candidat le plus proche de tes idées et de tes besoins. C’est anonyme, évidemment !',
     promise: 'On te donne les faits, tu votes en ton âme et conscience.',
     faqTitle: 'Questions fréquentes',
@@ -76,6 +76,12 @@ export const UI_COPY = {
         a: `Personne ne peut le décider à ta place, mais tu peux voir qui pense comme toi. Le test Ça vote ? compare tes réponses à ${n} affirmations aux positions des candidats, chacune avec sa source, et te montre de qui tu es le plus proche. Il est gratuit, anonyme, et tes réponses restent sur ton téléphone.`,
         href: '/test',
         link: 'Faire le test',
+      },
+      {
+        q: 'Je ne sais pas pour qui voter : par où commencer ?',
+        a: 'Note les trois sujets qui comptent le plus pour toi, fais le test, puis lis ce que disent sur ces sujets les deux ou trois candidats dont tu es le plus proche, avec leurs propres mots et leurs sources.',
+        href: '/voter/je-ne-sais-pas-pour-qui-voter',
+        link: 'Choisir en cinq étapes',
       },
       {
         q: 'Quand a lieu l’élection présidentielle 2027 ?',
@@ -533,6 +539,10 @@ export const UI_COPY = {
     arcomTitle: 'Les décisions de l’Arcom',
     group: 'Les autres médias du même propriétaire',
     all: 'Tous les médias : qui possède ton info',
+    // Ceux qui cherchent qui possède un média s'informent sur l'élection : on leur propose le test
+    testTitle: 'Et toi, de quels candidats es-tu proche ?',
+    testText: 'Le test compare tes réponses aux positions des candidats à la présidentielle 2027, chacune avec sa source. Gratuit, anonyme, tes réponses restent sur ton téléphone.',
+    testLink: 'Faire le test',
     free: 'Les médias libres',
     error: 'Signaler une erreur',
   },

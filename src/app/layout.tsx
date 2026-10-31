@@ -13,7 +13,7 @@ import { Logo } from '@/components/Logo'
 
 export const metadata: Metadata = {
   metadataBase: SITE_URL,
-  title: { default: 'Pour qui voter en 2027 ? Le test de Ça vote ?, sources à l’appui', template: '%s · Ça vote ?' },
+  title: { default: 'Pour qui voter en 2027 ? Test et quiz gratuit, sources à l’appui · Ça vote ?', template: '%s · Ça vote ?' },
   description: SITE.description,
   applicationName: 'Ça vote ?',
   manifest: '/manifest.webmanifest',

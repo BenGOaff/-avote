@@ -18,6 +18,8 @@ export interface GuideSection {
   paras?: string[]
   list?: string[]
   ordered?: boolean
+  /** Pages du site qui servent à l'étape décrite */
+  links?: { href: string; label: string }[]
 }
 export interface Guide {
   slug: string
@@ -41,6 +43,54 @@ const deadline = dayLabel(REGISTRATION_DEADLINE)
 const deadlineSpecial = dayLabel(REGISTRATION_DEADLINE_SPECIAL)
 
 export const GUIDES: Guide[] = [
+  {
+    // La recherche des indécis (« je ne sais pas pour qui voter », « savoir pour qui voter ») : une méthode, pas une consigne
+    slug: 'je-ne-sais-pas-pour-qui-voter',
+    question: 'Je ne sais pas pour qui voter en 2027 : comment choisir ?',
+    metaTitle: 'Je ne sais pas pour qui voter en 2027 : comment choisir, en 5 étapes',
+    description: 'Indécis pour la présidentielle 2027 ? Cinq étapes pour choisir sans qu’on choisisse à ta place : tes priorités, le test, les positions sourcées des candidats, la comparaison, la vérification des intox.',
+    short: [
+      'Pars de ce qui compte pour toi, puis regarde ce que les candidats disent sur ces sujets précis, avec leurs propres mots. Le test Ça vote ? fait cette comparaison en quelques minutes ; la décision reste la tienne.',
+      `Le premier tour a lieu le ${dayLabel(FIRST_ROUND)}, le second le ${dayLabel(SECOND_ROUND)}.`,
+    ],
+    sections: [
+      {
+        title: 'Cinq étapes pour choisir',
+        ordered: true,
+        list: [
+          'Note les trois sujets qui comptent le plus pour toi : ton salaire, la santé, l’école, le climat, la sécurité, l’immigration…',
+          'Fais le test, en version courte ou complète : il te montre de quels candidats tu es proche, sujet par sujet.',
+          'Lis les positions des deux ou trois candidats qui ressortent, sur tes trois sujets : chaque position est une phrase du candidat, avec sa source.',
+          'Compare-les côte à côte, et regarde lesquels ont changé d’avis.',
+          'Vérifie ce que tu as vu passer sur les réseaux avant de t’en servir pour choisir.',
+        ],
+        links: [
+          { href: '/', label: 'Faire le test' },
+          { href: '/comparateur', label: 'Comparer les candidats' },
+          { href: '/revirements', label: 'Ils ont changé d’avis' },
+          { href: '/fake-news', label: 'Les intox vérifiées' },
+        ],
+      },
+      {
+        title: 'Ce que le test ne fait pas',
+        paras: [
+          'Il ne te dit pas pour qui voter : il mesure une proximité à partir des positions publiées par les candidats. Une position absente reste absente, et le résultat te dit ce qui reste à vérifier.',
+        ],
+        links: [{ href: '/methodologie', label: 'Comment le résultat est calculé' }],
+      },
+      {
+        title: 'Si aucun candidat ne te convient',
+        paras: [
+          'Une enveloppe vide ou un bulletin sans nom de candidat : c’est un vote blanc. Il est compté parmi les votants, pas parmi les suffrages exprimés.',
+        ],
+      },
+    ],
+    sources: [
+      { title: 'Présidentielle 2027 : les dates du scrutin', publisher: SP, url: 'https://www.service-public.gouv.fr/particuliers/actualites/A15053' },
+      { title: 'Élections : déroulement du scrutin', publisher: SP, url: 'https://www.service-public.gouv.fr/particuliers/vosdroits/F16828' },
+    ],
+    checkedAt: CHECKED,
+  },
   {
     slug: 'dates-presidentielle-2027',
     question: 'Quand a lieu la présidentielle 2027 ?',

@@ -6,10 +6,12 @@ import { ExampleResult } from '@/components/ExampleResult'
 import { UI_COPY } from '@/lib/copy'
 import { liveCorpus, questionnaire } from '@/lib/data'
 
+// Le même test est en tête de l'accueil : l'accueil est l'adresse de référence pour « pour qui voter », pour ne pas
+// partager les recherches entre deux pages identiques.
 export const metadata: Metadata = {
-  title: 'Test et quiz présidentielle 2027 : pour qui voter ?',
+  title: 'Faire le test : de quels candidats es-tu proche ?',
   description: `${questionnaire.items.length} questions sur ce que tu veux pour le pays, du pouvoir d’achat aux animaux, avec une explication pour chacune. Le calcul se fait sur ton appareil.`,
-  alternates: { canonical: '/test' },
+  alternates: { canonical: '/' },
 }
 
 const h = UI_COPY.home
