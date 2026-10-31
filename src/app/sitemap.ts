@@ -23,14 +23,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((m) => mediaLogoOf(m.slug))
     .filter((x): x is string => !!x)
     .map((x) => absolute(x))
-  const statics = ['/', '/test', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/presse', '/comparatif-tests', '/comprendre', '/couverture', '/studio', '/newsletter', '/medias', '/medias/libres', '/medias/youtube', '/fake-news', '/verifier', '/urne', '/sondages', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales', ...(REVIREMENTS.length > 0 ? ['/revirements'] : [])]
+  const statics = ['/', '/radar', '/candidats', '/programmes', '/comparateur', '/partis', '/livres', '/le-projet', '/contact', '/methodologie', '/sources', '/corrections', '/independance', '/presse', '/comparatif-tests', '/comprendre', '/couverture', '/studio', '/newsletter', '/medias', '/medias/libres', '/medias/youtube', '/fake-news', '/verifier', '/urne', '/sondages', '/quiz', '/duel', '/voter', '/questions', '/agenda', '/semaine', '/lexique', '/boutique', '/confidentialite', '/mentions-legales', ...(REVIREMENTS.length > 0 ? ['/revirements'] : [])]
   return [
     ...statics.map((p) => ({
       url: absolute(p),
       // Une date seulement là où le contenu change vraiment à chaque mise en ligne : une date fausse fait ignorer les vraies
       ...(p === '/' || p === '/radar' ? { lastModified: now } : {}),
       changeFrequency: (p === '/radar' || p === '/' ? 'hourly' : 'weekly') as 'hourly' | 'weekly',
-      priority: p === '/' ? 1 : p === '/test' ? 0.9 : 0.7,
+      priority: p === '/' ? 1 : 0.7,
       // Logos des médias : la page « Qui possède ton info » ressort aussi en recherche d'images
       ...(p === '/medias' ? { images: mediaLogos } : {}),
     })),

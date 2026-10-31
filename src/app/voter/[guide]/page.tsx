@@ -89,6 +89,16 @@ export default async function GuidePage({ params }: { params: Promise<{ guide: s
                   ))}
                 </ul>
               ))}
+            {s.links && (
+              <p>
+                {s.links.map((l, i) => (
+                  <span key={l.href}>
+                    {i > 0 && ' · '}
+                    <Link href={l.href}>{l.label}</Link>
+                  </span>
+                ))}
+              </p>
+            )}
           </section>
         ))}
         <section aria-labelledby="sources">

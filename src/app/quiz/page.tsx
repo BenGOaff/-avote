@@ -39,7 +39,7 @@ export default function QuizHub() {
   return (
     <div className="container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
-      <PageHeader kicker="Quiz" title="Les quiz de la présidentielle 2027" lede="Découvre de quels candidats tu es proche, ris de ton camp, et repars avec de vrais chiffres à partager." />
+      <PageHeader kicker="Quiz" title="Quiz présidentielle 2027 : pour qui voter ?" lede="Découvre de quels candidats tu es proche, ris de ton camp, et repars avec de vrais chiffres à partager." />
       <ul className="grid grid--2 section" role="list" style={{ listStyle: 'none', padding: 0 }}>
         <li className="card card--featured" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s2)' }}>
           <p className="kicker" style={{ margin: 0 }}>

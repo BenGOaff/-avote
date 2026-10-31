@@ -114,6 +114,18 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
         </nav>
       )}
 
+      <section className="section measure card card--flat stack" aria-labelledby="test-media">
+        <h2 id="test-media" style={{ fontSize: 'var(--h3)', margin: 0 }}>
+          {t.testTitle}
+        </h2>
+        <p style={{ margin: 0 }}>{t.testText}</p>
+        <p style={{ margin: 0 }}>
+          <Link href="/" className="btn">
+            {t.testLink}
+          </Link>
+        </p>
+      </section>
+
       <p className="section">
         <Link href={`/medias#${m.slug}`}>{t.all}</Link> · <Link href="/medias/libres">{t.free}</Link> ·{' '}
         <Link href={`/contact?sujet=correction&page=${encodeURIComponent(`/medias/${m.slug}`)}`}>{t.error}</Link>
