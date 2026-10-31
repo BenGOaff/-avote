@@ -807,6 +807,8 @@ export const UI_COPY = {
   proposition: {
     title: (concept: string) => `${concept} : quels candidats sont pour, lesquels sont contre ?`,
     metaTitle: (concept: string) => `${concept} : quels candidats 2027 sont pour, lesquels contre ?`,
+    // La forme des questions posées aux assistants IA (« que propose chaque candidat sur… ») : données structurées
+    eachQuestion: (concept: string) => `Que propose chaque candidat à la présidentielle 2027 sur : ${concept.charAt(0).toLowerCase()}${concept.slice(1)} ?`,
     metaDescription: (concept: string, known: number) =>
       `${concept} : la position de ${known} candidat${known > 1 ? 's' : ''} à la présidentielle 2027, pour, contre ou entre les deux, avec la phrase exacte et la source de chacun.`,
     lede: 'La proposition telle qu’elle est posée dans le test, puis chaque candidat avec sa phrase exacte et sa source. Ordre d’affichage tiré au hasard dans chaque colonne.',

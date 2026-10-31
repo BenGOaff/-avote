@@ -74,6 +74,18 @@ export default async function PropositionPage({ params }: { params: Promise<{ su
               text: `Proposition : « ${item.text} » ${summary}`,
             },
           },
+          ...(row.stances.length
+            ? [
+                {
+                  '@type': 'Question',
+                  name: t.eachQuestion(item.concept),
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: row.stances.map((s) => `${s.name} : ${s.label}${s.basis === 'vote' ? ' (vote au Parlement)' : s.quote ? ` (« ${s.quote} »)` : ''}.`).join(' '),
+                  },
+                },
+              ]
+            : []),
         ],
       },
       {
