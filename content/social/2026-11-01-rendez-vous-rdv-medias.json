@@ -1,0 +1,19 @@
+{
+  "id": "2026-11-01-rendez-vous-rdv-medias",
+  "at": "2026-11-01T20:49:42.396Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "QUI TIENT TON INFO ?",
+    "title": "Ton journal préféré appartient à qui ? Certains n'ont aucun patron milliardaire",
+    "line": "Le site recense les propriétaires des médias qui parlent de la campagne, et ceux qui y échappent.",
+    "cta": "Voir les médias libres"
+  },
+  "text": {
+    "x": "Avant de lire un article sur la campagne, une question : qui possède le journal ? Des médias n'ont ni milliardaire, ni grand groupe, ni État au-dessus d'eux. La liste existe.",
+    "linkedin": "Qui possède les médias que tu lis pour suivre la campagne présidentielle ?\nLa question se pose rarement avant de cliquer sur un article.\n\nNous avons recensé à qui appartiennent les médias qui informent sur la campagne.\n\nNous avons aussi repéré ceux qui n'ont ni milliardaire, ni grand groupe, ni l'État au-dessus d'eux.\n\nConnaître le propriétaire ne dit rien de la qualité d'un article. Cela permet de savoir d'où l'on lit, et de comparer les sources en connaissance de cause.\n\nQuand tu choisis tes sources d'information, regardes-tu à qui elles appartiennent ?\n\n#presidentielle2027 #medias",
+    "facebook": "Tu sais à qui appartient le journal, la radio ou le site où tu t'informes sur la campagne ? On a listé les propriétaires, et ceux qui n'ont ni milliardaire, ni grand groupe, ni l'État au-dessus d'eux. Tu en as dans tes habitudes de lecture ? Le test est sur çavote.fr",
+    "instagram": "Ton média appartient à qui ? Tu as la réponse ?\nOn a recensé les propriétaires des médias qui parlent de la campagne.\nEt repéré ceux qui n'ont ni milliardaire, ni grand groupe, ni l'État au-dessus d'eux.\nTu en connais combien ?\nLa liste est là pour vérifier.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #proprietedesmedias #medias"
+  },
+  "target": "/medias/libres",
+  "targetLabel": "Voir les médias libres"
+}
