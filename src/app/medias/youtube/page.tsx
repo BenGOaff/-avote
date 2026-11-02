@@ -31,9 +31,11 @@ export default function YoutubePage() {
     .sort(bySubs)
     .slice(0, 3)
   const noChannel = getActiveActors().filter((a) => !youtubeActorsWithChannel.has(a.slug))
+  // Page web, pas « Dataset » : les chiffres viennent de l'API YouTube, dont les conditions ne permettent pas de les
+  // redistribuer sous une licence ouverte ; Google exige une licence pour un Dataset, et on n'en invente pas.
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Dataset',
+    '@type': 'WebPage',
     name: t.metaTitle,
     description: t.description,
     url: absolute('/medias/youtube'),
