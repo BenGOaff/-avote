@@ -1833,6 +1833,611 @@
      "last": "2026-10-04"
     }
    }
+  },
+  {
+   "date": "2026-11-02",
+   "channels": {
+    "UC1yLBhh8eDSPm-_Hgz8AvNA": {
+     "s": 89100,
+     "v": 29420185,
+     "n": 2943,
+     "last": "2026-11-02"
+    },
+    "UCfidGlehytwCvV3qlsX5uVQ": {
+     "s": 200000,
+     "v": 39521721,
+     "n": 930,
+     "last": "2026-10-31"
+    },
+    "UC9gcw8-7IzzaosI4c0KCP0g": {
+     "s": 699000,
+     "v": 99070304,
+     "n": 262,
+     "last": "2026-10-29"
+    },
+    "UCYpRDnhk5H8h16jpS84uqsA": {
+     "s": 2290000,
+     "v": 766861201,
+     "n": 5423,
+     "last": "2026-11-02"
+    },
+    "UC4V5osIDMjFwtCRxMm2e0LA": {
+     "s": 166000,
+     "v": 38997473,
+     "n": 1316,
+     "last": "2026-10-30"
+    },
+    "UCkgO4A3Fzm5D9Xu1Y_4vCKQ": {
+     "s": 468000,
+     "v": 55232496,
+     "n": 252,
+     "last": "2026-10-31"
+    },
+    "UCCCPCZNChQdGa9EkATeye4g": {
+     "s": 8760000,
+     "v": 4277426039,
+     "n": 150534,
+     "last": "2026-11-02"
+    },
+    "UCewhc0fvja891XkpIPGRMxQ": {
+     "s": 2240000,
+     "v": 1652239048,
+     "n": 14069,
+     "last": "2026-11-02"
+    },
+    "UCCDPdHuBGfjMxlM3xZANgGQ": {
+     "s": 133000,
+     "v": 20988648,
+     "n": 831,
+     "last": "2026-10-30"
+    },
+    "UCbXWhsd805LfcbAy7xL9d-A": {
+     "s": 532000,
+     "v": 206079431,
+     "n": 4218,
+     "last": "2026-11-02"
+    },
+    "UCJldRgT_D7Am-ErRHQZ90uw": {
+     "s": 1440000,
+     "v": 2244312986,
+     "n": 53009,
+     "last": "2026-11-02"
+    },
+    "UCCDz_XYeKWd0OIyjp95dqyQ": {
+     "s": 995000,
+     "v": 560908114,
+     "n": 19108,
+     "last": "2026-11-01"
+    },
+    "UCrpsdF7UreiF-2r5Jp0YpRg": {
+     "s": 287000,
+     "v": 162214219,
+     "n": 21776,
+     "last": "2026-11-02"
+    },
+    "UC9x4Iyu-D257P0P-VDRwSzw": {
+     "s": 126000,
+     "v": 50659692,
+     "n": 1444,
+     "last": "2026-11-01"
+    },
+    "UCTa1bPArjpvNMgSHAb_pflA": {
+     "s": 811000,
+     "v": 322436833,
+     "n": 49020,
+     "last": "2026-11-02"
+    },
+    "UCESTwDXpoMgiYBHipMdKTkQ": {
+     "s": 1030000,
+     "v": 657643875,
+     "n": 61999,
+     "last": "2026-11-02"
+    },
+    "UCT67YOMntJxfRnO_9bXDpvw": {
+     "s": 1430000,
+     "v": 481686602,
+     "n": 5380,
+     "last": "2026-11-02"
+    },
+    "UCpi-4daExRSchtsJzO06rwA": {
+     "s": 856000,
+     "v": 383875009,
+     "n": 2032,
+     "last": "2026-11-01"
+    },
+    "UCXwDLMDV86ldKoFVc_g8P0g": {
+     "s": 2710000,
+     "v": 1954040210,
+     "n": 84794,
+     "last": "2026-11-02"
+    },
+    "UC8-FN_ftL-crIaXMouuykyQ": {
+     "s": 61100,
+     "v": 7430110,
+     "n": 1389,
+     "last": "2026-11-02"
+    },
+    "UCSKdvgqdnj72_SLggp7BDTg": {
+     "s": 2890000,
+     "v": 1756331678,
+     "n": 15664,
+     "last": "2026-11-02"
+    },
+    "UCqgrelsJF19-0cwCwiKULuA": {
+     "s": 215000,
+     "v": 29113175,
+     "n": 200,
+     "last": "2026-10-08"
+    },
+    "UCgGb7tN3tIH5_Kk05D1J_bA": {
+     "s": 649000,
+     "v": 790784023,
+     "n": 41234,
+     "last": "2026-11-02"
+    },
+    "UCQd5LYcykaFeZtjDaP3bNSA": {
+     "s": 356000,
+     "v": 278370089,
+     "n": 21467,
+     "last": "2026-11-02"
+    },
+    "UCvg4_wSz4Cmo4xRPXaKU47A": {
+     "s": 1050000,
+     "v": 448214977,
+     "n": 12922,
+     "last": "2026-11-02"
+    },
+    "UCnIWNujSpiiuH29-TBCz9aw": {
+     "s": 505000,
+     "v": 247263592,
+     "n": 2629,
+     "last": "2026-11-01"
+    },
+    "UCIMGfEAERXjmWwQeg15BFsg": {
+     "s": 2300000,
+     "v": 1992292972,
+     "n": 181232,
+     "last": "2026-11-02"
+    },
+    "UCysox6U9HnqgCiJ-Pd-Jy_w": {
+     "s": 581000,
+     "v": 279206398,
+     "n": 5459,
+     "last": "2026-11-02"
+    },
+    "UCO6K_kkdP-lnSCiO3tPx7WA": {
+     "s": 1100000,
+     "v": 695666908,
+     "n": 29502,
+     "last": "2026-11-02"
+    },
+    "UCmbhrKMU_X7Gi47bZEEajEQ": {
+     "s": 468000,
+     "v": 111239859,
+     "n": 735,
+     "last": "2026-11-01"
+    },
+    "UCHGFbA0KWBgf6gMbyUCZeCQ": {
+     "s": 492000,
+     "v": 139526442,
+     "n": 5764,
+     "last": "2026-11-01"
+    },
+    "UCar0yo-PpeMk51m116826pQ": {
+     "s": 360000,
+     "v": 180625615,
+     "n": 5417,
+     "last": "2026-11-02"
+    },
+    "UCdnaDhU-LDQrIEEmSIfq0-Q": {
+     "s": 1190000,
+     "v": 330561826,
+     "n": 4605,
+     "last": "2026-11-02"
+    },
+    "UCW2QcKZiU8aUGg4yxCIditg": {
+     "s": 2330000,
+     "v": 1208877634,
+     "n": 136684,
+     "last": "2026-11-02"
+    },
+    "UC1UUvhau_2V8ETvHfwkUQwg": {
+     "s": 199000,
+     "v": 85217000,
+     "n": 2841,
+     "last": "2026-10-31"
+    },
+    "UCp2kK3DyhpgFOdILF3BBC9A": {
+     "s": 206000,
+     "v": 85761277,
+     "n": 5363,
+     "last": "2026-11-01"
+    },
+    "UC11tPrPcudLv8J2ladG2DsA": {
+     "s": 21800,
+     "v": 1677509,
+     "n": 559,
+     "last": "2026-10-31"
+    },
+    "UCGvjUWz3mGV9cssraATuEsw": {
+     "s": 701000,
+     "v": 451355351,
+     "n": 7533,
+     "last": "2026-11-02"
+    },
+    "UCIWw8PPP5OPNkDCLBrG9zVA": {
+     "s": 261000,
+     "v": 39011356,
+     "n": 4856,
+     "last": "2026-10-30"
+    },
+    "UCyamXi0qEQJghCjJbj__aWQ": {
+     "s": 1090000,
+     "v": 325387395,
+     "n": 6520,
+     "last": "2026-11-02"
+    },
+    "UCfHn_8-ehdem86fEvlFg-Gw": {
+     "s": 2130000,
+     "v": 3787374016,
+     "n": 24478,
+     "last": "2026-11-02"
+    },
+    "UCD25QI36ly-8hWm9OPOz7aw": {
+     "s": 246000,
+     "v": 169533793,
+     "n": 13408,
+     "last": "2026-11-02"
+    },
+    "UCEFGCs68E9Vr5te5qZuJsbg": {
+     "s": 621000,
+     "v": 74740850,
+     "n": 353,
+     "last": "2026-11-01"
+    },
+    "UCx9ygIxPfYR05kY92KzvbvA": {
+     "s": 167000,
+     "v": 50803662,
+     "n": 2123,
+     "last": "2026-11-02"
+    },
+    "UCb0xB4NwoAANhxikOjw3Tnw": {
+     "s": 10800,
+     "v": 8220198,
+     "n": 1074,
+     "last": "2026-10-31"
+    },
+    "UC__xRB5L4toU9yYawt_lIKg": {
+     "s": 1730000,
+     "v": 534151321,
+     "n": 2429,
+     "last": "2026-11-01"
+    },
+    "UCPplJEsqnAH_8s8qvyI3BEw": {
+     "s": 317000,
+     "v": 68586367,
+     "n": 565,
+     "last": "2026-10-31"
+    },
+    "UCd5DKToXYTKAQ6khzewww2g": {
+     "s": 919000,
+     "v": 210595095,
+     "n": 10554,
+     "last": "2026-11-02"
+    },
+    "UC3lacWBPVK-JfmGyyHx4AAw": {
+     "s": 594000,
+     "v": 145915170,
+     "n": 4275,
+     "last": "2026-11-02"
+    },
+    "UCXKJrYczY2_fJEZgFPGY0HQ": {
+     "s": 654000,
+     "v": 518310892,
+     "n": 40800,
+     "last": "2026-11-02"
+    },
+    "UCLuLxfwPrxe4wUPkdYM_VDA": {
+     "s": 582000,
+     "v": 258465511,
+     "n": 5545,
+     "last": "2026-11-02"
+    },
+    "UC9hHeywcPBnLglqnQRaNShQ": {
+     "s": 334000,
+     "v": 32112853,
+     "n": 456,
+     "last": "2026-10-30"
+    },
+    "UCU3z3px1_RCqYBwrs8LJVWg": {
+     "s": 225000,
+     "v": 95396990,
+     "n": 1075,
+     "last": "2026-11-02"
+    },
+    "UCMOrzCo7Jdp6qqEX24CXuog": {
+     "s": 211000,
+     "v": 18360944,
+     "n": 154,
+     "last": "2026-10-21"
+    },
+    "UC7sXGI8p8PvKosLWagkK9wQ": {
+     "s": 460000,
+     "v": 26251919,
+     "n": 139,
+     "last": "2026-10-13"
+    },
+    "UCk-_PEY3iC6DIGJKuoEe9bw": {
+     "s": 1310000,
+     "v": 458006278,
+     "n": 2245,
+     "last": "2026-10-31"
+    },
+    "UCYkZbyXcVmtdRUpCBi713vw": {
+     "s": 280000,
+     "v": 61509778,
+     "n": 474,
+     "last": "2026-10-29"
+    },
+    "UCPiye7__vJMKdBxebtERd7g": {
+     "s": 457000,
+     "v": 54365610,
+     "n": 410,
+     "last": "2026-10-28"
+    },
+    "UC2XZY-bjIEmyLZ9MPJQytZg": {
+     "s": 27700,
+     "v": 7975405,
+     "n": 382,
+     "last": "2026-11-02"
+    },
+    "UCVeMw72tepFl1Zt5fvf9QKQ": {
+     "s": 431000,
+     "v": 34272692,
+     "n": 298,
+     "last": "2026-10-19"
+    },
+    "UCDn6zvBZNEWUv44xjgELicA": {
+     "s": 40800,
+     "v": 4871309,
+     "n": 313,
+     "last": "2026-10-31"
+    },
+    "UCWtD8JN9hkxL5TJL_ktaNZA": {
+     "s": 419000,
+     "v": 48378035,
+     "n": 1055,
+     "last": "2026-11-02"
+    },
+    "UCJEJTYYZkYjLnGCgRDqnIGA": {
+     "s": 124000,
+     "v": 20501469,
+     "n": 546,
+     "last": "2026-10-27"
+    },
+    "UCtjc5x0RIiTsdYS4IFMjCGQ": {
+     "s": 22800,
+     "v": 5387482,
+     "n": 858,
+     "last": "2026-10-08"
+    },
+    "UCZkgWp0kovymbqDV24t0RaA": {
+     "s": 332000,
+     "v": 19803326,
+     "n": 52,
+     "last": "2026-10-08"
+    },
+    "UCAcAnMF0OrCtUep3Y4M-ZPw": {
+     "s": 3830000,
+     "v": 1757553995,
+     "n": 5903,
+     "last": "2026-11-02"
+    },
+    "UCfA5DnCDX3Ixy5QOAMGtBlA": {
+     "s": 233000,
+     "v": 68360187,
+     "n": 3934,
+     "last": "2026-11-01"
+    },
+    "UCUo1RqYV8tGjV38sQ8S5p9A": {
+     "s": 2030000,
+     "v": 292219798,
+     "n": 506,
+     "last": "2026-10-30"
+    },
+    "UC_NukSq2ve_AHVAz_9ikTDg": {
+     "s": 171000,
+     "v": 40240903,
+     "n": 137,
+     "last": "2024-03-23"
+    },
+    "UChq7IIJgKBr5cElD44Q6PlA": {
+     "s": 443000,
+     "v": 89815357,
+     "n": 1786,
+     "last": "2026-10-30"
+    },
+    "UCZsh-MrJftAOP_-ZgRgLScw": {
+     "s": 9130,
+     "v": 1456005,
+     "n": 829,
+     "last": "2026-10-31"
+    },
+    "UCq-8pBMM3I40QlrhM9ExXJQ": {
+     "s": 310000,
+     "v": 67928906,
+     "n": 1012,
+     "last": "2026-10-31"
+    },
+    "UC1EacOJoqsKaYxaDomTCTEQ": {
+     "s": 218000,
+     "v": 10559910,
+     "n": 116,
+     "last": "2026-10-14"
+    },
+    "UC8S67r_w5xSQJZpWxPFdisQ": {
+     "s": 225000,
+     "v": 17439901,
+     "n": 142,
+     "last": "2026-10-29"
+    },
+    "UC7LNwiZKfwZmYj_RAWxjkKw": {
+     "s": 9570,
+     "v": 2085454,
+     "n": 231,
+     "last": "2021-08-04"
+    },
+    "UCOcDPuYTuxoRBtfmTBXtqBA": {
+     "s": 12100,
+     "v": 2071238,
+     "n": 253,
+     "last": "2026-11-02"
+    },
+    "UCQgWpmt02UtJkyO32HGUASQ": {
+     "s": 1340000,
+     "v": 289216444,
+     "n": 461,
+     "last": "2026-10-22"
+    },
+    "UCq9xMn8vudIEJpJ_orJryRg": {
+     "s": 203000,
+     "v": 50423099,
+     "n": 1990,
+     "last": "2026-10-28"
+    },
+    "UCoDttl6w1T-Stuw_pvNOvLA": {
+     "s": 9400,
+     "v": 1608057,
+     "n": 191,
+     "last": "2026-11-01"
+    },
+    "UCRkuLQabW1hsihpZuHJSbEA": {
+     "s": 4500,
+     "v": 421507,
+     "n": 104,
+     "last": "2026-10-28"
+    },
+    "UC2ijB3_Fg2pIW1g6FeIiYKA": {
+     "s": 129000,
+     "v": 26248611,
+     "n": 851,
+     "last": "2026-11-01"
+    },
+    "UCWS3mpxBmS9HXBcKymKfCRA": {
+     "s": 278000,
+     "v": 66216919,
+     "n": 339,
+     "last": "2026-10-25"
+    },
+    "UCI-8QMy9n3I5Pv6mTmXoAXA": {
+     "s": 1690000,
+     "v": 154261426,
+     "n": 357,
+     "last": "2026-10-29"
+    },
+    "UClaa_CwoQEmSo9Mb_M1f91g": {
+     "s": 684000,
+     "v": 323149534,
+     "n": 2679,
+     "last": "2026-11-01"
+    },
+    "UCU0FhLr6fr7U9GOn6OiQHpQ": {
+     "s": 343000,
+     "v": 29061134,
+     "n": 85,
+     "last": "2026-10-24"
+    },
+    "UCMIpCiZdVlMoqfra4hT6d4Q": {
+     "s": 53900,
+     "v": 9396680,
+     "n": 381,
+     "last": "2026-10-30"
+    },
+    "UCqv_wXmLSFtTDA39HQaLssQ": {
+     "s": 97600,
+     "v": 11489954,
+     "n": 228,
+     "last": "2026-10-28"
+    },
+    "UCpGdJo_WsBhAUf1WA2SYcIQ": {
+     "s": 236000,
+     "v": 25361351,
+     "n": 548,
+     "last": "2026-11-01"
+    },
+    "UCXHWT_QoQSsdGXbqF0hAMtg": {
+     "s": 38200,
+     "v": 2361141,
+     "n": 254,
+     "last": "2026-11-02"
+    },
+    "UCr_3nQ4eRCwm_XUDpf62MAg": {
+     "s": 343000,
+     "v": 26201781,
+     "n": 353,
+     "last": "2026-10-18"
+    },
+    "UCMFcMhePnH4onVHt2-ItPZw": {
+     "s": 401000,
+     "v": 15673574,
+     "n": 56,
+     "last": "2025-05-12"
+    },
+    "UCJZ-hXrLYUFHBnkM0Vb2mqw": {
+     "s": 23900,
+     "v": 449147,
+     "n": 132,
+     "last": "2026-02-21"
+    },
+    "UC76pM1Auet3YolJ5vYLeINQ": {
+     "s": 35600,
+     "v": 850168,
+     "n": 103,
+     "last": "2026-10-13"
+    },
+    "UCAoUBng0Mfu0qn4lPimS6MA": {
+     "s": 313000,
+     "v": 32492525,
+     "n": 93,
+     "last": "2026-09-22"
+    },
+    "UCyJDHgrsUKuWLe05GvC2lng": {
+     "s": 332000,
+     "v": 14329513,
+     "n": 157,
+     "last": "2026-10-26"
+    },
+    "UCjTbZBXEw-gplUAnMXLYHpg": {
+     "s": 498000,
+     "v": 136965615,
+     "n": 527,
+     "last": "2026-11-02"
+    },
+    "UCIh7PDUAP226Pa_NtjN9Jqw": {
+     "s": 3800000,
+     "v": 2783944503,
+     "n": 6068,
+     "last": "2026-11-02"
+    },
+    "UC2vHCf5H8i_5WTWmdDvIK2Q": {
+     "s": 32700,
+     "v": 18523601,
+     "n": 58,
+     "last": "2026-07-14"
+    },
+    "UCIQGSp79vVch0vO3Efqif_w": {
+     "s": 250000,
+     "v": 84501680,
+     "n": 1265,
+     "last": "2026-10-30"
+    },
+    "UCX33oHPsFlI8nhR6524-_Jg": {
+     "s": 85700,
+     "v": 16176568,
+     "n": 430,
+     "last": "2026-10-04"
+    }
+   }
   }
  ],
  "meta": {
