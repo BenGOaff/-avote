@@ -1,0 +1,19 @@
+{
+  "id": "2026-11-02-rendez-vous-rdv-sondage",
+  "at": "2026-11-02T23:41:51.819Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "À ÉGALITÉ ?",
+    "title": "Deux candidats à 2 points d'écart dans un sondage : lequel est devant ?",
+    "line": "Avec 1 000 personnes interrogées, un candidat à 20 % se situe entre 17,5 % et 22,5 %.",
+    "cta": "Lire l'article"
+  },
+  "text": {
+    "x": "1 000 personnes interrogées, un candidat à 20 %. Son vrai score : entre 17,5 % et 22,5 %. Deux candidats à 2 points d'écart sont donc à égalité. Tu le savais ?",
+    "linkedin": "Un candidat mesuré à 20 % dans un sondage n'est pas à 20 %. Avec 1 000 personnes interrogées, il se situe entre 17,5 % et 22,5 %.\n\nConséquence directe : deux candidats séparés de 1 ou 2 points sont à égalité. Le classement affiché à l'écran ne départage rien.\n\nC'est la base pour lire un sondage de la présidentielle sans se tromper sur ce qu'il dit. Le radar du site y consacre un article.\n\nQuand un sondage est commenté, la marge d'erreur est-elle mentionnée selon toi ?\n\n#presidentielle2027",
+    "facebook": "Un candidat à 20 % dans un sondage de 1 000 personnes, c'est en réalité entre 17,5 % et 22,5 %. Du coup, deux candidats à 1 ou 2 points d'écart sont à égalité, même si l'un passe devant dans le classement. Tu y fais attention quand tu regardes un sondage ? Le test est sur çavote.fr",
+    "instagram": "Un candidat à 20 %, c'est entre 17,5 % et 22,5 %.\nSondage de 1 000 personnes interrogées : la marge compte.\nDeux candidats à 1 ou 2 points d'écart ?\nIls sont à égalité.\nLe classement que tu as vu au journal dit-il vraiment ce que tu croyais ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #sondage #margederreur"
+  },
+  "target": "/radar/2026-10-10-lire-un-sondage",
+  "targetLabel": "Lire l’article"
+}
