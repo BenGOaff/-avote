@@ -12207,5 +12207,28 @@
     "from": "inconnue",
     "to": "2",
     "source": "9510500389c8a220"
+  },
+  {
+    "date": "2026-11-02T09:37:03.668Z",
+    "actor": "clara-egger",
+    "item": "imm-04",
+    "from": "inconnue",
+    "to": "[0,1]",
+    "source": "5a37b548b431beea"
+  },
+  {
+    "date": "2026-11-02T09:37:03.668Z",
+    "actor": "clara-egger",
+    "item": "dem-02",
+    "from": "inconnue",
+    "to": "2",
+    "source": "687f3422856ba3a7"
+  },
+  {
+    "date": "2026-11-02T09:43:06.756Z",
+    "actor": "dominique-de-villepin",
+    "item": "dem-02",
+    "from": "2",
+    "to": "[1,2]"
   }
 ]
