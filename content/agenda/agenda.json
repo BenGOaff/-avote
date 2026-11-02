@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-11-02",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -98,6 +98,20 @@
         "url": "https://www.liberation.fr/politique/david-lisnard-dragouille-les-deputes-lr-20261028_KVMETPZNHJETBJO5QUHLKZPDZI/"
       },
       "quote": "donne rendez-vous aux députés LR mardi 3 novembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-11-03-vote-solennel-sur-le-volet-recettes-du-budget-20",
+      "kind": "institution",
+      "title": "Vote solennel sur le volet recettes du budget 2027",
+      "date": "2026-11-03",
+      "summary": "Les députés votent sur le volet recettes du projet de budget 2027, dans un contexte où le gouvernement n'a pas de majorité à l'Assemblée nationale.",
+      "source": {
+        "title": "Budget 2027 : les discussions se poursuivent dans un hémicycle clairsemé, où les députés votent des amendements au devenir incertain",
+        "publisher": "Le Monde",
+        "url": "https://www.lemonde.fr/politique/article/2026/11/02/budget-2027-les-discussions-se-poursuivent-dans-un-hemicycle-clairseme-ou-les-deputes-votent-des-amendements-au-devenir-incertain_6805244_823448.html"
+      },
+      "quote": "Un vote solennel est prévu mardi 3 novembre sur le volet recettes",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
