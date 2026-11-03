@@ -24,6 +24,8 @@ export const SocialPostSchema = z.object({
     /** Les deux camps, visages à l'appui (fracture) */
     yes: z.array(z.string()).optional(),
     no: z.array(z.string()).optional(),
+    /** Deux candidats qu'on n'attend pas ensemble, d'accord sur une mesure (alliance) : deux visages côte à côte */
+    duo: z.array(z.string()).length(2).optional(),
     /** Invitation du bandeau noir (sinon targetLabel) */
     cta: z.string().max(40).optional(),
   }),
