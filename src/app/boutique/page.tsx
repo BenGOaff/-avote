@@ -20,10 +20,11 @@ export const metadata: Metadata = {
   alternates: { canonical: shop.url },
 }
 
-// Configuration documentée par Spreadshop (intégration JavaScript) ; usePushState à false : la navigation dans la
+// Configuration documentée par Spreadshop (intégration JavaScript). startToken : la page « Tous les produits » (/all)
+// à l'ouverture. usePushState à false : la navigation dans la
 // boutique reste après le # de l'adresse, sans pages fantômes sur le site
 // La configuration doit exister avant le script : un seul bloc qui la pose, puis charge le script
-const loader = `window.spread_shop_config=${JSON.stringify({ shopName: 'ca-vote', locale: 'fr_FR', prefix: shop.spreadshop, baseId: 'myShop', usePushState: false })};var s=document.createElement('script');s.src=${JSON.stringify(`${shop.spreadshop}/shopfiles/shopclient/shopclient.nocache.js`)};document.body.appendChild(s);`
+const loader = `window.spread_shop_config=${JSON.stringify({ shopName: 'ca-vote', locale: 'fr_FR', prefix: shop.spreadshop, baseId: 'myShop', usePushState: false, startToken: 'all' })};var s=document.createElement('script');s.src=${JSON.stringify(`${shop.spreadshop}/shopfiles/shopclient/shopclient.nocache.js`)};document.body.appendChild(s);`
 
 export default function BoutiquePage() {
   if (!shop.open)
