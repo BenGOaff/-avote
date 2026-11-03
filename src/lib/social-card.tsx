@@ -113,11 +113,13 @@ export async function socialImage(p: SocialPost | undefined, format: 'carte' | '
   const yes = c?.yes ?? []
   const no = c?.no ?? []
   const camps = yes.length > 0 && no.length > 0
-  const [f, yesFaces, noFaces, solo] = await Promise.all([
+  const duo = c?.duo ?? []
+  const [f, yesFaces, noFaces, solo, duoFaces] = await Promise.all([
     fonts(),
     Promise.all(yes.slice(0, 8).map((s) => face(s, 116))),
     Promise.all(no.slice(0, 8).map((s) => face(s, 116))),
     c?.actor ? face(c.actor, portrait ? 300 : 260) : Promise.resolve(null),
+    Promise.all(duo.map((s) => face(s, portrait ? 260 : 180))),
   ])
 
   if (!portrait) {
@@ -139,6 +141,13 @@ export async function socialImage(p: SocialPost | undefined, format: 'carte' | '
             {c?.actor && (
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <Avatar src={solo} slug={c.actor} px={260} />
+              </div>
+            )}
+            {duo.length === 2 && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+                <Avatar src={duoFaces[0] ?? null} slug={duo[0]!} px={180} />
+                <span style={{ fontFamily: 'Archivo Black', fontSize: 64 }}>+</span>
+                <Avatar src={duoFaces[1] ?? null} slug={duo[1]!} px={180} />
               </div>
             )}
           </div>
@@ -170,7 +179,20 @@ export async function socialImage(p: SocialPost | undefined, format: 'carte' | '
           {c?.quote && (
             <div style={{ display: 'flex', borderLeft: `14px solid ${YELLOW}`, paddingLeft: 26, fontFamily: 'Public Sans', fontSize: fit(c.quote, [[80, 46], [140, 40], [260, 34]]), lineHeight: 1.25 }}>{`« ${c.quote} »`}</div>
           )}
-          {!camps && !c?.actor && <div style={{ display: 'flex' }} />}
+          {duo.length === 2 && (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 28 }}>
+              {duo.map((slug, i) => (
+                <div key={slug} style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
+                  {i === 1 && <span style={{ fontFamily: 'Archivo Black', fontSize: 110, lineHeight: 1 }}>+</span>}
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
+                    <Avatar src={duoFaces[i] ?? null} slug={slug} px={260} />
+                    <span style={{ fontFamily: 'Archivo Black', fontSize: 40, lineHeight: 1.05 }}>{nameOf(slug)}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          {!camps && !c?.actor && duo.length !== 2 && <div style={{ display: 'flex' }} />}
           {camps && (
             <div style={{ display: 'flex', gap: 20, marginTop: 6 }}>
               <Camp label="OUI" slugs={yes} faces={yesFaces} dark={false} />
