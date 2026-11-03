@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-03T15:17:21.727Z",
+  "updatedAt": "2026-11-03T23:29:33.878Z",
   "items": [
+    {
+      "id": "les-lyceens-participant-a-un-blocus-risqueraient-une-mention-e38ceb",
+      "claim": "Les lycéens participant à un blocus risqueraient une mention pénalisante sur Parcoursup",
+      "verdict": "manipule",
+      "truth": "Une fausse capture d'écran attribuée à la proviseure du lycée Louis-le-Grand a été démentie par l'établissement et le ministère de l'Education nationale, qui précise qu'aucune mesure de ce type n'est envisagée.",
+      "spreaders": [],
+      "topic": "ecole",
+      "firstSeen": "2026-11-03",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/non-les-lyceens-participant-a-un-blocus-ne-risquent-pas-une-mention-sur-parcoursup-20261103_YRKTDOM26JEOLP3SIIS743IXLA/",
+          "title": "Non, les lycéens participant à un blocus ne risquent pas une mention sur Parcoursup",
+          "date": "2026-11-03",
+          "quote": "Une fausse capture d’écran attribuée à la proviseure du lycée Louis-le-Grand, à Paris, laisse croire que les élèves prenant part à des blocages pourraient être pénalisés sur la plateforme d’accès à l’université."
+        }
+      ]
+    },
     {
       "id": "une-image-montrerait-une-librairie-intacte-au-milieu-de-maga-da65a6",
       "claim": "Une image montrerait une librairie intacte au milieu de magasins pillés lors des violences du 17 octobre.",
