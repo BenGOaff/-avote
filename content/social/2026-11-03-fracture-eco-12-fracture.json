@@ -1,0 +1,36 @@
+{
+  "id": "2026-11-03-fracture-eco-12-fracture",
+  "at": "2026-11-03T14:39:18.430Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "TON HÉRITAGE, TON CAMP",
+    "title": "Taxer les gros héritages : Mélenchon et Glucksmann pour, Philippe et Zemmour contre",
+    "line": "14 candidats se sont prononcés. 7 sont nettement pour, 6 nettement contre.",
+    "yes": [
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "marine-tondelier",
+      "francois-ruffin",
+      "delphine-batho",
+      "raphael-glucksmann",
+      "juan-branco"
+    ],
+    "no": [
+      "edouard-philippe",
+      "gabriel-attal",
+      "bruno-retailleau",
+      "david-lisnard",
+      "eric-zemmour",
+      "olivier-becht"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Droits de succession sur les plus gros héritages : Mélenchon, Roussel et Glucksmann pour une forte hausse. Philippe, Attal et Zemmour contre. Tu te ranges avec qui ?",
+    "linkedin": "Faut-il augmenter fortement les droits de succession sur les plus gros héritages ? Sur 14 candidats à la présidentielle, 7 disent oui et 6 disent non.\n\nCôté oui : Jean-Luc Mélenchon, Fabien Roussel, Marine Tondelier, François Ruffin, Delphine Batho, Raphaël Glucksmann et Juan Branco.\n\nCôté non : Édouard Philippe, Gabriel Attal, Bruno Retailleau, David Lisnard, Éric Zemmour et Olivier Becht.\n\nLa question touche à la transmission du patrimoine d'une génération à l'autre. Elle fait partie des affirmations du test proposé sur Ça vote ?, où chacun peut comparer sa position à celle des candidats.\n\nEt vous, où placez-vous la limite entre transmettre et taxer un gros héritage ?\n\n#presidentielle2027 #droitsdesuccession",
+    "facebook": "Faut-il fortement augmenter les droits de succession sur les plus gros héritages ? Mélenchon, Roussel, Ruffin et Glucksmann répondent oui. Philippe, Attal, Retailleau et Zemmour répondent non. Au total, 7 pour et 6 contre parmi 14 candidats. Tu te ranges avec qui ? Le test est sur çavote.fr",
+    "instagram": "Gros héritages : Mélenchon pour taxer, Zemmour contre\nUne question : faut-il fortement augmenter les droits de succession sur les plus gros héritages ?\n14 candidats ont répondu.\n7 disent oui, dont Mélenchon, Ruffin et Tondelier.\n6 disent non, dont Philippe, Attal et Retailleau.\nEt toi, tu touches à l'héritage ou pas ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #droitsdesuccession #heritage"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
