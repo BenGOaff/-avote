@@ -5506,3 +5506,19 @@ details.disclosure > div {
 .echiquier__inline > span + span::before {
   content: ', ';
 }
+
+/* ---------- Boutique intégrée (boutique.çavote.fr) ---------- */
+.shop-head {
+  padding-block: var(--s4) var(--s2);
+}
+.shop-head__title {
+  font-size: var(--h3);
+  margin: 0 0 var(--s1);
+}
+/* La vitrine Spreadshop prend toute la largeur et sa hauteur naturelle : pas de défilement dans la page */
+.shop-embed,
+.shop-embed > div {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}

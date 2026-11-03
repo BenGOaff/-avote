@@ -15,7 +15,8 @@ const t = UI_COPY.boutique
 
 export const metadata: Metadata = {
   title: 'Boutique',
-  description: 'Tee-shirts, sweats, mugs et sacs de la présidentielle 2027 : des phrases pour chaque camp, et pour ceux qui hésitent. Vendus et livrés par Spreadshirt.',
+  description:
+    'Tee-shirts, sweats, mugs et sacs de la présidentielle 2027 : des phrases pour chaque camp, et pour ceux qui hésitent. Vendus et livrés par Spreadshirt.',
   alternates: { canonical: shop.url },
 }
 
@@ -32,10 +33,16 @@ export default function BoutiquePage() {
       </div>
     )
   return (
-    <div className="container">
-      <PageHeader kicker={t.kicker} title={t.title} lede={t.lede} />
-      <div id="myShop" className="section" style={{ minHeight: '60vh' }}>
-        <p className="small muted">
+    <>
+      {/* En-tête discret : la vitrine a déjà son propre bandeau, elle doit arriver tout de suite à l'écran */}
+      <div className="container">
+        <header className="shop-head">
+          <h1 className="shop-head__title">{t.title}</h1>
+          <p className="small muted">{t.lede}</p>
+        </header>
+      </div>
+      <div id="myShop" className="shop-embed">
+        <p className="container small muted">
           {t.loading} <a href={`${shop.spreadshop}/all`}>ca-vote.myspreadshop.fr</a>
         </p>
       </div>
@@ -43,23 +50,25 @@ export default function BoutiquePage() {
         {loader}
       </Script>
 
-      <div className="measure stack section">
-        <div className="card card--flat">
-          <h2 style={{ fontSize: 'var(--h3)' }}>{t.rulesTitle}</h2>
-          <ul style={{ margin: 0, paddingLeft: '1.2em' }}>
-            {t.rules.map((r) => (
-              <li key={r}>{r}</li>
-            ))}
-          </ul>
-          <p className="small" style={{ marginTop: 'var(--s3)' }}>
-            {t.separate}
-          </p>
-          <p className="small" style={{ marginTop: 'var(--s3)' }}>
-            <a href={absolute('/mentions-legales#boutique')}>{t.who}</a> · <a href={absolute('/confidentialite#boutique')}>{t.data}</a> ·{' '}
-            <a href={absolute('/')}>{t.backToSite}</a>
-          </p>
+      <div className="container">
+        <div className="measure stack section">
+          <div className="card card--flat">
+            <h2 style={{ fontSize: 'var(--h3)' }}>{t.rulesTitle}</h2>
+            <ul style={{ margin: 0, paddingLeft: '1.2em' }}>
+              {t.rules.map((r) => (
+                <li key={r}>{r}</li>
+              ))}
+            </ul>
+            <p className="small" style={{ marginTop: 'var(--s3)' }}>
+              {t.separate}
+            </p>
+            <p className="small" style={{ marginTop: 'var(--s3)' }}>
+              <a href={absolute('/mentions-legales#boutique')}>{t.who}</a> · <a href={absolute('/confidentialite#boutique')}>{t.data}</a> ·{' '}
+              <a href={absolute('/')}>{t.backToSite}</a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
