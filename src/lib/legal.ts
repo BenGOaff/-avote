@@ -8,7 +8,8 @@ export const LEGAL = legal as {
   emailProvider: { name: string; url: string }
   /**
    * Boutique : `open` passe à true quand la vitrine Spreadshop est activée et a des produits. `url` est la boutique
-   * intégrée, sur sa propre adresse (boutique.çavote.fr) ; `spreadshop` est la vitrine chez Spreadshirt.
+   * intégrée, sur sa propre adresse (boutique.çavote.fr), ouverte sur tous les produits (#!/all) ; `spreadshop` est la
+   * vitrine chez Spreadshirt.
    */
   shop: { name: string; maker: string; url: string; spreadshop: string; open: boolean }
 }

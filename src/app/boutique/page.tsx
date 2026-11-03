@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   title: 'Boutique',
   description:
     'Tee-shirts, sweats, mugs et sacs de la présidentielle 2027 : des phrases pour chaque camp, et pour ceux qui hésitent. Vendus et livrés par Spreadshirt.',
-  alternates: { canonical: shop.url },
+  // Adresse canonique sans le # : la page est la même quelle que soit la vue de la boutique
+  alternates: { canonical: shop.url.split('#')[0] },
 }
 
 // Configuration documentée par Spreadshop (intégration JavaScript). startToken : la page « Tous les produits » (/all)

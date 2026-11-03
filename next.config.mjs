@@ -87,7 +87,7 @@ const nextConfig = {
         permanent: false,
       },
       // Sur çavote.fr, la boutique est à son adresse à elle
-      { source: '/boutique', has: [{ type: 'host', value: 'xn--avote-xra.fr' }], destination: `https://${SHOP_HOST}/`, permanent: false },
+      { source: '/boutique', has: [{ type: 'host', value: 'xn--avote-xra.fr' }], destination: `https://${SHOP_HOST}/#!/all`, permanent: false },
       { source: '/quiz/quel-indecis-es-tu', destination: '/test?rapide=1', permanent: true },
       { source: '/quiz/flash/tiendrais-tu-jusquau-second-tour', destination: '/quiz/flash/quel-parti-politique-es-tu', permanent: true },
     ]
