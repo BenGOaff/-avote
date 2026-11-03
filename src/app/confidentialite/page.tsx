@@ -123,10 +123,11 @@ export default function PrivacyPage() {
           La boutique
         </h2>
         <p>
-          Le lien « Boutique » t’emmène sur {LEGAL.shop.name}, chez {LEGAL.shop.maker}, qui vend les objets. Ton nom, ton adresse de livraison et ton
-          paiement sont donnés à {LEGAL.shop.maker} et traités selon sa propre politique de confidentialité. Le site ne te les demande pas et n’en garde
-          aucune copie. Aucune réponse au test, aucun résultat, aucun profil ne passe dans la boutique, et un objet acheté ne sert jamais à deviner tes
-          opinions.
+          La boutique s’affiche à sa propre adresse, boutique.çavote.fr, par un programme de {LEGAL.shop.maker} ({LEGAL.shop.name}), qui vend les
+          objets. C’est la seule page du site qui charge un programme extérieur. Ton navigateur traite cette adresse à part : ce programme ne peut rien
+          lire de ce que le site garde sur çavote.fr, ni tes réponses au test, ni ton résultat, ni ton profil. {LEGAL.shop.maker} peut y déposer ses
+          propres cookies et mesurer ta visite, selon sa politique de confidentialité. Ton nom, ton adresse de livraison et ton paiement sont donnés à{' '}
+          {LEGAL.shop.maker} ; le site ne te les demande pas et n’en garde aucune copie. Un objet acheté ne sert jamais à deviner tes opinions.
         </p>
 
         <h2 id="audience" style={{ fontSize: 'var(--h3)' }}>

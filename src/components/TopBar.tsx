@@ -30,7 +30,7 @@ export function TopBar({ logo }: { logo: ReactNode }) {
         </nav>
         <div className="topbar__actions">
           {LEGAL.shop.open && (
-            <NavLink href="/boutique" className="topbar__shop" aria-current={isCurrent(pathname, '/boutique') ? 'page' : undefined}>
+            <NavLink href={LEGAL.shop.url} className="topbar__shop">
               <IconBag />
               <span>{UI_COPY.boutiqueLink.nav}</span>
             </NavLink>

@@ -1,20 +1,28 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
-import boutique from '@content/boutique.json'
+import Script from 'next/script'
 import { PageHeader } from '@/components/PageHeader'
 import { UI_COPY } from '@/lib/copy'
 import { LEGAL } from '@/lib/legal'
-import { apercuUrl, giftPicks } from '@/components/ShopPicks'
+import { absolute } from '@/lib/site'
 
+/**
+ * Boutique intégrée : la vitrine Spreadshop affichée par son script, sur sa propre adresse (boutique.xn--avote-xra.fr,
+ * voir next.config.mjs). Le navigateur isole cette adresse : le script de Spreadshirt ne peut rien lire de ce que le
+ * site garde sur çavote.fr. Sur çavote.fr, /boutique renvoie vers cette adresse.
+ */
 const shop = LEGAL.shop
 const t = UI_COPY.boutique
-const { apercus, collections } = boutique as { apercus: { id: string; alt: string }[]; collections: { label: string; url: string }[] }
 
 export const metadata: Metadata = {
   title: 'Boutique',
   description: 'Tee-shirts, sweats, mugs et sacs de la présidentielle 2027 : des phrases pour chaque camp, et pour ceux qui hésitent. Vendus et livrés par Spreadshirt.',
-  alternates: { canonical: '/boutique' },
+  alternates: { canonical: shop.url },
 }
+
+// Configuration documentée par Spreadshop (intégration JavaScript) ; usePushState à false : la navigation dans la
+// boutique reste après le # de l'adresse, sans pages fantômes sur le site
+// La configuration doit exister avant le script : un seul bloc qui la pose, puis charge le script
+const loader = `window.spread_shop_config=${JSON.stringify({ shopName: 'ca-vote', locale: 'fr_FR', prefix: shop.spreadshop, baseId: 'myShop', usePushState: false })};var s=document.createElement('script');s.src=${JSON.stringify(`${shop.spreadshop}/shopfiles/shopclient/shopclient.nocache.js`)};document.body.appendChild(s);`
 
 export default function BoutiquePage() {
   if (!shop.open)
@@ -26,64 +34,16 @@ export default function BoutiquePage() {
   return (
     <div className="container">
       <PageHeader kicker={t.kicker} title={t.title} lede={t.lede} />
-      <div className="measure stack">
-        <p>
-          <a className="btn btn--highlight" href={shop.url} rel="noopener">
-            {t.cta}
-          </a>
+      <div id="myShop" className="section" style={{ minHeight: '60vh' }}>
+        <p className="small muted">
+          {t.loading} <a href={`${shop.spreadshop}/all`}>ca-vote.myspreadshop.fr</a>
         </p>
-        <p>{t.daily}</p>
       </div>
+      <Script id="spreadshop" strategy="afterInteractive">
+        {loader}
+      </Script>
 
-      <section className="section" aria-labelledby="cadeaux">
-        <h2 id="cadeaux" style={{ fontSize: 'var(--h3)' }}>
-          {UI_COPY.boutiqueLink.giftsTitle}
-        </h2>
-        <p>{UI_COPY.boutiqueLink.giftsText}</p>
-        <ul className="shop-grid shop-grid--gifts">
-          {giftPicks('cadeaux').map((a) => (
-            <li key={a.id}>
-              <a href={apercuUrl(a.id)} rel="noopener">
-                <img src={`/img/boutique/${a.id}.webp`} alt={a.alt} width={640} height={640} loading="lazy" />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <nav className="section" aria-labelledby="rayons">
-        <h2 id="rayons" style={{ fontSize: 'var(--h3)' }}>
-          {t.collectionsTitle}
-        </h2>
-        <ul className="flash-cats">
-          {collections.map((c) => (
-            <li key={c.url}>
-              <a className="flash-cats__chip" href={c.url} rel="noopener">
-                {c.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      <section className="section" aria-labelledby="apercus">
-        <h2 id="apercus" style={{ fontSize: 'var(--h3)' }}>
-          {t.previewTitle}
-        </h2>
-        <p className="small muted">{t.previewNote}</p>
-        <ul className="shop-grid">
-          {apercus.map((a) => (
-            <li key={a.id}>
-              <a href={apercuUrl(a.id)} rel="noopener">
-                <img src={`/img/boutique/${a.id}.webp`} alt={a.alt} width={640} height={640} loading="lazy" />
-              </a>
-            </li>
-          ))}
-        </ul>
-        <p className="small">{t.variants}</p>
-      </section>
-
-      <div className="measure stack">
+      <div className="measure stack section">
         <div className="card card--flat">
           <h2 style={{ fontSize: 'var(--h3)' }}>{t.rulesTitle}</h2>
           <ul style={{ margin: 0, paddingLeft: '1.2em' }}>
@@ -92,7 +52,11 @@ export default function BoutiquePage() {
             ))}
           </ul>
           <p className="small" style={{ marginTop: 'var(--s3)' }}>
-            <Link href="/mentions-legales#boutique">{t.who}</Link> · <Link href="/confidentialite#boutique">{t.data}</Link>
+            {t.separate}
+          </p>
+          <p className="small" style={{ marginTop: 'var(--s3)' }}>
+            <a href={absolute('/mentions-legales#boutique')}>{t.who}</a> · <a href={absolute('/confidentialite#boutique')}>{t.data}</a> ·{' '}
+            <a href={absolute('/')}>{t.backToSite}</a>
           </p>
         </div>
       </div>

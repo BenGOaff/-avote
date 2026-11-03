@@ -47,6 +47,25 @@ const privateHeaders = [
 // Surfaces personnelles (résultats, profil) : en plus, jamais indexées.
 const personalHeaders = [...privateHeaders, { key: 'X-Robots-Tag', value: 'noindex, nofollow' }]
 
+// Boutique intégrée (script Spreadshop) : servie seulement sur boutique.xn--avote-xra.fr. Le navigateur sépare les deux
+// adresses : le script de la boutique ne peut rien lire de ce que le site garde sur çavote.fr (réponses au test, profil).
+// Sur cette adresse, la CSP s'ouvre aux scripts de Spreadshop ; partout ailleurs elle reste fermée.
+const SHOP_HOST = 'boutique.xn--avote-xra.fr'
+const shopCsp = [
+  "default-src 'self' https:",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
+  "style-src 'self' 'unsafe-inline' https:",
+  "img-src 'self' blob: data: https:",
+  "font-src 'self' data: https:",
+  "connect-src 'self' https:",
+  "frame-src https:",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self' https:",
+  "frame-ancestors 'none'",
+  'upgrade-insecure-requests',
+].join('; ')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
@@ -59,9 +78,22 @@ const nextConfig = {
       { source: '/:path*', has: [{ type: 'host', value: 'www.xn--avote-xra.fr' }], destination: 'https://xn--avote-xra.fr/:path*', permanent: true },
       // cavote.fr (sans cédille) : l'adresse qu'on tape au clavier, renvoyée vers le site
       { source: '/:path*', has: [{ type: 'host', value: '(www\\.)?cavote\\.fr' }], destination: 'https://xn--avote-xra.fr/:path*', permanent: true },
+      // Sur l'adresse de la boutique, seule la page d'accueil (la boutique) et les fichiers du site sont servis : le reste
+      // renvoie vers çavote.fr, où le test et ses réponses restent hors de portée du script de la boutique
+      {
+        source: '/:path((?!_next/|fonts/|img/|brand/|favicon\\.ico$|icon\\.svg$|apple-icon\\.png$|manifest\\.webmanifest$|robots\\.txt$).+)',
+        has: [{ type: 'host', value: SHOP_HOST }],
+        destination: 'https://xn--avote-xra.fr/:path',
+        permanent: false,
+      },
+      // Sur çavote.fr, la boutique est à son adresse à elle
+      { source: '/boutique', has: [{ type: 'host', value: 'xn--avote-xra.fr' }], destination: `https://${SHOP_HOST}/`, permanent: false },
       { source: '/quiz/quel-indecis-es-tu', destination: '/test?rapide=1', permanent: true },
       { source: '/quiz/flash/tiendrais-tu-jusquau-second-tour', destination: '/quiz/flash/quel-parti-politique-es-tu', permanent: true },
     ]
+  },
+  async rewrites() {
+    return { beforeFiles: [{ source: '/', has: [{ type: 'host', value: SHOP_HOST }], destination: '/boutique' }] }
   },
   async headers() {
     return [
@@ -69,6 +101,8 @@ const nextConfig = {
       ...['/test', '/studio', '/duel'].map((source) => ({ source, headers: privateHeaders })),
       ...['/resultats', '/mon-profil'].map((source) => ({ source, headers: personalHeaders })),
       { source: '/sw.js', headers: [{ key: 'Cache-Control', value: 'no-cache' }, { key: 'Service-Worker-Allowed', value: '/' }] },
+      // En dernier : sur l'adresse de la boutique, cette CSP remplace celle du site
+      { source: '/:path*', has: [{ type: 'host', value: SHOP_HOST }], headers: [{ key: 'Content-Security-Policy', value: shopCsp }] },
     ]
   },
 }

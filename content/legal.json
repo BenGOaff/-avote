@@ -15,7 +15,8 @@
   "shop": {
     "name": "Spreadshop",
     "maker": "Spreadshirt",
-    "url": "https://ca-vote.myspreadshop.fr/",
+    "url": "https://boutique.xn--avote-xra.fr/",
+    "spreadshop": "https://ca-vote.myspreadshop.fr",
     "open": true
   }
 }
