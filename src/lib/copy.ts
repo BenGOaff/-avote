@@ -198,9 +198,6 @@ export const UI_COPY = {
     quiz: 'Tu trouveras de quoi afficher tes opinions, plus ou moins discrètement, dans notre boutique.',
     quizCta: 'Voir la boutique',
     results: 'Ton résultat reste sur ton téléphone, la boutique n’en sait rien : ton camp, c’est toi qui le choisis.',
-    designs: 'Par camp',
-    giftsTitle: 'À offrir pour Noël',
-    giftsText: 'Pour l’oncle qui refait le monde au dessert, la cousine qui a toujours le dernier mot, ou toi.',
   },
   alertes: {
     pushTitle: 'Sur ce téléphone',
@@ -601,12 +598,10 @@ export const UI_COPY = {
     kicker: 'Boutique',
     title: 'Tee-shirts, sweats, mugs et sacs.',
     lede: 'Des phrases pour chaque camp, et pour ceux qui hésitent. Vendus, fabriqués et livrés par Spreadshirt ; le site touche une commission par objet.',
-    cta: 'Ouvrir la boutique',
-    daily: 'Chaque camp a ses phrases, et ceux qui hésitent aussi. L’ordre d’arrivée ne dit rien de nos préférences.',
-    collectionsTitle: 'Par rayon',
-    previewTitle: 'Déjà en ligne',
-    previewNote: 'Un aperçu. Dans la boutique, chaque phrase existe sur tee-shirt, sweat, badge, sac ou mug.',
-    variants: 'Certaines phrases existent en plusieurs versions, comme « Insoumis. Sauf à ma mère », « à ma fille », « à mon patron » : choisis la tienne dans la boutique.',
+    loading: 'La boutique se charge. Si rien ne s’affiche, ouvre-la chez Spreadshirt.',
+    backToSite: 'Retour au site',
+    separate:
+      'La boutique a sa propre adresse, boutique.çavote.fr : ton navigateur la tient à l’écart du reste du site. Le programme de Spreadshirt qui l’affiche ne peut rien lire de tes réponses au test.',
     rulesTitle: 'Ce qui ne change pas',
     rules: [
       'Le test, les sources et la méthode restent gratuits.',

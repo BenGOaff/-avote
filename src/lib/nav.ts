@@ -2,6 +2,7 @@
  * Plan du site : une seule source pour le menu du haut, la barre mobile, la page « Plus » et le pied de page.
  * Toute nouvelle page s'ajoute ici, dans sa rubrique ; rien n'est ajouté ailleurs à la main.
  */
+import { LEGAL } from './legal'
 import { QUESTION_COUNT } from './question-count'
 import { REVIREMENTS } from './revirements'
 
@@ -75,7 +76,7 @@ export const SECTIONS: NavSection[] = [
       { href: '/quiz', label: 'Quiz', desc: 'Ris de ton camp, chambre celui d’en face, teste ta culture citoyenne.' },
       { href: '/duel', label: 'Le duel', desc: 'À deux sur un téléphone ou à distance par un lien : d’accord sur quoi, fâchés sur quoi.' },
       { href: '/studio', label: 'Studio', desc: 'Visuels à partager, fabriqués sur ton téléphone.' },
-      { href: '/boutique', label: 'Boutique', desc: 'Objets et visuels, sans lien avec ton résultat.' },
+      { href: LEGAL.shop.url, label: 'Boutique', desc: 'Objets et visuels, sans lien avec ton résultat.' },
     ],
   },
   {

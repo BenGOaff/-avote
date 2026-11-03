@@ -98,7 +98,7 @@ export default function QuizHub() {
           )
         })}
       </section>
-      <ShopPicks seed="quiz" designs />
+      <ShopPicks seed="quiz" />
       <SupportLine placement="quiz" />
     </div>
   )

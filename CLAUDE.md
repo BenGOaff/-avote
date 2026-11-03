@@ -6,7 +6,7 @@
 - Les réponses au test restent dans le navigateur. Ne jamais créer d’API, de table ou de log qui reçoit des réponses, scores, priorités ou exigences.
 - Seule exception de stockage, voulue par la rédaction : l’urne (`/urne`), consultation non représentative. Elle ne reçoit qu’un choix de bulletin, compté dans des totaux anonymes ; l’anti-doublon est une empreinte HMAC rangée à part, jamais reliée au choix (voir `docs/SECURITE.md`). Ne jamais la relier au test ni l’appeler « sondage ».
 - Ne jamais envoyer de réponse de votant à un LLM ou à un service tiers.
-- Aucune ressource tierce (police, script, image) : tout est servi par le site. Seule exception, voulue par la rédaction : Google Analytics, chargé uniquement après consentement (`src/lib/consent.ts`), coupé pendant le test et sur les pages personnelles. Ne jamais lui envoyer d’événement lié aux réponses.
+- Aucune ressource tierce (police, script, image) : tout est servi par le site. Exceptions voulues par la rédaction : Google Analytics, chargé uniquement après consentement (`src/lib/consent.ts`), coupé pendant le test et sur les pages personnelles, sans événement lié aux réponses ; et le script de la boutique Spreadshop, seulement sur l’adresse à part `boutique.xn--avote-xra.fr`, jamais sur çavote.fr (voir `docs/SECURITE.md`).
 - Anonymat : aucun nom, genre, lieu ou indice sur l’identité de la personne qui édite le site, ni sur le site ni dans le dépôt.
 
 ## Méthode
