@@ -1,6 +1,6 @@
 {
   "push": {
-    "at": "2026-11-02T23:11:38.280Z",
+    "at": "2026-11-03T21:38:56.469Z",
     "actors": [
       "edouard-philippe",
       "gabriel-attal",
@@ -39,7 +39,7 @@
     ]
   },
   "email": {
-    "at": "2026-10-28T21:00:32.493Z",
+    "at": "2026-11-03T21:38:56.469Z",
     "actors": [
       "edouard-philippe",
       "gabriel-attal",
@@ -73,7 +73,8 @@
       "jean-lassalle",
       "benoit-mathieu",
       "manolo-mlekuz",
-      "mira-markovic"
+      "mira-markovic",
+      "clara-egger"
     ]
   }
 }
