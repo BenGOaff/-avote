@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-04",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -112,6 +112,24 @@
         "url": "https://www.lemonde.fr/politique/article/2026/11/02/budget-2027-les-discussions-se-poursuivent-dans-un-hemicycle-clairseme-ou-les-deputes-votent-des-amendements-au-devenir-incertain_6805244_823448.html"
       },
       "quote": "Un vote solennel est prévu mardi 3 novembre sur le volet recettes",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-11-07-presentation-du-programme-de-jean-luc-melenchon",
+      "kind": "meeting",
+      "title": "Présentation du programme de Jean-Luc Mélenchon au Bourget",
+      "date": "2026-11-07",
+      "summary": "Le candidat insoumis à la présidentielle doit présenter son programme. Le lieu est choisi pour sa référence à un meeting de François Hollande.",
+      "who": [
+        "jean-luc-melenchon"
+      ],
+      "place": "Le Bourget",
+      "source": {
+        "title": "Au Bourget, Mélenchon veut-il enterrer Hollande ? «Chez Pol, l’émission» avec Thomas Legrand et Lucie Alexandre",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/elections/au-bourget-melenchon-veut-il-enterrer-hollande-chez-pol-lemission-avec-thomas-legrand-et-lucie-alexandre-20261104_H5JFXGOA3FA53HU2UOLR5Z3C2Q/"
+      },
+      "quote": "samedi 7 novembre au Bourget",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
