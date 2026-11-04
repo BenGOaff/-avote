@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-03T23:29:33.878Z",
+  "updatedAt": "2026-11-04T15:30:48.474Z",
   "items": [
+    {
+      "id": "une-eglise-brulerait-chaque-semaine-en-france-4ba388",
+      "claim": "Une église brûlerait chaque semaine en France",
+      "verdict": "trompeur",
+      "truth": "L'Observatoire du patrimoine religieux recense entre 25 et 50 incendies par an dans les édifices religieux français, dont seuls 10 à 20 sont volontaires, et tous ne sont pas de grande ampleur.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-11-04",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/societe/4260034-20261104-chaque-semaine-eglise-brule-france-affirmation-trompeuse?amp%3Bat_campaign=149",
+          "title": "Chaque semaine, une église brûle en France ? Une affirmation trompeuse",
+          "date": "2026-11-04",
+          "quote": "L’Observatoire du patrimoine religieux recense entre 25 et 50 incendies par an dans les édifices religieux français."
+        }
+      ]
+    },
     {
       "id": "les-lyceens-participant-a-un-blocus-risqueraient-une-mention-e38ceb",
       "claim": "Les lycéens participant à un blocus risqueraient une mention pénalisante sur Parcoursup",
