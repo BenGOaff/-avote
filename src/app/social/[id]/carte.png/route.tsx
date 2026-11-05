@@ -3,6 +3,11 @@ import { socialImage } from '@/lib/social-card'
 
 export const dynamic = 'force-static'
 
+// Seules les publications connues au moment de la construction existent. Une adresse inconnue (publication pas encore
+// déployée) répond 404 sans être mise en cache : sinon Cloudflare garderait ce 404 un an, et LinkedIn ou X recevraient
+// « Publication inconnue » même après la mise en ligne.
+export const dynamicParams = false
+
 export function generateStaticParams() {
   return getSocialPosts().map((p) => ({ id: p.id }))
 }

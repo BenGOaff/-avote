@@ -43,7 +43,8 @@ class NotOnlineYet extends Error {}
 async function image(p: SocialPost): Promise<Buffer> {
   const url = `${SITE}/social/${p.id}/carte.png`
   for (let i = 0; i < 40; i++) {
-    const res = await fetch(url).catch(() => null)
+    // Une adresse neuve à chaque essai : un essai fait avant la mise en ligne ne laisse aucun 404 dans le cache de Cloudflare
+    const res = await fetch(`${url}?essai=${Date.now()}`).catch(() => null)
     if (res?.ok) return Buffer.from(await res.arrayBuffer())
     await new Promise((r) => setTimeout(r, 30_000))
   }
