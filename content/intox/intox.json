@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-04T23:45:38.737Z",
+  "updatedAt": "2026-11-05T15:34:55.664Z",
   "items": [
+    {
+      "id": "edouard-philippe-aurait-tenu-des-propos-accusant-gabriel-att-ba63f5",
+      "claim": "Edouard Philippe aurait tenu des propos accusant Gabriel Attal de consommer de la cocaïne, dans le livre « Le crépuscule des princes »",
+      "verdict": "manipule",
+      "truth": "Le passage attribuant ces propos à Edouard Philippe n'apparaît pas dans le livre « Le crépuscule des princes ». La vidéo publiée sur X attribue donc à tort une citation à l'ancien Premier ministre.",
+      "spreaders": [],
+      "topic": "democratie",
+      "firstSeen": "2026-11-05",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/politique/4260447-20261105-philippe-accuse-attal-consommer-cocaine-encore-trace-ingerence-russe-presidentielle-francaise?amp%3Bat_campaign=149",
+          "title": "Philippe accuse Attal de consommer de la cocaïne ? Encore une trace d’ingérence russe dans la présidentielle française",
+          "date": "2026-11-05",
+          "quote": "ce passage n’apparaît jamais dans le livre"
+        }
+      ]
+    },
     {
       "id": "une-eglise-brulerait-chaque-semaine-en-france-4ba388",
       "claim": "Une église brûlerait chaque semaine en France",
