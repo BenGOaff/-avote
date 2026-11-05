@@ -2,7 +2,7 @@
  "mentions": {
   "marine-le-pen": 2,
   "dominique-de-villepin": 1,
-  "marine-tondelier": 1,
+  "marine-tondelier": 2,
   "edouard-philippe": 2,
   "david-lisnard": 2,
   "bernard-cazeneuve": 1,
@@ -12,7 +12,8 @@
   "selma-labib": 1,
   "raphael-glucksmann": 1,
   "eric-zemmour": 1,
-  "bruno-retailleau": 1
+  "bruno-retailleau": 1,
+  "delphine-batho": 1
  },
  "items": {
   "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor": "2026-10-10T10:30:53.306Z",
@@ -72,7 +73,9 @@
   "20261103-2216-livret-a-sebastien-lecornu-annonce-un-plafond-rele": "2026-11-03T23:39:24.021Z",
   "20261104-1422-retailleau-affirme-qu-il-faudra-une-primaire-sans": "2026-11-04T14:51:59.602Z",
   "cli-05-contre": "2026-11-04T14:51:59.602Z",
-  "sondage-ifop-2026-10-29-2371": "2026-11-04T22:12:44.828Z"
+  "sondage-ifop-2026-10-29-2371": "2026-11-04T22:12:44.828Z",
+  "20261105-1431-presidentielle-la-majorite-du-groupe-communiste-a": "2026-11-05T14:57:13.339Z",
+  "edu-01-contre": "2026-11-05T14:57:13.339Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -356,7 +359,12 @@
   "20261104-2234-david-lisnard-critique-pour-sa-double-casquette-am",
   "20261104-2234-l-humanite-juge-severement-le-livre-gouverner-de-j",
   "20261104-2234-presidentielle-2027-selon-le-figaro-macron-prefere",
-  "20261104-2234-presidentielle-retailleau-demande-a-son-tour-une-p"
+  "20261104-2234-presidentielle-retailleau-demande-a-son-tour-une-p",
+  "20261105-1431-budget-2027-l-assemblee-rejette-la-partie-recettes",
+  "20261105-1431-greve-du-5-novembre-270-000-manifestants-hors-pari",
+  "20261105-1431-lancement-du-livre-de-jordan-bardella-perturbe-par",
+  "20261105-1431-marine-tondelier-defend-une-candidature-unique-a-g",
+  "20261105-1431-presidentielle-la-majorite-du-groupe-communiste-a"
  ],
  "rdv": 23
 }
