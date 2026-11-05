@@ -37,6 +37,10 @@
    "archive": "https://web.archive.org/web/20261102130009/https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
    "at": "2026-11-02"
   },
+  "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf": {
+   "archive": "https://web.archive.org/web/20260909145944/https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf",
+   "at": "2026-11-05"
+  },
   "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408": {
    "archive": "https://web.archive.org/web/20261030112818/https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf?1648220408",
    "at": "2026-10-30"
@@ -81,9 +85,17 @@
    "archive": "https://web.archive.org/web/20261020074705/https://attalpresident.fr/actualites/gabriel-attal-presente-un-plan-de-desendettement-et-un-messmer-ii-pour-sortir-des-dependances-francaises",
    "at": "2026-10-31"
   },
+  "https://attalpresident.fr/actualites/gabriel-attal-sur-bfm-tv-le-plus-juste-c-est-d-accompagner-ceux-qui-travaillent": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://attalpresident.fr/actualites/gabriel-attal-veut-remettre-l-exigence-au-coeur-de-l-ecole-et-transformer-le-modele-francais-sur-france-info": {
    "archive": "https://web.archive.org/web/20261003060625/https://attalpresident.fr/actualites/gabriel-attal-veut-remettre-l-exigence-au-coeur-de-l-ecole-et-transformer-le-modele-francais-sur-france-info",
    "at": "2026-11-04"
+  },
+  "https://attalpresident.fr/actualites/lci-gabriel-attal-defend-un-projet-de-rupture-pour-repondre-aux-grands-defis-du-pays": {
+   "archive": "https://web.archive.org/web/20261003060633/https://attalpresident.fr/actualites/lci-gabriel-attal-defend-un-projet-de-rupture-pour-repondre-aux-grands-defis-du-pays",
+   "at": "2026-11-05"
   },
   "https://attalpresident.fr/programme/dette-de-letat": {
    "archive": "https://web.archive.org/web/20261027054659/https://attalpresident.fr/programme/dette-de-letat",
@@ -185,6 +197,14 @@
    "archive": "https://web.archive.org/web/20260821172652/https://francoisruffin.fr/ils-veulent-le-faire-disparaitre-de-notre-societe/",
    "at": "2026-10-28"
   },
+  "https://francoisruffin.fr/mepris-de-chasse/": {
+   "archive": "https://web.archive.org/web/20260806150940/https://francoisruffin.fr/mepris-de-chasse/",
+   "at": "2026-11-05"
+  },
+  "https://francoisruffin.fr/oudea-castera-guerre-scolaire/": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://francoisruffin.fr/pourquoi-le-medef-veut-39-millions-de-travailleurs-immigres/": {
    "tried": "2026-11-02",
    "reason": "passage introuvable dans la copie"
@@ -207,6 +227,10 @@
   },
   "https://horizonsleparti.fr/discours-dedouard-philippe-lors-du-congres-de-lille/": {
    "tried": "2026-11-03",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://horizonsleparti.fr/discours-dedouard-philippe-lors-du-conseil-national-a-reims-10-mai-2026/": {
+   "tried": "2026-11-05",
    "reason": "passage introuvable dans la copie"
   },
   "https://horizonsleparti.fr/discours-du-congres-de-marseille-17-mai-2025/": {
@@ -233,6 +257,10 @@
    "tried": "2026-11-03",
    "reason": "passage introuvable dans la copie"
   },
+  "https://laec.fr/section/45/mettre-fin-au-pillage-economique-de-la-nation": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://laec.fr/section/54/garantir-le-droit-au-logement": {
    "archive": "https://web.archive.org/web/20250618122549/https://www.laec.fr/section/54/garantir-le-droit-au-logement",
    "at": "2026-11-03"
@@ -245,6 +273,10 @@
    "tried": "2026-11-03",
    "reason": "passage introuvable dans la copie"
   },
+  "https://laec.fr/section/65/reconstruire-une-ecole-globale-pour-legalite-et-lemancipation": {
+   "archive": "https://web.archive.org/web/20260827142427/https://laec.fr/section/65/reconstruire-une-ecole-globale-pour-legalite-et-lemancipation",
+   "at": "2026-11-05"
+  },
   "https://lafranceinsoumise.fr/wp-content/uploads/2020/04/avenir-en-commun-maj-avril-2020.pdf": {
    "archive": "https://web.archive.org/web/20250210084159/https://lafranceinsoumise.fr/wp-content/uploads/2020/04/avenir-en-commun-maj-avril-2020.pdf",
    "at": "2026-10-28"
@@ -253,12 +285,24 @@
    "tried": "2026-10-28",
    "reason": "passage introuvable dans la copie"
   },
+  "https://lcp.fr/actualites/budget-comment-fonctionnerait-la-regle-d-or-que-marine-le-pen-veut-faire-adopter-par": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://lcp.fr/actualites/chomage-edouard-philippe-veut-abaisser-la-duree-d-indemnisation-a-douze-mois-maximum": {
    "archive": "https://web.archive.org/web/20260911130215/https://lcp.fr/actualites/chomage-edouard-philippe-veut-abaisser-la-duree-d-indemnisation-a-douze-mois-maximum",
    "at": "2026-10-26"
   },
   "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat": {
    "tried": "2026-10-30",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election": {
+   "archive": "https://web.archive.org/web/20261105131331/https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+   "at": "2026-11-05"
+  },
+  "https://lcp.fr/actualites/legislatives-gabriel-attal-presente-le-programme-de-la-coalition-presidentielle-et": {
+   "tried": "2026-11-05",
    "reason": "passage introuvable dans la copie"
   },
   "https://lcp.fr/actualites/presidentielle-2027-qui-propose-quoi-sur-les-retraites-437864": {
@@ -279,6 +323,10 @@
   },
   "https://lediplomate.media/david-lisnard-souverainete-europeenne/": {
    "tried": "2026-10-31",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://legrandcontinent.eu/fr/2026/02/25/pour-une-declaration-dindependance-la-doctrine-ruffin-sur-leurope/": {
+   "tried": "2026-11-05",
    "reason": "passage introuvable dans la copie"
   },
   "https://lematindalgerie.com/selma-labib-porte-parole-du-npa-revolutionnaires-cest-nous-qui-travaillons-cest-nous-qui-decidons/": {
@@ -324,6 +372,10 @@
   "https://lesecologistes.fr/pages/358vv7W974UgosGhCBbIPT/notre-projet": {
    "archive": "https://web.archive.org/web/20261015154951/https://lesecologistes.fr/pages/358vv7W974UgosGhCBbIPT/notre-projet",
    "at": "2026-10-28"
+  },
+  "https://lesecologistes.fr/posts/2s0kOxQEOQdC8JP4jkXuu7/discours-de-marine-tondelier-aux-journees-d-ete-des-ecologistes-2026": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
   },
   "https://lesecologistes.fr/posts/4ChrC90dLAkT54OchfYJ2n/pour-sortir-de-la-crise-la-france-a-besoin-d-une-constituante": {
    "archive": "https://web.archive.org/web/20261028105717/https://lesecologistes.fr/posts/4ChrC90dLAkT54OchfYJ2n/pour-sortir-de-la-crise-la-france-a-besoin-d-une-constituante",
@@ -565,6 +617,10 @@
    "archive": "https://web.archive.org/web/20261028023829/https://projet-socialiste.fr/projet/vivre-libres/",
    "at": "2026-10-30"
   },
+  "https://questions.assemblee-nationale.fr/dyn/17/textes/l17b0694_proposition-loi.pdf": {
+   "archive": "https://web.archive.org/web/20261105132402/https://questions.assemblee-nationale.fr/dyn/17/textes/l17b0694_proposition-loi.pdf",
+   "at": "2026-11-05"
+  },
   "https://rassemblementnational.fr/documents/202406-programme.pdf": {
    "tried": "2026-11-02",
    "reason": "passage introuvable dans la copie"
@@ -613,6 +669,10 @@
    "archive": "https://web.archive.org/web/20250321072057/https://soseducation.org/docs/notes-etudes-entretiens-tribunes/programmes-educatifs-presidentielle-2022/programme-le-pen-ecole.pdf",
    "at": "2026-10-28"
   },
+  "https://tetu.com/2024/04/26/gpa-ethique-gestation-pour-autrui-raphael-glucksmann-ps-elections-europeennes/": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://vih.org/drogues-et-rdr/20220328/nathalie-arthaud-lutte-ouvriere/": {
    "tried": "2026-10-28",
    "reason": "passage introuvable dans la copie"
@@ -633,6 +693,26 @@
    "tried": "2026-11-03",
    "reason": "passage introuvable dans la copie"
   },
+  "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mardi-18-mars-2025": {
+   "archive": "https://web.archive.org/web/20261103131123/https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mardi-18-mars-2025",
+   "at": "2026-11-05"
+  },
+  "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mardi-29-avril-2025": {
+   "archive": "https://web.archive.org/web/20260426231802/https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mardi-29-avril-2025",
+   "at": "2026-11-05"
+  },
+  "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-12-mars-2025": {
+   "archive": "https://web.archive.org/web/20260711181525/https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-12-mars-2025",
+   "at": "2026-11-05"
+  },
+  "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-samedi-08-novembre-2025": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-lundi-03-novembre-2025": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://www.assemblee-nationale.fr/dyn/17/scrutins/1214": {
    "archive": "https://web.archive.org/web/20261018224655/https://www.assemblee-nationale.fr/dyn/17/scrutins/1214",
    "at": "2026-11-04"
@@ -645,9 +725,17 @@
    "archive": "https://web.archive.org/web/20261104124700/https://www.assemblee-nationale.fr/dyn/17/scrutins/219",
    "at": "2026-11-04"
   },
+  "https://www.assemblee-nationale.fr/dyn/17/scrutins/2272": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957": {
    "archive": "https://web.archive.org/web/20261018205915/https://www.assemblee-nationale.fr/dyn/17/scrutins/2957",
    "at": "2026-11-02"
+  },
+  "https://www.assemblee-nationale.fr/dyn/17/scrutins/5412": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
   },
   "https://www.assemblee-nationale.fr/dyn/17/scrutins/805": {
    "tried": "2026-11-03",
@@ -660,6 +748,10 @@
   "https://www.assemblee-nationale.fr/dyn/17/scrutins/8431": {
    "archive": "https://web.archive.org/web/20261019142222/https://www.assemblee-nationale.fr/dyn/17/scrutins/8431",
    "at": "2026-10-28"
+  },
+  "https://www.assemblee-nationale.fr/dyn/17/scrutins/881": {
+   "archive": "https://web.archive.org/web/20261024203415/https://www.assemblee-nationale.fr/dyn/17/scrutins/881",
+   "at": "2026-11-05"
   },
   "https://www.assemblee-nationale.fr/dyn/deputes/PA335999/positions-de-vote": {
    "archive": "https://web.archive.org/web/20260921171432/https://www.assemblee-nationale.fr/dyn/deputes/PA335999/positions-de-vote",
@@ -709,6 +801,14 @@
    "archive": "https://web.archive.org/web/20261103122402/https://www.avecretailleau.fr/projet/mesure/inscrire-le-droit-a-la-securite-dans-la-constitution",
    "at": "2026-11-03"
   },
+  "https://www.avecretailleau.fr/projet/mesure/instaurer-une-veritable-gestion-des-ressources-humaines-et": {
+   "archive": "https://web.archive.org/web/20261105131144/https://www.avecretailleau.fr/projet/mesure/instaurer-une-veritable-gestion-des-ressources-humaines-et",
+   "at": "2026-11-05"
+  },
+  "https://www.avecretailleau.fr/projet/mesure/introduire-dans-la-constitution-une-clause-de-sauvegarde": {
+   "archive": "https://web.archive.org/web/20261016192919/https://www.avecretailleau.fr/projet/mesure/introduire-dans-la-constitution-une-clause-de-sauvegarde",
+   "at": "2026-11-05"
+  },
   "https://www.avecretailleau.fr/projet/mesure/investir-toutes-les-autorites-publiques-francaises-du": {
    "archive": "https://web.archive.org/web/20261016192946/https://www.avecretailleau.fr/projet/mesure/investir-toutes-les-autorites-publiques-francaises-du",
    "at": "2026-10-27"
@@ -721,8 +821,24 @@
    "archive": "https://web.archive.org/web/20261006121129/https://www.avecretailleau.fr/projet/mesure/mettre-l-intelligence-artificielle-au-service-des",
    "at": "2026-11-02"
   },
+  "https://www.avecretailleau.fr/projet/mesure/reduire-de-60-le-handicap-fiscal-de-nos-entreprises-par": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.avecretailleau.fr/projet/mesure/reduire-les-charges-sur-l-electricite-et-revoir-le-dpe": {
+   "archive": "https://web.archive.org/web/20260926133934/https://www.avecretailleau.fr/projet/mesure/reduire-les-charges-sur-l-electricite-et-revoir-le-dpe",
+   "at": "2026-11-05"
+  },
   "https://www.avecretailleau.fr/projet/mesure/reduire-les-durees-et-plafonner-les-allocations-chomage": {
    "tried": "2026-10-30",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.avecretailleau.fr/projet/mesure/rendre-30-milliards-d-euros-aux-salaries-et-aux-entreprises": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.avecretailleau.fr/projet/mesure/rendre-a-la-france-la-maitrise-de-son-immigration": {
+   "tried": "2026-11-05",
    "reason": "passage introuvable dans la copie"
   },
   "https://www.avecretailleau.fr/projet/mesure/repondre-a-la-guerre-informationnelle": {
@@ -733,9 +849,21 @@
    "archive": "https://web.archive.org/web/20260926134115/https://www.avecretailleau.fr/projet/mesure/simplifier-les-demarches-et-reduire-les-taches",
    "at": "2026-11-02"
   },
+  "https://www.avecretailleau.fr/projet/mesure/stabiliser-le-prix-de-l-electricite": {
+   "archive": "https://web.archive.org/web/20260926133934/https://www.avecretailleau.fr/projet/mesure/stabiliser-le-prix-de-l-electricite",
+   "at": "2026-11-05"
+  },
   "https://www.avecretailleau.fr/projet/mesure/supprimer-l-encadrement-des-loyers": {
    "tried": "2026-10-30",
    "reason": "passage introuvable dans la copie"
+  },
+  "https://www.avecretailleau.fr/projet/mesure/verser-240-euros-par-mois-par-enfant-mineur": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-immigration-voile-marine-le-pen-ce-qu-il-faut-retenir-de-l-interview-d-eric-zemmour-sur-bfmtv_AV-202609170966.html": {
+   "archive": "https://web.archive.org/web/20260923115623/https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-immigration-voile-marine-le-pen-ce-qu-il-faut-retenir-de-l-interview-d-eric-zemmour-sur-bfmtv_AV-202609170966.html",
+   "at": "2026-11-05"
   },
   "https://www.bfmtv.com/politique/video-mouvement-lyceen-il-faut-supprimer-parcoursup-estime-segolene-royal-candidate-a-la-primaire-sociale-democrate_VN-202610081012.html": {
    "archive": "https://web.archive.org/web/20261010123436/https://www.bfmtv.com/politique/video-mouvement-lyceen-il-faut-supprimer-parcoursup-estime-segolene-royal-candidate-a-la-primaire-sociale-democrate_VN-202610081012.html",
@@ -865,6 +993,10 @@
    "tried": "2026-10-31",
    "reason": "passage introuvable dans la copie"
   },
+  "https://www.edouardphilippe.fr/actualites/trois-principales-annonces-dedouard-philippe-a-lheure-de-verite": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante": {
    "tried": "2026-10-26",
    "reason": "passage introuvable dans la copie"
@@ -945,9 +1077,17 @@
    "archive": "https://web.archive.org/web/20260512182916/https://www.fabienroussel2022.fr/objectif_2",
    "at": "2026-10-28"
   },
+  "https://www.franceinfo.fr/internet/reseaux-sociaux/vrai-ou-faux-l-interdiction-des-reseaux-sociaux-aux-moins-de-15-ans-permettrait-elle-de-fliquer-la-population-comme-le-denonce-eric-zemmour_7767827.html": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://www.franceinfo.fr/politique/direct-presidentielle-les-candidats-a-la-primaire-ps-place-publique-se-preparent-a-leur-dernier-debat-avant-le-scrutin-qui-les-departagera_8222140.html": {
    "tried": "2026-10-30",
    "reason": "passage introuvable dans la copie"
+  },
+  "https://www.franceinfo.fr/politique/edouard-philippe/immigration-retraites-allocations-familiales-parcoursup-ce-qu-il-faut-retenir-de-l-interview-d-edouard-philippe-dans-l-emission-l-heure-de-verite_8228416.html": {
+   "archive": "https://web.archive.org/web/20261026221422/https://www.franceinfo.fr/politique/edouard-philippe/immigration-retraites-allocations-familiales-parcoursup-ce-qu-il-faut-retenir-de-l-interview-d-edouard-philippe-dans-l-emission-l-heure-de-verite_8228416.html",
+   "at": "2026-11-05"
   },
   "https://www.franceinfo.fr/politique/segolene-royal/budget-2026-pour-reduire-le-deficit-il-faut-lutter-contre-les-gaspillages-il-ne-faut-pas-baisser-les-depenses-essentielles-estime-segolene-royal_7582286.html": {
    "tried": "2026-10-30",
@@ -976,6 +1116,10 @@
   "https://www.generationecologie.fr/2024/03/12/13-mars-journee-europeenne-pour-la-decroissance-du-trafic-aerien/": {
    "archive": "https://web.archive.org/web/20251213033055/https://www.generationecologie.fr/2024/03/12/13-mars-journee-europeenne-pour-la-decroissance-du-trafic-aerien/",
    "at": "2026-10-30"
+  },
+  "https://www.generationecologie.fr/2024/11/01/hit-parade-du-climato-obscurantisme-lextreme-droite-defend-les-passoires-thermiques/": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
   },
   "https://www.generationecologie.fr/2025/05/13/a69-etat-droit-ecologie-victimes-manoeuvres-parlementaires/": {
    "tried": "2026-11-03",
@@ -1033,6 +1177,10 @@
    "archive": "https://web.archive.org/web/20261028105952/https://www.karimbouamrane2027.org/manifeste.html",
    "at": "2026-10-30"
   },
+  "https://www.lagazettefrance.fr/article/l-immigration-est-necessaire-mais-doit-etre-controlee-dit-edouard-philippe": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://www.lecourrierdelatlas.com/?p=200893": {
    "archive": "https://web.archive.org/web/20261104123131/https://www.lecourrierdelatlas.com/ame-trop-chere-b-retailleau-reaffirme-sa-volonte-de-passer-a-lamu/",
    "at": "2026-11-04"
@@ -1049,6 +1197,10 @@
    "tried": "2026-10-27",
    "reason": "passage introuvable dans la copie"
   },
+  "https://www.lejdd.fr/politique/exclusif-gabriel-attal-je-propose-la-plus-grande-reforme-institutionnelle-depuis-1958-180333": {
+   "archive": "https://web.archive.org/web/20261003061736/https://www.lejdd.fr/politique/exclusif-gabriel-attal-je-propose-la-plus-grande-reforme-institutionnelle-depuis-1958-180333",
+   "at": "2026-11-05"
+  },
   "https://www.lejdd.fr/politique/gabriel-attal-en-2027-il-faudra-une-vraie-rupture-de-modele-164300": {
    "archive": "https://web.archive.org/web/20260821172112/https://www.lejdd.fr/politique/gabriel-attal-en-2027-il-faudra-une-vraie-rupture-de-modele-164300",
    "at": "2026-10-28"
@@ -1064,6 +1216,10 @@
   "https://www.lejdd.fr/politique/le-plus-vite-possible-nicolas-dupont-aignan-appelle-a-sortir-de-lunion-europeenne-pour-retablir-les-frontieres-173016": {
    "archive": "https://web.archive.org/web/20260821172758/https://www.lejdd.fr/politique/le-plus-vite-possible-nicolas-dupont-aignan-appelle-a-sortir-de-lunion-europeenne-pour-retablir-les-frontieres-173016",
    "at": "2026-10-30"
+  },
+  "https://www.letelegramme.fr/politique/presidentielle-2027-edouard-philippe-veut-diviser-par-deux-limmigration-legale-et-propose-un-moratoire-sur-le-regroupement-familial-7134662.php": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
   },
   "https://www.linfodurable.fr/2022-xavier-bertrand-defend-le-nucleaire-energie-davenir-25206": {
    "archive": "https://web.archive.org/web/20261023105356/https://www.linfodurable.fr/2022-xavier-bertrand-defend-le-nucleaire-energie-davenir-25206",
@@ -1205,6 +1361,10 @@
    "archive": "https://web.archive.org/web/20261002204714/https://www.pcf.fr/ue_25_discours_fr",
    "at": "2026-10-28"
   },
+  "https://www.pcf74.fr/2026/09/fete-de-l-humanite-2026-discours-de-fabien-roussel.html": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://www.pleinchamp.com/actualite/presidentielle-2027-bruno-retailleau-defend-le-stockage-de-l-eau-et-la-reduction-des-contraintes-agricoles": {
    "archive": "https://web.archive.org/web/20260922004156/https://www.pleinchamp.com/actualite/presidentielle-2027-bruno-retailleau-defend-le-stockage-de-l-eau-et-la-reduction-des-contraintes-agricoles",
    "at": "2026-10-28"
@@ -1241,6 +1401,10 @@
    "tried": "2026-10-31",
    "reason": "passage introuvable dans la copie"
   },
+  "https://www.publicsenat.fr/actualites/politique/interieur-justice-je-veillerai-a-avoir-de-bonnes-relations-avec-didier-migaud-veut-rassurer-bruno-retailleau": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
   "https://www.pv-magazine.fr/2022/04/07/speciale-presidentielle-2022-le-programme-de-nicolas-dupont-aignan-dans-les-enr-et-le-solaire/": {
    "archive": "https://web.archive.org/web/20260122050352/https://www.pv-magazine.fr/2022/04/07/speciale-presidentielle-2022-le-programme-de-nicolas-dupont-aignan-dans-les-enr-et-le-solaire/",
    "at": "2026-10-28"
@@ -1260,6 +1424,26 @@
   "https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/": {
    "archive": "https://web.archive.org/web/20261028110704/https://www.revuepolitique.fr/tenir-la-promesse-de-la-france-bernard-cazeneuve/",
    "at": "2026-10-28"
+  },
+  "https://www.senat.fr/leg/ppl23-435.pdf": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.senat.fr/scrutin-public/2025/scr2025-110.html": {
+   "archive": "https://web.archive.org/web/20261105124928/https://www.senat.fr/scrutin-public/2025/scr2025-110.html",
+   "at": "2026-11-05"
+  },
+  "https://www.senat.fr/scrutin-public/2025/scr2025-337.html": {
+   "archive": "https://web.archive.org/web/20261005021455/https://www.senat.fr/scrutin-public/2025/scr2025-337.html",
+   "at": "2026-11-05"
+  },
+  "https://www.senat.fr/scrutin-public/2025/scr2025-57.html": {
+   "archive": "https://web.archive.org/web/20261105124732/https://www.senat.fr/scrutin-public/2025/scr2025-57.html",
+   "at": "2026-11-05"
+  },
+  "https://www.senat.fr/seances/s202403/s20240313/s20240313_mono.html": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
   },
   "https://www.senat.fr/seances/s202606/s20260602/s20260602021.html": {
    "archive": "https://web.archive.org/web/20261101112833/https://www.senat.fr/seances/s202606/s20260602/s20260602021.html",
@@ -1412,6 +1596,14 @@
   "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-reduire-le-nombre-de-fonctionnaires/": {
    "archive": "https://web.archive.org/web/20260928115134/https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-reduire-le-nombre-de-fonctionnaires/",
    "at": "2026-11-04"
+  },
+  "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-remplacer-les-departements-et-les-regions/": {
+   "tried": "2026-11-05",
+   "reason": "passage introuvable dans la copie"
+  },
+  "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-les-subventions-aux-entreprises/": {
+   "archive": "https://web.archive.org/web/20261012001253/https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-les-subventions-aux-entreprises/",
+   "at": "2026-11-05"
   },
   "https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/": {
    "archive": "https://web.archive.org/web/20260928120606/https://www.unenouvelleenergie.fr/questions/quel-est-le-diagnostic-de-david-lisnard-sur-l-hopital/",
