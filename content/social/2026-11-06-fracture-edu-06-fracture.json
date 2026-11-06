@@ -1,0 +1,34 @@
+{
+  "id": "2026-11-06-fracture-edu-06-fracture",
+  "at": "2026-11-06T14:36:10.090Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "ILS SONT D'ACCORD ?",
+    "title": "Service national obligatoire : Lisnard et Mélenchon pour, Philippe et Arthaud contre",
+    "line": "Sur 13 candidats, 6 sont pour, 5 sont contre. Glucksmann d'un côté, Batho de l'autre.",
+    "yes": [
+      "david-lisnard",
+      "nicolas-dupont-aignan",
+      "jean-luc-melenchon",
+      "olivier-becht",
+      "raphael-glucksmann",
+      "juan-branco"
+    ],
+    "no": [
+      "edouard-philippe",
+      "delphine-batho",
+      "nathalie-arthaud",
+      "anasse-kazib",
+      "selma-labib"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Service national obligatoire pour tous les jeunes : Lisnard, Mélenchon et Glucksmann disent oui. Édouard Philippe et Nathalie Arthaud disent non. Tu te ranges avec qui ?",
+    "linkedin": "Lisnard et Mélenchon sont d'accord : un service national obligatoire pour tous les jeunes.\nL'affirmation soumise aux candidats est la suivante : « Un service national obligatoire devrait être instauré pour tous les jeunes. »\n\nSur 13 candidats qui se sont prononcés, 6 sont nettement pour : David Lisnard, Nicolas Dupont-Aignan, Jean-Luc Mélenchon, Olivier Becht, Raphaël Glucksmann et Juan Branco.\n\n5 sont nettement contre : Édouard Philippe, Delphine Batho, Nathalie Arthaud, Anasse Kazib et Selma Labib.\n\nLa ligne de partage ne suit pas le clivage habituel entre familles politiques.\n\nSi tu devais trancher, un service obligatoire pour tous les jeunes, oui ou non ?\n\n#presidentielle2027",
+    "facebook": "Un service national obligatoire pour tous les jeunes : David Lisnard, Jean-Luc Mélenchon et Raphaël Glucksmann sont pour. Édouard Philippe, Nathalie Arthaud et Delphine Batho sont contre. Sur 13 candidats, 6 disent oui et 5 disent non. Toi, tu te ranges avec qui ? Le test est sur çavote.fr",
+    "instagram": "Lisnard et Mélenchon d'accord sur le service national ?\nOui : les deux veulent un service obligatoire pour tous les jeunes.\nGlucksmann et Dupont-Aignan aussi.\nEn face : Édouard Philippe, Nathalie Arthaud et Delphine Batho.\nSur 13 candidats, 6 sont pour, 5 sont contre.\nEt toi, tu l'imposerais à tous les jeunes ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #servicenational"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
