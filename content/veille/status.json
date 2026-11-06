@@ -1,97 +1,96 @@
 {
-  "lastRun": "2026-11-06T14:09:50.760Z",
-  "lastSuccess": "2026-11-06T14:09:50.760Z",
+  "lastRun": "2026-11-06T22:01:58.967Z",
+  "lastSuccess": "2026-11-06T22:01:58.967Z",
   "feeds": [
     {
       "id": "20minutes-politique",
       "name": "20 Minutes",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "assemblee-documents",
       "name": "Assemblée nationale",
-      "ok": false,
-      "lastSuccess": "2026-11-05T22:38:56.917Z",
-      "error": "HTTP 500"
+      "ok": true,
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "blast",
       "name": "Blast",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "conseil-constitutionnel",
       "name": "Conseil constitutionnel",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "elysee",
       "name": "Élysée",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "franceinfo-politique",
       "name": "franceinfo",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "franceinfo-presidentielle",
       "name": "franceinfo (présidentielle)",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "humanite-politique",
       "name": "L'Humanité",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "lcp",
       "name": "LCP",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "lefigaro-politique",
       "name": "Le Figaro",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "lemonde-politique",
       "name": "Le Monde",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "liberation-politique",
       "name": "Libération",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "mediapart",
       "name": "Mediapart",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "publicsenat",
       "name": "Public Sénat",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     },
     {
       "id": "senat-presse",
       "name": "Sénat",
       "ok": true,
-      "lastSuccess": "2026-11-06T14:09:50.760Z"
+      "lastSuccess": "2026-11-06T22:01:58.967Z"
     }
   ]
 }

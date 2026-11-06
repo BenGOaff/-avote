@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-06",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -130,6 +130,24 @@
         "url": "https://www.liberation.fr/politique/elections/au-bourget-melenchon-veut-il-enterrer-hollande-chez-pol-lemission-avec-thomas-legrand-et-lucie-alexandre-20261104_H5JFXGOA3FA53HU2UOLR5Z3C2Q/"
       },
       "quote": "samedi 7 novembre au Bourget",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-11-07-meeting-de-presentation-du-programme-de-jean-luc",
+      "kind": "meeting",
+      "title": "Meeting de présentation du programme de Jean-Luc Mélenchon au Parc des Expositions",
+      "date": "2026-11-07",
+      "summary": "Le leader insoumis présente son programme lors d'un grand meeting. Libération y voit une nouvelle démonstration de force pour asseoir sa place à gauche.",
+      "who": [
+        "jean-luc-melenchon"
+      ],
+      "place": "Le Bourget",
+      "source": {
+        "title": "D’un Bourget à l’autre : comment Jean-Luc Mélenchon veut continuer de supplanter le PS",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/dun-bourget-a-lautre-comment-jean-luc-melenchon-veut-continuer-de-supplanter-le-ps-20261106_A22URJZ24NCBFAVXZYA5VXMMIA/"
+      },
+      "quote": "ce samedi 7 novembre",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
