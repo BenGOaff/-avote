@@ -5,10 +5,12 @@ Remplace l'hébergement « Web Apps » décrit dans `DEPLOIEMENT-HOSTINGER.md`.
 ## Principe
 
 - `.github/workflows/image.yml` construit l'image du site à chaque changement de `main` et la publie sur `ghcr.io/bengoaff/cavote` (paquet public).
-- Sur le serveur, `deploy/docker-compose.yml` lance trois services :
-  - `app` : le site, limité à 1 Go de mémoire et 2 processeurs ;
-  - `tunnel` : `cloudflared`, qui relie le site à Cloudflare sans ouvrir de port sur le serveur ;
-  - `updater` : toutes les 5 minutes, récupère l'image si elle a changé et ne recrée que `app`.
+- Sur le serveur, `deploy/docker-compose.yml` lance cinq services :
+  - `site_a` et `site_b` : deux copies du site, chacune limitée à 1 Go de mémoire et 2 processeurs ;
+  - `app` : le relais (`deploy/relais.mjs`, dans la même image), qui sert la première copie en bonne santé et réessaie sur l'autre pendant un remplacement ; il n'est jamais remplacé par les mises à jour ;
+  - `tunnel` : `cloudflared`, qui relie le site à Cloudflare sans ouvrir de port sur le serveur (il vise toujours `http://app:3000`) ;
+  - `updater` : toutes les 5 minutes, récupère l'image si elle a changé, remplace `site_b`, attend qu'il réponde, puis remplace `site_a`. Le site ne coupe donc jamais pendant une mise à jour.
+- Pourquoi : les robots publient plusieurs fois par heure, et chaque publication reconstruit l'image. Avec une seule copie, chaque remplacement pouvait couper le site quelques secondes, et Google risquait de tomber sur ces coupures (piste examinée après la chute des impressions du 1er novembre 2026).
 - Le public ne voit que Cloudflare : l'adresse du serveur n'apparaît dans aucun enregistrement DNS (anonymat, voir `SECURITE.md`).
 - L'adresse du visiteur arrive dans `CF-Connecting-IP` ; `CLIENT_IP_HEADER` le dit à l'application (urne, limites de débit).
 
