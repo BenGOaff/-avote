@@ -2,7 +2,8 @@ import Link from 'next/link'
 import { UI_COPY } from '@/lib/copy'
 import { getArticles, getBriefs } from '@/lib/content'
 import { getActiveActors } from '@/lib/actors'
-import { liveCorpus, questionnaire } from '@/lib/data'
+import { liveCorpus, questionnaire, QUICK_ITEMS } from '@/lib/data'
+import { absolute, OPEN_DATA } from '@/lib/site'
 import { ArticleCard, BriefItem } from '@/components/Editorial'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { TestFlow } from './test/TestFlow'
@@ -30,8 +31,27 @@ export default function HomePage() {
     '@type': 'FAQPage',
     mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
   }
+  const ti = h.testInfo
+  // Le site et le test lui-même, décrits pour les moteurs de recherche et les assistants IA
+  const siteJsonLd = [
+    { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Ça vote ?', alternateName: 'çavote.fr', url: absolute('/'), inLanguage: 'fr-FR' },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: h.title,
+      url: absolute('/'),
+      applicationCategory: 'EducationalApplication',
+      operatingSystem: 'Tous',
+      inLanguage: 'fr-FR',
+      isAccessibleForFree: true,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+      description: ti.lede(questionnaire.items.length, QUICK_ITEMS.length, actors.length),
+      isBasedOn: OPEN_DATA.url,
+    },
+  ]
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd).replace(/</g, '\\u003c') }} />
       {/* L'accueil s'ouvre directement sur le test complet */}
       <section className="container" style={{ paddingTop: 'var(--s5)' }} aria-label="Le test">
         <TestFlow corpusVersion={liveCorpus.version} />
@@ -85,6 +105,44 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
+      </section>
+
+      {/* Ce qu'est le test, en clair : pour les gens qui hésitent et pour les moteurs qui lisent la page */}
+      <section className="section container" aria-labelledby="test-info">
+        <h2 id="test-info">{ti.title}</h2>
+        <p className="lede measure">{ti.lede(questionnaire.items.length, QUICK_ITEMS.length, actors.length)}</p>
+        <div className="grid grid--2" style={{ marginTop: 'var(--s5)', alignItems: 'start' }}>
+          <div>
+            <h3>{ti.stepsTitle}</h3>
+            <ol>
+              {h.how.map((l) => (
+                <li key={l}>{l}</li>
+              ))}
+            </ol>
+            <p className="muted small">{h.duration}</p>
+          </div>
+          <div>
+            <h3>{ti.differenceTitle}</h3>
+            <ul>
+              {ti.difference.map((l) => (
+                <li key={l}>{l}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <h3>{ti.candidatesTitle}</h3>
+        <ul className="row" role="list" style={{ listStyle: 'none', padding: 0 }}>
+          {actors.map((a) => (
+            <li key={a.slug}>
+              <Link href={`/candidats/${a.slug}`}>{a.name}</Link>
+            </li>
+          ))}
+        </ul>
+        <p className="row">
+          <Link href="/candidats">{ti.candidatesAll}</Link>
+          <Link href="/comparatif-tests">{ti.compare}</Link>
+          <Link href="/quiz">{ti.quiz}</Link>
+        </p>
       </section>
 
       <section className="section container" aria-labelledby="radar-titre">

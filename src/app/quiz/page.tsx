@@ -30,6 +30,12 @@ export default function QuizHub() {
   const day = Math.floor(Date.parse(new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Paris' })) / 86_400_000)
   const featured = quizzes[day % quizzes.length]
   // Données structurées : la liste des quiz, pour les moteurs et les assistants IA
+  const faq = copy.faq(QUICK_ITEMS.length, questionnaire.items.length, quizzes.length)
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  }
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -97,6 +103,21 @@ export default function QuizHub() {
             </section>
           )
         })}
+      </section>
+      <section className="section measure" aria-labelledby="quiz-faq">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
+        <h2 id="quiz-faq">{copy.faqTitle}</h2>
+        <div className="stack">
+          {faq.map((f) => (
+            <details key={f.q} className="disclosure">
+              <summary>{f.q}</summary>
+              <div>
+                <p style={{ marginTop: 0 }}>{f.a}</p>
+                <Link href={f.href}>{f.link}</Link>
+              </div>
+            </details>
+          ))}
+        </div>
       </section>
       <ShopPicks seed="quiz" />
       <SupportLine placement="quiz" />

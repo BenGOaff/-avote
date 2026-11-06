@@ -107,7 +107,30 @@ export const UI_COPY = {
         href: '/methodologie',
         link: 'Comment le résultat est calculé',
       },
+      {
+        q: 'Quel test choisir pour savoir pour qui voter en 2027 ?',
+        a: 'Plusieurs tests existent pour la présidentielle 2027. Nous les avons passés à la même grille, le nôtre compris : qui range les positions des candidats, avec quelles sources, ce qu’il fait d’une position inconnue, où vont tes réponses.',
+        href: '/comparatif-tests',
+        link: 'Les tests comparés',
+      },
     ],
+    testInfo: {
+      title: 'Le test pour savoir pour qui voter en 2027',
+      lede: (n: number, quick: number, candidates: number) =>
+        `Un test présidentielle gratuit et anonyme : ${n} affirmations, ou ${quick} dans la version rapide, comparées aux positions de ${candidates} candidatures, chacune avec la phrase exacte du candidat et sa source.`,
+      stepsTitle: 'Comment ça marche',
+      differenceTitle: 'Ce qui change des autres tests',
+      difference: [
+        'Chaque position renvoie à la page où le candidat l’a écrite ou dite, et un programme vérifie que la phrase y figure mot pour mot.',
+        'Une position introuvable reste vide : elle ne devient jamais « neutre », et le résultat te dit ce qui manque.',
+        'Le calcul se fait sur ton téléphone. Pas de compte, pas d’adresse, rien n’est envoyé.',
+        'Les positions sont publiées en données ouvertes sur data.gouv.fr : n’importe qui peut les vérifier.',
+      ],
+      candidatesTitle: 'Les candidats comparés',
+      candidatesAll: 'Toutes les candidatures, avec leur source',
+      compare: 'Les autres tests passés à la même grille',
+      quiz: 'Les quiz de la présidentielle 2027',
+    },
     howLink: 'Comment ça marche ?',
     how: [
       'Tu réponds à des affirmations sur ta vie de tous les jours : pour, contre, ou entre les deux.',
@@ -313,6 +336,33 @@ export const UI_COPY = {
     fullTitle: 'Le portrait le plus fidèle',
     fullLede: 'Tous les sujets, tes priorités, tes lignes rouges : le classement le plus solide, calculé sur ton téléphone.',
     fullCta: 'Faire le test complet',
+    faqTitle: 'Les questions sur les quiz de la présidentielle',
+    faq: (quick: number, full: number, quizzes: number) => [
+      {
+        q: 'Quel quiz faire pour savoir pour qui voter en 2027 ?',
+        a: `Le test de Ça vote ? : ${quick} affirmations dans la version rapide, ${full} dans la version complète. Il compare tes réponses aux positions des candidats à la présidentielle 2027, chacune avec la phrase exacte du candidat et sa source.`,
+        href: '/test?rapide=1',
+        link: 'Faire la version rapide',
+      },
+      {
+        q: 'Quel parti politique me correspond ?',
+        a: 'Le quiz « Quel parti politique es-tu vraiment ? » te donne le parti qui pense le plus comme toi, en version express et pour rire. Pour un vrai résultat face aux candidats, c’est le test.',
+        href: '/quiz/flash/quel-parti-politique-es-tu',
+        link: 'Faire le quiz des partis',
+      },
+      {
+        q: 'Les quiz gardent-ils mes réponses ?',
+        a: 'Non. Les résultats se calculent sur ton téléphone : pas de compte, pas d’adresse, rien n’est envoyé à nos serveurs.',
+        href: '/confidentialite',
+        link: 'Ce qu’on collecte, et ce qu’on ne collecte pas',
+      },
+      {
+        q: 'Combien de quiz sur la présidentielle 2027 ?',
+        a: `${quizzes} quiz, en plus du test : des quiz pour rire de chaque camp, et des quiz de culture citoyenne avec le vrai chiffre et sa source (le vote, les impôts, la Ve République, les médias).`,
+        href: '#flash',
+        link: 'Voir tous les quiz',
+      },
+    ],
   },
   consent: {
     title: 'Un cookie ? Seulement pour compter.',
