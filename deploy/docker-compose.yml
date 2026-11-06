@@ -1,31 +1,48 @@
 # Déploiement du site sur un serveur Docker, derrière un tunnel Cloudflare (docs/DEPLOIEMENT-VPS.md).
 # Aucun port n'est ouvert sur le serveur : le tunnel sort vers Cloudflare, qui seul sert le public.
 # Les secrets viennent du fichier .env du projet (variables d'environnement du projet Docker), jamais du dépôt.
+#
+# Deux copies du site (site_a, site_b) et un relais (app) devant elles : une mise à jour remplace une copie après
+# l'autre, et le relais sert toujours celle qui répond. Le tunnel vise toujours http://app:3000.
 
 name: cavote
 
+x-site: &site
+  image: ghcr.io/bengoaff/cavote:latest
+  restart: unless-stopped
+  mem_limit: 1g
+  cpus: 2
+  environment:
+    # Derrière le tunnel, l'adresse du visiteur arrive dans CF-Connecting-IP (src/lib/client-ip.ts)
+    CLIENT_IP_HEADER: cf-connecting-ip
+    RESEND_API_KEY: ${RESEND_API_KEY:-}
+    RESEND_FROM: ${RESEND_FROM:-}
+    RESEND_SEGMENT_ID: ${RESEND_SEGMENT_ID:-}
+    RESEND_ALERT_SEGMENT_ID: ${RESEND_ALERT_SEGMENT_ID:-}
+    NEWSLETTER_SECRET: ${NEWSLETTER_SECRET:-}
+    CONTACT_TO: ${CONTACT_TO:-}
+    URNE_SUPABASE_URL: ${URNE_SUPABASE_URL:-}
+    URNE_SUPABASE_KEY: ${URNE_SUPABASE_KEY:-}
+    URNE_SECRET: ${URNE_SECRET:-}
+    URNE_TOKEN: ${URNE_TOKEN:-}
+    ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    FACTCHECK_MODEL: ${FACTCHECK_MODEL:-}
+    FACTCHECK_DAILY_MAX: ${FACTCHECK_DAILY_MAX:-}
+
 services:
+  site_a: *site
+  site_b: *site
+
+  # Relais (deploy/relais.mjs, dans la même image) : jamais remplacé par les mises à jour, il ne coupe donc jamais
   app:
     image: ghcr.io/bengoaff/cavote:latest
     restart: unless-stopped
-    mem_limit: 1g
-    cpus: 2
+    mem_limit: 256m
+    command: ['node', 'relais.mjs']
     environment:
-      # Derrière le tunnel, l'adresse du visiteur arrive dans CF-Connecting-IP (src/lib/client-ip.ts)
-      CLIENT_IP_HEADER: cf-connecting-ip
-      RESEND_API_KEY: ${RESEND_API_KEY:-}
-      RESEND_FROM: ${RESEND_FROM:-}
-      RESEND_SEGMENT_ID: ${RESEND_SEGMENT_ID:-}
-      RESEND_ALERT_SEGMENT_ID: ${RESEND_ALERT_SEGMENT_ID:-}
-      NEWSLETTER_SECRET: ${NEWSLETTER_SECRET:-}
-      CONTACT_TO: ${CONTACT_TO:-}
-      URNE_SUPABASE_URL: ${URNE_SUPABASE_URL:-}
-      URNE_SUPABASE_KEY: ${URNE_SUPABASE_KEY:-}
-      URNE_SECRET: ${URNE_SECRET:-}
-      URNE_TOKEN: ${URNE_TOKEN:-}
-      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
-      FACTCHECK_MODEL: ${FACTCHECK_MODEL:-}
-      FACTCHECK_DAILY_MAX: ${FACTCHECK_DAILY_MAX:-}
+      PORT: '3000'
+      UPSTREAMS: http://site_a:3000,http://site_b:3000
+    depends_on: [site_a, site_b]
 
   tunnel:
     image: cloudflare/cloudflared:latest
@@ -35,7 +52,8 @@ services:
       TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:-}
     depends_on: [app]
 
-  # Récupère la nouvelle image publiée par .github/workflows/image.yml et ne recrée que le service app.
+  # Récupère la nouvelle image publiée par .github/workflows/image.yml, remplace site_b, attend qu'il réponde,
+  # et seulement ensuite site_a : à tout moment, une copie sert.
   updater:
     image: docker:27-cli
     restart: unless-stopped
@@ -45,4 +63,17 @@ services:
     command:
       - sh
       - -c
-      - while true; do sleep 300; docker compose --project-directory /project -p cavote pull -q app && docker compose --project-directory /project -p cavote up -d --no-deps app; done
+      - |
+        dc="docker compose --project-directory /project -p cavote"
+        while true; do
+          sleep 300
+          $$dc pull -q site_a || continue
+          for s in site_b site_a; do
+            $$dc up -d --no-deps $$s
+            for i in $$(seq 1 60); do
+              id=$$($$dc ps -q $$s)
+              [ "$$(docker inspect -f '{{.State.Health.Status}}' $$id 2>/dev/null)" = healthy ] && break
+              sleep 3
+            done
+          done
+        done
