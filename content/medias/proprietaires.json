@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T11:51:53.763Z",
+  "updatedAt": "2026-11-06T17:05:36.557Z",
   "medias": {
     "france-2": {
       "slug": "france-2",
@@ -1871,6 +1871,28 @@
       "date": "2026-10-12",
       "checkedAt": "2026-10-14T11:51:53.763Z",
       "model": "claude-opus-5-5"
+    },
+    "next": {
+      "slug": "next",
+      "owners": [
+        {
+          "name": "oui.do",
+          "kind": "entreprise",
+          "share": "majoritaire"
+        }
+      ],
+      "group": "moji",
+      "controller": "oui.do",
+      "controllerKind": "inconnu",
+      "otherMedia": [],
+      "note": "Actionnaire majoritaire depuis septembre 2023 : oui.do, holding de moji, opérateur d’infrastructure et de services informatiques et télécoms pour les entreprises. Les actionnaires de oui.do ne sont pas indiqués par Next.",
+      "quote": "Depuis septembre 2023, Next bénéficie du soutien d’un nouvel actionnaire majoritaire : oui.do, holding de moji, un opérateur d'infrastructure et de services IT & télécoms pour entreprises.",
+      "url": "https://next.ink/qui-sommes-nous/",
+      "sourceTitle": "Qui sommes-nous",
+      "publisher": "Next",
+      "date": "",
+      "checkedAt": "2026-11-06T17:05:36.557Z",
+      "model": "recherche vérifiée hors API"
     }
   },
   "alertes": {
