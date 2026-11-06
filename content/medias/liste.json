@@ -64,6 +64,7 @@
     { "slug": "front-populaire", "name": "Front populaire", "type": "presse", "site": "https://frontpopulaire.fr/" },
     { "slug": "frontieres", "name": "Frontières", "type": "presse", "site": "https://www.frontieresmedia.fr/" },
     { "slug": "boulevard-voltaire", "name": "Boulevard Voltaire", "type": "web", "site": "https://www.bvoltaire.fr/" },
-    { "slug": "contrepoints", "name": "Contrepoints", "type": "web", "site": "https://www.contrepoints.org/" }
+    { "slug": "contrepoints", "name": "Contrepoints", "type": "web", "site": "https://www.contrepoints.org/" },
+    { "slug": "next", "name": "Next", "type": "web", "site": "https://next.ink/" }
   ]
 }
