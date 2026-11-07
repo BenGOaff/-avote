@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-06",
+  "updatedAt": "2026-11-07",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -180,6 +180,24 @@
         "url": "https://www.liberation.fr/societe/police-justice/proces-de-rima-hassan-pour-apologie-du-terrorisme-10-mois-de-prison-avec-sursis-requis-contre-lelue-lfi-20261020_NJREW6N4K5A7DGS6BRDN672A4E/"
       },
       "quote": "La décision a été mise en délibéré au 30 novembre.",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-12-06-premier-meeting-de-raphael-glucksmann",
+      "kind": "meeting",
+      "title": "Premier meeting de Raphaël Glucksmann",
+      "date": "2026-12-06",
+      "summary": "Selon Libération, le premier meeting de Raphaël Glucksmann est prévu à la Villette, et son entourage veut en faire « une démonstration de force ».",
+      "who": [
+        "raphael-glucksmann"
+      ],
+      "place": "La Villette",
+      "source": {
+        "title": "«Il ne faut pas exagérer les conséquences de ce moment» : avant le meeting de Jean-Luc Mélenchon, l’indifférence règne chez Raphaël Glucksmann",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/il-ne-faut-pas-exagerer-les-consequences-de-ce-moment-avant-le-meeting-de-jean-luc-melenchon-lindifference-regne-chez-raphael-glucksmann-20261107_2TMWMY2LGNHUDFIP23K6SATJQU/"
+      },
+      "quote": "à la Villette le 6 décembre",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
