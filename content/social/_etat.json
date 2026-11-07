@@ -12,8 +12,9 @@
   "selma-labib": 1,
   "raphael-glucksmann": 1,
   "eric-zemmour": 1,
-  "bruno-retailleau": 1,
-  "delphine-batho": 1
+  "bruno-retailleau": 2,
+  "delphine-batho": 1,
+  "nicolas-dupont-aignan": 1
  },
  "items": {
   "20261009-2136-primaire-de-la-gauche-cyberattaque-sur-la-platefor": "2026-10-10T10:30:53.306Z",
@@ -78,7 +79,8 @@
   "edu-01-contre": "2026-11-05T14:57:13.339Z",
   "sondage-ifop-2026-10-29-2376": "2026-11-05T22:16:58.524Z",
   "edu-06-fracture": "2026-11-06T14:36:10.090Z",
-  "20261106-2201-primaire-a-droite-et-au-centre-retailleau-s-y-rang": "2026-11-06T23:29:55.946Z"
+  "20261106-2201-primaire-a-droite-et-au-centre-retailleau-s-y-rang": "2026-11-06T23:29:55.946Z",
+  "lib-03-contre": "2026-11-07T13:31:46.003Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -383,7 +385,12 @@
   "20261106-2201-melenchon-presente-son-programme-au-bourget-samedi",
   "20261106-2201-presidentielle-2027-la-demission-anticipee-de-chri",
   "20261106-2201-primaire-a-droite-et-au-centre-retailleau-s-y-rang",
-  "20261106-2201-smic-1-477-93-euros-aujourd-hui-les-syndicats-recl"
+  "20261106-2201-smic-1-477-93-euros-aujourd-hui-les-syndicats-recl",
+  "20261107-1252-glucksmann-devoile-l-equipe-de-sa-campagne-preside",
+  "20261107-1252-mobilisation-du-7-novembre-gilets-jaunes-et-inters",
+  "20261107-1252-presidentielle-2027-edouard-philippe-accuse-jean-l",
+  "20261107-1252-primaire-de-la-droite-et-du-centre-le-porte-parole",
+  "20261107-1252-smic-un-coup-de-pouce-pourrait-etre-annonce-le-der"
  ],
  "rdv": 24
 }
