@@ -1,6 +1,6 @@
 {
  "mentions": {
-  "marine-le-pen": 2,
+  "marine-le-pen": 3,
   "dominique-de-villepin": 1,
   "marine-tondelier": 2,
   "edouard-philippe": 2,
@@ -10,7 +10,7 @@
   "fabien-roussel": 2,
   "gabriel-attal": 1,
   "selma-labib": 2,
-  "raphael-glucksmann": 1,
+  "raphael-glucksmann": 2,
   "eric-zemmour": 1,
   "bruno-retailleau": 2,
   "delphine-batho": 1,
@@ -84,7 +84,8 @@
   "lib-03-contre": "2026-11-07T13:31:46.003Z",
   "ani-07-pour-alliance": "2026-11-07T20:29:45.624Z",
   "20261107-2049-le-pcf-suspend-le-temps-de-la-campagne-les-parleme": "2026-11-07T22:16:43.436Z",
-  "sec-01-contre": "2026-11-08T13:50:45.985Z"
+  "sec-01-contre": "2026-11-08T13:50:45.985Z",
+  "cli-01-pour-alliance": "2026-11-08T20:45:48.184Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -406,5 +407,5 @@
   "20261108-1314-presidentielle-laurent-wauquiez-veut-un-candidat-u",
   "20261108-1314-senatoriales-de-septembre-2026-le-conseil-constitu"
  ],
- "rdv": 25
+ "rdv": 26
 }

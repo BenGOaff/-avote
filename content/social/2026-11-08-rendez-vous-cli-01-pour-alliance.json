@@ -1,0 +1,23 @@
+{
+  "id": "2026-11-08-rendez-vous-cli-01-pour-alliance",
+  "at": "2026-11-08T20:45:48.184Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "CHACUN DE SON CÔTÉ",
+    "title": "Nucléaire : Glucksmann et Le Pen sont pour de nouveaux réacteurs",
+    "line": "15 candidats sont nettement pour, 3 nettement contre. Sur 20 qui ont pris position.",
+    "duo": [
+      "raphael-glucksmann",
+      "marine-le-pen"
+    ],
+    "cta": "Vois qui propose quoi"
+  },
+  "text": {
+    "x": "Raphaël Glucksmann et Marine Le Pen disent oui à de nouveaux réacteurs nucléaires. On ne les attend pas du même côté. Sur 20 candidats, 3 disent non. Tu devinerais lesquels ?",
+    "linkedin": "Raphaël Glucksmann et Marine Le Pen sont tous les deux nettement pour la construction de nouveaux réacteurs nucléaires. On ne les attend pas du même côté.\n\nSur 20 candidats qui ont pris position, 15 sont nettement pour et 3 nettement contre.\n\nCôté Place publique, Raphaël Glucksmann écrit vouloir « conforter le rôle du nucléaire, énergie pilotable et décarbonée », avec « la construction à temps de nouvelles unités ».\n\nCôté Rassemblement national, l'Institut Montaigne, citant Les Échos et Public Sénat, rapporte pour Marine Le Pen : « cinq paires d’EPR pour une mise en service en 2031 et cinq paires d’EPR 2 pour 2036 ».\n\nSur le nucléaire, la ligne de partage ne suit pas toujours celle qu'on imagine. Selon toi, qu'est-ce qui sépare le plus les candidats sur ce sujet ?\n\n#presidentielle2027",
+    "facebook": "Raphaël Glucksmann et Marine Le Pen disent tous les deux oui à de nouveaux réacteurs nucléaires, chacun avec ses mots. Sur 20 candidats qui ont pris position, 15 sont pour et 3 sont contre. Tu aurais deviné qui sont les 3 ? Le test est sur çavote.fr",
+    "instagram": "Glucksmann et Le Pen disent oui à de nouveaux réacteurs nucléaires.\nChacun de son côté, tous deux sont nettement pour.\nSur 20 candidats qui ont pris position, 15 sont pour.\n3 sont contre.\nMarine Le Pen cite cinq paires d'EPR pour 2031, cinq d'EPR 2 pour 2036.\nLes noms des 3 opposants et les phrases exactes sont sur le site.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #nucleaire #reacteursEPR"
+  },
+  "target": "/programmes/climat-et-energie/nouveaux-reacteurs-nucleaires",
+  "targetLabel": "Voir qui propose quoi"
+}
