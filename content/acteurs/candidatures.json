@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-10-21",
+  "collectedAt": "2026-11-09",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -850,6 +850,19 @@
           "url": "https://parti-animaliste.fr/"
         }
       ]
+    },
+    {
+      "slug": "teddy-riner",
+      "name": "Teddy Riner",
+      "status": "declare",
+      "since": "2026-11-09",
+      "source": {
+        "title": "Teddy Riner candidat à l'élection présidentielle",
+        "publisher": "franceinfo (présidentielle)",
+        "url": "https://www.franceinfo.fr/elections/presidentielle/candidats/teddy-riner-candidat-a-l-election-presidentielle_8274530.html"
+      },
+      "verified": true,
+      "addedBy": "veille claude-sonnet-5-5"
     }
   ]
 }

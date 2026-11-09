@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-07",
+  "updatedAt": "2026-11-09",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -168,6 +168,20 @@
       "addedBy": "veille claude-haiku-5-5"
     },
     {
+      "id": "2026-11-19-examen-en-seance-de-la-proposition-de-loi-contre",
+      "kind": "institution",
+      "title": "Examen en séance de la proposition de loi contre la vie chère en outre-mer, dans le cadre de la nich",
+      "date": "2026-11-19",
+      "summary": "Le texte, adopté en première lecture au Sénat le 5 mars 2025, sera débattu à l’Assemblée. Il vise à faire baisser les prix outre-mer.",
+      "source": {
+        "title": "Vie chère en outre-mer: pourquoi les prix sont-ils si élevés et comment les députés veulent-ils les faire baisser?",
+        "publisher": "LCP",
+        "url": "https://lcp.fr/actualites/vie-chere-en-outre-mer-pourquoi-les-prix-sont-ils-si-eleves-et-comment-les-deputes"
+      },
+      "quote": "à l'ordre du jour de l'hémicycle du 19 novembre prochain",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
       "id": "2026-11-30-decision-dans-le-proces-de-rima-hassan-pour-apol",
       "kind": "institution",
       "title": "Décision dans le procès de Rima Hassan pour apologie du terrorisme",
@@ -217,6 +231,20 @@
       },
       "quote": "jusqu’au référendum interne qui aura lieu du 10 au 13 décembre",
       "addedBy": "rédaction (vérifié le 14 octobre 2026)"
+    },
+    {
+      "id": "2026-12-10-niche-parlementaire-du-groupe-rn-udr-au-senat",
+      "kind": "institution",
+      "title": "Niche parlementaire du groupe RN-UDR au Sénat",
+      "date": "2026-12-10",
+      "summary": "Le groupe présente une proposition de résolution sur l’accès à l’eau en Outre-mer et une proposition de loi sur des peines plancher. Les textes seront débattus lors de cette niche.",
+      "source": {
+        "title": "« Nous découvrons l’obstruction calendaire au Sénat » : le groupe RN-UDR dévoile les textes de sa niche parlementaire",
+        "publisher": "Public Sénat",
+        "url": "https://www.publicsenat.fr/actualites/politique/nous-decouvrons-lobstruction-calendaire-au-senat-le-groupe-rn-udr-devoile-les-textes-de-sa-niche-parlementaire"
+      },
+      "quote": "leur niche parlementaire prévue le 10 décembre",
+      "addedBy": "veille claude-haiku-5-5"
     }
   ]
 }
