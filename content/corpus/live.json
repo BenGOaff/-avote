@@ -1,8 +1,8 @@
 {
-  "version": "live-202611020943",
+  "version": "live-202611091007",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-11-02T09:43:06.756Z",
+  "publishedAt": "2026-11-09T10:07:18.484Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -233,6 +233,20 @@
       "name": "Clara Egger",
       "status": "declare",
       "party": "Solution démocratique",
+      "summary": ""
+    },
+    {
+      "slug": "jean-francois-legendre",
+      "name": "Jean-François Legendre",
+      "status": "declare",
+      "party": "À nous maintenant",
+      "summary": ""
+    },
+    {
+      "slug": "antoine-mikolajczak",
+      "name": "Antoine Mikolajczak",
+      "status": "declare",
+      "party": "Équinoxe",
       "summary": ""
     }
   ],
@@ -22514,6 +22528,983 @@
         "codedBy": "ia",
         "codedAt": "2026-11-02T09:37:03.668Z"
       }
+    },
+    "jean-francois-legendre": {
+      "san-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "san-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "san-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "san-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "san-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "san-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-03": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "0152340743118e12"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z",
+        "note": "Projet officiel du mouvement dont Legendre est le candidat et l'auteur du manifeste. Le désendettement est présenté comme impératif (« s'impose »), avec des budgets à l'équilibre et la maîtrise des dépenses. Mais le texte ne dit pas que la "
+      },
+      "eco-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eco-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-14": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "log-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "log-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "log-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "log-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "edu-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "edu-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "edu-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "edu-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "edu-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "edu-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "edu-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "tra-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "lib-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "imm-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "imm-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "imm-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "imm-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "imm-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "imm-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "imm-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "sec-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "ani-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "cli-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "eur-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-02": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "4a3876d8ffe0428f"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z",
+        "note": "Projet 2027 du mouvement qui porte la candidature de J.-F. Legendre. Le RIC est cité explicitement, mais sans précision sur ses modalités, d'où le choix entre 1 et 2."
+      },
+      "dem-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      },
+      "dem-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T09:55:03.712Z"
+      }
+    },
+    "antoine-mikolajczak": {
+      "san-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "san-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "san-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "san-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "san-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "san-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "tra-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "eco-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "sec-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "sec-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "sec-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "sec-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "sec-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      },
+      "sec-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-09T10:00:43.489Z"
+      }
     }
   },
   "sources": [
@@ -33255,6 +34246,22 @@
       "url": "https://solutiondemocratique.fr/notre-solution/calendrier-president/",
       "date": "2026-10-16",
       "passage": "Chaque citoyen doit compter plus : il doit avoir le droit d’initier des lois constitutionnelles, et le droit de les voter."
+    },
+    {
+      "id": "0152340743118e12",
+      "title": "À nous maintenant – Notre projet : 2) Sortir de l'engrenage de la dette",
+      "publisher": "À nous maintenant (site officiel du mouvement)",
+      "url": "https://www.anousmaintenant.fr/",
+      "date": "2026",
+      "passage": "Un redressement responsable, basé sur la justice s'impose : voter des budgets à l'équilibre en maîtrisant les dépenses, rationaliser les subventions, et lutter fermement contre la spéculation et l'optimisation fiscale pour préserver les générations futures."
+    },
+    {
+      "id": "4a3876d8ffe0428f",
+      "title": "À nous maintenant – Notre projet : 1) Restaurer la démocratie",
+      "publisher": "À nous maintenant",
+      "url": "https://www.anousmaintenant.fr/",
+      "date": "2026",
+      "passage": "L'instauration d'un véritable dialogue structuré entre le gouvernement et les citoyens, permettant de mettre en place de nouvelles législations et s'appuyant sur des référendums (RIC et RIG), permettra de pacifier le pays et d'identifier les solutions aux difficultés actuelles."
     }
   ],
   "refreshedAt": {
@@ -33295,6 +34302,8 @@
     "benoit-mathieu": "2026-10-19T08:00:00.072Z",
     "manolo-mlekuz": "2026-10-26T07:53:24.577Z",
     "mira-markovic": "2026-10-26T08:45:24.015Z",
-    "clara-egger": "2026-11-02T09:37:03.668Z"
+    "clara-egger": "2026-11-02T09:37:03.668Z",
+    "jean-francois-legendre": "2026-11-09T09:55:03.712Z",
+    "antoine-mikolajczak": "2026-11-09T10:00:43.489Z"
   }
 }
