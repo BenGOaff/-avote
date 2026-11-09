@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-08T22:14:37.999Z",
+  "updatedAt": "2026-11-09T17:37:45.778Z",
   "items": [
+    {
+      "id": "une-nouvelle-aide-exceptionnelle-de-1-366-euros-serait-verse-7c7248",
+      "claim": "Une nouvelle aide exceptionnelle de 1 366 euros serait versée par la Caf en novembre 2026 aux allocataires.",
+      "verdict": "faux",
+      "truth": "Aucune nouvelle aide de 1 366 euros n'est versée par la Caf en novembre 2026 ; il s'agit d'une infox sans aucun fondement.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-11-09",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/aucune-nouvelle-aide-de-1-366-euros-nest-versee-par-la-caf-en-novembre-2026/",
+          "title": "Aucune nouvelle aide de 1 366 euros n’est versée par la Caf en novembre 2026",
+          "date": "2026-11-09",
+          "quote": "Il s'agit d'une infox sans aucun fondement"
+        }
+      ]
+    },
     {
       "id": "edouard-philippe-aurait-tenu-des-propos-accusant-gabriel-att-ba63f5",
       "claim": "Edouard Philippe aurait tenu des propos accusant Gabriel Attal de consommer de la cocaïne, dans le livre « Le crépuscule des princes »",
