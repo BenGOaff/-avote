@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-10T01:37:23.261Z",
+  "updatedAt": "2026-11-10T15:39:15.418Z",
   "items": [
+    {
+      "id": "un-drapeau-palestinien-aurait-ete-installe-au-sommet-de-la-t-cb289f",
+      "claim": "Un drapeau palestinien aurait été installé au sommet de la tour Eiffel lors de la mobilisation du 17 octobre 2026.",
+      "verdict": "ia",
+      "truth": "La vidéo est générée par IA. Aucun drapeau palestinien n'a été installé au sommet de la tour Eiffel.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-11-10",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/mobilisation-du-17-octobre-non-un-drapeau-palestinien-na-pas-ete-installe-au-sommet-de-la-tour-eiffel/",
+          "title": "Mobilisation du 17 octobre : non, un drapeau palestinien n’a pas été installé au sommet de la tour Eiffel",
+          "date": "2026-11-10",
+          "quote": "non, un drapeau palestinien n’a pas été installé au sommet de la tour Eiffel"
+        }
+      ]
+    },
     {
       "id": "une-nouvelle-aide-exceptionnelle-de-1-366-euros-serait-verse-7c7248",
       "claim": "Une nouvelle aide exceptionnelle de 1 366 euros serait versée par la Caf en novembre 2026 aux allocataires.",
