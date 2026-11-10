@@ -1,6 +1,6 @@
 {
   "push": {
-    "at": "2026-11-08T20:30:53.319Z",
+    "at": "2026-11-10T00:00:10.124Z",
     "actors": [
       "edouard-philippe",
       "gabriel-attal",
@@ -35,11 +35,14 @@
       "benoit-mathieu",
       "manolo-mlekuz",
       "mira-markovic",
-      "clara-egger"
+      "clara-egger",
+      "jean-francois-legendre",
+      "antoine-mikolajczak",
+      "teddy-riner"
     ]
   },
   "email": {
-    "at": "2026-11-03T21:38:56.469Z",
+    "at": "2026-11-10T00:00:10.124Z",
     "actors": [
       "edouard-philippe",
       "gabriel-attal",
@@ -74,7 +77,10 @@
       "benoit-mathieu",
       "manolo-mlekuz",
       "mira-markovic",
-      "clara-egger"
+      "clara-egger",
+      "jean-francois-legendre",
+      "antoine-mikolajczak",
+      "teddy-riner"
     ]
   }
 }
