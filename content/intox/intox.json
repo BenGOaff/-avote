@@ -1,7 +1,27 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-10T15:39:15.418Z",
+  "updatedAt": "2026-11-10T23:29:03.420Z",
   "items": [
+    {
+      "id": "sophie-binet-serait-la-premiere-dirigeante-de-la-cgt-a-n-avo-07ccc5",
+      "claim": "Sophie Binet serait la première dirigeante de la CGT à n'avoir jamais travaillé dans le privé.",
+      "verdict": "faux",
+      "truth": "Plusieurs prédécesseurs de Sophie Binet à la tête de la CGT avaient eux aussi travaillé uniquement dans le public avant de prendre la tête du syndicat.",
+      "spreaders": [
+        "Jean-Philippe Tanguy"
+      ],
+      "topic": "travail",
+      "firstSeen": "2026-11-10",
+      "debunks": [
+        {
+          "publisher": "Vrai ou fake (franceinfo)",
+          "url": "https://www.franceinfo.fr/economie/syndicats/sophie-binet-est-elle-la-premiere-dirigeante-de-la-cgt-a-n-avoir-jamais-travaille-dans-le-prive-comme-l-affirme-le-depute-rn-jean-philippe-tanguy_8276849.html",
+          "title": "Sophie Binet est-elle la première dirigeante de la CGT à n'avoir jamais travaillé dans le privé, comme l'affirme le député RN Jean-Philippe Tanguy ?",
+          "date": "2026-11-10",
+          "quote": "plusieurs de ses prédécesseurs avaient eux aussi travaillé uniquement dans le public avant de prendre la tête du syndicat"
+        }
+      ]
+    },
     {
       "id": "un-drapeau-palestinien-aurait-ete-installe-au-sommet-de-la-t-cb289f",
       "claim": "Un drapeau palestinien aurait été installé au sommet de la tour Eiffel lors de la mobilisation du 17 octobre 2026.",
