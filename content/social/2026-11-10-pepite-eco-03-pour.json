@@ -1,0 +1,28 @@
+{
+  "id": "2026-11-10-pepite-eco-03-pour",
+  "at": "2026-11-10T15:13:57.240Z",
+  "kind": "pepite",
+  "card": {
+    "kicker": "SEUL CONTRE TOUS",
+    "title": "Dette ou nouvelles dépenses : Jean-François Legendre est le seul candidat à dire oui",
+    "line": "17 candidats à la présidentielle se sont prononcés. 5 disent nettement non. Un seul dit nettement oui.",
+    "actor": "jean-francois-legendre",
+    "quote": "voter des budgets à l'équilibre en maîtrisant les dépenses, rationaliser les subventions, et lutter fermement contre la spéculation et l'optimisation fiscale",
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Présidentielle 2027 : faut-il réduire la dette avant toute nouvelle dépense ? Sur 17 candidats, Jean-François Legendre est le seul à dire nettement oui. 5 disent nettement non. Tu te ranges avec qui ?",
+    "linkedin": "Réduire la dette publique avant toute nouvelle dépense : sur 17 candidats à la présidentielle, un seul dit nettement oui.\n\nC'est Jean-François Legendre. Face à lui, 5 candidats disent nettement non à cette affirmation du test de Ça vote ?.\n\nSur le site officiel de son mouvement, À nous maintenant, on lit : « Un redressement responsable, basé sur la justice s'impose : voter des budgets à l'équilibre en maîtrisant les dépenses, rationaliser les subventions, et lutter fermement contre la spéculation et l'optimisation fiscale pour préserver les générations futures. »\n\nLa dette doit-elle passer avant toute nouvelle dépense publique ? Qu'en penses-tu ?\n\n#presidentielle2027",
+    "facebook": "Faut-il réduire la dette publique avant toute nouvelle dépense ? Parmi 17 candidats à la présidentielle, Jean-François Legendre est le seul à dire nettement oui. 5 autres disent nettement non. Toi, tu te ranges de quel côté ? Le test est sur çavote.fr",
+    "instagram": "Réduire la dette avant toute nouvelle dépense : un seul candidat dit oui\nSur 17 candidats à la présidentielle, Jean-François Legendre est le seul à dire nettement oui.\n5 disent nettement non.\nSon mouvement, À nous maintenant, écrit sur son site officiel : « voter des budgets à l'équilibre en maîtrisant les dépenses, rationaliser les subventions ».\nEt toi, la dette passe avant tout ou pas ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #dettepublique"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test",
+  "source": {
+    "publisher": "À nous maintenant (site officiel du mouvement)",
+    "url": "https://www.anousmaintenant.fr/",
+    "title": "À nous maintenant – Notre projet : 2) Sortir de l'engrenage de la dette",
+    "quote": "Un redressement responsable, basé sur la justice s'impose : voter des budgets à l'équilibre en maîtrisant les dépenses, rationaliser les subventions, et lutter fermement contre la spéculation et l'optimisation fiscale pour préserver les générations futures.",
+    "who": "Jean-François Legendre"
+  }
+}
