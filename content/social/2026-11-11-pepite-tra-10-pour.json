@@ -1,0 +1,28 @@
+{
+  "id": "2026-11-11-pepite-tra-10-pour",
+  "at": "2026-11-11T14:42:34.990Z",
+  "kind": "pepite",
+  "card": {
+    "kicker": "SEUL CONTRE CINQ",
+    "title": "RSA : Gabriel Attal seul pour les 15 heures d'activité, 5 candidats contre",
+    "line": "Sur 8 candidats qui ont répondu, un seul est nettement pour maintenir l'obligation.",
+    "actor": "gabriel-attal",
+    "quote": "Je vous annonce que nous généraliserons ce dispositif à tous les départements de France",
+    "cta": "Où te ranges-tu ? Fais le test"
+  },
+  "text": {
+    "x": "RSA : Gabriel Attal est le seul à défendre nettement les 15 heures d'activité par semaine. Cinq candidats sont nettement contre. Tu te ranges avec qui ?",
+    "linkedin": "Gabriel Attal est le seul candidat à défendre nettement le maintien des 15 heures d'activité hebdomadaires pour les bénéficiaires du RSA. Cinq autres y sont nettement opposés.\n\nHuit candidats se sont prononcés sur cette affirmation : « L'obligation d'au moins 15 heures d'activité par semaine pour les bénéficiaires du RSA devrait être maintenue. »\n\nÀ l'Assemblée nationale, Gabriel Attal a déclaré : « Dans dix-huit départements, nous avons lancé une expérimentation qui conditionne le revenu de solidarité active (RSA) à quinze heures d'activité pour l'insertion. »\n\nIl a ajouté qu'il généraliserait ce dispositif à tous les départements de France.\n\nConditionner le RSA à une activité : tu y vois une façon d'insérer ou un obstacle de plus ?\n\n#RSA",
+    "facebook": "Sur le RSA, Gabriel Attal est le seul des 8 candidats qui se sont prononcés à défendre nettement l'obligation d'au moins 15 heures d'activité par semaine. Cinq sont nettement contre. Tu te ranges avec lui ou avec les autres ? Le test est sur çavote.fr",
+    "instagram": "RSA : Gabriel Attal seul pour les 15 heures d'activité, cinq candidats contre\nMaintenir l'obligation d'au moins 15 heures d'activité par semaine pour toucher le RSA : la question a été posée à 8 candidats.\nUn seul est nettement pour : Gabriel Attal.\nCinq sont nettement contre.\nÀ l'Assemblée nationale, il annonçait vouloir généraliser le dispositif à tous les départements de France.\nTu es plutôt du côté de qui ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #RSA #revenudesolidarite"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test",
+  "source": {
+    "publisher": "Assemblée nationale",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/session-ordinaire-de-2023-2024/deuxieme-seance-du-mardi-30-janvier-2024",
+    "title": "Assemblée nationale, compte rendu de la deuxième séance du mardi 30 janvier 2024 (déclaration de politique générale du Premier ministre Gabriel Attal)",
+    "quote": "Dans dix-huit départements, nous avons lancé une expérimentation qui conditionne le revenu de solidarité active (RSA) à quinze heures d’activité pour l’insertion. Je vous annonce que nous généraliserons ce dispositif à tous les départements de France",
+    "who": "Gabriel Attal"
+  }
+}
