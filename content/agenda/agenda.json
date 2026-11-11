@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-11",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -148,6 +148,21 @@
         "url": "https://www.liberation.fr/politique/dun-bourget-a-lautre-comment-jean-luc-melenchon-veut-continuer-de-supplanter-le-ps-20261106_A22URJZ24NCBFAVXZYA5VXMMIA/"
       },
       "quote": "ce samedi 7 novembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-11-12-journee-consacree-aux-services-publics-avec-les",
+      "kind": "debat",
+      "title": "Journée consacrée aux services publics avec les candidats à la présidentielle sur franceinfo",
+      "date": "2026-11-12",
+      "summary": "franceinfo organise une journée en direct et en public sur les services publics, avec un grand oral des candidats à la présidentielle 2027.",
+      "place": "Studio 104 de la Maison de la Radio et de la Musique",
+      "source": {
+        "title": "Présidentielle 2027 : franceinfo organise un grand oral des candidats sur les services publics",
+        "publisher": "franceinfo (présidentielle)",
+        "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-franceinfo-organise-un-grand-oral-des-candidats-sur-les-services-publics_8277680.html"
+      },
+      "quote": "Jeudi 12 novembre, franceinfo organise une journée exceptionnelle consacrée aux services publics, en direct et en public au Studio 104 de la Maison de la Radio et de la Musique.",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
