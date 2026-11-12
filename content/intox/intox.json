@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-12T00:49:15.782Z",
+  "updatedAt": "2026-11-12T16:01:48.164Z",
   "items": [
+    {
+      "id": "les-prix-auraient-double-depuis-le-passage-a-l-euro-a33193",
+      "claim": "Les prix auraient doublé depuis le passage à l'euro.",
+      "verdict": "faux",
+      "truth": "Selon l'Insee, les prix à la consommation ont augmenté moins vite depuis le début des années 2000 qu'auparavant ; l'inflation cumulée depuis 2002 est de 44 %.",
+      "spreaders": [],
+      "topic": "eco",
+      "firstSeen": "2026-11-12",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/les-prix-ont-ils-double-depuis-le-passage-a-leuro/",
+          "title": "Les prix ont-ils doublé depuis le passage à l’euro ?",
+          "date": "2026-11-12",
+          "quote": "Non. Plusieurs internautes affirment que les prix ont doublé depuis l’abandon du franc. Mais d’après l’Institut national de la statistique et des études économiques (Insee), les prix à la consommation ont augmenté moins rapidement depuis le début des années 2000 qu’auparavant."
+        }
+      ]
+    },
     {
       "id": "sophie-binet-serait-la-premiere-dirigeante-de-la-cgt-a-n-avo-07ccc5",
       "claim": "Sophie Binet serait la première dirigeante de la CGT à n'avoir jamais travaillé dans le privé.",
