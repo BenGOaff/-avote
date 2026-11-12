@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-12-fracture-eur-01-fracture",
+  "at": "2026-11-12T15:35:33.028Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "UNE FRACTURE FRANÇAISE",
+    "title": "Plus de décisions confiées à Bruxelles ? Philippe et Glucksmann oui, Le Pen et Mélenchon non",
+    "line": "18 candidats à la présidentielle se sont prononcés : 4 nettement pour, 11 nettement contre.",
+    "yes": [
+      "edouard-philippe",
+      "gabriel-attal",
+      "marine-tondelier",
+      "raphael-glucksmann"
+    ],
+    "no": [
+      "marine-le-pen",
+      "eric-zemmour",
+      "nicolas-dupont-aignan",
+      "florian-philippot",
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "francois-ruffin",
+      "selma-labib",
+      "francois-asselineau",
+      "juan-branco",
+      "natacha-polony"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Plus de décisions confiées à l'Union européenne ? Philippe, Attal et Glucksmann disent oui. Le Pen, Mélenchon et Zemmour disent non. 11 candidats à la présidentielle sur 18 sont contre. Tu te ranges avec qui ?",
+    "linkedin": "Faut-il confier davantage de décisions à l'Union européenne ? Sur 18 candidats à la présidentielle, 11 répondent nettement non.\n\nCôté oui, ils sont quatre : Édouard Philippe, Gabriel Attal, Marine Tondelier et Raphaël Glucksmann.\n\nCôté non, on trouve Marine Le Pen, Éric Zemmour, Jean-Luc Mélenchon, Fabien Roussel, François Ruffin, Nicolas Dupont-Aignan, Florian Philippot et d'autres. Des familles politiques que tout oppose par ailleurs se retrouvent donc sur cette même réponse.\n\nLa question posée dans le test est simple : « La France devrait confier davantage de décisions à l'Union européenne. »\n\nSelon toi, quelles décisions devraient rester à Paris, et lesquelles pourraient se prendre à Bruxelles ?\n\n#presidentielle2027",
+    "facebook": "Plus de décisions confiées à l'Union européenne ? Édouard Philippe, Gabriel Attal, Marine Tondelier et Raphaël Glucksmann disent oui. Marine Le Pen, Jean-Luc Mélenchon, Éric Zemmour et Fabien Roussel disent non, comme sept autres candidats. Tu te ranges avec qui ? Le test est sur çavote.fr",
+    "instagram": "Plus de décisions confiées à Bruxelles : Philippe oui, Le Pen et Mélenchon non\n18 candidats à la présidentielle ont répondu à la même question.\nPour : Édouard Philippe, Gabriel Attal, Marine Tondelier, Raphaël Glucksmann.\nContre : Marine Le Pen, Jean-Luc Mélenchon, Éric Zemmour, Fabien Roussel et sept autres.\nOn y trouve Mélenchon et Zemmour dans le même camp.\nEt toi, tu confies plus de décisions à l'Union européenne ou pas ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #unioneuropeenne"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
