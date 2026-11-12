@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -180,6 +180,20 @@
         "url": "https://www.liberation.fr/politique/edouard-philippe-snobe-un-debat-entre-presidentiables-pour-cause-de-conseil-municipal-au-havre-20261022_E7EJPIBGLND6FDVSSP4E4IWI3Q/"
       },
       "quote": "la confrontation, le 16 novembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-11-17-reunion-des-directeurs-de-campagne-d-attal-retai",
+      "kind": "parti",
+      "title": "Réunion des directeurs de campagne d'Attal, Retailleau et Lisnard sur la primaire à droite",
+      "date": "2026-11-17",
+      "summary": "Les entourages des candidats de droite doivent discuter des modalités techniques d'une primaire, ainsi que de quelques sujets politiques. Edouard Philippe n'y est pas représenté par un directeur de campagne, son siège étant laissé vide.",
+      "source": {
+        "title": "Primaire à droite : une première réunion calée entre les directeurs de campagne d’Attal, Retailleau et Lisnard",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/primaire-a-droite-une-premiere-reunion-calee-entre-les-directeurs-de-campagne-dattal-retailleau-et-lisnard-20261112_RXXYY5OVEFDORMLS6V7VU73POU/"
+      },
+      "quote": "se voir mardi 17 novembre",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
