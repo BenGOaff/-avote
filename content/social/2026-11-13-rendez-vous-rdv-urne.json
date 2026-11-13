@@ -1,0 +1,19 @@
+{
+  "id": "2026-11-13-rendez-vous-rdv-urne",
+  "at": "2026-11-13T22:11:07.712Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "VOTE POUR DE FAUX",
+    "title": "Un bulletin dans l'urne en ligne, pour le candidat de ton choix",
+    "line": "Anonyme, un bulletin par connexion, totaux visibles. Ouvert à tous, non représentatif.",
+    "cta": "Glisse ton bulletin"
+  },
+  "text": {
+    "x": "Une urne en ligne pour la présidentielle 2027 : tu glisses un bulletin pour le candidat de ton choix, anonymement, et tu vois les totaux. Une consultation ouverte à tous, pas un sondage : elle n'est pas représentative.",
+    "linkedin": "Une urne en ligne pour la présidentielle 2027, où chacun peut glisser un bulletin pour le candidat de son choix.\n\nLe principe tient en quelques règles : le bulletin est anonyme, il y en a un par connexion, et les totaux sont visibles par tous.\n\nIl faut être clair sur ce que c'est : une consultation ouverte à tous, non représentative. Ce n'est pas un sondage, et ses totaux ne disent rien de ce que pense l'ensemble des Français.\n\nÇa reste un moyen simple de se positionner et de voir où se placent les autres participants.\n\nSi tu devais glisser un bulletin aujourd'hui, qu'attendrais-tu de voir dans les totaux ?\n\n#presidentielle2027",
+    "facebook": "On a installé une urne en ligne pour la présidentielle 2027 : tu glisses un bulletin pour le candidat de ton choix, anonymement, un par connexion, et tu vois les totaux. Ce n'est pas un sondage, juste une consultation ouverte à tous, non représentative. Tu mettrais quel nom dedans ? Le test est sur çavote.fr",
+    "instagram": "Une urne pour voter pour de faux, en ligne, avant 2027\nTu choisis le candidat que tu veux et tu glisses ton bulletin.\nC'est anonyme, un bulletin par connexion.\nTu vois ensuite les totaux.\nAttention : ce n'est pas un sondage. C'est une consultation ouverte à tous, non représentative.\nLe test est en lien dans la bio.\n\n#presidentielle2027 #urne #vote"
+  },
+  "target": "/urne",
+  "targetLabel": "Glisser un bulletin"
+}
