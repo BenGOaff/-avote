@@ -6,12 +6,12 @@
   "edouard-philippe": 2,
   "david-lisnard": 2,
   "bernard-cazeneuve": 1,
-  "jean-luc-melenchon": 2,
+  "jean-luc-melenchon": 3,
   "fabien-roussel": 2,
   "gabriel-attal": 2,
   "selma-labib": 2,
   "raphael-glucksmann": 2,
-  "eric-zemmour": 1,
+  "eric-zemmour": 2,
   "bruno-retailleau": 2,
   "delphine-batho": 1,
   "nicolas-dupont-aignan": 2,
@@ -95,7 +95,8 @@
   "20261112-1502-retailleau-propose-une-primaire-de-la-droite-et-du": "2026-11-12T15:35:33.028Z",
   "eur-01-fracture": "2026-11-12T15:35:33.028Z",
   "sondage-cluster17-2026-11-10-2387": "2026-11-12T22:26:55.311Z",
-  "imm-06-contre": "2026-11-14T13:47:01.418Z"
+  "imm-06-contre": "2026-11-14T13:47:01.418Z",
+  "eco-04-pour-alliance": "2026-11-14T20:55:52.586Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -471,5 +472,5 @@
   "20261114-1324-raphael-glucksmann-va-diffuser-ce-week-end-un-trac",
   "20261114-1324-ukraine-edwige-diaz-defend-l-arret-des-aides-franc"
  ],
- "rdv": 27
+ "rdv": 28
 }
