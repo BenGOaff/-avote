@@ -2,7 +2,7 @@
  "mentions": {
   "marine-le-pen": 3,
   "dominique-de-villepin": 1,
-  "marine-tondelier": 2,
+  "marine-tondelier": 3,
   "edouard-philippe": 2,
   "david-lisnard": 2,
   "bernard-cazeneuve": 1,
@@ -15,7 +15,7 @@
   "bruno-retailleau": 2,
   "delphine-batho": 1,
   "nicolas-dupont-aignan": 2,
-  "anasse-kazib": 1,
+  "anasse-kazib": 2,
   "jean-francois-legendre": 1
  },
  "items": {
@@ -94,7 +94,8 @@
   "tra-10-pour": "2026-11-11T14:42:34.990Z",
   "20261112-1502-retailleau-propose-une-primaire-de-la-droite-et-du": "2026-11-12T15:35:33.028Z",
   "eur-01-fracture": "2026-11-12T15:35:33.028Z",
-  "sondage-cluster17-2026-11-10-2387": "2026-11-12T22:26:55.311Z"
+  "sondage-cluster17-2026-11-10-2387": "2026-11-12T22:26:55.311Z",
+  "imm-06-contre": "2026-11-14T13:47:01.418Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -463,7 +464,12 @@
   "20261113-2231-fonction-publique-apres-matignon-l-intersyndicale",
   "20261113-2231-le-senat-adopte-le-volet-recettes-du-plfss-2027-et",
   "20261113-2231-lycees-le-gouvernement-veut-sanctionner-les-blocag",
-  "20261113-2231-prime-de-risque-des-policiers-laurent-nunez-propos"
+  "20261113-2231-prime-de-risque-des-policiers-laurent-nunez-propos",
+  "20261114-1324-budget-2027-rejete-a-l-unanimite-a-l-assemblee-le",
+  "20261114-1324-parrainages-edwige-diaz-rn-dit-qu-il-manque-encore",
+  "20261114-1324-presidentielle-2027-edouard-philippe-refuse-la-pri",
+  "20261114-1324-raphael-glucksmann-va-diffuser-ce-week-end-un-trac",
+  "20261114-1324-ukraine-edwige-diaz-defend-l-arret-des-aides-franc"
  ],
  "rdv": 27
 }
