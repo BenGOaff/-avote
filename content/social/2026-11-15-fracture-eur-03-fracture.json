@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-15-fracture-eur-03-fracture",
+  "at": "2026-11-15T14:17:57.275Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "FRACTURE SUR L'ARMÉE",
+    "title": "Défense : Le Pen, Philippe et Zemmour disent oui, Roussel dit non",
+    "line": "Sur 20 candidats à la présidentielle, 13 veulent un budget de la défense en hausse, 4 s'y opposent.",
+    "yes": [
+      "edouard-philippe",
+      "gabriel-attal",
+      "bruno-retailleau",
+      "david-lisnard",
+      "marine-le-pen",
+      "eric-zemmour",
+      "florian-philippot",
+      "delphine-batho",
+      "karim-bouamrane",
+      "olivier-becht",
+      "xavier-bertrand",
+      "bernard-cazeneuve",
+      "francois-asselineau"
+    ],
+    "no": [
+      "fabien-roussel",
+      "nathalie-arthaud",
+      "anasse-kazib",
+      "selma-labib"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Présidentielle 2027 : Le Pen, Philippe et Zemmour veulent que le budget de la défense continue d'augmenter. Roussel et Arthaud, non. Tu te ranges avec qui ?",
+    "linkedin": "Présidentielle 2027 : 13 candidats sur 20 veulent que le budget de la défense continue d'augmenter. Quatre s'y opposent.\n\nParmi les premiers : Édouard Philippe, Gabriel Attal, Bruno Retailleau, Marine Le Pen, Éric Zemmour, Xavier Bertrand et Bernard Cazeneuve.\n\nParmi les seconds : Fabien Roussel, Nathalie Arthaud, Anasse Kazib et Selma Labib.\n\nL'affirmation soumise aux candidats était : « Le budget de la défense devrait continuer à augmenter. » Vingt d'entre eux se sont prononcés dessus.\n\nSur ce sujet, tu te ranges avec les 13 ou avec les 4 ? Dis-nous pourquoi en commentaire.\n\n#presidentielle2027 #budgetdefense",
+    "facebook": "Présidentielle 2027 : Marine Le Pen, Édouard Philippe et Éric Zemmour veulent que le budget de la défense continue d'augmenter. Fabien Roussel et Nathalie Arthaud sont contre. Au total, 13 candidats sur 20 disent oui, 4 disent non. Toi, tu ferais monter le budget de l'armée ou pas ? Le test est sur çavote.fr",
+    "instagram": "Défense : Le Pen, Philippe et Zemmour pour, Roussel contre\nSur 20 candidats à la présidentielle, 13 veulent que le budget de la défense continue d'augmenter.\nÉdouard Philippe, Marine Le Pen, Éric Zemmour, Xavier Bertrand sont de ceux-là.\nQuatre disent non : Fabien Roussel, Nathalie Arthaud, Anasse Kazib, Selma Labib.\nQui d'autre est dans chaque camp ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #budgetdefense"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
