@@ -1,8 +1,8 @@
 {
-  "version": "live-202611132039",
+  "version": "live-202611161001",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-11-13T20:39:39.809Z",
+  "publishedAt": "2026-11-16T10:01:12.978Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -302,32 +302,32 @@
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "eco-05": {
         "missing": true,
         "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "note": "La seule source trouvée résume le candidat sans le citer.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "eco-06": {
         "missing": true,
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "tra-01": {
         "value": -2,
-        "status": "declaration-provisoire",
+        "status": "explicite",
         "sources": [
-          "6c1084586df5ec50"
+          "9c043b31abf6a345"
         ],
-        "basis": "declaration",
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z",
-        "note": "Déclaration du candidat depuis 2024 : vidéo sur sa chaîne YouTube, citée entre guillemets par LCP. Il propose de relever l'âge légal (pas de l'abaisser), d'abord en reprenant la réforme de 2023, puis en passant à 65 ans en moins de dix ans."
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Programme 2027. Le candidat propose de relever l'âge de départ, ce qui est l'inverse d'un abaissement. La même page répond aussi à « Pourquoi Édouard Philippe refuse-t-il la retraite à 60 ans ? ». Position catégorique, d'où −2."
       },
       "tra-02": {
         "set": [
@@ -348,14 +348,14 @@
           -1,
           0
         ],
-        "status": "declaration-provisoire",
+        "status": "ambigu",
         "sources": [
-          "4f065fb9f6527f46"
+          "20e949fc7265d7eb"
         ],
-        "basis": "declaration",
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-09T09:00:55.550Z",
-        "note": "Propos tenus dans un entretien au Figaro, cités par LCP. Il veut réduire les effectifs des classes « là où c'est nécessaire » grâce à la baisse du nombre d'élèves, sans dépense supplémentaire, donc sans recrutement massif : -1 ou 0."
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Source : programme 2027. Il veut réduire la taille des classes en maternelle et en primaire, mais sans embauches massives, en s'appuyant sur la baisse du nombre d'élèves. Il soutient le but mais écarte le recrutement : 0 ou -1."
       },
       "tra-04": {
         "set": [
@@ -387,7 +387,7 @@
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "sec-01": {
         "value": 1,
@@ -423,18 +423,22 @@
         "note": "Le programme admet la reconnaissance faciale, mais de façon ciblée, contre le narcotrafic et dans un régime d’exception limité dans le temps et l’espace. Ce n’est pas une autorisation générale dans l’espace public."
       },
       "sec-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "value": -1,
+        "status": "explicite",
+        "sources": [
+          "8c64c2458ac1a6b8"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Programme 2027. Phrase tirée de la réponse sur la régularisation : pour les besoins de main-d'œuvre, il préfère des quotas à la régularisation. Le mot « préfère » marque une nuance, et les métiers en tension ne sont pas nommés, d'où -1 plut"
       },
       "sec-06": {
         "missing": true,
         "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "cli-01": {
         "set": [
@@ -455,21 +459,21 @@
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "cli-03": {
         "missing": true,
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "cli-04": {
         "missing": true,
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "cli-05": {
         "set": [
@@ -527,23 +531,23 @@
       "lib-03": {
         "missing": true,
         "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
+        "note": "La seule source trouvée résume le candidat sans le citer.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "lib-04": {
         "missing": true,
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "lib-05": {
         "missing": true,
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "lib-06": {
         "set": [
@@ -578,7 +582,7 @@
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "eur-03": {
         "set": [
@@ -613,21 +617,21 @@
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "eur-06": {
         "missing": true,
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "dem-01": {
         "missing": true,
         "status": "inconnu",
-        "note": "Retirée : la seule source était un autre test électoral, et la phrase n’a pas été retrouvée sur les pages du candidat.",
-        "codedBy": "redaction",
-        "codedAt": "2026-10-26T17:52:26.966Z"
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "dem-02": {
         "set": [
@@ -648,14 +652,14 @@
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "dem-04": {
         "missing": true,
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "dem-05": {
         "value": 1,
@@ -673,7 +677,7 @@
         "status": "inconnu",
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
-        "codedAt": "2026-10-08T14:44:37.471Z"
+        "codedAt": "2026-11-16T09:53:07.133Z"
       },
       "tra-08": {
         "value": 2,
@@ -719,15 +723,18 @@
         "codedAt": "2026-10-09T13:44:39.674Z"
       },
       "edu-01": {
-        "value": 0,
-        "status": "declaration-provisoire",
-        "sources": [
-          "80512e9fb52ea10a"
+        "set": [
+          -1,
+          0
         ],
-        "basis": "declaration",
+        "status": "ambigu",
+        "sources": [
+          "19d934def9ec08b8"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Pas d’obligation nationale : chaque chef d’établissement pourrait imposer l’uniforme (le programme dit « liberté […] d’imposer l’uniforme »)."
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Source : programme 2027 (questions-réponses officielles). L'uniforme serait décidé par chaque établissement, sans obligation nationale. La page programme/ecole le confirme : « Édouard Philippe veut laisser ce choix à chaque établissement »."
       },
       "edu-06": {
         "set": [
@@ -777,15 +784,18 @@
         "note": "Propos tenus sur France 2 (L'Heure de vérité)."
       },
       "eur-07": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "352df34e9119a5ef"
+        "set": [
+          1,
+          2
         ],
-        "basis": "declaration",
+        "status": "ambigu",
+        "sources": [
+          "fc5374de071a6def"
+        ],
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Propos tenus sur France 2 (L'Heure de vérité)."
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Ce sont deux puces consécutives de la liste « Nos propositions phares », copiées sans le signe de puce. L'index du programme parle aussi de « Soutien inébranlable à l'Ukraine ». Le soutien est catégorique et figure dans le chapitre défense,"
       },
       "eur-09": {
         "value": -2,
@@ -800,14 +810,14 @@
       },
       "sec-04": {
         "value": 2,
-        "status": "declaration-provisoire",
+        "status": "explicite",
         "sources": [
-          "0ba56a28348cd7c2"
+          "721ee46051db7728"
         ],
-        "basis": "declaration",
+        "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-10T07:11:29.604Z",
-        "note": "Propos tenus dans « L’Heure de vérité » (France 2, 8 octobre 2026) : réduire le nombre de premiers titres de séjour sous 200 000 par an, avec un moratoire sur le regroupement familial."
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Programme 2027. Objectif chiffré et catégorique de baisse, qui passe par la suspension du regroupement familial et par des quotas pour l'immigration de travail."
       },
       "tra-11": {
         "value": 2,
@@ -824,11 +834,12 @@
         "value": 2,
         "status": "explicite",
         "sources": [
-          "67b06993c9b28f53"
+          "f17dd84407b7f2bd"
         ],
         "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z"
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Programme 2027. Proposition phare, sans réserve. La même page précise que la règle « interdira aux parlementaires de creuser le déficit au-delà du seuil européen de 3 % »."
       },
       "tra-13": {
         "set": [
@@ -848,12 +859,12 @@
         "value": 2,
         "status": "explicite",
         "sources": [
-          "6427c89900ca5e5f"
+          "2f2d31271e0de016"
         ],
         "basis": "programme-2027",
         "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Dégressive avec le revenu ; fusion d'une dizaine de dispositifs."
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Proposition phare catégorique, citée depuis le résumé de la thématique Famille dans le sommaire officiel. Page détaillée Famille non lue (limite d'outils) : modalités (conditions de ressources, durée) à vérifier."
       },
       "imm-06": {
         "value": 1,
@@ -935,6 +946,357 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Il rappelle qu'il était « à l'époque très réservé sur la PMA » (2013) et dit avoir évolué ; son gouvernement a porté la loi de bioéthique ouvrant la PMA à toutes. Il ne dit pas en toutes lettres qu'il refuse de la supprimer."
+      },
+      "san-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "san-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "san-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "san-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "san-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "san-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "tra-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La seule source trouvée résume le candidat sans le citer.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "tra-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "tra-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "tra-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "tra-14": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "eco-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "eco-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La seule source trouvée résume le candidat sans le citer.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "eco-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "edu-02": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "ambigu",
+        "sources": [
+          "58e702e83f00e6c1"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Source : programme 2027. Il rejette clairement les groupes de niveau. Mais il propose des petits groupes pour les élèves qui en ont besoin, au choix des établissements, ce qui nuance ce rejet. -2 et -1 sont donc défendables."
+      },
+      "edu-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "edu-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "edu-05": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "f70930dc65ba2e26"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Source : programme 2027. Refus catégorique de revenir sur Parcoursup. Il veut l'améliorer, pas le supprimer. Même page : « La réforme du bac et Parcoursup sont défendus »."
+      },
+      "edu-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "imm-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "imm-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "imm-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "imm-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "imm-07": {
+        "value": -2,
+        "status": "explicite",
+        "sources": [
+          "a58c145f4cda8777"
+        ],
+        "basis": "programme-2027",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z",
+        "note": "Programme 2027. Réponse catégorique à la question « Édouard Philippe est-il pour la régularisation des sans-papiers ? ». Les espaces insécables autour des guillemets ont été remplacés par des espaces ordinaires."
+      },
+      "log-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "log-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "log-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "lib-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "ani-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "cli-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "cli-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "cli-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "dem-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "dem-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "dem-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "dem-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "dem-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "dem-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "eur-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
+      },
+      "eur-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-16T09:53:07.133Z"
       }
     },
     "gabriel-attal": {
@@ -35047,10 +35409,98 @@
       "url": "https://www.anousmaintenant.fr/",
       "date": "2026",
       "passage": "L'instauration d'un véritable dialogue structuré entre le gouvernement et les citoyens, permettant de mettre en place de nouvelles législations et s'appuyant sur des référendums (RIC et RIG), permettra de pacifier le pays et d'identifier les solutions aux difficultés actuelles."
+    },
+    {
+      "id": "9c043b31abf6a345",
+      "title": "Retraites — Le programme (Avec Édouard, présidentielle 2027)",
+      "publisher": "Campagne Édouard Philippe 2027 (edouardphilippe.fr)",
+      "url": "https://www.edouardphilippe.fr/programme/retraites",
+      "date": "2026-11-12",
+      "passage": "Porter progressivement l’âge de départ à 65 ans et la durée de cotisation à 45 ans en moins de dix ans, pour ceux qui le peuvent."
+    },
+    {
+      "id": "2f2d31271e0de016",
+      "title": "Que prévoit le programme pour vous ? – Les thématiques",
+      "publisher": "Campagne Édouard Philippe 2027 (edouardphilippe.fr)",
+      "url": "https://www.edouardphilippe.fr/programme",
+      "date": "2026-11-12",
+      "passage": "Famille Allocation familiale de 350 € dès le 1er enfant Zéro impôt pour les classes moyennes les trois premières années de l’enfant"
+    },
+    {
+      "id": "19d934def9ec08b8",
+      "title": "L'école : vos questions, les réponses d'Édouard Philippe (« Êtes-vous favorable à l'uniforme ? »)",
+      "publisher": "Site de campagne Édouard Philippe 2027",
+      "url": "https://www.edouardphilippe.fr/questions-reponses/ecoles",
+      "date": "2026-10-15",
+      "passage": "La décision appartiendra à chaque établissement : c'est exactement le type de choix qui doit se faire sur le terrain, avec les équipes et les parents, pas depuis Paris."
+    },
+    {
+      "id": "58e702e83f00e6c1",
+      "title": "L'école : vos questions, les réponses d'Édouard Philippe (« Faut-il des classes ou des groupes de niveau ? »)",
+      "publisher": "Site de campagne Édouard Philippe 2027",
+      "url": "https://www.edouardphilippe.fr/questions-reponses/ecoles",
+      "date": "2026-10-15",
+      "passage": "Pas des groupes de niveau : des réponses sur mesure. L'autonomie qu'Édouard Philippe souhaite donner aux établissements leur permettra d'ajouter des heures de français dans une classe, de maths dans une autre, et de faire travailler en petits groupes les élèves qui en ont besoin."
+    },
+    {
+      "id": "f70930dc65ba2e26",
+      "title": "L'école : vos questions, les réponses d'Édouard Philippe (« Faut-il réformer Parcoursup ? »)",
+      "publisher": "Site de campagne Édouard Philippe 2027",
+      "url": "https://www.edouardphilippe.fr/questions-reponses/ecoles",
+      "date": "2026-10-15",
+      "passage": "L'améliorer, oui ; revenir en arrière, non : avant Parcoursup, l'affectation relevait souvent du tirage au sort."
+    },
+    {
+      "id": "20e949fc7265d7eb",
+      "title": "L'école : vos questions, les réponses d'Édouard Philippe (« Peut-on réduire les effectifs sans embaucher massivement ? »)",
+      "publisher": "Site de campagne Édouard Philippe 2027",
+      "url": "https://www.edouardphilippe.fr/questions-reponses/ecoles",
+      "date": "2026-10-15",
+      "passage": "Oui, grâce à la démographie : avec un million d'élèves en moins d'ici cinq ans, la France peut généraliser les petits effectifs en maternelle, au CP et au CE1 et mieux payer ses professeurs, sans dégrader les finances publiques."
+    },
+    {
+      "id": "a58c145f4cda8777",
+      "title": "Programme – Immigration",
+      "publisher": "Campagne Édouard Philippe 2027",
+      "url": "https://www.edouardphilippe.fr/programme/immigration",
+      "date": "2026-11-12",
+      "passage": "Pas de régularisation massive. Édouard Philippe propose un « verrou Schengen » : aucun État européen ne pourrait engager seul une régularisation massive au-delà d’un seuil défini ensemble, sans l’accord préalable de ses partenaires."
+    },
+    {
+      "id": "721ee46051db7728",
+      "title": "Programme – Immigration",
+      "publisher": "Campagne Édouard Philippe 2027",
+      "url": "https://www.edouardphilippe.fr/programme/immigration",
+      "date": "2026-11-12",
+      "passage": "Oui, c’est son objectif. Édouard Philippe veut diviser par deux l’immigration en France. Il veut réduire l’immigration que nous subissons, en suspendant le regroupement familial"
+    },
+    {
+      "id": "8c64c2458ac1a6b8",
+      "title": "Programme – Immigration",
+      "publisher": "Campagne Édouard Philippe 2027",
+      "url": "https://www.edouardphilippe.fr/programme/immigration",
+      "date": "2026-11-12",
+      "passage": "Pour répondre aux besoins de main-d’œuvre, il préfère une voie claire et assumée : des quotas pour choisir notre immigration économique."
+    },
+    {
+      "id": "f17dd84407b7f2bd",
+      "title": "Programme – Finances publiques (propositions phares)",
+      "publisher": "Site de campagne d'Édouard Philippe (edouardphilippe.fr)",
+      "url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+      "date": "2026-11-12",
+      "passage": "Inscrire dans la Constitution une « règle d’or » budgétaire adoptée par référendum dès le début du quinquennat."
+    },
+    {
+      "id": "fc5374de071a6def",
+      "title": "Programme – Défense",
+      "publisher": "Édouard Philippe 2027 (site de campagne)",
+      "url": "https://www.edouardphilippe.fr/programme/defense",
+      "date": "2026-11-12",
+      "passage": "Un soutien plein à l’Ukraine. Une dissuasion nucléaire modernisée."
     }
   ],
   "refreshedAt": {
-    "edouard-philippe": "2026-10-10T08:49:32.693Z",
+    "edouard-philippe": "2026-11-16T09:53:07.133Z",
     "gabriel-attal": "2026-10-10T09:35:32.589Z",
     "bruno-retailleau": "2026-10-10T09:35:32.589Z",
     "david-lisnard": "2026-10-10T08:49:32.693Z",

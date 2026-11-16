@@ -12246,5 +12246,53 @@
     "from": "inconnue",
     "to": "[1,2]",
     "source": "4a3876d8ffe0428f"
+  },
+  {
+    "date": "2026-11-16T09:53:07.133Z",
+    "actor": "edouard-philippe",
+    "item": "edu-01",
+    "from": "0",
+    "to": "[-1,0]",
+    "source": "19d934def9ec08b8"
+  },
+  {
+    "date": "2026-11-16T09:53:07.133Z",
+    "actor": "edouard-philippe",
+    "item": "edu-02",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "58e702e83f00e6c1"
+  },
+  {
+    "date": "2026-11-16T09:53:07.133Z",
+    "actor": "edouard-philippe",
+    "item": "edu-05",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "f70930dc65ba2e26"
+  },
+  {
+    "date": "2026-11-16T09:53:07.133Z",
+    "actor": "edouard-philippe",
+    "item": "imm-07",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "a58c145f4cda8777"
+  },
+  {
+    "date": "2026-11-16T09:53:07.133Z",
+    "actor": "edouard-philippe",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "-1",
+    "source": "8c64c2458ac1a6b8"
+  },
+  {
+    "date": "2026-11-16T09:53:07.133Z",
+    "actor": "edouard-philippe",
+    "item": "eur-07",
+    "from": "2",
+    "to": "[1,2]",
+    "source": "fc5374de071a6def"
   }
 ]

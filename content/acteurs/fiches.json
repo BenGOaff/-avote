@@ -14,10 +14,10 @@
     "model": "claude-sonnet-5-5"
   },
   "edouard-philippe": {
-    "analysis": "Sur la fiscalité, les positions documentées vont vers moins d'impôts : moratoire sur les nouveaux impôts, opposition à la taxe Zucman et à l'ISF, règle d'or sur les déficits. Sur les retraites, il propose un départ à 65 ans et un pilier de capitalisation. Côté sécurité, la citation retient peines planchers, places de prison et comparution immédiate des mineurs pour le narcotrafic. Sur l'Europe, il défend une « souveraineté européenne intégrale » et rejette la sortie de l'Union. Il est opposé au plafonnement des loyers, à la proportionnelle et au RIC. Sur l'aide à mourir, il distingue conviction intime et inscription dans la loi. Pour les thèmes listés comme lacunaires, on n'a pas trouvé de position explicite sur plusieurs points.",
-    "remark": "La règle d'or sur le déficit figure deux fois dans le dossier, sous deux intitulés, avec la même citation.",
-    "basedOn": "live-202610101038",
-    "generatedAt": "2026-10-10T10:38:59.727Z",
+    "analysis": "Sur les finances publiques, les positions documentées vont dans le même sens : moratoire fiscal, règle d'or dans la Constitution, déficit à ramener à 2 % du PIB, baisse du nombre de fonctionnaires, refus de la « taxe Zucman » et de l'ISF. Sur les retraites, il propose 65 ans et 45 ans de cotisation, avec un pilier de capitalisation. En matière de sécurité et d'immigration, on trouve des peines planchers, des places de prison supplémentaires, des quotas et la restriction du regroupement familial. Sur l'Europe, il défend une « souveraineté européenne intégrale » et rejette la sortie de l'Union. Sur l'école, le logement, la santé ou la démocratie, plusieurs positions restent intermédiaires, et de nombreux thèmes comptent peu de positions documentées.",
+    "remark": "Le moratoire fiscal est annoncé ; la liste des économies qui le financent, elle, reste à lire ligne à ligne.",
+    "basedOn": "live-202611161001",
+    "generatedAt": "2026-11-16T10:01:19.037Z",
     "model": "claude-sonnet-5-5"
   },
   "gabriel-attal": {
