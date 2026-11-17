@@ -211,6 +211,23 @@
       "addedBy": "veille claude-haiku-5-5"
     },
     {
+      "id": "2026-11-20-prise-de-parole-de-dominique-de-villepin",
+      "kind": "meeting",
+      "title": "Prise de parole de Dominique de Villepin",
+      "date": "2026-11-20",
+      "summary": "Dominique de Villepin doit prendre la parole pour faire connaître sa position sur une candidature à la présidentielle. Libération indique que son équipe laisse entendre une entrée officielle dans la course, sans que l’annonce soit encore faite.",
+      "who": [
+        "dominique-de-villepin"
+      ],
+      "source": {
+        "title": "Déjà 37 candidats à la présidentielle, et Dominique de Villepin prêt à entrer en scène ?",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/deja-37-candidats-a-la-presidentielle-et-dominique-de-villepin-pret-a-entrer-en-scene-20261117_DJ47ULWAHJCOXD4H7K6KJOX63Y/"
+      },
+      "quote": "doit prendre la parole vendredi 20 novembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
       "id": "2026-11-30-decision-dans-le-proces-de-rima-hassan-pour-apol",
       "kind": "institution",
       "title": "Décision dans le procès de Rima Hassan pour apologie du terrorisme",
