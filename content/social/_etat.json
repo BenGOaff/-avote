@@ -1,7 +1,7 @@
 {
  "mentions": {
   "marine-le-pen": 3,
-  "dominique-de-villepin": 1,
+  "dominique-de-villepin": 2,
   "marine-tondelier": 3,
   "edouard-philippe": 3,
   "david-lisnard": 2,
@@ -10,7 +10,7 @@
   "fabien-roussel": 2,
   "gabriel-attal": 2,
   "selma-labib": 2,
-  "raphael-glucksmann": 2,
+  "raphael-glucksmann": 3,
   "eric-zemmour": 2,
   "bruno-retailleau": 2,
   "delphine-batho": 1,
@@ -101,7 +101,8 @@
   "sondage-opinionway-2026-11-12-2393": "2026-11-15T21:16:24.974Z",
   "sondage-elabe-2026-11-13-2394": "2026-11-17T00:29:07.130Z",
   "20261117-1553-retraites-marine-le-pen-presente-un-depart-a-60-ou": "2026-11-17T16:28:12.067Z",
-  "edu-05-contre": "2026-11-17T16:28:12.067Z"
+  "edu-05-contre": "2026-11-17T16:28:12.067Z",
+  "dem-09-contre-alliance": "2026-11-17T23:39:21.566Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -502,5 +503,5 @@
   "20261117-1553-primaire-a-droite-les-equipes-attal-retailleau-et",
   "20261117-1553-retraites-marine-le-pen-presente-un-depart-a-60-ou"
  ],
- "rdv": 28
+ "rdv": 29
 }
