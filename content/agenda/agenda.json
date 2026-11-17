@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-17",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -273,6 +273,20 @@
         "url": "https://www.publicsenat.fr/actualites/politique/nous-decouvrons-lobstruction-calendaire-au-senat-le-groupe-rn-udr-devoile-les-textes-de-sa-niche-parlementaire"
       },
       "quote": "leur niche parlementaire prévue le 10 décembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-12-10-niche-parlementaire-du-groupe-modem-a-l-assemble",
+      "kind": "institution",
+      "title": "Niche parlementaire du groupe MoDem à l’Assemblée",
+      "date": "2026-12-10",
+      "summary": "Le groupe MoDem présente ses textes pour sa journée d’initiative parlementaire, dont une proposition sur les motions de censure « constructive » et une sur le financement de la rénovation énergétique.",
+      "source": {
+        "title": "Motion de censure \"constructive\", rénovation énergétique... Les textes de la niche parlementaire du MoDem prévue le 10 décembre",
+        "publisher": "LCP",
+        "url": "https://lcp.fr/actualites/motion-de-censure-constructive-renovation-energetique-les-textes-de-la-niche"
+      },
+      "quote": "la niche parlementaire du MoDem prévue le 10 décembre",
       "addedBy": "veille claude-haiku-5-5"
     }
   ]
