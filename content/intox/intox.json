@@ -1,7 +1,27 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-17T01:53:55.068Z",
+  "updatedAt": "2026-11-17T16:56:28.090Z",
   "items": [
+    {
+      "id": "l-agence-francaise-de-developpement-donnerait-chaque-annee-d-c3a1e6",
+      "claim": "L'Agence française de développement donnerait chaque année des millions d'euros à la Chine",
+      "verdict": "faux",
+      "truth": "L'AFD agit comme une banque : elle prête de l'argent avec intérêts pour financer des projets en Chine, sans argent public.",
+      "spreaders": [
+        "Sarah Knafo"
+      ],
+      "topic": "autre",
+      "firstSeen": "2026-11-17",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/lagence-francaise-de-developpement-ne-donne-pas-mais-prete-de-largent-a-la-chine/",
+          "title": "L’Agence française de développement ne donne pas, mais prête, de l’argent à la Chine",
+          "date": "2026-11-17",
+          "quote": "l’information selon laquelle l’Agence française de développement (AFD) donnerait chaque année des millions d’euros à la Chine est fausse"
+        }
+      ]
+    },
     {
       "id": "seul-un-etranger-sur-dix-entre-en-france-chaque-annee-trouve-de4d65",
       "claim": "Seul un étranger sur dix entré en France chaque année trouverait un emploi, les neuf autres vivraient aux dépens de la société.",
