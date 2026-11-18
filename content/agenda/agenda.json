@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-17",
+  "updatedAt": "2026-11-18",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -208,6 +208,25 @@
         "url": "https://lcp.fr/actualites/vie-chere-en-outre-mer-pourquoi-les-prix-sont-ils-si-eleves-et-comment-les-deputes"
       },
       "quote": "à l'ordre du jour de l'hémicycle du 19 novembre prochain",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-11-19-emission-l-heure-de-verite-avec-gabriel-attal-ca",
+      "kind": "debat",
+      "title": "Émission L'heure de vérité avec Gabriel Attal, candidat Renaissance à la présidentielle",
+      "date": "2026-11-19",
+      "time": "20:40",
+      "summary": "Caroline Roux reçoit Gabriel Attal sur France 2, dans une émission politique qui intervient pendant la préparation de la primaire de la droite et du centre.",
+      "who": [
+        "gabriel-attal"
+      ],
+      "place": "France 2",
+      "source": {
+        "title": "\"L'heure de vérité\". Avec Gabriel Attal",
+        "publisher": "franceinfo",
+        "url": "https://www.franceinfo.fr/replay-magazine/france-2/l-heure-de-verite/l-heure-de-verite-avec-gabriel-attal_8284823.html"
+      },
+      "quote": "Jeudi 19 novembre à 20h40 sur France 2, dans \"L'heure de vérité\", Caroline Roux reçoit Gabriel Attal, candidat Renaissance à l'élection présidentielle.",
       "addedBy": "veille claude-haiku-5-5"
     },
     {
