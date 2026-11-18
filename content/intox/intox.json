@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-18T01:00:19.094Z",
+  "updatedAt": "2026-11-18T16:31:28.954Z",
   "items": [
+    {
+      "id": "le-systeme-de-retraite-par-repartition-serait-une-arnaque-de-263ea7",
+      "claim": "Le système de retraite par répartition serait une arnaque de type pyramide de Ponzi",
+      "verdict": "faux",
+      "truth": "La gouvernance démocratique et les modalités de financement du système des retraites empêchent de le qualifier de système de Ponzi.",
+      "spreaders": [],
+      "topic": "eco",
+      "firstSeen": "2026-11-18",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/le-systeme-de-retraites-par-repartition-repose-t-il-sur-une-arnaque-de-type-pyramide-de-ponzi/",
+          "title": "Le système de retraite par répartition repose-t-il sur une arnaque de type pyramide de Ponzi ?",
+          "date": "2026-11-18",
+          "quote": "Mais la gouvernance démocratique et les modalités de financement du système des retraites empêchent de le qualifier de système de Ponzi."
+        }
+      ]
+    },
     {
       "id": "l-agence-francaise-de-developpement-donnerait-chaque-annee-d-c3a1e6",
       "claim": "L'Agence française de développement donnerait chaque année des millions d'euros à la Chine",
