@@ -1,7 +1,49 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-19T00:29:03.781Z",
+  "updatedAt": "2026-11-19T16:38:00.525Z",
   "items": [
+    {
+      "id": "des-membres-du-personnel-de-l-education-nationale-seraient-c-2ec3c1",
+      "claim": "Des membres du personnel de l'Éducation nationale seraient complices des violences lycéennes en fournissant des mortiers d'artifice aux élèves",
+      "verdict": "trompeur",
+      "truth": "Les quelques cas signalés par les autorités judiciaires n'ont aucun lien avec la fourniture de mortiers d'artifice à des élèves et concernent des enseignants qui ne sont plus en exercice ou ont agi hors du cadre du lycée.",
+      "spreaders": [
+        "Sébastien Lecornu",
+        "Laurent Nuñez",
+        "Edouard Geffray"
+      ],
+      "topic": "ecole",
+      "firstSeen": "2026-11-19",
+      "debunks": [
+        {
+          "publisher": "Vrai ou fake (franceinfo)",
+          "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-des-membres-du-personnel-de-l-education-nationale-sont-ils-complices-des-violences-commises-en-marge-des-mobilisations-lyceennes-comme-l-affirme-le-gouvernement_8286719.html",
+          "title": "VRAI OU FAUX. Des membres du personnel de l'Education nationale sont-ils complices des violences commises en marge des mobilisations lycéennes, comme l'affirme le gouvernement ?",
+          "date": "2026-11-19",
+          "quote": "n'ont aucun lien avec la fourniture de mortiers d'artifice à des élèves"
+        }
+      ]
+    },
+    {
+      "id": "les-villes-rn-entretiendraient-d-excellentes-relations-avec-362b7f",
+      "claim": "Les villes RN entretiendraient d'excellentes relations avec les associations d'aide aux plus démunis",
+      "verdict": "trompeur",
+      "truth": "Des coupures d'électricité et des subventions rabotées sont rapportées localement dans des municipalités RN, ce qui contredit le discours sur des relations excellentes avec les associations.",
+      "spreaders": [
+        "Marine Le Pen"
+      ],
+      "topic": "autre",
+      "firstSeen": "2026-11-19",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/electricite-coupee-subventions-rabotees-les-villes-rn-entretiennent-elles-vraiment-des-relations-excellentes-avec-les-associations-20261119_3PUXUYZIV5A3LB2R4I3UEXPFCA/",
+          "title": "Electricité coupée, subventions rabotées… les villes RN entretiennent-elles vraiment des «relations excellentes» avec les associations ?",
+          "date": "2026-11-19",
+          "quote": "Les difficultés rapportées localement contredisent ce discours."
+        }
+      ]
+    },
     {
       "id": "le-systeme-de-retraite-par-repartition-serait-une-arnaque-de-263ea7",
       "claim": "Le système de retraite par répartition serait une arnaque de type pyramide de Ponzi",
