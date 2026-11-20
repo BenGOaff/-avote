@@ -1,7 +1,63 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-20T00:41:00.988Z",
+  "updatedAt": "2026-11-20T16:13:53.311Z",
   "items": [
+    {
+      "id": "la-retraite-par-capitalisation-permettrait-a-un-salarie-paye-f35d7f",
+      "claim": "La retraite par capitalisation permettrait à un salarié payé au Smic toute sa vie de tripler sa pension par rapport au système par répartition.",
+      "verdict": "trompeur",
+      "truth": "Si la plus grande rentabilité de la capitalisation est crédible, les projections annonçant un rendement trois fois supérieur aux pensions actuelles sont exagérées.",
+      "spreaders": [],
+      "topic": "eco",
+      "firstSeen": "2026-11-20",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/la-retraite-par-capitalisation-permettrait-elle-a-un-salarie-paye-au-smic-toute-sa-vie-de-tripler-sa-pension/",
+          "title": "La retraite par capitalisation permettrait-elle à un salarié payé au Smic toute sa vie de tripler sa pension ?",
+          "date": "2026-11-20",
+          "quote": "les projections annonçant un rendement d’un niveau trois fois supérieur aux pensions actuellement versées sont exagérées"
+        }
+      ]
+    },
+    {
+      "id": "les-aides-sociales-non-contributives-aux-etrangers-couteraie-49cb47",
+      "claim": "Les aides sociales non contributives aux étrangers coûteraient 15 à 20 milliards d'euros par an, et leur suppression permettrait d'économiser environ 20 milliards.",
+      "verdict": "faux",
+      "truth": "Le chiffrage de 20 milliards d'euros ne repose sur aucun calcul clair, de l'aveu même de son auteur.",
+      "spreaders": [
+        "Éric Zemmour"
+      ],
+      "topic": "immigration",
+      "firstSeen": "2026-11-20",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/les-aides-sociales-non-contributives-aux-etrangers-coutent-elles-15-a-20-milliards-deuros/",
+          "title": "Les aides sociales non contributives aux étrangers coûtent-elles 15 à 20 milliards d’euros ?",
+          "date": "2026-11-20",
+          "quote": "Une proposition qui ne repose, comme il y a cinq ans, sur aucun calcul clair, de l'aveu même de son auteur."
+        }
+      ]
+    },
+    {
+      "id": "les-etudiants-de-l-iep-de-strasbourg-auraient-obtenu-un-mini-d66018",
+      "claim": "Les étudiants de l'IEP de Strasbourg auraient obtenu un minimum de 10/20 aux oraux pour débloquer l'université.",
+      "verdict": "faux",
+      "truth": "L'IEP de Strasbourg réfute cette rumeur et assure qu'il s'agit d'une « ligne rouge pour notre direction ».",
+      "spreaders": [],
+      "topic": "ecole",
+      "firstSeen": "2026-11-20",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/societe/4263773-20261120-strasbourg-debloquer-universite-etudiants-obtenu-minimum-10-20-oraux?amp%3Bat_campaign=149",
+          "title": "Strasbourg : Pour débloquer l’université, les étudiants ont-ils obtenu un minimum de 10/20 aux oraux ?",
+          "date": "2026-11-20",
+          "quote": "l'IEP de Strasbourg réfute et assure qu'il s'agit d'une « ligne rouge pour notre direction »"
+        }
+      ]
+    },
     {
       "id": "des-membres-du-personnel-de-l-education-nationale-seraient-c-2ec3c1",
       "claim": "Des membres du personnel de l'Éducation nationale seraient complices des violences lycéennes en fournissant des mortiers d'artifice aux élèves",
