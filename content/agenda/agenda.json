@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-20",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -338,6 +338,26 @@
         "url": "https://lcp.fr/actualites/motion-de-censure-constructive-renovation-energetique-les-textes-de-la-niche"
       },
       "quote": "la niche parlementaire du MoDem prévue le 10 décembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-12-10-vote-des-adherents-les-ecologistes-sur-la-candid",
+      "kind": "parti",
+      "title": "Vote des adhérents Les Écologistes sur la candidature à la présidentielle",
+      "date": "2026-12-10",
+      "end": "2026-12-13",
+      "summary": "Les adhérents décideront si Marine Tondelier reste candidate ou si le parti se rallie à Jean-Luc Mélenchon ou à Raphaël Glucksmann.",
+      "who": [
+        "marine-tondelier",
+        "jean-luc-melenchon",
+        "raphael-glucksmann"
+      ],
+      "source": {
+        "title": "Présidentielle 2027 : Marine Tondelier estime que la balle est dans le camp de Jean-Luc Mélenchon",
+        "publisher": "Le Monde",
+        "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/20/presidentielle-2027-marine-tondelier-estime-que-la-balle-est-dans-le-camp-de-jean-luc-melenchon_6813644_6205049.html"
+      },
+      "quote": "entre les 10 et 13 décembre",
       "addedBy": "veille claude-haiku-5-5"
     }
   ]

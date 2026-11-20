@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-11-09",
+  "collectedAt": "2026-11-20",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -519,12 +519,12 @@
       "slug": "dominique-de-villepin",
       "name": "Dominique de Villepin",
       "party": "La France humaniste",
-      "status": "demarche",
-      "since": "2026-01-19",
+      "status": "declare",
+      "since": "2026-11-20",
       "source": {
-        "title": "Dominique de Villepin : \"Nous voulons être présents en 2027\"",
-        "publisher": "LCP",
-        "url": "https://lcp.fr/actualites/dominique-de-villepin-nous-voulons-etre-presents-en-2027-429413"
+        "title": "«Je suis candidat à l’élection présidentielle de 2027», annonce Dominique de Villepin",
+        "publisher": "Libération",
+        "url": "https://www.liberation.fr/politique/elections/je-suis-candidat-a-lelection-presidentielle-de-2027-annonce-dominique-de-villepin-20261120_SF2ZFQEWNJEXNAR3E2QCZPRSFI/"
       },
       "verified": true,
       "links": [
