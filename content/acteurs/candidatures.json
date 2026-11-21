@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-11-20",
+  "collectedAt": "2026-11-21",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -243,7 +243,7 @@
       "slug": "francois-ruffin",
       "name": "François Ruffin",
       "party": "Debout !",
-      "status": "declare",
+      "status": "retire",
       "since": "2025-04-01",
       "source": {
         "title": "Présidentielle 2027 : « S'il n'y a pas de primaire, moi j'y vais », annonce François Ruffin",
@@ -260,7 +260,14 @@
           "kind": "programme",
           "url": "https://nouspresident.fr/cahiers-de-campagne/"
         }
-      ]
+      ],
+      "retiredAt": "2026-11-21",
+      "retiredSource": {
+        "title": "Présidentielle 2027 : François Ruffin renonce à sa candidature « face au risque » de l’arrivée de l’extrême droite au pouvoir",
+        "publisher": "Le Monde",
+        "url": "https://www.lemonde.fr/politique/article/2026/11/21/presidentielle-2027-francois-ruffin-renonce-a-sa-candidature-face-au-risque-de-l-arrivee-de-l-extreme-droite-au-pouvoir_6814051_823448.html"
+      },
+      "retiredReason": "Prend acte de l'« impasse » de sa campagne, faute d'une primaire de toute la gauche"
     },
     {
       "slug": "delphine-batho",
