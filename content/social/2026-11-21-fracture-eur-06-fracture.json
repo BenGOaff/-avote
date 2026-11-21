@@ -1,0 +1,32 @@
+{
+  "id": "2026-11-21-fracture-eur-06-fracture",
+  "at": "2026-11-21T14:55:32.830Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "AIDE AUX PAYS PAUVRES",
+    "title": "Plus d'aide aux pays pauvres : Mélenchon dit oui, Le Pen dit non",
+    "line": "Sur 12 candidats à la présidentielle qui se sont prononcés, 5 sont nettement pour et 4 nettement contre.",
+    "yes": [
+      "jean-luc-melenchon",
+      "fabien-roussel",
+      "marine-tondelier",
+      "francois-ruffin",
+      "raphael-glucksmann"
+    ],
+    "no": [
+      "bruno-retailleau",
+      "david-lisnard",
+      "marine-le-pen",
+      "eric-zemmour"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Présidentielle 2027 : augmenter l'aide de la France aux pays pauvres ? Mélenchon et Glucksmann disent oui. Retailleau et Le Pen disent non. Tu te ranges avec qui ?",
+    "linkedin": "Augmenter l'aide de la France aux pays pauvres : sur ce sujet, Mélenchon et Zemmour sont sur deux rives opposées.\n\nL'affirmation soumise aux candidats à la présidentielle : « L'aide versée par la France aux pays pauvres devrait augmenter. » 12 candidats se sont prononcés.\n\nCinq sont nettement pour : Jean-Luc Mélenchon, Fabien Roussel, Marine Tondelier, François Ruffin et Raphaël Glucksmann.\n\nQuatre sont nettement contre : Bruno Retailleau, David Lisnard, Marine Le Pen et Éric Zemmour.\n\nTu serais plutôt du côté des cinq ou des quatre, et pourquoi ?\n\n#presidentielle2027",
+    "facebook": "Faut-il augmenter l'aide que la France verse aux pays pauvres ? Pour la présidentielle, Jean-Luc Mélenchon et Marine Tondelier sont nettement pour. Bruno Retailleau et Marine Le Pen sont nettement contre. Toi, tu te ranges avec qui ? Le test est sur çavote.fr",
+    "instagram": "Aide aux pays pauvres : Mélenchon oui, Le Pen non\nL'affirmation : « L'aide versée par la France aux pays pauvres devrait augmenter. »\n12 candidats se sont prononcés.\nNettement pour : 5, dont Marine Tondelier et François Ruffin.\nNettement contre : 4, dont Bruno Retailleau et Éric Zemmour.\nTu serais dans quel camp ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #aidepublique audeveloppement"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
