@@ -1,6 +1,6 @@
 {
   "note": "Candidatures annoncées publiquement, avant la liste officielle du Conseil constitutionnel (500 parrainages). Liste tenue à jour automatiquement par la veille : chaque entrée garde la source de l'annonce. Aucune position politique n'est déduite de cette liste.",
-  "collectedAt": "2026-11-21",
+  "collectedAt": "2026-11-22",
   "actors": [
     {
       "slug": "edouard-philippe",
@@ -867,6 +867,20 @@
         "title": "Teddy Riner candidat à l'élection présidentielle",
         "publisher": "franceinfo (présidentielle)",
         "url": "https://www.franceinfo.fr/elections/presidentielle/candidats/teddy-riner-candidat-a-l-election-presidentielle_8274530.html"
+      },
+      "verified": true,
+      "addedBy": "veille claude-sonnet-5-5"
+    },
+    {
+      "slug": "raphael-glucksman",
+      "name": "Raphaël Glucksman",
+      "party": "PS et Place publique",
+      "status": "declare",
+      "since": "2026-11-22",
+      "source": {
+        "title": "Présidentielle 2027 : \"Je ne me résoudrai jamais à ce que Marine Le Pen entre à l'Élysée\", assure Raphaël Glucksman, candidat PS et Place publique",
+        "publisher": "franceinfo (présidentielle)",
+        "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/le-grand-enjeu/presidentielle-2027-je-ne-me-resoudrai-jamais-a-ce-que-marine-le-pen-entre-a-l-elysee-lache-raphael-glucksman-candidat-ps-et-place-publique_8295134.html"
       },
       "verified": true,
       "addedBy": "veille claude-sonnet-5-5"
