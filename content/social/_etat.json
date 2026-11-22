@@ -1,13 +1,13 @@
 {
  "mentions": {
-  "marine-le-pen": 3,
+  "marine-le-pen": 4,
   "dominique-de-villepin": 2,
   "marine-tondelier": 3,
   "edouard-philippe": 3,
   "david-lisnard": 3,
   "bernard-cazeneuve": 1,
   "jean-luc-melenchon": 3,
-  "fabien-roussel": 2,
+  "fabien-roussel": 3,
   "gabriel-attal": 3,
   "selma-labib": 2,
   "raphael-glucksmann": 3,
@@ -112,7 +112,8 @@
   "sondage-ifop-fiducial-2026-11-04-2416": "2026-11-20T22:49:32.211Z",
   "20261120-2302-dominique-de-villepin-annonce-sa-candidature-a-la": "2026-11-21T00:11:34.315Z",
   "eur-06-fracture": "2026-11-21T14:55:32.830Z",
-  "20261122-1428-soupconne-de-fuites-vers-le-rn-le-prefet-hugues-mo": "2026-11-22T14:53:22.665Z"
+  "20261122-1428-soupconne-de-fuites-vers-le-rn-le-prefet-hugues-mo": "2026-11-22T14:53:22.665Z",
+  "cli-04-contre-alliance": "2026-11-22T22:01:36.056Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -558,5 +559,5 @@
   "20261122-1428-presidentielle-2027-la-cfdt-demande-d-avancer-le-s",
   "20261122-1428-soupconne-de-fuites-vers-le-rn-le-prefet-hugues-mo"
  ],
- "rdv": 30
+ "rdv": 31
 }

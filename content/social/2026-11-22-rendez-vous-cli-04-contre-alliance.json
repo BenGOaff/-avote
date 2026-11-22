@@ -1,0 +1,23 @@
+{
+  "id": "2026-11-22-rendez-vous-cli-04-contre-alliance",
+  "at": "2026-11-22T22:01:36.056Z",
+  "kind": "rendez-vous",
+  "card": {
+    "kicker": "ILS SONT D'ACCORD",
+    "title": "Roussel et Le Pen contre une hausse des taxes sur le carburant et le chauffage",
+    "line": "Sur 8 candidats qui ont pris position, 6 sont contre, 1 seul est pour.",
+    "duo": [
+      "fabien-roussel",
+      "marine-le-pen"
+    ],
+    "cta": "Vois qui propose quoi"
+  },
+  "text": {
+    "x": "Fabien Roussel et Marine Le Pen du même côté : tous deux contre une hausse des taxes sur les énergies fossiles. Sur 8 candidats qui ont pris position, 6 disent non. Et le septième ?",
+    "linkedin": "Fabien Roussel et Marine Le Pen, deux candidats qu'on ne range pas d'ordinaire du même côté, rejettent tous deux une hausse des taxes sur les énergies fossiles.\n\nLa mesure en débat : augmenter ces taxes, avec une compensation versée aux ménages modestes. Sur 8 candidats qui ont pris position, 6 sont nettement contre et 1 nettement pour.\n\nFabien Roussel défend une « baisse de 30 % des factures d’énergie et baisse des taxes sur les carburants ». Marine Le Pen estime que « se chauffer et circuler est une obligation pour les Français » et qu'il n'y a « aucune raison que l’État perçoive 60 % du prix du carburant à la pompe ».\n\nUne compensation pour les ménages modestes suffit-elle à rendre acceptable une taxe plus élevée sur le carburant et le chauffage ?\n\n#presidentielle2027 #fiscalite",
+    "facebook": "Fabien Roussel et Marine Le Pen sont tous les deux contre une hausse des taxes sur les énergies fossiles, même avec une compensation pour les ménages modestes. Sur 8 candidats qui ont pris position, 6 sont contre et 1 seul est pour. Taxer plus le carburant et le chauffage, tu y es favorable ou pas ? Le test est sur çavote.fr",
+    "instagram": "Roussel et Le Pen d'accord sur le prix du plein ? Oui.\nLa mesure : augmenter les taxes sur les énergies fossiles, avec une compensation pour les ménages modestes.\nFabien Roussel et Marine Le Pen sont tous les deux nettement contre.\nSur 8 candidats qui ont pris position : 6 contre, 1 pour.\nLe Pen : « il n’y a donc aucune raison que l’État perçoive 60 % du prix du carburant à la pompe ».\nQui est le seul pour ? Tu te ranges avec qui ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #taxecarburant #energiesfossiles"
+  },
+  "target": "/programmes/climat-et-energie/fiscalite-des-energies-fossiles",
+  "targetLabel": "Voir qui propose quoi"
+}
