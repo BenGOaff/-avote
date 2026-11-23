@@ -2,12 +2,12 @@
  "mentions": {
   "marine-le-pen": 4,
   "dominique-de-villepin": 2,
-  "marine-tondelier": 3,
+  "marine-tondelier": 4,
   "edouard-philippe": 3,
   "david-lisnard": 3,
   "bernard-cazeneuve": 1,
   "jean-luc-melenchon": 3,
-  "fabien-roussel": 3,
+  "fabien-roussel": 4,
   "gabriel-attal": 3,
   "selma-labib": 2,
   "raphael-glucksmann": 3,
@@ -113,7 +113,8 @@
   "20261120-2302-dominique-de-villepin-annonce-sa-candidature-a-la": "2026-11-21T00:11:34.315Z",
   "eur-06-fracture": "2026-11-21T14:55:32.830Z",
   "20261122-1428-soupconne-de-fuites-vers-le-rn-le-prefet-hugues-mo": "2026-11-22T14:53:22.665Z",
-  "cli-04-contre-alliance": "2026-11-22T22:01:36.056Z"
+  "cli-04-contre-alliance": "2026-11-22T22:01:36.056Z",
+  "sec-02-pour": "2026-11-23T18:43:58.729Z"
  },
  "seen": [
   "2026-10-08-parrainages-500-signatures",
@@ -563,7 +564,11 @@
   "20261122-2225-mediapart-suit-sept-primo-votants-de-seine-et-marn",
   "20261122-2225-presidentielle-2027-francois-ruffin-annonce-son-re",
   "20261122-2225-presidentielle-2027-un-second-tour-fixe-au-2-mai-a",
-  "20261122-2225-regle-d-or-budgetaire-selon-la-tribune-dimanche-ma"
+  "20261122-2225-regle-d-or-budgetaire-selon-la-tribune-dimanche-ma",
+  "20261123-1756-macron-envisage-d-inscrire-une-regle-d-or-budgetai",
+  "20261123-1756-marine-le-pen-veut-supprimer-les-subventions-publi",
+  "20261123-1756-presidentielle-2027-le-second-tour-fixe-au-2-mai-l",
+  "20261123-1756-yannick-jadot-et-jeremie-iordanoff-lancent-un-part"
  ],
  "rdv": 31
 }
