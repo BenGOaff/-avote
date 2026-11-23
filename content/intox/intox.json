@@ -1,7 +1,27 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-22T15:27:05.539Z",
+  "updatedAt": "2026-11-23T19:18:30.955Z",
   "items": [
+    {
+      "id": "dominique-de-villepin-n-aurait-jamais-privatise-les-autorout-e9ebad",
+      "claim": "Dominique de Villepin n'aurait jamais privatisé les autoroutes, qui seraient restées propriété publique.",
+      "verdict": "faux",
+      "truth": "Son gouvernement a fait passer dans le giron du privé les trois plus grandes sociétés concessionnaires d'autoroutes, où l'État était encore majoritaire.",
+      "spreaders": [
+        "Dominique de Villepin"
+      ],
+      "topic": "eco",
+      "firstSeen": "2026-11-23",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/dominique-de-villepin-peut-il-vraiment-affirmer-quil-na-jamais-privatise-les-autoroutes-20261123_3AHSHY3WSBH4RE3CRFYCNGG5KY/",
+          "title": "Dominique de Villepin peut-il vraiment affirmer qu’il n’a «jamais privatisé les autoroutes» ?",
+          "date": "2026-11-23",
+          "quote": "c'est bien lui et son gouvernement de l'époque qui ont fait passer dans le giron du privé les trois plus grandes sociétés concessionnaires, où l'Etat était encore majoritaire"
+        }
+      ]
+    },
     {
       "id": "la-retraite-par-capitalisation-permettrait-a-un-salarie-paye-f35d7f",
       "claim": "La retraite par capitalisation permettrait à un salarié payé au Smic toute sa vie de tripler sa pension par rapport au système par répartition.",
