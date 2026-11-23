@@ -1,8 +1,8 @@
 {
-  "version": "live-202611161001",
+  "version": "live-202611231103",
   "mode": "live",
   "questionSet": "0.3.0",
-  "publishedAt": "2026-11-16T10:01:12.978Z",
+  "publishedAt": "2026-11-23T11:03:22.985Z",
   "note": "Positions codées automatiquement par IA à partir de sources publiques (programme 2027, déclarations, programme 2022, programme du parti). Chaque citation est vérifiée dans la page source. Signaler une erreur : /corrections.",
   "actors": [
     {
@@ -80,13 +80,6 @@
       "name": "Marine Tondelier",
       "status": "declare",
       "party": "Les Écologistes",
-      "summary": ""
-    },
-    {
-      "slug": "francois-ruffin",
-      "name": "François Ruffin",
-      "status": "declare",
-      "party": "Debout !",
       "summary": ""
     },
     {
@@ -253,6 +246,13 @@
       "slug": "teddy-riner",
       "name": "Teddy Riner",
       "status": "declare",
+      "summary": ""
+    },
+    {
+      "slug": "raphael-glucksman",
+      "name": "Raphaël Glucksman",
+      "status": "declare",
+      "party": "PS et Place publique",
       "summary": ""
     }
   ],
@@ -1737,15 +1737,18 @@
         "note": "Éducation nationale, Armées, Justice et Intérieur seraient sanctuarisés."
       },
       "tra-08": {
-        "value": 2,
-        "status": "declaration-provisoire",
+        "status": "ambigu",
         "sources": [
           "e8a7b6a01cec101b"
         ],
         "basis": "declaration",
         "codedBy": "ia",
         "codedAt": "2026-10-09T13:47:01.862Z",
-        "note": "Il parle aussi d'introduire « une dose » ou « une part » de capitalisation dans le système de retraite."
+        "note": "Intensité discutable : La citation (« développement de la retraite par capitalisation, en complément du système par répartition ») présente la capitalisation comme un complément, sans part obligatoire ni objectif chiffré. C",
+        "set": [
+          1,
+          2
+        ]
       },
       "tra-09": {
         "value": -1,
@@ -2108,15 +2111,18 @@
         "note": "Discours aux préfets du 8 octobre 2024, alors ministre de l’Intérieur ; l’article précise qu’il vise l’immigration légale comme illégale. Son programme 2027 prévoit des quotas migratoires fixés par la loi."
       },
       "sec-05": {
-        "value": -2,
-        "status": "declaration-provisoire",
+        "status": "ambigu",
         "sources": [
           "bfd026bf04531b7e"
         ],
         "basis": "declaration",
         "codedBy": "ia",
         "codedAt": "2026-10-09T09:00:53.485Z",
-        "note": "Entretien au JDD republié par son parti. Même réponse : « l’idée de régulariser des clandestins qui ont fraudé nos lois est une capitulation »."
+        "note": "Intensité discutable : La citation conteste l'argument des métiers en tension et propose une alternative (former), mais ne pose aucune interdiction ni règle catégorique. Les autres -2 (Lisnard, Zemmour, Bertrand, Dupont-Aig",
+        "set": [
+          -2,
+          -1
+        ]
       },
       "sec-06": {
         "value": 2,
@@ -3888,15 +3894,18 @@
         "note": "Base : programme 2022 mis à jour (livret 2024). Le livret se présente comme la version 2022 mise à jour du programme présidentiel de Marine Le Pen. Formulation catégorique (« drastiquement »), d'où +2. Confirmé par la profession de foi 2022"
       },
       "sec-05": {
-        "value": -2,
-        "status": "explicite",
+        "status": "ambigu",
         "sources": [
           "b93061943bc89ce1"
         ],
         "basis": "programme-2022",
         "codedBy": "ia",
         "codedAt": "2026-10-08T18:14:43.430Z",
-        "note": "Programme présidentiel 2022 : exceptions limitées à des décisions individuelles en Conseil des ministres. Le livret de 2024 ajoute « aucune régularisation de complaisance ne sera plus décidée » pour les travailleurs clandestins."
+        "note": "Intensité discutable : La citation prévoit une interdiction « en principe », assortie d'une exception explicite (« décisions individuelles »). Ce n'est pas catégorique, contrairement à Zemmour ou Bertrand qui excluent toute",
+        "set": [
+          -2,
+          -1
+        ]
       },
       "sec-06": {
         "set": [
@@ -8213,15 +8222,18 @@
         "codedAt": "2026-10-08T16:59:06.318Z"
       },
       "sec-05": {
-        "value": 2,
-        "status": "declaration-provisoire",
+        "status": "ambigu",
         "sources": [
           "edb6f48234668fa7"
         ],
         "basis": "declaration",
         "codedBy": "ia",
         "codedAt": "2026-10-08T15:33:51.406Z",
-        "note": "Date approximative : 2022-01 (campagne présidentielle 2022). Déclaration de la campagne 2022. La proposition elle-même tient dans un fragment entre guillemets : régulariser « tous les sans-papiers qui travaillent ». Ce fragment fait moins d"
+        "note": "Intensité discutable : La citation déplore qu'un employeur refuse de remplir le CERFA. Elle suggère une position favorable mais ne formule aucun engagement catégorique de faciliter la régularisation, à la différence de Tond",
+        "set": [
+          1,
+          2
+        ]
       },
       "sec-06": {
         "missing": true,
@@ -10134,732 +10146,6 @@
         "codedBy": "ia",
         "codedAt": "2026-10-10T08:49:32.693Z",
         "note": "Alternative végétarienne et deux menus végétariens par semaine ; option quotidienne non chiffrée."
-      }
-    },
-    "francois-ruffin": {
-      "sec-01": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "c08f0053deb8c57f"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Il réclame plus de moyens pour les enquêteurs de police (et douanes, impôts) contre le narcotrafic, sans chiffre d’effectifs général."
-      },
-      "sec-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "sec-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "sec-04": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "d9dd88f8ca4a45e4"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T09:03:24.940Z",
-        "note": "Texte signé par le candidat. Il refuse l’immigration de travail réclamée par le patronat, mais défend la régularisation des étrangers déjà présents et un droit d’asile inconditionnel : il ne fixe pas d’objectif global de baisse."
-      },
-      "sec-05": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "359c9634d78775d2"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T18:28:41.116Z",
-        "note": "Texte signé par le candidat. Il défend la régularisation des étrangers déjà présents qui travaillent, mais refuse de nouvelles filières d'immigration de travail. Le manifeste de Debout! va dans le même sens : « Tous les travailleurs et trav"
-      },
-      "sec-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "eco-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "49bcd14a5c05d3b6"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T18:28:41.116Z",
-        "note": "Texte du parti, pas un engagement chiffré du candidat. Le manifeste rappelle que Roosevelt « fait alors voter » cet impôt sur le revenu, puis le prend en modèle (« Il faut le faire »). Aucun barème n'est proposé pour la France, d'où 1 ou 2."
-      },
-      "eco-02": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "c0b1e0df1c286051"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T18:28:41.116Z",
-        "note": "Texte signé par le candidat, présenté comme l'une de ses trois priorités. Même sens dans son texte du 11 octobre 2025, où il défend la taxe Zucman de 2 % et « les impôts sur les plus hauts patrimoines »."
-      },
-      "eco-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "eco-04": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "ce179dcfca6c2d9d"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Intervention en séance sur la vie chère dans les outre-mer."
-      },
-      "eco-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "eco-06": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "2ccce625b57db45f"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Texte du programme sur le site de campagne officiel, dans le « Mot de la fin » signé Sophie Taillé-Polian, responsable du programme et porte-parole de Ruffin : c'est un texte de campagne, pas une citation directe de Ruffin. Un SMIC à 1 600 "
-      },
-      "lib-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "8584096d9693981a"
-        ],
-        "basis": "vote",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T09:03:24.940Z",
-        "note": "Vote Pour en lecture définitive (scrutin n° 8280, 15 juillet 2026), comme en première et en deuxième lecture."
-      },
-      "lib-02": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "lib-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "lib-04": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "lib-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "lib-06": {
-        "value": -2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "3eae400675370265"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Source : déclaration publique du candidat (blog officiel). Il refuse explicitement toute extension aux mères accompagnatrices, aux étudiants et aux licenciés sportifs, et défend la loi de 2004 telle qu'elle est. Opposition jugée catégorique"
-      },
-      "eur-01": {
-        "value": -2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "78ddc7a80cafc0ba"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Texte signé par François Ruffin. Il défend une « Europe des coopérations » entre nations volontaires, « et non par le supranational »."
-      },
-      "eur-02": {
-        "value": 2,
-        "status": "parti-uniquement",
-        "sources": [
-          "32f89826a79b55c1"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T18:28:41.116Z",
-        "note": "Texte du parti. Le cahier agricole du programme 2027 va dans le même sens : il veut défendre des prix minimums « quitte à imposer un rapport de force avec la Commission européenne, qui pourrait juger ces dispositions non conformes aux trait"
-      },
-      "eur-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "eur-04": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "32a19e9cf0ec81c4"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T18:28:41.116Z",
-        "note": "Édito signé François Ruffin, centré sur l'agriculture. Le même cahier propose de « sortir des traités de libre-échange mortifères, signés avec des pays qui ne respectent pas nos exigences sociales et environnementales »."
-      },
-      "eur-05": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "eur-06": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "fe2508d3c267c6e5"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Texte signé par François Ruffin. Pas de montant ni d’objectif chiffré."
-      },
-      "tra-01": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "2ccce625b57db45f"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "« Mot de la fin » du cahier, signé Sophie Taillé-Polian, responsable du programme et porte-parole de F. Ruffin. Retour à 60 ans présenté comme une mesure forte, sans réserve. Le cahier prévoit aussi des trimestres en plus pour les métiers p"
-      },
-      "tra-02": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "parti-uniquement",
-        "sources": [
-          "85a91460626dd6f7"
-        ],
-        "basis": "parti",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T09:03:24.940Z",
-        "note": "Texte du parti. « Le faire » renvoie à la taxation des plus hauts revenus et patrimoines : de nouvelles recettes pour, entre autres, l’hôpital."
-      },
-      "tra-03": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "75b439b683c0c7e4"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Il réclame des embauches massives d’enseignants et la fin des suppressions de postes, sans objectif chiffré d’élèves par classe."
-      },
-      "tra-04": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "d33a2ad11d1b8d93"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Position catégorique, qui va au-delà de l'affirmation : encadrement partout, compléments de loyer encadrés. L'édito de Ruffin parle aussi du « plafonnement des loyers partout »."
-      },
-      "tra-05": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "a26fc6ab3cf4b9f2"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Critique explicite et hostile des durcissements passés, faits pour inciter à reprendre un emploi (le même passage vise aussi le durcissement annoncé en 2024). Mais il n'y a pas d'engagement à les annuler, d'où -2 ou -1. Mise en forme en gra"
-      },
-      "tra-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "cli-01": {
-        "value": 1,
-        "status": "explicite",
-        "sources": [
-          "dbc604d6f3ccee53"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Source : programme 2027. Favorable avec condition : il poursuit les 6 EPR2, présentés surtout comme un remplacement. La phrase suivante dit : « La décision de construire ou non huit réacteurs EPR2 supplémentaires sera prise en fonction du d"
-      },
-      "cli-02": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "571ff780e16f73da"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Source : programme 2027. La mesure fait partie de la liste que le programme propose de « soumettre au vote des Français, par référendum ». Elle n'est donc pas un engagement direct : 1 ou 2. Même cahier : « réduire de moitié le trafic aérien"
-      },
-      "cli-03": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "78408a2f16412ec1"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Source : programme 2027. Le même cahier reconnaît le coût : « la conversion coûte parfois du rendement les premières années ». Il veut que ce risque ne repose plus sur le seul paysan. Le cahier « travaillisme écologique » vise à « sortir de"
-      },
-      "cli-04": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "2619082957217dfa"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Confiance faible. Déclaration de 2020 (proposition de loi), antérieure aux sources prioritaires. Elle porte sur une mesure voisine : la fiscalité du transport aérien, où il préfère des quotas individuels aux taxes. Il n'y parle pas des éner"
-      },
-      "cli-05": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "ambigu",
-        "sources": [
-          "08ba9fa5bc3bfa5c"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Mesure limitée aux TER l’été ; pas de gratuité générale."
-      },
-      "cli-06": {
-        "set": [
-          -1,
-          0
-        ],
-        "status": "ambigu",
-        "sources": [
-          "6f9a9b634386f522"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Source : programme 2027. Position ambivalente. Il critique le recul sur les normes, la loi Duplomb et l'affaiblissement de la démocratie de l'eau par la loi d'urgence agricole. Mais il critique aussi l'accumulation de normes : « de la régul"
-      },
-      "dem-01": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "3a23fc47effd6076"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T18:28:41.116Z",
-        "note": "Lettre ouverte à Édouard Philippe. Il approuve, en une phrase, son jugement d'une proportionnelle « inutile », sans développer. Le programme 2027 n'en parle pas. Opposition claire mais brève, d'où -2 ou -1."
-      },
-      "dem-02": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "2eb6fc8990233b69"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z",
-        "note": "Engagement du programme 2027, sans condition. Le programme ne précise ni le seuil de signatures ni le champ du RIC. Même sens dans le manifeste de Debout! (texte du parti, non daté) : « Une nouvelle République? Oui, c’est l’horizon. Le prem"
-      },
-      "dem-03": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "dem-04": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "673ad22a256ae708"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T18:28:41.116Z",
-        "note": "Le programme en fait une condition d'éligibilité automatique (« nous introduirons une nouvelle condition d’éligibilité »), qui couvre les manquements au devoir de probité, « fraude fiscale et électorale incluses ». Aucune exception n'est pr"
-      },
-      "dem-05": {
-        "set": [
-          0,
-          1
-        ],
-        "status": "ambigu",
-        "sources": [
-          "4d6a981879f4db2a"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Mot de la fin de la responsable du programme ; orientation décentralisatrice sans transfert précis de ressources."
-      },
-      "dem-06": {
-        "missing": true,
-        "status": "inconnu",
-        "note": "Aucune position explicite trouvée.",
-        "codedBy": "ia",
-        "codedAt": "2026-10-08T15:43:20.824Z"
-      },
-      "eco-10": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "7a870dc415d9d7ef"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z"
-      },
-      "tra-08": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "7060ff123aa5db59"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Lettre du candidat contre la « capitalisation obligatoire » proposée par Édouard Philippe ; il défend une hausse des cotisations du système par répartition."
-      },
-      "tra-09": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "339dc5c125e419a3"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z"
-      },
-      "log-01": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "dd3027f4400b7082"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Critique du projet d'abrogation de la loi SRU, sans engagement chiffré."
-      },
-      "log-02": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "c4c3d9262723f458"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z"
-      },
-      "log-03": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "40cff11ebc6b1307"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Propose d'étendre l'interdiction aux meublés touristiques, ce qui suppose son maintien."
-      },
-      "log-04": {
-        "value": 0,
-        "status": "explicite",
-        "sources": [
-          "d45350dbe5a65539"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Voie médiane : ni suppression ni maintien en l'état, décision renvoyée à des assises locales de la qualité de l'air."
-      },
-      "cli-07": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "c749c4115c629756"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Le même cahier prévoit de relocaliser une industrie de production d'éoliennes en France."
-      },
-      "ani-07": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "a59ded5e623e5ec6"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T13:44:39.674Z",
-        "note": "Le cahier « Pour une exception agriculturelle française » prévoit aussi d'interdire les importations à des prix inférieurs aux prix planchers fixés nationalement."
-      },
-      "cli-08": {
-        "value": 2,
-        "status": "explicite",
-        "sources": [
-          "29395d1aa00daabb"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Sortie « progressive » du marché de l’électricité, prix fondés sur les coûts réels de production."
-      },
-      "eur-07": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "e90e9addcdb8bcac"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Intervention en séance. Il s’est abstenu sur la résolution, opposé à l’adhésion de l’Ukraine à l’UE."
-      },
-      "san-03": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "624b75a5af8f085c"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Intervention en séance sur le PLFSS 2026."
-      },
-      "san-02": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "624b75a5af8f085c"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Il s’oppose au doublement des franchises et veut un remboursement intégral, sans demander explicitement leur suppression."
-      },
-      "eco-08": {
-        "value": 1,
-        "status": "declaration-provisoire",
-        "sources": [
-          "68fd9d7b13110713"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Exonération de la transmission de la résidence jusqu’à 300 000 euros, avec une hausse de l’imposition des plus gros patrimoines (1 % et 0,1 %)."
-      },
-      "dem-10": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "3ce4ba121532bab4"
-        ],
-        "basis": "vote",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Vote pour l’article premier (anti-concentration des médias), adopté. En séance, il défend l’indépendance de la presse « à l’égard des puissances d’argent ». Un vote n’est pas un engagement de campagne."
-      },
-      "ani-01": {
-        "value": 1,
-        "status": "declaration-provisoire",
-        "sources": [
-          "1701b518c2c180f5"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-09T14:25:28.451Z",
-        "note": "Objectif de fin de l’élevage intensif ; son plan agricole 2027 précise que cette transition « ne s’imposera pas à coups de normes », mais sera rémunérée et accompagnée."
-      },
-      "tra-11": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "2ccce625b57db45f"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Retraite à 60 ans (acquis du Nouveau Front populaire repris par le programme)."
-      },
-      "tra-14": {
-        "value": 1,
-        "status": "explicite",
-        "sources": [
-          "3593a9e585b223bd"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Nationalisation au cas par cas (« quitte à ») ; le cahier écologique prévoit aussi un retour progressif à une production d’électricité 100 % publique."
-      },
-      "ani-09": {
-        "value": 1,
-        "status": "explicite",
-        "sources": [
-          "a73abbe10581f559"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Soutien aux expérimentations « dans tous les territoires », pas de généralisation nationale."
-      },
-      "eco-12": {
-        "value": 2,
-        "status": "declaration-provisoire",
-        "sources": [
-          "26d19d17db8f64df"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Défense en séance de son amendement I-2362 (PLF 2026) : taux de 60 % au-delà de 1,6 million d’euros, abattement de 300 000 €."
-      },
-      "imm-03": {
-        "value": -2,
-        "status": "explicite",
-        "sources": [
-          "49ad99fb1ee545f6"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z"
-      },
-      "eco-09": {
-        "set": [
-          -1,
-          -2
-        ],
-        "status": "ambigu",
-        "sources": [
-          "1d96ab7e7b2eecf0"
-        ],
-        "basis": "programme-2027",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Recrutements pour réinternaliser les compétences de l’État ; pas de chiffre global d’agents."
-      },
-      "tra-07": {
-        "set": [
-          1,
-          2
-        ],
-        "status": "declaration-provisoire",
-        "sources": [
-          "56306eafcd2c4fa2"
-        ],
-        "basis": "declaration",
-        "codedBy": "ia",
-        "codedAt": "2026-10-10T08:49:32.693Z",
-        "note": "Amendement de groupe (Écologiste et social) dont F. Ruffin est cosignataire ; pas une déclaration orale."
       }
     },
     "delphine-batho": {
@@ -15121,15 +14407,18 @@
         "note": "Rendement annoncé : 15 milliards d’euros par an."
       },
       "tra-11": {
-        "value": -1,
-        "status": "declaration-provisoire",
+        "status": "ambigu",
         "sources": [
           "ecf2d2c6fc63b087"
         ],
         "basis": "declaration",
         "codedBy": "ia",
         "codedAt": "2026-10-10T07:56:33.406Z",
-        "note": "Retour à 62 ans, mais son projet prévoit que certains (les cadres, à l’espérance de vie plus longue) partent plus tard."
+        "note": "Intensité discutable : La citation est catégorique : abroger la réforme de 2023 et revenir à 62 ans, donc en dessous de 64. La réserve « on ne pourra pas faire 60 ans » ne porte que sur l'ampleur de la baisse, pas sur l'opp",
+        "set": [
+          -2,
+          -1
+        ]
       },
       "edu-07": {
         "value": -2,
@@ -24651,6 +23940,443 @@
         "note": "Aucune position explicite trouvée.",
         "codedBy": "ia",
         "codedAt": "2026-11-13T20:34:58.159Z"
+      }
+    },
+    "raphael-glucksman": {
+      "eco-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-08": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "fd6a326e41dfab84"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Date approximative. Déclaration du candidat lors de sa candidature (propos entre guillemets dans l'article). Il annonce que 99 % des héritages ne seront pas affectés, donc pas de baisse pour la plupart. Ce n'est pas un refus explicite d'une"
+      },
+      "eco-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-11": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "eco-12": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "fd6a326e41dfab84"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Date approximative. Déclaration de candidature 2027 (propos entre guillemets). Le même passage indique que la mesure « permettra de récupérer 15 milliards d'euros ». Il est catégorique sur la hausse pour le 1 % des plus gros héritages, mais"
+      },
+      "eco-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-01": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "ef97d1fb3c38b39a"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Ses mots en débat (2027). Il s'engage à revenir de 64 à 62 ans, pas à 60. Catégorique sur l'abaissement (2), mais il refuse un âge de départ identique pour tous, d'où set [1,2]. Transcription d'un site non officiel : vérifier sur la vidéo."
+      },
+      "tra-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-08": {
+        "value": -2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "f47cc45fc82fe16e"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Refus catégorique et explicite de toute capitalisation (« catégoriquement »), d'où -2. Transcription d'un site non officiel : vérifier sur la vidéo."
+      },
+      "tra-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-10": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-11": {
+        "set": [
+          -1,
+          -2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "0a7704b56e83ca05"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Le retour à 62 ans s'oppose à un relèvement général au-delà de 64 ans. Mais il ajoute que certains (« les cadres supérieurs dans les grandes administrations, les grandes entreprises ») « vont partir plus tard », sans préciser si c'est au-de"
+      },
+      "tra-12": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-13": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-14": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "san-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "san-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "san-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "san-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "san-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "san-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "edu-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "edu-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "edu-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "edu-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "edu-05": {
+        "set": [
+          -1,
+          0
+        ],
+        "status": "parti-uniquement",
+        "sources": [
+          "7fd90b44b9f47661"
+        ],
+        "basis": "parti",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Programme du parti, pas un engagement personnel du candidat. Il prévoit de réformer en profondeur Parcoursup, pas de le supprimer : plutôt opposé à la suppression ou position intermédiaire (réforme). Retours à la ligne du PDF remplacés par "
+      },
+      "edu-06": {
+        "value": 2,
+        "status": "declaration-provisoire",
+        "sources": [
+          "c220a99a1d6d97b8"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Propos du candidat tirés de son livre 'Nous avons encore envie' (2026), cités entre guillemets par Public Sénat. Engagement catégorique pour un service CIVIQUE obligatoire de 10 mois pour tous les jeunes (EHPAD, écoles, services publics, as"
+      },
+      "edu-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "tra-03": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "63f8f7ccfb5f9f76"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Propos tenus sur TF1, cités entre guillemets par Public Sénat. Engagement explicite à réduire le nombre d'élèves par classe, mais limité au primaire. Le recrutement d'enseignants n'est pas formulé mot pour mot dans la citation (LCP le parap"
+      },
+      "sec-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "sec-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "sec-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "sec-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "sec-08": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "sec-09": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "La citation trouvée ne porte pas directement sur cette question.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "imm-01": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "imm-02": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "imm-03": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "imm-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "imm-05": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "imm-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "imm-07": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "sec-04": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
+      },
+      "sec-05": {
+        "set": [
+          1,
+          2
+        ],
+        "status": "declaration-provisoire",
+        "sources": [
+          "fd669eb2704aacc6"
+        ],
+        "basis": "declaration",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z",
+        "note": "Ses propres mots, publiés sur Instagram et rapportés par l'AFP. Il appelle à voter la proposition de loi PS de régularisation « de plein droit » des étrangers ayant travaillé au moins 6 mois. Cette mesure va au-delà des seuls métiers en ten"
+      },
+      "sec-06": {
+        "missing": true,
+        "status": "inconnu",
+        "note": "Aucune position explicite trouvée.",
+        "codedBy": "ia",
+        "codedAt": "2026-11-23T10:56:11.933Z"
       }
     }
   },
@@ -35497,6 +35223,62 @@
       "url": "https://www.edouardphilippe.fr/programme/defense",
       "date": "2026-11-12",
       "passage": "Un soutien plein à l’Ukraine. Une dissuasion nucléaire modernisée."
+    },
+    {
+      "id": "fd6a326e41dfab84",
+      "title": "Héritages et droits de succession: que proposent les candidats à l'élection présidentielle?",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+      "date": "2026-08-27",
+      "passage": "\"taxer les méga-héritages\", \"les 1% les plus gros\". \"99% des héritages ne seront pas affectés\""
+    },
+    {
+      "id": "ef97d1fb3c38b39a",
+      "title": "Raphaël Glucksmann et le social : ses positions (transcription verbatim du débat de la primaire « Choisir 2027 », BFMTV)",
+      "publisher": "WikiGlucksmann (site non officiel) ; source primaire : BFMTV, vidéo https://www.youtube.com/watch?v=",
+      "url": "https://www.wikiglucksmann.fr/themes/glucksmann-social.html",
+      "date": "2026-10-04",
+      "passage": "Pour lui répondre directement, nous abrogerons la réforme injuste de 2023. Et pour lui répondre aussi catégoriquement, il n'y aura pas de capitalisation. Maintenant, non, il faut savoir dire aussi quand on est en désaccord, non, on ne pourra pas faire 60 ans, donc ce sera 62."
+    },
+    {
+      "id": "f47cc45fc82fe16e",
+      "title": "Raphaël Glucksmann et le social : ses positions (transcription verbatim du débat de la primaire « Choisir 2027 », BFMTV)",
+      "publisher": "WikiGlucksmann (site non officiel) ; source primaire : BFMTV, vidéo https://www.youtube.com/watch?v=",
+      "url": "https://www.wikiglucksmann.fr/themes/glucksmann-social.html",
+      "date": "2026-10-04",
+      "passage": "Pour lui répondre directement, nous abrogerons la réforme injuste de 2023. Et pour lui répondre aussi catégoriquement, il n'y aura pas de capitalisation."
+    },
+    {
+      "id": "0a7704b56e83ca05",
+      "title": "Raphaël Glucksmann et le social : ses positions (transcription verbatim du débat de la primaire « Choisir 2027 », BFMTV)",
+      "publisher": "WikiGlucksmann (site non officiel) ; source primaire : BFMTV, vidéo https://www.youtube.com/watch?v=",
+      "url": "https://www.wikiglucksmann.fr/themes/glucksmann-social.html",
+      "date": "2026-10-04",
+      "passage": "Maintenant, non, il faut savoir dire aussi quand on est en désaccord, non, on ne pourra pas faire 60 ans, donc ce sera 62. Mais il y a surtout la pénibilité qu'il faut prendre en compte"
+    },
+    {
+      "id": "7fd90b44b9f47661",
+      "title": "Acte un : notre vision pour la France (projet de Place publique), chantier 10 « Bâtir l’université du XXIème siècle »",
+      "publisher": "Place publique",
+      "url": "https://place-publique.eu/wp-content/uploads/2025/06/20250623_Projet_placepublique_acte1_BAT_BaDef.pdf",
+      "date": "2025-06-23",
+      "passage": "Repenser en profondeur Parcoursup à travers une concertation réunissant parents, étudiants, universités et acteurs de l’éducation."
+    },
+    {
+      "id": "c220a99a1d6d97b8",
+      "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+      "publisher": "Public Sénat",
+      "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+      "date": "2026-08-24",
+      "passage": "Tous les jeunes Français et toutes les jeunes Françaises consacreront dix mois de leur vie à la nation. Ils sortiront de leurs quartiers respectifs pour se regrouper quelques semaines"
+    },
+    {
+      "id": "fd669eb2704aacc6",
+      "title": "« Ils travaillent en France. Ils cotisent. Mais on leur refuse leur titre de séjour » : le PS et Glucksmann défendent la régularisation de centaines de milliers de travailleurs sans-papiers",
+      "publisher": "AFP / Sud Ouest (republié par Head Topics)",
+      "url": "https://fr.headtopics.com/news/ils-travaillent-en-france-ils-cotisent-mais-on-leur-89991833",
+      "date": "2026-11-19",
+      "passage": "Ils travaillent en France. Ils cotisent. Mais on leur refuse leur titre de séjour"
     }
   ],
   "refreshedAt": {
@@ -35540,6 +35322,7 @@
     "clara-egger": "2026-11-02T09:37:03.668Z",
     "jean-francois-legendre": "2026-11-09T09:55:03.712Z",
     "antoine-mikolajczak": "2026-11-09T10:00:43.489Z",
-    "teddy-riner": "2026-11-13T20:34:58.159Z"
+    "teddy-riner": "2026-11-13T20:34:58.159Z",
+    "raphael-glucksman": "2026-11-23T10:56:11.933Z"
   }
 }

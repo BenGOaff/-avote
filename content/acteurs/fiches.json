@@ -201,5 +201,12 @@
     "basedOn": "live-202611020943",
     "generatedAt": "2026-11-02T09:44:06.048Z",
     "model": "claude-sonnet-5-5"
+  },
+  "raphael-glucksman": {
+    "analysis": "Sur les successions, les propos documentés visent les plus gros héritages : « taxer les méga-héritages », avec « 99% des héritages » non affectés. Sur les retraites, il annonce l'abrogation de la réforme de 2023, écarte la capitalisation et fixe l'âge à 62 ans, en refusant 60 ans, avec la pénibilité en ligne de mire. À l'école, le programme cite un plan sur cinq ans : rémunération des enseignants, baisse des effectifs par classe en primaire, bâti scolaire. Le parti propose de « repenser en profondeur » Parcoursup plutôt que de le supprimer. Il est favorable à un service national de dix mois et à la régularisation de travailleurs sans titre de séjour. Sur la plupart des autres sujets, on n'a pas trouvé de position explicite.",
+    "remark": "Le financement des mesures sur les retraites et l'école n'apparaît dans aucune des citations retenues.",
+    "basedOn": "live-202611231103",
+    "generatedAt": "2026-11-23T11:03:28.070Z",
+    "model": "claude-sonnet-5-5"
   }
 }

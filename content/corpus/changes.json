@@ -12294,5 +12294,112 @@
     "from": "2",
     "to": "[1,2]",
     "source": "fc5374de071a6def"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "eco-08",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "fd6a326e41dfab84"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "eco-12",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "fd6a326e41dfab84"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "tra-01",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "ef97d1fb3c38b39a"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "tra-08",
+    "from": "inconnue",
+    "to": "-2",
+    "source": "f47cc45fc82fe16e"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "tra-11",
+    "from": "inconnue",
+    "to": "[-1,-2]",
+    "source": "0a7704b56e83ca05"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "edu-05",
+    "from": "inconnue",
+    "to": "[-1,0]",
+    "source": "7fd90b44b9f47661"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "edu-06",
+    "from": "inconnue",
+    "to": "2",
+    "source": "c220a99a1d6d97b8"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "tra-03",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "63f8f7ccfb5f9f76"
+  },
+  {
+    "date": "2026-11-23T10:56:11.933Z",
+    "actor": "raphael-glucksman",
+    "item": "sec-05",
+    "from": "inconnue",
+    "to": "[1,2]",
+    "source": "fd669eb2704aacc6"
+  },
+  {
+    "date": "2026-11-23T11:02:49.846Z",
+    "actor": "gabriel-attal",
+    "item": "tra-08",
+    "from": "2",
+    "to": "[1,2]"
+  },
+  {
+    "date": "2026-11-23T11:02:57.840Z",
+    "actor": "raphael-glucksmann",
+    "item": "tra-11",
+    "from": "-1",
+    "to": "[-2,-1]"
+  },
+  {
+    "date": "2026-11-23T11:03:22.985Z",
+    "actor": "marine-le-pen",
+    "item": "sec-05",
+    "from": "-2",
+    "to": "[-2,-1]"
+  },
+  {
+    "date": "2026-11-23T11:03:22.985Z",
+    "actor": "bruno-retailleau",
+    "item": "sec-05",
+    "from": "-2",
+    "to": "[-2,-1]"
+  },
+  {
+    "date": "2026-11-23T11:03:22.985Z",
+    "actor": "fabien-roussel",
+    "item": "sec-05",
+    "from": "2",
+    "to": "[1,2]"
   }
 ]
