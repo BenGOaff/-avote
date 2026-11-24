@@ -1,0 +1,35 @@
+{
+  "id": "2026-11-24-fracture-cli-06-fracture",
+  "at": "2026-11-24T18:18:02.863Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "ALLÉGER LES NORMES ?",
+    "title": "Normes environnementales : Attal et Zemmour d'un côté, Mélenchon et Glucksmann de l'autre",
+    "line": "19 candidats se sont prononcés : 5 nettement pour alléger les normes, 7 nettement contre.",
+    "yes": [
+      "gabriel-attal",
+      "david-lisnard",
+      "eric-zemmour",
+      "nicolas-dupont-aignan",
+      "olivier-becht"
+    ],
+    "no": [
+      "jean-luc-melenchon",
+      "marine-tondelier",
+      "delphine-batho",
+      "nathalie-arthaud",
+      "selma-labib",
+      "raphael-glucksmann",
+      "mira-markovic"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Alléger les normes environnementales pour agriculteurs et entreprises ? Attal, Lisnard et Zemmour disent oui. Mélenchon, Tondelier et Glucksmann disent non. Tu te ranges avec qui ?",
+    "linkedin": "Alléger les normes environnementales : Gabriel Attal et Éric Zemmour pour, Jean-Luc Mélenchon et Raphaël Glucksmann contre.\n\nL'affirmation soumise aux candidats : « Les normes environnementales imposées aux agriculteurs et aux entreprises devraient être allégées. »\n\n19 candidats se sont prononcés. 5 sont nettement pour : Gabriel Attal, David Lisnard, Éric Zemmour, Nicolas Dupont-Aignan et Olivier Becht.\n\n7 sont nettement contre : Jean-Luc Mélenchon, Marine Tondelier, Delphine Batho, Nathalie Arthaud, Selma Labib, Raphaël Glucksmann et Mira Markovic.\n\nEt toi, tu allégerais ces normes, ou tu les garderais telles quelles ?\n\n#presidentielle2027 #normesenvironnementales",
+    "facebook": "Alléger les normes environnementales pour les agriculteurs et les entreprises : Gabriel Attal, David Lisnard et Éric Zemmour sont pour. Jean-Luc Mélenchon, Marine Tondelier et Raphaël Glucksmann sont contre. Tu te ranges avec quel camp ? Le test est sur çavote.fr",
+    "instagram": "Normes environnementales : Attal et Zemmour disent oui, Mélenchon et Glucksmann non\nL'affirmation : les normes imposées aux agriculteurs et aux entreprises devraient être allégées.\n19 candidats se sont prononcés.\n5 sont nettement pour, dont Gabriel Attal et David Lisnard.\n7 sont nettement contre, dont Marine Tondelier et Raphaël Glucksmann.\nEt toi, tu alléges ou pas ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #normesenvironnementales #agriculture"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
