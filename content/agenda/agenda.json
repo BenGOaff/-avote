@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-24",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -277,6 +277,24 @@
       "addedBy": "veille claude-haiku-5-5"
     },
     {
+      "id": "2026-12-05-meeting-de-jean-luc-melenchon-au-havre",
+      "kind": "meeting",
+      "title": "Meeting de Jean-Luc Mélenchon au Havre",
+      "date": "2026-12-05",
+      "summary": "Meeting annoncé par Le Monde, sur le territoire d'Édouard Philippe, avant un déplacement d'une semaine aux Antilles avant Noël.",
+      "who": [
+        "jean-luc-melenchon"
+      ],
+      "place": "Le Havre",
+      "source": {
+        "title": "Jean-Luc Mélenchon tiendra un meeting le samedi 9 janvier à Montpellier",
+        "publisher": "Le Monde",
+        "url": "https://www.lemonde.fr/politique/article/2026/11/24/jean-luc-melenchon-tiendra-un-meeting-le-samedi-9-janvier-a-montpellier_6814763_823448.html"
+      },
+      "quote": "un meeting au Havre, sur les terres d’Edouard Philippe, le 5 décembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
       "id": "2026-12-06-premier-meeting-de-raphael-glucksmann",
       "kind": "meeting",
       "title": "Premier meeting de Raphaël Glucksmann",
@@ -358,6 +376,38 @@
         "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/20/presidentielle-2027-marine-tondelier-estime-que-la-balle-est-dans-le-camp-de-jean-luc-melenchon_6813644_6205049.html"
       },
       "quote": "entre les 10 et 13 décembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2026-12-17-echeance-constitutionnelle-pour-le-budget-2027",
+      "kind": "institution",
+      "title": "Échéance constitutionnelle pour le budget 2027",
+      "date": "2026-12-17",
+      "summary": "Date citée par L'Humanité comme échéance constitutionnelle pour le budget 2027, après le rejet des projets de loi de finances et de financement de la Sécurité sociale à l'Assemblée nationale.",
+      "source": {
+        "title": "Budget 2027 : dans une lettre aux parlementaires, Sébastien Lecornu en appelle au « compromis » pour mieux s’exonérer",
+        "publisher": "L'Humanité",
+        "url": "https://www.humanite.fr/politique/austerite/budget-2027-dans-une-lettre-aux-parlementaires-sebastien-lecornu-en-appelle-au-compromis-pour-mieux-sexonerer"
+      },
+      "quote": "À trois semaines du couperet constitutionnel du 17 décembre",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2027-01-09-meeting-de-jean-luc-melenchon-a-montpellier",
+      "kind": "meeting",
+      "title": "Meeting de Jean-Luc Mélenchon à Montpellier",
+      "date": "2027-01-09",
+      "summary": "Meeting annoncé par Le Monde pour finir la campagne de Jean-Luc Mélenchon, qui sera candidat à la présidentielle.",
+      "who": [
+        "jean-luc-melenchon"
+      ],
+      "place": "Montpellier",
+      "source": {
+        "title": "Jean-Luc Mélenchon tiendra un meeting le samedi 9 janvier à Montpellier",
+        "publisher": "Le Monde",
+        "url": "https://www.lemonde.fr/politique/article/2026/11/24/jean-luc-melenchon-tiendra-un-meeting-le-samedi-9-janvier-a-montpellier_6814763_823448.html"
+      },
+      "quote": "tiendra un meeting le samedi 9 janvier à Montpellier",
       "addedBy": "veille claude-haiku-5-5"
     }
   ]
