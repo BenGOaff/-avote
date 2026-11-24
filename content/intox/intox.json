@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-23T19:18:30.955Z",
+  "updatedAt": "2026-11-24T18:56:53.090Z",
   "items": [
+    {
+      "id": "les-prestations-sociales-permettraient-de-gagner-plus-d-arge-c6b934",
+      "claim": "Les prestations sociales permettraient de gagner plus d'argent qu'en travaillant",
+      "verdict": "faux",
+      "truth": "Plusieurs études démentent que les prestations sociales rapportent plus d'argent que le travail.",
+      "spreaders": [],
+      "topic": "travail",
+      "firstSeen": "2026-11-24",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/est-il-vrai-que-lon-gagne-plus-dargent-grace-aux-prestations-sociales-quen-travaillant/",
+          "title": "Est-il vrai que l’on gagne plus d’argent grâce aux prestations sociales qu’en travaillant ?",
+          "date": "2026-11-24",
+          "quote": "Faux. Certains politiques et internautes affirment régulièrement que les prestations sociales permettraient de gagner plus d'argent que le travail. Plusieurs études démentent cette fausse information."
+        }
+      ]
+    },
     {
       "id": "dominique-de-villepin-n-aurait-jamais-privatise-les-autorout-e9ebad",
       "claim": "Dominique de Villepin n'aurait jamais privatisé les autoroutes, qui seraient restées propriété publique.",
