@@ -1,7 +1,83 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-24T18:56:53.090Z",
+  "updatedAt": "2026-11-25T18:00:43.863Z",
   "items": [
+    {
+      "id": "le-conseil-d-etat-aurait-valide-la-circulaire-de-gerald-darm-f710cc",
+      "claim": "Le Conseil d'État aurait validé la circulaire de Gérald Darmanin durcissant les sanctions contre les casseurs.",
+      "verdict": "trompeur",
+      "truth": "Le juge des référés ne s'est prononcé que sur l'urgence, pas sur le fond, c'est-à-dire sur la légalité du texte.",
+      "spreaders": [
+        "Gérald Darmanin"
+      ],
+      "topic": "securite",
+      "firstSeen": "2026-11-25",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/17-octobre-le-conseil-detat-a-t-il-valide-la-circulaire-de-gerald-darmanin-qui-vise-a-durcir-les-sanctions-contre-les-casseurs/",
+          "title": "17 octobre : le Conseil d’État a-t-il validé la circulaire de Gérald Darmanin, qui vise à durcir les sanctions contre les casseurs ?",
+          "date": "2026-11-25",
+          "quote": "Le juge s’est seulement prononcé sur l’urgence, pas sur le fond, à savoir la légalité du texte."
+        }
+      ]
+    },
+    {
+      "id": "les-journalistes-sanctionnes-par-l-ue-pour-leurs-activites-a-65c6ce",
+      "claim": "Les journalistes sanctionnés par l'UE pour leurs activités au profit de la Russie n'auraient aucun recours contre la décision.",
+      "verdict": "faux",
+      "truth": "Les traités organisent un recours devant le juge de l'Union, que plusieurs personnes sanctionnées ont déjà exercé.",
+      "spreaders": [],
+      "topic": "europe",
+      "firstSeen": "2026-11-25",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/les-journalistes-sanctionnes-par-lue-pour-leurs-activites-au-profit-de-la-russie-nont-ils-vraiment-aucun-recours-contre-la-decision/",
+          "title": "Les journalistes sanctionnés par l’UE pour leurs activités au profit de la Russie n’ont-ils vraiment aucun recours contre la décision ?",
+          "date": "2026-11-25",
+          "quote": "C’est inexact : les traités organisent un recours devant le juge de l’Union, que plusieurs personnes sanctionnées ont déjà exercé."
+        }
+      ]
+    },
+    {
+      "id": "la-profession-de-commissaire-de-justice-serait-illegale-car-432771",
+      "claim": "La profession de commissaire de justice serait illégale, car l'ordonnance qui la crée n'a pas été ratifiée par le Parlement.",
+      "verdict": "faux",
+      "truth": "Passé un certain délai, le Conseil constitutionnel admet que l'ordonnance a la même valeur qu'une loi, donc elle peut s'appliquer.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-11-25",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/la-profession-de-commissaire-de-justice-est-elle-illegale-2/",
+          "title": "La profession de commissaire de justice est-elle illégale ?",
+          "date": "2026-11-25",
+          "quote": "Le Conseil constitutionnel admet que, passé un certain délai, l’ordonnance a la même valeur qu’une loi. Elle peut donc s’appliquer."
+        }
+      ]
+    },
+    {
+      "id": "une-etude-sur-le-cv-anonyme-prouverait-qu-il-n-existe-pas-de-2696d3",
+      "claim": "Une étude sur le CV anonyme prouverait qu'il n'existe pas de discrimination à l'embauche en France, et que la France serait le pays le moins raciste du monde.",
+      "verdict": "trompeur",
+      "truth": "Les travaux cités portent sur les effets du CV anonyme et ne disent pas qu'il n'existe pas de discrimination à l'embauche.",
+      "spreaders": [
+        "Marine Le Pen"
+      ],
+      "topic": "autre",
+      "firstSeen": "2026-11-25",
+      "debunks": [
+        {
+          "publisher": "CheckNews (Libération)",
+          "url": "https://www.liberation.fr/checknews/racisme-que-dit-vraiment-letude-citee-par-marine-le-pen-pour-affirmer-quil-nexiste-pas-de-discrimination-a-lembauche-20261125_6PS6DFE5GRFK3HGE4XXWTKUVB4/",
+          "title": "Racisme : que dit vraiment l’étude citée par Marine Le Pen pour affirmer qu’il n’existe «pas de discrimination» à l’embauche ?",
+          "date": "2026-11-25",
+          "quote": "en leur faisant dire ce qu’ils ne disent pas"
+        }
+      ]
+    },
     {
       "id": "les-prestations-sociales-permettraient-de-gagner-plus-d-arge-c6b934",
       "claim": "Les prestations sociales permettraient de gagner plus d'argent qu'en travaillant",
