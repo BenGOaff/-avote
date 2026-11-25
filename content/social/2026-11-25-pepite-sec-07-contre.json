@@ -1,0 +1,28 @@
+{
+  "id": "2026-11-25-pepite-sec-07-contre",
+  "at": "2026-11-25T17:37:22.003Z",
+  "kind": "pepite",
+  "card": {
+    "kicker": "SEUL CONTRE NEUF",
+    "title": "Peines planchers : Mélenchon est le seul des 10 candidats à dire non",
+    "line": "Neuf candidats sur dix sont pour des peines minimales obligatoires. Un seul dit non.",
+    "actor": "jean-luc-melenchon",
+    "quote": "Avec des peines planchers, ChatGPT remplace un juge sans problème.",
+    "cta": "Et toi, tu te ranges où ?"
+  },
+  "text": {
+    "x": "Peines planchers : 9 candidats sur 10 sont pour. Jean-Luc Mélenchon est le seul contre. Sa formule : « ChatGPT remplace un juge sans problème. » Tu te ranges avec qui ?",
+    "linkedin": "Neuf candidats à la présidentielle sur dix sont favorables aux peines planchers. Un seul s'y oppose : Jean-Luc Mélenchon.\n\nUne peine plancher est une peine minimale obligatoire, fixée pour certains délits et crimes. Sur cette mesure, dix candidats se sont prononcés : neuf sont nettement pour, un seul est nettement contre.\n\nSur son blog, Jean-Luc Mélenchon écrit : « Pas de contextualisation des faits, ni de circonstances atténuantes, pas de hiérarchisation des peines. Clic clac. Avec des peines planchers, ChatGPT remplace un juge sans problème. »\n\nUne peine minimale obligatoire protège-t-elle mieux, ou retire-t-elle au juge la possibilité d'adapter la sanction ? Qu'en penses-tu ?\n\n#presidentielle2027",
+    "facebook": "Sur les peines minimales obligatoires, neuf candidats à la présidentielle sur dix sont pour. Jean-Luc Mélenchon est le seul à s'y opposer, avec cette phrase : « ChatGPT remplace un juge sans problème. » Tu te ranges avec la majorité ou avec lui ? Le test est sur çavote.fr",
+    "instagram": "Peines planchers : Mélenchon seul contre neuf candidats\nSur dix candidats, neuf veulent des peines minimales obligatoires.\nJean-Luc Mélenchon est le seul à dire non.\nSon argument : « Avec des peines planchers, ChatGPT remplace un juge sans problème. »\nTu es plutôt côté juge ou côté plancher ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #peinesplanchers #justice"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test",
+  "source": {
+    "publisher": "melenchon.fr (blog de Jean-Luc Mélenchon)",
+    "url": "https://melenchon.fr/2024/11/16/est-ce-que-ca-va-mieux-en-lexpliquant/",
+    "title": "Est-ce que ça va mieux en l’expliquant ?",
+    "quote": "Pas de contextualisation des faits, ni de circonstances atténuantes, pas de hiérarchisation des peines. Clic clac. Avec des peines planchers, ChatGPT remplace un juge sans problème.",
+    "who": "Jean-Luc Mélenchon"
+  }
+}
