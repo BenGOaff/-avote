@@ -1,7 +1,7 @@
 {
  "mentions": {
   "marine-le-pen": 4,
-  "dominique-de-villepin": 2,
+  "dominique-de-villepin": 3,
   "marine-tondelier": 4,
   "edouard-philippe": 3,
   "david-lisnard": 3,
@@ -27,7 +27,7 @@
   "rdv-test": "2026-10-29T21:25:58.653Z",
   "20261011-2055-primaire-de-la-gauche-sociale-democrate-raphael-gl": "2026-10-11T22:27:14.498Z",
   "20261012-1513-primaire-de-la-gauche-sociale-democrate-raphael-gl": "2026-10-12T16:05:27.013Z",
-  "cli-04-pour": "2026-10-12T16:05:27.013Z",
+  "cli-04-pour": "2026-11-26T17:18:04.387Z",
   "rdv-urne": "2026-11-13T22:11:07.712Z",
   "20261012-2335-carburants-sebastien-lecornu-affirme-que-le-gazole": "2026-10-13T00:57:43.877Z",
   "20261013-1404-bruno-retailleau-presente-un-plan-de-197-milliards": "2026-10-13T14:34:19.797Z",
@@ -587,7 +587,13 @@
   "20261126-0058-budget-2027-le-senat-reconduit-la-surtaxe-sur-les",
   "20261126-0058-lisnard-refuse-le-debat-propose-par-philippe-et-de",
   "20261126-0058-procureur-adjoint-de-paris-au-siege-du-rn-lors-d-u",
-  "20261126-0058-violences-contre-des-elus-plus-de-3-100-faits-rece"
+  "20261126-0058-violences-contre-des-elus-plus-de-3-100-faits-rece",
+  "20261126-1646-budget-de-la-secu-2027-la-commission-mixte-paritai",
+  "20261126-1646-huit-deputes-lr-annoncent-soutenir-david-lisnard-p",
+  "20261126-1646-loi-sru-david-lisnard-prevoit-de-la-supprimer-dans",
+  "20261126-1646-messages-antisemites-de-2013-mediapart-et-le-monde",
+  "20261126-1646-presidentielle-2027-david-lisnard-reclame-l-anonym",
+  "20261126-1646-regle-d-or-dans-la-constitution-lecornu-se-dit-fav"
  ],
  "rdv": 31
 }
