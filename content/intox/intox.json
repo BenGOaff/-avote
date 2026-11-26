@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-26T01:48:56.941Z",
+  "updatedAt": "2026-11-26T17:46:35.015Z",
   "items": [
+    {
+      "id": "une-photographie-montrerait-des-milliers-de-chretiens-defila-23acd1",
+      "claim": "Une photographie montrerait des milliers de chrétiens défilant dans les rues de Paris en déclarant que la France est une nation chrétienne.",
+      "verdict": "hors-contexte",
+      "truth": "Le cliché n'a pas été pris dans ce contexte et aucun rassemblement de ce type n'a récemment eu lieu dans la capitale.",
+      "spreaders": [],
+      "topic": "autre",
+      "firstSeen": "2026-11-26",
+      "debunks": [
+        {
+          "publisher": "Les Surligneurs",
+          "url": "https://lessurligneurs.eu/attention-a-cette-image-detournee-pour-montrer-un-suppose-rassemblement-chretien-a-paris/",
+          "title": "Attention à cette image détournée pour montrer un supposé rassemblement chrétien à Paris",
+          "date": "2026-11-26",
+          "quote": "Mais le cliché n'a pas été pris dans ce contexte et aucun rassemblement de ce type n'a récemment eu lieu dans la capitale."
+        }
+      ]
+    },
     {
       "id": "le-conseil-d-etat-aurait-valide-la-circulaire-de-gerald-darm-f710cc",
       "claim": "Le Conseil d'État aurait validé la circulaire de Gérald Darmanin durcissant les sanctions contre les casseurs.",
