@@ -1,7 +1,25 @@
 {
   "_note": "Intox démontées par des cellules de fact-checking reconnues. Chaque affirmation listée ici est FAUSSE ou trompeuse ; elle est citée pour être réfutée. Fichier écrit par scripts/intox.ts.",
-  "updatedAt": "2026-11-27T01:47:22.048Z",
+  "updatedAt": "2026-11-27T17:30:36.690Z",
   "items": [
+    {
+      "id": "david-lisnard-aurait-recours-a-des-bots-sur-les-reseaux-soci-bd4375",
+      "claim": "David Lisnard aurait recours à des bots sur les réseaux sociaux pour noyer les publications qui le citent aux côtés de Marine Le Pen",
+      "verdict": "faux",
+      "truth": "L'accusation d'utiliser des bots sur les réseaux sociaux pour ne pas être associé à Marine Le Pen est présentée comme une accusation infondée.",
+      "spreaders": [],
+      "topic": "democratie",
+      "firstSeen": "2026-11-27",
+      "debunks": [
+        {
+          "publisher": "Fake Off (20 Minutes)",
+          "url": "https://www.20minutes.fr/politique/4265767-20261127-presidentielle-2027-david-lisnard-accuse-utiliser-bots-reseaux-sociaux-etre-associe-pen?amp%3Bat_campaign=149",
+          "title": "Présidentielle 2027 : David Lisnard utilise-t-il des bots sur les réseaux pour ne pas être associé à Marine Le Pen ?",
+          "date": "2026-11-27",
+          "quote": "Une accusation infondée"
+        }
+      ]
+    },
     {
       "id": "une-photographie-montrerait-des-milliers-de-chretiens-defila-23acd1",
       "claim": "Une photographie montrerait des milliers de chrétiens défilant dans les rues de Paris en déclarant que la France est une nation chrétienne.",
