@@ -1,0 +1,42 @@
+{
+  "id": "2026-11-27-fracture-eur-09-fracture",
+  "at": "2026-11-27T16:58:15.653Z",
+  "kind": "fracture",
+  "card": {
+    "kicker": "4 CONTRE 15",
+    "title": "Quitter l'Union européenne : Zemmour et Roussel disent non, Philippot dit oui",
+    "line": "20 candidats à la présidentielle 2027 se sont prononcés. Seuls 4 veulent sortir de l'UE.",
+    "yes": [
+      "nicolas-dupont-aignan",
+      "florian-philippot",
+      "francois-asselineau",
+      "juan-branco"
+    ],
+    "no": [
+      "edouard-philippe",
+      "gabriel-attal",
+      "bruno-retailleau",
+      "david-lisnard",
+      "eric-zemmour",
+      "fabien-roussel",
+      "marine-tondelier",
+      "karim-bouamrane",
+      "nathalie-arthaud",
+      "anasse-kazib",
+      "selma-labib",
+      "raphael-glucksmann",
+      "xavier-bertrand",
+      "bernard-cazeneuve",
+      "dominique-de-villepin"
+    ],
+    "cta": "Et toi ? Fais le test"
+  },
+  "text": {
+    "x": "Quitter l'Union européenne ? Philippot, Dupont-Aignan, Asselineau et Branco disent oui. Zemmour, Roussel, Arthaud, Tondelier et Attal disent non. Tu te ranges avec qui ?",
+    "linkedin": "Quitter l'Union européenne : sur 20 candidats à la présidentielle 2027, 4 seulement disent oui.\n\nCe sont Nicolas Dupont-Aignan, Florian Philippot, François Asselineau et Juan Branco.\n\nEn face, 15 candidats disent non, de familles politiques très éloignées : Éric Zemmour, Fabien Roussel, Nathalie Arthaud, Marine Tondelier, Bruno Retailleau, Raphaël Glucksmann, Dominique de Villepin.\n\nSur ce sujet, la ligne de fracture ne suit pas le clivage gauche-droite habituel.\n\nCette affirmation fait partie du test : « La France devrait quitter l'Union européenne. » Tu l'aurais vu venir, ce front du refus de la sortie ? Qu'en penses-tu ?\n\n#presidentielle2027",
+    "facebook": "Quitter l'Union européenne : Zemmour, Roussel, Arthaud, Attal et Retailleau disent non. Philippot, Dupont-Aignan, Asselineau et Branco disent oui. Sur 20 candidats, ils sont 4 à vouloir sortir. Tu te ranges avec qui ? Le test est sur çavote.fr",
+    "instagram": "Zemmour et Roussel d'accord pour rester dans l'UE.\nSur 20 candidats, 4 seulement veulent en sortir :\nPhilippot, Dupont-Aignan, Asselineau, Branco.\nEn face, 15 noms, d'Attal à Arthaud, de Tondelier à Retailleau.\nEt toi, tu quittes l'Union européenne ou pas ?\nLe test est en lien dans la bio.\n\n#presidentielle2027 #Frexit #UnionEuropeenne"
+  },
+  "target": "/test",
+  "targetLabel": "Faire le test"
+}
