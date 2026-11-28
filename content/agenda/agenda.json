@@ -1,6 +1,6 @@
 {
   "_note": "Rendez-vous de campagne repérés dans la presse : chacun avec sa source et la phrase qui donne la date. Les échéances légales (tours, inscription, parrainages, campagne officielle) sont calculées dans src/lib/agenda.ts. Ajout automatique par la veille (scripts/veille.ts), jamais de date déduite.",
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-28",
   "events": [
     {
       "id": "2026-10-24-congres-du-rn-a-orleans",
@@ -408,6 +408,20 @@
         "url": "https://www.lemonde.fr/politique/article/2026/11/24/jean-luc-melenchon-tiendra-un-meeting-le-samedi-9-janvier-a-montpellier_6814763_823448.html"
       },
       "quote": "tiendra un meeting le samedi 9 janvier à Montpellier",
+      "addedBy": "veille claude-haiku-5-5"
+    },
+    {
+      "id": "2027-03-21-conclusions-de-la-convention-citoyenne-sur-les-f",
+      "kind": "institution",
+      "title": "Conclusions de la convention citoyenne sur les finances publiques",
+      "date": "2027-03-21",
+      "summary": "Le CESE a lancé une consultation sur les comptes de la nation, dont les conclusions seront rendues à cette date, à l'approche de la présidentielle.",
+      "source": {
+        "title": "Convention citoyenne sur les finances publiques : le CESE entend peser sur les débats à l’approche de la présidentielle",
+        "publisher": "Le Monde",
+        "url": "https://www.lemonde.fr/politique/article/2026/11/28/convention-citoyenne-sur-les-finances-publiques-le-cese-entend-peser-sur-les-debats-a-l-approche-de-la-presidentielle_6816088_823448.html"
+      },
+      "quote": "les conclusions seront rendues le 21 mars 2027",
       "addedBy": "veille claude-haiku-5-5"
     }
   ]
